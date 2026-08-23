@@ -1,0 +1,2529 @@
+{
+  "delta_pp_vs_M2": {
+    "M0": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": 0.0,
+          "cpv": 0.0,
+          "medcounterfact": 18.75,
+          "medeinst": -5.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": 6.666666666666665
+      },
+      "slices": {
+        "clir": {
+          "t10": -50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 50.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M1": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": -10.0,
+          "cpv": 0.0,
+          "medcounterfact": 18.75,
+          "medeinst": 0.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": 6.666666666666665
+      },
+      "slices": {
+        "clir": {
+          "t10": -50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": 0.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M10": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 37.5,
+            "medeinst": 0.0
+          },
+          "overall": 16.666666666666668
+        },
+        "datasets": {
+          "clir": 20.0,
+          "cpv": -50.0,
+          "medcounterfact": 31.25,
+          "medeinst": -5.0,
+          "medpic": 20.0,
+          "remedqa": -50.0
+        },
+        "overall": 10.000000000000004
+      },
+      "slices": {
+        "clir": {
+          "t10": 50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 50.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 50.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M11": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": 0.0,
+          "cpv": 0.0,
+          "medcounterfact": 25.0,
+          "medeinst": -5.0,
+          "medpic": 9.999999999999998,
+          "remedqa": 50.0
+        },
+        "overall": 8.333333333333332
+      },
+      "slices": {
+        "clir": {
+          "t10": -50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 50.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M12": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 0.0,
+            "medeinst": 10.0
+          },
+          "overall": 5.555555555555558
+        },
+        "datasets": {
+          "clir": 80.0,
+          "cpv": 0.0,
+          "medcounterfact": 0.0,
+          "medeinst": 10.0,
+          "medpic": 20.0,
+          "remedqa": 50.0
+        },
+        "overall": 21.666666666666668
+      },
+      "slices": {
+        "clir": {
+          "t10": 50.0,
+          "t6": 100.0,
+          "t7": 100.0,
+          "t8": 50.0,
+          "t9": 100.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          }
+        },
+        "medeinst": {
+          "control": 10.0,
+          "trap": 10.0
+        }
+      }
+    },
+    "M2": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 0.0,
+            "medeinst": 0.0
+          },
+          "overall": 0.0
+        },
+        "datasets": {
+          "clir": 0.0,
+          "cpv": 0.0,
+          "medcounterfact": 0.0,
+          "medeinst": 0.0,
+          "medpic": 0.0,
+          "remedqa": 0.0
+        },
+        "overall": 0.0
+      },
+      "slices": {
+        "clir": {
+          "t10": 0.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          }
+        },
+        "medeinst": {
+          "control": 0.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M3": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": -12.5,
+            "medeinst": 0.0
+          },
+          "overall": -5.555555555555555
+        },
+        "datasets": {
+          "clir": 0.0,
+          "cpv": 0.0,
+          "medcounterfact": 0.0,
+          "medeinst": 0.0,
+          "medpic": 9.999999999999998,
+          "remedqa": -50.0
+        },
+        "overall": 0.0
+      },
+      "slices": {
+        "clir": {
+          "t10": 0.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": -50.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 50.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          }
+        },
+        "medeinst": {
+          "control": 0.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M4": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 0.0,
+            "medeinst": 0.0
+          },
+          "overall": 0.0
+        },
+        "datasets": {
+          "clir": -20.0,
+          "cpv": 0.0,
+          "medcounterfact": 0.0,
+          "medeinst": -10.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": -3.3333333333333326
+      },
+      "slices": {
+        "clir": {
+          "t10": -50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": -50.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 0.0,
+            "OOD": 0.0,
+            "Poison": 0.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 0.0,
+            "OOD": -50.0,
+            "Poison": 0.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": -10.0
+        }
+      }
+    },
+    "M5": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": 0.0,
+          "cpv": 0.0,
+          "medcounterfact": 18.75,
+          "medeinst": -10.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": 4.999999999999999
+      },
+      "slices": {
+        "clir": {
+          "t10": 0.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": -10.0
+        }
+      }
+    },
+    "M6": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": -10.0,
+          "cpv": 0.0,
+          "medcounterfact": 25.0,
+          "medeinst": -5.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": 6.666666666666665
+      },
+      "slices": {
+        "clir": {
+          "t10": -50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M7": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": 9.999999999999998,
+          "cpv": -50.0,
+          "medcounterfact": 25.0,
+          "medeinst": -5.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": 8.333333333333332
+      },
+      "slices": {
+        "clir": {
+          "t10": 50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M8": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 25.0,
+            "medeinst": 0.0
+          },
+          "overall": 11.11111111111111
+        },
+        "datasets": {
+          "clir": 9.999999999999998,
+          "cpv": -50.0,
+          "medcounterfact": 25.0,
+          "medeinst": -5.0,
+          "medpic": 20.0,
+          "remedqa": 0.0
+        },
+        "overall": 8.333333333333332
+      },
+      "slices": {
+        "clir": {
+          "t10": 50.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 0.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": 0.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    },
+    "M9": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": 12.5,
+            "medeinst": 0.0
+          },
+          "overall": 5.555555555555558
+        },
+        "datasets": {
+          "clir": 9.999999999999998,
+          "cpv": -50.0,
+          "medcounterfact": 18.75,
+          "medeinst": -5.0,
+          "medpic": 9.999999999999998,
+          "remedqa": 50.0
+        },
+        "overall": 6.666666666666665
+      },
+      "slices": {
+        "clir": {
+          "t10": 0.0,
+          "t6": 0.0,
+          "t7": 0.0,
+          "t8": 50.0,
+          "t9": 0.0
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": -50.0,
+            "Nonsense tokens": 50.0,
+            "OOD": 0.0,
+            "Poison": 50.0
+          },
+          "counterfactual_rows_by_category": {
+            "ID": -50.0,
+            "Nonsense tokens": 50.0,
+            "OOD": -50.0,
+            "Poison": 50.0
+          }
+        },
+        "medeinst": {
+          "control": -10.0,
+          "trap": 0.0
+        }
+      }
+    }
+  },
+  "methods": {
+    "M0": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.75,
+            "correct": 12,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.35,
+          "correct": 21,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M1": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.75,
+            "correct": 12,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.1,
+            "correct": 2,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.35,
+          "correct": 21,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M10": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.875,
+              "correct": 7,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3888888888888889,
+            "correct": 7,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.875,
+            "correct": 14,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.38333333333333336,
+          "correct": 23,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M11": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.8125,
+            "correct": 13,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.3,
+            "correct": 3,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.36666666666666664,
+          "correct": 22,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M12": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.5,
+              "correct": 4,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.1,
+              "correct": 1,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.2777777777777778,
+            "correct": 5,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 1.0,
+            "correct": 10,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.5625,
+            "correct": 9,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.2,
+            "correct": 4,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.5,
+          "correct": 30,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M2": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.5,
+              "correct": 4,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.2222222222222222,
+            "correct": 4,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.5625,
+            "correct": 9,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.1,
+            "correct": 2,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.2833333333333333,
+          "correct": 17,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M3": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.375,
+              "correct": 3,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.16666666666666666,
+            "correct": 3,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.5625,
+            "correct": 9,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.1,
+            "correct": 2,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.3,
+            "correct": 3,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.2833333333333333,
+          "correct": 17,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M4": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.5,
+              "correct": 4,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.2222222222222222,
+            "correct": 4,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.5625,
+            "correct": 9,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.25,
+          "correct": 15,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M5": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.2,
+            "correct": 2,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.75,
+            "correct": 12,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.3333333333333333,
+          "correct": 20,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M6": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.8125,
+            "correct": 13,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.35,
+          "correct": 21,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M7": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.3,
+            "correct": 3,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.8125,
+            "correct": 13,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.36666666666666664,
+          "correct": 22,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M8": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.75,
+              "correct": 6,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.3333333333333333,
+            "correct": 6,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.3,
+            "correct": 3,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.8125,
+            "correct": 13,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.4,
+            "correct": 4,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.36666666666666664,
+          "correct": 22,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    },
+    "M9": {
+      "base": {
+        "complete_pairs": {
+          "datasets": {
+            "medcounterfact": {
+              "accuracy": 0.625,
+              "correct": 5,
+              "n": 8
+            },
+            "medeinst": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 10
+            }
+          },
+          "overall": {
+            "accuracy": 0.2777777777777778,
+            "correct": 5,
+            "n": 18
+          }
+        },
+        "datasets": {
+          "clir": {
+            "accuracy": 0.3,
+            "correct": 3,
+            "n": 10
+          },
+          "cpv": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "medcounterfact": {
+            "accuracy": 0.75,
+            "correct": 12,
+            "n": 16
+          },
+          "medeinst": {
+            "accuracy": 0.05,
+            "correct": 1,
+            "n": 20
+          },
+          "medpic": {
+            "accuracy": 0.3,
+            "correct": 3,
+            "n": 10
+          },
+          "remedqa": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          }
+        },
+        "overall": {
+          "accuracy": 0.35,
+          "correct": 21,
+          "n": 60
+        }
+      },
+      "slices": {
+        "clir": {
+          "t10": {
+            "accuracy": 0.5,
+            "correct": 1,
+            "n": 2
+          },
+          "t6": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t7": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "t8": {
+            "accuracy": 1.0,
+            "correct": 2,
+            "n": 2
+          },
+          "t9": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          }
+        },
+        "medcounterfact": {
+          "complete_pairs_by_category": {
+            "ID": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          },
+          "counterfactual_rows_by_category": {
+            "ID": {
+              "accuracy": 0.0,
+              "correct": 0,
+              "n": 2
+            },
+            "Nonsense tokens": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            },
+            "OOD": {
+              "accuracy": 0.5,
+              "correct": 1,
+              "n": 2
+            },
+            "Poison": {
+              "accuracy": 1.0,
+              "correct": 2,
+              "n": 2
+            }
+          }
+        },
+        "medeinst": {
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 10
+          },
+          "trap": {
+            "accuracy": 0.1,
+            "correct": 1,
+            "n": 10
+          }
+        }
+      }
+    }
+  },
+  "reference_method": "M2"
+}

@@ -1,0 +1,186 @@
+{
+  "datasets": {
+    "clir": {
+      "capabilities": {
+        "full_timeseries": false,
+        "official_edit_pairs": false,
+        "public_row_labels": true,
+        "repository_evidence": true
+      },
+      "files": [
+        {
+          "name": "t6_train_direct_hard_nohack_600_id_question_answer_anchor_evidence.jsonl",
+          "pilot_count": 100,
+          "task": "intervention_response"
+        },
+        {
+          "name": "t7_train_direct_hard_nohack_600_id_question_answer_anchor_evidence.jsonl",
+          "pilot_count": 100,
+          "task": "threshold_forecasting"
+        },
+        {
+          "name": "t8_train_direct_hard_nohack_600_id_question_answer_anchor_evidence.jsonl",
+          "pilot_count": 100,
+          "task": "next_value_interval_forecasting"
+        },
+        {
+          "name": "t9_train_direct_hard_nohack_600_id_question_answer_anchor_evidence.jsonl",
+          "pilot_count": 100,
+          "task": "clinical_timeseries_summarization"
+        },
+        {
+          "name": "t10_train_direct_hard_nohack_600_id_question_answer_anchor_evidence.jsonl",
+          "pilot_count": 100,
+          "task": "immediate_intervention_decision"
+        }
+      ],
+      "license": {
+        "declared": "odbl",
+        "status": "declared_in_dataset_card",
+        "underlying_full_timeseries_access": "mimic_iv_credentials_required"
+      },
+      "pilot": {
+        "count": 500,
+        "seed": 13,
+        "selector": "100_rows_per_listed_file_selected_by_frozen_seed_before_evaluation"
+      },
+      "repo_id": "winall/CLIR-Bench",
+      "revision": "e7e1733b74819bbefa2a1b5bf653a0d1e00fbb9a",
+      "source": "huggingface_raw_snapshot",
+      "split": "train_filename_convention_no_declared_dataset_card_split",
+      "url": "https://huggingface.co/datasets/winall/CLIR-Bench"
+    },
+    "cpv": {
+      "capabilities": {
+        "answer_invariant": true,
+        "official_pair_map": true,
+        "public_row_labels": true,
+        "visible_demographic_variants": true
+      },
+      "file": "data/train-00000-of-00001.parquet",
+      "license": {
+        "declared": "mit",
+        "status": "declared_in_dataset_card"
+      },
+      "pair_key": "case_id",
+      "pilot": {
+        "count": 300,
+        "count_unit": "case_id",
+        "seed": 13,
+        "selector": "filter_case_ids_where_every_group_row_has_distinct_case_text_then_select_300_by_frozen_seed_before_evaluation"
+      },
+      "repo_id": "kenza-ily/medqa-cpv",
+      "revision": "ba7e59489f4c8e2a32d977a099e95bc3bc2587b5",
+      "source": "huggingface",
+      "split": "train",
+      "url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv"
+    },
+    "medcounterfact": {
+      "capabilities": {
+        "fixed_evidence": true,
+        "official_pair_map": true,
+        "public_row_labels": true
+      },
+      "files": [
+        "MedCounterFact_original_data.jsonl",
+        "MedCounterFact_replaced_data.jsonl"
+      ],
+      "license": {
+        "declared": null,
+        "status": "missing_repository_license"
+      },
+      "pair_key": "metadata.id",
+      "pilot": {
+        "count": 200,
+        "count_unit": "counterfactual_rows",
+        "original_companions": "include_all_original_rows_matching_selected_metadata.id",
+        "seed": 13,
+        "selector": "50_rows_per_metadata.MainCategory_selected_by_frozen_seed_before_evaluation"
+      },
+      "repo_id": "KaijieMo-kj/Counterfactual-Medical-Evidence",
+      "revision": "f35b98063b51a63e677829b6d173029d98dd3b1e",
+      "source": "github",
+      "split": null,
+      "url": "https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence"
+    },
+    "medeinst": {
+      "capabilities": {
+        "official_pair_map": true,
+        "public_row_labels": true
+      },
+      "file": "test.jsonl",
+      "license": {
+        "declared": "cc-by-4.0",
+        "status": "declared_in_dataset_card"
+      },
+      "pair_key": "case_id",
+      "pilot": {
+        "count": 500,
+        "count_unit": "pairs",
+        "seed": 13,
+        "selector": "500_case_ids_selected_by_frozen_seed_before_evaluation"
+      },
+      "repo_id": "zhui711/MedEinst",
+      "revision": "354f4b527e764a8f2bebea8f71be55e0a6966402",
+      "source": "huggingface",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/zhui711/MedEinst"
+    },
+    "medpic": {
+      "capabilities": {
+        "official_pair_map": false,
+        "public_row_labels": true
+      },
+      "file": "questions.json",
+      "license": {
+        "declared": "cc-by-4.0",
+        "status": "declared_in_dataset_card"
+      },
+      "pair_key": null,
+      "pilot": {
+        "count": 467,
+        "count_unit": "rows",
+        "selector": "all_rows"
+      },
+      "repo_id": "TIM0927/MedPIC-Bench",
+      "revision": "9ef6db4f13865b14fc2e6be3f94dcfaf3a0cf983",
+      "source": "huggingface",
+      "split": "test",
+      "url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench"
+    },
+    "remedqa": {
+      "capabilities": {
+        "official_pair_map": true,
+        "public_row_labels": true
+      },
+      "files": [
+        "data/medqa_mcq-00000-of-00001.parquet",
+        "data/medqa_roman_numeral-00000-of-00001.parquet",
+        "data/medqa_fixed_pos-00000-of-00001.parquet",
+        "data/medqa_no_symbols-00000-of-00001.parquet"
+      ],
+      "license": {
+        "declared": null,
+        "status": "missing_dataset_card_license"
+      },
+      "pair_key": "id",
+      "pilot": {
+        "count": 300,
+        "count_unit": "id",
+        "seed": 13,
+        "selector": "300_medqa_ids_selected_by_frozen_seed_and_joined_across_listed_answer_invariant_splits"
+      },
+      "repo_id": "disi-unibo-nlp/ReMedQA",
+      "revision": "3abb4b47a5859c7b46c0a1872a58c82e2e3029e3",
+      "source": "huggingface",
+      "split": [
+        "medqa_mcq",
+        "medqa_roman_numeral",
+        "medqa_fixed_pos",
+        "medqa_no_symbols"
+      ],
+      "url": "https://huggingface.co/datasets/disi-unibo-nlp/ReMedQA"
+    }
+  },
+  "registry_version": 1
+}

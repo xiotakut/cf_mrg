@@ -1,0 +1,51 @@
+defaults:
+  seeds: [13, 37, 71]
+  temperature_reader: 0.0
+  temperature_generator: 0.7
+  max_selected_documents: 5
+  max_transition_cards_per_item: 5
+  cache_all_stages: true
+  hide_options_during_transition_generation: true
+  independent_pair_inference: true
+  cluster_bootstrap_iterations: 10000
+
+methods:
+  M0:
+    name: direct_response
+  M1:
+    name: vanilla_rag
+  M2:
+    name: original_medrgag
+  M3:
+    name: state_action_decomposition_only
+  M4:
+    name: equal_token_extra_reasoning
+    match_completion_tokens_to: M9
+  M5:
+    name: evidence_specific_retrieval
+    match_retrieval_calls_to: M9
+  M6:
+    name: precondition_applicability_only
+  M7:
+    name: effect_next_state_only
+  M8:
+    name: transition_cards_without_rollout_comparison
+  M9:
+    name: full_cf_wm_medrgag
+  M10:
+    name: full_without_grounding_provenance_gate
+  M11:
+    name: shuffled_action_effect_or_timestamp_mapping
+  M12:
+    name: oracle_transition
+  M13:
+    name: pair_visible_oracle_diagnostic_only
+    include_in_main_results: false
+
+primary_comparisons:
+  - [M9, M2]
+  - [M9, M3]
+  - [M9, M4]
+  - [M9, M5]
+  - [M9, M8]
+  - [M9, M11]

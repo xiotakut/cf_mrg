@@ -1,0 +1,237 @@
+{
+  "blockers": [
+    {
+      "check": "source_licenses",
+      "details": [
+        "medcounterfact license is unresolved: missing_repository_license",
+        "remedqa license is unresolved: missing_dataset_card_license"
+      ],
+      "status": "fail"
+    },
+    {
+      "check": "medpic_official_89_linked_pairs",
+      "details": [
+        "MedPIC official linked-pair mapping is declared unavailable",
+        "source registry declares medpic.capabilities.official_pair_map=false or missing",
+        "expected 89 MedPIC pairs, found 0"
+      ],
+      "status": "fail"
+    },
+    {
+      "check": "clir_repository_evidence",
+      "details": [
+        "300 CLIR rows lack repository observations; a sole TSS ['all'] marker is not evidence"
+      ],
+      "status": "fail"
+    },
+    {
+      "check": "clir_full_ts",
+      "details": [
+        "CLIR Full-TS repository evidence is declared unavailable",
+        "source registry declares clir.capabilities.full_timeseries=false or missing",
+        "500 CLIR rows lack Full-TS observations"
+      ],
+      "status": "fail"
+    },
+    {
+      "check": "clir_official_causal_edit_pairs",
+      "details": [
+        "CLIR official causal-edit mapping is declared unavailable",
+        "source registry declares clir.capabilities.official_edit_pairs=false or missing",
+        "at least one bound CLIR causal-edit pair"
+      ],
+      "status": "fail"
+    }
+  ],
+  "checks": {
+    "adapters_and_target_counts": {
+      "clir_task_counts": {
+        "clinical_timeseries_summarization": 100,
+        "immediate_intervention_decision": 100,
+        "intervention_response": 100,
+        "next_value_interval_forecasting": 100,
+        "threshold_forecasting": 100
+      },
+      "dataset_counts": {
+        "clir": 500,
+        "cpv": 3010,
+        "medcounterfact": 400,
+        "medeinst": 1000,
+        "medpic": 467,
+        "remedqa": 1200
+      },
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "clir_full_ts": {
+      "missing": [],
+      "problems": [
+        "CLIR Full-TS repository evidence is declared unavailable",
+        "source registry declares clir.capabilities.full_timeseries=false or missing",
+        "500 CLIR rows lack Full-TS observations"
+      ],
+      "rows_with_full_ts": 0,
+      "status": "fail"
+    },
+    "clir_no_answer_derived_evidence": {
+      "forbidden_field_occurrences": 0,
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "clir_official_causal_edit_pairs": {
+      "missing": [
+        "at least one bound CLIR causal-edit pair"
+      ],
+      "observed_pairs": 0,
+      "problems": [
+        "CLIR official causal-edit mapping is declared unavailable",
+        "source registry declares clir.capabilities.official_edit_pairs=false or missing"
+      ],
+      "status": "fail"
+    },
+    "clir_repository_evidence": {
+      "missing": [],
+      "problems": [
+        "300 CLIR rows lack repository observations; a sole TSS ['all'] marker is not evidence"
+      ],
+      "rows_without_observations": 300,
+      "status": "fail",
+      "verified_raw_artifacts": 5
+    },
+    "control_counts": {
+      "cpv": 300,
+      "missing": [],
+      "problems": [],
+      "remedqa": 300,
+      "status": "pass"
+    },
+    "cpv_variant_questions": {
+      "missing": [],
+      "problems": [],
+      "status": "pass",
+      "units_checked": 300
+    },
+    "gold_completeness": {
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "inference_gold_identity_equality": {
+      "extra_in_gold": [],
+      "missing": [],
+      "missing_from_gold": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "input_hashes": {
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "manifest_bindings": {
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "medcounterfact_fixed_evidence": {
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "medpic_official_89_linked_pairs": {
+      "missing": [],
+      "observed_pairs": 0,
+      "problems": [
+        "MedPIC official linked-pair mapping is declared unavailable",
+        "source registry declares medpic.capabilities.official_pair_map=false or missing",
+        "expected 89 MedPIC pairs, found 0"
+      ],
+      "status": "fail"
+    },
+    "no_inference_leakage": {
+      "forbidden_key_occurrences": 0,
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "pair_and_cluster_structure": {
+      "cluster_counts": {
+        "clir": 315,
+        "cpv": 300,
+        "medcounterfact": 200,
+        "medeinst": 500,
+        "medpic": 467,
+        "remedqa": 300
+      },
+      "missing": [],
+      "pair_counts": {
+        "cpv": 300,
+        "medcounterfact": 200,
+        "medeinst": 500,
+        "remedqa": 300
+      },
+      "problems": [],
+      "status": "pass"
+    },
+    "pair_blind_inference_values": {
+      "missing": [],
+      "problems": [],
+      "status": "pass",
+      "violations": 0
+    },
+    "pair_category_targets": {
+      "medcounterfact_categories": {
+        "medical": 50,
+        "non_medical": 50,
+        "nonce": 50,
+        "toxic": 50
+      },
+      "medeinst_pairs": 500,
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    },
+    "source_licenses": {
+      "missing": [],
+      "problems": [
+        "medcounterfact license is unresolved: missing_repository_license",
+        "remedqa license is unresolved: missing_dataset_card_license"
+      ],
+      "status": "fail"
+    },
+    "source_revisions_and_raw_hashes": {
+      "missing": [],
+      "problems": [],
+      "status": "pass",
+      "verified_raw_artifacts": {
+        "clir": 5,
+        "cpv": 1,
+        "medcounterfact": 2,
+        "medeinst": 1,
+        "medpic": 1,
+        "remedqa": 4
+      }
+    },
+    "unique_identities": {
+      "gold_rows": 6577,
+      "inference_rows": 6577,
+      "missing": [],
+      "problems": [],
+      "status": "pass"
+    }
+  },
+  "decision": "stop_before_inference",
+  "inputs": {
+    "gate_a_manifest": "private_data/gate-a-public-20260823-seed13-v3/gate_a_manifest.json",
+    "gate_a_manifest_sha256": "a34ae77072a73f275d7ec28cfbccd1e5534142d2ab506ab84e0950c10fe7cf9c",
+    "gold": "private_data/gate-a-public-20260823-seed13-v3/pilot.gold.jsonl",
+    "gold_sha256": "c53231e2e12b169c6abc8295e50a0cff32719112c214a34b85e8828e9cfbf25e",
+    "inference": "private_data/gate-a-public-20260823-seed13-v3/pilot.inference.jsonl",
+    "inference_sha256": "307d7d88cdad367a7e4e5f2beb0741247c3fb68a7b359c252c1fd46777b32e96",
+    "source_registry": "configs/gate_a_sources.json",
+    "source_registry_sha256": "1389258e6248a862d88e7f8894ba96e2bf80e72916425f5d9ca8d313e3740bc5"
+  },
+  "schema_version": 1
+}
