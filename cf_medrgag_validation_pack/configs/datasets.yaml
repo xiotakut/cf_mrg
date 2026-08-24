@@ -1,0 +1,77 @@
+datasets:
+  medpic:
+    priority: core
+    source: huggingface
+    repo_id: TIM0927/MedPIC-Bench
+    split: test
+    license: CC-BY-4.0
+    official_size: 467
+    answer_format: exact_set_letters
+    pair_visibility: forbidden
+    retrieval_policy: original_medrgag_plus_source_grounded_variant
+    role: conditional_rule_applicability
+
+  clir:
+    priority: core_wm
+    source: huggingface_raw_snapshot
+    repo_id: winall/CLIR-Bench
+    split: train  # repository currently exposes benchmark JSONL under this split/name
+    license: ODbL
+    official_size: 6600
+    answer_format: single_letter_plus_evidence_timestamps
+    pair_visibility: forbidden
+    retrieval_policy: patient_timeseries_authoritative_docs_as_transition_prior
+    notes:
+      - Pin repository commit.
+      - Prefer raw JSONL snapshot because the hosted viewer currently reports a schema-generation error.
+      - Treat counterfactual edit metadata as evaluation-only.
+
+  medeinst:
+    priority: core
+    source: huggingface
+    repo_id: zhui711/MedEinst
+    split: test
+    license: CC-BY-4.0
+    official_pairs: 5383
+    answer_format: normalized_open_diagnosis
+    pair_visibility: forbidden
+    retrieval_policy: original_medrgag_corpus_or_declared_medical_corpus
+    role: counterfactual_state_update
+
+  medcounterfact:
+    priority: core_mechanism
+    source: github
+    repo_id: KaijieMo-kj/Counterfactual-Medical-Evidence
+    files:
+      - MedCounterFact_original_data.jsonl
+      - MedCounterFact_replaced_data.jsonl
+    license: verify_repository_and_upstream_terms_before_release
+    answer_format: evidence_conclusion_plus_safety_flag
+    pair_visibility: forbidden
+    retrieval_policy: fixed_evidence_only_primary
+    role: evidence_parametric_conflict
+
+  remedqa:
+    priority: control
+    source: huggingface
+    repo_id: disi-unibo-nlp/ReMedQA
+    split: dataset_specific
+    license: verify_upstream_dataset_licenses
+    answer_format: dataset_variant_specific
+    role: format_invariance_control
+
+  cladder:
+    priority: module_control
+    source: github_huggingface
+    repo_id: causalNLP/cladder
+    license: MIT
+    answer_format: yes_no
+    role: formal_counterfactual_sanity
+
+  cpenv:
+    priority: optional_dynamic
+    source: github
+    repo_id: SPIRAL-MED/CP_ENV
+    license: MIT
+    answer_format: agent_trajectory
+    role: clinical_pathway_external_validation

@@ -1,0 +1,35 @@
+claim_levels:
+  action_aware_guideline_reasoning:
+    require:
+      medpic_pair_gain_pp_vs_M2: 3.0
+      medpic_deactivation_gain_pp_vs_M2: 3.0
+      beats_M3_or_M5: true
+
+  counterfactual_state_update_layer:
+    require:
+      medpic_pair_gain_pp_vs_M2: 5.0
+      medpic_deactivation_gain_pp_vs_M2: 5.0
+      medeinst_trap_gain_pp_vs_M2: 3.0
+      medeinst_relative_btr_reduction: 0.20
+      medeinst_control_drop_pp_max: 1.0
+      beats_M3_M4_M5: true
+
+  textual_clinical_world_model:
+    require:
+      all_counterfactual_state_update_layer_requirements: true
+      clir_causal_flip_gain_pp_vs_M2: 10.0
+      clir_ir_forecast_decision_gain_pp_vs_best_equal_budget: 3.0
+      clir_irrelevant_invariance_drop_pp_max: 2.0
+      action_effect_shuffle_drop_pp_min: 5.0
+      transition_evidence_entailment_min: 0.80
+      remedqa_or_cpv_drop_pp_max: 1.0
+      at_least_two_action_transition_datasets_significant: true
+      medcounterfact_no_significant_faithfulness_safety_tradeoff: true
+
+fatal_failures:
+  - oracle_transition_gain_pp_vs_M2_below_2
+  - M9_not_better_than_M3_and_M5
+  - shuffled_mapping_drop_pp_below_2
+  - pair_leakage_detected
+  - test_set_used_for_prompt_selection
+  - transition_evidence_entailment_below_0_70
