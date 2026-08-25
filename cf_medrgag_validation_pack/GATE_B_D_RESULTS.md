@@ -1,5 +1,7 @@
 # Gate B–D 实验结果
 
+> **历史有效性说明：** 本文中的 M12 在构造 transition cards 时读取了 gold answer / correct candidate，因此是无效的 label oracle，而不是 transition oracle。其代码路径、数值和产物仅保留为 integration/parser 的历史记录，必须排除在 revised experiment 的主分析、上界比较和世界模型结论之外。本次替代条件是完全不读取 gold 的 `teacher_transition`。
+
 ## 结论
 
 balanced60、seed 13 的真实 pilot 已完成。Gate C 的 oracle 检查通过，但 Gate D 只满足 1/4 个冻结推进条件，因此 **NO-GO：停止在 Gate D，不进入 Gate E 的全量三种子实验，也不支持 textual clinical world model 表述**。

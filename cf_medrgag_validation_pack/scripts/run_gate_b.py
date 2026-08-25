@@ -11,7 +11,6 @@ from pathlib import Path
 import re
 import sys
 from typing import Any, Iterable
-import unicodedata
 
 
 MODEL = Path("/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct")
@@ -174,78 +173,10 @@ def selection_ids(text: str) -> list[int]:
     return result
 
 
-def _option_text(value: Any) -> str:
-    text = " ".join(unicodedata.normalize("NFKC", str(value)).casefold().split())
-    return re.sub(r"^(?:[a-j]|[ivxlcdm]+|\d+)\s*[.)]\s*", "", text)
-
-
-def oracle_option_keys(options: dict[str, str], answers: list[Any]) -> list[str]:
-    keys = {str(key).casefold(): str(key) for key in options}
-    values = {_option_text(value): str(key) for key, value in options.items()}
-    selected = []
-    for answer in answers:
-        key = keys.get(str(answer).strip().casefold()) or values.get(_option_text(answer))
-        if key is None:
-            raise ValueError(f"oracle answer does not map to an option: {answer!r}")
-        if key not in selected:
-            selected.append(key)
-    return selected
-
-
 def embedded_clir_options(question: str) -> dict[str, str]:
     return {
         match.group(1): " ".join(match.group(2).split())
         for match in re.finditer(r"(?ms)^([A-D])\.\s*(.*?)(?=\n[A-D]\.\s|\Z)", question)
-    }
-
-
-def oracle_cards(item: dict[str, Any], gold: dict[str, Any]) -> dict[str, Any]:
-    answers = gold["answer"] if isinstance(gold["answer"], list) else [gold["answer"]]
-    options = item.get("options")
-    if item["dataset"] == "clir" and not options:
-        options = embedded_clir_options(item["question"])
-    if isinstance(options, dict) and options:
-        selected = oracle_option_keys(options, answers)
-        candidates = [(str(key), str(value), str(key) in selected) for key, value in options.items()]
-    else:
-        selected = ["H0"]
-        candidates = [("H0", str(answers[0]), True)]
-    evidence = gold.get("evidence") if item["dataset"] == "clir" else None
-    cards = []
-    for candidate_id, action, is_selected in candidates:
-        cards.append(
-            {
-                "candidate_id": candidate_id,
-                "action": action,
-                "oracle_status": "selected" if is_selected else "not_selected",
-                "applicability": "supported" if is_selected else "inactive",
-                "triggering_conditions": [],
-                "failed_or_absent_conditions": [],
-                "exceptions": [],
-                "immediate_observations": [evidence] if is_selected and evidence is not None else [],
-                "next_state_changes": [],
-                "future_threshold_or_interval": "not_required",
-                "benefits": [],
-                "harms_or_constraints": [],
-                "monitoring_or_next_action": [],
-                "evidence_ids": ["same_item_gold.evidence"] if is_selected and evidence is not None else [],
-                "contradictions": [] if is_selected else ["not selected by same-item oracle answer"],
-                "uncertainty_reasons": [],
-                "unsupported_claims": [],
-                "rollout_valid": is_selected,
-            }
-        )
-    return {
-        "cards": cards,
-        "planner": {
-            "selected_candidate_ids": selected,
-            "candidate_scores": [
-                {"candidate_id": candidate_id, "total": 1.0 if is_selected else 0.0}
-                for candidate_id, _, is_selected in candidates
-            ],
-            "causal_determinants": [],
-            "comparison_valid": True,
-        },
     }
 
 
@@ -412,7 +343,7 @@ def fixed_documents(item: dict[str, Any], count: int) -> list[dict[str, Any]]:
 
 
 class LocalRetriever:
-    def __init__(self) -> None:
+    def __init__(self, device: str = "cuda:0") -> None:
         os.environ.setdefault("JAVA_HOME", str(JAVA_HOME))
         sys.path.insert(0, str(MEDRGAG))
         from src.medrgag_retrieval import DualBM25Retriever, MedCPTRanker
@@ -423,7 +354,7 @@ class LocalRetriever:
             MEDRGAG / "corpus/textbooks",
             MEDRGAG / "corpus/wikipedia",
         )
-        self.ranker = MedCPTRanker(MEDCPT, device="cuda:0")
+        self.ranker = MedCPTRanker(MEDCPT, device=device)
 
     def retrieve(self, query: str, count: int) -> list[dict[str, Any]]:
         ranked = self.ranker.rank(query, self.sparse.retrieve(query, 32))[:count]
@@ -616,80 +547,6 @@ def run_reader_method(
     return len(pending)
 
 
-def load_oracle_gold(path: Path, item_ids: set[str]) -> dict[str, dict[str, Any]]:
-    result = {}
-    for row in read_jsonl(path):
-        item_id = row.get("item_id")
-        if item_id in item_ids:
-            result[item_id] = {"answer": row.get("answer"), "evidence": row.get("evidence")}
-    missing = item_ids - set(result)
-    if missing:
-        raise ValueError(f"M12 gold rows missing: {sorted(missing)[:3]}")
-    return result
-
-
-def prepare_m12_cards(
-    items: list[dict[str, Any]],
-    gold: dict[str, dict[str, Any]],
-    output_path: Path,
-) -> dict[str, dict[str, Any]]:
-    cached = {row["item_id"]: row for row in read_jsonl(output_path)} if output_path.exists() else {}
-    for item in items:
-        if item["item_id"] in cached:
-            continue
-        payload = {"item_id": item["item_id"], "dataset": item["dataset"], **oracle_cards(item, gold[item["item_id"]])}
-        append_rows(output_path, [payload])
-        cached[item["item_id"]] = payload
-    return cached
-
-
-def load_m2_rerank(items: list[dict[str, Any]], path: Path) -> dict[str, list[dict[str, Any]]]:
-    if not path.is_file():
-        raise FileNotFoundError(f"M12 requires completed M2 rerank artifact: {path}")
-    documents = {row["item_id"]: row["documents"] for row in read_jsonl(path)}
-    missing = {item["item_id"] for item in items} - set(documents)
-    if missing:
-        raise ValueError(f"M12 requires complete M2 rerank coverage; missing: {sorted(missing)[:3]}")
-    return documents
-
-
-def run_m12(
-    items: list[dict[str, Any]],
-    gold_path: Path,
-    output_dir: Path,
-    backend: Any,
-    batch_size: int,
-    max_input_tokens: int,
-    max_new_tokens: int,
-) -> int:
-    ids = {item["item_id"] for item in items}
-    gold = load_oracle_gold(gold_path, ids)
-    cards = prepare_m12_cards(items, gold, output_dir / "M12.cards.jsonl")
-    documents = load_m2_rerank(items, output_dir / "M2.rerank.jsonl")
-    with_oracle = {}
-    for item in items:
-        item_id = item["item_id"]
-        oracle_document = {
-            "contents": "Oracle transition cards and planner:\n"
-            + json.dumps(
-                {"transition_cards": cards[item_id]["cards"], "planner": cards[item_id]["planner"]},
-                ensure_ascii=False,
-                sort_keys=True,
-            )
-        }
-        with_oracle[item_id] = [*documents[item_id], oracle_document]
-    return run_reader_method(
-        "M12",
-        items,
-        with_oracle,
-        output_dir / "M12.jsonl",
-        backend,
-        batch_size,
-        max_input_tokens,
-        max_new_tokens,
-    )
-
-
 def rerank_m2(
     items: list[dict[str, Any]],
     selected: dict[str, list[dict[str, Any]]],
@@ -806,7 +663,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--gold", type=Path, required=True)
     parser.add_argument("--pilot-reference", type=Path, default=REFERENCE)
     parser.add_argument("--reference-sha256", default=REFERENCE_SHA256)
-    parser.add_argument("--methods", nargs="+", choices=("M0", "M1", "M2", "M12"), default=("M0",))
+    parser.add_argument("--methods", nargs="+", choices=("M0", "M1", "M2"), default=("M0",))
     parser.add_argument("--model", type=Path, default=MODEL)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=16)
@@ -832,8 +689,6 @@ def main() -> int:
     retrievals = None
     if set(args.methods) & {"M1", "M2"}:
         retrievals = prepare_retrievals(items, args.output_dir / "retrieval.jsonl")
-    if "M12" in args.methods:
-        load_m2_rerank(items, args.output_dir / "M2.rerank.jsonl")
     backend = VLLMBackend(args.model, args.max_model_len, args.gpu_memory_utilization)
     if "M0" in args.methods:
         count = run_m0(
@@ -868,17 +723,6 @@ def main() -> int:
             args.max_new_tokens,
         )
         print(f"M2 complete: generated={count}, total={len(items)}", flush=True)
-    if "M12" in args.methods:
-        count = run_m12(
-            items,
-            args.gold,
-            args.output_dir,
-            backend,
-            args.batch_size,
-            args.max_input_tokens,
-            args.max_new_tokens,
-        )
-        print(f"M12 complete: generated={count}, total={len(items)}", flush=True)
     return 0
 
 

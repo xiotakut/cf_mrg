@@ -1,0 +1,3105 @@
+{
+  "bootstrap_samples": 1000,
+  "comparisons": {
+    "candidate_retrieval-direct_rank": {
+      "ci95": [
+        -0.066006600660066,
+        0.039603960396039604
+      ],
+      "delta": -0.013201320132013201,
+      "n": 303
+    },
+    "candidate_retrieval-medrgag_proxy": {
+      "ci95": [
+        -0.0594059405940594,
+        0.009900990099009901
+      ],
+      "delta": -0.0231023102310231,
+      "n": 303
+    },
+    "candidate_retrieval-structured_no_transition": {
+      "ci95": [
+        -0.0165016501650165,
+        0.0594059405940594
+      ],
+      "delta": 0.0231023102310231,
+      "n": 303
+    },
+    "decomposition_only-direct_rank": {
+      "ci95": [
+        -0.036303630363036306,
+        0.06930693069306931
+      ],
+      "delta": 0.0165016501650165,
+      "n": 303
+    },
+    "decomposition_only-medrgag_proxy": {
+      "ci95": [
+        -0.0297029702970297,
+        0.0429042904290429
+      ],
+      "delta": 0.006600660066006601,
+      "n": 303
+    },
+    "decomposition_only-structured_no_transition": {
+      "ci95": [
+        0.009900990099009901,
+        0.0924092409240924
+      ],
+      "delta": 0.052805280528052806,
+      "n": 303
+    },
+    "direct-direct_rank": {
+      "ci95": [
+        -0.04950495049504951,
+        0.056105610561056105
+      ],
+      "delta": 0.0033003300330033004,
+      "n": 303
+    },
+    "direct-medrgag_proxy": {
+      "ci95": [
+        -0.0429042904290429,
+        0.0297029702970297
+      ],
+      "delta": -0.006600660066006601,
+      "n": 303
+    },
+    "direct-structured_no_transition": {
+      "ci95": [
+        -0.0033003300330033004,
+        0.08250825082508251
+      ],
+      "delta": 0.039603960396039604,
+      "n": 303
+    },
+    "direct_rank-medrgag_proxy": {
+      "ci95": [
+        -0.066006600660066,
+        0.0462046204620462
+      ],
+      "delta": -0.009900990099009901,
+      "n": 303
+    },
+    "direct_rank-structured_no_transition": {
+      "ci95": [
+        -0.019801980198019802,
+        0.09570957095709572
+      ],
+      "delta": 0.036303630363036306,
+      "n": 303
+    },
+    "effect_shuffle-direct_rank": {
+      "ci95": [
+        -0.1485148514851485,
+        -0.0231023102310231
+      ],
+      "delta": -0.0858085808580858,
+      "n": 303
+    },
+    "effect_shuffle-medrgag_proxy": {
+      "ci95": [
+        -0.14521452145214522,
+        -0.04950495049504951
+      ],
+      "delta": -0.09570957095709572,
+      "n": 303
+    },
+    "effect_shuffle-structured_no_transition": {
+      "ci95": [
+        -0.09900990099009901,
+        -0.0033003300330033004
+      ],
+      "delta": -0.04950495049504951,
+      "n": 303
+    },
+    "equal_token_reasoning-direct_rank": {
+      "ci95": [
+        -0.0924092409240924,
+        0.009900990099009901
+      ],
+      "delta": -0.039603960396039604,
+      "n": 303
+    },
+    "equal_token_reasoning-medrgag_proxy": {
+      "ci95": [
+        -0.0891089108910891,
+        -0.013201320132013201
+      ],
+      "delta": -0.04950495049504951,
+      "n": 303
+    },
+    "equal_token_reasoning-structured_no_transition": {
+      "ci95": [
+        -0.036303630363036306,
+        0.0297029702970297
+      ],
+      "delta": -0.0033003300330033004,
+      "n": 303
+    },
+    "full_card_shuffle-direct_rank": {
+      "ci95": [
+        -0.13861386138613863,
+        -0.0165016501650165
+      ],
+      "delta": -0.07920792079207921,
+      "n": 303
+    },
+    "full_card_shuffle-medrgag_proxy": {
+      "ci95": [
+        -0.13861386138613863,
+        -0.039603960396039604
+      ],
+      "delta": -0.0891089108910891,
+      "n": 303
+    },
+    "full_card_shuffle-structured_no_transition": {
+      "ci95": [
+        -0.0924092409240924,
+        0.006600660066006601
+      ],
+      "delta": -0.0429042904290429,
+      "n": 303
+    },
+    "full_transition-direct_rank": {
+      "ci95": [
+        -0.15841584158415842,
+        -0.039603960396039604
+      ],
+      "delta": -0.09900990099009901,
+      "n": 303
+    },
+    "full_transition-effect_shuffle": {
+      "ci95": [
+        -0.06,
+        0.0
+      ],
+      "delta": -0.02666666666666667,
+      "n": 150
+    },
+    "full_transition-equal_token_reasoning": {
+      "ci95": [
+        -0.10891089108910891,
+        -0.013201320132013201
+      ],
+      "delta": -0.0594059405940594,
+      "n": 303
+    },
+    "full_transition-full_card_shuffle": {
+      "ci95": [
+        -0.08,
+        -0.006666666666666667
+      ],
+      "delta": -0.04,
+      "n": 150
+    },
+    "full_transition-medrgag_proxy": {
+      "ci95": [
+        -0.1551155115511551,
+        -0.0594059405940594
+      ],
+      "delta": -0.10891089108910891,
+      "n": 303
+    },
+    "full_transition-parametric_transition": {
+      "ci95": [
+        -0.019801980198019802,
+        0.07260726072607261
+      ],
+      "delta": 0.026402640264026403,
+      "n": 303
+    },
+    "full_transition-structured_no_transition": {
+      "ci95": [
+        -0.11551155115511551,
+        -0.013201320132013201
+      ],
+      "delta": -0.0627062706270627,
+      "n": 303
+    },
+    "full_transition-transition_no_comparator": {
+      "ci95": [
+        -0.0462046204620462,
+        -0.0033003300330033004
+      ],
+      "delta": -0.0231023102310231,
+      "n": 303
+    },
+    "medrgag_proxy-direct_rank": {
+      "ci95": [
+        -0.04950495049504951,
+        0.066006600660066
+      ],
+      "delta": 0.009900990099009901,
+      "n": 303
+    },
+    "medrgag_proxy-structured_no_transition": {
+      "ci95": [
+        0.0033003300330033004,
+        0.0891089108910891
+      ],
+      "delta": 0.0462046204620462,
+      "n": 303
+    },
+    "parametric_transition-direct_rank": {
+      "ci95": [
+        -0.19141914191419143,
+        -0.0594059405940594
+      ],
+      "delta": -0.1254125412541254,
+      "n": 303
+    },
+    "parametric_transition-medrgag_proxy": {
+      "ci95": [
+        -0.19141914191419143,
+        -0.07260726072607261
+      ],
+      "delta": -0.1353135313531353,
+      "n": 303
+    },
+    "parametric_transition-structured_no_transition": {
+      "ci95": [
+        -0.14521452145214522,
+        -0.026402640264026403
+      ],
+      "delta": -0.0891089108910891,
+      "n": 303
+    },
+    "structured_no_transition-direct_rank": {
+      "ci95": [
+        -0.09570957095709572,
+        0.019801980198019802
+      ],
+      "delta": -0.036303630363036306,
+      "n": 303
+    },
+    "structured_no_transition-medrgag_proxy": {
+      "ci95": [
+        -0.0891089108910891,
+        -0.0033003300330033004
+      ],
+      "delta": -0.0462046204620462,
+      "n": 303
+    },
+    "teacher_transition-direct_rank": {
+      "ci95": [
+        -0.17491749174917492,
+        -0.0429042904290429
+      ],
+      "delta": -0.11221122112211221,
+      "n": 303
+    },
+    "teacher_transition-medrgag_proxy": {
+      "ci95": [
+        -0.17491749174917492,
+        -0.066006600660066
+      ],
+      "delta": -0.12211221122112212,
+      "n": 303
+    },
+    "teacher_transition-structured_no_transition": {
+      "ci95": [
+        -0.12871287128712872,
+        -0.019801980198019802
+      ],
+      "delta": -0.07590759075907591,
+      "n": 303
+    },
+    "transition_no_comparator-direct_rank": {
+      "ci95": [
+        -0.13861386138613863,
+        -0.013201320132013201
+      ],
+      "delta": -0.07590759075907591,
+      "n": 303
+    },
+    "transition_no_comparator-medrgag_proxy": {
+      "ci95": [
+        -0.13861386138613863,
+        -0.036303630363036306
+      ],
+      "delta": -0.0858085808580858,
+      "n": 303
+    },
+    "transition_no_comparator-structured_no_transition": {
+      "ci95": [
+        -0.0891089108910891,
+        0.009900990099009901
+      ],
+      "delta": -0.039603960396039604,
+      "n": 303
+    }
+  },
+  "methods": {
+    "candidate_retrieval": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.26582278481012656,
+          "correct": 21,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6621621621621622,
+          "correct": 49,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.23076923076923078,
+          "correct": 18,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.29372937293729373,
+        "correct": 89,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8918918918918919,
+          "correct": 33,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.3150684931506849,
+          "correct": 23,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.10810810810810811,
+          "correct": 4,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3424657534246575,
+          "correct": 25,
+          "n": 73
+        },
+        "raw_change_rate": 0.6111111111111112
+      },
+      "parse_failures": 32,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.3076923076923077,
+            "correct": 12,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.225,
+            "correct": 9,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8918918918918919,
+            "correct": 33,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.6216216216216216,
+            "correct": 23,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6621621621621622,
+            "correct": 49,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.10810810810810811,
+            "correct": 4,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.6756756756756757,
+            "correct": 25,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.6111111111111112,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.23076923076923078,
+            "correct": 18,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.23076923076923078,
+          "correct": 18,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6621621621621622,
+          "correct": 49,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.225,
+          "correct": 9,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.3076923076923077,
+          "correct": 12,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 298.4026402640264,
+          "n": 303,
+          "total": 90416.0
+        },
+        "prompt_tokens": {
+          "mean": 4508.706270627063,
+          "n": 303,
+          "total": 1366138.0
+        },
+        "total_tokens": {
+          "mean": 4807.108910891089,
+          "n": 303,
+          "total": 1456554.0
+        }
+      }
+    },
+    "decomposition_only": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.25316455696202533,
+          "correct": 20,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6756756756756757,
+          "correct": 50,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.1111111111111111,
+          "correct": 8,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.2564102564102564,
+          "correct": 20,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.3234323432343234,
+        "correct": 98,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8648648648648649,
+          "correct": 32,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.3287671232876712,
+          "correct": 24,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.1111111111111111,
+          "correct": 4,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.13513513513513514,
+          "correct": 5,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3561643835616438,
+          "correct": 26,
+          "n": 73
+        },
+        "raw_change_rate": 0.7222222222222222
+      },
+      "parse_failures": 6,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.3076923076923077,
+            "correct": 12,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.2,
+            "correct": 8,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8648648648648649,
+            "correct": 32,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.6486486486486487,
+            "correct": 24,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6756756756756757,
+            "correct": 50,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.13513513513513514,
+            "correct": 5,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.6756756756756757,
+            "correct": 25,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 4
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.1111111111111111,
+            "correct": 4,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.1111111111111111,
+            "correct": 4,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "raw_change_rate": 0.7222222222222222,
+          "trap": {
+            "accuracy": 0.1111111111111111,
+            "correct": 4,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.2564102564102564,
+            "correct": 20,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.2564102564102564,
+          "correct": 20,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.1111111111111111,
+          "correct": 8,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6756756756756757,
+          "correct": 50,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.2,
+          "correct": 8,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.3076923076923077,
+          "correct": 12,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 301.4191419141914,
+          "n": 303,
+          "total": 91330.0
+        },
+        "prompt_tokens": {
+          "mean": 4542.858085808581,
+          "n": 303,
+          "total": 1376486.0
+        },
+        "total_tokens": {
+          "mean": 4844.277227722772,
+          "n": 303,
+          "total": 1467816.0
+        }
+      }
+    },
+    "direct": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.24050632911392406,
+          "correct": 19,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6621621621621622,
+          "correct": 49,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.08333333333333333,
+          "correct": 6,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.2564102564102564,
+          "correct": 20,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.3102310231023102,
+        "correct": 94,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8378378378378378,
+          "correct": 31,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.3150684931506849,
+          "correct": 23,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.16216216216216217,
+          "correct": 6,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3835616438356164,
+          "correct": 28,
+          "n": 73
+        },
+        "raw_change_rate": 0.5
+      },
+      "parse_failures": 1,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.28205128205128205,
+            "correct": 11,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.2,
+            "correct": 8,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8378378378378378,
+            "correct": 31,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.6216216216216216,
+            "correct": 23,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6621621621621622,
+            "correct": 49,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.16216216216216217,
+            "correct": 6,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.6486486486486487,
+            "correct": 24,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": 1.0,
+            "correct": 3,
+            "n": 3
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.08333333333333333,
+            "correct": 3,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.1111111111111111,
+            "correct": 4,
+            "n": 36
+          },
+          "raw_change_rate": 0.5,
+          "trap": {
+            "accuracy": 0.08333333333333333,
+            "correct": 3,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.2564102564102564,
+            "correct": 20,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.2564102564102564,
+          "correct": 20,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.08333333333333333,
+          "correct": 6,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6621621621621622,
+          "correct": 49,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.2,
+          "correct": 8,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.28205128205128205,
+          "correct": 11,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 133.8052805280528,
+          "n": 303,
+          "total": 40543.0
+        },
+        "prompt_tokens": {
+          "mean": 3457.112211221122,
+          "n": 303,
+          "total": 1047505.0
+        },
+        "total_tokens": {
+          "mean": 3590.917491749175,
+          "n": 303,
+          "total": 1088048.0
+        }
+      }
+    },
+    "direct_rank": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.27848101265822783,
+          "correct": 22,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6081081081081081,
+          "correct": 45,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.041666666666666664,
+          "correct": 3,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.2948717948717949,
+          "correct": 23,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.3069306930693069,
+        "correct": 93,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.6486486486486487,
+          "correct": 24,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.2465753424657534,
+          "correct": 18,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.05555555555555555,
+          "correct": 2,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.35135135135135137,
+          "correct": 13,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3287671232876712,
+          "correct": 24,
+          "n": 73
+        },
+        "raw_change_rate": 0.5
+      },
+      "parse_failures": 2,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.23076923076923078,
+            "correct": 9,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.325,
+            "correct": 13,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.6486486486486487,
+            "correct": 24,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.4864864864864865,
+            "correct": 18,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6081081081081081,
+            "correct": 45,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.35135135135135137,
+            "correct": 13,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.6216216216216216,
+            "correct": 23,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 1
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "raw_change_rate": 0.5,
+          "trap": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.2948717948717949,
+            "correct": 23,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.2948717948717949,
+          "correct": 23,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.041666666666666664,
+          "correct": 3,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6081081081081081,
+          "correct": 45,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.325,
+          "correct": 13,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.23076923076923078,
+          "correct": 9,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 344.71287128712873,
+          "n": 303,
+          "total": 104448.0
+        },
+        "prompt_tokens": {
+          "mean": 4579.112211221122,
+          "n": 303,
+          "total": 1387471.0
+        },
+        "total_tokens": {
+          "mean": 4923.8250825082505,
+          "n": 303,
+          "total": 1491919.0
+        }
+      }
+    },
+    "effect_shuffle": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.17721518987341772,
+          "correct": 14,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.19230769230769232,
+          "correct": 15,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.22112211221122113,
+        "correct": 67,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8648648648648649,
+          "correct": 32,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.2191780821917808,
+          "correct": 16,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.13513513513513514,
+          "correct": 5,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.2602739726027397,
+          "correct": 19,
+          "n": 73
+        },
+        "raw_change_rate": 0.5555555555555556
+      },
+      "parse_failures": 43,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.20512820512820512,
+            "correct": 8,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.15,
+            "correct": 6,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8648648648648649,
+            "correct": 32,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.43243243243243246,
+            "correct": 16,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.5,
+            "correct": 37,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.13513513513513514,
+            "correct": 5,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.5135135135135135,
+            "correct": 19,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.5555555555555556,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.19230769230769232,
+            "correct": 15,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.19230769230769232,
+          "correct": 15,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.15,
+          "correct": 6,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.20512820512820512,
+          "correct": 8,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1738.7227722772277,
+          "n": 303,
+          "total": 526833.0
+        },
+        "prompt_tokens": {
+          "mean": 10968.541254125412,
+          "n": 303,
+          "total": 3323468.0
+        },
+        "total_tokens": {
+          "mean": 12707.26402640264,
+          "n": 303,
+          "total": 3850301.0
+        }
+      }
+    },
+    "equal_token_reasoning": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.25316455696202533,
+          "correct": 20,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6351351351351351,
+          "correct": 47,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.16666666666666666,
+          "correct": 13,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.26732673267326734,
+        "correct": 81,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.7837837837837838,
+          "correct": 29,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.273972602739726,
+          "correct": 20,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.21621621621621623,
+          "correct": 8,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3561643835616438,
+          "correct": 26,
+          "n": 73
+        },
+        "raw_change_rate": 0.5833333333333334
+      },
+      "parse_failures": 12,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.28205128205128205,
+            "correct": 11,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.225,
+            "correct": 9,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.7837837837837838,
+            "correct": 29,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.5405405405405406,
+            "correct": 20,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6351351351351351,
+            "correct": 47,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.21621621621621623,
+            "correct": 8,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.6486486486486487,
+            "correct": 24,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          },
+          "raw_change_rate": 0.5833333333333334,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.16666666666666666,
+            "correct": 13,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.16666666666666666,
+          "correct": 13,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6351351351351351,
+          "correct": 47,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.225,
+          "correct": 9,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.28205128205128205,
+          "correct": 11,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1195.2970297029703,
+          "n": 303,
+          "total": 362175.0
+        },
+        "prompt_tokens": {
+          "mean": 11177.534653465347,
+          "n": 303,
+          "total": 3386793.0
+        },
+        "total_tokens": {
+          "mean": 12372.831683168317,
+          "n": 303,
+          "total": 3748968.0
+        }
+      }
+    },
+    "full_card_shuffle": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.17721518987341772,
+          "correct": 14,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.027777777777777776,
+          "correct": 2,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.20512820512820512,
+          "correct": 16,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.22772277227722773,
+        "correct": 69,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8648648648648649,
+          "correct": 32,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.2191780821917808,
+          "correct": 16,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.05555555555555555,
+          "correct": 2,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.13513513513513514,
+          "correct": 5,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.2602739726027397,
+          "correct": 19,
+          "n": 73
+        },
+        "raw_change_rate": 0.5
+      },
+      "parse_failures": 22,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.20512820512820512,
+            "correct": 8,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.15,
+            "correct": 6,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8648648648648649,
+            "correct": 32,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.43243243243243246,
+            "correct": 16,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.5,
+            "correct": 37,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.13513513513513514,
+            "correct": 5,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.5135135135135135,
+            "correct": 19,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.5,
+          "trap": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.20512820512820512,
+            "correct": 16,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.20512820512820512,
+          "correct": 16,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.027777777777777776,
+          "correct": 2,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.15,
+          "correct": 6,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.20512820512820512,
+          "correct": 8,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1736.950495049505,
+          "n": 303,
+          "total": 526296.0
+        },
+        "prompt_tokens": {
+          "mean": 10987.74587458746,
+          "n": 303,
+          "total": 3329287.0
+        },
+        "total_tokens": {
+          "mean": 12724.696369636964,
+          "n": 303,
+          "total": 3855583.0
+        }
+      }
+    },
+    "full_transition": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.17721518987341772,
+          "correct": 14,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.14102564102564102,
+          "correct": 11,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.2079207920792079,
+        "correct": 63,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8648648648648649,
+          "correct": 32,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.2191780821917808,
+          "correct": 16,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.13513513513513514,
+          "correct": 5,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.2602739726027397,
+          "correct": 19,
+          "n": 73
+        },
+        "raw_change_rate": 0.2222222222222222
+      },
+      "parse_failures": 64,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.20512820512820512,
+            "correct": 8,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.15,
+            "correct": 6,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8648648648648649,
+            "correct": 32,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.43243243243243246,
+            "correct": 16,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.5,
+            "correct": 37,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.13513513513513514,
+            "correct": 5,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.5135135135135135,
+            "correct": 19,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.2222222222222222,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.14102564102564102,
+            "correct": 11,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.14102564102564102,
+          "correct": 11,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.15,
+          "correct": 6,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.20512820512820512,
+          "correct": 8,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1730.0363036303631,
+          "n": 303,
+          "total": 524201.0
+        },
+        "prompt_tokens": {
+          "mean": 10920.22112211221,
+          "n": 303,
+          "total": 3308827.0
+        },
+        "total_tokens": {
+          "mean": 12650.257425742575,
+          "n": 303,
+          "total": 3833028.0
+        }
+      }
+    },
+    "medrgag_proxy": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.27848101265822783,
+          "correct": 22,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6891891891891891,
+          "correct": 51,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.08333333333333333,
+          "correct": 6,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.21794871794871795,
+          "correct": 17,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.31683168316831684,
+        "correct": 96,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.7567567567567568,
+          "correct": 28,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.3013698630136986,
+          "correct": 22,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.1111111111111111,
+          "correct": 4,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.24324324324324326,
+          "correct": 9,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3561643835616438,
+          "correct": 26,
+          "n": 73
+        },
+        "raw_change_rate": 0.8055555555555556
+      },
+      "parse_failures": 10,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.3333333333333333,
+            "correct": 13,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.225,
+            "correct": 9,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.7567567567567568,
+            "correct": 28,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.5945945945945946,
+            "correct": 22,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6891891891891891,
+            "correct": 51,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.24324324324324326,
+            "correct": 9,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.6486486486486487,
+            "correct": 24,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 2
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.1111111111111111,
+            "correct": 4,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.05555555555555555,
+            "correct": 2,
+            "n": 36
+          },
+          "raw_change_rate": 0.8055555555555556,
+          "trap": {
+            "accuracy": 0.1111111111111111,
+            "correct": 4,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.21794871794871795,
+            "correct": 17,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.21794871794871795,
+          "correct": 17,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.08333333333333333,
+          "correct": 6,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6891891891891891,
+          "correct": 51,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.225,
+          "correct": 9,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.3333333333333333,
+          "correct": 13,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 158.17161716171617,
+          "n": 303,
+          "total": 47926.0
+        },
+        "prompt_tokens": {
+          "mean": 3894.6600660066006,
+          "n": 303,
+          "total": 1180082.0
+        },
+        "total_tokens": {
+          "mean": 4052.831683168317,
+          "n": 303,
+          "total": 1228008.0
+        }
+      }
+    },
+    "parametric_transition": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.22784810126582278,
+          "correct": 18,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.22972972972972974,
+          "correct": 17,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.24358974358974358,
+          "correct": 19,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.18151815181518152,
+        "correct": 55,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.4864864864864865,
+          "correct": 18,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.0410958904109589,
+          "correct": 3,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.5135135135135135,
+          "correct": 19,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.1095890410958904,
+          "correct": 8,
+          "n": 73
+        },
+        "raw_change_rate": 0.5833333333333334
+      },
+      "parse_failures": 23,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.3076923076923077,
+            "correct": 12,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.15,
+            "correct": 6,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.4864864864864865,
+            "correct": 18,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.08108108108108109,
+            "correct": 3,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.22972972972972974,
+            "correct": 17,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.5135135135135135,
+            "correct": 19,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.1891891891891892,
+            "correct": 7,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "raw_change_rate": 0.5833333333333334,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.24358974358974358,
+            "correct": 19,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.24358974358974358,
+          "correct": 19,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.22972972972972974,
+          "correct": 17,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.15,
+          "correct": 6,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.3076923076923077,
+          "correct": 12,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1769.3993399339934,
+          "n": 303,
+          "total": 536128.0
+        },
+        "prompt_tokens": {
+          "mean": 8739.277227722772,
+          "n": 303,
+          "total": 2648001.0
+        },
+        "total_tokens": {
+          "mean": 10508.676567656767,
+          "n": 303,
+          "total": 3184129.0
+        }
+      }
+    },
+    "structured_no_transition": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.21518987341772153,
+          "correct": 17,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.6756756756756757,
+          "correct": 50,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.1794871794871795,
+          "correct": 14,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.2706270627062706,
+        "correct": 82,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.7027027027027027,
+          "correct": 26,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.273972602739726,
+          "correct": 20,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.2972972972972973,
+          "correct": 11,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.3835616438356164,
+          "correct": 28,
+          "n": 73
+        },
+        "raw_change_rate": 0.5833333333333334
+      },
+      "parse_failures": 25,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.23076923076923078,
+            "correct": 9,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.2,
+            "correct": 8,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.7027027027027027,
+            "correct": 26,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.5405405405405406,
+            "correct": 20,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.6756756756756757,
+            "correct": 50,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.2972972972972973,
+            "correct": 11,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.7567567567567568,
+            "correct": 28,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.5833333333333334,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.1794871794871795,
+            "correct": 14,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.1794871794871795,
+          "correct": 14,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.6756756756756757,
+          "correct": 50,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.2,
+          "correct": 8,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.23076923076923078,
+          "correct": 9,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 801.4257425742575,
+          "n": 303,
+          "total": 242832.0
+        },
+        "prompt_tokens": {
+          "mean": 7677.471947194719,
+          "n": 303,
+          "total": 2326274.0
+        },
+        "total_tokens": {
+          "mean": 8478.897689768977,
+          "n": 303,
+          "total": 2569106.0
+        }
+      }
+    },
+    "teacher_transition": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.21518987341772153,
+          "correct": 17,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.3783783783783784,
+          "correct": 28,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.1794871794871795,
+          "correct": 14,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.19471947194719472,
+        "correct": 59,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.7027027027027027,
+          "correct": 26,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.136986301369863,
+          "correct": 10,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.2972972972972973,
+          "correct": 11,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.1780821917808219,
+          "correct": 13,
+          "n": 73
+        },
+        "raw_change_rate": 0.027777777777777776
+      },
+      "parse_failures": 72,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.2564102564102564,
+            "correct": 10,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.175,
+            "correct": 7,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.7027027027027027,
+            "correct": 26,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.2702702702702703,
+            "correct": 10,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.3783783783783784,
+            "correct": 28,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.2972972972972973,
+            "correct": 11,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.35135135135135137,
+            "correct": 13,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.027777777777777776,
+          "trap": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.1794871794871795,
+            "correct": 14,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.1794871794871795,
+          "correct": 14,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.3783783783783784,
+          "correct": 28,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.175,
+          "correct": 7,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.2564102564102564,
+          "correct": 10,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1166.6501650165017,
+          "n": 303,
+          "total": 353495.0
+        },
+        "prompt_tokens": {
+          "mean": 6506.23102310231,
+          "n": 303,
+          "total": 1971388.0
+        },
+        "total_tokens": {
+          "mean": 7672.881188118812,
+          "n": 303,
+          "total": 2324883.0
+        }
+      }
+    },
+    "transition_no_comparator": {
+      "datasets": {
+        "clir": {
+          "accuracy": 0.16455696202531644,
+          "correct": 13,
+          "n": 79
+        },
+        "medcounterfact": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "medeinst": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "medpic": {
+          "accuracy": 0.24358974358974358,
+          "correct": 19,
+          "n": 78
+        }
+      },
+      "overall": {
+        "accuracy": 0.23102310231023102,
+        "correct": 70,
+        "n": 303
+      },
+      "pairs": {
+        "answer_invariance": {
+          "accuracy": 0.8648648648648649,
+          "correct": 32,
+          "n": 37
+        },
+        "both_correct": {
+          "accuracy": 0.2191780821917808,
+          "correct": 16,
+          "n": 73
+        },
+        "complete_pairs": 73,
+        "correct_change": {
+          "accuracy": 0.027777777777777776,
+          "correct": 1,
+          "n": 36
+        },
+        "incorrect_change": {
+          "accuracy": 0.13513513513513514,
+          "correct": 5,
+          "n": 37
+        },
+        "old_answer_persistence": {
+          "accuracy": 0.2602739726027397,
+          "correct": 19,
+          "n": 73
+        },
+        "raw_change_rate": 0.4166666666666667
+      },
+      "parse_failures": 49,
+      "slices": {
+        "clir": {
+          "forecast_interval": {
+            "accuracy": 0.1794871794871795,
+            "correct": 7,
+            "n": 39
+          },
+          "intervention_response": {
+            "accuracy": 0.15,
+            "correct": 6,
+            "n": 40
+          }
+        },
+        "medcounterfact": {
+          "answer_invariance": {
+            "accuracy": 0.8648648648648649,
+            "correct": 32,
+            "n": 37
+          },
+          "both_correct": {
+            "accuracy": 0.43243243243243246,
+            "correct": 16,
+            "n": 37
+          },
+          "complete_pairs": 37,
+          "evidence_conditioned_answer": {
+            "accuracy": 0.5,
+            "correct": 37,
+            "n": 74
+          },
+          "incorrect_change": {
+            "accuracy": 0.13513513513513514,
+            "correct": 5,
+            "n": 37
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.5135135135135135,
+            "correct": 19,
+            "n": 37
+          }
+        },
+        "medeinst": {
+          "bias_trap_rate": {
+            "accuracy": null,
+            "correct": 0,
+            "n": 0
+          },
+          "both_correct": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "complete_pairs": 36,
+          "control": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "correct_change": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          },
+          "old_answer_persistence": {
+            "accuracy": 0.0,
+            "correct": 0,
+            "n": 36
+          },
+          "raw_change_rate": 0.4166666666666667,
+          "trap": {
+            "accuracy": 0.027777777777777776,
+            "correct": 1,
+            "n": 36
+          }
+        },
+        "medpic": {
+          "exact_set": {
+            "accuracy": 0.24358974358974358,
+            "correct": 19,
+            "n": 78
+          }
+        }
+      },
+      "task_types": {
+        "action_selection": {
+          "accuracy": 0.24358974358974358,
+          "correct": 19,
+          "n": 78
+        },
+        "diagnosis_state_update": {
+          "accuracy": 0.013888888888888888,
+          "correct": 1,
+          "n": 72
+        },
+        "evidence_world_reasoning": {
+          "accuracy": 0.5,
+          "correct": 37,
+          "n": 74
+        },
+        "outcome_prediction": {
+          "accuracy": 0.15,
+          "correct": 6,
+          "n": 40
+        },
+        "temporal_forecasting": {
+          "accuracy": 0.1794871794871795,
+          "correct": 7,
+          "n": 39
+        }
+      },
+      "token_usage": {
+        "completion_tokens": {
+          "mean": 1468.8877887788778,
+          "n": 303,
+          "total": 445073.0
+        },
+        "prompt_tokens": {
+          "mean": 7920.207920792079,
+          "n": 303,
+          "total": 2399823.0
+        },
+        "total_tokens": {
+          "mean": 9389.095709570956,
+          "n": 303,
+          "total": 2844896.0
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "common_no_parse_failure_items": {
+      "comparisons": {
+        "full_transition-direct_rank": {
+          "ci95": [
+            -0.2079646017699115,
+            -0.048672566371681415
+          ],
+          "delta": -0.12831858407079647,
+          "n": 226
+        },
+        "full_transition-effect_shuffle": {
+          "ci95": [
+            -0.0958904109589041,
+            0.0136986301369863
+          ],
+          "delta": -0.0410958904109589,
+          "n": 73
+        },
+        "full_transition-equal_token_reasoning": {
+          "ci95": [
+            -0.1415929203539823,
+            -0.01327433628318584
+          ],
+          "delta": -0.0752212389380531,
+          "n": 226
+        },
+        "full_transition-full_card_shuffle": {
+          "ci95": [
+            -0.1232876712328767,
+            0.0136986301369863
+          ],
+          "delta": -0.0547945205479452,
+          "n": 73
+        },
+        "full_transition-medrgag_proxy": {
+          "ci95": [
+            -0.18584070796460178,
+            -0.07079646017699115
+          ],
+          "delta": -0.12389380530973451,
+          "n": 226
+        },
+        "full_transition-parametric_transition": {
+          "ci95": [
+            -0.02654867256637168,
+            0.11061946902654868
+          ],
+          "delta": 0.03982300884955752,
+          "n": 226
+        },
+        "full_transition-structured_no_transition": {
+          "ci95": [
+            -0.14601769911504425,
+            -0.017699115044247787
+          ],
+          "delta": -0.07964601769911504,
+          "n": 226
+        },
+        "full_transition-transition_no_comparator": {
+          "ci95": [
+            -0.05309734513274336,
+            -0.004424778761061947
+          ],
+          "delta": -0.02654867256637168,
+          "n": 226
+        }
+      },
+      "methods": {
+        "candidate_retrieval": {
+          "accuracy": 0.3805309734513274,
+          "correct": 86,
+          "n": 226
+        },
+        "decomposition_only": {
+          "accuracy": 0.3893805309734513,
+          "correct": 88,
+          "n": 226
+        },
+        "direct": {
+          "accuracy": 0.38495575221238937,
+          "correct": 87,
+          "n": 226
+        },
+        "direct_rank": {
+          "accuracy": 0.39823008849557523,
+          "correct": 90,
+          "n": 226
+        },
+        "effect_shuffle": {
+          "accuracy": 0.2831858407079646,
+          "correct": 64,
+          "n": 226
+        },
+        "equal_token_reasoning": {
+          "accuracy": 0.34513274336283184,
+          "correct": 78,
+          "n": 226
+        },
+        "full_card_shuffle": {
+          "accuracy": 0.28761061946902655,
+          "correct": 65,
+          "n": 226
+        },
+        "full_transition": {
+          "accuracy": 0.26991150442477874,
+          "correct": 61,
+          "n": 226
+        },
+        "medrgag_proxy": {
+          "accuracy": 0.3938053097345133,
+          "correct": 89,
+          "n": 226
+        },
+        "parametric_transition": {
+          "accuracy": 0.23008849557522124,
+          "correct": 52,
+          "n": 226
+        },
+        "structured_no_transition": {
+          "accuracy": 0.3495575221238938,
+          "correct": 79,
+          "n": 226
+        },
+        "teacher_transition": {
+          "accuracy": 0.252212389380531,
+          "correct": 57,
+          "n": 226
+        },
+        "transition_no_comparator": {
+          "accuracy": 0.29646017699115046,
+          "correct": 67,
+          "n": 226
+        }
+      }
+    },
+    "exclude_medeinst": {
+      "comparisons": {
+        "full_transition-direct_rank": {
+          "ci95": [
+            -0.19913419913419914,
+            -0.03896103896103896
+          ],
+          "delta": -0.12121212121212122,
+          "n": 231
+        },
+        "full_transition-effect_shuffle": {
+          "ci95": [
+            -0.11538461538461539,
+            0.0
+          ],
+          "delta": -0.05128205128205128,
+          "n": 78
+        },
+        "full_transition-equal_token_reasoning": {
+          "ci95": [
+            -0.14285714285714285,
+            -0.017316017316017316
+          ],
+          "delta": -0.07792207792207792,
+          "n": 231
+        },
+        "full_transition-full_card_shuffle": {
+          "ci95": [
+            -0.1282051282051282,
+            0.0
+          ],
+          "delta": -0.0641025641025641,
+          "n": 78
+        },
+        "full_transition-medrgag_proxy": {
+          "ci95": [
+            -0.1774891774891775,
+            -0.06493506493506493
+          ],
+          "delta": -0.12121212121212122,
+          "n": 231
+        },
+        "full_transition-parametric_transition": {
+          "ci95": [
+            -0.03463203463203463,
+            0.09956709956709957
+          ],
+          "delta": 0.03463203463203463,
+          "n": 231
+        },
+        "full_transition-structured_no_transition": {
+          "ci95": [
+            -0.15151515151515152,
+            -0.021645021645021644
+          ],
+          "delta": -0.08225108225108226,
+          "n": 231
+        },
+        "full_transition-transition_no_comparator": {
+          "ci95": [
+            -0.05627705627705628,
+            -0.008658008658008658
+          ],
+          "delta": -0.030303030303030304,
+          "n": 231
+        }
+      },
+      "methods": {
+        "candidate_retrieval": {
+          "accuracy": 0.38095238095238093,
+          "correct": 88,
+          "n": 231
+        },
+        "decomposition_only": {
+          "accuracy": 0.38961038961038963,
+          "correct": 90,
+          "n": 231
+        },
+        "direct": {
+          "accuracy": 0.38095238095238093,
+          "correct": 88,
+          "n": 231
+        },
+        "direct_rank": {
+          "accuracy": 0.38961038961038963,
+          "correct": 90,
+          "n": 231
+        },
+        "effect_shuffle": {
+          "accuracy": 0.2857142857142857,
+          "correct": 66,
+          "n": 231
+        },
+        "equal_token_reasoning": {
+          "accuracy": 0.3463203463203463,
+          "correct": 80,
+          "n": 231
+        },
+        "full_card_shuffle": {
+          "accuracy": 0.29004329004329005,
+          "correct": 67,
+          "n": 231
+        },
+        "full_transition": {
+          "accuracy": 0.2683982683982684,
+          "correct": 62,
+          "n": 231
+        },
+        "medrgag_proxy": {
+          "accuracy": 0.38961038961038963,
+          "correct": 90,
+          "n": 231
+        },
+        "parametric_transition": {
+          "accuracy": 0.23376623376623376,
+          "correct": 54,
+          "n": 231
+        },
+        "structured_no_transition": {
+          "accuracy": 0.35064935064935066,
+          "correct": 81,
+          "n": 231
+        },
+        "teacher_transition": {
+          "accuracy": 0.2554112554112554,
+          "correct": 59,
+          "n": 231
+        },
+        "transition_no_comparator": {
+          "accuracy": 0.2987012987012987,
+          "correct": 69,
+          "n": 231
+        }
+      }
+    },
+    "pairwise_complete_case": {
+      "full_transition-direct_rank": {
+        "ci95": [
+          -0.19246861924686193,
+          -0.04184100418410042
+        ],
+        "delta": -0.11715481171548117,
+        "n": 239
+      },
+      "full_transition-effect_shuffle": {
+        "ci95": [
+          -0.08333333333333333,
+          0.011904761904761904
+        ],
+        "delta": -0.03571428571428571,
+        "n": 84
+      },
+      "full_transition-equal_token_reasoning": {
+        "ci95": [
+          -0.13389121338912133,
+          -0.016736401673640166
+        ],
+        "delta": -0.07112970711297072,
+        "n": 239
+      },
+      "full_transition-full_card_shuffle": {
+        "ci95": [
+          -0.10588235294117647,
+          0.011764705882352941
+        ],
+        "delta": -0.047058823529411764,
+        "n": 85
+      },
+      "full_transition-medrgag_proxy": {
+        "ci95": [
+          -0.17154811715481172,
+          -0.06276150627615062
+        ],
+        "delta": -0.11715481171548117,
+        "n": 239
+      },
+      "full_transition-parametric_transition": {
+        "ci95": [
+          -0.02531645569620253,
+          0.0970464135021097
+        ],
+        "delta": 0.0379746835443038,
+        "n": 237
+      },
+      "full_transition-structured_no_transition": {
+        "ci95": [
+          -0.14285714285714285,
+          -0.012605042016806723
+        ],
+        "delta": -0.07563025210084033,
+        "n": 238
+      },
+      "full_transition-transition_no_comparator": {
+        "ci95": [
+          -0.05063291139240506,
+          -0.004219409282700422
+        ],
+        "delta": -0.02531645569620253,
+        "n": 237
+      }
+    }
+  },
+  "transition_mechanism": {
+    "cards_judged": 100,
+    "claim_citation_rate": 0.381620931716656,
+    "claim_entailment_rate": 0.6688963210702341,
+    "claims": 1567,
+    "contradiction_rate": 0.09572431397574985,
+    "hard_prohibited_string_rate": 0.0,
+    "judge_option_leakage_rate": 0.02169751116783663,
+    "method": "full_transition",
+    "prohibited_leakage_rate": 0.02169751116783663,
+    "unsupported_claim_rate": 0.6081684747925973
+  },
+  "world_model_hypothesis": "negative",
+  "world_model_hypothesis_reason": "At least one required overall, shuffle, parametric, grounding, or MedPIC/CLIR transition-task condition was not met."
+}

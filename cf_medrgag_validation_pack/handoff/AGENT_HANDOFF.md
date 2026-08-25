@@ -2,28 +2,28 @@
 
 ## Current state
 
-The requested public-data pilot is complete. Gate C passed, Gate D failed the frozen mechanism gates, and the run stopped before Gate E by design.
+The revised gold-free experiment requested after the historical Gate B–D pilot is complete. Its fresh, gold-unseen analysis contains 303 items and 13 methods. The result is negative: `full_transition` is below the local MedRGAG proxy, direct rank, structured no-transition, and equal-token reasoning; both shuffle controls are more accurate than the unshuffled method.
 
-- Final decision: `NO-GO_AFTER_GATE_D`
+- Scientific conclusion: current implementation does not establish a distinct world-model effect
 - Branch at handoff: `main`
 - Repository: `xiotakut/cf_mrg`
-- Canonical pilot: balanced60, seed 13
+- Revised analysis: 303 items, seed 13 runner/bootstrap
 - Model: local Meta-Llama-3.1-8B-Instruct
-- Final implementation tests: 27/27 passed
-- Gate-D LLM tokens: 4,108,920
+- Final revised outputs: 3,939 predictions, 1,818 card rows, 100 judged cards / 1,567 judged claims
+- Final implementation tests: 71/71 passed
 - GPU state after the run: GPUs 0–2 released; GPU 3 belongs to an unrelated Qwen process
 
-Do not start the full three-seed Gate E run unless the user explicitly changes the frozen decision or supplies the missing benchmark units.
+Read `results/summary.md` and `results/metrics.json` before changing prompts. The analysis is gold-unseen but not a pristine untouched held-out benchmark: parser contracts were repaired against outputs from an initial 320-item draw, and the 17 triggering/debug counterpart items were excluded before gold scoring. Do not reinterpret the MedEinst branch without addressing its documented open-answer placeholder failure on a genuinely new sample.
 
 ## Read in this order
 
 1. `AGENTS.md`
 2. `PROJECT_PLAN.md`
-3. `GATE_A_RESULTS.md`
-4. `GATE_B_D_RESULTS.md`
-5. `handoff/EXPERIMENT_CHRONOLOGY.md`
-6. `configs/experiments.yaml` and `configs/no_go.yaml`
-7. `results/gate-b-real-20260824-seed13-v4/canonical-comparison-M0-M12.json`
+3. `results/summary.md` and `results/metrics.json`
+4. `scripts/run_experiments.py`, `scripts/evaluate.py`, and `scripts/inspect_mechanism.py`
+5. `GATE_A_RESULTS.md` and `GATE_B_D_RESULTS.md` for historical context
+6. `handoff/EXPERIMENT_CHRONOLOGY.md`
+7. `results/gate-b-real-20260824-seed13-v4/canonical-comparison-M0-M12.json` for the old pilot only
 
 Visible main-agent and SubAgent transcripts are in `handoff/transcripts/`. They intentionally contain task/user messages and visible commentary/final messages only; hidden reasoning, system/developer instructions, tool-internal payloads, and credentials are not exported.
 
@@ -37,11 +37,25 @@ Visible main-agent and SubAgent transcripts are in `handoff/transcripts/`. They 
 | `scripts/score_gate_b.py` | Dataset-aware row and complete-pair scoring |
 | `scripts/run_gate_d.py` | Three-phase Gate-D runner for M3–M11 |
 | `scripts/summarize_gate_results.py` | Canonical overall, dataset, pair, and slice aggregation |
-| `tests/` | 27 unit/integration tests for Gate A, runners, scoring, and aggregation |
+| `scripts/run_experiments.py` | Revised 13-condition, gold-free, task-routed runner |
+| `scripts/evaluate.py` | Offline gold join, dataset/pair metrics, paired bootstrap, and sensitivity analysis |
+| `scripts/inspect_mechanism.py` | Automated claim/evidence grounding and leakage inspection |
+| `tests/` | 71 passing unit/integration tests for historical and revised paths |
 
 Gate-D execution is deliberately split into separate `state`, `retrieval`, and `run` processes. This avoids loading vLLM and MedCPT in the same GPU lifecycle.
 
 ## Canonical artifacts
+
+Current revised artifacts:
+
+- `results/heldout.inference.jsonl` and `results/heldout.gold.jsonl`: fixed 303-item analysis split.
+- `results/medrgag_documents.jsonl`: selected/reranked proxy evidence for all 303 items.
+- `results/predictions.jsonl` and `results/cards.jsonl`: complete revised predictions/cards.
+- `results/metrics.csv`, `results/metrics.json`, and `results/summary.md`: final evaluation.
+- `results/mechanism_judgments.jsonl` and `results/mechanism_metrics.json`: fixed automated inspection.
+- `results/debug_exclusions.json`: all 17 pre-score exclusions and reasons.
+
+Historical pilot artifacts:
 
 - `results/balanced60-seed13/`: the exact 60 inference/gold rows needed to inspect and rescore this pilot.
 - `results/gate-a-public-20260823-seed13-v3/`: final Gate-A manifest and report. Raw downloaded datasets are rebuilt through `prepare_gate_a.py`.

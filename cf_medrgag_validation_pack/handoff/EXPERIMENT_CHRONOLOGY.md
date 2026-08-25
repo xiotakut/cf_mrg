@@ -173,3 +173,38 @@ The initial exact-token implementation generated one item at a time and was too 
 ## 10. Final decision
 
 The full result table is in `GATE_B_D_RESULTS.md`. Gate E was rejected because only one of four frozen continuation checks passed. This is the completed experimental outcome, not an unfinished run.
+
+## 11. Revised gold-free experiment
+
+The follow-up implementation replaced the invalid M12 concept and removed M12 from the active historical runner. M12 had marked the correct answer as supported/selected and was a label oracle, not a transition oracle. `teacher_transition` now receives no gold, pair member, correct candidate, or answer label and emits only neutral transition fields.
+
+The revised runner added the requested task-specific routes and controls without creating a new gate framework:
+
+- option-independent cards for action selection;
+- option-hidden free transition followed by a matcher for CLIR outcome/forecast tasks;
+- explicit diagnosis-state updating for MedEinst;
+- fixed-evidence-world conclusion plus separate safety flag for MedCounterFact;
+- direct rank, structured no-transition, candidate retrieval, equal-token reasoning, transition/no-comparator, grounded/parametric/teacher cards, and two shuffles;
+- claim-level citations with empty unsupported IDs, a text-based automated evidence judge, and dataset-specific reader schemas.
+
+### Fresh sample and contract debugging
+
+The deterministic initial draw contained 320 examples: 80 each from MedPIC, CLIR, MedEinst, and MedCounterFact. It had zero overlap with balanced60 or prior result artifacts. CLIR was restricted to t6 and t8 because t7/t10 expose no usable pre-anchor patient observations after targets are removed.
+
+During a sharded dry start, model outputs exposed several parser/contract defects: teacher JSON shape, structured compact repair, transition-card truncation, evidence-world reader/matcher shape, MedEinst duplicate hypotheses, and direct-rank diagnosis mapping. Each change kept the first prompt or scientific semantics fixed where possible, used one repair, and stopped silently replacing invalid output. Triggering items and official-pair counterparts were removed without reading correctness. The final analysis contains 303 items; exact IDs/reasons are in `results/debug_exclusions.json`.
+
+After the final freeze, any remaining one-repair failure was persisted as null/incorrect and execution continued. Shared state failures fan out to all state-dependent methods while direct/proxy still run. This eliminated sample deletion based on parse success.
+
+### Real run
+
+Three GPU shards produced 3,939 predictions (13 × 303) and 1,818 card rows (6 × 303). Every method covers the same ID set. Both shuffles have 150 applicable MedPIC/MedEinst rows and 153 fixed-action not-applicable rows. Mechanical merge normalization only canonicalized exact option-text aliases, safety aliases, state logging, shuffle provenance, and applicability metadata; it did not change medical answers.
+
+The online run had 35 explicit contract failures. Post-run inspection found 326 additional MedEinst method rows that copied the schema placeholder `concise diagnosis`; these were uniformly marked null/incorrect without gold. The code now rejects that placeholder, but the rows were not regenerated after inspecting the fresh outputs. Consequently MedEinst is treated as an invalid branch for mechanism interpretation, with non-MedEinst and common-clean sensitivities reported.
+
+### Mechanism inspection and evaluation
+
+The fixed automated sample judged 100 full-transition cards and 1,567 claims. Valid citation rate was 38.2%; entailment among cited claims 66.9%; unsupported 60.8%; contradiction 9.6%. The prohibited-string scan was 0%; the model judge separately flagged 2.2% for possible option leakage.
+
+Final accuracy was 20.8% for full transition, versus 31.7% proxy, 30.7% direct rank, 27.1% structured no-transition, and 26.7% equal-token reasoning. On applicable items, effect shuffle and full-card shuffle exceeded full transition by 2.7 and 4.0 percentage points. Excluding MedEinst or every item with any parse failure leaves the same negative ordering.
+
+The canonical revised results and exact confidence intervals are in `results/summary.md` and `results/metrics.json`. This result is fresh and gold-unseen, but because contracts were debugged on the initial draw it must not be described as a pristine untouched held-out benchmark.
