@@ -1,144 +1,104 @@
-# DeltaRev-MedRGAG validation pack
+# DeltaRank-MedRGAG validation pack
 
-The current experiment is **DeltaRev-MedRGAG: Selective Counterfactual Decision Revision**. It keeps the existing MedRGAG proxy unchanged and applies a conservative, evidence-constrained residual update: preserve the exact baseline answer unless verified evidence both refutes it and supports an alternative.
+DeltaRank-MedRGAG tests **Structured Counterfactual Delta + Closed-Set Diagnostic Ranking**.
+It evaluates ranking capability before applying an optional residual margin policy. NICE, the
+old atomic-rule extractor, and the old hard conjunctive gate are not used. No world-model claim
+is made.
 
-This is not a world-model experiment or claim. The earlier transition-card/world-model work is historical; see [`GATE_B_D_RESULTS.md`](GATE_B_D_RESULTS.md) and [`handoff/`](handoff/).
+## Result
 
-## Data and availability
+The frozen pilot used 300 official MedEinst train/reference pairs for development and 300
+official test pairs. Key test results:
 
-- Main pilot: 200 complete MedEinst control/trap pairs, with control as the original case and trap as the target.
-- Split: 40 development and 160 test pairs, grouped by unordered diagnosis family so no family crosses splits. Pairs used by the earlier 303-item analysis are excluded.
-- MedPIC: 0 locally available official linked pairs, so it is unavailable for this paired pilot.
-- NICE: unavailable and not replaced by KGCC-generated text. `without_nice` is NA.
-- Official edit metadata, decisive source spans, and retrieval relevance references are unavailable for MedEinst. Gold-delta accuracy, source-rule upper bounds, Recall@5/10, MRR, and evidence-coverage accuracy are therefore NA.
-- The local all-Llama `medrgag_proxy` reuses the repository's M2 retrieval/KGCC/KADS/reader path; it is not an exact reproduction of the published MedRGAG model configuration.
+| Method | Accuracy | R@5 | R@10 | Repairs | Harms | Conditional harm | Net |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| legacy open MedRGAG | 10.33% | — | — | 6 | 111 | 81.62% | -35.00% |
+| MedRGAG MCQ, 2-way | 59.00% | — | — | 62 | 21 | 15.44% | +13.67% |
+| MedRGAG MCQ, 4-way baseline | 45.33% | — | — | 0 | 0 | 0.00% | 0.00% |
+| target-only ranker | 13.33% | 45.67% | 55.33% | 21 | 117 | 86.03% | -32.00% |
+| delta-profile ranker | 27.67% | 49.00% | 61.00% | 25 | 78 | 57.35% | -17.67% |
+| residual, dev-selected threshold 4 | 46.33% | — | — | 5 | 2 | 1.47% | +1.00% |
 
-Inference reads only the answer-free pilot file. Gold is joined offline by the evaluator and is never passed to delta detection, retrieval, rule extraction, verification, gating, or revision.
+The residual threshold was **not** a useful development operating point: dev had 3 repairs,
+4 harms, and -0.33% net correction, and no development threshold had positive net correction.
+Therefore the pilot does not support the residual-augmentation hypothesis. Real delta/profile
+reranking beat both shuffles, but candidate R@10 reached only 61%, below the predefined
+capability target. See [`results_deltarank/summary.md`](results_deltarank/summary.md).
 
-## Current result
+## Data and environment
 
-On the frozen 160-pair test split, the local `medrgag_proxy` achieved 9.38% strict normalized exact-match trap accuracy, 10.00% control accuracy, 0.63% both-correct pair accuracy, 21.25% old-answer persistence, and 56.25% Bias Trap Rate among 16 control-correct pairs. Both development harm budgets selected the inclusive threshold `score >= 1.0`. `full_deltarev` revised 1/160 answers, repaired 0 baseline errors, harmed 0 baseline-correct answers, and obtained zero net correction.
+- Development: 300 complete official MedEinst train/reference pairs.
+- Test: 300 complete official MedEinst test pairs, used only after prompts and scoring froze.
+- Ontology: all 49 official DDXPlus conditions; 46 occur in the downloaded train/test files.
+- Profiles: deterministic `release_conditions.json` and `release_evidences.json` data.
+- Model: local `Meta-Llama-3.1-8B-Instruct` through the existing MedRGAG vLLM environment.
+- `medrgag_mcq_proxy` reuses retrieval → KGCC → KADS → reader with real answer options. It is
+  a local all-Llama proxy, not the published mixed-model configuration.
 
-The run also diagnosed implementation bottlenecks: LLM-only delta extraction produced 0/200 usable outputs, and atomic-rule extraction failed its contract on 72.74% of applicable rows. The result is therefore **not support** for the current selective-revision hypothesis, but it is not a structural falsification of the architecture. No MedCounterFact/MediEval extension or world-model claim was made. Accuracy uses NFKC/casefold/whitespace/terminal-punctuation normalized exact match; no post-hoc clinical-equivalence rescoring was applied. Full details are in [`results/summary.md`](results/summary.md).
-
-## Environment
-
-Assumptions: Python 3 in the existing MedRGAG environment, CUDA and vLLM, the local Meta-Llama-3.1-8B-Instruct checkpoint, local Textbooks/Wikipedia BM25 indexes, and the local MedCPT checkpoint.
-
-Run commands below from this directory. The raw MedEinst path matches the checked local snapshot.
+Private source data and expensive caches are ignored by git.
 
 ## Prepare
 
 ```bash
-python3 scripts/run_deltarev.py prepare \
-  --raw private_data/gate-a-public-20260823-seed13-v3/raw/medeinst/354f4b527e764a8f2bebea8f71be55e0a6966402/00-test.jsonl \
-  --exclude-gold results/heldout.gold.jsonl \
-  --inference results/deltarev.inference.jsonl \
-  --gold results/deltarev.gold.jsonl \
-  --seed 13
+python3 scripts/run_deltarank.py prepare \
+  --train-raw private_data/deltarank_sources/medeinst_train.jsonl \
+  --test-raw private_data/gate-a-public-20260823-seed13-v3/raw/medeinst/354f4b527e764a8f2bebea8f71be55e0a6966402/00-test.jsonl \
+  --conditions private_data/deltarank_sources/release_conditions.json \
+  --evidences private_data/deltarank_sources/release_evidences.json \
+  --output-dir results_deltarank --dev-pairs 300 --test-pairs 300 --seed 13
 ```
 
-## Single-GPU baseline and run
+## Run
+
+Run a 20-pair smoke test first:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python3 scripts/run_deltarev.py baseline \
-  --inference results/deltarev.inference.jsonl \
-  --output-dir results/baseline_work \
-  --output results/baseline.jsonl \
-  --model /home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct
-
-CUDA_VISIBLE_DEVICES=0 python3 scripts/run_deltarev.py run \
-  --inference results/deltarev.inference.jsonl \
-  --baseline results/baseline.jsonl \
-  --output-dir results \
-  --model /home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct
+CUDA_VISIBLE_DEVICES=0 /home/data3/txy/MedRGAG/.venv/bin/python scripts/run_deltarank.py run \
+  --data results_deltarank/dev.jsonl \
+  --labels results_deltarank/labels.json \
+  --profiles results_deltarank/cache/profiles.json \
+  --deltas results_deltarank/deltas.jsonl \
+  --output-dir results_deltarank/cache/smoke \
+  --model /home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct \
+  --limit 20
 ```
 
-## Three-GPU sharded baseline, run, and merge
-
-Each shard writes a separate directory; concurrent processes never append to the same JSONL.
+For the formal run, launch three independent shards with `--shard-index 0|1|2` and
+`--shard-count 3`, then merge:
 
 ```bash
-for shard in 0 1 2; do
-  CUDA_VISIBLE_DEVICES=$shard python3 scripts/run_deltarev.py baseline \
-    --inference results/deltarev.inference.jsonl \
-    --output-dir results/baseline_work \
-    --output results/baseline_shards/baseline.jsonl \
-    --model /home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct \
-    --shard-index $shard --shard-count 3 &
-done
-wait
+python3 scripts/run_deltarank.py merge --kind mcq \
+  --inputs results_deltarank/cache/formal/shard-*/mcq_predictions.jsonl \
+  --output results_deltarank/predictions_mcq.jsonl
 
-python3 scripts/run_deltarev.py merge --kind baseline \
-  --inputs results/baseline_shards/shard-000-of-003/baseline.jsonl \
-           results/baseline_shards/shard-001-of-003/baseline.jsonl \
-           results/baseline_shards/shard-002-of-003/baseline.jsonl \
-  --output results/baseline.jsonl
-
-for shard in 0 1 2; do
-  CUDA_VISIBLE_DEVICES=$shard python3 scripts/run_deltarev.py run \
-    --inference results/deltarev.inference.jsonl \
-    --baseline results/baseline.jsonl \
-    --output-dir results/run_shards \
-    --model /home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct \
-    --shard-index $shard --shard-count 3 &
-done
-wait
-
-for kind in proposals deltas retrieval rules; do
-  name=$kind
-  [ "$kind" = proposals ] && name=raw_proposals
-  python3 scripts/run_deltarev.py merge --kind "$kind" \
-    --inputs results/run_shards/shard-000-of-003/$name.jsonl \
-             results/run_shards/shard-001-of-003/$name.jsonl \
-             results/run_shards/shard-002-of-003/$name.jsonl \
-    --output results/$name.jsonl
-done
+python3 scripts/run_deltarank.py merge --kind candidates \
+  --inputs results_deltarank/cache/formal/shard-*/candidate_scores.jsonl \
+  --output results_deltarank/candidate_scores.jsonl
 ```
-
-The proposals merge also normalizes dependency failures from the sibling delta, retrieval, and rule artifacts. Missing dependencies fail closed.
 
 ## Evaluate
 
 ```bash
-python3 scripts/evaluate_deltarev.py \
-  --gold results/deltarev.gold.jsonl \
-  --baseline results/baseline.jsonl \
-  --proposals results/raw_proposals.jsonl \
-  --deltas results/deltas.jsonl \
-  --retrieval results/retrieval.jsonl \
-  --rules results/rules.jsonl \
-  --output-dir results \
-  --bootstrap-samples 1000
+python3 scripts/evaluate_deltarank.py \
+  --dev results_deltarank/dev.jsonl \
+  --test results_deltarank/test.jsonl \
+  --labels results_deltarank/labels.json \
+  --deltas results_deltarank/deltas.jsonl \
+  --mcq results_deltarank/predictions_mcq.jsonl \
+  --candidates results_deltarank/candidate_scores.jsonl \
+  --output-dir results_deltarank
 ```
 
-The commands above regenerate `results/raw_proposals.jsonl`. In this completed checkout, the frozen intermediate proposal cache used for the reported evaluation is `results/cache/raw_proposals.jsonl`; substitute that path to rerun only the evaluator without rerunning inference.
+Thresholds are selected on development data only. Invalid final outputs count as wrong and are
+never converted to PRESERVE.
 
-Thresholds are selected on development only. Test gold is used only for final offline reporting and the separately labeled oracle-gate diagnostic.
+## Methods and outputs
 
-## Methods
+Methods: `legacy_open_medrgag`, `direct_mcq`, `medrgag_mcq_proxy`,
+`target_only_ranker`, `medrgag_evidence_ranker`, `full_pair_ranker`,
+`pair_aware_ranker`, `delta_profile_ranker`, `delta_always_apply`, `delta_residual`,
+`shuffled_delta`, and `shuffled_profile`. Oracle top-5/top-10 selectors are diagnostics only.
 
-- Base and simple baselines: `direct`, `medrgag_proxy`, `decomposition_only`, `direct_counterfactual_prompt`, `direct_answer_revision`, `always_preserve`, `always_revise`, `llm_verifier_without_evidence`.
-- Retrieval readers: `standard_question_retrieval`, `candidate_specific_retrieval`, `ea_rag_style_retrieval`, `delta_only_retrieval`, `triangular_decision_change_retrieval`. EA-RAG-style is a coverage-audit proxy, not an exact reproduction.
-- Evidence-constrained residual methods: `evidence_verifier_with_standard_retrieval`, `evidence_verifier_with_ea_rag_retrieval`, `full_deltarev`.
-- Ablations and mechanism controls: `without_delta`, `without_baseline_answer_in_query`, `refute_only_retrieval`, `without_preserve_evidence`, `without_alternative_support_requirement`, `without_entailment_check`, `without_patient_applicability_check`, `shuffled_delta`, `shuffled_rule_evidence`, and `kgcc_generated_docs_as_decisive_evidence` (negative control only).
-- `without_nice` is unavailable/NA because NICE is unavailable.
-
-## Outputs
-
-Final outputs:
-
-- `results/predictions.jsonl`
-- `results/deltas.jsonl`
-- `results/retrieval.jsonl`
-- `results/rules.jsonl`
-- `results/metrics.csv`
-- `results/metrics.json`
-- `results/tradeoff.csv`
-- `results/summary.md`
-
-Intermediate caches are `results/deltarev.inference.jsonl`, `results/deltarev.gold.jsonl` (offline evaluation only), `results/baseline.jsonl`, `results/raw_proposals.jsonl`, and the optional shard work directories. Artifact coverage and contract diagnostics do not substitute for unavailable official delta accuracy or retrieval Recall/MRR.
-
-## Historical work
-
-The balanced60 and 303-item transition-card experiments, including their negative world-model result, remain documented in [`GATE_B_D_RESULTS.md`](GATE_B_D_RESULTS.md) and [`handoff/`](handoff/). They are debugging/comparison history, not a new untouched test set and not the current pipeline.
+Final outputs are under [`results_deltarank/`](results_deltarank/): `labels.json`, `dev.jsonl`,
+`test.jsonl`, `deltas.jsonl`, `candidate_scores.jsonl`, `predictions.jsonl`, `metrics.json`,
+`metrics.csv`, `tradeoff.csv`, and `summary.md`.
