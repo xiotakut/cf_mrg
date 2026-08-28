@@ -1,0 +1,146 @@
+{
+  "experts": [
+    "medrgag_selected_evidence_score",
+    "direct_target_logprob",
+    "cf_shift_profile_score",
+    "no_medrgag_evidence"
+  ],
+  "fitted": {
+    "global_nonnegative_linear_fusion": {
+      "calibration_variants": [
+        {
+          "calibration_accuracy": 0.665,
+          "regularization": 0.0
+        },
+        {
+          "calibration_accuracy": 0.665,
+          "regularization": 0.01
+        },
+        {
+          "calibration_accuracy": 0.66,
+          "regularization": 0.1
+        },
+        {
+          "calibration_accuracy": 0.635,
+          "regularization": 1.0
+        }
+      ],
+      "regularization": 0.0,
+      "weights": {
+        "cf_shift_profile_score": 0.6049897931943982,
+        "direct_target_logprob": 0.0,
+        "medrgag_selected_evidence_score": 0.0,
+        "no_medrgag_evidence": 0.675047807366471
+      }
+    },
+    "logistic_stacking": {
+      "calibration_variants": [
+        {
+          "calibration_accuracy": 0.745,
+          "regularization": 0.0
+        },
+        {
+          "calibration_accuracy": 0.75,
+          "regularization": 0.01
+        },
+        {
+          "calibration_accuracy": 0.735,
+          "regularization": 0.1
+        },
+        {
+          "calibration_accuracy": 0.635,
+          "regularization": 1.0
+        }
+      ],
+      "regularization": 0.01,
+      "weights": {
+        "cf_shift_profile_score": 1.1097198564546793,
+        "direct_target_logprob": -0.1761508053074906,
+        "medrgag_selected_evidence_score": -0.8224126474691994,
+        "no_medrgag_evidence": 1.112142597078919
+      }
+    }
+  },
+  "naming_correction": "The historical 64.4% no_medrgag_evidence score is direct pair-relative and has no DDX profile term; profile_no_document is reported separately.",
+  "profile_no_document_accuracy": {
+    "calibration": 0.82,
+    "dev": 0.7825,
+    "fresh_test": 0.798
+  },
+  "splits": {
+    "calibration": {
+      "accuracy": {
+        "cf_shift_profile_score": 0.565,
+        "direct_target_logprob": 0.53,
+        "global_nonnegative_linear_fusion": 0.665,
+        "logistic_stacking": 0.75,
+        "medrgag_selected_evidence_score": 0.41,
+        "no_medrgag_evidence": 0.64,
+        "oracle_expert_selector": 0.795,
+        "uniform_average": 0.555
+      },
+      "distinct_expert_predictions": {
+        "1": 90,
+        "2": 101,
+        "3": 8,
+        "4": 1
+      },
+      "n": 200,
+      "unique_repairs": {
+        "cf_shift_profile_score": 14,
+        "direct_target_logprob": 1,
+        "medrgag_selected_evidence_score": 1,
+        "no_medrgag_evidence": 11
+      }
+    },
+    "dev": {
+      "accuracy": {
+        "cf_shift_profile_score": 0.61875,
+        "direct_target_logprob": 0.51,
+        "global_nonnegative_linear_fusion": 0.66,
+        "logistic_stacking": 0.725,
+        "medrgag_selected_evidence_score": 0.4375,
+        "no_medrgag_evidence": 0.61,
+        "oracle_expert_selector": 0.77125,
+        "uniform_average": 0.56375
+      },
+      "distinct_expert_predictions": {
+        "1": 386,
+        "2": 362,
+        "3": 52
+      },
+      "n": 800,
+      "unique_repairs": {
+        "cf_shift_profile_score": 60,
+        "direct_target_logprob": 4,
+        "medrgag_selected_evidence_score": 0,
+        "no_medrgag_evidence": 36
+      }
+    },
+    "fresh_test": {
+      "accuracy": {
+        "cf_shift_profile_score": 0.6,
+        "direct_target_logprob": 0.536,
+        "global_nonnegative_linear_fusion": 0.656,
+        "logistic_stacking": 0.71,
+        "medrgag_selected_evidence_score": 0.442,
+        "no_medrgag_evidence": 0.644,
+        "oracle_expert_selector": 0.796,
+        "uniform_average": 0.574
+      },
+      "distinct_expert_predictions": {
+        "1": 227,
+        "2": 234,
+        "3": 39
+      },
+      "n": 500,
+      "unique_repairs": {
+        "cf_shift_profile_score": 41,
+        "direct_target_logprob": 4,
+        "medrgag_selected_evidence_score": 1,
+        "no_medrgag_evidence": 22
+      }
+    }
+  },
+  "status": "exploratory_only_existing_500_was_previously_observed"
+}

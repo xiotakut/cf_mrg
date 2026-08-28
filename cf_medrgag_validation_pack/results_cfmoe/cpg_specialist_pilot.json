@@ -1,0 +1,88 @@
+{
+  "accuracy": 0.4,
+  "cases_with_peer_discussion_round": 0,
+  "cases_with_round0_early_consensus": 5,
+  "invalid_count": 0,
+  "n": 5,
+  "official_code_role": "post-core pilot only; excluded from fusion and confirmatory test claims",
+  "official_repository_commit": "265d1aea88f705063bb7ff2d686547d373da7e09",
+  "protocol": "fixed first dev cases; trap-only four-option specialist/judge pilot; Round 0 plus at most one peer-discussion round; max_rounds=1",
+  "rows": [
+    {
+      "actual_max_round": 0,
+      "case_id": "dev-case_39262",
+      "consensus": {
+        "diagnosis": "bronchospasm / acute asthma exacerbation",
+        "had_consensus": true
+      },
+      "early_consensus_after_round0": true,
+      "error": null,
+      "gold_diagnosis": "Acute COPD exacerbation / infection",
+      "peer_discussion_round_run": false,
+      "prediction": "Bronchospasm / acute asthma exacerbation",
+      "raw_prediction": "Bronchospasm / acute asthma exacerbation",
+      "status": "ok"
+    },
+    {
+      "actual_max_round": 0,
+      "case_id": "dev-case_191609",
+      "consensus": {
+        "diagnosis": "guillain-barré syndrome",
+        "had_consensus": true
+      },
+      "early_consensus_after_round0": true,
+      "error": null,
+      "gold_diagnosis": "Acute dystonic reactions",
+      "peer_discussion_round_run": false,
+      "prediction": "Guillain-Barré syndrome",
+      "raw_prediction": "Guillain-Barré syndrome",
+      "status": "ok"
+    },
+    {
+      "actual_max_round": 0,
+      "case_id": "dev-case_181490",
+      "consensus": {
+        "diagnosis": "acute laryngitis",
+        "had_consensus": true
+      },
+      "early_consensus_after_round0": true,
+      "error": null,
+      "gold_diagnosis": "Acute laryngitis",
+      "peer_discussion_round_run": false,
+      "prediction": "Acute laryngitis",
+      "raw_prediction": "Acute laryngitis",
+      "status": "ok"
+    },
+    {
+      "actual_max_round": 0,
+      "case_id": "dev-case_120670",
+      "consensus": {
+        "diagnosis": "acute otitis media",
+        "had_consensus": true
+      },
+      "early_consensus_after_round0": true,
+      "error": null,
+      "gold_diagnosis": "Acute otitis media",
+      "peer_discussion_round_run": false,
+      "prediction": "Acute otitis media",
+      "raw_prediction": "Acute otitis media",
+      "status": "ok"
+    },
+    {
+      "actual_max_round": 0,
+      "case_id": "dev-case_48897",
+      "consensus": {
+        "diagnosis": "pericarditis",
+        "had_consensus": true
+      },
+      "early_consensus_after_round0": true,
+      "error": null,
+      "gold_diagnosis": "Acute pulmonary edema",
+      "peer_discussion_round_run": false,
+      "prediction": "Pericarditis",
+      "raw_prediction": "Pericarditis",
+      "status": "ok"
+    }
+  ],
+  "valid_accuracy": 0.4
+}
