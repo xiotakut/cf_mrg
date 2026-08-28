@@ -1,0 +1,66 @@
+{
+  "dev": {
+    "baseline_wrong": 153,
+    "individual": {
+      "full_pair_ranker": {
+        "recall_at_10": 0.46,
+        "recall_at_5": 0.36666666666666664,
+        "unique_gold_coverage": 7
+      },
+      "medrgag_evidence_ranker": {
+        "recall_at_10": 0.5266666666666666,
+        "recall_at_5": 0.44,
+        "unique_gold_coverage": 30
+      },
+      "pair_aware_ranker": {
+        "recall_at_10": 0.5466666666666666,
+        "recall_at_5": 0.43,
+        "unique_gold_coverage": 17
+      },
+      "target_only_ranker": {
+        "recall_at_10": 0.49666666666666665,
+        "recall_at_5": 0.38,
+        "unique_gold_coverage": 4
+      }
+    },
+    "note": "Union ordering is deterministic rank-wise interleaving; RRF uses k=60.",
+    "oracle_union_repairs_at_10": 88,
+    "oracle_union_repairs_at_20": 111,
+    "rrf_recall_at_10": 0.53,
+    "rrf_recall_at_20": 0.7333333333333333,
+    "union_recall_at_10": 0.6166666666666667,
+    "union_recall_at_20": 0.7333333333333333
+  },
+  "test": {
+    "baseline_wrong": 164,
+    "individual": {
+      "full_pair_ranker": {
+        "recall_at_10": 0.48333333333333334,
+        "recall_at_5": 0.37666666666666665,
+        "unique_gold_coverage": 5
+      },
+      "medrgag_evidence_ranker": {
+        "recall_at_10": 0.5333333333333333,
+        "recall_at_5": 0.4633333333333333,
+        "unique_gold_coverage": 23
+      },
+      "pair_aware_ranker": {
+        "recall_at_10": 0.5366666666666666,
+        "recall_at_5": 0.43333333333333335,
+        "unique_gold_coverage": 6
+      },
+      "target_only_ranker": {
+        "recall_at_10": 0.5533333333333333,
+        "recall_at_5": 0.45666666666666667,
+        "unique_gold_coverage": 3
+      }
+    },
+    "note": "Union ordering is deterministic rank-wise interleaving; RRF uses k=60.",
+    "oracle_union_repairs_at_10": 90,
+    "oracle_union_repairs_at_20": 112,
+    "rrf_recall_at_10": 0.5733333333333334,
+    "rrf_recall_at_20": 0.71,
+    "union_recall_at_10": 0.59,
+    "union_recall_at_20": 0.7133333333333334
+  }
+}
