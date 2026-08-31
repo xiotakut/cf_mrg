@@ -1,0 +1,122 @@
+{
+  "calibrated_forced_router_minus_profile_no_document": {
+    "accuracy_difference": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "difference": 0.0,
+      "samples": 1000
+    },
+    "conditional_harm_difference": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "difference": 0.0,
+      "samples": 1000
+    },
+    "net_correction_difference": {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "difference": 0.0,
+      "samples": 1000
+    }
+  },
+  "profile_no_document_minus_medrgag": {
+    "accuracy_difference": {
+      "ci_high": 0.359,
+      "ci_low": 0.288975,
+      "difference": 0.325,
+      "samples": 1000
+    },
+    "conditional_harm_difference": {
+      "ci_high": 0.11421674879889337,
+      "ci_low": 0.06017825140809011,
+      "difference": 0.0861244019138756,
+      "samples": 1000
+    },
+    "net_correction_difference": {
+      "ci_high": 0.359,
+      "ci_low": 0.288975,
+      "difference": 0.325,
+      "samples": 1000
+    }
+  },
+  "risk_aware_router_minus_confidence_heuristic": {
+    "accuracy_difference": {
+      "ci_high": 0.039000000000000035,
+      "ci_low": 0.007975000000000008,
+      "difference": 0.02300000000000002,
+      "samples": 1000
+    },
+    "conditional_harm_difference": {
+      "ci_high": 0.019141056312108943,
+      "ci_low": -0.009664192294096848,
+      "difference": 0.004784688995215315,
+      "samples": 1000
+    },
+    "net_correction_difference": {
+      "ci_high": 0.039000000000000035,
+      "ci_low": 0.007974999999999954,
+      "difference": 0.02300000000000002,
+      "samples": 1000
+    }
+  },
+  "risk_aware_router_minus_learned_fusion_existing": {
+    "accuracy_difference": {
+      "ci_high": -0.051000000000000045,
+      "ci_low": -0.10200000000000009,
+      "difference": -0.07700000000000007,
+      "samples": 1000
+    },
+    "conditional_harm_difference": {
+      "ci_high": -0.028216911764705907,
+      "ci_low": -0.08209130404316448,
+      "difference": -0.05502392344497607,
+      "samples": 1000
+    },
+    "net_correction_difference": {
+      "ci_high": -0.05099999999999999,
+      "ci_low": -0.10200000000000004,
+      "difference": -0.07700000000000001,
+      "samples": 1000
+    }
+  },
+  "risk_aware_router_minus_profile_no_document": {
+    "accuracy_difference": {
+      "ci_high": 0.0,
+      "ci_low": -0.020000000000000018,
+      "difference": -0.010000000000000009,
+      "samples": 1000
+    },
+    "conditional_harm_difference": {
+      "ci_high": -0.00726348387549566,
+      "ci_low": -0.03342247373233727,
+      "difference": -0.019138755980861247,
+      "samples": 1000
+    },
+    "net_correction_difference": {
+      "ci_high": 0.0,
+      "ci_low": -0.019999999999999962,
+      "difference": -0.010000000000000009,
+      "samples": 1000
+    }
+  },
+  "risk_aware_router_minus_uncalibrated_router": {
+    "accuracy_difference": {
+      "ci_high": 0.0,
+      "ci_low": -0.02100000000000002,
+      "difference": -0.010000000000000009,
+      "samples": 1000
+    },
+    "conditional_harm_difference": {
+      "ci_high": -0.007316628093288239,
+      "ci_low": -0.03488444586208897,
+      "difference": -0.019138755980861247,
+      "samples": 1000
+    },
+    "net_correction_difference": {
+      "ci_high": 0.0,
+      "ci_low": -0.020999999999999963,
+      "difference": -0.010000000000000009,
+      "samples": 1000
+    }
+  }
+}
