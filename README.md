@@ -1,34 +1,24 @@
 # cf_mrg
 
-The active experiment is **RiskRoute-CF: Uncertainty-Calibrated Counterfactual Expert Routing for Safety-Aware Medical RAG**, implemented in [`cf_medrgag_validation_pack/`](cf_medrgag_validation_pack/).
-
-RiskRoute-CF is a pair-aware controller for counterfactual MedEinst cases. It chooses between the original MedRGAG reader prediction and the strongest existing no-document delta-profile expert. CPG agreement and CF-KADS evidence-interference measurements are reliability features, not additional mandatory gates. The primary mode is forced choice: every valid paired case receives one expert prediction, and invalid rows are counted rather than replaced with MedRGAG. Static inputs without a control–counterfactual pair bypass the controller exactly.
+The active experiment is the **CF-Residual Adapter**, a portable counterfactual sidecar evaluated with both a MedRGAG-style pipeline and the official intrinsic MA-RAG implementation. It combines unchanged control/trap option scores, DDXPlus delta-profile alignment, and Counterfactual Probability Gap scores through a small frozen linear fusion model.
 
 ## Confirmatory result
 
-Development used 800 official train/reference pairs, calibration used a disjoint 200, and the frozen controller was evaluated once on 1,000 newly selected official test pairs after excluding all source IDs used by DeltaRank, CFShift, and CF-KADS-MoE. All 1,000 test rows were valid.
+Development used 400 official MedEinst train/reference pairs, calibration used a disjoint 150, and the frozen adapter was evaluated once on 500 unused official test pairs. Methods share the same paired benchmark and four options; the counterfactual sidecar sees the pair, while the trap-only base baselines see only the trap case.
 
-| Method | Accuracy | Repairs | Harms | Conditional harm | OCP | Net correction | Profile coverage |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| MedRGAG reader | 41.8% | 0 | 0 | 0.0% | 100.0% | 0.0% | 0.0% |
-| Profile, no document | 74.3% | 361 | 36 | 8.61% | 91.39% | 32.5% | 100.0% |
-| Calibrated forced router | 74.3% | 361 | 36 | 8.61% | 91.39% | 32.5% | 78.8% |
-| Risk-aware router | 73.3% | 343 | 28 | 6.70% | 93.30% | 31.5% | 74.8% |
-| Existing learned fusion | 81.0% | 443 | 51 | 12.20% | 87.80% | 39.2% | n/a |
+| Base framework | Base accuracy | Base + CF adapter | Difference (95% paired-bootstrap CI) |
+|---|---:|---:|---:|
+| MA-RAG-int, Qwen3-8B | 39.2% | 80.0% | +40.8 points [+36.6, +45.4] |
+| MedRGAG-style, Llama-3.1-8B | 40.8% | 82.4% | +41.6 points [+37.0, +46.2] |
 
-Risk-aware routing reduces conditional harm relative to Profile by 1.91 points (95% paired-bootstrap CI -3.34 to -0.73) while losing 1.0 point of accuracy (95% CI -2.0 to 0.0). It therefore does **not** form a Pareto improvement and does not meet the prespecified strong or medium success criteria. The result supports reporting a calibrated accuracy–risk trade-off, but not a positive benchmark claim of improved safety-aware routing.
+The result supports cross-framework transfer under this protocol. It does not establish MA-RAG synergy: Profile-only reaches 79.4%, and the adapter without any MA-RAG score reaches 81.8%, above the full MA-RAG adapter. Real delta, Profile, and CPG signals beat their shuffled controls by 30.0, 37.6, and 7.0 points respectively.
 
-Mechanistically, MedRGAG and Profile already agree on 516/1,000 predictions. The calibrated forced router selects MedRGAG 212 times but still matches Profile on all 1,000 final predictions, so it realizes no capability-selection gain. Risk-aware routing makes only 39 effective overrides, preventing 8 Profile harms while losing 18 Profile repairs (net -10 correct answers).
+MA-RAG ends with a wrong unanimous candidate pool on 273/500 questions (54.6%). The post-hoc adapter repairs 190/273 of these cases, showing that patient-state conflict can expose errors missed by answer-to-answer conflict. The fresh native trigger and seed-robustness extensions were not run after the user narrowed the final scope to the portable core experiment.
 
-Calibration-frozen selective thresholds target 80%/90%/95% calibration coverage and achieve 62.7%/81.1%/89.3% test coverage with 88.84%/80.89%/77.27% selective accuracy. These points are descriptive; no selective risk-difference significance claim is made. On 400 static ReMedQA rows, RiskRoute-CF is prediction-by-prediction identical to MedRGAG (71.0% accuracy, 53.0% ReAcc, 60.0% ReCon).
-
-This is a four-option, pair-aware benchmark study. It provides no clinical safety guarantee and no world-model claim.
+This is not an official open-diagnosis MedEinst result, a reproduction of MA-RAG's original seven-benchmark table, a clinical safety guarantee, or a world-model claim.
 
 ## Run and inspect
 
-```bash
-cd cf_medrgag_validation_pack
-bash results_riskroute/commands.sh
-```
+The implementation and tracked outputs are under [`cf_medrgag_validation_pack/`](cf_medrgag_validation_pack/). See the exact [commands](cf_medrgag_validation_pack/results_marag_cf/commands.sh), full [report](cf_medrgag_validation_pack/results_marag_cf/summary.md), frozen [fusion configuration](cf_medrgag_validation_pack/results_marag_cf/fusion_config.json), and [metrics](cf_medrgag_validation_pack/results_marag_cf/metrics.json).
 
-See the [validation-pack README](cf_medrgag_validation_pack/README.md), the exact [commands](cf_medrgag_validation_pack/results_riskroute/commands.sh), and the complete [result summary](cf_medrgag_validation_pack/results_riskroute/summary.md). Historical CF-KADS-MoE, CFShift, DeltaRank, DeltaRev, and transition-card artifacts remain under their existing result directories.
+Historical RiskRoute-CF, CF-KADS-MoE, CFShift, DeltaRank, DeltaRev, and transition-card results remain in their existing result directories.

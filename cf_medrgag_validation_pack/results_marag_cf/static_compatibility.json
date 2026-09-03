@@ -1,0 +1,26 @@
+{
+  "applicability_rule": "Without an explicit control-counterfactual pair, the CF sidecar is not activated and the base-framework prediction is returned unchanged.",
+  "marag_medqa_check": {
+    "base_framework": "official MA-RAG-int Qwen3-8B, N=4, T=2, MedCorp3",
+    "items": 100,
+    "base_accuracy": 0.72,
+    "adapter_accuracy": 0.72,
+    "prediction_equality_count": 100,
+    "invalid_vote_ties": 4,
+    "source": "/home/data3/txy/MA-RAG/runs/ma-rag/original_medqa_check/qwen3-8b/exp_original_check_medcorp3_n4t2_shard*"
+  },
+  "medrgag_remedqa_check": {
+    "base_framework": "MedRGAG standard-reader adapter",
+    "rows": 400,
+    "source_questions": 100,
+    "base_accuracy": 0.71,
+    "adapter_accuracy": 0.71,
+    "base_reacc": 0.53,
+    "adapter_reacc": 0.53,
+    "base_recon": 0.60,
+    "adapter_recon": 0.60,
+    "prediction_equality_count": 400,
+    "source": "../results_riskroute/metrics.json#static_control"
+  },
+  "interpretation": "This is deterministic applicability isolation, not a learned safety guarantee."
+}

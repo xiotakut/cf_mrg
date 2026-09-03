@@ -1,0 +1,65 @@
+diff --git a/ma_rag_entropy.py b/ma_rag_entropy.py
+index 793a56d..b2b793b 100644
+--- a/ma_rag_entropy.py
++++ b/ma_rag_entropy.py
+@@ -1,5 +1,6 @@
+ import argparse
+ import logging
++import time
+ from pathlib import Path
+
+
+@@ -50,7 +51,8 @@ end_id = local_args.end_id if local_args.end_id >= 0 else 1000000
+
+ # filter exist experiments
+ if (log_dir / 'evaluations').exists():
+-    exist_question_ids = [int(path.stem.split('_')[-1]) for path in (log_dir / 'evaluations').glob('question_*')]
++    exist_question_ids = [int(path.stem.split('_')[-1]) for path in (log_dir / 'evaluations').glob('question_*')
++                          if (path / 'metadata.json').exists()]
+ else:
+     exist_question_ids = []
+ datasets = [dataset for dataset in datasets if (start_id <= dataset['id'] <= end_id) and (dataset['id'] not in exist_question_ids)]
+@@ -127,6 +129,9 @@ Please analysis the differences among the answers and generate 4 queries for fur
+ model = CustomLanguageModel(local_args.model_name, logger, base_url=local_args.base_url)
+ retriever = RetrievalService()
+ for dataset in tqdm(datasets, ncols=100):
++    question_started = time.time()
++    retrieved_document_count = 0
++    retrieval_query_count = 0
+     dataset['option_str'] = get_query(dataset)['option_str']
+     for round_id in range(1, local_args.num_round + 1):
+         if round_id == 1:
+@@ -166,6 +171,10 @@ for dataset in tqdm(datasets, ncols=100):
+
+         # If all answers are the same, then break the loop.
+         if len(set([round_result['prediction'] for round_result in round_results])) == 1 or round_id == local_args.num_round:
++            with open(log_path / "metadata.json", "w", encoding="utf-8") as fp:
++                json.dump({"wall_clock_seconds": time.time() - question_started,
++                           "retrieval_queries": retrieval_query_count,
++                           "retrieved_documents": retrieved_document_count}, fp)
+             break
+
+         previous_answers_query = previous_answers
+@@ -173,6 +182,7 @@ for dataset in tqdm(datasets, ncols=100):
+         reason_content, query_content, _ = inference(system_prompt_query, user_prompt_query.render(question=dataset['question'], options=dataset['option_str'], answers='\n\n'.join(previous_answers_query)), model, enable_thinking=True, temperature=0.)[0]
+         queries = re.findall(r"\[Query .*?\](.*?)$", query_content, re.MULTILINE)
+         queries = list(set(map(lambda x: x.strip(), queries)))
++        retrieval_query_count += len(queries)
+         logger.info(f"Retrieve {len(queries)} queries.")
+         if queries:
+             documents = []
+@@ -185,6 +195,7 @@ for dataset in tqdm(datasets, ncols=100):
+                 docs = [doc for doc in docs if doc['id'] not in total_doc_ids]
+                 documents.extend(docs)
+                 total_doc_ids.extend([doc['id'] for doc in docs])
++            retrieved_document_count += len(documents)
+             documents = combine_docs(documents, combine_sep='\n')
+         else:
+             documents = 'null'
+@@ -197,4 +208,4 @@ for dataset in tqdm(datasets, ncols=100):
+
+ # calculate accuracy
+ calculate_accuracy(log_dir / 'evaluations')
+-################################################################################
+\ No newline at end of file
++################################################################################
