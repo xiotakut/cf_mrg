@@ -360,6 +360,10 @@ def efficiency_report(stages,runtimes,n,completed):
             result['unexpected_exit_restart']=json.loads(restart.read_text())
             result['recorded_token_cost_limit']+=' An additional unexpected worker exit may have lost up to one in-flight batch per engine (64 requests each); those unreturned tokens are also unknown and excluded.'
             result['pipeline_makespan_note']+=' The unexpected-exit downtime and subsequent recovery are included.'
+        restart=OUT/'tail_rebalance.json'
+        if restart.exists():
+            result['tail_rebalance']=json.loads(restart.read_text())
+        result['cache_hits_scope']='Latest durable runtime record per worker; counters restart with each process. Exact historical input reuse and input deduplication are reported separately.'
     return result
 
 def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):
