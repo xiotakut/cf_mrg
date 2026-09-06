@@ -355,6 +355,11 @@ def efficiency_report(stages,runtimes,n,completed):
             result['controlled_throughput_restart']=json.loads(restart.read_text())
             result['recorded_token_cost_limit']='Two documented scheduling/capacity restarts: at most one unreturned batch per engine per restart (four batches total); their tokens are unavailable and excluded from recorded-token totals. Full wall time includes all work and restart intervals.'
             result['pipeline_makespan_note']+=' Intermediate wall timestamps mark restarted scheduler phases; first-to-last is the complete expansion makespan.'
+        restart=OUT/'unexpected_exit_restart.json'
+        if restart.exists():
+            result['unexpected_exit_restart']=json.loads(restart.read_text())
+            result['recorded_token_cost_limit']+=' An additional unexpected worker exit may have lost up to one in-flight batch per engine (64 requests each); those unreturned tokens are also unknown and excluded.'
+            result['pipeline_makespan_note']+=' The unexpected-exit downtime and subsequent recovery are included.'
     return result
 
 def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):

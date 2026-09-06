@@ -13,3 +13,7 @@
 Cultural 的150组是作者完整发布CF集；附带test.jsonl的1273条属于底层MedQA原题映射库，未发布CF条件的其他原题不冒充Cultural反事实实例。CPV同样覆盖作者全部发布的1202组，而非扩展到未构成该benchmark的底层MedQA题。
 
 用户方法范围更正见method_scope.json。去掉M0/M1只减少两次reader调用；此前已完成新增阶段中二者合计占5.42%的阶段时间，不是端到端精确加速估计。当前按冻结输入长度调度、batch/chunk64、GPU0/2各.75显存配置运行；全部M2阶段与预算不变。
+
+## 2026-09-06 21:31 异常退出恢复
+
+20:31 左右三个任务进程停止，M2 保留 13,519/25,280 条。没有 Python traceback、failure.json 或正常完成标记；原因尚未证实。Luna 于 21:02 报告异常，主代理直到 21:30 用户询问后接手，监控响应存在延迟。全部阶段 JSONL 检查通过，21:31:34 使用独立 tmux 会话 cf-screening/m2-full 从原缓存恢复相同 M2 配置；M0/M1 各保留 5,832 条。完整批次耗时包含停机间隔，退出时尚未返回的最多两个 batch64 调用批次的 token 用量未知。参见 unexpected_exit_restart.json 和 cache/unexpected_exit_20260906/。
