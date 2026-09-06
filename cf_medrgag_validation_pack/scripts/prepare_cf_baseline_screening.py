@@ -254,13 +254,15 @@ def prepare(tier):
     if train.exists():canonical=sorted(set(canonical)|{r['ground_truth'] for r in read(train)})
     (OUT/'canonical_labels.json').write_text(json.dumps({'labels':canonical,'aliases':{},'source':'official MedEinst train/test ground_truth; no test-derived medical aliases','evaluator':'normalized exact screening, not official semantic evaluator'},indent=2))
     counts=[]
+    scope=OUT/'method_scope.json'
+    method_count=len(json.loads(scope.read_text())['methods']) if scope.exists() else 3
     def sample_role(r):
         return 'additional_native_sensitivity' if r.get('additional_native') else 'derived_sensitivity' if r['protocol']=='derived_four_way' else 'primary'
     for ds in provenance:
         for protocol in sorted({r['protocol'] for r in labels if r['dataset']==ds}):
             for role in sorted({sample_role(r) for r in labels if r['dataset']==ds and r['protocol']==protocol}):
                 rr=[r for r in labels if r['dataset']==ds and r['protocol']==protocol and sample_role(r)==role]
-                counts.append({'benchmark':ds,'protocol':protocol,'sample_role':role,'source_groups':len({r['group_id'] for r in rr}),'input_records':len(rr),'unique_inputs':len({r['item_id'] for r in rr}),'planned_method_predictions':3*len({r['item_id'] for r in rr})})
+                counts.append({'benchmark':ds,'protocol':protocol,'sample_role':role,'source_groups':len({r['group_id'] for r in rr}),'input_records':len(rr),'unique_inputs':len({r['item_id'] for r in rr}),'planned_method_predictions':method_count*len({r['item_id'] for r in rr})})
     with (OUT/'benchmark_summary.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(counts[0]),lineterminator='\n');w.writeheader();w.writerows(counts)
     checks=['# Five source-unit checks per benchmark','Inference receives only item_id, question, options, fixed_evidence, answer_format. No gold/group/role/taxonomy enters solver.','Full prepared inputs stay local and are not redistributed.']

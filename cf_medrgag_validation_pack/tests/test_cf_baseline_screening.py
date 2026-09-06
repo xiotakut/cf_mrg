@@ -29,6 +29,11 @@ class Contract(unittest.TestCase):
         old=read(root/'results_cf_screening/screening_items.jsonl');new=read(out/'screening_items.jsonl')
         self.assertEqual(new[:len(old)],old)
         self.assertEqual({r['item_id'] for r in labels},{r['item_id'] for r in new})
+        import csv
+        method_count=len(json.loads((out/'method_scope.json').read_text())['methods']) if (out/'method_scope.json').exists() else 3
+        with (out/'benchmark_summary.csv').open() as summary:
+            for row in csv.DictReader(summary):
+                self.assertEqual(int(row['planned_method_predictions']),method_count*int(row['unique_inputs']))
 
     def test_visible_task_and_native_contracts(self):
         raw={'item_id':'s000001','question':'Patient vignette and final question','options':{'A':'x','B':'y','E':'z'},'fixed_evidence':['mandatory article'],'answer_format':'multi','gold':['A'],'role':'trap','paired_text':'SECRET','taxonomy':'SECRET'}

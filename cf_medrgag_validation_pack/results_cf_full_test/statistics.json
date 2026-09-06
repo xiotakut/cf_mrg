@@ -1,0 +1,320 @@
+{
+  "bootstrap": "2000 source-group cluster resamples, source means primary; micro supplemental",
+  "mcnemar_holm_family": "native independent-source condition-level reference-vs-variant tests for required methods M2; multi-variant aggregate has no McNemar p",
+  "tests": [
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "female:Arab",
+      "p": 0.8303925586538715,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "female:Asian",
+      "p": 0.32099040312889304,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "female:Black",
+      "p": 0.8250403507533898,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "female:Hispanic",
+      "p": 0.37864628597725075,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "female:White",
+      "p": 0.3430902789249583,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "male:Arab",
+      "p": 0.5139096358872464,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "male:Asian",
+      "p": 0.7779207003752833,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "male:Black",
+      "p": 1.0,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "male:Hispanic",
+      "p": 0.7663200944429495,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "male:White",
+      "p": 0.7831087298262331,
+      "N": 1202,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "none:Arab",
+      "p": 1.0,
+      "N": 58,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "none:Asian",
+      "p": 1.0,
+      "N": 58,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "none:Black",
+      "p": 1.0,
+      "N": 58,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "none:Hispanic",
+      "p": 1.0,
+      "N": 58,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cpv",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "none:White",
+      "p": 1.0,
+      "N": 58,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t1:Context",
+      "p": 1.0,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t1:Id",
+      "p": 1.0,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t1:Id+Context",
+      "p": 0.8679394004284404,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t2:Context",
+      "p": 0.42435622215270996,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t2:Id",
+      "p": 0.12207812070846558,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t2:Id+Context",
+      "p": 0.39152830513194203,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t3:Context",
+      "p": 0.32693958282470703,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t3:Id",
+      "p": 0.32693958282470703,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "cultural",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "t3:Id+Context",
+      "p": 0.735878800856881,
+      "N": 150,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "medcounterfact",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "ID",
+      "p": 0.6900379657745361,
+      "N": 203,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "medcounterfact",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "Nonsense tokens",
+      "p": 1.0,
+      "N": 203,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "medcounterfact",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "OOD",
+      "p": 1.0,
+      "N": 203,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "medcounterfact",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "Poison",
+      "p": 0.31050465907901537,
+      "N": 200,
+      "p_holm": 1.0
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "medeinst",
+      "protocol": "derived_four_way",
+      "method": "M2",
+      "condition": "all",
+      "p": 0.417692190836533,
+      "N": 60
+    },
+    {
+      "comparison": "reference_vs_variant",
+      "benchmark": "medeinst",
+      "protocol": "native",
+      "method": "M2",
+      "condition": "all",
+      "p": 0.0009876556261048193,
+      "N": 5383,
+      "p_holm": 0.02864201315703976
+    }
+  ],
+  "MedPIC": [
+    {
+      "method": "M2",
+      "status": "unpaired_composition_gap",
+      "N_GF": 284,
+      "N_CF": 183,
+      "gap": 0.14761794812591397,
+      "ci": [
+        0.06626019779881474,
+        0.2289756984530131
+      ]
+    }
+  ],
+  "equivalence_margin": 0.05,
+  "equivalence_status": "independent cross-source matching operation comparisons unavailable; within-source exploratory intervals only"
+}

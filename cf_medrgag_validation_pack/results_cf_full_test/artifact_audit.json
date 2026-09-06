@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-07T05:20:54.408631+08:00",
+  "unique_inputs": 25280,
+  "stage_record_counts": {
+    "summary": 126400,
+    "explore": 25280,
+    "generate": 126400,
+    "select": 25280,
+    "M0": 5832,
+    "M1": 5832,
+    "M2": 25280,
+    "retrieval": 25349,
+    "rerank": 25280
+  },
+  "max_prompt_tokens": {
+    "summary": 63466,
+    "explore": 63557,
+    "generate": 62794,
+    "select": 65008,
+    "M0": 61511,
+    "M1": 62523,
+    "M2": 62816
+  },
+  "durable_prompt_references": {
+    "cache/main/worker-0/prompts.jsonl.gz": {
+      "referenced": 163395,
+      "missing": 0
+    },
+    "cache/main/worker-1/prompts.jsonl.gz": {
+      "referenced": 170036,
+      "missing": 0
+    },
+    "cache/main/worker-2/prompts.jsonl.gz": {
+      "referenced": 6873,
+      "missing": 0
+    }
+  },
+  "checks": [
+    "complete M2 stage slots",
+    "no duplicate LLM stage keys",
+    "frozen M0/M1 counts",
+    "frozen decoding and input/stage seeds",
+    "context/completion budgets",
+    "same worker configs",
+    "consistent complete document caches",
+    "readable durable gzip prompt references"
+  ]
+}

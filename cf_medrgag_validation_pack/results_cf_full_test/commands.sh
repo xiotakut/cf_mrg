@@ -23,3 +23,6 @@ bash scripts/cf_baseline_screening.sh analyze
 # GPU2: run --shard-index 2 --shard-count 4 --batch-size 64 --chunk-size 64 --gpu-memory .75
 # Local executed wrapper: cache/tail_rebalance/run.sh; proof: tail_rebalance.json.
 # The standard run command above remains the full-data prepare/resume entry.
+
+# Final full-artifact verification (after run completes):
+/home/data3/txy/MedRGAG/.venv/bin/python results_cf_full_test/artifact_audit.py
