@@ -27,7 +27,8 @@
     "context_capacity": 98304,
     "gpu0_memory_utilization": 0.5,
     "gpu2_memory_utilization": 0.45,
-    "checkpoint_decoding_unchanged": true
+    "checkpoint_decoding_unchanged": true,
+    "allocation_scope": "initial startup only; current allocation is recorded in controlled_capacity_restart"
   },
   "controlled_capacity_restart": {
     "gpu_memory_utilization": 0.75,
@@ -35,6 +36,17 @@
       "0": 348720,
       "2": 360480
     },
-    "record": "capacity_restart.json"
+    "record": "capacity_restart.json",
+    "implementation_checkpoint_commit": "44be7ae"
+  },
+  "current_execution": {
+    "methods": [
+      "M2"
+    ],
+    "batch_size": 64,
+    "chunk_size": 64,
+    "gpu_memory_utilization": 0.75,
+    "length_order": "frozen reader_task_tokens then opaque item_id",
+    "scope_record": "method_scope.json"
   }
 }

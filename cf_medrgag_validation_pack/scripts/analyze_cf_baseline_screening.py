@@ -17,6 +17,8 @@ from scipy.stats import binomtest
 from prepare_cf_baseline_screening import OUT, ROOT, read, write, norm
 
 METHODS={'M0':'direct_llama','M1':'retrieval_only_llama','M2':'medrgag_llama_base'}
+if (OUT/'method_scope.json').exists():
+    METHODS={m:METHODS[m] for m in json.loads((OUT/'method_scope.json').read_text())['methods']}
 
 def ratio(a,b):return a/b if b else None
 
@@ -109,7 +111,7 @@ def analyze(partial=False):
     if not plan['tier_frozen']:raise SystemExit('Do not inspect formal accuracy before tier freeze.')
     labels=read(OUT/'evaluation_labels.jsonl');items={r['item_id']:r for r in read(OUT/'screening_items.jsonl')};taxonomy=read(OUT/'taxonomy.jsonl')
     canon={norm(s):s for s in json.loads((OUT/'canonical_labels.json').read_text())['labels']}
-    preds={};stages=[];runtimes=[]
+    preds={};auxiliary={};stages=[];runtimes=[]
     for worker in sorted((OUT/'cache/main').glob('worker-*')):
         if (worker/'runtime.json').exists():runtimes.append(json.loads((worker/'runtime.json').read_text()))
         for stage in ['M0','M1','M2','summary','explore','generate','select','retrieval','rerank']:
@@ -120,6 +122,8 @@ def analyze(partial=False):
                     key=(r['item_id'],stage)
                     if key in preds:assert preds[key]['raw_response']==r['raw_response'],'conflicting shard answers'
                     preds[key]=r
+                elif stage in ['M0','M1','M2']:
+                    auxiliary[(r['item_id'],stage)]=r
                 compact={k:v for k,v in r.items() if k not in {'documents','raw_response'}}
                 compact['stage']=stage;compact['artifact']=str(file.relative_to(OUT))
                 if stage=='explore':
@@ -127,13 +131,14 @@ def analyze(partial=False):
                 if stage=='rerank':compact['selected_document_count']=len(r['documents'])
                 if 'documents' in r:compact['source_ids']=[{'id':d.get('id',d.get('docid')),'source':d['source']} for d in r['documents']]
                 stages.append(compact)
-    expected=3*len(items)
+    expected=len(METHODS)*len(items)
     if len(preds)<expected and not partial:raise SystemExit(f'Only {len(preds)}/{expected} predictions; use --partial for an explicitly partial report.')
     exported=[]
     for (item_id,method),record in preds.items():
         answer,error,raw_value=parse(record['raw_response'],items[item_id],canon)
         exported.append(record|{'answer':answer,'raw_answer_value':raw_value,'invalid_reason':error,'format_invalid':error is not None and error!='unmapped_diagnosis','unmapped_diagnosis':error=='unmapped_diagnosis'})
     write(OUT/'predictions.jsonl',exported);write(OUT/'stages.jsonl',stages)
+    if auxiliary:write(OUT/'auxiliary_predictions.jsonl',list(auxiliary.values()))
     if plan.get('candidate_tier')=='full-test':
         with (OUT/'stages.jsonl').open('rb') as source,gzip.open(OUT/'stages.jsonl.gz','wb') as target:
             shutil.copyfileobj(source,target)
@@ -196,6 +201,7 @@ def analyze(partial=False):
                         pp=[p for p in pairs if p['var']['label']['condition']==operation]
                         if pp:pair_rows.append({'benchmark':ds,'protocol':protocol,'method':method,'condition':'across_cultures:'+operation,**four_grid(pp)})
         for base_method,m in [('M0','M1'),('M0','M2'),('M1','M2')]:
+            if base_method not in METHODS or m not in METHODS:continue
             usable=[l for l in labs if l['group_id'] in complete and (l['item_id'],base_method) in preds and (l['item_id'],m) in preds]
             aa=[scored[(l['group_id'],protocol,l['role'],base_method)]['correct'] for l in usable];bb=[scored[(l['group_id'],protocol,l['role'],m)]['correct'] for l in usable]
             gd=defaultdict(list)
@@ -239,7 +245,7 @@ def analyze(partial=False):
                         if op in tags:vv.append(r)
                     sensitivity.append({'method':method,'operation':op,'annotation_version':version,**aggregate(vv)})
         table('taxonomy_correction_sensitivity.csv',sensitivity)
-    dump('statistics.json',{'bootstrap':'2000 source-group cluster resamples, source means primary; micro supplemental','mcnemar_holm_family':'native independent-source condition-level reference-vs-variant tests, all three fixed methods; multi-variant aggregate has no McNemar p','tests':statistics,'MedPIC':gaps,'equivalence_margin':.05,'equivalence_status':'independent cross-source matching operation comparisons unavailable; within-source exploratory intervals only'})
+    dump('statistics.json',{'bootstrap':'2000 source-group cluster resamples, source means primary; micro supplemental','mcnemar_holm_family':'native independent-source condition-level reference-vs-variant tests for required methods '+','.join(METHODS)+'; multi-variant aggregate has no McNemar p','tests':statistics,'MedPIC':gaps,'equivalence_margin':.05,'equivalence_status':'independent cross-source matching operation comparisons unavailable; within-source exploratory intervals only'})
     ident=identifiability(taxonomy)
     explanatory_models(allpairs,items,taxonomy)
     efficiency=efficiency_report(stages,runtimes,len(items),len(preds))
@@ -249,6 +255,8 @@ def analyze(partial=False):
     proxies=mechanism_proxies(labels)
     metrics={'planned_unique_inputs':len(items),'completed_unique_method_predictions':len(preds),'planned_method_predictions':expected,'completion_rate':len(preds)/expected,'status':'complete' if len(preds)==expected and repeat['executed']==20 else 'partial','benchmarks':metric_rows,'method_comparisons':comparisons,'amplification':amps,'neutral':'unavailable in released inputs','taxonomy':ident,'efficiency':efficiency,'repeat':repeat,'sensitivities':sensitivities,'mechanism_proxies':proxies}
     metrics['evaluation_scope']=plan.get('scope','sampled screening tier; not the entire test set')
+    metrics['required_methods']=list(METHODS)
+    metrics['preserved_auxiliary_predictions']=dict(Counter(m for _,m in auxiliary))
     dump('metrics.json',metrics);figures(pair_rows,amps,category,stages,gaps)
     report(metrics,pair_rows,gaps)
     print(json.dumps({'status':metrics['status'],'predictions':len(preds),'planned':expected,'report':str(OUT/'summary.md')}))
@@ -319,7 +327,13 @@ def efficiency_report(stages,runtimes,n,completed):
     result['total_recorded_prompt_tokens_including_extra']=result['prompt_tokens']+sum(r['prompt_tokens'] for r in extra)
     result['total_recorded_completion_tokens_including_extra']=result['completion_tokens']+sum(r['completion_tokens'] for r in extra)
     records=len(read(OUT/'evaluation_labels.jsonl'))
-    result.update(prepared_input_records=records,exact_duplicate_input_records=records-n,LLM_requests_avoided_by_exact_input_deduplication=15*(records-n),historical_answer_cache_hits=0)
+    result.update(prepared_input_records=records,exact_duplicate_input_records=records-n,LLM_requests_avoided_by_exact_input_deduplication=(13 if list(METHODS)==['M2'] else 15)*(records-n),historical_answer_cache_hits=0)
+    if list(METHODS)==['M2']:
+        result['required_M2_pipeline_LLM_requests']=sum(r['requests_or_records'] for r in rows if r['stage'] in ['M2','summary','explore','generate','select'])
+        result['preserved_auxiliary_reader_requests']=sum(r['requests_or_records'] for r in rows if r['stage'] in ['M0','M1'])
+        result['method_scope']=json.loads((OUT/'method_scope.json').read_text())
+        result['method_scope_cost']=json.loads((OUT/'method_scope_cost.json').read_text())
+        if (OUT/'method_scope_restart.json').exists():result['method_scope_restart']=json.loads((OUT/'method_scope_restart.json').read_text())
     prefetch=OUT/'retrieval_prefetch_completion.json'
     if prefetch.exists():result['retrieval_prefetch']=json.loads(prefetch.read_text())
     reuse=OUT/'cache_reuse.json'
@@ -336,6 +350,11 @@ def efficiency_report(stages,runtimes,n,completed):
         if restart.exists():
             result['controlled_capacity_restart']=json.loads(restart.read_text())
             result['recorded_token_cost_limit']='Unreturned tokens from at most one interrupted batch per engine during the documented capacity restart are unavailable; recorded token totals exclude them. Full batch wall time includes the interruption and reinitialization.'
+        restart=OUT/'throughput_restart.json'
+        if restart.exists():
+            result['controlled_throughput_restart']=json.loads(restart.read_text())
+            result['recorded_token_cost_limit']='Two documented scheduling/capacity restarts: at most one unreturned batch per engine per restart (four batches total); their tokens are unavailable and excluded from recorded-token totals. Full wall time includes all work and restart intervals.'
+            result['pipeline_makespan_note']+=' Intermediate wall timestamps mark restarted scheduler phases; first-to-last is the complete expansion makespan.'
     return result
 
 def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):
@@ -451,7 +470,7 @@ def figures(pairs,amps,categories,stages,gaps):
         keys=sorted({(r['benchmark'],r['slice']) for r in rr});index={(r['benchmark'],r['slice'],r['method']):r for r in rr}
         values=np.array([[100*(1-index[(ds,op,m)]['accuracy']) if (ds,op,m) in index else np.nan for m in METHODS] for ds,op in keys])
         fig,ax=plt.subplots(figsize=(9,max(3,len(keys)*.45)));im=ax.imshow(values,vmin=0,vmax=100,aspect='auto',cmap='Oranges');fig.colorbar(im,ax=ax,label='Row-specific native metric error (%)')
-        ax.set_xticks(range(3),list(METHODS));ax.set_yticks(range(len(keys)),[ds+': '+op for ds,op in keys])
+        ax.set_xticks(range(len(METHODS)),list(METHODS));ax.set_yticks(range(len(keys)),[ds+': '+op for ds,op in keys])
         for i,(ds,op) in enumerate(keys):
             for j,m in enumerate(METHODS):
                 r=index.get((ds,op,m));ax.text(j,i,f"{values[i,j]:.1f}% (N={r['N']})" if r else 'NA',ha='center',va='center',fontsize=8)
@@ -492,6 +511,12 @@ def report(metrics,pairs,gaps):
     lines+=['\nUnmapped diagnosis is a valid JSON diagnosis outside the frozen canonical mapping, distinct from malformed output. It counts wrong in canonical screening; no outcome-driven medical aliases were added. Ambiguous answers are included in format-invalid counts. Uncertainty is a legal MedCounterFact answer and is reported separately.','\n## Frozen MedEinst format sensitivity','| Method | Role | Matched inputs | Four-way minus native score | 95% CI |','|---|---|---:|---:|---|']
     for r in metrics['sensitivities']['native_derived_effects']:lines.append(f"| {r['method']} | {r['role']} | {r['N']} | {pct(r['net_gain'])} | {ci(r['ci'])} |")
     reranks=[r for r in read(OUT/'stages.jsonl') if r['stage']=='rerank']
+    if metrics['required_methods']==['M2']:
+        start=lines.index('\n## Changes relative to Direct and retrieval-only')
+        end=lines.index('\n| MedPIC method | GF / CF N | Unpaired GF−CF gap | 95% CI |')
+        lines[start:end]=['\n## Method scope','Only MedRGAG-Llama base (M2) is required after the explicit user scope correction. Previously completed Direct/retrieval-only outputs are preserved in auxiliary_predictions.jsonl and are not completed full-test comparisons. No cross-method amplification is estimated in this report.']
+        lines=[s.replace('Recorded main-run LLM requests (including frozen sensitivity inputs):','Recorded LLM requests (including frozen sensitivity and preserved auxiliary readers):') for s in lines]
+        lines=[('One follow-up worth testing is whether original KADS output/parser format mismatches explain evidence loss associated with M2 reference/variant prediction changes. These saved stage proxies do not establish causation; no parser repair or new method is evaluated here.' if s.startswith('One follow-up worth testing') else s) for s in lines]
     lines.insert(2,'\nEvaluation scope: '+metrics['evaluation_scope']+'.')
     counts=Counter(r['selected_document_count'] for r in reranks)
     lines += [f"\nOriginal KADS/parser selected-document distribution: {dict(sorted(counts.items()))}. Empty selections are retained local-baseline stage failures; all KGCC/generation/select requests and final readers still ran. No outcome-driven parser repair or document fallback was applied.", '\nInterpretation, execution audit and limitations: [findings.md](findings.md), [validation.json](validation.json).']

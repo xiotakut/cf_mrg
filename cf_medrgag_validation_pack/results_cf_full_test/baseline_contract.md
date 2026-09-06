@@ -1,3 +1,7 @@
+## Current required method scope
+
+User explicitly narrowed remaining full-test inference to **M2 only**. Existing M0/M1 outputs (5832 each) and all their costs are preserved as historical auxiliary records; they are not required complete-test comparisons. See method_scope.json. The historical three-method contract below explains already executed work.
+
 # medrgag_llama_base: complete released test-set expansion
 
 Expansion starts from repository `bc31166fcbca514138ae5db38ab4a73a4b2f3312`, launched 2026-09-06 13:44:17 CST. Scope: all official MedEinst test rows and all released evaluation rows/groups of the other four resources. Prior sampled screening is retained in `../results_cf_screening`. Its provenance below is historical.
@@ -47,3 +51,5 @@ Repeat RNG audit: the original master-seed+1 formula overlapped neighboring gene
 
 
 Full-test capacity restart at 2026-09-06T16:41:08.698383+08:00: the two task-owned engines were restarted once at `gpu_memory_utilization=0.75` to use free memory for KV cache (GPU0 348720, GPU2 360480 tokens). Model, BF16, 98,304-token capacity, prompt/decoder budgets, input IDs and seeds are unchanged. All durable stages were reused. Unreturned tokens from at most one batch per engine are unavailable; see `capacity_restart.json`. Other user processes and the concurrent retrieval worker continued.
+
+Length scheduling: both retrieval and inference sort all frozen items by `(reader_task_tokens, item_id)` before disjoint sharding; batch/chunk64 uses the same stable item/stage/slot seeds and decoder budgets. All inputs are retained. See throughput_restart.json.

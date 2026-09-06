@@ -1,0 +1,75 @@
+{
+  "started": "2026-09-06T17:18:42.787705+08:00",
+  "reason": "Batch independent inputs by frozen visible token length to reduce stage barriers from mixed short questions and long mandatory evidence; use batch/chunk64 on the enlarged KV cache",
+  "execution_order": "ascending (reader_task_tokens, opaque item_id), then two disjoint strided shards; all 25280 inputs retained",
+  "order_inputs": "input_lengths.jsonl from preflight; no labels, predictions or correctness used in length ordering",
+  "prior_batch_size": 32,
+  "new_batch_size": 64,
+  "gpu_memory_utilization": 0.75,
+  "all_semantic_model_and_decoding_configuration_unchanged": true,
+  "input_IDs_and_RNG_seeds_unchanged": true,
+  "cache_counts_before": {
+    "results_cf_full_test/cache/main/worker-1": {
+      "M1": 2849,
+      "explore": 2849,
+      "M0": 2849,
+      "summary": 14245,
+      "generate": 14245,
+      "M2": 2838,
+      "rerank": 2849,
+      "select": 2849,
+      "retrieval": 39
+    },
+    "results_cf_full_test/cache/main/worker-0": {
+      "M1": 2883,
+      "explore": 2870,
+      "M0": 2883,
+      "summary": 14382,
+      "generate": 14350,
+      "M2": 2870,
+      "retrieval_pre_compat": 25,
+      "rerank": 2870,
+      "select": 2870,
+      "retrieval": 61
+    },
+    "results_cf_full_test/cache/main/worker-2": {
+      "retrieval": 13832
+    }
+  },
+  "parents": {
+    "853382": "--shard-index 0",
+    "853383": "--shard-index 1",
+    "793129": "retrieval"
+  },
+  "children": {
+    "853382": [
+      853617
+    ],
+    "853383": [
+      853611
+    ],
+    "793129": []
+  },
+  "inflight_cost": "At most one unfinished batch of at most32 requests per inference engine; unreturned token usage unavailable. Retrieval may also redo one unreturned query. Full wall time retains these costs.",
+  "unreturned_completion_token_upper_bound": 131072,
+  "upper_bound_is_not_measured_usage": true,
+  "prior_retrieval_last_progress": {
+    "retrieval_available": 13850,
+    "elapsed": 12823.27491235733
+  },
+  "pre_restart_artifact_audit": {
+    "worker-1": {
+      "durable_pre_restart_prompt_references_verified": 42724,
+      "missing": 0
+    },
+    "worker-0": {
+      "durable_pre_restart_prompt_references_verified": 43108,
+      "missing": 0
+    }
+  },
+  "status": "both engines initialized and executed batch64 successfully; subsequently checkpointed for explicit user M2-only scope change",
+  "KV_tokens_at_length_sorted_start": {
+    "0": 319376,
+    "2": 334096
+  }
+}

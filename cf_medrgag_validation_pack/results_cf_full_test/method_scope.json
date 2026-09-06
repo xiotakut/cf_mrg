@@ -1,0 +1,13 @@
+{
+  "methods": [
+    "M2"
+  ],
+  "requested": "2026-09-06T17:24:52.856049+08:00",
+  "authorization": "User explicitly states only MedRGAG-Llama base is currently needed; asks whether dropping Direct/retrieval-only materially accelerates it",
+  "coverage": "All 25280 unique inputs and 27377 released/auxiliary label records retained",
+  "M2_definition_unchanged": true,
+  "M0_M1_policy": "Preserve already completed predictions and all incurred costs as historical auxiliary records; no additional M0/M1 requests after scope restart",
+  "main_predictions_planned": 25280,
+  "main_M2_pipeline_LLM_requests_planned": 328640,
+  "cost_evidence": "method_scope_cost.json: M0/M1 represented 5.4177% of completed expansion stage time before the change; not an exact makespan savings estimate"
+}

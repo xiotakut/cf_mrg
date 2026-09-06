@@ -11,10 +11,10 @@ flowchart TD
   World --> Prepare
   Prepare --> Tasks[Independent question + all options + mandatory evidence]
   Prepare --> Labels[Separate gold, source mapping and frozen taxonomy]
-  Tasks --> M0[Direct Llama reader]
+  Tasks -. historical only .-> M0[Direct: 5832 existing outputs, stopped]
   Tasks --> Retrieval[Textbooks and Wikipedia BM25: 32 per source]
   Retrieval --> Rank[MedCPT rerank: initial 5 documents]
-  Rank --> M1[Retrieval-only Llama reader]
+  Rank -. historical only .-> M1[Retrieval-only: 5832 existing outputs, stopped]
   Rank --> Summary[KGCC: 5 Llama summaries]
   Summary --> Explore[3 missing knowledge points]
   Explore --> Generate[5 Llama complementary documents]
@@ -22,10 +22,9 @@ flowchart TD
   Rank --> KADS
   KADS --> FinalRank[MedCPT final reranking]
   FinalRank --> M2[MedRGAG Llama reader]
-  Tasks --> M1
   Tasks --> M2
-  M0 --> Eval[Offline native scoring and source-group paired analysis]
-  M1 --> Eval
-  M2 --> Eval
+  M0 -.-> Auxiliary[Preserved auxiliary outputs, no full-test comparison]
+  M1 -.-> Auxiliary
+  M2 --> Eval[Offline native scoring and source-group paired analysis]
   Labels --> Eval
   Eval --> Domains[Clinical update / invariance / hypothetical evidence world reported separately]

@@ -66,6 +66,9 @@ def stable_seed(seed,item_id,stage,slot,*,repeat_stream=False):
 class Runner:
     def __init__(self,args):
         self.args=args;self.config=json.loads(CONFIG.read_text());self.started=time.time()
+        scope=OUT/'method_scope.json'
+        self.methods=json.loads(scope.read_text())['methods'] if scope.exists() else list(METHODS)
+        assert self.methods in [list(METHODS),['M2']]
         self.root=OUT/'cache'/('repeat_independent' if args.mode=='repeat' else 'main')/f'worker-{args.shard_index}'
         self.root.mkdir(parents=True,exist_ok=True)
         frozen=self.root/'config.json'
@@ -139,7 +142,7 @@ class Runner:
         return {i['item_id']:cache[i['item_id']]['documents'] for i in items}
 
     def run_chunk(self,items):
-        required=['M2'] if self.args.mode=='repeat' else ['M0','M1','M2']
+        required=['M2'] if self.args.mode=='repeat' else self.methods
         if all(i['item_id'] in self.cached.get(m,{}) for i in items for m in required):
             self.hits['complete_input_tasks']+=len(items)
             return
@@ -153,7 +156,7 @@ class Runner:
         adapted={i['item_id']:{'question':task_question(i),'options':i['options']} for i in items}
         def entry(i,p,slot=None):
             return {'key':i['item_id']+(f'::{slot}' if slot is not None else ''),'item_id':i['item_id'],'slot':slot or 0,'prompt':p}
-        for method in ([] if self.args.mode=='repeat' else ['M0','M1']):
+        for method in [m for m in ['M0','M1'] if m in required]:
             self.llm(method,[entry(i,reader_prompt(tok,i,[] if method=='M0' else retrieval[i['item_id']])) for i in items])
         summaries=self.llm('summary',[entry(i,chat(tok,build_summary_prompt(task_profile(i),adapted[i['item_id']],d['contents'])),j) for i in items for j,d in enumerate(retrieval[i['item_id']])])
         es=[]
@@ -218,6 +221,11 @@ def main():
                     for key in q[j]:
                         if key not in seen:ordered.append(key);seen.add(key)
         im={i['item_id']:i for i in items};items=[im[k] for k in ordered]
+        if plan.get('candidate_tier')=='full-test':
+            # Full coverage is required: group interleaving is unnecessary, and
+            # similar visible lengths avoid long evidence holding short tasks.
+            lengths={r['item_id']:r['reader_task_tokens'] for r in read(OUT/'input_lengths.jsonl')}
+            items.sort(key=lambda i:(lengths[i['item_id']],i['item_id']))
     if a.mode!='retrieval':items=items[a.shard_index::a.shard_count]
     if a.limit:items=items[:a.limit]
     runner=Runner(a)

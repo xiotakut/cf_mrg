@@ -13,3 +13,6 @@ bash scripts/cf_baseline_screening.sh analyze
 
 # Controlled capacity restart: both task-owned workers resumed with --gpu-memory .75;
 # exact preceding logs and interruption accounting are in capacity_restart.json.
+
+# Current run/analyze automatically read method_scope.json: required methods = [M2].
+# Current scheduling: batch/chunk64, frozen visible-length order, gpu_memory .75.

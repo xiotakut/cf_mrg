@@ -1,6 +1,6 @@
 # Counterfactual medical RAG validation pack
 
-Current scope correction: **the entire released test sets**, with no source-group sampling. The expansion is running in [results_cf_full_test](results_cf_full_test/findings.md): 25,280 unique inputs / 75,840 method predictions planned, reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
+Current scope correction: **the entire released test sets**, with no source-group sampling. The expansion is running in [results_cf_full_test](results_cf_full_test/findings.md): 25,280 unique inputs / 25,280 M2 predictions planned (user narrowed the final scope to MedRGAG-Llama base only; earlier M0/M1 outputs are preserved), reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
 
 Full-set commands from `cf_medrgag_validation_pack`: set `export CF_SCREENING_OUTPUT=results_cf_full_test`, then `bash scripts/cf_baseline_screening.sh prepare --tier full-test`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`.
 
