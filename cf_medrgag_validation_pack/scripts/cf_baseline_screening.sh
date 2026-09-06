@@ -17,9 +17,9 @@ case "${1:-}" in
     date -Is >> "$RESULTS"/cache/batch_wall_times.txt
     CUDA_VISIBLE_DEVICES=1 "$PYTHON" -u scripts/run_cf_baseline_screening.py retrieval --shard-index 2 > "$RESULTS"/retrieval.log 2>&1 &
     RETRIEVAL_PID=$!
-    CUDA_VISIBLE_DEVICES=0 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 0 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .50 > "$RESULTS"/run_0.log 2>&1 &
+    CUDA_VISIBLE_DEVICES=0 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 0 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .75 > "$RESULTS"/run_0.log 2>&1 &
     WORKER_ZERO_PID=$!
-    CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 1 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .50 > "$RESULTS"/run_1.log 2>&1 &
+    CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 1 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .75 > "$RESULTS"/run_1.log 2>&1 &
     WORKER_ONE_PID=$!
     STATUS=0
     wait "$WORKER_ZERO_PID" || STATUS=1
@@ -27,7 +27,7 @@ case "${1:-}" in
     wait "$RETRIEVAL_PID" || STATUS=1
     date -Is >> "$RESULTS"/cache/batch_wall_times.txt
     if [[ "$STATUS" -eq 0 ]]; then
-      CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py repeat --batch-size 32 --chunk-size 20 --gpu-memory .50 > "$RESULTS"/repeat_independent.log 2>&1 || STATUS=1
+      CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py repeat --batch-size 32 --chunk-size 20 --gpu-memory .75 > "$RESULTS"/repeat_independent.log 2>&1 || STATUS=1
     fi
     exit "$STATUS"
     ;;

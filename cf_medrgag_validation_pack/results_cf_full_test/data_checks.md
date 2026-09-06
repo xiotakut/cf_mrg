@@ -126,3 +126,5 @@ Potential ambiguities: MedPIC has no official pair map; MedEinst multi-edit taxo
 Raw source checks and complete prompts are retained locally; do not paste license-unclear text into Git.
 
 Full-release coverage test passed: all 10,766 MedEinst test rows, 467 MedPIC rows, 12,310 CPV variants plus 1,202 authentic references, 1,500 Cultural rows, 203+809 MedCounterFact rows. Exact visible-input duplicates keep every evaluation label. Eleven duplicate inputs have conflicting official gold; flagged in evaluation labels and duplicate_gold_conflicts.json. MedCounterFact IDs 147/43/66 each lack one released category variant; nothing is synthesized. Full source overlap mapping contains 142 CPV/Cultural source links. Prior 20-input repeat and 25-input smoke are retained fixed auxiliary samples, not fresh random full-population samples.
+
+Prespecified full-release sensitivity (2026-09-06 14:05 CST): retain all 11 identical-control/trap, conflicting-gold MedEinst pairs in the primary test; additionally report the same metrics excluding these flagged pairs. Flags were identified in data preparation, independent of predictions; no inference or gold is changed.

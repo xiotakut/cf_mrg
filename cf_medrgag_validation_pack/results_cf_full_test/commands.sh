@@ -8,5 +8,8 @@ bash scripts/cf_baseline_screening.sh analyze
 # Current batch began 2026-09-06 13:44:17 CST with .45 on GPU0/2.
 # GPU0 initialization needed more KV capacity and produced no LLM requests.
 # One bounded restart used --gpu-memory .50; GPU2 .45 remained running.
-# Future wrapper replays use .50 on both GPUs. Candidate counts and decoding do not change.
+# Future wrapper replays use .75 on both GPUs. Candidate counts and decoding do not change.
 # Prior task-local runtime and exact stage artifacts are copied/reused by prepare.
+
+# Controlled capacity restart: both task-owned workers resumed with --gpu-memory .75;
+# exact preceding logs and interruption accounting are in capacity_restart.json.

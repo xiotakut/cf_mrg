@@ -325,10 +325,17 @@ def efficiency_report(stages,runtimes,n,completed):
     reuse=OUT/'cache_reuse.json'
     if reuse.exists():
         result['prior_screening_reuse']=json.loads(reuse.read_text())
+        result['historical_answer_cache_hits']=result['prior_screening_reuse']['prior_predictions']
+        result['unrelated_historical_method_answer_cache_hits']=0
+        result['cold_vs_reused']='full-test extension: exact prior screening inputs and all their stages reused; remaining inputs newly executed; no unrelated historical method answers reused'
         start=datetime.fromisoformat(wall_lines[0]).timestamp() if wall_lines else float('inf')
         fresh=[r for r in stages if r.get('time',0)>=start and 'prompt_tokens' in r]
         result['incremental_expansion_workload']={'LLM_requests':len(fresh),'prompt_tokens':sum(r['prompt_tokens'] for r in fresh),'completion_tokens':sum(r['completion_tokens'] for r in fresh),'meaning':'new requests since the full-test expansion started; earlier exact cached stages remain in total workload'}
         result['recovered_engine_startup_failures']=len(list((OUT/'cache/runtime_failures').glob('*_initial_capacity.json')))
+        restart=OUT/'capacity_restart.json'
+        if restart.exists():
+            result['controlled_capacity_restart']=json.loads(restart.read_text())
+            result['recorded_token_cost_limit']='Unreturned tokens from at most one interrupted batch per engine during the documented capacity restart are unavailable; recorded token totals exclude them. Full batch wall time includes the interruption and reinitialization.'
     return result
 
 def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):
@@ -355,6 +362,8 @@ def sensitivity_report(rows,scored):
     complete={k for k,ll in expected.items() if all((l['group_id'],l['protocol'],l['role'],m) in scored for l in ll for m in METHODS)}
     paired_sensitivity=[]
     selectors={'no_suspected_source_overlap':lambda r:r['label']['group_id'] not in overlap_groups,'cpv_quality_flag_negative':lambda r:r['label']['dataset']=='cpv' and not r['label'].get('no_op',False) and not r['label'].get('potential_clinical_conflict',False),'medeinst_unexposed':lambda r:r['label']['dataset']=='medeinst' and not r['label'].get('previously_exposed',True),'medeinst_exposed':lambda r:r['label']['dataset']=='medeinst' and r['label'].get('previously_exposed',False)}
+    if (OUT/'duplicate_gold_conflicts.json').exists():
+        selectors['medeinst_without_identical_input_gold_conflict']=lambda r:r['label']['dataset']=='medeinst' and not r['label'].get('identical_input_conflicting_gold',False)
     for name,predicate in selectors.items():
         values=[r for r in rows if predicate(r) and not r['label'].get('additional_native',False)]
         result[name]=[{'benchmark':ds,'protocol':protocol,'method':m,**aggregate([r for r in values if (r['label']['dataset'],r['label']['protocol'],r['method'])==(ds,protocol,m)])} for ds,protocol,m in sorted({(r['label']['dataset'],r['label']['protocol'],r['method']) for r in values})]

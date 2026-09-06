@@ -28,5 +28,13 @@
     "gpu0_memory_utilization": 0.5,
     "gpu2_memory_utilization": 0.45,
     "checkpoint_decoding_unchanged": true
+  },
+  "controlled_capacity_restart": {
+    "gpu_memory_utilization": 0.75,
+    "new_KV_tokens": {
+      "0": 348720,
+      "2": 360480
+    },
+    "record": "capacity_restart.json"
   }
 }

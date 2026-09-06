@@ -1,9 +1,9 @@
 flowchart TD
-  Sources[Five pinned official input releases] --> Diagnosis[MedEinst: 300 native pairs plus 59 auxiliary native pairs]
+  Sources[Five pinned official input releases] --> Diagnosis[MedEinst: all 5383 official test pairs]
   Sources --> FourWay[MedEinst: 60 frozen four-way pairs, sensitivity only]
   Sources --> Multi[MedPIC: 467 native multi-select rows, no official pair map]
-  Sources --> Choice[CPV: 60 groups and Cultural: 150 groups, native options]
-  Sources --> World[MedCounterFact: 80 groups, mandatory article evidence]
+  Sources --> Choice[CPV: all 1202 groups and Cultural: all 150 groups, native options]
+  Sources --> World[MedCounterFact: all 203 groups, mandatory article evidence]
   Diagnosis --> Prepare[Task preparation and exact visible-input deduplication]
   FourWay --> Prepare
   Multi --> Prepare

@@ -1,0 +1,78 @@
+{
+  "started": "2026-09-06T16:41:08.698383+08:00",
+  "reason": "Increase KV capacity using currently free GPU memory; prior GPU0/2 KV 153984/105616 tokens limited long-input concurrency",
+  "prior_gpu_memory": {
+    "0": 0.5,
+    "2": 0.45
+  },
+  "new_gpu_memory": 0.75,
+  "preserved": "checkpoint BF16, tokenizer, prompts, input IDs, RNG seeds, candidate/document counts and decoding budgets",
+  "cache_counts_before": {
+    "results_cf_full_test/cache/main/worker-1": {
+      "M1": 2750,
+      "explore": 2750,
+      "M0": 2750,
+      "summary": 13750,
+      "generate": 13750,
+      "M2": 2732,
+      "rerank": 2732,
+      "select": 2732,
+      "retrieval": 39
+    },
+    "results_cf_full_test/cache/main/worker-0": {
+      "M1": 2777,
+      "explore": 2777,
+      "M0": 2777,
+      "summary": 13885,
+      "generate": 13885,
+      "M2": 2759,
+      "retrieval_pre_compat": 25,
+      "rerank": 2759,
+      "select": 2759,
+      "retrieval": 61
+    },
+    "results_cf_full_test/cache/main/worker-2": {
+      "retrieval": 12088
+    }
+  },
+  "parents": {
+    "794512": 0,
+    "793131": 1
+  },
+  "children": {
+    "794512": [
+      794868
+    ],
+    "793131": [
+      793913,
+      793914
+    ]
+  },
+  "inflight_policy": "All completed stage rows retained. At most one unreturned generation batch per engine may be interrupted; its unreturned tokens are unavailable and excluded from recorded-token totals, with restart wall time retained. No partial output is treated as a prediction.",
+  "nvidia_before": "0, 97871 MiB, 49901 MiB, 100 %\n1, 97871 MiB, 37583 MiB, 100 %\n2, 97871 MiB, 43980 MiB, 100 %\n3, 97871 MiB, 77495 MiB, 0 %\n",
+  "new_KV_tokens": {
+    "0": 348720,
+    "2": 360480
+  },
+  "ready_log_timestamps": {
+    "0": "09-06 16:42:03",
+    "2": "09-06 16:42:03"
+  },
+  "prior_logs": {
+    "0": "cache/capacity_restart/run_0_before.log",
+    "2": "cache/capacity_restart/run_1_before.log"
+  },
+  "status": "both engines initialized successfully; exact completed-stage caches resumed",
+  "completed_tokens_unknown_upper_bound": 131072,
+  "upper_bound_note": "Ceiling only, not measured cost: at most 32 in-flight requests per engine and maximum stage completion limit 2048.",
+  "pre_restart_artifact_audit": {
+    "worker-1": {
+      "durable_pre_restart_stage_prompt_references_verified": 41214,
+      "missing": 0
+    },
+    "worker-0": {
+      "durable_pre_restart_stage_prompt_references_verified": 41619,
+      "missing": 0
+    }
+  }
+}
