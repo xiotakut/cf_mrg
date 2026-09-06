@@ -1,0 +1,45 @@
+{
+  "baseline": "medrgag_llama_base",
+  "baseline_source": "scripts/run_gate_b.py::run_m2 via run_cfshift.py::run_baseline at 1e01b3a",
+  "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+  "medcpt": "/home/data3/txy/models/ncbi-MedCPT-Cross-Encoder",
+  "dtype": "bfloat16",
+  "max_model_len": 65536,
+  "retrieval_per_source": 32,
+  "initial_documents": 5,
+  "knowledge_points": 3,
+  "generated_documents": 5,
+  "kads_candidates": 10,
+  "final_documents": 5,
+  "reader_max_tokens": 64,
+  "seed": 20260906,
+  "summary": {
+    "temperature": 0.0,
+    "max_tokens": 64
+  },
+  "explore": {
+    "temperature": 0.0,
+    "max_tokens": 1024
+  },
+  "generate": {
+    "temperature": 1.2,
+    "top_p": 0.9,
+    "top_k": 50,
+    "presence_penalty": 1.0,
+    "max_tokens": 256
+  },
+  "select": {
+    "temperature": 0.0,
+    "max_tokens": 2048
+  },
+  "reader": {
+    "temperature": 0.0,
+    "max_tokens": 64
+  },
+  "repair_attempts": 0,
+  "include_mamabench": false,
+  "mandatory_evidence": "full input in all methods and all KGCC/KADS stages; never subject to selection",
+  "overflow": "preserve full task and mandatory evidence; raise recorded overflow for any oversized full prompt; no silent truncation",
+  "bootstrap_samples": 2000,
+  "equivalence_margin": 0.05
+}

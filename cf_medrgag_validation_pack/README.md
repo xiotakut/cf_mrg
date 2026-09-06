@@ -1,4 +1,10 @@
-# CF-Residual Adapter validation pack
+# Counterfactual medical RAG validation pack
+
+Current work: [all-Llama baseline screening](results_cf_screening/summary.md), with [source acquisition](results_cf_screening/acquisition.md), [actual baseline contract](results_cf_screening/baseline_contract.md), and [commands](results_cf_screening/commands.sh). The fixed three methods use independent current-case inputs and native answer formats. MedEinst four-option sensitivity is separate from native diagnosis; Cultural-Cues has 1,500 released inputs and no Neutral field. Historical experiments remain below and in their original result directories.
+
+Run `bash scripts/cf_baseline_screening.sh prepare`, `bash scripts/cf_baseline_screening.sh run`, then `bash scripts/cf_baseline_screening.sh analyze`. Analysis refuses incomplete predictions unless explicitly passed `--partial`.
+
+## Historical CF-Residual Adapter
 
 **CF-Residual Adapter** tests whether one counterfactual sidecar transfers across two structurally different medical-RAG bases. The base system supplies a four-option score distribution; the unchanged sidecar supplies control-to-trap delta/profile and CPG scores; a small calibrated linear model returns a forced-choice diagnosis.
 

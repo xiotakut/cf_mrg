@@ -1,6 +1,10 @@
 # cf_mrg
 
-The active experiment is the **CF-Residual Adapter**, a portable counterfactual sidecar evaluated with both a MedRGAG-style pipeline and the official intrinsic MA-RAG implementation. It combines unchanged control/trap option scores, DDXPlus delta-profile alignment, and Counterfactual Probability Gap scores through a small frozen linear fusion model.
+The active experiment is **cross-benchmark all-Llama baseline screening**: independent native-task Direct, retrieval-only, and MedRGAG-Llama inference on MedEinst, MedPIC, CPV-MedQA, Cultural-Cues, and MedCounterFact. See the [baseline contract](cf_medrgag_validation_pack/results_cf_screening/baseline_contract.md), [frozen sample counts](cf_medrgag_validation_pack/results_cf_screening/benchmark_summary.csv), and [current report](cf_medrgag_validation_pack/results_cf_screening/summary.md). The report explicitly distinguishes partial from completed results. No counterfactual sidecar is loaded in this experiment.
+
+From `cf_medrgag_validation_pack`, the commands are `bash scripts/cf_baseline_screening.sh prepare`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`. Runtime setup and the actual execution record are in [commands.sh](cf_medrgag_validation_pack/results_cf_screening/commands.sh). Native input text and large stage caches remain local.
+
+The previous **CF-Residual Adapter** study below is historical. It combines unchanged control/trap option scores, DDXPlus delta-profile alignment, and Counterfactual Probability Gap scores through a small frozen linear fusion model.
 
 ## Confirmatory result
 
