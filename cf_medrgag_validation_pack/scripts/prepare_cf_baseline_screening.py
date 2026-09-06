@@ -82,7 +82,7 @@ def exposure(test):
             for text in walk(row):
                 s = norm(text)
                 # Known old task suffix; do not compare short clinical fragments.
-                s = s.split(' which diagnosis best fits this patient?')[0].rstrip(' .')
+                s = s.split(' which diagnosis best fits this patient')[0].rstrip(' .')
                 for case in lookup.get(s,[]): found[case].add(str(rel))
     return found, files
 
@@ -149,7 +149,7 @@ def prepare(tier):
                 add('medeinst',case,'reference' if member=='control' else 'variant',r['narrative']+'\n\nWhich diagnosis best fits this patient?',options,gold,'single',protocol='derived_four_way',operation=[] if member=='control' else ['mixed_or_unresolved'],previously_exposed=case in exposed,option_asset=asset,official_split='test')
     for r in medpic:
         info=r['taxonomy_patient_info_type'];op='measurement_threshold' if 'threshold' in info else 'presence_polarity' if info in ['disease presence','pregnancy status'] else 'mixed_or_unresolved'
-        add('medpic',r['instance_id'],r['benchmark_task_family'],r['patient_vignette']+'\n\n'+r['question'],r['options'],sorted(r['answer']),'multi',operation=[op],official_operation=r['taxonomy_reasoning_operation'],patient_info_type=info,department=r['taxonomy_clinical_department'])
+        add('medpic',r['instance_id'],r['benchmark_task_family'],r['patient_vignette']+'\n\n'+r['question'],r['options'],sorted(r['answer']),'multi',operation=[] if r['benchmark_task_family']=='guideline_following' else [op],official_operation=r['taxonomy_reasoning_operation'],patient_info_type=info,department=r['taxonomy_clinical_department'])
     cg=defaultdict(list)
     for r in cpv:cg[r['case_id']].append(r)
     ids=sorted(cg);rng.shuffle(ids)
@@ -227,10 +227,13 @@ def prepare(tier):
     if train.exists():canonical=sorted(set(canonical)|{r['ground_truth'] for r in read(train)})
     (OUT/'canonical_labels.json').write_text(json.dumps({'labels':canonical,'aliases':{},'source':'official MedEinst train/test ground_truth; no test-derived medical aliases','evaluator':'normalized exact screening, not official semantic evaluator'},indent=2))
     counts=[]
+    def sample_role(r):
+        return 'additional_native_sensitivity' if r.get('additional_native') else 'derived_sensitivity' if r['protocol']=='derived_four_way' else 'primary'
     for ds in provenance:
         for protocol in sorted({r['protocol'] for r in labels if r['dataset']==ds}):
-            rr=[r for r in labels if r['dataset']==ds and r['protocol']==protocol]
-            counts.append({'benchmark':ds,'protocol':protocol,'source_groups':len({r['group_id'] for r in rr}),'input_records':len(rr),'unique_inputs':len({r['item_id'] for r in rr}),'planned_method_predictions':3*len({r['item_id'] for r in rr})})
+            for role in sorted({sample_role(r) for r in labels if r['dataset']==ds and r['protocol']==protocol}):
+                rr=[r for r in labels if r['dataset']==ds and r['protocol']==protocol and sample_role(r)==role]
+                counts.append({'benchmark':ds,'protocol':protocol,'sample_role':role,'source_groups':len({r['group_id'] for r in rr}),'input_records':len(rr),'unique_inputs':len({r['item_id'] for r in rr}),'planned_method_predictions':3*len({r['item_id'] for r in rr})})
     with (OUT/'benchmark_summary.csv').open('w') as f:
         w=csv.DictWriter(f,fieldnames=list(counts[0]),lineterminator='\n');w.writeheader();w.writerows(counts)
     checks=['# Five source-unit checks per benchmark','Inference receives only item_id, question, options, fixed_evidence, answer_format. No gold/group/role/taxonomy enters solver.','Full prepared inputs stay local and are not redistributed.']

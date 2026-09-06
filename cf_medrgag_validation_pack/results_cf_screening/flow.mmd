@@ -1,5 +1,14 @@
 flowchart TD
-  Sources[Five pinned official input releases] --> Prepare[Native task preparation and exact visible-input deduplication]
+  Sources[Five pinned official input releases] --> Diagnosis[MedEinst: 300 native pairs plus 59 auxiliary native pairs]
+  Sources --> FourWay[MedEinst: 60 frozen four-way pairs, sensitivity only]
+  Sources --> Multi[MedPIC: 467 native multi-select rows, no official pair map]
+  Sources --> Choice[CPV: 60 groups and Cultural: 150 groups, native options]
+  Sources --> World[MedCounterFact: 80 groups, mandatory article evidence]
+  Diagnosis --> Prepare[Task preparation and exact visible-input deduplication]
+  FourWay --> Prepare
+  Multi --> Prepare
+  Choice --> Prepare
+  World --> Prepare
   Prepare --> Tasks[Independent question + all options + mandatory evidence]
   Prepare --> Labels[Separate gold, source mapping and frozen taxonomy]
   Tasks --> M0[Direct Llama reader]

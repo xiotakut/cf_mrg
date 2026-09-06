@@ -8,4 +8,6 @@ One native CPV source group and one Cultural source group are included only part
 
 Tests: tests/test_cf_baseline_screening.py, two tests pass (visible-field filtering, mandatory evidence, full options, task parsing, contradictory answers, stable independent seeds, metric identities). Input preflight: 3774 items; max mandatory reader 48747 tokens; 0 overflows at 65536 capacity. Full KADS includes only one copy of mandatory evidence to prevent duplication overflow.
 
+Later algebraic seed audit found cross-slot overlap between the first repeat and primary run, including one identical question-only prompt/seed per item. Its 361.45-second timing remains a valid full-pipeline throughput probe. Its noise estimate is superseded by the same frozen 20 inputs with a disjoint repeat stream; both outputs and costs remain available. See `rng_repeat_correction.json`; primary seeds and predictions are unchanged.
+
 Runtime compatibility failures and replaced smoke select/reader artifacts are retained locally under cache. No transport error is treated as a model wrong answer.

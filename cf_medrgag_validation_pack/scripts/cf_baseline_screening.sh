@@ -25,6 +25,9 @@ case "${1:-}" in
     wait "$WORKER_ONE_PID" || STATUS=1
     wait "$RETRIEVAL_PID" || STATUS=1
     date -Is >> results_cf_screening/cache/batch_wall_times.txt
+    if [[ "$STATUS" -eq 0 ]]; then
+      CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py repeat --batch-size 32 --chunk-size 20 --gpu-memory .45 > results_cf_screening/repeat_independent.log 2>&1 || STATUS=1
+    fi
     exit "$STATUS"
     ;;
   analyze)

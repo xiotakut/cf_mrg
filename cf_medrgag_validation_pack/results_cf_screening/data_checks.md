@@ -1,4 +1,6 @@
 # Five source-unit checks per benchmark
+
+Full prepared-set audit: normalization preserves internal punctuation and numeric operators; zero within-item option-text collisions and zero collisions among the 46 canonical diagnosis labels were found. All six recorded CPV/Cultural source-overlap pairs also match with punctuation retained (NFKC, case and whitespace only). The historical question-suffix matcher was made tolerant of the already-trimmed terminal question mark: rescanning the same 163 frozen files still finds 3,550 previously exposed official test cases, with zero changes to this run's exposure labels or sample IDs.
 Inference receives only item_id, question, options, fixed_evidence, answer_format. No gold/group/role/taxonomy enters solver.
 Full prepared inputs stay local and are not redistributed.
 

@@ -46,6 +46,7 @@ def parse(raw,item,canonical):
             return None,'invalid_option_set',v
         return tuple(sorted(v)),None,v
     if not isinstance(v,str):return None,'invalid_answer_type',v
+    if re.search(r"cannot (provide|answer)|can't (provide|answer)|unable to (provide|answer)",v,re.I):return None,'refusal',v
     if fmt=='single':return (v,None,v) if v in options else (None,'invalid_option_key',v)
     if fmt=='relation':
         s=norm(v)
@@ -67,7 +68,7 @@ def score(record,label,item,canonical):
     f1=None;tp=fp=fn=0
     if item['answer_format']=='multi':
         pp=set(pred or ());gg=set(gold);tp=len(pp&gg);fp=len(pp-gg);fn=len(gg-pp);f1=2*tp/(2*tp+fp+fn)
-    return {'correct':bool(correct),'prediction':pred,'semantic_prediction':semantic(pred),'semantic_gold':semantic(gold),'invalid_reason':error,'invalid':error is not None,'raw_exact':raw_value==label['gold'],'uncertainty':pred=='uncertainty','option_f1':f1,'tp':tp,'fp':fp,'fn':fn,'predicted_set_size':len(pred or ()) if item['answer_format']=='multi' else None,'gold_set_size':len(gold) if item['answer_format']=='multi' else None}
+    return {'correct':bool(correct),'prediction':pred,'semantic_prediction':semantic(pred),'semantic_gold':semantic(gold),'invalid_reason':error,'invalid':error is not None,'format_invalid':error is not None and error!='unmapped_diagnosis','unmapped_diagnosis':error=='unmapped_diagnosis','ambiguous':bool(error and error.startswith('ambiguous')),'raw_exact':raw_value==label['gold'],'uncertainty':pred=='uncertainty','option_f1':f1,'tp':tp,'fp':fp,'fn':fn,'predicted_set_size':len(pred or ()) if item['answer_format']=='multi' else None,'gold_set_size':len(gold) if item['answer_format']=='multi' else None}
 
 def bootstrap(values,seed=20260906):
     a=np.asarray(values,dtype=float)
@@ -99,7 +100,7 @@ def aggregate(rows):
     for r in rows:groups[r['label']['group_id']].append(int(r['correct']))
     tp=sum(r['tp'] for r in rows);fp=sum(r['fp'] for r in rows);fn=sum(r['fn'] for r in rows)
     sizes=[r for r in rows if r['option_f1'] is not None]
-    return {'N':n,'source_groups':len(groups),'correct':sum(r['correct'] for r in rows),'invalid':sum(r['invalid'] for r in rows),'accuracy':ratio(sum(r['correct'] for r in rows),n),'source_macro_score':float(np.mean([np.mean(v) for v in groups.values()])) if groups else None,'score_ci':bootstrap([np.mean(v) for v in groups.values()]),'raw_exact':ratio(sum(r['raw_exact'] for r in rows),n),'uncertainty':sum(r['uncertainty'] for r in rows),'invalid_reasons':dict(Counter(r['invalid_reason'] for r in rows if r['invalid'])),'output_distribution':dict(Counter(str(r['prediction']) for r in rows)) if rows and rows[0]['label']['dataset']=='medcounterfact' else None,'option_f1_micro':ratio(2*tp,2*tp+fp+fn) if sizes else None,'option_f1_macro':float(np.mean([r['option_f1'] for r in sizes])) if sizes else None,'predicted_set_size':float(np.mean([r['predicted_set_size'] for r in sizes])) if sizes else None,'gold_set_size':float(np.mean([r['gold_set_size'] for r in sizes])) if sizes else None}
+    return {'N':n,'source_groups':len(groups),'correct':sum(r['correct'] for r in rows),'invalid':sum(r['invalid'] for r in rows),'format_invalid':sum(r['format_invalid'] for r in rows),'unmapped_diagnosis':sum(r['unmapped_diagnosis'] for r in rows),'ambiguous':sum(r['ambiguous'] for r in rows),'accuracy':ratio(sum(r['correct'] for r in rows),n),'source_macro_score':float(np.mean([np.mean(v) for v in groups.values()])) if groups else None,'score_ci':bootstrap([np.mean(v) for v in groups.values()]),'raw_exact':ratio(sum(r['raw_exact'] for r in rows),n),'uncertainty':sum(r['uncertainty'] for r in rows),'invalid_reasons':dict(Counter(r['invalid_reason'] for r in rows if r['invalid'])),'output_distribution':dict(Counter(str(r['prediction']) for r in rows)) if rows and rows[0]['label']['dataset']=='medcounterfact' else None,'option_f1_micro':ratio(2*tp,2*tp+fp+fn) if sizes else None,'option_f1_macro':float(np.mean([r['option_f1'] for r in sizes])) if sizes else None,'predicted_set_size':float(np.mean([r['predicted_set_size'] for r in sizes])) if sizes else None,'gold_set_size':float(np.mean([r['gold_set_size'] for r in sizes])) if sizes else None}
 
 def analyze(partial=False):
     plan=json.loads((OUT/'sample_plan.json').read_text())
@@ -119,12 +120,20 @@ def analyze(partial=False):
                     preds[key]=r
                 compact={k:v for k,v in r.items() if k not in {'documents','raw_response'}}
                 compact['stage']=stage;compact['artifact']=str(file.relative_to(OUT))
+                if stage=='explore':
+                    compact['missing_knowledge_slots']=[j for j in range(1,4) if not re.search(rf'Knowledge\s+{j}\s*:\s*\S',r['raw_response'],re.I)]
+                if stage=='rerank':compact['selected_document_count']=len(r['documents'])
                 if 'documents' in r:compact['source_ids']=[{'id':d.get('id',d.get('docid')),'source':d['source']} for d in r['documents']]
                 stages.append(compact)
     expected=3*len(items)
     if len(preds)<expected and not partial:raise SystemExit(f'Only {len(preds)}/{expected} predictions; use --partial for an explicitly partial report.')
-    write(OUT/'predictions.jsonl',preds.values());write(OUT/'stages.jsonl',stages)
+    exported=[]
+    for (item_id,method),record in preds.items():
+        answer,error,raw_value=parse(record['raw_response'],items[item_id],canon)
+        exported.append(record|{'answer':answer,'raw_answer_value':raw_value,'invalid_reason':error,'format_invalid':error is not None and error!='unmapped_diagnosis','unmapped_diagnosis':error=='unmapped_diagnosis'})
+    write(OUT/'predictions.jsonl',exported);write(OUT/'stages.jsonl',stages)
     scored={};rows=[]
+    tax_index={(r['item_id'],r['group_id'],r['protocol'],r['role']):r for r in taxonomy}
     for lab in labels:
         for method in METHODS:
             record=preds.get((lab['item_id'],method))
@@ -145,13 +154,18 @@ def analyze(partial=False):
         for method in METHODS:
             rr=[r for r in primary if (r['label']['dataset'],r['label']['protocol'],r['method'])==(ds,protocol,method)]
             for role in ['all']+sorted({r['label']['role'] for r in rr if r['label']['role'] in ['reference','guideline_following','counterfactual']})+(['variant'] if ds not in ['medpic'] else []):
-                values=rr if role=='all' else [r for r in rr if (r['label']['role']=='reference' if role=='reference' else r['label']['role']!='reference' if role=='variant' else r['label']['role']==role)]
-                metric_rows.append({'benchmark':ds,'protocol':protocol,'method':method,'role':role,'score_name':'evidence_agreement' if ds=='medcounterfact' else 'exact_set' if ds=='medpic' else 'canonical_match' if ds=='medeinst' and protocol=='native' else 'accuracy','planned_input_records':len(labs),'planned_source_groups':len(groups),'complete_source_groups_all_methods':len(complete),**aggregate(values)})
-            fields={'medpic':['official_operation','patient_info_type'],'cpv':['gender','ethnicity','no_op','potential_clinical_conflict'],'cultural':['condition','culture'],'medcounterfact':['main_category'],'medeinst':['previously_exposed']}[ds]
+                def wanted(l):return role=='all' or (l['role']!='reference' if role=='variant' else l['role']==role)
+                values=[r for r in rr if wanted(r['label'])];planned=[l for l in labs if wanted(l)];planned_groups={l['group_id'] for l in planned}
+                metric_rows.append({'benchmark':ds,'protocol':protocol,'method':method,'role':role,'score_name':'evidence_agreement' if ds=='medcounterfact' else 'exact_set' if ds=='medpic' else 'canonical_match' if ds=='medeinst' and protocol=='native' else 'accuracy','planned_input_records':len(planned),'planned_source_groups':len(planned_groups),'complete_source_groups_all_methods':len(complete&planned_groups),**aggregate(values)})
+            fields={'medpic':['official_operation','patient_info_type'],'cpv':['gender','ethnicity','no_op','patient_attribute_pattern','potential_clinical_conflict'],'cultural':['condition','culture'],'medcounterfact':['main_category'],'medeinst':['previously_exposed']}[ds]
             for field in fields:
                 for value in sorted({str(r['label'].get(field)) for r in rr}):
                     vv=[r for r in rr if str(r['label'].get(field))==value]
                     category.append({'benchmark':ds,'protocol':protocol,'method':method,'slice_field':field,'slice':value,**aggregate(vv)})
+            operations=sorted({o for r in rr for o in tax_index[(r['label']['item_id'],r['label']['group_id'],protocol,r['label']['role'])]['operation_tags']})
+            for op in operations:
+                vv=[r for r in rr if op in tax_index[(r['label']['item_id'],r['label']['group_id'],protocol,r['label']['role'])]['operation_tags']]
+                category.append({'benchmark':ds,'protocol':protocol,'method':method,'slice_field':'operation_tag','slice':op,**aggregate(vv)})
             pairs=[]
             for r in rr:
                 l=r['label'];g=l['group_id']
@@ -172,10 +186,17 @@ def analyze(partial=False):
                     pp=pairs if condition=='all' else [p for p in pairs if p['condition']==condition]
                     result=four_grid(pp);row={'benchmark':ds,'protocol':protocol,'method':method,'condition':condition,**result};pair_rows.append(row)
                     if result['mcnemar_p'] is not None:statistics.append({'comparison':'reference_vs_variant','benchmark':ds,'protocol':protocol,'method':method,'condition':condition,'p':result['mcnemar_p'],'N':result['N']})
-        for m in ['M1','M2']:
-            usable=[l for l in labs if (l['item_id'],'M0') in preds and (l['item_id'],m) in preds]
-            aa=[scored[(l['group_id'],protocol,l['role'],'M0')]['correct'] for l in usable];bb=[scored[(l['group_id'],protocol,l['role'],m)]['correct'] for l in usable]
-            comparisons.append({'benchmark':ds,'protocol':protocol,'comparison':m+'-M0',**method_comparison(aa,bb)})
+                if ds=='cultural':
+                    for operation in ['Id','Context','Id+Context']:
+                        pp=[p for p in pairs if p['var']['label']['condition']==operation]
+                        if pp:pair_rows.append({'benchmark':ds,'protocol':protocol,'method':method,'condition':'across_cultures:'+operation,**four_grid(pp)})
+        for base_method,m in [('M0','M1'),('M0','M2'),('M1','M2')]:
+            usable=[l for l in labs if l['group_id'] in complete and (l['item_id'],base_method) in preds and (l['item_id'],m) in preds]
+            aa=[scored[(l['group_id'],protocol,l['role'],base_method)]['correct'] for l in usable];bb=[scored[(l['group_id'],protocol,l['role'],m)]['correct'] for l in usable]
+            gd=defaultdict(list)
+            for l,a,b in zip(usable,aa,bb):gd[l['group_id']].append(int(b)-int(a))
+            means=[np.mean(v) for v in gd.values()]
+            comparisons.append({'benchmark':ds,'protocol':protocol,'comparison':m+'-'+base_method,**method_comparison(aa,bb),'source_groups':len(gd),'net_gain_source_macro':float(np.mean(means)) if means else None,'net_gain_source_ci':bootstrap(means)})
     # Holm family is fixed to all native reference–variant independent-source condition tests.
     primary_stats=[r for r in statistics if r['protocol']=='native']
     prev=0.;ordered=sorted(primary_stats,key=lambda r:r['p'])
@@ -200,14 +221,29 @@ def analyze(partial=False):
             diffs=a[rng.integers(0,len(a),(2000,len(a)))].mean(1)-b[rng.integers(0,len(b),(2000,len(b)))].mean(1)
             gaps.append({'method':method,'status':'unpaired_composition_gap','N_GF':len(a),'N_CF':len(b),'gap':float(a.mean()-b.mean()),'ci':np.quantile(diffs,[.025,.975]).tolist()})
     table('benchmark_metrics.csv',metric_rows);table('category_metrics.csv',category);table('paired_effects.csv',pair_rows);table('transitions.csv',transitions);table('method_comparisons.csv',comparisons);table('amplification.csv',amps)
+    if (OUT/'taxonomy_corrections.json').exists():
+        old={r['item_id']:r['old_tags'] for r in json.loads((OUT/'taxonomy_corrections.json').read_text())['affected']};sensitivity=[]
+        for method in METHODS:
+            rr=[r for r in primary if r['label']['dataset']=='medpic' and r['method']==method]
+            for op in ['presence_polarity','measurement_threshold','mixed_or_unresolved']:
+                for version in ['before','after']:
+                    vv=[]
+                    for r in rr:
+                        l=r['label'];current=tax_index[(l['item_id'],l['group_id'],l['protocol'],l['role'])]['operation_tags']
+                        tags=old.get(l['item_id'],current) if version=='before' else current
+                        if op in tags:vv.append(r)
+                    sensitivity.append({'method':method,'operation':op,'annotation_version':version,**aggregate(vv)})
+        table('taxonomy_correction_sensitivity.csv',sensitivity)
     dump('statistics.json',{'bootstrap':'2000 source-group cluster resamples, source means primary; micro supplemental','mcnemar_holm_family':'native independent-source condition-level reference-vs-variant tests, all three fixed methods; multi-variant aggregate has no McNemar p','tests':statistics,'MedPIC':gaps,'equivalence_margin':.05,'equivalence_status':'independent cross-source matching operation comparisons unavailable; within-source exploratory intervals only'})
     ident=identifiability(taxonomy)
+    explanatory_models(allpairs,items,taxonomy)
     efficiency=efficiency_report(stages,runtimes,len(items),len(preds))
     repeat=repeat_report(items,labels,canon,preds)
+    if repeat['executed']!=20 and not partial:raise SystemExit('The 20-input disjoint-stream repeat is incomplete; run the fixed repeat before final analysis.')
     sensitivities=sensitivity_report(rows,scored)
     proxies=mechanism_proxies(labels)
-    metrics={'planned_unique_inputs':len(items),'completed_unique_method_predictions':len(preds),'planned_method_predictions':expected,'completion_rate':len(preds)/expected,'status':'complete' if len(preds)==expected else 'partial','benchmarks':metric_rows,'method_comparisons':comparisons,'amplification':amps,'neutral':'unavailable in released inputs','taxonomy':ident,'efficiency':efficiency,'repeat':repeat,'sensitivities':sensitivities,'mechanism_proxies':proxies}
-    dump('metrics.json',metrics);figures(pair_rows,amps,category,stages)
+    metrics={'planned_unique_inputs':len(items),'completed_unique_method_predictions':len(preds),'planned_method_predictions':expected,'completion_rate':len(preds)/expected,'status':'complete' if len(preds)==expected and repeat['executed']==20 else 'partial','benchmarks':metric_rows,'method_comparisons':comparisons,'amplification':amps,'neutral':'unavailable in released inputs','taxonomy':ident,'efficiency':efficiency,'repeat':repeat,'sensitivities':sensitivities,'mechanism_proxies':proxies}
+    dump('metrics.json',metrics);figures(pair_rows,amps,category,stages,gaps)
     report(metrics,pair_rows,gaps)
     print(json.dumps({'status':metrics['status'],'predictions':len(preds),'planned':expected,'report':str(OUT/'summary.md')}))
 
@@ -226,34 +262,97 @@ def identifiability(taxonomy):
         result[domain]={'status':'NOT_IDENTIFIABLE','scope':'independent cross-source taxonomy','reason':reason,'within_domain_design_status':'full_rank' if rank==design.shape[1] else 'rank_deficient','N':len(rr),'base_rank':baserank,'augmented_rank':rank,'augmented_columns':design.shape[1],'operation_coverage':cover,'leave_one_source':'unavailable','within_Cultural_operation_contrasts':'available as same-MedQA-source construction analysis' if domain=='answer_invariance' else None}
     dump('taxonomy_identifiability.json',result);return result
 
+def explanatory_models(allpairs,items,taxonomy):
+    """Within-MedQA source comparisons; never estimate confounded clinical tags."""
+    tags={(t['item_id'],t['group_id']):t['operation_tags'] for t in taxonomy}
+    alias={g:min(r['groups']) for r in json.loads((OUT/'source_overlap.json').read_text()) for g in r['groups']}
+    results={}
+    for method in METHODS:
+        pp=allpairs.get(('cpv','native',method),[])+allpairs.get(('cultural','native',method),[])
+        if not pp:continue
+        names=['intercept','Cultural_dataset','reference_length_kchars','net_length_change_kchars','identity_attribute','contextual_addition']
+        x=[];y=[];groups=[]
+        for p in pp:
+            lab=p['var']['label'];ref=items[p['ref']['label']['item_id']]['question'];var=items[lab['item_id']]['question'];ops=tags[(lab['item_id'],lab['group_id'])]
+            x.append([1,int(lab['dataset']=='cultural'),len(ref)/1000,(len(var)-len(ref))/1000,int('identity_attribute' in ops),int('contextual_addition' in ops)])
+            y.append(int(p['var']['correct'])-int(p['ref']['correct']));groups.append(alias.get(p['group'],p['group']))
+        x=np.array(x,float);y=np.array(y,float);rank=int(np.linalg.matrix_rank(x));base=x[:,:4]
+        if rank<x.shape[1]:
+            results[method]={'status':'NOT_IDENTIFIABLE','reason':'rank deficient available paired subset','rank':rank,'columns':x.shape[1]};continue
+        # Equal source weights; all declared variants stay together in bootstrap.
+        counts=Counter(groups);weights=np.array([1/counts[g] for g in groups]);root=np.sqrt(weights)
+        def fit(a,b,w):return np.linalg.lstsq(a*w[:,None],b*w,rcond=None)[0]
+        b0=fit(base,y,root);b1=fit(x,y,root)
+        gidx=[np.flatnonzero(np.array(groups)==g) for g in sorted(set(groups))]
+        rng=np.random.default_rng(20260906);boots=[]
+        for _ in range(2000):
+            ix=np.concatenate([gidx[i] for i in rng.integers(0,len(gidx),len(gidx))])
+            if np.linalg.matrix_rank(x[ix])==x.shape[1]:boots.append(fit(x[ix],y[ix],root[ix]))
+        intervals=np.quantile(np.array(boots),[.025,.975],axis=0).T.tolist() if boots else [[None,None]]*len(names)
+        results[method]={'status':'exploratory_same_MedQA_source_constructions_only','outcome':'variant_correct minus reference_correct; source-paired outcome, not reference correctness as difficulty covariate','source_groups':len(gidx),'N_pairs':len(pp),'base_rank':int(np.linalg.matrix_rank(base)),'augmented_rank':rank,'base_weighted_MSE':float(np.average((y-base@b0)**2,weights=weights)),'augmented_weighted_MSE':float(np.average((y-x@b1)**2,weights=weights)),'coefficients':{k:{'estimate':float(v),'source_cluster_95_CI':ci} for k,v,ci in zip(names,b1,intervals)},'bootstrap_full_rank_resamples':len(boots),'limits':'native answer format and original source family are constant in this domain; no independent cross-source generalization; linear descriptive association, not causal attribution; edit-length covariate is signed character-length change, not clinical edit magnitude; no leave-one-source validation available'}
+    dump('explanatory_models.json',results)
+
 def efficiency_report(stages,runtimes,n,completed):
     rows=[]
     for stage in sorted({r['stage'] for r in stages}):
         rr=[r for r in stages if r['stage']==stage];pt=sum(r.get('prompt_tokens',0) for r in rr);ct=sum(r.get('completion_tokens',0) for r in rr)
         wall=sum(r.get('batch_wall_seconds',0)/r.get('batch_size',1) if 'batch_wall_seconds' in r else r.get('wall_seconds',0) for r in rr)
         queues=[r.get('request_metrics',{}).get('time_in_queue') for r in rr];queues=[q for q in queues if q is not None]
-        rows.append({'stage':stage,'requests_or_records':len(rr),'prompt_tokens':pt,'completion_tokens':ct,'stage_batch_wall_seconds_sum':wall,'completion_tokens_per_stage_second':ratio(ct,wall),'truncations':sum(r.get('finish_reason')=='length' for r in rr),'mean_queue_seconds':float(np.mean(queues)) if queues else None,'batch_sizes':dict(Counter(r.get('batch_size') for r in rr))})
+        rows.append({'stage':stage,'requests_or_records':len(rr),'prompt_tokens':pt,'completion_tokens':ct,'stage_batch_wall_seconds_sum':wall,'completion_tokens_per_stage_second':ratio(ct,wall),'truncations':sum(r.get('finish_reason')=='length' for r in rr),'explore_missing_slots':sum(bool(r.get('missing_knowledge_slots')) for r in rr),'selected_below_five':sum(r.get('selected_document_count',5)<5 for r in rr),'mean_queue_seconds':float(np.mean(queues)) if queues else None,'batch_sizes':dict(Counter(r.get('batch_size') for r in rr))})
     table('efficiency.csv',rows)
     times=[r['time'] for r in stages if 'time' in r]
-    result={'unique_inputs_planned':n,'completed_method_predictions':completed,'LLM_requests':sum(r['requests_or_records'] for r in rows if r['stage'] not in ['retrieval','rerank']),'prompt_tokens':sum(r['prompt_tokens'] for r in rows),'completion_tokens':sum(r['completion_tokens'] for r in rows),'completion_timestamp_span_seconds':max(times)-min(times) if times else None,'worker_runtime_records':runtimes,'pipeline_makespan_note':'use commands/run wall timestamps for total cold/load/preflight time; stage wall sums are not makespan','cache_hits':dict(sum((Counter(r['cache_hits']) for r in runtimes),Counter())),'network_retries':0,'format_repairs':0,'cold_vs_reused':'new frozen-input run; exact duplicate input tasks collapsed before inference; smoke stage caches reused after review; historical answer caches not reused'}
+    extra=[]
+    for scope,files in [('seed_repeat',(OUT/'cache/repeat_independent').glob('worker-*/*.jsonl')),('superseded_seed_repeat',(OUT/'cache/repeat').glob('worker-*/*.jsonl')),('superseded_smoke',(OUT/'cache/smoke_pre_evidence_dedup').glob('*.jsonl'))]:
+        rr=[r for f in files if f.stem in ['M0','M1','M2','summary','explore','generate','select'] for r in read(f)]
+        extra.append({'scope':scope,'requests':len(rr),'prompt_tokens':sum(r['prompt_tokens'] for r in rr),'completion_tokens':sum(r['completion_tokens'] for r in rr)})
+    wall=OUT/'cache/batch_wall_times.txt';wall_lines=wall.read_text().splitlines() if wall.exists() else []
+    from datetime import datetime
+    batch_elapsed=(datetime.fromisoformat(wall_lines[-1])-datetime.fromisoformat(wall_lines[0])).total_seconds() if len(wall_lines)>=2 else time.time()-datetime.fromisoformat(wall_lines[0]).timestamp() if wall_lines else None
+    result={'unique_inputs_planned':n,'completed_method_predictions':completed,'LLM_requests':sum(r['requests_or_records'] for r in rows if r['stage'] not in ['retrieval','rerank']),'prompt_tokens':sum(r['prompt_tokens'] for r in rows),'completion_tokens':sum(r['completion_tokens'] for r in rows),'completion_timestamp_span_seconds':max(times)-min(times) if times else None,'formal_batch_elapsed_seconds':batch_elapsed,'formal_batch_wall_timestamps':wall_lines,'worker_runtime_records':runtimes,'pipeline_makespan_note':'formal wall timestamps include concurrent workers, not sum of stage times; separate cold smoke/compatibility work is in performance_test.json','cache_hits':dict(sum((Counter(r['cache_hits']) for r in runtimes),Counter())),'network_retries':0,'format_repairs':0,'extra_workload':extra,'cold_vs_reused':'new frozen-input run; exact duplicate input tasks collapsed before inference; smoke stage caches reused after review; historical answer caches not reused'}
+    result['total_recorded_LLM_requests_including_extra']=result['LLM_requests']+sum(r['requests'] for r in extra)
+    result['total_recorded_prompt_tokens_including_extra']=result['prompt_tokens']+sum(r['prompt_tokens'] for r in extra)
+    result['total_recorded_completion_tokens_including_extra']=result['completion_tokens']+sum(r['completion_tokens'] for r in extra)
+    records=len(read(OUT/'evaluation_labels.jsonl'))
+    result.update(prepared_input_records=records,exact_duplicate_input_records=records-n,LLM_requests_avoided_by_exact_input_deduplication=15*(records-n),historical_answer_cache_hits=0)
+    prefetch=OUT/'retrieval_prefetch_completion.json'
+    if prefetch.exists():result['retrieval_prefetch']=json.loads(prefetch.read_text())
     return result
 
-def repeat_report(items,labels,canonical,preds):
-    rr=[];lookup={l['item_id']:l for l in labels};plan=json.loads((OUT/'sample_plan.json').read_text())
-    for f in (OUT/'cache/repeat').glob('worker-*/M2.jsonl'):
+def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):
+    rr=[];lookup={l['item_id']:l for l in labels};plan=json.loads((OUT/'sample_plan.json').read_text());executed=0
+    for f in (OUT/'cache'/scope).glob('worker-*/M2.jsonl'):
         for r in read(f):
+            executed+=1
             original=preds.get((r['item_id'],'M2'))
             if original:
                 a=score(original,lookup[r['item_id']],items[r['item_id']],canonical);b=score(r,lookup[r['item_id']],items[r['item_id']],canonical)
-                rr.append({'item_id':r['item_id'],'semantic_flip':a['semantic_prediction']!=b['semantic_prediction'],'primary_invalid':a['invalid'],'repeat_invalid':b['invalid'],'primary_correct':a['correct'],'repeat_correct':b['correct']})
-    result={'planned':20,'completed':len(rr),'seed':plan['repeat_seed'],'flip_rate':ratio(sum(r['semantic_flip'] for r in rr),len(rr)),'rows':rr,'interpretation':'noise estimate only; no ensemble or correction'};dump('seed_repeat.json',result);return result
+                valid=not a['invalid'] and not b['invalid']
+                rr.append({'item_id':r['item_id'],'semantic_flip':a['semantic_prediction']!=b['semantic_prediction'] if valid else None,'raw_output_changed':norm(original['raw_response'])!=norm(r['raw_response']),'primary_invalid':a['invalid'],'repeat_invalid':b['invalid'],'primary_correct':a['correct'],'repeat_correct':b['correct']})
+    valid=[r for r in rr if r['semantic_flip'] is not None]
+    result={'planned':20,'executed':executed,'matched_primary_completed':len(rr),'valid_semantic_comparisons':len(valid),'seed':plan['repeat_seed'],'stream_offset':1_000_000_000 if scope=='repeat_independent' else 0,'flip_rate':ratio(sum(r['semantic_flip'] for r in valid),len(valid)),'raw_output_change_rate':ratio(sum(r['raw_output_changed'] for r in rr),len(rr)),'rows':rr,'interpretation':'noise estimate only; no ensemble or correction; unmapped/invalid pairs excluded from semantic flip denominator and retained in raw-output change'}
+    if scope=='repeat_independent':
+        result['superseded_cross_slot_seed_overlap']=repeat_report(items,labels,canonical,preds,scope='repeat')
+        dump('seed_repeat.json',result)
+    return result
 
 def sensitivity_report(rows,scored):
     result={};overlaps=json.loads((OUT/'source_overlap.json').read_text());overlap_groups={g for r in overlaps for g in r['groups']}
+    expected=defaultdict(list)
+    for l in read(OUT/'evaluation_labels.jsonl'):expected[(l['group_id'],l['protocol'])].append(l)
+    complete={k for k,ll in expected.items() if all((l['group_id'],l['protocol'],l['role'],m) in scored for l in ll for m in METHODS)}
+    paired_sensitivity=[]
     selectors={'no_suspected_source_overlap':lambda r:r['label']['group_id'] not in overlap_groups,'cpv_quality_flag_negative':lambda r:r['label']['dataset']=='cpv' and not r['label'].get('no_op',False) and not r['label'].get('potential_clinical_conflict',False),'medeinst_unexposed':lambda r:r['label']['dataset']=='medeinst' and not r['label'].get('previously_exposed',True),'medeinst_exposed':lambda r:r['label']['dataset']=='medeinst' and r['label'].get('previously_exposed',False)}
     for name,predicate in selectors.items():
-        values=[r for r in rows if predicate(r)]
+        values=[r for r in rows if predicate(r) and not r['label'].get('additional_native',False)]
         result[name]=[{'benchmark':ds,'protocol':protocol,'method':m,**aggregate([r for r in values if (r['label']['dataset'],r['label']['protocol'],r['method'])==(ds,protocol,m)])} for ds,protocol,m in sorted({(r['label']['dataset'],r['label']['protocol'],r['method']) for r in values})]
+        for ds,protocol,method in sorted({(r['label']['dataset'],r['label']['protocol'],r['method']) for r in values}):
+            pp=[]
+            for r in values:
+                l=r['label']
+                if (l['dataset'],l['protocol'],r['method'])!=(ds,protocol,method) or l['role']=='reference' or (l['group_id'],protocol) not in complete:continue
+                ref=scored.get((l['group_id'],protocol,'reference',method))
+                if ref:pp.append({'ref':ref,'var':r,'group':l['group_id'],'relation':l.get('expected_answer_relation','unknown')})
+            if pp:paired_sensitivity.append({'sensitivity':name,'benchmark':ds,'protocol':protocol,'method':method,**four_grid(pp)})
     comparisons=[]
     for r in rows:
         l=r['label']
@@ -268,6 +367,7 @@ def sensitivity_report(rows,scored):
             if not rr:continue
             a=[r['native_correct'] for r in rr];b=[r['derived_correct'] for r in rr];d=sum(x!=y for x,y in zip(a,b));h=sum(x and not y for x,y in zip(a,b))
             result['native_derived_effects'].append({'method':method,'role':role,**method_comparison(a,b),'ci':bootstrap([int(y)-int(x) for x,y in zip(a,b)]),'mcnemar_p_exploratory':float(binomtest(h,d,.5).pvalue) if d else 1.})
+    result['paired_effects']=paired_sensitivity
     dump('sensitivities.json',result);return result
 
 def mechanism_proxies(labels):
@@ -289,13 +389,14 @@ def mechanism_proxies(labels):
         rr.append({'benchmark':l['dataset'],'group_id':l['group_id'],'item_id':key,'retrieval_jaccard':ratio(len(a&b),len(a|b)),'selected_retrieved':sum(d['source']!='generated' for d in docs),'selected_generated':sum(d['source']=='generated' for d in docs),'edited_question_tokens':len(added),'edited_token_coverage_proxy':ratio(len(added&words),len(added))})
     table('mechanism_proxies.csv',rr);return {'records':len(rr),'interpretation':'retrieval overlap and document-source count associations; not evidence correctness, entailment, or causal failure'}
 
-def figures(pairs,amps,categories,stages):
+def figures(pairs,amps,categories,stages,gaps):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     figdir=OUT/'figures';figdir.mkdir(exist_ok=True)
     def save(fig,name):
         fig.tight_layout();fig.savefig(figdir/(name+'.svg'));fig.savefig(figdir/(name+'.png'),dpi=180);plt.close(fig)
+        svg=figdir/(name+'.svg');svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
     for world,name in [(False,'paired_drop'),(True,'evidence_world_drop')]:
         rr=[r for r in pairs if r['condition']=='all' and r['protocol']=='native' and (r['benchmark']=='medcounterfact')==world]
         if not rr:continue
@@ -306,14 +407,33 @@ def figures(pairs,amps,categories,stages):
     rr=[r for r in pairs if r['benchmark']=='cultural' and r['method']=='M2' and r['condition']!='all']
     if rr:
         fig,ax=plt.subplots(figsize=(9,4));ax.bar(range(len(rr)),[r['drop_source_macro']*100 for r in rr]);ax.set_xticks(range(len(rr)),[r['condition'] for r in rr],rotation=35,ha='right');ax.set_ylabel('M2 Original − variant (pp)');ax.set_title('Neutral unavailable in released inputs');save(fig,'cultural_original_comparison')
-    rr=[r for r in pairs if r['condition']=='all' and r['protocol']=='native']
-    if rr:
+    for world,name in [(False,'pair_four_cells'),(True,'evidence_world_four_cells')]:
+        rr=[r for r in pairs if r['condition']=='all' and r['protocol']=='native' and (r['benchmark']=='medcounterfact')==world]
+        if not rr:continue
         fig,ax=plt.subplots(figsize=(9,4));bottom=np.zeros(len(rr))
         for key in ['n11','n10','n01','n00']:
             values=np.array([r[key]/r['N'] for r in rr]);ax.bar(range(len(rr)),values,bottom=bottom,label=key);bottom+=values
-        ax.set_xticks(range(len(rr)),[r['benchmark']+' '+r['method']+f" N={r['N']}" for r in rr],rotation=65,ha='right');ax.legend();save(fig,'pair_four_cells')
+        ax.set_xticks(range(len(rr)),[r['benchmark']+' '+r['method']+f" N={r['N']}" for r in rr],rotation=65,ha='right');ax.legend();save(fig,name)
+    if gaps:
+        fig,ax=plt.subplots(figsize=(6,3))
+        for i,r in enumerate(gaps):
+            m=r['gap'];lo,hi=r['ci'];ax.errorbar(i,100*m,yerr=[[100*max(0,m-lo)],[100*max(0,hi-m)]],fmt='o')
+        ax.set_xticks(range(len(gaps)),[r['method'] for r in gaps]);ax.axhline(0,color='grey',lw=.8);ax.set_ylabel('GF − CF exact-set score (pp)');ax.set_title('MedPIC: unpaired composition gap, 95% CI');save(fig,'medpic_unpaired_gap')
     if amps:
-        fig,ax=plt.subplots(figsize=(9,4));ax.bar(range(len(amps)),[r['amplification']*100 for r in amps]);ax.set_xticks(range(len(amps)),[r['benchmark']+' '+r['method'] for r in amps],rotation=45,ha='right');ax.set_ylabel('Drop method − drop Direct (pp)');save(fig,'sensitivity_amplification')
+        fig,ax=plt.subplots(figsize=(9,4))
+        for i,r in enumerate(amps):
+            m=r['amplification'];lo,hi=r['ci'];ax.errorbar(i,100*m,yerr=[[100*max(0,m-lo)],[100*max(0,hi-m)]],fmt='o')
+        ax.axhline(0,color='grey',lw=.8);ax.set_xticks(range(len(amps)),[r['benchmark']+' '+r['protocol']+' '+r['method'] for r in amps],rotation=45,ha='right');ax.set_ylabel('Drop method − drop Direct (pp), 95% CI');save(fig,'sensitivity_amplification')
+    rr=[r for r in categories if r['slice_field']=='operation_tag' and r['protocol']=='native']
+    if rr:
+        keys=sorted({(r['benchmark'],r['slice']) for r in rr});index={(r['benchmark'],r['slice'],r['method']):r for r in rr}
+        values=np.array([[100*(1-index[(ds,op,m)]['accuracy']) if (ds,op,m) in index else np.nan for m in METHODS] for ds,op in keys])
+        fig,ax=plt.subplots(figsize=(9,max(3,len(keys)*.45)));im=ax.imshow(values,vmin=0,vmax=100,aspect='auto',cmap='Oranges');fig.colorbar(im,ax=ax,label='Row-specific native metric error (%)')
+        ax.set_xticks(range(3),list(METHODS));ax.set_yticks(range(len(keys)),[ds+': '+op for ds,op in keys])
+        for i,(ds,op) in enumerate(keys):
+            for j,m in enumerate(METHODS):
+                r=index.get((ds,op,m));ax.text(j,i,f"{values[i,j]:.1f}% (N={r['N']})" if r else 'NA',ha='center',va='center',fontsize=8)
+        ax.set_title('Within-benchmark operation slices; MedCounterFact uses EA error');save(fig,'operation_error_spectrum')
     taxonomy=read(OUT/'taxonomy.jsonl');datasets=sorted({r['dataset'] for r in taxonomy});ops=sorted({o for r in taxonomy for o in r['operation_tags']})
     count=Counter((r['dataset'],o) for r in taxonomy for o in r['operation_tags']);values=np.array([[count[(d,o)] or np.nan for o in ops] for d in datasets])
     fig,ax=plt.subplots(figsize=(10,4));ax.imshow(np.log1p(values),aspect='auto',cmap='Blues');ax.set_xticks(range(len(ops)),ops,rotation=35,ha='right');ax.set_yticks(range(len(datasets)),datasets)
@@ -325,13 +445,33 @@ def figures(pairs,amps,categories,stages):
         ts.sort(key=lambda r:r['time']);fig,ax=plt.subplots(figsize=(8,3));ax.plot([(r['time']-ts[0]['time'])/3600 for r in ts],np.cumsum([r.get('completion_tokens',0) for r in ts]));ax.set_xlabel('Elapsed completion span (h)');ax.set_ylabel('Completion tokens');save(fig,'token_progress')
 
 def report(metrics,pairs,gaps):
-    lines=['# Cross-benchmark all-Llama baseline screening',f"\nStatus: **{metrics['status']}**; unique method predictions {metrics['completed_unique_method_predictions']}/{metrics['planned_method_predictions']}.",'\nLocal baseline and exact stage contract: [baseline_contract.md](baseline_contract.md). Public source revisions and release discrepancies: [acquisition.md](acquisition.md).','\n## Native primary results','| Benchmark | Method | N | Score | Invalid | Complete/planned groups |','|---|---|---:|---:|---:|---:|']
+    def pct(v):return 'NA' if v is None else f'{100*v:.2f}%'
+    def ci(v):return 'NA' if v[0] is None else f'[{100*v[0]:.2f}, {100*v[1]:.2f}] pp'
+    lines=['# Cross-benchmark all-Llama baseline screening',f"\nStatus: **{metrics['status']}**; unique method predictions {metrics['completed_unique_method_predictions']}/{metrics['planned_method_predictions']}.",'\nLocal baseline and exact stage contract: [baseline_contract.md](baseline_contract.md). Public source revisions and release discrepancies: [acquisition.md](acquisition.md).','\n## Native primary results','| Benchmark | Method | N | Source-mean score | 95% CI | Micro score | Invalid | Complete/planned groups |','|---|---|---:|---:|---|---:|---:|---:|']
     for r in metrics['benchmarks']:
-        if r['role']=='all' and r['protocol']=='native':lines.append(f"| {r['benchmark']} | {r['method']} | {r['N']} | {r['accuracy']:.3%} | {r['invalid']} | {r['complete_source_groups_all_methods']}/{r['planned_source_groups']} |" if r['N'] else f"| {r['benchmark']} | {r['method']} | 0 | NA | 0 | 0/{r['planned_source_groups']} |")
+        if r['role']=='all' and r['protocol']=='native':lines.append(f"| {r['benchmark']} | {r['method']} | {r['N']} | {pct(r['source_macro_score'])} | [{pct(r['score_ci'][0])}, {pct(r['score_ci'][1])}] | {pct(r['accuracy'])} | {r['invalid']} | {r['complete_source_groups_all_methods']}/{r['planned_source_groups']} |")
     lines+=['\nMedCounterFact score is evidence agreement, not clinical accuracy or safety. MedEinst score is deterministic canonical matching, not the official semantic evaluator. Extra sensitivity-only native cases are excluded from this primary table.','\n## Paired effects','| Benchmark/protocol | Method | Pairs / groups | Source-mean drop | 95% CI | BTR / denominator |','|---|---|---:|---:|---|---:|']
     for r in pairs:
-        if r['condition']=='all':lines.append(f"| {r['benchmark']}/{r['protocol']} | {r['method']} | {r['N']}/{r['source_groups']} | {100*r['drop_source_macro']:.2f} pp | {r['drop_ci']} | {r['BTR']} / {r['BTR_denominator']} |")
-    lines+=['\nMedPIC GF−CF is an unpaired composition gap; no pair mapping is fabricated. Cultural has no released Neutral condition; only Original comparisons are possible.','\n## Interpretation and limits','The three semantic domains are reported separately. The cross-source taxonomy is NOT_IDENTIFIABLE: operation tags lack independent compatible source coverage and are confounded with dataset/source/format. CPV and Cultural are both MedQA constructions. Within-Cultural Id/Context contrasts do not establish independent clinical-source replication.','\nErrors, correct revision/preservation, stable/changed wrong outputs and old-answer persistence are retained in transitions.csv. Invalid completed responses count wrong; missing requests remain incomplete. Neither a positive amplification nor retrieval overlap establishes a causal retrieval failure or clinical harm.','\nNative/derived, exposure, quality-flag and source-overlap sensitivities are in sensitivities.json; the 20-input independent-seed estimate is in seed_repeat.json. No best-seed selection, ensemble, new judge, Profile or sidecar was run.','\n## Cost and next research decision',f"Recorded primary LLM requests: {metrics['efficiency']['LLM_requests']}; prompt tokens: {metrics['efficiency']['prompt_tokens']}; completion tokens: {metrics['efficiency']['completion_tokens']}. See efficiency.csv and commands.sh for concurrency and wall-clock provenance.",'One follow-up worth testing is whether differences between initial-retrieval and KADS-selected evidence explain M2−M1 changes within the same source question. Current document-overlap/count proxies only motivate this test; no new mechanism is implemented.','\nA completed run establishes execution completeness, not that every benchmark degrades or that the taxonomy is validated.']
+        if r['condition']=='all':lines.append(f"| {r['benchmark']}/{r['protocol']} | {r['method']} | {r['N']}/{r['source_groups']} | {100*r['drop_source_macro']:.2f} pp | {ci(r['drop_ci'])} | {pct(r['BTR'])} / {r['BTR_denominator']} |")
+    lines+=['\n## Changes relative to Direct and retrieval-only','| Benchmark/protocol | Comparison | Source groups | Source-mean score gain | 95% CI | Introduced errors / items | Conditional harm |','|---|---|---:|---:|---|---:|---:|']
+    for r in metrics['method_comparisons']:
+        lines.append(f"| {r['benchmark']}/{r['protocol']} | {r['comparison']} | {r['source_groups']} | {pct(r['net_gain_source_macro'])} | {ci(r['net_gain_source_ci'])} | {r['harms']}/{r['N']} | {pct(r['conditional_harm_rate'])} |")
+    lines+=['\nGain intervals use source means. Introduced-error and conditional-harm columns retain their specified item-level denominators; for M2−M1, the comparator is M1. Positive paired amplification means greater reference-to-variant sensitivity than Direct; it is not a causal finding.','\n| Benchmark/protocol | Method | Drop amplification vs Direct | 95% CI |','|---|---|---:|---|']
+    for r in metrics['amplification']:
+        lines.append(f"| {r['benchmark']}/{r['protocol']} | {r['method']} | {100*r['amplification']:.2f} pp | {ci(r['ci'])} |")
+    lines+=['\n| MedPIC method | GF / CF N | Unpaired GF−CF gap | 95% CI |','|---|---:|---:|---|']
+    for r in gaps:lines.append(f"| {r['method']} | {r['N_GF']}/{r['N_CF']} | {100*r['gap']:.2f} pp | {ci(r['ci'])} |")
+    lines+=['\nMedPIC GF−CF is an unpaired composition gap; no pair mapping is fabricated. Cultural has no released Neutral condition; only Original comparisons are possible.','\n## Interpretation and limits','The three semantic domains are reported separately. The cross-source taxonomy is NOT_IDENTIFIABLE: operation tags lack independent compatible source coverage and are confounded with dataset/source/format. CPV and Cultural are both MedQA constructions. Within-Cultural Id/Context contrasts do not establish independent clinical-source replication.','\nErrors, correct revision/preservation, stable/changed wrong outputs and old-answer persistence are retained in transitions.csv. Invalid completed responses count wrong; missing requests remain incomplete. Neither a positive amplification nor retrieval overlap establishes a causal retrieval failure or clinical harm.','\nNative/derived, exposure, quality-flag and source-overlap sensitivities are in sensitivities.json; the 20-input independent-seed estimate is in seed_repeat.json. No best-seed selection, ensemble, new judge, Profile or sidecar was run.','\n## Cost and next research decision',f"Recorded main-run LLM requests (including frozen sensitivity inputs): {metrics['efficiency']['LLM_requests']}; prompt tokens: {metrics['efficiency']['prompt_tokens']}; completion tokens: {metrics['efficiency']['completion_tokens']}. See efficiency.csv and commands.sh for concurrency and wall-clock provenance.",'One follow-up worth testing is whether original KADS output/parser format mismatches cause evidence loss that explains M2−M1 changes within the same source question. Current empty-selection/document-count records motivate this question but do not establish causation; no parser repair or new method is evaluated here.','\nA completed run establishes execution completeness, not that every benchmark degrades or that the taxonomy is validated.']
+    cost=metrics['efficiency'];repeat=metrics['repeat']
+    lines+=[f"\nAll recorded workloads including superseded attempts: {cost['total_recorded_prompt_tokens_including_extra']} logical prompt tokens and {cost['total_recorded_completion_tokens_including_extra']} completion tokens. Exact visible-input deduplication removes {cost['exact_duplicate_input_records']} duplicate tasks and avoids {cost['LLM_requests_avoided_by_exact_input_deduplication']} LLM requests. Logical prompt tokens include cached prefixes; they are not a count of physically recomputed prefill tokens."]
+    lines+=['\n## Execution and parsing details',f"Formal concurrent batch elapsed: {cost['formal_batch_elapsed_seconds']/3600:.2f} h. Including seed-repeat and superseded smoke attempts, recorded LLM requests: {cost['total_recorded_LLM_requests_including_extra']}. Full stage token counts, queue times, truncation counts and worker cache hits are retained in metrics.json and efficiency.csv.",f"Independent-seed repeat: {repeat['executed']}/20 executed, {repeat['matched_primary_completed']} matched completed primary inputs, semantic flips {pct(repeat['flip_rate'])} among {repeat['valid_semantic_comparisons']} valid comparisons; raw-output changes {pct(repeat['raw_output_change_rate'])}. This estimate does not alter primary scores.",'\n| Native benchmark | Method | Format invalid | Unmapped diagnosis | Ambiguous | Uncertainty |','|---|---|---:|---:|---:|---:|']
+    for r in metrics['benchmarks']:
+        if r['role']=='all' and r['protocol']=='native':lines.append(f"| {r['benchmark']} | {r['method']} | {r['format_invalid']} | {r['unmapped_diagnosis']} | {r['ambiguous']} | {r['uncertainty']} |")
+    lines+=['\nUnmapped diagnosis is a valid JSON diagnosis outside the frozen canonical mapping, distinct from malformed output. It counts wrong in canonical screening; no outcome-driven medical aliases were added. Ambiguous answers are included in format-invalid counts. Uncertainty is a legal MedCounterFact answer and is reported separately.','\n## Frozen MedEinst format sensitivity','| Method | Role | Matched inputs | Four-way minus native score | 95% CI |','|---|---|---:|---:|---|']
+    for r in metrics['sensitivities']['native_derived_effects']:lines.append(f"| {r['method']} | {r['role']} | {r['N']} | {pct(r['net_gain'])} | {ci(r['ci'])} |")
+    reranks=[r for r in read(OUT/'stages.jsonl') if r['stage']=='rerank']
+    counts=Counter(r['selected_document_count'] for r in reranks)
+    lines += [f"\nOriginal KADS/parser selected-document distribution: {dict(sorted(counts.items()))}. Empty selections are retained local-baseline stage failures; all KGCC/generation/select requests and final readers still ran. No outcome-driven parser repair or document fallback was applied.", '\nInterpretation, execution audit and limitations: [findings.md](findings.md), [validation.json](validation.json).']
     (OUT/'summary.md').write_text('\n'.join(lines)+'\n')
 
 if __name__=='__main__':

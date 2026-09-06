@@ -2,7 +2,9 @@
 
 Current work: [all-Llama baseline screening](results_cf_screening/summary.md), with [source acquisition](results_cf_screening/acquisition.md), [actual baseline contract](results_cf_screening/baseline_contract.md), and [commands](results_cf_screening/commands.sh). The fixed three methods use independent current-case inputs and native answer formats. MedEinst four-option sensitivity is separate from native diagnosis; Cultural-Cues has 1,500 released inputs and no Neutral field. Historical experiments remain below and in their original result directories.
 
-Run `bash scripts/cf_baseline_screening.sh prepare`, `bash scripts/cf_baseline_screening.sh run`, then `bash scripts/cf_baseline_screening.sh analyze`. Analysis refuses incomplete predictions unless explicitly passed `--partial`.
+Completed: 11,322/11,322 method predictions plus 20 independent-seed repeats. Read the [findings and limitations](results_cf_screening/findings.md), including native diagnosis mapping, original KADS selection failures, and the non-identifiable cross-source taxonomy.
+
+Run `bash scripts/cf_baseline_screening.sh prepare`, `bash scripts/cf_baseline_screening.sh run`, then `bash scripts/cf_baseline_screening.sh analyze`. The run command includes the fixed 20-input disjoint-stream repeat after the main batch. Analysis refuses incomplete predictions or repeats unless explicitly passed `--partial`.
 
 ## Historical CF-Residual Adapter
 

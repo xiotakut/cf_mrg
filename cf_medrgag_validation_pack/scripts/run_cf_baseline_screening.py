@@ -58,15 +58,15 @@ def reader_prompt(tokenizer,item,documents):
     system=base.SYSTEM if item['options'] else 'Answer the medical benchmark item using only the presented item and evidence. Return JSON only, with exactly one field named answer.'
     return chat(tokenizer,q,system)
 
-def stable_seed(seed,item_id,stage,slot):
+def stable_seed(seed,item_id,stage,slot,*,repeat_stream=False):
     # Opaque sequential IDs allocated before inference, independent of role or batching.
     stages=['summary','explore','generate','select','M0','M1','M2']
-    return (seed+int(item_id[1:])*101+stages.index(stage)*11+slot) % (2**31-1)
+    return (seed+int(item_id[1:])*101+stages.index(stage)*11+slot+(1_000_000_000 if repeat_stream else 0)) % (2**31-1)
 
 class Runner:
     def __init__(self,args):
         self.args=args;self.config=json.loads(CONFIG.read_text());self.started=time.time()
-        self.root=OUT/'cache'/('repeat' if args.mode=='repeat' else 'main')/f'worker-{args.shard_index}'
+        self.root=OUT/'cache'/('repeat_independent' if args.mode=='repeat' else 'main')/f'worker-{args.shard_index}'
         self.root.mkdir(parents=True,exist_ok=True)
         frozen=self.root/'config.json'
         if frozen.exists():assert json.loads(frozen.read_text())==self.config,'incompatible resume configuration'
@@ -104,7 +104,7 @@ class Runner:
                 n=len(self.backend.tokenizer.encode(e['prompt'],add_special_tokens=False))
                 if n+cfg['max_tokens']>self.config['max_model_len']:
                     raise ValueError(f"overflow: {stage} {e['key']} {n} + {cfg['max_tokens']}")
-            params=[SamplingParams(**cfg,seed=stable_seed(self.config['seed']+(1 if self.args.mode=='repeat' else 0),e['item_id'],stage,e.get('slot',0))) for e in batch]
+            params=[SamplingParams(**cfg,seed=stable_seed(self.config['seed']+(1 if self.args.mode=='repeat' else 0),e['item_id'],stage,e.get('slot',0),repeat_stream=self.args.mode=='repeat')) for e in batch]
             t=time.time();outputs=self.backend.model.generate(prompts,params,use_tqdm=False);elapsed=time.time()-t
             rows=[]
             for e,p,o in zip(batch,params,outputs):
@@ -139,6 +139,10 @@ class Runner:
         return {i['item_id']:cache[i['item_id']]['documents'] for i in items}
 
     def run_chunk(self,items):
+        required=['M2'] if self.args.mode=='repeat' else ['M0','M1','M2']
+        if all(i['item_id'] in self.cached.get(m,{}) for i in items for m in required):
+            self.hits['complete_input_tasks']+=len(items)
+            return
         if self.backend is None:
             # Retrieve before reserving vLLM memory and retain the small ranker.
             retrieval=self.retrieve(items)

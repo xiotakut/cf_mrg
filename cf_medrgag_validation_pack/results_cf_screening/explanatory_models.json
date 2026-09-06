@@ -1,0 +1,170 @@
+{
+  "M0": {
+    "status": "exploratory_same_MedQA_source_constructions_only",
+    "outcome": "variant_correct minus reference_correct; source-paired outcome, not reference correctness as difficulty covariate",
+    "source_groups": 204,
+    "N_pairs": 1955,
+    "base_rank": 4,
+    "augmented_rank": 6,
+    "base_weighted_MSE": 0.05182341417086082,
+    "augmented_weighted_MSE": 0.051734991612468466,
+    "coefficients": {
+      "intercept": {
+        "estimate": 0.013064354816330934,
+        "source_cluster_95_CI": [
+          -0.03154792660225145,
+          0.05880282030616377
+        ]
+      },
+      "Cultural_dataset": {
+        "estimate": -0.03320918509247969,
+        "source_cluster_95_CI": [
+          -0.07361127690930239,
+          0.007811474169876693
+        ]
+      },
+      "reference_length_kchars": {
+        "estimate": 0.022892015136287632,
+        "source_cluster_95_CI": [
+          -0.017533676338284284,
+          0.07478674007038562
+        ]
+      },
+      "net_length_change_kchars": {
+        "estimate": 0.1560279432317885,
+        "source_cluster_95_CI": [
+          -0.2907179747791972,
+          0.6193726030967923
+        ]
+      },
+      "identity_attribute": {
+        "estimate": -0.026718367619128373,
+        "source_cluster_95_CI": [
+          -0.05929071755210112,
+          0.006700345513231878
+        ]
+      },
+      "contextual_addition": {
+        "estimate": -0.03737231344608888,
+        "source_cluster_95_CI": [
+          -0.11288487332906282,
+          0.03463328425817118
+        ]
+      }
+    },
+    "bootstrap_full_rank_resamples": 2000,
+    "limits": "native answer format and original source family are constant in this domain; no independent cross-source generalization; linear descriptive association, not causal attribution; edit-length covariate is signed character-length change, not clinical edit magnitude; no leave-one-source validation available"
+  },
+  "M1": {
+    "status": "exploratory_same_MedQA_source_constructions_only",
+    "outcome": "variant_correct minus reference_correct; source-paired outcome, not reference correctness as difficulty covariate",
+    "source_groups": 204,
+    "N_pairs": 1955,
+    "base_rank": 4,
+    "augmented_rank": 6,
+    "base_weighted_MSE": 0.0927984830093679,
+    "augmented_weighted_MSE": 0.09279235097622636,
+    "coefficients": {
+      "intercept": {
+        "estimate": 0.022965024731012338,
+        "source_cluster_95_CI": [
+          -0.060343227044109486,
+          0.11530708178756986
+        ]
+      },
+      "Cultural_dataset": {
+        "estimate": 0.017615540037792716,
+        "source_cluster_95_CI": [
+          -0.05009411189478994,
+          0.09410763499293422
+        ]
+      },
+      "reference_length_kchars": {
+        "estimate": -0.049939487614446616,
+        "source_cluster_95_CI": [
+          -0.17014322766821488,
+          0.04726911601749873
+        ]
+      },
+      "net_length_change_kchars": {
+        "estimate": 0.035141093356545014,
+        "source_cluster_95_CI": [
+          -0.6210923366653553,
+          0.6757660121618019
+        ]
+      },
+      "identity_attribute": {
+        "estimate": -0.007420112030487967,
+        "source_cluster_95_CI": [
+          -0.050823061669995596,
+          0.03742036816720101
+        ]
+      },
+      "contextual_addition": {
+        "estimate": -0.008841216407470086,
+        "source_cluster_95_CI": [
+          -0.11567465542807696,
+          0.10490594319163761
+        ]
+      }
+    },
+    "bootstrap_full_rank_resamples": 2000,
+    "limits": "native answer format and original source family are constant in this domain; no independent cross-source generalization; linear descriptive association, not causal attribution; edit-length covariate is signed character-length change, not clinical edit magnitude; no leave-one-source validation available"
+  },
+  "M2": {
+    "status": "exploratory_same_MedQA_source_constructions_only",
+    "outcome": "variant_correct minus reference_correct; source-paired outcome, not reference correctness as difficulty covariate",
+    "source_groups": 204,
+    "N_pairs": 1955,
+    "base_rank": 4,
+    "augmented_rank": 6,
+    "base_weighted_MSE": 0.1924176704525629,
+    "augmented_weighted_MSE": 0.19218732351805334,
+    "coefficients": {
+      "intercept": {
+        "estimate": -0.03161718156131651,
+        "source_cluster_95_CI": [
+          -0.17801655012274634,
+          0.09864290425340146
+        ]
+      },
+      "Cultural_dataset": {
+        "estimate": -0.031927095143928066,
+        "source_cluster_95_CI": [
+          -0.14204869373266252,
+          0.07467161534201738
+        ]
+      },
+      "reference_length_kchars": {
+        "estimate": 0.12211286406259732,
+        "source_cluster_95_CI": [
+          0.01744890134430547,
+          0.27725069452191087
+        ]
+      },
+      "net_length_change_kchars": {
+        "estimate": 0.19156485194523484,
+        "source_cluster_95_CI": [
+          -0.5134613725335748,
+          0.8733041800588411
+        ]
+      },
+      "identity_attribute": {
+        "estimate": -0.04670226557560979,
+        "source_cluster_95_CI": [
+          -0.09848328872854784,
+          0.002284928245735255
+        ]
+      },
+      "contextual_addition": {
+        "estimate": -0.03277349081290746,
+        "source_cluster_95_CI": [
+          -0.14061791318278266,
+          0.074977329964118
+        ]
+      }
+    },
+    "bootstrap_full_rank_resamples": 2000,
+    "limits": "native answer format and original source family are constant in this domain; no independent cross-source generalization; linear descriptive association, not causal attribution; edit-length covariate is signed character-length change, not clinical edit magnitude; no leave-one-source validation available"
+  }
+}

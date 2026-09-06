@@ -1,0 +1,80 @@
+{
+  "status": "complete_artifact_and_metric_audit_pass_with_reported_stage_selection_failures",
+  "unique_inputs": 3774,
+  "inference_visible_fields": [
+    "answer_format",
+    "fixed_evidence",
+    "item_id",
+    "options",
+    "question"
+  ],
+  "main_LLM_stage_requests": {
+    "M0": 3774,
+    "M1": 3774,
+    "M2": 3774,
+    "summary": 18870,
+    "explore": 3774,
+    "generate": 18870,
+    "select": 3774
+  },
+  "main_LLM_requests": 56610,
+  "finish_reasons_by_stage": {
+    "M0": {
+      "stop": 3765,
+      "length": 9
+    },
+    "M1": {
+      "stop": 3774
+    },
+    "M2": {
+      "stop": 3773,
+      "length": 1
+    },
+    "summary": {
+      "stop": 9993,
+      "length": 8877
+    },
+    "explore": {
+      "stop": 3747,
+      "length": 27
+    },
+    "generate": {
+      "length": 14152,
+      "stop": 4718
+    },
+    "select": {
+      "stop": 3555,
+      "length": 219
+    }
+  },
+  "retrieval_unique_inputs": 3774,
+  "actual_retrieval_records": 3805,
+  "duplicate_retrieval_results_identical": true,
+  "rerank_inputs": 3774,
+  "selected_document_count_distribution": {
+    "5": 3375,
+    "0": 344,
+    "4": 33,
+    "3": 10,
+    "2": 7,
+    "1": 5
+  },
+  "empty_selection_note": "Original local parser can return no IDs; unchanged baseline behavior, final reader still executed. Not a skipped KGCC stage. No outcome-dependent fallback or rerun.",
+  "max_actual_prompt_tokens": 51307,
+  "input_sha256": "fabdabf610c65d5f86264cf4ebc2b1bbdc1f3407b4e3f665d69800665308ad3e",
+  "all_worker_input_hashes_and_configs_match": true,
+  "all_requests_within_context_capacity": true,
+  "conflicting_or_duplicate_main_LLM_stage_keys": 0,
+  "failure_files": 0,
+  "tests": "2 contract/metric unit tests pass",
+  "repeat_and_final_metrics_audit": "pass",
+  "independent_repeat_requests": 260,
+  "independent_repeat_tasks": 20,
+  "all_primary_and_repeat_seed_formulas_verified": true,
+  "generation_seed_stream_intersection": 0,
+  "all_primary_and_repeat_gzip_prompt_references_verified": true,
+  "total_recorded_LLM_requests": 57140,
+  "completed_unique_method_predictions": 11322,
+  "all_planned_primary_and_sensitivity_groups_complete": true,
+  "real_data_four_cell_and_method_gain_identities": "pass"
+}

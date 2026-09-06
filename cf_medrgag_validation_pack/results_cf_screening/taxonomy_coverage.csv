@@ -1,0 +1,17 @@
+benchmark,operation,answer_relation,source_family,format,N
+cpv,identity_attribute,invariant,MedQA,single,605
+cpv,reference_or_static,invariant,MedQA,single,60
+cultural,contextual_addition,invariant,MedQA,single,450
+cultural,identity_attribute,invariant,MedQA,single,450
+cultural,"identity_attribute,contextual_addition",invariant,MedQA,single,450
+cultural,reference_or_static,invariant,MedQA,single,150
+medcounterfact,hypothetical_entity_replacement,relation_transport,MedEvidence,relation,320
+medcounterfact,reference_or_static,relation_transport,MedEvidence,relation,80
+medeinst,mixed_or_unresolved,change,DDXPlus,diagnosis,359
+medeinst,mixed_or_unresolved,change,DDXPlus,single,60
+medeinst,reference_or_static,invariant,DDXPlus,diagnosis,359
+medeinst,reference_or_static,invariant,DDXPlus,single,60
+medpic,measurement_threshold,unknown,clinical_guidelines,multi,62
+medpic,mixed_or_unresolved,unknown,clinical_guidelines,multi,42
+medpic,presence_polarity,unknown,clinical_guidelines,multi,79
+medpic,reference_or_static,unknown,clinical_guidelines,multi,284

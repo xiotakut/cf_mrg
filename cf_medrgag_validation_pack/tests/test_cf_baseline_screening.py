@@ -26,7 +26,12 @@ class Contract(unittest.TestCase):
         self.assertIsNotNone(parse('{"answer":"chronic bronchitis"}',item,canon)[1])
         self.assertIsNotNone(parse('{"answer":"Bronchitis or pneumonia"}',item,canon)[1])
         item['answer_format']='relation';self.assertEqual(parse('{"answer":"uncertainty"}',item,{})[0],'uncertainty')
+        self.assertEqual(parse('{"answer":"I cannot provide medical advice"}',item,{})[1],'refusal')
         self.assertNotEqual(stable_seed(1,'s000001','generate',0),stable_seed(1,'s000002','generate',0))
+        self.assertEqual(stable_seed(20260906,'s000911','generate',0),20352939)
+        primary={stable_seed(20260906,'s000911','generate',j) for j in range(5)}
+        repeat={stable_seed(20260907,'s000911','generate',j,repeat_stream=True) for j in range(5)}
+        self.assertTrue(primary.isdisjoint(repeat))
 
     def test_metrics_identities_and_invalid_persistence(self):
         a=[True,True,False,False];b=[True,False,True,False]

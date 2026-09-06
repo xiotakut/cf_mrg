@@ -29,8 +29,12 @@
   "smoke_initial_makespan_seconds": 487.16674399375916,
   "corrected_current_stage_batch_seconds": 448.3791576739816,
   "repeat_20_seed2_batch32_makespan_seconds": 361.44612669944763,
-  "unique_primary_inputs": 3774,
   "conservative_single_replica_hours": 20.42852546480497,
   "choice": "full tier, two replicas; 24h budget feasible before inspection of formal accuracy",
-  "smoke_revision": "Mandatory evidence appears once inside KADS; prior duplicate-evidence MCF select/M2 archived; other exact stage caches reused"
+  "smoke_revision": "Mandatory evidence appears once inside KADS; prior duplicate-evidence MCF select/M2 archived; other exact stage caches reused",
+  "unique_planned_inputs_including_sensitivity": 3774,
+  "original_repeat_scope": "Valid batch32 throughput probe; noise estimate superseded because master+1 overlapped neighboring generation-slot streams. See rng_repeat_correction.json.",
+  "corrected_independent_repeat_makespan_seconds": 366.0080499649048,
+  "actual_primary_batch_makespan_seconds": 16316,
+  "primary_plus_corrected_repeat_finish": "2026-09-06T13:32:32+08:00"
 }

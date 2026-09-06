@@ -1,5 +1,7 @@
 # Acquisition
 
+Exact-input reuse: CPV has 665 released/reference records but 570 unique visible tasks. Cultural has 1,500 records but 1,499 unique visible tasks: source group `cultural:90`, `t3_i`, is an exact visible-input no-op relative to its Original. That author-labeled Id condition remains in the declared main analysis and shares the exact-input prediction; it is not removed or relabeled using model outcomes.
+
 - medeinst: [zhui711/MedEinst](https://huggingface.co/datasets/zhui711/MedEinst), revision `354f4b527e764a8f2bebea8f71be55e0a6966402`; source files in acquisition.json.
 - medpic: [TIM0927/MedPIC-Bench](https://huggingface.co/datasets/TIM0927/MedPIC-Bench), revision `9ef6db4f13865b14fc2e6be3f94dcfaf3a0cf983`; source files in acquisition.json.
 - cpv: [kenza-ily/medqa-cpv](https://huggingface.co/datasets/kenza-ily/medqa-cpv), revision `ba7e59489f4c8e2a32d977a099e95bc3bc2587b5`; source files in acquisition.json.
