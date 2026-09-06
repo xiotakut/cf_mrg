@@ -1,5 +1,9 @@
 # Counterfactual medical RAG validation pack
 
+Current scope correction: **the entire released test sets**, with no source-group sampling. The expansion is running in [results_cf_full_test](results_cf_full_test/findings.md): 25,280 unique inputs / 75,840 method predictions planned, reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
+
+Full-set commands from `cf_medrgag_validation_pack`: set `export CF_SCREENING_OUTPUT=results_cf_full_test`, then `bash scripts/cf_baseline_screening.sh prepare --tier full-test`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`.
+
 Current work: [all-Llama baseline screening](results_cf_screening/summary.md), with [source acquisition](results_cf_screening/acquisition.md), [actual baseline contract](results_cf_screening/baseline_contract.md), and [commands](results_cf_screening/commands.sh). The fixed three methods use independent current-case inputs and native answer formats. MedEinst four-option sensitivity is separate from native diagnosis; Cultural-Cues has 1,500 released inputs and no Neutral field. Historical experiments remain below and in their original result directories.
 
 Completed: 11,322/11,322 method predictions plus 20 independent-seed repeats. Read the [findings and limitations](results_cf_screening/findings.md), including native diagnosis mapping, original KADS selection failures, and the non-identifiable cross-source taxonomy.

@@ -2,31 +2,32 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 PYTHON=/home/data3/txy/MedRGAG/.venv/bin/python
-export PYTHONPATH="$PWD/results_cf_screening/runtime${PYTHONPATH:+:$PYTHONPATH}"
+RESULTS=${CF_SCREENING_OUTPUT:-results_cf_screening}
+export PYTHONPATH="$PWD/$RESULTS/runtime${PYTHONPATH:+:$PYTHONPATH}"
 export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4
 case "${1:-}" in
   prepare)
-    if [[ ! -f results_cf_screening/screening_items.jsonl ]]; then
-      "$PYTHON" scripts/prepare_cf_baseline_screening.py
+    if [[ ! -f "$RESULTS"/screening_items.jsonl ]]; then
+      "$PYTHON" scripts/prepare_cf_baseline_screening.py "${@:2}"
     fi
     "$PYTHON" scripts/run_cf_baseline_screening.py preflight
     ;;
   run)
-    mkdir -p results_cf_screening/cache
-    date -Is >> results_cf_screening/cache/batch_wall_times.txt
-    CUDA_VISIBLE_DEVICES=1 "$PYTHON" -u scripts/run_cf_baseline_screening.py retrieval --shard-index 2 > results_cf_screening/retrieval.log 2>&1 &
+    mkdir -p "$RESULTS"/cache
+    date -Is >> "$RESULTS"/cache/batch_wall_times.txt
+    CUDA_VISIBLE_DEVICES=1 "$PYTHON" -u scripts/run_cf_baseline_screening.py retrieval --shard-index 2 > "$RESULTS"/retrieval.log 2>&1 &
     RETRIEVAL_PID=$!
-    CUDA_VISIBLE_DEVICES=0 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 0 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .45 > results_cf_screening/run_0.log 2>&1 &
+    CUDA_VISIBLE_DEVICES=0 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 0 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .50 > "$RESULTS"/run_0.log 2>&1 &
     WORKER_ZERO_PID=$!
-    CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 1 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .45 > results_cf_screening/run_1.log 2>&1 &
+    CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py run --shard-index 1 --shard-count 2 --batch-size 32 --chunk-size 32 --gpu-memory .50 > "$RESULTS"/run_1.log 2>&1 &
     WORKER_ONE_PID=$!
     STATUS=0
     wait "$WORKER_ZERO_PID" || STATUS=1
     wait "$WORKER_ONE_PID" || STATUS=1
     wait "$RETRIEVAL_PID" || STATUS=1
-    date -Is >> results_cf_screening/cache/batch_wall_times.txt
+    date -Is >> "$RESULTS"/cache/batch_wall_times.txt
     if [[ "$STATUS" -eq 0 ]]; then
-      CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py repeat --batch-size 32 --chunk-size 20 --gpu-memory .45 > results_cf_screening/repeat_independent.log 2>&1 || STATUS=1
+      CUDA_VISIBLE_DEVICES=2 "$PYTHON" -u scripts/run_cf_baseline_screening.py repeat --batch-size 32 --chunk-size 20 --gpu-memory .50 > "$RESULTS"/repeat_independent.log 2>&1 || STATUS=1
     fi
     exit "$STATUS"
     ;;

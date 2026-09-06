@@ -1,5 +1,7 @@
 # 五入口 baseline screening：结果解读与验收
 
+**Scope clarification: completed sampled screening only, not the entire test sets. Full-release expansion is tracked in [results_cf_full_test](../results_cf_full_test/findings.md).**
+
 本轮完整档已完成。结果支持“不同来源/任务格式下表现不同”，不支持“MedRGAG 普遍放大反事实敏感性”；独立跨来源 taxonomy 效应不可识别。以下结论限定于本地 all-Llama reproduction、冻结样本和当前解析合同，不能推广为论文原模型的精确复现或临床安全评价。
 
 ## 实际完成范围

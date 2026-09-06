@@ -1,0 +1,31 @@
+flowchart TD
+  Sources[Five pinned official input releases] --> Diagnosis[MedEinst: 300 native pairs plus 59 auxiliary native pairs]
+  Sources --> FourWay[MedEinst: 60 frozen four-way pairs, sensitivity only]
+  Sources --> Multi[MedPIC: 467 native multi-select rows, no official pair map]
+  Sources --> Choice[CPV: 60 groups and Cultural: 150 groups, native options]
+  Sources --> World[MedCounterFact: 80 groups, mandatory article evidence]
+  Diagnosis --> Prepare[Task preparation and exact visible-input deduplication]
+  FourWay --> Prepare
+  Multi --> Prepare
+  Choice --> Prepare
+  World --> Prepare
+  Prepare --> Tasks[Independent question + all options + mandatory evidence]
+  Prepare --> Labels[Separate gold, source mapping and frozen taxonomy]
+  Tasks --> M0[Direct Llama reader]
+  Tasks --> Retrieval[Textbooks and Wikipedia BM25: 32 per source]
+  Retrieval --> Rank[MedCPT rerank: initial 5 documents]
+  Rank --> M1[Retrieval-only Llama reader]
+  Rank --> Summary[KGCC: 5 Llama summaries]
+  Summary --> Explore[3 missing knowledge points]
+  Explore --> Generate[5 Llama complementary documents]
+  Generate --> KADS[Original KADS: select up to 5 from 10]
+  Rank --> KADS
+  KADS --> FinalRank[MedCPT final reranking]
+  FinalRank --> M2[MedRGAG Llama reader]
+  Tasks --> M1
+  Tasks --> M2
+  M0 --> Eval[Offline native scoring and source-group paired analysis]
+  M1 --> Eval
+  M2 --> Eval
+  Labels --> Eval
+  Eval --> Domains[Clinical update / invariance / hypothetical evidence world reported separately]

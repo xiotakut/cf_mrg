@@ -21,7 +21,7 @@ from src.medrgag_logic import (build_summary_prompt, build_explore_prompt,
     build_generation_slots, build_selection_prompt, clean_generated_text, parse_knowledge_points)
 from src.medrgag_prompts import get_prompt_profile
 
-CONFIG=ROOT/'configs/cf_baseline_screening.json'
+CONFIG=OUT/'config.json' if (OUT/'config.json').exists() else ROOT/'configs/cf_baseline_screening.json'
 METHODS={'M0':'direct_llama','M1':'retrieval_only_llama','M2':'medrgag_llama_base'}
 VISIBLE={'item_id','question','options','fixed_evidence','answer_format'}
 

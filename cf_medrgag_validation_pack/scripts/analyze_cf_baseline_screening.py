@@ -6,6 +6,8 @@ from collections import Counter, defaultdict
 import csv
 import difflib
 import json
+import gzip
+import shutil
 from pathlib import Path
 import re
 import time
@@ -132,6 +134,9 @@ def analyze(partial=False):
         answer,error,raw_value=parse(record['raw_response'],items[item_id],canon)
         exported.append(record|{'answer':answer,'raw_answer_value':raw_value,'invalid_reason':error,'format_invalid':error is not None and error!='unmapped_diagnosis','unmapped_diagnosis':error=='unmapped_diagnosis'})
     write(OUT/'predictions.jsonl',exported);write(OUT/'stages.jsonl',stages)
+    if plan.get('candidate_tier')=='full-test':
+        with (OUT/'stages.jsonl').open('rb') as source,gzip.open(OUT/'stages.jsonl.gz','wb') as target:
+            shutil.copyfileobj(source,target)
     scored={};rows=[]
     tax_index={(r['item_id'],r['group_id'],r['protocol'],r['role']):r for r in taxonomy}
     for lab in labels:
@@ -243,6 +248,7 @@ def analyze(partial=False):
     sensitivities=sensitivity_report(rows,scored)
     proxies=mechanism_proxies(labels)
     metrics={'planned_unique_inputs':len(items),'completed_unique_method_predictions':len(preds),'planned_method_predictions':expected,'completion_rate':len(preds)/expected,'status':'complete' if len(preds)==expected and repeat['executed']==20 else 'partial','benchmarks':metric_rows,'method_comparisons':comparisons,'amplification':amps,'neutral':'unavailable in released inputs','taxonomy':ident,'efficiency':efficiency,'repeat':repeat,'sensitivities':sensitivities,'mechanism_proxies':proxies}
+    metrics['evaluation_scope']=plan.get('scope','sampled screening tier; not the entire test set')
     dump('metrics.json',metrics);figures(pair_rows,amps,category,stages,gaps)
     report(metrics,pair_rows,gaps)
     print(json.dumps({'status':metrics['status'],'predictions':len(preds),'planned':expected,'report':str(OUT/'summary.md')}))
@@ -316,6 +322,13 @@ def efficiency_report(stages,runtimes,n,completed):
     result.update(prepared_input_records=records,exact_duplicate_input_records=records-n,LLM_requests_avoided_by_exact_input_deduplication=15*(records-n),historical_answer_cache_hits=0)
     prefetch=OUT/'retrieval_prefetch_completion.json'
     if prefetch.exists():result['retrieval_prefetch']=json.loads(prefetch.read_text())
+    reuse=OUT/'cache_reuse.json'
+    if reuse.exists():
+        result['prior_screening_reuse']=json.loads(reuse.read_text())
+        start=datetime.fromisoformat(wall_lines[0]).timestamp() if wall_lines else float('inf')
+        fresh=[r for r in stages if r.get('time',0)>=start and 'prompt_tokens' in r]
+        result['incremental_expansion_workload']={'LLM_requests':len(fresh),'prompt_tokens':sum(r['prompt_tokens'] for r in fresh),'completion_tokens':sum(r['completion_tokens'] for r in fresh),'meaning':'new requests since the full-test expansion started; earlier exact cached stages remain in total workload'}
+        result['recovered_engine_startup_failures']=len(list((OUT/'cache/runtime_failures').glob('*_initial_capacity.json')))
     return result
 
 def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):
@@ -470,8 +483,12 @@ def report(metrics,pairs,gaps):
     lines+=['\nUnmapped diagnosis is a valid JSON diagnosis outside the frozen canonical mapping, distinct from malformed output. It counts wrong in canonical screening; no outcome-driven medical aliases were added. Ambiguous answers are included in format-invalid counts. Uncertainty is a legal MedCounterFact answer and is reported separately.','\n## Frozen MedEinst format sensitivity','| Method | Role | Matched inputs | Four-way minus native score | 95% CI |','|---|---|---:|---:|---|']
     for r in metrics['sensitivities']['native_derived_effects']:lines.append(f"| {r['method']} | {r['role']} | {r['N']} | {pct(r['net_gain'])} | {ci(r['ci'])} |")
     reranks=[r for r in read(OUT/'stages.jsonl') if r['stage']=='rerank']
+    lines.insert(2,'\nEvaluation scope: '+metrics['evaluation_scope']+'.')
     counts=Counter(r['selected_document_count'] for r in reranks)
     lines += [f"\nOriginal KADS/parser selected-document distribution: {dict(sorted(counts.items()))}. Empty selections are retained local-baseline stage failures; all KGCC/generation/select requests and final readers still ran. No outcome-driven parser repair or document fallback was applied.", '\nInterpretation, execution audit and limitations: [findings.md](findings.md), [validation.json](validation.json).']
+    if 'incremental_expansion_workload' in cost:
+        extra=cost['incremental_expansion_workload']
+        lines += [f"\nFull-test expansion: {extra['LLM_requests']} newly executed requests; {extra['prompt_tokens']} prompt tokens; {extra['completion_tokens']} completion tokens. Aggregate workload above includes prior screening stages reused by exact input equality. The fixed auxiliary 20-input repeat is inherited from the earlier screening subset, not a new random sample of the enlarged test population. See cache_reuse.json for context-capacity provenance."]
     (OUT/'summary.md').write_text('\n'.join(lines)+'\n')
 
 if __name__=='__main__':

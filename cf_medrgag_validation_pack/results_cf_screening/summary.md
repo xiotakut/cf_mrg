@@ -1,5 +1,7 @@
 # Cross-benchmark all-Llama baseline screening
 
+**Scope clarification: completed sampled screening only, not the entire test sets. Full-release expansion is tracked in [results_cf_full_test](../results_cf_full_test/findings.md).**
+
 Status: **complete**; unique method predictions 11322/11322.
 
 Local baseline and exact stage contract: [baseline_contract.md](baseline_contract.md). Public source revisions and release discrepancies: [acquisition.md](acquisition.md).

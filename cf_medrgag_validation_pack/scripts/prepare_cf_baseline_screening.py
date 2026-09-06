@@ -5,20 +5,22 @@ import argparse
 from collections import Counter, defaultdict
 import csv
 import json
+import os
 from pathlib import Path
 import random
 import re
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'results_cf_screening'
+OUT = ROOT / os.environ.get('CF_SCREENING_OUTPUT', 'results_cf_screening')
 RAW = ROOT / 'private_data/cf_screening_sources'
 SEED = 20260906
 CULT_REV = '5ded0d24cd3cb09e26ce3128a3fe7fa9f0a4631f'
 CULT_REPO = 'HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs'
 
 def read(path):
-    return [json.loads(s) for s in Path(path).open() if s.strip()]
+    with Path(path).open() as stream:
+        return [json.loads(s) for s in stream if s.strip()]
 
 def write(path, rows):
     Path(path).parent.mkdir(parents=True, exist_ok=True)
@@ -68,7 +70,7 @@ def exposure(test):
     # Raw full releases and retrieval/generation caches are assets, not exposure.
     for path in sorted(ROOT.rglob('*.jsonl')):
         rel = path.relative_to(ROOT)
-        if any(x in rel.parts for x in ['raw','cache','cf_screening_sources','results_cf_screening','deltarank_sources','clir-full-e7e1733']):
+        if any(x in rel.parts for x in ['raw','cache','cf_screening_sources','results_cf_screening','results_cf_full_test','deltarank_sources','clir-full-e7e1733']):
             continue
         files.append(str(rel))
         def walk(v):
@@ -101,7 +103,15 @@ def prepare(tier):
     culture_sources = {norm(r['question']):r for r in read(paths['cultural'][1])}
     exposed, scanned = exposure(test)
     (OUT/'exposure_audit.json').write_text(json.dumps({'matching':'normalized complete narrative; case_id only after text verification','scanned_files':scanned,'exposed_test_case_count':len(exposed)},indent=2))
-    nmed,ncpv,nmcf = (300,60,80) if tier=='full' else (200,40,60)
+    previous=ROOT/'results_cf_screening'
+    prior_items=read(previous/'screening_items.jsonl') if tier=='full-test' else []
+    prior_plan=json.loads((previous/'sample_plan.json').read_text()) if prior_items else None
+    if prior_items:
+        used={norm(r['question']) for r in prior_items if r['answer_format']=='diagnosis'}
+        for r in test:
+            if norm(r['narrative']) in used:exposed[r['case_id']].add('results_cf_screening/screening_items.jsonl')
+        (OUT/'exposure_audit.json').write_text(json.dumps({'matching':'normalized complete narrative, including completed prior screening inputs','scanned_files':scanned+['results_cf_screening/screening_items.jsonl'],'exposed_test_case_count':len(exposed)},indent=2))
+    nmed,ncpv,nmcf = (len(test),len(cpv),len(original)) if tier=='full-test' else (300,60,80) if tier=='full' else (200,40,60)
     rng = random.Random(SEED)
     pairs=defaultdict(dict)
     for r in test:
@@ -124,7 +134,9 @@ def prepare(tier):
     extra=sorted(set(frozen)-set(selected));rng.shuffle(extra)
     auxiliary=(auxiliary+extra)[:60]
     if frozen_plan:auxiliary=frozen_plan['auxiliary_medeinst_groups']
-    inputs=[];labels=[];tax=[];dedup={}
+    elif prior_plan:auxiliary=prior_plan['auxiliary_medeinst_groups']
+    inputs=list(prior_items);labels=[];tax=[]
+    dedup={json.dumps({k:v for k,v in r.items() if k!='item_id'},sort_keys=True,ensure_ascii=False):r['item_id'] for r in inputs}
     def add(ds, source, role, question, options, gold, fmt, *, protocol='native', evidence=None, operation=None, **extra):
         item={'question':question,'options':options,'fixed_evidence':evidence or [],'answer_format':fmt}
         key=json.dumps(item,sort_keys=True,ensure_ascii=False)
@@ -185,6 +197,15 @@ def prepare(tier):
             add('medcounterfact',case,'reference' if i==0 else f'variant_{i}',r['question'],{},m['answer'],'relation',evidence=r['article_summaries'],operation=[] if i==0 else ['hypothetical_entity_replacement'],main_category=m.get('MainCategory','Original'),sub_category=m.get('SubCategory'),replacement=m.get('item'),original_review=m.get('original_review'),missing_categories=sorted({'OOD','ID','Nonsense tokens','Poison'}-{x['metadata'].get('MainCategory') for x in mg[case]}))
     # Semantics and cross-resource mappings belong only to evaluation.
     itemmap={r['item_id']:r for r in inputs}
+    if tier=='full-test':
+        by_input=defaultdict(list)
+        for r in labels:by_input[r['item_id']].append(r)
+        conflicts=[]
+        for key,rows in by_input.items():
+            if len({json.dumps(r['gold'],sort_keys=True) for r in rows})>1:
+                conflicts.append({'item_id':key,'groups':[r['group_id'] for r in rows],'gold_values':[r['gold'] for r in rows]})
+                for r in rows:r['identical_input_conflicting_gold']=True
+        (OUT/'duplicate_gold_conflicts.json').write_text(json.dumps(conflicts,indent=2)+'\n')
     refs={(r['group_id'],r['protocol']):r for r in labels if r['role']=='reference'}
     def semantic(r):
         opts=itemmap[r['item_id']]['options']; g=r['gold']
@@ -215,12 +236,18 @@ def prepare(tier):
         candidates=list(dict.fromkeys(r['item_id'] for r in labels if r['dataset']==ds and r['protocol']=='native'))
         smoke+=candidates[:5]
     repeat=random.Random(SEED+1).sample([x['item_id'] for x in inputs],20)
+    if prior_plan:repeat=prior_plan['repeat_item_ids'];smoke=prior_plan['smoke_item_ids']
+    assert {r['item_id'] for r in labels}==set(itemmap), 'every retained inference input must belong to the prepared release'
     write(OUT/'screening_items.jsonl',inputs);write(OUT/'evaluation_labels.jsonl',labels);write(OUT/'taxonomy.jsonl',tax)
     (OUT/'source_overlap.json').write_text(json.dumps(overlaps,indent=2))
     plan={'seed':SEED,'candidate_tier':tier,'tier_frozen':False,'smoke_item_ids':smoke,'repeat_item_ids':repeat,'repeat_seed':SEED+1,'primary_medeinst_groups':selected,'auxiliary_medeinst_groups':auxiliary,'cpv_groups':ids[:ncpv],'medcounterfact_groups':mids,'cultural_groups':len(cultural),'neutral_available':False,'unique_inputs':len(inputs),'label_records':len(labels),'no_prediction_inspected':True}
     if frozen_plan:
         assert len(inputs)==frozen_plan['unique_inputs']
         plan=frozen_plan
+    if tier=='full-test':
+        plan.update(tier_frozen=True,scope='entire official test/released evaluation data; no source-group sampling',no_prediction_inspected=False,scope_decision='user expanded to all released test units after prior sampled results; no output-dependent inclusion',prior_unique_inputs=len(prior_items),repeat_scope='unchanged 20-input auxiliary repeat from prior screening; not a fresh random full-population sample')
+        config=json.loads((ROOT/'configs/cf_baseline_screening.json').read_text());config['max_model_len']=98304
+        (OUT/'config.json').write_text(json.dumps(config,indent=2)+'\n')
     (OUT/'sample_plan.json').write_text(json.dumps(plan,indent=2))
     canonical=sorted({r['ground_truth'] for r in test})
     train=ROOT/'private_data/deltarank_sources/medeinst_train.jsonl'
@@ -247,7 +274,23 @@ def prepare(tier):
     checks+=['\nPotential ambiguities: MedPIC has no official pair map; MedEinst multi-edit taxonomy remains unresolved; CPV no-op and sex-specific clinical text are flagged; Cultural Neutral absent and options can exceed four; MedCounterFact original metadata text never fills replacement input.','Raw source checks and complete prompts are retained locally; do not paste license-unclear text into Git.']
     (OUT/'data_checks.md').write_text('\n'.join(checks)+'\n')
     (OUT/'acquisition.md').write_text('# Acquisition\n\n'+ '\n'.join(f'- {ds}: [{v["repo_id"]}]({v["url"]}), revision `{v["revision"]}`; source files in acquisition.json.' for ds,v in provenance.items())+'\n\nReleased rows: MedEinst '+str(len(test))+f'; MedPIC {len(medpic)}; CPV {len(cpv)} in {len(cg)} groups; Cultural {len(cultural)} groups × 10 = {len(cultural)*10} inputs; MedCounterFact {len(original)} original + {len(replaced)} replaced. Cultural Neutral is absent. Four existing caches match current remote revisions checked 2026-09-06.\n\nCPV authentic question field is verified against author create.py (case_text and question both initialized from original MedQA question). Variants use case_text alone. Cultural originals all match author test.jsonl by complete normalized question, exact options and gold. No published model answers downloaded.\n\nMedPIC official pair map unavailable: GF–CF is unpaired_composition_gap. MedCounterFact aligns only metadata.id; original metadata.question and treatment fields never enter model inputs. Public author releases without repository license remain local; only download code, IDs and derived aggregate outputs are committed.\n')
+    if prior_items:
+        import hashlib
+        import shutil
+        assert OUT!=previous
+        assert inputs[:len(prior_items)]==prior_items
+        for name in ['main','repeat','repeat_independent','smoke_pre_evidence_dedup']:
+            shutil.copytree(previous/'cache'/name,OUT/'cache'/name)
+        digest=hashlib.sha256((OUT/'screening_items.jsonl').read_bytes()).hexdigest()
+        for stamp in (OUT/'cache').glob('*/worker-*/inputs.sha256'):stamp.write_text(digest)
+        for stamp in (OUT/'cache').glob('*/worker-*/config.json'):
+            inherited=json.loads(stamp.read_text());assert inherited|{'max_model_len':98304}==config
+            stamp.write_text(json.dumps(config,indent=2)+'\n')
+        (OUT/'runtime').symlink_to(previous/'runtime',target_is_directory=True)
+        for name in ['baseline_contract.md','environment.json','performance_test.json','rng_repeat_correction.json','flow.mmd','smoke_review.md','taxonomy_corrections.json','RESEARCH_PLAN.md']:
+            shutil.copy2(previous/name,OUT/name)
+        (OUT/'cache_reuse.json').write_text(json.dumps({'source':str(previous),'prior_unique_inputs':len(prior_items),'prior_predictions':3*len(prior_items),'reuse_basis':'exact visible-input equality; item IDs, seeds, model, templates, evidence, decoding and copied stage outputs unchanged','input_digest_update':'only after verifying the complete old input list is an identical prefix; independent cache copy preserves prior artifacts','context_capacity':{'prior':65536,'new':98304,'reason':'full released mandatory evidence plus unchanged KADS/documents exceeds previous capacity; no token budget or prompt change'},'prior_batch_wall_seconds':16316},indent=2))
     print(json.dumps({'counts':counts,'unique_inputs':len(inputs),'medeinst_unexposed_pool':len(fresh),'auxiliary_pairs':len(auxiliary),'source_overlaps':len(overlaps)}))
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--tier',choices=['full','compact'],default='full');a=p.parse_args();prepare(a.tier)
+    p=argparse.ArgumentParser();p.add_argument('--tier',choices=['full','compact','full-test'],default='full');a=p.parse_args();prepare(a.tier)

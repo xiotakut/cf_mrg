@@ -2,6 +2,8 @@
 import sys
 from pathlib import Path
 import unittest
+import json
+from collections import Counter
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from run_cf_baseline_screening import solver_input, task_question, reader_prompt, stable_seed, task_profile
 from analyze_cf_baseline_screening import parse, four_grid, method_comparison
@@ -10,6 +12,24 @@ class Tokenizer:
     def apply_chat_template(self,messages,**kwargs):return '\n'.join(m['content'] for m in messages)
 
 class Contract(unittest.TestCase):
+    def test_full_release_coverage_and_exact_reuse(self):
+        root=Path(__file__).resolve().parents[1];out=root/'results_cf_full_test'
+        if not (out/'screening_items.jsonl').exists():self.skipTest('full release assets not prepared locally')
+        from prepare_cf_baseline_screening import read
+        import pyarrow.parquet as pq
+        sources=json.loads((out/'acquisition.json').read_text());labels=read(out/'evaluation_labels.jsonl')
+        native=lambda ds:[r for r in labels if r['dataset']==ds and r['protocol']=='native']
+        med=read(sources['medeinst']['paths'][0]);self.assertEqual(Counter(r['source_id'] for r in native('medeinst')),Counter(r['case_id'] for r in med))
+        cpv=pq.read_table(sources['cpv']['paths'][0]).to_pylist();expected=Counter(r['case_id'] for r in cpv);expected.update(expected.keys())
+        self.assertEqual(Counter(r['source_id'] for r in native('cpv')),expected)
+        world=[r for p in sources['medcounterfact']['paths'] for r in read(p)]
+        self.assertEqual(Counter(r['source_id'] for r in native('medcounterfact')),Counter(str(r['metadata']['id']) for r in world))
+        self.assertEqual(len(native('medpic')),len(json.loads(Path(sources['medpic']['paths'][0]).read_text())))
+        self.assertEqual(len(native('cultural')),10*len(json.loads(Path(sources['cultural']['paths'][0]).read_text())))
+        old=read(root/'results_cf_screening/screening_items.jsonl');new=read(out/'screening_items.jsonl')
+        self.assertEqual(new[:len(old)],old)
+        self.assertEqual({r['item_id'] for r in labels},{r['item_id'] for r in new})
+
     def test_visible_task_and_native_contracts(self):
         raw={'item_id':'s000001','question':'Patient vignette and final question','options':{'A':'x','B':'y','E':'z'},'fixed_evidence':['mandatory article'],'answer_format':'multi','gold':['A'],'role':'trap','paired_text':'SECRET','taxonomy':'SECRET'}
         item=solver_input(raw);self.assertEqual(set(item),{'item_id','question','options','fixed_evidence','answer_format'})

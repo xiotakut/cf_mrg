@@ -1,5 +1,9 @@
 # cf_mrg
 
+Current scope correction: **the entire released test sets**, with no source-group sampling. The expansion is running in [cf_medrgag_validation_pack/results_cf_full_test](cf_medrgag_validation_pack/results_cf_full_test/findings.md): 25,280 unique inputs / 75,840 method predictions planned, reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
+
+Full-set commands from `cf_medrgag_validation_pack`: set `export CF_SCREENING_OUTPUT=results_cf_full_test`, then `bash scripts/cf_baseline_screening.sh prepare --tier full-test`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`.
+
 The completed experiment is **cross-benchmark all-Llama baseline screening**: independent native-task Direct, retrieval-only, and MedRGAG-Llama inference on MedEinst, MedPIC, CPV-MedQA, Cultural-Cues, and MedCounterFact. All 11,322 planned method predictions and the fixed 20-input independent-seed repeat are complete. See the [findings and limitations](cf_medrgag_validation_pack/results_cf_screening/findings.md), [baseline contract](cf_medrgag_validation_pack/results_cf_screening/baseline_contract.md), [frozen sample counts](cf_medrgag_validation_pack/results_cf_screening/benchmark_summary.csv), and [metric tables](cf_medrgag_validation_pack/results_cf_screening/summary.md). No counterfactual sidecar was loaded in this experiment.
 
 From `cf_medrgag_validation_pack`, the commands are `bash scripts/cf_baseline_screening.sh prepare`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`. Runtime setup and the actual execution record are in [commands.sh](cf_medrgag_validation_pack/results_cf_screening/commands.sh). Native input text and large stage caches remain local.
