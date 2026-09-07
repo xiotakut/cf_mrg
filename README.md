@@ -1,10 +1,10 @@
 # cf_mrg
 
-本次及后续 benchmark 结果统一归档在 **[benchmarks/](benchmarks/README.md)**。最新：[2026-09-07 MedRGAG-Llama 完整测试](benchmarks/2026-09-07_medrgag_llama_base_full_test/README.md)。
+本次及后续 benchmark 结果统一归档在 **[benchmarks/](benchmarks/README.md)**。最新：[2026-09-07 Llama 三方法完整对照](benchmarks/2026-09-07_llama_full_test_three_methods/README.md)。
 
-Current scope correction: **the entire released test sets**, with no source-group sampling. The full-test run completed on 2026-09-07; results are in [cf_medrgag_validation_pack/results_cf_full_test](cf_medrgag_validation_pack/results_cf_full_test/findings.md): 25,280 unique inputs / 25,280 M2 predictions completed (100%) (user narrowed the final scope to MedRGAG-Llama base only; earlier M0/M1 outputs are preserved), reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
+Current full-test comparison: **M0 Direct, M1 retrieval-only and M2 MedRGAG-Llama are all complete: 25,280/25,280 unique inputs per method (100%)**. [Full three-method results](cf_medrgag_validation_pack/results_cf_full_comparison/findings.md) cover the same entire released test sets. M0/M1 each reuse 5,832 prior outputs and add 19,448; all M2 predictions and upstream stages remain unchanged. The earlier sampled screening below is historical and is not full test-set coverage.
 
-Full-set commands from `cf_medrgag_validation_pack`: set `export CF_SCREENING_OUTPUT=results_cf_full_test`, then `bash scripts/cf_baseline_screening.sh prepare --tier full-test`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`.
+From the repository root, run `bash cf_medrgag_validation_pack/results_cf_full_comparison/commands.sh` for prepare/readers/analyze/audit with the existing full-test assets. The prior M2-only full run remains in `results_cf_full_test`; no new M2 calls are needed for reader completion.
 
 The completed experiment is **cross-benchmark all-Llama baseline screening**: independent native-task Direct, retrieval-only, and MedRGAG-Llama inference on MedEinst, MedPIC, CPV-MedQA, Cultural-Cues, and MedCounterFact. All 11,322 planned method predictions and the fixed 20-input independent-seed repeat are complete. See the [findings and limitations](cf_medrgag_validation_pack/results_cf_screening/findings.md), [baseline contract](cf_medrgag_validation_pack/results_cf_screening/baseline_contract.md), [frozen sample counts](cf_medrgag_validation_pack/results_cf_screening/benchmark_summary.csv), and [metric tables](cf_medrgag_validation_pack/results_cf_screening/summary.md). No counterfactual sidecar was loaded in this experiment.
 

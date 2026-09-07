@@ -1,8 +1,8 @@
 # Counterfactual medical RAG validation pack
 
-Current scope correction: **the entire released test sets**, with no source-group sampling. The full-test run completed on 2026-09-07; results are in [results_cf_full_test](results_cf_full_test/findings.md): 25,280 unique inputs / 25,280 M2 predictions completed (100%) (user narrowed the final scope to MedRGAG-Llama base only; earlier M0/M1 outputs are preserved), reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
+Current full-test comparison: **M0 Direct, M1 retrieval-only and M2 MedRGAG-Llama are all complete: 25,280/25,280 unique inputs per method (100%)**. [Full three-method results](results_cf_full_comparison/findings.md) cover the same entire released test sets. M0/M1 each reuse 5,832 prior outputs and add 19,448; all M2 predictions and upstream stages remain unchanged. The earlier sampled screening below is historical and is not full test-set coverage.
 
-Full-set commands from `cf_medrgag_validation_pack`: set `export CF_SCREENING_OUTPUT=results_cf_full_test`, then `bash scripts/cf_baseline_screening.sh prepare --tier full-test`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`.
+From the repository root, run `bash cf_medrgag_validation_pack/results_cf_full_comparison/commands.sh` for prepare/readers/analyze/audit with the existing full-test assets. The prior M2-only full run remains in `results_cf_full_test`; no new M2 calls are needed for reader completion.
 
 Current work: [all-Llama baseline screening](results_cf_screening/summary.md), with [source acquisition](results_cf_screening/acquisition.md), [actual baseline contract](results_cf_screening/baseline_contract.md), and [commands](results_cf_screening/commands.sh). The fixed three methods use independent current-case inputs and native answer formats. MedEinst four-option sensitivity is separate from native diagnosis; Cultural-Cues has 1,500 released inputs and no Neutral field. Historical experiments remain below and in their original result directories.
 

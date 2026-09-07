@@ -5,6 +5,7 @@
 | 完成日期 | 运行 | 方法 | 范围 | 完成率 |
 |---|---|---|---|---|
 | 2026-09-07 | [MedRGAG-Llama 五入口完整测试](2026-09-07_medrgag_llama_base_full_test/README.md) | M2：medrgag_llama_base | 五入口全部发布测试记录，另含预定 MedEinst 四选项辅助 | 25,280/25,280 唯一输入 |
+| 2026-09-07 | [Llama 三方法完整对照](2026-09-07_llama_full_test_three_methods/README.md) | M0 Direct / M1 retrieval-only / M2 MedRGAG-Llama | 相同五入口完整测试及冻结辅助；补齐 M0/M1，保留 M2 | 各 25,280/25,280；共 75,840 条预测 |
 
 每次归档包含结果说明、逐题预测、指标与统计、图表、模型/数据配置、执行命令和验收记录。后续运行放入新的子目录，并在此表追加索引。
 
