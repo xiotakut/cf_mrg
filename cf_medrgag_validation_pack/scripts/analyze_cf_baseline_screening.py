@@ -370,6 +370,12 @@ def efficiency_report(stages,runtimes,n,completed):
         result['new_requests_by_stage']=dict(Counter(r['stage'] for r in fresh))
         assert set(result['new_requests_by_stage']) <= {'M0','M1'}, 'Reader completion recomputed a non-reader stage'
         result['incremental_expansion_workload']['meaning']='Only missing M0/M1 reader requests in this completion batch; all M2 and initial retrieval artifacts reused unchanged'
+        result['cold_vs_reused']='Exact complete M2 pipeline and 5832 prior predictions per reader reused; this batch executes only the 19448 missing calls per reader'
+        incremental=[]
+        for stage in ['M0','M1']:
+            rr=[r for r in fresh if r['stage']==stage]
+            incremental.append({'stage':stage,'LLM_requests':len(rr),'prompt_tokens':sum(r['prompt_tokens'] for r in rr),'completion_tokens':sum(r['completion_tokens'] for r in rr),'stage_batch_wall_seconds_sum':sum(r['batch_wall_seconds']/r['batch_size'] for r in rr),'truncations':sum(r.get('finish_reason')=='length' for r in rr)})
+        table('reader_completion_efficiency.csv',incremental)
         result['pipeline_makespan_note']='First-to-last wall timestamps measure this M0/M1 completion batch only. Prior M2/screening runtime and interruption limits are retained in prior_run_efficiency.json; aggregate stage times and logical tokens include reused history.'
         result['prior_run_efficiency_file']='prior_run_efficiency.json'
     return result
@@ -481,7 +487,7 @@ def figures(pairs,amps,categories,stages,gaps):
         fig,ax=plt.subplots(figsize=(9,4))
         for i,r in enumerate(amps):
             m=r['amplification'];lo,hi=r['ci'];ax.errorbar(i,100*m,yerr=[[100*max(0,m-lo)],[100*max(0,hi-m)]],fmt='o')
-        ax.axhline(0,color='grey',lw=.8);ax.set_xticks(range(len(amps)),[r['benchmark']+' '+r['protocol']+' '+r['method'] for r in amps],rotation=45,ha='right');ax.set_ylabel('Drop method − drop Direct (pp), 95% CI');save(fig,'sensitivity_amplification')
+        ax.axhline(0,color='grey',lw=.8);ax.set_xticks(range(len(amps)),[r['benchmark']+' '+r['protocol']+' '+r['method'] for r in amps],rotation=45,ha='right');ax.set_ylabel('Drop − Direct drop (pp)');ax.set_title('Source-cluster 95% CI');save(fig,'sensitivity_amplification')
     rr=[r for r in categories if r['slice_field']=='operation_tag' and r['protocol']=='native']
     if rr:
         keys=sorted({(r['benchmark'],r['slice']) for r in rr});index={(r['benchmark'],r['slice'],r['method']):r for r in rr}

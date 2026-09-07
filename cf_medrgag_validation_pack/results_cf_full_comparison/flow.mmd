@@ -1,0 +1,13 @@
+flowchart TD
+  Inputs[Same frozen full releases: 25280 unique inputs] --> M0[Direct Llama reader: 19448 new plus 5832 reused]
+  Inputs --> M1[Retrieval-only Llama reader: 19448 new plus 5832 reused]
+  Evidence[Mandatory task evidence and all native options] --> M0
+  Evidence --> M1
+  Retrieval[Exact initial BM25 and MedCPT top5 cache from M2] --> M1
+  Prior[Completed MedRGAG-Llama full run] --> M2[25280 M2 predictions and all stages reused unchanged]
+  M0 --> Compare[Full M0 / M1 / M2 offline comparison]
+  M1 --> Compare
+  M2 --> Compare
+  Labels[Separate frozen gold, source mapping and taxonomy] --> Compare
+  Compare --> Results[Native scores, paired effects, method comparisons and amplification]
+  Results --> Limits[Clinical update / invariance / hypothetical evidence world kept separate]

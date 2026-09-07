@@ -1,0 +1,74 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-07T19:30:01.552660+08:00",
+  "unique_inputs": 25280,
+  "stage_record_counts": {
+    "summary": 126400,
+    "explore": 25280,
+    "generate": 126400,
+    "select": 25280,
+    "M0": 25280,
+    "M1": 25280,
+    "M2": 25280,
+    "retrieval": 25349,
+    "rerank": 25280
+  },
+  "unchanged_source_stage_files": [
+    "cache/main/worker-1/explore.jsonl",
+    "cache/main/worker-1/summary.jsonl",
+    "cache/main/worker-1/generate.jsonl",
+    "cache/main/worker-1/M2.jsonl",
+    "cache/main/worker-1/rerank.jsonl",
+    "cache/main/worker-1/select.jsonl",
+    "cache/main/worker-1/retrieval.jsonl",
+    "cache/main/worker-0/explore.jsonl",
+    "cache/main/worker-0/summary.jsonl",
+    "cache/main/worker-0/generate.jsonl",
+    "cache/main/worker-0/M2.jsonl",
+    "cache/main/worker-0/retrieval_pre_compat.jsonl",
+    "cache/main/worker-0/rerank.jsonl",
+    "cache/main/worker-0/select.jsonl",
+    "cache/main/worker-0/retrieval.jsonl",
+    "cache/main/worker-2/explore.jsonl",
+    "cache/main/worker-2/summary.jsonl",
+    "cache/main/worker-2/generate.jsonl",
+    "cache/main/worker-2/M2.jsonl",
+    "cache/main/worker-2/rerank.jsonl",
+    "cache/main/worker-2/select.jsonl",
+    "cache/main/worker-2/retrieval.jsonl"
+  ],
+  "max_prompt_tokens": {
+    "summary": 63466,
+    "explore": 63557,
+    "generate": 62794,
+    "select": 65008,
+    "M0": 62683,
+    "M1": 63544,
+    "M2": 62816
+  },
+  "durable_prompt_references": {
+    "cache/main/worker-0/prompts.jsonl.gz": {
+      "referenced": 182833,
+      "missing": 0
+    },
+    "cache/main/worker-1/prompts.jsonl.gz": {
+      "referenced": 189494,
+      "missing": 0
+    },
+    "cache/main/worker-2/prompts.jsonl.gz": {
+      "referenced": 6873,
+      "missing": 0
+    }
+  },
+  "checks": [
+    "complete M2 stage slots",
+    "no duplicate LLM stage keys",
+    "complete M0/M1 counts and unchanged prior reader prefixes",
+    "frozen decoding and input/stage seeds",
+    "context/completion budgets",
+    "same worker configs and source inputs",
+    "no M2/retrieval/KGCC/KADS recomputation",
+    "consistent complete document caches",
+    "readable durable gzip prompt references"
+  ]
+}

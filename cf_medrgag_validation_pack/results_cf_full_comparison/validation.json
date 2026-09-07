@@ -1,8 +1,36 @@
 {
-  "status": "inference_in_progress",
-  "prepared_frozen_input_config_identity": "pass",
-  "reader_only_stage_contract_test": "pass",
-  "prior_M2_audit": "prior_M2_artifact_audit.json",
-  "planned_predictions_per_method": 25280,
-  "new_reader_calls_planned": 38896
+  "status": "pass",
+  "checked_at": "2026-09-07T19:36:57.243973+08:00",
+  "unit_contract_tests": {
+    "passed": 4,
+    "command": "/home/data3/txy/MedRGAG/.venv/bin/python -m unittest discover -s tests -p test_cf_baseline_screening.py -v"
+  },
+  "artifact_audit": "artifact_audit.json",
+  "unique_predictions_by_method": {
+    "M0": 25280,
+    "M1": 25280,
+    "M2": 25280
+  },
+  "completed_evaluation_records_all_methods": 82131,
+  "completed_vs_planned_all_benchmark_groups": "pass",
+  "missing_predictions": 0,
+  "transport_failures": 0,
+  "old_M2_exported_predictions_and_benchmark_and_paired_metrics": "exact equality",
+  "prior_reader_prefixes_and_all_nonreader_stage_bytes": "pass; artifact_audit.json",
+  "paired_four_cell_and_drop_identities": "pass on all rows",
+  "method_gain_and_OCP_identities": "pass on all rows",
+  "source_macro_and_amplification_identities": "pass on all rows",
+  "new_requests_by_stage": {
+    "M0": 19448,
+    "M1": 19448
+  },
+  "new_nonreader_LLM_requests": 0,
+  "inference_exit_code": 0,
+  "analysis_exit_code": 0,
+  "figures": "10 SVG/PNG pairs; paired-drop and amplification images inspected; clipped amplification label corrected without changing data",
+  "limitations": [
+    "MedEinst canonical matching is not official semantic evaluation",
+    "Model format invalids and unmapped diagnoses are preserved and scored; syntactically valid storage JSON does not mean a valid model answer",
+    "Holm family expands from 29 native tests in prior M2-only report to 87 for all three methods; M2 unadjusted results remain identical"
+  ]
 }

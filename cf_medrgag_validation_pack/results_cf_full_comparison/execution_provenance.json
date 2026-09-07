@@ -1,0 +1,82 @@
+{
+  "inference_code_commit": "79a9454becaf4afe539a18d4017b28270ab01891",
+  "source_M2_result_commit": "638f1e3ad116ffdad609e74bb5a9f019a196911e",
+  "started_at": "2026-09-07T18:44:08+08:00",
+  "inference_finished_at": "2026-09-07T19:29:22+08:00",
+  "analysis_finished_at": "2026-09-07T19:31:50+08:00",
+  "inference_makespan_seconds": 2714,
+  "analysis_elapsed_seconds": 148,
+  "command": "CF_SCREENING_OUTPUT=results_cf_full_comparison bash scripts/cf_baseline_screening.sh readers",
+  "tmux_socket": "cf-readers",
+  "tmux_session": "full-controls",
+  "gpu_indices": [
+    0,
+    2
+  ],
+  "GPU": "NVIDIA H20, 97871 MiB each",
+  "driver": "570.133.20",
+  "vllm": "0.8.5",
+  "transformers_task_runtime": "4.53.2",
+  "batch_size": 64,
+  "chunk_size": 64,
+  "gpu_memory_utilization": 0.75,
+  "precision": "bfloat16",
+  "chat_template_identity_to_source": "byte equality",
+  "inference_restarts": 0,
+  "new_requests": {
+    "LLM_requests": 38896,
+    "prompt_tokens": 33914033,
+    "completion_tokens": 339142,
+    "meaning": "Only missing M0/M1 reader requests in this completion batch; all M2 and initial retrieval artifacts reused unchanged"
+  },
+  "reader_process_cache_hits": {
+    "worker-0": {
+      "complete_input_tasks": 128,
+      "retrieval": 12512,
+      "M0": 2793,
+      "M1": 2793
+    },
+    "worker-1": {
+      "complete_input_tasks": 128,
+      "retrieval": 12512,
+      "M0": 2783,
+      "M1": 2783
+    }
+  },
+  "cache_hit_scope": "Current reader process counters here; metrics.json also retains the historical worker-2 runtime, which contains old M2-stage counters",
+  "monitoring": {
+    "agent": "gpt-5.6-luna",
+    "reasoning_effort": "max",
+    "scope": "read-only process, log, count and failure monitoring",
+    "root_supervision": "regular heartbeat/process checks and final independent artifact/metric acceptance",
+    "monitor_note": "Initial heartbeat refresh and duplicate monitor writer corrected; inference was unaffected",
+    "final_status": {
+      "updated_at": "2026-09-07T19:32:12+08:00",
+      "state": "complete",
+      "counts": {
+        "M0": 25280,
+        "M1": 25280,
+        "M2": 25280
+      },
+      "workers": [
+        {
+          "pid": 973841,
+          "alive": false,
+          "log": "run_0.log",
+          "log_age_seconds": 172.0,
+          "completed": true
+        },
+        {
+          "pid": 973842,
+          "alive": false,
+          "log": "run_1.log",
+          "log_age_seconds": 1224.6,
+          "completed": true
+        }
+      ],
+      "core_nonreader_growth": [],
+      "new_failure_files": [],
+      "errors": []
+    }
+  }
+}
