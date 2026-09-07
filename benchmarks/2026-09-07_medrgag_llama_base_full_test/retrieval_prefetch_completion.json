@@ -1,0 +1,19 @@
+{
+  "scope": "final resumed retrieval prefetch phase; earlier phases retained separately, this duration is not total retrieval cost",
+  "completed_at": "2026-09-06T22:32:02.947026+08:00",
+  "final_phase": {
+    "mode": "retrieval",
+    "tasks": 25280,
+    "makespan_seconds": 3627.7210335731506,
+    "status": "complete"
+  },
+  "earlier_phase_sources": [
+    "throughput_restart.json",
+    "cache/unexpected_exit_20260906/retrieval.log"
+  ],
+  "earlier_interrupted_phase_last_record": {
+    "retrieval_available": 22887,
+    "elapsed": 11558.126264333725
+  },
+  "M2_still_running_at_prefetch_completion": true
+}

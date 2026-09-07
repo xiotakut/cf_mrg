@@ -1,0 +1,36 @@
+{
+  "checkpointed_at": "2026-09-07T04:10:40.100526+08:00",
+  "reason": "Original odd shard completed; partition remaining even shard across both existing GPUs using existing CLI",
+  "old_odd_shard_complete": true,
+  "old_odd_inputs": 12640,
+  "counts_before": {
+    "M0": 5832,
+    "M1": 5832,
+    "M2": 24219
+  },
+  "new_shard_count": 4,
+  "new_shard_indices": [
+    0,
+    2
+  ],
+  "remaining_per_new_shard": [
+    531,
+    530
+  ],
+  "partition_exact_disjoint_complete": true,
+  "input_seed_model_decoding_budgets_unchanged": true,
+  "last_old_stage": {
+    "stage": "M2",
+    "batch": 54,
+    "seconds": 13.82,
+    "completion_tokens": 556,
+    "completed_stage": 19259
+  },
+  "stop_policy": "SIGSTOP both task-owned processes immediately after durable M2/runtime checkpoint, then SIGTERM and SIGCONT; no in-flight LLM batch observed",
+  "interrupted_LLM_requests_observed": 0,
+  "resumed_at": "2026-09-07T04:11:16+08:00",
+  "tmux_socket": "cf-screening",
+  "tmux_session": "m2-tail",
+  "engine_ready_at": "2026-09-07T04:11:49+08:00",
+  "runner_script": "cache/tail_rebalance/run.sh"
+}

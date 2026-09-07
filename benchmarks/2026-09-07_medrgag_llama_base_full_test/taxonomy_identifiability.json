@@ -1,0 +1,95 @@
+{
+  "clinical_update": {
+    "status": "NOT_IDENTIFIABLE",
+    "scope": "independent cross-source taxonomy",
+    "reason": "operation is confounded with benchmark/source/format",
+    "within_domain_design_status": "rank_deficient",
+    "N": 5910,
+    "base_rank": 5,
+    "augmented_rank": 8,
+    "augmented_columns": 9,
+    "operation_coverage": {
+      "measurement_threshold": {
+        "benchmarks": [
+          "medpic"
+        ],
+        "source_families": [
+          "clinical_guidelines"
+        ]
+      },
+      "mixed_or_unresolved": {
+        "benchmarks": [
+          "medeinst",
+          "medpic"
+        ],
+        "source_families": [
+          "DDXPlus",
+          "clinical_guidelines"
+        ]
+      },
+      "presence_polarity": {
+        "benchmarks": [
+          "medpic"
+        ],
+        "source_families": [
+          "clinical_guidelines"
+        ]
+      }
+    },
+    "leave_one_source": "unavailable",
+    "within_Cultural_operation_contrasts": null
+  },
+  "answer_invariance": {
+    "status": "NOT_IDENTIFIABLE",
+    "scope": "independent cross-source taxonomy",
+    "reason": "design is full rank within MedQA constructions, but independent cross-source taxonomy generalization is unavailable (only one source family)",
+    "within_domain_design_status": "full_rank",
+    "N": 13660,
+    "base_rank": 4,
+    "augmented_rank": 6,
+    "augmented_columns": 6,
+    "operation_coverage": {
+      "contextual_addition": {
+        "benchmarks": [
+          "cultural"
+        ],
+        "source_families": [
+          "MedQA"
+        ]
+      },
+      "identity_attribute": {
+        "benchmarks": [
+          "cpv",
+          "cultural"
+        ],
+        "source_families": [
+          "MedQA"
+        ]
+      }
+    },
+    "leave_one_source": "unavailable",
+    "within_Cultural_operation_contrasts": "available as same-MedQA-source construction analysis"
+  },
+  "hypothetical_evidence_world": {
+    "status": "NOT_IDENTIFIABLE",
+    "scope": "independent cross-source taxonomy",
+    "reason": "operation is confounded with benchmark/source/format",
+    "within_domain_design_status": "rank_deficient",
+    "N": 809,
+    "base_rank": 3,
+    "augmented_rank": 3,
+    "augmented_columns": 4,
+    "operation_coverage": {
+      "hypothetical_entity_replacement": {
+        "benchmarks": [
+          "medcounterfact"
+        ],
+        "source_families": [
+          "MedEvidence"
+        ]
+      }
+    },
+    "leave_one_source": "unavailable",
+    "within_Cultural_operation_contrasts": null
+  }
+}

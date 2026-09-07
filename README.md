@@ -1,5 +1,7 @@
 # cf_mrg
 
+本次及后续 benchmark 结果统一归档在 **[benchmarks/](benchmarks/README.md)**。最新：[2026-09-07 MedRGAG-Llama 完整测试](benchmarks/2026-09-07_medrgag_llama_base_full_test/README.md)。
+
 Current scope correction: **the entire released test sets**, with no source-group sampling. The full-test run completed on 2026-09-07; results are in [cf_medrgag_validation_pack/results_cf_full_test](cf_medrgag_validation_pack/results_cf_full_test/findings.md): 25,280 unique inputs / 25,280 M2 predictions completed (100%) (user narrowed the final scope to MedRGAG-Llama base only; earlier M0/M1 outputs are preserved), reusing 3,774 identical earlier inputs. The completed screening described below was a sampled experiment, not full test-set coverage.
 
 Full-set commands from `cf_medrgag_validation_pack`: set `export CF_SCREENING_OUTPUT=results_cf_full_test`, then `bash scripts/cf_baseline_screening.sh prepare --tier full-test`, `bash scripts/cf_baseline_screening.sh run`, and `bash scripts/cf_baseline_screening.sh analyze`.

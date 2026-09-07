@@ -1,0 +1,38 @@
+{
+  "status": "complete_and_audited",
+  "official_release_coverage_test": "pass",
+  "unique_inputs": 25280,
+  "prior_exact_inputs": 3774,
+  "new_inputs": 21506,
+  "planned_method_predictions": 25280,
+  "planned_primary_LLM_requests": 328640,
+  "new_primary_LLM_requests": 279578,
+  "duplicate_visible_inputs_with_conflicting_gold": 11,
+  "mcf_missing_variant_groups": [
+    "147",
+    "43",
+    "66"
+  ],
+  "reader_preflight_max_tokens": 62682,
+  "context_capacity": 98304,
+  "final_artifact_and_metric_audit": "pass",
+  "required_methods": [
+    "M2"
+  ],
+  "preserved_auxiliary_predictions": {
+    "M0": 5832,
+    "M1": 5832
+  },
+  "completed_unique_M2": 25280,
+  "completed_label_records": 27377,
+  "completion_rate": 1,
+  "stage_audit": "artifact_audit.json",
+  "tests": "3 contract/data/metric tests plus full artifact audit and full-table paired identities",
+  "pipeline_finished_at": "2026-09-07T05:16:18+08:00",
+  "analysis_finished_at": "2026-09-07T05:17:09+08:00",
+  "final_transport_pending": 0,
+  "execution_exit_code": 0,
+  "figures": "9 actual-data figures, SVG and PNG; representative plots visually inspected",
+  "metadata_correction": "benchmark_summary planned_method_predictions changed from historical 3-method counts to required M2-only counts; no inputs, taxonomy, predictions or scores changed",
+  "scientific_status": "partial support for dataset-specific pattern; cross-source taxonomy NOT_IDENTIFIABLE"
+}

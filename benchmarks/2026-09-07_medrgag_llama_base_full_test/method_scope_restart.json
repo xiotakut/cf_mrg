@@ -1,0 +1,77 @@
+{
+  "requested": "2026-09-06T17:23:31.481869+08:00",
+  "reason": "User explicitly narrows all remaining full-test inference to MedRGAG-Llama M2 only",
+  "strategy": "Stop each task-owned inference engine immediately after its next durable complete-chunk runtime checkpoint; retrieval continues",
+  "workers": {
+    "1": {
+      "pid": 860036,
+      "children": [
+        860711,
+        860712
+      ],
+      "stopped": "2026-09-06T17:23:34.353015+08:00",
+      "checkpoint": {
+        "started": 1788686352.390747,
+        "updated": 1788686614.34527,
+        "elapsed_seconds": 261.95452308654785,
+        "cache_hits": {
+          "retrieval": 118,
+          "M0": 79,
+          "M1": 79,
+          "summary": 395,
+          "explore": 79,
+          "generate": 395,
+          "select": 79,
+          "rerank": 79,
+          "M2": 79
+        },
+        "batch_size": 64,
+        "gpu_memory_utilization": 0.75,
+        "cuda_visible_devices": "2",
+        "completed_available_in_cache": 5757
+      }
+    },
+    "0": {
+      "pid": 860035,
+      "children": [
+        860717,
+        860718
+      ],
+      "stopped": "2026-09-06T17:23:56.571695+08:00",
+      "checkpoint": {
+        "started": 1788686352.3894944,
+        "updated": 1788686636.5690293,
+        "elapsed_seconds": 284.17953515052795,
+        "cache_hits": {
+          "retrieval": 117,
+          "M0": 77,
+          "M1": 77,
+          "summary": 385,
+          "explore": 77,
+          "generate": 385,
+          "select": 77,
+          "rerank": 77,
+          "M2": 77
+        },
+        "batch_size": 64,
+        "gpu_memory_utilization": 0.75,
+        "cuda_visible_devices": "0",
+        "completed_available_in_cache": 5759
+      }
+    }
+  },
+  "status": "Both workers stopped after successful M2 and durable chunk checkpoint; no abandoned LLM batch observed",
+  "auxiliary_reader_counts_at_stop": {
+    "M0": 5832,
+    "M1": 5832
+  },
+  "resumed_engine_KV_tokens": {
+    "0": 348720,
+    "2": 360480
+  },
+  "resumed_ready_times": {
+    "0": "09-06 17:26:04",
+    "2": "09-06 17:26:04"
+  },
+  "post_restart_reader_scope_verified": "new logs contain no M0/M1 calls"
+}

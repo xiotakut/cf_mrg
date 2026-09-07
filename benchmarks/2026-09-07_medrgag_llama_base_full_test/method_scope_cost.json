@@ -1,0 +1,57 @@
+{
+  "scope": "completed new expansion requests at scope change; overlapping stage times, not pipeline makespan",
+  "stages": {
+    "M0": [
+      2058,
+      936.1898534297922,
+      3866307,
+      15628
+    ],
+    "M1": [
+      2058,
+      437.81637263298165,
+      5798112,
+      15275
+    ],
+    "M2": [
+      1986,
+      1163.4929893016797,
+      5537443,
+      15118
+    ],
+    "summary": [
+      10257,
+      5502.0951654910705,
+      27059150,
+      490453
+    ],
+    "explore": [
+      2045,
+      3584.186282157905,
+      5358676,
+      1128325
+    ],
+    "generate": [
+      10225,
+      5026.469134092245,
+      19152604,
+      2544219
+    ],
+    "select": [
+      1997,
+      8711.238255739167,
+      8644120,
+      1948536
+    ]
+  },
+  "columns": [
+    "requests",
+    "stage_wall_sum_seconds",
+    "prompt_tokens",
+    "completion_tokens"
+  ],
+  "direct_plus_retrieval_only_stage_time_fraction": 0.05417687728731868,
+  "removed_calls_per_future_input": 2,
+  "prior_calls_per_input": 15,
+  "remaining_M2_calls_per_input": 13
+}
