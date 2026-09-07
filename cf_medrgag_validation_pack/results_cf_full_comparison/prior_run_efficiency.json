@@ -1,0 +1,535 @@
+{
+  "unique_inputs_planned": 25280,
+  "completed_method_predictions": 25280,
+  "LLM_requests": 340304,
+  "prompt_tokens": 447703546,
+  "completion_tokens": 77361151,
+  "completion_timestamp_span_seconds": 74054.95722556114,
+  "formal_batch_elapsed_seconds": 55921.0,
+  "formal_batch_wall_timestamps": [
+    "2026-09-06T13:44:17+08:00",
+    "2026-09-06T17:18:43+08:00",
+    "2026-09-06T17:19:11+08:00",
+    "2026-09-06T21:31:34+08:00",
+    "2026-09-07T04:10:41+08:00",
+    "2026-09-07T04:11:16+08:00",
+    "2026-09-07T05:16:18+08:00"
+  ],
+  "worker_runtime_records": [
+    {
+      "started": 1788725477.4258661,
+      "updated": 1788729375.6529202,
+      "elapsed_seconds": 3898.2270543575287,
+      "cache_hits": {
+        "complete_input_tasks": 5504,
+        "retrieval": 816,
+        "summary": 1445,
+        "explore": 288,
+        "generate": 1440,
+        "select": 288,
+        "rerank": 288,
+        "M2": 285
+      },
+      "batch_size": 64,
+      "gpu_memory_utilization": 0.75,
+      "cuda_visible_devices": "0",
+      "completed_available_in_cache": 24750
+    },
+    {
+      "started": 1788701495.2144687,
+      "updated": 1788725261.7274017,
+      "elapsed_seconds": 23766.512933254242,
+      "cache_hits": {
+        "complete_input_tasks": 6272,
+        "retrieval": 6368,
+        "summary": 7269,
+        "explore": 1412,
+        "generate": 7060,
+        "select": 1412,
+        "rerank": 1412,
+        "M2": 1408
+      },
+      "batch_size": 64,
+      "gpu_memory_utilization": 0.75,
+      "cuda_visible_devices": "2",
+      "completed_available_in_cache": 18479
+    },
+    {
+      "started": 1788725477.42885,
+      "updated": 1788729184.343017,
+      "elapsed_seconds": 3706.9141676425934,
+      "cache_hits": {
+        "complete_input_tasks": 5504,
+        "retrieval": 816,
+        "summary": 1440,
+        "explore": 287,
+        "generate": 1435,
+        "select": 287,
+        "rerank": 287,
+        "M2": 286
+      },
+      "batch_size": 64,
+      "gpu_memory_utilization": 0.75,
+      "cuda_visible_devices": "2",
+      "completed_available_in_cache": 24749
+    }
+  ],
+  "pipeline_makespan_note": "formal wall timestamps include concurrent workers, not sum of stage times; separate cold smoke/compatibility work is in performance_test.json Intermediate wall timestamps mark restarted scheduler phases; first-to-last is the complete expansion makespan. The unexpected-exit downtime and subsequent recovery are included.",
+  "cache_hits": {
+    "complete_input_tasks": 17280,
+    "retrieval": 8000,
+    "summary": 10154,
+    "explore": 1987,
+    "generate": 9935,
+    "select": 1987,
+    "rerank": 1987,
+    "M2": 1979
+  },
+  "network_retries": 0,
+  "format_repairs": 0,
+  "extra_workload": [
+    {
+      "scope": "seed_repeat",
+      "requests": 260,
+      "prompt_tokens": 982206,
+      "completion_tokens": 62119
+    },
+    {
+      "scope": "superseded_seed_repeat",
+      "requests": 260,
+      "prompt_tokens": 984920,
+      "completion_tokens": 60898
+    },
+    {
+      "scope": "superseded_smoke",
+      "requests": 10,
+      "prompt_tokens": 182621,
+      "completion_tokens": 4305
+    }
+  ],
+  "cold_vs_reused": "full-test extension: exact prior screening inputs and all their stages reused; remaining inputs newly executed; no unrelated historical method answers reused",
+  "total_recorded_LLM_requests_including_extra": 340834,
+  "total_recorded_prompt_tokens_including_extra": 449853293,
+  "total_recorded_completion_tokens_including_extra": 77488473,
+  "prepared_input_records": 27377,
+  "exact_duplicate_input_records": 2097,
+  "LLM_requests_avoided_by_exact_input_deduplication": 27261,
+  "historical_answer_cache_hits": 11322,
+  "required_M2_pipeline_LLM_requests": 328640,
+  "preserved_auxiliary_reader_requests": 11664,
+  "method_scope": {
+    "methods": [
+      "M2"
+    ],
+    "requested": "2026-09-06T17:24:52.856049+08:00",
+    "authorization": "User explicitly states only MedRGAG-Llama base is currently needed; asks whether dropping Direct/retrieval-only materially accelerates it",
+    "coverage": "All 25280 unique inputs and 27377 released/auxiliary label records retained",
+    "M2_definition_unchanged": true,
+    "M0_M1_policy": "Preserve already completed predictions and all incurred costs as historical auxiliary records; no additional M0/M1 requests after scope restart",
+    "main_predictions_planned": 25280,
+    "main_M2_pipeline_LLM_requests_planned": 328640,
+    "cost_evidence": "method_scope_cost.json: M0/M1 represented 5.4177% of completed expansion stage time before the change; not an exact makespan savings estimate"
+  },
+  "method_scope_cost": {
+    "scope": "completed new expansion requests at scope change; overlapping stage times, not pipeline makespan",
+    "stages": {
+      "M0": [
+        2058,
+        936.1898534297922,
+        3866307,
+        15628
+      ],
+      "M1": [
+        2058,
+        437.81637263298165,
+        5798112,
+        15275
+      ],
+      "M2": [
+        1986,
+        1163.4929893016797,
+        5537443,
+        15118
+      ],
+      "summary": [
+        10257,
+        5502.0951654910705,
+        27059150,
+        490453
+      ],
+      "explore": [
+        2045,
+        3584.186282157905,
+        5358676,
+        1128325
+      ],
+      "generate": [
+        10225,
+        5026.469134092245,
+        19152604,
+        2544219
+      ],
+      "select": [
+        1997,
+        8711.238255739167,
+        8644120,
+        1948536
+      ]
+    },
+    "columns": [
+      "requests",
+      "stage_wall_sum_seconds",
+      "prompt_tokens",
+      "completion_tokens"
+    ],
+    "direct_plus_retrieval_only_stage_time_fraction": 0.05417687728731868,
+    "removed_calls_per_future_input": 2,
+    "prior_calls_per_input": 15,
+    "remaining_M2_calls_per_input": 13
+  },
+  "method_scope_restart": {
+    "requested": "2026-09-06T17:23:31.481869+08:00",
+    "reason": "User explicitly narrows all remaining full-test inference to MedRGAG-Llama M2 only",
+    "strategy": "Stop each task-owned inference engine immediately after its next durable complete-chunk runtime checkpoint; retrieval continues",
+    "workers": {
+      "1": {
+        "pid": 860036,
+        "children": [
+          860711,
+          860712
+        ],
+        "stopped": "2026-09-06T17:23:34.353015+08:00",
+        "checkpoint": {
+          "started": 1788686352.390747,
+          "updated": 1788686614.34527,
+          "elapsed_seconds": 261.95452308654785,
+          "cache_hits": {
+            "retrieval": 118,
+            "M0": 79,
+            "M1": 79,
+            "summary": 395,
+            "explore": 79,
+            "generate": 395,
+            "select": 79,
+            "rerank": 79,
+            "M2": 79
+          },
+          "batch_size": 64,
+          "gpu_memory_utilization": 0.75,
+          "cuda_visible_devices": "2",
+          "completed_available_in_cache": 5757
+        }
+      },
+      "0": {
+        "pid": 860035,
+        "children": [
+          860717,
+          860718
+        ],
+        "stopped": "2026-09-06T17:23:56.571695+08:00",
+        "checkpoint": {
+          "started": 1788686352.3894944,
+          "updated": 1788686636.5690293,
+          "elapsed_seconds": 284.17953515052795,
+          "cache_hits": {
+            "retrieval": 117,
+            "M0": 77,
+            "M1": 77,
+            "summary": 385,
+            "explore": 77,
+            "generate": 385,
+            "select": 77,
+            "rerank": 77,
+            "M2": 77
+          },
+          "batch_size": 64,
+          "gpu_memory_utilization": 0.75,
+          "cuda_visible_devices": "0",
+          "completed_available_in_cache": 5759
+        }
+      }
+    },
+    "status": "Both workers stopped after successful M2 and durable chunk checkpoint; no abandoned LLM batch observed",
+    "auxiliary_reader_counts_at_stop": {
+      "M0": 5832,
+      "M1": 5832
+    },
+    "resumed_engine_KV_tokens": {
+      "0": 348720,
+      "2": 360480
+    },
+    "resumed_ready_times": {
+      "0": "09-06 17:26:04",
+      "2": "09-06 17:26:04"
+    },
+    "post_restart_reader_scope_verified": "new logs contain no M0/M1 calls"
+  },
+  "retrieval_prefetch": {
+    "scope": "final resumed retrieval prefetch phase; earlier phases retained separately, this duration is not total retrieval cost",
+    "completed_at": "2026-09-06T22:32:02.947026+08:00",
+    "final_phase": {
+      "mode": "retrieval",
+      "tasks": 25280,
+      "makespan_seconds": 3627.7210335731506,
+      "status": "complete"
+    },
+    "earlier_phase_sources": [
+      "throughput_restart.json",
+      "cache/unexpected_exit_20260906/retrieval.log"
+    ],
+    "earlier_interrupted_phase_last_record": {
+      "retrieval_available": 22887,
+      "elapsed": 11558.126264333725
+    },
+    "M2_still_running_at_prefetch_completion": true
+  },
+  "prior_screening_reuse": {
+    "source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_screening",
+    "prior_unique_inputs": 3774,
+    "prior_predictions": 11322,
+    "reuse_basis": "exact visible-input equality; item IDs, seeds, model, templates, evidence, decoding and copied stage outputs unchanged",
+    "input_digest_update": "only after verifying the complete old input list is an identical prefix; independent cache copy preserves prior artifacts",
+    "prior_batch_wall_seconds": 16316,
+    "context_capacity": {
+      "prior": 65536,
+      "new": 98304,
+      "reason": "full released mandatory evidence plus unchanged KADS/documents exceeds previous capacity; no token budget or prompt change"
+    },
+    "prior_LLM_requests": 56610
+  },
+  "unrelated_historical_method_answer_cache_hits": 0,
+  "incremental_expansion_workload": {
+    "LLM_requests": 283694,
+    "prompt_tokens": 350655816,
+    "completion_tokens": 65839313,
+    "meaning": "new requests since the full-test expansion started; earlier exact cached stages remain in total workload"
+  },
+  "recovered_engine_startup_failures": 1,
+  "controlled_capacity_restart": {
+    "started": "2026-09-06T16:41:08.698383+08:00",
+    "reason": "Increase KV capacity using currently free GPU memory; prior GPU0/2 KV 153984/105616 tokens limited long-input concurrency",
+    "prior_gpu_memory": {
+      "0": 0.5,
+      "2": 0.45
+    },
+    "new_gpu_memory": 0.75,
+    "preserved": "checkpoint BF16, tokenizer, prompts, input IDs, RNG seeds, candidate/document counts and decoding budgets",
+    "cache_counts_before": {
+      "results_cf_full_test/cache/main/worker-1": {
+        "M1": 2750,
+        "explore": 2750,
+        "M0": 2750,
+        "summary": 13750,
+        "generate": 13750,
+        "M2": 2732,
+        "rerank": 2732,
+        "select": 2732,
+        "retrieval": 39
+      },
+      "results_cf_full_test/cache/main/worker-0": {
+        "M1": 2777,
+        "explore": 2777,
+        "M0": 2777,
+        "summary": 13885,
+        "generate": 13885,
+        "M2": 2759,
+        "retrieval_pre_compat": 25,
+        "rerank": 2759,
+        "select": 2759,
+        "retrieval": 61
+      },
+      "results_cf_full_test/cache/main/worker-2": {
+        "retrieval": 12088
+      }
+    },
+    "parents": {
+      "794512": 0,
+      "793131": 1
+    },
+    "children": {
+      "794512": [
+        794868
+      ],
+      "793131": [
+        793913,
+        793914
+      ]
+    },
+    "inflight_policy": "All completed stage rows retained. At most one unreturned generation batch per engine may be interrupted; its unreturned tokens are unavailable and excluded from recorded-token totals, with restart wall time retained. No partial output is treated as a prediction.",
+    "nvidia_before": "0, 97871 MiB, 49901 MiB, 100 %\n1, 97871 MiB, 37583 MiB, 100 %\n2, 97871 MiB, 43980 MiB, 100 %\n3, 97871 MiB, 77495 MiB, 0 %\n",
+    "new_KV_tokens": {
+      "0": 348720,
+      "2": 360480
+    },
+    "ready_log_timestamps": {
+      "0": "09-06 16:42:03",
+      "2": "09-06 16:42:03"
+    },
+    "prior_logs": {
+      "0": "cache/capacity_restart/run_0_before.log",
+      "2": "cache/capacity_restart/run_1_before.log"
+    },
+    "status": "both engines initialized successfully; exact completed-stage caches resumed",
+    "completed_tokens_unknown_upper_bound": 131072,
+    "upper_bound_note": "Ceiling only, not measured cost: at most 32 in-flight requests per engine and maximum stage completion limit 2048.",
+    "pre_restart_artifact_audit": {
+      "worker-1": {
+        "durable_pre_restart_stage_prompt_references_verified": 41214,
+        "missing": 0
+      },
+      "worker-0": {
+        "durable_pre_restart_stage_prompt_references_verified": 41619,
+        "missing": 0
+      }
+    }
+  },
+  "recorded_token_cost_limit": "Two documented scheduling/capacity restarts: at most one unreturned batch per engine per restart (four batches total); their tokens are unavailable and excluded from recorded-token totals. Full wall time includes all work and restart intervals. An additional unexpected worker exit may have lost up to one in-flight batch per engine (64 requests each); those unreturned tokens are also unknown and excluded.",
+  "controlled_throughput_restart": {
+    "started": "2026-09-06T17:18:42.787705+08:00",
+    "reason": "Batch independent inputs by frozen visible token length to reduce stage barriers from mixed short questions and long mandatory evidence; use batch/chunk64 on the enlarged KV cache",
+    "execution_order": "ascending (reader_task_tokens, opaque item_id), then two disjoint strided shards; all 25280 inputs retained",
+    "order_inputs": "input_lengths.jsonl from preflight; no labels, predictions or correctness used in length ordering",
+    "prior_batch_size": 32,
+    "new_batch_size": 64,
+    "gpu_memory_utilization": 0.75,
+    "all_semantic_model_and_decoding_configuration_unchanged": true,
+    "input_IDs_and_RNG_seeds_unchanged": true,
+    "cache_counts_before": {
+      "results_cf_full_test/cache/main/worker-1": {
+        "M1": 2849,
+        "explore": 2849,
+        "M0": 2849,
+        "summary": 14245,
+        "generate": 14245,
+        "M2": 2838,
+        "rerank": 2849,
+        "select": 2849,
+        "retrieval": 39
+      },
+      "results_cf_full_test/cache/main/worker-0": {
+        "M1": 2883,
+        "explore": 2870,
+        "M0": 2883,
+        "summary": 14382,
+        "generate": 14350,
+        "M2": 2870,
+        "retrieval_pre_compat": 25,
+        "rerank": 2870,
+        "select": 2870,
+        "retrieval": 61
+      },
+      "results_cf_full_test/cache/main/worker-2": {
+        "retrieval": 13832
+      }
+    },
+    "parents": {
+      "853382": "--shard-index 0",
+      "853383": "--shard-index 1",
+      "793129": "retrieval"
+    },
+    "children": {
+      "853382": [
+        853617
+      ],
+      "853383": [
+        853611
+      ],
+      "793129": []
+    },
+    "inflight_cost": "At most one unfinished batch of at most32 requests per inference engine; unreturned token usage unavailable. Retrieval may also redo one unreturned query. Full wall time retains these costs.",
+    "unreturned_completion_token_upper_bound": 131072,
+    "upper_bound_is_not_measured_usage": true,
+    "prior_retrieval_last_progress": {
+      "retrieval_available": 13850,
+      "elapsed": 12823.27491235733
+    },
+    "pre_restart_artifact_audit": {
+      "worker-1": {
+        "durable_pre_restart_prompt_references_verified": 42724,
+        "missing": 0
+      },
+      "worker-0": {
+        "durable_pre_restart_prompt_references_verified": 43108,
+        "missing": 0
+      }
+    },
+    "status": "both engines initialized and executed batch64 successfully; subsequently checkpointed for explicit user M2-only scope change",
+    "KV_tokens_at_length_sorted_start": {
+      "0": 319376,
+      "2": 334096
+    }
+  },
+  "unexpected_exit_restart": {
+    "observed_at": "2026-09-06T21:31:16.962091+08:00",
+    "last_progress": "2026-09-06T20:31:56+08:00",
+    "cause": "unconfirmed: all task workers disappeared without Python traceback/failure.json or normal completion; tool sessions no longer available; kernel log access denied",
+    "monitor_detected_at": "2026-09-06T21:02:10+08:00",
+    "root_followup_at": "2026-09-06T21:30:26+08:00",
+    "stage_counts": {
+      "cache/main/worker-1/M1.jsonl": 2898,
+      "cache/main/worker-1/explore.jsonl": 7680,
+      "cache/main/worker-1/M0.jsonl": 2898,
+      "cache/main/worker-1/summary.jsonl": 38587,
+      "cache/main/worker-1/generate.jsonl": 38400,
+      "cache/main/worker-1/M2.jsonl": 7670,
+      "cache/main/worker-1/rerank.jsonl": 7680,
+      "cache/main/worker-1/select.jsonl": 7680,
+      "cache/main/worker-1/retrieval.jsonl": 49,
+      "cache/main/worker-0/M1.jsonl": 2934,
+      "cache/main/worker-0/explore.jsonl": 5901,
+      "cache/main/worker-0/M0.jsonl": 2934,
+      "cache/main/worker-0/summary.jsonl": 29537,
+      "cache/main/worker-0/generate.jsonl": 29505,
+      "cache/main/worker-0/M2.jsonl": 5849,
+      "cache/main/worker-0/retrieval_pre_compat.jsonl": 25,
+      "cache/main/worker-0/rerank.jsonl": 5847,
+      "cache/main/worker-0/select.jsonl": 5847,
+      "cache/main/worker-0/retrieval.jsonl": 72,
+      "cache/main/worker-2/retrieval.jsonl": 22840
+    },
+    "jsonl_errors": [],
+    "recovery": "resume same frozen M2-only configuration and exact stage caches in detached task-owned tmux session",
+    "unreturned_work": "Up to one in-flight batch per inference engine (batch64); unreturned token cost unknown, excluded from recorded totals; elapsed downtime remains in full makespan.",
+    "resumed_at": "2026-09-06T21:31:34+08:00",
+    "tmux_socket": "cf-screening",
+    "tmux_session": "m2-full",
+    "restart_test": "3 contract/data/metric unittest checks passed"
+  },
+  "tail_rebalance": {
+    "checkpointed_at": "2026-09-07T04:10:40.100526+08:00",
+    "reason": "Original odd shard completed; partition remaining even shard across both existing GPUs using existing CLI",
+    "old_odd_shard_complete": true,
+    "old_odd_inputs": 12640,
+    "counts_before": {
+      "M0": 5832,
+      "M1": 5832,
+      "M2": 24219
+    },
+    "new_shard_count": 4,
+    "new_shard_indices": [
+      0,
+      2
+    ],
+    "remaining_per_new_shard": [
+      531,
+      530
+    ],
+    "partition_exact_disjoint_complete": true,
+    "input_seed_model_decoding_budgets_unchanged": true,
+    "last_old_stage": {
+      "stage": "M2",
+      "batch": 54,
+      "seconds": 13.82,
+      "completion_tokens": 556,
+      "completed_stage": 19259
+    },
+    "stop_policy": "SIGSTOP both task-owned processes immediately after durable M2/runtime checkpoint, then SIGTERM and SIGCONT; no in-flight LLM batch observed",
+    "interrupted_LLM_requests_observed": 0,
+    "resumed_at": "2026-09-07T04:11:16+08:00",
+    "tmux_socket": "cf-screening",
+    "tmux_session": "m2-tail",
+    "engine_ready_at": "2026-09-07T04:11:49+08:00",
+    "runner_script": "cache/tail_rebalance/run.sh"
+  },
+  "cache_hits_scope": "Latest durable runtime record per worker; counters restart with each process. Exact historical input reuse and input deduplication are reported separately."
+}

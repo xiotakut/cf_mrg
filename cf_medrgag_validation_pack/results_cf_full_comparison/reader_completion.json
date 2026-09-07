@@ -1,0 +1,27 @@
+{
+  "prepared_at": "2026-09-07T18:43:33.947745+08:00",
+  "authorization": "User requests completing previously stopped M0 and M1 on the same entire test set, with unchanged requirements and configuration.",
+  "source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test",
+  "source_result_commit": "638f1e3ad116ffdad609e74bb5a9f019a196911e",
+  "methods_executed_now": [
+    "M0",
+    "M1"
+  ],
+  "methods_compared": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "planned_unique_inputs": 25280,
+  "prior_predictions_by_method": {
+    "M0": 5832,
+    "M1": 5832,
+    "M2": 25280
+  },
+  "new_predictions_per_method": {
+    "M0": 19448,
+    "M1": 19448
+  },
+  "new_LLM_requests_planned": 38896,
+  "reuse": "Independent byte-for-byte copies; all M2 stages and M1 initial retrieval stay fixed. No input, prompt, checkpoint, precision, decoding, parsing or seed changes."
+}

@@ -12,6 +12,24 @@ class Tokenizer:
     def apply_chat_template(self,messages,**kwargs):return '\n'.join(m['content'] for m in messages)
 
 class Contract(unittest.TestCase):
+    def test_reader_completion_stops_before_m2_stages(self):
+        from types import SimpleNamespace
+        from run_cf_baseline_screening import Runner
+        runner=Runner.__new__(Runner);runner.args=SimpleNamespace(mode='readers')
+        runner.methods=['M0','M1','M2'];runner.cached={};runner.hits=Counter()
+        runner.backend=SimpleNamespace(tokenizer=Tokenizer());calls=[]
+        item={'item_id':'s000001','question':'Patient and question','options':{'A':'x','B':'y'},'fixed_evidence':['mandatory'],'answer_format':'single'}
+        runner.retrieve=lambda items:{item['item_id']:[{'contents':'initial evidence'}]}
+        runner.llm=lambda stage,entries:calls.append((stage,entries))
+        runner.save_runtime=lambda:None
+        runner.run_chunk([item])
+        self.assertEqual([stage for stage,_ in calls],['M0','M1'])
+        self.assertNotIn('initial evidence',calls[0][1][0]['prompt'])
+        self.assertIn('initial evidence',calls[1][1][0]['prompt'])
+        self.assertTrue(all('mandatory' in entries[0]['prompt'] for _,entries in calls))
+        runner.cached={m:{item['item_id']:{}} for m in ['M0','M1']};calls.clear()
+        runner.run_chunk([item]);self.assertEqual(calls,[])
+
     def test_full_release_coverage_and_exact_reuse(self):
         root=Path(__file__).resolve().parents[1];out=root/'results_cf_full_test'
         if not (out/'screening_items.jsonl').exists():self.skipTest('full release assets not prepared locally')

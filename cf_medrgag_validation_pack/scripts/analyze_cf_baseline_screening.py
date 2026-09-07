@@ -364,6 +364,14 @@ def efficiency_report(stages,runtimes,n,completed):
         if restart.exists():
             result['tail_rebalance']=json.loads(restart.read_text())
         result['cache_hits_scope']='Latest durable runtime record per worker; counters restart with each process. Exact historical input reuse and input deduplication are reported separately.'
+    completion=OUT/'reader_completion.json'
+    if completion.exists():
+        result['reader_completion']=json.loads(completion.read_text())
+        result['new_requests_by_stage']=dict(Counter(r['stage'] for r in fresh))
+        assert set(result['new_requests_by_stage']) <= {'M0','M1'}, 'Reader completion recomputed a non-reader stage'
+        result['incremental_expansion_workload']['meaning']='Only missing M0/M1 reader requests in this completion batch; all M2 and initial retrieval artifacts reused unchanged'
+        result['pipeline_makespan_note']='First-to-last wall timestamps measure this M0/M1 completion batch only. Prior M2/screening runtime and interruption limits are retained in prior_run_efficiency.json; aggregate stage times and logical tokens include reused history.'
+        result['prior_run_efficiency_file']='prior_run_efficiency.json'
     return result
 
 def repeat_report(items,labels,canonical,preds,scope='repeat_independent'):
@@ -532,6 +540,9 @@ def report(metrics,pairs,gaps):
     if 'incremental_expansion_workload' in cost:
         extra=cost['incremental_expansion_workload']
         lines += [f"\nFull-test expansion: {extra['LLM_requests']} newly executed requests; {extra['prompt_tokens']} prompt tokens; {extra['completion_tokens']} completion tokens. Aggregate workload above includes prior screening stages reused by exact input equality. The fixed auxiliary 20-input repeat is inherited from the earlier screening subset, not a new random sample of the enlarged test population. See cache_reuse.json for context-capacity provenance."]
+    if 'reader_completion' in cost:
+        lines.insert(3,'\nCurrent batch completes the previously stopped M0/M1 readers on the exact same entire test set. All 25,280 M2 predictions and their stages are inherited unchanged. Full three-method results are now compared; current batch wall time covers only the missing M0/M1 calls.')
+        lines=[s.replace('Full-test expansion:', 'Full-test reader completion:').replace('See cache_reuse.json for context-capacity provenance.', 'See cache_reuse.json and prior_run_efficiency.json for exact reuse and prior-cost provenance.') for s in lines]
     (OUT/'summary.md').write_text('\n'.join(lines)+'\n')
 
 if __name__=='__main__':

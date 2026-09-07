@@ -142,7 +142,7 @@ class Runner:
         return {i['item_id']:cache[i['item_id']]['documents'] for i in items}
 
     def run_chunk(self,items):
-        required=['M2'] if self.args.mode=='repeat' else self.methods
+        required=['M2'] if self.args.mode=='repeat' else ['M0','M1'] if self.args.mode=='readers' else self.methods
         if all(i['item_id'] in self.cached.get(m,{}) for i in items for m in required):
             self.hits['complete_input_tasks']+=len(items)
             return
@@ -158,6 +158,9 @@ class Runner:
             return {'key':i['item_id']+(f'::{slot}' if slot is not None else ''),'item_id':i['item_id'],'slot':slot or 0,'prompt':p}
         for method in [m for m in ['M0','M1'] if m in required]:
             self.llm(method,[entry(i,reader_prompt(tok,i,[] if method=='M0' else retrieval[i['item_id']])) for i in items])
+        if self.args.mode=='readers':
+            self.save_runtime()
+            return
         summaries=self.llm('summary',[entry(i,chat(tok,build_summary_prompt(task_profile(i),adapted[i['item_id']],d['contents'])),j) for i in items for j,d in enumerate(retrieval[i['item_id']])])
         es=[]
         for i in items:
@@ -189,7 +192,10 @@ class Runner:
             t=time.time();ranked=self.retriever.ranker.rank(base.retrieval_query(i),docs)[:5]
             self.append('rerank',[{'key':key,'item_id':key,'selected_ids':ids,'documents':ranked,'wall_seconds':time.time()-t,'selection_invalid':len(ids)!=5}])
         self.llm('M2',[entry(i,reader_prompt(tok,i,reranked[i['item_id']]['documents'])) for i in items])
-        (self.root/'runtime.json').write_text(json.dumps({'started':self.started,'updated':time.time(),'elapsed_seconds':time.time()-self.started,'cache_hits':dict(self.hits),'batch_size':self.args.batch_size,'gpu_memory_utilization':self.args.gpu_memory,'cuda_visible_devices':os.environ.get('CUDA_VISIBLE_DEVICES'),'completed_available_in_cache':len(self.cached.get('M2',{}))},indent=2))
+        self.save_runtime()
+
+    def save_runtime(self):
+        (self.root/'runtime.json').write_text(json.dumps({'started':self.started,'updated':time.time(),'elapsed_seconds':time.time()-self.started,'cache_hits':dict(self.hits),'batch_size':self.args.batch_size,'gpu_memory_utilization':self.args.gpu_memory,'cuda_visible_devices':os.environ.get('CUDA_VISIBLE_DEVICES'),'completed_available_in_cache':len(self.cached.get('M2',{})),'completed_by_method':{m:len(self.cached.get(m,{})) for m in METHODS}},indent=2))
 
 def preflight():
     from transformers import AutoTokenizer
@@ -203,14 +209,14 @@ def preflight():
     assert not any(r['overflow'] for r in rows)
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['preflight','smoke','run','repeat','retrieval']);p.add_argument('--batch-size',type=int,default=32);p.add_argument('--chunk-size',type=int,default=32);p.add_argument('--gpu-memory',type=float,default=.45);p.add_argument('--shard-index',type=int,default=0);p.add_argument('--shard-count',type=int,default=1);p.add_argument('--limit',type=int);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['preflight','smoke','run','readers','repeat','retrieval']);p.add_argument('--batch-size',type=int,default=32);p.add_argument('--chunk-size',type=int,default=32);p.add_argument('--gpu-memory',type=float,default=.45);p.add_argument('--shard-index',type=int,default=0);p.add_argument('--shard-count',type=int,default=1);p.add_argument('--limit',type=int);a=p.parse_args()
     if a.mode=='preflight':preflight();return
     plan=json.loads((OUT/'sample_plan.json').read_text())
-    if a.mode=='run' and not plan['tier_frozen']:raise SystemExit('Freeze tier using measured smoke throughput before formal run.')
+    if a.mode in ['run','readers'] and not plan['tier_frozen']:raise SystemExit('Freeze tier using measured smoke throughput before formal run.')
     items=[solver_input(x) for x in read(OUT/'screening_items.jsonl')]
     if a.mode in ['smoke','repeat']:
         ids=plan['smoke_item_ids' if a.mode=='smoke' else 'repeat_item_ids'];im={i['item_id']:i for i in items};items=[im[k] for k in ids]
-    if a.mode in ['run','retrieval']:
+    if a.mode in ['run','readers','retrieval']:
         # Interleave whole source groups across datasets; retain the frozen group order.
         labels=read(OUT/'evaluation_labels.jsonl');by_ds=defaultdict(dict)
         for r in labels:by_ds[r['dataset']].setdefault(r['group_id'],[]).append(r['item_id'])
