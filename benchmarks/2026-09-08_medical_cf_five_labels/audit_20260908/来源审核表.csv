@@ -1,0 +1,86 @@
+﻿编号,名称,目录角色,来源结论,实际论文题名,第一手链接,CF任务依据,完整库记录,分析子集记录,数据取得状态,限制
+M01,MedEinst,医学CF候选,verified,MedEinst: Benchmarking the Einstellung Effect in Medical LLMs through Counterfactual Differential Diagnosis,"https://arxiv.org/abs/2601.06636
+https://github.com/zhui711/MedEinst
+https://huggingface.co/datasets/zhui711/MedEinst",verified: control/trap 以 case_id 明示配对,5383,2500,official_snapshot_matches_cached_bytes,仅验证已使用 test 文件；作者合成病例与其 gold 可有质量问题，出处真实不意味着医学有效。
+M02,MedPIC-Bench,医学CF候选,verified,Evaluating Counterfactual Sensitivity to Patient Information in Medication-Safety Reasoning,"https://arxiv.org/html/2608.03028v1
+https://huggingface.co/TIM0927
+https://huggingface.co/datasets/TIM0927/MedPIC-Bench",verified: benchmark_task_family=counterfactual 精确筛选,183,183,official_snapshot_matches_cached_bytes,原始发布字段没有正式 pair_id，保留 CF 单题及 GF 参照，不能猜测配对。
+M03,MamaBench,医学CF候选,verified,MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation,"https://arxiv.org/html/2607.14385v1
+https://huggingface.co/datasets/HelpMum-Personal/MamaBench",verified_in_paper_and_card; actual rows remain inaccessible,0,0,not_collected_gated_401,固定版本 parquet 再下载返回 401；没有登录或接受联系信息共享。不能声称已经验证 434 条实际病例。
+M04,肿瘤临床CF评测,医学CF候选,verified,Counterfactual Evaluation Reveals Hidden Capability Profiles in Clinical LLMs and Agents,"https://arxiv.org/html/2605.30590v1
+https://datalab.withprotege.ai/research/counterfactual-evaluation-reveals-hidden-capability-profiles-in-clinical-llms-and-agents",verified_in_paper; no fixed case release located,0,0,not_collected_paper_only,作者页仅文章/PDF，没有病例包；本地未把论文声称的规模计作已经收录。编辑一致性是作者自己报告的研究质量问题。
+M05,临床检验因果推理评测,医学CF候选,verified,Evaluation of causal reasoning for large language models in contextualized clinical scenarios of laboratory test interpretation,"https://www.nature.com/articles/s41746-026-02632-3
+https://balubhasuran.github.io/publications/
+https://github.com/balubhasuran/LLM_Causality_LabTest","verified: official workbook Causal Type=Counterfactual rows, frozen first 99-question block",33,33,official_snapshot_matches_cached_bytes,工作簿有两个模型块；题数不是 198。出版社直连本次返回 HTTP 200 challenge 页面，未冒充正文快照；论文身份另由实际 web 出版社记录和作者页面闭合。工作簿逐单元重解析由根审核器执行。
+M06,HIV治疗因果情景研究,医学CF候选,verified,"Consistency in causal reasoning for large language models in scenarios of HIV antiretroviral treatment, drug interactions, and side effects","https://www.nature.com/articles/s41746-026-02771-7
+https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-026-02771-7/MediaObjects/41746_2026_2771_MOESM1_ESM.pdf",verified: 20 author-designated CF rows; all transcribed fields independently checked,20,20,official_pdf_equal_and_20_transcriptions_verified,附录是实际发布的60条，20 CF 不能代表未取得的全部实验。作者 expected answer/explanation 可医学上错误；本审查证明它们出自原附件，没有据此认定临床正确。
+M07,CLIR-Bench,医学CF候选,verified,CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series,"https://arxiv.org/html/2607.09880v1
+https://huggingface.co/datasets/winall/CLIR-Bench",verified_in_paper; official CF pairs absent from inspected release,0,0,not_collected_cf_pairs_unreleased,固定版本只有11个普通任务 jsonl，README 仅许可；未把它们冒充 §4.5 的 CF 配对。
+M08,ECG-Expert-QA,医学CF候选,verified,ECG-Expert-QA: A Benchmark for Evaluating Medical Large Language Models in Heart Disease Diagnosis (arXiv v3); published repository title: ... in ECG,"https://arxiv.org/html/2502.17475v3
+https://github.com/Zaozzz/ECG-Expert-QA",verified_in_paper; MCo data file absent from inspected release,0,0,not_collected_mco_unreleased,当前11文件包括 Memory correction、Generate risk assessment 和 Patient prognosis；这些不能替代 MCo。
+M09,GenMedicalEval,医学CF候选,verified,GenMedicalEval: A Unified Medical Evaluation Benchmark for Chinese LLMs (author repository),"https://github.com/MediaBrain-SJTU/GenMedicalEval
+https://github.com/MediaBrain-SJTU/GenMedicalEval/blob/New/class/%E5%8C%BB%E7%96%97%E5%8F%8D%E4%BA%8B%E5%AE%9E.md",verified_as_authors_wrong_fact_detection_task; not hypothetical-world obedience,0,0,not_collected_documentation_example_only,项目和该栏目真实存在；当前固定树只见单个文档示例，没有12000条文件。没有用示例充当完整基准。
+M10,CPV-MedQA,医学CF候选,verified,"MedQA CPV (Counterfactual Patient Variations), author-released MedQA extension of How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?","https://huggingface.co/datasets/kenza-ily/medqa-cpv
+https://huggingface.co/kenza-ily
+https://aclanthology.org/2025.naacl-long.114/
+https://github.com/kenza-ily/diagnose_treat_bias_llm","verified: author-released medical demographic variants, distinct from JAMA paper dataset",10225,2500,official_snapshot_matches_cached_bytes,论文原实验来自 JAMA；本次实际使用后来 MedQA 扩展，不继承 JAMA 人工有效性或样本量声明。原发布文件本身可能有插入的男女词与原文冲突。
+M11,Counterfactual Cultural Cues,医学CF候选,verified,Counterfactual Cultural Cues Reduce Medical QA Accuracy in LLMs: Identifier vs Context Effects,"https://arxiv.org/html/2601.20102v1
+https://github.com/HIVE-UofT/Evaluatiog-Cultural-Clues-Medical-LLMs
+https://github.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs",verified: released cultural variants and exact original references,1349,1349,official_snapshot_matches_cached_bytes,Neutral 对照没有出现在该固定变体文件，不能补造150条；文档总1650与可恢复变体1349并非相同计数口径。临床线索有实际变化者仍应独立审查分类。
+M12,FairMedQA/AMQA,医学CF候选,verified,FairMedQA: Benchmarking Bias in Large Language Models for Medical Question Answering (v2); AMQA: An Adversarial Dataset for Benchmarking Bias of LLMs in Medicine and Healthcare (v1),"https://arxiv.org/html/2505.19562v1
+https://arxiv.org/html/2505.19562v2
+https://github.com/XY-Showing/AMQA",verified: six fixed adversarial variants per root; aliases are one work,4806,4806,official_snapshot_matches_cached_bytes,发布文件有历史模型字段，仅验证原件一致性，不用这些预测判断来源真假或标签。生成攻击不是自动符合医学有效性。
+M13,MedEqualQA,医学CF候选,verified,MEDEQUALQA: Evaluating Biases in LLMs with Counterfactual Reasoning,"https://aclanthology.org/2025.sciprodllm-1.4/
+https://aclanthology.org/2025.sciprodllm-1.4.pdf
+https://github.com/rajarshi51382/MEDEQUALQA",verified_in_paper; actual dataset absent from inspected repository,0,0,not_collected_release_claim_unfulfilled,论文发布声明与当前所给仓库只有 LICENSE 的情况不符；这属于数据未发布/无法取得，不足以判定论文或 benchmark 被我们虚构。
+M14,DiversityMedQA,医学CF候选,verified,DiversityMedQA: A Benchmark for Assessing Demographic Biases in Medical Diagnosis using Large Language Models,"https://aclanthology.org/2024.nlp4pi-1.29.pdf
+https://huggingface.co/datasets/Rajat1212/DiversityMedQA",verified,6296,2500,downloaded,"原始CSV没有答案/选项，不可当作完整可评分四选项题。
+HF预览报列不一致是两个CSV字段不同，不能据此判为不存在。"
+M15,CLIMB,医学CF候选,verified,CLIMB: A Benchmark of Clinical Bias in Large Language Models,"https://arxiv.org/html/2407.05250v1
+https://github.com/uscnlp-lime/climb
+https://github.com/limenlp/CLIMB",verified,0,0,cf_pairs_not_released,研究与CF任务真实，但当前审核仓库没有固定病例对；旧仓库URL为迁移，不是虚假链接。
+M16,EquityMedQA,医学CF候选,verified,A Toolbox for Surfacing Health Equity Harms and Biases in Large Language Models,"https://arxiv.org/html/2403.12025v2
+https://arxiv.org/src/2403.12025v2/anc/equitymedqa_ratings.xlsx
+https://www.nature.com/articles/s41591-024-03258-2",verified,323,323,downloaded,"Natal三题对应21对有作者明确报告的数据处理错误；原始数据真实不等于该21对可用于原评价。
+人工理想答案差异评定须与模型回答差异字段区分。"
+M17,MedPerturb,医学CF候选,verified,The MedPerturb Dataset: What Non-Content Perturbations Reveal About Human and Clinical LLM Decision Making,"https://arxiv.org/abs/2506.17163
+https://medperturb.csail.mit.edu/
+https://github.com/abinithago/MedPerturb
+https://huggingface.co/datasets/abinitha/MedPerturb",verified,3759,3745,downloaded,800与6587属于不同版本/内容范围；不能宣传6587行全有三位专家金标准。
+M18,DeVisE,医学CF候选,verified,DeVisE: Behavioral Testing of Medical Large Language Models,"https://arxiv.org/html/2506.15339v1
+https://github.com/camztag/DeVisE",verified,0,0,credentialed_records_pending,没有固定受限病历输入；不从作者模型住院时长变化制造个体反事实金标准。
+M19,MedFuzz,医学CF候选,verified,MedFuzz: Exploring the Robustness of Large Language Models in Medical Question Answering,https://arxiv.org/html/2406.06573v2,verified,0,0,published_examples_only,"本轮未发现可独立取得的完整固定攻击输入release。
+论文方法真实不能自动升级为已取得完整benchmark。"
+M20,MedCounterFact,医学CF候选,verified,Faithfulness vs. Safety: Evaluating LLM Behavior Under Counterfactual Medical Evidence,"https://arxiv.org/html/2601.11886v1
+https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence",verified,809,809,downloaded,反事实证据由作者改写，不能作为真实医学证据；这不表示数据由本项目凭空制造。
+M21,MediEval,医学CF候选,verified,MediEval: A Unified Medical Benchmark for Patient-Contextual and Knowledge-Grounded Reasoning in LLMs,"https://arxiv.org/html/2512.20822v2
+https://github.com/ZhanQu945/MediEval",verified,0,0,restricted_source_data_required,仓库副标题沿用旧题名，论文v2已改题名；同一论文关联明确。
+M22,MedRGB,医学CF候选,verified,Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering,"https://arxiv.org/html/2411.09213
+https://huggingface.co/datasets/ngotrnghia1811/MedRGB
+https://huggingface.co/ngotrnghia1811",verified,3680,3680,downloaded,"发布版加入MedLFQA，须引用该发布版本。
+原始文档含生成或故意错误内容；出处真实不等于医学真值正确。"
+M23,BioRAB,医学CF候选,verified,"Benchmarking Retrieval-Augmented Large Language Models in Biomedical NLP: Application, Robustness, and Self-Awareness","https://arxiv.org/html/2405.08151v3
+https://github.com/ToneLi/ToneLi-Evaluating-Retrival-LLM-in-Biomedical-Domain
+https://drive.google.com/drive/folders/19d_pl89iD8I3-KDkqT1EuNr1Mg0zuW-5",verified,12615,2500,downloaded,"文件名BioNELL是作者命名，任务在论文称BioNLI。
+noise20在BioNLI与noise_robuntess两目录各有一个公开ID，两份实际内容相同，详见m23_double_entry.json。
+比例是错误标注检索语料的设定，不表示每条最终检索输入恰好该比例错误。"
+M24,MedCF,医学CF候选,verified,Editing Factual Knowledge and Explanatory Ability of Medical Large Language Models,"https://arxiv.org/html/2402.18099v3
+https://github.com/quqxui/MedLaSA",verified,4013,798,downloaded,"必须保留知识编辑协议，不能当成普通提示问答。
+同一知识/目标重复及无实际变化项可影响CF统计，但不是来源伪造。"
+M25,MedMKEB,医学CF候选,verified,MedMKEB: A Comprehensive Knowledge Editing Benchmark for Medical Multimodal Large Language Models,"https://ojs.aaai.org/index.php/AAAI/article/view/40705
+https://ojs.aaai.org/index.php/AAAI/article/download/40705/44666
+https://arxiv.org/html/2508.05083v1
+https://github.com/pkusixspace/MedMKEB",verified,2497,2497,annotations_downloaded_images_missing,"当前仅取得元数据，缺原图。
+旧预印本与正式仓库的原始视觉来源描述存在版本差异；实际选定文件可追溯。
+正式PDF浏览可读，文件下载端本次断开；作者关联由正式PDF的在线正文/检索和正式摘要共同核实。"
+M26,COLLECT,医学CF候选,verified,COLLECT: A Counterfactual Oral Lesion Library for Trustworthy AI Evaluation,"https://journals.sagepub.com/doi/10.1177/00220345261466240
+https://doi.org/10.5683/SP3/KXYCNY
+https://borealisdata.ca/api/datasets/:persistentId/?persistentId=doi:10.5683/SP3/KXYCNY
+https://github.com/MadathilSA/COLLECT",verified,0,0,image_archive_access_restricted,Borealis v1.3图像ZIP restricted=true；未下载或绕过访问限制。
+C01,ReMedQA,医学格式与回答任务对照；不属于26项CF候选,verified,ReMedQA: Are We Done With Medical Multiple-Choice Benchmarks?,"https://aclanthology.org/2026.eacl-long.124/
+https://aclanthology.org/2026.eacl-long.124.pdf
+https://disi-unibo-nlp.github.io/remedqa/
+https://github.com/disi-unibo-nlp/remedqa
+https://huggingface.co/datasets/disi-unibo-nlp/ReMedQA",not_counted_as_cf: 原工作明确尚未研究counterfactual edits；医学格式/任务表示鲁棒性对照定位正确。,0,0,not_applicable_control_not_added_to_cf_collection,本次只审核引文、任务和官方发布关联，没有新增或审阅完整对照题库。
+C02,BiasMedQA,医学认知提示干扰对照；不属于26项CF候选,verified,Addressing cognitive bias in medical language models,"https://arxiv.org/html/2402.08113v3
+https://github.com/carlwharris/cog-bias-med-LLMs",not_counted_as_cf: 默认认知干扰对照定位有原作者方法依据；如要纳入具体患者条件替代，仍需独立题级验证，不能整库按CF计算。,0,0,not_applicable_control_not_added_to_cf_collection,没有下载作者完整Google Drive提示库；未声称每个干扰题都不可能包含医学情景变化。

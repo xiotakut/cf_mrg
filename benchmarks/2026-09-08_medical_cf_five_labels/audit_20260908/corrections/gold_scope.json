@@ -1,0 +1,18 @@
+{
+  "historical_gold_review_judgments": 9,
+  "frozen_same_question_or_text_siblings_added": 4,
+  "corrected_judgments": 13,
+  "affected_units": 13,
+  "labels_withdrawn": 2,
+  "labels_retained_or_narrowed": 11,
+  "original_reference_scoring_disabled": 11,
+  "original_reference_verified_usable": 2,
+  "extra_siblings": [
+    "M24:test:562:locality_struc",
+    "M25:eval:554:portability_0",
+    "M25:eval:1001:portability_0",
+    "M25:eval:1338:portability_0"
+  ],
+  "scope_method": "扫描整个冻结 28243 单元；M23 按完整 premise/hypothesis 去四种实体边界标记和空白后找相同文本，再回看完整标记与原研究结论；M24/M25 按完全相同问题与原参考找兄弟。不是按模型表现挑选。",
+  "limits": "只核查这 9 个历史问题及完全相同题/参考的兄弟，不宣称其余同数据集 gold 全部可靠；保留原题和原 gold。"
+}

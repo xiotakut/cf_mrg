@@ -1,0 +1,213 @@
+{
+  "seed": 20260908,
+  "prediction_or_annotation_labels_used": false,
+  "threshold": 5000,
+  "large_source_target": 2500,
+  "policy": "<1000全部收录；1000–4999目标子集原则全收；>=5000按作者子任务/属性和源根抽2500。MedCF保存802条test，正式分析798条有效编辑，另4条原值未变参照；其余split完整保留。缺图多模态单列。",
+  "resources": {
+    "M01": {
+      "normalized_units": 5383,
+      "eligible_pool": 5300,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "Guillain-Barré syndrome": 25,
+        "Croup": 2,
+        "Pulmonary embolism": 191,
+        "Atrial fibrillation": 34,
+        "Acute pulmonary edema": 169,
+        "Myasthenia gravis": 1,
+        "Allergic sinusitis": 1,
+        "Tuberculosis": 47,
+        "Acute otitis media": 1,
+        "Acute dystonic reactions": 53,
+        "PSVT": 29,
+        "Possible NSTEMI / STEMI": 191,
+        "Acute COPD exacerbation / infection": 191,
+        "Anemia": 96,
+        "Chronic rhinosinusitis": 7,
+        "Pneumonia": 191,
+        "Bronchiectasis": 73,
+        "Pulmonary neoplasm": 191,
+        "Influenza": 45,
+        "Acute laryngitis": 5,
+        "Panic attack": 33,
+        "Pericarditis": 46,
+        "GERD": 26,
+        "Unstable angina": 162,
+        "Bronchospasm / acute asthma exacerbation": 22,
+        "Acute rhinosinusitis": 4,
+        "URTI": 191,
+        "Bronchitis": 191,
+        "Myocarditis": 22,
+        "Cluster headache": 3,
+        "HIV (initial infection)": 10,
+        "Viral pharyngitis": 48,
+        "Spontaneous pneumothorax": 190,
+        "Anaphylaxis": 7,
+        "SLE": 2
+      },
+      "source_roots_in_analysis": 2500
+    },
+    "M02": {
+      "normalized_units": 183,
+      "eligible_pool": 183,
+      "analysis_units": 183,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "official_cf_row_unpaired": 183
+      },
+      "source_roots_in_analysis": 0
+    },
+    "M05": {
+      "normalized_units": 33,
+      "eligible_pool": 33,
+      "analysis_units": 33,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "within_question_counterfactual": 33
+      },
+      "source_roots_in_analysis": 33
+    },
+    "M06": {
+      "normalized_units": 20,
+      "eligible_pool": 20,
+      "analysis_units": 20,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "within_question_counterfactual": 20
+      },
+      "source_roots_in_analysis": 20
+    },
+    "M10": {
+      "normalized_units": 10225,
+      "eligible_pool": 10225,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "White:1:0": 249,
+        "Asian:0:1": 249,
+        "Black:0:1": 249,
+        "Arab:1:0": 249,
+        "Hispanic:0:0": 3,
+        "Black:0:0": 3,
+        "Hispanic:0:1": 249,
+        "Hispanic:1:0": 248,
+        "Arab:0:0": 3,
+        "Black:1:0": 248,
+        "White:0:1": 248,
+        "White:0:0": 3,
+        "Asian:1:0": 248,
+        "Arab:0:1": 248,
+        "Asian:0:0": 3
+      },
+      "source_roots_in_analysis": 958
+    },
+    "M11": {
+      "normalized_units": 1349,
+      "eligible_pool": 1349,
+      "analysis_units": 1349,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "paired": 1349
+      },
+      "source_roots_in_analysis": 150
+    },
+    "M12": {
+      "normalized_units": 4806,
+      "eligible_pool": 4806,
+      "analysis_units": 4806,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "released_evaluation": 4806
+      },
+      "source_roots_in_analysis": 801
+    },
+    "M14": {
+      "normalized_units": 6296,
+      "eligible_pool": 6296,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "author_test": 1250,
+        "author_train": 1250
+      },
+      "source_roots_in_analysis": 1663
+    },
+    "M16": {
+      "normalized_units": 323,
+      "eligible_pool": 323,
+      "analysis_units": 323,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "CC-Manual": 123,
+        "CC-LLM": 200
+      },
+      "source_roots_in_analysis": 0
+    },
+    "M17": {
+      "normalized_units": 3759,
+      "eligible_pool": 3745,
+      "analysis_units": 3745,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "paired_variant": 3745
+      },
+      "source_roots_in_analysis": 1880
+    },
+    "M20": {
+      "normalized_units": 809,
+      "eligible_pool": 809,
+      "analysis_units": 809,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "evidence_pair": 809
+      },
+      "source_roots_in_analysis": 203
+    },
+    "M22": {
+      "normalized_units": 3680,
+      "eligible_pool": 3680,
+      "analysis_units": 3680,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "bioasq": 618,
+        "medlfqa": 200,
+        "medqa": 1273,
+        "mmlu": 1089,
+        "pubmedqa": 500
+      },
+      "source_roots_in_analysis": 3680
+    },
+    "M23": {
+      "normalized_units": 12615,
+      "eligible_pool": 12615,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "BioNLI": 2500
+      },
+      "source_roots_in_analysis": 2500
+    },
+    "M24": {
+      "normalized_units": 4013,
+      "eligible_pool": 798,
+      "analysis_units": 798,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "test": 798
+      },
+      "source_roots_in_analysis": 798
+    },
+    "M25": {
+      "normalized_units": 2497,
+      "eligible_pool": 2497,
+      "analysis_units": 2497,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "eval": 2497
+      },
+      "source_roots_in_analysis": 2497
+    }
+  }
+}

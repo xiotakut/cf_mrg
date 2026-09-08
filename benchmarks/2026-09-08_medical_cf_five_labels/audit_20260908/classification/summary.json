@@ -1,0 +1,112 @@
+{
+  "input_file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/分析子集.jsonl",
+  "audit_kind": "read_only_classification_audit",
+  "audit_status": "issues_found",
+  "units": 28243,
+  "resources": 15,
+  "units_by_resource": {
+    "M01": 2500,
+    "M02": 183,
+    "M12": 4806,
+    "M14": 2500,
+    "M16": 323,
+    "M22": 3680,
+    "M23": 2500,
+    "M24": 798,
+    "M25": 2497,
+    "M10": 2500,
+    "M11": 1349,
+    "M20": 809,
+    "M05": 33,
+    "M06": 20,
+    "M17": 3745
+  },
+  "judgments": 80910,
+  "full_structure": {
+    "errors": 0,
+    "checked_units": 28243,
+    "verdict": "pass",
+    "semantic_validity_proved": false
+  },
+  "label_counts": {
+    "R1": 2030,
+    "R3": 389,
+    "R2": 88,
+    "R5": 22814,
+    "R4": 139
+  },
+  "judgment_resolution_counts": {
+    "classified": 64509,
+    "invalid_source": 1972,
+    "insufficient_evidence": 12763,
+    "outside_five_labels": 1666
+  },
+  "heuristic_review_queue": 0,
+  "source_gold_conflict_groups": 2,
+  "semantic_review": {
+    "record_role": "pre_correction_historical_review",
+    "reviewed_judgments": 187,
+    "reviewed_units": 187,
+    "reviewed_resources": 15,
+    "base_sample_judgments": 88,
+    "rule_expansion_judgments": 99,
+    "verdict_counts": {
+      "confirmed_problem": 92,
+      "supported": 83,
+      "needs_review": 3,
+      "gold_requires_review": 9
+    },
+    "base_sample_verdict_counts": {
+      "confirmed_problem": 3,
+      "supported": 80,
+      "needs_review": 1,
+      "gold_requires_review": 4
+    },
+    "issue_counts": {
+      "night_pattern_as_temporal_worsening": 80,
+      "current_absence_as_future_risk_withdrawal": 1,
+      "existing_family_history_as_new": 4,
+      "R3_unspecified_competing_candidate": 1,
+      "BioNLI_reference_needs_semantic_review": 1,
+      "locality_gold_entity_type_or_relation": 1,
+      "incorrect_locality_anatomical_gold": 1,
+      "possible_vs_common_consequence": 1,
+      "wrong_family_disease_binding": 4,
+      "negated_family_history_as_positive": 1,
+      "classification_target_unrelated_to_question": 2,
+      "unproved_family_risk_link": 2,
+      "BioNLI_same_language_conflicting_gold": 5
+    },
+    "missing_sample_judgments": [],
+    "incomplete_reasons": [],
+    "stale_reviews": [],
+    "all_units_semantically_audited": false,
+    "selection": "冻结文件物理顺序；按来源×标签取首个三分位、首/后三分位/末位，另取空标签中位；发现规则错误后明确扩查。未用模型结果。"
+  },
+  "correction_review": {
+    "proposed_corrections": 172,
+    "reviewed_judgments": 172,
+    "additional_to_historical_review": 65,
+    "unique_reviewed_judgments_across_rounds": 252,
+    "verdict_counts": {
+      "resolved": 172
+    },
+    "historical_problems_resolved": 104,
+    "remaining_label_problems": 0,
+    "gold_scoring_exclusions": 11,
+    "missing_reviews": [],
+    "invalid_reviews": [],
+    "unapplied_corrections": [],
+    "history_file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/classification/semantic_review.jsonl",
+    "current_review_file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/classification/correction_review.jsonl",
+    "procedure": "独立读取最终原题、原参考、编辑内容与当前完整子判断后审阅；修正声明和 before/after 相等不等于语义通过。"
+  },
+  "limitations": [
+    "结构通过只证明字段、目标绑定和审阅状态自洽，不证明医学关系或 gold 正确。",
+    "语义审核为非概率、按来源与标签的固定目的抽查及规则扩查，不能把发现比例估计成全库错误率。",
+    "R5 的原任务保持要求与原参考事实可靠性分别检查；未临床专家验收。",
+    "2497 条缺图多模态单元只审核已发布元数据；未进行图像真实性或图像诊断验收。"
+  ],
+  "predictions_read": false,
+  "source_or_labels_modified": false
+}

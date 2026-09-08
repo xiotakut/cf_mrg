@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-08",
+  "scope": "annotation_and_audit_results",
+  "original_benchmark_bodies_included": false,
+  "new_model_calls": 0,
+  "reviewed_cohort": 28243,
+  "jsonl_record_counts": {
+    "data/complete_annotations.jsonl.gz": 55991,
+    "data/analysis_annotations.jsonl.gz": 28243,
+    "data/reference_annotations.jsonl.gz": 5763,
+    "sources/shared_root_index.jsonl.gz": 11751,
+    "predictions/reclassified_evaluations.jsonl.gz": 82131,
+    "sources/medpic_gf_index.jsonl.gz": 284
+  },
+  "omitted_fields": [
+    "original_records",
+    "original_raw_response",
+    "reviewed_original_records",
+    "pre_review_annotation",
+    "initial_labels",
+    "existing_evaluation_records"
+  ],
+  "historical_local_paths": "Provenance locators in server workspace; not archive-relative paths.",
+  "raw_data_restore": "Official downloads plus shared_root_index and medpic_gf_index; source adapters and original workspace are required."
+}

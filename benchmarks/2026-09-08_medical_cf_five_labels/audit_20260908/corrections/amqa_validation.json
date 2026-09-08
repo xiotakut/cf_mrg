@@ -1,0 +1,71 @@
+{
+  "frozen_m12_units": 4806,
+  "required_audit_findings": 14,
+  "correction_children": 30,
+  "prior_family_branch_children": 14,
+  "prior_family_branch_ids": [
+    "M12:29:white",
+    "M12:57:female",
+    "M12:77:female",
+    "M12:125:black",
+    "M12:179:female",
+    "M12:229:black",
+    "M12:376:female",
+    "M12:448:male",
+    "M12:480:black",
+    "M12:527:high_income",
+    "M12:609:male",
+    "M12:671:low_income",
+    "M12:686:male",
+    "M12:741:male"
+  ],
+  "prior_r3_rationales_inspected": 54,
+  "corrected_label_counts": {
+    "R5": 8,
+    "R1": 4,
+    "R3": 1
+  },
+  "corrected_resolutions": {
+    "insufficient_evidence": 18,
+    "classified": 12
+  },
+  "label_transitions": {
+    "R1,R3 -> ": 10,
+    "R1 -> ": 8,
+    "R1 -> R5": 6,
+    "R1,R3 -> R5": 2,
+    "R1 -> R1": 3,
+    "R1 -> R1,R3": 1
+  },
+  "refinement_only_ids": [
+    "M12:229:black",
+    "M12:686:male"
+  ],
+  "existing_supported_decision_reversed": [
+    "M12:29:white"
+  ],
+  "checks": "All 14 prior flagged findings and all 14 family-rule outputs covered; exact evidence quotations, IDs, labels/resolutions, and actual regression cases passed.",
+  "limits": "This targeted correction reviews the identified family-history/target/second-candidate issues. It is not a clinical expert certification of all 4806 AMQA units. No original text, options, gold, cohort, predictions or main collection was changed; generator build() was not run.",
+  "before_restore": {
+    "source_overlays": [
+      "parts/evidence_other/classification_review.jsonl",
+      "parts/evidence_other/amqa_feasibility_patch.jsonl"
+    ],
+    "normalizer": "scripts/finalize_review.py:normalize_review",
+    "snapshot": "audit_20260908/corrections/amqa_before.jsonl",
+    "matching_initial_audit_annotations": 17,
+    "restored_full_children": 30
+  },
+  "after_differences_from_first_export": {
+    "M12:125:black": [
+      "evidence"
+    ],
+    "M12:179:female": [
+      "evidence"
+    ],
+    "M12:229:black": [
+      "evidence"
+    ]
+  },
+  "after_change_reason": "Only removed unverified URL fragment identifiers; base primary pages and annotation content are unchanged."
+}

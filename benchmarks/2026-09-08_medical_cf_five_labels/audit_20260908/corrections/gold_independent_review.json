@@ -1,0 +1,236 @@
+{
+  "reviewed_patch_file": "gold.jsonl",
+  "reviewed_judgments": 13,
+  "accepted": 13,
+  "changes_requested": 0,
+  "method": "独立阅读13条完整原题/假设及after，回查原研究摘要/相关全文、NIDDK、AAD和两原任务构造定义；语义审阅独立于字段校验。",
+  "clinical_expert_review": false,
+  "source_access_note": "PMC两篇网页工具返回挑战页，随后通过同一PMC URL独立下载实际HTML并读取Abstract/Results/Discussion，未把挑战页当正文。",
+  "items": [
+    {
+      "unit_id": "M23:BioNLI:noise20:row4544",
+      "judgment_id": "M23:BioNLI:noise20:row4544:target_relation",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。逐字命题核对了 MAO 原研究摘要和当前实验 premise：AP-1/NF-kB 相关干预、MAO-A 而非 MAO-B 活性、行为变化及结论方向一致；三个假设的自然语言命题相同，嵌套实体标记没有交换成不同生物学变量。保持该实验语境的相容关系可标 R5，错误 negative 参考与正确 positive 分开评分；未把动物结论扩为临床事实。",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4738766/",
+        "https://arxiv.org/html/2405.08151v3#S4.SS2.SSS2"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持当前前提与假设的相容关系：在该小鼠实验中 AP-1/NF-kB 升高与 MAO-A 水平及活性降低的摘要结论",
+      "reviewed_rationale": "已核对当前完整 premise/hypothesis 与原研究摘要：在该小鼠实验中 AP-1/NF-kB 升高与 MAO-A 水平及活性降低的摘要结论与作者原结论一致；题内变化只污染外部检索演示，当前前提和假设在清洁/污染两端完全相同。R5 绑定这一有原文支持的相容关系。原参考 negative 与原研究的同一结论及 positive 兄弟冲突；嵌套实体标记未改变这里的自然语言命题，原参考保留但禁用评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "inconsistent_adversarial_reference"
+    },
+    {
+      "unit_id": "M23:BioNLI:noise100:row4541",
+      "judgment_id": "M23:BioNLI:noise100:row4541:target_relation",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。逐字命题核对了 MAO 原研究摘要和当前实验 premise：AP-1/NF-kB 相关干预、MAO-A 而非 MAO-B 活性、行为变化及结论方向一致；三个假设的自然语言命题相同，嵌套实体标记没有交换成不同生物学变量。保持该实验语境的相容关系可标 R5，错误 negative 参考与正确 positive 分开评分；未把动物结论扩为临床事实。",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4738766/",
+        "https://arxiv.org/html/2405.08151v3#S4.SS2.SSS2"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持当前前提与假设的相容关系：在该小鼠实验中 AP-1/NF-kB 升高与 MAO-A 水平及活性降低的摘要结论",
+      "reviewed_rationale": "已核对当前完整 premise/hypothesis 与原研究摘要：在该小鼠实验中 AP-1/NF-kB 升高与 MAO-A 水平及活性降低的摘要结论与作者原结论一致；题内变化只污染外部检索演示，当前前提和假设在清洁/污染两端完全相同。R5 绑定这一有原文支持的相容关系。原参考 negative 与原研究的同一结论及 positive 兄弟冲突；嵌套实体标记未改变这里的自然语言命题，原参考保留但禁用评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "inconsistent_adversarial_reference"
+    },
+    {
+      "unit_id": "M23:BioNLI:noise100:row4543",
+      "judgment_id": "M23:BioNLI:noise100:row4543:target_relation",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。逐字命题核对了 MAO 原研究摘要和当前实验 premise：AP-1/NF-kB 相关干预、MAO-A 而非 MAO-B 活性、行为变化及结论方向一致；三个假设的自然语言命题相同，嵌套实体标记没有交换成不同生物学变量。保持该实验语境的相容关系可标 R5，错误 negative 参考与正确 positive 分开评分；未把动物结论扩为临床事实。",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4738766/",
+        "https://arxiv.org/html/2405.08151v3#S4.SS2.SSS2"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持当前前提与假设的相容关系：在该小鼠实验中 AP-1/NF-kB 升高与 MAO-A 水平及活性降低的摘要结论",
+      "reviewed_rationale": "已核对当前完整 premise/hypothesis 与原研究摘要：在该小鼠实验中 AP-1/NF-kB 升高与 MAO-A 水平及活性降低的摘要结论与作者原结论一致；题内变化只污染外部检索演示，当前前提和假设在清洁/污染两端完全相同。R5 绑定这一有原文支持的相容关系。原参考 positive 与该结论相符。",
+      "scoring_eligible": true,
+      "gold_review_status": "verified_original_conclusion"
+    },
+    {
+      "unit_id": "M23:BioNLI:noise100:row2293",
+      "judgment_id": "M23:BioNLI:noise100:row2293:target_relation",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。当前 premise 已提供 IL-1β/NF-κB/C/EBP 与 IFN-γ/IRF-1/STAT1 的不同诱导、结合及位点干预结果，hypothesis 与 PMID 11742807 的总结对应；重复 iNOS 实体标记未改变两条通路命题。R5 绑定相容结论而非保存错误 negative，评分禁用只作用于矛盾参考。",
+      "primary_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/11742807/",
+        "https://arxiv.org/html/2405.08151v3"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持当前前提与假设的相容关系：RASMC 中 IL-1β 与 IFN-γ 分别经题述转录因子介导 iNOS 表达的摘要结论",
+      "reviewed_rationale": "已核对当前完整 premise/hypothesis 与原研究摘要：RASMC 中 IL-1β 与 IFN-γ 分别经题述转录因子介导 iNOS 表达的摘要结论与作者原结论一致；题内变化只污染外部检索演示，当前前提和假设在清洁/污染两端完全相同。R5 绑定这一有原文支持的相容关系。原参考 negative 与原研究的同一结论及 positive 兄弟冲突；嵌套实体标记未改变这里的自然语言命题，原参考保留但禁用评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "inconsistent_adversarial_reference"
+    },
+    {
+      "unit_id": "M23:BioNLI:noise100:row2294",
+      "judgment_id": "M23:BioNLI:noise100:row2294:target_relation",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。当前 premise 已提供 IL-1β/NF-κB/C/EBP 与 IFN-γ/IRF-1/STAT1 的不同诱导、结合及位点干预结果，hypothesis 与 PMID 11742807 的总结对应；重复 iNOS 实体标记未改变两条通路命题。R5 绑定相容结论而非保存错误 negative，评分禁用只作用于矛盾参考。",
+      "primary_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/11742807/",
+        "https://arxiv.org/html/2405.08151v3"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持当前前提与假设的相容关系：RASMC 中 IL-1β 与 IFN-γ 分别经题述转录因子介导 iNOS 表达的摘要结论",
+      "reviewed_rationale": "已核对当前完整 premise/hypothesis 与原研究摘要：RASMC 中 IL-1β 与 IFN-γ 分别经题述转录因子介导 iNOS 表达的摘要结论与作者原结论一致；题内变化只污染外部检索演示，当前前提和假设在清洁/污染两端完全相同。R5 绑定这一有原文支持的相容关系。原参考 positive 与该结论相符。",
+      "scoring_eligible": true,
+      "gold_review_status": "verified_original_conclusion"
+    },
+    {
+      "unit_id": "M23:BioNLI:noise100:row6304",
+      "judgment_id": "M23:BioNLI:noise100:row6304:target_relation",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受暂不定类。当前 premise 对 USP5 knockdown 仅说 controls，没有给出单独敲低的方向；G9 同时作用 USP5/9×，其促进凋亡不足以单独确定 USP5 的方向。原全文有支持负调节的结果，但摘要自身对 USP5 活性方向也不一致。补丁没有把全文新增为题内证据，也未把原 negative 直接改成 positive；撤 R5 并暂停该参考评分合理。",
+      "primary_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6791380/"
+      ],
+      "reviewed_labels": [],
+      "reviewed_target": "what is the relationship between premise:The tumor necrosis factor-related apoptosis-inducing ligand (TRAIL) pathway has emerged as a cancer therapeutic target. However, clinical trials have proven that most human cancers are resistant to TRAIL. We show that exposure to recombinant TRAIL resulted in the accumulation of ubiquitinated proteins and free ubiquitin polymers, suggesting a link between TRAIL and the ubiquitin (Ub)-proteasome pathway. TRAIL treatment in cancer cells reduced the activity and cleavage of USP5, a deubiquitinase (DUB) previously shown to target unanchored Ub polymers and regulate p53-mediated transcription. TRAIL was effective in suppressing USP5 activity and cleavage in TRAIL-sensitive cells but not resistant cells. Knockdown of USP5 in TRAIL-resistant cells demonstrated that USP5 controls apoptotic responsiveness to TRAIL. USP5 cleavage and ubiquitination were blocked by caspase-8 specific inhibitors. A small-molecule USP5/9× inhibitor (G9) combined with TRAIL enhanced apoptosis and blocked colony growth in highly TRAIL-resistant cell lines. Finally, USP5 protein levels and activity were found to be frequently deregulated in TRAIL-resistant cells.. hypothesis:We conclude that <el> USP5 <le> is a negative regulator of <re> TRAIL <er> responsiveness that is frequently deregulated in TRAIL-resistant cancer cells.",
+      "reviewed_rationale": "原研究正文支持 USP5 抑制 TRAIL 诱导凋亡，但源摘要结论句与其结果段存在方向不一致；当前 NLI premise 又未完整给出 USP5 敲低的方向结果。不能将外部正文补入题内后擅自覆盖原 negative 参考，也不足以保证所保持的具体 NLI 判断正确，撤下 R5 并禁用原参考评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "ambiguous_premise_reference"
+    },
+    {
+      "unit_id": "M24:test:277",
+      "judgment_id": "M24:test:277:locality_struc",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受暂不定类。原文 PMID 9593226 为胎鼠培养皮质神经元预处理后抵抗谷氨酸细胞毒性的实验，不能确认未限定疾病问题的泛称 toxicity 金标准。原 locality 的保持任务本身存在，但尚不能确认该具体应保持的正确内容，labels 为空并暂停原参考评分符合 R5 边界。",
+      "primary_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/9593226/",
+        "https://arxiv.org/html/2402.18099v3#S3.SS4.SSS2"
+      ],
+      "reviewed_labels": [],
+      "reviewed_target": "What disease does Bifemelane alleviate or reduce?",
+      "reviewed_rationale": "原题询问 Bifemelane 缓解哪种疾病，参考只有泛称 toxicity。可核验的研究针对培养大鼠皮质神经元的 NMDA/谷氨酸细胞毒性，不能据此保证原题未限定情境的疾病—药物参考正确；撤下绑定该原参考的 R5，保留原文并暂停评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "underspecified_reference"
+    },
+    {
+      "unit_id": "M24:test:542",
+      "judgment_id": "M24:test:542:locality_struc",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。NIDDK 明确 FSGS 瘢痕发生于部分肾小球，nephron tubule 不是该解剖定位的正确参考。原编辑对象是 Berger disease，locality 对象是另一疾病 FSGS，单项编辑不要求改写它的位置知识。R5 只保留有依据的肾小球定位；原问和错误参考未覆盖，并禁止使用错误参考评分。",
+      "primary_urls": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/glomerular-disease",
+        "https://arxiv.org/html/2402.18099v3#S3.SS4.SSS2"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持 FSGS 病变涉及肾小球这一解剖知识；对应原 locality_struc 的部位问题，不保持错误原参考 nephron tubule。",
+      "reviewed_rationale": "编辑仅改写 Berger disease 的位置关系；本条 locality 询问另一疾病 FSGS 的病变部位。NIDDK 明确 FSGS 的瘢痕累及部分肾小球，因此 R5 收窄为保持这项正确的 FSGS 肾小球知识。原参考 nephron tubule 部位错误，原字段保留但禁用其评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "incorrect_anatomical_reference"
+    },
+    {
+      "unit_id": "M24:test:562",
+      "judgment_id": "M24:test:562:locality_struc",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。NIDDK 明确 FSGS 瘢痕发生于部分肾小球，nephron tubule 不是该解剖定位的正确参考。原编辑对象是 Berger disease，locality 对象是另一疾病 FSGS，单项编辑不要求改写它的位置知识。R5 只保留有依据的肾小球定位；原问和错误参考未覆盖，并禁止使用错误参考评分。",
+      "primary_urls": [
+        "https://www.niddk.nih.gov/health-information/kidney-disease/glomerular-disease",
+        "https://arxiv.org/html/2402.18099v3#S3.SS4.SSS2"
+      ],
+      "reviewed_labels": [
+        "R5"
+      ],
+      "reviewed_target": "保持 FSGS 病变涉及肾小球这一解剖知识；对应原 locality_struc 的部位问题，不保持错误原参考 nephron tubule。",
+      "reviewed_rationale": "编辑仅改写 Berger disease 的位置关系；本条 locality 询问另一疾病 FSGS 的病变部位。NIDDK 明确 FSGS 的瘢痕累及部分肾小球，因此 R5 收窄为保持这项正确的 FSGS 肾小球知识。原参考 nephron tubule 部位错误，原字段保留但禁用其评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "incorrect_anatomical_reference"
+    },
+    {
+      "unit_id": "M25:eval:554",
+      "judgment_id": "M25:eval:554:portability_0",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。benign keratosis→SCC 的原编辑目标是疾病概念，portability 问题另问并发后果，功能上有 R4 的前提—后果关系。AAD 明说侵袭性皮肤鳞癌偶尔扩散至淋巴结/其他器官，且风险受分期及高危特征影响；不能把 can/occasionally 升成未分期 common。补丁保留 R4，但将原 common/metastasis 参考标为频率未核实并禁评分，未把可能性答案当原题已验证金标准，且保留缺图状态。",
+      "primary_urls": [
+        "https://www.aad.org/public/diseases/skin-cancer/squamous-cell-carcinoma"
+      ],
+      "reviewed_labels": [
+        "R4"
+      ],
+      "reviewed_target": "原 portability 问题要求从编辑后鳞状细胞癌推断并发后果；R4 仅描述这一后果推断要求，不认可 common 的频率断言。",
+      "reviewed_rationale": "原题由编辑后的 squamous cell carcinoma 追问并发后果，后果未作为图像编辑目标直接给出，因此任务功能仍有据属于 R4。AAD 支持皮肤鳞癌可能扩散，但不支持此记录未分期条件下的 common 频率措辞；保留原问和 metastasis 原参考，禁止据该未核实频率参考评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "unverified_frequency_reference"
+    },
+    {
+      "unit_id": "M25:eval:1001",
+      "judgment_id": "M25:eval:1001:portability_0",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。benign keratosis→SCC 的原编辑目标是疾病概念，portability 问题另问并发后果，功能上有 R4 的前提—后果关系。AAD 明说侵袭性皮肤鳞癌偶尔扩散至淋巴结/其他器官，且风险受分期及高危特征影响；不能把 can/occasionally 升成未分期 common。补丁保留 R4，但将原 common/metastasis 参考标为频率未核实并禁评分，未把可能性答案当原题已验证金标准，且保留缺图状态。",
+      "primary_urls": [
+        "https://www.aad.org/public/diseases/skin-cancer/squamous-cell-carcinoma"
+      ],
+      "reviewed_labels": [
+        "R4"
+      ],
+      "reviewed_target": "原 portability 问题要求从编辑后鳞状细胞癌推断并发后果；R4 仅描述这一后果推断要求，不认可 common 的频率断言。",
+      "reviewed_rationale": "原题由编辑后的 squamous cell carcinoma 追问并发后果，后果未作为图像编辑目标直接给出，因此任务功能仍有据属于 R4。AAD 支持皮肤鳞癌可能扩散，但不支持此记录未分期条件下的 common 频率措辞；保留原问和 metastasis 原参考，禁止据该未核实频率参考评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "unverified_frequency_reference"
+    },
+    {
+      "unit_id": "M25:eval:1338",
+      "judgment_id": "M25:eval:1338:portability_0",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。benign keratosis→SCC 的原编辑目标是疾病概念，portability 问题另问并发后果，功能上有 R4 的前提—后果关系。AAD 明说侵袭性皮肤鳞癌偶尔扩散至淋巴结/其他器官，且风险受分期及高危特征影响；不能把 can/occasionally 升成未分期 common。补丁保留 R4，但将原 common/metastasis 参考标为频率未核实并禁评分，未把可能性答案当原题已验证金标准，且保留缺图状态。",
+      "primary_urls": [
+        "https://www.aad.org/public/diseases/skin-cancer/squamous-cell-carcinoma"
+      ],
+      "reviewed_labels": [
+        "R4"
+      ],
+      "reviewed_target": "原 portability 问题要求从编辑后鳞状细胞癌推断并发后果；R4 仅描述这一后果推断要求，不认可 common 的频率断言。",
+      "reviewed_rationale": "原题由编辑后的 squamous cell carcinoma 追问并发后果，后果未作为图像编辑目标直接给出，因此任务功能仍有据属于 R4。AAD 支持皮肤鳞癌可能扩散，但不支持此记录未分期条件下的 common 频率措辞；保留原问和 metastasis 原参考，禁止据该未核实频率参考评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "unverified_frequency_reference"
+    },
+    {
+      "unit_id": "M25:eval:2496",
+      "judgment_id": "M25:eval:2496:portability_0",
+      "verdict": "accepted",
+      "reviewer": "origin_a_independent_semantic_review",
+      "reason": "可接受。benign keratosis→SCC 的原编辑目标是疾病概念，portability 问题另问并发后果，功能上有 R4 的前提—后果关系。AAD 明说侵袭性皮肤鳞癌偶尔扩散至淋巴结/其他器官，且风险受分期及高危特征影响；不能把 can/occasionally 升成未分期 common。补丁保留 R4，但将原 common/metastasis 参考标为频率未核实并禁评分，未把可能性答案当原题已验证金标准，且保留缺图状态。",
+      "primary_urls": [
+        "https://www.aad.org/public/diseases/skin-cancer/squamous-cell-carcinoma"
+      ],
+      "reviewed_labels": [
+        "R4"
+      ],
+      "reviewed_target": "原 portability 问题要求从编辑后鳞状细胞癌推断并发后果；R4 仅描述这一后果推断要求，不认可 common 的频率断言。",
+      "reviewed_rationale": "原题由编辑后的 squamous cell carcinoma 追问并发后果，后果未作为图像编辑目标直接给出，因此任务功能仍有据属于 R4。AAD 支持皮肤鳞癌可能扩散，但不支持此记录未分期条件下的 common 频率措辞；保留原问和 metastasis 原参考，禁止据该未核实频率参考评分。",
+      "scoring_eligible": false,
+      "gold_review_status": "unverified_frequency_reference"
+    }
+  ]
+}

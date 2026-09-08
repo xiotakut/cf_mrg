@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "gzip_files_checked": 9,
+  "gzip_files": [
+    "data/analysis_annotations.jsonl.gz",
+    "data/analysis_judgments.csv.gz",
+    "data/analysis_unclassified.csv.gz",
+    "data/analysis_units.csv.gz",
+    "data/complete_annotations.jsonl.gz",
+    "data/reference_annotations.jsonl.gz",
+    "predictions/reclassified_evaluations.jsonl.gz",
+    "sources/medpic_gf_index.jsonl.gz",
+    "sources/shared_root_index.jsonl.gz"
+  ],
+  "jsonl_counts": {
+    "data/analysis_annotations.jsonl.gz": 28243,
+    "data/complete_annotations.jsonl.gz": 55991,
+    "data/reference_annotations.jsonl.gz": 5763,
+    "predictions/reclassified_evaluations.jsonl.gz": 82131,
+    "sources/medpic_gf_index.jsonl.gz": 284,
+    "sources/shared_root_index.jsonl.gz": 11751
+  },
+  "complete_units": 55991,
+  "analysis_units": 28243,
+  "judgments": 80910,
+  "csv_counts": {
+    "data/analysis_units.csv.gz": 28243,
+    "data/analysis_judgments.csv.gz": 80910,
+    "data/analysis_unclassified.csv.gz": 4051
+  },
+  "unclassified_units": 4051,
+  "scoring_exclusions": 11,
+  "scoring_exclusion_ids": [
+    "M23:BioNLI:noise100:row2293:target_relation",
+    "M23:BioNLI:noise100:row4541:target_relation",
+    "M23:BioNLI:noise100:row6304:target_relation",
+    "M23:BioNLI:noise20:row4544:target_relation",
+    "M24:test:277:locality_struc",
+    "M24:test:542:locality_struc",
+    "M24:test:562:locality_struc",
+    "M25:eval:1001:portability_0",
+    "M25:eval:1338:portability_0",
+    "M25:eval:2496:portability_0",
+    "M25:eval:554:portability_0"
+  ],
+  "text_units": 25746,
+  "text_R5_units": 20318,
+  "analysis_matches_complete_selected_fields": true,
+  "analysis_parent_labels_equal_child_union": true,
+  "csv_fields_and_ids_match_jsonl": true,
+  "original_record_fields_absent": true,
+  "unselected_units_marked_outside_frozen_review_cohort": 27748,
+  "raw_data_required": false,
+  "semantic_validity_proved": false,
+  "limitation": "Package consistency only; does not repeat source downloads or medical semantic review."
+}

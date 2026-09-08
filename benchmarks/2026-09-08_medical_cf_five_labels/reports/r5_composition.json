@@ -1,0 +1,1140 @@
+{
+  "analysis_input": "分析子集.jsonl",
+  "all": {
+    "units": 28243,
+    "labeled_units": 24192,
+    "unclassified_units": 4051,
+    "R5_units": 22814,
+    "R5_only_units": 21936,
+    "R5_multilabel_units": 878,
+    "non_R5_labeled_units": 1378,
+    "label_counts": {
+      "R1": 2030,
+      "R3": 389,
+      "R2": 88,
+      "R5": 22814,
+      "R4": 139
+    },
+    "label_combinations": {
+      "R1+R3": 334,
+      "unclassified": 4051,
+      "R1": 913,
+      "R2": 73,
+      "R1+R2+R3": 12,
+      "R1+R2": 1,
+      "R5": 21936,
+      "R3+R5": 19,
+      "R1+R5": 741,
+      "R3": 1,
+      "R1+R3+R5": 21,
+      "R1+R2+R3+R5": 2,
+      "R4+R5": 89,
+      "R1+R4+R5": 6,
+      "R4": 44
+    },
+    "known_source_roots": 17683,
+    "units_without_verified_root": 506,
+    "units_per_root_distribution": {
+      "1": 13087,
+      "2": 2986,
+      "3": 222,
+      "4": 357,
+      "5": 60,
+      "6": 815,
+      "7": 3,
+      "8": 4,
+      "9": 149
+    },
+    "R5_source_roots": 14709,
+    "judgments": 80910,
+    "judgment_label_counts": {
+      "R1": 3098,
+      "R3": 389,
+      "R2": 88,
+      "R5": 62306,
+      "R4": 139
+    },
+    "R5_parent_review_coverage": {
+      "all_targets_classified": 19235,
+      "some_targets_classified": 3579
+    },
+    "R5_fraction_of_all_units": 0.8077753779697624,
+    "R5_fraction_of_labeled_units": 0.9430390211640212,
+    "labeled_judgments": 64509,
+    "R5_fraction_of_labeled_judgments": 0.9658497263947666,
+    "R5_judgments_excluded_from_scoring": 5
+  },
+  "text": {
+    "units": 25746,
+    "labeled_units": 21695,
+    "unclassified_units": 4051,
+    "R5_units": 20318,
+    "R5_only_units": 19525,
+    "R5_multilabel_units": 793,
+    "non_R5_labeled_units": 1377,
+    "label_counts": {
+      "R1": 2030,
+      "R3": 389,
+      "R2": 88,
+      "R5": 20318,
+      "R4": 53
+    },
+    "label_combinations": {
+      "R1+R3": 334,
+      "unclassified": 4051,
+      "R1": 913,
+      "R2": 73,
+      "R1+R2+R3": 12,
+      "R1+R2": 1,
+      "R5": 19525,
+      "R3+R5": 19,
+      "R1+R5": 741,
+      "R3": 1,
+      "R1+R3+R5": 21,
+      "R1+R2+R3+R5": 2,
+      "R4+R5": 4,
+      "R1+R4+R5": 6,
+      "R4": 43
+    },
+    "known_source_roots": 15186,
+    "units_without_verified_root": 506,
+    "units_per_root_distribution": {
+      "1": 10590,
+      "2": 2986,
+      "3": 222,
+      "4": 357,
+      "5": 60,
+      "6": 815,
+      "7": 3,
+      "8": 4,
+      "9": 149
+    },
+    "R5_source_roots": 12213,
+    "judgments": 68234,
+    "judgment_label_counts": {
+      "R1": 3098,
+      "R3": 389,
+      "R2": 88,
+      "R5": 59810,
+      "R4": 53
+    },
+    "R5_parent_review_coverage": {
+      "all_targets_classified": 19235,
+      "some_targets_classified": 1083
+    },
+    "R5_fraction_of_all_units": 0.7891711333799425,
+    "R5_fraction_of_labeled_units": 0.9365291541829914,
+    "labeled_judgments": 61927,
+    "R5_fraction_of_labeled_judgments": 0.9658145881441051,
+    "R5_judgments_excluded_from_scoring": 5
+  },
+  "multimodal_metadata_images_missing": {
+    "units": 2497,
+    "labeled_units": 2497,
+    "unclassified_units": 0,
+    "R5_units": 2496,
+    "R5_only_units": 2411,
+    "R5_multilabel_units": 85,
+    "non_R5_labeled_units": 1,
+    "label_counts": {
+      "R4": 86,
+      "R5": 2496
+    },
+    "label_combinations": {
+      "R4+R5": 85,
+      "R5": 2411,
+      "R4": 1
+    },
+    "known_source_roots": 2497,
+    "units_without_verified_root": 0,
+    "units_per_root_distribution": {
+      "1": 2497
+    },
+    "R5_source_roots": 2496,
+    "judgments": 12676,
+    "judgment_label_counts": {
+      "R5": 2496,
+      "R4": 86
+    },
+    "R5_parent_review_coverage": {
+      "some_targets_classified": 2496
+    },
+    "R5_fraction_of_all_units": 0.9995995194233079,
+    "R5_fraction_of_labeled_units": 0.9995995194233079,
+    "labeled_judgments": 2582,
+    "R5_fraction_of_labeled_judgments": 0.9666924864446166,
+    "R5_judgments_excluded_from_scoring": 0
+  },
+  "by_resource": [
+    {
+      "units": 4806,
+      "labeled_units": 4298,
+      "unclassified_units": 508,
+      "R5_units": 4164,
+      "R5_only_units": 4164,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 134,
+      "label_counts": {
+        "R5": 4164,
+        "R1": 134,
+        "R3": 43
+      },
+      "label_combinations": {
+        "R5": 4164,
+        "R1": 91,
+        "unclassified": 508,
+        "R1+R3": 43
+      },
+      "known_source_roots": 801,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "6": 801
+      },
+      "R5_source_roots": 799,
+      "judgments": 4806,
+      "judgment_label_counts": {
+        "R5": 4164,
+        "R1": 134,
+        "R3": 43
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 4164
+      },
+      "resource_id": "M12",
+      "benchmark": "FairMedQA/AMQA",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://github.com/XY-Showing/AMQA/blob/335b1752ba4912d00050fa6531ba8d2c2aef6fb9/AMQA_Dataset/AMQA_Dataset.jsonl",
+      "R5_share_of_text_R5": 0.2049414312432326
+    },
+    {
+      "units": 3680,
+      "labeled_units": 3680,
+      "unclassified_units": 0,
+      "R5_units": 3680,
+      "R5_only_units": 3680,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 0,
+      "label_counts": {
+        "R5": 3680
+      },
+      "label_combinations": {
+        "R5": 3680
+      },
+      "known_source_roots": 3680,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 3680
+      },
+      "R5_source_roots": 3680,
+      "judgments": 36800,
+      "judgment_label_counts": {
+        "R5": 36597
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 3496,
+        "some_targets_classified": 184
+      },
+      "resource_id": "M22",
+      "benchmark": "MedRGB",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/blob/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/data/bioasq-00000-of-00001.parquet",
+      "R5_share_of_text_R5": 0.1811201889949798
+    },
+    {
+      "units": 3745,
+      "labeled_units": 3615,
+      "unclassified_units": 130,
+      "R5_units": 3615,
+      "R5_only_units": 3615,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 0,
+      "label_counts": {
+        "R5": 3615
+      },
+      "label_combinations": {
+        "R5": 3615,
+        "unclassified": 130
+      },
+      "known_source_roots": 1880,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 15,
+        "2": 1865
+      },
+      "R5_source_roots": 1845,
+      "judgments": 7490,
+      "judgment_label_counts": {
+        "R5": 7208
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 3593,
+        "some_targets_classified": 22
+      },
+      "resource_id": "M17",
+      "benchmark": "MedPerturb",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://github.com/abinithago/MedPerturb/blob/5a121ca38b80e9d4e106e7f7926206f8c8dfce1e/data.csv",
+      "R5_share_of_text_R5": 0.17792105522197066
+    },
+    {
+      "units": 2500,
+      "labeled_units": 2499,
+      "unclassified_units": 1,
+      "R5_units": 2499,
+      "R5_only_units": 2499,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 0,
+      "label_counts": {
+        "R5": 2499
+      },
+      "label_combinations": {
+        "R5": 2499,
+        "unclassified": 1
+      },
+      "known_source_roots": 2500,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 2500
+      },
+      "R5_source_roots": 2499,
+      "judgments": 2500,
+      "judgment_label_counts": {
+        "R5": 2499
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 2499
+      },
+      "resource_id": "M23",
+      "benchmark": "BioRAB",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://drive.google.com/file/d/1KyuTpMbibMa9C5ngtf1KwwFgFxqv1N16/view",
+      "R5_share_of_text_R5": 0.12299438921153656
+    },
+    {
+      "units": 2500,
+      "labeled_units": 2378,
+      "unclassified_units": 122,
+      "R5_units": 2376,
+      "R5_only_units": 2376,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 2,
+      "label_counts": {
+        "R5": 2376,
+        "R2": 2
+      },
+      "label_combinations": {
+        "unclassified": 122,
+        "R5": 2376,
+        "R2": 2
+      },
+      "known_source_roots": 1663,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 826,
+        "2": 837
+      },
+      "R5_source_roots": 1580,
+      "judgments": 2500,
+      "judgment_label_counts": {
+        "R5": 2376,
+        "R2": 2
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 2376
+      },
+      "resource_id": "M14",
+      "benchmark": "DiversityMedQA",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://huggingface.co/datasets/Rajat1212/DiversityMedQA/blob/b06f1e2f2ff9b07dc31355e650a9b41133ebeefb/GenderDataset.csv",
+      "R5_share_of_text_R5": 0.11694064376415002
+    },
+    {
+      "units": 2500,
+      "labeled_units": 1111,
+      "unclassified_units": 1389,
+      "R5_units": 1110,
+      "R5_only_units": 1110,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 1,
+      "label_counts": {
+        "R5": 1110,
+        "R1": 1
+      },
+      "label_combinations": {
+        "R5": 1110,
+        "unclassified": 1389,
+        "R1": 1
+      },
+      "known_source_roots": 958,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 218,
+        "2": 284,
+        "3": 219,
+        "4": 157,
+        "5": 60,
+        "6": 14,
+        "7": 3,
+        "8": 3
+      },
+      "R5_source_roots": 688,
+      "judgments": 2500,
+      "judgment_label_counts": {
+        "R5": 1110,
+        "R1": 1
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 1110
+      },
+      "resource_id": "M10",
+      "benchmark": "CPV-MedQA",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv",
+      "R5_share_of_text_R5": 0.054631361354464024
+    },
+    {
+      "units": 1349,
+      "labeled_units": 1174,
+      "unclassified_units": 175,
+      "R5_units": 1107,
+      "R5_only_units": 1107,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 67,
+      "label_counts": {
+        "R5": 1107,
+        "R1": 67
+      },
+      "label_combinations": {
+        "R5": 1107,
+        "R1": 67,
+        "unclassified": 175
+      },
+      "known_source_roots": 150,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "8": 1,
+        "9": 149
+      },
+      "R5_source_roots": 135,
+      "judgments": 1349,
+      "judgment_label_counts": {
+        "R5": 1107,
+        "R1": 67
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 1107
+      },
+      "resource_id": "M11",
+      "benchmark": "Counterfactual Cultural Cues",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://github.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs",
+      "R5_share_of_text_R5": 0.054483709026478984
+    },
+    {
+      "units": 798,
+      "labeled_units": 797,
+      "unclassified_units": 1,
+      "R5_units": 797,
+      "R5_only_units": 797,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 0,
+      "label_counts": {
+        "R5": 797
+      },
+      "label_combinations": {
+        "R5": 797,
+        "unclassified": 1
+      },
+      "known_source_roots": 798,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 798
+      },
+      "R5_source_roots": 797,
+      "judgments": 4788,
+      "judgment_label_counts": {
+        "R5": 3053
+      },
+      "R5_parent_review_coverage": {
+        "some_targets_classified": 797
+      },
+      "resource_id": "M24",
+      "benchmark": "MedCF",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://github.com/quqxui/MedLaSA/blob/6cc1ec1703103454be393dac066e86b5cb0b0a9b/MedCF/test.json",
+      "R5_share_of_text_R5": 0.0392263018013584
+    },
+    {
+      "units": 809,
+      "labeled_units": 788,
+      "unclassified_units": 21,
+      "R5_units": 703,
+      "R5_only_units": 0,
+      "R5_multilabel_units": 703,
+      "non_R5_labeled_units": 85,
+      "label_counts": {
+        "R1": 788,
+        "R5": 703
+      },
+      "label_combinations": {
+        "R1+R5": 703,
+        "R1": 85,
+        "unclassified": 21
+      },
+      "known_source_roots": 203,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "3": 3,
+        "4": 200
+      },
+      "R5_source_roots": 190,
+      "judgments": 1762,
+      "judgment_label_counts": {
+        "R1": 1720,
+        "R5": 1424
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 685,
+        "some_targets_classified": 18
+      },
+      "resource_id": "M20",
+      "benchmark": "MedCounterFact",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence",
+      "R5_share_of_text_R5": 0.03459986219116055
+    },
+    {
+      "units": 323,
+      "labeled_units": 302,
+      "unclassified_units": 21,
+      "R5_units": 267,
+      "R5_only_units": 177,
+      "R5_multilabel_units": 90,
+      "non_R5_labeled_units": 35,
+      "label_counts": {
+        "R5": 267,
+        "R3": 62,
+        "R1": 101,
+        "R2": 11,
+        "R4": 10
+      },
+      "label_combinations": {
+        "R5": 177,
+        "R3+R5": 19,
+        "R1+R5": 38,
+        "R1": 15,
+        "R1+R3": 10,
+        "unclassified": 21,
+        "R3": 1,
+        "R1+R2+R3": 9,
+        "R1+R3+R5": 21,
+        "R1+R2+R3+R5": 2,
+        "R4+R5": 4,
+        "R1+R4+R5": 6
+      },
+      "known_source_roots": 0,
+      "units_without_verified_root": 323,
+      "units_per_root_distribution": {},
+      "R5_source_roots": 0,
+      "judgments": 510,
+      "judgment_label_counts": {
+        "R5": 272,
+        "R3": 62,
+        "R1": 112,
+        "R2": 11,
+        "R4": 10
+      },
+      "R5_parent_review_coverage": {
+        "all_targets_classified": 205,
+        "some_targets_classified": 62
+      },
+      "resource_id": "M16",
+      "benchmark": "EquityMedQA",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://arxiv.org/src/2403.12025v2/anc/equitymedqa_ratings.xlsx",
+      "R5_share_of_text_R5": 0.013141057190668373
+    },
+    {
+      "units": 2500,
+      "labeled_units": 843,
+      "unclassified_units": 1657,
+      "R5_units": 0,
+      "R5_only_units": 0,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 843,
+      "label_counts": {
+        "R1": 843,
+        "R3": 274
+      },
+      "label_combinations": {
+        "R1+R3": 274,
+        "unclassified": 1657,
+        "R1": 569
+      },
+      "known_source_roots": 2500,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 2500
+      },
+      "R5_source_roots": 0,
+      "judgments": 2978,
+      "judgment_label_counts": {
+        "R1": 967,
+        "R3": 274
+      },
+      "R5_parent_review_coverage": {},
+      "resource_id": "M01",
+      "benchmark": "MedEinst",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://huggingface.co/datasets/zhui711/MedEinst",
+      "R5_share_of_text_R5": 0.0
+    },
+    {
+      "units": 183,
+      "labeled_units": 167,
+      "unclassified_units": 16,
+      "R5_units": 0,
+      "R5_only_units": 0,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 167,
+      "label_counts": {
+        "R1": 96,
+        "R2": 75,
+        "R3": 10
+      },
+      "label_combinations": {
+        "R1": 85,
+        "R2": 71,
+        "unclassified": 16,
+        "R1+R3": 7,
+        "R1+R2+R3": 3,
+        "R1+R2": 1
+      },
+      "known_source_roots": 0,
+      "units_without_verified_root": 183,
+      "units_per_root_distribution": {},
+      "R5_source_roots": 0,
+      "judgments": 198,
+      "judgment_label_counts": {
+        "R1": 97,
+        "R2": 75,
+        "R3": 10
+      },
+      "R5_parent_review_coverage": {},
+      "resource_id": "M02",
+      "benchmark": "MedPIC-Bench",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+      "R5_share_of_text_R5": 0.0
+    },
+    {
+      "units": 33,
+      "labeled_units": 30,
+      "unclassified_units": 3,
+      "R5_units": 0,
+      "R5_only_units": 0,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 30,
+      "label_counts": {
+        "R4": 30
+      },
+      "label_combinations": {
+        "R4": 30,
+        "unclassified": 3
+      },
+      "known_source_roots": 33,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 33
+      },
+      "R5_source_roots": 0,
+      "judgments": 33,
+      "judgment_label_counts": {
+        "R4": 30
+      },
+      "R5_parent_review_coverage": {},
+      "resource_id": "M05",
+      "benchmark": "LLM_Causality_LabTest",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://github.com/balubhasuran/LLM_Causality_LabTest/blob/6d0fbd1bc42cf604258f0fde4317a542d0b9090f/data/DataSet.xlsx",
+      "R5_share_of_text_R5": 0.0
+    },
+    {
+      "units": 20,
+      "labeled_units": 13,
+      "unclassified_units": 7,
+      "R5_units": 0,
+      "R5_only_units": 0,
+      "R5_multilabel_units": 0,
+      "non_R5_labeled_units": 13,
+      "label_counts": {
+        "R4": 13
+      },
+      "label_combinations": {
+        "unclassified": 7,
+        "R4": 13
+      },
+      "known_source_roots": 20,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 20
+      },
+      "R5_source_roots": 0,
+      "judgments": 20,
+      "judgment_label_counts": {
+        "R4": 13
+      },
+      "R5_parent_review_coverage": {},
+      "resource_id": "M06",
+      "benchmark": "HIV ART causal scenarios",
+      "collection_kind": "text_comparison_record",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-026-02771-7/MediaObjects/41746_2026_2771_MOESM1_ESM.pdf",
+      "R5_share_of_text_R5": 0.0
+    },
+    {
+      "units": 2497,
+      "labeled_units": 2497,
+      "unclassified_units": 0,
+      "R5_units": 2496,
+      "R5_only_units": 2411,
+      "R5_multilabel_units": 85,
+      "non_R5_labeled_units": 1,
+      "label_counts": {
+        "R4": 86,
+        "R5": 2496
+      },
+      "label_combinations": {
+        "R4+R5": 85,
+        "R5": 2411,
+        "R4": 1
+      },
+      "known_source_roots": 2497,
+      "units_without_verified_root": 0,
+      "units_per_root_distribution": {
+        "1": 2497
+      },
+      "R5_source_roots": 2496,
+      "judgments": 12676,
+      "judgment_label_counts": {
+        "R5": 2496,
+        "R4": 86
+      },
+      "R5_parent_review_coverage": {
+        "some_targets_classified": 2496
+      },
+      "resource_id": "M25",
+      "benchmark": "MedMKEB",
+      "collection_kind": "multimodal_edit_metadata_images_missing",
+      "source_url": "https://github.com/pkusixspace/MedMKEB/blob/d9f38639ec2285a0e9f541e22156ec14f87271d8/data/eval_data_threehop_final.json",
+      "R5_share_of_text_R5": null
+    }
+  ],
+  "counting_details": {
+    "M12": {
+      "source_unit_id_examples": [
+        "0:white",
+        "0:black",
+        "0:high_income"
+      ],
+      "original_record_count_distribution": {
+        "1": 4806
+      },
+      "attribute_variant_counts": {
+        "white": 801,
+        "black": 801,
+        "high_income": 801,
+        "low_income": 801,
+        "male": 801,
+        "female": 801
+      }
+    },
+    "M17": {
+      "source_unit_id_examples": [
+        "1:gender_removal",
+        "2:gender_removal",
+        "3:gender_removal"
+      ],
+      "original_record_count_distribution": {
+        "2": 3745
+      },
+      "variant_counts": {
+        "gender_removal": 1877,
+        "gender_swap": 1868
+      },
+      "judgment_resolution_counts": {
+        "classified": 7208,
+        "outside_five_labels": 36,
+        "insufficient_evidence": 198,
+        "invalid_source": 48
+      }
+    },
+    "M22": {
+      "source_unit_id_examples": [
+        "bioasq/5be44bef133db5eb78000014:cf_group",
+        "bioasq/5be44f50133db5eb78000017:cf_group",
+        "bioasq/5be47bff133db5eb78000018:cf_group"
+      ],
+      "original_record_count_distribution": {
+        "2": 3680
+      },
+      "judgment_count_distribution": {
+        "10": 3680
+      },
+      "original_doc_variant_counts": {
+        "10": 3680
+      },
+      "official_question_groups": 3680,
+      "exact_distinct_main_question_texts": 3595,
+      "main_question_repeat_distribution": {
+        "1": 3512,
+        "2": 82,
+        "4": 1
+      },
+      "document_slots": 36800,
+      "R5_document_judgments": 36597,
+      "R5_share_of_text_R5_judgments": 0.6118876442066544,
+      "original_subtasks": {
+        "bioasq": 618,
+        "medlfqa": 200,
+        "medqa": 1273,
+        "mmlu": 1089,
+        "pubmedqa": 500
+      },
+      "counterfactual_doc_slots_are_not_independent_question_roots": true,
+      "judgment_resolution_counts": {
+        "classified": 36597,
+        "insufficient_evidence": 203
+      }
+    },
+    "M23": {
+      "source_unit_id_examples": [
+        "BioNLI:noise20:row18",
+        "BioNLI:noise20:row19",
+        "BioNLI:noise20:row26"
+      ],
+      "original_record_count_distribution": {
+        "2": 2500
+      }
+    },
+    "M24": {
+      "source_unit_id_examples": [
+        "test:0",
+        "test:1",
+        "test:2"
+      ],
+      "original_record_count_distribution": {
+        "1": 798
+      },
+      "judgment_types": {
+        "locality_target": 798,
+        "locality_mapping": 798,
+        "locality_struc": 798,
+        "locality_tokenSem": 798,
+        "prompt": 798,
+        "rephrase_prompt": 798
+      },
+      "R5_judgment_types": {
+        "locality_target": 792,
+        "locality_struc": 786,
+        "locality_tokenSem": 788,
+        "locality_mapping": 687
+      },
+      "judgment_resolution_counts": {
+        "classified": 3053,
+        "insufficient_evidence": 139,
+        "outside_five_labels": 1596
+      },
+      "official_test_records": 802,
+      "no_change_references": 4,
+      "analysis_edit_units": 798,
+      "locality_slots": 3192,
+      "classified_R5_locality_judgments": 3053,
+      "direct_edit_or_rephrase_judgments": 1596,
+      "CF_parent_count_expanded_by_locality": false
+    },
+    "M25": {
+      "source_unit_id_examples": [
+        "eval:0",
+        "eval:1",
+        "eval:2"
+      ],
+      "original_record_count_distribution": {
+        "1": 2497
+      },
+      "judgment_types": {
+        "text_locality": 2497,
+        "src": 2497,
+        "rephrase": 2497,
+        "m_loc_q": 2497,
+        "portability_0": 1776,
+        "portability_1": 802,
+        "portability_2": 110
+      },
+      "R5_judgment_types": {
+        "text_locality": 2496
+      },
+      "judgment_resolution_counts": {
+        "classified": 2582,
+        "insufficient_evidence": 10037,
+        "outside_five_labels": 31,
+        "invalid_source": 26
+      }
+    }
+  },
+  "sampling": {
+    "seed": 20260908,
+    "prediction_or_annotation_labels_used": false,
+    "threshold": 5000,
+    "large_source_target": 2500,
+    "policy": "<1000全部收录；1000–4999目标子集原则全收；>=5000按作者子任务/属性和源根抽2500。MedCF保存802条test，正式分析798条有效编辑，另4条原值未变参照；其余split完整保留。缺图多模态单列。",
+    "resources": {
+      "M01": {
+        "normalized_units": 5383,
+        "eligible_pool": 5300,
+        "analysis_units": 2500,
+        "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+        "sampling_strata": {
+          "Guillain-Barré syndrome": 25,
+          "Croup": 2,
+          "Pulmonary embolism": 191,
+          "Atrial fibrillation": 34,
+          "Acute pulmonary edema": 169,
+          "Myasthenia gravis": 1,
+          "Allergic sinusitis": 1,
+          "Tuberculosis": 47,
+          "Acute otitis media": 1,
+          "Acute dystonic reactions": 53,
+          "PSVT": 29,
+          "Possible NSTEMI / STEMI": 191,
+          "Acute COPD exacerbation / infection": 191,
+          "Anemia": 96,
+          "Chronic rhinosinusitis": 7,
+          "Pneumonia": 191,
+          "Bronchiectasis": 73,
+          "Pulmonary neoplasm": 191,
+          "Influenza": 45,
+          "Acute laryngitis": 5,
+          "Panic attack": 33,
+          "Pericarditis": 46,
+          "GERD": 26,
+          "Unstable angina": 162,
+          "Bronchospasm / acute asthma exacerbation": 22,
+          "Acute rhinosinusitis": 4,
+          "URTI": 191,
+          "Bronchitis": 191,
+          "Myocarditis": 22,
+          "Cluster headache": 3,
+          "HIV (initial infection)": 10,
+          "Viral pharyngitis": 48,
+          "Spontaneous pneumothorax": 190,
+          "Anaphylaxis": 7,
+          "SLE": 2
+        },
+        "source_roots_in_analysis": 2500
+      },
+      "M02": {
+        "normalized_units": 183,
+        "eligible_pool": 183,
+        "analysis_units": 183,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "official_cf_row_unpaired": 183
+        },
+        "source_roots_in_analysis": 0
+      },
+      "M05": {
+        "normalized_units": 33,
+        "eligible_pool": 33,
+        "analysis_units": 33,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "within_question_counterfactual": 33
+        },
+        "source_roots_in_analysis": 33
+      },
+      "M06": {
+        "normalized_units": 20,
+        "eligible_pool": 20,
+        "analysis_units": 20,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "within_question_counterfactual": 20
+        },
+        "source_roots_in_analysis": 20
+      },
+      "M10": {
+        "normalized_units": 10225,
+        "eligible_pool": 10225,
+        "analysis_units": 2500,
+        "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+        "sampling_strata": {
+          "White:1:0": 249,
+          "Asian:0:1": 249,
+          "Black:0:1": 249,
+          "Arab:1:0": 249,
+          "Hispanic:0:0": 3,
+          "Black:0:0": 3,
+          "Hispanic:0:1": 249,
+          "Hispanic:1:0": 248,
+          "Arab:0:0": 3,
+          "Black:1:0": 248,
+          "White:0:1": 248,
+          "White:0:0": 3,
+          "Asian:1:0": 248,
+          "Arab:0:1": 248,
+          "Asian:0:0": 3
+        },
+        "source_roots_in_analysis": 958
+      },
+      "M11": {
+        "normalized_units": 1349,
+        "eligible_pool": 1349,
+        "analysis_units": 1349,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "paired": 1349
+        },
+        "source_roots_in_analysis": 150
+      },
+      "M12": {
+        "normalized_units": 4806,
+        "eligible_pool": 4806,
+        "analysis_units": 4806,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "released_evaluation": 4806
+        },
+        "source_roots_in_analysis": 801
+      },
+      "M14": {
+        "normalized_units": 6296,
+        "eligible_pool": 6296,
+        "analysis_units": 2500,
+        "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+        "sampling_strata": {
+          "author_test": 1250,
+          "author_train": 1250
+        },
+        "source_roots_in_analysis": 1663
+      },
+      "M16": {
+        "normalized_units": 323,
+        "eligible_pool": 323,
+        "analysis_units": 323,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "CC-Manual": 123,
+          "CC-LLM": 200
+        },
+        "source_roots_in_analysis": 0
+      },
+      "M17": {
+        "normalized_units": 3759,
+        "eligible_pool": 3745,
+        "analysis_units": 3745,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "paired_variant": 3745
+        },
+        "source_roots_in_analysis": 1880
+      },
+      "M20": {
+        "normalized_units": 809,
+        "eligible_pool": 809,
+        "analysis_units": 809,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "evidence_pair": 809
+        },
+        "source_roots_in_analysis": 203
+      },
+      "M22": {
+        "normalized_units": 3680,
+        "eligible_pool": 3680,
+        "analysis_units": 3680,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "bioasq": 618,
+          "medlfqa": 200,
+          "medqa": 1273,
+          "mmlu": 1089,
+          "pubmedqa": 500
+        },
+        "source_roots_in_analysis": 3680
+      },
+      "M23": {
+        "normalized_units": 12615,
+        "eligible_pool": 12615,
+        "analysis_units": 2500,
+        "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+        "sampling_strata": {
+          "BioNLI": 2500
+        },
+        "source_roots_in_analysis": 2500
+      },
+      "M24": {
+        "normalized_units": 4013,
+        "eligible_pool": 798,
+        "analysis_units": 798,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "test": 798
+        },
+        "source_roots_in_analysis": 798
+      },
+      "M25": {
+        "normalized_units": 2497,
+        "eligible_pool": 2497,
+        "analysis_units": 2497,
+        "mode": "all_eligible_under_5000",
+        "sampling_strata": {
+          "eval": 2497
+        },
+        "source_roots_in_analysis": 2497
+      }
+    }
+  },
+  "counting_notes": {
+    "unit": "规范化题目/对照组/编辑单元；必要参照保留但不额外计作CF。",
+    "root": "按(resource_id,source_root_id)计数；null不算已验证根。不代表独立患者，跨来源也未据此医学去重。",
+    "R5_only": "父labels只有R5；不保证整份回答应保持，也不表示其全部子目标都有标签。",
+    "labeled_parent": "至少一个子判断有R1–R5，父标签取子标签并集；不是全题所有子任务已验收。",
+    "text_record": "当前收录原任务的文字内容/文字证据比较；不等于已能直接运行纯文本MedRGAG，更不代表临床专家核准。",
+    "missing_image_metadata": "MedMKEB保留编辑前后概念、图像路径、文字locality及portability元数据，缺少必需图像；不能做图像诊断评价。"
+  },
+  "concentration": {
+    "top3_resource_ids": [
+      "M12",
+      "M22",
+      "M17"
+    ],
+    "top3_R5_units": 11459,
+    "top3_share_of_text_R5": 0.5639826754601831,
+    "top5_resource_ids": [
+      "M12",
+      "M22",
+      "M17",
+      "M23",
+      "M14"
+    ],
+    "top5_share_of_text_R5": 0.8039177084358696,
+    "text_R5_only_fraction_of_R5": 0.9609705679692884,
+    "M01_and_M10_share_of_unclassified_text": 0.7519131078745989
+  },
+  "scope": {
+    "date": "2026-09-08",
+    "corpus": "最终冻结分析子集（修正后）",
+    "analyzed_units": 28243,
+    "full_normalized_units": 55991,
+    "unselected_full_corpus_units": 27748,
+    "classification_changed": false,
+    "sampling_changed": false,
+    "predictions_read": false,
+    "new_model_runs": 0,
+    "whole_corpus_semantic_validation_claimed": false,
+    "candidate_resources": 26,
+    "actual_analysis_resources": 15,
+    "text_resources": 14,
+    "multimodal_metadata_resources": 1
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "resource_candidates": 26,
+  "normalized_units": 55991,
+  "text_comparison_record": 53494,
+  "labeled": 38611,
+  "eligible_units": 55894,
+  "analysis_units": 28243,
+  "analysis_labeled": 24192,
+  "uncertain": 17380,
+  "analysis_uncertain": 4051,
+  "non_cf_or_problem_records": 97,
+  "multimodal_edit_metadata_images_missing": 2497,
+  "separately_retained_reference_records": 5666,
+  "label_counts": {
+    "R1": 2717,
+    "R3": 649,
+    "R2": 88,
+    "R5": 36546,
+    "R4": 139
+  },
+  "analysis_label_counts": {
+    "R1": 2030,
+    "R3": 389,
+    "R2": 88,
+    "R5": 22814,
+    "R4": 139
+  },
+  "annotation_methods": {
+    "semantic_group_review": 13464,
+    "item_reviewed": 52,
+    "structural_verification": 14176,
+    "rule_grounded": 14382,
+    "pending_review": 13314,
+    "semantic_item_review": 603
+  },
+  "sources_by_label": {
+    "R1": [
+      "M01",
+      "M02",
+      "M10",
+      "M11",
+      "M12",
+      "M16",
+      "M20"
+    ],
+    "R3": [
+      "M01",
+      "M02",
+      "M12",
+      "M16"
+    ],
+    "R2": [
+      "M02",
+      "M14",
+      "M16"
+    ],
+    "R5": [
+      "M10",
+      "M11",
+      "M12",
+      "M14",
+      "M16",
+      "M17",
+      "M20",
+      "M22",
+      "M23",
+      "M24",
+      "M25"
+    ],
+    "R4": [
+      "M05",
+      "M06",
+      "M16",
+      "M25"
+    ]
+  },
+  "by_resource": {
+    "M01": {
+      "units": 5383,
+      "labeled": 1530,
+      "R1": 1530,
+      "R3": 534,
+      "analysis_units": 2500,
+      "analysis_labeled": 843,
+      "uncertain": 3853,
+      "analysis_uncertain": 1657
+    },
+    "M02": {
+      "units": 183,
+      "labeled": 167,
+      "R1": 96,
+      "analysis_units": 183,
+      "analysis_labeled": 167,
+      "R2": 75,
+      "uncertain": 16,
+      "analysis_uncertain": 16,
+      "R3": 10
+    },
+    "M12": {
+      "units": 4806,
+      "labeled": 4298,
+      "R5": 4164,
+      "analysis_units": 4806,
+      "analysis_labeled": 4298,
+      "R1": 134,
+      "uncertain": 508,
+      "analysis_uncertain": 508,
+      "R3": 43
+    },
+    "M14": {
+      "units": 6296,
+      "uncertain": 3599,
+      "labeled": 2697,
+      "R5": 2695,
+      "analysis_units": 2500,
+      "analysis_uncertain": 122,
+      "analysis_labeled": 2378,
+      "R2": 2
+    },
+    "M16": {
+      "units": 323,
+      "labeled": 302,
+      "R5": 267,
+      "analysis_units": 323,
+      "analysis_labeled": 302,
+      "R3": 62,
+      "R1": 101,
+      "uncertain": 21,
+      "analysis_uncertain": 21,
+      "R2": 11,
+      "R4": 10
+    },
+    "M22": {
+      "units": 3680,
+      "labeled": 3680,
+      "R5": 3680,
+      "analysis_units": 3680,
+      "analysis_labeled": 3680
+    },
+    "M23": {
+      "units": 12615,
+      "labeled": 12614,
+      "R5": 12614,
+      "analysis_units": 2500,
+      "analysis_labeled": 2499,
+      "uncertain": 1,
+      "analysis_uncertain": 1
+    },
+    "M24": {
+      "units": 4013,
+      "labeled": 4012,
+      "R5": 4012,
+      "analysis_units": 798,
+      "analysis_labeled": 797,
+      "uncertain": 1,
+      "analysis_uncertain": 1
+    },
+    "M25": {
+      "units": 2497,
+      "labeled": 2497,
+      "R4": 86,
+      "R5": 2496,
+      "analysis_units": 2497,
+      "analysis_labeled": 2497
+    },
+    "M10": {
+      "units": 10225,
+      "labeled": 1194,
+      "R5": 1193,
+      "analysis_units": 2500,
+      "analysis_labeled": 1111,
+      "uncertain": 9031,
+      "analysis_uncertain": 1389,
+      "R1": 1
+    },
+    "M11": {
+      "units": 1349,
+      "labeled": 1174,
+      "R5": 1107,
+      "analysis_units": 1349,
+      "analysis_labeled": 1174,
+      "R1": 67,
+      "uncertain": 175,
+      "analysis_uncertain": 175
+    },
+    "M20": {
+      "units": 809,
+      "labeled": 788,
+      "R1": 788,
+      "R5": 703,
+      "analysis_units": 809,
+      "analysis_labeled": 788,
+      "uncertain": 21,
+      "analysis_uncertain": 21
+    },
+    "M05": {
+      "units": 33,
+      "labeled": 30,
+      "R4": 30,
+      "analysis_units": 33,
+      "analysis_labeled": 30,
+      "uncertain": 3,
+      "analysis_uncertain": 3
+    },
+    "M06": {
+      "units": 20,
+      "uncertain": 7,
+      "analysis_units": 20,
+      "analysis_uncertain": 7,
+      "labeled": 13,
+      "R4": 13,
+      "analysis_labeled": 13
+    },
+    "M17": {
+      "units": 3759,
+      "labeled": 3615,
+      "R5": 3615,
+      "analysis_units": 3745,
+      "analysis_labeled": 3615,
+      "uncertain": 144,
+      "analysis_uncertain": 130
+    }
+  },
+  "clinical_expert_validated": false,
+  "all_items_individually_reviewed": false,
+  "annotation_or_sampling_uses_predictions": false,
+  "inference_calls": 0,
+  "pilot_records": 358,
+  "analysis_cohort_review_completed": true,
+  "reviewed_analysis_units": 28243,
+  "unreviewed_full_corpus_units": 27748
+}

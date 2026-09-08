@@ -1,0 +1,529 @@
+[
+  {
+    "resource_id": "M01",
+    "benchmark": "MedEinst",
+    "scope": "官方control/trap病例及配对",
+    "primary_source": "https://huggingface.co/datasets/zhui711/MedEinst",
+    "full_counts": {
+      "units": 5383,
+      "labeled": 1530,
+      "R1": 1530,
+      "R3": 534,
+      "analysis_units": 2500,
+      "analysis_labeled": 843,
+      "uncertain": 3853,
+      "analysis_uncertain": 1657
+    },
+    "analysis_selection": {
+      "normalized_units": 5383,
+      "eligible_pool": 5300,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "Guillain-Barré syndrome": 25,
+        "Croup": 2,
+        "Pulmonary embolism": 191,
+        "Atrial fibrillation": 34,
+        "Acute pulmonary edema": 169,
+        "Myasthenia gravis": 1,
+        "Allergic sinusitis": 1,
+        "Tuberculosis": 47,
+        "Acute otitis media": 1,
+        "Acute dystonic reactions": 53,
+        "PSVT": 29,
+        "Possible NSTEMI / STEMI": 191,
+        "Acute COPD exacerbation / infection": 191,
+        "Anemia": 96,
+        "Chronic rhinosinusitis": 7,
+        "Pneumonia": 191,
+        "Bronchiectasis": 73,
+        "Pulmonary neoplasm": 191,
+        "Influenza": 45,
+        "Acute laryngitis": 5,
+        "Panic attack": 33,
+        "Pericarditis": 46,
+        "GERD": 26,
+        "Unstable angina": 162,
+        "Bronchospasm / acute asthma exacerbation": 22,
+        "Acute rhinosinusitis": 4,
+        "URTI": 191,
+        "Bronchitis": 191,
+        "Myocarditis": 22,
+        "Cluster headache": 3,
+        "HIV (initial infection)": 10,
+        "Viral pharyngitis": 48,
+        "Spontaneous pneumothorax": 190,
+        "Anaphylaxis": 7,
+        "SLE": 2
+      },
+      "source_roots_in_analysis": 2500
+    }
+  },
+  {
+    "resource_id": "M02",
+    "benchmark": "MedPIC-Bench",
+    "scope": "183 CF行及必要284 GF参照，不猜配对",
+    "primary_source": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+    "full_counts": {
+      "units": 183,
+      "labeled": 167,
+      "R1": 96,
+      "analysis_units": 183,
+      "analysis_labeled": 167,
+      "R2": 75,
+      "uncertain": 16,
+      "analysis_uncertain": 16,
+      "R3": 10
+    },
+    "analysis_selection": {
+      "normalized_units": 183,
+      "eligible_pool": 183,
+      "analysis_units": 183,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "official_cf_row_unpaired": 183
+      },
+      "source_roots_in_analysis": 0
+    }
+  },
+  {
+    "resource_id": "M03",
+    "benchmark": "MamaBench",
+    "scope": "妇幼原始/反事实诊断对，保留零样本协议",
+    "primary_source": "https://huggingface.co/datasets/HelpMum-Personal/MamaBench",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M04",
+    "benchmark": "肿瘤临床CF评测",
+    "scope": "发布的原病例/编辑病例/治疗决策单元",
+    "primary_source": "https://arxiv.org/html/2605.30590v1",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M05",
+    "benchmark": "临床检验因果推理评测",
+    "scope": "Counterfactual层及题内背景",
+    "primary_source": "https://github.com/balubhasuran/LLM_Causality_LabTest",
+    "full_counts": {
+      "units": 33,
+      "labeled": 30,
+      "R4": 30,
+      "analysis_units": 33,
+      "analysis_labeled": 30,
+      "uncertain": 3,
+      "analysis_uncertain": 3
+    },
+    "analysis_selection": {
+      "normalized_units": 33,
+      "eligible_pool": 33,
+      "analysis_units": 33,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "within_question_counterfactual": 33
+      },
+      "source_roots_in_analysis": 33
+    }
+  },
+  {
+    "resource_id": "M06",
+    "benchmark": "HIV治疗因果情景研究",
+    "scope": "反事实层治疗/交互/副作用情景",
+    "primary_source": "https://www.nature.com/articles/s41746-026-02771-7",
+    "full_counts": {
+      "units": 20,
+      "uncertain": 7,
+      "analysis_units": 20,
+      "analysis_uncertain": 7,
+      "labeled": 13,
+      "R4": 13,
+      "analysis_labeled": 13
+    },
+    "analysis_selection": {
+      "normalized_units": 20,
+      "eligible_pool": 20,
+      "analysis_units": 20,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "within_question_counterfactual": 20
+      },
+      "source_roots_in_analysis": 20
+    }
+  },
+  {
+    "resource_id": "M07",
+    "benchmark": "CLIR-Bench",
+    "scope": "关键证据和无关观测的官方CF编辑对及原时序",
+    "primary_source": "https://huggingface.co/datasets/winall/CLIR-Bench",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M08",
+    "benchmark": "ECG-Expert-QA",
+    "scope": "MCo Medical Counterfactual，不以MC/GRA代替",
+    "primary_source": "https://github.com/Zaozzz/ECG-Expert-QA",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M09",
+    "benchmark": "GenMedicalEval",
+    "scope": "医疗反事实栏目及原始评分要求",
+    "primary_source": "https://github.com/MediaBrain-SJTU/GenMedicalEval",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M10",
+    "benchmark": "CPV-MedQA",
+    "scope": "人口属性变体及对应原题",
+    "primary_source": "https://huggingface.co/datasets/kenza-ily/medqa-cpv",
+    "full_counts": {
+      "units": 10225,
+      "labeled": 1194,
+      "R5": 1193,
+      "analysis_units": 2500,
+      "analysis_labeled": 1111,
+      "uncertain": 9031,
+      "analysis_uncertain": 1389,
+      "R1": 1
+    },
+    "analysis_selection": {
+      "normalized_units": 10225,
+      "eligible_pool": 10225,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "White:1:0": 249,
+        "Asian:0:1": 249,
+        "Black:0:1": 249,
+        "Arab:1:0": 249,
+        "Hispanic:0:0": 3,
+        "Black:0:0": 3,
+        "Hispanic:0:1": 249,
+        "Hispanic:1:0": 248,
+        "Arab:0:0": 3,
+        "Black:1:0": 248,
+        "White:0:1": 248,
+        "White:0:0": 3,
+        "Asian:1:0": 248,
+        "Arab:0:1": 248,
+        "Asian:0:0": 3
+      },
+      "source_roots_in_analysis": 958
+    }
+  },
+  {
+    "resource_id": "M11",
+    "benchmark": "Counterfactual Cultural Cues",
+    "scope": "身份/背景/组合对照，未发布Neutral不补造",
+    "primary_source": "https://github.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs",
+    "full_counts": {
+      "units": 1349,
+      "labeled": 1174,
+      "R5": 1107,
+      "analysis_units": 1349,
+      "analysis_labeled": 1174,
+      "R1": 67,
+      "uncertain": 175,
+      "analysis_uncertain": 175
+    },
+    "analysis_selection": {
+      "normalized_units": 1349,
+      "eligible_pool": 1349,
+      "analysis_units": 1349,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "paired": 1349
+      },
+      "source_roots_in_analysis": 150
+    }
+  },
+  {
+    "resource_id": "M12",
+    "benchmark": "FairMedQA/AMQA",
+    "scope": "固定属性/背景攻击、原题和中性参照；同一工作去重",
+    "primary_source": "https://github.com/XY-Showing/AMQA",
+    "full_counts": {
+      "units": 4806,
+      "labeled": 4298,
+      "R5": 4164,
+      "analysis_units": 4806,
+      "analysis_labeled": 4298,
+      "R1": 134,
+      "uncertain": 508,
+      "analysis_uncertain": 508,
+      "R3": 43
+    },
+    "analysis_selection": {
+      "normalized_units": 4806,
+      "eligible_pool": 4806,
+      "analysis_units": 4806,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "released_evaluation": 4806
+      },
+      "source_roots_in_analysis": 801
+    }
+  },
+  {
+    "resource_id": "M13",
+    "benchmark": "MedEqualQA",
+    "scope": "同一临床信息条件内代词对照；消融不混配",
+    "primary_source": "https://aclanthology.org/2025.sciprodllm-1.4/",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M14",
+    "benchmark": "DiversityMedQA",
+    "scope": "官方筛选性别/族群变体及可追溯原题",
+    "primary_source": "https://aclanthology.org/2024.nlp4pi-1.29/",
+    "full_counts": {
+      "units": 6296,
+      "uncertain": 3599,
+      "labeled": 2697,
+      "R5": 2695,
+      "analysis_units": 2500,
+      "analysis_uncertain": 122,
+      "analysis_labeled": 2378,
+      "R2": 2
+    },
+    "analysis_selection": {
+      "normalized_units": 6296,
+      "eligible_pool": 6296,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "author_test": 1250,
+        "author_train": 1250
+      },
+      "source_roots_in_analysis": 1663
+    }
+  },
+  {
+    "resource_id": "M15",
+    "benchmark": "CLIMB",
+    "scope": "诊断任务人口属性CF干预，不含词关联测试",
+    "primary_source": "https://github.com/uscnlp-lime/climb",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M16",
+    "benchmark": "EquityMedQA",
+    "scope": "CC-Manual与CC-LLM，逐题区分应改/应保持",
+    "primary_source": "https://www.nature.com/articles/s41591-024-03258-2",
+    "full_counts": {
+      "units": 323,
+      "labeled": 302,
+      "R5": 267,
+      "analysis_units": 323,
+      "analysis_labeled": 302,
+      "R3": 62,
+      "R1": 101,
+      "uncertain": 21,
+      "analysis_uncertain": 21,
+      "R2": 11,
+      "R4": 10
+    },
+    "analysis_selection": {
+      "normalized_units": 323,
+      "eligible_pool": 323,
+      "analysis_units": 323,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "CC-Manual": 123,
+        "CC-LLM": 200
+      },
+      "source_roots_in_analysis": 0
+    }
+  },
+  {
+    "resource_id": "M17",
+    "benchmark": "MedPerturb",
+    "scope": "gender_swap/gender_removal及对应原病例",
+    "primary_source": "https://huggingface.co/datasets/abinitha/MedPerturb",
+    "full_counts": {
+      "units": 3759,
+      "labeled": 3615,
+      "R5": 3615,
+      "analysis_units": 3745,
+      "analysis_labeled": 3615,
+      "uncertain": 144,
+      "analysis_uncertain": 130
+    },
+    "analysis_selection": {
+      "normalized_units": 3759,
+      "eligible_pool": 3745,
+      "analysis_units": 3745,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "paired_variant": 3745
+      },
+      "source_roots_in_analysis": 1880
+    }
+  },
+  {
+    "resource_id": "M18",
+    "benchmark": "DeVisE",
+    "scope": "官方单变量人口属性/生命体征记录及原文/模板",
+    "primary_source": "https://github.com/camztag/DeVisE",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M19",
+    "benchmark": "MedFuzz",
+    "scope": "已发布固定且改变患者背景的攻击病例",
+    "primary_source": "https://arxiv.org/html/2406.06573v2",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M20",
+    "benchmark": "MedCounterFact",
+    "scope": "原始/替换比较题及完整对应RCT证据",
+    "primary_source": "https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence",
+    "full_counts": {
+      "units": 809,
+      "labeled": 788,
+      "R1": 788,
+      "R5": 703,
+      "analysis_units": 809,
+      "analysis_labeled": 788,
+      "uncertain": 21,
+      "analysis_uncertain": 21
+    },
+    "analysis_selection": {
+      "normalized_units": 809,
+      "eligible_pool": 809,
+      "analysis_units": 809,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "evidence_pair": 809
+      },
+      "source_roots_in_analysis": 203
+    }
+  },
+  {
+    "resource_id": "M21",
+    "benchmark": "MediEval",
+    "scope": "CF医学陈述、患者上下文和事实参照；保留双重判断",
+    "primary_source": "https://github.com/ZhanQu945/MediEval",
+    "full_counts": {},
+    "analysis_selection": {}
+  },
+  {
+    "resource_id": "M22",
+    "benchmark": "MedRGB",
+    "scope": "Robustness错误子答案/改写证据及清洁对照",
+    "primary_source": "https://arxiv.org/html/2411.09213",
+    "full_counts": {
+      "units": 3680,
+      "labeled": 3680,
+      "R5": 3680,
+      "analysis_units": 3680,
+      "analysis_labeled": 3680
+    },
+    "analysis_selection": {
+      "normalized_units": 3680,
+      "eligible_pool": 3680,
+      "analysis_units": 3680,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "bioasq": 618,
+        "medlfqa": 200,
+        "medqa": 1273,
+        "mmlu": 1089,
+        "pubmedqa": 500
+      },
+      "source_roots_in_analysis": 3680
+    }
+  },
+  {
+    "resource_id": "M23",
+    "benchmark": "BioRAB",
+    "scope": "Counterfactual Robustness错误标注演示及清洁对照",
+    "primary_source": "https://arxiv.org/html/2405.08151v3",
+    "full_counts": {
+      "units": 12615,
+      "labeled": 12614,
+      "R5": 12614,
+      "analysis_units": 2500,
+      "analysis_labeled": 2499,
+      "uncertain": 1,
+      "analysis_uncertain": 1
+    },
+    "analysis_selection": {
+      "normalized_units": 12615,
+      "eligible_pool": 12615,
+      "analysis_units": 2500,
+      "mode": "2500_from_at_least_5000_stratified_root_round_robin",
+      "sampling_strata": {
+        "BioNLI": 2500
+      },
+      "source_roots_in_analysis": 2500
+    }
+  },
+  {
+    "resource_id": "M24",
+    "benchmark": "MedCF",
+    "scope": "MedLaSA事实编辑、重述和locality测试",
+    "primary_source": "https://github.com/quqxui/MedLaSA",
+    "full_counts": {
+      "units": 4013,
+      "labeled": 4012,
+      "R5": 4012,
+      "analysis_units": 798,
+      "analysis_labeled": 797,
+      "uncertain": 1,
+      "analysis_uncertain": 1
+    },
+    "analysis_selection": {
+      "normalized_units": 4013,
+      "eligible_pool": 798,
+      "analysis_units": 798,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "test": 798
+      },
+      "source_roots_in_analysis": 798
+    }
+  },
+  {
+    "resource_id": "M25",
+    "benchmark": "MedMKEB",
+    "scope": "医学多模态反事实编辑目标及相关/无关测试",
+    "primary_source": "https://arxiv.org/html/2508.05083v1",
+    "full_counts": {
+      "units": 2497,
+      "labeled": 2497,
+      "R4": 86,
+      "R5": 2496,
+      "analysis_units": 2497,
+      "analysis_labeled": 2497
+    },
+    "analysis_selection": {
+      "normalized_units": 2497,
+      "eligible_pool": 2497,
+      "analysis_units": 2497,
+      "mode": "all_eligible_under_5000",
+      "sampling_strata": {
+        "eval": 2497
+      },
+      "source_roots_in_analysis": 2497
+    }
+  },
+  {
+    "resource_id": "M26",
+    "benchmark": "COLLECT",
+    "scope": "口腔病灶原图与受控编辑图",
+    "primary_source": "https://doi.org/10.5683/SP3/KXYCNY",
+    "full_counts": {},
+    "analysis_selection": {}
+  }
+]

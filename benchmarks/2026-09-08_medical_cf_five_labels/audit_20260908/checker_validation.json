@@ -1,0 +1,17 @@
+{
+  "self_test_command": "/home/data3/txy/MedRGAG/.venv/bin/python medical_cf_collection/scripts/audit_collection.py --self-test",
+  "self_test_exit_code": 0,
+  "independent_mutation_review": "origin_b/auditor_review_checks.json",
+  "review_discovered_adapter_issue": "M25 original file could be attributed to M24 because the adapter did not bind the file manifest resource_id to the unit resource_id.",
+  "resolution": "Added entry.resource_id == unit.resource_id before selecting an adapter.",
+  "post_fix_actual_mutation_result": {
+    "resource_id": "M24",
+    "unit_id": "M25:eval:0",
+    "role": "unit",
+    "status": "unverified",
+    "reason": "Official file belongs to a different benchmark: M25"
+  },
+  "current_collection_cross_resource_mismatch_found": false,
+  "classification_mutation_checks": "classification/checker_validation.json",
+  "source_data_or_labels_modified": false
+}

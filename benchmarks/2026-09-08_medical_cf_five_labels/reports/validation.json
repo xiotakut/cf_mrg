@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "complete_comparison_records": 55991,
+  "analysis_comparison_records": 28243,
+  "resource_entries": 26,
+  "source_files_exist": 24,
+  "root_references_resolved": 6144,
+  "previous_inputs_accounted": 25280,
+  "saved_unique_predictions_accounted": 75840,
+  "native_and_sensitivity_evaluation_rows_reused": 82131,
+  "complete_and_analysis_export_ids_consistent": true,
+  "frozen_labels_preserved": true,
+  "sampling_uses_predictions_or_labels": false,
+  "new_model_calls": 0,
+  "clinical_expert_validation": false,
+  "per_target_annotation_methods_scope": "complete_corpus_including_nonselected",
+  "per_target_annotation_methods": {
+    "semantic_group_review": 27679,
+    "item_reviewed": 7,
+    "structural_verification": 52248,
+    "semantic_item_review": 983,
+    "rule_grounded": 13589,
+    "pending_review": 6641
+  },
+  "review_target_export_rows": 80910,
+  "unclassified_parent_export_rows": 4051,
+  "source_rule_audits": [
+    "parts/clinical_existing/full_rule_review.json",
+    "parts/clinical_existing/cross_rule_review.json",
+    "parts/evidence_other/full_rule_audit.json",
+    "parts/new_clinical/full_validation.json"
+  ],
+  "reviewed_analysis_units": 28243,
+  "analysis_ids_and_order_unchanged": true,
+  "native_source_payloads_unchanged": true,
+  "all_reviewed_parent_labels_equal_child_union": true,
+  "note": "Structural/source coverage validation. Semantic item review, semantic group review and structural verification remain distinct; source gold is not promoted to clinical expert validation."
+}

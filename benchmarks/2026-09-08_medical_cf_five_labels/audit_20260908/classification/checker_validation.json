@@ -1,0 +1,33 @@
+{
+  "parent_union_mutation_detected": true,
+  "missing_target_detected": true,
+  "missing_semantic_exit_code": 3,
+  "missing_semantic_status": "incomplete",
+  "normal_status": "issues_found",
+  "normal_semantic_judgments": 187,
+  "normal_stale_reviews": 0,
+  "source_or_labels_modified": false,
+  "post_correction_validation": {
+    "missing_correction_reviews": {
+      "exit_code": 3,
+      "status": "incomplete",
+      "missing": 172
+    },
+    "tampered_annotation_and_source_snapshots": {
+      "exit_code": 3,
+      "status": "incomplete",
+      "invalid_reviews": [
+        "M01:case_100871:review_target_1",
+        "M01:case_101010:review_target_1"
+      ]
+    },
+    "missing_scoring_exclusion_reason_detected": true,
+    "normal_final_review": {
+      "structure_errors": 0,
+      "reviewed": 172,
+      "remaining_label_problems": 0,
+      "gold_scoring_exclusions": 11,
+      "stale": 0
+    }
+  }
+}
