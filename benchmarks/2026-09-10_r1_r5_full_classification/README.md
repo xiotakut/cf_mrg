@@ -1,4 +1,6 @@
-# R1–R5 全量补分类与资格整理（2026-09-10）
+# R1–R5 benchmark v4（2026-09-10）
+
+正式版本名为 **v4**，本地目录为 `benchmark_r1_r5_v4_20260910`。分类与资格已完成；模型运行接口兼容性尚未验证。
 
 本轮补分类与资格整理已完成，待处理为 **0**。分类沿用[原规则和示例](../2026-09-10_r1_r5_full_coverage_plan/README.md)，保留 v3 及已完成 M0–M3 结果。历史抽样及版本形成过程见[流程说明](../2026-09-10_r1_r5_process_history/README.md)。
 
@@ -33,7 +35,7 @@ RESOURCE 位于已有比较单元上，不能与前两行相加。全母库 55,9
 此发布包含说明、聚合统计和图表。完整原文、逐目标标注及资格保留在服务器：
 
 ```text
-/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/
+/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/
   DELIVERY.md
   exports/all_reviewed_target_annotations.jsonl.gz
   exports/archive_unit_coverage.csv
@@ -46,3 +48,19 @@ RESOURCE 位于已有比较单元上，不能与前两行相加。全母库 55,9
 必要缺失多模态输入、原题/参考问题、无法固定评分及原生任务协议不适用均有明确处置；没有按数量再次抽样。MedEinst 使用既有开放诊断归一化精确匹配，其局限不等同人工语义评分；MedCF 所需知识编辑步骤未执行，不能用普通问答代替。原始参考未声称得到临床专家独立验收。
 
 本轮没有生成新版独立模型输入/评分映射运行包，也没有运行新版 M0–M3 评测。v3 仍是最近完成四方法评测的冻结版本。来源明细里的本地路径及代码格式文件名用于服务器追溯，未全部打包至本发布目录。
+
+## v4 当前分类
+
+按完整语义多标签统计，类别可重叠；合格单元去重总数为38,123。
+
+| 类别 | 有标签单元 | 有合格目标的单元 | 合格具体判断 |
+|---|---:|---:|---:|
+| R1 | 2967 | 2866 | 4155 |
+| R2 | 90 | 79 | 79 |
+| R3 | 795 | 733 | 733 |
+| R4 | 139 | 13 | 13 |
+| R5 | 40003 | 35872 | 74268 |
+
+![v4 当前分类](figures/v4_category_distribution.png)
+
+[分类统计CSV](v4_category_summary.csv) · [分类图PDF](figures/v4_category_distribution.pdf)

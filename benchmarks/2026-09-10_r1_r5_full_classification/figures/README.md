@@ -34,3 +34,7 @@
 | M22 MedRGB | 3680 | 3423 | 257 | 0 |
 | M23 BioRAB | 2499 | 2496 | 3 | 0 |
 | M24 MedCF | 797 | 0 | 797 | 0 |
+
+## v4 总分类
+
+[PNG](v4_category_distribution.png) · [PDF](v4_category_distribution.pdf)。按全部目标汇总父单元语义多标签并集，每类别内按unit_id去重；资格只取该类别存在合格目标的单元。

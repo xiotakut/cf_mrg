@@ -13,9 +13,9 @@
 10 个新查明的实际无变化控制采用独立资格修正文件；旧标签、理由、证据与原始记录保留。需要缺失多模态输入的目标禁用，未再次随机抽样。v3 及既有结果保留。新版尚未生成模型输入/评分映射运行包，也未完成新的 M0–M3 评测。
 
 - [GitHub 完成说明、来源统计与图表](https://github.com/xiotakut/cf_mrg/tree/main/benchmarks/2026-09-10_r1_r5_full_classification/README.md)
-- 本地交付说明：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/DELIVERY.md`
-- 最终逐目标标注与资格：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/exports/all_reviewed_target_annotations.jsonl.gz`
-- 全母库去向：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/exports/archive_unit_coverage.csv`
+- 本地交付说明：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/DELIVERY.md`
+- 最终逐目标标注与资格：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/exports/all_reviewed_target_annotations.jsonl.gz`
+- 全母库去向：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/exports/archive_unit_coverage.csv`
 - 本地来源/排除说明、图表和覆盖检查分别见同目录 `source_scope_inventory.md`、`figures/README.md`、`completion_audit.json`。
 
 第 11 节保留本轮执行范围与要求，后续对话应读取上述完成文件，按已有 ID 复用结果。
