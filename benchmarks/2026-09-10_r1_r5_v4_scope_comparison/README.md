@@ -169,3 +169,5 @@ R2保持79、R4保持13；R1减少990、R3减少43、R5减少30,225。保留的R
 本地权威目录：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910`。读取 `exports/all_reviewed_target_annotations.jsonl.gz` 与 `exports/archive_unit_coverage.csv`；来源及原件定位见 `source_scope_inventory.csv`。旧无变化控制资格覆盖已经包含在最终导出中。
 
 `build_report.py`保留复算过程；在本地 v4 的 `reports/two_scenarios/` 下，用已有Matplotlib环境运行。本GitHub目录只发布说明、汇总和图表，不发布完整病例正文。
+
+**后续决定：** 用户未采用整来源排除方案，而是完整保留v4并选择八来源各随机450个R5单元，详见[v5与完整探索记录](../2026-09-10_r1_r5_v5/README.md)。

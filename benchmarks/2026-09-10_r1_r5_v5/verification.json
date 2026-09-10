@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "method": "reproduce seeded random.sample from complete published frame; compare all v5 target records field-by-field to v4",
+  "seed_reproduced": true,
+  "pool_membership_exact": true,
+  "per_source_samples": {
+    "M10": 450,
+    "M11": 450,
+    "M12": 450,
+    "M14": 450,
+    "M17": 450,
+    "M20": 450,
+    "M22": 450,
+    "M23": 450
+  },
+  "r5_selected_units": 3600,
+  "all_v4_target_records_preserved": 109599,
+  "original_semantic_fields_preserved": true,
+  "all_eligible_r1_r4_judgments_preserved": {
+    "R1": 4155,
+    "R2": 79,
+    "R3": 733,
+    "R4": 13
+  },
+  "adopted_units": 6104,
+  "adopted_targets": 13000,
+  "no_ineligible_target_selected": true,
+  "note": "Correct random procedure and exact replay, not a claim that a random sample must look balanced by every clinical feature."
+}
