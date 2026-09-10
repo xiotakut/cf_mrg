@@ -64,3 +64,7 @@ RESOURCE 位于已有比较单元上，不能与前两行相加。全母库 55,9
 ![v4 当前分类](figures/v4_category_distribution.png)
 
 [分类统计CSV](v4_category_summary.csv) · [分类图PDF](figures/v4_category_distribution.pdf)
+
+## 两种范围方案对比
+
+[当前v4与排除七来源方案的完整图表、逐来源采用数量及未采用原因](../2026-09-10_r1_r5_v4_scope_comparison/README.md)。第二种方案仅为预览。
