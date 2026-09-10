@@ -4,7 +4,21 @@
 
 本指南依据用户 09-08 会话中提供的 09-07 分类方案、[原分类说明][definitions]、[已审具体判断][judgments]及[后续纠错记录][corrections]整理。正文先说明怎样判断 R1–R5，再说明补分类范围和文件位置。“定义示例”来自原方案或其抽象表达，用来解释规则，不能加入 benchmark；“已审实例”带原始 ID，反映留存的具体裁决。
 
-当前 v3 的 3,105 个单元及全部已有结果保留。后续扩充另建版本，取消因数量而抽样、限制 R5 来源或砍掉 R5 的做法；有明确内容、分类或评分问题的项目仍按证据处置。本文交付的是分类指南，尚未执行本轮补分类。
+当前 v3 的 3,105 个单元及全部已有结果保留。后续扩充另建版本，取消因数量而抽样、限制 R5 来源或砍掉 R5 的做法；有明确内容、分类或评分问题的项目仍按证据处置。本轮补分类与资格整理现已完成，详见下方交付入口；新版评测尚未执行。
+
+## 本轮完成状态与新文件入口（2026-09-10）
+
+24,436 个抽样遗漏单元全部处置，其中 18,023 个可测；18,238 个旧 R5 单元复用原标注，其中既有目标恢复资格 16,972 个单元。另补判已有单元上的 3,615 个 RESOURCE 目标，其中 3,529 个可测，不能与单元数相加。全母库 55,991 个单元均有去向，最终 38,123 个单元至少有一个合格目标，共 77,781 个合格具体判断。
+
+10 个新查明的实际无变化控制采用独立资格修正文件；旧标签、理由、证据与原始记录保留。需要缺失多模态输入的目标禁用，未再次随机抽样。v3 及既有结果保留。新版尚未生成模型输入/评分映射运行包，也未完成新的 M0–M3 评测。
+
+- [GitHub 完成说明、来源统计与图表](https://github.com/xiotakut/cf_mrg/tree/main/benchmarks/2026-09-10_r1_r5_full_classification/README.md)
+- 本地交付说明：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/DELIVERY.md`
+- 最终逐目标标注与资格：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/exports/all_reviewed_target_annotations.jsonl.gz`
+- 全母库去向：`/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/r1_r5_full_classification_20260910/exports/archive_unit_coverage.csv`
+- 本地来源/排除说明、图表和覆盖检查分别见同目录 `source_scope_inventory.md`、`figures/README.md`、`completion_audit.json`。
+
+第 11 节保留本轮执行范围与要求，后续对话应读取上述完成文件，按已有 ID 复用结果。
 
 ## 1. 原来确定的五类定义
 
