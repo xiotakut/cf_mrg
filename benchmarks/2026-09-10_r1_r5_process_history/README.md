@@ -361,3 +361,5 @@ results_r1_r5_v3_m3_20260909/                     M3 与四方法结果
 各版本的 `README.md`、`manifest.json` / `plan.json`、`units.jsonl`、`coverage.jsonl`、`evaluation.jsonl`、来源/类别 CSV 和结果文件可用于追溯。纯标签或范围重组应读取已存结果；完整来源扩充、实际输入变更或方法变更则属于新的评测工作。
 
 后续随机评测子集已另建为[v5](../2026-09-10_r1_r5_v5/README.md)，整来源排除、比例配额和五轮论证至最终授权的过程见[v5探索记录](../2026-09-10_r1_r5_v5/EXPLORATION_HISTORY.md)。
+
+面向论文写作及接手的[工作与具体调整总记录](https://github.com/xiotakut/cf_mrg/blob/main/benchmarks/2026-09-13_r1_r5_paper_work_record/README.md)，汇总v3→v4→v5过程、修改台账、验证边界及后续交接。

@@ -70,3 +70,5 @@ RESOURCE 位于已有比较单元上，不能与前两行相加。全母库 55,9
 [当前v4与排除七来源方案的完整图表、逐来源采用数量及未采用原因](../2026-09-10_r1_r5_v4_scope_comparison/README.md)。第二种方案仅为预览。
 
 后续已建立 [v5随机选择及探索记录](../2026-09-10_r1_r5_v5/README.md)：保留完整v4，R5每来源随机450。
+
+面向论文写作及接手的[工作与具体调整总记录](https://github.com/xiotakut/cf_mrg/blob/main/benchmarks/2026-09-13_r1_r5_paper_work_record/README.md)，汇总v3→v4→v5过程、修改台账、验证边界及后续交接。

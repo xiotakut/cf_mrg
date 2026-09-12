@@ -281,3 +281,7 @@ v3 本地目录：
 [changes]: https://github.com/xiotakut/cf_mrg/blob/main/benchmarks/2026-09-08_medical_cf_five_labels/audit_20260908/corrections/修改明细.csv
 [selection]: https://github.com/xiotakut/cf_mrg/blob/main/benchmarks/2026-09-08_medical_cf_five_labels/reports/analysis_selection.json
 [history]: https://github.com/xiotakut/cf_mrg/blob/main/benchmarks/2026-09-10_r1_r5_process_history/README.md
+
+## 论文写作与调整追溯（2026-09-13）
+
+[工作与具体调整总记录](https://github.com/xiotakut/cf_mrg/blob/main/benchmarks/2026-09-13_r1_r5_paper_work_record/README.md)汇总本线程的版本形成、分类/资格修改、随机抽样、验证证据和Methods草稿；本地为 `/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/paper_work_record_20260913/README.md`。旧分类与抽样冻结记录保持不变，后续运行状态在总记录中单列。
