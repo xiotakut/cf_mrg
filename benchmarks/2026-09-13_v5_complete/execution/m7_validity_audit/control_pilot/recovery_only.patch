@@ -1,0 +1,59 @@
+--- a/code/methods.py
++++ b/code/methods.py
+@@ -4,7 +4,7 @@
+ import math
+ import re
+ from concurrent.futures import ThreadPoolExecutor
+-from common import question_text, json_object, valid_answer, visible
++from common import question_text, json_object, valid_answer, visible, answer_contract
+ from runtime import RequestFailure
+ 
+ IMED_SYSTEM = 'You are a helpful medical assistant, and your task is to answer the given question following the instructions given by the user. '
+@@ -242,9 +242,13 @@
+     stack = [dict(kind='question', text=question_text(item), state=100000.0)]
+     state, issues = 100000.0, []
+     backtracks = summaries = retrievals = 0
++    feedback = ""
+     for step in range(config['max_loop']):
+         before, prior_state = list(stack), state
+         prompt = '\n\n'.join(e['kind'].title() + ': ' + e['text'] for e in stack)
++        if feedback:
++            prompt += '\n\nOutput error: ' + feedback
++            session.event('tc_exception_feedback', step=step, text=feedback)
+         response = session.call(f'action/{step}', messages(TC_SYSTEM, prompt), entropy=True)
+         action_text = response['text']
+         # Upstream process_no_regular_output treats unlabelled text as a final
+@@ -258,7 +262,12 @@
+             kind, value, thought = parse_action(action_text)
+         except ValueError as e:
+             session.event('tc_parse_failed', step=step, error=str(e), stack_before=before)
+-            return dict(raw_response=response['text'], status='invalid', termination='action_parse_failed', issues=[str(e)], steps=step + 1)
++            issues.append(dict(step=step, status='action_parse_failed', error=str(e)))
++            feedback = ('Your previous response could not be parsed: ' + str(e)
++                        + '. Return a valid supported action. A DOC_RAG call requires both Action: DOC_RAG '
++                        + 'and Action Input: {"query": "your query"}. No tool was executed for the malformed response.')
++            continue
++        feedback = ""
+         signal = state_signal(response) if kind in ('thought', 'final answer') or thought else None
+         removed, accepted, rejected = [], False, None
+         if kind in ('backtrack', 'summary'):
+@@ -300,6 +309,19 @@
+         if accepted:
+             answer = final_json(value, session, f'action/{step}')
+             error = valid_answer(answer, item)
++            if error and step + 1 < config['max_loop']:
++                issues.append(dict(step=step, status='accepted_output_invalid', error=error))
++                stack[-1]['kind'] = 'thought'
++                feedback = ('Your final output could not be validated: ' + error
++                            + '. Preserve your chosen answer and correct its format. Return Final Answer: followed by JSON. '
++                            + 'The answer field must contain ' + answer_contract(item) + '.')
++                if item['options']:
++                    feedback += ' Allowed option keys: ' + json.dumps(list(item['options'])) + '.'
++                if item['answer_format'] == 'robustness_single':
++                    feedback += ' Include the required errors array based on the supplied documents, using their exact D-numbered IDs.'
++                session.event('tc_invalid_output_continued', step=step, error=error,
++                              remaining_turns=config['max_loop']-step-1, stack_after=list(stack))
++                continue
+             return dict(raw_response=answer, status='invalid' if error else 'ok', termination='accepted',
+                         answer_error=error, issues=issues, steps=step + 1,
+                         backtracks=backtracks, summaries=summaries, retrievals=retrievals)

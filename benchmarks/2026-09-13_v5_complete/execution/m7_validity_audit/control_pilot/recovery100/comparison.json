@@ -1,0 +1,55 @@
+{
+  "N": 100,
+  "summary": {
+    "original": {
+      "protocol_ok": 61,
+      "mapped_records": 105,
+      "native_valid": 49,
+      "native_correct": 33,
+      "original_ok_mapped_records": 63,
+      "original_ok_native_correct": 33,
+      "original_ok_native_valid": 49
+    },
+    "candidate": {
+      "protocol_ok": 77,
+      "mapped_records": 105,
+      "native_valid": 68,
+      "native_correct": 51,
+      "original_ok_mapped_records": 63,
+      "original_ok_native_correct": 33,
+      "original_ok_native_valid": 49
+    }
+  },
+  "strata": {
+    "original_ok": {
+      "N": 61,
+      "original_ok": 61,
+      "candidate_ok": 61
+    },
+    "accepted": {
+      "N": 24,
+      "original_ok": 0,
+      "candidate_ok": 16
+    },
+    "budget_exhausted": {
+      "N": 12,
+      "original_ok": 0,
+      "candidate_ok": 0
+    },
+    "action_parse_failed": {
+      "N": 3,
+      "original_ok": 0,
+      "candidate_ok": 0
+    }
+  },
+  "original_valid_answer_changes": [],
+  "gate_checks": 262,
+  "raw_entropy_and_gate_consistent": true,
+  "new_llm": 34,
+  "inherited_receipts": 795,
+  "invalid_reasons": {
+    "budget_exhausted": 15,
+    "invalid_option_key": 8
+  },
+  "note": "Native scoring uses all mappings, including references; not v5 category/unit accuracy. Correctness labels are read only after generation. Prompt changes can change answers and are not token-equivalent."
+}
