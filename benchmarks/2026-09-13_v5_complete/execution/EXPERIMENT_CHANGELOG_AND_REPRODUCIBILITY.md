@@ -707,3 +707,22 @@ python3 m7_validity_audit/control_pilot/test_typed.py
 
 
 第18节候选制品：[计数](m7_validity_audit/repair_comparison.json)、[转换代码](m7_validity_audit/normalize_accepted.py)、[验证脚本](m7_validity_audit/check_repair.py)、[接入补丁](m7_validity_audit/methods.integration.patch)。
+
+### 原论文有效率口径核查与 TC-RAG 异常恢复依据补充（2026-09-13）
+
+本次核对以下版本的正文、实验指标与附录，未找到与本地协议有效率、原生有效率或严格JSON/Schema有效率口径相同的单独数值报告；这不是断言作者输出全为有效，也不意味着论文使用本地严格JSON/诊断映射协议。
+
+| 本地方法 | 原论文及位置 | 报告内容与相关说明 |
+|---|---|---|
+| M0/M1 | 本项目直接回答/检索对照 | 不是各自独立原论文方法；本地有效率属于本项目诊断统计 |
+| M2 MedRGAG | [2510.18297v1](https://arxiv.org/html/2510.18297v1)，§4与附录D | 主要指标为accuracy；附录有要求JSON的回答模板，但未见解析成功率或本地原生有效率的独立数值 |
+| M3 Multi-Round Agentic RAG | [2603.03292v1](https://arxiv.org/html/2603.03292v1)，§4.1及附录 | 主要报告七个医学基准accuracy，另有成本及候选排序分析；未见同口径无效终态比例。勿与同名Multi-Agent Retrieval-Augmented Generation论文混淆 |
+| M4/M5 MedRAG | [ACL Findings 2024.372](https://aclanthology.org/2024.findings-acl.372/)，主表与限制 | 报告MIRAGE选择题准确率；并非本地多题型v5以及修复M4的生成协议，未见单独JSON/Schema有效率 |
+| M6 i-MedRAG | [2408.00727v3](https://arxiv.org/html/2408.00727v3)，实验结果 | 主要报告MedQA/MMLU-Med等准确率，未见formatter成功率或本地原生有效率的独立统计 |
+| M7 TC-RAG | [2408.09199v3](https://arxiv.org/html/2408.09199v3)，§6.1、§8.7.5、§8.9 | 选择题使用EM，开放QA使用BLEU/ROUGE等，扩展任务有EM/F1；§8.9明确讨论格式错误与解析重试，但没有报告本地定义的有效率百分比 |
+
+**补充并纠正此前依据遗漏：** TC-RAG的[§8.9](https://arxiv.org/html/2408.09199v3)明确写出两类异常处理：先用正则/模板等方式提取可用组件，仍解析失败则通过循环与异常捕获让模型重新生成，直到可解析或达到预定上限。此前本地parse_action失败立即结束整题，未完整体现论文说明的恢复机制；第19节补齐失败后恢复有直接论文依据，应该优先定位为复现/适配缺口修复。该段没有给出足以与本地实现逐项对齐的重试次数及预算细分，因此不能断言我们的具体反馈提示、原8步内扣预算规则、临近末轮提示和格式纠错实现逐项等同作者实现，也不能据此声称100%有效保证。
+
+TC-RAG附录的有限时间收敛讨论依赖动作有效性与状态下降等假设，不等于实测有限8步内全部完成。EM/accuracy未单列失败原因也不能反推出作者的JSON成功率；开放QA的BLEU/ROUGE更不要求进入我们使用的冻结诊断canonical映射。因此论文里的高准确率或收敛结论均不能直接证明本地原生有效率应为100%。
+
+本项目可把这些比例作为跨题型适配的补充诊断指标，明确分母与失败定义；引用原论文accuracy/EM作为原实验结果时，不改称“原生有效率”。本次为文献核查及现有记录补充，无新增推理、无运行代码修改。
