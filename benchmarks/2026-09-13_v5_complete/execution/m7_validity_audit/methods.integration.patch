@@ -1,0 +1,31 @@
+--- a/code/methods.py
++++ b/code/methods.py
+@@ -6,6 +6,7 @@
+ from concurrent.futures import ThreadPoolExecutor
+ from common import question_text, json_object, valid_answer, visible
+ from runtime import RequestFailure
++from normalize_accepted import normalize_accepted
+ 
+ IMED_SYSTEM = 'You are a helpful medical assistant, and your task is to answer the given question following the instructions given by the user. '
+ ASK = 'Please first analyze all the information in a section named Analysis (## Analysis). Then, use key terms from previous answers to form specific and direct questions. Generate {} concise, context-specific queries to search for additional information in an external knowledge base, in a section named Queries (## Queries). Each query should be simple and focused, directly relating to the key terms used in the answers. Wait for responses from the user before proceeding.'
+@@ -300,9 +301,17 @@
+         if accepted:
+             answer = final_json(value, session, f'action/{step}')
+             error = valid_answer(answer, item)
+-            return dict(raw_response=answer, status='invalid' if error else 'ok', termination='accepted',
+-                        answer_error=error, issues=issues, steps=step + 1,
+-                        backtracks=backtracks, summaries=summaries, retrievals=retrievals)
++            result = dict(raw_response=answer, status='invalid' if error else 'ok', termination='accepted',
++                          answer_error=error, issues=issues, steps=step + 1,
++                          backtracks=backtracks, summaries=summaries, retrievals=retrievals)
++            normalized, rule = normalize_accepted(result, item)
++            if rule:
++                session.event('tc_accepted_output_normalized', step=step, rule=rule,
++                              raw_response=answer, normalized_response=normalized, llm_calls=0)
++                error = valid_answer(normalized, item)
++                result.update(raw_response=normalized, answer_error=error,
++                              status='invalid' if error else 'ok')
++            return result
+     # Keep the actual returned stack top, but never score an Observation or a
+     # rejected Thought as an accepted final answer. No post-budget generation.
+     return dict(raw_response=stack[-1]['text'], status='invalid', termination='budget_exhausted',

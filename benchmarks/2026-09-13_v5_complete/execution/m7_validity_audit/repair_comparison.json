@@ -1,0 +1,27 @@
+{
+  "N": 1646,
+  "counts": {
+    "original_valid": 1026,
+    "repaired_valid": 1281,
+    "newly_valid": 255
+  },
+  "rules": {
+    "key_plus_exact_option_text": 206,
+    "key_plus_period": 52,
+    "bare_exact_key": 2
+  },
+  "remaining": {
+    "budget_exhausted": 272,
+    "action_parse_failed": 54,
+    "invalid_errors": 17,
+    "invalid_option_key": 20,
+    "invalid_document_ids": 2
+  },
+  "original_valid_pct": 62.33292831105711,
+  "repaired_valid_pct": 77.82503037667071,
+  "all_original_valid_unchanged": true,
+  "all_unaccepted_unchanged": true,
+  "choice_identity_and_other_fields_preserved": true,
+  "llm_requests": 0,
+  "scope": "Offline candidate on the existing paused sample; protocol validity, not accuracy or full-v5 generalization. No live code or original terminals modified."
+}
