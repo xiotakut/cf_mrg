@@ -36,7 +36,7 @@ R1–R5 存在重叠；ALL 对 6,104 个唯一单元去重计算。R3 的 733 �
 | M4 | MedRAG / Llama-3.1-8B | 明确输出契约＋JSON Schema/xgrammar 修复，全量重新生成 |
 | M5 | MedRAG / Qwen3-8B | 原正式协议全量完成 |
 | M6 | i-MedRAG | 52 条暂停；确定性 formatter 转换已验证，候选补丁未部署 |
-| M7 | TC-RAG | 1,646 条暂停：1,026 有效、620 无效、0 运行失败 |
+| M7 | TC-RAG | 原全量暂停于 1,646 条；控制流程修复在 100 题开发复验中达到 99% 协议有效率，尚未全量部署 |
 
 M4 在相同输入上，格式有效率 **61.41% → 99.09%**，原生有效率 **43.92% → 79.42%**，ALL 准确率 **29.76% → 48.20%**。旧预测完整保留。两项有效率以 13,905 个唯一输入计数，均不同于正确率。[完整修复报告](benchmarks/2026-09-13_v5_complete/completion/results_v5_m4_structured/RESULTS.md)
 
@@ -54,6 +54,8 @@ M4 在相同输入上，格式有效率 **61.41% → 99.09%**，原生有效率 
 | 查看 M4 / M6 / M7 有效率问题 | [M4 全量修复](benchmarks/2026-09-13_v5_complete/completion/results_v5_m4_structured/README.md)、[M6 formatter](benchmarks/2026-09-13_v5_complete/execution/m6_formatter_pilot/README.md)、[M7 审计](benchmarks/2026-09-13_v5_complete/execution/m7_validity_audit/README.md) |
 | 复查 M6/M7 上游兼容与吞吐尝试 | [论文复现记录](benchmarks/2026-09-13_v5_complete/m6_m7_implementation/PAPER_REPRODUCTION_RECORD.md)、[正式运行历史](benchmarks/2026-09-13_v5_complete/completion/results_v5_m6_m7/formal_balanced/README.md) |
 | 追溯旧版结果及早期研究 | [Benchmark 归档](benchmarks/README.md)、[旧首页完整保留](README_HISTORY.md) |
+
+M7 后续控制流程修复及真实续跑见[原实施记录第19节](benchmarks/2026-09-13_v5_complete/execution/EXPERIMENT_CHANGELOG_AND_REPRODUCIBILITY.md)：100题原61有效→修复99有效，原8步与熵阈值保持；3个原有效答案值改变，不宣称输出等价或全库99%。
 
 ## 当前研究重点
 

@@ -1,0 +1,51 @@
+{
+  "N": 20,
+  "summary": {
+    "original": {
+      "protocol_ok": 4,
+      "mapped_records": 25,
+      "native_valid": 3,
+      "native_correct": 1
+    },
+    "candidate": {
+      "protocol_ok": 20,
+      "mapped_records": 25,
+      "native_valid": 21,
+      "native_correct": 12
+    }
+  },
+  "strata": {
+    "original_ok": {
+      "N": 4,
+      "original_ok": 4,
+      "candidate_ok": 4
+    },
+    "entropy_threshold": {
+      "N": 2,
+      "original_ok": 0,
+      "candidate_ok": 2
+    },
+    "action_parse_failed": {
+      "N": 8,
+      "original_ok": 0,
+      "candidate_ok": 8
+    },
+    "no_final_proposal": {
+      "N": 4,
+      "original_ok": 0,
+      "candidate_ok": 4
+    },
+    "minimum_steps": {
+      "N": 2,
+      "original_ok": 0,
+      "candidate_ok": 2
+    }
+  },
+  "original_valid_answer_changes": [],
+  "gate_checks": 36,
+  "raw_entropy_and_gate_consistent": true,
+  "new_llm": 38,
+  "inherited_receipts": 144,
+  "invalid_reasons": {},
+  "note": "Native scoring uses all mappings, including references; not v5 category/unit accuracy. Correctness labels are read only after generation. Prompt changes can change answers and are not token-equivalent."
+}
