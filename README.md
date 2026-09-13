@@ -1,3 +1,5 @@
+**2026-09-13：M7 当前主要方法已设为完整第二版 typed-control-v2（异常恢复＋额外优化）。384题试跑协议有效率95.31%；全量尚未运行。[方法设定与记录](benchmarks/2026-09-13_v5_complete/execution/EXPERIMENT_CHANGELOG_AND_REPRODUCIBILITY.md)。**
+
 # cf_mrg · 医学 R1–R5 Benchmark 与 RAG 评测记录
 
 评估医学证据变化后，模型能否新增支持、撤销支持、重新比较、推导后果，并在无关变化下保持判断。本仓库保存数据构建决策、方法实现、原生任务评分、修复试验和可复核的实验记录。
