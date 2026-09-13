@@ -1,0 +1,45 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M0",
+    "M2",
+    "M4",
+    "M5"
+  ],
+  "benchmark": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910",
+  "units": 6104,
+  "selected_judgments": 13000,
+  "unique_inputs": 13905,
+  "evaluation_records_per_method": 15616,
+  "reused_predictions": {
+    "direct_llama": 8877,
+    "medrgag_llama_base": 6687
+  },
+  "pending": {
+    "M0": 5028,
+    "M2": 7218,
+    "M4": 13905,
+    "M5": 13905
+  },
+  "answer_formats": {
+    "diagnosis": 3560,
+    "multi": 167,
+    "single": 6489,
+    "robustness_single": 2700,
+    "relation": 989
+  },
+  "per_source": {
+    "M01": 3560,
+    "M02": 167,
+    "M12": 1168,
+    "M14": 908,
+    "M22": 2700,
+    "M23": 900,
+    "M10": 902,
+    "M11": 1034,
+    "M20": 1576,
+    "M06": 13,
+    "M17": 2688
+  },
+  "supplemental_runs": []
+}

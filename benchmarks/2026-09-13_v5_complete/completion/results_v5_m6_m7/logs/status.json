@@ -1,0 +1,141 @@
+{
+  "observed_at": "2026-09-13T05:32:51.225765+08:00",
+  "runs": [
+    {
+      "run": "pilot_m6_fixed_gpu1",
+      "gpu": "1",
+      "planned": 6,
+      "completed": 6,
+      "statuses": {
+        "ok": 5,
+        "invalid": 1
+      },
+      "pending": 0,
+      "successful_llm_requests": 130,
+      "completion_tokens": 45726,
+      "exit_code": 0,
+      "pending_stages": []
+    },
+    {
+      "run": "pilot_m6_fixed_gpu2",
+      "gpu": "2",
+      "planned": 6,
+      "completed": 0,
+      "statuses": {},
+      "pending": 6,
+      "successful_llm_requests": 107,
+      "completion_tokens": 35372,
+      "exit_code": null,
+      "pending_stages": [
+        {
+          "item_id": "s001183",
+          "receipts": 34,
+          "event": null,
+          "stage": null,
+          "round": null,
+          "step": null
+        },
+        {
+          "item_id": "s014727",
+          "receipts": 2,
+          "event": null,
+          "stage": null,
+          "round": null,
+          "step": null
+        },
+        {
+          "item_id": "s103571",
+          "receipts": 26,
+          "event": null,
+          "stage": null,
+          "round": null,
+          "step": null
+        },
+        {
+          "item_id": "s140624",
+          "receipts": 34,
+          "event": null,
+          "stage": null,
+          "round": null,
+          "step": null
+        },
+        {
+          "item_id": "s118117",
+          "receipts": 34,
+          "event": null,
+          "stage": null,
+          "round": null,
+          "step": null
+        },
+        {
+          "item_id": "s025188",
+          "receipts": 34,
+          "event": null,
+          "stage": null,
+          "round": null,
+          "step": null
+        }
+      ]
+    },
+    {
+      "run": "pilot_m6_gpu1",
+      "gpu": "1",
+      "planned": 6,
+      "completed": 6,
+      "statuses": {
+        "ok": 3,
+        "invalid": 3
+      },
+      "pending": 0,
+      "successful_llm_requests": 127,
+      "completion_tokens": 43275,
+      "exit_code": 0,
+      "pending_stages": []
+    },
+    {
+      "run": "pilot_m6_gpu2",
+      "gpu": "2",
+      "planned": 6,
+      "completed": 6,
+      "statuses": {
+        "ok": 4,
+        "invalid": 2
+      },
+      "pending": 0,
+      "successful_llm_requests": 126,
+      "completion_tokens": 40998,
+      "exit_code": 0,
+      "pending_stages": []
+    },
+    {
+      "run": "pilot_m7_gpu3",
+      "gpu": "3",
+      "planned": 12,
+      "completed": 12,
+      "statuses": {
+        "invalid": 11,
+        "ok": 1
+      },
+      "pending": 0,
+      "successful_llm_requests": 60,
+      "completion_tokens": 7189,
+      "exit_code": 0,
+      "pending_stages": []
+    },
+    {
+      "run": "pilot_m7_fixed",
+      "gpu": "3",
+      "planned": 12,
+      "completed": 12,
+      "statuses": {
+        "ok": 9,
+        "invalid": 3
+      },
+      "pending": 0,
+      "successful_llm_requests": 70,
+      "completion_tokens": 7432,
+      "exit_code": 0,
+      "pending_stages": []
+    }
+  ]
+}

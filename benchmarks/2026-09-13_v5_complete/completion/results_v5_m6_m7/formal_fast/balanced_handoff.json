@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-13T06:56:31.638725+08:00",
+  "reason": "User-authorized throughput optimization: stage/format/length grouping",
+  "active_jobs": [
+    {
+      "state": "running",
+      "name": "imedrag_000",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_000.jsonl",
+      "n": 128,
+      "gpu": "1",
+      "source_run": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/runs/imedrag_000",
+      "worker_pid": 1950646,
+      "started_at": "2026-09-13T06:35:08.903550+08:00"
+    },
+    {
+      "state": "running",
+      "name": "imedrag_001",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_001.jsonl",
+      "n": 128,
+      "gpu": "2",
+      "source_run": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/runs/imedrag_001",
+      "worker_pid": 1950067,
+      "started_at": "2026-09-13T06:35:08.908799+08:00"
+    },
+    {
+      "state": "running",
+      "name": "tcrag_000",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_000.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "source_run": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/runs/tcrag_000",
+      "worker_pid": 1950071,
+      "started_at": "2026-09-13T06:35:08.913794+08:00"
+    }
+  ],
+  "model_pids": [
+    1950081,
+    1950083,
+    1950649
+  ],
+  "target": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal_balanced"
+}

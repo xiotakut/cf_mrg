@@ -1,0 +1,1352 @@
+{
+  "inputs_per_method": 13905,
+  "reused_per_method": 12,
+  "new_per_method": 13893,
+  "units": 6104,
+  "judgments": 13000,
+  "scoring_records_per_method": 15616,
+  "workers_per_gpu": {
+    "1": 64,
+    "2": 64,
+    "3": 32
+  },
+  "chunk_size": 128,
+  "shuffle_seed": 20260913,
+  "initial_preferences": {
+    "1": "imedrag",
+    "2": "imedrag",
+    "3": "tcrag"
+  },
+  "reused_sources": {
+    "imedrag": [
+      "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_upstream_fix/runs/pilot_m6_fixed_gpu1",
+      "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_upstream_fix/runs/pilot_m6_fixed_gpu2"
+    ],
+    "tcrag": [
+      "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/tc_upstream_fix/runs/pilot_m7_fixed"
+    ]
+  },
+  "jobs": [
+    {
+      "name": "imedrag_000",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_000.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_000",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_000.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_001",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_001.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_001",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_001.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_002",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_002.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_002",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_002.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_003",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_003.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_003",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_003.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_004",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_004.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_004",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_004.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_005",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_005.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_005",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_005.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_006",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_006.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_006",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_006.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_007",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_007.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_007",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_007.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_008",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_008.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_008",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_008.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_009",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_009.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_009",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_009.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_010",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_010.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_010",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_010.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_011",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_011.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_011",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_011.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_012",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_012.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_012",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_012.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_013",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_013.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_013",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_013.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_014",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_014.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_014",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_014.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_015",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_015.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_015",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_015.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_016",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_016.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_016",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_016.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_017",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_017.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_017",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_017.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_018",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_018.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_018",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_018.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_019",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_019.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_019",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_019.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_020",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_020.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_020",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_020.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_021",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_021.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_021",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_021.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_022",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_022.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_022",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_022.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_023",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_023.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_023",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_023.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_024",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_024.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_024",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_024.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_025",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_025.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_025",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_025.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_026",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_026.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_026",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_026.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_027",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_027.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_027",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_027.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_028",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_028.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_028",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_028.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_029",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_029.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_029",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_029.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_030",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_030.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_030",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_030.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_031",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_031.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_031",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_031.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_032",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_032.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_032",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_032.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_033",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_033.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_033",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_033.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_034",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_034.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_034",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_034.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_035",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_035.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_035",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_035.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_036",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_036.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_036",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_036.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_037",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_037.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_037",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_037.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_038",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_038.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_038",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_038.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_039",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_039.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_039",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_039.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_040",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_040.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_040",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_040.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_041",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_041.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_041",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_041.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_042",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_042.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_042",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_042.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_043",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_043.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_043",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_043.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_044",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_044.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_044",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_044.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_045",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_045.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_045",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_045.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_046",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_046.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_046",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_046.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_047",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_047.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_047",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_047.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_048",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_048.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_048",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_048.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_049",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_049.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_049",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_049.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_050",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_050.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_050",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_050.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_051",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_051.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_051",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_051.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_052",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_052.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_052",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_052.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_053",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_053.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_053",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_053.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_054",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_054.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_054",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_054.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_055",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_055.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_055",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_055.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_056",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_056.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_056",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_056.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_057",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_057.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_057",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_057.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_058",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_058.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_058",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_058.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_059",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_059.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_059",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_059.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_060",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_060.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_060",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_060.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_061",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_061.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_061",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_061.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_062",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_062.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_062",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_062.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_063",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_063.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_063",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_063.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_064",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_064.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_064",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_064.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_065",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_065.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_065",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_065.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_066",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_066.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_066",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_066.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_067",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_067.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_067",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_067.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_068",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_068.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_068",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_068.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_069",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_069.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_069",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_069.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_070",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_070.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_070",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_070.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_071",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_071.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_071",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_071.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_072",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_072.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_072",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_072.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_073",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_073.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_073",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_073.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_074",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_074.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_074",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_074.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_075",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_075.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_075",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_075.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_076",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_076.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_076",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_076.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_077",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_077.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_077",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_077.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_078",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_078.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_078",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_078.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_079",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_079.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_079",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_079.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_080",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_080.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_080",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_080.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_081",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_081.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_081",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_081.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_082",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_082.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_082",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_082.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_083",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_083.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_083",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_083.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_084",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_084.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_084",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_084.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_085",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_085.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_085",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_085.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_086",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_086.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_086",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_086.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_087",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_087.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_087",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_087.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_088",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_088.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_088",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_088.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_089",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_089.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_089",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_089.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_090",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_090.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_090",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_090.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_091",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_091.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_091",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_091.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_092",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_092.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_092",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_092.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_093",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_093.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_093",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_093.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_094",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_094.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_094",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_094.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_095",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_095.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_095",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_095.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_096",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_096.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_096",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_096.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_097",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_097.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_097",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_097.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_098",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_098.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_098",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_098.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_099",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_099.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_099",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_099.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_100",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_100.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_100",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_100.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_101",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_101.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_101",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_101.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_102",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_102.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_102",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_102.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_103",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_103.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_103",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_103.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_104",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_104.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_104",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_104.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_105",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_105.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_105",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_105.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_106",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_106.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_106",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_106.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_107",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_107.jsonl",
+      "n": 128
+    },
+    {
+      "name": "tcrag_107",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_107.jsonl",
+      "n": 128
+    },
+    {
+      "name": "imedrag_108",
+      "method": "imedrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_108.jsonl",
+      "n": 69
+    },
+    {
+      "name": "tcrag_108",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_108.jsonl",
+      "n": 69
+    }
+  ],
+  "effective_execution": {
+    "imedrag": {
+      "workers": 64,
+      "max_batch_tokens": 128000
+    },
+    "tcrag": {
+      "workers": 32,
+      "max_batch_tokens": 96000
+    }
+  },
+  "source_phase": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal_fast",
+  "handoff_at": "2026-09-13T06:57:21+08:00",
+  "batch_grouping": "answer_format + phase + power-of-two prompt token length"
+}

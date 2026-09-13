@@ -1,0 +1,28 @@
+[
+  {
+    "grouping": "flat",
+    "requests": 28,
+    "batch_sizes": [
+      28
+    ],
+    "padded_prompt_tokens": 95312,
+    "tokens": 3584,
+    "seconds": 40.31192871998064,
+    "tokens_per_second": 88.90668627878347,
+    "peak_allocated_gib": 37.82018804550171
+  },
+  {
+    "grouping": "bucketed",
+    "requests": 28,
+    "batch_sizes": [
+      18,
+      7,
+      3
+    ],
+    "padded_prompt_tokens": 65807,
+    "tokens": 3584,
+    "seconds": 33.16119508398697,
+    "tokens_per_second": 108.07813141000635,
+    "peak_allocated_gib": 23.67420768737793
+  }
+]

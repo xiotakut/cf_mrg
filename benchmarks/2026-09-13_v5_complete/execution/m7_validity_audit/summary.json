@@ -1,0 +1,44 @@
+{
+  "N": 1646,
+  "statuses": {
+    "invalid": 620,
+    "ok": 1026
+  },
+  "invalid_terminations": {
+    "budget_exhausted": 272,
+    "action_parse_failed": 54,
+    "accepted": 294
+  },
+  "invalid_accepted_reasons": {
+    "invalid_option_key": 278,
+    "missing_or_conflicting_answer": 2,
+    "invalid_errors": 13,
+    "invalid_document_ids": 1
+  },
+  "option_details": {
+    "key_plus_exact_option_text": 207,
+    "key_prefix_other_text": 71
+  },
+  "budget_details": {
+    "last_final_rejected_entropy_threshold": 104,
+    "no_final_proposal": 122,
+    "last_final_rejected_minimum_steps": 46
+  },
+  "parse_details": {
+    "empty_thought": 54
+  },
+  "examples": {
+    "parse": {
+      "item_id": "s118117",
+      "raw_response": "Action Input: {\"query\": \"ristocetin cofactor assay and factor VIII\"}"
+    },
+    "key_plus_exact_option_text": {
+      "item_id": "s103363",
+      "answer": "A. Sorbitol dehydrogenase"
+    },
+    "key_prefix_other_text": {
+      "item_id": "s138241",
+      "answer": "no."
+    }
+  }
+}

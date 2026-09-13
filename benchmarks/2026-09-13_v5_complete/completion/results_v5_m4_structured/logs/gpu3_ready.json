@@ -1,0 +1,46 @@
+{
+  "time": 1789278853.37214,
+  "pid": 2009628,
+  "config": {
+    "base": {
+      "method_id": "M4",
+      "method": "medrag_llama31",
+      "paper": "https://arxiv.org/html/2603.03292v1#A4.SS2",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+      "retriever_name": "BM25+MedCPT",
+      "reranker_path": "models/MedCPT-Cross-Encoder",
+      "corpus_name": "MedCorp",
+      "k": 8,
+      "rrf_k": 100,
+      "max_length": 131072,
+      "context_length": 30000,
+      "seed": 42,
+      "chat_template_kwargs": {},
+      "generation_kwargs": {
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": 0,
+        "max_new_tokens": 2048
+      },
+      "engine": "vllm",
+      "engine_note": "Batched execution; decoding settings retained. Tokens are not claimed equal to Transformers smoke.",
+      "native_task_adapter": "code/run_medrag.py::messages"
+    },
+    "repair": "explicit output contract + visible-input JSON Schema/xgrammar",
+    "gpu_memory_utilization": 0.9,
+    "max_num_seqs": 128,
+    "max_num_batched_tokens": 16384,
+    "batch_size": 128,
+    "max_model_len": 131072,
+    "enable_prefix_caching": true,
+    "enable_chunked_prefill": true,
+    "guided_decoding_backend": "xgrammar",
+    "prompt_source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/M4/prompts.jsonl.gz",
+    "retrieval_policy": "reuse exact archived evidence; no new retrieval",
+    "prediction_reuse": 0,
+    "generation_budget": 2048,
+    "seed": 42
+  }
+}

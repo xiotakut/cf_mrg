@@ -1,0 +1,12 @@
+{
+  "registered_before_tcrag_real_inference": true,
+  "primary_initial_sigma": 1.2,
+  "candidates": [1.2, 5.0, 10.0, 20.0],
+  "sources": {"1.2": "Pinned official TCRAG.py", "5.0": "Project finite development grid", "10.0": "Project finite development grid; not the paper's uct value", "20.0": "TC-RAG paper v3 Appendix 8.7.6 uct threshold"},
+  "input_manifest": "data/dev_inputs.jsonl",
+  "forbidden_inputs": ["data/blind_inputs.jsonl", "data/dev_gold.jsonl", "data/evaluation.jsonl"],
+  "rule": "From the initial sigma=1.2 trajectories, find the earliest eligible (zero-based step>=4) Final Answer with state<candidate and valid native output. Pick the smallest listed candidate with acceptance rate>=0.80. No accuracy or gold is read. The full initial trajectory prefixes provide a prospective acceptance estimate only; the selected configuration must then run all 24 development inputs again because its request configuration/seed changes.",
+  "no_candidate_passes": "Keep the source-backed sigma=1.2 configuration and report calibration unresolved; do not increase the grid or conceal exhaustion.",
+  "revalidation": "One new full development run for a changed threshold, with all failures retained. No second grid or outcome-driven prompt tuning. Report actual acceptance/exhaustion rates even if the prospective criterion is missed.",
+  "applies_to": "Qwen3-8B, thinking disabled, exact upstream token-span selector and full post-generation-processor entropy. Separate named configuration; initial config retained."
+}

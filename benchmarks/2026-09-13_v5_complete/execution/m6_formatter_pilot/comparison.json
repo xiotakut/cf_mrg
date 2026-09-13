@@ -1,0 +1,343 @@
+{
+  "N_frozen": 40,
+  "formats": {
+    "single": 20,
+    "relation": 3,
+    "diagnosis": 10,
+    "robustness_single": 7
+  },
+  "summary": {
+    "original": {
+      "N": 40,
+      "runtime_valid": 30,
+      "native_valid": 24,
+      "correct": 18,
+      "reason_missing_or_conflicting_answer": 9,
+      "json_object_valid": 31,
+      "reason_None": 30,
+      "reason_invalid_answer_type": 1,
+      "changed_answer_values_among_original_ok": []
+    },
+    "prompt": {
+      "json_object_valid": 39,
+      "N": 40,
+      "runtime_valid": 39,
+      "native_valid": 32,
+      "correct": 13,
+      "reason_None": 39,
+      "reason_missing_or_conflicting_answer": 1,
+      "changed_answer_values_among_original_ok": [
+        {
+          "item_id": "s200003",
+          "answer_format": "single",
+          "old": "A",
+          "new": "B"
+        },
+        {
+          "item_id": "s009042",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Influenza\"}",
+          "new": "Influenza"
+        },
+        {
+          "item_id": "s103282",
+          "answer_format": "single",
+          "old": "B",
+          "new": "C"
+        },
+        {
+          "item_id": "s004595",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Bacterial Pneumonia associated with Intravenous Drug Use and Diabetes\"}",
+          "new": "Bacterial Pneumonia associated with Intravenous Drug Use and Diabetes"
+        },
+        {
+          "item_id": "s011683",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Pulmonary Embolism (PE)\"}",
+          "new": "Pneumothorax"
+        },
+        {
+          "item_id": "s003898",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Influenza\"}",
+          "new": "Influenza"
+        },
+        {
+          "item_id": "s135131",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s004440",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Human Granulocytic Anaplasmosis (HGA)\"}",
+          "new": "Human Granulocytic Anaplasmosis (HGA)"
+        },
+        {
+          "item_id": "s016772",
+          "answer_format": "single",
+          "old": "B",
+          "new": "C"
+        },
+        {
+          "item_id": "s135419",
+          "answer_format": "single",
+          "old": "no",
+          "new": "yes"
+        },
+        {
+          "item_id": "s138852",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s143563",
+          "answer_format": "single",
+          "old": "no",
+          "new": "yes"
+        },
+        {
+          "item_id": "s135288",
+          "answer_format": "single",
+          "old": "no",
+          "new": "yes"
+        },
+        {
+          "item_id": "s200660",
+          "answer_format": "single",
+          "old": "positive",
+          "new": "negative"
+        },
+        {
+          "item_id": "s135804",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s134987",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s200806",
+          "answer_format": "single",
+          "old": "positive",
+          "new": "negative"
+        },
+        {
+          "item_id": "s100240",
+          "answer_format": "single",
+          "old": "A",
+          "new": "C"
+        },
+        {
+          "item_id": "s134076",
+          "answer_format": "single",
+          "old": "positive",
+          "new": "negative"
+        },
+        {
+          "item_id": "s116939",
+          "answer_format": "robustness_single",
+          "old": "A",
+          "new": "B"
+        },
+        {
+          "item_id": "s003374",
+          "answer_format": "relation",
+          "old": "lower",
+          "new": "no difference"
+        }
+      ]
+    },
+    "structured": {
+      "json_object_valid": 40,
+      "N": 40,
+      "runtime_valid": 39,
+      "native_valid": 32,
+      "correct": 13,
+      "reason_None": 39,
+      "reason_invalid_document_ids": 1,
+      "changed_answer_values_among_original_ok": [
+        {
+          "item_id": "s200003",
+          "answer_format": "single",
+          "old": "A",
+          "new": "B"
+        },
+        {
+          "item_id": "s009042",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Influenza\"}",
+          "new": "Influenza"
+        },
+        {
+          "item_id": "s103282",
+          "answer_format": "single",
+          "old": "B",
+          "new": "C"
+        },
+        {
+          "item_id": "s005693",
+          "answer_format": "diagnosis",
+          "old": "COPD Exacerbation",
+          "new": "COPD Exacerbation with Mastalgia"
+        },
+        {
+          "item_id": "s004595",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Bacterial Pneumonia associated with Intravenous Drug Use and Diabetes\"}",
+          "new": "Bacterial Pneumonia associated with Intravenous Drug Use and Diabetes"
+        },
+        {
+          "item_id": "s011683",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Pulmonary Embolism (PE)\"}",
+          "new": "Pneumothorax"
+        },
+        {
+          "item_id": "s003898",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Influenza\"}",
+          "new": "Influenza"
+        },
+        {
+          "item_id": "s135131",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s004440",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Human Granulocytic Anaplasmosis (HGA)\"}",
+          "new": "Human Granulocytic Anaplasmosis (HGA)"
+        },
+        {
+          "item_id": "s016772",
+          "answer_format": "single",
+          "old": "B",
+          "new": "C"
+        },
+        {
+          "item_id": "s135419",
+          "answer_format": "single",
+          "old": "no",
+          "new": "yes"
+        },
+        {
+          "item_id": "s138852",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s143563",
+          "answer_format": "single",
+          "old": "no",
+          "new": "yes"
+        },
+        {
+          "item_id": "s135288",
+          "answer_format": "single",
+          "old": "no",
+          "new": "yes"
+        },
+        {
+          "item_id": "s200660",
+          "answer_format": "single",
+          "old": "positive",
+          "new": "negative"
+        },
+        {
+          "item_id": "s135804",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s134987",
+          "answer_format": "single",
+          "old": "yes",
+          "new": "no"
+        },
+        {
+          "item_id": "s200806",
+          "answer_format": "single",
+          "old": "positive",
+          "new": "negative"
+        },
+        {
+          "item_id": "s100240",
+          "answer_format": "single",
+          "old": "A",
+          "new": "C"
+        },
+        {
+          "item_id": "s134076",
+          "answer_format": "single",
+          "old": "positive",
+          "new": "negative"
+        },
+        {
+          "item_id": "s116939",
+          "answer_format": "robustness_single",
+          "old": "A",
+          "new": "B"
+        },
+        {
+          "item_id": "s003374",
+          "answer_format": "relation",
+          "old": "lower",
+          "new": "no difference"
+        }
+      ]
+    },
+    "literal": {
+      "json_object_valid": 40,
+      "N": 40,
+      "runtime_valid": 40,
+      "native_valid": 32,
+      "correct": 22,
+      "reason_None": 40,
+      "changed_answer_values_among_original_ok": [
+        {
+          "item_id": "s003898",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Influenza\"}",
+          "new": "Influenza"
+        },
+        {
+          "item_id": "s004595",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Bacterial Pneumonia associated with Intravenous Drug Use and Diabetes\"}",
+          "new": "Bacterial Pneumonia associated with Intravenous Drug Use and Diabetes"
+        },
+        {
+          "item_id": "s009042",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Influenza\"}",
+          "new": "Influenza"
+        },
+        {
+          "item_id": "s004440",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Human Granulocytic Anaplasmosis (HGA)\"}",
+          "new": "Human Granulocytic Anaplasmosis (HGA)"
+        },
+        {
+          "item_id": "s011683",
+          "answer_format": "diagnosis",
+          "old": "{\"diagnosis\": \"Pulmonary Embolism (PE)\"}",
+          "new": "Pulmonary Embolism (PE)"
+        }
+      ]
+    }
+  },
+  "limitations": "Frozen early formal completions; 4 formats, no multi-choice-set inputs. Historical baseline; changed prompt and batching. Runtime validity includes errors validation. Answer value comparison is not full semantic equivalence."
+}

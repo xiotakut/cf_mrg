@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "completed_predictions_identical": true,
+  "new_model_or_retrieval_calls": 0,
+  "runs": [
+    {
+      "run": "imedrag_000",
+      "completed_replayed": 20,
+      "copied_requests": 610,
+      "unresolved_attempts": 8,
+      "coverage": {
+        "N_planned": 128,
+        "N_ok": 13,
+        "N_invalid": 3,
+        "N_failed": 4,
+        "N_pending": 108,
+        "unknown_ids": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "run": "imedrag_001",
+      "completed_replayed": 16,
+      "copied_requests": 596,
+      "unresolved_attempts": 6,
+      "coverage": {
+        "N_planned": 128,
+        "N_ok": 14,
+        "N_invalid": 2,
+        "N_failed": 0,
+        "N_pending": 112,
+        "unknown_ids": 0,
+        "duplicates": 0
+      }
+    },
+    {
+      "run": "tcrag_000",
+      "completed_replayed": 58,
+      "copied_requests": 469,
+      "unresolved_attempts": 4,
+      "coverage": {
+        "N_planned": 128,
+        "N_ok": 37,
+        "N_invalid": 21,
+        "N_failed": 0,
+        "N_pending": 70,
+        "unknown_ids": 0,
+        "duplicates": 0
+      }
+    }
+  ],
+  "shutdown_artifacts_requeued": [
+    "s125122",
+    "s134987",
+    "s122721",
+    "s111494"
+  ],
+  "completed_predictions_carried_forward": 90,
+  "note": "Initial replay included four SIGTERM artifacts, subsequently archived and requeued; all other completed outputs stay identical."
+}

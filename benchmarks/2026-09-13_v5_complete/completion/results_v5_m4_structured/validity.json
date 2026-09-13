@@ -1,0 +1,140 @@
+{
+  "observed_at": "2026-09-13T15:04:49.335295+08:00",
+  "planned": 13905,
+  "completed": 13905,
+  "new_completed": 13905,
+  "remaining": 0,
+  "reused_predictions": 0,
+  "jobs": {
+    "done": 109
+  },
+  "active": [],
+  "validity": {
+    "N": 13905,
+    "json_valid": 13830,
+    "schema_valid": 13830,
+    "format_valid": 13779,
+    "native_valid": 11044,
+    "truncated": 73,
+    "json_valid_pct": 99.461,
+    "schema_valid_pct": 99.461,
+    "format_valid_pct": 99.094,
+    "native_valid_pct": 79.425,
+    "truncated_pct": 0.525,
+    "invalid_reasons": {
+      "valid": 11044,
+      "unmapped_diagnosis": 2735,
+      "ambiguous_diagnosis": 50,
+      "malformed_json": 76
+    }
+  },
+  "by_format": {
+    "single": {
+      "N": 6489,
+      "json_valid": 6482,
+      "schema_valid": 6482,
+      "format_valid": 6482,
+      "native_valid": 6482,
+      "truncated": 7,
+      "json_valid_pct": 99.892,
+      "schema_valid_pct": 99.892,
+      "format_valid_pct": 99.892,
+      "native_valid_pct": 99.892,
+      "truncated_pct": 0.108,
+      "invalid_reasons": {
+        "valid": 6482,
+        "malformed_json": 7
+      }
+    },
+    "diagnosis": {
+      "N": 3560,
+      "json_valid": 3545,
+      "schema_valid": 3545,
+      "format_valid": 3494,
+      "native_valid": 759,
+      "truncated": 14,
+      "json_valid_pct": 99.579,
+      "schema_valid_pct": 99.579,
+      "format_valid_pct": 98.146,
+      "native_valid_pct": 21.32,
+      "truncated_pct": 0.393,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 2735,
+        "ambiguous_diagnosis": 50,
+        "valid": 759,
+        "malformed_json": 16
+      }
+    },
+    "multi": {
+      "N": 167,
+      "json_valid": 163,
+      "schema_valid": 163,
+      "format_valid": 163,
+      "native_valid": 163,
+      "truncated": 4,
+      "json_valid_pct": 97.605,
+      "schema_valid_pct": 97.605,
+      "format_valid_pct": 97.605,
+      "native_valid_pct": 97.605,
+      "truncated_pct": 2.395,
+      "invalid_reasons": {
+        "valid": 163,
+        "malformed_json": 4
+      }
+    },
+    "relation": {
+      "N": 989,
+      "json_valid": 980,
+      "schema_valid": 980,
+      "format_valid": 980,
+      "native_valid": 980,
+      "truncated": 8,
+      "json_valid_pct": 99.09,
+      "schema_valid_pct": 99.09,
+      "format_valid_pct": 99.09,
+      "native_valid_pct": 99.09,
+      "truncated_pct": 0.809,
+      "invalid_reasons": {
+        "valid": 980,
+        "malformed_json": 9
+      }
+    },
+    "robustness_single": {
+      "N": 2700,
+      "json_valid": 2660,
+      "schema_valid": 2660,
+      "format_valid": 2660,
+      "native_valid": 2660,
+      "truncated": 40,
+      "json_valid_pct": 98.519,
+      "schema_valid_pct": 98.519,
+      "format_valid_pct": 98.519,
+      "native_valid_pct": 98.519,
+      "truncated_pct": 1.481,
+      "invalid_reasons": {
+        "valid": 2660,
+        "malformed_json": 40
+      }
+    }
+  },
+  "outside_selection_pilot_inputs": {
+    "N": 13805,
+    "json_valid": 13732,
+    "schema_valid": 13732,
+    "format_valid": 13682,
+    "native_valid": 10960,
+    "truncated": 71,
+    "json_valid_pct": 99.471,
+    "schema_valid_pct": 99.471,
+    "format_valid_pct": 99.109,
+    "native_valid_pct": 79.392,
+    "truncated_pct": 0.514,
+    "invalid_reasons": {
+      "valid": 10960,
+      "unmapped_diagnosis": 2722,
+      "ambiguous_diagnosis": 49,
+      "malformed_json": 74
+    }
+  },
+  "denominator": "completed unique inputs, all outputs retained; native validity includes frozen diagnosis mapping"
+}

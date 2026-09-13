@@ -1,0 +1,259 @@
+{
+  "observed_at": "2026-09-13T08:45:05.610099+08:00",
+  "window_seconds": 1200,
+  "runs": {
+    "tcrag_001": {
+      "complete_items_total": 121,
+      "llm_calls_per_completed_item_mean": 6.13,
+      "llm_calls_per_completed_item_distribution": {
+        "5": 55,
+        "8": 31,
+        "7": 9,
+        "6": 26
+      },
+      "window_llm_requests": 190,
+      "batches": 71,
+      "batch_size_histogram": {
+        "7": 3,
+        "11": 1,
+        "5": 5,
+        "2": 21,
+        "8": 1,
+        "3": 11,
+        "6": 3,
+        "1": 24,
+        "4": 2
+      },
+      "mean_batch_size": 2.68,
+      "max_batch_size": 11,
+      "gpu_generation_seconds": 1194.6,
+      "useful_tokens": 24915,
+      "useful_tokens_per_engine_second": 20.86,
+      "decode_useful_fraction": 0.591,
+      "prompt_useful_fraction": 0.879,
+      "max_token_budget_hit_requests": 3,
+      "output_token_median": 101.0,
+      "prompt_token_median": 3520.0,
+      "batch_token_cap_near_full_fraction": 0,
+      "request_wall_seconds_median": 176.1,
+      "request_queue_wait_seconds_median": 160.3,
+      "retrieval_calls": 59,
+      "retrieval_call_seconds_median": 0.59,
+      "worst_batches": [
+        {
+          "size": 2,
+          "engine_seconds": 189.0,
+          "output_tokens": [
+            2048,
+            28
+          ],
+          "prompt_range": [
+            8956,
+            12207
+          ],
+          "decode_useful_fraction": 0.507
+        },
+        {
+          "size": 2,
+          "engine_seconds": 165.0,
+          "output_tokens": [
+            2048,
+            140
+          ],
+          "prompt_range": [
+            9339,
+            10164
+          ],
+          "decode_useful_fraction": 0.534
+        },
+        {
+          "size": 2,
+          "engine_seconds": 106.2,
+          "output_tokens": [
+            2048,
+            26
+          ],
+          "prompt_range": [
+            4374,
+            4832
+          ],
+          "decode_useful_fraction": 0.506
+        }
+      ]
+    },
+    "tcrag_002": {
+      "complete_items_total": 36,
+      "llm_calls_per_completed_item_mean": 5.97,
+      "llm_calls_per_completed_item_distribution": {
+        "5": 16,
+        "6": 10,
+        "8": 5,
+        "7": 5
+      },
+      "window_llm_requests": 141,
+      "batches": 45,
+      "batch_size_histogram": {
+        "6": 4,
+        "7": 2,
+        "5": 3,
+        "1": 14,
+        "9": 1,
+        "2": 8,
+        "3": 7,
+        "8": 1,
+        "4": 5
+      },
+      "mean_batch_size": 3.13,
+      "max_batch_size": 9,
+      "gpu_generation_seconds": 912.4,
+      "useful_tokens": 16054,
+      "useful_tokens_per_engine_second": 17.6,
+      "decode_useful_fraction": 0.426,
+      "prompt_useful_fraction": 0.847,
+      "max_token_budget_hit_requests": 1,
+      "output_token_median": 99,
+      "prompt_token_median": 3385,
+      "batch_token_cap_near_full_fraction": 0.022,
+      "request_wall_seconds_median": 138.0,
+      "request_queue_wait_seconds_median": 122.4,
+      "retrieval_calls": 54,
+      "retrieval_call_seconds_median": 1.07,
+      "worst_batches": [
+        {
+          "size": 6,
+          "engine_seconds": 273.6,
+          "output_tokens": [
+            223,
+            7,
+            2048,
+            107,
+            10,
+            169
+          ],
+          "prompt_range": [
+            4364,
+            6711
+          ],
+          "decode_useful_fraction": 0.209
+        },
+        {
+          "size": 8,
+          "engine_seconds": 112.7,
+          "output_tokens": [
+            133,
+            57,
+            23,
+            154,
+            97,
+            598,
+            219,
+            114
+          ],
+          "prompt_range": [
+            4622,
+            7643
+          ],
+          "decode_useful_fraction": 0.292
+        },
+        {
+          "size": 2,
+          "engine_seconds": 109.2,
+          "output_tokens": [
+            153,
+            1181
+          ],
+          "prompt_range": [
+            8811,
+            12178
+          ],
+          "decode_useful_fraction": 0.565
+        }
+      ]
+    },
+    "tcrag_003": {
+      "complete_items_total": 60,
+      "llm_calls_per_completed_item_mean": 6.28,
+      "llm_calls_per_completed_item_distribution": {
+        "6": 8,
+        "8": 19,
+        "5": 27,
+        "7": 6
+      },
+      "window_llm_requests": 189,
+      "batches": 64,
+      "batch_size_histogram": {
+        "2": 22,
+        "5": 7,
+        "4": 6,
+        "3": 9,
+        "8": 2,
+        "7": 1,
+        "11": 1,
+        "10": 1,
+        "1": 15
+      },
+      "mean_batch_size": 2.95,
+      "max_batch_size": 11,
+      "gpu_generation_seconds": 1212.8,
+      "useful_tokens": 23549,
+      "useful_tokens_per_engine_second": 19.42,
+      "decode_useful_fraction": 0.436,
+      "prompt_useful_fraction": 0.847,
+      "max_token_budget_hit_requests": 1,
+      "output_token_median": 97,
+      "prompt_token_median": 2791,
+      "batch_token_cap_near_full_fraction": 0,
+      "request_wall_seconds_median": 241.6,
+      "request_queue_wait_seconds_median": 215.9,
+      "retrieval_calls": 56,
+      "retrieval_call_seconds_median": 1.3,
+      "worst_batches": [
+        {
+          "size": 5,
+          "engine_seconds": 240.0,
+          "output_tokens": [
+            7,
+            124,
+            127,
+            149,
+            2048
+          ],
+          "prompt_range": [
+            4326,
+            6399
+          ],
+          "decode_useful_fraction": 0.24
+        },
+        {
+          "size": 4,
+          "engine_seconds": 116.0,
+          "output_tokens": [
+            7,
+            10,
+            19,
+            1440
+          ],
+          "prompt_range": [
+            4318,
+            5384
+          ],
+          "decode_useful_fraction": 0.256
+        },
+        {
+          "size": 3,
+          "engine_seconds": 108.9,
+          "output_tokens": [
+            89,
+            132,
+            1512
+          ],
+          "prompt_range": [
+            4233,
+            5258
+          ],
+          "decode_useful_fraction": 0.382
+        }
+      ]
+    }
+  }
+}

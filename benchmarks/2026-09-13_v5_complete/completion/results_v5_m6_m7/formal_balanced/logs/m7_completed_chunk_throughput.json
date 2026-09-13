@@ -1,0 +1,124 @@
+{
+  "observed_at": "2026-09-13T11:58:49.185108+08:00",
+  "scope": "Completed formal 128-input chunks, different shuffled input sets; observational comparison, not paired causal benchmark.",
+  "runs": [
+    {
+      "run": "tcrag_001",
+      "workers": 32,
+      "minutes_including_audit": 79.33,
+      "items_per_hour": 96.81,
+      "llm_calls": 791,
+      "completion_tokens": 99300,
+      "prompt_tokens": 2975183,
+      "batch_mean": 3.01,
+      "tokens_per_engine_second": 21.08,
+      "decode_useful_fraction": 0.52
+    },
+    {
+      "run": "tcrag_002",
+      "workers": 32,
+      "minutes_including_audit": 90.97,
+      "items_per_hour": 84.42,
+      "llm_calls": 785,
+      "completion_tokens": 99320,
+      "prompt_tokens": 3330577,
+      "batch_mean": 3.13,
+      "tokens_per_engine_second": 18.37,
+      "decode_useful_fraction": 0.452
+    },
+    {
+      "run": "tcrag_003",
+      "workers": 32,
+      "minutes_including_audit": 68.39,
+      "items_per_hour": 112.3,
+      "llm_calls": 792,
+      "completion_tokens": 84823,
+      "prompt_tokens": 3187836,
+      "batch_mean": 2.73,
+      "tokens_per_engine_second": 20.92,
+      "decode_useful_fraction": 0.464
+    },
+    {
+      "run": "tcrag_004",
+      "workers": 64,
+      "minutes_including_audit": 97.87,
+      "items_per_hour": 78.47,
+      "llm_calls": 773,
+      "completion_tokens": 87371,
+      "prompt_tokens": 3766680,
+      "batch_mean": 4.13,
+      "tokens_per_engine_second": 15.01,
+      "decode_useful_fraction": 0.365
+    },
+    {
+      "run": "tcrag_005",
+      "workers": 64,
+      "minutes_including_audit": 102.92,
+      "items_per_hour": 74.62,
+      "llm_calls": 789,
+      "completion_tokens": 102860,
+      "prompt_tokens": 3631621,
+      "batch_mean": 4.36,
+      "tokens_per_engine_second": 16.79,
+      "decode_useful_fraction": 0.414
+    },
+    {
+      "run": "tcrag_006",
+      "workers": 64,
+      "minutes_including_audit": 127.36,
+      "items_per_hour": 60.3,
+      "llm_calls": 789,
+      "completion_tokens": 113116,
+      "prompt_tokens": 3342074,
+      "batch_mean": 4.26,
+      "tokens_per_engine_second": 14.9,
+      "decode_useful_fraction": 0.356
+    },
+    {
+      "run": "tcrag_007",
+      "workers": 64,
+      "minutes_including_audit": 88.72,
+      "items_per_hour": 86.57,
+      "llm_calls": 791,
+      "completion_tokens": 89868,
+      "prompt_tokens": 3126193,
+      "batch_mean": 4.44,
+      "tokens_per_engine_second": 17.04,
+      "decode_useful_fraction": 0.387
+    }
+  ],
+  "groups": {
+    "32": {
+      "completed_chunks": 3,
+      "minutes_each": [
+        79.33,
+        90.97,
+        68.39
+      ],
+      "median_minutes": 79.33,
+      "pooled_items_per_gpu_hour": 96.53,
+      "token_throughput_each": [
+        21.08,
+        18.37,
+        20.92
+      ]
+    },
+    "64": {
+      "completed_chunks": 4,
+      "minutes_each": [
+        97.87,
+        102.92,
+        127.36,
+        88.72
+      ],
+      "median_minutes": 100.39500000000001,
+      "pooled_items_per_gpu_hour": 73.69,
+      "token_throughput_each": [
+        15.01,
+        16.79,
+        14.9,
+        17.04
+      ]
+    }
+  }
+}

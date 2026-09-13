@@ -1,0 +1,58 @@
+{
+  "observed_at": "2026-09-13T06:32:38.343702+08:00",
+  "methods": {
+    "imedrag": {
+      "planned": 13905,
+      "reused": 12,
+      "completed": 44,
+      "new_completed": 32,
+      "remaining": 13861,
+      "terminal_statuses": {
+        "ok": 38,
+        "invalid": 6,
+        "failed": 0
+      },
+      "jobs": {
+        "queued": 107,
+        "running": 2
+      },
+      "active": [
+        {
+          "job": "imedrag_000",
+          "state": "running",
+          "gpu": "1"
+        },
+        {
+          "job": "imedrag_001",
+          "state": "running",
+          "gpu": "2"
+        }
+      ]
+    },
+    "tcrag": {
+      "planned": 13905,
+      "reused": 12,
+      "completed": 70,
+      "new_completed": 58,
+      "remaining": 13835,
+      "terminal_statuses": {
+        "invalid": 24,
+        "ok": 46,
+        "failed": 0
+      },
+      "jobs": {
+        "queued": 108,
+        "running": 1
+      },
+      "active": [
+        {
+          "job": "tcrag_000",
+          "state": "running",
+          "gpu": "3"
+        }
+      ]
+    }
+  },
+  "gpu_snapshot": "0, 9863 MiB, 0 %\n1, 24399 MiB, 98 %\n2, 25029 MiB, 100 %\n3, 24277 MiB, 99 %\n",
+  "gpu_query_exit_code": 0
+}

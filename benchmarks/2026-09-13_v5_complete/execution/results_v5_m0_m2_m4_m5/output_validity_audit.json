@@ -1,0 +1,138 @@
+{
+  "denominator": "15616 scored mappings per method, including reference records; unique input diagnostics separately use 13905",
+  "relaxed_decode_note": "Diagnostic only: accepts literal control characters in JSON strings; no output repair or score changes",
+  "methods": {
+    "M4": {
+      "records": 15616,
+      "format_valid": 9621,
+      "format_valid_pct": 61.60988729508197,
+      "native_valid": 7189,
+      "native_valid_pct": 46.03611680327869,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 2432,
+        "malformed_json": 3699,
+        "valid": 7189,
+        "ambiguous_diagnosis": 98,
+        "invalid_option_set": 3,
+        "invalid_option_key": 2195
+      },
+      "diagnostics_scored_mappings": {
+        "control_character_tolerant_decode_finds_answer": 2987,
+        "no_answer_even_with_control_character_tolerance": 712,
+        "valid_key_followed_by_extra_text": 2168,
+        "other_invalid_option": 27
+      },
+      "examples": {
+        "control_character_tolerant_decode_finds_answer": "s011178",
+        "no_answer_even_with_control_character_tolerance": "s010211",
+        "valid_key_followed_by_extra_text": {
+          "item_id": "s021424",
+          "answer_choice": "A. Proceed with liver biopsy"
+        },
+        "other_invalid_option": {
+          "item_id": "s101220",
+          "answer_choice": "Dissociation"
+        }
+      },
+      "formats": {
+        "diagnosis": {
+          "records": 3560,
+          "format_valid": 2971,
+          "native_valid": 539
+        },
+        "multi": {
+          "records": 167,
+          "format_valid": 55,
+          "native_valid": 55
+        },
+        "relation": {
+          "records": 1576,
+          "format_valid": 1203,
+          "native_valid": 1203
+        },
+        "robustness_single": {
+          "records": 2700,
+          "format_valid": 1909,
+          "native_valid": 1909
+        },
+        "single": {
+          "records": 7613,
+          "format_valid": 3483,
+          "native_valid": 3483
+        }
+      },
+      "unique_inputs": 13905,
+      "unique_strict_answer_choice_object": 10741,
+      "finish_reasons": {
+        "stop": 13876,
+        "length": 29
+      }
+    },
+    "M5": {
+      "records": 15616,
+      "format_valid": 14523,
+      "format_valid_pct": 93.00076844262296,
+      "native_valid": 11758,
+      "native_valid_pct": 75.29456967213115,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 2765,
+        "valid": 11758,
+        "ambiguous_diagnosis": 90,
+        "malformed_json": 27,
+        "invalid_option_set": 17,
+        "invalid_option_key": 959
+      },
+      "diagnostics_scored_mappings": {
+        "control_character_tolerant_decode_finds_answer": 26,
+        "valid_key_followed_by_extra_text": 917,
+        "other_invalid_option": 42,
+        "no_answer_even_with_control_character_tolerance": 1
+      },
+      "examples": {
+        "control_character_tolerant_decode_finds_answer": "s001057",
+        "valid_key_followed_by_extra_text": {
+          "item_id": "s100220",
+          "answer_choice": "C. Salmonella typhi"
+        },
+        "other_invalid_option": {
+          "item_id": "s100247",
+          "answer_choice": "None of the listed agents are indicated."
+        },
+        "no_answer_even_with_control_character_tolerance": "s023296"
+      },
+      "formats": {
+        "diagnosis": {
+          "records": 3560,
+          "format_valid": 3470,
+          "native_valid": 705
+        },
+        "multi": {
+          "records": 167,
+          "format_valid": 145,
+          "native_valid": 145
+        },
+        "relation": {
+          "records": 1576,
+          "format_valid": 1567,
+          "native_valid": 1567
+        },
+        "robustness_single": {
+          "records": 2700,
+          "format_valid": 1945,
+          "native_valid": 1945
+        },
+        "single": {
+          "records": 7613,
+          "format_valid": 7396,
+          "native_valid": 7396
+        }
+      },
+      "unique_inputs": 13905,
+      "unique_strict_answer_choice_object": 13881,
+      "finish_reasons": {
+        "stop": 13904,
+        "length": 1
+      }
+    }
+  }
+}

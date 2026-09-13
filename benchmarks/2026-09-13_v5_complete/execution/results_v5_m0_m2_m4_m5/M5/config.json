@@ -1,0 +1,34 @@
+{
+  "method_id": "M5",
+  "method": "medrag_qwen3",
+  "paper": "https://arxiv.org/html/2603.03292v1#A4.SS2",
+  "model_id": "Qwen/Qwen3-8B",
+  "model_path": "/home/data3/txy/models/Qwen3-8B",
+  "retriever_name": "BM25+MedCPT",
+  "reranker_path": "models/MedCPT-Cross-Encoder",
+  "corpus_name": "MedCorp",
+  "k": 8,
+  "rrf_k": 100,
+  "max_length": 131072,
+  "context_length": 30000,
+  "seed": 42,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "generation_kwargs": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 2048
+  },
+  "engine": "vllm",
+  "engine_note": "Batched execution; decoding settings retained. Tokens are not claimed equal to Transformers smoke.",
+  "native_task_adapter": "code/run_medrag.py::messages",
+  "rope_scaling": {
+    "rope_type": "yarn",
+    "factor": 4.0,
+    "original_max_position_embeddings": 32768
+  },
+  "context_extension_reason": "Preserve complete mandatory v5 evidence; same extension as completed local M3."
+}

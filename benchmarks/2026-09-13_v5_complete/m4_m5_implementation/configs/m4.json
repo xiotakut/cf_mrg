@@ -1,0 +1,22 @@
+{
+  "method_id": "M4",
+  "method": "medrag_llama31",
+  "paper": "https://arxiv.org/html/2510.18297v1#A1",
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_path": "models/Llama-3.1-8B-Instruct",
+  "retriever_name": "RRF-4",
+  "corpus_name": "TextbooksWikipedia",
+  "k": 5,
+  "rrf_k": 100,
+  "max_length": 131072,
+  "context_length": 128000,
+  "seed": 42,
+  "chat_template_kwargs": {},
+  "generation_kwargs": {
+    "do_sample": true,
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "top_k": 0,
+    "max_new_tokens": 2048
+  }
+}

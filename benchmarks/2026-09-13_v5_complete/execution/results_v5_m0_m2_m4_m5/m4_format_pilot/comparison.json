@@ -1,0 +1,97 @@
+{
+  "status": "complete",
+  "denominator": "unique inputs; stratified 20 per format; historical baseline not rerun with matched batch schedule",
+  "summary": {
+    "original": {
+      "N": 100,
+      "json_object_valid": 74,
+      "format_valid": 65,
+      "native_valid": 53,
+      "correct": 36,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 12,
+        "valid": 53,
+        "malformed_json": 26,
+        "ambiguous_diagnosis": 1,
+        "invalid_option_key": 8
+      },
+      "by_format": {
+        "diagnosis": {
+          "N": 20,
+          "format_valid": 16,
+          "native_valid": 4,
+          "correct": 2
+        },
+        "multi": {
+          "N": 20,
+          "format_valid": 10,
+          "native_valid": 10,
+          "correct": 6
+        },
+        "relation": {
+          "N": 20,
+          "format_valid": 18,
+          "native_valid": 18,
+          "correct": 12
+        },
+        "robustness_single": {
+          "N": 20,
+          "format_valid": 11,
+          "native_valid": 11,
+          "correct": 9
+        },
+        "single": {
+          "N": 20,
+          "format_valid": 10,
+          "native_valid": 10,
+          "correct": 7
+        }
+      }
+    },
+    "prompt_fix": {
+      "N": 100,
+      "json_object_valid": 93,
+      "format_valid": 92,
+      "native_valid": 76,
+      "correct": 42,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 16,
+        "valid": 76,
+        "malformed_json": 7,
+        "ambiguous_diagnosis": 1
+      },
+      "by_format": {
+        "diagnosis": {
+          "N": 20,
+          "format_valid": 19,
+          "native_valid": 3,
+          "correct": 2
+        },
+        "multi": {
+          "N": 20,
+          "format_valid": 17,
+          "native_valid": 17,
+          "correct": 6
+        },
+        "relation": {
+          "N": 20,
+          "format_valid": 19,
+          "native_valid": 19,
+          "correct": 11
+        },
+        "robustness_single": {
+          "N": 20,
+          "format_valid": 17,
+          "native_valid": 17,
+          "correct": 10
+        },
+        "single": {
+          "N": 20,
+          "format_valid": 20,
+          "native_valid": 20,
+          "correct": 13
+        }
+      }
+    }
+  }
+}

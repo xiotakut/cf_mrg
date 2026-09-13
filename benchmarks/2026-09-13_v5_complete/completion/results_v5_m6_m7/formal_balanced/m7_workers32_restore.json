@@ -1,0 +1,26 @@
+{
+  "changed_at": "2026-09-13T10:34:28.376004+08:00",
+  "before": {
+    "imedrag": {
+      "workers": 64,
+      "max_batch_tokens": 128000
+    },
+    "tcrag": {
+      "workers": 64,
+      "max_batch_tokens": 96000
+    }
+  },
+  "after": {
+    "imedrag": {
+      "workers": 64,
+      "max_batch_tokens": 128000
+    },
+    "tcrag": {
+      "workers": 32,
+      "max_batch_tokens": 96000
+    }
+  },
+  "scope": "subsequent chunks only; current tcrag_005/006/007 retain 64 and are not interrupted",
+  "reason": "First completed 64-worker formal chunk showed no end-to-end gain: 97.87min/128 inputs, 15.01 useful tokens per engine second, 36.5% useful decode positions; prior 32-worker chunks 68.39-90.97min, 18.37-21.08tps, 45.2-52.0%. Inputs differ so this is observational, not causal proof. Restore measured baseline for subsequent work.",
+  "evidence": "logs/m7_completed_chunk_throughput.json"
+}

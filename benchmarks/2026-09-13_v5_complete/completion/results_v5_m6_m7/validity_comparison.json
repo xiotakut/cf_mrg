@@ -1,0 +1,149 @@
+[
+  {
+    "version": "v5",
+    "method": "M0",
+    "n": 15616,
+    "inputs": 13905,
+    "format_invalid": 401,
+    "invalid": 2784,
+    "format_valid_pct": 97.432,
+    "native_valid_pct": 82.172,
+    "reasons": {
+      "unmapped_diagnosis": 2383,
+      "ambiguous_diagnosis": 7,
+      "malformed_json": 157,
+      "invalid_option_key": 237
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M2",
+    "n": 15616,
+    "inputs": 13905,
+    "format_invalid": 524,
+    "invalid": 3135,
+    "format_valid_pct": 96.644,
+    "native_valid_pct": 79.924,
+    "reasons": {
+      "unmapped_diagnosis": 2611,
+      "ambiguous_diagnosis": 31,
+      "invalid_option_set": 1,
+      "malformed_json": 169,
+      "invalid_option_key": 323
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M4",
+    "n": 15616,
+    "inputs": 13905,
+    "format_invalid": 5995,
+    "invalid": 8427,
+    "format_valid_pct": 61.61,
+    "native_valid_pct": 46.036,
+    "reasons": {
+      "unmapped_diagnosis": 2432,
+      "malformed_json": 3699,
+      "ambiguous_diagnosis": 98,
+      "invalid_option_set": 3,
+      "invalid_option_key": 2195
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M5",
+    "n": 15616,
+    "inputs": 13905,
+    "format_invalid": 1093,
+    "invalid": 3858,
+    "format_valid_pct": 93.001,
+    "native_valid_pct": 75.295,
+    "reasons": {
+      "unmapped_diagnosis": 2765,
+      "ambiguous_diagnosis": 90,
+      "malformed_json": 27,
+      "invalid_option_set": 17,
+      "invalid_option_key": 959
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M3",
+    "n": 15616,
+    "inputs": 13905,
+    "format_invalid": 641,
+    "invalid": 3456,
+    "format_valid_pct": 95.895,
+    "native_valid_pct": 77.869,
+    "reasons": {
+      "ambiguous_diagnosis": 275,
+      "unmapped_diagnosis": 2815,
+      "invalid_answer_type": 364,
+      "invalid_option_set": 2
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m3/scored.jsonl"
+  },
+  {
+    "version": "v3",
+    "method": "M0",
+    "n": 6030,
+    "inputs": 4872,
+    "format_invalid": 3,
+    "invalid": 1197,
+    "format_valid_pct": 99.95,
+    "native_valid_pct": 80.149,
+    "reasons": {
+      "unmapped_diagnosis": 1194,
+      "ambiguous_diagnosis": 2,
+      "malformed_json": 1
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/benchmark_r1_r5_text_auto_cpv_v3_exclusive_20260909/results/scored.jsonl"
+  },
+  {
+    "version": "v3",
+    "method": "M1",
+    "n": 6030,
+    "inputs": 4872,
+    "format_invalid": 1,
+    "invalid": 1403,
+    "format_valid_pct": 99.983,
+    "native_valid_pct": 76.733,
+    "reasons": {
+      "unmapped_diagnosis": 1402,
+      "ambiguous_diagnosis": 1
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/benchmark_r1_r5_text_auto_cpv_v3_exclusive_20260909/results/scored.jsonl"
+  },
+  {
+    "version": "pilotM6",
+    "method": "imedrag",
+    "n": 19,
+    "inputs": 12,
+    "format_invalid": 1,
+    "invalid": 1,
+    "format_valid_pct": 94.737,
+    "native_valid_pct": 94.737,
+    "reasons": {
+      "malformed_json": 1
+    },
+    "source": "results_v5_m6_m7/diagnostics/M6/scores/scored.jsonl"
+  },
+  {
+    "version": "pilotM7",
+    "method": "tcrag",
+    "n": 19,
+    "inputs": 12,
+    "format_invalid": 3,
+    "invalid": 3,
+    "format_valid_pct": 84.211,
+    "native_valid_pct": 84.211,
+    "reasons": {
+      "malformed_json": 3
+    },
+    "source": "results_v5_m6_m7/diagnostics/M7/scores/scored.jsonl"
+  }
+]

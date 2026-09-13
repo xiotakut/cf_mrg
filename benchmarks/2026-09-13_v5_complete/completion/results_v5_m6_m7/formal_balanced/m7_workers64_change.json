@@ -1,0 +1,26 @@
+{
+  "changed_at": "2026-09-13T08:46:06.149028+08:00",
+  "before": {
+    "imedrag": {
+      "workers": 64,
+      "max_batch_tokens": 128000
+    },
+    "tcrag": {
+      "workers": 32,
+      "max_batch_tokens": 96000
+    }
+  },
+  "after": {
+    "imedrag": {
+      "workers": 64,
+      "max_batch_tokens": 128000
+    },
+    "tcrag": {
+      "workers": 64,
+      "max_batch_tokens": 96000
+    }
+  },
+  "scope": "subsequent chunk launches only; existing processes retain 32 workers",
+  "reason": "Recent formal M7 actual batches average 2.7-3.1; token limit rarely binds. Increase waiting pool within the same format/stage/length groups; preserve model, prompts, budgets, entropy and 96000 padded-token ceiling.",
+  "evidence": "logs/m7_throughput_diagnosis.json"
+}

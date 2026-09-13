@@ -1,0 +1,867 @@
+{
+  "paused_at": "2026-09-13T13:45:35.317224+08:00",
+  "reason": "User requested saving M7 progress and assigning GPUs 1/2/3 to updated M4",
+  "original_jobs": [
+    {
+      "state": "done",
+      "name": "tcrag_000",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_000.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "source_run": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal_fast/runs/tcrag_000",
+      "worker_pid": 1952834,
+      "started_at": "2026-09-13T06:57:21.845067+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T07:31:30.494182+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_001",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_001.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "worker_pid": 1952834,
+      "started_at": "2026-09-13T07:31:30.499086+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T08:50:50.493104+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_002",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_002.jsonl",
+      "n": 128,
+      "gpu": "1",
+      "worker_pid": 1958371,
+      "started_at": "2026-09-13T08:03:32.864521+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T09:34:31.141339+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_003",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_003.jsonl",
+      "n": 128,
+      "gpu": "2",
+      "worker_pid": 1958382,
+      "started_at": "2026-09-13T08:03:32.918015+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T09:11:56.269807+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_004",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_004.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "worker_pid": 1952834,
+      "started_at": "2026-09-13T08:50:50.498197+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T10:28:42.874029+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_005",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_005.jsonl",
+      "n": 128,
+      "gpu": "2",
+      "worker_pid": 1958382,
+      "started_at": "2026-09-13T09:11:56.276708+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T10:54:51.508057+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_006",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_006.jsonl",
+      "n": 128,
+      "gpu": "1",
+      "worker_pid": 1958371,
+      "started_at": "2026-09-13T09:34:31.146694+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T11:41:52.884516+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_007",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_007.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "worker_pid": 1952834,
+      "started_at": "2026-09-13T10:28:42.878908+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T11:57:26.020816+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_008",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_008.jsonl",
+      "n": 128,
+      "gpu": "2",
+      "worker_pid": 1958382,
+      "started_at": "2026-09-13T10:54:51.512921+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T12:18:16.584138+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_009",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_009.jsonl",
+      "n": 128,
+      "gpu": "1",
+      "worker_pid": 1958371,
+      "started_at": "2026-09-13T11:41:52.889604+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T13:03:32.210041+08:00"
+    },
+    {
+      "state": "done",
+      "name": "tcrag_010",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_010.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "worker_pid": 1952834,
+      "started_at": "2026-09-13T11:57:26.025795+08:00",
+      "inference_exit_code": 0,
+      "report_exit_code": 0,
+      "finished_at": "2026-09-13T13:19:42.780464+08:00"
+    },
+    {
+      "state": "running",
+      "name": "tcrag_011",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_011.jsonl",
+      "n": 128,
+      "gpu": "2",
+      "worker_pid": 1958382,
+      "started_at": "2026-09-13T12:18:16.589091+08:00"
+    },
+    {
+      "state": "running",
+      "name": "tcrag_012",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_012.jsonl",
+      "n": 128,
+      "gpu": "1",
+      "worker_pid": 1958371,
+      "started_at": "2026-09-13T13:03:32.217379+08:00"
+    },
+    {
+      "state": "running",
+      "name": "tcrag_013",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_013.jsonl",
+      "n": 128,
+      "gpu": "3",
+      "worker_pid": 1952834,
+      "started_at": "2026-09-13T13:19:42.789103+08:00"
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_014",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_014.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_015",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_015.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_016",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_016.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_017",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_017.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_018",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_018.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_019",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_019.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_020",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_020.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_021",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_021.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_022",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_022.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_023",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_023.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_024",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_024.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_025",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_025.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_026",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_026.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_027",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_027.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_028",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_028.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_029",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_029.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_030",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_030.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_031",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_031.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_032",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_032.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_033",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_033.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_034",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_034.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_035",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_035.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_036",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_036.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_037",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_037.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_038",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_038.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_039",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_039.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_040",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_040.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_041",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_041.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_042",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_042.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_043",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_043.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_044",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_044.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_045",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_045.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_046",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_046.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_047",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_047.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_048",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_048.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_049",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_049.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_050",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_050.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_051",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_051.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_052",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_052.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_053",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_053.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_054",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_054.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_055",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_055.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_056",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_056.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_057",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_057.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_058",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_058.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_059",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_059.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_060",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_060.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_061",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_061.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_062",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_062.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_063",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_063.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_064",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_064.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_065",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_065.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_066",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_066.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_067",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_067.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_068",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_068.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_069",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_069.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_070",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_070.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_071",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_071.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_072",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_072.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_073",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_073.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_074",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_074.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_075",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_075.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_076",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_076.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_077",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_077.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_078",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_078.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_079",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_079.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_080",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_080.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_081",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_081.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_082",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_082.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_083",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_083.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_084",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_084.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_085",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_085.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_086",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_086.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_087",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_087.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_088",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_088.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_089",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_089.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_090",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_090.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_091",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_091.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_092",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_092.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_093",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_093.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_094",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_094.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_095",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_095.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_096",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_096.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_097",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_097.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_098",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_098.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_099",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_099.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_100",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_100.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_101",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_101.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_102",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_102.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_103",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_103.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_104",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_104.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_105",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_105.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_106",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_106.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_107",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_107.jsonl",
+      "n": 128
+    },
+    {
+      "state": "queued",
+      "name": "tcrag_108",
+      "method": "tcrag",
+      "input_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal/data/chunk_108.jsonl",
+      "n": 69
+    }
+  ],
+  "targets": [
+    {
+      "job": "tcrag_011",
+      "gpu": "2",
+      "worker_pid": 1958382,
+      "model_pid": 1979325
+    },
+    {
+      "job": "tcrag_012",
+      "gpu": "1",
+      "worker_pid": 1958371,
+      "model_pid": 1989157
+    },
+    {
+      "job": "tcrag_013",
+      "gpu": "3",
+      "worker_pid": 1952834,
+      "model_pid": 1996623
+    }
+  ],
+  "stage_cache_location": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/formal_balanced/runs",
+  "resume_policy": "Do not resume until requested; committed stage receipts preserved in place; interrupted incomplete generations recompute on resume"
+}

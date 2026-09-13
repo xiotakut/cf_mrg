@@ -1,0 +1,140 @@
+[
+  {
+    "version": "v5",
+    "method": "M0",
+    "n": 13905,
+    "format_invalid": 396,
+    "invalid": 2779,
+    "format_valid_pct": 97.15,
+    "native_valid_pct": 80.01,
+    "reasons": {
+      "unmapped_diagnosis": 2383,
+      "ambiguous_diagnosis": 7,
+      "malformed_json": 155,
+      "invalid_option_key": 234
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M2",
+    "n": 13905,
+    "format_invalid": 516,
+    "invalid": 3127,
+    "format_valid_pct": 96.29,
+    "native_valid_pct": 77.51,
+    "reasons": {
+      "unmapped_diagnosis": 2611,
+      "ambiguous_diagnosis": 31,
+      "invalid_option_set": 1,
+      "malformed_json": 169,
+      "invalid_option_key": 315
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M4",
+    "n": 13905,
+    "format_invalid": 5366,
+    "invalid": 7798,
+    "format_valid_pct": 61.41,
+    "native_valid_pct": 43.92,
+    "reasons": {
+      "unmapped_diagnosis": 2432,
+      "malformed_json": 3164,
+      "ambiguous_diagnosis": 98,
+      "invalid_option_set": 3,
+      "invalid_option_key": 2101
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M5",
+    "n": 13905,
+    "format_invalid": 1064,
+    "invalid": 3829,
+    "format_valid_pct": 92.35,
+    "native_valid_pct": 72.46,
+    "reasons": {
+      "unmapped_diagnosis": 2765,
+      "ambiguous_diagnosis": 90,
+      "malformed_json": 24,
+      "invalid_option_set": 17,
+      "invalid_option_key": 933
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl"
+  },
+  {
+    "version": "v5",
+    "method": "M3",
+    "n": 13905,
+    "format_invalid": 616,
+    "invalid": 3431,
+    "format_valid_pct": 95.57,
+    "native_valid_pct": 75.33,
+    "reasons": {
+      "ambiguous_diagnosis": 275,
+      "unmapped_diagnosis": 2815,
+      "invalid_answer_type": 339,
+      "invalid_option_set": 2
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m3/scored.jsonl"
+  },
+  {
+    "version": "v3",
+    "method": "M0",
+    "n": 4872,
+    "format_invalid": 3,
+    "invalid": 1197,
+    "format_valid_pct": 99.94,
+    "native_valid_pct": 75.43,
+    "reasons": {
+      "unmapped_diagnosis": 1194,
+      "ambiguous_diagnosis": 2,
+      "malformed_json": 1
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/benchmark_r1_r5_text_auto_cpv_v3_exclusive_20260909/results/scored.jsonl"
+  },
+  {
+    "version": "v3",
+    "method": "M1",
+    "n": 4872,
+    "format_invalid": 1,
+    "invalid": 1403,
+    "format_valid_pct": 99.98,
+    "native_valid_pct": 71.2,
+    "reasons": {
+      "unmapped_diagnosis": 1402,
+      "ambiguous_diagnosis": 1
+    },
+    "source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/benchmark_r1_r5_text_auto_cpv_v3_exclusive_20260909/results/scored.jsonl"
+  },
+  {
+    "version": "pilotM6",
+    "method": "imedrag",
+    "n": 12,
+    "format_invalid": 1,
+    "invalid": 1,
+    "format_valid_pct": 91.67,
+    "native_valid_pct": 91.67,
+    "reasons": {
+      "malformed_json": 1
+    },
+    "source": "results_v5_m6_m7/diagnostics/M6/scores/scored.jsonl"
+  },
+  {
+    "version": "pilotM7",
+    "method": "tcrag",
+    "n": 12,
+    "format_invalid": 3,
+    "invalid": 3,
+    "format_valid_pct": 75.0,
+    "native_valid_pct": 75.0,
+    "reasons": {
+      "malformed_json": 3
+    },
+    "source": "results_v5_m6_m7/diagnostics/M7/scores/scored.jsonl"
+  }
+]

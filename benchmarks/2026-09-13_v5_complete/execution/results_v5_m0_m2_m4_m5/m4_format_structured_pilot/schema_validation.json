@@ -1,0 +1,17 @@
+{
+  "status": "checks_passed_with_recorded_truncation",
+  "unique_inputs": 100,
+  "schema_valid": 99,
+  "failures": [
+    {
+      "item_id": "s001295",
+      "finish_reason": "length",
+      "error": "Unterminated string starting at: line 1 column 27 (char 26)"
+    }
+  ],
+  "negative_shapes_rejected": 3,
+  "finish_reasons": {
+    "stop": 99,
+    "length": 1
+  }
+}
