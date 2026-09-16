@@ -1,0 +1,1181 @@
+{
+  "date": "2026-09-16",
+  "workspace_root": "/home/data3/txy",
+  "deliverable": "docs/research/support_update_method.md",
+  "method": "Parallel full sequential reading of readable substantive session messages and listed run documents; primary result and failure evidence traced as described in the deliverable. Encrypted fields, irrecoverably truncated returns and duplicated bulk tool outputs are not claimed as fully read.",
+  "new_model_calls": 0,
+  "sessions": [
+    {
+      "id": "01a0a9f0-8f78-7cf2-8287-945bf42130ea",
+      "path": ".codex/sessions/2026/09/16/rollout-2026-09-16T19-18-30-01a0a9f0-8f78-7cf2-8287-945bf42130ea.jsonl",
+      "lines_at_reading": 748,
+      "bytes_at_reading": 5643047,
+      "readable_substantive_user_assistant_messages": 16
+    },
+    {
+      "id": "01a09dd7-8667-7ab0-8a9e-7051b56031e7",
+      "path": ".codex/sessions/2026/09/14/rollout-2026-09-14T10-55-42-01a09dd7-8667-7ab0-8a9e-7051b56031e7.jsonl",
+      "lines_at_reading": 18231,
+      "bytes_at_reading": 113391220,
+      "readable_substantive_user_assistant_messages_deduplicated": 519
+    },
+    {
+      "id": "01a0a866-0afc-7803-a5d3-a915d7b45e1b",
+      "path": ".codex/sessions/2026/09/16/rollout-2026-09-16T12-07-34-01a0a866-0afc-7803-a5d3-a915d7b45e1b.jsonl",
+      "lines_at_reading": 5102,
+      "bytes_at_reading": 22941936,
+      "readable_substantive_user_assistant_messages": 126
+    }
+  ],
+  "main_records_full_read": [
+    {
+      "path": "docs/research/optimization.md",
+      "lines_at_reading": 955
+    },
+    {
+      "path": "docs/research/r2_support_head.md",
+      "lines_at_reading": 1796
+    },
+    {
+      "path": "docs/research/r3_candidate_comparison.md",
+      "lines_at_reading": 1975
+    }
+  ],
+  "documents": [
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/README.md",
+      "bytes_at_manifest": 2304
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/candidate/README.md",
+      "bytes_at_manifest": 4371
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/diagnosis/README.md",
+      "bytes_at_manifest": 21578
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/diagnosis/all_methods_1780/class_scope_comparison.md",
+      "bytes_at_manifest": 5509
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/diagnosis/bronchitis_review.md",
+      "bytes_at_manifest": 11557
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/mcq/README.md",
+      "bytes_at_manifest": 11520
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/mcq/pilot/RESULTS.md",
+      "bytes_at_manifest": 3955
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/relations/README.md",
+      "bytes_at_manifest": 10964
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/relations/context_case_review.md",
+      "bytes_at_manifest": 7972
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/relations/context_input_audit.md",
+      "bytes_at_manifest": 2271
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/relations/prompt_scope_review.md",
+      "bytes_at_manifest": 2466
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/relations/repair_evidence_review.md",
+      "bytes_at_manifest": 7627
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/rules/README.md",
+      "bytes_at_manifest": 13505
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/rules/RESULTS.md",
+      "bytes_at_manifest": 3539
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/rules/ddi_scope_cases.md",
+      "bytes_at_manifest": 11557
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_experiments/rules/strict_native_sensitivity/RESULTS.md",
+      "bytes_at_manifest": 3539
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/README.md",
+      "bytes_at_manifest": 2297
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/diagnosis/README.md",
+      "bytes_at_manifest": 3134
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/diagnosis/result_audit.md",
+      "bytes_at_manifest": 8993
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/frozen_head/README.md",
+      "bytes_at_manifest": 4371
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/relations_control/README.md",
+      "bytes_at_manifest": 4903
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/rules/README.md",
+      "bytes_at_manifest": 6981
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/rules/probes/README.md",
+      "bytes_at_manifest": 5738
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_validation/rules/probes/RESULTS.md",
+      "bytes_at_manifest": 12385
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/README.md",
+      "bytes_at_manifest": 841
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/composition/README.md",
+      "bytes_at_manifest": 1028
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/composition/RESULTS.md",
+      "bytes_at_manifest": 12036
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/diagnosis/README.md",
+      "bytes_at_manifest": 1976
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/diagnosis/RESULTS.md",
+      "bytes_at_manifest": 5493
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/facts/README.md",
+      "bytes_at_manifest": 1721
+    },
+    {
+      "group": "r1_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_head_refinement/facts/RESULTS.md",
+      "bytes_at_manifest": 7314
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_action_mapping/README.md",
+      "bytes_at_manifest": 982
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_action_mapping/RESULTS.md",
+      "bytes_at_manifest": 577
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_atomic_pilot/README.md",
+      "bytes_at_manifest": 2296
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_atomic_pilot/RESULTS.md",
+      "bytes_at_manifest": 764
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_backbone_retrieval/README.md",
+      "bytes_at_manifest": 1791
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_backbone_retrieval/RESULTS.md",
+      "bytes_at_manifest": 1849
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_context_pilot/README.md",
+      "bytes_at_manifest": 2234
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_context_pilot/RESULTS.md",
+      "bytes_at_manifest": 827
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_coverage_pilot/README.md",
+      "bytes_at_manifest": 793
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_coverage_pilot/RESULTS.md",
+      "bytes_at_manifest": 815
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_coverage_routing/README.md",
+      "bytes_at_manifest": 633
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_decision_policy/README.md",
+      "bytes_at_manifest": 588
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_evidence_first_llama/README.md",
+      "bytes_at_manifest": 896
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_evidence_first_qwen/README.md",
+      "bytes_at_manifest": 894
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_focused_pilot/README.md",
+      "bytes_at_manifest": 883
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_focused_pilot/RESULTS.md",
+      "bytes_at_manifest": 1057
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_fresh_control/README.md",
+      "bytes_at_manifest": 752
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_fresh_control/RESULTS.md",
+      "bytes_at_manifest": 815
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_guideline_pilot/README.md",
+      "bytes_at_manifest": 1792
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_guideline_pilot/RESULTS.md",
+      "bytes_at_manifest": 790
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_indexed_pilot/README.md",
+      "bytes_at_manifest": 621
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_indexed_pilot/RESULTS.md",
+      "bytes_at_manifest": 1684
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_interface_pilot/README.md",
+      "bytes_at_manifest": 3723
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_interface_pilot/RESULTS.md",
+      "bytes_at_manifest": 1276
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_m4_program_pilot/README.md",
+      "bytes_at_manifest": 626
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_m4_program_pilot/RESULTS.md",
+      "bytes_at_manifest": 1679
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_m5_head_pilot/README.md",
+      "bytes_at_manifest": 552
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_m5_head_pilot/RESULTS.md",
+      "bytes_at_manifest": 1236
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_medical_rule_probes/README.md",
+      "bytes_at_manifest": 635
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_method_analysis/RESULTS.md",
+      "bytes_at_manifest": 424
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_order_native/README.md",
+      "bytes_at_manifest": 671
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_order_native/RESULTS.md",
+      "bytes_at_manifest": 723
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_order_synthetic/README.md",
+      "bytes_at_manifest": 838
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_order_synthetic/RESULTS.md",
+      "bytes_at_manifest": 567
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_positive_facts_llama/README.md",
+      "bytes_at_manifest": 752
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_positive_facts_qwen/README.md",
+      "bytes_at_manifest": 750
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_program_all_methods/README.md",
+      "bytes_at_manifest": 706
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_program_composition_before_tuple_fix/README.md",
+      "bytes_at_manifest": 624
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_program_pilot/README.md",
+      "bytes_at_manifest": 594
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_program_pilot/RESULTS.md",
+      "bytes_at_manifest": 1680
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_program_transfer_analysis/README.md",
+      "bytes_at_manifest": 451
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/README.md",
+      "bytes_at_manifest": 688
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_retraction_pilot/README.md",
+      "bytes_at_manifest": 4959
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_retraction_pilot/RESULTS.md",
+      "bytes_at_manifest": 1084
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_rule_counterexamples/README.md",
+      "bytes_at_manifest": 917
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_rule_counterexamples/RESULTS.md",
+      "bytes_at_manifest": 1901
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_rule_holdout/README.md",
+      "bytes_at_manifest": 554
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_samefacts_llama/README.md",
+      "bytes_at_manifest": 1162
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_samefacts_qwen/README.md",
+      "bytes_at_manifest": 1160
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_samefacts_reasoning_llama/README.md",
+      "bytes_at_manifest": 1174
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_samefacts_reasoning_qwen/README.md",
+      "bytes_at_manifest": 1172
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_scope_holdout/README.md",
+      "bytes_at_manifest": 460
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_scope_holdout_llama/README.md",
+      "bytes_at_manifest": 1099
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_scope_holdout_qwen/README.md",
+      "bytes_at_manifest": 1097
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_support_pilot/RESULTS.md",
+      "bytes_at_manifest": 1794
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_task_scoped_llama/README.md",
+      "bytes_at_manifest": 1169
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_task_scoped_qwen/README.md",
+      "bytes_at_manifest": 1167
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_thinking_pilot/README.md",
+      "bytes_at_manifest": 720
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_thinking_pilot/RESULTS.md",
+      "bytes_at_manifest": 1022
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_verbalizer_pilot/README.md",
+      "bytes_at_manifest": 900
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_verbalizer_pilot/RESULTS.md",
+      "bytes_at_manifest": 817
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r2_program_transfer_failed_parity/FAILURE.txt",
+      "bytes_at_manifest": 378
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/README.md",
+      "bytes_at_manifest": 4643
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/guideline_sources/README.md",
+      "bytes_at_manifest": 1034
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-16/r1_r2_evidence_audit/r2_audit.md",
+      "bytes_at_manifest": 14818
+    },
+    {
+      "group": "r2_run_documents",
+      "path": "Documents/Codex/2026-09-16/r2_r3_paper_audit/r2_paper_assessment.md",
+      "bytes_at_manifest": 16872
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_audit/README.md",
+      "bytes_at_manifest": 428
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/README.md",
+      "bytes_at_manifest": 1448
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/candidate/README.md",
+      "bytes_at_manifest": 5362
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_calibrated_expansion/README.md",
+      "bytes_at_manifest": 1804
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_calibrated_transfer/README.md",
+      "bytes_at_manifest": 1725
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_calibrated_vote_candidate/README.md",
+      "bytes_at_manifest": 5038
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_candidate_retrieval/README.md",
+      "bytes_at_manifest": 2195
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_case_memory_confirmation/README.md",
+      "bytes_at_manifest": 839
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_calibration_m4/README.md",
+      "bytes_at_manifest": 1638
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_calibration_m4_remaining/README.md",
+      "bytes_at_manifest": 727
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_calibration_m5/README.md",
+      "bytes_at_manifest": 1638
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_calibration_m5_remaining/README.md",
+      "bytes_at_manifest": 727
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_calibration_summary/README.md",
+      "bytes_at_manifest": 1015
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_m4/README.md",
+      "bytes_at_manifest": 1420
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_m4_remaining/README.md",
+      "bytes_at_manifest": 1593
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_m5/README.md",
+      "bytes_at_manifest": 1453
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_m5_remaining/README.md",
+      "bytes_at_manifest": 1593
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_transfer_llama/README.md",
+      "bytes_at_manifest": 1226
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_transfer_qwen/README.md",
+      "bytes_at_manifest": 1223
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_channel_likelihood/README.md",
+      "bytes_at_manifest": 2503
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_comparison_m4/README.md",
+      "bytes_at_manifest": 495
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_comparison_m5/README.md",
+      "bytes_at_manifest": 544
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_context_selection_qwen/README.md",
+      "bytes_at_manifest": 1073
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_counterfactual_audit_m4_grounded_scout/README.md",
+      "bytes_at_manifest": 384
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_counterfactual_audit_m5_grounded_scout/README.md",
+      "bytes_at_manifest": 384
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_counterfactual_audit_m5_scout/README.md",
+      "bytes_at_manifest": 384
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_adapter/README.md",
+      "bytes_at_manifest": 2276
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_expansion/README.md",
+      "bytes_at_manifest": 3065
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_holdout/README.md",
+      "bytes_at_manifest": 2859
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_option_style/README.md",
+      "bytes_at_manifest": 1952
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_uniform_sequence/README.md",
+      "bytes_at_manifest": 1522
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_validation/README.md",
+      "bytes_at_manifest": 2295
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_delayed_options/README.md",
+      "bytes_at_manifest": 1947
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_delta_memory_development/README.md",
+      "bytes_at_manifest": 385
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_delta_memory_endpoint_normalized/README.md",
+      "bytes_at_manifest": 385
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_empirical_features/README.md",
+      "bytes_at_manifest": 4163
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/README.md",
+      "bytes_at_manifest": 3392
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/README.md",
+      "bytes_at_manifest": 2516
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_extractive_m4/README.md",
+      "bytes_at_manifest": 369
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_fact_scope_factorial/README.md",
+      "bytes_at_manifest": 1693
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_fact_scope_indexed/README.md",
+      "bytes_at_manifest": 1359
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_fact_scope_nli/README.md",
+      "bytes_at_manifest": 1278
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_focused_m4/README.md",
+      "bytes_at_manifest": 968
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_general_criteria/README.md",
+      "bytes_at_manifest": 2516
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_knowledge_utility/README.md",
+      "bytes_at_manifest": 1738
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_local_evidence_relations/README.md",
+      "bytes_at_manifest": 2210
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_mechanism_probes/README.md",
+      "bytes_at_manifest": 337
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_memory_m4/README.md",
+      "bytes_at_manifest": 628
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_memory_m5/README.md",
+      "bytes_at_manifest": 650
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_memory_normalized_m4/README.md",
+      "bytes_at_manifest": 680
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_memory_normalized_m5/README.md",
+      "bytes_at_manifest": 679
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_memory_source/README.md",
+      "bytes_at_manifest": 435
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_memory_source_control/README.md",
+      "bytes_at_manifest": 402
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_name_control_transfer_llama/README.md",
+      "bytes_at_manifest": 1241
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_name_control_transfer_qwen/README.md",
+      "bytes_at_manifest": 1238
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_named_evidence_relations/README.md",
+      "bytes_at_manifest": 3826
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_nli_facts/README.md",
+      "bytes_at_manifest": 2350
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_option_aggregation/README.md",
+      "bytes_at_manifest": 2102
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_paired_case_probe/README.md",
+      "bytes_at_manifest": 2776
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_pairwise_comparison/README.md",
+      "bytes_at_manifest": 2341
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_patient_contrast/README.md",
+      "bytes_at_manifest": 2369
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_patient_focus_llama/README.md",
+      "bytes_at_manifest": 1217
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_patient_focus_qwen/README.md",
+      "bytes_at_manifest": 1214
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_patient_selection_m4_remaining/README.md",
+      "bytes_at_manifest": 903
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_patient_selection_m5_remaining/README.md",
+      "bytes_at_manifest": 903
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_patient_selection_v1/README.md",
+      "bytes_at_manifest": 1784
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_pointwise_verification/README.md",
+      "bytes_at_manifest": 1445
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_query_m4/README.md",
+      "bytes_at_manifest": 379
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_relation_code_probe/README.md",
+      "bytes_at_manifest": 1481
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_retrieval_probe/README.md",
+      "bytes_at_manifest": 276
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_rule_transfer/README.md",
+      "bytes_at_manifest": 2707
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_single_evidence_relations/README.md",
+      "bytes_at_manifest": 1613
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_terminal_diagnosis_llama/README.md",
+      "bytes_at_manifest": 1060
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_terminal_diagnosis_qwen/README.md",
+      "bytes_at_manifest": 1057
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_train_memory/README.md",
+      "bytes_at_manifest": 617
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/ascent/README.md",
+      "bytes_at_manifest": 3585
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/upstream_README.md",
+      "bytes_at_manifest": 2016
+    },
+    {
+      "group": "r3_run_and_source_documents",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/upstream_code/lm_eval_README.md",
+      "bytes_at_manifest": 599
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_queue_failed_runtime.json",
+      "bytes_at_manifest": 404
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_paired_case_probe/summary_initial_failure.json",
+      "bytes_at_manifest": 674
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_paired_case_probe/runtime_before_inputs_fix.json",
+      "bytes_at_manifest": 362
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_encoding_m4_permuted/initialization_failure.json",
+      "bytes_at_manifest": 256
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_single_evidence_relations/m4/config_before_memory_fix.json",
+      "bytes_at_manifest": 450
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_single_evidence_relations/m4/relations/config_before_memory_fix.json",
+      "bytes_at_manifest": 478
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_named_evidence_relations/m4_recovery_runtime.json",
+      "bytes_at_manifest": 179
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_named_evidence_relations/m4/runtime_gpu0_failed.json",
+      "bytes_at_manifest": 175
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_named_evidence_relations/m4/config_before_memory_fix.json",
+      "bytes_at_manifest": 450
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_named_evidence_relations/m4/relations/config_before_memory_fix.json",
+      "bytes_at_manifest": 478
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_audit/extractive_query_boundary_failure.json",
+      "bytes_at_manifest": 646
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_encoding_preflight_failure/failure.json",
+      "bytes_at_manifest": 366
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/schema_failure_and_fix.json",
+      "bytes_at_manifest": 531
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/cache_allocation_failure_and_fix.json",
+      "bytes_at_manifest": 784
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/runtime_before_schema_fix.json",
+      "bytes_at_manifest": 178
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/preparation_initial_failure.json",
+      "bytes_at_manifest": 363
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/kv_failure_and_recovery.json",
+      "bytes_at_manifest": 499
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/m5/config_failed_kv_095.json",
+      "bytes_at_manifest": 570
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/m5/selection/config_failed_kv_095.json",
+      "bytes_at_manifest": 570
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/m4/config_failed_kv_095.json",
+      "bytes_at_manifest": 390
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_selection/m4/selection/config_failed_kv_095.json",
+      "bytes_at_manifest": 390
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_encoding_m5_permuted/catalog_before_permutation_fix.json",
+      "bytes_at_manifest": 1042
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/recovery_runtime.json",
+      "bytes_at_manifest": 85
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m5/runtime_failed.json",
+      "bytes_at_manifest": 189
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m5/config_before_runner_fix.json",
+      "bytes_at_manifest": 633
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m5/final/runtime_failed.json",
+      "bytes_at_manifest": 134
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m5/final/config_before_runner_fix.json",
+      "bytes_at_manifest": 633
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m4/runtime_failed.json",
+      "bytes_at_manifest": 190
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m4/config_before_runner_fix.json",
+      "bytes_at_manifest": 477
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m4/final/runtime_failed.json",
+      "bytes_at_manifest": 134
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_evidence_relations/m4/final/config_before_runner_fix.json",
+      "bytes_at_manifest": 477
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_delta_memory_endpoint_normalized/normalization_failure.json",
+      "bytes_at_manifest": 837
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_expansion/calibration_failure_example.json",
+      "bytes_at_manifest": 736
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_knowledge_utility_preflight_failure/failure.json",
+      "bytes_at_manifest": 562
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_holdout/initial_queue_failure.json",
+      "bytes_at_manifest": 178
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_likelihood_m5/runtime_initialization_failure.json",
+      "bytes_at_manifest": 241
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_option_style/llama/initial_failure.json",
+      "bytes_at_manifest": 169
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_empirical_features/recovery_runtime.json",
+      "bytes_at_manifest": 190
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_empirical_features/m5/summary_before_quote_fix.json",
+      "bytes_at_manifest": 2654
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_empirical_features/m4/summary_before_quote_fix.json",
+      "bytes_at_manifest": 2758
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_empirical_features/m4/runtime_before_scope_recovery.json",
+      "bytes_at_manifest": 198
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_comparison_m4/plan_before_token_length_fix.json",
+      "bytes_at_manifest": 559
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_catalog_transfer_qwen/gpu1/initialization_failure.json",
+      "bytes_at_manifest": 462
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_candidate_retrieval/java_startup_failure.json",
+      "bytes_at_manifest": 327
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_candidate_retrieval/retrieval_runtime_before_java_fix.json",
+      "bytes_at_manifest": 110
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/ascent/qualification_initial_failure.json",
+      "bytes_at_manifest": 35017
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_fact_scope_factorial/recovery_runtime.json",
+      "bytes_at_manifest": 97
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_fact_scope_factorial/m4/runtime_gpu1_failure.json",
+      "bytes_at_manifest": 386
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_cupcase_validation/recovery_runtime.json",
+      "bytes_at_manifest": 189
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_counterfactual_audit_m4_grounded_scout/runtime_before_recovery.json",
+      "bytes_at_manifest": 227
+    },
+    {
+      "group": "r3_failure_receipts",
+      "path": "Documents/Codex/2026-09-14/new-chat/r3_counterfactual_audit_m5_scout/failure_summary.json",
+      "bytes_at_manifest": 390
+    },
+    {
+      "group": "shared_run_readme",
+      "path": "Documents/Codex/2026-09-14/new-chat/README.md",
+      "bytes_at_manifest": 4643
+    }
+  ]
+}

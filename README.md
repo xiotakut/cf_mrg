@@ -1,14 +1,14 @@
-**2026-09-13：M7 当前主要方法已设为完整第二版 typed-control-v2（异常恢复＋额外优化）。384题试跑协议有效率95.31%；全量尚未运行。[方法设定与记录](benchmarks/2026-09-13_v5_complete/execution/EXPERIMENT_CHANGELOG_AND_REPRODUCIBILITY.md)。**
+**2026-09-16：已发布 [R1–R3 方法论证稿](benchmarks/2026-09-16_support_update_method/docs/research/support_update_method.md)，完整串联类别低分、失败原因、方法设计与验证；[配套记录与证据](benchmarks/2026-09-16_support_update_method/README.md)。当前七方法均完成 v5，见[正式结果](benchmarks/2026-09-16_support_update_method/docs/evaluation/v5.md#current-seven-methods)。下方 09-13 的表图与方法状态保留为历史快照。**
 
 # cf_mrg · 医学 R1–R5 Benchmark 与 RAG 评测记录
 
 评估医学证据变化后，模型能否新增支持、撤销支持、重新比较、推导后果，并在无关变化下保持判断。本仓库保存数据构建决策、方法实现、原生任务评分、修复试验和可复核的实验记录。
 
-**最新状态 · 2026-09-13：v5 的 M0 / M2 / M3 / M4 修复版 / M5 均已完成全部 13,905 条输入。** M6 暂停于 52 条，M7 暂停于 1,646 条；两者尚无完整 v5 结果。
+**历史状态 · 2026-09-13：v5 的 M0 / M2 / M3 / M4 修复版 / M5 均已完成全部 13,905 条输入。** M6 暂停于 52 条，M7 暂停于 1,646 条；两者尚无完整 v5 结果。
 
 [最新完整报告](benchmarks/2026-09-13_v5_complete/completion/v5_benchmark_latest/README.md) · [近期工作总览](benchmarks/2026-09-13_v5_complete/README.md) · [全部文档目录](benchmarks/2026-09-13_v5_complete/DOCUMENTS.md) · [历史 Benchmark](benchmarks/README.md)
 
-## 最新 v5 结果
+## 2026-09-13 五方法结果快照
 
 每方法 **13,905 个唯一输入、15,616 条原生评分映射**，覆盖 **6,104 个单元、13,000 个入选判断**。五方法输入集合相同，缺失和重复均为 0。主指标为单元内非 reference 原生任务准确率平均，再在类别内对单元等权；下表单位为 %，无效回答保留分母。
 
@@ -28,7 +28,7 @@
 
 R1–R5 存在重叠；ALL 对 6,104 个唯一单元去重计算。R3 的 733 个单元全部也属于 R1。R4 仅 13 个单元，指标为作者预期答案一致率。
 
-## 方法与修复状态
+## 2026-09-13 方法与修复状态
 
 | 方法 | 实现 / 骨干 | 当前状态 |
 |---|---|---|

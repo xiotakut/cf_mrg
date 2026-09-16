@@ -1,11 +1,14 @@
 # Benchmark 结果归档
 
-**最新：[2026-09-13 v5 五方法完整结果（M4 修复版）](2026-09-13_v5_complete/completion/v5_benchmark_latest/README.md) · [近期全部工作及文档](2026-09-13_v5_complete/README.md)。**
+**最新：[2026-09-16 R1–R3 方法论证稿与配套研究记录](2026-09-16_support_update_method/README.md)。**
+
+**2026-09-13 归档：[2026-09-13 v5 五方法完整结果（M4 修复版）](2026-09-13_v5_complete/completion/v5_benchmark_latest/README.md) · [近期全部工作及文档](2026-09-13_v5_complete/README.md)。**
 
 本目录统一保存本项目 benchmark 的结果与数据构建流程说明。每次运行或流程记录使用独立的日期子目录，保留历史版本。
 
 | 完成日期 | 运行 | 方法 | 范围 | 完成率 |
 |---|---|---|---|---|
+| 2026-09-16 | [支持更新与候选重决策论证稿](2026-09-16_support_update_method/README.md) | 七方法基线与 R1/R2/R3 开发头，附机制和新来源对照 | 完整原因—方法—证据链及相关记录 | 文档发布；0 新模型调用 |
 | 2026-09-13 | [v5 全量结果及近期工作归档](2026-09-13_v5_complete/README.md) | M0/M2/M3/M4 修复版/M5；附 M6/M7 试验与暂停记录 | 五方法各 13,905 输入、15,616 映射、6,104 单元 | 五方法全量完成；M6 52 条、M7 1,646 条暂停 |
 | 2026-09-07 | [MedRGAG-Llama 五入口完整测试](2026-09-07_medrgag_llama_base_full_test/README.md) | M2：medrgag_llama_base | 五入口全部发布测试记录，另含预定 MedEinst 四选项辅助 | 25,280/25,280 唯一输入 |
 | 2026-09-07 | [Llama 三方法完整对照](2026-09-07_llama_full_test_three_methods/README.md) | M0 Direct / M1 retrieval-only / M2 MedRGAG-Llama | 相同五入口完整测试及冻结辅助；补齐 M0/M1，保留 M2 | 各 25,280/25,280；共 75,840 条预测 |
