@@ -1,3 +1,5 @@
+**2026-09-18：新增 [R1–R3实验全过程报告](benchmarks/2026-09-16_support_update_method/docs/research/support_update_experiment_report.md)，78个阶段还原观察、方案、失败恢复与逐步优化，与论文式论证稿分别保留。**
+
 **2026-09-16：已发布 [R1–R3 方法论证稿](benchmarks/2026-09-16_support_update_method/docs/research/support_update_method.md)，完整串联类别低分、失败原因、方法设计与验证；[配套记录与证据](benchmarks/2026-09-16_support_update_method/README.md)。当前七方法均完成 v5，见[正式结果](benchmarks/2026-09-16_support_update_method/docs/evaluation/v5.md#current-seven-methods)。下方 09-13 的表图与方法状态保留为历史快照。**
 
 # cf_mrg · 医学 R1–R5 Benchmark 与 RAG 评测记录

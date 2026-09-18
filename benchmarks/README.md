@@ -1,6 +1,6 @@
 # Benchmark 结果归档
 
-**最新：[2026-09-16 R1–R3 方法论证稿与配套研究记录](2026-09-16_support_update_method/README.md)。**
+**最新：[2026-09-18 R1–R3实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) · [方法论证稿与配套记录](2026-09-16_support_update_method/README.md)。**
 
 **2026-09-13 归档：[2026-09-13 v5 五方法完整结果（M4 修复版）](2026-09-13_v5_complete/completion/v5_benchmark_latest/README.md) · [近期全部工作及文档](2026-09-13_v5_complete/README.md)。**
 
@@ -8,6 +8,7 @@
 
 | 完成日期 | 运行 | 方法 | 范围 | 完成率 |
 |---|---|---|---|---|
+| 2026-09-18 | [R1–R3实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) | R2→R3→R1的实际研究过程与交叉审计 | 78阶段的观察、候选、失败恢复、优化、验证及交付 | 文档发布；0 新模型调用 |
 | 2026-09-16 | [支持更新与候选重决策论证稿](2026-09-16_support_update_method/README.md) | 七方法基线与 R1/R2/R3 开发头，附机制和新来源对照 | 完整原因—方法—证据链及相关记录 | 文档发布；0 新模型调用 |
 | 2026-09-13 | [v5 全量结果及近期工作归档](2026-09-13_v5_complete/README.md) | M0/M2/M3/M4 修复版/M5；附 M6/M7 试验与暂停记录 | 五方法各 13,905 输入、15,616 映射、6,104 单元 | 五方法全量完成；M6 52 条、M7 1,646 条暂停 |
 | 2026-09-07 | [MedRGAG-Llama 五入口完整测试](2026-09-07_medrgag_llama_base_full_test/README.md) | M2：medrgag_llama_base | 五入口全部发布测试记录，另含预定 MedEinst 四选项辅助 | 25,280/25,280 唯一输入 |
