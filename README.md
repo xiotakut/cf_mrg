@@ -1,3 +1,5 @@
+**2026-09-20：已将[实验全过程报告](benchmarks/2026-09-16_support_update_method/docs/research/support_update_experiment_report.md)扩展至R1–R5，补全R4及尚未完成的R5研发、失败与中断历史；[配套原始研究记录与核验索引](benchmarks/2026-09-16_support_update_method/README.md)。**
+
 **2026-09-18：新增 [R1–R3实验全过程报告](benchmarks/2026-09-16_support_update_method/docs/research/support_update_experiment_report.md)，78个阶段还原观察、方案、失败恢复与逐步优化，与论文式论证稿分别保留。**
 
 **2026-09-16：已发布 [R1–R3 方法论证稿](benchmarks/2026-09-16_support_update_method/docs/research/support_update_method.md)，完整串联类别低分、失败原因、方法设计与验证；[配套记录与证据](benchmarks/2026-09-16_support_update_method/README.md)。当前七方法均完成 v5，见[正式结果](benchmarks/2026-09-16_support_update_method/docs/evaluation/v5.md#current-seven-methods)。下方 09-13 的表图与方法状态保留为历史快照。**

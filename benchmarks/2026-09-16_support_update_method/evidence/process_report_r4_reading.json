@@ -1,0 +1,749 @@
+{
+  "date": "2026-09-20",
+  "agent": "/root/r4_process_extension",
+  "purpose": "R4全过程报告增补；仅生成临时草稿和阅读凭据，不运行模型或推进旧目标",
+  "draft": "/tmp/r4_process_extension_20260920.md",
+  "chapter_sections": "6.1–6.30",
+  "session": {
+    "path": "/home/data3/txy/.codex/sessions/2026/09/17/rollout-2026-09-17T16-41-09-01a0ae86-de3c-70c1-bfa3-431cbdaec1c2.jsonl",
+    "bytes": 28262402,
+    "lines": 6265,
+    "reading": "all_readable_user_assistant_messages",
+    "scope": "源会话全部可读response_item消息正文按序；不是28MB全部工具结果的逐字通读",
+    "message_count": 134,
+    "roles": {
+      "user": 7,
+      "assistant": 127
+    },
+    "substantive_human_messages": 5,
+    "automatic_goal_context_messages": 1,
+    "environment_plugin_agents_injection_messages": 1,
+    "first_source_message_line": 6,
+    "last_source_message_line": 6262,
+    "encrypted_response_items_excluded": 786,
+    "encrypted_read": false,
+    "event_mirrors_counted_twice": false,
+    "readable_extraction": {
+      "path": "/tmp/r4_session_readable_20260920.txt",
+      "bytes": 77302,
+      "lines": 843,
+      "reading": "full",
+      "scope": "提取正文第1–843行顺读，response_item/message user及assistant；不将event_msg镜像重复计数",
+      "sha256_at_report_assembly": "575f3c3c36b5581020f60a0254b3d63a10fd831771c2c938abae232037af0d41"
+    },
+    "message_index": "/tmp/r4_session_messages_20260920.json",
+    "sha256_at_report_assembly": "6834f9069b691a6ca3ace7234cacd4cd53b3e547e5e1df290c0eb34feff31c9b"
+  },
+  "main_documents": [
+    {
+      "path": "/home/data3/txy/AGENTS.md",
+      "bytes": 12840,
+      "lines": 154,
+      "reading": "full",
+      "scope": "当前入口全文",
+      "sha256_at_report_assembly": "e9a279d9f4922d9e8285ec6048bfe6634ad1a1e17ea5f8c09a483545e1485468"
+    },
+    {
+      "path": "/home/data3/txy/docs/README.md",
+      "bytes": 28856,
+      "lines": 131,
+      "reading": "full",
+      "scope": "当前统一入口全文",
+      "sha256_at_report_assembly": "6cc17f0faa8984c5adbdcdb4c845916709f42098fc8f6a96f1a36d4aaadf281f"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "bytes": 133030,
+      "lines": 632,
+      "reading": "full",
+      "scope": "第1–632行全部，分块读取",
+      "sha256_at_report_assembly": "51df24bd28a2276caf4215ec19e5c5a470fbac14006fcc7f63abefa3498ec084"
+    }
+  ],
+  "attachments": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/README.md",
+      "bytes": 3772,
+      "lines": 28,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "09088ddf60208b651ceab5d78150bd822a9f055bbd75f1a031f6f974b2729b47"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/diagnostic_design.md",
+      "bytes": 4520,
+      "lines": 43,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "22735c98ca768ee0103c5498ea6039fb85aad8d24ee1ee18e8da97d7f35e7aaf"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/diagnostic_output_review.md",
+      "bytes": 9554,
+      "lines": 91,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "78255204a4d41980fca211817f2c0919d7b2d48e3526896614b082c66192c0ed"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/implementation_review.md",
+      "bytes": 3884,
+      "lines": 34,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "fbf6eeccbb20cb8271c9277c23f0d54cc30b8a58d6c81fccb4054712ca1da1ba"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/m4_semantic_review.md",
+      "bytes": 11710,
+      "lines": 62,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "98d8e8c05e3534459199ed7aaa46f150d78d6921ceb0f47d8c247a1599ab48a0"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/m5_semantic_review.md",
+      "bytes": 10779,
+      "lines": 54,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "c07d20824fab3e47da665e981d01427c6a5e5d5424a67040f5bafe8b9a979d14"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_experiment/README.md",
+      "bytes": 3068,
+      "lines": 25,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "a8340b1d14b62e3afff17b91db325487e1e27984165ce904347049196d82a39b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_experiment/output_semantic_review.md",
+      "bytes": 12372,
+      "lines": 66,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "2c134a78c5ab8441e1f58ec12ac9a0071edb1f2b8da6b9bcdb97128b51b3d853"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/README.md",
+      "bytes": 1783,
+      "lines": 12,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "b57d9ec7537c8dfaaea8878b36a0fcf60c1a3ce49f7496781fb3a6f37ea4a44c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/baseline_error_review.md",
+      "bytes": 10294,
+      "lines": 43,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "130a730e421cf6cfd6949ac501c8e4950b7576a22a87f15ec0973852369c0603"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/history_r1.md",
+      "bytes": 14668,
+      "lines": 73,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "21b84b09f9b451097022a6d8bcbb6851f3c69ae6d4c80984458cd5af2cb02974"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/history_r2.md",
+      "bytes": 12337,
+      "lines": 88,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "d31d1bd5c2b0422524724c3e8b70169db59145fa2503791687df2397adc29696"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/history_r3.md",
+      "bytes": 16748,
+      "lines": 107,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "ef5914f4827bc928d82c734775cb81465b0540420497778a6a82fcad58c68eb2"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/r4_interface_review.md",
+      "bytes": 1825,
+      "lines": 9,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "6db192219ee7ffec90ad7f1bf92146408f13f78615b2dc9fca7ca112975a05e4"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_investigation/source_reference_audit.md",
+      "bytes": 9161,
+      "lines": 52,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "fcb67566f1d489732a6d8f687001865b05e62725275cdde57355044cefddd1b7"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/README.md",
+      "bytes": 6460,
+      "lines": 64,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "7a5869d9e9e58b79c7cfe877e9d2ffb69b82153db9ca7a2bcf5aa4ba77e80915"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_source_qualification.md",
+      "bytes": 12929,
+      "lines": 87,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "ade5f0771cd29bb340f9a9c87e8f35374696d67590e398dd8f8e09b5aa715716"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_validation/README.md",
+      "bytes": 5854,
+      "lines": 46,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "23fa1715d473cec1243919b114e5d806420f40deec2f701fd1e9eb2e1904e5e8"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_validation/implementation_review.md",
+      "bytes": 2484,
+      "lines": 13,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "aa1aa957933ba1fded82e1e6f479bcf0491f4c850db059f5b7155288fe88006a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_validation/inference/README.md",
+      "bytes": 4537,
+      "lines": 31,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "6df4834d505876761f85c86d1e7ed29d0d234002c6b3097dfdccc1e263aba77e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_validation/inference/semantic_m4.md",
+      "bytes": 6917,
+      "lines": 56,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "a11415a8c6157dc39c80795b8d48f9bf5311080c0dd543f6e926a240e18d22cd"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_validation/inference/semantic_m5.md",
+      "bytes": 16897,
+      "lines": 97,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "99fddf2afdcc64ce4a3a5148588714f2d5e30e29ba1d883e7d616a012fa1a12a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_validation/peer_review.md",
+      "bytes": 7817,
+      "lines": 52,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "2c9993b6d2160d49e91f0a634986b0d592e93c1dcc97eef3be5abbfe7ec446d6"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/causal_method_scout.md",
+      "bytes": 8793,
+      "lines": 55,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "6b0f4cf2e861903038c27dd0a67633536b0c068db399ab82fe90a67aafe2a14d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_controls/README.md",
+      "bytes": 5858,
+      "lines": 49,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "a6316f2b45f10c1840e2a01f036b1c71c9af50c0abb54a90ea45aac54c47d24c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_controls/ir_semantic_m4.md",
+      "bytes": 3067,
+      "lines": 25,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "c64276e31ce5ac1bc6f9889cf976e927e6ef160000d583b4fa16bc5e5b5e5561"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_controls/semantic_m4.md",
+      "bytes": 15736,
+      "lines": 103,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "3e2aea461c6838b757f8e01e18392eb2a7bf6bed311522a47d00f615897e26c1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_controls/semantic_m5.md",
+      "bytes": 17117,
+      "lines": 101,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "6f6bd9cc69e153515b39abfa27914d310bc4ebaf6a19603bd26fe7a2182f9e0f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/README.md",
+      "bytes": 3363,
+      "lines": 27,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "f8922f2a6f43ca5e18de1fac550a596e30d2231308b77eb308780fc75ecea33d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/frozen_head/README.md",
+      "bytes": 3990,
+      "lines": 74,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "814baf829864455affbd61ae8d4aedbb3b903bdce69e8adbf8714fffd2202da9"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/implementation_review.md",
+      "bytes": 9153,
+      "lines": 43,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "a486429ca542d4dd540580c680b5fd412ed086ef0d83fec13665829ae3e190fd"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/semantic_m4.md",
+      "bytes": 14143,
+      "lines": 98,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "ff7ad0315da0819c3fc03eb55c57fb706985b08e6018c7ec367233840c2666aa"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/semantic_m5.md",
+      "bytes": 15155,
+      "lines": 93,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "2825c5c270ba095bce0750a884021aad50ceb1651b596b50f3126410c0ce1561"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/source_difficulty.md",
+      "bytes": 9089,
+      "lines": 100,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "2d958b9af3392c6e538e87c5161c178b54c62be50f595a01d376e0cd1e173921"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/source_wording_issue.md",
+      "bytes": 8887,
+      "lines": 227,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "62b43eb294eb0d9242ec7898f87e727f6d04aa9a9ff9442d90a7158f54f52dbb"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_binding/README.md",
+      "bytes": 1157,
+      "lines": 7,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "fc58919e5ef4f4aa8afdd0311a41163b54b1e6bf5b9252092c705f31ea650382"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_binding/semantic_m4.md",
+      "bytes": 9337,
+      "lines": 53,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "3e9919c9fcb1a2765f7ebbf4331ea989c9d9177606c1e85845bb8c2ff87f891e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_binding/semantic_m5.md",
+      "bytes": 10768,
+      "lines": 59,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "4c3e2d20f7d617f2f441d1f37f20f8ad5e98b43b2efb8a94e86641d9899d8dad"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_prior/README.md",
+      "bytes": 1056,
+      "lines": 9,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "4fd34aad4e348ae51375173a1fbe703bd8179f1e9c20c45e2bce2b2fee7fa2f5"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_prior/semantic_m4.md",
+      "bytes": 10592,
+      "lines": 54,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "62117ca9ced0a1c85bc5eba2447f8ef4fad6c36017aaf3145c24d2ce01cf2a12"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_prior/semantic_m5.md",
+      "bytes": 10095,
+      "lines": 68,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "a0dbdd39fe3a54f9e9efb3a2b84e82ddc78d0d270d712fb0610eb73a0c9e4f6e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/clinical_source_scout.md",
+      "bytes": 19133,
+      "lines": 111,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "fd378b91b2adda52332d3446ed669cfd7fad5d9f0a9166ca13d4de0dd2487dc1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/implementation_review.md",
+      "bytes": 4098,
+      "lines": 25,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "17464e4e03d5f921c0bd11392c7cef31c9008073cc8796d0c74263355c05b2da"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/biological_methods.md",
+      "bytes": 23934,
+      "lines": 161,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "0d37ecbbe387e9bbcdc75a2e0f29e0c74a7afc66389fbf271a06f7d31bab8d4d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/causal_methods.md",
+      "bytes": 12022,
+      "lines": 62,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "20efbc8a05918bb63ec9efd9d4dd2248f16f4081d550b6f3ec5f0a025b066d97"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/clinical_methods.md",
+      "bytes": 16945,
+      "lines": 98,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "85a7ac14cfc555d7a7926403339b937ff58a3abf663c0cb06d3f69e081aee441"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/counterbench_oncology.md",
+      "bytes": 2806,
+      "lines": 21,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "72781da5a6d64d2ec5c6e9aa7a91bc5faabcc457d39653934f0e76e5cedfe568"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/native_boundary/README.md",
+      "bytes": 1036,
+      "lines": 7,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "fc280c5490bbab25a6cd31a28db8332529b822061fc15c90c3a82e365ba47d1a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/README.md",
+      "bytes": 8410,
+      "lines": 86,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "e390d4233ed37f8874d7bf76901a5db4a58d57356aba9ae06cd9cd30e7553484"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/code_audit.md",
+      "bytes": 4292,
+      "lines": 23,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "ed1de11fa0dc7fc17934dafd755ec1d874e84b73144db4ab2619cfebe13fdd97"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/design_review.md",
+      "bytes": 7258,
+      "lines": 39,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "5770603770aaa00f5e3fb5d14cec0c54ff68aef6a5edf42323a46b24d697f362"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/dev/semantic_m4.md",
+      "bytes": 10580,
+      "lines": 95,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "bcc26ffd1dff7a8f5680fc49d6f37ef429660da9d12b656c8db68bdd635b194c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/dev/semantic_m5.md",
+      "bytes": 9175,
+      "lines": 74,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "e3b44f2b9f5985c2418fb5c17013d614392f9b1f653940a5d066b0de94d579e2"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/heldout/README.md",
+      "bytes": 3043,
+      "lines": 35,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "07032df6e7d6d6edd028448f6a4ea80fddf1e13f6b45d3c721a07753d35a0539"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/paper_role.md",
+      "bytes": 10923,
+      "lines": 63,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "2f9fde441c8b6fe296645a15110626dbe848858804eddb80fc30799df60b8c71"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/code_audit.md",
+      "bytes": 5101,
+      "lines": 45,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "3e4d6b1b6dde1eb16065539cdc15df6e2a3390b251560b8184f682bfd214b670"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/semantic_m4.md",
+      "bytes": 9000,
+      "lines": 113,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "be476d73ffd2551deb9e02939b76dc1c051a2a548ecbaa034cb2a3a348fd61cf"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/semantic_m5.md",
+      "bytes": 9359,
+      "lines": 77,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "c4742b2302f9e3716b1131b9984476dc59b0ab1c67fa56ec10ba69153af08e18"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/report.md",
+      "bytes": 1978,
+      "lines": 35,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "91f6e92b708cbd86de602e98a78dd76a419fa0e8707ca3a2360dccfe04a7775e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/semantic_m4.md",
+      "bytes": 8869,
+      "lines": 93,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "c687d7b6a8961ad2134e7947bfd52ce1bf84c74027100af656370c0301c0e142"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/semantic_m5.md",
+      "bytes": 13844,
+      "lines": 138,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "c4f143a11d55587b4ca899929fb918526573bb5daf4cc3f2e741d626384b6b1f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/interface_repair_audit.md",
+      "bytes": 4139,
+      "lines": 35,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "32c072f51510153d50a9233d23777997a320c030a85aa8b212138ee19d8555d9"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/query_projection_control.md",
+      "bytes": 5259,
+      "lines": 52,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "fd0825be224b62c454930f6e135700d2cb7d37308673343ae6fa26e85bba13d2"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_probe/README.md",
+      "bytes": 10209,
+      "lines": 85,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "24a7d5e2af49964851073e8de13aa896d83adb916f75fbe678e1657db1471ed8"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_probe/papers/paper_reading.md",
+      "bytes": 2989,
+      "lines": 18,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "19755d9d721c468558897c3738db8faa54b297d21c9052cf5121ec29179756ed"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/related_work_assessment.md",
+      "bytes": 10226,
+      "lines": 58,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "d7d907272bfde0c30b8ac1c0f616ec7e052b49de0561d4e81024d8eeae78caa1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/sources/cladder/acquisition.md",
+      "bytes": 6083,
+      "lines": 39,
+      "reading": "full",
+      "scope": "全文顺读；若工具输出曾截断，后续较小范围补读",
+      "sha256_at_report_assembly": "e77734217ca7e19a48c517cb1d5659eb924be90967b3f7af38ff0d87085015ec"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/clinical_sources/medcounterfact_DataFormat.md",
+      "bytes": 2568,
+      "lines": 71,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "d74eba8537d094fbdc71b88d664a6b22e87f0be6923e33feaf4af24a0e6df310"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/clinical_sources/medcounterfact_README.md",
+      "bytes": 2911,
+      "lines": 72,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "ee40810533b45a58eaf32f33d335c7dc2c5f2d39690bfdae3de67dfc75777d46"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/method_revision/sources/profile_v2/README.md",
+      "bytes": 2554,
+      "lines": 52,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "432105d815dfed4df071e0102717da3416e2be0865eb3739048d1886b70e2fbb"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/source_scout/simglucose_README.md",
+      "bytes": 16123,
+      "lines": 450,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "4215b27992a99c18a7b31602ef5f7424b7381291ddb42ef65cb1a7c2ab594afc"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/source_scout/simglucose_parameter_definitions.md",
+      "bytes": 7814,
+      "lines": 96,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "c9f3038ca7a63d10c1293581d1a2356766fe30520a00853507b99ad21d985933"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/sources/biological_models/README.md",
+      "bytes": 1580,
+      "lines": 13,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "5788dca6736a93917e8e1f54cc65c22c7a1477ae3b24ce7bd4937cf4401ee093"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/sources/cell_fate/README.md",
+      "bytes": 1869,
+      "lines": 9,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "288c2608928c1f6f016d96c30030378af60c1ad97d4446a02d76174bcff7f462"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/sources/cladder/README.md",
+      "bytes": 9285,
+      "lines": 197,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "ded750c842b056aecd45887551218e5af19a30d95f12ee02aff654f9c8e0843a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/sources/cladder/data/extracted/README.md",
+      "bytes": 9040,
+      "lines": 171,
+      "reading": "not_read",
+      "scope": "第三方上游README/DataFormat/参数说明；已读本轮来源资格及方法调查，未声称这些上游原件全文重读",
+      "sha256_at_report_assembly": "a1a06f3a0ae461cf5eff70d9241ae40f092c9a295588f9eb339940593977fdea"
+    }
+  ],
+  "attachments_full_read_count": 67,
+  "attachments_index_count": 76,
+  "key_machine_receipts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/replay.json",
+      "bytes": 75,
+      "lines": 5,
+      "reading": "full",
+      "scope": "全文JSON核对；未重新执行实验",
+      "sha256_at_report_assembly": "e66ea520e5df5510788fc06c969e87c3caa5c4248d8e257c8dedc13f211a7bcf"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/analysis_timing.json",
+      "bytes": 326,
+      "lines": 15,
+      "reading": "full",
+      "scope": "全文JSON核对；未重新执行实验",
+      "sha256_at_report_assembly": "49a4f555d63240f4ea692db44303b3c210f249826ac2430be582dec291bade8c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/frozen_code_comparison.json",
+      "bytes": 1181,
+      "lines": 37,
+      "reading": "full",
+      "scope": "全文JSON核对；未重新执行实验",
+      "sha256_at_report_assembly": "4079b1b5512e56b06caafdc2daa11c2c7a104c405acd2287304b3ba8ace1bd12"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m4/matched_runtime.json",
+      "bytes": 461,
+      "lines": 21,
+      "reading": "full",
+      "scope": "全文JSON核对；未重新执行实验",
+      "sha256_at_report_assembly": "a4488bff1e8633af1332f0dd75a3ab0384e8dc02bb687215fdd4e9a123b490be"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m5/matched_runtime.json",
+      "bytes": 462,
+      "lines": 21,
+      "reading": "full",
+      "scope": "全文JSON核对；未重新执行实验",
+      "sha256_at_report_assembly": "f808949b5ca9d703bf516f162c6c515a0805ae12d52a370a129cc6520649f2bc"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/validation_plan.json",
+      "bytes": 1979,
+      "lines": 57,
+      "reading": "full",
+      "scope": "全文JSON核对；未重新执行实验",
+      "sha256_at_report_assembly": "2d9d4d0e8ccfced8ffa2ef658eb1797bc63d8dfac452cf7d8e48d20417ccb6a4"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/summary.json",
+      "bytes": 75186,
+      "lines": 3327,
+      "reading": "targeted_fields",
+      "scope": "完整读取并显示除results外全部顶层字段；results全部16行的标量计数；未逐字显示各分组/误差嵌套对象",
+      "sha256_at_report_assembly": "2c0f4e42c2e5f552d830fdc636a47fff11114aa4349001f3218f52bb624b8368"
+    }
+  ],
+  "independent_peer_audit": {
+    "path": "/tmp/r45_status_audit_20260920.md",
+    "bytes": 12393,
+    "lines": 117,
+    "reading": "full",
+    "scope": "独立子任务的R4/R5最终状态及成本核验；本文R4采用其第1–3、7节，原始大JSON不据此声称逐字全文已读",
+    "sha256_at_report_assembly": "dcb91b82972d24df9d27bb3c4c64a04d7d3a64015c4dbd0d6288352dad496c6b"
+  },
+  "limits": [
+    "未逐字重读会话所有重复工具输出、加密reasoning或每个raw逐题预测；实质user/assistant正文已完整阅读。",
+    "最终大summary按明确字段核对，不把程序载入等同于嵌套全部字符人工通读。",
+    "上游9份说明仅列明未全文重读；本轮67份运行/失败/审核/来源叙事全部全文读取。",
+    "没有本次新生成、GPU工作、数值积分、重新拟合、旧实验重启或原制品修改。"
+  ],
+  "reading_issue": "本次一次裸python命令不可用，改python3；大输出截断后相应文件单独补读。",
+  "integrated_report": "/home/data3/txy/docs/research/support_update_experiment_report.md"
+}
