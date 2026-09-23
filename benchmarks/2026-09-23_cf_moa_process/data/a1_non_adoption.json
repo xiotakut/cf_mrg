@@ -1,0 +1,64 @@
+{
+  "identity": "A1",
+  "variant": "bounded_evidence_id_coverage_audit_v2_relation_codes_r5",
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "decision": "not_adopted_as_default_expert",
+  "at": "2026-09-22T23:32:32.817836+00:00",
+  "scope": "Existing exposed-development decision normalized into an explicit record; not a new method search, common freeze or independent evaluation",
+  "counts": {
+    "M4": {
+      "inputs": 121,
+      "correct": 55,
+      "incorrect": 36,
+      "unavailable": 30
+    },
+    "M5": {
+      "inputs": 121,
+      "correct": 42,
+      "incorrect": 18,
+      "unavailable": 61
+    }
+  },
+  "sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4_scores/receipt.json",
+      "sha256": "f2727e366c6f02aee900ec7f5076a7193c2e48db208002042521ad2dea4996e5"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4_scores/complementarity_inputs.jsonl",
+      "sha256": "3cc22c2d8a19972c1b4855e6b0832683c86e7929f925305c6ca5762180eff3ca"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m5_scores/receipt.json",
+      "sha256": "6527c581dd2b11f9920d7a3b8f4bf25222498967ddab9ddb81760b24f72b2dd0"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m5_scores/complementarity_inputs.jsonl",
+      "sha256": "679e50c1543bce21fd77ae83bc7cd8963b0652aebc8eaee8bb6c915ffd237bb9"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a1_coded_coverage.py",
+      "sha256": "1aca353cce31d4d901376ce0294127d090b74a23d126eff6e667766ffe09cdb5"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a1_relational_coverage.py",
+      "sha256": "c8ec4de389c5186e16edeff02876e528ca43f5f4009515e30bf0c11d17842c55"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a1_bounded_coverage.py",
+      "sha256": "e72ef0e68ba8e2c783dfbe9a4884393aebb1453f936fdb5b7c85b3ee061d30f6"
+    }
+  ],
+  "reasons": [
+    "Existing full-development results did not pass the previously reported core controls; substantial unavailable native answers remain in the full denominator.",
+    "Source replay and valid audit formatting are engineering evidence, not method adoption."
+  ],
+  "experimental_saved_cache_use": "Allowed only under its explicit unadopted identity in separately declared aggregation experiments; no A1 regeneration or default enablement.",
+  "historical_failures": "All v1/v2 and intermediate failures remain in their original directories; no budget increase or unavailable-answer repair.",
+  "model_calls": 0,
+  "native_rescoring_calls": 0,
+  "common_freeze": false
+}

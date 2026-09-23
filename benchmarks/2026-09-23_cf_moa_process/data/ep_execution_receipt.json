@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-23T09:12:52.102773+08:00",
+  "parent_session": 33956,
+  "parent_exit_code": 0,
+  "terminal_audit_session": 78376,
+  "terminal_audit_status": "complete",
+  "terminal_audit_exit_code": 0,
+  "full_input_scope": 242,
+  "completed_inputs": 242,
+  "actual_new_cost": {
+    "model_requests": 242,
+    "input_tokens": 5857532,
+    "output_tokens": 130187,
+    "model_seconds": 5020.109051602965
+  },
+  "historical_cost": {
+    "model_requests": 631,
+    "input_tokens": 6221546,
+    "output_tokens": 277186,
+    "model_seconds": 11893.305803881032
+  },
+  "unknown_cost": 0,
+  "gpu0_released_observed": true,
+  "source_stage_status": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/extension_runtime_repair_live/stage_status.json",
+  "quality_scored": true,
+  "terminal_audit_receipt": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/extension_runtime_repair_live_receipt.json",
+  "assembly_session": 46638,
+  "assembly_status": "complete_after_plan_field_key_fix",
+  "assembly_exit_code": 0,
+  "assembly_attempts": [
+    {
+      "session_id": 48880,
+      "exit_code": 1,
+      "failure": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/assembly_plan_key_fix/failure.json",
+      "log": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_assembly_execution.log"
+    },
+    {
+      "session_id": 46638,
+      "status": "complete",
+      "exit_code": 0,
+      "log": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/assembly_plan_key_fix/assembly_execution.log"
+    }
+  ],
+  "assembly_fix_regression": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/assembly_plan_key_fix/regression_receipt.json",
+  "score_session": 23214,
+  "score_status": "complete",
+  "score_exit_code": 0,
+  "completed_at": "2026-09-23T09:27:18.153517+08:00",
+  "score_receipt": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/receipt.json",
+  "score_receipt_sha256": "8fcd26c88606f1c00f54b62581b12d386c3e1fe171cd10bb6c0be3c0e3a5813d",
+  "comparison_status": "complete",
+  "comparison_exit_code": 0,
+  "comparison_session": null,
+  "comparison_wall_seconds": 0.487411969,
+  "comparison_summary": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/summary.json",
+  "comparison_summary_sha256": "831e1d56dc68db5a1b4e40a9ba97a9c4eb204944504f3e195ba614419e1ff2e7",
+  "method_adopted": false,
+  "non_adoption_decision": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/non_adoption_decision.json"
+}

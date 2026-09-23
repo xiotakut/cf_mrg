@@ -1,0 +1,2022 @@
+{
+  "status": "complete_EP_saved_native_comparison",
+  "at": "2026-09-23T01:22:15.580629+00:00",
+  "candidate_identity": "experimental_saved_A1_r5_adopted_sparse_nonempty_frequency_0p1_eos_aligned_v1",
+  "execution_protocol_revision": "nonempty_tokenizer_info_eos_union_v1",
+  "full_denominator": 242,
+  "summaries": [
+    {
+      "method": "M4",
+      "candidate": {
+        "identity": "experimental_saved_A1_r5_adopted_sparse_nonempty_frequency_0p1_eos_aligned_v1",
+        "unique_inputs": 121,
+        "unique_states": {
+          "correct": 79,
+          "incorrect": 42,
+          "unavailable": 0
+        },
+        "native_mappings": 157,
+        "native_states": {
+          "correct": 100,
+          "incorrect": 57,
+          "unavailable": 0
+        },
+        "full_scope_families": 40,
+        "paired_families": 29,
+        "unit_categories": [
+          {
+            "category": "ALL",
+            "units": 74,
+            "mean_native_unit_score": 0.6306306306306306,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 28
+          },
+          {
+            "category": "R1",
+            "units": 37,
+            "mean_native_unit_score": 0.5945945945945946,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 15
+          },
+          {
+            "category": "R2",
+            "units": 7,
+            "mean_native_unit_score": 0.14285714285714285,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 6
+          },
+          {
+            "category": "R3",
+            "units": 8,
+            "mean_native_unit_score": 0.25,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 6
+          },
+          {
+            "category": "R4",
+            "units": 2,
+            "mean_native_unit_score": 1,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 0
+          },
+          {
+            "category": "R5",
+            "units": 36,
+            "mean_native_unit_score": 0.7129629629629629,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 11
+          }
+        ],
+        "paired": [
+          {
+            "relation": "maintain",
+            "pairs": 73,
+            "families": 25,
+            "both_correct": 42,
+            "both_native_scored": 73,
+            "unavailable_endpoints": 0,
+            "valid_relation": 49,
+            "pair_weighted_both_correct_ci95": [
+              0.3683877415056629,
+              0.7778138528138526
+            ],
+            "cluster": "family_id",
+            "bootstrap_seed": 20260921
+          },
+          {
+            "relation": "respond",
+            "pairs": 4,
+            "families": 4,
+            "both_correct": 0,
+            "both_native_scored": 4,
+            "unavailable_endpoints": 0,
+            "valid_relation": 0,
+            "pair_weighted_both_correct_ci95": [
+              0.0,
+              0.0
+            ],
+            "cluster": "family_id",
+            "bootstrap_seed": 20260921
+          }
+        ],
+        "cost": {
+          "new": {
+            "model_requests": 121,
+            "input_tokens": 3257045,
+            "output_tokens": 59658,
+            "model_seconds": 2094.954565737935
+          },
+          "historical_reused_head": {
+            "model_requests": 332,
+            "input_tokens": 3289848,
+            "output_tokens": 138405,
+            "model_seconds": 6485.907327765043
+          },
+          "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+        },
+        "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4",
+        "saved_bootstrap_intervals_reused": true,
+        "bootstrap_recomputed": false
+      },
+      "controls": {
+        "strong_legacy": {
+          "identity": "adopted_R1_R4_F_capability_composite_v1",
+          "unique_inputs": 121,
+          "unique_states": {
+            "correct": 87,
+            "incorrect": 34,
+            "unavailable": 0
+          },
+          "native_mappings": 157,
+          "native_states": {
+            "correct": 110,
+            "incorrect": 47,
+            "unavailable": 0
+          },
+          "full_scope_families": 40,
+          "paired_families": 29,
+          "unit_categories": [
+            {
+              "category": "ALL",
+              "units": 74,
+              "mean_native_unit_score": 0.7027027027027027,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 22
+            },
+            {
+              "category": "R1",
+              "units": 37,
+              "mean_native_unit_score": 0.7837837837837838,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 8
+            },
+            {
+              "category": "R2",
+              "units": 7,
+              "mean_native_unit_score": 0.7142857142857143,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 2
+            },
+            {
+              "category": "R3",
+              "units": 8,
+              "mean_native_unit_score": 0.75,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 2
+            },
+            {
+              "category": "R4",
+              "units": 2,
+              "mean_native_unit_score": 0.5,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 1
+            },
+            {
+              "category": "R5",
+              "units": 36,
+              "mean_native_unit_score": 0.6666666666666666,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 12
+            }
+          ],
+          "paired": [
+            {
+              "relation": "maintain",
+              "pairs": 73,
+              "families": 25,
+              "both_correct": 48,
+              "both_native_scored": 73,
+              "unavailable_endpoints": 0,
+              "valid_relation": 58,
+              "pair_weighted_both_correct_ci95": [
+                0.44254222553402883,
+                0.8441829004329002
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            },
+            {
+              "relation": "respond",
+              "pairs": 4,
+              "families": 4,
+              "both_correct": 1,
+              "both_native_scored": 4,
+              "unavailable_endpoints": 0,
+              "valid_relation": 2,
+              "pair_weighted_both_correct_ci95": [
+                0.0,
+                0.75
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            }
+          ],
+          "cost": {
+            "new": {
+              "model_requests": 0,
+              "input_tokens": 0,
+              "output_tokens": 0,
+              "model_seconds": 0.0
+            },
+            "historical_reused_head": {
+              "model_requests": 420,
+              "input_tokens": 1828059,
+              "output_tokens": 84395,
+              "model_seconds": 1854.6178262869375
+            },
+            "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+          },
+          "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4_scores",
+          "saved_bootstrap_intervals_reused": true,
+          "bootstrap_recomputed": false
+        },
+        "same_pool_top1": {
+          "identity": "experimental_saved_A1_r5_same_pool_top1_native_dispatch_v1",
+          "unique_inputs": 121,
+          "unique_states": {
+            "correct": 72,
+            "incorrect": 33,
+            "unavailable": 16
+          },
+          "native_mappings": 157,
+          "native_states": {
+            "correct": 88,
+            "incorrect": 53,
+            "unavailable": 16
+          },
+          "full_scope_families": 40,
+          "paired_families": 29,
+          "unit_categories": [
+            {
+              "category": "ALL",
+              "units": 74,
+              "mean_native_unit_score": 0.6072072072072072,
+              "unavailable_native_records": 12,
+              "incorrect_native_answers": 20
+            },
+            {
+              "category": "R1",
+              "units": 37,
+              "mean_native_unit_score": 0.7027027027027027,
+              "unavailable_native_records": 2,
+              "incorrect_native_answers": 9
+            },
+            {
+              "category": "R2",
+              "units": 7,
+              "mean_native_unit_score": 0.7142857142857143,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 2
+            },
+            {
+              "category": "R3",
+              "units": 8,
+              "mean_native_unit_score": 0.625,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 3
+            },
+            {
+              "category": "R4",
+              "units": 2,
+              "mean_native_unit_score": 0.5,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 1
+            },
+            {
+              "category": "R5",
+              "units": 36,
+              "mean_native_unit_score": 0.5537037037037037,
+              "unavailable_native_records": 10,
+              "incorrect_native_answers": 9
+            }
+          ],
+          "paired": [
+            {
+              "relation": "maintain",
+              "pairs": 73,
+              "families": 25,
+              "both_correct": 28,
+              "both_native_scored": 57,
+              "unavailable_endpoints": 20,
+              "valid_relation": 37,
+              "pair_weighted_both_correct_ci95": [
+                0.19352895452778857,
+                0.5833333333333334
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            },
+            {
+              "relation": "respond",
+              "pairs": 4,
+              "families": 4,
+              "both_correct": 1,
+              "both_native_scored": 4,
+              "unavailable_endpoints": 0,
+              "valid_relation": 2,
+              "pair_weighted_both_correct_ci95": [
+                0.0,
+                0.75
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            }
+          ],
+          "cost": {
+            "new": {
+              "model_requests": 0,
+              "input_tokens": 0,
+              "output_tokens": 0,
+              "model_seconds": 0.0
+            },
+            "historical_reused_head": {
+              "model_requests": 266,
+              "input_tokens": 2795061,
+              "output_tokens": 97629,
+              "model_seconds": 4831.1534848420315
+            },
+            "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+          },
+          "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/native_scores",
+          "saved_bootstrap_intervals_reused": true,
+          "bootstrap_recomputed": false
+        },
+        "fixed3_sampling": {
+          "identity": "native_sampling_fixed3_common_cap_frequency_0p1_v1",
+          "unique_inputs": 121,
+          "unique_states": {
+            "correct": 84,
+            "incorrect": 37,
+            "unavailable": 0
+          },
+          "native_mappings": 157,
+          "native_states": {
+            "correct": 109,
+            "incorrect": 48,
+            "unavailable": 0
+          },
+          "full_scope_families": 40,
+          "paired_families": 29,
+          "unit_categories": [
+            {
+              "category": "ALL",
+              "units": 74,
+              "mean_native_unit_score": 0.6576576576576576,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 26
+            },
+            {
+              "category": "R1",
+              "units": 37,
+              "mean_native_unit_score": 0.6756756756756757,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 12
+            },
+            {
+              "category": "R2",
+              "units": 7,
+              "mean_native_unit_score": 0.14285714285714285,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 6
+            },
+            {
+              "category": "R3",
+              "units": 8,
+              "mean_native_unit_score": 0.25,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 6
+            },
+            {
+              "category": "R4",
+              "units": 2,
+              "mean_native_unit_score": 0.5,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 1
+            },
+            {
+              "category": "R5",
+              "units": 36,
+              "mean_native_unit_score": 0.7129629629629629,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 11
+            }
+          ],
+          "paired": [
+            {
+              "relation": "maintain",
+              "pairs": 73,
+              "families": 25,
+              "both_correct": 50,
+              "both_native_scored": 73,
+              "unavailable_endpoints": 0,
+              "valid_relation": 58,
+              "pair_weighted_both_correct_ci95": [
+                0.5,
+                0.8589743589743589
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            },
+            {
+              "relation": "respond",
+              "pairs": 4,
+              "families": 4,
+              "both_correct": 0,
+              "both_native_scored": 4,
+              "unavailable_endpoints": 0,
+              "valid_relation": 0,
+              "pair_weighted_both_correct_ci95": [
+                0.0,
+                0.0
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            }
+          ],
+          "cost": {
+            "new": {
+              "model_requests": 240,
+              "input_tokens": 919757,
+              "output_tokens": 64347,
+              "model_seconds": 1192.3448169290496
+            },
+            "scope": "New draws plus exact historical sampling draws; common ceiling, not equal realized compute.",
+            "historical_sampling": {
+              "model_requests": 123,
+              "input_tokens": 555460,
+              "output_tokens": 33356,
+              "model_seconds": 660.6247240180383
+            },
+            "historical_source_kind": "prior_sampling_control; reused_head is a storage alias, not expert expense"
+          },
+          "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4",
+          "saved_bootstrap_intervals_reused": true,
+          "bootstrap_recomputed": false
+        }
+      },
+      "comparisons": {
+        "strong_legacy": {
+          "unique": {
+            "denominator": 121,
+            "matrix": {
+              "correct": {
+                "correct": 73,
+                "incorrect": 14,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 6,
+                "incorrect": 28,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 6,
+            "harms": 14,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": -8
+          },
+          "native": {
+            "denominator": 157,
+            "matrix": {
+              "correct": {
+                "correct": 94,
+                "incorrect": 16,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 6,
+                "incorrect": 41,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 6,
+            "harms": 16,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": -10
+          },
+          "pairs": {
+            "maintain": {
+              "both_correct": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 42,
+                    "incorrect": 6,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 25,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 6,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -6
+              },
+              "valid_relation": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 45,
+                    "incorrect": 13,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 4,
+                    "incorrect": 11,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 4,
+                "harms": 13,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -9
+              }
+            },
+            "respond": {
+              "both_correct": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              },
+              "valid_relation": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 2,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 2,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 2,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -2
+              }
+            }
+          }
+        },
+        "same_pool_top1": {
+          "unique": {
+            "denominator": 121,
+            "matrix": {
+              "correct": {
+                "correct": 58,
+                "incorrect": 14,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 7,
+                "incorrect": 26,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 14,
+                "incorrect": 2,
+                "unavailable": 0
+              }
+            },
+            "repairs": 7,
+            "harms": 14,
+            "unavailable_to_available": 16,
+            "unavailable_to_correct": 14,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": 7
+          },
+          "native": {
+            "denominator": 157,
+            "matrix": {
+              "correct": {
+                "correct": 72,
+                "incorrect": 16,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 14,
+                "incorrect": 39,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 14,
+                "incorrect": 2,
+                "unavailable": 0
+              }
+            },
+            "repairs": 14,
+            "harms": 16,
+            "unavailable_to_available": 16,
+            "unavailable_to_correct": 14,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": 12
+          },
+          "pairs": {
+            "maintain": {
+              "both_correct": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 22,
+                    "incorrect": 6,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 7,
+                    "incorrect": 22,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 13,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 7,
+                "harms": 6,
+                "unavailable_to_available": 16,
+                "unavailable_to_correct": 13,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 14
+              },
+              "valid_relation": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 26,
+                    "incorrect": 11,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 10,
+                    "incorrect": 10,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 13,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 10,
+                "harms": 11,
+                "unavailable_to_available": 16,
+                "unavailable_to_correct": 13,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 12
+              }
+            },
+            "respond": {
+              "both_correct": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              },
+              "valid_relation": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 2,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 2,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 2,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -2
+              }
+            }
+          }
+        },
+        "fixed3_sampling": {
+          "unique": {
+            "denominator": 121,
+            "matrix": {
+              "correct": {
+                "correct": 74,
+                "incorrect": 10,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 5,
+                "incorrect": 32,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 5,
+            "harms": 10,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": -5
+          },
+          "native": {
+            "denominator": 157,
+            "matrix": {
+              "correct": {
+                "correct": 95,
+                "incorrect": 14,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 5,
+                "incorrect": 43,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 5,
+            "harms": 14,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": -9
+          },
+          "pairs": {
+            "maintain": {
+              "both_correct": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 41,
+                    "incorrect": 9,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 1,
+                    "incorrect": 22,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 1,
+                "harms": 9,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -8
+              },
+              "valid_relation": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 47,
+                    "incorrect": 11,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 2,
+                    "incorrect": 13,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 2,
+                "harms": 11,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -9
+              }
+            },
+            "respond": {
+              "both_correct": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 4,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 0,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 0
+              },
+              "valid_relation": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 4,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 0,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "candidate": {
+        "identity": "experimental_saved_A1_r5_adopted_sparse_nonempty_frequency_0p1_eos_aligned_v1",
+        "unique_inputs": 121,
+        "unique_states": {
+          "correct": 74,
+          "incorrect": 47,
+          "unavailable": 0
+        },
+        "native_mappings": 157,
+        "native_states": {
+          "correct": 98,
+          "incorrect": 59,
+          "unavailable": 0
+        },
+        "full_scope_families": 40,
+        "paired_families": 29,
+        "unit_categories": [
+          {
+            "category": "ALL",
+            "units": 74,
+            "mean_native_unit_score": 0.5405405405405406,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 36
+          },
+          {
+            "category": "R1",
+            "units": 37,
+            "mean_native_unit_score": 0.4594594594594595,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 20
+          },
+          {
+            "category": "R2",
+            "units": 7,
+            "mean_native_unit_score": 0.5714285714285714,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 3
+          },
+          {
+            "category": "R3",
+            "units": 8,
+            "mean_native_unit_score": 0.125,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 7
+          },
+          {
+            "category": "R4",
+            "units": 2,
+            "mean_native_unit_score": 0.5,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 1
+          },
+          {
+            "category": "R5",
+            "units": 36,
+            "mean_native_unit_score": 0.5555555555555556,
+            "unavailable_native_records": 0,
+            "incorrect_native_answers": 18
+          }
+        ],
+        "paired": [
+          {
+            "relation": "maintain",
+            "pairs": 73,
+            "families": 25,
+            "both_correct": 45,
+            "both_native_scored": 73,
+            "unavailable_endpoints": 0,
+            "valid_relation": 55,
+            "pair_weighted_both_correct_ci95": [
+              0.42857142857142855,
+              0.7903406355320172
+            ],
+            "cluster": "family_id",
+            "bootstrap_seed": 20260921
+          },
+          {
+            "relation": "respond",
+            "pairs": 4,
+            "families": 4,
+            "both_correct": 0,
+            "both_native_scored": 4,
+            "unavailable_endpoints": 0,
+            "valid_relation": 0,
+            "pair_weighted_both_correct_ci95": [
+              0.0,
+              0.0
+            ],
+            "cluster": "family_id",
+            "bootstrap_seed": 20260921
+          }
+        ],
+        "cost": {
+          "new": {
+            "model_requests": 121,
+            "input_tokens": 2600487,
+            "output_tokens": 70529,
+            "model_seconds": 2925.1544858650304
+          },
+          "historical_reused_head": {
+            "model_requests": 299,
+            "input_tokens": 2931698,
+            "output_tokens": 138781,
+            "model_seconds": 5407.398476115989
+          },
+          "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+        },
+        "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5",
+        "saved_bootstrap_intervals_reused": true,
+        "bootstrap_recomputed": false
+      },
+      "controls": {
+        "strong_legacy": {
+          "identity": "adopted_R1_R4_F_capability_composite_v1",
+          "unique_inputs": 121,
+          "unique_states": {
+            "correct": 82,
+            "incorrect": 39,
+            "unavailable": 0
+          },
+          "native_mappings": 157,
+          "native_states": {
+            "correct": 107,
+            "incorrect": 50,
+            "unavailable": 0
+          },
+          "full_scope_families": 40,
+          "paired_families": 29,
+          "unit_categories": [
+            {
+              "category": "ALL",
+              "units": 74,
+              "mean_native_unit_score": 0.6441441441441441,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 29
+            },
+            {
+              "category": "R1",
+              "units": 37,
+              "mean_native_unit_score": 0.6756756756756757,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 12
+            },
+            {
+              "category": "R2",
+              "units": 7,
+              "mean_native_unit_score": 0.8571428571428571,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 1
+            },
+            {
+              "category": "R3",
+              "units": 8,
+              "mean_native_unit_score": 0.75,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 2
+            },
+            {
+              "category": "R4",
+              "units": 2,
+              "mean_native_unit_score": 0.5,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 1
+            },
+            {
+              "category": "R5",
+              "units": 36,
+              "mean_native_unit_score": 0.5740740740740741,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 18
+            }
+          ],
+          "paired": [
+            {
+              "relation": "maintain",
+              "pairs": 73,
+              "families": 25,
+              "both_correct": 44,
+              "both_native_scored": 73,
+              "unavailable_endpoints": 0,
+              "valid_relation": 52,
+              "pair_weighted_both_correct_ci95": [
+                0.410912204234122,
+                0.7966273476866697
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            },
+            {
+              "relation": "respond",
+              "pairs": 4,
+              "families": 4,
+              "both_correct": 1,
+              "both_native_scored": 4,
+              "unavailable_endpoints": 0,
+              "valid_relation": 1,
+              "pair_weighted_both_correct_ci95": [
+                0.0,
+                0.75
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            }
+          ],
+          "cost": {
+            "new": {
+              "model_requests": 0,
+              "input_tokens": 0,
+              "output_tokens": 0,
+              "model_seconds": 0.0
+            },
+            "historical_reused_head": {
+              "model_requests": 419,
+              "input_tokens": 1741881,
+              "output_tokens": 84025,
+              "model_seconds": 2291.4049097769766
+            },
+            "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+          },
+          "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5_scores",
+          "saved_bootstrap_intervals_reused": true,
+          "bootstrap_recomputed": false
+        },
+        "same_pool_top1": {
+          "identity": "experimental_saved_A1_r5_same_pool_top1_native_dispatch_v1",
+          "unique_inputs": 121,
+          "unique_states": {
+            "correct": 57,
+            "incorrect": 20,
+            "unavailable": 44
+          },
+          "native_mappings": 157,
+          "native_states": {
+            "correct": 71,
+            "incorrect": 26,
+            "unavailable": 60
+          },
+          "full_scope_families": 40,
+          "paired_families": 29,
+          "unit_categories": [
+            {
+              "category": "ALL",
+              "units": 74,
+              "mean_native_unit_score": 0.4063063063063063,
+              "unavailable_native_records": 34,
+              "incorrect_native_answers": 13
+            },
+            {
+              "category": "R1",
+              "units": 37,
+              "mean_native_unit_score": 0.5405405405405406,
+              "unavailable_native_records": 8,
+              "incorrect_native_answers": 9
+            },
+            {
+              "category": "R2",
+              "units": 7,
+              "mean_native_unit_score": 0.5714285714285714,
+              "unavailable_native_records": 1,
+              "incorrect_native_answers": 2
+            },
+            {
+              "category": "R3",
+              "units": 8,
+              "mean_native_unit_score": 0.625,
+              "unavailable_native_records": 1,
+              "incorrect_native_answers": 2
+            },
+            {
+              "category": "R4",
+              "units": 2,
+              "mean_native_unit_score": 0,
+              "unavailable_native_records": 2,
+              "incorrect_native_answers": 0
+            },
+            {
+              "category": "R5",
+              "units": 36,
+              "mean_native_unit_score": 0.3074074074074074,
+              "unavailable_native_records": 23,
+              "incorrect_native_answers": 5
+            }
+          ],
+          "paired": [
+            {
+              "relation": "maintain",
+              "pairs": 73,
+              "families": 25,
+              "both_correct": 19,
+              "both_native_scored": 30,
+              "unavailable_endpoints": 62,
+              "valid_relation": 26,
+              "pair_weighted_both_correct_ci95": [
+                0.0898792554083515,
+                0.4583333333333333
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            },
+            {
+              "relation": "respond",
+              "pairs": 4,
+              "families": 4,
+              "both_correct": 1,
+              "both_native_scored": 4,
+              "unavailable_endpoints": 0,
+              "valid_relation": 1,
+              "pair_weighted_both_correct_ci95": [
+                0.0,
+                0.75
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            }
+          ],
+          "cost": {
+            "new": {
+              "model_requests": 0,
+              "input_tokens": 0,
+              "output_tokens": 0,
+              "model_seconds": 0.0
+            },
+            "historical_reused_head": {
+              "model_requests": 236,
+              "input_tokens": 2483204,
+              "output_tokens": 100073,
+              "model_seconds": 3981.2810708229945
+            },
+            "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+          },
+          "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/native_scores",
+          "saved_bootstrap_intervals_reused": true,
+          "bootstrap_recomputed": false
+        },
+        "fixed3_sampling": {
+          "identity": "native_sampling_fixed3_common_cap_frequency_0p1_v1",
+          "unique_inputs": 121,
+          "unique_states": {
+            "correct": 74,
+            "incorrect": 47,
+            "unavailable": 0
+          },
+          "native_mappings": 157,
+          "native_states": {
+            "correct": 95,
+            "incorrect": 62,
+            "unavailable": 0
+          },
+          "full_scope_families": 40,
+          "paired_families": 29,
+          "unit_categories": [
+            {
+              "category": "ALL",
+              "units": 74,
+              "mean_native_unit_score": 0.5945945945945946,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 32
+            },
+            {
+              "category": "R1",
+              "units": 37,
+              "mean_native_unit_score": 0.4864864864864865,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 19
+            },
+            {
+              "category": "R2",
+              "units": 7,
+              "mean_native_unit_score": 0.5714285714285714,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 3
+            },
+            {
+              "category": "R3",
+              "units": 8,
+              "mean_native_unit_score": 0.125,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 7
+            },
+            {
+              "category": "R4",
+              "units": 2,
+              "mean_native_unit_score": 1,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 0
+            },
+            {
+              "category": "R5",
+              "units": 36,
+              "mean_native_unit_score": 0.6111111111111112,
+              "unavailable_native_records": 0,
+              "incorrect_native_answers": 16
+            }
+          ],
+          "paired": [
+            {
+              "relation": "maintain",
+              "pairs": 73,
+              "families": 25,
+              "both_correct": 43,
+              "both_native_scored": 73,
+              "unavailable_endpoints": 0,
+              "valid_relation": 59,
+              "pair_weighted_both_correct_ci95": [
+                0.3888888888888889,
+                0.781270032051282
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            },
+            {
+              "relation": "respond",
+              "pairs": 4,
+              "families": 4,
+              "both_correct": 0,
+              "both_native_scored": 4,
+              "unavailable_endpoints": 0,
+              "valid_relation": 1,
+              "pair_weighted_both_correct_ci95": [
+                0.0,
+                0.0
+              ],
+              "cluster": "family_id",
+              "bootstrap_seed": 20260921
+            }
+          ],
+          "cost": {
+            "new": {
+              "model_requests": 241,
+              "input_tokens": 946571,
+              "output_tokens": 64421,
+              "model_seconds": 1983.72666356407
+            },
+            "scope": "New draws plus exact historical sampling draws; common ceiling, not equal realized compute.",
+            "historical_sampling": {
+              "model_requests": 122,
+              "input_tokens": 477289,
+              "output_tokens": 32103,
+              "model_seconds": 1013.8552583860219
+            },
+            "historical_source_kind": "prior_sampling_control; reused_head is a storage alias, not expert expense"
+          },
+          "scores": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5",
+          "saved_bootstrap_intervals_reused": true,
+          "bootstrap_recomputed": false
+        }
+      },
+      "comparisons": {
+        "strong_legacy": {
+          "unique": {
+            "denominator": 121,
+            "matrix": {
+              "correct": {
+                "correct": 70,
+                "incorrect": 12,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 4,
+                "incorrect": 35,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 4,
+            "harms": 12,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": -8
+          },
+          "native": {
+            "denominator": 157,
+            "matrix": {
+              "correct": {
+                "correct": 94,
+                "incorrect": 13,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 4,
+                "incorrect": 46,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 4,
+            "harms": 13,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": -9
+          },
+          "pairs": {
+            "maintain": {
+              "both_correct": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 43,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 2,
+                    "incorrect": 27,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 2,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 1
+              },
+              "valid_relation": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 51,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 4,
+                    "incorrect": 17,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 4,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 3
+              }
+            },
+            "respond": {
+              "both_correct": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              },
+              "valid_relation": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              }
+            }
+          }
+        },
+        "same_pool_top1": {
+          "unique": {
+            "denominator": 121,
+            "matrix": {
+              "correct": {
+                "correct": 45,
+                "incorrect": 12,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 2,
+                "incorrect": 18,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 27,
+                "incorrect": 17,
+                "unavailable": 0
+              }
+            },
+            "repairs": 2,
+            "harms": 12,
+            "unavailable_to_available": 44,
+            "unavailable_to_correct": 27,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": 17
+          },
+          "native": {
+            "denominator": 157,
+            "matrix": {
+              "correct": {
+                "correct": 58,
+                "incorrect": 13,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 2,
+                "incorrect": 24,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 38,
+                "incorrect": 22,
+                "unavailable": 0
+              }
+            },
+            "repairs": 2,
+            "harms": 13,
+            "unavailable_to_available": 60,
+            "unavailable_to_correct": 38,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": 27
+          },
+          "pairs": {
+            "maintain": {
+              "both_correct": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 18,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 11,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 27,
+                    "incorrect": 16,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 43,
+                "unavailable_to_correct": 27,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 26
+              },
+              "valid_relation": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 24,
+                    "incorrect": 2,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 4,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 31,
+                    "incorrect": 12,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 2,
+                "unavailable_to_available": 43,
+                "unavailable_to_correct": 31,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 29
+              }
+            },
+            "respond": {
+              "both_correct": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              },
+              "valid_relation": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              }
+            }
+          }
+        },
+        "fixed3_sampling": {
+          "unique": {
+            "denominator": 121,
+            "matrix": {
+              "correct": {
+                "correct": 69,
+                "incorrect": 5,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 5,
+                "incorrect": 42,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 5,
+            "harms": 5,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": 0
+          },
+          "native": {
+            "denominator": 157,
+            "matrix": {
+              "correct": {
+                "correct": 90,
+                "incorrect": 5,
+                "unavailable": 0
+              },
+              "incorrect": {
+                "correct": 8,
+                "incorrect": 54,
+                "unavailable": 0
+              },
+              "unavailable": {
+                "correct": 0,
+                "incorrect": 0,
+                "unavailable": 0
+              }
+            },
+            "repairs": 8,
+            "harms": 5,
+            "unavailable_to_available": 0,
+            "unavailable_to_correct": 0,
+            "available_to_unavailable": 0,
+            "correct_to_unavailable": 0,
+            "net_correct_change": 3
+          },
+          "pairs": {
+            "maintain": {
+              "both_correct": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 41,
+                    "incorrect": 2,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 4,
+                    "incorrect": 26,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 4,
+                "harms": 2,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 2
+              },
+              "valid_relation": {
+                "denominator": 73,
+                "matrix": {
+                  "correct": {
+                    "correct": 51,
+                    "incorrect": 8,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 4,
+                    "incorrect": 10,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 4,
+                "harms": 8,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -4
+              }
+            },
+            "respond": {
+              "both_correct": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 4,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 0,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": 0
+              },
+              "valid_relation": {
+                "denominator": 4,
+                "matrix": {
+                  "correct": {
+                    "correct": 0,
+                    "incorrect": 1,
+                    "unavailable": 0
+                  },
+                  "incorrect": {
+                    "correct": 0,
+                    "incorrect": 3,
+                    "unavailable": 0
+                  },
+                  "unavailable": {
+                    "correct": 0,
+                    "incorrect": 0,
+                    "unavailable": 0
+                  }
+                },
+                "repairs": 0,
+                "harms": 1,
+                "unavailable_to_available": 0,
+                "unavailable_to_correct": 0,
+                "available_to_unavailable": 0,
+                "correct_to_unavailable": 0,
+                "net_correct_change": -1
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/compare_complete.py": "2bc946274f5e5ed1ebc725e610aabceb001ef99b3e84f71b322b3b14039f323c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/result_comparison_preparation/compare.py": "397bfa554d785fa4586be785cc76af39a2467dadf1cb129ff9aa9aa505f2c910",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/comparison_preparation.json": "ffcb9282808b855c48c281ac2de3dbd173f3ab697768175bc911c62aaa544cdf",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/receipt.json": "8fcd26c88606f1c00f54b62581b12d386c3e1fe171cd10bb6c0be3c0e3a5813d",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/receipt.json": "3169d8176ed20f289ed2f8d72a7532ee815f7ba48709b88bb79310578c259cef",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/receipt.json": "e2b8e32b7278f6ba41010673d92fdf3c240e3d9091dbdd7035537e28c9510c61",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/manifest.json": "96860d7b1e64de52b105ddd514edf804a80d955ce89a2ee7845145150be862e4",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/evaluations.jsonl": "b0d7e10ecbf7702ffd27eb7c843f76feb52457ff2d23097df83e7eb654746f78",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/pairs.jsonl": "17e379881e8e28f481de0875226942fbf0252ece57df321397d8693a3601eb26",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4/receipt.json": "928ea97796fedf590c0d0eb9560348124d10658aaea90bbcb12e44d5fc6a1230",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m4/plan.json": "a2bb2651a01606da900e10317e98a8447204158a6243ecfaecfa1d8889cc57de",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m4/status.json": "987aad10ea50aa7faf91de6524cf314a5143343b8378052a48cafb023cbc6371",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m4/proposals.jsonl": "bb58b813013129335e9d1f7fda3fa9e2abc2cc81ec9a2bb4765c2a163a4f1d76",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4/complementarity_inputs.jsonl": "fc4665ef9bd036d8fe90223973bc28fe078282eb0e9a9af17a1a8f44f9581d87",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4/native_scored.jsonl": "bf007764fb74de97bfa7e3f8a29e6339c457c6b52409c8a2f162de3d6d872d01",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4/native_unit_metrics.json": "386498143d39f1d7c7f00bdbe2e09a03133cef3deffef21dc57c094668d1591d",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4/paired_metrics.json": "4147241fc0d8f3b88a3bb7465ca7713af774b3ab151c50448b09adb1e663c6fc",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4_scores/receipt.json": "6ff58b2be9d1fe6d5d7e01500a580c3ae2c878d2fae3cf46f0528f1667ff6fcd",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/plan.json": "99747501d61b7f59f21f010fc861b3e0940ae05b5a598d49ea028e9f691c9332",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/status.json": "0a685357155f0a81510782c07d4c05bb56d6951a7a80a9af8c2f74a2ab8e094e",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/proposals.jsonl": "4899eb04ed0a1c52b780f3a0474c2f326ed7978d2226e01df2f8a9868c296d57",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4_scores/complementarity_inputs.jsonl": "1c6b7a29705e378be1dcab93a2f74294610b69a4c6df30e70810fea2d10448e0",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4_scores/native_scored.jsonl": "09297e6ef7792de416386f28b575ecc65ade2b83983c29c191ed526ee063359a",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4_scores/native_unit_metrics.json": "3bdc42964983084df17cf828c415cd76840fea725091b8a722bd3cfdc669e6b9",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4_scores/paired_metrics.json": "32410dd84f485ff1962443c809ed3437edccf85df4c0435ded0a339bc341a05d",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/native_scores/receipt.json": "5037222b4a175a13b7202f487c8acc1f20066b3424b1e28ec42999c77751a843",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/export/plan.json": "b95b9178b27cc359a161faee7d1f7a1cf3a9239514019bff81cb283239856754",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/export/status.json": "4fcc753c2c7cfa2def5ddeab7d8a654c18bf6d1a90628b8d5718fa6be5bc7b49",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/export/proposals.jsonl": "8459268cad3bb7cc69e441e219e397aa462ad884dfcf9ca987e09175aa0af0ae",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/native_scores/complementarity_inputs.jsonl": "746080de85d980297a86f12bb637894f501ac6ae42c75cc03e2d3b7acbc16509",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/native_scores/native_scored.jsonl": "88a6fe1ce7aa8991c957678e595b3ee80ee06b2e15b6bbd7828605661f46e059",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/native_scores/native_unit_metrics.json": "58fcb40a624e237a311eec48018f572c1c5cd58710a9712d51e39bfcbc056acd",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m4/native_scores/paired_metrics.json": "2e0d3ad57e18eaed388245df21ee5c6d145ad88739de4b47bb71e87f26891398",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4/receipt.json": "904909072f2e500db00f34531de28ee0b95443de0da595a2c059138dc0d7f52c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4_bridge/plan.json": "1ad2a8b03a2e30a534ce62bc565df2f0addbf0ac846ef1b4475cf9c1d825eb4f",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4_bridge/status.json": "194993d0c96732725b3fbb54d997eb75f5cec310b52100d9a4d93b92c3b9fe47",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4_bridge/proposals.jsonl": "1afff97a2d8772dc53c78be3cf5789f612c114e25f7c8d772c098d1f909c7943",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4/complementarity_inputs.jsonl": "2c63f8078e7548bf0557050d26d7958535e1f55aefe5f69088b2ba1556311d75",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4/native_scored.jsonl": "34e8223f46b9f9552d64549852dd773c10e490c7318c830a90812a3523bdb0dc",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4/native_unit_metrics.json": "25d3cbed21eed6a1b6a2326723f02a34573039c03f758f17547f22e03a8b114a",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4/paired_metrics.json": "108c3b13d39be47dadfe67f076ccfc4fdee9f19e4cb995e446e20124be59dd78",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5/receipt.json": "8a23ae9339c7f3ec2f2064f574463ab44c2b06ba1553ad0432e8260a30ea12c4",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m5/plan.json": "84a264da61b05fc021eb0b80ee422fe4648c4511f2545de4d54637edc1b89f6e",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m5/status.json": "077cc5bf56e27ad1c84d59610269ac484e9f7fbd0b05dc8334e5872ba96b25f6",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m5/proposals.jsonl": "56e80105dd7de0bf3c468fc4a3e5a30bde2f4d24ec1661ae38cb0225d6fdd049",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5/complementarity_inputs.jsonl": "a882bca1882deda0f5b6c0266123c0df2bfbc197c05641a5caa4a435976c8025",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5/native_scored.jsonl": "e7935d568630982f55346fad2db5abea319588fddfb73d4ee2c166aa1b8477a2",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5/native_unit_metrics.json": "c71a3361211a8fd23122819488728262005ac09933404f680def38339ee97736",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5/paired_metrics.json": "7e75c6951886a1a03895b76d4e01b653322ae6c561531985afe451013864ca89",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5_scores/receipt.json": "50a9f16743b9f431cf834a52c9425dace65d61f28027c81784a38b1045be7558",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5/plan.json": "0c214801bed7d2d63d97be7141d4afd7f2d94aa528bf40f5604285dabc0f7f1b",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5/status.json": "3ab079551bb7097a8d40cf5134b9ecb91a056c3efe7d62510f5c1d36dde1e30c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5/proposals.jsonl": "d3c98d9f6d4bcaa232a00021e822cbff5df1e452b3ee1b80bb67c0846970606b",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5_scores/complementarity_inputs.jsonl": "f64b937af3b43fb280c6d5754a59e66fcad37ca3bccd86fb57c30812c95c795f",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5_scores/native_scored.jsonl": "e664c477364d2c2a227d53cfbc3a1e549ca6b2dad062df8eaba05f759abc790c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5_scores/native_unit_metrics.json": "2001b2d1f333f05bee891aec7d789cc9023c98a9c3db6b945d0a64041962b08d",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5_scores/paired_metrics.json": "300ccc0f0ed4ac864b5b175e138bd14e76ce2315f9ef0fbaf9f10cacfa11ed59",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/native_scores/receipt.json": "be83763f50f127778bbaec7e9fb8f439caa9eac2c4340206ea6723278403d4db",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/export/plan.json": "ba8a4f6adf049c9e71bd7eea48e854f72314564e8eec59e500dd5569b55ad9fe",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/export/status.json": "d8228d4284fe0936ae39ed27ed6644a6554ab9618465fd9b531d611eca0da389",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/export/proposals.jsonl": "8b3d49f2d645d6320dcae6f633bbc185dcd314d26ad77e6b4f07d27bf5c3bed5",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/native_scores/complementarity_inputs.jsonl": "ba2961ed0d98b89e42390aa3e6e7da0efa7fa55305588f6d724a0f428bcbcaa4",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/native_scores/native_scored.jsonl": "3affef28d223eb253fc02a3543507d4672b0be869d94106d195ba11f1185ccde",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/native_scores/native_unit_metrics.json": "7dd0d6d97ae300d3623c87aff1de985d599f552ea1a5440ddde564aebe10e7bc",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/m5/native_scores/paired_metrics.json": "7e6907e09b2b1a96ffc8959578d6d6cb7189c64873a5fa75897c0339997fc42e",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5/receipt.json": "0ea415bc75cde5bc46b4677c84e3a67848cbac5327c45f81fb1cb3a538f51f9c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5_bridge/plan.json": "1739f59807686f0d4bf61e44b5b8d9f8a21cc1bbc33f180e1fae93452f9208d0",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5_bridge/status.json": "194993d0c96732725b3fbb54d997eb75f5cec310b52100d9a4d93b92c3b9fe47",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5_bridge/proposals.jsonl": "cdb2d9345813b93520bd2ef5de0c508885848a511e74107317d4b38d835b2266",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5/complementarity_inputs.jsonl": "69e1b873af1819f0704aaeb7cbdd3574360b889c5d7363d038e8d362cf0fd419",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5/native_scored.jsonl": "127623d61fda538c137381e6dd51462c9bb696faf4ef6c9525aef734902729d7",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5/native_unit_metrics.json": "a5e9af35984395350a10c8aeef94fd58bb8efdadb4ceb14679e2e36a506ec876",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5/paired_metrics.json": "5c84ea270594556c50d77d37f61c2f143230666cf20c72afba7f2a2297794b51"
+  },
+  "new_model_calls": 0,
+  "native_rescoring_calls": 0,
+  "bootstrap_recomputed": false,
+  "independent_evaluation": false,
+  "method_adopted": false,
+  "strict_realized_compute_matching": false,
+  "transition_definitions": "Rows=reference, columns=EP. Repairs=incorrect→correct only; None stays unavailable. Pair states use None when either endpoint is unscored; valid_relation correct/incorrect means relation pass/fail.",
+  "limitations": [
+    "Exposed development only; same-tools control and independent evaluation remain incomplete.",
+    "Historical expert/sampling resources and fresh expense stay separate; never sum shared costs across methods.",
+    "Strong old head and old default top1 share calls; old default top1 is not this same-pool top1.",
+    "C3 uses fixed3 under the common public ceiling; realized compute is not matched.",
+    "NP is not included: its EOS protocol and expert pool differ, so it is not a pure remove-A1 ablation."
+  ]
+}

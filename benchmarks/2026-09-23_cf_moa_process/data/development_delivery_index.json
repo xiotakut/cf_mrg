@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-23T09:37:34.820400+08:00",
+  "state": "development_delivery_incomplete_not_a_freeze",
+  "purpose": "Navigation to completed evidence and explicit delivery gaps; not a new full replay, scientific adoption, or authorization.",
+  "common_freeze": false,
+  "freeze_at": null,
+  "independent_evaluation": false,
+  "all_goal_requirements_completed": false,
+  "new_model_calls": 0,
+  "new_native_scoring_calls": 0,
+  "trace_rescans": 0,
+  "code_root": "/home/data3/txy/cf_moa",
+  "config_root": "/home/data3/txy/cf_moa/configs",
+  "historical_run_code_policy": "Use each completed run original manifest/snapshot and recorded execution revision; current source existence does not prove historical source identity.",
+  "artifacts": {
+    "core_plan": {
+      "path": "/home/data3/txy/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+      "bytes": 26940
+    },
+    "adopted_sources": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/historical_versions.json",
+      "sha256": "2e119a2106e4d3700a3cb16e37a063829d46fb6afa2143513fe3d7e8d3b705b2",
+      "bytes": 15706,
+      "declared_status": "selected_historical_resources_only"
+    },
+    "legacy_migration": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/stage_a_replay/migration_receipt.json",
+      "sha256": "787330306141253b89b1496a620d796e484934e36414b845e004dac22a8371ac",
+      "bytes": 312,
+      "declared_status": "passed"
+    },
+    "a4_request_replay": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a4_config_repair/repair_summary.json",
+      "sha256": "13dccb2343602c59d446e7296c61b581e939b98a4759f15006ad669b220f3eaf",
+      "bytes": 12990,
+      "declared_status": "offline_checks_passed_live_waiting_for_resources"
+    },
+    "a4_m4_live": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a4_live_check/m4/status.json",
+      "sha256": "d572a0b778d9b647399c27e82ad184c1cf81acc611bda4c28c0851eb92009c2c",
+      "bytes": 1472,
+      "declared_status": "passed"
+    },
+    "a4_m5_live": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a4_live_check/m5/status.json",
+      "sha256": "0af89adfa4c6a502506d3b551b9c6d24de193021fc1f438ff1a6c3c91edd68d1",
+      "bytes": 511,
+      "declared_status": "passed"
+    },
+    "a1_nonadoption": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/freeze_preparation/a1_r5_non_adoption_decision.json",
+      "sha256": "8c5db808a7a03dcdce7384a8f00c4e37e85da62f707dd45ce6c80b33b12ff906",
+      "bytes": 2790,
+      "declared_status": null
+    },
+    "a5_nonadoption": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/freeze_preparation/a5_non_adoption_identity_binding.json",
+      "sha256": "719f90109407d2d77cbcda1aad232692fd4ededdf3ba3db82d7ce8ca3bfbf840",
+      "bytes": 1063,
+      "declared_status": null
+    },
+    "a3_offline_repair": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a3_edit_preparation/repair/receipt.json",
+      "sha256": "fda1d78cfd2f22b5aaf448555329b5d7fddbe417e1cd250e4f49e1e2ba240077",
+      "bytes": 8192,
+      "declared_status": "authorized_A3_CPU_repairs_complete_live_model_inference_paused"
+    },
+    "a3_paired_offline": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a3_edit_preparation/controls/paired_execution/receipt.json",
+      "sha256": "0c261cbc0f8ea418e63226a5161d02e65eea7aa5def5c75015f444792892412d",
+      "bytes": 17752,
+      "declared_status": "CPU_implementation_and_acceptance_complete_not_live_accepted"
+    },
+    "complementarity": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/complementarity_preparation/analysis/results_v2/receipt.json",
+      "sha256": "0a1ecc5e59900474fe9563395b3f539def0ff70281c1f78b78a25a38eec52ae3",
+      "bytes": 20240,
+      "declared_status": "offline_analysis_complete"
+    },
+    "complementarity_independent_check": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/complementarity_preparation/analysis/independent_checks/receipt.json",
+      "sha256": "5f27e0a38652eba7c71536bf4d9c4a7a9cbef7bd55a8df84615ab14917231347",
+      "bytes": 19184,
+      "declared_status": "independent_saved_output_counts_passed"
+    },
+    "strong_old_complete_counts": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/freeze_preparation/strong_control_status_from_rows/receipt.json",
+      "sha256": "4e20a9324ea54d8b6cbbcf14f1812dbe9f9f5cf8852e2cd8d6a84d07b3f162ba",
+      "bytes": 3903,
+      "declared_status": "complete_counters_derived_from_saved_rows"
+    },
+    "ep_terminal": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/extension_runtime_repair_live_receipt.json",
+      "sha256": "641fa5d01264bf3921d72444d96e1dedf29590e4e3259bac3aecb2caf1221160",
+      "bytes": 144732,
+      "declared_status": "saved_A1_remaining231_journal_repair_eos_actual_entry_audit_complete"
+    },
+    "ep_assembly": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/receipt.json",
+      "sha256": "9530d661f66fe479247471570b9c83ba2809caacd3380571ed195d77434c2de5",
+      "bytes": 186687,
+      "declared_status": "complete_unscored_lossless_fixed11_plus_remaining231"
+    },
+    "ep_scoring": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/receipt.json",
+      "sha256": "8fcd26c88606f1c00f54b62581b12d386c3e1fe171cd10bb6c0be3c0e3a5813d",
+      "bytes": 135633,
+      "declared_status": "complete_EP_saved_A1_native_development_scores"
+    },
+    "ep_comparison": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/summary.json",
+      "sha256": "831e1d56dc68db5a1b4e40a9ba97a9c4eb204944504f3e195ba614419e1ff2e7",
+      "bytes": 87964,
+      "declared_status": "complete_EP_saved_native_comparison"
+    },
+    "ep_nonadoption": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/non_adoption_decision.json",
+      "sha256": "3ac1e569e7970488cec0ab7ef0f433dba58384b27af3a2ace421c34582cc1728",
+      "bytes": 7708,
+      "declared_status": null
+    },
+    "ep_evidence_use": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/evidence_use_summary.json",
+      "sha256": "7e8ba01175451be532c1e5af1d11de80011f107dbafd94bd67959f1b9c39a876",
+      "bytes": 14472,
+      "declared_status": "completed_trace_description_only"
+    },
+    "ep_execution_and_cost": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/extension_runtime_repair_execution_receipt.json",
+      "sha256": "e3b4f2b23fa0fcd42cdca80b948df7b130307a60d9767edf724d08c023c6ba48",
+      "bytes": 4295,
+      "declared_status": null
+    },
+    "fixed3_terminal": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/terminal_receipt.json",
+      "sha256": "d0c6117ec48c060f1216a38bae5782d1dca455a19328d919d46ce5360cc4fafc",
+      "bytes": 42590,
+      "declared_status": "fixed3_terminal_trace_verified"
+    },
+    "fixed3_scoring": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/receipt.json",
+      "sha256": "3169d8176ed20f289ed2f8d72a7532ee815f7ba48709b88bb79310578c259cef",
+      "bytes": 41949,
+      "declared_status": "complete_saved_fixed3_native_sampling_scored"
+    },
+    "fixed3_execution_and_cost": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/execution_receipt.json",
+      "sha256": "64a669aff0f4d15bcfdf7c60ab23bd48bc50630af0a2baf6fe872afb10ed452c",
+      "bytes": 8331,
+      "declared_status": null
+    },
+    "same_pool_top1": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/receipt.json",
+      "sha256": "eb9e40fbbc0143650d95165972b56b75997fdf23335a5911e15bcaf0996f6f7b",
+      "bytes": 5672,
+      "declared_status": "complete_cached_dispatch_unscored"
+    },
+    "same_pool_top1_scoring": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/scoring/receipt.json",
+      "sha256": "e2b8e32b7278f6ba41010673d92fdf3c240e3d9091dbdd7035537e28c9510c61",
+      "bytes": 32723,
+      "declared_status": "complete"
+    },
+    "same_tools_stopped": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/single_agent_preparation/stable_tool_json_r2/development/stopped_stage_report.json",
+      "sha256": "0945072ecd262a8b8fe088557722078a49cf336f9395fe7bb68853b4f5ad587c",
+      "bytes": 9605,
+      "declared_status": "both_controls_stopped_negatives_retained_no_main_score"
+    },
+    "a2_parser_difference": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a2_control_preparation/live/parser_parity_diagnosis.json",
+      "sha256": "dd422ddd9946600816816b4525506e0b50aaaec19aeaa66d045f1a3fd041d368",
+      "bytes": 5787,
+      "declared_status": "adapter_strictness_difference_confirmed"
+    },
+    "same_tools_profile_review": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/control_alignment_preparation/adopted_role_profile_preparation/review.json",
+      "sha256": "e002a70c5a40d398a26c5ab09adb0a16473273634ee6d03b6153625254502524",
+      "bytes": 13032,
+      "declared_status": "proposal_reviewed_blocked_by_known_facts_context_capacity_not_ready"
+    },
+    "previous_unfrozen_inventory": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/freeze_preparation/evidence_inventory_20260923/current_unfrozen_draft.json",
+      "sha256": "cfff68d22a469902308ed95bf3c26a1060fe82663ed7b157513c8d6e0e85d608",
+      "bytes": 18953,
+      "declared_status": null
+    },
+    "previous_inventory_validation": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/freeze_preparation/evidence_inventory_20260923/validation.json",
+      "sha256": "89705b2b9281f96e2630097e3ac5137d960d80f31db3ddb5ced1f86524f59f88",
+      "bytes": 16308,
+      "declared_status": "not_ready"
+    },
+    "scheduling_diagnosis": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/gpu_cpu_scheduling_diagnosis_20260923.json",
+      "sha256": "0fa9e18225a0cac38462a6b5dc495fe8278d411c6a891ab459405c652f736e3a",
+      "bytes": 5623,
+      "declared_status": "read_only_runtime_scheduling_diagnosis"
+    }
+  },
+  "phase_status": [
+    {
+      "id": "A",
+      "state": "implemented_and_replayed",
+      "evidence": [
+        "adopted_sources",
+        "legacy_migration"
+      ],
+      "boundary": "Legacy results and original dispatcher identity preserved."
+    },
+    {
+      "id": "B",
+      "state": "implemented_and_accepted_in_recorded_scope",
+      "evidence": [
+        "a4_request_replay",
+        "a4_m4_live",
+        "a4_m5_live"
+      ],
+      "boundary": "A4 historical offline receipt waiting status is superseded only by separate actual live statuses; no original receipt rewritten."
+    },
+    {
+      "id": "C",
+      "state": "implemented_with_negative_candidates_and_paused_edit_arm",
+      "evidence": [
+        "a1_nonadoption",
+        "a5_nonadoption",
+        "a3_offline_repair",
+        "a3_paired_offline"
+      ],
+      "boundary": "A1/A5 not adopted; legacy A2/A3/A4/F retained; A3 edit inference still paused."
+    },
+    {
+      "id": "D",
+      "state": "complete_development_aggregation_negative_core_controls_incomplete",
+      "evidence": [
+        "complementarity",
+        "ep_scoring",
+        "ep_comparison",
+        "ep_evidence_use",
+        "fixed3_scoring",
+        "same_pool_top1_scoring",
+        "same_tools_stopped"
+      ],
+      "boundary": "No collaborative-gain or equal-realized-cost claim; no candidate re-selection from new independent data."
+    },
+    {
+      "id": "E",
+      "state": "not_completed",
+      "evidence": [
+        "ep_nonadoption",
+        "previous_unfrozen_inventory"
+      ],
+      "boundary": "No qualified adopted combined candidate, no common freeze, no independent evaluation."
+    }
+  ],
+  "expert_dispositions": [
+    {
+      "identity": "A1",
+      "variant": "bounded_evidence_id_coverage_audit_v2_relation_codes_r5",
+      "default_enabled": false,
+      "disposition": "not_adopted",
+      "decision": "a1_nonadoption",
+      "experimental_cache_use": "EP only; EP also not adopted"
+    },
+    {
+      "identity": "A2",
+      "disposition": "retained_adopted_legacy_kernel",
+      "separate_control": "new parser wrapper discrepancy unresolved; original A2 output remains valid"
+    },
+    {
+      "identity": "A3",
+      "disposition": "retained_adopted_legacy_catalog",
+      "edit_arm": "implemented_offline_validated_model_calls_paused"
+    },
+    {
+      "identity": "A4",
+      "disposition": "retained_accepted_legacy_physiology_scope",
+      "clinical_scope": "requires complete given model/state; no eligible inputs in this 121-input development scope"
+    },
+    {
+      "identity": "A5",
+      "disposition": "not_adopted_stop_candidate_generation",
+      "decision": "a5_nonadoption"
+    },
+    {
+      "identity": "F",
+      "disposition": "retained_true_legacy_component",
+      "relation_to_A5": "separate identity; not relabeled as new A5"
+    }
+  ],
+  "controls": [
+    {
+      "identity": "strong_old_heads",
+      "development_status": "complete",
+      "evidence": [
+        "strong_old_complete_counts",
+        "ep_comparison"
+      ],
+      "note": "Old metadata failed-counter gap does not invalidate completed control."
+    },
+    {
+      "identity": "same_resource_single_agent",
+      "development_status": "stopped_incomplete",
+      "evidence": [
+        "same_tools_stopped",
+        "same_tools_profile_review"
+      ]
+    },
+    {
+      "identity": "native_sampling_fixed3_common_cap_frequency_0p1_v1",
+      "development_status": "complete",
+      "evidence": [
+        "fixed3_terminal",
+        "fixed3_scoring"
+      ],
+      "strict_realized_cost_match": false,
+      "exhausts_budget": false
+    },
+    {
+      "identity": "same_pool_top1",
+      "development_status": "complete_with_unavailable_retained",
+      "evidence": [
+        "same_pool_top1_scoring"
+      ],
+      "unavailable_M4_M5": [
+        16,
+        44
+      ]
+    },
+    {
+      "identity": "native_backbone_self_moa_role_prompts_all_applicable",
+      "development_status": "not_bound_as_complete_in_common_inventory",
+      "note": "Missing binding is not evidence of never executed. No automatic rerun or completion claim."
+    }
+  ],
+  "trace_navigation": {
+    "expert_outputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development",
+    "a1_complete": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete",
+    "legacy_F": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete",
+    "ep_complete": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run",
+    "ep_per_input_comparison": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/per_input_trace.jsonl",
+    "ep_evidence_use": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/evidence_use_trace.jsonl",
+    "fixed3_original_draws": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/live_run",
+    "same_pool_top1": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control"
+  },
+  "remaining_requirements": [
+    "Resolve adopted-parser discrepancy for the separate A2 model control before dependent model execution.",
+    "Resolve full same-tools input/profile/context incompatibility in an explicit version; preserve r2 failures.",
+    "No accepted combined candidate currently qualifies for common freeze; preserve negative identities.",
+    "Bind final method and all required controls consistently after development decisions.",
+    "Resolve independent-scope exposure/qualification before reading or selecting independent inputs.",
+    "Run and deliver frozen independent evaluation only after the preceding requirements are met."
+  ],
+  "performance_status": "O(N^2) export/repeated request token counting and serial backbone scheduling diagnosed, not yet repaired.",
+  "interpretation": "Same-cap sampling is not strict realized resource matching. A completed negative development result does not satisfy frozen independent evaluation."
+}

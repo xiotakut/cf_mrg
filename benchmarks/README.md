@@ -1,6 +1,8 @@
 # Benchmark 结果归档
 
-**最新：[2026-09-20 R1–R5实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) · [方法论证稿与配套记录](2026-09-16_support_update_method/README.md)。**
+**最新：[2026-09-23 CF-MoA Router＋五专家完整过程报告](2026-09-23_cf_moa_process/docs/research/cf_moa_experiment_report.md) · [开发结果、错误、成本与核验材料](2026-09-23_cf_moa_process/README.md)。当前聚合不采用，共同冻结与独立评估尚未完成。**
+
+**2026-09-20：[R1–R5实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) · [方法论证稿与配套记录](2026-09-16_support_update_method/README.md)。**
 
 **2026-09-13 归档：[2026-09-13 v5 五方法完整结果（M4 修复版）](2026-09-13_v5_complete/completion/v5_benchmark_latest/README.md) · [近期全部工作及文档](2026-09-13_v5_complete/README.md)。**
 
@@ -8,6 +10,7 @@
 
 | 完成日期 | 运行 | 方法 | 范围 | 完成率 |
 |---|---|---|---|---|
+| 2026-09-23 | [CF-MoA完整过程报告](2026-09-23_cf_moa_process/docs/research/cf_moa_experiment_report.md) | Router＋五专家、旧F及核心控制 | 全流程状态、错误/修复、负结果、成本；两骨干各121开发输入 | 文档发布；聚合不采用、独立评估未完成；0本次新模型 |
 | 2026-09-20 | [R1–R5实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) | 增补R4与未完成R5，原78阶段保留 | 共148阶段；含失败、过早停止纠正、平台中断及保存 | 文档发布；0新模型调用 |
 | 2026-09-18 | [R1–R3实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) | R2→R3→R1的实际研究过程与交叉审计 | 78阶段的观察、候选、失败恢复、优化、验证及交付 | 文档发布；0 新模型调用 |
 | 2026-09-16 | [支持更新与候选重决策论证稿](2026-09-16_support_update_method/README.md) | 七方法基线与 R1/R2/R3 开发头，附机制和新来源对照 | 完整原因—方法—证据链及相关记录 | 文档发布；0 新模型调用 |

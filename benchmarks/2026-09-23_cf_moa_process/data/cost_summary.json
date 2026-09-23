@@ -1,0 +1,133 @@
+{
+  "scope": "Two completed backbones per row; excludes common historical initial-answer resources; shared historical calls must not be summed across methods.",
+  "model_seconds_definition": "Recorded serving wall-clock sum, not GPU kernel time or end-to-end duration.",
+  "strict_realized_compute_matching": false,
+  "by_backbone": {
+    "M4": {
+      "candidate": {
+        "new": {
+          "model_requests": 121,
+          "input_tokens": 3257045,
+          "output_tokens": 59658,
+          "model_seconds": 2094.954565737935
+        },
+        "historical_reused_head": {
+          "model_requests": 332,
+          "input_tokens": 3289848,
+          "output_tokens": 138405,
+          "model_seconds": 6485.907327765043
+        },
+        "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+      },
+      "strong_legacy": {
+        "new": {
+          "model_requests": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "model_seconds": 0.0
+        },
+        "historical_reused_head": {
+          "model_requests": 420,
+          "input_tokens": 1828059,
+          "output_tokens": 84395,
+          "model_seconds": 1854.6178262869375
+        },
+        "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+      },
+      "same_pool_top1": {
+        "new": {
+          "model_requests": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "model_seconds": 0.0
+        },
+        "historical_reused_head": {
+          "model_requests": 266,
+          "input_tokens": 2795061,
+          "output_tokens": 97629,
+          "model_seconds": 4831.1534848420315
+        },
+        "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+      },
+      "fixed3_sampling": {
+        "new": {
+          "model_requests": 240,
+          "input_tokens": 919757,
+          "output_tokens": 64347,
+          "model_seconds": 1192.3448169290496
+        },
+        "scope": "New draws plus exact historical sampling draws; common ceiling, not equal realized compute.",
+        "historical_sampling": {
+          "model_requests": 123,
+          "input_tokens": 555460,
+          "output_tokens": 33356,
+          "model_seconds": 660.6247240180383
+        },
+        "historical_source_kind": "prior_sampling_control; reused_head is a storage alias, not expert expense"
+      }
+    },
+    "M5": {
+      "candidate": {
+        "new": {
+          "model_requests": 121,
+          "input_tokens": 2600487,
+          "output_tokens": 70529,
+          "model_seconds": 2925.1544858650304
+        },
+        "historical_reused_head": {
+          "model_requests": 299,
+          "input_tokens": 2931698,
+          "output_tokens": 138781,
+          "model_seconds": 5407.398476115989
+        },
+        "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+      },
+      "strong_legacy": {
+        "new": {
+          "model_requests": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "model_seconds": 0.0
+        },
+        "historical_reused_head": {
+          "model_requests": 419,
+          "input_tokens": 1741881,
+          "output_tokens": 84025,
+          "model_seconds": 2291.4049097769766
+        },
+        "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+      },
+      "same_pool_top1": {
+        "new": {
+          "model_requests": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "model_seconds": 0.0
+        },
+        "historical_reused_head": {
+          "model_requests": 236,
+          "input_tokens": 2483204,
+          "output_tokens": 100073,
+          "model_seconds": 3981.2810708229945
+        },
+        "scope": "Saved head resources; common historical initial-answer resources excluded. Strong legacy and top-1 share historical calls: do not sum their costs. Model seconds are recorded serving wall time, not CPU replay time or GPU kernel time."
+      },
+      "fixed3_sampling": {
+        "new": {
+          "model_requests": 241,
+          "input_tokens": 946571,
+          "output_tokens": 64421,
+          "model_seconds": 1983.72666356407
+        },
+        "scope": "New draws plus exact historical sampling draws; common ceiling, not equal realized compute.",
+        "historical_sampling": {
+          "model_requests": 122,
+          "input_tokens": 477289,
+          "output_tokens": 32103,
+          "model_seconds": 1013.8552583860219
+        },
+        "historical_source_kind": "prior_sampling_control; reused_head is a storage alias, not expert expense"
+      }
+    }
+  }
+}

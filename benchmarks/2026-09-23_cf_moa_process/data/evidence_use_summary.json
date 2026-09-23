@@ -1,0 +1,428 @@
+{
+  "by_backbone": {
+    "m4": {
+      "a1_none_output_flags_true_counts": {
+        "audit_overflow": 17,
+        "coverage_incomplete": 2,
+        "semantic_invalid": 3
+      },
+      "additional_check_count_distribution": {
+        "0": 121
+      },
+      "adopted_nonproposal_source_distribution": {
+        "(none)": 13,
+        "A1": 69,
+        "A1+A2": 7,
+        "A1+A3": 6,
+        "A1+F": 9,
+        "A2": 2,
+        "A3": 2,
+        "F": 13
+      },
+      "adopted_reference_claim_source_distribution": {
+        "(none)": 28,
+        "A1": 84,
+        "A1+A2": 7,
+        "A2": 2
+      },
+      "aggregation_round_count_distribution": {
+        "1": 121
+      },
+      "anomaly_count": 0,
+      "cohorts": {
+        "a1_original_native_none": {
+          "correct": 14,
+          "denominator": 20,
+          "incorrect": 6,
+          "unavailable": 0
+        },
+        "adopted_nonproposal_from_multiple_experts": {
+          "correct": 11,
+          "denominator": 22,
+          "incorrect": 11,
+          "unavailable": 0
+        },
+        "adopted_reference_claims_from_multiple_experts": {
+          "correct": 1,
+          "denominator": 7,
+          "incorrect": 6,
+          "unavailable": 0
+        },
+        "all": {
+          "correct": 79,
+          "denominator": 121,
+          "incorrect": 42,
+          "unavailable": 0
+        },
+        "any_explanation_without_alphanumeric": {
+          "correct": 0,
+          "denominator": 2,
+          "incorrect": 2,
+          "unavailable": 0
+        },
+        "any_short_explanation_le_32_nonwhitespace_chars": {
+          "correct": 1,
+          "denominator": 4,
+          "incorrect": 3,
+          "unavailable": 0
+        },
+        "executed_multi_expert": {
+          "correct": 14,
+          "denominator": 29,
+          "incorrect": 15,
+          "unavailable": 0
+        },
+        "initial_multi_expert": {
+          "correct": 14,
+          "denominator": 29,
+          "incorrect": 15,
+          "unavailable": 0
+        },
+        "no_recognized_explanation_field": {
+          "correct": 0,
+          "denominator": 0,
+          "incorrect": 0,
+          "unavailable": 0
+        },
+        "same_pool_top1_unavailable": {
+          "correct": 14,
+          "denominator": 16,
+          "incorrect": 2,
+          "unavailable": 0
+        }
+      },
+      "executed_expert_distribution": {
+        "A1": 82,
+        "A1+A2": 9,
+        "A1+A3": 8,
+        "A1+F": 12,
+        "F": 10
+      },
+      "explanation_char_min_max": [
+        0,
+        6996
+      ],
+      "explanation_field_count": 121,
+      "initial_activation_distribution": {
+        "A1": 82,
+        "A1+F": 12,
+        "A2+A1": 9,
+        "A3+A1": 8,
+        "F": 10
+      },
+      "inputs_with_shared_reference_across_experts": 7,
+      "same_pool_top1_unavailable_to_ep": {
+        "became_available": 16,
+        "became_correct": 14,
+        "became_incorrect": 2,
+        "denominator": 16,
+        "is_wrong_answer_repair": false,
+        "remained_unavailable": 0
+      }
+    },
+    "m5": {
+      "a1_none_output_flags_true_counts": {
+        "audit_overflow": 51,
+        "coverage_incomplete": 3
+      },
+      "additional_check_count_distribution": {
+        "0": 121
+      },
+      "adopted_nonproposal_source_distribution": {
+        "(none)": 40,
+        "A1": 43,
+        "A1+A2": 4,
+        "A1+A3": 5,
+        "A1+F": 8,
+        "A2": 4,
+        "A3": 3,
+        "F": 14
+      },
+      "adopted_reference_claim_source_distribution": {
+        "(none)": 57,
+        "A1": 56,
+        "A1+A2": 4,
+        "A2": 4
+      },
+      "aggregation_round_count_distribution": {
+        "1": 121
+      },
+      "anomaly_count": 0,
+      "cohorts": {
+        "a1_original_native_none": {
+          "correct": 30,
+          "denominator": 51,
+          "incorrect": 21,
+          "unavailable": 0
+        },
+        "adopted_nonproposal_from_multiple_experts": {
+          "correct": 9,
+          "denominator": 17,
+          "incorrect": 8,
+          "unavailable": 0
+        },
+        "adopted_reference_claims_from_multiple_experts": {
+          "correct": 0,
+          "denominator": 4,
+          "incorrect": 4,
+          "unavailable": 0
+        },
+        "all": {
+          "correct": 74,
+          "denominator": 121,
+          "incorrect": 47,
+          "unavailable": 0
+        },
+        "any_explanation_without_alphanumeric": {
+          "correct": 0,
+          "denominator": 0,
+          "incorrect": 0,
+          "unavailable": 0
+        },
+        "any_short_explanation_le_32_nonwhitespace_chars": {
+          "correct": 0,
+          "denominator": 0,
+          "incorrect": 0,
+          "unavailable": 0
+        },
+        "executed_multi_expert": {
+          "correct": 16,
+          "denominator": 29,
+          "incorrect": 13,
+          "unavailable": 0
+        },
+        "initial_multi_expert": {
+          "correct": 16,
+          "denominator": 29,
+          "incorrect": 13,
+          "unavailable": 0
+        },
+        "no_recognized_explanation_field": {
+          "correct": 0,
+          "denominator": 0,
+          "incorrect": 0,
+          "unavailable": 0
+        },
+        "same_pool_top1_unavailable": {
+          "correct": 27,
+          "denominator": 44,
+          "incorrect": 17,
+          "unavailable": 0
+        }
+      },
+      "executed_expert_distribution": {
+        "A1": 82,
+        "A1+A2": 9,
+        "A1+A3": 8,
+        "A1+F": 12,
+        "F": 10
+      },
+      "explanation_char_min_max": [
+        300,
+        1707
+      ],
+      "explanation_field_count": 121,
+      "initial_activation_distribution": {
+        "A1": 82,
+        "A1+F": 12,
+        "A2+A1": 9,
+        "A3+A1": 8,
+        "F": 10
+      },
+      "inputs_with_shared_reference_across_experts": 4,
+      "same_pool_top1_unavailable_to_ep": {
+        "became_available": 44,
+        "became_correct": 27,
+        "became_incorrect": 17,
+        "denominator": 44,
+        "is_wrong_answer_repair": false,
+        "remained_unavailable": 0
+      }
+    }
+  },
+  "combined": {
+    "a1_none_output_flags_true_counts": {
+      "audit_overflow": 68,
+      "coverage_incomplete": 5,
+      "semantic_invalid": 3
+    },
+    "additional_check_count_distribution": {
+      "0": 242
+    },
+    "adopted_nonproposal_source_distribution": {
+      "(none)": 53,
+      "A1": 112,
+      "A1+A2": 11,
+      "A1+A3": 11,
+      "A1+F": 17,
+      "A2": 6,
+      "A3": 5,
+      "F": 27
+    },
+    "adopted_reference_claim_source_distribution": {
+      "(none)": 85,
+      "A1": 140,
+      "A1+A2": 11,
+      "A2": 6
+    },
+    "aggregation_round_count_distribution": {
+      "1": 242
+    },
+    "anomaly_count": 0,
+    "cohorts": {
+      "a1_original_native_none": {
+        "correct": 44,
+        "denominator": 71,
+        "incorrect": 27,
+        "unavailable": 0
+      },
+      "adopted_nonproposal_from_multiple_experts": {
+        "correct": 20,
+        "denominator": 39,
+        "incorrect": 19,
+        "unavailable": 0
+      },
+      "adopted_reference_claims_from_multiple_experts": {
+        "correct": 1,
+        "denominator": 11,
+        "incorrect": 10,
+        "unavailable": 0
+      },
+      "all": {
+        "correct": 153,
+        "denominator": 242,
+        "incorrect": 89,
+        "unavailable": 0
+      },
+      "any_explanation_without_alphanumeric": {
+        "correct": 0,
+        "denominator": 2,
+        "incorrect": 2,
+        "unavailable": 0
+      },
+      "any_short_explanation_le_32_nonwhitespace_chars": {
+        "correct": 1,
+        "denominator": 4,
+        "incorrect": 3,
+        "unavailable": 0
+      },
+      "executed_multi_expert": {
+        "correct": 30,
+        "denominator": 58,
+        "incorrect": 28,
+        "unavailable": 0
+      },
+      "initial_multi_expert": {
+        "correct": 30,
+        "denominator": 58,
+        "incorrect": 28,
+        "unavailable": 0
+      },
+      "no_recognized_explanation_field": {
+        "correct": 0,
+        "denominator": 0,
+        "incorrect": 0,
+        "unavailable": 0
+      },
+      "same_pool_top1_unavailable": {
+        "correct": 41,
+        "denominator": 60,
+        "incorrect": 19,
+        "unavailable": 0
+      }
+    },
+    "executed_expert_distribution": {
+      "A1": 164,
+      "A1+A2": 18,
+      "A1+A3": 16,
+      "A1+F": 24,
+      "F": 20
+    },
+    "explanation_char_min_max": [
+      0,
+      6996
+    ],
+    "explanation_field_count": 242,
+    "initial_activation_distribution": {
+      "A1": 164,
+      "A1+F": 24,
+      "A2+A1": 18,
+      "A3+A1": 16,
+      "F": 20
+    },
+    "inputs_with_shared_reference_across_experts": 11,
+    "same_pool_top1_unavailable_to_ep": {
+      "became_available": 60,
+      "became_correct": 41,
+      "became_incorrect": 19,
+      "denominator": 60,
+      "is_wrong_answer_repair": false,
+      "remained_unavailable": 0
+    }
+  },
+  "created_utc": "2026-09-23T01:31:45.983836+00:00",
+  "definitions": {
+    "activation": "Initial ordered route and actually executed distinct identities reported separately.",
+    "adopted_nonproposal": "Final raw AS/AC mapped to adopt for audit identity, kind claim/change; proposals excluded.",
+    "both_experts": "At least two distinct audit identities satisfying the respective measure.",
+    "bound_reference_claim": "Adopted claim, audit accepted=true, at least one recorded reference check=exact_location_only; no new source/entailment validation.",
+    "no_alphanumeric": "Nonempty non-whitespace explanation with no Unicode alphanumeric character; not a correctness test.",
+    "short_explanation": "Descriptive threshold fixed before scan: at most 32 non-whitespace Unicode characters; not a validity or scoring filter."
+  },
+  "elapsed_seconds": 1.3469657509995159,
+  "limitations": [
+    "Activation, declared adoption, source-location binding, semantic entailment, and causal gain are different properties.",
+    "Final decisions show declared evidence use; they cannot establish that either expert causally determined the native answer.",
+    "References may duplicate across experts; two referenced sources do not prove independent evidence or complementarity.",
+    "General-knowledge or recommendation items without bound references are retained, not relabeled as patient-evidence support.",
+    "Unavailable A1 is not an incorrect answer; current EP availability does not repair the unavailable A1 method.",
+    "Short/punctuation-only explanation limits retrospective rationale inspection even when the native parser accepts it.",
+    "A1 r5 remains candidate_not_adopted; this post-hoc descriptive audit does not select a new method or establish independent generalization."
+  ],
+  "method_identity": "experimental_saved_A1_r5_adopted_sparse_nonempty_frequency_0p1_eos_aligned_v1",
+  "native_rescoring_calls": 0,
+  "new_model_calls": 0,
+  "parameter_search": false,
+  "preparation_errors": [
+    {
+      "before_script_sha256": "8ea27905f7ca8a8ab85d32c8e31e87ec54d49d4c01e1cbb94850134ff5886f7e",
+      "effect": "Exited before complete proposals scan or output writes; no experiment/runtime change.",
+      "error": "KeyError: input_hash in top1 native_scores/complementarity_inputs.jsonl",
+      "resolution": "Use already input-aligned complete_comparison/per_input_trace.jsonl for saved same_pool_top1 correctness."
+    }
+  ],
+  "protocol_identity": "nonempty_tokenizer_info_eos_union_v1",
+  "scope": "existing_exposed_development_121_inputs_per_backbone",
+  "script": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/evidence_use_report.py",
+    "sha256": "df2760752b3b64f0a2336e45842d32e51d69ac19ca1149530330e2513483dfa0"
+  },
+  "sources": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/per_input_trace.jsonl": {
+      "physical_lines": 242,
+      "sha256": "c99b40dbf226c2fd48340693b097bf747b13ddcb1d191efcb673be56760e3eb4"
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m4/proposals.jsonl": {
+      "physical_lines": 121,
+      "sha256": "bb58b813013129335e9d1f7fda3fa9e2abc2cc81ec9a2bb4765c2a163a4f1d76"
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_run/m5/proposals.jsonl": {
+      "physical_lines": 121,
+      "sha256": "56e80105dd7de0bf3c468fc4a3e5a30bde2f4d24ec1661ae38cb0225d6fdd049"
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m4/complementarity_inputs.jsonl": {
+      "physical_lines": 121,
+      "sha256": "fc4665ef9bd036d8fe90223973bc28fe078282eb0e9a9af17a1a8f44f9581d87"
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/m5/complementarity_inputs.jsonl": {
+      "physical_lines": 121,
+      "sha256": "a882bca1882deda0f5b6c0266123c0df2bfbc197c05641a5caa4a435976c8025"
+    }
+  },
+  "status": "completed_trace_description_only",
+  "trace": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/evidence_use_trace.jsonl",
+    "physical_lines": 242,
+    "sha256": "35969b09ab9da7988563ddfd1564ea18a2882ca3702a03b61c72d50bba852f1f"
+  }
+}

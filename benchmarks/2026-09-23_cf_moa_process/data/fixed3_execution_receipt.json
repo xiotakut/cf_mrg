@@ -1,0 +1,215 @@
+{
+  "at": "2026-09-23T08:24:07.179666+08:00",
+  "parent_session": 74468,
+  "parent_exit_code": 0,
+  "terminal_audit_session": 72096,
+  "terminal_audit_exit_code": 0,
+  "terminal_audit_receipt": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/terminal_receipt.json",
+  "score_session": 74795,
+  "score_status": "complete",
+  "score_exit_code": 0,
+  "full_inputs": 242,
+  "logical_draws": 726,
+  "new_draws": 481,
+  "historical_sampling_draws": 245,
+  "actual_cost": {
+    "physical_model_requests": 481,
+    "new_model_requests": 481,
+    "live_input_tokens": 1866328,
+    "live_output_tokens": 128768,
+    "live_model_seconds": 3176.0714804931195,
+    "unresolved_model_usage": 0,
+    "model_usage_complete": true,
+    "submission_attempts": 726,
+    "failed_attempts": 0,
+    "not_submitted_physical_attempts": 0,
+    "uncertain_new_submissions": 0,
+    "logical_model_requests": 726,
+    "logical_input_tokens": 2899077,
+    "logical_output_tokens": 194227,
+    "source_replay_cpu_seconds": 0.5001845990045695,
+    "source_kind": "prior_sampling_control",
+    "new_expert_model_requests": 0,
+    "reused_head_model_requests": 245,
+    "reused_head_input_tokens": 1032749,
+    "reused_head_output_tokens": 65459,
+    "reused_head_model_seconds": 1674.4799824040601,
+    "reused_sampling_model_requests": 245,
+    "reused_sampling_input_tokens": 1032749,
+    "reused_sampling_output_tokens": 65459,
+    "reused_sampling_model_seconds": 1674.4799824040601
+  },
+  "new_expert_generations": 0,
+  "completed_at": "2026-09-23T08:26:24.541668+08:00",
+  "score_receipt": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/receipt.json",
+  "score_receipt_sha256": "3169d8176ed20f289ed2f8d72a7532ee815f7ba48709b88bb79310578c259cef",
+  "method_summaries": {
+    "m4": {
+      "summary": {
+        "method": "M4",
+        "inputs": 121,
+        "native_mappings": 157,
+        "unique_correct": 84,
+        "native_correct": 109,
+        "receipt_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m4/receipt.json"
+      },
+      "unavailable_inputs": 0,
+      "incorrect_inputs": 37,
+      "native_unit_summary": {
+        "category": "ALL",
+        "units": 74,
+        "mean_native_unit_score": 0.6576576576576576,
+        "unavailable_native_records": 0,
+        "incorrect_native_answers": 26
+      },
+      "paired_summaries": [
+        {
+          "relation": "maintain",
+          "pairs": 73,
+          "families": 25,
+          "both_correct": 50,
+          "both_native_scored": 73,
+          "unavailable_endpoints": 0,
+          "valid_relation": 58,
+          "pair_weighted_both_correct_ci95": [
+            0.5,
+            0.8589743589743589
+          ],
+          "cluster": "family_id",
+          "bootstrap_seed": 20260921
+        },
+        {
+          "relation": "respond",
+          "pairs": 4,
+          "families": 4,
+          "both_correct": 0,
+          "both_native_scored": 4,
+          "unavailable_endpoints": 0,
+          "valid_relation": 0,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            0.0
+          ],
+          "cluster": "family_id",
+          "bootstrap_seed": 20260921
+        }
+      ],
+      "runtime_cost": {
+        "physical_model_requests": 240,
+        "new_model_requests": 240,
+        "live_input_tokens": 919757,
+        "live_output_tokens": 64347,
+        "live_model_seconds": 1192.3448169290496,
+        "recorded_call_wall_seconds": 1233.4176051616669,
+        "unfinished_call_wall_unknown": 0,
+        "unresolved_model_usage": 0,
+        "model_usage_complete": true,
+        "submission_attempts": 363,
+        "failed_attempts": 0,
+        "cost_basis": "New sampling GPU expense plus actual prior sampling expense; reused_head fields are legacy storage aliases for prior_sampling_control, never expert calls",
+        "not_submitted_physical_attempts": 0,
+        "uncertain_new_submissions": 0,
+        "reused_head_model_requests": 123,
+        "reused_head_input_tokens": 555460,
+        "reused_head_output_tokens": 33356,
+        "reused_head_model_seconds": 660.6247240180383,
+        "logical_model_requests": 363,
+        "logical_input_tokens": 1475217,
+        "logical_output_tokens": 97703,
+        "source_replay_cpu_seconds": 0.26712674291047733,
+        "source_kind": "prior_sampling_control",
+        "reused_sampling_model_requests": 123,
+        "reused_sampling_input_tokens": 555460,
+        "reused_sampling_output_tokens": 33356,
+        "reused_sampling_model_seconds": 660.6247240180383,
+        "new_expert_model_requests": 0,
+        "usage_contract_disagreements": 0
+      }
+    },
+    "m5": {
+      "summary": {
+        "method": "M5",
+        "inputs": 121,
+        "native_mappings": 157,
+        "unique_correct": 74,
+        "native_correct": 95,
+        "receipt_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/native_sampling_control/common_cap_three_draw_control/complete_scoring/m5/receipt.json"
+      },
+      "unavailable_inputs": 0,
+      "incorrect_inputs": 47,
+      "native_unit_summary": {
+        "category": "ALL",
+        "units": 74,
+        "mean_native_unit_score": 0.5945945945945946,
+        "unavailable_native_records": 0,
+        "incorrect_native_answers": 32
+      },
+      "paired_summaries": [
+        {
+          "relation": "maintain",
+          "pairs": 73,
+          "families": 25,
+          "both_correct": 43,
+          "both_native_scored": 73,
+          "unavailable_endpoints": 0,
+          "valid_relation": 59,
+          "pair_weighted_both_correct_ci95": [
+            0.3888888888888889,
+            0.781270032051282
+          ],
+          "cluster": "family_id",
+          "bootstrap_seed": 20260921
+        },
+        {
+          "relation": "respond",
+          "pairs": 4,
+          "families": 4,
+          "both_correct": 0,
+          "both_native_scored": 4,
+          "unavailable_endpoints": 0,
+          "valid_relation": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            0.0
+          ],
+          "cluster": "family_id",
+          "bootstrap_seed": 20260921
+        }
+      ],
+      "runtime_cost": {
+        "physical_model_requests": 241,
+        "new_model_requests": 241,
+        "live_input_tokens": 946571,
+        "live_output_tokens": 64421,
+        "live_model_seconds": 1983.72666356407,
+        "recorded_call_wall_seconds": 2028.8253638744354,
+        "unfinished_call_wall_unknown": 0,
+        "unresolved_model_usage": 0,
+        "model_usage_complete": true,
+        "submission_attempts": 363,
+        "failed_attempts": 0,
+        "cost_basis": "New sampling GPU expense plus actual prior sampling expense; reused_head fields are legacy storage aliases for prior_sampling_control, never expert calls",
+        "not_submitted_physical_attempts": 0,
+        "uncertain_new_submissions": 0,
+        "reused_head_model_requests": 122,
+        "reused_head_input_tokens": 477289,
+        "reused_head_output_tokens": 32103,
+        "reused_head_model_seconds": 1013.8552583860219,
+        "logical_model_requests": 363,
+        "logical_input_tokens": 1423860,
+        "logical_output_tokens": 96524,
+        "source_replay_cpu_seconds": 0.23305785609409213,
+        "source_kind": "prior_sampling_control",
+        "reused_sampling_model_requests": 122,
+        "reused_sampling_input_tokens": 477289,
+        "reused_sampling_output_tokens": 32103,
+        "reused_sampling_model_seconds": 1013.8552583860219,
+        "new_expert_model_requests": 0,
+        "usage_contract_disagreements": 0
+      }
+    }
+  },
+  "gpu2_released_observed": true,
+  "score_model_calls": 0,
+  "quality_scope": "exposed_development_only"
+}

@@ -1,0 +1,239 @@
+{
+  "at": "2026-09-23T09:27:18.153517+08:00",
+  "candidate_identity": "experimental_saved_A1_r5_adopted_sparse_nonempty_frequency_0p1_eos_aligned_v1",
+  "execution_protocol_revision": "nonempty_tokenizer_info_eos_union_v1",
+  "decision": "not_adopted_preserve_negative_development_result",
+  "default_expert_A1_adopted": false,
+  "full_inputs": 242,
+  "methods": [
+    {
+      "method": "M4",
+      "inputs": 121,
+      "native_mappings": 157,
+      "correct": 79,
+      "incorrect": 42,
+      "unavailable": 0,
+      "native_unit_mean": 0.6306306306306306,
+      "controls": {
+        "strong_legacy": {
+          "correct": 87,
+          "unavailable": 0,
+          "native_unit_mean": 0.7027027027027027
+        },
+        "same_pool_top1": {
+          "correct": 72,
+          "unavailable": 16,
+          "native_unit_mean": 0.6072072072072072
+        },
+        "fixed3_sampling": {
+          "correct": 84,
+          "unavailable": 0,
+          "native_unit_mean": 0.6576576576576576
+        }
+      },
+      "unique_transitions": {
+        "strong_legacy": {
+          "denominator": 121,
+          "matrix": {
+            "correct": {
+              "correct": 73,
+              "incorrect": 14,
+              "unavailable": 0
+            },
+            "incorrect": {
+              "correct": 6,
+              "incorrect": 28,
+              "unavailable": 0
+            },
+            "unavailable": {
+              "correct": 0,
+              "incorrect": 0,
+              "unavailable": 0
+            }
+          },
+          "repairs": 6,
+          "harms": 14,
+          "unavailable_to_available": 0,
+          "unavailable_to_correct": 0,
+          "available_to_unavailable": 0,
+          "correct_to_unavailable": 0,
+          "net_correct_change": -8
+        },
+        "same_pool_top1": {
+          "denominator": 121,
+          "matrix": {
+            "correct": {
+              "correct": 58,
+              "incorrect": 14,
+              "unavailable": 0
+            },
+            "incorrect": {
+              "correct": 7,
+              "incorrect": 26,
+              "unavailable": 0
+            },
+            "unavailable": {
+              "correct": 14,
+              "incorrect": 2,
+              "unavailable": 0
+            }
+          },
+          "repairs": 7,
+          "harms": 14,
+          "unavailable_to_available": 16,
+          "unavailable_to_correct": 14,
+          "available_to_unavailable": 0,
+          "correct_to_unavailable": 0,
+          "net_correct_change": 7
+        },
+        "fixed3_sampling": {
+          "denominator": 121,
+          "matrix": {
+            "correct": {
+              "correct": 74,
+              "incorrect": 10,
+              "unavailable": 0
+            },
+            "incorrect": {
+              "correct": 5,
+              "incorrect": 32,
+              "unavailable": 0
+            },
+            "unavailable": {
+              "correct": 0,
+              "incorrect": 0,
+              "unavailable": 0
+            }
+          },
+          "repairs": 5,
+          "harms": 10,
+          "unavailable_to_available": 0,
+          "unavailable_to_correct": 0,
+          "available_to_unavailable": 0,
+          "correct_to_unavailable": 0,
+          "net_correct_change": -5
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "inputs": 121,
+      "native_mappings": 157,
+      "correct": 74,
+      "incorrect": 47,
+      "unavailable": 0,
+      "native_unit_mean": 0.5405405405405406,
+      "controls": {
+        "strong_legacy": {
+          "correct": 82,
+          "unavailable": 0,
+          "native_unit_mean": 0.6441441441441441
+        },
+        "same_pool_top1": {
+          "correct": 57,
+          "unavailable": 44,
+          "native_unit_mean": 0.4063063063063063
+        },
+        "fixed3_sampling": {
+          "correct": 74,
+          "unavailable": 0,
+          "native_unit_mean": 0.5945945945945946
+        }
+      },
+      "unique_transitions": {
+        "strong_legacy": {
+          "denominator": 121,
+          "matrix": {
+            "correct": {
+              "correct": 70,
+              "incorrect": 12,
+              "unavailable": 0
+            },
+            "incorrect": {
+              "correct": 4,
+              "incorrect": 35,
+              "unavailable": 0
+            },
+            "unavailable": {
+              "correct": 0,
+              "incorrect": 0,
+              "unavailable": 0
+            }
+          },
+          "repairs": 4,
+          "harms": 12,
+          "unavailable_to_available": 0,
+          "unavailable_to_correct": 0,
+          "available_to_unavailable": 0,
+          "correct_to_unavailable": 0,
+          "net_correct_change": -8
+        },
+        "same_pool_top1": {
+          "denominator": 121,
+          "matrix": {
+            "correct": {
+              "correct": 45,
+              "incorrect": 12,
+              "unavailable": 0
+            },
+            "incorrect": {
+              "correct": 2,
+              "incorrect": 18,
+              "unavailable": 0
+            },
+            "unavailable": {
+              "correct": 27,
+              "incorrect": 17,
+              "unavailable": 0
+            }
+          },
+          "repairs": 2,
+          "harms": 12,
+          "unavailable_to_available": 44,
+          "unavailable_to_correct": 27,
+          "available_to_unavailable": 0,
+          "correct_to_unavailable": 0,
+          "net_correct_change": 17
+        },
+        "fixed3_sampling": {
+          "denominator": 121,
+          "matrix": {
+            "correct": {
+              "correct": 69,
+              "incorrect": 5,
+              "unavailable": 0
+            },
+            "incorrect": {
+              "correct": 5,
+              "incorrect": 42,
+              "unavailable": 0
+            },
+            "unavailable": {
+              "correct": 0,
+              "incorrect": 0,
+              "unavailable": 0
+            }
+          },
+          "repairs": 5,
+          "harms": 5,
+          "unavailable_to_available": 0,
+          "unavailable_to_correct": 0,
+          "available_to_unavailable": 0,
+          "correct_to_unavailable": 0,
+          "net_correct_change": 0
+        }
+      }
+    }
+  ],
+  "reason": "Both backbones underperform strong legacy on complete input success and native equal-unit means; same-pool top1 improvements include unavailable recovery and do not establish collaboration gain.",
+  "freeze_qualified": false,
+  "independent_evaluation": false,
+  "strict_realized_compute_matching": false,
+  "new_model_calls_for_decision": 0,
+  "source_bindings": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/summary.json": "831e1d56dc68db5a1b4e40a9ba97a9c4eb204944504f3e195ba614419e1ff2e7",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_scores/receipt.json": "8fcd26c88606f1c00f54b62581b12d386c3e1fe171cd10bb6c0be3c0e3a5813d",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/extension_runtime_repair_live_receipt.json": "641fa5d01264bf3921d72444d96e1dedf29590e4e3259bac3aecb2caf1221160"
+  },
+  "prior_failures_preserved": true
+}
