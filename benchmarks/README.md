@@ -1,6 +1,8 @@
 # Benchmark 结果归档
 
-**最新版本2：[CF-MoA修订后执行报告](2026-09-23_cf_moa_incremental_v2/docs/research/cf_moa_experiment_report.md#incremental-revision-v2) · [状态、失败与成本](2026-09-23_cf_moa_incremental_v2/README.md)。B接口及A2兼容完成，A1_delta/A3均未采用，独立评估未完成。**
+**2026-09-23 · 版本3：[CF-MoA完整进展与四轮效果优先实验](2026-09-23_cf_moa_effect_first_v3/docs/research/cf_moa_experiment_report.md) · [状态、成本与核验材料](2026-09-23_cf_moa_effect_first_v3/README.md)。保留原全过程，补全四轮2203次新调用及失败/修复；第四轮主臂18/34、15/34，低于B的23/34、19/34，仍未采用、未开启独立评估。GPU0/1自有占位已释放，2/3保留。本次仅发布文档与已保存元数据，0新推理/评分。**
+
+**历史版本2：[CF-MoA修订后执行报告](2026-09-23_cf_moa_incremental_v2/docs/research/cf_moa_experiment_report.md#incremental-revision-v2) · [状态、失败与成本](2026-09-23_cf_moa_incremental_v2/README.md)。B接口及A2兼容完成，A1_delta/A3均未采用，独立评估未完成。**
 
 **09:41历史版：[2026-09-23 CF-MoA Router＋五专家完整过程报告](2026-09-23_cf_moa_process/docs/research/cf_moa_experiment_report.md) · [开发结果、错误、成本与核验材料](2026-09-23_cf_moa_process/README.md)。当前聚合不采用，共同冻结与独立评估尚未完成。**
 
@@ -12,6 +14,7 @@
 
 | 完成日期 | 运行 | 方法 | 范围 | 完成率 |
 |---|---|---|---|---|
+| 2026-09-23 版本3 | [CF-MoA完整进展与四轮效果优先开发](2026-09-23_cf_moa_effect_first_v3/README.md) | 原全过程＋A1/A3/A5后续及目标条件绑定 | 四轮2203新调用；2546保存状态行、92质量组；失败、成本和剩余缺口 | 四轮完成未采用；GPU0/1自有占位释放；本次0新推理/评分 |
 | 2026-09-23 版本2 | [CF-MoA新计划执行](2026-09-23_cf_moa_incremental_v2/README.md) | 新B接口、A1_delta、A3受控编辑 | 36条旧变化归因；A1两骨干3题；A3各8题/三臂；254调用实际成本 | 本轮结束，两新机制未采用；0本次发布新模型/评分 |
 | 2026-09-23 | [CF-MoA完整过程报告](2026-09-23_cf_moa_process/docs/research/cf_moa_experiment_report.md) | Router＋五专家、旧F及核心控制 | 全流程状态、错误/修复、负结果、成本；两骨干各121开发输入 | 文档发布；聚合不采用、独立评估未完成；0本次新模型 |
 | 2026-09-20 | [R1–R5实验全过程报告](2026-09-16_support_update_method/docs/research/support_update_experiment_report.md) | 增补R4与未完成R5，原78阶段保留 | 共148阶段；含失败、过早停止纠正、平台中断及保存 | 文档发布；0新模型调用 |

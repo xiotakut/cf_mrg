@@ -1,0 +1,22 @@
+{
+  "status": "gpu0_gpu1_owned_reservations_released",
+  "released_at": "2026-09-23T21:42:39.330604+08:00",
+  "released_gpus": [
+    0,
+    1
+  ],
+  "retained_gpus": [
+    2,
+    3
+  ],
+  "retained_gib_per_gpu": 80,
+  "automatic_reacquisition_prohibited_gpus": [
+    0,
+    1
+  ],
+  "other_users_processes_signalled": false,
+  "new_model_calls": 0,
+  "native_rescoring_calls": 0,
+  "source_receipt_sha256": "a3215161727210a21420141d31b13295222c92932d68fa7cbb341f63ec98f81a",
+  "note": "Only this project's owned holders and watchers on GPU0/1 were stopped. Other users still occupy memory; this does not claim either GPU is empty. GPU2/3 holders remain."
+}

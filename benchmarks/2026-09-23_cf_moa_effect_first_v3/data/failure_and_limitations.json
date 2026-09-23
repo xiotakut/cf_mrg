@@ -1,0 +1,275 @@
+{
+  "status": "all_four_cycles_not_adopted",
+  "unavailable_rows": [
+    {
+      "cycle": "cycle1",
+      "panel": "a5_quality121",
+      "method": "M5",
+      "arm": "a5_premise",
+      "failure_type": "unavailable_unspecified",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "a5_quality121",
+      "method": "M5",
+      "arm": "a5_reanswer",
+      "failure_type": "unavailable_unspecified",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "a5_quality121",
+      "method": "M5",
+      "arm": "baseline",
+      "failure_type": "baseline_native_schema_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "quality34",
+      "method": "M4",
+      "arm": "a1_hidden_B",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "quality34",
+      "method": "M4",
+      "arm": "a1_visible_B",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "quality34",
+      "method": "M4",
+      "arm": "readout_short",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 3
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "quality34",
+      "method": "M4",
+      "arm": "saved_a1_adjudication",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "readout_multi9_composite",
+      "method": "M5",
+      "arm": "baseline",
+      "failure_type": "baseline_native_schema_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "readout_multi9_composite",
+      "method": "M5",
+      "arm": "readout_free",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "readout_multi9_composite",
+      "method": "M5",
+      "arm": "readout_short",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "readout_multi9_extension",
+      "method": "M5",
+      "arm": "baseline",
+      "failure_type": "baseline_native_schema_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "readout_multi9_extension",
+      "method": "M5",
+      "arm": "readout_free",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle1",
+      "panel": "readout_multi9_extension",
+      "method": "M5",
+      "arm": "readout_short",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle2",
+      "panel": "a1_direct_verdict_posthoc",
+      "method": "M4",
+      "arm": "a1_direct_verdict_readout_v1",
+      "failure_type": "diagnostic_unparsed",
+      "count": 4
+    },
+    {
+      "cycle": "cycle2",
+      "panel": "a1_direct_verdict_posthoc",
+      "method": "M4",
+      "arm": "a1_direct_verdict_readout_v1",
+      "failure_type": "target_status_unresolved",
+      "count": 7
+    },
+    {
+      "cycle": "cycle2",
+      "panel": "a1_direct_verdict_posthoc",
+      "method": "M5",
+      "arm": "a1_direct_verdict_readout_v1",
+      "failure_type": "diagnostic_unparsed",
+      "count": 1
+    },
+    {
+      "cycle": "cycle2",
+      "panel": "a1_direct_verdict_posthoc",
+      "method": "M5",
+      "arm": "a1_direct_verdict_readout_v1",
+      "failure_type": "nonselect_ambiguous_alternative",
+      "count": 9
+    },
+    {
+      "cycle": "cycle3",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "a1_search_evidence",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle3",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "a1_search_no_evidence",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle3",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "a1_search_reanswer",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle3",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "baseline",
+      "failure_type": "baseline_native_schema_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M4",
+      "arm": "a1_binding_ordinary",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M4",
+      "arm": "a1_binding_scoped",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M4",
+      "arm": "a1_binding_verdict_only",
+      "failure_type": "native_output_invalid_after_one_repair",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "a1_binding_ordinary",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "a1_binding_scoped",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "a1_binding_verdict_only",
+      "failure_type": "baseline_native_invalid",
+      "count": 1
+    },
+    {
+      "cycle": "cycle4",
+      "panel": "answer34",
+      "method": "M5",
+      "arm": "baseline",
+      "failure_type": "baseline_native_schema_invalid",
+      "count": 1
+    }
+  ],
+  "cycle3_query_failures": {
+    "method": "M4",
+    "request_ids": [
+      "d00018",
+      "d00054",
+      "d00062",
+      "d00077"
+    ],
+    "type": "output_truncation",
+    "inference_started": true,
+    "optional_query_not_native_answer": "preserved; answers independently continued under frozen optional-search contract"
+  },
+  "cycle4_new_failures": {
+    "M4": {
+      "request_id": "d00077",
+      "arms": 3,
+      "type": "repeated_diagnosis_string_output_truncation",
+      "first_limit": 768,
+      "repair_limit": 128,
+      "semantic_result": "unavailable",
+      "method_score": "not_scored",
+      "denominator_preserved": true
+    }
+  },
+  "cycle4_retained_prior_failure": {
+    "M5": {
+      "request_id": "d00050",
+      "type": "baseline_native_invalid",
+      "arms": 3
+    }
+  },
+  "diagnosis_readout_gap": {
+    "kind": "inherited_free_string_diagnosis_schema_not_finite_key_mapping",
+    "claim_correction": "JSON/schema-valid assignment does not establish deterministic catalog diagnosis decoding or one-label task validity.",
+    "affected_future_path": "C3/C4 free-string diagnosis readout is not qualified for further expansion. Keep valid adopted A3 untouched.",
+    "remediation": "Before any future use, separately implement and bind finite public-catalog decision keys and program mapping, without changing native scoring or reinterpreting old responses.",
+    "remediation_status": "diagnosed_and_proposed_not_implemented_not_model_tested"
+  },
+  "scope_notes": [
+    "C3/C4 valid JSON is not evidence of finite catalog-key decoding; diagnosis free-string path not qualified for further expansion.",
+    "No failed prefix was salvaged into an old successful method.",
+    "Failures remain in denominators; unavailable means not_scored, not an incorrect answer.",
+    "Unavailable rows may recur in multiple panels and arms; the counts here are NOT unique physical failures.",
+    "Clinical semantic cause is unknown when evidence is insufficient.",
+    "Independent evaluation has not begun; all old adopted A2/A3/A4/F and native scoring remain unchanged."
+  ]
+}

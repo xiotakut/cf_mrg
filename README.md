@@ -1,3 +1,5 @@
+**2026-09-23 · 版本3：[CF-MoA完整进展与四轮效果优先实验](benchmarks/2026-09-23_cf_moa_effect_first_v3/docs/research/cf_moa_experiment_report.md) · [状态、成本与核验材料](benchmarks/2026-09-23_cf_moa_effect_first_v3/README.md)。保留原全过程，补全四轮2203次新调用及失败/修复；第四轮主臂18/34、15/34，低于B的23/34、19/34，仍未采用、未开启独立评估。GPU0/1自有占位已释放，2/3保留。本次仅发布文档与已保存元数据，0新推理/评分。**
+
 **2026-09-23 · 版本2：[CF-MoA修订计划执行报告](benchmarks/2026-09-23_cf_moa_incremental_v2/docs/research/cf_moa_experiment_report.md#incremental-revision-v2)与[核验材料](benchmarks/2026-09-23_cf_moa_incremental_v2/README.md)。新B保持242条原答案；A1_delta 6/6诊断不可用；A3关键编辑未超过原题重评分。新机制不采用，旧有效组件与上一版快照保留；本轮254次真实调用的成本与失败完整列明，独立评估未启动。**
 
 **2026-09-23：新增[CF-MoA Router＋五专家完整过程报告](benchmarks/2026-09-23_cf_moa_process/docs/research/cf_moa_experiment_report.md)，覆盖计划完成情况、全部主要失败链、处理方案、成本和GPU调度问题。[发布包与核验材料](benchmarks/2026-09-23_cf_moa_process/README.md)：当前聚合开发结果79/121、74/121，低于强旧87/121、82/121，不采用；共同冻结及独立评估尚未完成。**

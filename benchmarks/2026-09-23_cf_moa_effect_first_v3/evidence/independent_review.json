@@ -1,0 +1,279 @@
+{
+  "status": "passed_documentary_publication_review",
+  "reviewer": "publication_v3_review",
+  "updated_at": "2026-09-23T13:56:30.608011+00:00",
+  "scope": {
+    "source_summary_crosscheck": true,
+    "new_model_calls": 0,
+    "native_scorer_executions": 0,
+    "matrix_recomputations": 0,
+    "independent_gold_read": false,
+    "raw_patient_text_reviewed": false,
+    "review_limit": "Read-only consistency and publication-contents review, not an independent experiment reproduction."
+  },
+  "source_files": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cost_so_far.json",
+      "sha256": "90f68b1244bc846ee0dd6fb04e1964c31902e3f4107b451bd866f6c89bc7aafa"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/cost.json",
+      "sha256": "3e5e2f2e14e2b6a60e1170e3530061f3e3d407c76813d7e2a53750938d9aea07"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/cost.json",
+      "sha256": "2924612f24bf2a116c7d4ce1e3d3d9f2bf5478fe81341fa4ab43b467692e8b4b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/analysis/cost.json",
+      "sha256": "caeaa750da3d45c5b199013c2fe8434f7f6d4ae42d781421e8ac6d40b7bd4aae"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/quality34/results/summary.json",
+      "sha256": "2179d8c9a5b507a48305bb6eb9af0106830768524deb4283f15969a6c1bca9fd"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a1_target34/results/summary.json",
+      "sha256": "00e166aebff9bfd0a8656404556d06935cc579e0ba0fc290d7de8808e1769f3f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/results/summary.json",
+      "sha256": "cb6a13081aef5e3333d51bf949b44b94de68ed2e359d6ed279d07d94e0ff47db"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/answer34/results/summary.json",
+      "sha256": "2d0ea73b2a1163207099dac6fc2fad1c2e6d1f127e82075fedad29825870d70b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/paired_preparation/scope_summary.json",
+      "sha256": "7a430ff0bbf69bf88cdfea83c3260b1eb71d5153b0bf29039e1c873f98b6d4db"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/native_diagnosis_contract_diagnosis.json",
+      "sha256": "9ec96f304fb1ec87711751ede8f3f3f3b9e14ed69bc0bdfe991f10c0f2ed7b8a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/decision.json",
+      "sha256": "fef33f2486b6515ce3d960dee1c1a3a5a480f5f0b5062c345c34824c04288181"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/decision.json",
+      "sha256": "f8ad297509f6f456172f9fafe449466e4bf3190a33da52a356525ff7c38718d3"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/decision.json",
+      "sha256": "b8617a9ee7649374e28b36d2940bb8792a10f162a1164400a7fa2ce7ed9e489a"
+    }
+  ],
+  "confirmed": {
+    "cycle_totals": [
+      {
+        "cycle": 1,
+        "calls": 783,
+        "input_tokens": 9863690,
+        "output_tokens": 65925
+      },
+      {
+        "cycle": 2,
+        "calls": 822,
+        "input_tokens": 4012810,
+        "output_tokens": 66999
+      },
+      {
+        "cycle": 3,
+        "calls": 268,
+        "input_tokens": 1545335,
+        "output_tokens": 8612
+      },
+      {
+        "cycle": 4,
+        "calls": 330,
+        "input_tokens": 2294909,
+        "output_tokens": 19461
+      }
+    ],
+    "four_cycle_totals": {
+      "calls": 2203,
+      "input_tokens": 17716744,
+      "output_tokens": 160997,
+      "cumulative_model_seconds": 5325.573468445931
+    },
+    "cycle3_retrieval": {
+      "formal_physical": 123,
+      "formal_logical": 126,
+      "engineering_probe_physical": 1,
+      "engineering_probe_encoder_tokens": null
+    },
+    "fixed_native_scope_c3_c4": {
+      "unique_per_backbone": 34,
+      "families": 14,
+      "native_mappings_per_arm": 41,
+      "nonreference_units": 21
+    },
+    "cycle3_correct_M4_M5": {
+      "B": [
+        23,
+        19
+      ],
+      "main": [
+        21,
+        17
+      ],
+      "same_evidence_control": [
+        21,
+        17
+      ],
+      "no_new_evidence": [
+        19,
+        15
+      ]
+    },
+    "cycle4_correct_M4_M5": {
+      "B": [
+        23,
+        19
+      ],
+      "main": [
+        18,
+        15
+      ],
+      "ordinary": [
+        20,
+        14
+      ],
+      "reason_removed": [
+        20,
+        15
+      ]
+    },
+    "cycle4_failure": {
+      "M4_d00077": {
+        "unavailable_arms": 3,
+        "truncated_calls": 6,
+        "original_limit": 768,
+        "repair_limit": 128,
+        "not_scored": true
+      },
+      "M5_d00050": "retained prior B unavailability"
+    },
+    "c3_c4_diagnosis_contract": "Free string copied to native field; finite public-catalog key decoding not implemented. Prior results unchanged.",
+    "legacy_respond_scope": {
+      "pairs": 4,
+      "format": "diagnosis",
+      "F_supported": false,
+      "opaque_endpoints": [
+        [
+          "d00035",
+          "d00068"
+        ],
+        [
+          "d00008",
+          "d00011"
+        ],
+        [
+          "d00051",
+          "d00070"
+        ],
+        [
+          "d00077",
+          "d00021"
+        ]
+      ]
+    },
+    "no_candidate_adopted": true,
+    "no_independent_evaluation": true
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "documentation_correction",
+      "finding": "Cycle1 main-record cost table labels 520 main-stage requests as per-backbone; 520 is total over both backbones.",
+      "status": "resolved_in_report_and_main_record"
+    },
+    {
+      "id": "R2",
+      "severity": "documentation_correction",
+      "finding": "Main-record respond-pair prose swaps endpoints in last two pairs; recorded scope metadata is d00051-d00070 and d00077-d00021.",
+      "status": "resolved_in_report_and_main_record"
+    },
+    {
+      "id": "R3",
+      "severity": "publication_guard",
+      "finding": "Cycle1 baseline summary uses 35-input union. Main34 comparison must use each 34-arm same_scope_B24/28, not top-level25/29.",
+      "status": "verified_in_public_export"
+    },
+    {
+      "id": "R4",
+      "severity": "publication_guard",
+      "finding": "Raw native diagnosis diagnostic JSON contains target and actual diagnosis strings. Publish only allowlisted shapes/counts/lengths/hashes and abstract conclusions.",
+      "status": "verified_in_public_export"
+    },
+    {
+      "id": "R5",
+      "severity": "clarity_correction",
+      "finding": "Scope32 shorthand15/15 and14/14 denoted maintain/respond counts and could be read as perfect fractions.",
+      "status": "resolved_report_now_states_each_group15/16_or14/16"
+    }
+  ],
+  "pending_checks": [],
+  "blocking_findings": [],
+  "publication_checks": {
+    "status": "passed",
+    "package": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_github_publish_v3/benchmarks/2026-09-23_cf_moa_effect_first_v3",
+    "allowlisted_files": 20,
+    "manifest_entries_checked": 18,
+    "previous_publication_files_unchanged": 38,
+    "original_metadata_source_hashes_checked": 54,
+    "public_status_rows_independently_compared_to_saved_source_lines": 2546,
+    "quality_summary_groups_checked_against_saved_native_summary_fields": 92,
+    "public_data_matches_independently_reviewed_preparation": true,
+    "patient_full_text_exported": false,
+    "native_answer_values_in_structured_exports": false,
+    "gold_values_exported": false,
+    "raw_requests_or_model_responses_exported": false,
+    "SQL_or_weights_exported": false,
+    "private_diagnosis_diagnostic_report_not_copied": true,
+    "historical_technical_narrative_limit": "Technical symbolic answer examples and brief mechanism descriptions remain in the documentary history; the package does not claim zero symbolic native-field examples anywhere. No full case, full per-input response, or gold was found in added narrative.",
+    "negative_identities_and_full_denominators_preserved": true,
+    "development_not_independent": true,
+    "fixed_caps_not_equal_realized_cost": true,
+    "method_cost_attribution_not_summed_as_new_physical_cost": true,
+    "release_report_is_snapshot_not_empty_gpu_claim": true,
+    "git_push_and_remote_verification": "Owned by root; not performed by this reviewer."
+  },
+  "reviewed_published_artifact_hashes": {
+    "LOCAL_ARTIFACT_REFERENCES.csv": "1875e843a22297709123c5ed5afb6b0d32e1a2bd360c8b6e4c55f285dd82f205",
+    "README.md": "e5cea71f5ea918df39443fe8626b001e5dd2f2760c87666982dad4e3b44ebb60",
+    "check_publication.py": "36c8db21624e110c1f1b2edf4998c4fd3bdf3b1258d0c8c85afe5f573ad4f5ce",
+    "data/README.md": "98c0dfdfd28fc6ef63edd5632f78f78150481e09952408b4c6b047ce69cf7d71",
+    "data/cost_summary.json": "1edb87f62a6e5dba882881aa8c9705a96380c001f1fada171eae41b30392e5f0",
+    "data/failure_and_limitations.json": "2e322c2e4f01037106eb232de085ec6a4c9d6b721d115e33f8930e849ef8aee4",
+    "data/gpu_release_summary.json": "21d7fbfb2a4eb71f443ed6fef5a88f506a8a2d84381c064620b1f0ee2864f02f",
+    "data/pair_summary.json": "377470bed35742b63ce1810757f24955dad9f1e16c5efc24f82d709aa25caefa",
+    "data/per_input_status.csv": "93779f3331f991da104bff9b118b3e53d78d33885ef9cf333addcd56d4e2e5c1",
+    "data/quality_summary.json": "259345726f57c4bb72dc2be1a497ae9380b20c266939ba50d6d2cf56f0f80700",
+    "data/source_manifest.json": "ece05fa93e371155bc4ebabec55bc35665740402bc4d2a740040ed657491807d",
+    "data/validation.json": "8964e87e8eb1f27965614b666fb785d7f8f18a8ba4a947fa4bba144650084673",
+    "docs/research/cf_moa.md": "2d0e08d75d016c5b7c0d52327a6d852e7f747c3d380bcd3233c54669331f8642",
+    "docs/research/cf_moa_experiment_report.md": "b849891808fea26ca76975faca2070c6a57a544c159763489dc04e0632c44e39",
+    "plan/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md": "0a8fcbab59c365dd01bc7bccae4b399c0470a1ba144ada9034796155339be322",
+    "plan/execution_plan.json": "80307c9d8061c499e0eda6f9703ec8602a41945552453d8feb4afaade523f5af",
+    "scripts/build_publication_data.py": "968fbadebe97eefe27964456607df3cbaf33dcf4ca79293876728509181a09f3",
+    "scripts/verify_publication_data.py": "ef8a59458d4eb98f5efbf29152805212f78b5e6edee0cf4e0abdc5f6d0854ae3"
+  },
+  "self_reference_note": "The review receipt itself and top SOURCE_MANIFEST are excluded from reviewed_published_artifact_hashes to avoid self-referential hashes. Root will recopy this final receipt and rebuild manifest without changing the checked content.",
+  "serialization_followup": {
+    "status": "passed",
+    "changed_artifacts_since_content_review": [
+      "data/per_input_status.csv",
+      "data/validation.json",
+      "scripts/build_publication_data.py"
+    ],
+    "CSV_line_endings": "LF",
+    "CSV_rows_rechecked_against_same_saved_sources": 2546,
+    "CSV_source_values_unchanged": true,
+    "script_changes": "LF CSV writer/whitespace only, reviewed",
+    "validation_and_all_manifest_hashes_match": true,
+    "research_results_changed": false
+  }
+}
