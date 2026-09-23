@@ -1,0 +1,92 @@
+{
+  "status": "prepared_zero_new_model_calls",
+  "inputs_per_method": 52,
+  "families": 18,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "new_model_calls": 0,
+  "native_scoring_calls": 0,
+  "independent_D_access": false,
+  "fixed_before_output_read": "9108cbe79e6d21c3daf286b94a88efda4352dc723b0d781cefe798bdfb510175",
+  "sources": {
+    "M12": [
+      "FairMedQA/AMQA"
+    ],
+    "M22": [
+      "MedRGB"
+    ],
+    "M10": [
+      "CPV-MedQA"
+    ],
+    "M11": [
+      "Counterfactual Cultural Cues"
+    ],
+    "M17": [
+      "MedPerturb"
+    ],
+    "M14": [
+      "DiversityMedQA"
+    ],
+    "M20": [
+      "MedCounterFact"
+    ],
+    "M23": [
+      "BioRAB"
+    ],
+    "M23_control": [
+      "BioRAB author-native relevance controls"
+    ]
+  },
+  "triggers": {
+    "M4": 25,
+    "M5": 16
+  },
+  "cached_callbacks": 409,
+  "all_original_complete_raw_equal": true,
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/evaluations.jsonl": "b0d7e10ecbf7702ffd27eb7c843f76feb52457ff2d23097df83e7eb654746f78",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/inputs.jsonl": "2dfe4e13d29549b55a3c56a0b2f4b489ff36814c337460b3f78e20744ed5a4b0",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/evaluation.jsonl": "ba6b13e4ddb98a4b516d493ad9428a9a22bc1875550b6c67bd5689222e7c4fcd",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m4/inputs.jsonl": "632421806fb5df63f23f5171e2dc95da62b173612a29700253cd66fc5628ad03",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/evaluation.jsonl": "6429f010baf4a8069064cc3fcf3daa74a05f768defe02d8ab915e47eeab08f71",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m4/inputs.jsonl": "5de84c3a58fabd1d825348deb2308772bb5ab0294c0600067ed1b61fa01a532c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/evaluation.jsonl": "4fab270b160067b71ccf45bb9ed2f338461adcfa4f240a1d360646743981284c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/outputs.jsonl": "6992be73a77d8cff505cf7023d529b946a0359bcbec1c89ecfc6deb6c3500849",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/callback_trace.jsonl": "a0ddfd22b51b8913be9612d0b83ae9ff1f64446cbfe9bcf4512d503ab80c6590",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/requests.jsonl": "65f9b2ff6b4c39ab2f4217c23cc0fb0702c0a1a4b5592ccbe9dd06f9e4b5f6e7",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m4/requests.jsonl": "7fb8534a8953f2fe4764a5250faeffa9c3db6cd6dbcbd549e8407cd851c1b146",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m4/requests.jsonl": "652469a29aca83d9cb035881d14c6c119efbc13b0b6b0f0b42a2f677f705aaa4",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m4/raw_calls.jsonl": "3d94cffa7f420361a07ce363b044b0ef5918881c5fe160c955023dcd7aa67e29",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m4/analyses.jsonl": "16547686c3ef0b8bf499f169f371fca1e29c4ccc7e1839410c6d29d3654b18d3",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/native_completion/m4/raw.jsonl": "0829e14ba4359710bca57716dc0df813597340c5e7288663ed1c29596d83db1a",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/native_completion/m4/requests.jsonl": "4fdec29b87bbf741dc2cf2629af1cf8f0ba961ac46c04b9bf78ce903c70a8932",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m4/raw.jsonl": "d6548c6596e235d03bebe248aa7289e30a04c7daf4db9968c574728f77404544",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/raw.jsonl": "6704eee697c800e3fdc71afd229c2e17dfbd4ad954e6327b8153aed565fa980b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/inputs.jsonl": "63dc788bf045aa3914721005b91380cc1ef3df4adae2a4771e92882e8b48ba09",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/requests.jsonl": "bb9149e80004ca41af6780c62a0ff913aad82955a2edca1bd3a55ee71be738c1",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m5/inputs.jsonl": "da3d2c40018a92abe866950c7271834493ca390288c52f125027538da2d72d78",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m5/requests.jsonl": "6c4b6b1708e0b4c6150665489e9b62b8344300762e5e4864294cf9c11a6f4f2b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m5/inputs.jsonl": "fe759f8f5b99dc284b0c401d28487f51c7baf6824c1c6da2d210b87039c66ed4",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m5/requests.jsonl": "ff14d2b074f9f80ec7ba8c7e0463c49f01ccb60ce76a9cbee3966daa12d892df",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m5/raw_calls.jsonl": "aca42736719e036264e37304ce65963bf1e82d3a8a049a9103134809cfa5f993",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m5/analyses.jsonl": "d12f6f2e1b788a48a8ae284570098bcb2906ff8715f454d4c55b876d0979f35d",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/native_completion/m5/raw.jsonl": "5efda8ae3a02542f455de056b38bf38b6d8fa0af04f58cd063442a00e65c7156",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/native_completion/m5/requests.jsonl": "7fc0f58acc50d200c43c2aacfa2f76c65e1b42ebc8a3151fab0dbbbbc5a1dfc8",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m5/raw.jsonl": "9a3e8974fbef8a0f5508f1d0f46f839ab6d9500ddc44dabc0de83ec4d9f2ad49",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/raw.jsonl": "2fa59462b92bb0ffed5ad5bf7260de0beb635d3eee27020281587ddf304ea384"
+  },
+  "new_physical_request_budget": {
+    "M4": 150,
+    "M5": 96
+  },
+  "task_count_per_method_per_seed": 52,
+  "score_selection": false,
+  "notes": [
+    "M23_control is an existing author-derived target-change control, reported separately.",
+    "Metadata source selection is not new clinical independence; old F development scores were previously exposed.",
+    "Historical per-input model seconds unavailable; model-call/token reuse counts are exact."
+  ]
+}

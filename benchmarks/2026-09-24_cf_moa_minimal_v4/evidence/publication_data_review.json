@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-09-24T01:37:39.589371+08:00",
+  "reviewer": "v4_document_review",
+  "scope": "Independent read-only publication field and arithmetic review after data agent final LF/manifest verifier corrections; not new analysis or clinical scoring.",
+  "new_model_calls": 0,
+  "native_scorer_calls": 0,
+  "files_modified": "only this publication_data_review.json",
+  "input_rows": 1384,
+  "input_rows_by_panel": {
+    "historical121": 968,
+    "natural52": 416
+  },
+  "major_quality_groups": [
+    {
+      "panel": "historical121",
+      "method": "M4",
+      "seed": null,
+      "denominator": 121,
+      "correct": 87,
+      "unavailable": 0
+    },
+    {
+      "panel": "historical121",
+      "method": "M4",
+      "seed": 42,
+      "denominator": 121,
+      "correct": 89,
+      "unavailable": 0
+    },
+    {
+      "panel": "historical121",
+      "method": "M4",
+      "seed": 43,
+      "denominator": 121,
+      "correct": 88,
+      "unavailable": 0
+    },
+    {
+      "panel": "historical121",
+      "method": "M4",
+      "seed": 44,
+      "denominator": 121,
+      "correct": 88,
+      "unavailable": 0
+    },
+    {
+      "panel": "historical121",
+      "method": "M5",
+      "seed": null,
+      "denominator": 121,
+      "correct": 82,
+      "unavailable": 1
+    },
+    {
+      "panel": "historical121",
+      "method": "M5",
+      "seed": 42,
+      "denominator": 121,
+      "correct": 83,
+      "unavailable": 1
+    },
+    {
+      "panel": "historical121",
+      "method": "M5",
+      "seed": 43,
+      "denominator": 121,
+      "correct": 84,
+      "unavailable": 1
+    },
+    {
+      "panel": "historical121",
+      "method": "M5",
+      "seed": 44,
+      "denominator": 121,
+      "correct": 84,
+      "unavailable": 1
+    },
+    {
+      "panel": "natural52",
+      "method": "M4",
+      "seed": null,
+      "denominator": 52,
+      "correct": 35,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M4",
+      "seed": 42,
+      "denominator": 52,
+      "correct": 34,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M4",
+      "seed": 43,
+      "denominator": 52,
+      "correct": 31,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M4",
+      "seed": 44,
+      "denominator": 52,
+      "correct": 32,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M5",
+      "seed": null,
+      "denominator": 52,
+      "correct": 26,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M5",
+      "seed": 42,
+      "denominator": 52,
+      "correct": 25,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M5",
+      "seed": 43,
+      "denominator": 52,
+      "correct": 23,
+      "unavailable": 0
+    },
+    {
+      "panel": "natural52",
+      "method": "M5",
+      "seed": 44,
+      "denominator": 52,
+      "correct": 24,
+      "unavailable": 0
+    }
+  ],
+  "new_physical_calls": 231,
+  "new_input_tokens": 1444680,
+  "new_output_tokens": 31047,
+  "physical_run_groups": 10,
+  "engine_accepted_values": [
+    "true"
+  ],
+  "engine_accepted_nested_object_published": false,
+  "csv_line_endings": "LF",
+  "forbidden_payload_key_hits": [],
+  "field_content_review": "CSV fields are fixed metadata scalars, identifiers, hashes, metrics and policy state. Recursive JSON field/value inspection found no actual question, patient, answer, gold, prompt, raw response, retrieved context or token ID payload. prompt_sha256/raw_response_sha256/native_answer_ref are hashes only. Descriptive limitations and engineering diagnostics are not model medical text.",
+  "required_content_present": [
+    "16 B/seed quality groups and1384 full-denominator input rows",
+    "231 new physical call metadata rows with actual ingress/seed/temperature/max_tokens/cost/status/hash",
+    "10 physical-run cost groups and separately attributed historical B/F costs",
+    "Saved native-unit and pair metrics, repair/harm, family fluctuations",
+    "Inherited M5 d00050 unavailable in all4arms retained",
+    "Natural52 exposed development status and Scope32 counterexample",
+    "Method identity and non-adoption; analysis/preparation failures retained"
+  ],
+  "public_verifier_receipt": {
+    "status": "passed",
+    "checks": {
+      "artifact_hashes": 8,
+      "input_rows": 1384,
+      "quality_groups": 16,
+      "new_run_cost_groups": 10,
+      "native_unit_groups": 16,
+      "pair_groups": 16
+    },
+    "input_rows": 1384,
+    "new_physical_call_rows": 231,
+    "new_input_tokens": 1444680,
+    "new_output_tokens": 31047,
+    "native_score_mappings_previously_executed": 247,
+    "models_called_by_this_verifier": 0,
+    "native_scorer_calls_by_this_verifier": 0,
+    "verifier_sha256": "96dcc6846254ca49efd8295d97da1e48d455cf2a3b17dc6a06045db4a986ae2a",
+    "source_manifest_sha256": "d6d14cd6f72109b06e7960d21a1a19045e2b2f7104f98b4ca8d4a86af31c95eb",
+    "interpretation": "Offline consistency audit of published saved metadata, not independent native rescoring or clinical validation."
+  },
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 5375,
+      "sha256": "6f13c32b5fbd621a08f774014f5a178826c9b1f664668467a79c25d07ac6e283"
+    },
+    {
+      "path": "cost_summary.json",
+      "bytes": 14226,
+      "sha256": "2bcd6f704d3dab7e91a740f69f27141828f8139a5036e58d0a388154883a6ff1"
+    },
+    {
+      "path": "failure_and_limitations.json",
+      "bytes": 6015,
+      "sha256": "b144f41fa6c77dd6911ecf8a449bc3abf52b0d687f73040c85fb3227e14c2270"
+    },
+    {
+      "path": "native_unit_metrics.json",
+      "bytes": 580205,
+      "sha256": "d319dec75b6af806146d9e4e855a88ece03cd3102503bbd214f9bab03caeadac"
+    },
+    {
+      "path": "new_model_call_trace.csv",
+      "bytes": 132492,
+      "sha256": "7283f3f645eaccff0e64e6954bb68315447ec64e5083a4173cdbb6bae8ffe91f"
+    },
+    {
+      "path": "pair_summary.json",
+      "bytes": 414456,
+      "sha256": "02d579e032b7ecb1825b2ee422d55b8679fc970bc5b4f28a820e3033c782a7d8"
+    },
+    {
+      "path": "per_input_status.csv",
+      "bytes": 296550,
+      "sha256": "d841629d0592ef001864c8a7c791356a5e2ae5780b2e924841d338b36cadc6a3"
+    },
+    {
+      "path": "quality_summary.json",
+      "bytes": 689069,
+      "sha256": "8e42cb97f8b3d18350b0e8fda976fe7f463879703d195085b5b13a7c8fa0b3c8"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 5885,
+      "sha256": "d6d14cd6f72109b06e7960d21a1a19045e2b2f7104f98b4ca8d4a86af31c95eb"
+    },
+    {
+      "path": "verification_receipt.json",
+      "bytes": 775,
+      "sha256": "de4d48ca83630c592b2e1bc818c6c7c0d56265e601113a1b6f23de3b46ccc2ca"
+    }
+  ],
+  "source_verifier_sha256": "96dcc6846254ca49efd8295d97da1e48d455cf2a3b17dc6a06045db4a986ae2a",
+  "discrepancies": [],
+  "limits": "This verifies the saved public metadata and report accounting, not correctness of clinical answers or independent reproduction. Full SQL/request/response payloads are intentionally not public."
+}

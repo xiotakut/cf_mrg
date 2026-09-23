@@ -1,0 +1,113 @@
+{
+  "version": "minimal_head_reuse_revision_20260923",
+  "updated_at": "2026-09-23T23:04:53.967006+08:00",
+  "status": "completed_keep_equivalent_B_increment_not_adopted",
+  "core_plan": {
+    "path": "/home/data3/txy/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+    "sha256": "b0a3e244140c36173744d808beb300b1879c42808b3a51f99e1b1d53d2dda815",
+    "source": "user_supplied_plan_in_current_conversation"
+  },
+  "prior_plan_snapshot": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+  "prior_plan_sha256": "db35a8fccc9b9affdcbc3ad26ae72861a8d94a861937138736a041e0402b682b",
+  "user_authorization": "update and completely execute supplied minimal head reuse plan",
+  "preserved": [
+    "formal_v5",
+    "native_scorer",
+    "historical_results_and_failures",
+    "adopted_A2_A3_A4_F",
+    "B_native_interface_v2"
+  ],
+  "run_root": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923",
+  "method_adopted": false,
+  "independent_evaluation_started": false,
+  "disabled_new_directions": [
+    "knowledge_audit_A1",
+    "free_diagnosis_rewrite",
+    "global_generative_aggregation",
+    "new_multiround_adjudication",
+    "prompt_grid"
+  ],
+  "work_order": [
+    "shared_rule_operations_and_cached_B_equivalence",
+    "saved_B_and_a5_reanswer_121_alignment",
+    "conditional_disagreement_reanswer_seeds43_44",
+    "prespecified_natural_supported_family_comparison",
+    "full_denominators_costs_seed_family_variation_and_adoption_decision"
+  ],
+  "new_seeds": [
+    43,
+    44
+  ],
+  "cached_seed": 42,
+  "research_policy": {
+    "ordinary_item_failure": "record_keep_denominator_continue",
+    "systemic_wrong_input_model_leakage_or_unavailable_service": "stop_affected_run",
+    "unknown_submission": "stop_no_automatic_retry",
+    "trigger_prompt_profile_format_repair": "reuse_saved_cycle1_a5_reanswer_unchanged_except_fixed_seed",
+    "global_final_model_reanswer": false,
+    "independent_quality": "not_started_natural_scope_exposure_must_be_explicit"
+  },
+  "stage_results": {
+    "operations": "equivalent_B_packaging_accepted_17_targeted_tests_242_cache_18_rule_replay",
+    "saved_alignment": "complete_121_B_and_seed42_scores_reused",
+    "new_seed_runs": "complete43_44_108_calls_zero_new_errors",
+    "natural_scope": "complete52x2x3_123_calls_negative_all_seeds_and_backbones",
+    "analysis": "complete_full_denominators_247_new_native_mappings_only_old_scores_reused",
+    "final_default": "equivalent_B_with_F_reanswer_disabled",
+    "next_new_direction": "not_started_no_automatic_audit_or_prompt_grid"
+  },
+  "gpu_reservation_policy": {
+    "user_requested": true,
+    "authorization": "2026-09-23 latest: release GPU0/1, preserve GPU2/3; no automatic reacquisition of 0/1",
+    "script": "/home/data3/txy/.local/bin/gpu_watch.py",
+    "initial_gpus": [
+      2,
+      3
+    ],
+    "min_free_gib": 50,
+    "maximum_hold_gib_per_card": 80,
+    "infinite_wait_and_hold": true,
+    "interval_seconds": 5,
+    "handoff": "STOP only recorded owned watch, verify release, recheck original admission; rehold after explicit engine closure",
+    "watch_root": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/reserved_gpu_watches",
+    "scheduler": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/run_gpu_phase.py",
+    "experiment_plan_unchanged": true,
+    "admission_revision": "profile_derived_scheduling_v1; no extra60GiB floor; models and requests unchanged",
+    "current_gpu0_held_gib": 0,
+    "current_gpu0_holder_pid": null,
+    "current_gpu0_state": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/reserved_gpu_watches/gpu0/generation_0002/status.json",
+    "state_is_snapshot_recheck_live_before_release": true,
+    "current_watched_gpus": [
+      2,
+      3
+    ],
+    "gpu1_added_reason": "GPU1 became completely idle after all experiments; reserve per current user request",
+    "current_held_gib_by_gpu": {
+      "0": 0,
+      "1": 0,
+      "2": 80.0,
+      "3": 80.0
+    },
+    "latest_verified_snapshot": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/gpu_final_receipt.json",
+    "current_holder_states": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_gpu/gpu_status.json",
+    "future_reservation_gpus": [
+      2,
+      3
+    ],
+    "released_gpus": [
+      0,
+      1
+    ],
+    "automatic_reacquisition_prohibited_gpus": [
+      0,
+      1
+    ]
+  },
+  "active_process_records": [],
+  "system_configuration": "/home/data3/txy/cf_moa/configs/minimal_system.json",
+  "system_entry": "cf_moa.controller.minimal_operations.run",
+  "packaging_adopted": true,
+  "incremental_candidate_adopted": false,
+  "latest_decision": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/decision.json",
+  "latest_delivery": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/delivery_index.json"
+}

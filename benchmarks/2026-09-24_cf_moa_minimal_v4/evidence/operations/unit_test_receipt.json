@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "created_at": "2026-09-23T22:52:43.011826+08:00",
+  "tests": 13,
+  "exit_code": 0,
+  "elapsed_test_seconds": 0.088,
+  "command": "PYTHONDONTWRITEBYTECODE=1 /home/data3/txy/MedRGAG/.venv/bin/python -m unittest cf_moa.tests.test_minimal_operations -v",
+  "new_model_requests": 0,
+  "native_scoring_calls": 0,
+  "files": {
+    "/home/data3/txy/cf_moa/controller/minimal_operations.py": "79671ec79b7796692783f556ea8512f1974ec56c291d2de9feabd9b649287088",
+    "/home/data3/txy/cf_moa/tests/test_minimal_operations.py": "317e80b2eb9f71ce858ccffaab1daaf537e18e47e25d7611643458fba956866e",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/replay.py": "0d97075dd148c1d1ad9e3f1fdaaae1635e6a996555f7305fed34608ea9591705",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/unit_tests.log": "0e7fd79f2f87428f92ace7d1c27d21ee7ece2699ed706d848a1c19111355d5ab",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/replay/receipt.json": "f9a11f872fd3d3f73e3da36036a529564525ffef904bb92156cc73872a45af99"
+  },
+  "note": "Replay ran before adding two final unit tests; its exact earlier test source is preserved in replay/test_minimal_operations_at_replay.py. Controller source is unchanged since replay."
+}

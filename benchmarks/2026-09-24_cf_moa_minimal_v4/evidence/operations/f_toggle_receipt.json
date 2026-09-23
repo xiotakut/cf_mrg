@@ -1,0 +1,26 @@
+{
+  "status": "implemented_and_unit_verified_not_new_quality_experiment",
+  "at": "2026-09-23T22:57:41.622451+08:00",
+  "new_model_calls": 0,
+  "native_scoring_calls": 0,
+  "default_enabled": false,
+  "explicit_switch": "f_disagreement_reanswer=True",
+  "fixed_seed_argument": "f_reanswer_seed in 42,43,44",
+  "applicable_component": "F only",
+  "operation": "exact existing a5_premise.run control=True; unchanged default .7/512 and one format repair",
+  "tests_passed": 17,
+  "test_log": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/f_toggle_tests.log",
+  "sources": [
+    {
+      "path": "/home/data3/txy/cf_moa/controller/minimal_operations.py",
+      "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "snapshot": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/f_toggle_snapshot/minimal_operations.py"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/tests/test_minimal_operations.py",
+      "sha256": "c39ad5f9f1767299da65ccb5f5f721881ed5e27011da4833e12f45c1dcbde098",
+      "snapshot": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/f_toggle_snapshot/test_minimal_operations.py"
+    }
+  ],
+  "existing_seed_and_natural_plans_changed": false
+}

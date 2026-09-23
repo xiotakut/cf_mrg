@@ -1,0 +1,326 @@
+{
+  "new_physical_execution_this_revision": {
+    "physical_model_requests": 231,
+    "new_model_requests": 231,
+    "live_input_tokens": 1444680,
+    "live_output_tokens": 31047,
+    "live_model_seconds": 586.4981311090523,
+    "submission_attempts": 231,
+    "failed_attempts": 0,
+    "unresolved_model_usage": 0
+  },
+  "publication_new_model_calls": 0,
+  "publication_native_scorer_calls": 0,
+  "panels": {
+    "historical121": {
+      "methods": {
+        "M4": {
+          "inherited_B": {
+            "reused_head_model_requests": 420,
+            "reused_head_model_requests_known_subtotal": 420,
+            "reused_head_model_requests_unknown_inputs": 0,
+            "reused_head_input_tokens": 1828059,
+            "reused_head_input_tokens_known_subtotal": 1828059,
+            "reused_head_input_tokens_unknown_inputs": 0,
+            "reused_head_output_tokens": 84395,
+            "reused_head_output_tokens_known_subtotal": 84395,
+            "reused_head_output_tokens_unknown_inputs": 0,
+            "reused_head_model_seconds": 1854.6178262869375,
+            "reused_head_model_seconds_known_subtotal": 1854.6178262869375,
+            "reused_head_model_seconds_unknown_inputs": 0,
+            "interpretation": "Frozen B/F acquisition attributed once per deployed method; reused across all seed experiments. Common historical initial answers excluded where prior accounting excludes them. Unknown timing is not zero."
+          },
+          "seeds": {
+            "42": {
+              "origin": "historical_already_in_cycle1_cost_not_new_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 28,
+                "new_model_requests": 28,
+                "live_input_tokens": 214200,
+                "live_output_tokens": 2693,
+                "live_model_seconds": 55.489741203942685,
+                "submission_attempts": 28,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 2042259,
+              "attributed_output_tokens": 87088,
+              "attributed_model_requests": 448
+            },
+            "43": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 28,
+                "new_model_requests": 28,
+                "live_input_tokens": 214200,
+                "live_output_tokens": 2815,
+                "live_model_seconds": 73.93900296303036,
+                "submission_attempts": 28,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 2042259,
+              "attributed_output_tokens": 87210,
+              "attributed_model_requests": 448
+            },
+            "44": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 28,
+                "new_model_requests": 28,
+                "live_input_tokens": 214200,
+                "live_output_tokens": 3286,
+                "live_model_seconds": 43.385100269006216,
+                "submission_attempts": 28,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 2042259,
+              "attributed_output_tokens": 87681,
+              "attributed_model_requests": 448
+            }
+          }
+        },
+        "M5": {
+          "inherited_B": {
+            "reused_head_model_requests": 419,
+            "reused_head_model_requests_known_subtotal": 419,
+            "reused_head_model_requests_unknown_inputs": 0,
+            "reused_head_input_tokens": 1741881,
+            "reused_head_input_tokens_known_subtotal": 1741881,
+            "reused_head_input_tokens_unknown_inputs": 0,
+            "reused_head_output_tokens": 84025,
+            "reused_head_output_tokens_known_subtotal": 84025,
+            "reused_head_output_tokens_unknown_inputs": 0,
+            "reused_head_model_seconds": 2291.4049097769766,
+            "reused_head_model_seconds_known_subtotal": 2291.4049097769766,
+            "reused_head_model_seconds_unknown_inputs": 0,
+            "interpretation": "Frozen B/F acquisition attributed once per deployed method; reused across all seed experiments. Common historical initial answers excluded where prior accounting excludes them. Unknown timing is not zero."
+          },
+          "seeds": {
+            "42": {
+              "origin": "historical_already_in_cycle1_cost_not_new_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 26,
+                "new_model_requests": 26,
+                "live_input_tokens": 204675,
+                "live_output_tokens": 3279,
+                "live_model_seconds": 84.7060058809875,
+                "submission_attempts": 26,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 1946556,
+              "attributed_output_tokens": 87304,
+              "attributed_model_requests": 445
+            },
+            "43": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 26,
+                "new_model_requests": 26,
+                "live_input_tokens": 204675,
+                "live_output_tokens": 3405,
+                "live_model_seconds": 105.55299039596866,
+                "submission_attempts": 26,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 1946556,
+              "attributed_output_tokens": 87430,
+              "attributed_model_requests": 445
+            },
+            "44": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 26,
+                "new_model_requests": 26,
+                "live_input_tokens": 204675,
+                "live_output_tokens": 3296,
+                "live_model_seconds": 61.880781399071566,
+                "submission_attempts": 26,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 1946556,
+              "attributed_output_tokens": 87321,
+              "attributed_model_requests": 445
+            }
+          }
+        }
+      },
+      "new_physical_execution": {
+        "physical_model_requests": 108,
+        "new_model_requests": 108,
+        "live_input_tokens": 837750,
+        "live_output_tokens": 12802,
+        "live_model_seconds": 284.7578750270768,
+        "submission_attempts": 108,
+        "failed_attempts": 0,
+        "unresolved_model_usage": 0
+      },
+      "definition": "Never sum inherited B over seeds to claim new physical cost. Seed42 history on121 is excluded from this revision physical total. Model seconds are cumulative event times, not exclusive GPU latency."
+    },
+    "natural52": {
+      "methods": {
+        "M4": {
+          "inherited_B": {
+            "reused_head_model_requests": 212,
+            "reused_head_model_requests_known_subtotal": 212,
+            "reused_head_model_requests_unknown_inputs": 0,
+            "reused_head_input_tokens": 732733,
+            "reused_head_input_tokens_known_subtotal": 732733,
+            "reused_head_input_tokens_unknown_inputs": 0,
+            "reused_head_output_tokens": 52536,
+            "reused_head_output_tokens_known_subtotal": 52536,
+            "reused_head_output_tokens_unknown_inputs": 0,
+            "reused_head_model_seconds": null,
+            "reused_head_model_seconds_known_subtotal": 0,
+            "reused_head_model_seconds_unknown_inputs": 52,
+            "interpretation": "Frozen B/F acquisition attributed once per deployed method; reused across all seed experiments. Common historical initial answers excluded where prior accounting excludes them. Unknown timing is not zero."
+          },
+          "seeds": {
+            "42": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 25,
+                "new_model_requests": 25,
+                "live_input_tokens": 115647,
+                "live_output_tokens": 4028,
+                "live_model_seconds": 65.63183291301539,
+                "submission_attempts": 25,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 848380,
+              "attributed_output_tokens": 56564,
+              "attributed_model_requests": 237
+            },
+            "43": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 25,
+                "new_model_requests": 25,
+                "live_input_tokens": 115647,
+                "live_output_tokens": 3790,
+                "live_model_seconds": 49.19188711199968,
+                "submission_attempts": 25,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 848380,
+              "attributed_output_tokens": 56326,
+              "attributed_model_requests": 237
+            },
+            "44": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 25,
+                "new_model_requests": 25,
+                "live_input_tokens": 115647,
+                "live_output_tokens": 3726,
+                "live_model_seconds": 48.970624313966255,
+                "submission_attempts": 25,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 848380,
+              "attributed_output_tokens": 56262,
+              "attributed_model_requests": 237
+            }
+          }
+        },
+        "M5": {
+          "inherited_B": {
+            "reused_head_model_requests": 197,
+            "reused_head_model_requests_known_subtotal": 197,
+            "reused_head_model_requests_unknown_inputs": 0,
+            "reused_head_input_tokens": 634844,
+            "reused_head_input_tokens_known_subtotal": 634844,
+            "reused_head_input_tokens_unknown_inputs": 0,
+            "reused_head_output_tokens": 39074,
+            "reused_head_output_tokens_known_subtotal": 39074,
+            "reused_head_output_tokens_unknown_inputs": 0,
+            "reused_head_model_seconds": null,
+            "reused_head_model_seconds_known_subtotal": 0,
+            "reused_head_model_seconds_unknown_inputs": 52,
+            "interpretation": "Frozen B/F acquisition attributed once per deployed method; reused across all seed experiments. Common historical initial answers excluded where prior accounting excludes them. Unknown timing is not zero."
+          },
+          "seeds": {
+            "42": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 16,
+                "new_model_requests": 16,
+                "live_input_tokens": 86663,
+                "live_output_tokens": 2265,
+                "live_model_seconds": 53.462468090001494,
+                "submission_attempts": 16,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 721507,
+              "attributed_output_tokens": 41339,
+              "attributed_model_requests": 213
+            },
+            "43": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 16,
+                "new_model_requests": 16,
+                "live_input_tokens": 86663,
+                "live_output_tokens": 2184,
+                "live_model_seconds": 41.41849929599266,
+                "submission_attempts": 16,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 721507,
+              "attributed_output_tokens": 41258,
+              "attributed_model_requests": 213
+            },
+            "44": {
+              "origin": "new_physical_execution_this_revision",
+              "extra_execution": {
+                "physical_model_requests": 16,
+                "new_model_requests": 16,
+                "live_input_tokens": 86663,
+                "live_output_tokens": 2252,
+                "live_model_seconds": 43.06494435700006,
+                "submission_attempts": 16,
+                "failed_attempts": 0,
+                "unresolved_model_usage": 0,
+                "model_usage_complete": true
+              },
+              "attributed_input_tokens": 721507,
+              "attributed_output_tokens": 41326,
+              "attributed_model_requests": 213
+            }
+          }
+        }
+      },
+      "new_physical_execution": {
+        "physical_model_requests": 123,
+        "new_model_requests": 123,
+        "live_input_tokens": 606930,
+        "live_output_tokens": 18245,
+        "live_model_seconds": 301.74025608197553,
+        "submission_attempts": 123,
+        "failed_attempts": 0,
+        "unresolved_model_usage": 0
+      },
+      "definition": "Never sum inherited B over seeds to claim new physical cost. Seed42 history on121 is excluded from this revision physical total. Model seconds are cumulative event times, not exclusive GPU latency."
+    }
+  }
+}

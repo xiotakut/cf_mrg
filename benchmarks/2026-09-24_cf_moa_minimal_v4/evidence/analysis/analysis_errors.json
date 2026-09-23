@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-09-23T23:04:38.618645+08:00",
+  "status": "corrected_with_same_scores_no_native_rescoring",
+  "error": "Initial offline family aggregation preferred source_family (source taxonomy) over frozen patient group_id; 40 historical families were mistakenly merged into31.",
+  "affected": [
+    "initial historical121 family strata",
+    "initial historical121 family bootstrap interval"
+  ],
+  "unaffected": [
+    "all native score rows",
+    "all input and native-unit correct counts",
+    "all repair/harm counts",
+    "all costs",
+    "model inputs/outputs",
+    "all old experiment artifacts"
+  ],
+  "old_analysis_directory": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121_family_mapping_error",
+  "corrected_analysis_directory": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121",
+  "correct_family_key": "group_id",
+  "corrected_families": {
+    "historical121": 40,
+    "natural52": 18
+  },
+  "scorer_calls_initial_historical": 124,
+  "scorer_calls_metadata_fix": 0,
+  "scorer_calls_natural": 123,
+  "total_this_revision": 247,
+  "old_and_corrected_native_score_rows_equal": true,
+  "source_code_changed_no_generation_change": true,
+  "regression_test": "test_family_clusters_use_frozen_group_not_source_taxonomy",
+  "all_targeted_analysis_tests": 4,
+  "tests_passed": true,
+  "tests_log_sha256": "0062345e5605739e945f62b86bdab2c745117e6ff1644f9f690b392b7af5710c",
+  "additional_preexecution_fix": "Natural cache audit route denotes internal F path, not system router component; F support strata are bound to preselected manifest selected[].route=F instead. Corrected before any natural scoring; all52supported unchanged."
+}

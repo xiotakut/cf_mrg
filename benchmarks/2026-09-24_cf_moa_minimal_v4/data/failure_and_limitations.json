@@ -1,0 +1,128 @@
+{
+  "status": "completed_keep_equivalent_B_increment_not_adopted",
+  "default_system": "adopted_B_five_operations_v1",
+  "optional_F_reanswer_default": false,
+  "packaging_equivalence": {
+    "cached_native_rows_equal": 242,
+    "shared_rule_replays": 18,
+    "ordinary_algebra_checks": 12,
+    "special_cases_use_old_assemble": 6,
+    "observed_remove_operations": 0,
+    "A4_main_panel_applicable_inputs": 0,
+    "A1_A2_are_operations_of_one_existing_kernel": true
+  },
+  "unavailable_kept": {
+    "panel": "historical121",
+    "method": "M5",
+    "request_id": "d00050",
+    "arms": [
+      "baseline",
+      "seed42",
+      "seed43",
+      "seed44"
+    ],
+    "method_score": "not_scored",
+    "interpretation": "Inherited unavailable native answer. Not counted as an incorrect answer and not deleted from denominator."
+  },
+  "runtime": {
+    "new_physical_calls": 231,
+    "new_runtime_failures": 0,
+    "format_repair_calls": 0,
+    "unknown_usage": 0
+  },
+  "scope32_counterexample": {
+    "origin": "existing v3 cycle2 Scope32, not a new run",
+    "M4": {
+      "old_F": 31,
+      "ordinary_reanswer": 30,
+      "denominator": 32
+    },
+    "M5": {
+      "old_F": 31,
+      "ordinary_reanswer": 31,
+      "denominator": 32
+    }
+  },
+  "exposure": {
+    "historical121": "Previously exposed development panel.",
+    "natural52": "Fixed 18 complete families from an already exposed F development pool; 9 source-by-format strata, 2 families per stratum by prespecified hash order. No family/input overlap with historical121.",
+    "natural52_M23_control": "Contains 4 existing author-derived relevance-control endpoints; not newly collected natural clinical cases.",
+    "independent_evaluation": false
+  },
+  "limitations": [
+    "Fixed B/F trajectories; only the added reanswer seed changes. This is conditional stability, not end-to-end reseeding.",
+    "All three seeds and both backbones are reported with equal weights; no best-seed selection.",
+    "Historical121 has small positive changes; natural52 all six seed-by-backbone cells have fewer correct inputs and lower native-unit means than B.",
+    "Family-bootstrap intervals cross zero; current evidence is weak and inconsistent, not proof of population-level benefit or harm.",
+    "Historical121 has four response pairs, all unsupported by F. Natural52 has only two F-supported response pairs; 0/2 is not proof of zero population capability.",
+    "Ordinary F reanswer is an existing simple control, not a new counterfactual algorithm.",
+    "A1 and A2 are shared-kernel operation projections, not independently trained models or a demonstrated five-LLM discussion.",
+    "Cumulative model seconds are not exclusive wall latency or energy. Historical timing missingness remains null.",
+    "Public metadata cannot independently reproduce native clinical judgments without private legal inputs, complete responses, and frozen native scoring artifacts."
+  ],
+  "analysis_error_and_correction": {
+    "created_at": "2026-09-23T23:04:38.618645+08:00",
+    "status": "corrected_with_same_scores_no_native_rescoring",
+    "error": "Initial offline family aggregation preferred source_family (source taxonomy) over frozen patient group_id; 40 historical families were mistakenly merged into31.",
+    "affected": [
+      "initial historical121 family strata",
+      "initial historical121 family bootstrap interval"
+    ],
+    "unaffected": [
+      "all native score rows",
+      "all input and native-unit correct counts",
+      "all repair/harm counts",
+      "all costs",
+      "model inputs/outputs",
+      "all old experiment artifacts"
+    ],
+    "old_analysis_directory": "minimal_revision/analysis/historical121_family_mapping_error",
+    "corrected_analysis_directory": "minimal_revision/analysis/historical121",
+    "correct_family_key": "group_id",
+    "corrected_families": {
+      "historical121": 40,
+      "natural52": 18
+    },
+    "scorer_calls_initial_historical": 124,
+    "scorer_calls_metadata_fix": 0,
+    "scorer_calls_natural": 123,
+    "total_this_revision": 247,
+    "old_and_corrected_native_score_rows_equal": true,
+    "source_code_changed_no_generation_change": true,
+    "regression_test": "test_family_clusters_use_frozen_group_not_source_taxonomy",
+    "all_targeted_analysis_tests": 4,
+    "tests_passed": true,
+    "tests_log_sha256": "0062345e5605739e945f62b86bdab2c745117e6ff1644f9f690b392b7af5710c",
+    "additional_preexecution_fix": "Natural cache audit route denotes internal F path, not system router component; F support strata are bound to preselected manifest selected[].route=F instead. Corrected before any natural scoring; all52supported unchanged."
+  },
+  "cache_preparation_attempts": {
+    "new_model_calls": 0,
+    "original_sources_changed": false,
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "assertion_failed_before_exports",
+        "diagnostic": "Replay observation incorrectly expected original messages only; adopted F appends its frozen vote instruction. Corrected checker to original F request function."
+      },
+      {
+        "attempt": 2,
+        "status": "assertion_failed_before_exports",
+        "diagnostic": "NLI completion cache contained direct and equal_path with identical messages/schema; checker selected first matching row, producing raw mismatch."
+      },
+      {
+        "attempt": 3,
+        "status": "same_failure_diagnostic_only",
+        "diagnostic": "Added opaque identity and digest diagnostics, no output exported."
+      },
+      {
+        "attempt": 4,
+        "status": "passed",
+        "diagnostic": "Explicit original stage arm binding: equal_path for nli_validation, head for old integration. All104 final raw responses now byte-equal,409 cached callbacks."
+      }
+    ],
+    "scientific_policy_change": false,
+    "explanation": "Preparation callback identity bugs, not new model/method failures; mismatch never accepted or repaired by generation."
+  },
+  "publication_new_model_calls": 0,
+  "publication_native_scorer_calls": 0
+}

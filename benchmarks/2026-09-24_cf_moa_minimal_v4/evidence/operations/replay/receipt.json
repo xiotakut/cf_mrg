@@ -1,0 +1,79 @@
+{
+  "created_at": "2026-09-23T22:51:04.280349+08:00",
+  "status": "passed_same_response_equivalence_not_new_quality",
+  "variant": "adopted_B_five_operations_v1",
+  "methods": {
+    "M4": {
+      "inputs": 121,
+      "denominator": 121,
+      "preserved_B_interface_rows": 121,
+      "native_valid": 121,
+      "unavailable": [],
+      "roles": {
+        "A1+A2": 9,
+        "A5": 104,
+        "A3": 8
+      },
+      "rule_results": 9,
+      "ordinary_set_identity_checked": 7,
+      "original_special_policy_retained": 2,
+      "add_option_records": 8,
+      "remove_option_records": 0,
+      "same_response_rule_callbacks": 9,
+      "additional_rule_extractions": 0,
+      "new_model_requests": 0,
+      "native_scoring_calls": 0
+    },
+    "M5": {
+      "inputs": 121,
+      "denominator": 121,
+      "preserved_B_interface_rows": 121,
+      "native_valid": 120,
+      "unavailable": [
+        "d00050"
+      ],
+      "roles": {
+        "A1+A2": 9,
+        "A5": 104,
+        "A3": 8
+      },
+      "rule_results": 9,
+      "ordinary_set_identity_checked": 5,
+      "original_special_policy_retained": 4,
+      "add_option_records": 12,
+      "remove_option_records": 0,
+      "same_response_rule_callbacks": 9,
+      "additional_rule_extractions": 0,
+      "new_model_requests": 0,
+      "native_scoring_calls": 0
+    }
+  },
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/original_complete_results.jsonl": "6fd974f6efadadfa4af9eae37adf4e19d0e65111cb47a028d7c1c55d18049f69",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/model_calls.jsonl": "db93854cd0423e7d3abdce3266abd3db7654d952ac92a997dac0277f47ee0648",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/original_complete_results.jsonl": "c345a2e9afe24b1dc98ebe62b1de1a8644ecf1d03081c25d7ccd878023c38de3",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m5/A2/model_calls.jsonl": "8806ec855b63f64dcf5b979729606e174dabaee143a6e0184e4727eeb0a284ff"
+  },
+  "source_bytes_unchanged": true,
+  "new_model_requests": 0,
+  "native_scoring_calls": 0,
+  "gold_or_evaluation_ledger_reads": 0,
+  "global_generation_aggregator": false,
+  "elapsed_seconds": 1.2884912000008626,
+  "limitations": [
+    "Current 121-input panel has zero A4 coverage; its prior accepted adapter is reused.",
+    "A1/A2 share one adopted extraction and execution; they are not two trained models.",
+    "No new correctness, clinical validity or independent-generalization result is claimed.",
+    "M5 d00050 remains unavailable in the B native interface, with the full denominator retained.",
+    "Same-response replay proves packaging equivalence, not equality of fresh stochastic samples."
+  ],
+  "source_files": {
+    "/home/data3/txy/cf_moa/controller/minimal_operations.py": "79671ec79b7796692783f556ea8512f1974ec56c291d2de9feabd9b649287088",
+    "/home/data3/txy/cf_moa/tests/test_minimal_operations.py": "1047af3839f6e8776ff3707baf31a41ee73a3cfb98df05ed5e5eb18236708030",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/replay.py": "0d97075dd148c1d1ad9e3f1fdaaae1635e6a996555f7305fed34608ea9591705"
+  }
+}

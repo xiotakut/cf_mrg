@@ -1,3 +1,5 @@
+**2026-09-24 · 版本4：[CF-MoA最简复用完整报告第14章](benchmarks/2026-09-24_cf_moa_minimal_v4/docs/research/cf_moa_experiment_report.md#minimal-head-reuse-v4) · [运行过程与交付索引](benchmarks/2026-09-24_cf_moa_minimal_v4/RUN_AND_DELIVERY.md)。等价旧B五操作包装完成；231次新增调用，历史121小幅增益、自然52三seed双骨干均退步，F普通重答未采用。公开有限源码/配置、99项原始索引与公开映射、逐题状态和调用元数据；原完整trace留本地。此次发布0新模型/评分，前3版保留。**
+
 **2026-09-23 · 版本3：[CF-MoA完整进展与四轮效果优先实验](benchmarks/2026-09-23_cf_moa_effect_first_v3/docs/research/cf_moa_experiment_report.md) · [状态、成本与核验材料](benchmarks/2026-09-23_cf_moa_effect_first_v3/README.md)。保留原全过程，补全四轮2203次新调用及失败/修复；第四轮主臂18/34、15/34，低于B的23/34、19/34，仍未采用、未开启独立评估。GPU0/1自有占位已释放，2/3保留。本次仅发布文档与已保存元数据，0新推理/评分。**
 
 **2026-09-23 · 版本2：[CF-MoA修订计划执行报告](benchmarks/2026-09-23_cf_moa_incremental_v2/docs/research/cf_moa_experiment_report.md#incremental-revision-v2)与[核验材料](benchmarks/2026-09-23_cf_moa_incremental_v2/README.md)。新B保持242条原答案；A1_delta 6/6诊断不可用；A3关键编辑未超过原题重评分。新机制不采用，旧有效组件与上一版快照保留；本轮254次真实调用的成本与失败完整列明，独立评估未启动。**

@@ -1,0 +1,28 @@
+{
+  "new_model_calls": 0,
+  "original_sources_changed": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "assertion_failed_before_exports",
+      "reason": "Replay observation incorrectly expected original messages only; adopted F appends its frozen vote instruction. Corrected checker to original F request function."
+    },
+    {
+      "attempt": 2,
+      "status": "assertion_failed_before_exports",
+      "reason": "NLI completion cache contained direct and equal_path with identical messages/schema; checker selected first matching row, producing raw mismatch."
+    },
+    {
+      "attempt": 3,
+      "status": "same_failure_diagnostic_only",
+      "reason": "Added opaque identity and digest diagnostics, no output exported."
+    },
+    {
+      "attempt": 4,
+      "status": "passed",
+      "reason": "Explicit original stage arm binding: equal_path for nli_validation, head for old integration. All104 final raw responses now byte-equal,409 cached callbacks."
+    }
+  ],
+  "scientific_policy_change": false,
+  "explanation": "Preparation callback identity bugs, not new model/method failures; mismatch never accepted or repaired by generation."
+}

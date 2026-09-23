@@ -1,0 +1,327 @@
+{
+  "status": "passed",
+  "at": "2026-09-23T23:07:50.875540+08:00",
+  "reviewer": "minimal_f_seeds, independent of comparison implementation author",
+  "review_type": "read-only arithmetic/source consistency, not medical rescoring",
+  "new_model_calls": 0,
+  "native_scorer_calls": 0,
+  "panels": {
+    "historical121": {
+      "full_denominator": 121,
+      "families_verified_from_group_id": 40,
+      "native_mappings_per_arm": 157,
+      "rows": [
+        {
+          "method": "M4",
+          "seed": null,
+          "denominator": 121,
+          "correct": 87,
+          "incorrect": 34,
+          "unavailable": 0,
+          "native_units": 74,
+          "native_unit_mean": 0.7027027027027027
+        },
+        {
+          "method": "M4",
+          "seed": 42,
+          "denominator": 121,
+          "correct": 89,
+          "incorrect": 32,
+          "unavailable": 0,
+          "native_units": 74,
+          "native_unit_mean": 0.7162162162162162,
+          "repairs": 4,
+          "harms": 2,
+          "net_count": 2
+        },
+        {
+          "method": "M4",
+          "seed": 43,
+          "denominator": 121,
+          "correct": 88,
+          "incorrect": 33,
+          "unavailable": 0,
+          "native_units": 74,
+          "native_unit_mean": 0.7027027027027027,
+          "repairs": 3,
+          "harms": 2,
+          "net_count": 1
+        },
+        {
+          "method": "M4",
+          "seed": 44,
+          "denominator": 121,
+          "correct": 88,
+          "incorrect": 33,
+          "unavailable": 0,
+          "native_units": 74,
+          "native_unit_mean": 0.7252252252252253,
+          "repairs": 3,
+          "harms": 2,
+          "net_count": 1
+        },
+        {
+          "method": "M5",
+          "seed": null,
+          "denominator": 121,
+          "correct": 82,
+          "incorrect": 38,
+          "unavailable": 1,
+          "native_units": 74,
+          "native_unit_mean": 0.6441441441441441
+        },
+        {
+          "method": "M5",
+          "seed": 42,
+          "denominator": 121,
+          "correct": 83,
+          "incorrect": 37,
+          "unavailable": 1,
+          "native_units": 74,
+          "native_unit_mean": 0.6666666666666666,
+          "repairs": 4,
+          "harms": 3,
+          "net_count": 1
+        },
+        {
+          "method": "M5",
+          "seed": 43,
+          "denominator": 121,
+          "correct": 84,
+          "incorrect": 36,
+          "unavailable": 1,
+          "native_units": 74,
+          "native_unit_mean": 0.6801801801801802,
+          "repairs": 5,
+          "harms": 3,
+          "net_count": 2
+        },
+        {
+          "method": "M5",
+          "seed": 44,
+          "denominator": 121,
+          "correct": 84,
+          "incorrect": 36,
+          "unavailable": 1,
+          "native_units": 74,
+          "native_unit_mean": 0.6801801801801802,
+          "repairs": 5,
+          "harms": 3,
+          "net_count": 2
+        }
+      ],
+      "score_origins": {
+        "reused_existing_B_native_score": 314,
+        "reused_historical_seed42_native_score": 314,
+        "reused_unchanged_B_native_score": 504,
+        "new_trigger_native_score": 124
+      },
+      "old_B_and_historical_seed42_score_fields_exactly_reused": true,
+      "native_unit_aggregation_independently_recomputed": true,
+      "paired_both_correct_checked": true,
+      "all_family_strata_counts_checked": true,
+      "source_hashes_match": true,
+      "uncertainty": {
+        "mean_accuracy_difference": 0.012396694214876033,
+        "mean_correct_count_difference": 1.4999999999999998,
+        "ci95": [
+          -0.01754774103400093,
+          0.04386164274322168
+        ],
+        "families": 40,
+        "inputs": 121,
+        "resamples": 2000,
+        "bootstrap_seed": 20260923,
+        "seed_policy": "equal average of all fixed 42/43/44; B/F held fixed",
+        "cluster": "family",
+        "weighting": "input weighted within cluster draw; equal backbone weights"
+      }
+    },
+    "natural52": {
+      "full_denominator": 52,
+      "families_verified_from_group_id": 18,
+      "native_mappings_per_arm": 52,
+      "rows": [
+        {
+          "method": "M4",
+          "seed": null,
+          "denominator": 52,
+          "correct": 35,
+          "incorrect": 17,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.6037037037037037
+        },
+        {
+          "method": "M4",
+          "seed": 42,
+          "denominator": 52,
+          "correct": 34,
+          "incorrect": 18,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.5666666666666667,
+          "repairs": 2,
+          "harms": 3,
+          "net_count": -1
+        },
+        {
+          "method": "M4",
+          "seed": 43,
+          "denominator": 52,
+          "correct": 31,
+          "incorrect": 21,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.5,
+          "repairs": 1,
+          "harms": 5,
+          "net_count": -4
+        },
+        {
+          "method": "M4",
+          "seed": 44,
+          "denominator": 52,
+          "correct": 32,
+          "incorrect": 20,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.5111111111111111,
+          "repairs": 2,
+          "harms": 5,
+          "net_count": -3
+        },
+        {
+          "method": "M5",
+          "seed": null,
+          "denominator": 52,
+          "correct": 26,
+          "incorrect": 26,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.4925925925925926
+        },
+        {
+          "method": "M5",
+          "seed": 42,
+          "denominator": 52,
+          "correct": 25,
+          "incorrect": 27,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.48148148148148145,
+          "repairs": 2,
+          "harms": 3,
+          "net_count": -1
+        },
+        {
+          "method": "M5",
+          "seed": 43,
+          "denominator": 52,
+          "correct": 23,
+          "incorrect": 29,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.42592592592592593,
+          "repairs": 2,
+          "harms": 5,
+          "net_count": -3
+        },
+        {
+          "method": "M5",
+          "seed": 44,
+          "denominator": 52,
+          "correct": 24,
+          "incorrect": 28,
+          "unavailable": 0,
+          "native_units": 18,
+          "native_unit_mean": 0.42592592592592593,
+          "repairs": 2,
+          "harms": 4,
+          "net_count": -2
+        }
+      ],
+      "score_origins": {
+        "reused_existing_B_native_score": 104,
+        "new_trigger_native_score": 123,
+        "reused_unchanged_B_native_score": 189
+      },
+      "old_B_and_historical_seed42_score_fields_exactly_reused": true,
+      "native_unit_aggregation_independently_recomputed": true,
+      "paired_both_correct_checked": true,
+      "all_family_strata_counts_checked": true,
+      "source_hashes_match": true,
+      "uncertainty": {
+        "mean_accuracy_difference": -0.04487179487179487,
+        "mean_correct_count_difference": -2.333333333333333,
+        "ci95": [
+          -0.09935897435897435,
+          0.01041666666666667
+        ],
+        "families": 18,
+        "inputs": 52,
+        "resamples": 2000,
+        "bootstrap_seed": 20260923,
+        "seed_policy": "equal average of all fixed 42/43/44; B/F held fixed",
+        "cluster": "family",
+        "weighting": "input weighted within cluster draw; equal backbone weights"
+      }
+    }
+  },
+  "discrepancies": [],
+  "reviewer_tool_note": "Initial read-only checker assumed historical receipt had the later actual_native_scorer_calls_this_command field; it does not. Verified original new_native_score_mappings and preserved analysis_errors execution ledger instead; no experiment or score changed.",
+  "new_physical_cost": {
+    "new_model_requests": 231,
+    "live_input_tokens": 1444680,
+    "live_output_tokens": 31047
+  },
+  "native_score_calls": {
+    "new_historical_trigger_mappings": 124,
+    "family_metadata_fix_additional": 0,
+    "new_natural_trigger_mappings": 123,
+    "total_this_revision": 247,
+    "old_B_and_historical_seed42": 0
+  },
+  "historical_family_error_preserved": true,
+  "family_fix_native_score_rows_identical": true,
+  "Scope32_preserved_counterexample": {
+    "M4": {
+      "F": 31,
+      "ordinary_reanswer": 30,
+      "denominator": 32
+    },
+    "M5": {
+      "F": 31,
+      "ordinary_reanswer": 31,
+      "denominator": 32
+    }
+  },
+  "recommendation": "Keep equivalent B as default; F ordinary reanswer remains optional experimental control, not an adopted stable increment",
+  "rationale": "Historical121 has a small positive mean; all three natural52 seeds decline on both backbones. Family intervals include zero, and Scope32 remains a negative counterexample. These are exposed, fixed-B conditional results.",
+  "sources": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/results/native_scored.jsonl": "c9cbf5cc5a281cac6cfa3a678034e3005c128670d4c58f2a4c09473e85c3e0b7",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/summary.json": "d519f0b9b7c03e561e795d5c1e15997c84de73655e9a6cc89ff46e5c30e435a2",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/per_input_status.jsonl": "f67d226601661be6a561172af8bdf20e3661a438f092f2cb0e5af9a20f12b7ee",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/native_scored.jsonl": "c7c8b2547ad331db7b427d49bae04f00c039394cb95bb78ca1b8353872477d48",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/evaluations.jsonl": "b0d7e10ecbf7702ffd27eb7c843f76feb52457ff2d23097df83e7eb654746f78",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/pairs.jsonl": "17e379881e8e28f481de0875226942fbf0252ece57df321397d8693a3601eb26",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/receipt.json": "a722c849718d72fa2b5bbfa4b20d5e66a1cf27a6f95a8d797ef88bac8f81b596",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/cost.json": "c81f9604310f2e2ed7f99581d51bde15284e4d64fac34a76b527543f90e003a3",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/native_unit_metrics.json": "57c4fa6dd44b20c56ac54377dbbc5b5dfd9dbee4cc3124e9550cbb2e1a7e4708",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/summary.json": "b2254916d1ab8642972ffe2d829bcfa4cb2d51584b8688c9b81474eb48bcedb4",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/per_input_status.jsonl": "e3ed467693bc260d165c5441c7ff2b7c225772ca519028445e767c3232ed9b36",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/native_scored.jsonl": "ff58521b7f15bf7c654d002a93544d9b1ec1cbfd49555a7caeff47165ec7157b",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/evaluations.jsonl": "c965a24795dd1db8859cc959bce6cd8f58565046540580a8d46b2c6559990943",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/pairs.jsonl": "7e69124a0fcb5b1583825f8030cd19d547d120c113a51019b95be69c6e8c738a",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/receipt.json": "57e6190f9c17f115e15d1aed5085aeed0f779e6af10c7ccaaab9f19e3ff80908",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/cost.json": "3603cb6c631101e076378f145771902de7436cde9a8459ca3f19be94debbc8f3",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/native_unit_metrics.json": "a62fd1908dd453df21ae6292d157c5874bef70ac36e18aa5785b1628b2ca4aa3",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/baseline_native_scores_reused.jsonl": "c15eeede78f2e644e78a3f69a8cb4f018e3d400cbccd25e81302f72fe4b68945",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/combined_summary.json": "76e68e4b425cb3644281c6e01922aee1e2a2f33df3be2522219581d6709d8abc",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/analysis_errors.json": "96d50d60618a6035da2c76c5ee112cf0c3419845fce53813ae61d057eceb9b45",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121_family_mapping_error/native_scored.jsonl": "c7c8b2547ad331db7b427d49bae04f00c039394cb95bb78ca1b8353872477d48",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a5_scope32/m4/results/summary.json": "1ba00312086c440a9e2e95571c31dfda8311fef21b6015250b901486385768d1",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a5_scope32/m5/results/summary.json": "a1479194c2b4b37181bcf829ac02387797913a104419230388c98d83372d5068",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/report.md": "d77f6fa3e73d54f6785e9604a8b640454b49fd8a1d803ae1f014f6c172658b34"
+  }
+}

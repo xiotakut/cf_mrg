@@ -1,0 +1,35 @@
+{
+  "fixed_at": "2026-09-23T22:52:34.495438+08:00",
+  "comparison": "equivalent_B_vs_existing_F_disagreement_ordinary_reanswer",
+  "historical121_seeds": [
+    42,
+    43,
+    44
+  ],
+  "historical_seed42": "reuse",
+  "new_natural_seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditioning": "fixed adopted B/F trajectories; not end-to-end stochastic stability",
+  "membership": "all selected inputs, including untriggered, invalid and ordinary failed results",
+  "quality": [
+    "native_nonreference_unit_ALL",
+    "unique_input_correct_counts",
+    "repair_harm_unavailable_separately",
+    "per_native_format_and_source",
+    "per_family_deltas",
+    "maintain_and_respond_pair_both_correct"
+  ],
+  "seed_summary": "all preregistered seeds reported; equal seed and backbone weights, never best seed",
+  "uncertainty": {
+    "unit": "family",
+    "resamples": 2000,
+    "seed": 20260923,
+    "target": "paired correctness-difference on same inputs, failures retained; average across fixed seeds",
+    "limitation": "small families/wide intervals mean weak evidence, not proof of population zero"
+  },
+  "cost": "new physical calls/tokens/model seconds, frozen B/F inherited cost separately, no duplicated physical sum",
+  "adoption": "Review net benefit across both fixed panels and all seeds, native metrics and family/format regressions against extra cost. No zero-harm rule or online gold gate. If signal inconsistent/insufficient, equivalent_B remains default and ordinary reanswer remains optional experimental control; no further prompt search."
+}
