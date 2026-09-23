@@ -1,0 +1,459 @@
+{
+  "status": "passed_small_saved_receipt_consistency_audit",
+  "created_at": "2026-09-23T14:47:58.444930+08:00",
+  "scope": "Publication consistency check of saved small receipts and recorded metrics; not model replay or independent native rescoring.",
+  "checked_items": 56,
+  "checks": [
+    {
+      "name": "B_242_original_values_preserved",
+      "passed": true
+    },
+    {
+      "name": "B_241_legal_and_one_retained_failure",
+      "passed": true
+    },
+    {
+      "name": "B_32_wrappers_210_existing_objects",
+      "passed": true
+    },
+    {
+      "name": "B_no_new_model_or_old_score_change",
+      "passed": true
+    },
+    {
+      "name": "B_backbone_native_valid_counts",
+      "passed": true
+    },
+    {
+      "name": "A2_cached_compatibility_only",
+      "passed": true
+    },
+    {
+      "name": "A2_18_requests_two_original_responses",
+      "passed": true
+    },
+    {
+      "name": "A2_old_native_parser_assembler_equivalence",
+      "passed": true
+    },
+    {
+      "name": "A2_41_tests_37_old_sources",
+      "passed": true
+    },
+    {
+      "name": "trace_36_10repairs_26harms",
+      "passed": true
+    },
+    {
+      "name": "trace_backbone_transitions",
+      "passed": true
+    },
+    {
+      "name": "trace_aggregate_attribution",
+      "passed": true
+    },
+    {
+      "name": "trace_no_new_inference_or_matrix",
+      "passed": true
+    },
+    {
+      "name": "A1_six_unavailable_zero_qualified_or_adjudication",
+      "passed": true
+    },
+    {
+      "name": "A1_execution_does_not_imply_qualification",
+      "passed": true
+    },
+    {
+      "name": "A1_saved_B_fallback_count",
+      "passed": true
+    },
+    {
+      "name": "two_control_draft_truncations_retained",
+      "passed": true
+    },
+    {
+      "name": "A3_eight_inputs_each_48_arms",
+      "passed": true
+    },
+    {
+      "name": "A3_M4_15_valid_1_rejected",
+      "passed": true
+    },
+    {
+      "name": "A3_M5_8_valid_8_rejected_in7_inputs",
+      "passed": true
+    },
+    {
+      "name": "A3_45_finals_three_zero_probe_fallback_results",
+      "passed": true
+    },
+    {
+      "name": "M4_negative_increment_gate",
+      "passed": true
+    },
+    {
+      "name": "M4_strong_old_native_interface_v2_counts",
+      "passed": true
+    },
+    {
+      "name": "M4_strong_old_native_interface_v2_native_units",
+      "passed": true
+    },
+    {
+      "name": "M4_same_readout_shared_prefix_counts",
+      "passed": true
+    },
+    {
+      "name": "M4_same_readout_shared_prefix_native_units",
+      "passed": true
+    },
+    {
+      "name": "M4_critical_edit_counts",
+      "passed": true
+    },
+    {
+      "name": "M4_critical_edit_native_units",
+      "passed": true
+    },
+    {
+      "name": "M4_random_edit_counts",
+      "passed": true
+    },
+    {
+      "name": "M4_random_edit_native_units",
+      "passed": true
+    },
+    {
+      "name": "M4_original_rescore_counts",
+      "passed": true
+    },
+    {
+      "name": "M4_original_rescore_native_units",
+      "passed": true
+    },
+    {
+      "name": "M5_negative_increment_gate",
+      "passed": true
+    },
+    {
+      "name": "M5_strong_old_native_interface_v2_counts",
+      "passed": true
+    },
+    {
+      "name": "M5_strong_old_native_interface_v2_native_units",
+      "passed": true
+    },
+    {
+      "name": "M5_same_readout_shared_prefix_counts",
+      "passed": true
+    },
+    {
+      "name": "M5_same_readout_shared_prefix_native_units",
+      "passed": true
+    },
+    {
+      "name": "M5_critical_edit_counts",
+      "passed": true
+    },
+    {
+      "name": "M5_critical_edit_native_units",
+      "passed": true
+    },
+    {
+      "name": "M5_random_edit_counts",
+      "passed": true
+    },
+    {
+      "name": "M5_random_edit_native_units",
+      "passed": true
+    },
+    {
+      "name": "M5_original_rescore_counts",
+      "passed": true
+    },
+    {
+      "name": "M5_original_rescore_native_units",
+      "passed": true
+    },
+    {
+      "name": "A3_expected_unique_correct",
+      "passed": true
+    },
+    {
+      "name": "A3_not_adopted",
+      "passed": true
+    },
+    {
+      "name": "cost_new_model_requests",
+      "passed": true
+    },
+    {
+      "name": "independent_cost_receipts_new_model_requests",
+      "passed": true
+    },
+    {
+      "name": "cost_live_input_tokens",
+      "passed": true
+    },
+    {
+      "name": "independent_cost_receipts_live_input_tokens",
+      "passed": true
+    },
+    {
+      "name": "cost_live_output_tokens",
+      "passed": true
+    },
+    {
+      "name": "independent_cost_receipts_live_output_tokens",
+      "passed": true
+    },
+    {
+      "name": "cost_live_model_seconds",
+      "passed": true
+    },
+    {
+      "name": "independent_cost_receipts_live_model_seconds",
+      "passed": true
+    },
+    {
+      "name": "compact_control_design_only",
+      "passed": true
+    },
+    {
+      "name": "independence_not_established",
+      "passed": true
+    },
+    {
+      "name": "A5_unfinished_no_independent_evaluation",
+      "passed": true
+    }
+  ],
+  "inconsistencies": [],
+  "B": {
+    "unique_rows": 242,
+    "answer_values_preserved": 242,
+    "native_valid": 241,
+    "unavailable": 1,
+    "new_wrapped_scalars_or_lists": 32,
+    "unchanged_existing_native_objects": 210
+  },
+  "trace_attribution": {
+    "harms_with_correct_proposal_delivered": 24,
+    "harms_with_correct_proposal_adopted": 23,
+    "harms_with_adopted_MET_path_omission": 11,
+    "repairs_matching_correct_A1_proposal": 5,
+    "repairs_with_native_key_reexpression": 1,
+    "repairs_with_new_answer_excluding_key_reexpression": 4
+  },
+  "A1_delta": {
+    "variant": "targeted_support_delta_v1",
+    "status": "not_qualified_not_adopted_no_development_extension",
+    "diagnostic_denominator": 6,
+    "audit_unavailable": 6,
+    "qualified_support_proposals": 0,
+    "adjudication_model_calls": 0
+  },
+  "A3_execution": {
+    "M4": {
+      "inputs": 8,
+      "valid_edits": 15,
+      "rejected_edits": 1,
+      "inputs_with_rejected_edits": 1,
+      "zero_probe_inputs": 0,
+      "real_final_requests": 24
+    },
+    "M5": {
+      "inputs": 8,
+      "valid_edits": 8,
+      "rejected_edits": 8,
+      "inputs_with_rejected_edits": 7,
+      "zero_probe_inputs": 1,
+      "real_final_requests": 21
+    }
+  },
+  "A3_quality": {
+    "M4": {
+      "strong_old_native_interface_v2": {
+        "correct": 3,
+        "incorrect": 5,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.5
+      },
+      "same_readout_shared_prefix": {
+        "correct": 3,
+        "incorrect": 5,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.5
+      },
+      "critical_edit": {
+        "correct": 4,
+        "incorrect": 4,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.75
+      },
+      "random_edit": {
+        "correct": 3,
+        "incorrect": 5,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.5
+      },
+      "original_rescore": {
+        "correct": 4,
+        "incorrect": 4,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.75
+      }
+    },
+    "M5": {
+      "strong_old_native_interface_v2": {
+        "correct": 4,
+        "incorrect": 4,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.5
+      },
+      "same_readout_shared_prefix": {
+        "correct": 4,
+        "incorrect": 4,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.5
+      },
+      "critical_edit": {
+        "correct": 3,
+        "incorrect": 5,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.25
+      },
+      "random_edit": {
+        "correct": 3,
+        "incorrect": 5,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.25
+      },
+      "original_rescore": {
+        "correct": 4,
+        "incorrect": 4,
+        "unavailable": 0,
+        "denominator": 8,
+        "nonreference_units": 4,
+        "mean_native_unit_score": 0.5
+      }
+    }
+  },
+  "new_experiment_physical_cost": {
+    "new_model_requests": 254,
+    "live_input_tokens": 924870,
+    "live_output_tokens": 18483,
+    "live_model_seconds": 447.2974530088686
+  },
+  "recorded_scoring": {
+    "offline_script_invocations": 1,
+    "native_judgments": 80,
+    "independent_scoring": 0
+  },
+  "sources": {
+    "baseline_contract/v2/receipt.json": {
+      "sha256": "13c7f63a99b9c63d9bce530366b9d5e8ab790f75579862a5b10045d84cb95b95",
+      "bytes": 9049
+    },
+    "a2_native_parser/receipt.json": {
+      "sha256": "c94d0e513c4542c5f7abb88ceccfc2acfac50bdce915f3d3dd5c6d5ebe851ff0",
+      "bytes": 10145
+    },
+    "trace_attribution/summary.json": {
+      "sha256": "72ed2670affb6db08d82b8a98bd780de09573b87fd691fbc48d18b0011e2dba2",
+      "bytes": 6490
+    },
+    "smoke/negative_diagnosis/decision.json": {
+      "sha256": "cf355b7d1b09f9e65cf215cf49c83f3571c6e6a985a966f2a5188802045c24f8",
+      "bytes": 1337
+    },
+    "smoke/independent_acceptance/receipt.json": {
+      "sha256": "a514b02989494900d00f546f5364a32253c9a94ca7683044ebd3ff303e225e65",
+      "bytes": 7091
+    },
+    "a3_development_preparation/live_acceptance/receipt.json": {
+      "sha256": "2300cfff0408df00f319c2a847a2860454643efc066531ac7543c9b68515a2a6",
+      "bytes": 5786
+    },
+    "a3_smoke_preparation/live_acceptance/independent_review/receipt.json": {
+      "sha256": "cc0668dc3b10055cc7ed5996981cc7eeaa2cd2c9f26f46be61a234cbe197f0c6",
+      "bytes": 25703
+    },
+    "a3_development_preparation/live_acceptance/execution_structure.json": {
+      "sha256": "cd00db0191d713dc0834518e7ebebae4719f132ebb381a319b3d98f0538737e0",
+      "bytes": 7307
+    },
+    "a3_quality_analysis/results/summary.json": {
+      "sha256": "a31e6f029a9dd524b6f10cc55c34c7ce754c8b1d2f7f2818a9076066b0b9b840",
+      "bytes": 9765
+    },
+    "a3_quality_analysis/independent_count_audit.json": {
+      "sha256": "317b978ac0002339997bf36b3784ef164c7927c48ea9cf5769193546e17b69f0",
+      "bytes": 6113
+    },
+    "a3_quality_analysis/results/native_unit_metrics_panel.json": {
+      "sha256": "701c22d1fc305f83fd0247b6bca2b7642314961ffb508edfcef4fbef5279c3e5",
+      "bytes": 46891
+    },
+    "a3_quality_analysis/non_adoption_decision.json": {
+      "sha256": "dbf5ac1b36428fbe153139ab2eca186a68bd07761e719c84293f923ef8f8c9ef",
+      "bytes": 1106
+    },
+    "cost_so_far.json": {
+      "sha256": "2fd57720013755a97d6773eee351de08a8ebee5126934a6abbfd6f2f8a59ddf3",
+      "bytes": 5235
+    },
+    "a3_development_preparation/live_acceptance/full_panel_physical_cost.json": {
+      "sha256": "329d339541ac13b89bbc642902dafd60c02888ac0ceacbe360ca2385d7d6cb14",
+      "bytes": 477
+    },
+    "compact_control/validation.json": {
+      "sha256": "da143c6c1fcf564eecd7e1828a5f8ef1cfb39a611af98b087f0c996555e04f96",
+      "bytes": 2678
+    },
+    "exposure_audit/exposure_ledger.json": {
+      "sha256": "a74e8838c550347967284e20d07922ddd671aa75f3aa3a31f44160c89a3ff57d",
+      "bytes": 4870
+    },
+    "delivery_index.json": {
+      "sha256": "d50154563dc08bb944c746b5b2a04332aa51701d910d3f154dd06f550e22a7b0",
+      "bytes": 5892
+    }
+  },
+  "new_model_calls": 0,
+  "new_native_scoring_calls": 0,
+  "full_patient_or_model_response_files_opened": false,
+  "original_development_gold_opened": false,
+  "independent_samples_or_gold_opened": false,
+  "limitations": [
+    "Source receipt claims were cross-checked; original 242 B value objects were not reopened or compared again.",
+    "Recorded development correctness and unit arithmetic are checked, not independently re-scored.",
+    "A3 48 results include three zero-probe fallbacks; only45 real final generation requests.",
+    "A1 successful fallback availability cannot be presented as expert execution or incremental qualification.",
+    "A3 eight-input/four-nonreference-unit panel cannot replace historical121-input/74-unit main results.",
+    "254 is new physical calls for this revision; historical B/expert costs remain separate; model seconds are not exclusive GPU elapsed time.",
+    "Publication only; no new eligibility, adoption, freeze, or experiment release."
+  ],
+  "precheck_errors": [
+    "First read-only command used unavailable python; exit127 and no Python code ran; corrected to python3."
+  ]
+}

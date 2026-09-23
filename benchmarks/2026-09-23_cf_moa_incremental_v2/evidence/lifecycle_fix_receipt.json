@@ -1,0 +1,107 @@
+{
+  "status": "fixed_and_model_free_validated_live_release_not_rerun",
+  "at": "2026-09-23T14:02:09.221064+08:00",
+  "implementation_revision": "explicit_v1_engine_shutdown_r1",
+  "kind": "engineering_lifecycle_fix_not_method_change",
+  "changed_files": [
+    "cf_moa/evaluation/incremental_runner.py",
+    "cf_moa/tests/test_incremental_lifecycle.py"
+  ],
+  "source_lock": {
+    "/home/data3/txy/cf_moa/evaluation/incremental_runner.py": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+    "/home/data3/txy/cf_moa/tests/test_incremental_lifecycle.py": "f47d1edda1b89d54dec78e6371a7e81224c8e6447a81c02a426a9b4e2c74fb15"
+  },
+  "protected_unchanged": {
+    "/home/data3/txy/cf_moa/agents/a1_delta.py": "ae8f5a30dc5d6549b9794e18558e13a5cc1d741e11524912c7eb758c0c7e6e4a",
+    "/home/data3/txy/cf_moa/controller/incremental.py": "cac81822cfaddb52317478d7039c73a69c1d3a22d18c8ab358164b93bd8cb885",
+    "/home/data3/txy/cf_moa/configs/incremental_v1.json": "f07b6fca05181dc60019cbfff379fd98e6e36577ff93f7447fdf893ce0e71b61",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke_preparation/protocol.json": "3ab468467561278088e55f74bffb2bba96743a8f13ed2e9ba95efacefc460f88",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m4/status.json": "e89ab3f3ef9d7767b15cc389a32cd3a899bc57b3282a561686f4c3c6cf176c83",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m4/plan.json": "e70bfd0052b639d10f59003bf2add662042a64320e18212c0cef4bd00417f758",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m4/proposals.jsonl": "9bf074546582eb21921a6dae945885caa7443b8a5f82c750eb4356cdb5cac39f",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m4/model_calls.jsonl": "d079fdd77458b4e69f376f4bb05f2af91d217bf4886d3e8b5ac7782692a8abeb",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m5/status.json": "bc3d7592d3fd575ef81aff3e5cbe207000d6109104195a6c713f454a6e94ea23",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m5/plan.json": "26228b0dc4ddf23a58a8dc72070a945335c010dec451eee13778bc79ee9079f6",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m5/proposals.jsonl": "51f754f5ec801ba724c654a92bb43b69fe255109709cb8a430b4084c6821e413",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/m5/model_calls.jsonl": "5787258a31c26ffb0b6a7268c9e2c3ca09c64643395170ec446389279ac0d8fd"
+  },
+  "upstream_api": {
+    "status": "passed_no_model_reference_graph_and_real_shutdown_function",
+    "vllm_version": "0.8.5",
+    "installed_source": "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/v1/engine/core_client.py",
+    "installed_source_sha256": "5e6d623e14fc4571e3ddb38ef44d4b88c0521874086abb925743efc129802805",
+    "shutdown_function": {
+      "class_name": "MPClient",
+      "first_line": 457,
+      "last_line": 459,
+      "exact_source": "def shutdown(self):\n        # Terminate background resources.\n        self._finalizer()"
+    },
+    "cleanup_chain": [
+      "MPClient.shutdown -> self._finalizer()",
+      "BackgroundResources.__call__ -> CoreEngine.close -> proc_handle.shutdown",
+      "BackgroundResources also closes/signal-stops ZMQ sockets/output processing"
+    ],
+    "old_before_gc": {
+      "backend_alive": true,
+      "core_alive": true,
+      "finalizations": 0
+    },
+    "old_after_gc": {
+      "backend_alive": false,
+      "core_alive": false,
+      "finalizations": 1
+    },
+    "new_without_gc": {
+      "backend_alive": false,
+      "core_alive": false,
+      "finalizations": 2
+    },
+    "explicit_close": {
+      "first": "engine_shutdown",
+      "second": "already_closed",
+      "finalizations": 3,
+      "llm_released": true
+    },
+    "new_model_calls": 0,
+    "new_model_loads": 0,
+    "gpu_processes_started": 0,
+    "diagnostic_limit": "Confirms the old strong reference cycle delays refcount cleanup and new explicit API executes finalizer once. Original live hang was not stack-profiled; sole causal attribution to the cycle remains an inference. No live new-run shutdown acceptance was attempted."
+  },
+  "tests": {
+    "status": "passed",
+    "count": 35,
+    "new_lifecycle_regressions": 11,
+    "seconds": 0.246,
+    "log": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/lifecycle_fix/unit_final.log"
+  },
+  "diagnosis": {
+    "confirmed": [
+      "Frozen guard closes over the backend and bound core method, creating strong cycles",
+      "Main has no explicit engine shutdown or SQL close",
+      "Installed vLLM0.8.5 MPClient.shutdown invokes the weakref finalizer that releases core workers and IPC",
+      "No-model exact frozen guard remains alive without gc; new weak guard is released by refcounts; real installed shutdown AST finalizes resources exactly once"
+    ],
+    "inferred": "These confirmed lifetime defects are consistent with the completed live parent hanging on child lifetime; no live stack/heap capture proves the unique cause."
+  },
+  "fix": [
+    "Guard stores only a weak owner in its closure and preserves prior transport behavior",
+    "Explicit close restores prior core transport hook, invokes engine_core.shutdown, releases references, and is idempotent after success",
+    "A prior shutdown error remains an error on repeated close",
+    "Actual main finally closes backend and SQLite and records lifecycle.json on success, output stop, or exceptions",
+    "Cleanup failure is separate from inference output status and cannot hide the original execution exception"
+  ],
+  "prior_live_runs": {
+    "completed_model_calls": 28,
+    "completed_input_arm_results": 24,
+    "unchanged": true,
+    "rerun": false,
+    "cleanup_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/lifecycle_cleanup.json",
+    "manual_worker_termination_done_by_parent": true
+  },
+  "new_model_calls": 0,
+  "new_model_tokens": 0,
+  "new_model_loads": 0,
+  "native_rescoring_calls": 0,
+  "gpu_processes_started": 0,
+  "limitation": "No new GPU smoke was run solely to test cleanup. Existing original smoke source/protocol remain frozen and intentionally differ from the future runner hash; regenerate only future protocol identity when independently authorized."
+}

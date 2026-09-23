@@ -1,0 +1,60 @@
+{
+  "variant": "strong_old_native_interface_v2",
+  "state": "built_native_interface_only_not_scored_not_adopted",
+  "unique_rows": 242,
+  "native_valid": 241,
+  "unavailable": 1,
+  "answer_values_preserved": 242,
+  "new_wrapped_scalars_or_lists": 32,
+  "unchanged_existing_native_objects": 210,
+  "old_failure_or_success_identity_rewritten": false,
+  "new_model_calls": 0,
+  "new_native_scoring_calls": 0,
+  "source_bytes_unchanged": true,
+  "methods": {
+    "M4": {
+      "inputs": 121,
+      "denominator": 121,
+      "native_valid": 121,
+      "unavailable": 0,
+      "interface_actions": {
+        "deterministic_execution_summary_wrapper": 16,
+        "unchanged_existing_native_object": 105
+      },
+      "all_existing_native_objects_preserved": true,
+      "all_answer_values_preserved_for_this_method": true,
+      "historical_cost": {
+        "reused_head_model_requests": 420,
+        "reused_head_input_tokens": 1828059,
+        "reused_head_output_tokens": 84395,
+        "reused_head_model_seconds": 1854.6178262869375
+      },
+      "invalid": []
+    },
+    "M5": {
+      "inputs": 121,
+      "denominator": 121,
+      "native_valid": 120,
+      "unavailable": 1,
+      "interface_actions": {
+        "deterministic_execution_summary_wrapper": 16,
+        "unchanged_existing_native_object": 105
+      },
+      "all_existing_native_objects_preserved": true,
+      "all_answer_values_preserved_for_this_method": true,
+      "historical_cost": {
+        "reused_head_model_requests": 419,
+        "reused_head_input_tokens": 1741881,
+        "reused_head_output_tokens": 84025,
+        "reused_head_model_seconds": 2291.4049097769766
+      },
+      "invalid": [
+        {
+          "request_id": "d00050",
+          "failure_type": "baseline_native_schema_invalid"
+        }
+      ]
+    }
+  },
+  "limitation": "Interface validity only;32 execution summaries are deterministic program provenance, not model reasoning. Original answer values and prior score identities are unchanged."
+}

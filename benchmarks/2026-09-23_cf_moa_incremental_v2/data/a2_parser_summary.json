@@ -1,0 +1,55 @@
+{
+  "status": "passed_cached_native_parser_compatibility_only",
+  "request_comparisons": 18,
+  "unique_original_executor_responses": 2,
+  "comparison_replay_callbacks": 4,
+  "new_model_calls": 0,
+  "models_loaded": 0,
+  "native_rescoring_calls": 0,
+  "strict_v1_default_and_failures_preserved": true,
+  "original_sources_unchanged": 37,
+  "actual_model_preflight_passed": false,
+  "historical_model_ingress_bound": true,
+  "costs": {
+    "new_input_tokens": 0,
+    "new_output_tokens": 0,
+    "new_model_seconds": 0,
+    "unique_historical_executor_calls": 2,
+    "historical_executor_input_tokens": 1674,
+    "historical_executor_output_tokens": 6259,
+    "historical_executor_model_seconds": 90.93176145899997,
+    "unique_historical_facts_calls": 2,
+    "historical_facts_input_tokens": 1104,
+    "historical_facts_output_tokens": 318
+  },
+  "limitation": "Two saved smoke responses only. Not a complete 121-input control, no new smoke, no native scoring or method adoption. This replay is not a live acceptance receipt and cannot unlock a batch on its own.",
+  "variant": "same_facts_scoped_reasoned_executor_8192_native_parser_v2",
+  "tests": {
+    "tests": 41,
+    "new_policy_regressions": 8,
+    "status": "passed",
+    "seconds": 1.554
+  },
+  "reports": [
+    {
+      "method": "M4",
+      "request_id": "d00000",
+      "original_strict_status": "complete",
+      "strict_replay_byte_content_identical_except_cost": true,
+      "native_parser_and_assembler_equal": true,
+      "full_input_denominator": 121,
+      "response_replayed": 1,
+      "remaining_not_executed": 120
+    },
+    {
+      "method": "M5",
+      "request_id": "d00000",
+      "original_strict_status": "stopped_on_error",
+      "strict_replay_byte_content_identical_except_cost": true,
+      "native_parser_and_assembler_equal": true,
+      "full_input_denominator": 121,
+      "response_replayed": 1,
+      "remaining_not_executed": 120
+    }
+  ]
+}
