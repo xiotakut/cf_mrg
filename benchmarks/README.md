@@ -1,3 +1,5 @@
+**2026-09-25 · RCV收口计划执行中：[第16章进展报告](2026-09-25_cf_moa_rcv_completion_in_progress/docs/research/cf_moa_experiment_report.md#rcv-completion-in-progress) · [五张开发主表](2026-09-25_cf_moa_rcv_completion_in_progress/data/tables/five_tables.md) · [代码、配置与trace/成本索引](2026-09-25_cf_moa_rcv_completion_in_progress/README.md)。cached/live接线、配对统计、C5及规则操作消融已完成；完整v5正在GPU1/M4、GPU2/M5并行，冻结后确认尚未开始。旧默认B不变；这是进度快照，不是最终效果交付。**
+
 **2026-09-24 · 候选验证新计划已完整执行：[完整报告第15章](2026-09-24_cf_moa_candidate_verification/docs/research/cf_moa_experiment_report.md#candidate-verification-execution) · [运行过程与代码/配置/逐题trace/成本交付](2026-09-24_cf_moa_candidate_verification/RUN_AND_DELIVERY.md)。GPU2/3完成780次真实取分；带理由臂历史121正确88/87、自然52正确35/28（旧B87/82、35/26），有开发选择增益但原生/配对仍有退步，暂不默认采用。公开完整结果、运行时源码、3460逐题状态和780调用元数据；完整病例/SQL留私有。此次发布0新模型/评分，旧版本保持。**
 
 **2026-09-24 · v4诊断补充：[给规划模型的阅读入口](2026-09-24_cf_moa_v4_diagnosis/README.md) · [真实调用链与选择分解](2026-09-24_cf_moa_v4_diagnosis/DIAGNOSTIC_REPORT.md)。公开采用F及被调用源码、运行配置/diff、95组合/285 seed记录的元数据；0新生成，默认B保持。完整原始样本仍为私有附件。**
