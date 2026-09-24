@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-24",
+  "new_model_calls": 0,
+  "new_native_scorer_calls": 0,
+  "source_outputs_changed": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "analysis_script_failed_before_outputs",
+      "error": "KeyError route on unsupported F trace",
+      "resolution": "Use optional route lookup before trigger selection; unsupported rows remain outside F."
+    },
+    {
+      "attempt": 2,
+      "status": "analysis_script_failed_before_outputs",
+      "error": "Assumed old B document_detection always present and equal to saved new field",
+      "resolution": "Inspect exact failing input."
+    },
+    {
+      "attempt": 3,
+      "status": "diagnostic_repeat_of_same_aux_assertion",
+      "error": "natural52 M4 n00001 B document_detection missing, new recorded valid=true exact=false fn=4",
+      "resolution": "Retain absent B metric as unrecorded; compare unchanged errors and same gold, label any implied equality as inference only."
+    },
+    {
+      "attempt": 4,
+      "status": "completed_saved_choices_analysis",
+      "outputs": "95 combinations / 285 seed outcomes; all saved primary scores verified by native key parsing"
+    },
+    {
+      "attempt": 5,
+      "status": "completed_clarified_field_labels_and_compact_csv",
+      "change": "Rename inferred B auxiliary column to if_scored; no model/score calls and no source changes."
+    }
+  ]
+}

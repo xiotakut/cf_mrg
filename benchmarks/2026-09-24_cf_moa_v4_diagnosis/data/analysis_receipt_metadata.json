@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-09-24T02:04:28.094407+08:00",
+  "script_sha256": "91449a4f6da22baf0f8d42ceb275824d2651cbbfb9a15e185b81f60a47da16d3",
+  "source_bytes_unchanged": true,
+  "new_model_calls": 0,
+  "new_native_scorer_calls": 0,
+  "old_head_replays": 0,
+  "reused_native_parser": true,
+  "all_existing_scores_verified_on_trigger_keys": true,
+  "all_seed_scores_reused": true,
+  "online_gold_access": false,
+  "executed_script_sha256": "91449a4f6da22baf0f8d42ceb275824d2651cbbfb9a15e185b81f60a47da16d3",
+  "current_script_sha256": "ac3b2888da388cd0455f75ceb43b2097b49d61b79676bd95958ce38ae7048019",
+  "current_script_changed_after_execution": "Remove unused canonical-label load; no result recomputation. Executed version retained.",
+  "canonical_dependency_exposure": {
+    "loaded": true,
+    "asset": "full canonical_labels.json from original scorer dependency",
+    "purpose": "transitive load_native_scorer dependency; no diagnosis inputs in 95 trigger combinations",
+    "labels_used_for_candidate_selection": false,
+    "queried_by_selected_parser_branch": false,
+    "exported_full_asset": false,
+    "scope": "offline dependency read only; never added to model requests",
+    "future_loader": "Only AST parse and norm; canonical={} with allowed-format assertion"
+  }
+}

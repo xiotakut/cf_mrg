@@ -1,3 +1,5 @@
+**2026-09-24 · v4诊断补充：[给规划模型的阅读入口](2026-09-24_cf_moa_v4_diagnosis/README.md) · [真实调用链与选择分解](2026-09-24_cf_moa_v4_diagnosis/DIAGNOSTIC_REPORT.md)。公开采用F及被调用源码、运行配置/diff、95组合/285 seed记录的元数据；0新生成，默认B保持。完整原始样本仍为私有附件。**
+
 **2026-09-24 · 版本4：[CF-MoA最简复用完整报告第14章](2026-09-24_cf_moa_minimal_v4/docs/research/cf_moa_experiment_report.md#minimal-head-reuse-v4) · [运行过程与交付索引](2026-09-24_cf_moa_minimal_v4/RUN_AND_DELIVERY.md)。等价旧B五操作包装完成；231次新增调用，历史121小幅增益、自然52三seed双骨干均退步，F普通重答未采用。公开有限源码/配置、99项原始索引与公开映射、逐题状态和调用元数据；原完整trace留本地。此次发布0新模型/评分，前3版保留。**
 
 # Benchmark 结果归档

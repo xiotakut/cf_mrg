@@ -1,0 +1,84 @@
+--- runtime/cf_moa/evaluation/effect_first_runner.py
++++ current/cf_moa/evaluation/effect_first_runner.py
+@@ -59,9 +59,27 @@
+ 
+ def method_sources(tasks):
+     paths = [Path(__file__), Path(effect_first.__file__)]
++    if any(task['arm'].startswith('a1_binding_') for task in tasks):
++        from cf_moa.agents import a1_scoped_binding, a1_retrieved_evidence, a1_support_completion
++        from cf_moa import contracts
++        from cf_moa.tools import adapters
++        paths.extend(Path(module.__file__) for module in (
++            a1_scoped_binding, a1_retrieved_evidence, a1_support_completion, contracts, adapters))
+     if any(task['arm'].startswith('a5_') for task in tasks):
+         from cf_moa.agents import a5_premise
+         paths.append(Path(a5_premise.__file__))
++    if any(task['arm'].startswith('a1_target_') for task in tasks):
++        from cf_moa.agents import a1_target_evidence
++        paths.append(Path(a1_target_evidence.__file__))
++    if any(task['arm'].startswith('a3_original_') for task in tasks):
++        from cf_moa.agents import a3_original_compare
++        paths.append(Path(a3_original_compare.__file__))
++    if any(task['arm'].startswith('a1_search_') for task in tasks):
++        from cf_moa.agents import a1_retrieved_evidence
++        paths.append(Path(a1_retrieved_evidence.__file__))
++        if any(task['arm'] != 'a1_search_query' and task['arm'].startswith('a1_search_') for task in tasks):
++            from cf_moa.agents import a1_retrieved_evidence_answers
++            paths.append(Path(a1_retrieved_evidence_answers.__file__))
+     return {str(path): sha256(path) for path in paths}
+ 
+ 
+@@ -89,15 +107,52 @@
+             if task['arm'] == 'baseline':
+                 result = dict(native_answer=base['native_answer'], native_valid=base['native_valid'],
+                               warnings=[], decision='saved_B', cost=session.cost_since())
++            elif task['arm'].startswith('a1_binding_'):
++                from cf_moa.agents import a1_scoped_binding
++                support = None
++                if task['arm'] == 'a1_binding_verdict_only':
++                    source_key = task.get('support_source_task')
++                    source = journal.output(source_key) if source_key else None
++                    if (not source or source.get('arm') != 'a1_binding_scoped'
++                            or source.get('method') != method
++                            or source.get('request_id') != packet.request_id
++                            or source.get('input_hash') != packet.input_hash
++                            or source.get('base_answer_ref') != base['base_answer_ref']):
++                        raise JournalConflict('Missing or mismatched prior scoped proposal task: '+str(source_key))
++                    support = source.get('result')
++                try:
++                    result = a1_scoped_binding.run(packet, session, base['native_answer'],
++                        arm=task['arm'], target=target, saved_proposal=proposal,
++                        support_result=support, config=config)
++                except a1_scoped_binding.SupportBindingError as error:
++                    raise JournalConflict(str(error)) from error
++                if task['arm'] == 'a1_binding_verdict_only':
++                    result['trace']['support_source_task'] = task['support_source_task']
++            elif task['arm'].startswith('a1_search_'):
++                from cf_moa.agents import a1_retrieved_evidence
++                if task['arm'] == 'a1_search_query':
++                    result = a1_retrieved_evidence.run_query(packet, session, base['native_answer'], config=config)
++                else:
++                    from cf_moa.agents import a1_retrieved_evidence_answers
++                    result = a1_retrieved_evidence_answers.run(packet, session, base['native_answer'],
++                        arm=task['arm'], target=target, saved_proposal=proposal, config=config)
+             elif task['arm'].startswith('a5_'):
+                 from cf_moa.agents import a5_premise
+                 result = a5_premise.run(packet, session, base['native_answer'],
+                                        proposal, control=task['arm'] == 'a5_reanswer', config=config)
++            elif task['arm'].startswith(('a1_target_', 'a3_original_')):
++                if task['arm'].startswith('a1_target_'):
++                    from cf_moa.agents import a1_target_evidence as operation
++                else:
++                    from cf_moa.agents import a3_original_compare as operation
++                result = operation.run(packet, session, base['native_answer'],
++                    control=task['arm'].endswith('_reanswer'), target=target,
++                    saved_proposal=proposal, config=config)
+             else:
+                 result = effect_first.run(packet, session, base['native_answer'], task['arm'],
+                     saved_proposal=proposal, target=target, config=config)
+             backend.finish_item()
+-            available = bool(result.get('target')) if task['arm'] == 'target_select' else result.get('native_valid', True)
++            available = bool(result.get('target')) if task['arm'] in ('target_select', 'a1_search_query') else result.get('native_valid', True)
+             record = dict(status='complete' if available else 'unavailable', result=result)
+         except Exception as error:
+             journal.stop(key, error, backend.ordinal)

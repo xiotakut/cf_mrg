@@ -1,0 +1,17 @@
+--- runtime/cf_moa/tools/adapters.py
++++ current/cf_moa/tools/adapters.py
+@@ -58,11 +58,13 @@
+         finally:
+             record['callback_seconds'] = time.monotonic() - started
+ 
+-    def generate(self, messages, schema, seed=42, temperature=0, max_tokens=2048, *, stage='generate', decoding_revision=None):
++    def generate(self, messages, schema, seed=42, temperature=0, max_tokens=2048, *, stage='generate', decoding_revision=None, reference_max_start=None):
+         request = dict(messages=messages, schema=schema, seed=seed,
+             temperature=temperature, max_tokens=max_tokens, kind='generate')
+         if decoding_revision is not None:
+             request['decoding_revision'] = decoding_revision
++        if reference_max_start is not None:
++            request['reference_max_start'] = reference_max_start
+         return self.invoke(request, stage=stage)
+ 
+     def generate_adopted(self, messages, schema, adopted, *, stage):

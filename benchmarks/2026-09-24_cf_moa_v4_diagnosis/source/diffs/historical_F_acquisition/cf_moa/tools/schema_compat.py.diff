@@ -1,0 +1,35 @@
+--- runtime/cf_moa/tools/schema_compat.py
++++ current/cf_moa/tools/schema_compat.py
+@@ -1,4 +1,4 @@
+-"""V1 compatibility guidance and separately registered V2 bounded guidance.
++"""Exact compatibility guidance and separately registered bounded guidance.
+ 
+ The V1 logical schema stays unchanged. V2 is an explicitly new method contract.
+ """
+@@ -46,7 +46,17 @@
+     return '\n'.join(lines) + '\n'
+ 
+ 
+-def guidance(schema, guided_class, *, decoding_revision=None):
++def guidance(schema, guided_class, *, decoding_revision=None, reference_max_start=None):
++    from cf_moa.tools.single_agent_tools import ARGUMENT_DECODER, argument_grammar
++    if decoding_revision == ARGUMENT_DECODER:
++        if reference_max_start is not None:
++            raise SchemaCompatibilityError('Tool argument decoding does not use reference offsets')
++        return guided_class(grammar=argument_grammar(schema),backend='xgrammar')
++    from cf_moa.tools.a5_structural_grammar import REVISION as a5_revision, grammar as a5_grammar
++    if decoding_revision == a5_revision:
++        return guided_class(grammar=a5_grammar(schema,reference_max_start),backend='xgrammar')
++    if reference_max_start is not None:
++        raise SchemaCompatibilityError('A source-offset bound requires the registered A5 decoder')
+     from cf_moa.controller.evidence_highlighting import is_highlight_schema
+     if is_highlight_schema(schema):
+         if decoding_revision != 'bounded_highlight_whitespace_v1':
+@@ -72,4 +82,7 @@
+     if is_a1_coverage(schema):
+         return guided_class(grammar=bounded_a1_grammar(json.dumps(schema, ensure_ascii=False)),
+                             backend='xgrammar')
++    from cf_moa.tools.a3_edit_grammar import is_editor_schema, grammar as editor_grammar
++    if is_editor_schema(schema):
++        return guided_class(grammar=editor_grammar(schema), backend='xgrammar')
+     return guided_class(json=schema, backend='xgrammar')

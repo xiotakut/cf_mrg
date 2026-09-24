@@ -1,0 +1,88 @@
+--- runtime/cf_moa/evaluation/native_runner.py
++++ current/cf_moa/evaluation/native_runner.py
+@@ -11,7 +11,7 @@
+ from cf_moa.agents import a1_bounded_coverage as a1_v2
+ from cf_moa.agents import a1_relational_coverage as a1_r3
+ from cf_moa.agents import a1_coded_coverage as a1_r5
+-from cf_moa.controller import native_sampling, evidence_highlighting, single_agent_tools
++from cf_moa.controller import native_sampling, evidence_highlighting, single_agent_tools, a2_controls
+ from cf_moa.contracts import Budget,InputPacket
+ from cf_moa.evaluation.a4_repair import dump
+ from cf_moa.evaluation.journal import RunJournal,JournalBackend,JournalConflict,UnresolvedCall
+@@ -41,6 +41,9 @@
+     if expert=='A3_edit':return a3.run(packet,session,method=method,arm='bounded_edit')
+     if expert=='A4':return a4.run(packet,session,method=method)
+     if expert=='A5':return a5.run_views(packet,session)
++    if expert=='A5_structural_compat':
++        from cf_moa.tools.a5_structural_grammar import REVISION
++        return a5.run_views(packet,session,decoding_revision=REVISION)
+     if expert=='F':return a5.run_legacy(packet,session)
+     raise ValueError('Unknown independent expert')
+ 
+@@ -67,6 +70,18 @@
+     """Contract/binding outcomes, without consulting gold or changing the head."""
+     if proposal.applicability=='unsupported':
+         return dict(output_schema_invalid=False,semantic_invalid=False,coverage_incomplete=False)
++    if proposal.variant in (a2_controls.EXECUTOR_VARIANT, a2_controls.NATIVE_EXECUTOR_VARIANT):
++        trace=proposal.trace
++        return dict(output_schema_invalid=trace['schema_invalid'] or proposal.native_proposal is None,
++            semantic_invalid=trace['semantic_invalid'],coverage_incomplete=False,
++            semantic_result=trace['semantic_result'],method_score='not_scored',
++            inference_started=trace['inference_started'],failure_type=trace.get('failure_type'))
++    if proposal.variant==a3.EDIT_VARIANT:
++        trace=proposal.trace
++        return dict(output_schema_invalid=trace['schema_invalid'],
++            semantic_invalid=trace['semantic_invalid'],coverage_incomplete=False,
++            semantic_result=trace['semantic_result'],method_score='not_scored',
++            inference_started=trace['inference_started'],failure_type=trace.get('failure_type'))
+     if proposal.variant==single_agent_tools.VARIANT:
+         trace=proposal.trace
+         return dict(output_schema_invalid=trace['schema_invalid'],semantic_invalid=trace['semantic_invalid'],
+@@ -91,7 +106,7 @@
+         coverage_incomplete=bool(trace.get('missing_candidates')))
+ 
+ 
+-def run_packets(expert,method,packets,backend,journal,output):
++def run_packets(expert,method,packets,backend,journal,output,*,operation=None,session_factory=ModelSession):
+     """Single in-flight callback; latch first runtime error before another item."""
+     started=time.monotonic()
+     for p in packets:
+@@ -101,9 +116,9 @@
+             break
+         had_calls=journal.count(p.request_id)>0
+         backend.begin_item(p.request_id)
+-        session=ModelSession(p,backend);before=time.monotonic()
++        session=session_factory(p,backend);before=time.monotonic()
+         try:
+-            proposal=execute(expert,p,session,method)
++            proposal=(operation or execute)(expert,p,session,method)
+             if backend.unresolved:raise backend.unresolved
+             backend.finish_item()
+             proposal.cost.update(journal.cost(p.request_id))
+@@ -161,7 +176,7 @@
+ 
+ def main():
+     parser=argparse.ArgumentParser()
+-    parser.add_argument('--expert',choices=['A1','A1_v2','A1_v2_system','A1_v2_explicit','A1_v2_relational','A1_v2_whitespace','A1_v2_codes','native_sampling','A1_resource_control','A1_highlight_control','same_tools_single_agent','A2','A3','A3_edit','A4','A5','F'],required=True)
++    parser.add_argument('--expert',choices=['A1','A1_v2','A1_v2_system','A1_v2_explicit','A1_v2_relational','A1_v2_whitespace','A1_v2_codes','native_sampling','A1_resource_control','A1_highlight_control','same_tools_single_agent','A2','A3','A3_edit','A4','A5','A5_structural_compat','F'],required=True)
+     parser.add_argument('--method',choices=['M4','M5'],required=True)
+     parser.add_argument('--inputs',type=Path,required=True)
+     parser.add_argument('--output',type=Path,required=True)
+@@ -176,13 +191,15 @@
+     packets=load_packets(args.inputs)
+     role={'A1':'readout','A1_v2':'readout','A1_v2_system':'readout','A1_v2_explicit':'readout','A1_resource_control':'readout',
+           'A1_v2_relational':'readout','A1_v2_whitespace':'readout','A1_v2_codes':'readout','native_sampling':'readout','A1_highlight_control':'readout','same_tools_single_agent':'readout',
+-          'A2':'facts','A3':'catalog','A3_edit':'readout','A5':'readout','F':'readout'}.get(args.expert,'a4')
++          'A2':'facts','A3':'catalog','A3_edit':'readout','A5':'readout','A5_structural_compat':'readout','F':'readout'}.get(args.expert,'a4')
+     selected=a4_adopted(args.method) if role=='a4' else profile(args.method,role)
+     plan=dict(expert=args.expert,method=args.method,input_file_sha256=sha256(args.inputs),
+         input_hashes={p.request_id:p.input_hash for p in packets},config=selected.config,
+         config_source=selected.source,code_lock=code_lock(),
+         origin_manifest=dict(path=str(args.origin_manifest),sha256=sha256(args.origin_manifest)) if args.origin_manifest else None,
+-        experimental_policy=prototype() if args.expert in ('A1','A3_edit','A5') else None,
++        experimental_policy=prototype() if args.expert in ('A1','A3_edit','A5','A5_structural_compat') else None,
++        a5_structural_policy=json.loads((Path(__file__).resolve().parents[1]/'configs/a5_structural_compat.json').read_text())
++            if args.expert=='A5_structural_compat' else None,
+         a1_v2_policy=a1_v2.config() if args.expert in ('A1_v2','A1_v2_system','A1_v2_explicit','A1_resource_control') else None,
+         relational_policy=a1_r3.config() if args.expert in ('A1_v2_relational','A1_v2_whitespace') else None,
+         coded_policy=a1_r5.config() if args.expert=='A1_v2_codes' else None,

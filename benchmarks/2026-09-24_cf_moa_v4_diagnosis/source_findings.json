@@ -1,0 +1,81 @@
+{
+  "status": "source_export_complete_limited_static_review",
+  "new_model_calls": 0,
+  "replay_calls": 0,
+  "native_scoring_calls": 0,
+  "method_modified": false,
+  "confirmed_code_problems": [],
+  "confirmed_code_behaviors": [
+    {
+      "id": "replacement_not_ensemble",
+      "location": "cf_moa/agents/a5_premise.py:144",
+      "finding": "Triggered ordinary reanswer replaces answer_choice and explanation; all other complete F fields retained. No reaggregation or second judge.",
+      "classification": "planned_method_contract_not_unintended_bug"
+    },
+    {
+      "id": "nli_semantic_instruction_difference",
+      "location": [
+        "r5_head.py:15",
+        "r5_head.py:122",
+        "a5_premise.py:52"
+      ],
+      "finding": "F appends exact current NLI question and RULE defining entire-hypothesis entailment; ordinary control appends generic question answering plus intact legal data, but not the F-specific RULE/current-question wrapper. Original context remains intact.",
+      "classification": "verified_prompt_difference_causal_effect_unproven"
+    },
+    {
+      "id": "label_normalization",
+      "location": "r5_head.py:132",
+      "finding": "Each A/B score vector is finite-checked, peak-subtracted softmaxed, mapped back by displayed names, and averaged. No source/gold key used; tie order follows native key order.",
+      "classification": "static_logic_inspected_no_mapping_bug_identified"
+    },
+    {
+      "id": "ordinary_full_vote",
+      "location": "r5_head.py:52",
+      "finding": "Exact JSON/native key vote; three identical keys stops; tie earliest sample; returned native response is entire selected raw sample.",
+      "classification": "existing_F_contract"
+    },
+    {
+      "id": "auxiliary_retention",
+      "location": "a5_premise.py:147",
+      "finding": "New answer can retain prior errors/auxiliary values, as predeclared. Any semantic mismatch between changed answer and old auxiliary values requires actual sample review.",
+      "classification": "possible_cross_field_mechanism_not_confirmed_bug"
+    },
+    {
+      "id": "disagreement_trigger",
+      "location": "a5_premise.py:22",
+      "finding": "At least two distinct semantic keys among existing F predictions triggers; no confidence/net-benefit computation, no gold."
+    },
+    {
+      "id": "separate_scoring",
+      "location": "cf_moa/evaluation/native_scoring.py:30",
+      "finding": "Answer key scored by unchanged AST-loaded native parse/score; robustness errors are separately measured. No gold import in the F inference branch."
+    }
+  ],
+  "source_version_checks": {
+    "old_F_run_legacy_AST_equal_current": true,
+    "cycle1_seed42_a5_execute_branch_AST_equal_v4": true,
+    "cycle1_and_v4_a5_premise_hash": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+    "all_actual_diffs_attached": true,
+    "code_was_executed_in_review": false
+  },
+  "mechanism_hypotheses_needing_samples": [
+    "Replacing an existing multi-path aggregate by one fresh answer may discard a correct selection; count actual repair/harm before attributing cause.",
+    "A generic reanswer may interpret NLI positive/negative differently without the old appended entailment definition; look for actual relation/entailment readings, not just changed labels.",
+    "Retained auxiliary errors may remain appropriate or conflict with a changed answer; do not infer inconsistency from a field being retained.",
+    "NLI score-distribution winners and generated full-native response votes are different objects; do not sum them as equal independent samples."
+  ],
+  "still_unknown": [
+    "No static source review alone determines actual medical fact misreading or causal reason for a repair/harm.",
+    "Historical file locks do not cover every dynamically imported dependency or tokenizer metadata file; per-file limitations remain explicit.",
+    "Missing-code singleton score fallback is allowed in the old backend, but whether it occurred in the selected sample set and how vLLM returned its scores must be read from the existing physical logs; no fresh experiment launched.",
+    "A minimal next experiment remains to be decided from the exported sample decomposition; no automatic prompt or seed grid."
+  ],
+  "export_preparation_correction": {
+    "unused_import_chain_removed_files": 40,
+    "canonical_labels_full_asset_removed": true,
+    "reason": "User requested actual minimal F call chain and gold only for selected95; diagnostic canonical branch irrelevant.",
+    "original_files_untouched": true,
+    "removed_content_used_for_analysis_or_inference": false,
+    "removal_audit": "source_manifest.json/preparation_excluded_files"
+  }
+}

@@ -1,0 +1,14 @@
+--- runtime/cf_moa/tools/native_backend.py
++++ current/cf_moa/tools/native_backend.py
+@@ -76,8 +76,9 @@
+             if request.get('schema') is not None:
+                 # F explicitly guides when a schema is provided, including Qwen.
+                 options['guided_decoding']=guidance(request['schema'],self.Guided,
+-                    decoding_revision=request.get('decoding_revision'))
+-            elif request.get('decoding_revision') is not None:
++                    decoding_revision=request.get('decoding_revision'),
++                    reference_max_start=request.get('reference_max_start'))
++            elif request.get('decoding_revision') is not None or request.get('reference_max_start') is not None:
+                 raise ValueError('A decoding revision cannot be used without its output schema')
+             params=self.SamplingParams(**options)
+         length=len(self.tokenizer.encode(prompt))

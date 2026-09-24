@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-09-23T13:42:23.176635+08:00",
+  "variant": "strong_old_native_interface_v2",
+  "state": "built_native_interface_only_not_scored_not_adopted",
+  "methods": {
+    "M4": {
+      "method": "M4",
+      "variant": "strong_old_native_interface_v2",
+      "inputs": 121,
+      "denominator": 121,
+      "native_valid": 121,
+      "unavailable": 0,
+      "interface_actions": {
+        "deterministic_execution_summary_wrapper": 16,
+        "unchanged_existing_native_object": 105
+      },
+      "all_existing_native_objects_preserved": true,
+      "invalid": [],
+      "new_model_calls": 0,
+      "new_native_scoring_calls": 0,
+      "legacy_callbacks_reexecuted": 0,
+      "historical_cost": {
+        "reused_head_model_requests": 420,
+        "reused_head_input_tokens": 1828059,
+        "reused_head_output_tokens": 84395,
+        "reused_head_model_seconds": 1854.6178262869375
+      },
+      "wrapper_CPU_seconds_not_model_latency": true,
+      "source_input": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl",
+        "sha256": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395"
+      },
+      "proposals": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl",
+        "sha256": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143"
+      },
+      "original_complete_results": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/original_complete_results.jsonl",
+        "sha256": "6fd974f6efadadfa4af9eae37adf4e19d0e65111cb47a028d7c1c55d18049f69"
+      },
+      "scope": "New native interface validity only; historical correctness and method score not changed or recomputed",
+      "all_answer_values_preserved_for_this_method": true
+    },
+    "M5": {
+      "method": "M5",
+      "variant": "strong_old_native_interface_v2",
+      "inputs": 121,
+      "denominator": 121,
+      "native_valid": 120,
+      "unavailable": 1,
+      "interface_actions": {
+        "deterministic_execution_summary_wrapper": 16,
+        "unchanged_existing_native_object": 105
+      },
+      "all_existing_native_objects_preserved": true,
+      "invalid": [
+        {
+          "request_id": "d00050",
+          "failure_type": "baseline_native_schema_invalid",
+          "failure_detail": {
+            "validator": "enum",
+            "path": [
+              "answer_choice"
+            ],
+            "schema_path": [
+              "properties",
+              "answer_choice",
+              "enum"
+            ],
+            "message": "['D. None of the above'] is not one of [['A'], ['B'], ['C'], ['D'], ['E'], ['A', 'B'], ['A', 'C'], ['A', 'D'], ['A', 'E'], ['B', 'C'], ['B', 'D'], ['B', 'E'], ['C', 'D'], ['C', 'E'], ['D', 'E'], ['A', 'B', 'C'], ['A', 'B', 'D'], ['A', 'B', 'E'], ['A', 'C', 'D'], ['A', 'C', 'E'], ['A', 'D', 'E'], ['B', 'C', 'D'], ['B', 'C', 'E'], ['B', 'D', 'E'], ['C', 'D', 'E'], ['A', 'B', 'C', 'D'], ['A', 'B', 'C', 'E'], ['A', 'B', 'D', 'E'], ['A', 'C', 'D', 'E'], ['B', 'C', 'D', 'E'], ['A', 'B', 'C', 'D', 'E']]"
+          }
+        }
+      ],
+      "new_model_calls": 0,
+      "new_native_scoring_calls": 0,
+      "legacy_callbacks_reexecuted": 0,
+      "historical_cost": {
+        "reused_head_model_requests": 419,
+        "reused_head_input_tokens": 1741881,
+        "reused_head_output_tokens": 84025,
+        "reused_head_model_seconds": 2291.4049097769766
+      },
+      "wrapper_CPU_seconds_not_model_latency": true,
+      "source_input": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl",
+        "sha256": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e"
+      },
+      "proposals": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl",
+        "sha256": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1"
+      },
+      "original_complete_results": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/original_complete_results.jsonl",
+        "sha256": "c345a2e9afe24b1dc98ebe62b1de1a8644ecf1d03081c25d7ccd878023c38de3"
+      },
+      "scope": "New native interface validity only; historical correctness and method score not changed or recomputed",
+      "all_answer_values_preserved_for_this_method": true
+    }
+  },
+  "unique_rows": 242,
+  "native_valid": 241,
+  "unavailable": 1,
+  "answer_values_preserved": 242,
+  "new_wrapped_scalars_or_lists": 32,
+  "unchanged_existing_native_objects": 210,
+  "old_failure_or_success_identity_rewritten": false,
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/plan.json": "99747501d61b7f59f21f010fc861b3e0940ae05b5a598d49ea028e9f691c9332",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/status.json": "0a685357155f0a81510782c07d4c05bb56d6951a7a80a9af8c2f74a2ab8e094e",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/proposals.jsonl": "4899eb04ed0a1c52b780f3a0474c2f326ed7978d2226e01df2f8a9868c296d57",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/legacy_dispatch_reuse/m4/proposals.jsonl": "f2127a8d8a1ccba6568bbe4a0c9da9cc8602526cbaa7e211ca8457435b237da0",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/proposals.jsonl": "895adfd43bc14a33091a9b616499b088045a430da6c5e61717fd6496f0e0a743",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5/plan.json": "0c214801bed7d2d63d97be7141d4afd7f2d94aa528bf40f5604285dabc0f7f1b",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5/status.json": "3ab079551bb7097a8d40cf5134b9ecb91a056c3efe7d62510f5c1d36dde1e30c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m5/proposals.jsonl": "d3c98d9f6d4bcaa232a00021e822cbff5df1e452b3ee1b80bb67c0846970606b",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/legacy_dispatch_reuse/m5/proposals.jsonl": "5da1c42da8cfc6986e82374d6f548316dd97b83b00ac3994a701fd2b91bd2e55",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m5/proposals.jsonl": "dbf2748f286d3e1da38956f928355373f66b5f8102246ff020759ba84a49f816"
+  },
+  "source_bytes_unchanged": true,
+  "implementation": {
+    "/home/data3/txy/cf_moa/controller/baseline_native.py": "2d26eea9e1e6db696af3690f76256e151899bdc250829893924f746c5bb68cae",
+    "/home/data3/txy/cf_moa/tests/test_baseline_native.py": "6dc91f6e2572a099fdcdb352e983ede784cea09bbe4b81c0c6a1c63071264384",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/build_v2.py": "64fe06048a2875854e5739ce0f9ba7880d6a63c573b7ef47cec38d9f1d6a740d"
+  },
+  "new_model_calls": 0,
+  "new_native_scoring_calls": 0,
+  "new_tokenizer_calls": 0,
+  "sqlite_connections": 0,
+  "elapsed_CPU_seconds": 1.688031580997631,
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 /home/data3/txy/MedRGAG/.venv/bin/python -m unittest cf_moa.tests.test_baseline_native -v",
+    "outcome": "8 tests passed",
+    "elapsed_seconds": 0.02,
+    "tool_exit_code": 0
+  },
+  "preparation_errors": [
+    "Read-only inspection attempted nonexistent evaluation/strong_old_heads.py and evaluation/packets.py; actual strong_legacy_control.py and native_runner.load_packets located.",
+    "Read-only development_manifest.json lookup absent; actual cpu_preparation/development/inference/{m4,m5}.jsonl located and original input SHA verified."
+  ],
+  "interpretation": "New B interface supplies deterministic program provenance summaries for32 values. It neither fabricates medical reasoning nor retroactively repairs/scorers historical results. M5d00050 original invalid object stays unavailable for new native interface.",
+  "delivery_metadata_correction": {
+    "change": "Rename mistaken all_242_answer_values_preserved_for_this_method flag to all_answer_values_preserved_for_this_method; each method denominator is121; global242 unchanged",
+    "builder_before_sha256": "1616c0f84befa9df844dde59cdb47a64df288f2693cc836257ca72b65f336768",
+    "builder_after_sha256": "64fe06048a2875854e5739ce0f9ba7880d6a63c573b7ef47cec38d9f1d6a740d",
+    "output_rows_changed": false,
+    "experiment_code_changed": false,
+    "tests_rerun": false
+  }
+}

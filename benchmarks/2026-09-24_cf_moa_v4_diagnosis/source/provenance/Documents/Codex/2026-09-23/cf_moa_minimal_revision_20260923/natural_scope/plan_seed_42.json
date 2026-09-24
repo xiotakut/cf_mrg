@@ -1,0 +1,772 @@
+{
+  "version": "minimal_natural_F_ordinary_reanswer_v1",
+  "seed": 42,
+  "generation": {
+    "seed": 42,
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "per_task_budget": {
+    "max_model_requests": 2,
+    "max_input_tokens": 400000,
+    "max_output_tokens": 1024,
+    "max_tool_calls": 4
+  },
+  "panel_ids": [
+    "n00000",
+    "n00001",
+    "n00002",
+    "n00003",
+    "n00004",
+    "n00005",
+    "n00006",
+    "n00007",
+    "n00008",
+    "n00009",
+    "n00010",
+    "n00011",
+    "n00012",
+    "n00013",
+    "n00014",
+    "n00015",
+    "n00016",
+    "n00017",
+    "n00018",
+    "n00019",
+    "n00020",
+    "n00021",
+    "n00022",
+    "n00023",
+    "n00024",
+    "n00025",
+    "n00026",
+    "n00027",
+    "n00028",
+    "n00029",
+    "n00030",
+    "n00031",
+    "n00032",
+    "n00033",
+    "n00034",
+    "n00035",
+    "n00036",
+    "n00037",
+    "n00038",
+    "n00039",
+    "n00040",
+    "n00041",
+    "n00042",
+    "n00043",
+    "n00044",
+    "n00045",
+    "n00046",
+    "n00047",
+    "n00048",
+    "n00049",
+    "n00050",
+    "n00051"
+  ],
+  "methods": {
+    "M4": {
+      "inputs": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/inference/m4_inputs.jsonl",
+      "inputs_sha256": "35d064fb34fe03e67337ef72059d50cc1d6e9d18387c524b487386855ea792d1",
+      "bases": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/inference/m4_bases.jsonl",
+      "bases_sha256": "f1801779d7e7123a79c36e569a6e248d7a2917943de3a7f2a966dfe03fa596b3",
+      "proposals": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/inference/m4_proposals.jsonl",
+      "proposals_sha256": "852653a89f014a4545ef3181e6e9d7f23f33209dc9dba33b54e254b8d6ed0425",
+      "tasks": [
+        {
+          "task_id": "n00000:a5_reanswer",
+          "request_id": "n00000",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00000:F"
+        },
+        {
+          "task_id": "n00001:a5_reanswer",
+          "request_id": "n00001",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00001:F"
+        },
+        {
+          "task_id": "n00002:a5_reanswer",
+          "request_id": "n00002",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00002:F"
+        },
+        {
+          "task_id": "n00003:a5_reanswer",
+          "request_id": "n00003",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00003:F"
+        },
+        {
+          "task_id": "n00004:a5_reanswer",
+          "request_id": "n00004",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00004:F"
+        },
+        {
+          "task_id": "n00005:a5_reanswer",
+          "request_id": "n00005",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00005:F"
+        },
+        {
+          "task_id": "n00006:a5_reanswer",
+          "request_id": "n00006",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00006:F"
+        },
+        {
+          "task_id": "n00007:a5_reanswer",
+          "request_id": "n00007",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00007:F"
+        },
+        {
+          "task_id": "n00008:a5_reanswer",
+          "request_id": "n00008",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00008:F"
+        },
+        {
+          "task_id": "n00009:a5_reanswer",
+          "request_id": "n00009",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00009:F"
+        },
+        {
+          "task_id": "n00010:a5_reanswer",
+          "request_id": "n00010",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00010:F"
+        },
+        {
+          "task_id": "n00011:a5_reanswer",
+          "request_id": "n00011",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00011:F"
+        },
+        {
+          "task_id": "n00012:a5_reanswer",
+          "request_id": "n00012",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00012:F"
+        },
+        {
+          "task_id": "n00013:a5_reanswer",
+          "request_id": "n00013",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00013:F"
+        },
+        {
+          "task_id": "n00014:a5_reanswer",
+          "request_id": "n00014",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00014:F"
+        },
+        {
+          "task_id": "n00015:a5_reanswer",
+          "request_id": "n00015",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00015:F"
+        },
+        {
+          "task_id": "n00016:a5_reanswer",
+          "request_id": "n00016",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00016:F"
+        },
+        {
+          "task_id": "n00017:a5_reanswer",
+          "request_id": "n00017",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00017:F"
+        },
+        {
+          "task_id": "n00018:a5_reanswer",
+          "request_id": "n00018",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00018:F"
+        },
+        {
+          "task_id": "n00019:a5_reanswer",
+          "request_id": "n00019",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00019:F"
+        },
+        {
+          "task_id": "n00020:a5_reanswer",
+          "request_id": "n00020",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00020:F"
+        },
+        {
+          "task_id": "n00021:a5_reanswer",
+          "request_id": "n00021",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00021:F"
+        },
+        {
+          "task_id": "n00022:a5_reanswer",
+          "request_id": "n00022",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00022:F"
+        },
+        {
+          "task_id": "n00023:a5_reanswer",
+          "request_id": "n00023",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00023:F"
+        },
+        {
+          "task_id": "n00024:a5_reanswer",
+          "request_id": "n00024",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00024:F"
+        },
+        {
+          "task_id": "n00025:a5_reanswer",
+          "request_id": "n00025",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00025:F"
+        },
+        {
+          "task_id": "n00026:a5_reanswer",
+          "request_id": "n00026",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00026:F"
+        },
+        {
+          "task_id": "n00027:a5_reanswer",
+          "request_id": "n00027",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00027:F"
+        },
+        {
+          "task_id": "n00028:a5_reanswer",
+          "request_id": "n00028",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00028:F"
+        },
+        {
+          "task_id": "n00029:a5_reanswer",
+          "request_id": "n00029",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00029:F"
+        },
+        {
+          "task_id": "n00030:a5_reanswer",
+          "request_id": "n00030",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00030:F"
+        },
+        {
+          "task_id": "n00031:a5_reanswer",
+          "request_id": "n00031",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00031:F"
+        },
+        {
+          "task_id": "n00032:a5_reanswer",
+          "request_id": "n00032",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00032:F"
+        },
+        {
+          "task_id": "n00033:a5_reanswer",
+          "request_id": "n00033",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00033:F"
+        },
+        {
+          "task_id": "n00034:a5_reanswer",
+          "request_id": "n00034",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00034:F"
+        },
+        {
+          "task_id": "n00035:a5_reanswer",
+          "request_id": "n00035",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00035:F"
+        },
+        {
+          "task_id": "n00036:a5_reanswer",
+          "request_id": "n00036",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00036:F"
+        },
+        {
+          "task_id": "n00037:a5_reanswer",
+          "request_id": "n00037",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00037:F"
+        },
+        {
+          "task_id": "n00038:a5_reanswer",
+          "request_id": "n00038",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00038:F"
+        },
+        {
+          "task_id": "n00039:a5_reanswer",
+          "request_id": "n00039",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00039:F"
+        },
+        {
+          "task_id": "n00040:a5_reanswer",
+          "request_id": "n00040",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00040:F"
+        },
+        {
+          "task_id": "n00041:a5_reanswer",
+          "request_id": "n00041",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00041:F"
+        },
+        {
+          "task_id": "n00042:a5_reanswer",
+          "request_id": "n00042",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00042:F"
+        },
+        {
+          "task_id": "n00043:a5_reanswer",
+          "request_id": "n00043",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00043:F"
+        },
+        {
+          "task_id": "n00044:a5_reanswer",
+          "request_id": "n00044",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00044:F"
+        },
+        {
+          "task_id": "n00045:a5_reanswer",
+          "request_id": "n00045",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00045:F"
+        },
+        {
+          "task_id": "n00046:a5_reanswer",
+          "request_id": "n00046",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00046:F"
+        },
+        {
+          "task_id": "n00047:a5_reanswer",
+          "request_id": "n00047",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00047:F"
+        },
+        {
+          "task_id": "n00048:a5_reanswer",
+          "request_id": "n00048",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00048:F"
+        },
+        {
+          "task_id": "n00049:a5_reanswer",
+          "request_id": "n00049",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00049:F"
+        },
+        {
+          "task_id": "n00050:a5_reanswer",
+          "request_id": "n00050",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00050:F"
+        },
+        {
+          "task_id": "n00051:a5_reanswer",
+          "request_id": "n00051",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00051:F"
+        }
+      ],
+      "profile": {
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 131072,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "batch_size": 16,
+        "guided_json": true,
+        "num_shards": 1,
+        "model_kwargs": {
+          "num_gpu_blocks_override": 16384
+        }
+      }
+    },
+    "M5": {
+      "inputs": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/inference/m5_inputs.jsonl",
+      "inputs_sha256": "37ab8dad984db617ffc3e953e3160dd55cb5235836000210f1df4382cb118f8b",
+      "bases": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/inference/m5_bases.jsonl",
+      "bases_sha256": "12011e5c4c96052ff21c2056ffd53d32b9aa5aafb020c5a3965f74b4e9552b25",
+      "proposals": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/inference/m5_proposals.jsonl",
+      "proposals_sha256": "d3bd20979e41d60821dd53090b6680564cc64e3fb057f70cceb9959eb1f2fed4",
+      "tasks": [
+        {
+          "task_id": "n00000:a5_reanswer",
+          "request_id": "n00000",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00000:F"
+        },
+        {
+          "task_id": "n00001:a5_reanswer",
+          "request_id": "n00001",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00001:F"
+        },
+        {
+          "task_id": "n00002:a5_reanswer",
+          "request_id": "n00002",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00002:F"
+        },
+        {
+          "task_id": "n00003:a5_reanswer",
+          "request_id": "n00003",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00003:F"
+        },
+        {
+          "task_id": "n00004:a5_reanswer",
+          "request_id": "n00004",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00004:F"
+        },
+        {
+          "task_id": "n00005:a5_reanswer",
+          "request_id": "n00005",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00005:F"
+        },
+        {
+          "task_id": "n00006:a5_reanswer",
+          "request_id": "n00006",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00006:F"
+        },
+        {
+          "task_id": "n00007:a5_reanswer",
+          "request_id": "n00007",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00007:F"
+        },
+        {
+          "task_id": "n00008:a5_reanswer",
+          "request_id": "n00008",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00008:F"
+        },
+        {
+          "task_id": "n00009:a5_reanswer",
+          "request_id": "n00009",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00009:F"
+        },
+        {
+          "task_id": "n00010:a5_reanswer",
+          "request_id": "n00010",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00010:F"
+        },
+        {
+          "task_id": "n00011:a5_reanswer",
+          "request_id": "n00011",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00011:F"
+        },
+        {
+          "task_id": "n00012:a5_reanswer",
+          "request_id": "n00012",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00012:F"
+        },
+        {
+          "task_id": "n00013:a5_reanswer",
+          "request_id": "n00013",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00013:F"
+        },
+        {
+          "task_id": "n00014:a5_reanswer",
+          "request_id": "n00014",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00014:F"
+        },
+        {
+          "task_id": "n00015:a5_reanswer",
+          "request_id": "n00015",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00015:F"
+        },
+        {
+          "task_id": "n00016:a5_reanswer",
+          "request_id": "n00016",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00016:F"
+        },
+        {
+          "task_id": "n00017:a5_reanswer",
+          "request_id": "n00017",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00017:F"
+        },
+        {
+          "task_id": "n00018:a5_reanswer",
+          "request_id": "n00018",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00018:F"
+        },
+        {
+          "task_id": "n00019:a5_reanswer",
+          "request_id": "n00019",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00019:F"
+        },
+        {
+          "task_id": "n00020:a5_reanswer",
+          "request_id": "n00020",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00020:F"
+        },
+        {
+          "task_id": "n00021:a5_reanswer",
+          "request_id": "n00021",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00021:F"
+        },
+        {
+          "task_id": "n00022:a5_reanswer",
+          "request_id": "n00022",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00022:F"
+        },
+        {
+          "task_id": "n00023:a5_reanswer",
+          "request_id": "n00023",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00023:F"
+        },
+        {
+          "task_id": "n00024:a5_reanswer",
+          "request_id": "n00024",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00024:F"
+        },
+        {
+          "task_id": "n00025:a5_reanswer",
+          "request_id": "n00025",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00025:F"
+        },
+        {
+          "task_id": "n00026:a5_reanswer",
+          "request_id": "n00026",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00026:F"
+        },
+        {
+          "task_id": "n00027:a5_reanswer",
+          "request_id": "n00027",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00027:F"
+        },
+        {
+          "task_id": "n00028:a5_reanswer",
+          "request_id": "n00028",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00028:F"
+        },
+        {
+          "task_id": "n00029:a5_reanswer",
+          "request_id": "n00029",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00029:F"
+        },
+        {
+          "task_id": "n00030:a5_reanswer",
+          "request_id": "n00030",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00030:F"
+        },
+        {
+          "task_id": "n00031:a5_reanswer",
+          "request_id": "n00031",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00031:F"
+        },
+        {
+          "task_id": "n00032:a5_reanswer",
+          "request_id": "n00032",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00032:F"
+        },
+        {
+          "task_id": "n00033:a5_reanswer",
+          "request_id": "n00033",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00033:F"
+        },
+        {
+          "task_id": "n00034:a5_reanswer",
+          "request_id": "n00034",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00034:F"
+        },
+        {
+          "task_id": "n00035:a5_reanswer",
+          "request_id": "n00035",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00035:F"
+        },
+        {
+          "task_id": "n00036:a5_reanswer",
+          "request_id": "n00036",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00036:F"
+        },
+        {
+          "task_id": "n00037:a5_reanswer",
+          "request_id": "n00037",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00037:F"
+        },
+        {
+          "task_id": "n00038:a5_reanswer",
+          "request_id": "n00038",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00038:F"
+        },
+        {
+          "task_id": "n00039:a5_reanswer",
+          "request_id": "n00039",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00039:F"
+        },
+        {
+          "task_id": "n00040:a5_reanswer",
+          "request_id": "n00040",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00040:F"
+        },
+        {
+          "task_id": "n00041:a5_reanswer",
+          "request_id": "n00041",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00041:F"
+        },
+        {
+          "task_id": "n00042:a5_reanswer",
+          "request_id": "n00042",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00042:F"
+        },
+        {
+          "task_id": "n00043:a5_reanswer",
+          "request_id": "n00043",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00043:F"
+        },
+        {
+          "task_id": "n00044:a5_reanswer",
+          "request_id": "n00044",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00044:F"
+        },
+        {
+          "task_id": "n00045:a5_reanswer",
+          "request_id": "n00045",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00045:F"
+        },
+        {
+          "task_id": "n00046:a5_reanswer",
+          "request_id": "n00046",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00046:F"
+        },
+        {
+          "task_id": "n00047:a5_reanswer",
+          "request_id": "n00047",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00047:F"
+        },
+        {
+          "task_id": "n00048:a5_reanswer",
+          "request_id": "n00048",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00048:F"
+        },
+        {
+          "task_id": "n00049:a5_reanswer",
+          "request_id": "n00049",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00049:F"
+        },
+        {
+          "task_id": "n00050:a5_reanswer",
+          "request_id": "n00050",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00050:F"
+        },
+        {
+          "task_id": "n00051:a5_reanswer",
+          "request_id": "n00051",
+          "arm": "a5_reanswer",
+          "proposal_key": "n00051:F"
+        }
+      ],
+      "profile": {
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 131072,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "batch_size": 16,
+        "model_kwargs": {
+          "rope_scaling": {
+            "rope_type": "yarn",
+            "factor": 4.0,
+            "original_max_position_embeddings": 32768
+          },
+          "num_gpu_blocks_override": 16384
+        },
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "guided_json": true,
+        "num_shards": 1
+      }
+    }
+  },
+  "code_sources": {
+    "/home/data3/txy/cf_moa/evaluation/minimal_f_runner.py": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+    "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+    "/home/data3/txy/cf_moa/agents/a5_premise.py": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6"
+  },
+  "selection_manifest": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/manifest.json",
+  "selection_manifest_sha256": "a618f7555075365199f3246778dbc0b38178d1a9d1a44728e2eba3b1238ae0af",
+  "exposure": "exposed_same_source_development_not_blind_not_independent; prior F method selection and R5 followup used this pool",
+  "base_and_F": "fixed exact old adopted F complete responses/callbacks",
+  "interpretation": "Fixed B/F conditional added-step stability, not end-to-end pipeline seed stability",
+  "native_scoring": "unchanged original scorer; every input remains in denominator; sources/families/pairs/gold offline only"
+}

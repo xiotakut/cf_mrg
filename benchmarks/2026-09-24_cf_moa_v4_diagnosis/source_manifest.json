@@ -1,0 +1,1677 @@
+{
+  "created_at": "2026-09-24T02:05:58.413545+08:00",
+  "scope": "v4 F trigger source review, no new method",
+  "new_model_calls": 0,
+  "replay_calls": 0,
+  "native_scoring_calls": 0,
+  "current_method_modified": false,
+  "files": [
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/agents/a4_intervention_execution.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/agents/a4_intervention_execution.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/agents/a4_intervention_execution.py",
+      "sha256": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+      "size_bytes": 4257,
+      "current_sha256": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/agents/a5_premise.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/agents/a5_premise.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/agents/a5_premise.py",
+      "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+      "size_bytes": 10424,
+      "current_sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_42/m4/plan.json",
+          "evidence_sha256": "b50c8066d9e05951dd7281d9904c7a6994b8ad4635cab6045209e34c5af7c24e",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_44/m5/plan.json",
+          "evidence_sha256": "fe011bce2d65bfa4f59eed243256c94f8926ec38086b13fd0dd275a3f1d57597",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/agents/a5_robust_readout.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a2_control_preparation/runner_validation/integrated/source_snapshot/agents/a5_robust_readout.py",
+      "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+      "size_bytes": 9526,
+      "current_sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/contracts.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/contracts.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/contracts.py",
+      "sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "size_bytes": 7839,
+      "current_sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/controller/baseline_native.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/controller/baseline_native.py",
+      "copied_from": "/home/data3/txy/cf_moa/controller/baseline_native.py",
+      "sha256": "2d26eea9e1e6db696af3690f76256e151899bdc250829893924f746c5bb68cae",
+      "size_bytes": 7621,
+      "current_sha256": "2d26eea9e1e6db696af3690f76256e151899bdc250829893924f746c5bb68cae",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "2d26eea9e1e6db696af3690f76256e151899bdc250829893924f746c5bb68cae",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/receipt.json",
+          "evidence_sha256": "13c7f63a99b9c63d9bce530366b9d5e8ab790f75579862a5b10045d84cb95b95",
+          "field": "implementation"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/controller/minimal_operations.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/controller/minimal_operations.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/final_source_snapshot/cf_moa/controller/minimal_operations.py",
+      "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "size_bytes": 9547,
+      "current_sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/operations/f_toggle_receipt.json",
+          "evidence_sha256": "375b9366106ef4985bffa3ec99732d7e6e7ab6590c5352d3a7a5bb69bf6826c7",
+          "field": "sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/controller/strong_legacy.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/controller/strong_legacy.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a2_control_preparation/runner_validation/integrated/source_snapshot/controller/strong_legacy.py",
+      "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "size_bytes": 1011,
+      "current_sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/plan.json",
+          "evidence_sha256": "99747501d61b7f59f21f010fc861b3e0940ae05b5a598d49ea028e9f691c9332",
+          "field": "policy_source"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/a4_repair.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/a4_repair.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/evaluation/a4_repair.py",
+      "sha256": "bdb72d00620ccea2f29f79654aec7032ab5e79772f95aedd52a8c23141d46df2",
+      "size_bytes": 13906,
+      "current_sha256": "bdb72d00620ccea2f29f79654aec7032ab5e79772f95aedd52a8c23141d46df2",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "bdb72d00620ccea2f29f79654aec7032ab5e79772f95aedd52a8c23141d46df2",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/effect_first_runner.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/evaluation/effect_first_runner.py",
+      "sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+      "size_bytes": 13270,
+      "current_sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_42/m4/plan.json",
+          "evidence_sha256": "b50c8066d9e05951dd7281d9904c7a6994b8ad4635cab6045209e34c5af7c24e",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_44/m5/plan.json",
+          "evidence_sha256": "fe011bce2d65bfa4f59eed243256c94f8926ec38086b13fd0dd275a3f1d57597",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/incremental_runner.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/incremental_runner.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/evaluation/incremental_runner.py",
+      "sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+      "size_bytes": 13195,
+      "current_sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/journal.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/journal.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/evaluation/journal.py",
+      "sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+      "size_bytes": 12223,
+      "current_sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/minimal_f_runner.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/minimal_f_runner.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/evaluation/minimal_f_runner.py",
+      "sha256": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+      "size_bytes": 8683,
+      "current_sha256": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_42/m4/plan.json",
+          "evidence_sha256": "b50c8066d9e05951dd7281d9904c7a6994b8ad4635cab6045209e34c5af7c24e",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "89a76e33d5e5181da4ac2397d1ada7c2ad96ca0ceebc5f2f7bd145216f773716",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_44/m5/plan.json",
+          "evidence_sha256": "fe011bce2d65bfa4f59eed243256c94f8926ec38086b13fd0dd275a3f1d57597",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/native_runner.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/native_runner.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/a2_native_parser/source_snapshot/cf_moa/evaluation/native_runner.py",
+      "sha256": "a8dade53f936a59519d01857b828d5b0f769185d0b660acf657c0aec4dc98ebe",
+      "size_bytes": 14433,
+      "current_sha256": "a8dade53f936a59519d01857b828d5b0f769185d0b660acf657c0aec4dc98ebe",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/native_scoring.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/native_scoring.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/evaluation/native_scoring.py",
+      "sha256": "454d9a75c8d0d60d7c632627b265f97ef0036620c7c052f3974b95c1df6ac808",
+      "size_bytes": 3607,
+      "current_sha256": "454d9a75c8d0d60d7c632627b265f97ef0036620c7c052f3974b95c1df6ac808",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "454d9a75c8d0d60d7c632627b265f97ef0036620c7c052f3974b95c1df6ac808",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/paired_metrics.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/paired_metrics.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/evaluation/paired_metrics.py",
+      "sha256": "72bfc3dce807dbf6a4d3ad528d9934e6f7b12bfe11fe134079a4190ca4d62185",
+      "size_bytes": 3002,
+      "current_sha256": "72bfc3dce807dbf6a4d3ad528d9934e6f7b12bfe11fe134079a4190ca4d62185",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "72bfc3dce807dbf6a4d3ad528d9934e6f7b12bfe11fe134079a4190ca4d62185",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/resources.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/resources.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a2_control_preparation/runner_validation/integrated/source_snapshot/evaluation/resources.py",
+      "sha256": "47b8d65fc5bb99de2784ceceb346d660728f21c97bcaebc11613a91d8425812a",
+      "size_bytes": 3686,
+      "current_sha256": "47b8d65fc5bb99de2784ceceb346d660728f21c97bcaebc11613a91d8425812a",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/score_run.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/score_run.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/evaluation/score_run.py",
+      "sha256": "2d55db41faca44f12c9080ae3df38f67f53410971bb9968e234a5ced4843f466",
+      "size_bytes": 6227,
+      "current_sha256": "2d55db41faca44f12c9080ae3df38f67f53410971bb9968e234a5ced4843f466",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "2d55db41faca44f12c9080ae3df38f67f53410971bb9968e234a5ced4843f466",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/adapters.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/adapters.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/tools/adapters.py",
+      "sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "size_bytes": 7595,
+      "current_sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/adopted.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/adopted.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/adopted.py",
+      "sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "size_bytes": 2592,
+      "current_sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/legacy.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/legacy.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/legacy.py",
+      "sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "size_bytes": 2240,
+      "current_sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/native_backend.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/native_backend.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/tools/native_backend.py",
+      "sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "size_bytes": 4975,
+      "current_sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/schema_compat.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/schema_compat.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/tools/schema_compat.py",
+      "sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "size_bytes": 4733,
+      "current_sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/vllm_backend.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/vllm_backend.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/tools/vllm_backend.py",
+      "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "size_bytes": 10098,
+      "current_sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "current_equal_runtime": true,
+      "role": "F_call_or_evaluation_chain",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/__init__.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/__init__.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/__init__.py",
+      "sha256": "6dc7fb578df966288aece08bc08a31733f151aa0978a9a638c5bf2afeda7106b",
+      "size_bytes": 110,
+      "current_sha256": "6dc7fb578df966288aece08bc08a31733f151aa0978a9a638c5bf2afeda7106b",
+      "current_equal_runtime": true,
+      "role": "package_import",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "6dc7fb578df966288aece08bc08a31733f151aa0978a9a638c5bf2afeda7106b",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/agents/__init__.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/agents/__init__.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/agents/__init__.py",
+      "sha256": "db7aa7be8218c3431d53c40f274f360aea4f68dcb5f43e60ae9485c707423838",
+      "size_bytes": 80,
+      "current_sha256": "db7aa7be8218c3431d53c40f274f360aea4f68dcb5f43e60ae9485c707423838",
+      "current_equal_runtime": true,
+      "role": "package_import",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "db7aa7be8218c3431d53c40f274f360aea4f68dcb5f43e60ae9485c707423838",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/controller/__init__.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/controller/__init__.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/controller/__init__.py",
+      "sha256": "577b9e4df85083c67450f04242a535cdd9c3f673c6c30e695ed64a23ee37ca6f",
+      "size_bytes": 72,
+      "current_sha256": "577b9e4df85083c67450f04242a535cdd9c3f673c6c30e695ed64a23ee37ca6f",
+      "current_equal_runtime": true,
+      "role": "package_import",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "577b9e4df85083c67450f04242a535cdd9c3f673c6c30e695ed64a23ee37ca6f",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/tools/__init__.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/__init__.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/__init__.py",
+      "sha256": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+      "size_bytes": 60,
+      "current_sha256": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+      "current_equal_runtime": true,
+      "role": "package_import",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/evaluation/__init__.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/__init__.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/evaluation/__init__.py",
+      "sha256": "1c1eed19e1f3d7b54acaa71ba3b7016351e549c898aba8192798a04e6154616f",
+      "size_bytes": 81,
+      "current_sha256": "1c1eed19e1f3d7b54acaa71ba3b7016351e549c898aba8192798a04e6154616f",
+      "current_equal_runtime": true,
+      "role": "package_import",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "1c1eed19e1f3d7b54acaa71ba3b7016351e549c898aba8192798a04e6154616f",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/configs/native_sources.json",
+      "logical_source_path": "/home/data3/txy/cf_moa/configs/native_sources.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/configs/native_sources.json",
+      "sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+      "size_bytes": 1487,
+      "current_sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+      "current_equal_runtime": true,
+      "role": "actual_profile_or_default_configuration",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/configs/readout_m4.json",
+      "logical_source_path": "/home/data3/txy/cf_moa/configs/readout_m4.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/configs/readout_m4.json",
+      "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+      "size_bytes": 433,
+      "current_sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+      "current_equal_runtime": true,
+      "role": "actual_profile_or_default_configuration",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        },
+        {
+          "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+          "evidence_path": "/home/data3/txy/cf_moa/configs/native_sources.json",
+          "evidence_sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+          "field": "readout/M4"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/configs/readout_m5.json",
+      "logical_source_path": "/home/data3/txy/cf_moa/configs/readout_m5.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/configs/readout_m5.json",
+      "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+      "size_bytes": 589,
+      "current_sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+      "current_equal_runtime": true,
+      "role": "actual_profile_or_default_configuration",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        },
+        {
+          "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+          "evidence_path": "/home/data3/txy/cf_moa/configs/native_sources.json",
+          "evidence_sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+          "field": "readout/M5"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/cf_moa/configs/minimal_system.json",
+      "logical_source_path": "/home/data3/txy/cf_moa/configs/minimal_system.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/final_source_snapshot/cf_moa/configs/minimal_system.json",
+      "sha256": "41f96ec70d61c7d569a9a6b643b15c3d1249d4fc5cfa1f032735b9d0c6d56b02",
+      "size_bytes": 1151,
+      "current_sha256": "41f96ec70d61c7d569a9a6b643b15c3d1249d4fc5cfa1f032735b9d0c6d56b02",
+      "current_equal_runtime": true,
+      "role": "actual_profile_or_default_configuration",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/v4_reanswer/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+      "size_bytes": 14626,
+      "current_sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+      "current_equal_runtime": true,
+      "role": "adopted_F_kernel_standard_library_only",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/agents/a5_robust_readout.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/agents/a5_robust_readout.py",
+      "sha256": "4589ef77f93f4bf6c9634a57670a8d1002b94d92ef8db09ace07efc3e3576132",
+      "size_bytes": 8999,
+      "current_sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+      "current_equal_runtime": false,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "4589ef77f93f4bf6c9634a57670a8d1002b94d92ef8db09ace07efc3e3576132",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": "source/diffs/historical_F_acquisition/cf_moa/agents/a5_robust_readout.py.diff"
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/evaluation/native_runner.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/native_runner.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/evaluation/native_runner.py",
+      "sha256": "98bb00497e1e2bbfaf1ce9ad4e3f3c9caceb345d60362fe6566a2e0f198ad3c3",
+      "size_bytes": 13030,
+      "current_sha256": "a8dade53f936a59519d01857b828d5b0f769185d0b660acf657c0aec4dc98ebe",
+      "current_equal_runtime": false,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "98bb00497e1e2bbfaf1ce9ad4e3f3c9caceb345d60362fe6566a2e0f198ad3c3",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": "source/diffs/historical_F_acquisition/cf_moa/evaluation/native_runner.py.diff"
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/tools/adapters.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/adapters.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/adapters.py",
+      "sha256": "9aab1332b161d132a76e6e4aeeea288f39d7ff3f91ff6506e8d141787ef8e507",
+      "size_bytes": 7460,
+      "current_sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "current_equal_runtime": false,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9aab1332b161d132a76e6e4aeeea288f39d7ff3f91ff6506e8d141787ef8e507",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": "source/diffs/historical_F_acquisition/cf_moa/tools/adapters.py.diff"
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/tools/native_backend.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/native_backend.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/native_backend.py",
+      "sha256": "1cfab9813b10425728c2d3028c13e3ea23f19ff5a33cc40750bb595a773e3fd3",
+      "size_bytes": 4849,
+      "current_sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "current_equal_runtime": false,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "1cfab9813b10425728c2d3028c13e3ea23f19ff5a33cc40750bb595a773e3fd3",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": "source/diffs/historical_F_acquisition/cf_moa/tools/native_backend.py.diff"
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/tools/schema_compat.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/schema_compat.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/schema_compat.py",
+      "sha256": "b5c59070ed25246cfc0d79d825b7a1c19cdafb90c6f83ebb6d2e542ce2514ef4",
+      "size_bytes": 3778,
+      "current_sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "current_equal_runtime": false,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "b5c59070ed25246cfc0d79d825b7a1c19cdafb90c6f83ebb6d2e542ce2514ef4",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": "source/diffs/historical_F_acquisition/cf_moa/tools/schema_compat.py.diff"
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/tools/vllm_backend.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/vllm_backend.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/tools/vllm_backend.py",
+      "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "size_bytes": 10098,
+      "current_sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "current_equal_runtime": true,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/contracts.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/contracts.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/contracts.py",
+      "sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "size_bytes": 7839,
+      "current_sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "current_equal_runtime": true,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/tools/legacy.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/legacy.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/legacy.py",
+      "sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "size_bytes": 2240,
+      "current_sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "current_equal_runtime": true,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/historical_F_acquisition/cf_moa/tools/adopted.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/tools/adopted.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/frozen_code/cf_moa/tools/adopted.py",
+      "sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "size_bytes": 2592,
+      "current_sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "current_equal_runtime": true,
+      "role": "original_121_F_acquisition_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "evidence_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "field": "code_lock"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/cycle1_seed42/cf_moa/evaluation/effect_first_runner.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/readout121_r2/code_snapshot/evaluation/effect_first_runner.py",
+      "sha256": "090d9d59d76f9bb0b97a8d261e22630b3a753d95d67100fe1a65e37dc199408c",
+      "size_bytes": 9498,
+      "current_sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+      "current_equal_runtime": false,
+      "role": "original_121_seed42_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m4/plan.json",
+          "evidence_sha256": "5030ae647f65d4aba8a9a44d50346417a98e3953005b1df9e0cbe66c71c14b3e",
+          "field": "code_sources",
+          "sha256": "090d9d59d76f9bb0b97a8d261e22630b3a753d95d67100fe1a65e37dc199408c"
+        }
+      ],
+      "diff_path": "source/diffs/cycle1_seed42/cf_moa/evaluation/effect_first_runner.py.diff"
+    },
+    {
+      "exported_path": "source/cycle1_seed42/cf_moa/controller/effect_first.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/controller/effect_first.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/answer34/runtime_dependency_snapshot/cf_moa/controller/effect_first.py",
+      "sha256": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+      "size_bytes": 19116,
+      "current_sha256": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+      "current_equal_runtime": true,
+      "role": "original_121_seed42_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m4/plan.json",
+          "evidence_sha256": "5030ae647f65d4aba8a9a44d50346417a98e3953005b1df9e0cbe66c71c14b3e",
+          "field": "code_sources",
+          "sha256": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/cycle1_seed42/cf_moa/agents/a5_premise.py",
+      "logical_source_path": "/home/data3/txy/cf_moa/agents/a5_premise.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/code_snapshot/cf_moa/agents/a5_premise.py",
+      "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+      "size_bytes": 10424,
+      "current_sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+      "current_equal_runtime": true,
+      "role": "original_121_seed42_runtime",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+          "evidence_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_44/m5/plan.json",
+          "evidence_sha256": "67425e2a2e80c5ff51179020869db23a8e5d95c5057940af5d583dafd0b259da",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_42/m4/plan.json",
+          "evidence_sha256": "b50c8066d9e05951dd7281d9904c7a6994b8ad4635cab6045209e34c5af7c24e",
+          "field": "code_sources"
+        },
+        {
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_runs/seed_44/m5/plan.json",
+          "evidence_sha256": "fe011bce2d65bfa4f59eed243256c94f8926ec38086b13fd0dd275a3f1d57597",
+          "field": "code_sources"
+        },
+        {
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m4/plan.json",
+          "evidence_sha256": "5030ae647f65d4aba8a9a44d50346417a98e3953005b1df9e0cbe66c71c14b3e",
+          "field": "code_sources",
+          "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/offline_evaluation_only/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d",
+      "size_bytes": 59077,
+      "current_sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d",
+      "current_equal_runtime": true,
+      "role": "native_gold_scoring_dependency_not_inference",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/receipt.json",
+          "evidence_sha256": "a722c849718d72fa2b5bbfa4b20d5e66a1cf27a6f95a8d797ef88bac8f81b596",
+          "field": "native_scorer_sources"
+        },
+        {
+          "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/receipt.json",
+          "evidence_sha256": "57e6190f9c17f115e15d1aed5085aeed0f779e6af10c7ccaaab9f19e3ff80908",
+          "field": "native_scorer_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/offline_evaluation_only/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018",
+      "size_bytes": 24370,
+      "current_sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018",
+      "current_equal_runtime": true,
+      "role": "native_gold_scoring_dependency_not_inference",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/historical121/receipt.json",
+          "evidence_sha256": "a722c849718d72fa2b5bbfa4b20d5e66a1cf27a6f95a8d797ef88bac8f81b596",
+          "field": "native_scorer_sources"
+        },
+        {
+          "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/receipt.json",
+          "evidence_sha256": "57e6190f9c17f115e15d1aed5085aeed0f779e6af10c7ccaaab9f19e3ff80908",
+          "field": "native_scorer_sources"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/offline_evaluation_only/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/score_and_compare.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/score_and_compare.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/score_and_compare.py",
+      "sha256": "9e8c75476cdba285ed972e7362fdd78ce98a4dca0105a0da95b91ea9a9e7cefd",
+      "size_bytes": 28389,
+      "current_sha256": "9e8c75476cdba285ed972e7362fdd78ce98a4dca0105a0da95b91ea9a9e7cefd",
+      "current_equal_runtime": true,
+      "role": "actual_analysis_entry",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9e8c75476cdba285ed972e7362fdd78ce98a4dca0105a0da95b91ea9a9e7cefd",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/analysis/natural52/receipt.json",
+          "evidence_sha256": "57e6190f9c17f115e15d1aed5085aeed0f779e6af10c7ccaaab9f19e3ff80908",
+          "field": "script_sha256"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/offline_evaluation_only/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/score_development.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/score_development.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/score_development.py",
+      "sha256": "2d2338e2a0d556c9aa92bef8a68ebd10fd9066b7380c19555ffa4e813b2bed80",
+      "size_bytes": 18480,
+      "current_sha256": "2d2338e2a0d556c9aa92bef8a68ebd10fd9066b7380c19555ffa4e813b2bed80",
+      "current_equal_runtime": true,
+      "role": "actual_analysis_entry",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/adopted_dependencies/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/source_snapshot/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+      "size_bytes": 13998,
+      "current_sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+      "current_equal_runtime": true,
+      "role": "old_rule_eligibility_and_assembly",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/adopted_dependencies/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/source_snapshot/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+      "sha256": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+      "size_bytes": 10925,
+      "current_sha256": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+      "current_equal_runtime": true,
+      "role": "old_rule_eligibility_and_assembly",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/adopted_dependencies/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/smoke/source_snapshot/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+      "sha256": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+      "size_bytes": 11322,
+      "current_sha256": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+      "current_equal_runtime": true,
+      "role": "old_rule_eligibility_and_assembly",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/template_metadata/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/tokenizer_config.json",
+      "logical_source_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/tokenizer_config.json",
+      "copied_from": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/tokenizer_config.json",
+      "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "size_bytes": 55351,
+      "current_sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "current_equal_runtime": true,
+      "role": "current_template_metadata_historical_exact_template_file_hash_not_logged",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/template_metadata/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/special_tokens_map.json",
+      "logical_source_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/special_tokens_map.json",
+      "copied_from": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/special_tokens_map.json",
+      "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "size_bytes": 296,
+      "current_sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "current_equal_runtime": true,
+      "role": "current_template_metadata_historical_exact_template_file_hash_not_logged",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/template_metadata/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/config.json",
+      "logical_source_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/config.json",
+      "copied_from": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct/config.json",
+      "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "size_bytes": 855,
+      "current_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "current_equal_runtime": true,
+      "role": "current_template_metadata_historical_exact_template_file_hash_not_logged",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/template_metadata/models/Qwen3-8B/tokenizer_config.json",
+      "logical_source_path": "/home/data3/txy/models/Qwen3-8B/tokenizer_config.json",
+      "copied_from": "/home/data3/txy/models/Qwen3-8B/tokenizer_config.json",
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "size_bytes": 9732,
+      "current_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "current_equal_runtime": true,
+      "role": "current_template_metadata_historical_exact_template_file_hash_not_logged",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/template_metadata/models/Qwen3-8B/config.json",
+      "logical_source_path": "/home/data3/txy/models/Qwen3-8B/config.json",
+      "copied_from": "/home/data3/txy/models/Qwen3-8B/config.json",
+      "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "size_bytes": 728,
+      "current_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "current_equal_runtime": true,
+      "role": "current_template_metadata_historical_exact_template_file_hash_not_logged",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/plan.json",
+      "sha256": "49d1eca8577e55f6d9eb0e8cf2bab622a24a2eba844f9cb29e7b706ad68529c2",
+      "size_bytes": 48598,
+      "current_sha256": "49d1eca8577e55f6d9eb0e8cf2bab622a24a2eba844f9cb29e7b706ad68529c2",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m4/plan.json",
+      "sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+      "size_bytes": 54113,
+      "current_sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "9f8e75668deb46b30bb69c528fb6e0ab6c333c847ecfc1e52de785530dd65c1c",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/delivery_index.json",
+          "evidence_sha256": "4f80941add519bb6e7536e53717047cdf45afd2587a31079555c10a63592d94c",
+          "field": "artifacts"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m5/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m5/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/seeds/seed_43/m5/plan.json",
+      "sha256": "f9435a31060dcc842c4615aaa13063bc7cfc60d0679298746ff02d0314d90d12",
+      "size_bytes": 54285,
+      "current_sha256": "f9435a31060dcc842c4615aaa13063bc7cfc60d0679298746ff02d0314d90d12",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "run_hash_bound",
+      "run_hash_evidence": [
+        {
+          "sha256": "f9435a31060dcc842c4615aaa13063bc7cfc60d0679298746ff02d0314d90d12",
+          "evidence_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/delivery_index.json",
+          "evidence_sha256": "4f80941add519bb6e7536e53717047cdf45afd2587a31079555c10a63592d94c",
+          "field": "artifacts"
+        }
+      ],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/plan_seed_42.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/plan_seed_42.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/plan_seed_42.json",
+      "sha256": "63a568f5ad57c8d44a4319c4d001461d2fac811ccc661f3cf7e5f079d90dda3a",
+      "size_bytes": 22286,
+      "current_sha256": "63a568f5ad57c8d44a4319c4d001461d2fac811ccc661f3cf7e5f079d90dda3a",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m4/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m4/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m4/plan.json",
+      "sha256": "5030ae647f65d4aba8a9a44d50346417a98e3953005b1df9e0cbe66c71c14b3e",
+      "size_bytes": 91497,
+      "current_sha256": "5030ae647f65d4aba8a9a44d50346417a98e3953005b1df9e0cbe66c71c14b3e",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m5/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m5/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_quality121/m5/plan.json",
+      "sha256": "7667377686ad268f76ba2d5d1957c7594bb04722f9617f764fd4f98e5632d130",
+      "size_bytes": 91669,
+      "current_sha256": "7667377686ad268f76ba2d5d1957c7594bb04722f9617f764fd4f98e5632d130",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+      "sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+      "size_bytes": 20720,
+      "current_sha256": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/plan.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/plan.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/strong_legacy_complete/m4/plan.json",
+      "sha256": "99747501d61b7f59f21f010fc861b3e0940ae05b5a598d49ea028e9f691c9332",
+      "size_bytes": 11757,
+      "current_sha256": "99747501d61b7f59f21f010fc861b3e0940ae05b5a598d49ea028e9f691c9332",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/provenance/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/receipt.json",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/receipt.json",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/receipt.json",
+      "sha256": "13c7f63a99b9c63d9bce530366b9d5e8ab790f75579862a5b10045d84cb95b95",
+      "size_bytes": 9049,
+      "current_sha256": "13c7f63a99b9c63d9bce530366b9d5e8ab790f75579862a5b10045d84cb95b95",
+      "current_equal_runtime": true,
+      "role": "existing_run_provenance",
+      "provenance": "current_dependency_no_complete_run_hash_lock",
+      "run_hash_evidence": [],
+      "diff_path": null
+    },
+    {
+      "exported_path": "source/diffs/cycle1_seed42/cf_moa/evaluation/effect_first_runner.py.diff",
+      "logical_source_path": null,
+      "copied_from": null,
+      "sha256": "3a244e08dc47e8bce93197e924530d3093ef3f0192fac3a0397b86e5bdf079c5",
+      "size_bytes": 5461,
+      "role": "runtime_to_current_source_diff",
+      "provenance": "derived_readonly_diff"
+    },
+    {
+      "exported_path": "source/diffs/historical_F_acquisition/cf_moa/agents/a5_robust_readout.py.diff",
+      "logical_source_path": null,
+      "copied_from": null,
+      "sha256": "55df3326af485eeb0cc641fc123cda13fe6e4e9b96ee92f4c8731fab3d2704be",
+      "size_bytes": 2090,
+      "role": "runtime_to_current_source_diff",
+      "provenance": "derived_readonly_diff"
+    },
+    {
+      "exported_path": "source/diffs/historical_F_acquisition/cf_moa/evaluation/native_runner.py.diff",
+      "logical_source_path": null,
+      "copied_from": null,
+      "sha256": "ae04cca23b40ea9e67adcfda6fb9da2240ae45cb9c160e257994e3f76c8ae758",
+      "size_bytes": 6149,
+      "role": "runtime_to_current_source_diff",
+      "provenance": "derived_readonly_diff"
+    },
+    {
+      "exported_path": "source/diffs/historical_F_acquisition/cf_moa/tools/adapters.py.diff",
+      "logical_source_path": null,
+      "copied_from": null,
+      "sha256": "b7409d1b324cfeada871e87d2a6b6a5d05911349a2c8d548897a01a77238df72",
+      "size_bytes": 952,
+      "role": "runtime_to_current_source_diff",
+      "provenance": "derived_readonly_diff"
+    },
+    {
+      "exported_path": "source/diffs/historical_F_acquisition/cf_moa/tools/native_backend.py.diff",
+      "logical_source_path": null,
+      "copied_from": null,
+      "sha256": "e7eb9188eb7a6cee9df3da7655949848979c4fa79151bb0441150846cb5a9634",
+      "size_bytes": 922,
+      "role": "runtime_to_current_source_diff",
+      "provenance": "derived_readonly_diff"
+    },
+    {
+      "exported_path": "source/diffs/historical_F_acquisition/cf_moa/tools/schema_compat.py.diff",
+      "logical_source_path": null,
+      "copied_from": null,
+      "sha256": "35bf6f5e689a4e05c1150dbaa8eb00e129f11e6170290abc03e18378b16374dd",
+      "size_bytes": 1933,
+      "role": "runtime_to_current_source_diff",
+      "provenance": "derived_readonly_diff"
+    },
+    {
+      "exported_path": "source/export_actual_sources.py",
+      "logical_source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/source/export_actual_sources.py",
+      "copied_from": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/source/export_actual_sources.py",
+      "sha256": "b0e6a6ab8bbe71da97b4e4e7ce8890485b222d0243129b51f5d3eea3c6dd933c",
+      "size_bytes": 12980,
+      "role": "one_off_export_utility_new_no_inference",
+      "provenance": "created_for_this_export"
+    }
+  ],
+  "counts": {
+    "files": 73,
+    "bytes": 961286,
+    "provenance": {
+      "run_hash_bound": 46,
+      "current_dependency_no_complete_run_hash_lock": 20,
+      "derived_readonly_diff": 6,
+      "created_for_this_export": 1
+    }
+  },
+  "inactive_import_files_not_packaged": [
+    "cf_moa/agents/a1_bounded_coverage.py",
+    "cf_moa/agents/a1_coded_coverage.py",
+    "cf_moa/agents/a1_delta.py",
+    "cf_moa/agents/a1_relational_coverage.py",
+    "cf_moa/agents/a1_retrieved_evidence.py",
+    "cf_moa/agents/a1_retrieved_evidence_answers.py",
+    "cf_moa/agents/a1_scoped_binding.py",
+    "cf_moa/agents/a1_support_completion.py",
+    "cf_moa/agents/a1_target_evidence.py",
+    "cf_moa/agents/a2_support_revision.py",
+    "cf_moa/agents/a3_contrastive_comparison.py",
+    "cf_moa/agents/a3_original_compare.py",
+    "cf_moa/controller/a2_controls.py",
+    "cf_moa/controller/effect_first.py",
+    "cf_moa/controller/evidence_highlighting.py",
+    "cf_moa/controller/incremental.py",
+    "cf_moa/controller/legacy_router.py",
+    "cf_moa/controller/native_sampling.py",
+    "cf_moa/controller/single_agent_tools.py",
+    "cf_moa/evaluation/prepare_development.py",
+    "cf_moa/tools/a3_edit_grammar.py",
+    "cf_moa/tools/a5_structural_grammar.py",
+    "cf_moa/tools/bounded_edits.py",
+    "cf_moa/tools/bounded_json.py",
+    "cf_moa/tools/evidence_ids.py",
+    "cf_moa/tools/experiment_config.py",
+    "cf_moa/tools/provenance.py",
+    "cf_moa/tools/relational_json.py",
+    "cf_moa/tools/single_agent_tools.py",
+    "cf_moa/tools/validated_views.py"
+  ],
+  "excluded_unneeded_canonical_labels": {
+    "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+    "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047",
+    "reason": "All selected triggers use F-supported formats; diagnosis canonical branch is irrelevant and not executed. A preparation copy was removed without using it for sample analysis or inference."
+  },
+  "template_provenance": "Model template metadata files are current byte snapshots, not falsely labeled pre-run frozen. Actual physical prompts are preserved in sample records.",
+  "limitations": [
+    "Historical locks are partial; each file without a matching runtime lock is explicitly marked.",
+    "Only the actual F branch and needed base helpers are packaged. Inactive import names are listed without copying their full module chains.",
+    "Model weights, tokenizer vocabulary files, retrieval indexes, credentials, unrelated data and caches are excluded.",
+    "No standalone installation or medical correctness certification is claimed."
+  ],
+  "preparation_excluded_files": [
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/bounded_json.py",
+      "sha256": "1cc18f49727ff748a9d9728555f101484841837466b07cf01f0dee6fdd76a042",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/single_agent_tools.py",
+      "sha256": "92adf67b3d6eadd25c0b9369ee118745c8142714e47ce2610191e01496fe2a37",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/relational_json.py",
+      "sha256": "32c6a4c02c0defcca6ce694821eeddf3cbb25a79af27bedcfeb5fad5a39ffe92",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/a5_structural_grammar.py",
+      "sha256": "61e4fe0fb4e36d472ab3873bcc524a5dda8fe3e461cd1d02c3b4899ad458b843",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/validated_views.py",
+      "sha256": "d5f74667e6e1285317c2293f6804ba237ba41aacc3efa4c71c4db038d794bd05",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/evidence_ids.py",
+      "sha256": "d8ae42678c37e0844c4584c75da12c54368480b8847b367aad7c46771c8f2912",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/bounded_edits.py",
+      "sha256": "b37f46529fe963c19d8d10191c2b316e0cc0e0dd94c4c198f8ffc40cafc7b3f8",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/experiment_config.py",
+      "sha256": "9485029f9effc84155da385efaf11df527cb426b1fc242fb23618a4cea362c44",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/a3_edit_grammar.py",
+      "sha256": "7725c72bf8eed3158ff8cd18dff3e50a2248134b6c04626e6f56bbe1ffe48000",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/tools/provenance.py",
+      "sha256": "e93a15fe243840fe47decdaf0f8654e465749331b7dd6982fdfdfef46c4f5ed0",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/facts_m5.json",
+      "sha256": "ffd2ca3d0a5c2747d93ead06b10dd7fe12893a28ee90bcdfb586f817030c56f0",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/a4_m4.json",
+      "sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/resource_admission.json",
+      "sha256": "71962a116d20d953c28a9d7b488c212327b9b81f18d41ba35e272fb55812e45b",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/prototype.json",
+      "sha256": "631b4218e4f63e65fd8ca0927e823dfc9c8e3017dd24d9b7732ea404c0d776e7",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/a4_sources.json",
+      "sha256": "ffefb04350e2739ed6b2502b21a72046f93bccd1b0a513a096f5f1aebf1fbbef",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/facts_m4.json",
+      "sha256": "7cedb33bbca40ff22fb5b4bfcacafd7ef9c0f9a51c24f5d843bbcf0e1f39fbab",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/catalog_m5.json",
+      "sha256": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/catalog_m4.json",
+      "sha256": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/configs/a4_m5.json",
+      "sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/evaluation/prepare_development.py",
+      "sha256": "d326aecbaeb3a341f47abdd18f5ffc8740568e559c64f0b673f821a699c8d7d6",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/a2_controls.py",
+      "sha256": "ca60bea616aa9072118b23d92f89ac0f289ad5692bd72f3a7158b6ca2ca39908",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/native_sampling.py",
+      "sha256": "ca7df13cd0efbc83a3ae8c9b67f7765ad1a06a697d17cbc6e969db91e1502296",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/evidence_highlighting.py",
+      "sha256": "80da46b46fe4e57172fa1abbb99ea2d61a9891c4cf209a70dd079206d4c2104a",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/single_agent_tools.py",
+      "sha256": "12db3383a0814990b418a803af26d7d01e091b77ae8101114c99f507ed7654d9",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/legacy_router.py",
+      "sha256": "fbd4d97a05de86d604ed341bdc70b4d1908578b6370bbb7edd3b07e62d05874d",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/incremental.py",
+      "sha256": "cac81822cfaddb52317478d7039c73a69c1d3a22d18c8ab358164b93bd8cb885",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/controller/effect_first.py",
+      "sha256": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_delta.py",
+      "sha256": "ae8f5a30dc5d6549b9794e18558e13a5cc1d741e11524912c7eb758c0c7e6e4a",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a3_contrastive_comparison.py",
+      "sha256": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_support_completion.py",
+      "sha256": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_relational_coverage.py",
+      "sha256": "c8ec4de389c5186e16edeff02876e528ca43f5f4009515e30bf0c11d17842c55",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a2_support_revision.py",
+      "sha256": "3fc2c41c5276ce1ce9c54c991358cbbc49f70d544000c75e91d881eba6d50ed1",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_retrieved_evidence.py",
+      "sha256": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_bounded_coverage.py",
+      "sha256": "e72ef0e68ba8e2c783dfbe9a4884393aebb1453f936fdb5b7c85b3ee061d30f6",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a3_original_compare.py",
+      "sha256": "b9c445ce207a14c934bfdb5a6e17a6b7a7cbb10e1313db92f9481f12676c5ea6",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_target_evidence.py",
+      "sha256": "d6953f295f6e3ba3dce99befdbd7e93ba9c9f5989175e5c531b9e98c8f1b9552",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_retrieved_evidence_answers.py",
+      "sha256": "71e6ab46e82f34612e261090898068b56bd29b03b8705358a847ddc4b8c516da",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_coded_coverage.py",
+      "sha256": "1aca353cce31d4d901376ce0294127d090b74a23d126eff6e667766ffe09cdb5",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/v4_reanswer/cf_moa/agents/a1_scoped_binding.py",
+      "sha256": "cf63bd60e193ba88be525af86bcb22f99ad99d7a77b1001ae60dee6c04c241ff",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    },
+    {
+      "path": "source/offline_evaluation_only/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+      "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047",
+      "reason": "Preparation-only copy excluded to limit to actual F path and avoid unrelated canonical labels"
+    }
+  ]
+}
