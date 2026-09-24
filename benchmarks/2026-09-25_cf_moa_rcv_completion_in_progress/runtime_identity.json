@@ -1,0 +1,46 @@
+{
+  "active_full_v5_driver": {
+    "path": "source_snapshot/cf_moa/evaluation/run_moa_rcv_batched.py",
+    "sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+    "exact_callback_reuse_integrated": false
+  },
+  "prepared_future_driver": {
+    "private_source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/callback_reuse_preparation/staged_driver/run_moa_rcv_batched.py",
+    "sha256": "9aefbf2e987d72b65d05cac762120785a504ea162684be34a65339fbc835a831",
+    "enabled": false,
+    "frozen": false,
+    "included_in_active_source": false
+  },
+  "adopted_F": {
+    "at": "2026-09-25T00:42:16.320937+08:00",
+    "reason": "Original114-map omitted actual adopted F dynamic module; explicit root authorization adds it without changing runtime",
+    "previous_mapping_entries": 114,
+    "current_mapping_entries": 115,
+    "unique_target_files": 107,
+    "local_direct_dependencies": [],
+    "stdlib_imports": [
+      "collections",
+      "copy",
+      "json",
+      "math"
+    ],
+    "loader": {
+      "path": "/home/data3/txy/cf_moa/tools/legacy.py",
+      "function": "r5_module",
+      "sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265"
+    },
+    "method_spec": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/method_spec.resolved.json",
+      "sha256": "f4a3e2e37efd6a3ad479c91272369e8b53c2899998d48acad30143621bb0c1b1"
+    },
+    "F_source": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559"
+    },
+    "runtime_changes": 0
+  },
+  "method_spec": "method_spec.resolved.json",
+  "default_B_unchanged": true,
+  "static_imports_are_not_enabled_methods": true,
+  "source_portability": "Local research entrypoints and dependencies, not a standalone cross-machine package."
+}

@@ -1,0 +1,76 @@
+{
+  "at": "2026-09-25T00:48:42.521770+08:00",
+  "status": "in_progress_not_final",
+  "full_v5": {
+    "M4": {
+      "status": "running",
+      "role": "readout",
+      "planned": 47809,
+      "completed": 1559,
+      "batches": 191,
+      "active_inputs": 14,
+      "waiting_inputs": 9268,
+      "gpu": 1,
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/status.json",
+      "source_sha256": "7d509d31c015dce6bf2c8acfcc6b9a9fb8513f069d52af86b191fe46195a464e",
+      "first_systemic_error_present": false
+    },
+    "M5": {
+      "status": "running",
+      "role": "readout",
+      "planned": 47689,
+      "completed": 1781,
+      "batches": 186,
+      "active_inputs": 13,
+      "waiting_inputs": 9193,
+      "gpu": 2,
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/status.json",
+      "source_sha256": "b90c5024846a0af94aaa5ae5bd13b0df65d946dbb9f817ca7b96c6790dcdb092",
+      "first_systemic_error_present": false
+    }
+  },
+  "completed_is": "C1-C5 task-output rows, not unique input cases",
+  "fixed_M5_C0_capacity_handoff": {
+    "status": "waiting_for_capacity",
+    "at": "2026-09-24T16:48:34.173765+00:00",
+    "model_initialized": false,
+    "model_failure": false,
+    "general_autoqueue_enabled": false,
+    "capacity_mib": {
+      "gpu": 3,
+      "total_mib": 97871,
+      "free_mib": 13974,
+      "bound_holder_used_mib": 61756,
+      "free_plus_bound_holder_mib": 75730,
+      "minimum_free_mib": 81169
+    }
+  },
+  "fixed_CPU_completion_listeners": {
+    "M4": {
+      "at": "2026-09-25T00:13:42.027076+08:00",
+      "method": "M4",
+      "action": "only_incremental_CPU_analysis_after_exact_existing_model_job_complete",
+      "model_launcher": false,
+      "general_autoqueue_enabled": false,
+      "automatic_retry": false,
+      "observed_precondition_model_status": "running",
+      "status": "waiting_for_existing_model_completion",
+      "new_grader_calls_at_snapshot": 0
+    },
+    "M5": {
+      "at": "2026-09-25T00:13:42.055217+08:00",
+      "method": "M5",
+      "action": "only_incremental_CPU_analysis_after_exact_existing_model_job_complete",
+      "model_launcher": false,
+      "general_autoqueue_enabled": false,
+      "automatic_retry": false,
+      "observed_precondition_model_status": "running",
+      "status": "waiting_for_existing_model_completion",
+      "new_grader_calls_at_snapshot": 0
+    }
+  },
+  "general_automatic_experiment_queue": "stopped",
+  "full_v5_complete": false,
+  "common_freeze_completed": false,
+  "confirmation_run_completed": false
+}

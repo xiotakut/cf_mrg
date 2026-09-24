@@ -1,0 +1,300 @@
+{
+  "scope": "Closed stages of this completion program only; prior780 and active jobs excluded",
+  "stage_totals": [
+    {
+      "group": "C5",
+      "physical_model_requests": 176,
+      "input_tokens": 1261572,
+      "output_tokens": 176,
+      "model_event_seconds": 243.77873610815732,
+      "fragments": [
+        {
+          "path": "c5/runs/m4/status.json",
+          "source_sha256": "cce324d440d484123782b8aab0b0dce7308031e37561ac9e2a3c942daf791fca",
+          "cost": {
+            "physical_model_requests": 94,
+            "new_model_requests": 94,
+            "live_input_tokens": 647530,
+            "live_output_tokens": 94,
+            "live_model_seconds": 113.95551292406162,
+            "recorded_call_wall_seconds": 225.87502479553223,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 94,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 236.4523109139991
+        },
+        {
+          "path": "c5/runs/m5/status.json",
+          "source_sha256": "6de6275ce6f14c7a1da3437ff476f8873b144fcbbf7ff8967ecdd32c0f75fd67",
+          "cost": {
+            "physical_model_requests": 82,
+            "new_model_requests": 82,
+            "live_input_tokens": 614042,
+            "live_output_tokens": 82,
+            "live_model_seconds": 129.8232231840957,
+            "recorded_call_wall_seconds": 234.7374815940857,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 82,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 245.3382145529904
+        }
+      ]
+    },
+    {
+      "group": "live_seven_paths",
+      "physical_model_requests": 40,
+      "input_tokens": 124161,
+      "output_tokens": 3996,
+      "model_event_seconds": 163.57098145299824,
+      "fragments": [
+        {
+          "path": "integration/live_m4/runs/m4/status.json",
+          "source_sha256": "e7a4493ec6afdef65dd6f21835b01223d908f8a1d519b850b0e72c0c885670d7",
+          "cost": {
+            "physical_model_requests": 20,
+            "new_model_requests": 20,
+            "live_input_tokens": 64198,
+            "live_output_tokens": 1780,
+            "live_model_seconds": 69.38840041297954,
+            "recorded_call_wall_seconds": 116.07097005844116,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 20,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 125.31449394798256
+        },
+        {
+          "path": "integration/runs/m5/status.json",
+          "source_sha256": "09aca524d157536e6313e3057f794e6eccdf021d00b57bc864004c2fc3fcbde6",
+          "cost": {
+            "physical_model_requests": 20,
+            "new_model_requests": 20,
+            "live_input_tokens": 59963,
+            "live_output_tokens": 2216,
+            "live_model_seconds": 94.1825810400187,
+            "recorded_call_wall_seconds": 141.57853436470032,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 20,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 151.13256680298946
+        }
+      ]
+    },
+    {
+      "group": "missing_catalog",
+      "physical_model_requests": 21312,
+      "input_tokens": 62148696,
+      "output_tokens": 21312,
+      "model_event_seconds": 6728.9673802327015,
+      "fragments": [
+        {
+          "path": "full_v5/prefix32/runs/m4/status.json",
+          "source_sha256": "36dc0b7d26972adb0a9613ced056a8b6d529256fe198c35c9ad432240e591891",
+          "cost": {
+            "physical_model_requests": 192,
+            "new_model_requests": 192,
+            "live_input_tokens": 586494,
+            "live_output_tokens": 192,
+            "live_model_seconds": 51.17265818599844,
+            "recorded_call_wall_seconds": 71.94813108444214,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 192,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 81.14823718598927
+        },
+        {
+          "path": "full_v5/prefix32/runs/m5/status.json",
+          "source_sha256": "70a281011a7c3cb78788dc5f94502e5767374a4708aace0366bd57e1ae7a35b2",
+          "cost": {
+            "physical_model_requests": 192,
+            "new_model_requests": 192,
+            "live_input_tokens": 536166,
+            "live_output_tokens": 192,
+            "live_model_seconds": 60.51165160405799,
+            "recorded_call_wall_seconds": 82.93117117881775,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 192,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 93.00370749397553
+        },
+        {
+          "path": "full_v5/batch8/runs/m4/status.json",
+          "source_sha256": "08538093227611567e6109e9e527458fae7ab6e7397a713303019cb86119459e",
+          "cost": {
+            "physical_model_requests": 48,
+            "new_model_requests": 48,
+            "live_input_tokens": 148422,
+            "live_output_tokens": 48,
+            "live_model_seconds": 11.611479389976012,
+            "recorded_call_wall_seconds": 261.32780361175537,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 48,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 43.205665952991694
+        },
+        {
+          "path": "full_v5/batch8/runs/m5/status.json",
+          "source_sha256": "39dad8c6e81394ad99e00f6c6193093f82de9f49549162262a1fea2a52b12f99",
+          "cost": {
+            "physical_model_requests": 48,
+            "new_model_requests": 48,
+            "live_input_tokens": 135330,
+            "live_output_tokens": 48,
+            "live_model_seconds": 12.41186639899388,
+            "recorded_call_wall_seconds": 268.6108114719391,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 48,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 42.47594327799743
+        },
+        {
+          "path": "full_v5/catalog_remaining/runs/m4/status.json",
+          "source_sha256": "2c1e3cc799a51ae9379ed3e8d9fdf4c71bb2646b0ecda09d81962835919afe5e",
+          "cost": {
+            "physical_model_requests": 10416,
+            "new_model_requests": 10416,
+            "live_input_tokens": 31745970,
+            "live_output_tokens": 10416,
+            "live_model_seconds": 3548.4751965753967,
+            "recorded_call_wall_seconds": 32481.616518735886,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 10416,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 5075.930440077005
+        },
+        {
+          "path": "full_v5/catalog_remaining/runs/m5/status.json",
+          "source_sha256": "eb8899ca8150775c9fc5257103cb106253d0483b070be2e56d2acbe9313aec58",
+          "cost": {
+            "physical_model_requests": 10416,
+            "new_model_requests": 10416,
+            "live_input_tokens": 28996314,
+            "live_output_tokens": 10416,
+            "live_model_seconds": 3044.7845280782785,
+            "recorded_call_wall_seconds": 28373.45379972458,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 10416,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 4528.5102073200105
+        }
+      ]
+    },
+    {
+      "group": "first16_F",
+      "physical_model_requests": 209,
+      "input_tokens": 561102,
+      "output_tokens": 25798,
+      "model_event_seconds": 386.49127958991437,
+      "fragments": [
+        {
+          "path": "full_v5/readout16_gpu1/runs/m4/status.json",
+          "source_sha256": "7879d73e9cf351362c3f2b34ead50cad7379458072b71c19278b2a1f7b8f0f93",
+          "cost": {
+            "physical_model_requests": 119,
+            "new_model_requests": 119,
+            "live_input_tokens": 334933,
+            "live_output_tokens": 13020,
+            "live_model_seconds": 181.95045927690796,
+            "recorded_call_wall_seconds": 3406.573461294174,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 119,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 307.6832215479808
+        },
+        {
+          "path": "full_v5/readout16/runs/m5/status.json",
+          "source_sha256": "0461f04c628e7870941c03486c07ef1282ba81e035fab5ce831df0984506a3c0",
+          "cost": {
+            "physical_model_requests": 90,
+            "new_model_requests": 90,
+            "live_input_tokens": 226169,
+            "live_output_tokens": 12778,
+            "live_model_seconds": 204.54082031300638,
+            "recorded_call_wall_seconds": 3446.346467733383,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 90,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 322.7586021310126
+        }
+      ]
+    },
+    {
+      "group": "M4_C0_missing4",
+      "physical_model_requests": 4,
+      "input_tokens": 4612,
+      "output_tokens": 810,
+      "model_event_seconds": 15.156076254002983,
+      "fragments": [
+        {
+          "path": "c0_missing_natural/m4_live/run/status.json",
+          "source_sha256": "5df1640e6cd817744b2e1db3d0be4d091a9f74ff6e1d03db3ce5401de4539cde",
+          "cost": {
+            "physical_model_requests": 4,
+            "new_model_requests": 4,
+            "live_input_tokens": 4612,
+            "live_output_tokens": 810,
+            "live_model_seconds": 15.156076254002983,
+            "recorded_call_wall_seconds": 857.4966695308685,
+            "unfinished_call_wall_unknown": 0,
+            "unresolved_model_usage": 0,
+            "submission_attempts": 4,
+            "failed_attempts": 0,
+            "model_usage_complete": true,
+            "cost_basis": "unique durable physical records; one-row streaming accumulation"
+          },
+          "elapsed_seconds": 236.41204399100388
+        }
+      ]
+    }
+  ],
+  "not_entire_project_cost": true,
+  "shared_B_cost_per_method_not_summed_as_new_cost": true,
+  "timing": "Model event seconds are batch wall attribution, not exclusive GPU energy or latency."
+}

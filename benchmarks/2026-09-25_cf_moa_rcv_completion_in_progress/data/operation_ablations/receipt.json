@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "inputs_per_method": 123,
+  "complete_native_nonreference_units_per_method": 123,
+  "operation_views": 492,
+  "new_model_calls": 0,
+  "new_fact_extractions": 0,
+  "new_old_head_executions": 0,
+  "new_native_grader_calls": 53,
+  "reused_scores": {
+    "existing_native_score_parser_equivalent": 309,
+    "new_analysis_cache": 7,
+    "existing_unavailable_score": 1
+  },
+  "source_bindings": {
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/rules/scored.jsonl": "3c9d3258fb8f35f97bf04e31b0d97d29054a7c472ab88ef8e7ba5606cf40f35a",
+    "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl": "23813971c714518638beeb568c803d0cbd949c706194f2dbb9897b89562b04cd",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/native_scored.jsonl": "f70f40095d33fa8df7981fc3f2b773239ec454a3217285c307ee1e6b193486b0",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_bases.jsonl": "60c419c0056c1ccc00e584dfbfbda1768cfebbb38363079835df5d3c5773a9ab",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/legacy_dispatch_reuse/m4/proposals.jsonl": "f2127a8d8a1ccba6568bbe4a0c9da9cc8602526cbaa7e211ca8457435b237da0",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_bases.jsonl": "8a15244ccfad0f3e771245d49c118fb87dbbbd7bd0564869a427ee6427af5589",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/legacy_dispatch_reuse/m5/proposals.jsonl": "5da1c42da8cfc6986e82374d6f548316dd97b83b00ac3994a701fd2b91bd2e55"
+  },
+  "scorer_sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+      "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047"
+    }
+  ],
+  "scorer_identity_unchanged": true,
+  "elapsed_seconds": 5.5822445699886885,
+  "scope": "all 123 rule-covered inputs; not the full 13905-input system score; all nonapplicable and unavailable retained",
+  "mechanism": "two operation projections of one existing shared support engine, not two independent models",
+  "score_reuse": "same current evaluation and original native-parser outputs/error/raw_exact/semantic_gold; explanations are not grader inputs for multi format",
+  "invalid_originals": "corrected cache unavailable interfaces retained, original invalid object stays in candidate_native_answer"
+}

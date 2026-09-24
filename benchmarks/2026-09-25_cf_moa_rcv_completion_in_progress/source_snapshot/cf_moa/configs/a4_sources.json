@@ -1,0 +1,66 @@
+{
+  "methods": {
+    "M4": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m4/config.json",
+      "copy": "a4_m4.json",
+      "sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+      "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m4/config.json",
+      "development_sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96"
+    },
+    "M5": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m5/config.json",
+      "copy": "a4_m5.json",
+      "sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331",
+      "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m5/config.json",
+      "development_sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331"
+    }
+  },
+  "implementation_sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/experiment.py",
+      "sha256": "c2becd71b6a57600b084ddaf5c0be265c5ca95f1fc2a27b3b23879d75692c8e5"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head_v2.py",
+      "sha256": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head.py",
+      "sha256": "3fa3ac6667ade90b8fff99e7156f078345c62bc77f3a5386a4a737c2b9c20771"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/executor.py",
+      "sha256": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/smoke.py",
+      "sha256": "dfcf7690a06190aa97174c505d2a116715c31d8a94546beee9bf443e82790752"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/author/simglucose/patient/t1dpatient.py",
+      "sha256": "7ad1302fbf064805e2294bbcffd482e55448e37e48b63e629a1ed7f11c701547"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+      "sha256": "594469df93f88f207c239ae6d1632db14ac5bfdaa29ed77de8398ec631fda3b0"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/experiment.py",
+      "sha256": "1d590c2d1ccc3243e1c9388ec4836a74e2ab2dc871831562c519afbb52a67df1"
+    }
+  ],
+  "policy": {
+    "retries": 0,
+    "seed_policy": "original seed 42 in engine and every request; no per-item derivation",
+    "fallback": "frozen head_v2 inline fallback, no second model request",
+    "solver": {
+      "rtol": 1e-06,
+      "atol": 1e-12,
+      "horizon_min": 120,
+      "integrator": "dopri5",
+      "step_min": 1,
+      "random_init_bg": false,
+      "seed": 0
+    }
+  }
+}

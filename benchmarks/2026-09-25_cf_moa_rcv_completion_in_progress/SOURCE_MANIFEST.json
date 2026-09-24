@@ -1,0 +1,1491 @@
+{
+  "status": "staged_for_root_review_not_published",
+  "at": "2026-09-25T00:48:42.590188+08:00",
+  "excludes_self": true,
+  "original_mapping_entries": 114,
+  "adopted_F_added": 1,
+  "current_mapping_entries": 115,
+  "unique_runtime_source_files": 107,
+  "file_count_excluding_manifest": 162,
+  "files": [
+    {
+      "path": "source_snapshot/cf_moa/controller/rule_operation_ablation.py",
+      "sha256": "6a4e45331330ddde3059699a0b704bf5e484476a086475340a0cdeb4999ae0c9",
+      "bytes": 2038,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/rule_operation_ablation.py",
+      "source_sha256": "6a4e45331330ddde3059699a0b704bf5e484476a086475340a0cdeb4999ae0c9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/legacy.py",
+      "sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "bytes": 2240,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/legacy.py",
+      "source_sha256": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/minimal_operations.py",
+      "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "bytes": 9547,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/minimal_operations.py",
+      "source_sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/strong_legacy.py",
+      "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "bytes": 1011,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/strong_legacy.py",
+      "source_sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a4_intervention_execution.py",
+      "sha256": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+      "bytes": 4257,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a4_intervention_execution.py",
+      "source_sha256": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/adopted.py",
+      "sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "bytes": 2592,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/adopted.py",
+      "source_sha256": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/contracts.py",
+      "sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "bytes": 7839,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/contracts.py",
+      "source_sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/legacy_router.py",
+      "sha256": "fbd4d97a05de86d604ed341bdc70b4d1908578b6370bbb7edd3b07e62d05874d",
+      "bytes": 1051,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/legacy_router.py",
+      "source_sha256": "fbd4d97a05de86d604ed341bdc70b4d1908578b6370bbb7edd3b07e62d05874d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/baseline_native.py",
+      "sha256": "2d26eea9e1e6db696af3690f76256e151899bdc250829893924f746c5bb68cae",
+      "bytes": 7621,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/baseline_native.py",
+      "source_sha256": "2d26eea9e1e6db696af3690f76256e151899bdc250829893924f746c5bb68cae",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/__init__.py",
+      "sha256": "577b9e4df85083c67450f04242a535cdd9c3f673c6c30e695ed64a23ee37ca6f",
+      "bytes": 72,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/__init__.py",
+      "source_sha256": "577b9e4df85083c67450f04242a535cdd9c3f673c6c30e695ed64a23ee37ca6f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a5_premise.py",
+      "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+      "bytes": 10424,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a5_premise.py",
+      "source_sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/adapters.py",
+      "sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "bytes": 7595,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/adapters.py",
+      "source_sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/__init__.py",
+      "sha256": "db7aa7be8218c3431d53c40f274f360aea4f68dcb5f43e60ae9485c707423838",
+      "bytes": 80,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/__init__.py",
+      "source_sha256": "db7aa7be8218c3431d53c40f274f360aea4f68dcb5f43e60ae9485c707423838",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a5_robust_readout.py",
+      "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+      "bytes": 9526,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+      "source_sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/provenance.py",
+      "sha256": "e93a15fe243840fe47decdaf0f8654e465749331b7dd6982fdfdfef46c4f5ed0",
+      "bytes": 2970,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/provenance.py",
+      "source_sha256": "e93a15fe243840fe47decdaf0f8654e465749331b7dd6982fdfdfef46c4f5ed0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_support_completion.py",
+      "sha256": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+      "bytes": 9036,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_support_completion.py",
+      "source_sha256": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/experiment_config.py",
+      "sha256": "9485029f9effc84155da385efaf11df527cb426b1fc242fb23618a4cea362c44",
+      "bytes": 834,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/experiment_config.py",
+      "source_sha256": "9485029f9effc84155da385efaf11df527cb426b1fc242fb23618a4cea362c44",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/a5_structural_grammar.py",
+      "sha256": "61e4fe0fb4e36d472ab3873bcc524a5dda8fe3e461cd1d02c3b4899ad458b843",
+      "bytes": 2558,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/a5_structural_grammar.py",
+      "source_sha256": "61e4fe0fb4e36d472ab3873bcc524a5dda8fe3e461cd1d02c3b4899ad458b843",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/validated_views.py",
+      "sha256": "d5f74667e6e1285317c2293f6804ba237ba41aacc3efa4c71c4db038d794bd05",
+      "bytes": 3963,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/validated_views.py",
+      "source_sha256": "d5f74667e6e1285317c2293f6804ba237ba41aacc3efa4c71c4db038d794bd05",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a3_contrastive_comparison.py",
+      "sha256": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+      "bytes": 11118,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a3_contrastive_comparison.py",
+      "source_sha256": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/bounded_edits.py",
+      "sha256": "b37f46529fe963c19d8d10191c2b316e0cc0e0dd94c4c198f8ffc40cafc7b3f8",
+      "bytes": 9859,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/bounded_edits.py",
+      "source_sha256": "b37f46529fe963c19d8d10191c2b316e0cc0e0dd94c4c198f8ffc40cafc7b3f8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/exact_callback_reuse.py",
+      "sha256": "c0397c9dc3b972b1289d34a97700e8cc86ed88e1e32c9e4f2145c8371cd78d8e",
+      "bytes": 12888,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/exact_callback_reuse.py",
+      "source_sha256": "c0397c9dc3b972b1289d34a97700e8cc86ed88e1e32c9e4f2145c8371cd78d8e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/journal.py",
+      "sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+      "bytes": 12223,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/journal.py",
+      "source_sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/c0_native.py",
+      "sha256": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42",
+      "bytes": 7094,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/c0_native.py",
+      "source_sha256": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/run_c0_native.py",
+      "sha256": "6384a6ad012c4d7e4daf755ca2f9932cc7f5dec5900613a0003689fb0b5617ea",
+      "bytes": 14109,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/run_c0_native.py",
+      "source_sha256": "6384a6ad012c4d7e4daf755ca2f9932cc7f5dec5900613a0003689fb0b5617ea",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/vllm_backend.py",
+      "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "bytes": 10098,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/vllm_backend.py",
+      "source_sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/schema_compat.py",
+      "sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "bytes": 4733,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/schema_compat.py",
+      "source_sha256": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/bounded_json.py",
+      "sha256": "1cc18f49727ff748a9d9728555f101484841837466b07cf01f0dee6fdd76a042",
+      "bytes": 2747,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/bounded_json.py",
+      "source_sha256": "1cc18f49727ff748a9d9728555f101484841837466b07cf01f0dee6fdd76a042",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/relational_json.py",
+      "sha256": "32c6a4c02c0defcca6ce694821eeddf3cbb25a79af27bedcfeb5fad5a39ffe92",
+      "bytes": 4884,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/relational_json.py",
+      "source_sha256": "32c6a4c02c0defcca6ce694821eeddf3cbb25a79af27bedcfeb5fad5a39ffe92",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/a3_edit_grammar.py",
+      "sha256": "7725c72bf8eed3158ff8cd18dff3e50a2248134b6c04626e6f56bbe1ffe48000",
+      "bytes": 2633,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/a3_edit_grammar.py",
+      "source_sha256": "7725c72bf8eed3158ff8cd18dff3e50a2248134b6c04626e6f56bbe1ffe48000",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_bounded_coverage.py",
+      "sha256": "e72ef0e68ba8e2c783dfbe9a4884393aebb1453f936fdb5b7c85b3ee061d30f6",
+      "bytes": 18182,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_bounded_coverage.py",
+      "source_sha256": "e72ef0e68ba8e2c783dfbe9a4884393aebb1453f936fdb5b7c85b3ee061d30f6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/evidence_ids.py",
+      "sha256": "d8ae42678c37e0844c4584c75da12c54368480b8847b367aad7c46771c8f2912",
+      "bytes": 2375,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/evidence_ids.py",
+      "source_sha256": "d8ae42678c37e0844c4584c75da12c54368480b8847b367aad7c46771c8f2912",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_coded_coverage.py",
+      "sha256": "1aca353cce31d4d901376ce0294127d090b74a23d126eff6e667766ffe09cdb5",
+      "bytes": 5663,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_coded_coverage.py",
+      "source_sha256": "1aca353cce31d4d901376ce0294127d090b74a23d126eff6e667766ffe09cdb5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_relational_coverage.py",
+      "sha256": "c8ec4de389c5186e16edeff02876e528ca43f5f4009515e30bf0c11d17842c55",
+      "bytes": 15375,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_relational_coverage.py",
+      "source_sha256": "c8ec4de389c5186e16edeff02876e528ca43f5f4009515e30bf0c11d17842c55",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/evidence_highlighting.py",
+      "sha256": "80da46b46fe4e57172fa1abbb99ea2d61a9891c4cf209a70dd079206d4c2104a",
+      "bytes": 7686,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/evidence_highlighting.py",
+      "source_sha256": "80da46b46fe4e57172fa1abbb99ea2d61a9891c4cf209a70dd079206d4c2104a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/single_agent_tools.py",
+      "sha256": "92adf67b3d6eadd25c0b9369ee118745c8142714e47ce2610191e01496fe2a37",
+      "bytes": 7385,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/single_agent_tools.py",
+      "source_sha256": "92adf67b3d6eadd25c0b9369ee118745c8142714e47ce2610191e01496fe2a37",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a2_support_revision.py",
+      "sha256": "3fc2c41c5276ce1ce9c54c991358cbbc49f70d544000c75e91d881eba6d50ed1",
+      "bytes": 3729,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a2_support_revision.py",
+      "source_sha256": "3fc2c41c5276ce1ce9c54c991358cbbc49f70d544000c75e91d881eba6d50ed1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/run_moa_rcv_batched.py",
+      "sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+      "bytes": 17278,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py",
+      "source_sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/f_pool_replica.py",
+      "sha256": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3",
+      "bytes": 1751,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/f_pool_replica.py",
+      "source_sha256": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/run_moa_rcv.py",
+      "sha256": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "bytes": 17582,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py",
+      "source_sha256": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/native_backend.py",
+      "sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "bytes": 4975,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/native_backend.py",
+      "source_sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/resources.py",
+      "sha256": "47b8d65fc5bb99de2784ceceb346d660728f21c97bcaebc11613a91d8425812a",
+      "bytes": 3686,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/resources.py",
+      "source_sha256": "47b8d65fc5bb99de2784ceceb346d660728f21c97bcaebc11613a91d8425812a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/native_runner.py",
+      "sha256": "a8dade53f936a59519d01857b828d5b0f769185d0b660acf657c0aec4dc98ebe",
+      "bytes": 14433,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/native_runner.py",
+      "source_sha256": "a8dade53f936a59519d01857b828d5b0f769185d0b660acf657c0aec4dc98ebe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/a4_repair.py",
+      "sha256": "bdb72d00620ccea2f29f79654aec7032ab5e79772f95aedd52a8c23141d46df2",
+      "bytes": 13906,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/a4_repair.py",
+      "source_sha256": "bdb72d00620ccea2f29f79654aec7032ab5e79772f95aedd52a8c23141d46df2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/a2_controls.py",
+      "sha256": "ca60bea616aa9072118b23d92f89ac0f289ad5692bd72f3a7158b6ca2ca39908",
+      "bytes": 19252,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/a2_controls.py",
+      "source_sha256": "ca60bea616aa9072118b23d92f89ac0f289ad5692bd72f3a7158b6ca2ca39908",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/single_agent_tools.py",
+      "sha256": "12db3383a0814990b418a803af26d7d01e091b77ae8101114c99f507ed7654d9",
+      "bytes": 6894,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/single_agent_tools.py",
+      "source_sha256": "12db3383a0814990b418a803af26d7d01e091b77ae8101114c99f507ed7654d9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tools/__init__.py",
+      "sha256": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+      "bytes": 60,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/tools/__init__.py",
+      "source_sha256": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/native_sampling.py",
+      "sha256": "ca7df13cd0efbc83a3ae8c9b67f7765ad1a06a697d17cbc6e969db91e1502296",
+      "bytes": 2942,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/native_sampling.py",
+      "source_sha256": "ca7df13cd0efbc83a3ae8c9b67f7765ad1a06a697d17cbc6e969db91e1502296",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/incremental_runner.py",
+      "sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+      "bytes": 13195,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/incremental_runner.py",
+      "source_sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_delta.py",
+      "sha256": "ae8f5a30dc5d6549b9794e18558e13a5cc1d741e11524912c7eb758c0c7e6e4a",
+      "bytes": 7564,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_delta.py",
+      "source_sha256": "ae8f5a30dc5d6549b9794e18558e13a5cc1d741e11524912c7eb758c0c7e6e4a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/incremental.py",
+      "sha256": "cac81822cfaddb52317478d7039c73a69c1d3a22d18c8ab358164b93bd8cb885",
+      "bytes": 8019,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/incremental.py",
+      "source_sha256": "cac81822cfaddb52317478d7039c73a69c1d3a22d18c8ab358164b93bd8cb885",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/effect_first_runner.py",
+      "sha256": "7706d9efe3b8b49f268444c54e0fbd1cf73574eee667fc4c55700dea726966dd",
+      "bytes": 14571,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+      "source_sha256": "7706d9efe3b8b49f268444c54e0fbd1cf73574eee667fc4c55700dea726966dd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a3_original_compare.py",
+      "sha256": "b9c445ce207a14c934bfdb5a6e17a6b7a7cbb10e1313db92f9481f12676c5ea6",
+      "bytes": 9612,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a3_original_compare.py",
+      "source_sha256": "b9c445ce207a14c934bfdb5a6e17a6b7a7cbb10e1313db92f9481f12676c5ea6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_target_evidence.py",
+      "sha256": "d6953f295f6e3ba3dce99befdbd7e93ba9c9f5989175e5c531b9e98c8f1b9552",
+      "bytes": 12939,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_target_evidence.py",
+      "source_sha256": "d6953f295f6e3ba3dce99befdbd7e93ba9c9f5989175e5c531b9e98c8f1b9552",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a5_candidate_verify.py",
+      "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+      "bytes": 13386,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+      "source_sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_retrieved_evidence_answers.py",
+      "sha256": "71e6ab46e82f34612e261090898068b56bd29b03b8705358a847ddc4b8c516da",
+      "bytes": 5487,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence_answers.py",
+      "source_sha256": "71e6ab46e82f34612e261090898068b56bd29b03b8705358a847ddc4b8c516da",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_retrieved_evidence.py",
+      "sha256": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71",
+      "bytes": 11285,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence.py",
+      "source_sha256": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a1_scoped_binding.py",
+      "sha256": "cf63bd60e193ba88be525af86bcb22f99ad99d7a77b1001ae60dee6c04c241ff",
+      "bytes": 12150,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a1_scoped_binding.py",
+      "source_sha256": "cf63bd60e193ba88be525af86bcb22f99ad99d7a77b1001ae60dee6c04c241ff",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/__init__.py",
+      "sha256": "6dc7fb578df966288aece08bc08a31733f151aa0978a9a638c5bf2afeda7106b",
+      "bytes": 110,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/__init__.py",
+      "source_sha256": "6dc7fb578df966288aece08bc08a31733f151aa0978a9a638c5bf2afeda7106b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/effect_first.py",
+      "sha256": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+      "bytes": 19116,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/effect_first.py",
+      "source_sha256": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/controller/moa_rcv.py",
+      "sha256": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee",
+      "bytes": 6793,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/controller/moa_rcv.py",
+      "source_sha256": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a5_pool_expansion_control.py",
+      "sha256": "172b6eb35c144600fc8536746bf1033385f86dca53aef46c9180753473c59964",
+      "bytes": 3300,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a5_pool_expansion_control.py",
+      "source_sha256": "172b6eb35c144600fc8536746bf1033385f86dca53aef46c9180753473c59964",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/agents/a5_joint_selector.py",
+      "sha256": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+      "bytes": 6570,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/agents/a5_joint_selector.py",
+      "source_sha256": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/__init__.py",
+      "sha256": "1c1eed19e1f3d7b54acaa71ba3b7016351e549c898aba8192798a04e6154616f",
+      "bytes": 81,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/__init__.py",
+      "source_sha256": "1c1eed19e1f3d7b54acaa71ba3b7016351e549c898aba8192798a04e6154616f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/analysis/score_candidate_experiment.py",
+      "sha256": "283da8348cc386e0119a9fcbc5bbb8837afeef502c2cdb4a85153fefa887eeb8",
+      "bytes": 27800,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/code_snapshot/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/analysis/score_candidate_experiment.py",
+      "source_sha256": "283da8348cc386e0119a9fcbc5bbb8837afeef502c2cdb4a85153fefa887eeb8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+      "sha256": "3da9ac9cc8c7c758feaa2dc63c2b410f07556d6c4b7873f2a1011f4665065cad",
+      "bytes": 462,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/code_snapshot/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+      "source_sha256": "3da9ac9cc8c7c758feaa2dc63c2b410f07556d6c4b7873f2a1011f4665065cad",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/run_fixed.py",
+      "sha256": "558bb1b5049e1a0af28db81c97e64fc55c3bdce90665d742b2d5ee75e7c6ced2",
+      "bytes": 6099,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/code_snapshot/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/run_fixed.py",
+      "source_sha256": "558bb1b5049e1a0af28db81c97e64fc55c3bdce90665d742b2d5ee75e7c6ced2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/evaluation/candidate_verify_runner.py",
+      "sha256": "06390178749d1cbad1f40de4fe80ab33601cc7201a2bf4b8accb76ac558bf899",
+      "bytes": 7917,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/code_snapshot/cf_moa/evaluation/candidate_verify_runner.py",
+      "source_sha256": "06390178749d1cbad1f40de4fe80ab33601cc7201a2bf4b8accb76ac558bf899",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/tests/test_candidate_verify_runner.py",
+      "sha256": "8a2c4628ddab909c359b3b44435debc5712937d1be1d91f5e1858fd0112e2f30",
+      "bytes": 13640,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runtime_source/cf_moa/tests/test_candidate_verify_runner.py",
+      "source_sha256": "8a2c4628ddab909c359b3b44435debc5712937d1be1d91f5e1858fd0112e2f30",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/moa_rcv_v1.json",
+      "sha256": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed",
+      "bytes": 788,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/moa_rcv_v1.json",
+      "source_sha256": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/minimal_system.json",
+      "sha256": "41f96ec70d61c7d569a9a6b643b15c3d1249d4fc5cfa1f032735b9d0c6d56b02",
+      "bytes": 1151,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/minimal_system.json",
+      "source_sha256": "41f96ec70d61c7d569a9a6b643b15c3d1249d4fc5cfa1f032735b9d0c6d56b02",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/resource_admission.json",
+      "sha256": "71962a116d20d953c28a9d7b488c212327b9b81f18d41ba35e272fb55812e45b",
+      "bytes": 394,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/resource_admission.json",
+      "source_sha256": "71962a116d20d953c28a9d7b488c212327b9b81f18d41ba35e272fb55812e45b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/native_sampling.json",
+      "sha256": "7425e96d74dce896bc860be2e3e92d62ecbbf036921a68283c755cddfa0194fe",
+      "bytes": 743,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/native_sampling.json",
+      "source_sha256": "7425e96d74dce896bc860be2e3e92d62ecbbf036921a68283c755cddfa0194fe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/native_sources.json",
+      "sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+      "bytes": 1487,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/native_sources.json",
+      "source_sha256": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/a4_sources.json",
+      "sha256": "ffefb04350e2739ed6b2502b21a72046f93bccd1b0a513a096f5f1aebf1fbbef",
+      "bytes": 3195,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/a4_sources.json",
+      "source_sha256": "ffefb04350e2739ed6b2502b21a72046f93bccd1b0a513a096f5f1aebf1fbbef",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/facts_m4.json",
+      "sha256": "7cedb33bbca40ff22fb5b4bfcacafd7ef9c0f9a51c24f5d843bbcf0e1f39fbab",
+      "bytes": 480,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/facts_m4.json",
+      "source_sha256": "7cedb33bbca40ff22fb5b4bfcacafd7ef9c0f9a51c24f5d843bbcf0e1f39fbab",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/facts_m5.json",
+      "sha256": "ffd2ca3d0a5c2747d93ead06b10dd7fe12893a28ee90bcdfb586f817030c56f0",
+      "bytes": 636,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/facts_m5.json",
+      "source_sha256": "ffd2ca3d0a5c2747d93ead06b10dd7fe12893a28ee90bcdfb586f817030c56f0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/catalog_m4.json",
+      "sha256": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "bytes": 451,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/catalog_m4.json",
+      "source_sha256": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/catalog_m5.json",
+      "sha256": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21",
+      "bytes": 607,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/catalog_m5.json",
+      "source_sha256": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/readout_m4.json",
+      "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+      "bytes": 433,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/readout_m4.json",
+      "source_sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/readout_m5.json",
+      "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+      "bytes": 589,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/readout_m5.json",
+      "source_sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/a4_m4.json",
+      "sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+      "bytes": 430,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/a4_m4.json",
+      "source_sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/cf_moa/configs/a4_m5.json",
+      "sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331",
+      "bytes": 587,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/configs/a4_m5.json",
+      "source_sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+      "sha256": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+      "bytes": 5729,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+      "source_sha256": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+      "sha256": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+      "bytes": 2846,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+      "source_sha256": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+      "sha256": "e4e4bbd1aed35c3439291f34b027db0d35b31569c71158b39f67fe21cf9950b8",
+      "bytes": 2956,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+      "source_sha256": "e4e4bbd1aed35c3439291f34b027db0d35b31569c71158b39f67fe21cf9950b8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+      "sha256": "331cbec06e22b8345ba86e432195fe9c968d3cb8647500228226f0efa024e37e",
+      "bytes": 2924,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+      "source_sha256": "331cbec06e22b8345ba86e432195fe9c968d3cb8647500228226f0efa024e37e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+      "sha256": "7c6e177b7a8a5bddd3cbf0f2b5ba1f23df6b4bce1c227fac4357ae57de2f7373",
+      "bytes": 4600,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+      "source_sha256": "7c6e177b7a8a5bddd3cbf0f2b5ba1f23df6b4bce1c227fac4357ae57de2f7373",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+      "sha256": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+      "bytes": 10925,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+      "source_sha256": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+      "sha256": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+      "bytes": 11322,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+      "source_sha256": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+      "bytes": 13998,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "source_sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+      "sha256": "ecd3ea5c5ce31f9239f9d721aadc5c1a8bb04394fc674aee83dc5503aa9b9a65",
+      "bytes": 1882,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+      "source_sha256": "ecd3ea5c5ce31f9239f9d721aadc5c1a8bb04394fc674aee83dc5503aa9b9a65",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+      "sha256": "0e4c793c14c6ab83f0abd11ca45259380975f628fd50776e40df95cdb591943c",
+      "bytes": 3864,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+      "source_sha256": "0e4c793c14c6ab83f0abd11ca45259380975f628fd50776e40df95cdb591943c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/candidate/r1_head.py",
+      "sha256": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+      "bytes": 1013,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py",
+      "source_sha256": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_structural_head/physiology_head/frozen_method/experiment.py",
+      "sha256": "c2becd71b6a57600b084ddaf5c0be265c5ca95f1fc2a27b3b23879d75692c8e5",
+      "bytes": 14329,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/experiment.py",
+      "source_sha256": "c2becd71b6a57600b084ddaf5c0be265c5ca95f1fc2a27b3b23879d75692c8e5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head_v2.py",
+      "sha256": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f",
+      "bytes": 9301,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head_v2.py",
+      "source_sha256": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head.py",
+      "sha256": "3fa3ac6667ade90b8fff99e7156f078345c62bc77f3a5386a4a737c2b9c20771",
+      "bytes": 9536,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head.py",
+      "source_sha256": "3fa3ac6667ade90b8fff99e7156f078345c62bc77f3a5386a4a737c2b9c20771",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/executor.py",
+      "sha256": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378",
+      "bytes": 8873,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/executor.py",
+      "source_sha256": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/smoke.py",
+      "sha256": "dfcf7690a06190aa97174c505d2a116715c31d8a94546beee9bf443e82790752",
+      "bytes": 6853,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/smoke.py",
+      "source_sha256": "dfcf7690a06190aa97174c505d2a116715c31d8a94546beee9bf443e82790752",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/author/simglucose/patient/t1dpatient.py",
+      "sha256": "7ad1302fbf064805e2294bbcffd482e55448e37e48b63e629a1ed7f11c701547",
+      "bytes": 10360,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/author/simglucose/patient/t1dpatient.py",
+      "source_sha256": "7ad1302fbf064805e2294bbcffd482e55448e37e48b63e629a1ed7f11c701547",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-16/r1_head_experiments/relations/experiment.py",
+      "sha256": "594469df93f88f207c239ae6d1632db14ac5bfdaa29ed77de8398ec631fda3b0",
+      "bytes": 20792,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+      "source_sha256": "594469df93f88f207c239ae6d1632db14ac5bfdaa29ed77de8398ec631fda3b0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-17/r4_head_binding/experiment.py",
+      "sha256": "1d590c2d1ccc3243e1c9388ec4836a74e2ab2dc871831562c519afbb52a67df1",
+      "bytes": 12325,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/experiment.py",
+      "source_sha256": "1d590c2d1ccc3243e1c9388ec4836a74e2ab2dc871831562c519afbb52a67df1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/native_scoring/analyze_cf_baseline_screening.py",
+      "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d",
+      "bytes": 59077,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "source_sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/native_scoring/prepare_cf_baseline_screening.py",
+      "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018",
+      "bytes": 24370,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "source_sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/native_scoring/canonical_labels.json",
+      "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047",
+      "bytes": 1282,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+      "source_sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/native_scoring/native_scoring.py",
+      "sha256": "454d9a75c8d0d60d7c632627b265f97ef0036620c7c052f3974b95c1df6ac808",
+      "bytes": 3607,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/cf_moa/evaluation/native_scoring.py",
+      "source_sha256": "454d9a75c8d0d60d7c632627b265f97ef0036620c7c052f3974b95c1df6ac808",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "source_snapshot/selected_legacy/2026-09-18/r5_head/delivery/r5_head.py",
+      "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+      "bytes": 14626,
+      "kind": "source_or_runtime_config",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "source_sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/statistics/build_paired_atoms.py",
+      "sha256": "5c13e303ad9e3f6076f82c82770ac435e2ecb5c337d7ecb4b0711b44ee5e0f55",
+      "bytes": 17213,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/build_paired_atoms.py",
+      "source_sha256": "5c13e303ad9e3f6076f82c82770ac435e2ecb5c337d7ecb4b0711b44ee5e0f55",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/c5/analyze.py",
+      "sha256": "dabbd146ba4d8cbee78ad8073b38ab6ac7f7aa61038777bd0c3506893f59b1a4",
+      "bytes": 7877,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c5/analyze.py",
+      "source_sha256": "dabbd146ba4d8cbee78ad8073b38ab6ac7f7aa61038777bd0c3506893f59b1a4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/operation_ablations/run.py",
+      "sha256": "3b8b9d5b192b211658e6427e4a7f6b6b6f8a469fecae7daaec3284a32b32598b",
+      "bytes": 10742,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/operation_ablations/run.py",
+      "source_sha256": "3b8b9d5b192b211658e6427e4a7f6b6b6f8a469fecae7daaec3284a32b32598b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/tables/build_tables.py",
+      "sha256": "f93d9003d3daf2a3e142ae03c91fe90e2c60b7bfb8ca8ef0bba6582b4073b130",
+      "bytes": 23414,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/tables/build_tables.py",
+      "source_sha256": "f93d9003d3daf2a3e142ae03c91fe90e2c60b7bfb8ca8ef0bba6582b4073b130",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/tables/render_five_tables.py",
+      "sha256": "89ee831859f6c8170ea6873a58d7be38542ed0329a7632067440e3e0f8528973",
+      "bytes": 16760,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/tables/render_five_tables.py",
+      "source_sha256": "89ee831859f6c8170ea6873a58d7be38542ed0329a7632067440e3e0f8528973",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/tables/c0_supplement.py",
+      "sha256": "3d0ddffbee24ef2624351fb0aa19cf732590d68d28c2dc6b6723634c613d2677",
+      "bytes": 11991,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/tables/c0_supplement.py",
+      "source_sha256": "3d0ddffbee24ef2624351fb0aa19cf732590d68d28c2dc6b6723634c613d2677",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/c0_missing_natural/analyze_completed.py",
+      "sha256": "074f02a58b24a218bf359efbfe4b6f3fcdaf8addbe4de1ee325ee549801136d5",
+      "bytes": 5929,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/analyze_completed.py",
+      "source_sha256": "074f02a58b24a218bf359efbfe4b6f3fcdaf8addbe4de1ee325ee549801136d5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "analysis_source/c0_missing_natural/auxiliary_reuse/bind_existing.py",
+      "sha256": "12234b527ad6654f7cdbc658f3fbbbceff2f92b560c64900adc63d846de82a48",
+      "bytes": 10346,
+      "kind": "bounded_analysis_source",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/auxiliary_reuse/bind_existing.py",
+      "source_sha256": "12234b527ad6654f7cdbc658f3fbbbceff2f92b560c64900adc63d846de82a48",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "plan/01_Progress_and_Point_to_Point_MoA_Plan.md",
+      "sha256": "663084086093f79ed92484757b6ec23c525dcc1651cb5dce249b2c7a9a6fca77",
+      "bytes": 29717,
+      "kind": "previously_public_user_plan",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/01_Progress_and_Point_to_Point_MoA_Plan.md",
+      "source_sha256": "663084086093f79ed92484757b6ec23c525dcc1651cb5dce249b2c7a9a6fca77",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "plan/02_CODING_AGENT_NEXT_TASK.md",
+      "sha256": "13d6f18b8853ce44f7b397f8d38bb314cafcfc65c58d3b58a37d5c09521e06b5",
+      "bytes": 9013,
+      "kind": "previously_public_user_plan",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/02_CODING_AGENT_NEXT_TASK.md",
+      "source_sha256": "13d6f18b8853ce44f7b397f8d38bb314cafcfc65c58d3b58a37d5c09521e06b5",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "plan/download_receipt.json",
+      "sha256": "241d7d53085d3196c55139f609c7bc1a3dfbf611ad112e460600a5bd9230a823",
+      "bytes": 666,
+      "kind": "previously_public_user_plan",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/download_receipt.json",
+      "source_sha256": "241d7d53085d3196c55139f609c7bc1a3dfbf611ad112e460600a5bd9230a823",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "plan/03_Research_Method_Spec.json",
+      "sha256": "86402a0741d13dd16de877b24619dedfd0a3f21aee889735b16938d0c252936d",
+      "bytes": 2739,
+      "kind": "previously_public_user_plan",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/extracted/CF_MoA_Completion_Plan/03_Research_Method_Spec.json",
+      "source_sha256": "86402a0741d13dd16de877b24619dedfd0a3f21aee889735b16938d0c252936d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "plan/paired_cluster_effects.py",
+      "sha256": "de48800e52fe0095fac11892db000107c9ab589492860adc1ab13d9f62fe190c",
+      "bytes": 5444,
+      "kind": "previously_public_user_plan",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/extracted/CF_MoA_Completion_Plan/paired_cluster_effects.py",
+      "source_sha256": "de48800e52fe0095fac11892db000107c9ab589492860adc1ab13d9f62fe190c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "method_spec.resolved.json",
+      "sha256": "f4a3e2e37efd6a3ad479c91272369e8b53c2899998d48acad30143621bb0c1b1",
+      "bytes": 16738,
+      "kind": "resolved_method_spec_not_loader_plan",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/method_spec.resolved.json",
+      "source_sha256": "f4a3e2e37efd6a3ad479c91272369e8b53c2899998d48acad30143621bb0c1b1",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/statistics/paired_effects.json",
+      "sha256": "3d5339014372d7f0214fd694b10022809b72268d90083aad0eca82aaf0c1e8ff",
+      "bytes": 33816,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/paired_effects.json",
+      "source_sha256": "3d5339014372d7f0214fd694b10022809b72268d90083aad0eca82aaf0c1e8ff",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/statistics/paired_atoms.jsonl",
+      "sha256": "df8b0953e107d37b103949a1a934f76baa460210fa82159369441fbb527cf0a6",
+      "bytes": 374276,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/paired_atoms.jsonl",
+      "source_sha256": "df8b0953e107d37b103949a1a934f76baa460210fa82159369441fbb527cf0a6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/statistics/family_effects.jsonl",
+      "sha256": "33f7f6ebe73fd48d5c9f5c39a24f19e1db33a5a2b074c4f4571312213407b31b",
+      "bytes": 317798,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/family_effects.jsonl",
+      "source_sha256": "33f7f6ebe73fd48d5c9f5c39a24f19e1db33a5a2b074c4f4571312213407b31b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/statistics/point_estimate_crosscheck.json",
+      "sha256": "d0dca7cc0dcf6c0a15b9413b866c88a479bcfc958297defd754be3fb5687be74",
+      "bytes": 4575,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/point_estimate_crosscheck.json",
+      "source_sha256": "d0dca7cc0dcf6c0a15b9413b866c88a479bcfc958297defd754be3fb5687be74",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/statistics/receipt.json",
+      "sha256": "3c3d6af8c1ff02a3a085bd319c00a4a649e53a2d4a09e9e69b67a737afe819db",
+      "bytes": 5247,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/receipt.json",
+      "source_sha256": "3c3d6af8c1ff02a3a085bd319c00a4a649e53a2d4a09e9e69b67a737afe819db",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table1_native_effects.json",
+      "sha256": "f32f8b8db1ecba2dcf703562370444d4ab360880dbfee86f3b323854c8d86481",
+      "bytes": 12029,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table1_native_effects.json",
+      "source_sha256": "f32f8b8db1ecba2dcf703562370444d4ab360880dbfee86f3b323854c8d86481",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table1_source_R_strata.json",
+      "sha256": "3b339435a5b1b03957e2c07bd09fdebb32ab6184cbf11bd16b31035affedf481",
+      "bytes": 196641,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table1_source_R_strata.json",
+      "source_sha256": "3b339435a5b1b03957e2c07bd09fdebb32ab6184cbf11bd16b31035affedf481",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table2_selection_mechanisms.json",
+      "sha256": "66ce1189fd0cd826a2c5b8fe5e782822767e94a8d0b73cd3236455c63628b965",
+      "bytes": 7011,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table2_selection_mechanisms.json",
+      "source_sha256": "66ce1189fd0cd826a2c5b8fe5e782822767e94a8d0b73cd3236455c63628b965",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table3_pairs_auxiliary.json",
+      "sha256": "8e145c1a0fff6b3e755d4c6e9ce741495ba1a6243acf6191451f901ceb747659",
+      "bytes": 17207,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table3_pairs_auxiliary.json",
+      "source_sha256": "8e145c1a0fff6b3e755d4c6e9ce741495ba1a6243acf6191451f901ceb747659",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table3_A4_separate_model_scope.json",
+      "sha256": "42765c79ae15a287d7fdfc261b4979de687f098ecfd21d80f8f57f129fe302f3",
+      "bytes": 2519,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table3_A4_separate_model_scope.json",
+      "source_sha256": "42765c79ae15a287d7fdfc261b4979de687f098ecfd21d80f8f57f129fe302f3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table4_operation_ablations.json",
+      "sha256": "bc0fec0e38732aaf18b3359791720eccf8ba0854302b8b4f936ef1005682ffa9",
+      "bytes": 3090,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table4_operation_ablations.json",
+      "source_sha256": "bc0fec0e38732aaf18b3359791720eccf8ba0854302b8b4f936ef1005682ffa9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/table5_quality_cost.json",
+      "sha256": "478d52957c8d7219117e7e2c8b31d6af5924828e4dbeeeed3704464b36034edc",
+      "bytes": 38559,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/table5_quality_cost.json",
+      "source_sha256": "478d52957c8d7219117e7e2c8b31d6af5924828e4dbeeeed3704464b36034edc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/c5_paired_effects.json",
+      "sha256": "230bcbde7c5e4444a2d67596ee9695b3d969055eadc4a30f0418b3658322ced0",
+      "bytes": 11247,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/c5_paired_effects.json",
+      "source_sha256": "230bcbde7c5e4444a2d67596ee9695b3d969055eadc4a30f0418b3658322ced0",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/receipt.json",
+      "sha256": "52b710c880a2d241310602ee6987f270bf9d5521c8ee3855abf83a65e07a7b5e",
+      "bytes": 5533,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/receipt.json",
+      "source_sha256": "52b710c880a2d241310602ee6987f270bf9d5521c8ee3855abf83a65e07a7b5e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/five_tables.md",
+      "sha256": "ac74acff7278e038590149fb18b28bc83c9af0d23a6ea0bfcd468ca7ad2aa2fd",
+      "bytes": 14853,
+      "kind": "completed_development_tables_not_full_v5",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/table_supplement/five_tables.md",
+      "source_sha256": "ac74acff7278e038590149fb18b28bc83c9af0d23a6ea0bfcd468ca7ad2aa2fd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/c5_paired_atoms.jsonl",
+      "sha256": "c2f16d5999de106c8b85a118f36791996d7b3d16686e1d8d523778f3dfb6e913",
+      "bytes": 122651,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/tables/c5_paired_atoms.jsonl",
+      "source_sha256": "c2f16d5999de106c8b85a118f36791996d7b3d16686e1d8d523778f3dfb6e913",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/tables/c5_independent_verification.json",
+      "sha256": "5b7449dd3c4aac1f5c4d447bdd746b0ae29834d0b062aeadd5f8d9e2b22fc124",
+      "bytes": 1721,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/tables/c5_independent_verification.json",
+      "source_sha256": "5b7449dd3c4aac1f5c4d447bdd746b0ae29834d0b062aeadd5f8d9e2b22fc124",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/c5/cost_summary.json",
+      "sha256": "2143bb653450866492bcaa6840c38a609ca6aa01e57b4dbdcf2a844499b57159",
+      "bytes": 6835,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c5/analysis/cost_summary.json",
+      "source_sha256": "2143bb653450866492bcaa6840c38a609ca6aa01e57b4dbdcf2a844499b57159",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/c5/receipt.json",
+      "sha256": "6344456f46b924cb7afe5054031eb3b1e80312262365076e78c732d87da64fe2",
+      "bytes": 552,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c5/analysis/receipt.json",
+      "source_sha256": "6344456f46b924cb7afe5054031eb3b1e80312262365076e78c732d87da64fe2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/operation_ablations/summary.json",
+      "sha256": "effd2e863f07644ecb6c2a4371ceef841e2b8258a6962183d13e35b9992b5e9f",
+      "bytes": 477904,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/operation_ablations/summary.json",
+      "source_sha256": "effd2e863f07644ecb6c2a4371ceef841e2b8258a6962183d13e35b9992b5e9f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/operation_ablations/receipt.json",
+      "sha256": "6f55650513a400e76832f1579039f766d3e055737674ce1e992c996c49b3adf9",
+      "bytes": 3161,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/operation_ablations/receipt.json",
+      "source_sha256": "6f55650513a400e76832f1579039f766d3e055737674ce1e992c996c49b3adf9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "evidence/cached_entry_receipt.json",
+      "sha256": "b40a8f970f9cb228ef922285d04a55eb46c501a57916122381eeaaf59b5f038e",
+      "bytes": 1386,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/receipt.json",
+      "source_sha256": "b40a8f970f9cb228ef922285d04a55eb46c501a57916122381eeaaf59b5f038e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/per_input_status.jsonl",
+      "sha256": "4be9c1f97ad5729682cf330b5a12143476e1088f925f5d252d12b8cb4e3872f5",
+      "bytes": 692177,
+      "kind": "explicit_per_input_metadata_projection",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/operation_ablations/per_input_status.jsonl",
+      "sha256": "e65c0bc15e52383db6f0d9e70d7a1ae4c7034450e67195abacffa39e4d2627e3",
+      "bytes": 250945,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/changes_review_summary.json",
+      "sha256": "fc93e7bf0b4184527cdbabbe2d3d9514508e48450899f3229d4b7a3d894e026a",
+      "bytes": 537,
+      "kind": "public_metadata",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/changes_review/receipt.json",
+      "source_sha256": "aafca9659cf6a380d9ae6821b9b65510381b011e041af0b4450deabda3d7367c",
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "evidence/live_connectivity.json",
+      "sha256": "39cf4371e11e0f8891875a20f927978557e4108acc02ad6bda4a597b77e25e1e",
+      "bytes": 9209,
+      "kind": "public_metadata",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/live_smoke_receipt.json",
+      "source_sha256": "18db48fdfd62cfeda638f3d3e176fce8aa853a1cb7e869c7b2c760e711a15d8d",
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "evidence/fresh_F_m4_connectivity.json",
+      "sha256": "15934e094a4920884bede0ae62232013962c4306c122c709946c9d8bf775e3c4",
+      "bytes": 27122,
+      "kind": "public_metadata",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/batch_scheduling/readout16_m4_actual_receipt.json",
+      "source_sha256": "ceaa0e8702b1dd090c4e4bff4e109833a993bcb912258694b91d42cd8b82f792",
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "evidence/fresh_F_m5_connectivity.json",
+      "sha256": "e0870e5334306119f8233b9df1b60648b8e524d8f35db01430c7be3bf287a819",
+      "bytes": 26344,
+      "kind": "public_metadata",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/batch_scheduling/readout16_m5_actual_receipt.json",
+      "source_sha256": "df24e5985b04ca64cc4ffd14d97d5098cd4b58eec749a4bdcadeae15c3719196",
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/C0_m4_supplement/summary.json",
+      "sha256": "5a0378bfe3d573c114601d5cf89789eb72e749ffc94e02bde43e1c2cad6e620e",
+      "bytes": 1474,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/analysis/m4/summary.json",
+      "source_sha256": "5a0378bfe3d573c114601d5cf89789eb72e749ffc94e02bde43e1c2cad6e620e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/C0_m4_supplement/receipt.json",
+      "sha256": "a5e93aa581d368c143dfdd7689b711120f56c95c2e7ba3b997d8f207db82d474",
+      "bytes": 2847,
+      "kind": "public_numeric_data",
+      "source_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/analysis/m4/receipt.json",
+      "source_sha256": "a5e93aa581d368c143dfdd7689b711120f56c95c2e7ba3b997d8f207db82d474",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "data/C0_auxiliary_metadata.jsonl",
+      "sha256": "eadf305a663a791389cc7c3da08a5f8843fe1eb5d1c5adff8f0ec83c179023d5",
+      "bytes": 15908,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/execution_status_snapshot.json",
+      "sha256": "fc98fa6234a8b8af8fe060c1858159ab1ae0beba9d1b185b34d2329f420953d1",
+      "bytes": 2664,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/completed_new_physical_cost.json",
+      "sha256": "19f825670ac15bc593146b78924eb75ac691f01387d28b44f947938592b2fb8c",
+      "bytes": 12157,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "evidence/report_chapter16_value_check.json",
+      "sha256": "98fd639ce82992c376634524addff20183daefaae61e7773e88931d7dc1c073b",
+      "bytes": 871,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "docs/research/cf_moa_experiment_report.md",
+      "sha256": "6c9f751ed78288ce7bc175bebf45c731cf5a890b899daa4c66539c65c965197c",
+      "bytes": 11763,
+      "kind": "report_chapter16_snapshot",
+      "source_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "source_sha256": "c88a753fdbacd55b66ed4e3017bf0379b9e2f26e00794cab377ff1b319f04bc1",
+      "transformation": "Extract chapter16; replace current private artifact links with public metadata/private-index links; historical chapters referenced, not duplicated"
+    },
+    {
+      "path": "data/confirmation_preparation_status.json",
+      "sha256": "d50e3626a3703001dd16fd5aa2ae0831443c552a3cfacef6dafcd04dc05be769",
+      "bytes": 795,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "runtime_identity.json",
+      "sha256": "50315d26f153e195c649eec3e0991e6c634f2144540ac60a5c8af9b7b814ce73",
+      "bytes": 1922,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/private_artifact_index.json",
+      "sha256": "f074d00241519447d11a66d4072533f802cf50da5d381973f3e723c785aef18e",
+      "bytes": 1564,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "data/public_delivery_index.json",
+      "sha256": "5c583906c691a23692716736620f3e7cc13d40df0a263326767a43b962ca8b7f",
+      "bytes": 1503,
+      "kind": "public_metadata",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": "explicit metadata whitelist / no private text"
+    },
+    {
+      "path": "README.md",
+      "sha256": "24d5a64f53fab30ed69487a160ca387a996cf30ec109d8b85545a4bcef9cccdc",
+      "bytes": 2718,
+      "kind": "package_navigation",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": null
+    },
+    {
+      "path": "PRIVATE_ARTIFACTS.md",
+      "sha256": "0de9a906fb915294a67ddcae65fa7999884b979061ed2ca5402eb559091e1bdc",
+      "bytes": 903,
+      "kind": "privacy_and_private_navigation",
+      "source_path": null,
+      "source_sha256": null,
+      "transformation": null
+    }
+  ],
+  "privacy": {
+    "no_raw_case_or_response_export": true,
+    "no_gold_answers_exported": true,
+    "no_live_SQL_read": true,
+    "metadata_whitelist_used": true,
+    "no_model_calls": 0,
+    "no_grader_calls": 0
+  },
+  "source_map_sha256": "d955bbf8deae722d79d794ae26d79d9be2f067ca8c158debae20de0a01222d28",
+  "metadata_projection_sources": {
+    "data/per_input_status.jsonl": {
+      "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/per_input_status.jsonl": "e87bfd757f0521eb19522b95bbd2e22e7f339af5a5cea7bf9408b4e74810d6f3",
+      "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c5/analysis/per_input_status.jsonl": "0ed77e354c44e50d75b7b83caf18fede90a4c9d32f5558d1dd478e74a0d83021"
+    },
+    "data/operation_ablations/per_input_status.jsonl": {
+      "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/operation_ablations/native_scored.jsonl": "8b3339cfe1b077b1e04bf3aba3cb98b568455128ca29d800c090424d967a56da"
+    },
+    "data/C0_auxiliary_metadata.jsonl": {
+      "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/auxiliary_reuse/bindings.jsonl": "a3ff2636a95fd344c1e63afcc0eeb8b77768912b9cf59e7609290c702a36cda0"
+    }
+  }
+}

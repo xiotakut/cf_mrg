@@ -1,0 +1,37 @@
+{
+  "root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924",
+  "records": [
+    {
+      "name": "complete_inputs_and_context",
+      "source_pattern": "full_v5/inference/*.jsonl",
+      "content": "Complete current questions, options, allowed messages and original responses"
+    },
+    {
+      "name": "active_full_v5_journals",
+      "source_pattern": "full_v5/readout_remaining*/runs/*/journal.sqlite3",
+      "content": "Current requests, responses, complete F pools, callbacks and durable execution",
+      "active_SQL_opened_by_export": false
+    },
+    {
+      "name": "completed_C5_whole_traces",
+      "source_pattern": "c5/runs/*/{journal.sqlite3,model_calls.jsonl,proposals.jsonl}",
+      "content": "Existing full request and selected complete native response"
+    },
+    {
+      "name": "offline_gold_and_score_mapping",
+      "source_pattern": "full_v5/offline/ and prior panel offline/",
+      "content": "Native targets and mappings; not supplied to inference"
+    },
+    {
+      "name": "all26_change_review",
+      "source_pattern": "changes_review/new_changes_review.md and review_surfaces.jsonl",
+      "content": "Case text and source quotations; only aggregate review metadata is public"
+    },
+    {
+      "name": "confirmation_inputs",
+      "source_pattern": "confirmation/preparation/inference/*.jsonl",
+      "content": "Prepared not-run contexts; not public in this snapshot"
+    }
+  ],
+  "public_scope": "Only identifiers, hashes, state, metrics and cost projections; full private files are not included"
+}

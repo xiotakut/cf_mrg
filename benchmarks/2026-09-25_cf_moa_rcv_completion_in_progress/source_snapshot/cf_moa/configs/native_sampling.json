@@ -1,0 +1,12 @@
+{
+  "variant": "same_budget_native_sampling_3x2048_v1",
+  "status": "development_control_not_a_sixth_expert",
+  "seeds": [42, 43, 44],
+  "temperature": 0.7,
+  "max_tokens_per_draw": 2048,
+  "maximum_output_allocation": 6144,
+  "input": "Complete unchanged original messages/prompt and native schema; no evidence-ID table or new resources",
+  "vote": "Exact answer_choice; multi uses a sorted set; tie resolved by earliest draw; preserve entire first winning native response and auxiliary fields",
+  "cost": "Equal maximum output allocation only; actual input/output, call count, model initialization and time reported separately",
+  "failure": "First schema/runtime error stops later draws and later inputs; all attempted failures retained"
+}

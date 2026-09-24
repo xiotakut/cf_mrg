@@ -1,0 +1,38 @@
+{
+  "status": "in_progress_public_review_staging_not_final",
+  "at": "2026-09-25T00:48:42.528705+08:00",
+  "main": "a5_candidate_with_rationales_v1",
+  "default_B_unchanged": true,
+  "source_snapshot": "source_snapshot/",
+  "configuration": "source_snapshot/cf_moa/configs/moa_rcv_v1.json",
+  "resolved_spec": "method_spec.resolved.json",
+  "runtime_identity": "runtime_identity.json",
+  "report": "docs/research/cf_moa_experiment_report.md",
+  "five_development_tables": "data/tables/five_tables.md",
+  "paired_effects": "data/statistics/paired_effects.json",
+  "family_effects": "data/statistics/family_effects.jsonl",
+  "per_input_metadata": "data/per_input_status.jsonl",
+  "operation_metadata": "data/operation_ablations/per_input_status.jsonl",
+  "closed_stage_new_cost": "data/completed_new_physical_cost.json",
+  "method_attributed_cost": "data/tables/table5_quality_cost.json",
+  "status_snapshot": "data/execution_status_snapshot.json",
+  "private_index": "data/private_artifact_index.json",
+  "pending": [
+    "full-v5 complete quality and cost",
+    "M5 natural52 C0 missing4",
+    "common freeze",
+    "confirmation and actual independent ordinary-F replica",
+    "final adoption decision"
+  ],
+  "original_source_map_entries": 114,
+  "explicit_adopted_F_addition": 1,
+  "current_mapping_entries": 115,
+  "unique_runtime_source_files": 107,
+  "publication_side_effects": {
+    "commit": false,
+    "push": false,
+    "model_calls": 0,
+    "grader_calls": 0,
+    "active_SQL_reads": 0
+  }
+}
