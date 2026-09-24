@@ -1,0 +1,966 @@
+{
+  "created": "2026-09-24T13:57:59.826621+08:00",
+  "scope": "first two successful physical calls per backbone plus all currently durable output rows",
+  "mode": "read_only_SQL_and_bound_current_input_samples",
+  "offline_gold_accessed": false,
+  "new_model_calls": 0,
+  "retokenization_calls": 0,
+  "methods": {
+    "M4": {
+      "profile_matches_frozen": true,
+      "physical_requests": [
+        {
+          "task_id": "d00014:a5_candidate_only",
+          "ordinal": 0,
+          "request_hash": "b0fe5a65db93c926cc28b1b3817d5db16211e267adfde349fcdd22d309ae8d6d",
+          "engine_request_id": "0",
+          "engine_core_request_id": "0",
+          "profile_hash": "a78b37b0926fc42e989a48361ca0487cade3280c036d53993e69f59e14e77c21",
+          "engine_accepted": true,
+          "engine_request_matches_expected": true,
+          "temperature": 0,
+          "max_tokens": 1,
+          "seed": 42,
+          "allowed_token_ids": [
+            32,
+            33
+          ],
+          "engine_input_tokens": 59645,
+          "engine_prompt_token_ids_sha256": "8d2a54fccc04d9827ffdcb4deaf48c62619b91529ef39a7ef3e0cf33baf71348",
+          "output_tokens": 1,
+          "finish_reason": "length",
+          "finite_A_B_scores": true
+        },
+        {
+          "task_id": "d00014:a5_candidate_only",
+          "ordinal": 1,
+          "request_hash": "f889bd0d7b88abc12182319b70a7df6b53d62624cdbdf8d5c02f64b4702916b2",
+          "engine_request_id": "1",
+          "engine_core_request_id": "1",
+          "profile_hash": "a78b37b0926fc42e989a48361ca0487cade3280c036d53993e69f59e14e77c21",
+          "engine_accepted": true,
+          "engine_request_matches_expected": true,
+          "temperature": 0,
+          "max_tokens": 1,
+          "seed": 42,
+          "allowed_token_ids": [
+            32,
+            33
+          ],
+          "engine_input_tokens": 59645,
+          "engine_prompt_token_ids_sha256": "a888c45165c726e37242ae325296bfebaa969ef220ac2ca9f2319c5070be94e1",
+          "output_tokens": 1,
+          "finish_reason": "length",
+          "finite_A_B_scores": true
+        }
+      ],
+      "A_B_semantics_swapped_only": true,
+      "checked_durable_output_count": 26,
+      "outputs": [
+        {
+          "task_id": "d00014:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "uncertainty",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "56df9a89539cdcaff5342e0cba0fd0ac5ef2f3d118a0d64ce36e647cd3a9a1cd",
+          "native_response_hash": "806145eeef1b6cbf283c65d35d7388fc0d9cde645428d981252029ea314e75cf",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00014:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1af3aaac26fbf15ba3617547d712f636f74a863ee3194910134d30d33ceb99b7",
+          "native_response_hash": "0b39d701901663847c850b440f04e1de64d91bdf1ec1a29b01bdd9bc2eb68633",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00007:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "f886033d82b0a61318bd7cf031d809bf350ee695c9077d77302d5f31a018e0d0",
+          "native_response_hash": "c5fe9f5da3adc237038258254444bd3a15c729b9b5d8bf24bfa3f393cf99ab66",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00007:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "f886033d82b0a61318bd7cf031d809bf350ee695c9077d77302d5f31a018e0d0",
+          "native_response_hash": "c5fe9f5da3adc237038258254444bd3a15c729b9b5d8bf24bfa3f393cf99ab66",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00001:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1361679fdacbf69ace4ba69a392b570b86bb7048574d6d0afa9a9cf7a50b51a8",
+          "native_response_hash": "d621b99ffb72a94386179de2630e67aae7637b55077f115cf35799b4bdd3a242",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "errors",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00001:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1361679fdacbf69ace4ba69a392b570b86bb7048574d6d0afa9a9cf7a50b51a8",
+          "native_response_hash": "d621b99ffb72a94386179de2630e67aae7637b55077f115cf35799b4bdd3a242",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "errors",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00009:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "fe1810ba1798c574454bf413784965518383c9d5243a076717dbff20182efa1c",
+          "native_response_hash": "1fc32d3a9e737c017d2c123103f8417e559f133f1574e41d9f28a8b341d6a613",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "errors",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00009:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "3f3d7b3c09cb8dc95f260124b05e6a78f26414ef3fa3bd6ead7e3c40730f9649",
+          "native_response_hash": "2667df46177dae26fb3b2c78ab9dcc29d7657ee5a9b07dd36cb4a0f1dc70bf27",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "errors",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00015:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "00be95a0189567b303358bd59109db599919b25cbcee8d1a293a73c2c0d5476a",
+          "native_response_hash": "9dd1ba08c056b1f02740889a0e67a9a7c5450da9fc3ee35aefa76c7c7dce9b4b",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00015:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "00be95a0189567b303358bd59109db599919b25cbcee8d1a293a73c2c0d5476a",
+          "native_response_hash": "9dd1ba08c056b1f02740889a0e67a9a7c5450da9fc3ee35aefa76c7c7dce9b4b",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00016:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "4189d821613a82dc474dfcccedd494faf22319f3a164f80786d8f3883436009b",
+          "native_response_hash": "e213df7f430bc777476d128d964e5aea20b1a32a755a8f850c0aa3e9a3163e02",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00016:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "545024a7758f5c2360e755b435e0eef06ca8f470d3adb794409afb6738c7f388",
+          "native_response_hash": "625e48973d271ee17371ccab169ffc75450508843decc71e0caa004d3ac89d4d",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00028:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "2d227ca8734f183430bb1a3c3fb6c42eb0084f14d4e47176ebc499ec983dcf6b",
+          "native_response_hash": "0eca203f7b8f1e3bf3b58e7e2476f21409cfd1b8a7ab266d5ba9f30cf7b5bd8a",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00028:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1197e923ac19d271a7fd20357742a63161ddac8a308f1ec24f2bc99add9eb051",
+          "native_response_hash": "dc54b79bf4a4b8d606b74555afb774e9cd2fed35a93d8fadc0c3ff0263df5ea1",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00030:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "8df10bfdb0c1288a4e2cf7b4c49c9a114237750393539314392715b21505ec19",
+          "native_response_hash": "f03a75b4c8f5a8aa56d3eb82a5071859b650d9e99e7cef06f6bf47091679d465",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00030:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "61a0d13215cfe3e129d0e1407ec52912992b9d1925a6873983495c55c9805a83",
+          "native_response_hash": "194fdaebccc97c02017ebc97611cdef19b13acce99fec34dd7e2aece73df3cab",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00032:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 3,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "0bfe8be6d0f19a8d2d2c19552d3ab3661b190d6fb9ce2e830e0a13b2153fb7d3",
+          "native_response_hash": "94850c5201bc395ba0a51a4931584896d26c143558acdeeb64f9413197dc5e69",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00032:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 3,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "0bfe8be6d0f19a8d2d2c19552d3ab3661b190d6fb9ce2e830e0a13b2153fb7d3",
+          "native_response_hash": "94850c5201bc395ba0a51a4931584896d26c143558acdeeb64f9413197dc5e69",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00033:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "db6be74246e8ab99d7b94675e13461524bf9e0ee25a8aa9099e2a633431f703c",
+          "native_response_hash": "0032d421def9c39b5e6def776dd21fe2f643ba59c833d393f4c1ede1f8c446ad",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00033:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "db6be74246e8ab99d7b94675e13461524bf9e0ee25a8aa9099e2a633431f703c",
+          "native_response_hash": "0032d421def9c39b5e6def776dd21fe2f643ba59c833d393f4c1ede1f8c446ad",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00041:a5_candidate_only",
+          "status": "retained_nonvote_path",
+          "whole_saved_F_match": true,
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00041:a5_candidate_with_rationales",
+          "status": "retained_nonvote_path",
+          "whole_saved_F_match": true,
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00054:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "813847b7e8a9fb47d3e01f1a96d676d2ac3258a98f936be74692c4e16b4aec6e",
+          "native_response_hash": "b587fdd1cfd91ab7b6541527f1d96e124a7da91a302fda31853088081c72ac5d",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00054:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 3,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "bdc6e094b590002dcb1947799795cb87a97874f6a2ce9af3e38d53fe2150f94b",
+          "native_response_hash": "61d548a57890105e739778dd77adfcdce9bec2ed5765d6bd8640f3d69f8ee232",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00060:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "d196a185c65bf377126f457d0887798c02b7f4cacba90575bd6bd7979f2f1a81",
+          "native_response_hash": "e7e7bf9eb281fa2384bdc56cc73c7929429f76fff5909e77db7b470119625732",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00060:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "2080c8a094bd74722696917458788a1bfd6fda21aaa4fe70cb7472a9fa5c9ddc",
+          "native_response_hash": "77672446cb007cc10cb1deb9bf90c605767282699ab7fabf9cb86f487ab5577b",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        }
+      ]
+    },
+    "M5": {
+      "profile_matches_frozen": true,
+      "physical_requests": [
+        {
+          "task_id": "d00006:a5_candidate_only",
+          "ordinal": 0,
+          "request_hash": "16f7e692a88da4e5641b60624ed593175e4b2e172a67acc2b8a58b8ee5e188f6",
+          "engine_request_id": "0",
+          "engine_core_request_id": "0",
+          "profile_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a",
+          "engine_accepted": true,
+          "engine_request_matches_expected": true,
+          "temperature": 0,
+          "max_tokens": 1,
+          "seed": 42,
+          "allowed_token_ids": [
+            32,
+            33
+          ],
+          "engine_input_tokens": 2072,
+          "engine_prompt_token_ids_sha256": "88c9ead57857571627fc696d6352a321de6bbea839647aca6f1567d304621c7f",
+          "output_tokens": 1,
+          "finish_reason": "length",
+          "finite_A_B_scores": true
+        },
+        {
+          "task_id": "d00006:a5_candidate_only",
+          "ordinal": 1,
+          "request_hash": "5c87ac68ca52e5fb9eba066a6418dd61f677c5a8cd9f46d80c46169025c33db6",
+          "engine_request_id": "1",
+          "engine_core_request_id": "1",
+          "profile_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a",
+          "engine_accepted": true,
+          "engine_request_matches_expected": true,
+          "temperature": 0,
+          "max_tokens": 1,
+          "seed": 42,
+          "allowed_token_ids": [
+            32,
+            33
+          ],
+          "engine_input_tokens": 2072,
+          "engine_prompt_token_ids_sha256": "7b0c8b06c0718d5e1aa2ee12d9de7960e5bac9eeeb0aaf8b58c65e01db7b81be",
+          "output_tokens": 1,
+          "finish_reason": "length",
+          "finite_A_B_scores": true
+        }
+      ],
+      "A_B_semantics_swapped_only": true,
+      "checked_durable_output_count": 35,
+      "outputs": [
+        {
+          "task_id": "d00006:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1a625145c6a75d40ae9667efb2bcf60688bdc3113de233c1401e16ad792c8925",
+          "native_response_hash": "9077da19db1bcf4db4e783f43ebc94f910a0c15e934063c716ad779019339cd8",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00006:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1a625145c6a75d40ae9667efb2bcf60688bdc3113de233c1401e16ad792c8925",
+          "native_response_hash": "9077da19db1bcf4db4e783f43ebc94f910a0c15e934063c716ad779019339cd8",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00015:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1da8b53327785ecfd27a2a5820268818c062deb1d277f0a341c49e59f0516ea4",
+          "native_response_hash": "8f6890e8c7011299b58b7a344af3c5fd61c6e26e6583d5b56c6864b2516cff26",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00015:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "86d39ae05f6a3087d9c8dec092c20a1b9276cde18358a4b290b114dc17eca9a0",
+          "native_response_hash": "b9bb5f12ada92007a5a2099c772b3316b58cd74a7cb8f8176a40955dca16ae05",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00014:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "9e996d57f00cdaed41c457474b4e79bbbf248b2c1bce1c894d4ac66cfe3ff841",
+          "native_response_hash": "730ad3470462432422077ebc6f9eb588a6679e557bb67e32effeb7107e1699cc",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00014:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "9e996d57f00cdaed41c457474b4e79bbbf248b2c1bce1c894d4ac66cfe3ff841",
+          "native_response_hash": "730ad3470462432422077ebc6f9eb588a6679e557bb67e32effeb7107e1699cc",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00006:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "019353b8d76cfd239d01c9fa8d241e48c6e0007f86f65b2fd8733ad06ae6f406",
+          "native_response_hash": "b8597620ce89df07b5cb60081939aced20613feda65b1faeef67230e649e8fd2",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "errors",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "n00006:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1419cad52a78b51f08ca1a282957a6a9a4f63cd035c47163c406c721e9b4a5dd",
+          "native_response_hash": "a5e4789fb5de6efa6dfc3501df629a29a7db251c18fea6d00bae2ce05805f4e9",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "errors",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00017:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "b6236e3fb9bfde93bd7e936d6229b63a92ad6758d3fbd9b53a843594d4bf6f9b",
+          "native_response_hash": "1dedacc5a8222ac2001564536fd8b6167a62b55444a98b9ab41097d5d134bb77",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00017:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "b6236e3fb9bfde93bd7e936d6229b63a92ad6758d3fbd9b53a843594d4bf6f9b",
+          "native_response_hash": "1dedacc5a8222ac2001564536fd8b6167a62b55444a98b9ab41097d5d134bb77",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00028:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "30dbd707a3c31811ba3ba461017f40f37de672123bfc427f2e1cc658ff114615",
+          "native_response_hash": "8672eab30cd8651ba29a30c8353209dd333aefc10f10d347a11e4cba0d7fa0eb",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00028:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "ca0746664edec29091d9e8c3dddb575e99f05ffa4342599cb6201eb57b226426",
+          "native_response_hash": "657c73aacff53c89a584d596547986830bab2f88981641fa57fb85d28411924b",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00030:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "2b85d93819be20a81efadf64b12feacd7a57c77fa40137eeb22ee06367488afc",
+          "native_response_hash": "b1d2f5f46736cb85788369e837a34ab288fd089cb2a453b606a656d74b43a145",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00030:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "2b85d93819be20a81efadf64b12feacd7a57c77fa40137eeb22ee06367488afc",
+          "native_response_hash": "b1d2f5f46736cb85788369e837a34ab288fd089cb2a453b606a656d74b43a145",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00032:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "508a4ef754268b24ef837983c7348e4d4fab3bc16365e426d80ea00ffb63a989",
+          "native_response_hash": "f58da3aacaefb5546a25778f1a08cdd5a3b0c1960c25c26cba63b8b3d1a6c09b",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00032:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "89b989a7d2afc07f9810579459b69f2af1c2dd72cc1ae26e6a59e1d1fb9d02ec",
+          "native_response_hash": "18321d001dd202ed0f752ca0422f041123b513bdafca7b631d7165d1f7ad5ecc",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00042:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1a456c4d5ee9f3fe941613e2c65ee9ad0dd5d6101ceeb180b81c8213f7fb4080",
+          "native_response_hash": "3c1d2efa79315caf65827187d9c50c56b2eec10a56fb0ce71b7bb11ef588a4ec",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00042:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "2d47d4eeb48843840f5f68664c7588bc3f99670db4d0b6d105c6c206ff24b969",
+          "native_response_hash": "c2076f9eeccefe10b8362ff1978b9ef64c83372bd179facc23cb09d3b42f66e2",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00049:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "24ead81f64f3295fa341e7d6bde38f6b7e37cf8cd68275973effcd21b1698c2c",
+          "native_response_hash": "9c972116a5f11a4792d6bcb0137f84b6c0b902fd07f55315e69947b80d54f23d",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00049:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "24ead81f64f3295fa341e7d6bde38f6b7e37cf8cd68275973effcd21b1698c2c",
+          "native_response_hash": "9c972116a5f11a4792d6bcb0137f84b6c0b902fd07f55315e69947b80d54f23d",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00053:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "29a532c347bd691a83940ab94b758269ac0882aff922c00f4a28f5ca00dae3fb",
+          "native_response_hash": "169d03a5968f66883023e873225cbbd686f9a7f660caf6d4c8e3d9032ab663c1",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00053:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "8ce6915fc4edbc3e3f25121f1e2ad742a502b61aac3a1d8e7ff437affb7c3616",
+          "native_response_hash": "bca3c1b84f4af517aa26c9df1d28a18a6756936d64fce7e9ae5264e8271dbbf7",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00057:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "5daa3d4454d14656b68eb1131f3b502e598c6b27a14f21ba0ba60e11c7a21d1d",
+          "native_response_hash": "cd9b14c09113f39875dce8421b8ae0eaeb6c6480230c081686b9baa483a9cb5e",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00057:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "5daa3d4454d14656b68eb1131f3b502e598c6b27a14f21ba0ba60e11c7a21d1d",
+          "native_response_hash": "cd9b14c09113f39875dce8421b8ae0eaeb6c6480230c081686b9baa483a9cb5e",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00058:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "ff634f89674555b7e61438fc2c906bbb01ed253f539aa8fd2a8ae714d53a6cf0",
+          "native_response_hash": "7548c96787c8e0fb10bea3ef03b5cde1c37ca60d8614c4d0dda8f6327d035c68",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00058:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "ff634f89674555b7e61438fc2c906bbb01ed253f539aa8fd2a8ae714d53a6cf0",
+          "native_response_hash": "7548c96787c8e0fb10bea3ef03b5cde1c37ca60d8614c4d0dda8f6327d035c68",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00059:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1681de764f81d98e8853312756a009b0a248c2f4ff3c75fa2eacd28362e3834a",
+          "native_response_hash": "3f4168808b90203c6552ea337a18bb145a21cc9d16ccd515577adc5af9103cd3",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00059:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1681de764f81d98e8853312756a009b0a248c2f4ff3c75fa2eacd28362e3834a",
+          "native_response_hash": "3f4168808b90203c6552ea337a18bb145a21cc9d16ccd515577adc5af9103cd3",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00061:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "35b4e788eeacc87ba234097c19d4867e79149a14437d14024ca6846e20914b20",
+          "native_response_hash": "2ee4800a50ff3afb9ce23dcf3c81aaae4cf4b73e4eb2ebd0b3bf7fd48afb2510",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00061:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "35b4e788eeacc87ba234097c19d4867e79149a14437d14024ca6846e20914b20",
+          "native_response_hash": "2ee4800a50ff3afb9ce23dcf3c81aaae4cf4b73e4eb2ebd0b3bf7fd48afb2510",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00063:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1d5d42f84b059239d18b28844f7185f9ee1e21af97cdde5e6fe418aaaf182ac8",
+          "native_response_hash": "9700de3777ae0a03a08e64b391c36a7bbdc062f3cc2816f7809503ae49142e47",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00063:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "1d5d42f84b059239d18b28844f7185f9ee1e21af97cdde5e6fe418aaaf182ac8",
+          "native_response_hash": "9700de3777ae0a03a08e64b391c36a7bbdc062f3cc2816f7809503ae49142e47",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00064:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "c21b98bb2b46531ffc1ec094c9b9967bc39979130ad450fae213e7b7d10ad8c0",
+          "native_response_hash": "2265224a71805208e5ed0ad9bf8f066b98e74712bd02dccbd569d355747d6022",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00064:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 0,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "458978e466bbd6efbf5432a56df7860b06f5e467326d0049661a8980a6caa617",
+          "native_response_hash": "9aeac195cdb992b90b9bb8fdcece37f4182abc193fde8af8dde802faffe539c1",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        },
+        {
+          "task_id": "d00074:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_original_response_match": true,
+          "original_raw_response_hash": "68008af434f23d7ff61a794b1e3b7b1004b9bc3deb6c9d6df76d2d8796272fa6",
+          "native_response_hash": "9e212ddb4ef23618efe230af1b0d3eac89c623e7fef4d449ef9dbdb0f6e03e47",
+          "native_auxiliary_field_keys": [
+            "answer_choice",
+            "step_by_step_thinking"
+          ],
+          "new_answer_generation_calls": 0
+        }
+      ]
+    }
+  },
+  "status": "passed",
+  "limits": [
+    "Read-only snapshot while runs may continue; this is an ingress/output-contract check, not a quality result.",
+    "Only the first two successful physical calls per backbone were inspected at the engine boundary.",
+    "No gold, offline scores, model generation, tokenizer invocation, source mutation, or database writes."
+  ]
+}

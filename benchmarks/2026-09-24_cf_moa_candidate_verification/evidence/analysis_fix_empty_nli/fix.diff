@@ -1,0 +1,25 @@
+--- before.py
++++ after.py
+@@ -109,6 +109,13 @@
+         exact_full_denominator=sum(v['exact'] is True for v in values)/len(values) if values else None,
+         tp=sum(v['tp'] or 0 for v in values),fp=sum(v['fp'] or 0 for v in values),fn=sum(v['fn'] or 0 for v in values),
+         correction_semantic_score=None,weighting='native mappings; unique-input auxiliary also reported separately')
++
++def comparison_or_empty(rows, baseline):
++    """An absent analysis stratum has no rate, not an invented zero accuracy."""
++    if rows:
++        return old.comparison(rows, baseline)
++    return dict(old.old_score.compare([], baseline),
++        counts=old.old_score.counts([]), accuracy_full_denominator=None)
+ 
+ def main(include_candidate=False, runs_root=None, plan_path=None, output_root=None):
+     root=Path(output_root or HERE);root.mkdir(parents=True,exist_ok=True)
+@@ -215,7 +222,7 @@
+                         selection_rate_given_covered=pool_correct/pool_covered if pool_covered else None,
+                         no_correct_candidate=len(selection)-pool_covered,no_correct_candidate_scored_correct=sum(not a and b for a,b in selection)),
+                     strata=old.stratify(unique,base_unique,meta),
+-                    trigger_path_strata={path:old.comparison([r for r in unique if r['triggered'] and trigger_meta[panel,method,r['request_id']]['F_path']==path],base_unique) for path in ('full_nli_equal_paths_native_completion','full_native_key_maj5_absolute_majority_stop')},
++                    trigger_path_strata={path:comparison_or_empty([r for r in unique if r['triggered'] and trigger_meta[panel,method,r['request_id']]['F_path']==path],base_unique) for path in ('full_nli_equal_paths_native_completion','full_native_key_maj5_absolute_majority_stop')},
+                     pairs=paired_metrics({r['record_id']:r for r in native},pairs,resamples=2000))
+                 inherited=prior_cost['methods'][method]['inherited_B']; extra=summed_cost(calls);extra['logical_score_callbacks']=logical
+                 cost=dict(panel=panel,method=method,arm=arm,inherited_B=inherited,extra_execution=extra,

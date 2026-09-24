@@ -1,0 +1,65 @@
+{
+  "created": "2026-09-24T13:52:13.899263+08:00",
+  "status": "targeted_cpu_tests_passed",
+  "classification": "runtime infrastructure recovery only; no method/prompt/config change",
+  "changes": [
+    {
+      "path": "cf_moa/evaluation/effect_first_runner.py",
+      "before_sha256": "8abef04a4cb63b521d43d24049e615490037b9f7be123212e284e323b75ebaa7",
+      "after_sha256": "7706d9efe3b8b49f268444c54e0fbd1cf73574eee667fc4c55700dea726966dd"
+    },
+    {
+      "path": "cf_moa/agents/a5_candidate_verify.py",
+      "before_sha256": "c628911920738894278c13929a839533ca77b6489b74ea974e383add080483eb",
+      "after_sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec"
+    },
+    {
+      "path": "cf_moa/tests/test_candidate_verify_runner.py",
+      "before_sha256": "3279e4fe7d0d4cc25411fb6ac68df73652f28b1c386795d52a05589f7e528d1f",
+      "after_sha256": "8a2c4628ddab909c359b3b44435debc5712937d1be1d91f5e1858fd0112e2f30"
+    }
+  ],
+  "unchanged_method_ast_after_removing_error_propagation": true,
+  "unchanged_files": [
+    "cf_moa/evaluation/journal.py",
+    "cf_moa/tests/test_a5_candidate_verify.py"
+  ],
+  "tests": {
+    "command": "/home/data3/txy/MedRGAG/.venv/bin/python -m unittest -v cf_moa.tests.test_candidate_verify_runner cf_moa.tests.test_a5_candidate_verify cf_moa.tests.test_effect_first_runner",
+    "passed": 20,
+    "failed": 0,
+    "elapsed_seconds": 0.238,
+    "exit_code": 0
+  },
+  "new_regression": {
+    "name": "test_engine_initialization_failure_stops_after_one_attempt_and_preserves_first_error",
+    "scheduled_tasks": 4,
+    "initialization_attempts": 1,
+    "verifier_messages_constructed": 1,
+    "model_submitted": 0,
+    "failed_tasks": 1,
+    "later_tasks_not_submitted": 3,
+    "journal_phase": "initializing",
+    "journal_status": "failed",
+    "first_error_type": "RuntimeError",
+    "first_error_ordinal": 0,
+    "original_error_preserved": true,
+    "token_usage": 0
+  },
+  "ordinary_failure_regression": {
+    "name": "test_local_score_failure_keeps_saved_F_and_failure_count_then_continues",
+    "completed_tasks": 2,
+    "technical_fallbacks": 1,
+    "later_task": "verified_candidate_selection",
+    "physical_attempts": 12,
+    "submitted": 11,
+    "first_systemic_error": null
+  },
+  "real_model_calls": 0,
+  "old_failed_runs_modified": false,
+  "notes": [
+    "JournalBackend already persists initializing failures with physical=[] and correct zero submission; no journal.py modification needed.",
+    "The candidate arm immediately propagates the original exception only when the actual durable journal already has first_error. Ordinary per-item score failures keep the existing fallback/continue policy.",
+    "All 12 candidate method tests and all 4 existing effect-first runner tests passed unchanged."
+  ]
+}

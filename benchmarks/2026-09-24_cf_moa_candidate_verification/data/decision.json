@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-24T14:09:13.162027+08:00",
+  "experiment": "a5_candidate_verify_v1",
+  "execution_status": "complete",
+  "quality_identity": "exposed_development_fixed_B_and_F_candidates",
+  "independent_evaluation": false,
+  "default_system": "adopted_B_five_operations_v1",
+  "f_disagreement_reanswer": false,
+  "candidate_only_adopted": false,
+  "candidate_with_rationales_adopted": false,
+  "candidate_only_conclusion": "No aggregate unique-input gain; historical native scores fall on both backbones; natural M4 loses two correct inputs.",
+  "candidate_with_rationales_conclusion": "Development selection gain, not established stable improvement: +1/+5 historical and 0/+2 natural correct inputs; natural M5 native-unit mean falls 1.111 percentage points and natural maintain both-correct falls one on each backbone. Retain research identity; do not enable by default.",
+  "policy": "No prompt/seed grid, no new generation, no online gold selection, no change to strong_legacy/R1-R4/adopted_F/default_B.",
+  "reviewed_existing_change_groups": 31,
+  "existing_trigger_groups": 95,
+  "existing_supplemental_rows": 285,
+  "non_NLI_groups": 88,
+  "distinct_existing_candidates": 195,
+  "verification_outputs": 176,
+  "NLI_passthrough_outputs": 14,
+  "real_cost_this_recovery": {
+    "physical_model_requests": 780,
+    "live_input_tokens": 5504408,
+    "live_output_tokens": 780,
+    "live_model_seconds": 858.7597930309421,
+    "failed_attempts": 0,
+    "unresolved_model_usage": 0,
+    "missing_code_fetch_requests": 0
+  },
+  "native_scoring_this_recovery": {
+    "smoke_M4_new": 2,
+    "smoke_M5_new": 2,
+    "full_analysis_new": 36,
+    "total_distinct_new_mapping_scores": 40,
+    "models_called": 0,
+    "auxiliary_backfills_full_analysis": 395
+  },
+  "prior_cached_control_native_scores": 35,
+  "old_failed_run": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/runs/m4",
+    "initialization_failures": 32,
+    "valid_model_requests": 0,
+    "tokens": 0,
+    "initialization_wall_seconds": 473.924582,
+    "smoke_fallback_outputs": 8,
+    "identity_preserved": true
+  },
+  "no_more_automatic_experiments": true
+}

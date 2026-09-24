@@ -1,0 +1,894 @@
+{
+  "at": "2026-09-24T14:12:55.117733+08:00",
+  "scope": "Completed exposed-development results only; 0 model calls, 0 native scoring, no result edits in this review",
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/summary.json": "45248614cc369a35c94d5f57b1e896262715ebc3a804a44d3bfff95a5540228a",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/cost.json": "69a596e7de1b3645ee5aecfcca6cb680f7adb74391d36def080c3dc87585a243",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/per_input_status.jsonl": "e87bfd757f0521eb19522b95bbd2e22e7f339af5a5cea7bf9408b4e74810d6f3",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/native_scored.jsonl": "f70f40095d33fa8df7981fc3f2b773239ec454a3217285c307ee1e6b193486b0",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/receipt.json": "ee60d25a6ae2eeda5174eb682b4c6ce59e332be8544e1127a5e1ab2ff26c68e5"
+  },
+  "checks": {
+    "unique_rows": 3460,
+    "native_rows": 4180,
+    "all40_denominators_exact": true,
+    "unique_correctness_reproduced_from_saved_native_scores": true,
+    "all32_cached_groups_unchanged": true,
+    "cost_matches_two_journals": true,
+    "verified_outputs": 176,
+    "NLI_retained_outputs": 14,
+    "new_scoring_failures": 0,
+    "new_scoring_fallbacks": 0,
+    "historical_M5_B_unavailable_preserved": "d00050: 1/121 unavailable in every arm, not a new verifier failure"
+  },
+  "panel_controls": [
+    {
+      "panel": "historical121",
+      "backbone": "M4",
+      "n": 121,
+      "B": {
+        "correct": 87,
+        "unavailable": 0,
+        "native": 0.7027027027027027,
+        "pool_selected": 9,
+        "pool_covered": 17
+      },
+      "cached_controls": {
+        "replace_42": {
+          "correct": 89,
+          "native": 0.7162162162162162
+        },
+        "replace_43": {
+          "correct": 88,
+          "native": 0.7027027027027027
+        },
+        "replace_44": {
+          "correct": 88,
+          "native": 0.7252252252252253
+        },
+        "append_one_42": {
+          "correct": 87,
+          "native": 0.7027027027027027
+        },
+        "append_one_43": {
+          "correct": 87,
+          "native": 0.7027027027027027
+        },
+        "append_one_44": {
+          "correct": 87,
+          "native": 0.7027027027027027
+        },
+        "pool_old_plus_three": {
+          "correct": 89,
+          "native": 0.7162162162162162
+        }
+      }
+    },
+    {
+      "panel": "historical121",
+      "backbone": "M5",
+      "n": 121,
+      "B": {
+        "correct": 82,
+        "unavailable": 1,
+        "native": 0.6441441441441441,
+        "pool_selected": 10,
+        "pool_covered": 21
+      },
+      "cached_controls": {
+        "replace_42": {
+          "correct": 83,
+          "native": 0.6666666666666666
+        },
+        "replace_43": {
+          "correct": 84,
+          "native": 0.6801801801801802
+        },
+        "replace_44": {
+          "correct": 84,
+          "native": 0.6801801801801802
+        },
+        "append_one_42": {
+          "correct": 82,
+          "native": 0.6441441441441441
+        },
+        "append_one_43": {
+          "correct": 81,
+          "native": 0.6306306306306306
+        },
+        "append_one_44": {
+          "correct": 81,
+          "native": 0.6306306306306306
+        },
+        "pool_old_plus_three": {
+          "correct": 83,
+          "native": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "panel": "natural52",
+      "backbone": "M4",
+      "n": 52,
+      "B": {
+        "correct": 35,
+        "unavailable": 0,
+        "native": 0.6037037037037037,
+        "pool_selected": 14,
+        "pool_covered": 20
+      },
+      "cached_controls": {
+        "replace_42": {
+          "correct": 34,
+          "native": 0.5666666666666667
+        },
+        "replace_43": {
+          "correct": 31,
+          "native": 0.5
+        },
+        "replace_44": {
+          "correct": 32,
+          "native": 0.5111111111111111
+        },
+        "append_one_42": {
+          "correct": 35,
+          "native": 0.6037037037037037
+        },
+        "append_one_43": {
+          "correct": 35,
+          "native": 0.6037037037037037
+        },
+        "append_one_44": {
+          "correct": 35,
+          "native": 0.6037037037037037
+        },
+        "pool_old_plus_three": {
+          "correct": 35,
+          "native": 0.6222222222222222
+        }
+      }
+    },
+    {
+      "panel": "natural52",
+      "backbone": "M5",
+      "n": 52,
+      "B": {
+        "correct": 26,
+        "unavailable": 0,
+        "native": 0.4925925925925926,
+        "pool_selected": 5,
+        "pool_covered": 13
+      },
+      "cached_controls": {
+        "replace_42": {
+          "correct": 25,
+          "native": 0.48148148148148145
+        },
+        "replace_43": {
+          "correct": 23,
+          "native": 0.42592592592592593
+        },
+        "replace_44": {
+          "correct": 24,
+          "native": 0.42592592592592593
+        },
+        "append_one_42": {
+          "correct": 26,
+          "native": 0.4925925925925926
+        },
+        "append_one_43": {
+          "correct": 26,
+          "native": 0.4925925925925926
+        },
+        "append_one_44": {
+          "correct": 26,
+          "native": 0.4925925925925926
+        },
+        "pool_old_plus_three": {
+          "correct": 26,
+          "native": 0.537037037037037
+        }
+      }
+    }
+  ],
+  "new_results": [
+    {
+      "panel": "historical121",
+      "backbone": "M4",
+      "arm": "candidate_only",
+      "correct": 87,
+      "repairs": 3,
+      "harms": 3,
+      "net": 0,
+      "unavailable": 0,
+      "native": 0.6891891891891891,
+      "native_delta_B": -0.013513513513513598,
+      "native_delta_cached_three": -0.027027027027027084,
+      "correct_delta_cached_three": -2,
+      "candidate_pool": {
+        "non_NLI_inputs": 25,
+        "covered": 17,
+        "covered_selected_correct": 9,
+        "selection_rate_given_covered": 0.5294117647058824,
+        "no_correct_candidate": 8,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 11,
+        "exact": 0,
+        "unavailable": 0,
+        "exact_full_denominator": 0.0,
+        "tp": 27,
+        "fp": 16,
+        "fn": 30,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 40,
+      "family_net_changes": {
+        "M11:141": -1,
+        "M12:648": 1,
+        "M12:725": -1,
+        "M14:exact_source_text:555": 2,
+        "M20:22": -1
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 73,
+          "both_correct": 48,
+          "pair_weighted_both_correct_ci95": [
+            0.45307736280487804,
+            0.841498257839721
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 4,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            0.75
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 110,
+        "live_input_tokens": 810638,
+        "live_output_tokens": 110,
+        "live_model_seconds": 257.0225584791042
+      },
+      "attributed_input_tokens": 2638697,
+      "attributed_requests": 530
+    },
+    {
+      "panel": "historical121",
+      "backbone": "M4",
+      "arm": "candidate_with_rationales",
+      "correct": 88,
+      "repairs": 3,
+      "harms": 2,
+      "net": 1,
+      "unavailable": 0,
+      "native": 0.7162162162162162,
+      "native_delta_B": 0.013513513513513487,
+      "native_delta_cached_three": 0.0,
+      "correct_delta_cached_three": -1,
+      "candidate_pool": {
+        "non_NLI_inputs": 25,
+        "covered": 17,
+        "covered_selected_correct": 10,
+        "selection_rate_given_covered": 0.5882352941176471,
+        "no_correct_candidate": 8,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 11,
+        "exact": 0,
+        "unavailable": 0,
+        "exact_full_denominator": 0.0,
+        "tp": 27,
+        "fp": 16,
+        "fn": 30,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 40,
+      "family_net_changes": {
+        "M12:54": -1,
+        "M12:648": -1,
+        "M14:exact_source_text:555": 2,
+        "M14:exact_source_text:936": 1
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 73,
+          "both_correct": 47,
+          "pair_weighted_both_correct_ci95": [
+            0.4264020438683948,
+            0.8312229437229435
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 4,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            0.75
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 110,
+        "live_input_tokens": 869408,
+        "live_output_tokens": 110,
+        "live_model_seconds": 39.53571953705978
+      },
+      "attributed_input_tokens": 2697467,
+      "attributed_requests": 530
+    },
+    {
+      "panel": "historical121",
+      "backbone": "M5",
+      "arm": "candidate_only",
+      "correct": 83,
+      "repairs": 5,
+      "harms": 4,
+      "net": 1,
+      "unavailable": 1,
+      "native": 0.6396396396396397,
+      "native_delta_B": -0.0045045045045044585,
+      "native_delta_cached_three": -0.027027027027026973,
+      "correct_delta_cached_three": 0,
+      "candidate_pool": {
+        "non_NLI_inputs": 26,
+        "covered": 21,
+        "covered_selected_correct": 11,
+        "selection_rate_given_covered": 0.5238095238095238,
+        "no_correct_candidate": 5,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 12,
+        "exact": 2,
+        "unavailable": 0,
+        "exact_full_denominator": 0.16666666666666666,
+        "tp": 9,
+        "fp": 0,
+        "fn": 48,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 40,
+      "family_net_changes": {
+        "M11:78": -1,
+        "M12:660": 1,
+        "M12:725": -1,
+        "M14:exact_source_text:555": 1,
+        "M14:exact_source_text:936": 1,
+        "M17:usmle_derm_991": -1,
+        "M20:22": -1,
+        "M20:6": 2
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 73,
+          "both_correct": 44,
+          "pair_weighted_both_correct_ci95": [
+            0.41972437553832903,
+            0.7812839673913041
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 4,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            0.75
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 120,
+        "live_input_tokens": 986162,
+        "live_output_tokens": 120,
+        "live_model_seconds": 340.1148140048026
+      },
+      "attributed_input_tokens": 2728043,
+      "attributed_requests": 539
+    },
+    {
+      "panel": "historical121",
+      "backbone": "M5",
+      "arm": "candidate_with_rationales",
+      "correct": 87,
+      "repairs": 6,
+      "harms": 1,
+      "net": 5,
+      "unavailable": 1,
+      "native": 0.6891891891891891,
+      "native_delta_B": 0.04504504504504503,
+      "native_delta_cached_three": 0.022522522522522515,
+      "correct_delta_cached_three": 4,
+      "candidate_pool": {
+        "non_NLI_inputs": 26,
+        "covered": 21,
+        "covered_selected_correct": 15,
+        "selection_rate_given_covered": 0.7142857142857143,
+        "no_correct_candidate": 5,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 12,
+        "exact": 2,
+        "unavailable": 0,
+        "exact_full_denominator": 0.16666666666666666,
+        "tp": 9,
+        "fp": 0,
+        "fn": 48,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 40,
+      "family_net_changes": {
+        "M06:supplement_N48": 1,
+        "M12:660": 1,
+        "M17:usmle_derm_327": 1,
+        "M20:6": 2
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 73,
+          "both_correct": 46,
+          "pair_weighted_both_correct_ci95": [
+            0.4374320652173913,
+            0.812572115384615
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 4,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            0.75
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 120,
+        "live_input_tokens": 1060586,
+        "live_output_tokens": 120,
+        "live_model_seconds": 43.266661907196976
+      },
+      "attributed_input_tokens": 2802467,
+      "attributed_requests": 539
+    },
+    {
+      "panel": "natural52",
+      "backbone": "M4",
+      "arm": "candidate_only",
+      "correct": 33,
+      "repairs": 4,
+      "harms": 6,
+      "net": -2,
+      "unavailable": 0,
+      "native": 0.6148148148148148,
+      "native_delta_B": 0.011111111111111072,
+      "native_delta_cached_three": -0.007407407407407418,
+      "correct_delta_cached_three": -2,
+      "candidate_pool": {
+        "non_NLI_inputs": 22,
+        "covered": 20,
+        "covered_selected_correct": 12,
+        "selection_rate_given_covered": 0.6,
+        "no_correct_candidate": 2,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 12,
+        "exact": 0,
+        "unavailable": 0,
+        "exact_full_denominator": 0.0,
+        "tp": 12,
+        "fp": 8,
+        "fn": 48,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 18,
+      "family_net_changes": {
+        "M10:medqa_01062": -1,
+        "M11:122": -2,
+        "M11:3": 1,
+        "M12:596": -1,
+        "M14:exact_source_text:442": 1,
+        "M17:usmle_derm_1919": -1,
+        "M22:medqa/1080": 1
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 28,
+          "both_correct": 14,
+          "pair_weighted_both_correct_ci95": [
+            0.19230769230769232,
+            0.7727272727272727
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 2,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 100,
+        "live_input_tokens": 512594,
+        "live_output_tokens": 100,
+        "live_model_seconds": 73.16464633494616
+      },
+      "attributed_input_tokens": 1245327,
+      "attributed_requests": 312
+    },
+    {
+      "panel": "natural52",
+      "backbone": "M4",
+      "arm": "candidate_with_rationales",
+      "correct": 35,
+      "repairs": 3,
+      "harms": 3,
+      "net": 0,
+      "unavailable": 0,
+      "native": 0.6666666666666666,
+      "native_delta_B": 0.06296296296296289,
+      "native_delta_cached_three": 0.0444444444444444,
+      "correct_delta_cached_three": 0,
+      "candidate_pool": {
+        "non_NLI_inputs": 22,
+        "covered": 20,
+        "covered_selected_correct": 14,
+        "selection_rate_given_covered": 0.7,
+        "no_correct_candidate": 2,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 11,
+        "exact": 0,
+        "unavailable": 0,
+        "exact_full_denominator": 0.0,
+        "tp": 14,
+        "fp": 11,
+        "fn": 46,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 18,
+      "family_net_changes": {
+        "M11:3": 1,
+        "M12:596": -1,
+        "M14:exact_source_text:442": 1,
+        "M22:medqa/1080": -1
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 28,
+          "both_correct": 16,
+          "pair_weighted_both_correct_ci95": [
+            0.2727272727272727,
+            0.8461538461538461
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 2,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 100,
+        "live_input_tokens": 578456,
+        "live_output_tokens": 100,
+        "live_model_seconds": 31.94440534588648
+      },
+      "attributed_input_tokens": 1311189,
+      "attributed_requests": 312
+    },
+    {
+      "panel": "natural52",
+      "backbone": "M5",
+      "arm": "candidate_only",
+      "correct": 27,
+      "repairs": 6,
+      "harms": 5,
+      "net": 1,
+      "unavailable": 0,
+      "native": 0.5259259259259259,
+      "native_delta_B": 0.033333333333333326,
+      "native_delta_cached_three": -0.011111111111111072,
+      "correct_delta_cached_three": 1,
+      "candidate_pool": {
+        "non_NLI_inputs": 15,
+        "covered": 13,
+        "covered_selected_correct": 6,
+        "selection_rate_given_covered": 0.46153846153846156,
+        "no_correct_candidate": 2,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 12,
+        "exact": 2,
+        "unavailable": 0,
+        "exact_full_denominator": 0.16666666666666666,
+        "tp": 2,
+        "fp": 0,
+        "fn": 58,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 18,
+      "family_net_changes": {
+        "M10:medqa_00226": 1,
+        "M11:122": -1,
+        "M12:596": -1,
+        "M12:723": 1,
+        "M17:askdocs_17": -1,
+        "M17:usmle_derm_1919": -1,
+        "M22:medqa/1080": 1,
+        "M22:pubmedqa/25725704": 2
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 28,
+          "both_correct": 7,
+          "pair_weighted_both_correct_ci95": [
+            0.09090909090909091,
+            0.5
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 2,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 60,
+        "live_input_tokens": 329314,
+        "live_output_tokens": 60,
+        "live_model_seconds": 57.36835540400352
+      },
+      "attributed_input_tokens": 964158,
+      "attributed_requests": 257
+    },
+    {
+      "panel": "natural52",
+      "backbone": "M5",
+      "arm": "candidate_with_rationales",
+      "correct": 28,
+      "repairs": 5,
+      "harms": 3,
+      "net": 2,
+      "unavailable": 0,
+      "native": 0.48148148148148145,
+      "native_delta_B": -0.011111111111111127,
+      "native_delta_cached_three": -0.055555555555555525,
+      "correct_delta_cached_three": 2,
+      "candidate_pool": {
+        "non_NLI_inputs": 15,
+        "covered": 13,
+        "covered_selected_correct": 7,
+        "selection_rate_given_covered": 0.5384615384615384,
+        "no_correct_candidate": 2,
+        "no_correct_candidate_scored_correct": 0
+      },
+      "aux": {
+        "native_mapping_denominator": 12,
+        "valid": 12,
+        "exact": 2,
+        "unavailable": 0,
+        "exact_full_denominator": 0.16666666666666666,
+        "tp": 7,
+        "fp": 0,
+        "fn": 53,
+        "correction_semantic_score": null,
+        "weighting": "native mappings; unique-input auxiliary also reported separately"
+      },
+      "family_count": 18,
+      "family_net_changes": {
+        "M11:122": -1,
+        "M12:596": -1,
+        "M17:usmle_derm_1919": -1,
+        "M22:medqa/1080": 2,
+        "M22:pubmedqa/25725704": 3
+      },
+      "pair_metrics": [
+        {
+          "relation": "maintain",
+          "pairs": 28,
+          "both_correct": 9,
+          "pair_weighted_both_correct_ci95": [
+            0.125,
+            0.5
+          ]
+        },
+        {
+          "relation": "respond",
+          "pairs": 2,
+          "both_correct": 1,
+          "pair_weighted_both_correct_ci95": [
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "extra_cost": {
+        "new_model_requests": 60,
+        "live_input_tokens": 357250,
+        "live_output_tokens": 60,
+        "live_model_seconds": 16.34263201794238
+      },
+      "attributed_input_tokens": 992094,
+      "attributed_requests": 257
+    }
+  ],
+  "natural_M5_rationale_weighting": {
+    "unique_input": "5 repairs - 3 harms = +2; 26/52 -> 28/52",
+    "excluded_reference_repair": [
+      "n00006"
+    ],
+    "excluded_reference_harms": [
+      "n00023",
+      "n00032"
+    ],
+    "included_repairs": {
+      "M22:medqa/1080:cf_group": [
+        "n00009",
+        "n00039"
+      ],
+      "M22:pubmedqa/25725704:cf_group": [
+        "n00008",
+        "n00044"
+      ]
+    },
+    "included_harm": [
+      "n00014"
+    ],
+    "unit_changes": [
+      {
+        "unit": "M11:122:t1_c",
+        "records": 1,
+        "before": 1,
+        "after": 0,
+        "delta": -1
+      },
+      {
+        "unit": "M22:medqa/1080:cf_group",
+        "records": 5,
+        "before": 0.2,
+        "after": 0.6,
+        "delta": 0.39999999999999997
+      },
+      {
+        "unit": "M22:pubmedqa/25725704:cf_group",
+        "records": 5,
+        "before": 0,
+        "after": 0.4,
+        "delta": 0.4
+      }
+    ],
+    "native_units": 18,
+    "equation": "(-1 + 2/5 + 2/5) / 18 = -1/90 = -0.0111111111",
+    "native_before": 0.4925925925925926,
+    "native_after": 0.48148148148148145,
+    "explanation": "Unique-input correctness includes reference inputs and weights inputs equally. Original ALL native metric excludes reference records, then weights native units equally; M22 five-record groups each get one unit weight. This is expected weighting, not a scorer error."
+  },
+  "cost": {
+    "actual_new": {
+      "physical_model_requests": 780,
+      "new_model_requests": 780,
+      "live_input_tokens": 5504408,
+      "live_output_tokens": 780,
+      "live_model_seconds": 858.7597930309421,
+      "logical_score_callbacks": 780,
+      "missing_code_fetch_requests": 0,
+      "failed_attempts": 0,
+      "unresolved_model_usage": 0
+    },
+    "by_backbone": {
+      "M4": {
+        "new_model_requests": 420,
+        "live_input_tokens": 2771096,
+        "live_output_tokens": 420,
+        "live_model_seconds": 401.6673296969966
+      },
+      "M5": {
+        "new_model_requests": 360,
+        "live_input_tokens": 2733312,
+        "live_output_tokens": 360,
+        "live_model_seconds": 457.0924633339455
+      }
+    },
+    "B_once_per_panel_backbone": {
+      "historical121:M4": {
+        "reused_head_model_requests": 420,
+        "reused_head_input_tokens": 1828059,
+        "reused_head_output_tokens": 84395,
+        "reused_head_model_seconds": 1854.6178262869375
+      },
+      "historical121:M5": {
+        "reused_head_model_requests": 419,
+        "reused_head_input_tokens": 1741881,
+        "reused_head_output_tokens": 84025,
+        "reused_head_model_seconds": 2291.4049097769766
+      },
+      "natural52:M4": {
+        "reused_head_model_requests": 212,
+        "reused_head_input_tokens": 732733,
+        "reused_head_output_tokens": 52536,
+        "reused_head_model_seconds": null
+      },
+      "natural52:M5": {
+        "reused_head_model_requests": 197,
+        "reused_head_input_tokens": 634844,
+        "reused_head_output_tokens": 39074,
+        "reused_head_model_seconds": null
+      }
+    },
+    "interpretation": [
+      "780 counts smoke+full exactly once; old F not rerun; missing-code extra calls 0; answer generation 0.",
+      "Per deployed arm add one inherited B/F acquisition. Do not count repeated inherited B across method columns as new physical spend.",
+      "285 prior reanswers are already paid, not this run cost; cached three-vote method still attributes three supplementary calls.",
+      "Input tokens are full real request tokens, not uncached-token estimates or GPU energy.",
+      "Model seconds are cumulative per-call timings, not parallel end-to-end time. Fixed arm order and shared prefix caching preclude claiming second-arm latency superiority.",
+      "Natural inherited B timing is unknown, not zero; prior stopped initialization costs remain in historical audit."
+    ]
+  },
+  "offline_scoring_work": {
+    "smoke_new_native_calls": 4,
+    "full_analysis_new_native_calls": 36,
+    "total_recovery_new_native_calls": 40,
+    "full_analysis_auxiliary_backfill_executions": 395,
+    "note": "395 auxiliary block executions across reused response/mapping/arm combinations, not 395 distinct patients or model calls"
+  },
+  "interpretation": [
+    "candidate_only is mixed: historical correct deltas 0/+1 with both native means lower; natural -2/+1 while both native means rise.",
+    "candidate_with_rationales has a bounded positive development signal: historical +1/+5 and both native means rise; natural +0/+2, M4 native rises but M5 native falls. It is not a stable independent result.",
+    "Natural M5 rationale gains concentrate in two M22 mother families (+2,+3); three other families lose one input each. Do not hide its native decline behind the +2 input count.",
+    "Non-NLI pools jointly cover 71/88 inputs. Selected-correct counts: B 38/71, candidate_only 38/71, rationale 46/71. This cross-panel aggregate is descriptive, not independent validation.",
+    "Auxiliary exactness remains M4 0/12 and M5 2/12 per panel. Natural M4 rationale n00046 returns an existing native response with an invalid auxiliary document set (valid auxiliary rows 12->11); it is retained, not blocked.",
+    "No new quality-altering analysis implementation issue found. Reused score rows can retain seed=null from B score provenance; actual verification request seed is42."
+  ],
+  "uncertainty": {
+    "new_arm_family_difference_CI": null,
+    "reason": "No family-cluster superiority interval for these arms. Existing pair both-correct CIs are absolute metrics, not differences vs B. Natural respond has two pairs and broad intervals; no new bootstrap or independent evaluation added."
+  },
+  "review_attempt_note": "Initial independent consistency assertion collapsed existing None to False; corrected to preserve unavailable as a third state. Source analysis and results were not wrong or edited.",
+  "recommendation": "Keep adopted B default, preserve both measured new arms and mixed evidence; no automatic prompt/seed expansion or claim of full validation."
+}

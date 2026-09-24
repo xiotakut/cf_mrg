@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-24T13:56:24.686135+08:00",
+  "scope": "offline analysis only; inference already in progress",
+  "cause": "historical121/M5 has no triggered NLI input; prior comparison divided by zero for empty path strata",
+  "before_sha256": "283da8348cc386e0119a9fcbc5bbb8837afeef502c2cdb4a85153fefa887eeb8",
+  "after_sha256": "bfe9ec8b164a5b3e837472ffb8be291f0e5e2019e2f29e250337c998cc70cc70",
+  "preserved_before": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis_fix_empty_nli/before.py",
+  "preserved_after": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis_fix_empty_nli/after.py",
+  "diff": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis_fix_empty_nli/fix.diff",
+  "active_script": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/analysis/score_candidate_experiment.py",
+  "supervisor_future_analysis_uses_sha256": "bfe9ec8b164a5b3e837472ffb8be291f0e5e2019e2f29e250337c998cc70cc70",
+  "inference_plan_modified": false,
+  "model_messages_modified": false,
+  "model_parameters_modified": false,
+  "source_scorers_modified": false,
+  "new_model_calls": 0,
+  "new_native_score_calls": 0,
+  "tests": {
+    "passed": 2,
+    "empty_denominator": 0,
+    "empty_accuracy": null,
+    "nonempty_comparison_unchanged": true
+  },
+  "cached_results_recomputed": false
+}

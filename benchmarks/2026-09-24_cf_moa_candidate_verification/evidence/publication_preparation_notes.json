@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "stage": "freeze_old_package_inventory",
+      "initial_error": "git ls-files quoted Unicode paths could not be opened",
+      "fix": "use null-delimited git ls-files -z; no source/results modified"
+    },
+    {
+      "stage": "report_review",
+      "initial_error": "Chapter15 prose mislabeled historical M5 d00050 as natural",
+      "fix": "Corrected prose panel label to historical; numeric tables and original results unchanged"
+    },
+    {
+      "stage": "publication_git_diff_check",
+      "initial_error": "CSV CRLF flagged as trailing whitespace",
+      "fix": "Public CSV uses LF, 3460 parsed rows identical; exporter uses explicit LF; source/score/model files unchanged",
+      "preserved_diff_whitespace": "Three unified-diff blank context lines preserve frozen runtime/analysis evidence bytes"
+    }
+  ],
+  "new_model_calls": 0,
+  "new_native_scores": 0
+}

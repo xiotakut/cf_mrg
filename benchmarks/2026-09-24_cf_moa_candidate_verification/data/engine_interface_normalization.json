@@ -1,0 +1,24 @@
+{
+  "observed_calls": 780,
+  "field": "sampling_params.output_kind",
+  "constructed_value": 0,
+  "constructed_name": "CUMULATIVE",
+  "engine_accepted_value": 2,
+  "engine_accepted_name": "FINAL_ONLY",
+  "other_sampling_fields_equal": true,
+  "evidence": [
+    {
+      "file": "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/entrypoints/llm.py",
+      "line": 1350,
+      "sha256": "c94f05c95a988bf842e2efc6704a6f0cb735267bcd603ebad7b19da008250ac9"
+    },
+    {
+      "file": "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/sampling_params.py",
+      "line": 113,
+      "sha256": "c8fef374c69c75c01f77ff35913a255ae92231bf5363a41a692fced66f10b308"
+    }
+  ],
+  "interpretation": "Installed vLLM LLM entrypoint always sets SamplingParams.output_kind to FINAL_ONLY before engine submission; this selects final-only response delivery rather than intermediate cumulative responses, not a change to decoding probabilities or max_tokens.",
+  "historical_receipts_unchanged": true,
+  "new_models_or_scores": 0
+}

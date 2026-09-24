@@ -1,0 +1,128 @@
+{
+  "version": "candidate_verify_research_20260924",
+  "updated_at": "2026-09-24T14:12:09.098432+08:00",
+  "status": "candidate_verification_complete_development_not_default_adopted",
+  "core_plan": {
+    "path": "/home/data3/txy/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+    "sha256": "86be97b9287b82eadfb01015e74fcdf70b31d95a7e12bba177f03ef5abc4741e",
+    "source": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/source_request/CF_MoA_V4_Source_Diagnosis_and_Coding_Instructions.md"
+  },
+  "prior_plan_snapshot": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+  "prior_plan_sha256": "b0a3e244140c36173744d808beb300b1879c42808b3a51f99e1b1d53d2dda815",
+  "user_authorization": "2026-09-24 merge supplied plan and execute actual candidate verification experiments; latest A-H overrides historical pause",
+  "preserved": [
+    "formal_v5",
+    "native_scorer",
+    "historical_results_and_failures",
+    "adopted_A2_A3_A4_F",
+    "B_native_interface_v2"
+  ],
+  "run_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924",
+  "method_adopted": false,
+  "independent_evaluation_started": false,
+  "disabled_new_directions": [
+    "knowledge_audit_A1",
+    "free_diagnosis_rewrite",
+    "global_generative_aggregation",
+    "new_multiround_adjudication",
+    "prompt_grid"
+  ],
+  "work_order": [
+    "existing_95_full_text_repair_harm_review",
+    "cached_append_vote_controls",
+    "candidate_verify_two_arms_real_smoke",
+    "candidate_verify_all88_full121_52_native_evaluation"
+  ],
+  "new_seeds": [],
+  "cached_seed": 42,
+  "research_policy": {
+    "ordinary_item_failure": "record_keep_denominator_continue",
+    "systemic_wrong_input_model_leakage_or_unavailable_service": "stop_affected_run",
+    "unknown_submission": "stop_affected_run_no_gold_resample",
+    "global_final_model_reanswer": false,
+    "independent_quality": "not_started_natural_scope_exposure_must_be_explicit",
+    "new_candidate_generation": false,
+    "nli_candidate_verify": false,
+    "new_operation": "all_nonNLI_existing_candidates_two_code_mappings_existing_ModelSession.score_complete_existing_native_response_return"
+  },
+  "stage_results": {
+    "cached_vote": "complete95_zero_failures_85_unique_leaders_3_ties_7NLI_no_new_models",
+    "semantic_review": "complete_31_independent_change_groups",
+    "candidate_verify": "complete_780_real_score_calls_190_outputs_full121_52_scored",
+    "default_method": "unchanged_equivalent_B_F_reanswer_false"
+  },
+  "gpu_reservation_policy": {
+    "user_requested": true,
+    "authorization": "Explicit fixed GPU2/3 run plus existing user request to hold cards when models are not running",
+    "script": "/home/data3/txy/.local/bin/gpu_watch.py",
+    "initial_gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "current_watched_gpus": [
+      2,
+      3
+    ],
+    "future_reservation_gpus": [],
+    "released_gpus": [],
+    "automatic_reacquisition_prohibited_gpus": [],
+    "min_free_gib": 50,
+    "maximum_hold_gib_per_card": 60,
+    "infinite_wait_and_hold": true,
+    "interval_seconds": 5,
+    "handoff": "STOP only recorded owned watch, verify release, recheck original admission; rehold after explicit engine closure",
+    "watch_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders",
+    "scheduler": null,
+    "admission_revision": "profile_derived_scheduling_v1; no extra60GiB floor; models and requests unchanged",
+    "live_gpu_and_holder_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/final_runtime_receipt.json",
+    "state_is_snapshot_recheck_live_before_release": true,
+    "prior_policy_snapshot": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/before_gpu_scope_0123/execution_plan.json",
+    "automatic_reservation_enabled": true,
+    "latest_user_instruction": "Fixed GPU2/3 experiment complete; restore original owned holders only, do not restart general experiment queue",
+    "stop_receipt": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/queue/user_stop_receipt.json"
+  },
+  "active_process_records": [
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/final_runtime_receipt.json",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/status.json"
+  ],
+  "system_configuration": "/home/data3/txy/cf_moa/configs/minimal_system.json",
+  "system_entry": "cf_moa.controller.minimal_operations.run",
+  "packaging_adopted": true,
+  "incremental_candidate_adopted": false,
+  "latest_decision": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/decision.json",
+  "latest_delivery": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/final_delivery_index.json",
+  "active_revision": "candidate_verify_research_20260924",
+  "core_plan_sha256": "86be97b9287b82eadfb01015e74fcdf70b31d95a7e12bba177f03ef5abc4741e",
+  "research_source": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/source_request/CF_MoA_V4_Source_Diagnosis_and_Coding_Instructions.md",
+  "research_source_sha256": "b64f6a586089d049d9cda109c317bc60a1d8ed714baafb578868b58a90daae3d",
+  "prior_execution_config": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/before/cf_moa/configs/execution_plan.json",
+  "active_stages": [
+    "existing_95_full_text_repair_harm_review",
+    "cached_append_vote_controls",
+    "candidate_verify_two_arms_real_smoke",
+    "candidate_verify_all88_full121_52_native_evaluation"
+  ],
+  "current_run_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924",
+  "candidate_verify_current": {
+    "run_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924",
+    "semantic_review": "complete_31_groups",
+    "cached_native_scoring": "complete_full121_52",
+    "preflight": "passed_780_CPU_score_ingress",
+    "gpu_state": "models_closed_gpu2_3_original_holders_ready_60GiB",
+    "new_candidate_model_calls_at_handoff": 780,
+    "candidate_quality": "complete_two_arms_default_B_unchanged",
+    "delivery_index": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/delivery_index.json",
+    "physical_initialization_failures": 32,
+    "recovery_run_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23",
+    "final_result_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results",
+    "final_runtime_receipt": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/final_runtime_receipt.json"
+  },
+  "allowed_gpus": [
+    2,
+    3
+  ],
+  "gpu_authorization_update": "User explicitly authorized fixed GPU2/3 execution after general autoqueue stop; execution now complete. No new model jobs queued.",
+  "automatic_queue_enabled": false
+}

@@ -1,0 +1,530 @@
+{
+  "version": "candidate_verification_public_data_v1",
+  "date": "2026-09-24",
+  "operation": "Allowlisted projection of existing results; no model inference, grading or head replay.",
+  "source_files": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/summary.json": {
+      "sha256": "45248614cc369a35c94d5f57b1e896262715ebc3a804a44d3bfff95a5540228a",
+      "bytes": 4067214
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/cost.json": {
+      "sha256": "69a596e7de1b3645ee5aecfcca6cb680f7adb74391d36def080c3dc87585a243",
+      "bytes": 75662
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/per_input_status.jsonl": {
+      "sha256": "e87bfd757f0521eb19522b95bbd2e22e7f339af5a5cea7bf9408b4e74810d6f3",
+      "bytes": 1365076
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/native_scored.jsonl": {
+      "sha256": "f70f40095d33fa8df7981fc3f2b773239ec454a3217285c307ee1e6b193486b0",
+      "bytes": 3457567
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4/proposals.jsonl": {
+      "sha256": "54eb140bc86e195846d1254862317ac1a74db11fe6bb04d5c7f5bad23e92747d",
+      "bytes": 13872535
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4/model_calls.jsonl": {
+      "sha256": "4d87c97b5b91a50fab00117ee28b04eca387d82b807f6b34dfa70fa61e00aa05",
+      "bytes": 66688384
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5/proposals.jsonl": {
+      "sha256": "2c833c4d822b39d6fc9346f8e346557ca6cbbbb4cd1967f3590a094ef21dc944",
+      "bytes": 12702065
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5/model_calls.jsonl": {
+      "sha256": "4510cbc258cce0de59160fe2aa8fb9f2910c6968c67461e1b4f349364030bcc4",
+      "bytes": 61611578
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/runs/m4/model_calls.jsonl": {
+      "sha256": "440762ff60a09359270dd5b81ad48f6540123784fb5bb647eb6d028e317311d7",
+      "bytes": 2948976
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/semantic_review/m4.jsonl": {
+      "sha256": "359eb638c34810b166deb8949283b10f4be36b2e0b634627285a52493860dd0c",
+      "bytes": 62053
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/semantic_review/m5.jsonl": {
+      "sha256": "e6d30562f0bba85699f96b0f6efb84dde48baed502ca6b8fab9ac46c54aa6748",
+      "bytes": 94521
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/counterexamples/smoke_four.jsonl": {
+      "sha256": "d603918c8803ff902b2763e16fd520842a91b602233e1ee2bf37c2dcf76ef947",
+      "bytes": 67003
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/decision.json": {
+      "sha256": "369ed90958fbe12217f78ac87967b7a2c2827bd468c0dbac9492ace07843551d",
+      "bytes": 85106
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/receipt.json": {
+      "sha256": "ee60d25a6ae2eeda5174eb682b4c6ce59e332be8544e1127a5e1ab2ff26c68e5",
+      "bytes": 27547
+    },
+    "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/entrypoints/llm.py": {
+      "sha256": "c94f05c95a988bf842e2efc6704a6f0cb735267bcd603ebad7b19da008250ac9",
+      "bytes": 64044
+    },
+    "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/sampling_params.py": {
+      "sha256": "c8fef374c69c75c01f77ff35913a255ae92231bf5363a41a692fced66f10b308",
+      "bytes": 26489
+    }
+  },
+  "projections": {
+    "quality_summary.json": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/summary.json"
+      ],
+      "projection": "Reviewed full aggregate object; all 40 groups and existing native/auxiliary/pool/strata/pair metrics; no answer text or gold."
+    },
+    "cost_summary.json": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/cost.json"
+      ],
+      "projection": "Reviewed full scalar cost object; inherited B/F attributed once per method, kept separate from new physical experiment cost."
+    },
+    "per_input_status.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/per_input_status.jsonl"
+      ],
+      "projection": [
+        "panel",
+        "method",
+        "arm",
+        "request_id",
+        "correct",
+        "native_valid",
+        "run_status",
+        "triggered",
+        "native_answer_ref",
+        "auxiliary_exact",
+        "has_auxiliary",
+        "family_id",
+        "source",
+        "answer_format"
+      ]
+    },
+    "per_input_status.csv": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/per_input_status.jsonl"
+      ],
+      "projection": [
+        "panel",
+        "method",
+        "arm",
+        "request_id",
+        "correct",
+        "native_valid",
+        "run_status",
+        "triggered",
+        "native_answer_ref",
+        "auxiliary_exact",
+        "has_auxiliary",
+        "family_id",
+        "source",
+        "answer_format"
+      ]
+    },
+    "native_scoring_metadata.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/native_scored.jsonl"
+      ],
+      "projection": [
+        "panel",
+        "method",
+        "arm",
+        "request_id",
+        "record_id",
+        "run_status",
+        "correct",
+        "invalid",
+        "format_invalid",
+        "unmapped_diagnosis",
+        "ambiguous",
+        "raw_exact",
+        "uncertainty",
+        "option_f1",
+        "tp",
+        "fp",
+        "fn",
+        "predicted_set_size",
+        "applicability",
+        "native_available",
+        "method_score",
+        "semantic_result",
+        "score_origin",
+        "seed",
+        "auxiliary_score_origin",
+        "document_detection"
+      ]
+    },
+    "model_call_metadata.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4/model_calls.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5/model_calls.jsonl"
+      ],
+      "projection": {
+        "engine_fields": [
+          "model",
+          "seed",
+          "dtype",
+          "gpu_memory_utilization",
+          "max_model_len",
+          "max_num_seqs",
+          "max_num_batched_tokens",
+          "num_gpu_blocks_override",
+          "enable_prefix_caching",
+          "enable_chunked_prefill",
+          "enforce_eager",
+          "max_logprobs",
+          "guided_decoding_backend"
+        ],
+        "sampling_fields": [
+          "n",
+          "best_of",
+          "_real_n",
+          "presence_penalty",
+          "frequency_penalty",
+          "repetition_penalty",
+          "temperature",
+          "top_p",
+          "top_k",
+          "min_p",
+          "seed",
+          "ignore_eos",
+          "max_tokens",
+          "min_tokens",
+          "logprobs",
+          "prompt_logprobs",
+          "detokenize",
+          "skip_special_tokens",
+          "spaces_between_special_tokens",
+          "include_stop_str_in_output",
+          "truncate_prompt_tokens",
+          "output_kind",
+          "output_text_buffer_length",
+          "guided_decoding",
+          "extra_args"
+        ],
+        "event_fields": [
+          "mode",
+          "model",
+          "config_hash",
+          "input_tokens",
+          "output_tokens",
+          "elapsed_seconds",
+          "elapsed_attribution",
+          "batch_seconds",
+          "finish_reason",
+          "physical_batch_size"
+        ],
+        "other_fields": [
+          "method",
+          "gpu",
+          "panel",
+          "request_id",
+          "task_id",
+          "arm",
+          "ordinal",
+          "stage",
+          "status",
+          "phase",
+          "physical_status",
+          "submission_state",
+          "logical_request_hash",
+          "physical_request_hash",
+          "engine_request_id",
+          "engine_core_request_id",
+          "actual_engine_parameters",
+          "actual_sampling_parameters",
+          "omitted_sampling_token_id_fields_sha256",
+          "decoding_parameters_match_constructed_request",
+          "engine_interface_normalization",
+          "event",
+          "code_logprobs",
+          "callback_seconds",
+          "reserved_input_tokens",
+          "reserved_output_tokens",
+          "error_type",
+          "error_category",
+          "projection_is_full_request"
+        ],
+        "messages_prompts_and_token_sequences_omitted": true
+      }
+    },
+    "candidate_selection_metadata.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5/proposals.jsonl"
+      ],
+      "projection": {
+        "outer_fields": [
+          "method",
+          "request_id",
+          "task_id",
+          "arm",
+          "input_hash",
+          "base_answer_ref",
+          "elapsed_seconds",
+          "cost",
+          "status",
+          "verification_status",
+          "verification_failed",
+          "verification_fallback_saved_F"
+        ],
+        "trace_fields": [
+          "old_f_identity",
+          "include_rationales",
+          "seed",
+          "logical_score_calls",
+          "new_answer_generation_calls",
+          "records",
+          "scores",
+          "fallback_saved_F",
+          "candidate_keys",
+          "representatives",
+          "route",
+          "selected_key",
+          "tied_maximum",
+          "selected_original_response_index",
+          "score_interpretation",
+          "output_policy"
+        ],
+        "complete_native_response_omitted_referenced_by_hash": true
+      }
+    },
+    "prior_initialization_failures.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/runs/m4/model_calls.jsonl"
+      ],
+      "projection": [
+        "method",
+        "gpu",
+        "run_identity",
+        "task_id",
+        "ordinal",
+        "status",
+        "phase",
+        "error",
+        "physical_records",
+        "valid_model_requests",
+        "input_tokens",
+        "output_tokens",
+        "logical_request_canonical_sha256",
+        "not_counted_as_successful_candidate_verification"
+      ]
+    },
+    "prior_semantic_review_metadata.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/semantic_review/m4.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/semantic_review/m5.jsonl"
+      ],
+      "projection": [
+        "review_version",
+        "panel",
+        "method",
+        "request_id",
+        "answer_format",
+        "F_path",
+        "sample_sha256",
+        "review_unit",
+        "categories",
+        "baseline_correct",
+        "seed_outcomes",
+        "private_original_text_review_completed",
+        "medical_truth_independently_regraded",
+        "code_mapping_issue_confirmed",
+        "interpretation",
+        "new_model_calls",
+        "new_native_score_calls"
+      ]
+    },
+    "fixed_smoke_counterexample_metadata.jsonl": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/counterexamples/smoke_four.jsonl"
+      ],
+      "projection": {
+        "fields": [
+          "method",
+          "request_id",
+          "panel",
+          "scope",
+          "task_format",
+          "rationales_change_rank_order",
+          "rationales_change_selected_key",
+          "candidate_ability_failure",
+          "mechanism_summary_without_case_text",
+          "quote_locations_checked_in_private_trace",
+          "candidate_count",
+          "arms",
+          "new_model_calls_for_review",
+          "new_native_score_calls_for_review",
+          "causality_limit"
+        ],
+        "case_text_and_original_quotes_omitted": true,
+        "mechanism_notes": "Short manually written nonclinical summaries from already completed private reviews; no new inference or medical grading."
+      }
+    },
+    "decision.json": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/decision.json"
+      ],
+      "projection": [
+        "at",
+        "experiment",
+        "execution_status",
+        "quality_identity",
+        "independent_evaluation",
+        "default_system",
+        "f_disagreement_reanswer",
+        "candidate_only_adopted",
+        "candidate_with_rationales_adopted",
+        "candidate_only_conclusion",
+        "candidate_with_rationales_conclusion",
+        "policy",
+        "reviewed_existing_change_groups",
+        "existing_trigger_groups",
+        "existing_supplemental_rows",
+        "non_NLI_groups",
+        "distinct_existing_candidates",
+        "verification_outputs",
+        "NLI_passthrough_outputs",
+        "real_cost_this_recovery",
+        "native_scoring_this_recovery",
+        "prior_cached_control_native_scores",
+        "old_failed_run",
+        "no_more_automatic_experiments"
+      ]
+    },
+    "analysis_receipt_metadata.json": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/receipt.json"
+      ],
+      "projection": [
+        "actual_new_native_score_calls",
+        "auxiliary_only_backfills",
+        "canonical_table_read",
+        "new_model_calls",
+        "script_sha256",
+        "score_cache_sha256",
+        "reused_functions",
+        "candidate_run_status"
+      ]
+    },
+    "engine_interface_normalization.json": {
+      "source_files": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4/model_calls.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5/model_calls.jsonl",
+        "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/entrypoints/llm.py",
+        "/home/data3/txy/MedRGAG/.venv/lib/python3.10/site-packages/vllm/sampling_params.py"
+      ],
+      "projection": [
+        "observed_calls",
+        "field",
+        "constructed_value",
+        "constructed_name",
+        "engine_accepted_value",
+        "engine_accepted_name",
+        "other_sampling_fields_equal",
+        "evidence",
+        "interpretation",
+        "historical_receipts_unchanged",
+        "new_models_or_scores"
+      ]
+    },
+    "verification_receipt.json": {
+      "source_files": [],
+      "projection": "Derived consistency checks over saved public projections only; no native rescoring."
+    },
+    "README.md": {
+      "source_files": [],
+      "projection": "Publication data navigation and privacy/scope boundary; all quantities verified from saved metadata."
+    },
+    "verify_public_data.py": {
+      "source_files": [],
+      "projection": "Standalone standard-library consistency checker; public metadata only."
+    }
+  },
+  "public_files": [
+    {
+      "path": "README.md",
+      "sha256": "c298d306b8a3d7c2cd78839deea90169304f5e9ef791138c93e015b810fe3012",
+      "bytes": 3740
+    },
+    {
+      "path": "analysis_receipt_metadata.json",
+      "sha256": "b01821ea727f3a0393e78f037ccf5c47db55b1e6686e9966a68a94752445e284",
+      "bytes": 3171
+    },
+    {
+      "path": "candidate_selection_metadata.jsonl",
+      "sha256": "31a8e03aa2efd947421785894e96f28ce80d4d7b02823e4db7fac5641bb343c0",
+      "bytes": 505905
+    },
+    {
+      "path": "cost_summary.json",
+      "sha256": "69a596e7de1b3645ee5aecfcca6cb680f7adb74391d36def080c3dc87585a243",
+      "bytes": 75662
+    },
+    {
+      "path": "decision.json",
+      "sha256": "3c6713464051264031056ca699ce3b2f403c806107334c398ebf120f04f75c64",
+      "bytes": 2166
+    },
+    {
+      "path": "engine_interface_normalization.json",
+      "sha256": "f5eadaafae2837ebc180dc264626b7d46bf80ef39000da07373b073ba57ec83b",
+      "bytes": 1037
+    },
+    {
+      "path": "fixed_smoke_counterexample_metadata.jsonl",
+      "sha256": "19076baf70433af7dd83022fe348500fc578dcc80cd00530a17668e5d27bc2fd",
+      "bytes": 10974
+    },
+    {
+      "path": "model_call_metadata.jsonl",
+      "sha256": "7da0837ec1fc85c288201999e5584e804a08454043b4d655ea31133e9f3b7d72",
+      "bytes": 1942912
+    },
+    {
+      "path": "native_scoring_metadata.jsonl",
+      "sha256": "f80d2a62b151c4e6328d7797eabe52fdcb9c48edbf6804ac9ae3e54b810c9d3c",
+      "bytes": 2822481
+    },
+    {
+      "path": "per_input_status.csv",
+      "sha256": "c6882260b3de35d02e8c005062eef69298da64506a06d9cbc6c26ab60a32ad0a",
+      "bytes": 578205
+    },
+    {
+      "path": "per_input_status.jsonl",
+      "sha256": "e87bfd757f0521eb19522b95bbd2e22e7f339af5a5cea7bf9408b4e74810d6f3",
+      "bytes": 1365076
+    },
+    {
+      "path": "prior_initialization_failures.jsonl",
+      "sha256": "0d00a15dff48fd20e086f82a06d839900a8f460e81ffa232f30507072831c217",
+      "bytes": 18224
+    },
+    {
+      "path": "prior_semantic_review_metadata.jsonl",
+      "sha256": "180a7ffdb59d7e32854e04cf91cc0c89cf791417fc09052c5cfb09e967d1bfc8",
+      "bytes": 31368
+    },
+    {
+      "path": "quality_summary.json",
+      "sha256": "45248614cc369a35c94d5f57b1e896262715ebc3a804a44d3bfff95a5540228a",
+      "bytes": 4067214
+    },
+    {
+      "path": "verification_receipt.json",
+      "sha256": "9769ecd483c0442b2c0d8395fa8532e728c2846653babe9e54a2449583cad54b",
+      "bytes": 1001
+    },
+    {
+      "path": "verify_public_data.py",
+      "sha256": "10307fa9272ab6d4997839febf490afd0864440e1dde6b98497bb6ed8e6e688e",
+      "bytes": 9114
+    }
+  ],
+  "full_private_trace_published": false,
+  "export_script_sha256": "275a6a5dd5e2add21e125ac23d22eadad34bdf615da4e65e765dd174a1471995"
+}

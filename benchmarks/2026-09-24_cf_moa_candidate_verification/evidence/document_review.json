@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-24T15:03:37.599496+08:00",
+  "scope": "Read-only editorial/numeric review of three publication entry documents and report chapter15. No model calls, native scoring, source execution, or full repository audit.",
+  "source_sha256": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_publication/README.md": "1fc329addde6842abccdbef2de89ad9abc754b693bf23ef88d3e546401478405",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_publication/RUN_AND_DELIVERY.md": "fb69a493611c2b4ca8f24127906bbdce4dfe87f68893d24251ee5e3f4b50cda8",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_publication/SOURCE_ENTRY.md": "b41ad3234aed4442fcf4f203a9bd5ad3e9b9912dd9fcad9e9a5556158f3488fb",
+    "/home/data3/txy/docs/research/cf_moa_experiment_report.md": "b5ac18c8bdfc9749ed2031fd9891e5f8e6a21785b12514c5ef0e5f66d397ab48"
+  },
+  "reference_result_sha256": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/summary.json": "45248614cc369a35c94d5f57b1e896262715ebc3a804a44d3bfff95a5540228a"
+  },
+  "checks": {
+    "chapter40_quality_cells_match_saved_summary": true,
+    "780_score_calls_not_long_answer_generation": true,
+    "190_outputs_distinguish_176_verification_and_14_NLI": true,
+    "95_trigger_combinations_not_full_panel_denominator": true,
+    "full121_and52_denominators_preserved": true,
+    "old32_failures_and8_fallbacks_not_success": true,
+    "40_new_native_mapping_scores_not_model_calls": true,
+    "input5504408_output780_cost_correct": true,
+    "original_delivery116_items_verified": true,
+    "profile_vs_score_parameters_explicit": true,
+    "output_kind0_to2_return_mode_normalization_explicit": true,
+    "development_signal_not_independent_gain_claim": true,
+    "private_full_traces_not_claimed_public": true,
+    "source_package_not_claimed_standalone_executable": true
+  },
+  "findings": [],
+  "status": "pass",
+  "limits": [
+    "Built chapter15 and RUN_AND_DELIVERY relative links/explicit anchors checked locally. No remote GitHub fetch performed by this reviewer; final remote verification remains publisher responsibility.",
+    "No private patient messages were reread for this editorial review.",
+    "This review checks reporting against saved results, not independent scientific reproduction."
+  ],
+  "new_model_calls": 0,
+  "new_native_score_calls": 0,
+  "resolved_findings": [
+    {
+      "location": "report15.3",
+      "old": "自然M5旧不可用输入d00050",
+      "new": "历史M5旧不可用输入d00050",
+      "status": "corrected_by_parent_and_verified_in_built_public_copy"
+    }
+  ],
+  "built_package_document_check": {
+    "root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_candidate_verify/benchmarks/2026-09-24_cf_moa_candidate_verification",
+    "relative_links_checked": 43,
+    "explicit_anchors_checked": 7,
+    "external_http_links_not_fetched": 0,
+    "issues": [],
+    "report_sha256": "aa97b0e41e49e7219941050c02c267a46b452976f1b48341d4235a7124165b58",
+    "run_and_delivery_sha256": "fb69a493611c2b4ca8f24127906bbdce4dfe87f68893d24251ee5e3f4b50cda8"
+  }
+}

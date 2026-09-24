@@ -1,0 +1,87 @@
+{
+  "actual_new_native_score_calls": 36,
+  "auxiliary_only_backfills": 395,
+  "canonical_table_read": false,
+  "new_model_calls": 0,
+  "script_sha256": "bfe9ec8b164a5b3e837472ffb8be291f0e5e2019e2f29e250337c998cc70cc70",
+  "score_cache_sha256": "6fcf7de84974738cad88d2f770ce8249cfc3c426d648c35ab672fda1b42e3230",
+  "reused_functions": [
+    "native_scoring.score_proposal",
+    "score_run.unit_summaries",
+    "paired_metrics.paired_metrics"
+  ],
+  "candidate_run_status": {
+    "M4": {
+      "status": "complete",
+      "planned": 106,
+      "complete": 106,
+      "failed": 0,
+      "unavailable": 0,
+      "not_submitted": 0,
+      "first_systemic_error": null,
+      "cost": {
+        "physical_model_requests": 420,
+        "new_model_requests": 420,
+        "live_input_tokens": 2771096,
+        "live_output_tokens": 420,
+        "live_model_seconds": 401.6673296969966,
+        "recorded_call_wall_seconds": 442.79052543640137,
+        "unfinished_call_wall_unknown": 0,
+        "unresolved_model_usage": 0,
+        "model_usage_complete": true,
+        "submission_attempts": 420,
+        "failed_attempts": 0,
+        "cost_basis": "unique durable physical records across attempts; unresolved usage excluded, not zero"
+      },
+      "request_counts": {
+        "attempted": 420,
+        "submitted": 420,
+        "completed": 420,
+        "in_flight": 0,
+        "in_flight_state_unknown": 0,
+        "definition": "submitted includes uncertain transport submissions; in_flight means no durable completion, not a claim that GPU execution is still active"
+      },
+      "elapsed_seconds": 296.6486727010051,
+      "ordinary_item_failure_stops_batch": false,
+      "verification_failed": 0,
+      "verification_fallback_saved_F": 0,
+      "complete_means_execution_finished_not_verification_success": true
+    },
+    "M5": {
+      "status": "complete",
+      "planned": 84,
+      "complete": 84,
+      "failed": 0,
+      "unavailable": 0,
+      "not_submitted": 0,
+      "first_systemic_error": null,
+      "cost": {
+        "physical_model_requests": 360,
+        "new_model_requests": 360,
+        "live_input_tokens": 2733312,
+        "live_output_tokens": 360,
+        "live_model_seconds": 457.0924633339455,
+        "recorded_call_wall_seconds": 540.6566331386566,
+        "unfinished_call_wall_unknown": 0,
+        "unresolved_model_usage": 0,
+        "model_usage_complete": true,
+        "submission_attempts": 360,
+        "failed_attempts": 0,
+        "cost_basis": "unique durable physical records across attempts; unresolved usage excluded, not zero"
+      },
+      "request_counts": {
+        "attempted": 360,
+        "submitted": 360,
+        "completed": 360,
+        "in_flight": 0,
+        "in_flight_state_unknown": 0,
+        "definition": "submitted includes uncertain transport submissions; in_flight means no durable completion, not a claim that GPU execution is still active"
+      },
+      "elapsed_seconds": 488.649707641016,
+      "ordinary_item_failure_stops_batch": false,
+      "verification_failed": 0,
+      "verification_fallback_saved_F": 0,
+      "complete_means_execution_finished_not_verification_success": true
+    }
+  }
+}

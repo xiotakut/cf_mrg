@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-24T15:06:14.029045+08:00",
+  "status": "passed",
+  "scope": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_candidate_verify/benchmarks/2026-09-24_cf_moa_candidate_verification",
+  "review_mode": "Read only, bounded to this new publication package; no inference or native scoring.",
+  "files_reviewed": 78,
+  "source_manifest_entries": 74,
+  "source_manifest_all_published_hashes_match": true,
+  "original_artifacts": 116,
+  "publication_status_counts": {
+    "metadata_or_document_projection": 16,
+    "local_only": 58,
+    "byte_identical": 42
+  },
+  "raw_case_payload_key_hits": [],
+  "credential_pattern_hits": [],
+  "binary_or_SQL_files": [],
+  "checks": {
+    "status": "passed",
+    "quality_groups": 40,
+    "per_input_rows": 3460,
+    "native_scoring_mapping_rows": 4180,
+    "model_call_rows": 780,
+    "input_tokens": 5504408,
+    "output_tokens": 780,
+    "live_model_seconds": 858.7597930309421,
+    "execution_output_rows": 190,
+    "verified_non_NLI_outputs": 176,
+    "retained_NLI_outputs": 14,
+    "prior_initialization_failures": 32,
+    "reviewed_old_change_groups": 31,
+    "old_review_seed_rows": 93,
+    "old_review_repairs": 35,
+    "old_review_harms": 40,
+    "fixed_smoke_counterexamples": 4,
+    "private_quote_locations_checked": 26,
+    "full_historical_denominator": 121,
+    "full_natural_denominator": 52,
+    "forbidden_raw_data_keys_found": 0,
+    "verification_scope": "Public consistency only; no private medical semantic regrading."
+  },
+  "privacy_boundary": "Data rows contain identifiers, status, scalar scores, costs and hashes; no case text, actual messages, raw responses, gold text or SQLite. Fixed public source-code prompts remain published.",
+  "not_independent_medical_regrading": true,
+  "findings_resolved": [
+    {
+      "finding": "Two report links called a public metadata projection a complete private smoke trace.",
+      "resolution": "Both published document copies now explicitly state full contents are not published, name the server-side artifact, and label the public link metadata only. Original private evidence unchanged."
+    },
+    {
+      "finding": "CSV used CRLF before final packaging.",
+      "resolution": "Publication formatting normalized to LF; 3460 parsed rows preserved, JSONL unchanged; exporter and source manifest hashes refreshed. No scoring or method change."
+    }
+  ],
+  "engine_normalization_declared": "780 sampling.output_kind constructed=0 to engine=2, documented from installed vLLM final-only return interface; original run receipts retained.",
+  "limitations": [
+    "Lexical and structural publication review is not a universal secret detector.",
+    "Private original cases and SQL were not reread for this bounded package review.",
+    "Metadata is insufficient to independently adjudicate clinical semantics."
+  ],
+  "new_model_calls": 0,
+  "new_native_score_calls": 0,
+  "package_modified_by_reviewer": false,
+  "reviewed_package_manifest_sha256": "34d89a8150b38d8757648335420908c77ab526f967337d9be05df4044ff3be4f",
+  "reviewed_source_manifest_sha256": "4b39cb9ded35e9220af9ae9843463b34c30faaf0bafa86d3ce157e9b64831bdc",
+  "reviewed_public_index_sha256": "2d031c5aaaff5e7d18ce6804e2eea99ad4cf4e1cb4fa7951652beacfd59d0f17",
+  "csv_all_3460_rows_equal_jsonl_scalar_projection": true
+}

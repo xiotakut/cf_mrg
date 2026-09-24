@@ -1,0 +1,1759 @@
+{
+  "at": "2026-09-24T14:08:52.301617+08:00",
+  "status": "passed",
+  "new_model_calls": 0,
+  "new_score_calls": 0,
+  "old_head_replays": 0,
+  "offline_gold_accessed": false,
+  "source_checks": [
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/evaluation/candidate_verify_runner.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "06390178749d1cbad1f40de4fe80ab33601cc7201a2bf4b8accb76ac558bf899"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "7706d9efe3b8b49f268444c54e0fbd1cf73574eee667fc4c55700dea726966dd"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/tools/adapters.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/tools/native_backend.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/evaluation/incremental_runner.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/evaluation/journal.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/tools/vllm_backend.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/contracts.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "3da9ac9cc8c7c758feaa2dc63c2b410f07556d6c4b7873f2a1011f4665065cad"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/run_fixed.py",
+      "status": "frozen_inference_or_launcher_unchanged",
+      "sha256": "558bb1b5049e1a0af28db81c97e64fc55c3bdce90665d742b2d5ee75e7c6ced2"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/analysis/score_candidate_experiment.py",
+      "status": "documented_offline_analysis_revision",
+      "sha256": "bfe9ec8b164a5b3e837472ffb8be291f0e5e2019e2f29e250337c998cc70cc70",
+      "receipt": "analysis_revision_receipt.json"
+    }
+  ],
+  "methods": {
+    "M4": {
+      "outputs": 106,
+      "verified_entire_earliest_old_responses": 94,
+      "retained_NLI_complete_F": 12,
+      "physical_score_calls": 420,
+      "cost": {
+        "input_tokens": 2771096,
+        "output_tokens": 420
+      },
+      "live_model_seconds": 401.6673296969966,
+      "failed": 0,
+      "unknown_usage": 0,
+      "profile_hash": "a78b37b0926fc42e989a48361ca0487cade3280c036d53993e69f59e14e77c21",
+      "all_candidates_and_two_mappings_checked": true,
+      "outputs_checked": [
+        {
+          "task_id": "d00014:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "uncertainty",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "806145eeef1b6cbf283c65d35d7388fc0d9cde645428d981252029ea314e75cf"
+        },
+        {
+          "task_id": "d00014:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0b39d701901663847c850b440f04e1de64d91bdf1ec1a29b01bdd9bc2eb68633"
+        },
+        {
+          "task_id": "d00007:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "c5fe9f5da3adc237038258254444bd3a15c729b9b5d8bf24bfa3f393cf99ab66"
+        },
+        {
+          "task_id": "d00007:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "c5fe9f5da3adc237038258254444bd3a15c729b9b5d8bf24bfa3f393cf99ab66"
+        },
+        {
+          "task_id": "n00001:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "d621b99ffb72a94386179de2630e67aae7637b55077f115cf35799b4bdd3a242"
+        },
+        {
+          "task_id": "n00001:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "d621b99ffb72a94386179de2630e67aae7637b55077f115cf35799b4bdd3a242"
+        },
+        {
+          "task_id": "n00009:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "1fc32d3a9e737c017d2c123103f8417e559f133f1574e41d9f28a8b341d6a613"
+        },
+        {
+          "task_id": "n00009:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2667df46177dae26fb3b2c78ab9dcc29d7657ee5a9b07dd36cb4a0f1dc70bf27"
+        },
+        {
+          "task_id": "d00015:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9dd1ba08c056b1f02740889a0e67a9a7c5450da9fc3ee35aefa76c7c7dce9b4b"
+        },
+        {
+          "task_id": "d00015:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9dd1ba08c056b1f02740889a0e67a9a7c5450da9fc3ee35aefa76c7c7dce9b4b"
+        },
+        {
+          "task_id": "d00016:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "e213df7f430bc777476d128d964e5aea20b1a32a755a8f850c0aa3e9a3163e02"
+        },
+        {
+          "task_id": "d00016:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "625e48973d271ee17371ccab169ffc75450508843decc71e0caa004d3ac89d4d"
+        },
+        {
+          "task_id": "d00028:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "0eca203f7b8f1e3bf3b58e7e2476f21409cfd1b8a7ab266d5ba9f30cf7b5bd8a"
+        },
+        {
+          "task_id": "d00028:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "dc54b79bf4a4b8d606b74555afb774e9cd2fed35a93d8fadc0c3ff0263df5ea1"
+        },
+        {
+          "task_id": "d00030:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "f03a75b4c8f5a8aa56d3eb82a5071859b650d9e99e7cef06f6bf47091679d465"
+        },
+        {
+          "task_id": "d00030:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "194fdaebccc97c02017ebc97611cdef19b13acce99fec34dd7e2aece73df3cab"
+        },
+        {
+          "task_id": "d00032:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 3,
+          "complete_old_response_match": true,
+          "native_response_hash": "94850c5201bc395ba0a51a4931584896d26c143558acdeeb64f9413197dc5e69"
+        },
+        {
+          "task_id": "d00032:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 3,
+          "complete_old_response_match": true,
+          "native_response_hash": "94850c5201bc395ba0a51a4931584896d26c143558acdeeb64f9413197dc5e69"
+        },
+        {
+          "task_id": "d00033:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "0032d421def9c39b5e6def776dd21fe2f643ba59c833d393f4c1ede1f8c446ad"
+        },
+        {
+          "task_id": "d00033:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "0032d421def9c39b5e6def776dd21fe2f643ba59c833d393f4c1ede1f8c446ad"
+        },
+        {
+          "task_id": "d00041:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "d00041:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "d00054:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "b587fdd1cfd91ab7b6541527f1d96e124a7da91a302fda31853088081c72ac5d"
+        },
+        {
+          "task_id": "d00054:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 3,
+          "complete_old_response_match": true,
+          "native_response_hash": "61d548a57890105e739778dd77adfcdce9bec2ed5765d6bd8640f3d69f8ee232"
+        },
+        {
+          "task_id": "d00060:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "e7e7bf9eb281fa2384bdc56cc73c7929429f76fff5909e77db7b470119625732"
+        },
+        {
+          "task_id": "d00060:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "77672446cb007cc10cb1deb9bf90c605767282699ab7fabf9cb86f487ab5577b"
+        },
+        {
+          "task_id": "d00063:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "uncertainty",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "8b27e9ddd8dd9366d2dbfd6be0b3ee4f0eee38c705c94eb1a9e4112fb8273790"
+        },
+        {
+          "task_id": "d00063:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "uncertainty",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "8b27e9ddd8dd9366d2dbfd6be0b3ee4f0eee38c705c94eb1a9e4112fb8273790"
+        },
+        {
+          "task_id": "d00065:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "3b0e0386f2c2654e5af8bdcf2db116325ded503b6752fb65f3c5d78e206c7675"
+        },
+        {
+          "task_id": "d00065:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "3b0e0386f2c2654e5af8bdcf2db116325ded503b6752fb65f3c5d78e206c7675"
+        },
+        {
+          "task_id": "d00069:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "d00069:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "d00076:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "ab9ace4db47e717f52c49a22a4234db6103218c0dd4cb4608ed30a58fa883594"
+        },
+        {
+          "task_id": "d00076:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "ab9ace4db47e717f52c49a22a4234db6103218c0dd4cb4608ed30a58fa883594"
+        },
+        {
+          "task_id": "d00082:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "52f11169572f801dc71c6f8cfa4991d359be806839b116e13b051a64cfa8a874"
+        },
+        {
+          "task_id": "d00082:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "52f11169572f801dc71c6f8cfa4991d359be806839b116e13b051a64cfa8a874"
+        },
+        {
+          "task_id": "d00087:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "d03527a5e683b2112f2a3b04c51332d542f5c775d2323d4997fcd4b17279998f"
+        },
+        {
+          "task_id": "d00087:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "e332dc5c3034f611db4d1b1ffaf732940f9fc28a819b0d43d6999294f8c33cb0"
+        },
+        {
+          "task_id": "d00088:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0a3977d0a5268d6bd497171a355df8269dbd006862c5968df5a6becd2726b486"
+        },
+        {
+          "task_id": "d00088:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0a3977d0a5268d6bd497171a355df8269dbd006862c5968df5a6becd2726b486"
+        },
+        {
+          "task_id": "d00089:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "def96e8a9179709963d7975a94c148f0ef191f59ee2ee148a73488aa7ccb6946"
+        },
+        {
+          "task_id": "d00089:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "f1b3d7247b0653bef41fa9967b0d34c0b365e1165d6941fb9cd24d33fd47c766"
+        },
+        {
+          "task_id": "d00091:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "d00091:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "d00094:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "38e2652a0ec11c6e2be30fb4fff67a706cde4a6222cbe4bb84f6652408289d9f"
+        },
+        {
+          "task_id": "d00094:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "38e2652a0ec11c6e2be30fb4fff67a706cde4a6222cbe4bb84f6652408289d9f"
+        },
+        {
+          "task_id": "d00101:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "01d4b7dab0e6342625fc71ac497e3e3eeb2be1089adf85bb998293017b644eb1"
+        },
+        {
+          "task_id": "d00101:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "01d4b7dab0e6342625fc71ac497e3e3eeb2be1089adf85bb998293017b644eb1"
+        },
+        {
+          "task_id": "d00107:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "f193916f7d83e7422f5c09ff698d60be26f0308d0920e880676d20e8e98d8d23"
+        },
+        {
+          "task_id": "d00107:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "f193916f7d83e7422f5c09ff698d60be26f0308d0920e880676d20e8e98d8d23"
+        },
+        {
+          "task_id": "d00109:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "8dc2baa4606ab8d11132f570487c55d8bc51f76dafca1668629a446ba60dbe94"
+        },
+        {
+          "task_id": "d00109:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "19298faf2edf3639110ccbcb635e775c444e858b5dfed5e1a50ec62d63b84ab5"
+        },
+        {
+          "task_id": "d00110:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7d0ac5e1c615cde39abcf1d066acc6a7ffb373a2c482ba855be160215a64ca3c"
+        },
+        {
+          "task_id": "d00110:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "9bea5651c24ad347a373e93007900eb037ff0b3561c376d0cf7b1f7ddc253644"
+        },
+        {
+          "task_id": "d00114:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "1738a49f89514ca17bd6640343f37c44b81148b35b83921c3930bd90af7c9663"
+        },
+        {
+          "task_id": "d00114:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "1738a49f89514ca17bd6640343f37c44b81148b35b83921c3930bd90af7c9663"
+        },
+        {
+          "task_id": "d00116:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b291760b52f916852056d45601fa5ffd99e2663d3fb9b0e5155e738b0537c31b"
+        },
+        {
+          "task_id": "d00116:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b291760b52f916852056d45601fa5ffd99e2663d3fb9b0e5155e738b0537c31b"
+        },
+        {
+          "task_id": "d00120:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "d85fa96c751fd8d78aa48e4ce7fed88d9b6df63a2c4e48826d7f648bee82ba8b"
+        },
+        {
+          "task_id": "d00120:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "d85fa96c751fd8d78aa48e4ce7fed88d9b6df63a2c4e48826d7f648bee82ba8b"
+        },
+        {
+          "task_id": "n00002:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "0cef453c358e2543c37d32913a7097602dec409353b228e7eb91972430a11371"
+        },
+        {
+          "task_id": "n00002:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "6e3830404b60726ea60577779af28e23d1e84b9fc8909472b1a2fe4ca8ee19f6"
+        },
+        {
+          "task_id": "n00003:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "3b8f605e7e504fa0c487cce3a237e7c544bfee773bde365c3620e7577118ca93"
+        },
+        {
+          "task_id": "n00003:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "3b8f605e7e504fa0c487cce3a237e7c544bfee773bde365c3620e7577118ca93"
+        },
+        {
+          "task_id": "n00006:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "458bea25441c7fc48d1e209a014e79121262b88630bd0380727772f5625687d7"
+        },
+        {
+          "task_id": "n00006:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "458bea25441c7fc48d1e209a014e79121262b88630bd0380727772f5625687d7"
+        },
+        {
+          "task_id": "n00007:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "945ceab28cab38ea3f04d7a66702700bac6f8fe4740e43085f2207509a889124"
+        },
+        {
+          "task_id": "n00007:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "e0bb64d300e550e98e27fd94556cf21e19324426e78169a95a51ad9d2e60c7d8"
+        },
+        {
+          "task_id": "n00013:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "8577777560fdebf32a948015e9d5c6eaf50c574b964dec7bbdd14a0c71fd13b4"
+        },
+        {
+          "task_id": "n00013:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "8577777560fdebf32a948015e9d5c6eaf50c574b964dec7bbdd14a0c71fd13b4"
+        },
+        {
+          "task_id": "n00014:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "d95b4d3aa605aff65bc5604a08202f7929c811a3e54c84c45a30eee02df76692"
+        },
+        {
+          "task_id": "n00014:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0a26420aefe6eb051f79f61b117e9dbdccd6440400ad95aca3af144db0de4044"
+        },
+        {
+          "task_id": "n00017:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "84b23066e622bcc4227cb6e9cb794900dfd2be22ce6b3d6033116b5dc7146302"
+        },
+        {
+          "task_id": "n00017:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 3,
+          "complete_old_response_match": true,
+          "native_response_hash": "2a7fa8c7c5ccac7473cd9df765006f516af25bde3f682ec90650cd8985967465"
+        },
+        {
+          "task_id": "n00018:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0c434abcc9b74b7f03545a4d198316610c985f8a8486d12227836b671ee2da5d"
+        },
+        {
+          "task_id": "n00018:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0c434abcc9b74b7f03545a4d198316610c985f8a8486d12227836b671ee2da5d"
+        },
+        {
+          "task_id": "n00020:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00020:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00022:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "763029b948c377e7f69b214bdfcf417a5f773bbbe7ac0c3dc200dbbd0c6acb68"
+        },
+        {
+          "task_id": "n00022:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "763029b948c377e7f69b214bdfcf417a5f773bbbe7ac0c3dc200dbbd0c6acb68"
+        },
+        {
+          "task_id": "n00023:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "e03a22889aaceec707be2158d7a4fd65fecd2a7232fcb79e5dcda20e656b96a1"
+        },
+        {
+          "task_id": "n00023:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "e03a22889aaceec707be2158d7a4fd65fecd2a7232fcb79e5dcda20e656b96a1"
+        },
+        {
+          "task_id": "n00024:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b600dbf1d2accefd7e693274451de8004ccc9afef619879855136a6956d6d013"
+        },
+        {
+          "task_id": "n00024:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b600dbf1d2accefd7e693274451de8004ccc9afef619879855136a6956d6d013"
+        },
+        {
+          "task_id": "n00026:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2a7bf05249c7a3ac6945840a2c53491953f5cf58aca230a343de95b39707e945"
+        },
+        {
+          "task_id": "n00026:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2a7bf05249c7a3ac6945840a2c53491953f5cf58aca230a343de95b39707e945"
+        },
+        {
+          "task_id": "n00029:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "85a84709485543a3d1574477bf332de9da979559c71634237e66ca47af218bfe"
+        },
+        {
+          "task_id": "n00029:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "85a84709485543a3d1574477bf332de9da979559c71634237e66ca47af218bfe"
+        },
+        {
+          "task_id": "n00030:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00030:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00032:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "b530a18feec1035d0960a62508b3545dc85cde9423f5a2305f07f37b153879c3"
+        },
+        {
+          "task_id": "n00032:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "b530a18feec1035d0960a62508b3545dc85cde9423f5a2305f07f37b153879c3"
+        },
+        {
+          "task_id": "n00033:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "uncertainty",
+          "earliest_response_index": 3,
+          "complete_old_response_match": true,
+          "native_response_hash": "a86c4bf78af4572aad446bd972eba3afd127f5f7ef6318116adf7eb1e7d86956"
+        },
+        {
+          "task_id": "n00033:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "450aa514cbd96da4900906d796a9113a5a64e714e5745831e28b11e2f3170036"
+        },
+        {
+          "task_id": "n00037:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "6e1039887f0898468dd6d18cc919160d1187f37cacaa5670aaf394251cc643ae"
+        },
+        {
+          "task_id": "n00037:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0789b365c8911d5e95022a24b7d9fe8f65d93bb5935502ade81366a55091e50e"
+        },
+        {
+          "task_id": "n00038:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2851e379f9b9aa1f21e246adf873789d7cf1a5046cc54a4d76b0896f9f96809c"
+        },
+        {
+          "task_id": "n00038:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2851e379f9b9aa1f21e246adf873789d7cf1a5046cc54a4d76b0896f9f96809c"
+        },
+        {
+          "task_id": "n00039:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "646572ca0472c6e0a1dc9d55992178cd81073a862fc6dd338db417acab123294"
+        },
+        {
+          "task_id": "n00039:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 4,
+          "complete_old_response_match": true,
+          "native_response_hash": "cc0697bb46c5eaecc5abe17538f0f6628aedf1c76786e477d54d4e0e613e6e6a"
+        },
+        {
+          "task_id": "n00042:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00042:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00045:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "c85a5c29206c08e2ae524f09cfdfd1bf66fc5c81a56eb947dc36ab2fea4a1589"
+        },
+        {
+          "task_id": "n00045:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "696f97e4de5b866ad47445fef9fe68244ed84a78de05d921814bb7d8e5d9ff02"
+        },
+        {
+          "task_id": "n00046:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "3ae44ab3743b0c8296937b11a48f3d0afcffd882ef02abcbedf1cc71f0dda824"
+        },
+        {
+          "task_id": "n00046:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 3,
+          "complete_old_response_match": true,
+          "native_response_hash": "e993bdc9d18c0ea581b71247c115d97ad8d98ebe17480e2240b4cf8fa3067326"
+        }
+      ],
+      "lifecycle": {
+        "status": "closed",
+        "engine": "engine_shutdown",
+        "journal": "closed",
+        "errors": [],
+        "elapsed_seconds": 0.1785906500008423,
+        "original_exception": null,
+        "inference_results_rewritten": false,
+        "new_model_calls": 0
+      }
+    },
+    "M5": {
+      "outputs": 84,
+      "verified_entire_earliest_old_responses": 82,
+      "retained_NLI_complete_F": 2,
+      "physical_score_calls": 360,
+      "cost": {
+        "input_tokens": 2733312,
+        "output_tokens": 360
+      },
+      "live_model_seconds": 457.0924633339455,
+      "failed": 0,
+      "unknown_usage": 0,
+      "profile_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a",
+      "all_candidates_and_two_mappings_checked": true,
+      "outputs_checked": [
+        {
+          "task_id": "d00006:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "9077da19db1bcf4db4e783f43ebc94f910a0c15e934063c716ad779019339cd8"
+        },
+        {
+          "task_id": "d00006:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "9077da19db1bcf4db4e783f43ebc94f910a0c15e934063c716ad779019339cd8"
+        },
+        {
+          "task_id": "d00015:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "8f6890e8c7011299b58b7a344af3c5fd61c6e26e6583d5b56c6864b2516cff26"
+        },
+        {
+          "task_id": "d00015:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b9bb5f12ada92007a5a2099c772b3316b58cd74a7cb8f8176a40955dca16ae05"
+        },
+        {
+          "task_id": "n00014:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "730ad3470462432422077ebc6f9eb588a6679e557bb67e32effeb7107e1699cc"
+        },
+        {
+          "task_id": "n00014:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "730ad3470462432422077ebc6f9eb588a6679e557bb67e32effeb7107e1699cc"
+        },
+        {
+          "task_id": "n00006:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "b8597620ce89df07b5cb60081939aced20613feda65b1faeef67230e649e8fd2"
+        },
+        {
+          "task_id": "n00006:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "a5e4789fb5de6efa6dfc3501df629a29a7db251c18fea6d00bae2ce05805f4e9"
+        },
+        {
+          "task_id": "d00017:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "1dedacc5a8222ac2001564536fd8b6167a62b55444a98b9ab41097d5d134bb77"
+        },
+        {
+          "task_id": "d00017:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "1dedacc5a8222ac2001564536fd8b6167a62b55444a98b9ab41097d5d134bb77"
+        },
+        {
+          "task_id": "d00028:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "8672eab30cd8651ba29a30c8353209dd333aefc10f10d347a11e4cba0d7fa0eb"
+        },
+        {
+          "task_id": "d00028:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "657c73aacff53c89a584d596547986830bab2f88981641fa57fb85d28411924b"
+        },
+        {
+          "task_id": "d00030:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b1d2f5f46736cb85788369e837a34ab288fd089cb2a453b606a656d74b43a145"
+        },
+        {
+          "task_id": "d00030:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "E",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "b1d2f5f46736cb85788369e837a34ab288fd089cb2a453b606a656d74b43a145"
+        },
+        {
+          "task_id": "d00032:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "f58da3aacaefb5546a25778f1a08cdd5a3b0c1960c25c26cba63b8b3d1a6c09b"
+        },
+        {
+          "task_id": "d00032:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "18321d001dd202ed0f752ca0422f041123b513bdafca7b631d7165d1f7ad5ecc"
+        },
+        {
+          "task_id": "d00042:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "3c1d2efa79315caf65827187d9c50c56b2eec10a56fb0ce71b7bb11ef588a4ec"
+        },
+        {
+          "task_id": "d00042:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "c2076f9eeccefe10b8362ff1978b9ef64c83372bd179facc23cb09d3b42f66e2"
+        },
+        {
+          "task_id": "d00049:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9c972116a5f11a4792d6bcb0137f84b6c0b902fd07f55315e69947b80d54f23d"
+        },
+        {
+          "task_id": "d00049:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9c972116a5f11a4792d6bcb0137f84b6c0b902fd07f55315e69947b80d54f23d"
+        },
+        {
+          "task_id": "d00053:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "169d03a5968f66883023e873225cbbd686f9a7f660caf6d4c8e3d9032ab663c1"
+        },
+        {
+          "task_id": "d00053:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "bca3c1b84f4af517aa26c9df1d28a18a6756936d64fce7e9ae5264e8271dbbf7"
+        },
+        {
+          "task_id": "d00057:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "cd9b14c09113f39875dce8421b8ae0eaeb6c6480230c081686b9baa483a9cb5e"
+        },
+        {
+          "task_id": "d00057:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "cd9b14c09113f39875dce8421b8ae0eaeb6c6480230c081686b9baa483a9cb5e"
+        },
+        {
+          "task_id": "d00058:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7548c96787c8e0fb10bea3ef03b5cde1c37ca60d8614c4d0dda8f6327d035c68"
+        },
+        {
+          "task_id": "d00058:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7548c96787c8e0fb10bea3ef03b5cde1c37ca60d8614c4d0dda8f6327d035c68"
+        },
+        {
+          "task_id": "d00059:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "3f4168808b90203c6552ea337a18bb145a21cc9d16ccd515577adc5af9103cd3"
+        },
+        {
+          "task_id": "d00059:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "3f4168808b90203c6552ea337a18bb145a21cc9d16ccd515577adc5af9103cd3"
+        },
+        {
+          "task_id": "d00061:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2ee4800a50ff3afb9ce23dcf3c81aaae4cf4b73e4eb2ebd0b3bf7fd48afb2510"
+        },
+        {
+          "task_id": "d00061:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "2ee4800a50ff3afb9ce23dcf3c81aaae4cf4b73e4eb2ebd0b3bf7fd48afb2510"
+        },
+        {
+          "task_id": "d00063:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9700de3777ae0a03a08e64b391c36a7bbdc062f3cc2816f7809503ae49142e47"
+        },
+        {
+          "task_id": "d00063:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9700de3777ae0a03a08e64b391c36a7bbdc062f3cc2816f7809503ae49142e47"
+        },
+        {
+          "task_id": "d00064:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "2265224a71805208e5ed0ad9bf8f066b98e74712bd02dccbd569d355747d6022"
+        },
+        {
+          "task_id": "d00064:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "9aeac195cdb992b90b9bb8fdcece37f4182abc193fde8af8dde802faffe539c1"
+        },
+        {
+          "task_id": "d00074:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "9e212ddb4ef23618efe230af1b0d3eac89c623e7fef4d449ef9dbdb0f6e03e47"
+        },
+        {
+          "task_id": "d00074:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "d5e28aca16925dc4fb97eff31dc2a44a231f147a6c5ba0e8b078fcc5593b3009"
+        },
+        {
+          "task_id": "d00075:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0819025567a22cd471618d33451e9d98498936e94d3264f8edcf4b73e61cc557"
+        },
+        {
+          "task_id": "d00075:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0819025567a22cd471618d33451e9d98498936e94d3264f8edcf4b73e61cc557"
+        },
+        {
+          "task_id": "d00076:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "a4486d97ab1d55a29ead15e2df39cadf75bad4af975d6f6eecc43f9e3ceba9a6"
+        },
+        {
+          "task_id": "d00076:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "a4486d97ab1d55a29ead15e2df39cadf75bad4af975d6f6eecc43f9e3ceba9a6"
+        },
+        {
+          "task_id": "d00082:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "1f5c96db1a0373a856a750afdd40cc586403aee4dab48cd989f3506b3768f74a"
+        },
+        {
+          "task_id": "d00082:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "1f5c96db1a0373a856a750afdd40cc586403aee4dab48cd989f3506b3768f74a"
+        },
+        {
+          "task_id": "d00088:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7a59f5aa7fded9e6e1a98bb19b059c1afd562cba42b6ed78ac0f895865658020"
+        },
+        {
+          "task_id": "d00088:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7a59f5aa7fded9e6e1a98bb19b059c1afd562cba42b6ed78ac0f895865658020"
+        },
+        {
+          "task_id": "d00094:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "37b2e9d28fee2e40fd0277cdfc599645c50aa1939979e1acd8c1703770ac06e2"
+        },
+        {
+          "task_id": "d00094:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no difference",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "37b2e9d28fee2e40fd0277cdfc599645c50aa1939979e1acd8c1703770ac06e2"
+        },
+        {
+          "task_id": "d00101:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 4,
+          "complete_old_response_match": true,
+          "native_response_hash": "b9877b638d3cc858c10b9107bedf1118a85d7ede54c4f5300843bd305c77af8a"
+        },
+        {
+          "task_id": "d00101:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 4,
+          "complete_old_response_match": true,
+          "native_response_hash": "b9877b638d3cc858c10b9107bedf1118a85d7ede54c4f5300843bd305c77af8a"
+        },
+        {
+          "task_id": "d00107:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "ac608497963f6b85fc91ee322f4c8ae51b14623e4f5e197aa75ab98da9f17c92"
+        },
+        {
+          "task_id": "d00107:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "ac608497963f6b85fc91ee322f4c8ae51b14623e4f5e197aa75ab98da9f17c92"
+        },
+        {
+          "task_id": "d00110:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0f61f26f42a0dde649e6427ba261e9a274d8932ff8b601b974217854e8c80fe7"
+        },
+        {
+          "task_id": "d00110:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "76e51f29066b7bcdef4902610a8be8349ab5c8c346d6fcca83840dc8a947d45c"
+        },
+        {
+          "task_id": "d00114:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "a5d85b16dc13270f77bf9e107daf349e3de0c4b72eac6081588413daf4b7e781"
+        },
+        {
+          "task_id": "d00114:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "a5d85b16dc13270f77bf9e107daf349e3de0c4b72eac6081588413daf4b7e781"
+        },
+        {
+          "task_id": "d00117:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "uncertainty",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "1928a19e4e4b01fd991cc6fd1d504d30955a8d402a7093ac4069bb5bd4b3e91e"
+        },
+        {
+          "task_id": "d00117:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "843160a8da71f427bb68fb92175809fb40a01396bd9800b29d17024018f8cc57"
+        },
+        {
+          "task_id": "n00007:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "505ba8f31e1d65a53c9220be4e8271e0fcf8781b921c126cc121bc40a8d27f39"
+        },
+        {
+          "task_id": "n00007:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "505ba8f31e1d65a53c9220be4e8271e0fcf8781b921c126cc121bc40a8d27f39"
+        },
+        {
+          "task_id": "n00008:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "dc4948611db325340e11ee5be22aa247e3df25ac5256b67680f1ec049699a2c5"
+        },
+        {
+          "task_id": "n00008:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "dc4948611db325340e11ee5be22aa247e3df25ac5256b67680f1ec049699a2c5"
+        },
+        {
+          "task_id": "n00009:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "68e157c3bf14432c505c998a0f9c4534d56bb46d807d68a4a474b464818748b7"
+        },
+        {
+          "task_id": "n00009:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "68e157c3bf14432c505c998a0f9c4534d56bb46d807d68a4a474b464818748b7"
+        },
+        {
+          "task_id": "n00010:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "c0303bf24266c41a5defd994f6f4f16d5e7ffc749cb601dd08ddd7ccb2d0fa53"
+        },
+        {
+          "task_id": "n00010:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "f4f083d2c640b4d94e52d99b668d9537f84a6ebcb187fc8a232c43040a9eefef"
+        },
+        {
+          "task_id": "n00017:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "963103536240fd375fbb54f79480e352a30554fd6b47d5fff8aa5185719d13db"
+        },
+        {
+          "task_id": "n00017:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "3859f8798aa832dc2fcdc6b9292184cafc664a2464ff3be2e6759345369e59cb"
+        },
+        {
+          "task_id": "n00023:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "702d413e5b4c327e00b40ba8e2cc1114b152321a3f4383e689f0303b763feeb5"
+        },
+        {
+          "task_id": "n00023:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "702d413e5b4c327e00b40ba8e2cc1114b152321a3f4383e689f0303b763feeb5"
+        },
+        {
+          "task_id": "n00028:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7cdaac02a6875a1f0a0d99fa23dc35feda81508ab13218e1ba7fcd858e1b54b4"
+        },
+        {
+          "task_id": "n00028:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "higher",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "7cdaac02a6875a1f0a0d99fa23dc35feda81508ab13218e1ba7fcd858e1b54b4"
+        },
+        {
+          "task_id": "n00032:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0ef840c0252d9ee156ccc947c6a0f3f32c97b678f1e80ed69458eb3a4ba53455"
+        },
+        {
+          "task_id": "n00032:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "0ef840c0252d9ee156ccc947c6a0f3f32c97b678f1e80ed69458eb3a4ba53455"
+        },
+        {
+          "task_id": "n00034:a5_candidate_only",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00034:a5_candidate_with_rationales",
+          "status": "retained_adopted_NLI",
+          "whole_saved_F_match": true
+        },
+        {
+          "task_id": "n00035:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "no",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "5bee5ec7136b71b4b073ce0d0061377223b7adc1f47d439a706e5813ac2554e3"
+        },
+        {
+          "task_id": "n00035:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "yes",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "8d12ec24126b808279238d8d39e09e4b67d9038a9424c267f1a84843da4c6261"
+        },
+        {
+          "task_id": "n00038:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "c8ffb57aafdeb8fa912adba1455b0977487553ce0ff37cf5331a0f97ca284d20"
+        },
+        {
+          "task_id": "n00038:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "d7b32025480fd3354f9cbba4ded3daf2036c03aa2ba4f2ab83b7dd65499fd247"
+        },
+        {
+          "task_id": "n00039:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "615b77ea35556ba3a6614f20f4de81ad5f8f0e81b895fefa9e88fb2a477d708d"
+        },
+        {
+          "task_id": "n00039:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "C",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "615b77ea35556ba3a6614f20f4de81ad5f8f0e81b895fefa9e88fb2a477d708d"
+        },
+        {
+          "task_id": "n00044:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "b9e631a692fca6f6c607ff1156e16a48d03119c285a5f9c96a4d5bafbcd77d58"
+        },
+        {
+          "task_id": "n00044:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "A",
+          "earliest_response_index": 2,
+          "complete_old_response_match": true,
+          "native_response_hash": "b9e631a692fca6f6c607ff1156e16a48d03119c285a5f9c96a4d5bafbcd77d58"
+        },
+        {
+          "task_id": "n00046:a5_candidate_only",
+          "status": "verified_candidate_selection",
+          "selected_key": "D",
+          "earliest_response_index": 0,
+          "complete_old_response_match": true,
+          "native_response_hash": "704bd2f1d20e45fcd773ee0b65e9ef27d27bf2c37c622adfa4fbe9b3ddf37dff"
+        },
+        {
+          "task_id": "n00046:a5_candidate_with_rationales",
+          "status": "verified_candidate_selection",
+          "selected_key": "B",
+          "earliest_response_index": 1,
+          "complete_old_response_match": true,
+          "native_response_hash": "3fccffc47539f1daaaef41606eac278df3ddce28555754c86fb3f532f8882fe2"
+        }
+      ],
+      "lifecycle": {
+        "status": "closed",
+        "engine": "engine_shutdown",
+        "journal": "closed",
+        "errors": [],
+        "elapsed_seconds": 0.2426904579915572,
+        "original_exception": null,
+        "inference_results_rewritten": false,
+        "new_model_calls": 0
+      }
+    }
+  },
+  "protected_adopted_sources_unchanged": [
+    "/home/data3/txy/cf_moa/configs/minimal_system.json",
+    "/home/data3/txy/cf_moa/controller/strong_legacy.py",
+    "/home/data3/txy/cf_moa/agents/a4_intervention_execution.py",
+    "/home/data3/txy/cf_moa/agents/a2_support_revision.py",
+    "/home/data3/txy/cf_moa/agents/a3_contrastive_comparison.py",
+    "/home/data3/txy/cf_moa/agents/a5_robust_readout.py"
+  ],
+  "resources": {
+    "engines_closed": true,
+    "runner_and_fixed_supervisor_inactive": true,
+    "holders": [
+      {
+        "gpu": 2,
+        "state": "ready",
+        "allocated_gib": 60,
+        "actual_gpu_used_mib": 61756,
+        "watch": {
+          "pid": 1545501,
+          "state": "S",
+          "parent": 1,
+          "start_ticks": "18288274",
+          "uid": 1015,
+          "argv": [
+            "/home/data3/txy/MedRGAG/.venv/bin/python",
+            "-u",
+            "/home/data3/txy/.local/bin/gpu_watch.py",
+            "--state-dir",
+            "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu2",
+            "--only-gpu",
+            "2",
+            "--min-free-gib",
+            "50",
+            "--gib",
+            "60",
+            "--hold-hours",
+            "0",
+            "--wait-hours",
+            "0",
+            "--interval",
+            "5",
+            "--log-interval",
+            "300",
+            "--max-cards",
+            "1",
+            "--torch-python",
+            "/home/data3/txy/MedRGAG/.venv/bin/python"
+          ]
+        },
+        "holder": {
+          "pid": 1545527,
+          "state": "S",
+          "parent": 1545501,
+          "start_ticks": "18288312",
+          "uid": 1015,
+          "argv": [
+            "/home/data3/txy/MedRGAG/.venv/bin/python",
+            "-u",
+            "/home/data3/txy/.local/bin/gpu_watch.py",
+            "--gpu",
+            "GPU-2b487a9b-cbff-26b0-7e13-a8e5468045fe",
+            "--ready",
+            "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu2/GPU-2b487a9b-cbff-26b0-7e13-a8e5468045fe.json",
+            "--gib",
+            "60.0",
+            "--hold-hours",
+            "0.0",
+            "--min-free-gib",
+            "50.0"
+          ]
+        },
+        "ready_file": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu2/GPU-2b487a9b-cbff-26b0-7e13-a8e5468045fe.json",
+        "ready_sha256": "51b66ed3bf53e884aaa9dc3c5867c8e33e41c07781f85902a3a5fee125a24429",
+        "no_EngineCore_remaining_on_card": true
+      },
+      {
+        "gpu": 3,
+        "state": "ready",
+        "allocated_gib": 60,
+        "actual_gpu_used_mib": 61756,
+        "watch": {
+          "pid": 1544280,
+          "state": "S",
+          "parent": 1,
+          "start_ticks": "18278463",
+          "uid": 1015,
+          "argv": [
+            "/home/data3/txy/MedRGAG/.venv/bin/python",
+            "-u",
+            "/home/data3/txy/.local/bin/gpu_watch.py",
+            "--state-dir",
+            "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu3",
+            "--only-gpu",
+            "3",
+            "--min-free-gib",
+            "50",
+            "--gib",
+            "60",
+            "--hold-hours",
+            "0",
+            "--wait-hours",
+            "0",
+            "--interval",
+            "5",
+            "--log-interval",
+            "300",
+            "--max-cards",
+            "1",
+            "--torch-python",
+            "/home/data3/txy/MedRGAG/.venv/bin/python"
+          ]
+        },
+        "holder": {
+          "pid": 1544348,
+          "state": "S",
+          "parent": 1544280,
+          "start_ticks": "18278483",
+          "uid": 1015,
+          "argv": [
+            "/home/data3/txy/MedRGAG/.venv/bin/python",
+            "-u",
+            "/home/data3/txy/.local/bin/gpu_watch.py",
+            "--gpu",
+            "GPU-77c2a29b-1fe3-7ad9-61bc-cc435518c026",
+            "--ready",
+            "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu3/GPU-77c2a29b-1fe3-7ad9-61bc-cc435518c026.json",
+            "--gib",
+            "60.0",
+            "--hold-hours",
+            "0.0",
+            "--min-free-gib",
+            "50.0"
+          ]
+        },
+        "ready_file": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu3/GPU-77c2a29b-1fe3-7ad9-61bc-cc435518c026.json",
+        "ready_sha256": "6ef0853ab0bec94fb3e2c36183cab6378bf5671746143ed8c4c599470e399a58",
+        "no_EngineCore_remaining_on_card": true
+      }
+    ],
+    "old_general_autoqueue_status": "stopped_by_user",
+    "old_general_autoqueue_processes": [],
+    "old_general_autoqueue_STOP_present": true
+  },
+  "total": {
+    "outputs": 190,
+    "verified_entire_earliest_old_responses": 176,
+    "retained_NLI_complete_F": 14,
+    "physical_score_calls": 780,
+    "live_input_tokens": 5504408,
+    "live_output_tokens": 780,
+    "failed": 0,
+    "unknown_usage": 0
+  },
+  "limits": "Contract/cost/resource verification of saved execution only; no independent medical quality or gold assessment."
+}

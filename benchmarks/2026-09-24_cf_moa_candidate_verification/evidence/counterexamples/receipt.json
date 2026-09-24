@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-09-24T14:02:52.162053+08:00",
+  "status": "complete",
+  "cases": [
+    [
+      "M4",
+      "d00014"
+    ],
+    [
+      "M4",
+      "n00009"
+    ],
+    [
+      "M5",
+      "d00015"
+    ],
+    [
+      "M5",
+      "n00014"
+    ]
+  ],
+  "rows": 4,
+  "arms": 8,
+  "quotes_exactly_verified": 26,
+  "request_quote_presence_verified": "all task/evidence quotations found in every actual score request for that example",
+  "existing_physical_calls_referenced": 32,
+  "new_model_calls": 0,
+  "new_scoring_calls": 0,
+  "web_requests": 0,
+  "original_F_reruns": 0,
+  "full_old_pack_scan": false,
+  "old_31_group_review_repeated": false,
+  "full_response_identity_checked": 8,
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/samples/historical121/M4_d00014.json": "5ab824ebc6af0a575cafa57fcfe65ee483bd6545f04e2f6ea34d70465a00c60b",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/offline/historical121/M4_d00014.json": "b11548181b2733072be29072169cf6575735852e1a3d841708e7614b9426110c",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/smoke_m4/summary.json": "ba4546e50c218c5d5be5f35eddf1aba60a5cb221b6107d09515d531f4e409adf",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/samples/natural52/M4_n00009.json": "49394ba565b1345247b7194a8bcb1f437545245bee3464db24bd3e97ed500f60",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/offline/natural52/M4_n00009.json": "4c9d26d9041ec3ce6c017506b597bf4c5bde479047861136e58a756aefe53a8b",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/samples/historical121/M5_d00015.json": "0e2bef9e6cfea8191aed34d9ce51dd0b28e6827b70fd12fe80dad1c2f1906615",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/offline/historical121/M5_d00015.json": "974599717ad2135cb285dc0896e2a7704e11eb44b45d71a59b7a4ee5249f8e85",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/smoke_m5/summary.json": "02fb7fdccab1f2bcff86e9cd23d06e76e03acf96bf2667803e877bf267c53e90",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/samples/natural52/M5_n00014.json": "d7f51eadb389e9decb40c4b8724df907bfb1a48a795210daaa0ed1b7cd11bc6c",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_v4_trigger_diagnosis_20260924/offline/natural52/M5_n00014.json": "ba73f251b549f8492937ec11b8fb4025248f63188b1490c318c6554636263eb9"
+  },
+  "output": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/counterexamples/smoke_four.jsonl",
+  "output_sha256": "d603918c8803ff902b2763e16fd520842a91b602233e1ee2bf37c2dcf76ef947",
+  "selection_rule": "Parent fixed M4 d00014/n00009 and M5 d00015/n00014 before this review; no outcome-based replacement.",
+  "preparation_errors": [
+    "Read-only inspection initially assumed f_proposal.raw existed, then read actual proposal.trace.responses.",
+    "Read-only inspection command had one unmatched parenthesis and was corrected; neither command wrote model results."
+  ],
+  "persistent_record_owner": "Root agent to summarize and link from /home/data3/txy/docs/research/cf_moa.md#candidate-verify-20260924; no duplicate main research document."
+}

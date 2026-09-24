@@ -1,0 +1,234 @@
+{
+  "status": "fixed_run_finished",
+  "assignment": {
+    "M5": 2,
+    "M4": 3
+  },
+  "launched": {
+    "M5": {
+      "pid": 1539888,
+      "gpu": 2,
+      "identity": {
+        "pid": 1539888,
+        "parent": 1539806,
+        "start_ticks": "18230852",
+        "argv": [
+          "/home/data3/txy/MedRGAG/.venv/bin/python",
+          "-u",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+          "--plan",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/plan.json",
+          "--method",
+          "M5",
+          "--output",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5",
+          "--gpu",
+          "2"
+        ]
+      },
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+        "--plan",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/plan.json",
+        "--method",
+        "M5",
+        "--output",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5",
+        "--gpu",
+        "2"
+      ],
+      "at": "2026-09-24T13:53:45.709560+08:00"
+    },
+    "M4": {
+      "pid": 1539899,
+      "gpu": 3,
+      "identity": {
+        "pid": 1539899,
+        "parent": 1539806,
+        "start_ticks": "18231156",
+        "argv": [
+          "/home/data3/txy/MedRGAG/.venv/bin/python",
+          "-u",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+          "--plan",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/plan.json",
+          "--method",
+          "M4",
+          "--output",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4",
+          "--gpu",
+          "3"
+        ]
+      },
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/launch_candidate.py",
+        "--plan",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/plan.json",
+        "--method",
+        "M4",
+        "--output",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4",
+        "--gpu",
+        "3"
+      ],
+      "at": "2026-09-24T13:53:48.756562+08:00"
+    }
+  },
+  "finished": {
+    "M4": {
+      "returncode": 0,
+      "lifecycle": {
+        "status": "closed",
+        "engine": "engine_shutdown",
+        "journal": "closed",
+        "errors": [],
+        "elapsed_seconds": 0.1785906500008423,
+        "original_exception": null,
+        "inference_results_rewritten": false,
+        "new_model_calls": 0
+      }
+    },
+    "M5": {
+      "returncode": 0,
+      "lifecycle": {
+        "status": "closed",
+        "engine": "engine_shutdown",
+        "journal": "closed",
+        "errors": [],
+        "elapsed_seconds": 0.2426904579915572,
+        "original_exception": null,
+        "inference_results_rewritten": false,
+        "new_model_calls": 0
+      }
+    }
+  },
+  "automatic_retry": false,
+  "updated_at": "2026-09-24T14:03:26.345710+08:00",
+  "smoke_reviewed": {
+    "M5": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/smoke_m5/summary.json",
+    "M4": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/smoke_m4/summary.json"
+  },
+  "restored_holders": {
+    "3": {
+      "identity": {
+        "pid": 1544280,
+        "parent": 1539806,
+        "start_ticks": "18278463",
+        "argv": [
+          "/home/data3/txy/MedRGAG/.venv/bin/python",
+          "-u",
+          "/home/data3/txy/.local/bin/gpu_watch.py",
+          "--state-dir",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu3",
+          "--only-gpu",
+          "3",
+          "--min-free-gib",
+          "50",
+          "--gib",
+          "60",
+          "--hold-hours",
+          "0",
+          "--wait-hours",
+          "0",
+          "--interval",
+          "5",
+          "--log-interval",
+          "300",
+          "--max-cards",
+          "1",
+          "--torch-python",
+          "/home/data3/txy/MedRGAG/.venv/bin/python"
+        ]
+      },
+      "state_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu3",
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/.local/bin/gpu_watch.py",
+        "--state-dir",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu3",
+        "--only-gpu",
+        "3",
+        "--min-free-gib",
+        "50",
+        "--gib",
+        "60",
+        "--hold-hours",
+        "0",
+        "--wait-hours",
+        "0",
+        "--interval",
+        "5",
+        "--log-interval",
+        "300",
+        "--max-cards",
+        "1",
+        "--torch-python",
+        "/home/data3/txy/MedRGAG/.venv/bin/python"
+      ]
+    },
+    "2": {
+      "identity": {
+        "pid": 1545501,
+        "parent": 1539806,
+        "start_ticks": "18288274",
+        "argv": [
+          "/home/data3/txy/MedRGAG/.venv/bin/python",
+          "-u",
+          "/home/data3/txy/.local/bin/gpu_watch.py",
+          "--state-dir",
+          "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu2",
+          "--only-gpu",
+          "2",
+          "--min-free-gib",
+          "50",
+          "--gib",
+          "60",
+          "--hold-hours",
+          "0",
+          "--wait-hours",
+          "0",
+          "--interval",
+          "5",
+          "--log-interval",
+          "300",
+          "--max-cards",
+          "1",
+          "--torch-python",
+          "/home/data3/txy/MedRGAG/.venv/bin/python"
+        ]
+      },
+      "state_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu2",
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/.local/bin/gpu_watch.py",
+        "--state-dir",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/restored_holders/gpu2",
+        "--only-gpu",
+        "2",
+        "--min-free-gib",
+        "50",
+        "--gib",
+        "60",
+        "--hold-hours",
+        "0",
+        "--wait-hours",
+        "0",
+        "--interval",
+        "5",
+        "--log-interval",
+        "300",
+        "--max-cards",
+        "1",
+        "--torch-python",
+        "/home/data3/txy/MedRGAG/.venv/bin/python"
+      ]
+    }
+  },
+  "analysis_returncode": 0
+}
