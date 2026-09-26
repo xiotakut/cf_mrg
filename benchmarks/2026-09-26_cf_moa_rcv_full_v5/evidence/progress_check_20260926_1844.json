@@ -1,0 +1,346 @@
+{
+  "at": "2026-09-26T18:45:23.346842+08:00",
+  "request": "read_only_process_status_report",
+  "process_actions": 0,
+  "model_calls_this_check": 0,
+  "grader_calls_this_check": 0,
+  "full_v5": {
+    "M4": {
+      "status": "complete",
+      "independent": false,
+      "inputs": 13905,
+      "native_mappings": 15616,
+      "ALL_units": 6104,
+      "arms": {
+        "original_C0": {
+          "correct_inputs": 7441,
+          "unavailable_inputs": 0,
+          "ALL": 0.48198995194408173
+        },
+        "strong_B": {
+          "correct_inputs": 8924,
+          "unavailable_inputs": 51,
+          "ALL": 0.5829237658366088
+        },
+        "candidate_only": {
+          "correct_inputs": 8554,
+          "unavailable_inputs": 51,
+          "ALL": 0.5599388379204879
+        },
+        "candidate_with_rationales": {
+          "correct_inputs": 8649,
+          "unavailable_inputs": 51,
+          "ALL": 0.5648154215814755
+        },
+        "pool_old_plus_three": {
+          "correct_inputs": 8951,
+          "unavailable_inputs": 157,
+          "ALL": 0.5832186544342501
+        },
+        "joint_selector": {
+          "correct_inputs": 8660,
+          "unavailable_inputs": 51,
+          "ALL": 0.567294670161642
+        }
+      },
+      "comparisons": [
+        {
+          "method": "M4",
+          "candidate": "original_C0",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 707,
+          "harms": 2204,
+          "unavailable_to_correct": 14,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M4",
+          "candidate": "candidate_only",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 393,
+          "harms": 763,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M4",
+          "candidate": "candidate_with_rationales",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 436,
+          "harms": 711,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M4",
+          "candidate": "pool_old_plus_three",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 319,
+          "harms": 252,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 40,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M4",
+          "candidate": "joint_selector",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 417,
+          "harms": 681,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        }
+      ],
+      "analysis_completed_at": "2026-09-26T03:19:48.373694+00:00"
+    },
+    "M5": {
+      "status": "complete",
+      "independent": false,
+      "inputs": 13905,
+      "native_mappings": 15616,
+      "ALL_units": 6104,
+      "arms": {
+        "original_C0": {
+          "correct_inputs": 6913,
+          "unavailable_inputs": 0,
+          "ALL": 0.4734873307121029
+        },
+        "strong_B": {
+          "correct_inputs": 8971,
+          "unavailable_inputs": 22,
+          "ALL": 0.5936162079510684
+        },
+        "candidate_only": {
+          "correct_inputs": 8843,
+          "unavailable_inputs": 22,
+          "ALL": 0.5935615989515042
+        },
+        "candidate_with_rationales": {
+          "correct_inputs": 9060,
+          "unavailable_inputs": 22,
+          "ALL": 0.6028888160768874
+        },
+        "pool_old_plus_three": {
+          "correct_inputs": 8878,
+          "unavailable_inputs": 86,
+          "ALL": 0.5967234600262095
+        },
+        "joint_selector": {
+          "correct_inputs": 8739,
+          "unavailable_inputs": 22,
+          "ALL": 0.5896898208824792
+        }
+      },
+      "comparisons": [
+        {
+          "method": "M5",
+          "candidate": "original_C0",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 630,
+          "harms": 2689,
+          "unavailable_to_correct": 1,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M5",
+          "candidate": "candidate_only",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 345,
+          "harms": 473,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M5",
+          "candidate": "candidate_with_rationales",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 452,
+          "harms": 363,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M5",
+          "candidate": "pool_old_plus_three",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 275,
+          "harms": 341,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 27,
+          "complete": true,
+          "completed_subset_only": false
+        },
+        {
+          "method": "M5",
+          "candidate": "joint_selector",
+          "planned_inputs": 13905,
+          "jointly_scored_inputs": 13905,
+          "repairs": 357,
+          "harms": 589,
+          "unavailable_to_correct": 0,
+          "correct_to_unavailable": 0,
+          "complete": true,
+          "completed_subset_only": false
+        }
+      ],
+      "analysis_completed_at": "2026-09-26T07:19:42.377080+00:00"
+    }
+  },
+  "tail_shards": [
+    {
+      "gpu": 2,
+      "status": {
+        "status": "complete",
+        "mode": "live_batched",
+        "role": "readout",
+        "planned": 1594,
+        "inputs": 322,
+        "complete": 1592,
+        "unavailable": 2,
+        "failed": 0,
+        "not_submitted": 0,
+        "batches": 143,
+        "batch_size": 16,
+        "first_systemic_error": null,
+        "cost": {
+          "physical_model_requests": 1874,
+          "new_model_requests": 1874,
+          "live_input_tokens": 8142442,
+          "live_output_tokens": 229001,
+          "live_model_seconds": 3445.7784908588173,
+          "recorded_call_wall_seconds": 48680.46842622757,
+          "unfinished_call_wall_unknown": 0,
+          "unresolved_model_usage": 0,
+          "submission_attempts": 1886,
+          "failed_attempts": 0,
+          "model_usage_complete": true,
+          "cost_basis": "unique durable physical records; one-row streaming accumulation"
+        },
+        "elapsed_seconds": 3614.3800358070293,
+        "scope": "declared role/input prefix of the frozen plan; not automatically complete full-v5",
+        "no_speculative_F_draws": true,
+        "ordinary_item_failure_stops_batch": false
+      },
+      "closed_at": "2026-09-26T15:18:41.435494+08:00",
+      "exit_code": 0,
+      "restored_holder_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/restored_holders/gpu2"
+    },
+    {
+      "gpu": 1,
+      "status": {
+        "status": "complete",
+        "mode": "live_batched",
+        "role": "readout",
+        "planned": 1598,
+        "inputs": 321,
+        "complete": 1598,
+        "unavailable": 0,
+        "failed": 0,
+        "not_submitted": 0,
+        "batches": 154,
+        "batch_size": 16,
+        "first_systemic_error": null,
+        "cost": {
+          "physical_model_requests": 1934,
+          "new_model_requests": 1934,
+          "live_input_tokens": 7868060,
+          "live_output_tokens": 229251,
+          "live_model_seconds": 2314.9873965904603,
+          "recorded_call_wall_seconds": 32899.36698412895,
+          "unfinished_call_wall_unknown": 0,
+          "unresolved_model_usage": 0,
+          "submission_attempts": 1944,
+          "failed_attempts": 0,
+          "model_usage_complete": true,
+          "cost_basis": "unique durable physical records; one-row streaming accumulation"
+        },
+        "elapsed_seconds": 2479.940142285952,
+        "scope": "declared role/input prefix of the frozen plan; not automatically complete full-v5",
+        "no_speculative_F_draws": true,
+        "ordinary_item_failure_stops_batch": false
+      },
+      "closed_at": "2026-09-26T14:59:52.310257+08:00",
+      "exit_code": 0,
+      "restored_holder_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/restored_holders/gpu1"
+    },
+    {
+      "gpu": 3,
+      "status": {
+        "status": "complete",
+        "mode": "live_batched",
+        "role": "readout",
+        "planned": 1599,
+        "inputs": 321,
+        "complete": 1599,
+        "unavailable": 0,
+        "failed": 0,
+        "not_submitted": 0,
+        "batches": 148,
+        "batch_size": 16,
+        "first_systemic_error": null,
+        "cost": {
+          "physical_model_requests": 1828,
+          "new_model_requests": 1828,
+          "live_input_tokens": 8261867,
+          "live_output_tokens": 228060,
+          "live_model_seconds": 2191.560915309812,
+          "recorded_call_wall_seconds": 31081.079231262207,
+          "unfinished_call_wall_unknown": 0,
+          "unresolved_model_usage": 0,
+          "submission_attempts": 1842,
+          "failed_attempts": 0,
+          "model_usage_complete": true,
+          "cost_basis": "unique durable physical records; one-row streaming accumulation"
+        },
+        "elapsed_seconds": 2358.6548246119637,
+        "scope": "declared role/input prefix of the frozen plan; not automatically complete full-v5",
+        "no_speculative_F_draws": true,
+        "ordinary_item_failure_stops_batch": false
+      },
+      "closed_at": "2026-09-26T14:57:56.237346+08:00",
+      "exit_code": 0,
+      "restored_holder_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/restored_holders/gpu3"
+    }
+  ],
+  "tail_new_physical_cost": {
+    "physical_model_requests": 5636,
+    "live_input_tokens": 24272369,
+    "live_output_tokens": 686312,
+    "live_model_seconds": 7952.326802759089
+  },
+  "active_research_inference_processes": 0,
+  "active_scoring_processes": 0,
+  "GPUs": "0, 0 MiB, 97367 MiB, 0 %\n1, 93401 MiB, 3967 MiB, 0 %\n2, 61769 MiB, 35599 MiB, 0 %\n3, 79031 MiB, 18337 MiB, 37 %\n",
+  "postfreeze_confirmation_started": false,
+  "pending": [
+    "full-v5 family cluster confidence intervals",
+    "full integrated physical and attributed costs",
+    "final five tables/report",
+    "natural52 M5 C0 original four missing inputs",
+    "common freeze and confirmation evaluation"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-25T04:01:59.968946+08:00",
+  "pid": 210804,
+  "supervisor_pid": 210803,
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "-m",
+    "cf_moa.evaluation.run_c0_native",
+    "--plan",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/m5_live/plan.json",
+    "--method",
+    "M5",
+    "--gpu",
+    "3",
+    "--output",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/m5_live/run"
+  ],
+  "scope": "missing_M5_natural52_C0_four",
+  "automatic_retry": false,
+  "general_autoqueue_enabled": false,
+  "exit_code": 1,
+  "finished_at": "2026-09-25T04:04:43.279517+08:00",
+  "restored_watch_pid": 214087,
+  "restored_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/m5_live/restored_holders/gpu3"
+}

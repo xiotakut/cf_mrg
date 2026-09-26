@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-26T11:36:32.842168+08:00",
+  "status": "initialization_failed_no_further_retry",
+  "failure_type": "insufficient_profiled_KV_memory",
+  "required_KV_GiB": 18,
+  "available_KV_GiB": 17.54,
+  "prelaunch_free_MiB": 84979,
+  "model_max_len": 131072,
+  "scientific_configuration_unchanged": true,
+  "known_cause": "vLLM profiled available KV below minimum; per-process transient cause not established",
+  "zero_new_model_requests": true,
+  "preserved_failed_runs": [
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/runs/m5",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5"
+  ],
+  "healthy_shards_continuing": [
+    1,
+    3
+  ],
+  "no_further_GPU2_launch": true
+}

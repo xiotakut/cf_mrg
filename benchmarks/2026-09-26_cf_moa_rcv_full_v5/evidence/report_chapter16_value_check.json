@@ -1,0 +1,41 @@
+{
+  "report_source_sha256": "c88a753fdbacd55b66ed4e3017bf0379b9e2f26e00794cab377ff1b319f04bc1",
+  "C3_checks": [
+    {
+      "panel": "historical121",
+      "method": "M4",
+      "C3_point_and_CI_matches_report": true
+    },
+    {
+      "panel": "historical121",
+      "method": "M5",
+      "C3_point_and_CI_matches_report": true
+    },
+    {
+      "panel": "natural52",
+      "method": "M4",
+      "C3_point_and_CI_matches_report": true
+    },
+    {
+      "panel": "natural52",
+      "method": "M5",
+      "C3_point_and_CI_matches_report": true
+    }
+  ],
+  "C5_correct_inputs": [
+    87,
+    79,
+    32,
+    29
+  ],
+  "completed_stage_physical_calls": {
+    "C5": 176,
+    "live_seven_paths": 40,
+    "missing_catalog": 21312,
+    "first16_F": 209,
+    "M4_C0_missing4": 4
+  },
+  "no_model_calls": 0,
+  "no_grader_calls": 0,
+  "not_an_independent_reproduction": true
+}

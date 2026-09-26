@@ -1,0 +1,166 @@
+{
+  "status": "resource_shards_prepared_not_launched",
+  "source": {
+    "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+    "journal_sha256": "6ac203b8ba281485bc68671f3ae66d04504c1366f596d4e52d985f23a2c12555",
+    "source_status": "stopped_by_request",
+    "source_status_sha256": "9284f8e9e43caec96786656248fb4c9b0601a6d231d3f40148464f9f3b057d41",
+    "source_supervisor_sha256": "dc3a78a9e6460df11524f4e4ea54b8a10db6a787c919609aaa6e47c916fa5872"
+  },
+  "partition": {
+    "original_tasks": 4791,
+    "old_terminal_tasks": 0,
+    "remaining_tasks": 4791,
+    "original_inputs": 964,
+    "gpu_order": [
+      2,
+      1,
+      3
+    ],
+    "disjoint": true,
+    "exhaustive": true,
+    "shard_task_counts": {
+      "2": 1594,
+      "1": 1598,
+      "3": 1599
+    },
+    "shard_input_counts": {
+      "2": 322,
+      "1": 321,
+      "3": 321
+    },
+    "allocation": "All original GPU2 input groups round robin in original order across GPU2/1/3; exact prefixes follow their input; no gold/score/source/length selection",
+    "known_cache_only_terminal_tasks": 12,
+    "actual_unfinished_tasks": 4779,
+    "parent_selected_tasks": 47689,
+    "parent_closed_tasks": 42898,
+    "parent_disjoint": true,
+    "parent_exhaustive": true
+  },
+  "shards": [
+    {
+      "gpu": 2,
+      "plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/plan.json",
+      "plan_sha256": "d6c262c2e5c20473a33bf6a82348a1c34655ead85705f8261a9be8d3a3f010c2",
+      "output": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5",
+      "tasks": 1594,
+      "inputs": 322,
+      "cached_F_inputs": 13,
+      "inherited_callback_rows": 12,
+      "inherited_task_callback_counts": {
+        "v10891:pool_old_plus_three": 4,
+        "v10900:candidate_with_rationales": 2,
+        "v10907:candidate_only": 3,
+        "v10912:candidate_only": 1,
+        "v10916:strong_B": 2
+      },
+      "new_physical_requests_from_transfer": 0,
+      "known_cache_only_task_ids": [
+        "v10891:pool_old_plus_three"
+      ]
+    },
+    {
+      "gpu": 1,
+      "plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/plan.json",
+      "plan_sha256": "22fa150c2e334d904dc76ed0e700e3447a3b0b7b1ce70741094a70440187d83f",
+      "output": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5",
+      "tasks": 1598,
+      "inputs": 321,
+      "cached_F_inputs": 5,
+      "inherited_callback_rows": 10,
+      "inherited_task_callback_counts": {
+        "v10898:candidate_with_rationales": 2,
+        "v10901:candidate_with_rationales": 2,
+        "v10909:candidate_only": 2,
+        "v10914:strong_B": 3,
+        "v10917:strong_B": 1
+      },
+      "new_physical_requests_from_transfer": 0,
+      "known_cache_only_task_ids": [
+        "v10914:candidate_only",
+        "v10914:candidate_with_rationales",
+        "v10914:joint_selector",
+        "v10914:pool_old_plus_three",
+        "v10914:strong_B"
+      ]
+    },
+    {
+      "gpu": 3,
+      "plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/plan.json",
+      "plan_sha256": "652363f072e332e766ddf6fd139037e75fdf36f05dd56ba1ec80a8c1ad915863",
+      "output": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5",
+      "tasks": 1599,
+      "inputs": 321,
+      "cached_F_inputs": 5,
+      "inherited_callback_rows": 14,
+      "inherited_task_callback_counts": {
+        "v10899:candidate_with_rationales": 3,
+        "v10906:candidate_only": 3,
+        "v10911:strong_B": 5,
+        "v10915:strong_B": 3
+      },
+      "new_physical_requests_from_transfer": 0,
+      "known_cache_only_task_ids": [
+        "v10911:strong_B",
+        "v10915:candidate_only",
+        "v10915:candidate_with_rationales",
+        "v10915:joint_selector",
+        "v10915:pool_old_plus_three",
+        "v10915:strong_B"
+      ]
+    }
+  ],
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "source_SQL_unchanged": true,
+  "parent_transfer": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/transfer_receipt.json",
+    "sha256": "90cb05f21922b9567e832030a803c5aa1b5e627e89180129123eafc4194270a0"
+  },
+  "closed_sources": [
+    {
+      "run": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5",
+      "status": "stopped_by_request",
+      "tasks": 33438
+    },
+    {
+      "run": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5",
+      "status": "complete",
+      "tasks": 4731,
+      "status_sha256": "aa2fb8643873970d84eaa1874f9c1422c9598d3169a3af2faf600b0b69dd278c",
+      "supervisor_sha256": "cff6851f48be885f97e7d3545adf5164b4f4f78ef3b85025a1f9121de878520b"
+    },
+    {
+      "run": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5",
+      "status": "complete",
+      "tasks": 4729,
+      "status_sha256": "0b6415cabdc1e71a7862c5687609a9aa14326a882d338d9652bd20f081f0dc9c",
+      "supervisor_sha256": "5967368cb8fd651ebf2719d6e1cd3d2988ee2d2447096db4b4f4865aa3b47075"
+    }
+  ],
+  "preserved_failed_runs": [
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/runs/m5",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5"
+  ],
+  "cache_only_evidence": {
+    "source_run": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5",
+    "source_journal_sha256": "895dbcdc5541eb93d4edda3ef9a911b6874765fc992500c135ac49edb87de50e",
+    "count": 12,
+    "native_answer_hashes": {
+      "v10891:pool_old_plus_three": "c8c7ab0e715532e2506170e737dca748bf3bdd8dcdad8d36511c84817e396685",
+      "v10911:strong_B": "57697f33ad8ae8a259aab843162b21f714f6b8e3ce091647524a3b8abf319acb",
+      "v10914:strong_B": "40a5b3680c914c352bb74afbf3ad1ddde823116ec5d7a3deeb827393097fd248",
+      "v10914:candidate_only": "40a5b3680c914c352bb74afbf3ad1ddde823116ec5d7a3deeb827393097fd248",
+      "v10914:candidate_with_rationales": "40a5b3680c914c352bb74afbf3ad1ddde823116ec5d7a3deeb827393097fd248",
+      "v10914:pool_old_plus_three": "40a5b3680c914c352bb74afbf3ad1ddde823116ec5d7a3deeb827393097fd248",
+      "v10914:joint_selector": "40a5b3680c914c352bb74afbf3ad1ddde823116ec5d7a3deeb827393097fd248",
+      "v10915:strong_B": "cb1aaa2523e492543f75daec6f72ab531e37af18e4e99a3506b48d8ac1c6ee25",
+      "v10915:candidate_only": "cb1aaa2523e492543f75daec6f72ab531e37af18e4e99a3506b48d8ac1c6ee25",
+      "v10915:candidate_with_rationales": "cb1aaa2523e492543f75daec6f72ab531e37af18e4e99a3506b48d8ac1c6ee25",
+      "v10915:pool_old_plus_three": "cb1aaa2523e492543f75daec6f72ab531e37af18e4e99a3506b48d8ac1c6ee25",
+      "v10915:joint_selector": "cb1aaa2523e492543f75daec6f72ab531e37af18e4e99a3506b48d8ac1c6ee25"
+    },
+    "interpretation": "Reconstructed by identical saved F and exact prefixes; zero new model submissions; not a separate quality source"
+  },
+  "cost_policy": "Unique physical cost sources: original STOP SQL, old complete GPU1/GPU3 SQL, new three tail SQL. Prefix rows physical=[]; failed initializations keep separate wall/failure audit. No failed SQL or first_error copied."
+}

@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-25T10:47:26.476167+08:00",
+  "method": "M4",
+  "gpu": 3,
+  "supervisor_pid": 591555,
+  "plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/plan.json",
+  "plan_sha256": "7a633a98e9ccf662c4e08dc14ed8ca82ea7a438ed7bdacfccd9d7dd7e2fbde09",
+  "transfer_receipt": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/transfer_receipt.json",
+  "transfer_sha256": "19ca7221206f2828e8c5f568b8e39c044367299fe7bd5a3da6a76510326c1dca",
+  "scheduler_sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+  "launcher_sha256": "5f24dbd48ba1d8de4c8d937b0dd8b9ca634e085845bda0f84a00c30a51043254",
+  "resources": {
+    "card": {
+      "gpu": 3,
+      "name": "NVIDIA H20",
+      "uuid": "GPU-77c2a29b-1fe3-7ad9-61bc-cc435518c026",
+      "total_mib": 97871,
+      "free_mib": 87029
+    },
+    "requirement": {
+      "role": "readout",
+      "method": "M4",
+      "minimum_free_mib": 61440,
+      "weights_gib": 14.957527160644531,
+      "fixed_kv_gib": 32.0,
+      "max_context_kv_gib": 16.0,
+      "utilization_reserve_gib": 14.336572265625001,
+      "unmeasured_profile_runtime_margin_gib": 3,
+      "config_hash": "a78b37b0926fc42e989a48361ca0487cade3280c036d53993e69f59e14e77c21",
+      "model_config_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "weights_index_sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "status": "cpu_estimate_not_gpu_measurement",
+      "interpretation": "Scheduling thresholds only, not measured GPU peaks or changes to adopted model settings. Recheck free memory at launch; another process can change availability."
+    },
+    "ready": true
+  },
+  "general_autoqueue_enabled": false,
+  "automatic_retry": false,
+  "pid": 591753,
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "-m",
+    "cf_moa.evaluation.run_moa_rcv_batched",
+    "--plan",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/plan.json",
+    "--method",
+    "M4",
+    "--role",
+    "readout",
+    "--gpu",
+    "3",
+    "--output",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-09-26T09:04:33.301622+08:00",
+  "restored_watch_pid": 3745924,
+  "restored_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/restored_holders/gpu3"
+}

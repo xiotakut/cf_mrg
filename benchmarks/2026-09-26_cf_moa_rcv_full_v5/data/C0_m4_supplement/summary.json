@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "panel": "natural52",
+  "method": "M4",
+  "control": "C0",
+  "denominator": 52,
+  "reused_inputs": 48,
+  "newly_generated_inputs": 4,
+  "correct_inputs": 35,
+  "unavailable_inputs": 0,
+  "native_ALL_units": 18,
+  "native_ALL_mean": 0.5481481481481482,
+  "pairs": [
+    {
+      "relation": "maintain",
+      "denominator": 28,
+      "both_correct": 16
+    },
+    {
+      "relation": "respond",
+      "denominator": 2,
+      "both_correct": 0
+    }
+  ],
+  "new_physical_cost": {
+    "physical_model_requests": 4,
+    "new_model_requests": 4,
+    "live_input_tokens": 4612,
+    "live_output_tokens": 810,
+    "live_model_seconds": 15.156076254002983,
+    "recorded_call_wall_seconds": 857.4966695308685,
+    "unfinished_call_wall_unknown": 0,
+    "unresolved_model_usage": 0,
+    "submission_attempts": 4,
+    "failed_attempts": 0,
+    "model_usage_complete": true,
+    "cost_basis": "unique durable physical records; one-row streaming accumulation"
+  },
+  "new_run_wall_seconds": 236.41204399100388,
+  "inherited_original48_cost": "not reconstructed here; retain original delivery cost",
+  "timing_note": "event elapsed seconds allocates shared model batch wall; not exclusive GPU time. Raw recorded_call_wall_seconds includes repeated lazy initialization.",
+  "auxiliary": "Saved fields retained. Missing historic auxiliary fields are unknown, not zero and not regraded.",
+  "exposure": "already exposed natural52 development; not confirmation"
+}

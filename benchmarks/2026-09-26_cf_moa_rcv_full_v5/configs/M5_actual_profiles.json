@@ -1,0 +1,98 @@
+{
+  "model": "M5",
+  "profiles": {
+    "catalog": {
+      "model": "/home/data3/txy/models/Qwen3-8B",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 1,
+      "gpu_memory_utilization": 0.95,
+      "max_model_len": 16384,
+      "max_num_seqs": 8,
+      "max_num_batched_tokens": 4096,
+      "batch_size": 8,
+      "model_kwargs": {
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        },
+        "num_gpu_blocks_override": 2048
+      },
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "guided_json": false,
+      "num_shards": 1,
+      "max_logprobs": 2048
+    },
+    "facts": {
+      "model": "/home/data3/txy/models/Qwen3-8B",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 2048,
+      "gpu_memory_utilization": 0.95,
+      "max_model_len": 16384,
+      "max_num_seqs": 8,
+      "max_num_batched_tokens": 4096,
+      "batch_size": 8,
+      "model_kwargs": {
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        },
+        "num_gpu_blocks_override": 2048,
+        "enforce_eager": true
+      },
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "guided_json": true,
+      "num_shards": 1,
+      "max_logprobs": 2048
+    },
+    "readout": {
+      "model": "/home/data3/txy/models/Qwen3-8B",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 2048,
+      "gpu_memory_utilization": 0.85,
+      "max_model_len": 131072,
+      "max_num_seqs": 16,
+      "max_num_batched_tokens": 8192,
+      "batch_size": 16,
+      "model_kwargs": {
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        },
+        "num_gpu_blocks_override": 16384
+      },
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "guided_json": true,
+      "num_shards": 1
+    }
+  },
+  "source_plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/plan.json",
+  "source_plan_sha256": "d6c262c2e5c20473a33bf6a82348a1c34655ead85705f8261a9be8d3a3f010c2",
+  "verification_seed": 42,
+  "per_task_budget": {
+    "max_model_requests": 32,
+    "max_input_tokens": 4194304,
+    "max_output_tokens": 16384,
+    "max_tool_calls": 20
+  }
+}

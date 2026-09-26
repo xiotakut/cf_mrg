@@ -1,0 +1,26 @@
+{
+  "status": "bind_at_final_closure_not_yet_final_cost",
+  "original_journals": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current",
+      "status": "closed_partial"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current",
+      "status": "running"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current",
+      "status": "running"
+    }
+  ],
+  "inherit_callbacks": 39,
+  "inherit_new_physical": 0,
+  "policy": "These three original SQLs replace the single remaining-M4 cost source; source counted once, no snapshot SQL. Add all other prior sources unchanged. SQL rows/submission_attempts include inherited prefixes and are not newly paid call count."
+}

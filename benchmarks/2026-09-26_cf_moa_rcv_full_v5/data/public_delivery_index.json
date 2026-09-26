@@ -1,0 +1,48 @@
+{
+  "status": "complete_full_v5_regression; overall_research_plan_incomplete",
+  "at": "2026-09-26T18:59:42.572510+08:00",
+  "main": "a5_candidate_with_rationales_v1",
+  "default_B_unchanged": true,
+  "full_report": "docs/research/cf_moa_experiment_report.md#rcv-full-v5-results-20260926",
+  "run_and_delivery": "RUN_AND_DELIVERY.md",
+  "source_snapshot": "source_snapshot/",
+  "execution_recovery_source": "execution_source/",
+  "configuration": "configs/",
+  "resolved_spec": "method_spec.resolved.json",
+  "runtime_identity": "runtime_identity.json",
+  "quality": {
+    "m4": "data/full_v5/m4/quality_summary.json",
+    "m5": "data/full_v5/m5/quality_summary.json"
+  },
+  "metadata": {
+    "data/full_v5/m4/per_input_status.jsonl.gz": 83430,
+    "data/full_v5/m4/paired_atoms.jsonl.gz": 73610,
+    "data/full_v5/m4/family_effects.jsonl.gz": 46760,
+    "data/full_v5/m4/native_units.jsonl.gz": 80370,
+    "data/full_v5/m4/pairs.jsonl.gz": 51708,
+    "data/full_v5/m5/per_input_status.jsonl.gz": 83430,
+    "data/full_v5/m5/paired_atoms.jsonl.gz": 73610,
+    "data/full_v5/m5/family_effects.jsonl.gz": 46760,
+    "data/full_v5/m5/native_units.jsonl.gz": 80370,
+    "data/full_v5/m5/pairs.jsonl.gz": 51708
+  },
+  "metadata_compression": "gzip, unchanged decompressed original bytes",
+  "physical_new_cost": "data/full_v5_new_physical_cost.json",
+  "earlier_completed_stage_cost": "data/completed_new_physical_cost.json",
+  "cost_attribution_note": "Full-v5 17 closed physical sources do not duplicate inherited callback prefixes. Earlier stage table overlaps catalog/readout16: do not add its total. Per-method attributed full costs including inherited pools not finalized.",
+  "trace_private_index": "data/private_artifact_index.json",
+  "job_snapshot": "data/execution_status_snapshot.json",
+  "development_121_52_tables": "data/tables/five_tables.md",
+  "earlier_development_family_CI": "data/statistics/paired_effects.json",
+  "pending": [
+    "Full-v5 family bootstrap intervals",
+    "Full per-method attributed cost and final five integrated tables",
+    "Natural52 M5 original C0 missing four",
+    "Common freeze and post-freeze confirmation",
+    "Independent F generation replica",
+    "Final adoption decision"
+  ],
+  "publication_model_calls": 0,
+  "publication_grader_calls": 0,
+  "publication_process_actions": 0
+}

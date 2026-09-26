@@ -1,0 +1,1065 @@
+{
+  "status": "passed_actual_readout_batch",
+  "method": "M4",
+  "input_count": 16,
+  "expected_output_rows": 80,
+  "checker_new_model_calls": 0,
+  "checker_new_grader_calls": 0,
+  "reads_gold_or_scores": false,
+  "observed_fresh_K_ge_2": {
+    "status": "observed",
+    "input_ids": [
+      "v03727",
+      "v03731",
+      "v03732",
+      "v03734",
+      "v03737"
+    ]
+  },
+  "checked_at": "2026-09-24T23:17:04.626655+08:00",
+  "per_input": {
+    "v03727": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 5,
+      "actual_seeds": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "stopped_early": false,
+      "K": 2
+    },
+    "v03728": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03729": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03730": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03731": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 4,
+      "actual_seeds": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "stopped_early": true,
+      "K": 2
+    },
+    "v03732": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 4,
+      "actual_seeds": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "stopped_early": true,
+      "K": 2
+    },
+    "v03733": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03734": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 4,
+      "actual_seeds": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "stopped_early": true,
+      "K": 2
+    },
+    "v03735": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03736": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03737": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 4,
+      "actual_seeds": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "stopped_early": true,
+      "K": 2
+    },
+    "v03738": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03739": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03740": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03741": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    },
+    "v03742": {
+      "route": "full_native_key_maj5_absolute_majority_stop",
+      "ordinary_F": true,
+      "generated": 3,
+      "actual_seeds": [
+        42,
+        43,
+        44
+      ],
+      "stopped_early": true,
+      "K": 1
+    }
+  },
+  "per_arm": [
+    {
+      "task_id": "v03727:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 5,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03727:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 0,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03727:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 1,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03727:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03727:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 2,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03728:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03728:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03728:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03728:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03728:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03729:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03729:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03729:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03729:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03729:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03730:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03730:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03730:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03730:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03730:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03731:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03731:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 1,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03731:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 0,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03731:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03731:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 2,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03732:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03732:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 0,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03732:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 0,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03732:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03732:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 2,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03733:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03733:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03733:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03733:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03733:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03734:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03734:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 1,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03734:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 1,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03734:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03734:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 2,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03735:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03735:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03735:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03735:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03735:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03736:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03736:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03736:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03736:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03736:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03737:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03737:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 0,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03737:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 4,
+      "candidate_check": {
+        "status": "verified_candidate_selection",
+        "K": 2,
+        "logical_calls": 4,
+        "physical_calls": 4,
+        "two_actual_encodings": true,
+        "selected_original_response_index": 1,
+        "complete_saved_native_return": true
+      }
+    },
+    {
+      "task_id": "v03737:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03737:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 2,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03738:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03738:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03738:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03738:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03738:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03739:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03739:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03739:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03739:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03739:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03740:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03740:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03740:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03740:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03740:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03741:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03741:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03741:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03741:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03741:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03742:strong_B",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 3,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03742:candidate_only",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03742:candidate_with_rationales",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": {
+        "status": "retained_no_competition",
+        "K": 1,
+        "logical_calls": 0
+      }
+    },
+    {
+      "task_id": "v03742:pool_old_plus_three",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    },
+    {
+      "task_id": "v03742:joint_selector",
+      "status": "complete",
+      "exact_entry_replay": true,
+      "whole_native_unchanged": true,
+      "callback_count": 0,
+      "candidate_check": null
+    }
+  ],
+  "failed_rows": [],
+  "recorded_status_counts": {
+    "complete": 80
+  },
+  "actual_physical_cost": {
+    "physical_model_requests": 119,
+    "new_model_requests": 119,
+    "live_input_tokens": 334933,
+    "live_output_tokens": 13020,
+    "live_model_seconds": 181.95045927690808,
+    "submission_attempts": 119,
+    "failed_attempts": 0,
+    "unresolved_model_usage": 0,
+    "unique_engine_request_ids": 119,
+    "elapsed_basis": "Physical event elapsed_seconds; never replay CPU callback_seconds"
+  },
+  "source_files_unchanged": true,
+  "shared_F_generated_once": true,
+  "raw_F_generation_histogram": {
+    "5": 1,
+    "3": 11,
+    "4": 4
+  },
+  "fresh_entry_connectivity": {
+    "status": "passed",
+    "input_ids": [
+      "v03727",
+      "v03731",
+      "v03732",
+      "v03734",
+      "v03737"
+    ],
+    "policy": "No additional sampling requested if this fixed prefix has no K>=2 pool"
+  },
+  "score_or_clinical_quality_claim": false
+}

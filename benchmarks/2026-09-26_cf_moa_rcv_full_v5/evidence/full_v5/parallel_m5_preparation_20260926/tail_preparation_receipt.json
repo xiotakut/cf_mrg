@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-26T14:18:46.776122+08:00",
+  "status": "tools_tested_and_12_actual_cache_outputs_replayed",
+  "test_count": 2,
+  "test_exit_code": 0,
+  "files": {
+    "prepare_tail_three_shards.py": "3efcac12d24f894e970ad0e8c554d87bfe80457598e875f95bbec919f0e1d470",
+    "test_prepare_tail_three_shards.py": "1d6a15f0daadbb5fc8a35c580a68222cdf5935e10b32ca7dc292dd649875a779",
+    "verify_tail_cached_outputs.py": "31a3b30823095d8897bb9ec4e2de82bdf612eb89dc82d45726a0d325dad9c506",
+    "launch_shard.py": "e99f59747c13c5dcd44dc1cd3eb382b9f622a8030dc9a40d9c5f1dbc04b2bb95"
+  },
+  "actual_cache_verification": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/cache_replay_check.json",
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "new_tokenizer_calls": 0,
+  "SQL_writes_in_actual_cache_verification": 0,
+  "notes": [
+    "Tail helper prepared only; root performs actual migration and process actions",
+    "12 real cached native answers reproduced with actual entry and 15 exact callbacks; no mock parser",
+    "Existing prior helper emits ResourceWarning only in synthetic fixture opening temporary F JSONL; preserved unchanged"
+  ]
+}

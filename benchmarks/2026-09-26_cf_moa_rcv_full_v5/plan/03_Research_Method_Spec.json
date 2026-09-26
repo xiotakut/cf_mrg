@@ -1,0 +1,80 @@
+{
+  "document_type": "planned_research_spec_not_existing_loader_configuration",
+  "date": "2026-09-24",
+  "research_variant": "cf_moa_rcv_rationales_v1",
+  "default_baseline_unchanged": "adopted_B_five_operations_v1",
+  "basis": "2026-09-24_cf_moa_candidate_verification, chapter 15",
+  "router": {
+    "reuse": "cf_moa.controller.strong_legacy.select",
+    "learned": false,
+    "evaluation_metadata_as_input": false
+  },
+  "operation_roles": {
+    "A1": "established support / add; shared adopted rule execution",
+    "A2": "invalid support / remove; same execution as A1",
+    "A3": "adopted catalogue comparison and native mapping",
+    "A4": "adopted explicitly supplied-model intervention executor",
+    "A5": "adopted F; optional RCV within ordinary disagreement path"
+  },
+  "verifier": {
+    "module": "cf_moa.agents.a5_candidate_verify",
+    "function": "run",
+    "include_rationales": true,
+    "allowed_module_config": {
+      "seed": 42
+    },
+    "candidate_source": "adopted_F.trace.predictions and responses",
+    "representative": "earliest complete response per distinct legal key",
+    "selection": "mean of separately normalized TRUE probabilities in two swapped encodings; maximum",
+    "output": "whole existing response of selected candidate",
+    "interpretation": "uncalibrated ranking signal"
+  },
+  "evaluation": {
+    "primary": "unchanged native ALL non-reference unit mean",
+    "mandatory_secondary": [
+      "unique-input correct",
+      "repair/harm",
+      "qualified maintain/respond pair both-correct",
+      "auxiliary-valid/exact",
+      "candidate coverage and selection",
+      "cost and scope"
+    ],
+    "candidate_and_B_share_F_pool": true,
+    "full_v5_use_frozen_manifest": true,
+    "confirmatory_identity": "requires actual family-level exposure audit; old panels are development"
+  },
+  "controls": [
+    "original_method",
+    "strong_B",
+    "candidate_only",
+    "candidate_with_rationales",
+    "old_pool_plus_three_reanswers",
+    "same_pool_joint_selector"
+  ],
+  "statistics": {
+    "resampling_unit": "family",
+    "paired_same_draws": true,
+    "native_atom_weights_unchanged": true,
+    "bootstrap_resamples": 5000,
+    "statistics_seed": 240924
+  },
+  "delivery": [
+    "integrated cached/live runner",
+    "paired effect report",
+    "full-scope and exposure manifest",
+    "controls and costs",
+    "architecture and five tables"
+  ],
+  "explicit_runtime_flags": {
+    "f_disagreement_reanswer": false,
+    "global_generative_aggregator": false
+  },
+  "disabled_features": [
+    "ordinary_reanswer_replacement",
+    "global_generative_aggregator",
+    "new_A1_audit_prompt",
+    "new_A3_editing_branch",
+    "NLI_to_vote_conversion",
+    "source_ID_or_gold_based_gating"
+  ]
+}

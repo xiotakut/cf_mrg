@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-26T03:17:59.617349+00:00",
+  "status": "repair_tested_ready_not_launched",
+  "tests_passed": 14,
+  "readiness": {
+    "state": "ready",
+    "shards": [
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4",
+        "planned": 17927,
+        "complete": 17669,
+        "failed": 0,
+        "unavailable": 258
+      },
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4",
+        "planned": 17861,
+        "complete": 17778,
+        "failed": 0,
+        "unavailable": 83
+      }
+    ]
+  },
+  "analysis_submissions": 0,
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "source_hashes": {
+    "stable_json.py": "d2d1b0cc6584b1b197322c92bffe8fd8a5af6a6d820044a78b8be1d5a0a986c5",
+    "analysis_plan.py": "74356dd5d911ea15bef8a3bf8719dc632162ede9f80fc4f3a3bf51a65dc72678",
+    "watch_two_shards.py": "597d6310cc5c778644582e9ab57b8fe06d57c5509656c593ba0e2b528a1196bf",
+    "test_stable_json.py": "b80f5bd6ad316e468f9a1895c0c90b4b76536e2db04dbce71f5b39e5357c8adf",
+    "test_watch_two_shards.py": "463b806edf7c0b733831ec6a98bcbf0b35601f1c98d017e9af3f2e6756f9a62b"
+  },
+  "original_failure_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/analysis_listener/status.json",
+  "original_failure": {
+    "at": "2026-09-25T07:04:30.223574+00:00",
+    "state": "blocked",
+    "reason": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+  },
+  "config_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/analysis_config.resolved.json",
+  "config_sha256": "a227e3cc71328c29f2e4c15da442d2e49494fe7bdd5c21d27680857a2c7ee249",
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/listener_recovery_20260926/watch_two_shards.py",
+    "--config",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/analysis_config.resolved.json",
+    "--output",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/listener_recovery_20260926/m4_listener"
+  ],
+  "scope": "bounded metadata-reader and listener revision; original analysis/cache/profiles/method/grader untouched",
+  "known_cause": "Original listener immediately fails on malformed JSON and is vulnerable to non-atomic concurrent metadata writes. The saved historical error lacks a path/stack trace, so the actual offending file and root cause remain unconfirmed."
+}

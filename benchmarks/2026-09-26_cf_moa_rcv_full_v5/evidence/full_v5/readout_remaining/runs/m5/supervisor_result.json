@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-24T22:52:29.402590+08:00",
+  "method": "M5",
+  "gpu": 2,
+  "pid": 4093523,
+  "supervisor_pid": 4093522,
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "-m",
+    "cf_moa.evaluation.run_moa_rcv_batched",
+    "--plan",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/plan.json",
+    "--method",
+    "M5",
+    "--role",
+    "readout",
+    "--gpu",
+    "2",
+    "--output",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5"
+  ],
+  "source_hashes": {
+    "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+    "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+    "/home/data3/txy/cf_moa/controller/moa_rcv.py": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee",
+    "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+    "/home/data3/txy/cf_moa/agents/a5_joint_selector.py": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+    "/home/data3/txy/cf_moa/agents/a5_pool_expansion_control.py": "172b6eb35c144600fc8536746bf1033385f86dca53aef46c9180753473c59964",
+    "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+    "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+    "/home/data3/txy/cf_moa/tools/f_pool_replica.py": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3"
+  },
+  "general_autoqueue_enabled": false,
+  "automatic_retry": false,
+  "exit_code": 1,
+  "finished_at": "2026-09-26T11:23:18.643429+08:00",
+  "restored_watch_pid": 3815581,
+  "restored_state": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/restored_holders/gpu2"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "resource_shards_prepared_not_launched",
+  "source": {
+    "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+    "journal_sha256": "d2f8270f70b59ac02e65e74b57eeb5b844c33aa0de1c3db4f2d73cbcee2dabdc",
+    "source_status": "stopped_by_request",
+    "source_status_sha256": "89e955f59a20cc44d7ab06e427f351434b8f7de7f7d3dcf586aee9822ee35f54",
+    "source_supervisor_sha256": "e3624c6fc28f0617407667f56ab3d351e9cecff3ea857ac6a936bd63d2ad0468"
+  },
+  "partition": {
+    "original_tasks": 47809,
+    "old_terminal_tasks": 12021,
+    "remaining_tasks": 35788,
+    "touched_unfinished_inputs": 15,
+    "untouched_remaining_inputs": 7165,
+    "shard_task_counts": {
+      "1": 17927,
+      "3": 17861
+    },
+    "shard_input_counts": {
+      "1": 3598,
+      "3": 3582
+    },
+    "selected_task_ids_sha256": "6707af9b4b0022f824e7753a754b93b33709812a560c298253d08aec880315b1",
+    "terminal_task_ids_sha256": "7e4fa43d432744f239e773886e3c14f00c7456ce875b6daabe534ba89b6c49f5",
+    "remaining_task_ids_sha256": "ec4a5556316a0ca6685d16a73e534a64f6da7c41ad777cc000b01fb62ae6cdef",
+    "disjoint": true,
+    "exhaustive": true,
+    "allocation": "Touched unfinished inputs GPU1; untouched input order alternates GPU1/GPU3; no gold, score or source-label selection"
+  },
+  "shards": [
+    {
+      "gpu": 1,
+      "plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/plan.json",
+      "plan_sha256": "5f64db43b02ec6980f48c31d40ea6c691c793dfdec7aa9c5359caa610d8ca7f8",
+      "output": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4",
+      "tasks": 17927,
+      "inputs": 3598,
+      "cached_F_inputs": 60,
+      "inherited_callback_rows": 39,
+      "inherited_task_callback_counts": {
+        "v06281:pool_old_plus_three": 1,
+        "v06290:candidate_with_rationales": 2,
+        "v06306:strong_B": 5,
+        "v06307:strong_B": 4,
+        "v06308:strong_B": 4,
+        "v06309:strong_B": 3,
+        "v06310:strong_B": 3,
+        "v06311:strong_B": 3,
+        "v06312:strong_B": 3,
+        "v06313:strong_B": 2,
+        "v06314:strong_B": 2,
+        "v06315:strong_B": 2,
+        "v06316:strong_B": 2,
+        "v06317:strong_B": 2,
+        "v06318:strong_B": 1
+      },
+      "new_physical_requests_from_transfer": 0
+    },
+    {
+      "gpu": 3,
+      "plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/plan.json",
+      "plan_sha256": "7a633a98e9ccf662c4e08dc14ed8ca82ea7a438ed7bdacfccd9d7dd7e2fbde09",
+      "output": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4",
+      "tasks": 17861,
+      "inputs": 3582,
+      "cached_F_inputs": 49,
+      "inherited_callback_rows": 0,
+      "inherited_task_callback_counts": {},
+      "new_physical_requests_from_transfer": 0
+    }
+  ],
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "source_SQL_unchanged": true,
+  "cost_policy": "Old physical cost belongs to the old journal only. New inherited callbacks have physical=[] and replay events. db06 submission_attempts includes these rows; do not call it newly sent requests."
+}

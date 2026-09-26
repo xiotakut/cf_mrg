@@ -1,0 +1,59 @@
+{
+  "status": "passed_with_logical_cost_metadata_bug_corrected",
+  "outputs": 95,
+  "verified_selections": 88,
+  "NLI_passthrough": 7,
+  "score_calls": 176,
+  "native_mapping_rows": 418,
+  "full_input_rows": 346,
+  "existing_score_reuses": 405,
+  "original_new_score_calls": 13,
+  "new_model_calls_this_audit": 0,
+  "new_grader_calls_this_audit": 0,
+  "observed_physical_usage": [
+    {
+      "panel": "historical121",
+      "model": "M4",
+      "physical_model_requests": 50,
+      "new_model_requests": 50,
+      "live_input_tokens": 414842,
+      "live_output_tokens": 50,
+      "live_model_seconds": 77.21194911006023,
+      "logical_score_callbacks": 50
+    },
+    {
+      "panel": "natural52",
+      "model": "M4",
+      "physical_model_requests": 44,
+      "new_model_requests": 44,
+      "live_input_tokens": 232688,
+      "live_output_tokens": 44,
+      "live_model_seconds": 36.74356381400139,
+      "logical_score_callbacks": 44
+    },
+    {
+      "panel": "historical121",
+      "model": "M5",
+      "physical_model_requests": 52,
+      "new_model_requests": 52,
+      "live_input_tokens": 436376,
+      "live_output_tokens": 52,
+      "live_model_seconds": 104.13881328506977,
+      "logical_score_callbacks": 52
+    },
+    {
+      "panel": "natural52",
+      "model": "M5",
+      "physical_model_requests": 30,
+      "new_model_requests": 30,
+      "live_input_tokens": 177666,
+      "live_output_tokens": 30,
+      "live_model_seconds": 25.684409899025923,
+      "logical_score_callbacks": 30
+    }
+  ],
+  "all_native_and_pair_points_match_saved_summary": true,
+  "whole_response_and_normalization_checks": true,
+  "c0_natural_missing_original_rows": 8,
+  "cost_fix": "c5_cost_metadata_fix/receipt.json"
+}

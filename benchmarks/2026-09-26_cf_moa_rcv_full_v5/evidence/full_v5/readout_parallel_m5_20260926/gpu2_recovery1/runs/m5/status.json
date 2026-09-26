@@ -1,0 +1,48 @@
+{
+  "status": "stopped_on_systemic_error",
+  "mode": "live_batched",
+  "role": "readout",
+  "planned": 4791,
+  "inputs": 964,
+  "complete": 12,
+  "unavailable": 0,
+  "failed": 0,
+  "not_submitted": 4779,
+  "batches": 1,
+  "batch_size": 16,
+  "first_systemic_error": {
+    "request_id": "v10891:joint_selector",
+    "ordinal": 0,
+    "error_type": "JournalConflict",
+    "error_category": "infrastructure",
+    "message": "Shared engine initialization failed: Engine core initialization failed. See root cause above.",
+    "at": 1790393739.755579,
+    "source": "runtime",
+    "counts": {
+      "attempted": 50,
+      "submitted": 0,
+      "completed": 0,
+      "in_flight": 0,
+      "in_flight_state_unknown": 0,
+      "definition": "submitted includes uncertain transport submissions; in_flight means no durable completion, not a claim that GPU execution is still active"
+    }
+  },
+  "cost": {
+    "physical_model_requests": 0,
+    "new_model_requests": 0,
+    "live_input_tokens": 0,
+    "live_output_tokens": 0,
+    "live_model_seconds": 0.0,
+    "recorded_call_wall_seconds": 276.0405180454254,
+    "unfinished_call_wall_unknown": 0,
+    "unresolved_model_usage": 0,
+    "submission_attempts": 50,
+    "failed_attempts": 14,
+    "model_usage_complete": true,
+    "cost_basis": "unique durable physical records; one-row streaming accumulation"
+  },
+  "elapsed_seconds": 28.72919742501108,
+  "scope": "declared role/input prefix of the frozen plan; not automatically complete full-v5",
+  "no_speculative_F_draws": true,
+  "ordinary_item_failure_stops_batch": false
+}

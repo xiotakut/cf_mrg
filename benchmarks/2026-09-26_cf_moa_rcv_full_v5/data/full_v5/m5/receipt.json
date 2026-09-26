@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-09-26T07:19:42.377080+00:00",
+  "status": "complete",
+  "methods": [
+    "M5"
+  ],
+  "inference_calls": 0,
+  "new_native_grader_calls": 13302,
+  "new_auxiliary_only_backfills": 0,
+  "reused_native_score_cache_hits": {
+    "new_native_mapping_score": 51531,
+    "saved_adopted_R1_same_native_scoring_inputs": 8880,
+    "saved_complete_response_score": 740,
+    "saved_operation_ablation_score": 615,
+    "saved_original_complete_response_score": 195,
+    "saved_adopted_F_delivery_score": 2817
+  },
+  "new_scores_enabled": true,
+  "planned_inputs_per_method": 13905,
+  "planned_native_mappings_per_method": 15616,
+  "planned_ALL_units": 6104,
+  "mapping_rows_with_pending": 93696,
+  "input_rows_with_pending": 83430,
+  "input_sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_completed_union.jsonl",
+      "size": 24142718,
+      "sha256": "1c2fb554842d8fbfb989145ca3285816e8d787a55e8de55b987282e276553136",
+      "terminal_rows": 12876
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m5/proposals.jsonl",
+      "size": 3827707,
+      "sha256": "92075bc5e12dd0eb6f37e298b95722ab3b3dc57115220b44645468baa5e94305",
+      "terminal_rows": 160
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m5/proposals.jsonl",
+      "size": 965313,
+      "sha256": "222d7c6f3d7cbf8186a05aa3ad360dd8d61726639cca2ccae1b227f63005e222",
+      "terminal_rows": 40
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m5/proposals.jsonl",
+      "size": 207217946,
+      "sha256": "cdb61d749b8c1cabb2a04c9fcf9a2ef2c0b340e01e4aa008caf26e4e349cd3dd",
+      "terminal_rows": 8680
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16/runs/m5/proposals.jsonl",
+      "size": 2780587,
+      "sha256": "4daad1a91f96556ee50ff267631cf5148b7cee331e5dae216e51edbc349ffece",
+      "terminal_rows": 80
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/proposals.jsonl",
+      "size": 2066422411,
+      "sha256": "acdfeb0226644eaa820457362ef8b4181f6543bc874e31039f27907f9f7fb97c",
+      "terminal_rows": 33438
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5/proposals.jsonl",
+      "size": 206535958,
+      "sha256": "a4bf8f73ea13a67fef133198974fbfdbbb955ed9ebdf3ab1382712b632b42081",
+      "terminal_rows": 4731
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5/proposals.jsonl",
+      "size": 214841230,
+      "sha256": "6eb4ca209475d7d21d9eadae7ea56958df03f0c78389c58687a872609e4a4bff",
+      "terminal_rows": 4729
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5/proposals.jsonl",
+      "size": 69308966,
+      "sha256": "5729fc8afa91e4c924cdd0b8c454bc012f4127ecf692c4765d26261528eda386",
+      "terminal_rows": 1594
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5/proposals.jsonl",
+      "size": 67654210,
+      "sha256": "bd10c48b687b693d3ce4a0d6b1330da3d76a42a86996613f4319c192ee940dd4",
+      "terminal_rows": 1598
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5/proposals.jsonl",
+      "size": 69092700,
+      "sha256": "aaa50d9072bbeaf5702f2cb27da129720e1f324644e58bdd75118afba4360f2d",
+      "terminal_rows": 1599
+    }
+  ],
+  "scorer_sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+      "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/evaluation/native_scoring.py",
+      "sha256": "454d9a75c8d0d60d7c632627b265f97ef0036620c7c052f3974b95c1df6ac808"
+    }
+  ],
+  "script_sha256": "ce2603986f53ce08ee6bba90a5352c648e9a8b40360e4f87f54798f10b61b03b",
+  "elapsed_seconds": 34.42293229600182,
+  "cache_scope": "backbone + whole native response + complete eval mapping except local request handle + full native item + unchanged scorer",
+  "bootstrap_policy": "Only produce full paired_atoms when every planned atom is complete; no complete-case subset is presented as full-v5."
+}

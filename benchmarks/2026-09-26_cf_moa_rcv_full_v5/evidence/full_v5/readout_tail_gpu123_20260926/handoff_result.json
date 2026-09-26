@@ -1,0 +1,57 @@
+{
+  "at": "2026-09-26T14:18:23.765621+08:00",
+  "entries": [
+    {
+      "gpu": 2,
+      "at": "2026-09-26T14:18:13.452406+08:00",
+      "free_MiB": 77947,
+      "model_launches": 1,
+      "status": "supervisor_submitted_not_yet_inference",
+      "pid": 3885039,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/parallel_m5_preparation_20260926/launch_shard.py",
+        "--transfer",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/transfer_receipt.json",
+        "--gpu",
+        "2"
+      ]
+    },
+    {
+      "gpu": 1,
+      "at": "2026-09-26T14:18:18.709927+08:00",
+      "free_MiB": 61887,
+      "model_launches": 1,
+      "status": "supervisor_submitted_not_yet_inference",
+      "pid": 3885081,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/parallel_m5_preparation_20260926/launch_shard.py",
+        "--transfer",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/transfer_receipt.json",
+        "--gpu",
+        "1"
+      ]
+    },
+    {
+      "gpu": 3,
+      "at": "2026-09-26T14:18:23.765052+08:00",
+      "free_MiB": 62067,
+      "model_launches": 1,
+      "status": "supervisor_submitted_not_yet_inference",
+      "pid": 3885179,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/parallel_m5_preparation_20260926/launch_shard.py",
+        "--transfer",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/transfer_receipt.json",
+        "--gpu",
+        "3"
+      ]
+    }
+  ],
+  "external_process_actions": 0
+}

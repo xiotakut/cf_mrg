@@ -1,0 +1,218 @@
+{
+  "schema_version": "moa_rcv_run_v1",
+  "method_identity": "full_v5_fixed_C1_C5_rcv_20260924",
+  "status": "prepared_before_new_full_v5_results",
+  "development_only": true,
+  "allowed_gpus": [
+    2,
+    3
+  ],
+  "verification_seed": 42,
+  "f_disagreement_reanswer": false,
+  "per_task_budget": {
+    "max_model_requests": 32,
+    "max_input_tokens": 4194304,
+    "max_output_tokens": 16384,
+    "max_tool_calls": 20
+  },
+  "arms": [
+    "strong_B",
+    "candidate_only",
+    "candidate_with_rationales",
+    "pool_old_plus_three",
+    "joint_selector"
+  ],
+  "profiles": {
+    "M4": {
+      "catalog": {
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 1,
+        "gpu_memory_utilization": 0.95,
+        "max_model_len": 16384,
+        "max_num_seqs": 8,
+        "max_num_batched_tokens": 4096,
+        "batch_size": 8,
+        "guided_json": false,
+        "num_shards": 1,
+        "max_logprobs": 2048,
+        "model_kwargs": {
+          "num_gpu_blocks_override": 2048
+        }
+      },
+      "facts": {
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "gpu_memory_utilization": 0.95,
+        "max_model_len": 16384,
+        "max_num_seqs": 8,
+        "max_num_batched_tokens": 4096,
+        "batch_size": 8,
+        "guided_json": true,
+        "num_shards": 1,
+        "max_logprobs": 2048,
+        "model_kwargs": {
+          "num_gpu_blocks_override": 2048,
+          "enforce_eager": true
+        }
+      },
+      "readout": {
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 131072,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "batch_size": 16,
+        "guided_json": true,
+        "num_shards": 1,
+        "model_kwargs": {
+          "num_gpu_blocks_override": 16384
+        }
+      }
+    },
+    "M5": {
+      "catalog": {
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 1,
+        "gpu_memory_utilization": 0.95,
+        "max_model_len": 16384,
+        "max_num_seqs": 8,
+        "max_num_batched_tokens": 4096,
+        "batch_size": 8,
+        "model_kwargs": {
+          "rope_scaling": {
+            "rope_type": "yarn",
+            "factor": 4.0,
+            "original_max_position_embeddings": 32768
+          },
+          "num_gpu_blocks_override": 2048
+        },
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "guided_json": false,
+        "num_shards": 1,
+        "max_logprobs": 2048
+      },
+      "facts": {
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "gpu_memory_utilization": 0.95,
+        "max_model_len": 16384,
+        "max_num_seqs": 8,
+        "max_num_batched_tokens": 4096,
+        "batch_size": 8,
+        "model_kwargs": {
+          "rope_scaling": {
+            "rope_type": "yarn",
+            "factor": 4.0,
+            "original_max_position_embeddings": 32768
+          },
+          "num_gpu_blocks_override": 2048,
+          "enforce_eager": true
+        },
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "guided_json": true,
+        "num_shards": 1,
+        "max_logprobs": 2048
+      },
+      "readout": {
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "dtype": "bfloat16",
+        "seed": 42,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": -1,
+        "max_tokens": 2048,
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 131072,
+        "max_num_seqs": 16,
+        "max_num_batched_tokens": 8192,
+        "batch_size": 16,
+        "model_kwargs": {
+          "rope_scaling": {
+            "rope_type": "yarn",
+            "factor": 4.0,
+            "original_max_position_embeddings": 32768
+          },
+          "num_gpu_blocks_override": 16384
+        },
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "guided_json": true,
+        "num_shards": 1
+      }
+    }
+  },
+  "code_sources": {
+    "/home/data3/txy/cf_moa/controller/moa_rcv.py": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee",
+    "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+    "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+    "/home/data3/txy/cf_moa/agents/a5_joint_selector.py": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+    "/home/data3/txy/cf_moa/agents/a5_pool_expansion_control.py": "172b6eb35c144600fc8536746bf1033385f86dca53aef46c9180753473c59964"
+  },
+  "C0_policy": "Reuse complete formal native original scores and saved original responses; no new original-method inference.",
+  "family_scope": "All frozen13905 inputs permodel; no outcome-based deletion. Exposed development, not independent.",
+  "failure_policy": "Ordinary single-item errors retain denominator and continue; shared engine/unknown submitted state stops affected worker.",
+  "completed_union_policy": "Complete per-arm denominator is completed_union plus newly produced tasks; never treat pending rows as removed.",
+  "cache_policy": "Same input/request identity only; old F pool generated at most once for each missinginput and shared C1-C5; actual paid old costs remain separate from new physical costs.",
+  "scheduling": "Role-major catalog/facts/readout then input-major contiguous arms. No facts pending: all adopted rulefacts cached.",
+  "freeze_scope": "This freezes the full-v5 run only; independentconfirmation method/control freeze follows regression with explicit exposure ledger.",
+  "methods": {
+    "M4": {
+      "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m4.jsonl",
+      "inputs_sha256": "1ca8b6507fd7a70c5aed82431229762d87178012a94da1e713879b1c7ae9ef73",
+      "saved_f_proposals": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_f_proposals.jsonl",
+      "saved_f_proposals_sha256": "953e5f2952784058c2cc786ae876638c573f4ec4332ad898f71e60b58431d8f5",
+      "saved_bases": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_bases.jsonl",
+      "saved_bases_sha256": "60c419c0056c1ccc00e584dfbfbda1768cfebbb38363079835df5d3c5773a9ab",
+      "completed_union": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_completed_union.jsonl",
+      "completed_union_sha256": "1d94cddc252692bfb1b8c1ed13b0517234499f00059dfb1801688dd064372f4c",
+      "full_inputs": 13905,
+      "full_arm_rows": 69525
+    },
+    "M5": {
+      "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m5.jsonl",
+      "inputs_sha256": "24c22d3cc850091e27b184747428ebfaf56fc24d1bf94de5b9baa0231618985d",
+      "saved_f_proposals": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_f_proposals.jsonl",
+      "saved_f_proposals_sha256": "d17aad2bcf4a4ff3bd12b061560a19219c983baf0b3bad483a59f23769f7a056",
+      "saved_bases": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_bases.jsonl",
+      "saved_bases_sha256": "8a15244ccfad0f3e771245d49c118fb87dbbbd7bd0564869a427ee6427af5589",
+      "completed_union": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_completed_union.jsonl",
+      "completed_union_sha256": "1c2fb554842d8fbfb989145ca3285816e8d787a55e8de55b987282e276553136",
+      "full_inputs": 13905,
+      "full_arm_rows": 69525
+    }
+  },
+  "task_manifests": "Private full plans; request identifiers and scored status exported separately without inputs.",
+  "source_plan_sha256": "f58527b8eb4f6ad8c5a7a785374db9561cdc444d4ba9a0ba2ac85683b00ecb3d",
+  "source_plan_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/plan.json"
+}

@@ -1,0 +1,76 @@
+{
+  "rows": {
+    "data/full_v5/m4/per_input_status.jsonl.gz": 83430,
+    "data/full_v5/m4/paired_atoms.jsonl.gz": 73610,
+    "data/full_v5/m4/family_effects.jsonl.gz": 46760,
+    "data/full_v5/m4/native_units.jsonl.gz": 80370,
+    "data/full_v5/m4/pairs.jsonl.gz": 51708,
+    "data/full_v5/m5/per_input_status.jsonl.gz": 83430,
+    "data/full_v5/m5/paired_atoms.jsonl.gz": 73610,
+    "data/full_v5/m5/family_effects.jsonl.gz": 46760,
+    "data/full_v5/m5/native_units.jsonl.gz": 80370,
+    "data/full_v5/m5/pairs.jsonl.gz": 51708
+  },
+  "allowlisted_fields": {
+    "per_input_status.jsonl": [
+      "analysis_status",
+      "answer_format",
+      "arm",
+      "correct",
+      "method",
+      "native_mapping_count",
+      "request_id",
+      "unavailable"
+    ],
+    "paired_atoms.jsonl": [
+      "atom_id",
+      "baseline_score",
+      "candidate",
+      "candidate_score",
+      "complete",
+      "family_id",
+      "metric",
+      "model",
+      "panel",
+      "weight"
+    ],
+    "family_effects.jsonl": [
+      "candidate",
+      "complete",
+      "completed_atoms",
+      "family_id",
+      "metric",
+      "model",
+      "paired_delta",
+      "planned_atoms"
+    ],
+    "native_units.jsonl": [
+      "arm",
+      "awaiting_score_mappings",
+      "category",
+      "complete",
+      "family_id",
+      "method",
+      "native_records",
+      "pending_mappings",
+      "score",
+      "source",
+      "unavailable_mappings",
+      "unit_id"
+    ],
+    "pairs.jsonl": [
+      "arm",
+      "both_correct",
+      "complete",
+      "family_id",
+      "method",
+      "pair_id",
+      "relation",
+      "unavailable_endpoints",
+      "valid_relation"
+    ]
+  },
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "native_scored_raw_exported": false
+}

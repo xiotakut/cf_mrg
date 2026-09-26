@@ -1,0 +1,130 @@
+{
+  "status": "complete",
+  "claimed_at": "2026-09-26T07:18:46.379743+00:00",
+  "automatic_retry": false,
+  "new_model_calls": 0,
+  "analysis_submissions": 1,
+  "readiness": {
+    "state": "ready",
+    "shards": [
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5",
+        "planned": 4731,
+        "complete": 4730,
+        "failed": 0,
+        "unavailable": 1
+      },
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5",
+        "planned": 4729,
+        "complete": 4728,
+        "failed": 0,
+        "unavailable": 1
+      },
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5",
+        "planned": 1594,
+        "complete": 1592,
+        "failed": 0,
+        "unavailable": 2
+      },
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5",
+        "planned": 1598,
+        "complete": 1598,
+        "failed": 0,
+        "unavailable": 0
+      },
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5",
+        "planned": 1599,
+        "complete": 1599,
+        "failed": 0,
+        "unavailable": 0
+      }
+    ]
+  },
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analyze_full.py",
+    "--method",
+    "M5",
+    "--output",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis/m5",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5/proposals.jsonl",
+    "--grade-missing"
+  ],
+  "submitted_at": "2026-09-26T07:19:07.908687+00:00",
+  "pid": 3900534,
+  "exit_code": 0,
+  "finished_at": "2026-09-26T07:19:42.758313+00:00",
+  "validation": {
+    "status": "full_M5_incremental_analysis_receipt_bound",
+    "new_grader_calls": 13302,
+    "denominators": {
+      "planned_inputs_per_method": 13905,
+      "planned_native_mappings_per_method": 15616,
+      "planned_ALL_units": 6104
+    },
+    "separate_initialization_audit": [
+      {
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/runs/m5",
+        "status": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/runs/m5/status.json",
+          "sha256": "60a1600c1915b07e3f8f507ad0ce1749eba8151e5151fe17dae2681dfa78a65e"
+        },
+        "supervisor": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/runs/m5/supervisor_result.json",
+          "sha256": "0b6e263ba9ae260b73b1da618ce5cca7a2b43c8d14136b638af93910c81ef954"
+        },
+        "physical_model_requests": 0,
+        "new_model_requests": 0,
+        "live_input_tokens": 0,
+        "live_output_tokens": 0,
+        "failed_initialization_attempts": 14,
+        "runner_elapsed_seconds": 42.35847899201326,
+        "recorded_call_wall_seconds": 453.79759097099304,
+        "complete_cache_rows_not_in_final_quality_source": 12,
+        "policy": "Preserve initialization resource/wall cost separately; callback wall sum is not exclusive GPU time. Complete cache outputs are regenerated with exact saved callbacks inside tail shards, not added from failed run."
+      },
+      {
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5",
+        "status": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5/status.json",
+          "sha256": "5353fae6307d3e231d7910bd4652a7d7072d4eb49cde24ceddabacaac592443a"
+        },
+        "supervisor": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5/supervisor_result.json",
+          "sha256": "f568ba0c38ae1ca1514bf99fec07b1d69f34f0bf7d29f05f5345cb309f920bcd"
+        },
+        "physical_model_requests": 0,
+        "new_model_requests": 0,
+        "live_input_tokens": 0,
+        "live_output_tokens": 0,
+        "failed_initialization_attempts": 14,
+        "runner_elapsed_seconds": 28.72919742501108,
+        "recorded_call_wall_seconds": 276.0405180454254,
+        "complete_cache_rows_not_in_final_quality_source": 12,
+        "policy": "Preserve initialization resource/wall cost separately; callback wall sum is not exclusive GPU time. Complete cache outputs are regenerated with exact saved callbacks inside tail shards, not added from failed run."
+      }
+    ],
+    "validation_model_calls": 0,
+    "validation_grader_calls": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "moa_rcv_run_v1",
+  "entry": "cf_moa.controller.moa_rcv.run",
+  "cli": "cf_moa.evaluation.run_moa_rcv",
+  "research_variant": "cf_moa_rcv_rationales_v1",
+  "mode": "candidate_with_rationales",
+  "verification_config": {"seed": 42},
+  "router": "cf_moa.controller.strong_legacy.select",
+  "f_disagreement_reanswer": false,
+  "global_generation_aggregator": false,
+  "A1_A2_shared_engine": true,
+  "default_baseline_unchanged": "adopted_B_five_operations_v1",
+  "profiles_by_capability": {"rules": "facts", "diagnosis": "catalog", "explicit_model": "a4_adopted", "F": "readout"},
+  "ordinary_item_errors": "record_unavailable_continue_keep_denominator",
+  "shared_engine_errors": "stop_affected_job",
+  "adoption_status": "explicit_research_candidate_not_default_adoption"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "mode": "live_batched",
+  "role": "readout",
+  "planned": 1599,
+  "inputs": 321,
+  "complete": 1599,
+  "unavailable": 0,
+  "failed": 0,
+  "not_submitted": 0,
+  "batches": 148,
+  "batch_size": 16,
+  "first_systemic_error": null,
+  "cost": {
+    "physical_model_requests": 1828,
+    "new_model_requests": 1828,
+    "live_input_tokens": 8261867,
+    "live_output_tokens": 228060,
+    "live_model_seconds": 2191.560915309812,
+    "recorded_call_wall_seconds": 31081.079231262207,
+    "unfinished_call_wall_unknown": 0,
+    "unresolved_model_usage": 0,
+    "submission_attempts": 1842,
+    "failed_attempts": 0,
+    "model_usage_complete": true,
+    "cost_basis": "unique durable physical records; one-row streaming accumulation"
+  },
+  "elapsed_seconds": 2358.6548246119637,
+  "scope": "declared role/input prefix of the frozen plan; not automatically complete full-v5",
+  "no_speculative_F_draws": true,
+  "ordinary_item_failure_stops_batch": false
+}

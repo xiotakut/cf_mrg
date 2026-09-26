@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "claimed_at": "2026-09-26T03:18:36.283988+00:00",
+  "automatic_retry": false,
+  "new_model_calls": 0,
+  "analysis_submissions": 1,
+  "readiness": {
+    "state": "ready",
+    "shards": [
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4",
+        "planned": 17927,
+        "complete": 17669,
+        "failed": 0,
+        "unavailable": 258
+      },
+      {
+        "state": "ready",
+        "run_dir": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4",
+        "planned": 17861,
+        "complete": 17778,
+        "failed": 0,
+        "unavailable": 83
+      }
+    ]
+  },
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analyze_full.py",
+    "--method",
+    "M4",
+    "--output",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis/m4",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4/proposals.jsonl",
+    "--proposals",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/proposals.jsonl",
+    "--grade-missing"
+  ],
+  "submitted_at": "2026-09-26T03:19:09.005817+00:00",
+  "pid": 3813214,
+  "exit_code": 0,
+  "finished_at": "2026-09-26T03:19:48.750444+00:00",
+  "validation": {
+    "status": "full_M4_incremental_analysis_receipt_bound",
+    "new_grader_calls": 14310,
+    "denominators": {
+      "planned_inputs_per_method": 13905,
+      "planned_native_mappings_per_method": 15616,
+      "planned_ALL_units": 6104
+    },
+    "validation_model_calls": 0,
+    "validation_grader_calls": 0
+  }
+}

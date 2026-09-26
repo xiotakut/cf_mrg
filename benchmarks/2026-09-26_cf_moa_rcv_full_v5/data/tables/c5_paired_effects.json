@@ -1,0 +1,354 @@
+{
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "reports": [
+    {
+      "panel": "historical121",
+      "model": "M4",
+      "metric": "maintain_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 73,
+      "families": 25,
+      "total_weight": 73.0,
+      "baseline_mean": 0.6575342465753424,
+      "candidate_mean": 0.6575342465753424,
+      "point_delta": 0.0,
+      "point_delta_percentage_points": 0.0,
+      "improved_atoms": 2,
+      "harmed_atoms": 2,
+      "unchanged_atoms": 69,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.053770706190061024,
+        0.06123233908948183
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -5.377070619006102,
+        6.123233908948182
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "historical121",
+      "model": "M4",
+      "metric": "native_ALL",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 74,
+      "families": 40,
+      "total_weight": 74.0,
+      "baseline_mean": 0.7027027027027027,
+      "candidate_mean": 0.6891891891891891,
+      "point_delta": -0.013513513513513514,
+      "point_delta_percentage_points": -1.3513513513513513,
+      "improved_atoms": 3,
+      "harmed_atoms": 4,
+      "unchanged_atoms": 67,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.08237745098039215,
+        0.058823529411764705
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -8.237745098039214,
+        5.88235294117647
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "historical121",
+      "model": "M4",
+      "metric": "respond_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 4,
+      "families": 4,
+      "total_weight": 4.0,
+      "baseline_mean": 0.25,
+      "candidate_mean": 0.25,
+      "point_delta": 0.0,
+      "point_delta_percentage_points": 0.0,
+      "improved_atoms": 0,
+      "harmed_atoms": 0,
+      "unchanged_atoms": 4,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        0.0,
+        0.0
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "historical121",
+      "model": "M5",
+      "metric": "maintain_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 73,
+      "families": 25,
+      "total_weight": 73.0,
+      "baseline_mean": 0.6027397260273972,
+      "candidate_mean": 0.5753424657534246,
+      "point_delta": -0.0273972602739726,
+      "point_delta_percentage_points": -2.73972602739726,
+      "improved_atoms": 1,
+      "harmed_atoms": 3,
+      "unchanged_atoms": 69,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.10391064159720877,
+        0.030303030303030304
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -10.391064159720877,
+        3.0303030303030303
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "historical121",
+      "model": "M5",
+      "metric": "native_ALL",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 74,
+      "families": 40,
+      "total_weight": 74.0,
+      "baseline_mean": 0.6441441441441441,
+      "candidate_mean": 0.6396396396396395,
+      "point_delta": -0.0045045045045045366,
+      "point_delta_percentage_points": -0.4504504504504537,
+      "improved_atoms": 2,
+      "harmed_atoms": 3,
+      "unchanged_atoms": 69,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.05993299038852032,
+        0.05228991596638654
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -5.993299038852032,
+        5.228991596638654
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "historical121",
+      "model": "M5",
+      "metric": "respond_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 4,
+      "families": 4,
+      "total_weight": 4.0,
+      "baseline_mean": 0.25,
+      "candidate_mean": 0.25,
+      "point_delta": 0.0,
+      "point_delta_percentage_points": 0.0,
+      "improved_atoms": 0,
+      "harmed_atoms": 0,
+      "unchanged_atoms": 4,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        0.0,
+        0.0
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "natural52",
+      "model": "M4",
+      "metric": "maintain_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 28,
+      "families": 16,
+      "total_weight": 28.0,
+      "baseline_mean": 0.6071428571428571,
+      "candidate_mean": 0.35714285714285715,
+      "point_delta": -0.25,
+      "point_delta_percentage_points": -25.0,
+      "improved_atoms": 1,
+      "harmed_atoms": 8,
+      "unchanged_atoms": 19,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.5526315789473685,
+        0.0
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -55.26315789473685,
+        0.0
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "natural52",
+      "model": "M4",
+      "metric": "native_ALL",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 18,
+      "families": 18,
+      "total_weight": 18.0,
+      "baseline_mean": 0.6037037037037037,
+      "candidate_mean": 0.5481481481481482,
+      "point_delta": -0.05555555555555555,
+      "point_delta_percentage_points": -5.555555555555555,
+      "improved_atoms": 0,
+      "harmed_atoms": 1,
+      "unchanged_atoms": 17,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.16666666666666666,
+        0.0
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -16.666666666666664,
+        0.0
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "natural52",
+      "model": "M4",
+      "metric": "respond_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 2,
+      "families": 2,
+      "total_weight": 2.0,
+      "baseline_mean": 0.5,
+      "candidate_mean": 0.5,
+      "point_delta": 0.0,
+      "point_delta_percentage_points": 0.0,
+      "improved_atoms": 0,
+      "harmed_atoms": 0,
+      "unchanged_atoms": 2,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        0.0,
+        0.0
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "natural52",
+      "model": "M5",
+      "metric": "maintain_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 28,
+      "families": 16,
+      "total_weight": 28.0,
+      "baseline_mean": 0.35714285714285715,
+      "candidate_mean": 0.35714285714285715,
+      "point_delta": 0.0,
+      "point_delta_percentage_points": 0.0,
+      "improved_atoms": 2,
+      "harmed_atoms": 2,
+      "unchanged_atoms": 24,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        -0.16666666666666666,
+        0.16666666666666666
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        -16.666666666666664,
+        16.666666666666664
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "natural52",
+      "model": "M5",
+      "metric": "native_ALL",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 18,
+      "families": 18,
+      "total_weight": 18.0,
+      "baseline_mean": 0.49259259259259264,
+      "candidate_mean": 0.5259259259259259,
+      "point_delta": 0.03333333333333331,
+      "point_delta_percentage_points": 3.3333333333333313,
+      "improved_atoms": 2,
+      "harmed_atoms": 0,
+      "unchanged_atoms": 16,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        0.0,
+        0.08888888888888886
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        0.0,
+        8.888888888888886
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    },
+    {
+      "panel": "natural52",
+      "model": "M5",
+      "metric": "respond_both_correct",
+      "candidate": "joint_selector",
+      "status": "complete",
+      "atoms": 2,
+      "families": 2,
+      "total_weight": 2.0,
+      "baseline_mean": 0.5,
+      "candidate_mean": 0.5,
+      "point_delta": 0.0,
+      "point_delta_percentage_points": 0.0,
+      "improved_atoms": 0,
+      "harmed_atoms": 0,
+      "unchanged_atoms": 2,
+      "interpretation": "paired descriptive uncertainty conditional on the fixed method and dataset; not proof against developer selection bias",
+      "paired_cluster_ci95": [
+        0.0,
+        0.0
+      ],
+      "paired_cluster_ci95_percentage_points": [
+        0.0,
+        0.0
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "resampling_unit": "family; both methods use the SAME resampled clusters"
+    }
+  ]
+}

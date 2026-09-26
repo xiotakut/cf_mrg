@@ -1,0 +1,73 @@
+{
+  "at": "2026-09-24T12:50:59.571485+00:00",
+  "status": "complete_existing_scored_results_paired_family_effects",
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "independent_evaluation": false,
+  "development_selection_bias": true,
+  "interpretations": [
+    "Descriptive paired uncertainty conditional on previously selected methods and exposed panels.",
+    "The intervals do not establish unseen generalization or remove researcher selection bias.",
+    "Intervals crossing zero are not an integration or evaluation stop condition.",
+    "Unavailable native answers retain their original not_scored identity and full-denominator zero success contribution.",
+    "ALL uses original non-reference equal native-unit weights, not input or equal-family weights."
+  ],
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/final_delivery_index.json": "3ee910da3bbafb40996ea164ffcb2e39a7daabab8080b67ab194906dc330ab02",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/receipt.json": "ee60d25a6ae2eeda5174eb682b4c6ce59e332be8544e1127a5e1ab2ff26c68e5",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/native_scored.jsonl": "f70f40095d33fa8df7981fc3f2b773239ec454a3217285c307ee1e6b193486b0",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/per_input_status.jsonl": "e87bfd757f0521eb19522b95bbd2e22e7f339af5a5cea7bf9408b4e74810d6f3",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/analysis/complete_results/summary.json": "45248614cc369a35c94d5f57b1e896262715ebc3a804a44d3bfff95a5540228a",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_candidate_verify/benchmarks/2026-09-24_cf_moa_candidate_verification/data/quality_summary.json": "45248614cc369a35c94d5f57b1e896262715ebc3a804a44d3bfff95a5540228a",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_candidate_verify/benchmarks/2026-09-24_cf_moa_candidate_verification/data/native_scoring_metadata.jsonl": "f80d2a62b151c4e6328d7797eabe52fdcb9c48edbf6804ac9ae3e54b810c9d3c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/evaluations.jsonl": "b0d7e10ecbf7702ffd27eb7c843f76feb52457ff2d23097df83e7eb654746f78",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/evaluations.jsonl": "c965a24795dd1db8859cc959bce6cd8f58565046540580a8d46b2c6559990943",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/pairs.jsonl": "17e379881e8e28f481de0875226942fbf0252ece57df321397d8693a3601eb26",
+    "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/pairs.jsonl": "7e69124a0fcb5b1583825f8030cd19d547d120c113a51019b95be69c6e8c738a",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/extracted/CF_MoA_Completion_Plan/paired_cluster_effects.py": "de48800e52fe0095fac11892db000107c9ab589492860adc1ab13d9f62fe190c"
+  },
+  "source_bindings": {
+    "historical121": {
+      "evaluations": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/evaluations.jsonl",
+      "pairs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/pairs.jsonl",
+      "unique_inputs": 121,
+      "native_mappings": 157
+    },
+    "natural52": {
+      "evaluations": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/evaluations.jsonl",
+      "pairs": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/pairs.jsonl",
+      "unique_inputs": 52,
+      "native_mappings": 52
+    }
+  },
+  "identity_map": {
+    "candidate_only": "C2",
+    "candidate_with_rationales": "C3",
+    "pool_old_plus_three": "C4"
+  },
+  "script_sha256": "5c13e303ad9e3f6076f82c82770ac435e2ecb5c337d7ecb4b0711b44ee5e0f55",
+  "bootstrap_command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/extracted/CF_MoA_Completion_Plan/paired_cluster_effects.py",
+    "--input",
+    "Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/paired_atoms.jsonl",
+    "--output",
+    "Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/statistics/paired_effects.json",
+    "--resamples",
+    "5000",
+    "--seed",
+    "240924"
+  ],
+  "bootstrap_resamples": 5000,
+  "bootstrap_seed": 240924,
+  "atoms": 1194,
+  "strata": 36,
+  "family_effect_rows": 630,
+  "bundled_tests_passed": 10,
+  "existing_native_rows_crosschecked": 4180,
+  "existing_public_metadata_rows_crosschecked": 4180,
+  "existing_summary_groups_crosschecked": 40,
+  "input_denominator_policy": "all existing panel members retained",
+  "reference_policy": "reference excluded from native_ALL; original qualified pairs may contain reference endpoints",
+  "category_policy": "one atom per original ALL unit; overlapping R mappings never become duplicate atoms"
+}

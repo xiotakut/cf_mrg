@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-26T14:17:45.127321+08:00",
+  "original_plan": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/plan.json",
+  "allowed_changes": [
+    "allowed_gpus",
+    "parallel_resource_shard",
+    "methods.M5.tasks",
+    "methods.M5.saved_f_proposals",
+    "methods.M5.saved_f_proposals_sha256"
+  ],
+  "shards": [
+    {
+      "gpu": 2,
+      "plan_sha256": "d6c262c2e5c20473a33bf6a82348a1c34655ead85705f8261a9be8d3a3f010c2",
+      "all_other_fields_exactly_equal": true
+    },
+    {
+      "gpu": 1,
+      "plan_sha256": "22fa150c2e334d904dc76ed0e700e3447a3b0b7b1ce70741094a70440187d83f",
+      "all_other_fields_exactly_equal": true
+    },
+    {
+      "gpu": 3,
+      "plan_sha256": "652363f072e332e766ddf6fd139037e75fdf36f05dd56ba1ec80a8c1ad915863",
+      "all_other_fields_exactly_equal": true
+    }
+  ],
+  "model_profile_prompt_schema_seed_budget_unchanged": true,
+  "new_model_calls": 0
+}

@@ -1,0 +1,58 @@
+{
+  "status": "stopped_on_systemic_error",
+  "method": "M5",
+  "mode": "formal_C0_live_batched",
+  "planned": 4,
+  "complete": 0,
+  "failed": 0,
+  "unavailable": 0,
+  "not_submitted": 4,
+  "unfinished_outputs": 4,
+  "unfinished_submitted": 0,
+  "request_counts": {
+    "attempted": 4,
+    "submitted": 0,
+    "completed": 0,
+    "in_flight": 0,
+    "in_flight_state_unknown": 0,
+    "definition": "submitted includes uncertain transport submissions; in_flight means no durable completion, not a claim that GPU execution is still active"
+  },
+  "batches": 1,
+  "batch_size": 16,
+  "first_systemic_error": {
+    "request_id": "n00000:C0",
+    "ordinal": 0,
+    "error_type": "JournalConflict",
+    "error_category": "infrastructure",
+    "message": "Shared engine initialization failed: Engine core initialization failed. See root cause above.",
+    "at": 1790280278.297326,
+    "source": "runtime",
+    "counts": {
+      "attempted": 4,
+      "submitted": 0,
+      "completed": 0,
+      "in_flight": 0,
+      "in_flight_state_unknown": 0,
+      "definition": "submitted includes uncertain transport submissions; in_flight means no durable completion, not a claim that GPU execution is still active"
+    }
+  },
+  "cost": {
+    "physical_model_requests": 0,
+    "new_model_requests": 0,
+    "live_input_tokens": 0,
+    "live_output_tokens": 0,
+    "live_model_seconds": 0.0,
+    "recorded_call_wall_seconds": 547.9823172092438,
+    "unfinished_call_wall_unknown": 0,
+    "unresolved_model_usage": 0,
+    "submission_attempts": 4,
+    "failed_attempts": 4,
+    "model_usage_complete": true,
+    "cost_basis": "unique durable physical records; one-row streaming accumulation"
+  },
+  "elapsed_seconds": 157.9814357709838,
+  "ordinary_item_failure_stops_batch": false,
+  "one_original_readout_per_input": true,
+  "retry_count": 0,
+  "native_validity": "Unchanged native scorer decides; raw original parser has no added schema gate."
+}
