@@ -1,0 +1,708 @@
+{
+  "methods": [
+    {
+      "method": "M4",
+      "unique_paid_origin_callbacks": 39,
+      "cost": {
+        "model_requests": 39,
+        "input_tokens": 215799,
+        "output_tokens": 14962,
+        "model_seconds": 97.3395497809686
+      },
+      "final_row_new_execution_plus_unique_paid_prefix_equals_physical": true,
+      "events": [
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06281:pool_old_plus_three",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 7801,
+          "output_tokens": 68,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06290:candidate_with_rationales",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 8600,
+          "output_tokens": 1,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06290:candidate_with_rationales",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 8600,
+          "output_tokens": 1,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06306:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5463,
+          "output_tokens": 336,
+          "model_seconds": 1.7071374041427458
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06306:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5463,
+          "output_tokens": 239,
+          "model_seconds": 2.283635102583503
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06306:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 5463,
+          "output_tokens": 194,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06306:strong_B",
+          "ordinal": 3,
+          "model_requests": 1,
+          "input_tokens": 5463,
+          "output_tokens": 583,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06306:strong_B",
+          "ordinal": 4,
+          "model_requests": 1,
+          "input_tokens": 5463,
+          "output_tokens": 604,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06307:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5827,
+          "output_tokens": 724,
+          "model_seconds": 2.283635102583503
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06307:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5827,
+          "output_tokens": 811,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06307:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 5827,
+          "output_tokens": 229,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06307:strong_B",
+          "ordinal": 3,
+          "model_requests": 1,
+          "input_tokens": 5827,
+          "output_tokens": 1056,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06308:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5515,
+          "output_tokens": 286,
+          "model_seconds": 2.283635102583503
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06308:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5515,
+          "output_tokens": 257,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06308:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 5515,
+          "output_tokens": 226,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06308:strong_B",
+          "ordinal": 3,
+          "model_requests": 1,
+          "input_tokens": 5515,
+          "output_tokens": 416,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06309:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5308,
+          "output_tokens": 360,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06309:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5308,
+          "output_tokens": 722,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06309:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 5308,
+          "output_tokens": 463,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06310:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5441,
+          "output_tokens": 442,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06310:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5441,
+          "output_tokens": 296,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06310:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 5441,
+          "output_tokens": 404,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06311:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4926,
+          "output_tokens": 259,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06311:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4926,
+          "output_tokens": 369,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06311:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 4926,
+          "output_tokens": 298,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06312:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5031,
+          "output_tokens": 348,
+          "model_seconds": 2.796160603090274
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06312:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5031,
+          "output_tokens": 334,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06312:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 5031,
+          "output_tokens": 381,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06313:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5006,
+          "output_tokens": 421,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06313:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5006,
+          "output_tokens": 203,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06314:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4821,
+          "output_tokens": 851,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06314:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4821,
+          "output_tokens": 345,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06315:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4921,
+          "output_tokens": 549,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06315:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4921,
+          "output_tokens": 254,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06316:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5053,
+          "output_tokens": 203,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06316:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5053,
+          "output_tokens": 297,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06317:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5430,
+          "output_tokens": 417,
+          "model_seconds": 2.2103322092657134
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06317:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5430,
+          "output_tokens": 460,
+          "model_seconds": 2.6982709417992736
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+          "task_id": "v06318:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5535,
+          "output_tokens": 255,
+          "model_seconds": 2.6982709417992736
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "unique_paid_origin_callbacks": 36,
+      "cost": {
+        "model_requests": 36,
+        "input_tokens": 1096225,
+        "output_tokens": 2820,
+        "model_seconds": 474.93859360432356
+      },
+      "final_row_new_execution_plus_unique_paid_prefix_equals_physical": true,
+      "events": [
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10891:pool_old_plus_three",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 28806,
+          "output_tokens": 93,
+          "model_seconds": 13.331339672070628
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10891:pool_old_plus_three",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 28806,
+          "output_tokens": 106,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10891:pool_old_plus_three",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 28806,
+          "output_tokens": 185,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10891:pool_old_plus_three",
+          "ordinal": 3,
+          "model_requests": 1,
+          "input_tokens": 28981,
+          "output_tokens": 12,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10898:candidate_with_rationales",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 72124,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10898:candidate_with_rationales",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 72124,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10899:candidate_with_rationales",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 70073,
+          "output_tokens": 1,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10899:candidate_with_rationales",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 70073,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10899:candidate_with_rationales",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 70074,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10900:candidate_with_rationales",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 70561,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10900:candidate_with_rationales",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 70561,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10901:candidate_with_rationales",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 70042,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10901:candidate_with_rationales",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 70042,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10906:candidate_only",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 43629,
+          "output_tokens": 1,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10906:candidate_only",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 43629,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10906:candidate_only",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 43630,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10907:candidate_only",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 44053,
+          "output_tokens": 1,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10907:candidate_only",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 44053,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10907:candidate_only",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 44054,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10909:candidate_only",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5980,
+          "output_tokens": 1,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10909:candidate_only",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 5980,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10911:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4818,
+          "output_tokens": 233,
+          "model_seconds": 13.151526313864936
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10911:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4818,
+          "output_tokens": 149,
+          "model_seconds": 13.331339672070628
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10911:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 4818,
+          "output_tokens": 151,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10911:strong_B",
+          "ordinal": 3,
+          "model_requests": 1,
+          "input_tokens": 4818,
+          "output_tokens": 200,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10911:strong_B",
+          "ordinal": 4,
+          "model_requests": 1,
+          "input_tokens": 4818,
+          "output_tokens": 185,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10912:candidate_only",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 5851,
+          "output_tokens": 1,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10914:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4330,
+          "output_tokens": 169,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10914:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4330,
+          "output_tokens": 118,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10914:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 4330,
+          "output_tokens": 154,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10915:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4363,
+          "output_tokens": 169,
+          "model_seconds": 12.983366286731325
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10915:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4363,
+          "output_tokens": 167,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10915:strong_B",
+          "ordinal": 2,
+          "model_requests": 1,
+          "input_tokens": 4363,
+          "output_tokens": 143,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10916:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4911,
+          "output_tokens": 205,
+          "model_seconds": 13.34434067660089
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10916:strong_B",
+          "ordinal": 1,
+          "model_requests": 1,
+          "input_tokens": 4911,
+          "output_tokens": 237,
+          "model_seconds": 13.150623987141964
+        },
+        {
+          "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+          "task_id": "v10917:strong_B",
+          "ordinal": 0,
+          "model_requests": 1,
+          "input_tokens": 4302,
+          "output_tokens": 126,
+          "model_seconds": 13.150623987141964
+        }
+      ]
+    }
+  ],
+  "all_replay_rows": 147,
+  "unique_paid_origin_callbacks": 75,
+  "interpretation": "147 replay rows represent only 75 distinct already-paid callbacks. Failed M5 initialization copies do not duplicate cost. The same-run paid-prefix costs occur in original SQL but final outputs attribute them to replay."
+}

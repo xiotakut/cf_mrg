@@ -1,0 +1,139 @@
+{
+  "method": "M4",
+  "request_id": "v10426",
+  "additional_C2_requests_minus_C3": 6,
+  "records": [
+    {
+      "task_id": "v10426:candidate_only",
+      "status": "complete",
+      "verifier_status": "verified_candidate_selection",
+      "trace": {
+        "route": "candidate_verification",
+        "errors": [],
+        "fallback_saved_F": false,
+        "logical_score_calls": 6
+      },
+      "stage_costs": {
+        "adopted_B": {
+          "physical_model_requests": 0,
+          "new_model_requests": 0,
+          "replayed_model_requests": 0,
+          "failed_model_requests": 0,
+          "live_input_tokens": 0,
+          "live_output_tokens": 0,
+          "replayed_original_input_tokens": 0,
+          "replayed_original_output_tokens": 0,
+          "model_callback_seconds": 0,
+          "tool_calls": 0,
+          "tool_seconds": 0,
+          "tool_inclusive_seconds": 0,
+          "missing_usage": 0,
+          "retrieval_calls": 0
+        },
+        "verification": {
+          "physical_model_requests": 6,
+          "new_model_requests": 6,
+          "replayed_model_requests": 0,
+          "failed_model_requests": 0,
+          "live_input_tokens": 773732,
+          "live_output_tokens": 6,
+          "replayed_original_input_tokens": 0,
+          "replayed_original_output_tokens": 0,
+          "model_callback_seconds": 0.21393096901010722,
+          "tool_calls": 0,
+          "tool_seconds": 0,
+          "tool_inclusive_seconds": 0,
+          "missing_usage": 0,
+          "retrieval_calls": 0
+        }
+      },
+      "SQL_callback_rows": 6,
+      "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/journal.sqlite3"
+    },
+    {
+      "task_id": "v10426:candidate_with_rationales",
+      "status": "complete",
+      "verifier_status": "technical_failure",
+      "trace": {
+        "route": "candidate_verification",
+        "errors": [
+          {
+            "mapping": 0,
+            "error_type": "ValueError",
+            "error": "Complete native context exceeds selected capacity; no truncation",
+            "key_sha256": "7fd318a3f2cb404bb134078fa265fad68456ea96999df9d0aae55e1c33c20d0f"
+          },
+          {
+            "mapping": 1,
+            "error_type": "ValueError",
+            "error": "Complete native context exceeds selected capacity; no truncation",
+            "key_sha256": "7fd318a3f2cb404bb134078fa265fad68456ea96999df9d0aae55e1c33c20d0f"
+          },
+          {
+            "mapping": 0,
+            "error_type": "ValueError",
+            "error": "Complete native context exceeds selected capacity; no truncation",
+            "key_sha256": "e0faa231577b36a37a5d745ae0cbf003ce456c9214b692bc964c622a05f609ca"
+          },
+          {
+            "mapping": 1,
+            "error_type": "ValueError",
+            "error": "Complete native context exceeds selected capacity; no truncation",
+            "key_sha256": "e0faa231577b36a37a5d745ae0cbf003ce456c9214b692bc964c622a05f609ca"
+          },
+          {
+            "mapping": 0,
+            "error_type": "ValueError",
+            "error": "Complete native context exceeds selected capacity; no truncation",
+            "key_sha256": "0a513f93c230c8a453038e835cd42bd7e6438d30df0a9f1aad491fc278179f7f"
+          },
+          {
+            "mapping": 1,
+            "error_type": "ValueError",
+            "error": "Complete native context exceeds selected capacity; no truncation",
+            "key_sha256": "0a513f93c230c8a453038e835cd42bd7e6438d30df0a9f1aad491fc278179f7f"
+          }
+        ],
+        "fallback_saved_F": true,
+        "logical_score_calls": 6
+      },
+      "stage_costs": {
+        "adopted_B": {
+          "physical_model_requests": 0,
+          "new_model_requests": 0,
+          "replayed_model_requests": 0,
+          "failed_model_requests": 0,
+          "live_input_tokens": 0,
+          "live_output_tokens": 0,
+          "replayed_original_input_tokens": 0,
+          "replayed_original_output_tokens": 0,
+          "model_callback_seconds": 0,
+          "tool_calls": 0,
+          "tool_seconds": 0,
+          "tool_inclusive_seconds": 0,
+          "missing_usage": 0,
+          "retrieval_calls": 0
+        },
+        "verification": {
+          "physical_model_requests": 0,
+          "new_model_requests": 0,
+          "replayed_model_requests": 0,
+          "failed_model_requests": 0,
+          "live_input_tokens": 0,
+          "live_output_tokens": 0,
+          "replayed_original_input_tokens": 0,
+          "replayed_original_output_tokens": 0,
+          "model_callback_seconds": 0,
+          "tool_calls": 0,
+          "tool_seconds": 0,
+          "tool_inclusive_seconds": 0,
+          "missing_usage": 0,
+          "retrieval_calls": 0
+        }
+      },
+      "SQL_callback_rows": 0,
+      "journal": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/journal.sqlite3"
+    }
+  ],
+  "no_quality_or_denominator_changes": true
+}

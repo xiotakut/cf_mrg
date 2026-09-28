@@ -1,0 +1,60 @@
+{
+  "started_at": "2026-09-28T13:21:11.974352+00:00",
+  "status": "complete",
+  "source_commit": "d85793470cf75af57217f3fdc73093f494d9f003",
+  "source_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5",
+  "output_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics",
+  "python": "/home/data3/txy/MedRGAG/.venv/bin/python",
+  "commands": [
+    {
+      "label": "tests",
+      "argv": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_summary.py"
+      ],
+      "cwd": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/scripts",
+      "started_at": "2026-09-28T13:21:12.040591+00:00",
+      "ended_at": "2026-09-28T13:21:12.203799+00:00",
+      "elapsed_seconds": 0.16324399400036782,
+      "exit_code": 0
+    },
+    {
+      "label": "bootstrap",
+      "argv": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-B",
+        "summarize_existing_results.py",
+        "--root",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics",
+        "--draws",
+        "5000",
+        "--seed",
+        "240924"
+      ],
+      "cwd": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/scripts",
+      "started_at": "2026-09-28T13:21:12.204195+00:00",
+      "ended_at": "2026-09-28T13:21:18.034230+00:00",
+      "elapsed_seconds": 5.830083176027983,
+      "exit_code": 0
+    }
+  ],
+  "inference_calls": 0,
+  "grader_calls": 0,
+  "resource_or_other_process_actions": 0,
+  "source_modifications": 0,
+  "output_filtering": false,
+  "data_scope": "complete_exposed_v5_development",
+  "ended_at": "2026-09-28T13:21:18.037827+00:00",
+  "source_files_verified": 8,
+  "all_sources_unchanged": true,
+  "supplied_tests_passed": 6,
+  "draws": 5000,
+  "seed": 240924,
+  "saved_quality_means_validated_by_unmodified_script": true
+}

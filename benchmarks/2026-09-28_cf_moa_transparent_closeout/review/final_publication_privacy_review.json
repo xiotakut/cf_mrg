@@ -1,0 +1,217 @@
+{
+  "status": "read_only_check_complete_public_C2_C3_projection_requires_answer_key_redaction",
+  "recorded_at": "2026-09-28T21:35:04.748158+08:00",
+  "scope": "Only six specified final artifacts plus scope/empty-issue consistency; no source-data audit, code audit, model calls, or publication performed.",
+  "files": [
+    {
+      "relative_path": "costs/per_input_cost_coverage.jsonl.gz",
+      "sha256": "2659825613b8b4f1584ea27c5868794688bb7b7fade16d557dd2b9c86804e990",
+      "bytes": 4582443,
+      "records_read": 166860,
+      "value_type_counts": {
+        "dict": 1028970,
+        "str": 1844920,
+        "bool": 537890,
+        "NoneType": 463740,
+        "int": 3167352,
+        "float": 382398
+      },
+      "string_field_paths_and_counts": {
+        "$.method": 166860,
+        "$.arm": 166860,
+        "$.request_id": 166860,
+        "$.answer_format": 166860,
+        "$.cost_status": 27810,
+        "$.execution_status": 139050,
+        "$.actual_output_status": 139050,
+        "$.audit_status": 139050,
+        "$.pool_stratum": 139050,
+        "$.pool_unknown_reason": 37270,
+        "$.extra_cost_origin": 139050,
+        "$.selected_component": 139050,
+        "$.capability_predicate": 139050,
+        "$.common_C0_upstream_cost": 139050
+      },
+      "patient_text_found": false,
+      "gold_value_found": false,
+      "raw_response_found": false,
+      "candidate_answer_label_fields_found": false
+    },
+    {
+      "relative_path": "costs/c2_c3_call_difference.json",
+      "sha256": "f8c4381a86fb19dd5708a8608d0218513fb694f57fc4a4a10f5b984692e4d2c1",
+      "bytes": 4671,
+      "records_read": 1,
+      "value_type_counts": {
+        "dict": 17,
+        "str": 30,
+        "int": 66,
+        "list": 3,
+        "bool": 3,
+        "float": 1
+      },
+      "string_field_paths_and_counts": {
+        "$.method": 1,
+        "$.request_id": 1,
+        "$.records[].task_id": 2,
+        "$.records[].status": 2,
+        "$.records[].verifier_status": 2,
+        "$.records[].trace.route": 2,
+        "$.records[].journal": 2,
+        "$.records[].trace.errors[].key": 6,
+        "$.records[].trace.errors[].error_type": 6,
+        "$.records[].trace.errors[].error": 6
+      },
+      "patient_text_found": false,
+      "gold_value_found": false,
+      "raw_response_found": false,
+      "candidate_answer_label_fields_found": true
+    },
+    {
+      "relative_path": "costs/cost_correction_receipt.json",
+      "sha256": "da0feece6816b906bfea2ae660ce3ab358a66df880d7401cdb837e7aa925f73e",
+      "bytes": 16493,
+      "records_read": 1,
+      "value_type_counts": {
+        "dict": 81,
+        "list": 1,
+        "str": 89,
+        "int": 98,
+        "NoneType": 96,
+        "float": 16,
+        "bool": 9
+      },
+      "string_field_paths_and_counts": {
+        "$.corrections[].method": 8,
+        "$.corrections[].arm": 8,
+        "$.corrections[].request_id": 8,
+        "$.corrections[].source.path": 8,
+        "$.corrections[].journal": 8,
+        "$.corrections[].SQL_task_id": 8,
+        "$.corrections[].original_error": 8,
+        "$.corrections[].original_status": 8,
+        "$.corrections[].SQL_output_record_sha256": 8,
+        "$.corrections[].before.extra_cost_origin": 8,
+        "$.corrections[].after.extra_cost_origin": 8,
+        "$.reason": 1
+      },
+      "patient_text_found": false,
+      "gold_value_found": false,
+      "raw_response_found": false,
+      "candidate_answer_label_fields_found": false
+    },
+    {
+      "relative_path": "costs/source_binding_verification.json",
+      "sha256": "d5c55072dd5c664197022d0d846321f5740525926aa8cfb10381758e5e613c1f",
+      "bytes": 8022,
+      "records_read": 1,
+      "value_type_counts": {
+        "dict": 20,
+        "str": 58,
+        "list": 1,
+        "int": 38,
+        "bool": 20
+      },
+      "string_field_paths_and_counts": {
+        "$.snapshot": 1,
+        "$.sources[].path": 19,
+        "$.sources[].sha256": 19,
+        "$.sources[].expected_sha256": 19
+      },
+      "patient_text_found": false,
+      "gold_value_found": false,
+      "raw_response_found": false,
+      "candidate_answer_label_fields_found": false
+    },
+    {
+      "relative_path": "costs/transfer_cost_reconciliation.json",
+      "sha256": "c430b5fc77013255fcfc65e94036c6307716c84aa80a35daceac9a57f6b3eb62",
+      "bytes": 29510,
+      "records_read": 1,
+      "value_type_counts": {
+        "dict": 80,
+        "list": 3,
+        "str": 153,
+        "int": 310,
+        "float": 77,
+        "bool": 2
+      },
+      "string_field_paths_and_counts": {
+        "$.methods[].method": 2,
+        "$.methods[].events[].journal": 75,
+        "$.methods[].events[].task_id": 75,
+        "$.interpretation": 1
+      },
+      "patient_text_found": false,
+      "gold_value_found": false,
+      "raw_response_found": false,
+      "candidate_answer_label_fields_found": false
+    },
+    {
+      "relative_path": "review/data_issue_evidence_review.json",
+      "sha256": "df7cc2341b5b38a810de778c76fec69726da6d99bca83656feb8f1b406009698",
+      "bytes": 5063,
+      "records_read": 1,
+      "value_type_counts": {
+        "dict": 15,
+        "str": 47,
+        "bool": 11,
+        "list": 8,
+        "int": 11
+      },
+      "string_field_paths_and_counts": {
+        "$.status": 1,
+        "$.date": 1,
+        "$.review_scope": 1,
+        "$.data_issues_file": 1,
+        "$.searched_record_sources[].path": 3,
+        "$.searched_record_sources[].sha256": 3,
+        "$.existing_evidence_checked[].kind": 4,
+        "$.existing_evidence_checked[].unit_id": 1,
+        "$.existing_evidence_checked[].original_review_date": 1,
+        "$.existing_evidence_checked[].source.path": 1,
+        "$.existing_evidence_checked[].source.sha256": 1,
+        "$.existing_evidence_checked[].formal_v5_overlap_evidence.source.path": 1,
+        "$.existing_evidence_checked[].formal_v5_overlap_evidence.source.sha256": 1,
+        "$.existing_evidence_checked[].formal_v5_overlap_evidence.row.scope": 1,
+        "$.existing_evidence_checked[].decision": 4,
+        "$.existing_evidence_checked[].family_id": 1,
+        "$.existing_evidence_checked[].reviewed_original_input_ids[]": 2,
+        "$.existing_evidence_checked[].source": 2,
+        "$.existing_evidence_checked[].existing_evidence_path": 1,
+        "$.existing_evidence_checked[].current_family_ALL_units_by_backbone.M4[]": 4,
+        "$.existing_evidence_checked[].current_family_ALL_units_by_backbone.M5[]": 4,
+        "$.existing_evidence_checked[].original_record_status": 1,
+        "$.existing_evidence_checked[].examples[]": 4,
+        "$.limitations[]": 3
+      },
+      "patient_text_found": false,
+      "gold_value_found": false,
+      "raw_response_found": false,
+      "candidate_answer_label_fields_found": false
+    }
+  ],
+  "required_public_projection": {
+    "file": "costs/c2_c3_call_difference.json",
+    "json_path": "records[].trace.errors[].key",
+    "occurrences": 6,
+    "distinct_values": 3,
+    "classification": "candidate answer-key labels; not evidence of gold leakage or raw-response text",
+    "action": "Remove literal key from public projection; key_sha256 is the parent-planned replacement. Original private artifact remains unchanged.",
+    "projection_inspected": false,
+    "no_label_values_in_this_receipt": true
+  },
+  "scope_consistency": {
+    "empty_current_objective_issue_list": true,
+    "no_exhaustive_audit_claim": true,
+    "historical_NLI_outside_current_scope": true,
+    "M20_pending_adjudication_not_confirmed_erratum": true,
+    "original_full_results_retained": true,
+    "scope_file_sha256": "7c2daa6333920b8bc6d493e42eed17b58aa8d1f0b3d991b79718243f81a48fc2"
+  },
+  "minor_wording_note": "In costs paragraph, narrow 各方法收到共同B/F/旧head一次 to 各B系候选方法... so C0 is not described as containing B.",
+  "source_mutations": 0,
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "private_projection_directory_read": false
+}

@@ -1,0 +1,96 @@
+{
+  "status": "phase_closed_zero_new_inference",
+  "at": "2026-09-28T21:32:00.309564+08:00",
+  "base_commit": "d85793470cf75af57217f3fdc73093f494d9f003",
+  "phase_closeout_complete": true,
+  "default_method": "adopted_B_five_operations_v1",
+  "research_extension": "cf_moa_rcv_rationales_v1",
+  "incremental_RCV_adopted_as_default": false,
+  "method_changed": false,
+  "implementation": "complete_prior",
+  "full_development_inference": "complete_prior",
+  "full_native_scoring": "complete_prior",
+  "full_family_intervals": "completed_this_closeout",
+  "method_cost_attribution": "completed_with_explicit_historical_unknowns",
+  "five_tables": "complete",
+  "all_source_stratification": "complete_all11",
+  "all_format_stratification": "complete_all5",
+  "all_R_categories": "complete_nonadditive_overlap",
+  "denominators_each_model_arm": {
+    "inputs": 13905,
+    "native_mappings": 15616,
+    "ALL_units": 6104,
+    "families": 4766,
+    "maintain_pairs": 6838,
+    "respond_pairs": 1780
+  },
+  "arms": [
+    "original_C0",
+    "strong_B",
+    "candidate_only",
+    "candidate_with_rationales",
+    "pool_old_plus_three",
+    "joint_selector"
+  ],
+  "data_filtering": {
+    "outcome_filter": false,
+    "rows_excluded": 0,
+    "arms_excluded": 0,
+    "sources_excluded": 0,
+    "labels_changed": 0,
+    "data_version_changed": false,
+    "confirmed_issue_records": 0,
+    "issue_review_exhaustive": false
+  },
+  "bootstrap": {
+    "resamples": 5000,
+    "seed": 240924,
+    "paired_family": true,
+    "family_internal_unit_weights_preserved": true,
+    "metrics": [
+      "native_ALL",
+      "maintain",
+      "respond"
+    ],
+    "contrasts": 36
+  },
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "cache_writes": 0,
+  "GPU_or_existing_process_actions": 0,
+  "independent": false,
+  "development_selection_bias": true,
+  "method_freeze_after_development_does_not_make_prior_v5_independent": true,
+  "not_executed_or_deferred": {
+    "postfreeze_new_family_confirmation": "not_executed_deferred_by_user_closeout",
+    "independent_F_pool_replica": "not_executed_deferred_by_user_closeout",
+    "natural52_M5_C0_missing4": "historical_partial_48_of52_not_completed_no_new_inference",
+    "further_algorithm_expansion": "stopped_not_planned"
+  },
+  "cost_scope": {
+    "physical_full_v5_requests": 162979,
+    "method_attribution_includes_shared_B_once_per_method": true,
+    "shared_upstream_C0_cost": "unknown",
+    "old_head_time_unknown_inputs_per_model_method": 2503,
+    "physical_total_is_not_divided_by_arms": true
+  },
+  "evidence": {
+    "statistics": "statistics/execution_receipt.json",
+    "statistics_validation": "statistics/validation_receipt.json",
+    "cost": "costs/completion_receipt.json",
+    "physical_reconciliation": "costs/physical_reconciliation.json",
+    "scope_review": "review/data_issue_evidence_review.json",
+    "method_identity": "method_identity.final.json"
+  },
+  "deliverables": [
+    "full_results.md",
+    "all_source_results.json",
+    "format_input_results.json",
+    "family_effect_intervals.json",
+    "attributed_costs.md",
+    "scope_and_limitations.md",
+    "data_issues.jsonl",
+    "five_tables.md"
+  ],
+  "conclusion": "Default B retained; C3 remains reproducible research extension with mixed full-v5 outcomes. B-C0 is not incremental RCV contribution."
+}

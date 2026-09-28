@@ -1,0 +1,72 @@
+{
+  "at": "2026-09-28T21:34:17.660201+08:00",
+  "status": "complete_phase_closeout",
+  "base_commit": "d85793470cf75af57217f3fdc73093f494d9f003",
+  "root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928",
+  "artifacts": [
+    {
+      "path": "final_status.json",
+      "bytes": 3313,
+      "sha256": "2d59ee612e934d9b73b812d675d9df5fa00ccb4c90d58281fd0ece9bb7c7328a"
+    },
+    {
+      "path": "full_results.md",
+      "bytes": 4232,
+      "sha256": "0c7d6ed943c3bd26723fc99b0b09f0f48a8f7081e69f5cfc0bfd18a1ac115af4"
+    },
+    {
+      "path": "all_source_results.json",
+      "bytes": 29863,
+      "sha256": "1149cb8c368229e0467ef6a9ee43811db097ce05cc2ca80f3725bb1f1a65f7b7"
+    },
+    {
+      "path": "all_category_results.json",
+      "bytes": 16445,
+      "sha256": "94ec872c3b60dc786201780b6ae5f7d5b8e5e5222893cb893a02d9afcc0cd33e"
+    },
+    {
+      "path": "format_input_results.json",
+      "bytes": 14956,
+      "sha256": "1413631df1f98c1f045ba74976240f4d638e3c2b1d7e8ee74de0de33b8b13024"
+    },
+    {
+      "path": "family_effect_intervals.json",
+      "bytes": 14924,
+      "sha256": "cecd19b44b1592d2d78c3a8fefed0413fdb22fb6cbff4b2d4c93ac1b08a9a07c"
+    },
+    {
+      "path": "attributed_costs.md",
+      "bytes": 6241,
+      "sha256": "f02df8cb6d5e776a60922a121dfb01ac6b44f33a83734f69bfab520ed5a16fd4"
+    },
+    {
+      "path": "scope_and_limitations.md",
+      "bytes": 4681,
+      "sha256": "7c2daa6333920b8bc6d493e42eed17b58aa8d1f0b3d991b79718243f81a48fc2"
+    },
+    {
+      "path": "data_issues.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "five_tables.md",
+      "bytes": 24330,
+      "sha256": "7449f5ed9f085d082d8f36ea285a8db06b1f54cdf2ea9c71f98947a08a8d5676"
+    },
+    {
+      "path": "method_identity.final.json",
+      "bytes": 1424,
+      "sha256": "d9e0cd25149f7ed5a48fa600ede13e711d72b3c807d6cf5cff639be8d6375593"
+    }
+  ],
+  "statistics_evidence": "statistics/",
+  "cost_evidence": "costs/",
+  "private_exclusions": [
+    "costs/projection/ (contains saved gold-derived diagnostics, not public)",
+    "original patient/rawmessages/SQL remain original private paths"
+  ],
+  "historical_input_and_score_sources_unchanged": true,
+  "new_model_calls": 0,
+  "new_grader_calls": 0
+}

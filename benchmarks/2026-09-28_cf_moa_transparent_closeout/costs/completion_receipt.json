@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "model_calls": 0,
+  "grader_calls": 0,
+  "cache_writes": 0,
+  "per_input_metadata_rows": 166860,
+  "source_output_hashes_verified": 19,
+  "full_denominator_each_arm": 13905,
+  "current_physical_calls_reconciled": 162979,
+  "shared_B_once_per_arm_verified": true,
+  "corrections": 8,
+  "original_projection_unchanged": true,
+  "private_projection_contains_saved_gold_derived_diagnostics": true,
+  "public_metadata_contains_gold_or_correctness": false,
+  "unknown_history_preserved": true,
+  "analysis_scripts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/costs/closeout_costs.py",
+      "sha256": "4f48ae219517d7de7c73a4709653ac7561f63366754ba09eb7cb39d9cc9fa2ed"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis_preparation/summarize_mechanism_cost.py",
+      "sha256": "1cec25bae1c026f64adb0957e2dc24a4467f98af355ee72f07cbc4f3296f2a56"
+    }
+  ],
+  "notes": "Source script unchanged; wrapper performs only bounded closed SQL accounting and output rendering. python alias not present; python3 and existing MedRGAG venv were used. No inference was attempted."
+}
