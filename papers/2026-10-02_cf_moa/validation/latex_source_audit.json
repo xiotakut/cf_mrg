@@ -1,0 +1,217 @@
+{
+  "auditor": "independent agent /root/latex_audit",
+  "timestamp": "2026-10-02T14:53:51.131789+00:00",
+  "status": "PASS_SOURCE_AND_SAMPLED_PDF_AUDIT",
+  "scope": "Native LaTeX migration completeness, research-evidence preservation, compiled-document metadata/log/citation checks and sampled visual PDF inspection; not fresh experiment verification.",
+  "original_markdown": {
+    "path": "/home/data3/txy/docs/paper/manuscript.md",
+    "sha256": "4bf4a0042230f885c1bf2733c370109cfb84677a1d900ddc65ca72da0f1b22d2"
+  },
+  "source_files": {
+    "main.tex": "bdd29cc54949735a953a39267caeb85f25b35c9af11532580dd8df73cfc83a33",
+    "sections/abstract.tex": "e1e440a4b7347d719d7896b1a152761a881d25cb5fa5f6e3f230da0183f27398",
+    "sections/appendix_model.tex": "c864d4be16aff121eb348d653837331db8345ccbf441fddbccd6f94535167e07",
+    "sections/appendix_reproduction.tex": "067e9bf5fe856fdb26e072c335b3690615320481e0254c974c71a8586fbbf768",
+    "sections/appendix_sources.tex": "d2aacca3303199264c45b747683a00c7cb46d53e07b253b8b439542ea8f6e327",
+    "sections/conclusion.tex": "f06e6f1f531583aaf0d33f52a3381c715a5d6b0d1191655c001b728764e8b0d6",
+    "sections/declarations.tex": "6d6bacf5343baa8574368abc8ffca62e489d57e38b69cf6852c979bd38ef29d7",
+    "sections/discussion.tex": "8914960815fc78970a0129cd1df39b8d9a5a5ce7226d8fab860dc36c15c5c5c7",
+    "sections/experimental_setup.tex": "27d68d538b297f33f8f9d6ed0e74e6ac7d64993c39f01dd5673eca883daf4cd9",
+    "sections/introduction.tex": "3fd893bcdd002f09fa6ff7af766820b9332171a5fd1799a5ae512a9d79d1ebd9",
+    "sections/limitations.tex": "f948f7079e95ee27d3d53c920e71e25596932533ad6f63458b437cfe4931fe60",
+    "sections/method.tex": "1d25c446d84053ef9ebab9898d3fe2d6ca8d20fd9498468719cbfda5514e1255",
+    "sections/related_work.tex": "3901d90385727e71a66fa24a4319036d21d8e3581c0ee3e096192c28ae066f0a",
+    "sections/results.tex": "72ba0bcebe2ca2112eb9edef24803ea2dd87144a868c79657cd8501179a8edc6",
+    "sections/task_contract.tex": "38d018149ed95d9ebedc7dc9312828e77737d25ebeec663b9b979f2c7b9588d1",
+    "tables/ablations.tex": "c77d62c9bd9a49ec94e5f7ea5de869e8c068ec04be0f96e89548baa8cbf3c8dc",
+    "tables/arms.tex": "67b22dc8e479c08ed44516dd506ba67853d2429da5c69cd6972bfb79583f8578",
+    "tables/contrasts.tex": "e1adf83fe448a0de9aab4e98431a18d9823001b37a0e268eac449ea4a56dca16",
+    "tables/costs.tex": "e064c27515471a8e042c5bf2aaa275be258d0c69fb877dfe0ac006249092aa08",
+    "tables/historical_model.tex": "6347e5c417e4e886f8e1bc45536d341129f4c0b5a50ab9b0d865acf8b47f0859",
+    "tables/main_results.tex": "146c30f7988699b25e1f014cb8001e73344344459c2997fa63e9e09f62f6cadf",
+    "tables/paired.tex": "8821c29c55b1a7c45e5a590480c3a871864ff95dc833bea3a28982fa732e7ed6",
+    "tables/sources.tex": "935f5ec16c755d8d80ea5eab72217fec0ff962208b772b5e2641200a41aa441e",
+    "references.bib": "bb9138c03d3bb9e0ed096f2200fc6826384015d5457a8c584993b1f520162f4b"
+  },
+  "checks": {
+    "original_and_new_table_counts": [
+      8,
+      8
+    ],
+    "table_cells": [
+      {
+        "original_table_index": 1,
+        "data_rows": 6,
+        "cells": 18,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 2,
+        "data_rows": 12,
+        "cells": 60,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 3,
+        "data_rows": 6,
+        "cells": 24,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 4,
+        "data_rows": 6,
+        "cells": 30,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 5,
+        "data_rows": 2,
+        "cells": 8,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 6,
+        "data_rows": 2,
+        "cells": 12,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 7,
+        "data_rows": 12,
+        "cells": 36,
+        "identical_data_cells": true
+      },
+      {
+        "original_table_index": 8,
+        "data_rows": 8,
+        "cells": 40,
+        "identical_data_cells": true
+      }
+    ],
+    "abstract_text_identical": true,
+    "four_display_equations_retained": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "citation_key_count": 20,
+    "bib_key_count": 20,
+    "citation_keys": [
+      "benkirane2025bias",
+      "chen2026medeinst",
+      "ddxplus",
+      "dubey2024llama",
+      "gourabathina2025medperturb",
+      "lewis2020rag",
+      "li2025biorab",
+      "medpicbench",
+      "mo2026faithfulness",
+      "ngo2024medrgb",
+      "prosperi2026hiv",
+      "rawat2024diversitymedqa",
+      "rezaei2026cultural",
+      "simglucose",
+      "wang2023selfconsistency",
+      "wang2025moa",
+      "xiao2025amqa",
+      "xiong2024medrag",
+      "yang2025qwen3",
+      "zhao2021calibrate"
+    ],
+    "citation_key_sets_equal": true,
+    "bibliography_metadata_equal_ignoring_title_case_protection": true,
+    "bibliography_format_only_change": "Title fields protected with an additional brace layer; title lexical content and all other source fields unchanged. CSL comparison ignores reader-derived title-short and title capitalization.",
+    "labels": 43,
+    "duplicate_labels": [],
+    "unresolved_source_refs": [],
+    "figure_bytes_equal": {
+      "verification_forest.pdf": true,
+      "rule_ablations.pdf": true,
+      "main_results.pdf": true,
+      "source_heterogeneity.pdf": true,
+      "cost_quality.pdf": true
+    },
+    "unnamed_author_placeholder": true,
+    "generic_conference_draft_no_claimed_venue": true,
+    "no_pandoc_rendering_macros": true
+  },
+  "manual_semantic_review": {
+    "research_result_changes": false,
+    "required_boundaries_retained": [
+      "B minus C0 gains are separated from C3 contribution.",
+      "C3 minus B is negative on M4 (-1.8108 pp), positive on M5 (+0.9273 pp), with both original family intervals retained.",
+      "B remains the adopted default; no configuration-specific winner substitution.",
+      "Development exposure remains explicit; independent family confirmation and a second F pool remain unexecuted.",
+      "A1/A2 share a rule kernel; rule ablations retain 123-input denominator.",
+      "A4 has zero clinical-v5 coverage; 24 profiles x 12 historical questions are a separate conditional-model panel.",
+      "M4/M5 output protocols differ as well as backbone.",
+      "Unknown common C0/retrieval costs and missing timing remain identified; physical and method-attributed request ledgers are not conflated.",
+      "No invented authors, affiliations, funding status, ethics approvals, conference acceptance or clinical validation."
+    ],
+    "intentional_editorial_differences": [
+      "Automatic LaTeX labels and references replace manual numbering; added brief figure/table navigation.",
+      "Data/code declaration now reflects the published private GitHub repository and required authorized access.",
+      "Reproduction paragraph now describes native LaTeX/BibTeX build instead of Markdown/Pandoc rendering.",
+      "Bibliography title case is protected without changing title lexical content or reference identity."
+    ]
+  },
+  "verification_method": "Read manuscript/method statements; parse both sources with installed Pandoc 3.9 for independent text/table comparison only (Pandoc is not the manuscript build engine); compare source labels, real citep keys, formulas and figure hashes.",
+  "audit_attempt_notes": [
+    "Two initial ad-hoc comparison commands had a Python parenthesis syntax error before reading/writing results; corrected comparator completed successfully.",
+    "Pandoc LaTeX reader treats multiline table headers as extra rows; data-row comparison selects original row identifiers and checks every data cell.",
+    "Initial bibliography comparison flagged intended title capitalization and reader-derived title-short differences; corrected comparison normalizes those presentation-only effects and matches all fields.",
+    "Intermediate third layout build introduced 17 pt minipage paragraph-indent overflow; identified in independent log check and reported to primary agent. Final build removes it with noindent; final log has no overflow/warning lines."
+  ],
+  "new_model_calls": 0,
+  "new_native_grading": 0,
+  "pdf_audit": {
+    "pdf_path": "/home/data3/txy/docs/paper/latex/main.pdf",
+    "pdf_sha256": "3c48023e95da9c93a84693ebe6cb09c50a336d5b96c9b3dc59b1bc6c929388f9",
+    "pages": 21,
+    "creator": "LaTeX with hyperref",
+    "producer": "xdvipdfmx (0.1)",
+    "bibtex_0_99d_in_log": true,
+    "bibitem_count": 20,
+    "all_20_citation_keys_in_bbl": true,
+    "compile_log_issue_lines": [],
+    "pdf_key_numbers_present": {
+      "48.1990": true,
+      "58.2924": true,
+      "47.3487": true,
+      "59.3616": true,
+      "56.4815": true,
+      "60.2889": true,
+      "10.0934": true,
+      "12.0129": true,
+      "1.8108": true,
+      "0.9273": true,
+      "2.5287": true,
+      "1.0819": true,
+      "0.3039": true,
+      "1.5562": true,
+      "162,979": true,
+      "957,810,324": true,
+      "18,291,906": true
+    },
+    "private_repository_declaration_present": true,
+    "final_visual_pages_reviewed": [
+      9,
+      17
+    ],
+    "intermediate_visual_pages_reviewed": [
+      8,
+      9
+    ],
+    "visual_findings": "Final pages 9 and 17 viewed directly: paired-effect table, forest plot, historical explicit-model table and their captions are readable and inside page bounds; M4 negative and M5 positive effects retained; no clipping or overlap observed. Intermediate page 8 main results also reviewed. All-page final visual review performed separately by primary agent.",
+    "main_log_sha256": "b959a77ec11df4c8a2eada7c20b77773416aed36248d05d13834a26a43a24710",
+    "main_blg_sha256": "a200215513d0fde1804eb5589d7dd9d08435c2ef80a53f6fc427f95ecd399eae"
+  },
+  "final_layout_changes_reviewed": {
+    "changed_files_since_content_audit": [
+      "main.tex",
+      "sections/appendix_reproduction.tex"
+    ],
+    "description": "Final main.tex removes unused inputenc, reduces paragraph spacing and gives Appendix C a clear page; reproduction pseudocode is enclosed in a no-indent minipage to keep it together. Content/evidence statements unchanged."
+  }
+}

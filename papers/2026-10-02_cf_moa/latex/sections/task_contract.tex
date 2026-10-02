@@ -1,0 +1,108 @@
+\section{Task and Evaluation Contract}
+\label{sec:task_contract}
+
+\subsection{Inputs and decision operations}
+\label{sec:task_contract-inputs-and-decision-operations}
+
+An inference input is \(x=(q,o,e,c,a_0)\), where \(q\) contains the current question and
+patient information, \(o\) contains native options when present, \(e\) is the required
+supplied evidence, \(c\) is the original system's allowed context, and \(a_0\) is its
+saved answer when available. An explicit executable model is an additional optional input.
+Each arm receives the same legal input for a given model configuration. Gold answers,
+evaluation labels, classification explanations, hidden paired endpoints, and source
+identifiers that could provide an answer shortcut are excluded from inference. Provenance
+and scoring information remain in the offline evaluation ledger.
+
+The benchmark uses five overlapping labels attached to specific judgments. R1 denotes
+newly established support; R2 denotes withdrawn or contradicted support; R3 denotes a need
+to compare competing judgments again; R4 denotes a consequence that must be inferred from
+changed premises; and R5 denotes a judgment that should remain unaffected. Support changes
+do not imply that the final answer must flip. R1--R3 may coexist, and R5 is established by
+the task's meaning rather than by model agreement. The labels describe evaluation strata;
+routing never reads them.
+
+The system operates on each visible endpoint separately. It is not given both members of a
+hidden evaluation pair and asked to recover the expected relation. Pair-level measurements
+are constructed only after native predictions have been scored.
+
+The project protocol permits external MedCorp retrieval while retaining all required
+source evidence. In particular, MedCounterFact inputs preserve their stipulated evidence,
+and MedRGB inputs retain their six fixed evidence-ratio conditions while also permitting
+external retrieval. The latter is a project adaptation of MedRGB, rather than a
+reproduction of its original static-evidence-only setting. Original and modified endpoints
+have the same information-access permissions. The present study reuses the saved contexts
+under that protocol.
+
+\subsection{Native units and denominators}
+\label{sec:task_contract-native-units-and-denominators}
+
+The frozen v5 evaluation contains 13,905 unique inference inputs per model configuration,
+15,616 native scoring mappings, and 6,104 non-reference evaluation units from 4,766
+families. One input can support multiple mappings, and one unit can contain several native
+tasks or variants. Reference inputs support paired evaluation but are excluded from the
+main ALL score. These counts are not interchangeable sample sizes, and none is described
+as a count of independently recruited patients.
+
+Construction retained every eligible R1--R4 target in the preceding classified collection.
+For R5, 450 eligible comparison units were randomly sampled without replacement from each
+of eight source strata, using a seed generated once before selection and sorted unit
+identifiers. Model predictions and prior v3 membership did not determine these draws. The
+resulting R5 evaluation scope has 3,600 units. Frozen evaluation membership is distinct
+from the original semantic labels: an unsampled R5 label attached to a retained R1 unit
+does not automatically add that unit to the R5 score.
+
+Let \(J_u\) be the non-reference native scoring records belonging to unit \(u\), and let
+\(z_{muj}\in\{0,1\}\) be native main-answer correctness for arm \(m\). We use the frozen
+unit score and overall mean
+
+\begin{equation}
+\label{eq:unit_score}
+s_{mu}=\frac{1}{|J_u|}\sum_{j\in J_u}z_{muj},
+\qquad
+S_m=\frac{1}{6104}\sum_{u=1}^{6104}s_{mu}.
+\end{equation}
+
+The main metric is \(100S_m\). It is not a source macro-average, an average of the five
+R-category scores, or input-level accuracy. Native rules include exact option keys, exact
+sets for the primary multi-select score, normalized relation labels, and a frozen
+canonical diagnostic mapping. Multi-select overlap and robustness auxiliary fields are
+separate diagnostics. The diagnostic mapping is a local scoring contract, not the original
+source's semantic language-model grader. For R4 clinical scenarios, correctness means
+agreement with the source's expected answer.
+
+The R-category denominators are R1: 2,866; R2: 79; R3: 733; R4: 13; and R5: 3,600. Because
+these groups overlap, their counts and scores cannot be summed to recover ALL. The five
+input formats contain 3,560 diagnosis inputs, 167 multi-select inputs, 989 relation
+inputs, 2,700 robustness inputs with auxiliary output, and 6,489 other single-choice
+inputs.
+
+\subsection{Paired correctness and uncertainty}
+\label{sec:task_contract-paired-correctness-and-uncertainty}
+
+The frozen paired ledger contains 6,838 maintain pairs and 1,780 respond pairs. Their
+expected relations are based on the native task and reference answers, with compatible
+answer meanings, rather than inferred mechanically from R labels. For pair \(p\) with
+endpoints \(x_p^0\) and \(x_p^1\), the main paired score is
+
+\begin{equation}
+\label{eq:paired_score}
+t_{mp}=\mathbb{1}[a_m(x_p^0)=y_p^0]\,
+       \mathbb{1}[a_m(x_p^1)=y_p^1].
+\end{equation}
+
+Thus, a model receives credit only when both endpoints are correct; repeating an incorrect
+answer does not count as successful maintenance. Native scoring, rather than literal
+string equality where inappropriate, determines each indicator.
+
+For each contrast, 5,000 paired bootstrap samples draw families with replacement using
+seed 240924. All compared arms share a resampled family sequence. Each replicate averages
+the atoms contributed by the sampled families, preserving unit weights within families
+instead of assigning equal weight to family means. ALL uses 6,104 units in 4,766 families;
+maintain uses 6,838 pairs in 2,806 families; respond uses 1,780 pairs in 1,780 families.
+We report 95\% percentile intervals. These intervals describe variation in the exposed
+benchmark and do not correct for method selection, multiple comparisons, or previous data
+access.
+
+Families group the related variants of an original case; cross-source groups with exactly
+matching original questions and options are connected into a dependency group. This
+procedure does not establish that all semantic near-duplicates have been identified.

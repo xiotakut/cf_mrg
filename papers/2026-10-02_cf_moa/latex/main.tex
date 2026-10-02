@@ -1,0 +1,63 @@
+% Canonical manuscript source. Edit this project directly; no conversion step is
+% part of the normal build. Initial migration: 2026-10-02 from the frozen draft.
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,tabularx,array}
+\usepackage[round,authoryear]{natbib}
+\usepackage[section]{placeins}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{
+  pdftitle={CF-MoA: Operation-Based Support Updating and the Limits of Candidate Verification in Medical Question Answering},
+  pdflang={en}
+}
+\urlstyle{same}
+\setlength{\emergencystretch}{2em}
+\setlength{\parskip}{0.15em}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.12}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.7}
+\raggedbottom
+
+\title{CF-MoA: Operation-Based Support Updating and the Limits of Candidate
+Verification in Medical Question Answering\\[0.5em]
+\large General conference manuscript draft}
+% Real author names and affiliations are pending author input.
+\author{}
+\date{2 October 2026}
+
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/task_contract}
+\input{sections/method}
+\input{sections/experimental_setup}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/conclusion}
+\input{sections/declarations}
+
+\clearpage
+\appendix
+\input{sections/appendix_sources}
+\input{sections/appendix_reproduction}
+\clearpage
+\input{sections/appendix_model}
+
+\clearpage
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+\end{document}

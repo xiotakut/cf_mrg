@@ -1,0 +1,39 @@
+\section{Limitations}
+\label{sec:limitations}
+
+\textbf{Development exposure and confirmation.} The full v5 benchmark was already exposed
+and contributed to method development and selection. Current bootstrap intervals do not
+remove that exposure. A planned frozen-method evaluation on new families and a second
+independently generated F pool were deferred and have not been executed. The manuscript
+therefore provides no independently confirmed generalization or across-pool stability
+result.
+
+\textbf{Scope and scoring.} The sources differ in task semantics, patient realism,
+perturbation construction, and reference quality. R labels overlap, some groups are small,
+and the 13-unit R4 clinical subset has especially limited coverage. Classification follows
+the project's documented target-level review rules; no clinician inter-annotator agreement
+estimate is reported. Canonical diagnostic matching can penalize clinically related
+wording, while source expected answers do not provide a new clinical adjudication. An
+empty list of newly established data defects in the final closeout is not evidence that
+all items and labels have undergone a complete expert medical review.
+
+\textbf{Attribution and model comparison.} B combines several already developed components
+with additional resources and inference. Only specified local comparisons, such as the
+rule-operation ablation and C3 versus C2, isolate narrower design changes. M4 and M5
+differ in output protocol as well as model. Their disagreement in C3's effect is
+configuration dependence; a pure backbone explanation requires matched-protocol
+experiments. Candidate-trigger membership also differs because each model generates its
+own pool.
+
+\textbf{Clinical applicability.} This is an offline benchmark study, not a prospective
+patient study, treatment trial, or deployment evaluation. Rule coverage is limited, and
+the A4 physiological results concern a supplied mathematical model. Neither exact-match
+improvements nor successful model execution establish clinical safety or correctness
+outside those contracts.
+
+\textbf{Computation and reproducibility.} Some original-system costs and historical
+timings are unknown. Shared-call attribution describes the measured components rather than
+complete end-to-end resource use. The figure package reproduces reported summaries and can
+check them against the released compressed result records; it does not rerun the full
+language-model experiment. Original input data, licenses, model access, retrieval indices,
+and environment-specific paths remain separate prerequisites for fresh inference.

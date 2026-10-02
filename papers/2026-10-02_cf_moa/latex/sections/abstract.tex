@@ -1,0 +1,25 @@
+\begin{abstract}
+Changes to a medical question can introduce support, invalidate a decision premise, alter
+candidate rankings, or leave the correct answer unchanged. Evaluating these behaviors
+requires separating the benefits of a decision system from the value of additional
+verification. We study CF-MoA, an operation-based system that routes visible task inputs
+to established support recomputation, diagnostic candidate comparison, conditional model
+execution, or repeated native-answer readout. We then evaluate rationale-conditioned
+candidate verification, which selects among complete answers already produced by the
+readout component. A six-arm evaluation covers two MedRAG configurations and 13,905 inputs
+per configuration, scored as 6,104 non-reference native units from 11 sources. The adopted
+core improves the native-unit mean over the original systems by 10.09 and 12.01 percentage
+points. Additional rationale-conditioned verification changes that mean by \ensuremath{-}1.81 points on
+the Llama configuration and +0.93 points on the Qwen configuration, with corresponding
+95\% paired family bootstrap intervals of [\ensuremath{-}2.53, \ensuremath{-}1.08] and [+0.30, +1.56].
+Rationale inclusion improves point estimates relative to candidate-only verification, but
+does not produce consistent gains over the core. Source-level results, paired correctness,
+operation ablations, and attributed request costs expose this distinction. All results
+come from an already exposed development benchmark; independent confirmation and a second
+candidate-generation replicate remain unexecuted. The findings support operation-level
+evaluation while limiting claims of a general benefit from additional candidate
+verification.
+\end{abstract}
+
+\noindent\textbf{Keywords:} medical question answering; counterfactual evaluation; support
+updating; candidate verification; retrieval-augmented generation

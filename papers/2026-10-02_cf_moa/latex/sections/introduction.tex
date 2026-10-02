@@ -1,0 +1,48 @@
+\section{Introduction}
+\label{sec:introduction}
+
+A medical question may change without requiring its answer to change. An added observation
+can strengthen one diagnosis while leaving another diagnosis preferable; removing one
+contraindication can leave an independent contraindication intact. Conversely, a seemingly
+small change to a patient attribute or a stated evidence condition can require a different
+answer. These cases place different demands on a question-answering system. They also make
+simple measures of answer agreement inadequate: identical answers can reflect either
+appropriate invariance or a failure to update.
+
+Retrieval-augmented generation (RAG) supplies language models with external information
+\citep{lewis2020rag}, and medical RAG evaluates how retrieval choices interact with
+question-answering performance \citep{xiong2024medrag}. Retrieval alone does not specify
+how a model should revise a decision when the supporting conditions change. Sampling and
+aggregation offer another route: multiple reasoning paths can be combined by
+self-consistency \citep{wang2023selfconsistency}, while mixture-of-agents systems
+aggregate outputs across language-model agents \citep{wang2025moa}. Their success in other
+settings motivates a separate empirical question here: after a task-specific decision core
+has already produced a strong answer, does an additional selection stage improve it?
+
+We address this question through CF-MoA, an operation-based system for medical question
+answering. Its five roles describe adding support, removing support, comparing candidates,
+executing a supplied model, and preserving judgments through repeated readout. The
+implementation routes each input by visible capabilities. Two roles share one
+rule-execution core; the roles do not denote five independently trained models. The
+adopted system, denoted B, directly retains the selected component's native output. A
+research extension verifies competing answers only within the ordinary repeated-readout
+branch. It uses the same original question and allowed context, optionally conditions on
+saved candidate rationales, and returns a complete existing answer.
+
+The evaluation distinguishes three quantities that can otherwise be conflated: B's
+improvement over the original system, the extension's improvement over B, and the effect
+of including rationales within the verifier. We retain six arms, both model
+configurations, every source, and unavailable outputs in a common full-benchmark
+comparison. The data contain multiple tasks and related variants, so the main score
+averages native units and uncertainty is estimated by paired family resampling. Input
+accuracy and pairwise correctness are reported separately.
+
+The adopted core improves the main score in both configurations, but additional
+rationale-conditioned verification has opposite effects. It lowers the Llama
+configuration's score by 1.81 percentage points and raises the Qwen configuration's score
+by 0.93 points. These findings motivate the paper's contributions: an explicit account of
+the operation-based system and its permitted inputs; a six-arm comparison that isolates
+additional verification from the adopted core; and a reproducible analysis of
+heterogeneity, update operations, failures, and attributed computation. The study is
+retrospective development evaluation. It does not establish independent generalization,
+clinical utility, or a universal benefit from multi-agent collaboration.

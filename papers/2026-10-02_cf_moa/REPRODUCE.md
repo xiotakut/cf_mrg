@@ -1,8 +1,33 @@
-# Reproduce the saved-result figures and tables
+# Compile the LaTeX manuscript and reproduce the saved-result figures and tables
 
 This package renders the completed CF-MoA full-v5 **development** evaluation. It does not run models, invoke native graders, create new experimental outcomes, or overwrite the September 28 closeout. The independent post-freeze confirmation and independent F-pool replica were not executed. The default remains B; C3 is an optional research extension.
 
-## Inputs and dependencies
+## Compile and maintain the manuscript
+
+The maintained manuscript source is [latex/main.tex](latex/main.tex), with native LaTeX chapters and tables under `latex/sections/` and `latex/tables/`, vector figures under `latex/figures/`, and [BibTeX references](latex/references.bib). Edit those files directly. Document builds compile LaTeX; they do not regenerate the source from Markdown.
+
+Install Tectonic, or TeX Live with XeLaTeX, BibTeX, and latexmk. The recorded successful compilation used Tectonic 0.17.0. From this package directory:
+
+```bash
+cd latex
+bash build.sh
+```
+
+The script prefers Tectonic and otherwise uses `latexmk -xelatex`. It writes `latex/main.pdf` and retains compilation logs and intermediates under `latex/build/`. Tectonic downloads any required TeX packages on its first build. To select a separately installed binary, run `TECTONIC_BIN=/path/to/tectonic bash build.sh` from `latex/`.
+
+Alternatively, from the package root use the Python standard-library entry point:
+
+```bash
+python3 scripts/build_manuscript.py
+```
+
+The optional `--tectonic /path/to/tectonic` selects the compiler binary. [The LaTeX build receipt](validation/latex_build_receipt.json) and [source audit](validation/latex_source_audit.json) record the current compilation and source checks. The distributed `manuscript.pdf` is the LaTeX-compiled manuscript.
+
+For Overleaf, upload [cf_moa_latex.zip](cf_moa_latex.zip), select the archive-root `main.tex` as the main document, and choose XeLaTeX. The archive preserves the required chapter, table, figure, and bibliography paths; [latex/README.md](latex/README.md) also documents direct TeX Live compilation.
+
+The original [cf_moa_paper_bundle.zip](cf_moa_paper_bundle.zip) is unchanged. The root Word, HTML, and Markdown files are frozen references from the earlier delivery, and the prior exported LaTeX/Typst sources reside in `legacy_typst/`. Those earlier formats are not synchronized with the current LaTeX manuscript; historical rendering receipts describe their original build.
+
+## Figure and table inputs and dependencies
 
 `inputs/manifest.json` records original absolute paths, byte sizes, and SHA-256 hashes of 12 exact copies of small saved JSON summaries (about 160 kB). All plotted values and table values are derived from those copies. The script checks their hashes before and after execution. The source closeout was published at commit `2d56c71`; its full-v5 underlying release was `d85793470cf75af57217f3fdc73093f494d9f003`.
 

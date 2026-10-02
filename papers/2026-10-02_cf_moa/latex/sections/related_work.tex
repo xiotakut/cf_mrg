@@ -1,0 +1,39 @@
+\section{Related Work}
+\label{sec:related_work}
+
+\textbf{Retrieval and medical question answering.} RAG combines generation with access to
+retrieved documents \citep{lewis2020rag}. MedRAG and the Medical Information
+Retrieval-Augmented Generation Evaluation (MIRAGE) benchmark examine retrieval-augmented
+medical question answering across corpora, retrievers, and language models
+\citep{xiong2024medrag}. Our two original systems use MedRAG with different language-model
+and output configurations. The present comparison retains their saved contexts and
+evaluates decision operations applied after those original systems. It therefore concerns
+the treatment of available evidence and candidate answers, rather than a new retrieval
+algorithm.
+
+\textbf{Repeated reasoning and aggregation.} Self-consistency aggregates sampled reasoning
+paths \citep{wang2023selfconsistency}. Mixture-of-agents uses layered agent outputs as
+information for subsequent generation \citep{wang2025moa}. CF-MoA's adopted core instead
+selects an applicable operation and preserves its native result; its name identifies the
+local system lineage rather than an architectural equivalence to layered mixtures. The
+candidate-verification extension permits a bounded comparison of answers already generated
+by one component. An expanded-pool voting arm and a joint-selection arm distinguish this
+extension from simply generating more answers or selecting from the same pool in one
+decision.
+
+\textbf{Candidate presentation and calibration.} Contextual calibration studies the
+influence of content-free inputs on language-model predictions \citep{zhao2021calibrate}.
+The diagnostic component uses a fixed disease catalog, several candidate permutations, and
+an existing content-free prior correction. That component belongs to B. The additional
+verifier's two code mappings serve a different purpose: they average binary judgments
+under opposite correctness encodings. These scores remain uncalibrated ranking signals.
+Neither procedure turns a model score into a probability of clinical correctness.
+
+\textbf{Medical perturbation and evidence benchmarks.} The evaluation combines existing
+medical diagnosis, prescribing, question perturbation, evidence substitution, and
+robustness sources. Their distinctions matter: a changed patient fact, an irrelevant
+contextual cue, and a task that explicitly stipulates counterfactual evidence impose
+different answer contracts. Section~\ref{sec:task_contract} and Appendix~\ref{sec:appendix_sources} identify the source artifacts. We use
+these artifacts as the basis of a frozen local evaluation and retain their source-specific
+scoring limitations. The literature selection is targeted background for this empirical
+study, not a systematic review or a claim that adjacent approaches are absent.

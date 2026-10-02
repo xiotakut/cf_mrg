@@ -1,0 +1,46 @@
+{
+  "scope": "LaTeX migration and publication tooling only; no experiment execution",
+  "attempts": [
+    {
+      "attempt": 1,
+      "compiled": true,
+      "layout_issue": "119.35pt long monospaced script path; inputenc ignored by XeTeX",
+      "resolution": "use breakable path; omit redundant inputenc"
+    },
+    {
+      "attempt": 2,
+      "compiled": true,
+      "log_warnings": 0,
+      "visual_issues": [
+        "Short declaration spillover page",
+        "Pseudocode split over pages"
+      ],
+      "resolution": "reduce paragraph spacing; keep code in minipage"
+    },
+    {
+      "attempt": 3,
+      "compiled": true,
+      "layout_issue": "17pt overfull minipage from paragraph indent",
+      "resolution": "prepend noindent"
+    },
+    {
+      "attempt": 4,
+      "compiled": true,
+      "log_warnings": 0,
+      "visual_issue": "Historical model table separated from appendix heading",
+      "resolution": "start historical-model appendix on a new page"
+    },
+    {
+      "attempt": 5,
+      "compiled": true,
+      "log_warnings": 0,
+      "visual_review": "passed"
+    }
+  ],
+  "publication_edit_issue": {
+    "operation": "apply_patch replacing old build_manuscript.py using delete and add of same path",
+    "outcome": "rejected before modifying that script",
+    "resolution": "write exact replacement with a quoted heredoc"
+  },
+  "official_docs_access": "web tool could not open Tectonic docs; verified official GitHub release metadata, archive digest, and installed CLI help instead"
+}

@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Attributed request costs for B and C3. The table includes the shared core once per method
+and excludes unknown common C0/retrieval costs. Tokens are the total attributed C3 tokens,
+not only verifier tokens.}
+\label{tab:costs}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Config. & \shortstack{B\\requests} & \shortstack{C3 extra\\requests} & \shortstack{C3 total\\requests} & \shortstack{C3 input\\tokens} & \shortstack{C3 output\\tokens} \\
+\midrule
+M4 & 59,800 & 13,308 & 73,108 & 358,643,985 & 9,699,532 \\
+M5 & 58,301 & 9,820 & 68,121 & 294,927,306 & 7,655,025 \\
+\bottomrule
+\end{tabular}
+\end{table}

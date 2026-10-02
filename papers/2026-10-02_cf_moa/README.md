@@ -1,19 +1,20 @@
-# CF-MoA conference manuscript and experimental figures
+# CF-MoA LaTeX manuscript and experimental figures
 
-This package accompanies the generic English conference draft based on the completed full-v5 development evaluation. It contains existing-result figures, tables, document sources, and reproducible rendering scripts. It does not add model experiments, change labels, or replace the adopted B system.
+The current generic English conference draft is maintained directly in LaTeX and compiled with XeTeX and BibTeX through Tectonic 0.17.0. It uses the completed full-v5 development evaluation and the existing-result figures and tables. Subsequent writing edits go directly into the `.tex` sources; Markdown is no longer the source for document builds.
 
-GitHub delivery directory: [`papers/2026-10-02_cf_moa`](https://github.com/xiotakut/cf_mrg/tree/main/papers/2026-10-02_cf_moa). [Download the original manuscript bundle](cf_moa_paper_bundle.zip) for the unchanged, pre-publication delivery snapshot. The files displayed in this directory have GitHub navigation and portable command examples; the original archive preserves the initial delivery and its manifest.
+GitHub delivery directory: [`papers/2026-10-02_cf_moa`](https://github.com/xiotakut/cf_mrg/tree/main/papers/2026-10-02_cf_moa). This repository is private and requires authorized access.
 
-## Read the paper
+## Read and edit the paper
 
-- [English PDF](manuscript.pdf)
-- [Editable Word document](manuscript.docx)
-- [Self-contained HTML](manuscript.html)
-- [Rendered Markdown with references](manuscript.readable.md)
-- [LaTeX source](manuscript.tex), [Typst source used for the PDF](manuscript.typ), and [BibTeX](references.bib)
+- [LaTeX main document](latex/main.tex) and [source/build guide](latex/README.md)
+- [English PDF compiled from LaTeX](manuscript.pdf)
+- [LaTeX / Overleaf ZIP](cf_moa_latex.zip), with `main.tex` at the archive root
+- [BibTeX references](latex/references.bib)
 - [Chinese outline and claim map](outline.zh.md)
 
-The continuously maintained originals remain in the local workspace at `/home/data3/txy/docs/paper/manuscript.md`, `/home/data3/txy/docs/paper/outline.md`, and `/home/data3/txy/docs/paper/writing_record.md`. This package provides dated snapshots of [the manuscript](manuscript.md), [the outline](outline.zh.md), and [the writing record](FROZEN_WRITING_RECORD.md), together with reproduction evidence.
+Edit `latex/main.tex`, `latex/sections/*.tex`, `latex/tables/*.tex`, and `latex/references.bib` directly. The continuously maintained originals are at `/home/data3/txy/docs/paper/latex/`; the Chinese outline and writing record remain at `/home/data3/txy/docs/paper/outline.md` and `/home/data3/txy/docs/paper/writing_record.md`. This directory is the dated GitHub delivery of those sources and their compilation evidence.
+
+The [original manuscript bundle](cf_moa_paper_bundle.zip) is unchanged. The earlier [Word document](manuscript.docx), [HTML](manuscript.html), [rendered Markdown](manuscript.readable.md), and [Markdown source](manuscript.md) remain frozen references from the initial delivery and are not synchronized with the current LaTeX manuscript. The earlier exported sources are retained as [legacy LaTeX](legacy_typst/manuscript.tex) and [legacy Typst](legacy_typst/manuscript.typ); the [frozen writing record](FROZEN_WRITING_RECORD.md) describes that earlier stage.
 
 ## Figures and tables
 
@@ -30,28 +31,35 @@ Eight CSV/LaTeX table pairs cover main results, all contrasts, sources, categori
 From this directory, preferably use an isolated Python environment and install the recorded dependencies to validate the frozen inputs or rebuild the figures and tables:
 
 ```bash
-python3 -m pip install -r requirements-build.txt
+python3 -m pip install matplotlib==3.10.9 numpy==1.26.4 pandas==2.3.3
 python3 scripts/build_figures_tables.py --check-only
 python3 scripts/build_figures_tables.py
 ```
 
-## Document reproduction
+## Compile the LaTeX manuscript
 
-The recorded document renderer uses Python 3.10, Pandoc 3.9 through `pypandoc_binary==1.17`, `typst==0.15.0`, and `pymupdf==1.28.2`. These optional build dependencies were installed only into this package's `.build_deps` directory, not the experiment environment. That directory is excluded from the portable archive. To recreate it using an existing Python/pip installation:
+Install Tectonic or TeX Live with XeLaTeX, BibTeX, and latexmk. From this package directory:
 
 ```bash
-python3 -m pip install --target .build_deps pypandoc_binary==1.17 typst==0.15.0 pymupdf==1.28.2
-python3 scripts/build_manuscript.py --source manuscript.md --preview
+cd latex
+bash build.sh
 ```
 
-Always pass `--source manuscript.md` when building this GitHub copy. The script's default source refers to `docs/paper/manuscript.md` in the original workspace; the recorded original interpreter was `/home/data3/txy/MedRGAG/.venv/bin/python`.
+The script selects Tectonic when available and otherwise uses `latexmk -xelatex`; it writes `latex/main.pdf`. For a separately installed Tectonic binary, run `TECTONIC_BIN=/path/to/tectonic bash build.sh` from `latex/`. The Python standard-library entry point can also compile the current source from the package root:
 
-PDF output uses a generic single-column conference-review layout, compiled by Typst. It is not a specific venue's template. LaTeX is exported as an editable, standalone source; it was not compiled because no TeX engine is installed. The build applies one documented Pandoc 3.9 to Typst 0.15 math-alias compatibility replacement (`sect` to `inter` for set intersection); the original LaTeX equation is unchanged.
+```bash
+python3 scripts/build_manuscript.py
+```
+
+Use `--tectonic /path/to/tectonic` with the Python entry point if needed. For Overleaf, upload `cf_moa_latex.zip`, select `main.tex` as the main document, and choose XeLaTeX. The layout is a generic single-column review manuscript; a specific venue template has not been selected.
+
+See [reproduction instructions](REPRODUCE.md) for the separate figure/table workflow and [the LaTeX build receipt](validation/latex_build_receipt.json) for the actual compiler invocation and output checks.
 
 ## Verification and boundaries
 
 - [Figure/table build receipt](validation/build_receipt.json) and [raw-record check](validation/check_receipt.json)
-- [Manuscript render receipt](validation/manuscript_build_receipt.json)
+- [Current LaTeX build receipt](validation/latex_build_receipt.json) and [LaTeX source audit](validation/latex_source_audit.json)
+- [Historical initial-render receipt](validation/manuscript_build_receipt.json)
 - [Independent numerical/method audit](validation/manuscript_fact_check.json)
 - [Independent draft review](evidence/peer_review.json) and [revision resolution](evidence/revision_resolution.json)
 - [Reference existence/metadata audit](evidence/reference_verification.json)

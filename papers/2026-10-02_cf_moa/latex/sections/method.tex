@@ -1,0 +1,114 @@
+\section{CF-MoA}
+\label{sec:method}
+
+\subsection{Adopted core B}
+\label{sec:method-adopted-core-b}
+
+The adopted core uses fixed predicates over visible inputs. It first routes diagnosis
+questions to the catalog component, then eligible prescribing questions to the rule
+component. Inputs with a complete supported executable model can use the model-execution
+component. Supported single-choice and relation questions with their original message
+context use repeated native-answer readout, denoted F. Other inputs preserve the original
+answer. The full evaluation routes 3,560 inputs to diagnosis, 123 to rules, 10,178 to F,
+and 44 to passthrough. The explicit-model component covers zero inputs in this clinical
+benchmark.
+
+\textbf{Shared support addition and removal.} The rule component separates patient-fact
+extraction from execution of a fixed public rule bank. Its established eligibility
+predicate is limited to supported multi-select prescribing questions, including an
+explicit age of at least 65 and a recognized rule-bank drug option. The existing bank
+contains 71 rules; question scope determines the applicable rules and requested actions.
+Facts are extracted from the current question, not from unrelated patients in retrieved
+documents. Missing facts remain unknown.
+
+Each supported option receives a state in
+\(\{\mathrm{MET},\mathrm{CONTRADICTED},\mathrm{UNKNOWN}\}\). Necessary conditions combine
+by conjunction; independent support paths combine by disjunction. The existing
+documented-exception policy and native assembler remain authoritative. For an ordinary
+valid initial option set \(A_0\), away from native special cases, the update is
+
+\begin{equation}
+\label{eq:support_update}
+A_B=\{o:s(o)=\mathrm{MET}\}
+\ \cup\ \bigl(A_0\cap\{o:s(o)=\mathrm{UNKNOWN}\}\bigr).
+\end{equation}
+
+The expression adds newly supported options, removes options whose relevant support is
+contradicted, and preserves selected options with unresolved support. Native ``none''
+exclusivity, invalid initial answers, and extraction failures use the established
+assembler and fallback policies. A1 and A2 are records of the positive and negative
+operations from this single execution. There is no second fact-extraction model hidden
+behind these role names.
+
+\textbf{Diagnostic comparison.} The diagnostic component uses a fixed public catalog of 49
+diseases derived from the DDXPlus resource \citep{ddxplus}. The original model scores
+candidate codes under six permutations. Existing content-free distributions provide a
+prior correction for each permutation; the corrected choices are combined by majority
+vote, with mean corrected probability and fixed catalog order resolving ties. The frozen
+diagnostic scorer still uses its existing 46-label mapping. We do not expand that mapping
+after observing predictions. Catalog constraints, candidate resources, repeated decisions,
+and calibration all contribute to this component, so its overall gain cannot be attributed
+to calibration alone.
+
+\textbf{Conditional model execution.} The A4 component extracts a typed intervention and
+executes it only when the complete supported physiological model, parameters, state, and
+question contract are supplied. Its historical validation uses a fixed glucose simulation
+model and is reported separately in Appendix~\ref{sec:appendix_model}. The clinical v5 data do not meet this
+capability predicate. The 13 R4-labeled clinical units nevertheless remain in the
+evaluation and follow the other applicable routes.
+
+\textbf{Repeated native-answer readout.} For ordinary supported tasks, F produces up to
+five complete native answers using seeds 42--46 and stops once a key has the required
+absolute majority of three votes. If all five draws complete without that majority,
+plurality among valid keys selects the answer, with ties resolved by the earliest
+response; if no key is valid, the first invalid response is retained for failure
+accounting. Invalid outputs remain in the trace. A separate adopted natural language
+inference (NLI) path uses two reasoning paths and two code mappings; this path is retained
+unchanged by the candidate-verification extension. In both cases, the adopted component's
+complete native response remains the output authority. B has no subsequent global
+generative editor.
+
+\subsection{Rationale-conditioned candidate
+verification}
+\label{sec:method-rationale-conditioned-candidate-verification}
+
+The extension operates only on the ordinary F branch. Let \(\mathcal{C}(x)\) contain the
+distinct legal answer keys observed in the saved F pool. For each key, the earliest
+complete saved response is its representative. Invalid votes remain recorded but do not
+become candidate keys. Candidate membership does not use gold correctness, expected
+improvement, or offline R labels. F must provide an available legal result and at least
+two distinct legal candidates before verification runs.
+
+For candidate \(k\), the verifier retains the original messages, native options, and
+allowed evidence. It appends the target candidate and the observed candidate set. In the
+rationale-conditioned arm, it also appends the earliest saved reasoning associated with
+each candidate, explicitly identified as untrusted model opinion. It does not append vote
+counts, the F winner as an authoritative label, hidden paired inputs, or evaluation
+metadata. A rationale is neither a newly retrieved source nor a verified patient
+observation.
+
+Two scoring calls use opposite binary code mappings. Let \(\ell_{kh}(b)\) be the log score
+of code \(b\in\{A,B\}\) for mapping \(h\in\{1,2\}\), and let \(b_h^+\) be the code meaning
+``the target candidate is correct.'' The ranking score is
+
+\begin{equation}
+\label{eq:verification_score}
+v(k\mid x)=\frac{1}{2}\sum_{h=1}^{2}
+\frac{\exp\ell_{kh}(b_h^+)}
+{\exp\ell_{kh}(A)+\exp\ell_{kh}(B)}.
+\end{equation}
+
+We select the maximum-scoring candidate. An exact tie retains the F key when it is tied;
+otherwise native candidate order breaks the tie. The complete representative response is
+returned without generating a new answer or repairing auxiliary fields. A completed
+verification makes \(2|\mathcal{C}(x)|\) logical binary-scoring requests. Physical
+missing-code retrieval and failed-call costs are separately recorded and can make physical
+request counts differ from this expression. The score \(v\) is an uncalibrated ranking
+signal.
+
+Outside the supported branch, with fewer than two legal candidates, or on the adopted NLI
+route, the system retains B. A candidate-scoring failure records a technical failure and
+uses the saved F answer; an unavailable F answer remains unavailable. Shared backend
+failures stop the affected job rather than triggering a fresh answer draw. This contract
+makes the extension a test of selection among a given pool, with explicit failure
+behavior.

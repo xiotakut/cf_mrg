@@ -1,0 +1,37 @@
+\section{Discussion}
+\label{sec:discussion}
+
+The largest consistent improvement belongs to the adopted operation core. Its catalog,
+rules, and repeated readout change both the available decision interface and the amount of
+computation. The result supports this particular system composition on the evaluated
+benchmark. It does not identify a single mechanism responsible for the entire improvement,
+and it cannot be reassigned to an extension evaluated later.
+
+Additional candidate verification poses a distinct selection problem. By design, C3 cannot
+recover an answer key absent from its pool, and it can replace a correct selected answer
+with an incorrect existing candidate. The repair and damage counts establish that
+successful and harmful switches both occur; they do not measure the frequency of missing
+correct candidates or diagnose the medical cause of each mistake. Pool quality and
+selector quality should therefore be measured separately. Enlarging the pool is also not
+automatically beneficial: the C4 control changes both candidate opportunity and failure
+exposure, with its unavailable outputs retained in the result.
+
+Rationales provide extra information to the verifier, but they can contain unsupported
+statements or persuasive explanations for a wrong key. Their positive incremental point
+estimates over C2 justify further study of how they affect selection. They do not certify
+rationale truthfulness, establish calibrated confidence, or guarantee improvement over
+majority-based readout. A direct evaluation of rationale validity and an independent
+replication of pool generation would be needed to test those stronger interpretations.
+
+The source and pair analyses constrain the use of an aggregate gain. A positive overall
+score can coexist with harm on a particular source, and a changed overall mean can coexist
+with unchanged respond-pair performance. No arm was selected separately for each source or
+backbone after inspecting these outcomes. Keeping the adopted core as the common default
+preserves the distinction between an observed local gain and a deployment or
+generalization decision.
+
+Finally, the five-role description is useful only when tied to actual computation. Shared
+rule addition and removal are two functions of one execution. A model-based executor with
+zero coverage cannot explain a clinical benchmark gain. Recording these facts makes the
+architecture interpretable without implying that every question benefits from five-agent
+collaboration.

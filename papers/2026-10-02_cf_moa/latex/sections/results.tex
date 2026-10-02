@@ -1,0 +1,185 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{The adopted core improves the full native-unit
+mean}
+\label{sec:results-the-adopted-core-improves-the-full-native-unit-mean}
+
+Table~\ref{tab:main_results} reports every arm with both native-unit and input-level outcomes. B increases M4's
+ALL mean from 48.1990\% to 58.2924\%, and M5's from 47.3487\% to 59.3616\%. The paired
+family intervals for these gains are [+8.9580, +11.2340] and [+10.9177, +13.1510]
+percentage points, respectively. These are overall effects of the adopted components and
+their additional resources and computation. They do not isolate the contribution of the
+later verification stage.
+
+Figure~\ref{fig-main} displays the native-unit point estimates.
+
+\input{tables/main_results}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/main_results.pdf}
+\caption{Full-v5 native-unit scores for the six arms. All bars use the same 6,104-unit denominator;
+the chart shows point estimates, while paired contrast uncertainty is reported separately.}
+\label{fig-main}
+\end{figure}
+
+Input correctness and native-unit means need not rank arms identically. For example, M5 C2
+has fewer correct inputs than B, while their ALL means are nearly equal. Different
+native-unit structures and shared mappings explain why an input-level count cannot
+substitute for the declared main metric. We retain both views rather than selecting the
+more favorable one.
+
+\subsection{Additional verification has configuration-dependent
+effects}
+\label{sec:results-additional-verification-has-configuration-dependent-effects}
+
+Table~\ref{tab:contrasts} reports the paired contrasts, and
+Figure~\ref{fig-forest} displays their bootstrap intervals.
+
+\input{tables/contrasts}
+
+C3's effect relative to B is negative for M4 and positive for M5. At input level, M4 C3
+repairs 436 B errors but damages 711 B-correct inputs, for a net loss of 275 correct
+inputs. M5 repairs 452 and damages 363, for a net gain of 89. Both configurations
+therefore contain repairs and regressions. The aggregate difference is not explained by
+counting successful repairs alone.
+
+Including rationales improves the point estimate relative to C2 in both configurations.
+The M4 interval crosses zero, whereas the M5 interval is positive. This comparison
+isolates the saved-rationale condition within the verifier's fixed candidate-pool design;
+it does not establish that the rationales are factually reliable. For M4, improving on C2
+still leaves C3 below B.
+
+C4 has positive ALL point differences from B in both configurations, but the broader
+results do not establish a consistent advantage. M4 C4 is only +0.0295 points above B,
+with an interval of [\ensuremath{-}0.5445, +0.5895], and has 106 additional unavailable inputs. M5
+C4's ALL mean is above B, but its input-level correct count is lower and unavailable
+inputs increase by 64. C5's ALL point estimate is below B in both configurations. We
+preserve C3 as the declared research extension and B as the adopted default, without
+selecting a different winning arm for each configuration.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/verification_forest.pdf}
+\caption{Paired family bootstrap contrasts. Zero marks no change; intervals quantify
+exposed-benchmark variation and do not provide selection-adjusted or
+independent-confirmation evidence.}
+\label{fig-forest}
+\end{figure}
+
+\subsection{Source-level gains and regressions
+coexist}
+\label{sec:results-source-level-gains-and-regressions-coexist}
+
+The aggregate C3 effect contains substantial source variation. On MedCounterFact (M20), C3
+improves over B by +2.4112 points for M4 and +9.6447 for M5. On the AMQA-derived source
+(M12), the corresponding differences are \ensuremath{-}5.8219 and \ensuremath{-}2.0548. Cultural-cue questions (M11)
+also decrease in both configurations, by \ensuremath{-}1.5474 and \ensuremath{-}3.8685 points. These are
+source-specific point estimates; we do not interpret a ranking of small source effects as
+a corrected significance test.
+
+The 13-unit R4 clinical source illustrates the danger of suppressing unfavorable strata.
+B's M5 score is already below C0, and C3 recovers only one unit relative to B. M4 C3
+instead loses three units relative to B. The source remains in the full score. The
+system's separate explicit-model component has no clinical-v5 coverage, so these outcomes
+cannot be presented as evidence that model-based consequence execution succeeded or failed
+on these inputs.
+
+M01 diagnosis scores are identical across B and C2--C5 because the extension leaves the
+catalog route unchanged. Other unchanged source scores should not automatically be
+interpreted as evidence of a particular routing mechanism: multiple routes or changed
+answers can produce the same source aggregate. The released format and route tables
+provide the needed separation. Figure~\ref{fig-sources} and Appendix~\ref{sec:appendix_sources} retain every source rather than
+reporting a selected improvement subset.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/source_heterogeneity.pdf}
+\caption{C3 minus B for every source and configuration. Sources are retained in identifier order,
+including the small R4 clinical source; no source weighting replaces the primary ALL
+score.}
+\label{fig-sources}
+\end{figure}
+
+\subsection{Paired outcomes distinguish maintenance from
+response}
+\label{sec:results-paired-outcomes-distinguish-maintenance-from-response}
+
+Table~\ref{tab:paired} reports the both-endpoints-correct counts.
+
+\input{tables/paired}
+
+Relative to B, C3 reduces M4 maintain correctness by 296 pairs and increases M5 by 26. The
+M4 change is \ensuremath{-}4.3288 percentage points, with a family interval of [\ensuremath{-}5.4864, \ensuremath{-}3.1947].
+All B-based arms have the same respond count in each configuration. The core's improvement
+over C0 on respond pairs is therefore retained, but additional verification has no
+observed aggregate increment on this fixed subset. Pair correctness measures answer
+adequacy at both endpoints and should not be reduced to a preference for either changing
+or keeping an answer.
+
+\subsection{Both support-update operations contribute within the rule
+subset}
+\label{sec:results-both-support-update-operations-contribute-within-the-rule-subset}
+
+The operation ablation reuses the same extracted facts, support states, and native
+assembly policy for all 123 rule-routed inputs. Disabling an operation changes assembly
+alone; it does not rerun extraction or select a favorable subset. Table~\ref{tab:ablations} therefore tests
+the role of the two update directions within the adopted shared rule core.
+
+Figure~\ref{fig-rules} displays the corresponding ablation counts.
+
+\input{tables/ablations}
+
+Removing addition lowers correct counts by 26 and 23; removing withdrawal lowers them by
+16 and 11. Each ablation can also repair some individual errors, so these net changes do
+not imply that either operation is always correct. The results support retaining both
+directions in this shared execution policy. They do not measure an interaction between two
+independently trained agents or an ablation of all 13,905 inputs.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\linewidth,height=0.47\textheight,keepaspectratio]{figures/rule_ablations.pdf}
+\caption{Correctness of the shared rule component with addition or removal disabled. The
+denominator is the complete 123-input rule subset; the same facts and support states are
+reused.}
+\label{fig-rules}
+\end{figure}
+
+\subsection{Additional selection incurs measurable
+computation}
+\label{sec:results-additional-selection-incurs-measurable-computation}
+
+Ordinary F covers 9,293 inputs per configuration. At least two observed legal keys occur
+on 2,964 M4 inputs and 2,295 M5 inputs, corresponding to 21.3161\% and 16.5049\% of the
+complete 13,905-input scope. These coverage counts include unavailable cases and invalid
+old votes in their accounting; they are not counts of successful verification. Candidate
+pools depend on the model configuration, so the triggered subsets are not identical
+controlled populations across configurations.
+
+Table~\ref{tab:costs} reports the attributed B and C3 request and token counts.
+
+\input{tables/costs}
+
+C3 adds approximately 22.25\% to B's attributed request count for M4 and 16.84\% for M5.
+Additional computation accompanies a negative quality change in one configuration and a
+positive change in the other. Figure~\ref{fig-cost} displays the recorded B-based arms against their
+method-attributed requests. C0 is not assigned zero cost to place it on this frontier
+because its common upstream cost is unknown.
+
+The physical ledger for the completed multi-arm full-v5 run records 162,979 requests,
+957,810,324 input tokens, and 18,291,906 output tokens. These totals must not be divided
+by six to estimate a method cost, and method-attributed totals must not be summed to
+recover the physical ledger because they share B. For each configuration and B-based
+method, 2,503 inputs have historical timing gaps. The analysis therefore reports request
+and token attribution with missing-time markers, not a fully measured end-to-end
+efficiency claim.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/cost_quality.pdf}
+\caption{Native-unit quality versus attributed physical requests for the B-based methods. Shared B
+computation is assigned once to each method; unknown common original-system and retrieval
+costs are excluded. Lines or proximity do not imply equal prompt length or equal latency.}
+\label{fig-cost}
+\end{figure}

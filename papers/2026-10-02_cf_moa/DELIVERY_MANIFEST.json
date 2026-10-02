@@ -1,6 +1,6 @@
 {
   "date": "2026-10-02",
-  "scope": "GitHub publication directory; original local delivery manifest remains in cf_moa_paper_bundle.zip",
+  "scope": "Current LaTeX edition of the GitHub paper directory; original delivery retained in cf_moa_paper_bundle.zip",
   "provenance": "PUBLICATION.json",
   "files": [
     {
@@ -10,18 +10,23 @@
     },
     {
       "path": "PUBLICATION.json",
-      "bytes": 1945,
-      "sha256": "4bf91aac784e8f1be01f1bb34484fcb07809eca90677db159a0af6d931b4c5b8"
+      "bytes": 1600,
+      "sha256": "74dcc570c4817e74909589cf125fffb46dd054e3aa5bff3a4cc862494c7039f2"
     },
     {
       "path": "README.md",
-      "bytes": 5961,
-      "sha256": "74fd97c0e1cce8f198b0794945d0765c76fbf38f5132abf6efc3155644d77519"
+      "bytes": 6281,
+      "sha256": "da29ca3b770d7795215d1aceb392b5278fdbcc8fb3c7fac42f4ab7da657b88af"
     },
     {
       "path": "REPRODUCE.md",
-      "bytes": 5682,
-      "sha256": "4ef8f1348f010b7bee4f347acd4e3b9b8dfef3eb5eeb3ccada54d80cdec38fe3"
+      "bytes": 7761,
+      "sha256": "7f2317319cc6b7bf6baa716bf1f5e569590b69ec99312142251179ed6f3749eb"
+    },
+    {
+      "path": "cf_moa_latex.zip",
+      "bytes": 301880,
+      "sha256": "2dd34ccd9ccfa10a8cef9b138720e77ecf126868001241b194d7190e63c4b865"
     },
     {
       "path": "cf_moa_paper_bundle.zip",
@@ -1004,6 +1009,196 @@
       "sha256": "8cebe0c21cdba24130979eddedadf2e6ec6ee4420bb1263e03ca6a5859cadc61"
     },
     {
+      "path": "latex/.gitignore",
+      "bytes": 8,
+      "sha256": "020c2606e8ed484089c2083e0be438b9d0736bee1558a6b76af0d58bd23f69cf"
+    },
+    {
+      "path": "latex/Makefile",
+      "bytes": 32,
+      "sha256": "91c909361a649099a034ba9daf926908b86d3f12eb30db2f89e327c2a07dfb22"
+    },
+    {
+      "path": "latex/README.md",
+      "bytes": 2336,
+      "sha256": "ecb09a69bb845bd517e6713648b6cfc7aeddd3c6b0fa2096466170ea883d68d8"
+    },
+    {
+      "path": "latex/build.sh",
+      "bytes": 792,
+      "sha256": "8a3a1a0f6baccec7632db639b7d554536994c2d17aba3ea3752fdc5ca0fcbc7e"
+    },
+    {
+      "path": "latex/figures/cost_quality.pdf",
+      "bytes": 17659,
+      "sha256": "2f38e0d3c4d7d36a55697575f1d0bfaf693de794ebe66b8f1cf422df084db840"
+    },
+    {
+      "path": "latex/figures/main_results.pdf",
+      "bytes": 14674,
+      "sha256": "076d7dfefc29d6ca17d0e81ff3dd86feacf41225f04df8089b8926e1f4f67441"
+    },
+    {
+      "path": "latex/figures/rule_ablations.pdf",
+      "bytes": 14061,
+      "sha256": "5d9cfcd5fd2590cd93be177096212884f1aa368cee62d45698d6896eb2687273"
+    },
+    {
+      "path": "latex/figures/source_heterogeneity.pdf",
+      "bytes": 14572,
+      "sha256": "82c99f31496c81f56f6c36a3866648c226947fc3e4602f516908e0625260d697"
+    },
+    {
+      "path": "latex/figures/verification_forest.pdf",
+      "bytes": 16780,
+      "sha256": "8a7154242d132e6ecbd9623f75dedc0dc6277fa06f4f70cafa15035266453299"
+    },
+    {
+      "path": "latex/main.pdf",
+      "bytes": 194286,
+      "sha256": "3c48023e95da9c93a84693ebe6cb09c50a336d5b96c9b3dc59b1bc6c929388f9"
+    },
+    {
+      "path": "latex/main.tex",
+      "bytes": 1912,
+      "sha256": "bdd29cc54949735a953a39267caeb85f25b35c9af11532580dd8df73cfc83a33"
+    },
+    {
+      "path": "latex/references.bib",
+      "bytes": 23140,
+      "sha256": "bb9138c03d3bb9e0ed096f2200fc6826384015d5457a8c584993b1f520162f4b"
+    },
+    {
+      "path": "latex/sections/abstract.tex",
+      "bytes": 1902,
+      "sha256": "e1e440a4b7347d719d7896b1a152761a881d25cb5fa5f6e3f230da0183f27398"
+    },
+    {
+      "path": "latex/sections/appendix_model.tex",
+      "bytes": 1042,
+      "sha256": "c864d4be16aff121eb348d653837331db8345ccbf441fddbccd6f94535167e07"
+    },
+    {
+      "path": "latex/sections/appendix_reproduction.tex",
+      "bytes": 2277,
+      "sha256": "067e9bf5fe856fdb26e072c335b3690615320481e0254c974c71a8586fbbf768"
+    },
+    {
+      "path": "latex/sections/appendix_sources.tex",
+      "bytes": 1509,
+      "sha256": "d2aacca3303199264c45b747683a00c7cb46d53e07b253b8b439542ea8f6e327"
+    },
+    {
+      "path": "latex/sections/conclusion.tex",
+      "bytes": 737,
+      "sha256": "f06e6f1f531583aaf0d33f52a3381c715a5d6b0d1191655c001b728764e8b0d6"
+    },
+    {
+      "path": "latex/sections/declarations.tex",
+      "bytes": 2408,
+      "sha256": "6d6bacf5343baa8574368abc8ffca62e489d57e38b69cf6852c979bd38ef29d7"
+    },
+    {
+      "path": "latex/sections/discussion.tex",
+      "bytes": 2495,
+      "sha256": "8914960815fc78970a0129cd1df39b8d9a5a5ce7226d8fab860dc36c15c5c5c7"
+    },
+    {
+      "path": "latex/sections/experimental_setup.tex",
+      "bytes": 3474,
+      "sha256": "27d68d538b297f33f8f9d6ed0e74e6ac7d64993c39f01dd5673eca883daf4cd9"
+    },
+    {
+      "path": "latex/sections/introduction.tex",
+      "bytes": 3473,
+      "sha256": "3fd893bcdd002f09fa6ff7af766820b9332171a5fd1799a5ae512a9d79d1ebd9"
+    },
+    {
+      "path": "latex/sections/limitations.tex",
+      "bytes": 2601,
+      "sha256": "f948f7079e95ee27d3d53c920e71e25596932533ad6f63458b437cfe4931fe60"
+    },
+    {
+      "path": "latex/sections/method.tex",
+      "bytes": 6817,
+      "sha256": "1d25c446d84053ef9ebab9898d3fe2d6ca8d20fd9498468719cbfda5514e1255"
+    },
+    {
+      "path": "latex/sections/related_work.tex",
+      "bytes": 2807,
+      "sha256": "3901d90385727e71a66fa24a4319036d21d8e3581c0ee3e096192c28ae066f0a"
+    },
+    {
+      "path": "latex/sections/results.tex",
+      "bytes": 9792,
+      "sha256": "72ba0bcebe2ca2112eb9edef24803ea2dd87144a868c79657cd8501179a8edc6"
+    },
+    {
+      "path": "latex/sections/task_contract.tex",
+      "bytes": 6362,
+      "sha256": "38d018149ed95d9ebedc7dc9312828e77737d25ebeec663b9b979f2c7b9588d1"
+    },
+    {
+      "path": "latex/tables/ablations.tex",
+      "bytes": 481,
+      "sha256": "c77d62c9bd9a49ec94e5f7ea5de869e8c068ec04be0f96e89548baa8cbf3c8dc"
+    },
+    {
+      "path": "latex/tables/arms.tex",
+      "bytes": 820,
+      "sha256": "67b22dc8e479c08ed44516dd506ba67853d2429da5c69cd6972bfb79583f8578"
+    },
+    {
+      "path": "latex/tables/contrasts.tex",
+      "bytes": 821,
+      "sha256": "e1adf83fe448a0de9aab4e98431a18d9823001b37a0e268eac449ea4a56dca16"
+    },
+    {
+      "path": "latex/tables/costs.tex",
+      "bytes": 675,
+      "sha256": "e064c27515471a8e042c5bf2aaa275be258d0c69fb877dfe0ac006249092aa08"
+    },
+    {
+      "path": "latex/tables/historical_model.tex",
+      "bytes": 922,
+      "sha256": "6347e5c417e4e886f8e1bc45536d341129f4c0b5a50ab9b0d865acf8b47f0859"
+    },
+    {
+      "path": "latex/tables/main_results.tex",
+      "bytes": 964,
+      "sha256": "146c30f7988699b25e1f014cb8001e73344344459c2997fa63e9e09f62f6cadf"
+    },
+    {
+      "path": "latex/tables/paired.tex",
+      "bytes": 651,
+      "sha256": "8821c29c55b1a7c45e5a590480c3a871864ff95dc833bea3a28982fa732e7ed6"
+    },
+    {
+      "path": "latex/tables/sources.tex",
+      "bytes": 971,
+      "sha256": "935f5ec16c755d8d80ea5eab72217fec0ff962208b772b5e2641200a41aa441e"
+    },
+    {
+      "path": "legacy_typst/README.md",
+      "bytes": 512,
+      "sha256": "a8fd0a7eec36daf9263bfc5a98a5f3f46903ca1a2f79e89dae5b0940e3cc9b51"
+    },
+    {
+      "path": "legacy_typst/initial_publication.json",
+      "bytes": 1945,
+      "sha256": "4bf91aac784e8f1be01f1bb34484fcb07809eca90677db159a0af6d931b4c5b8"
+    },
+    {
+      "path": "legacy_typst/manuscript.tex",
+      "bytes": 69112,
+      "sha256": "85931ebc3005ff525dae7f6c63847f8ec1004b0456e33844f721dbc91e407e03"
+    },
+    {
+      "path": "legacy_typst/manuscript.typ",
+      "bytes": 61799,
+      "sha256": "7d928bf25b0824322ef753e952670210ca3f2e6ba2881f8963f5aa383a7650b0"
+    },
+    {
       "path": "manuscript.docx",
       "bytes": 602441,
       "sha256": "8dcfef37eef4e066deb13466b51a457f37824ab0a3b44479702b88d9ca28302b"
@@ -1020,23 +1215,13 @@
     },
     {
       "path": "manuscript.pdf",
-      "bytes": 952260,
-      "sha256": "450fb82ab145396dfc45da4b091f52773933fb0c9b4230afdc4e6f464b589d07"
+      "bytes": 194286,
+      "sha256": "3c48023e95da9c93a84693ebe6cb09c50a336d5b96c9b3dc59b1bc6c929388f9"
     },
     {
       "path": "manuscript.readable.md",
       "bytes": 58486,
       "sha256": "91005f643982f1eadd8ccc9b45a1a314c6317ef1775ba5ff9283fad58423a3fa"
-    },
-    {
-      "path": "manuscript.tex",
-      "bytes": 69112,
-      "sha256": "85931ebc3005ff525dae7f6c63847f8ec1004b0456e33844f721dbc91e407e03"
-    },
-    {
-      "path": "manuscript.typ",
-      "bytes": 61799,
-      "sha256": "7d928bf25b0824322ef753e952670210ca3f2e6ba2881f8963f5aa383a7650b0"
     },
     {
       "path": "outline.zh.md",
@@ -1050,8 +1235,8 @@
     },
     {
       "path": "requirements-build.txt",
-      "bytes": 99,
-      "sha256": "f45f8ac9cc07b5698a94349ef93126bb40e09ae355e5d7c5700b57539d06bcfa"
+      "bytes": 47,
+      "sha256": "c65a88bff731cc21dc09bff3a9ea2aafc940f32f3f371e564355c5bade340e07"
     },
     {
       "path": "scripts/build_figures_tables.py",
@@ -1060,8 +1245,8 @@
     },
     {
       "path": "scripts/build_manuscript.py",
-      "bytes": 7014,
-      "sha256": "53c7cfea89a224a5ffca43530482cdf8e37e22efa9b1d4324a754e12438e005f"
+      "bytes": 2722,
+      "sha256": "17e6e6d25bd049965c2de74341de0274f5a36a9b16baf2909bd5c649b54b99a5"
     },
     {
       "path": "tables/ablations.csv",
@@ -1187,6 +1372,71 @@
       "path": "validation/final_editorial_checks.json",
       "bytes": 2258,
       "sha256": "2d0d89aef4e70b6296a849e5b67c50321af93282c35839c124f92ecc2ca422f3"
+    },
+    {
+      "path": "validation/latex_build_attempts.json",
+      "bytes": 1512,
+      "sha256": "31b38fdc83edcab377bf7c2355b8a3ecf8f22a5f7abf42ef130f747a137d8f96"
+    },
+    {
+      "path": "validation/latex_build_receipt.json",
+      "bytes": 7068,
+      "sha256": "d39b74d41d15e447f89fffa8177bc835a470204baaa1edfd00c294e63e3b5a9f"
+    },
+    {
+      "path": "validation/latex_logs/latex_attempt_01.log",
+      "bytes": 2780,
+      "sha256": "bbef1a86ca6ffba866710f65ad07e3ece8e0a4841131fd00994b66a3f74ab986"
+    },
+    {
+      "path": "validation/latex_logs/latex_attempt_02.log",
+      "bytes": 590,
+      "sha256": "208c85eda6aa68759993daab77e943a15f4ecfaf7fb1600f8864c589dfab6611"
+    },
+    {
+      "path": "validation/latex_logs/latex_attempt_03.log",
+      "bytes": 1003,
+      "sha256": "dbff273e572ec5312279a8ede0b7c6e919b92bc5ecf0a94eb45678117b80310a"
+    },
+    {
+      "path": "validation/latex_logs/latex_attempt_04.log",
+      "bytes": 591,
+      "sha256": "fc36338a49e6bf6c7ed7690ddabef77d6f20bf8e561c6c4d0a7cf99ce43d93b2"
+    },
+    {
+      "path": "validation/latex_logs/latex_attempt_05.log",
+      "bytes": 593,
+      "sha256": "564948980b60724a8ec94f0b58f5775ded760182d40eea3dbf3815f67eda7d1e"
+    },
+    {
+      "path": "validation/latex_logs/main.bbl",
+      "bytes": 20925,
+      "sha256": "8c839b7eb61745be5ed1c1e31c8a4e2e3ed3faca753e1815cb29de2a2e5b8fb6"
+    },
+    {
+      "path": "validation/latex_logs/main.blg",
+      "bytes": 194,
+      "sha256": "a200215513d0fde1804eb5589d7dd9d08435c2ef80a53f6fc427f95ecd399eae"
+    },
+    {
+      "path": "validation/latex_logs/main.log",
+      "bytes": 17890,
+      "sha256": "b959a77ec11df4c8a2eada7c20b77773416aed36248d05d13834a26a43a24710"
+    },
+    {
+      "path": "validation/latex_portable_build_receipt.json",
+      "bytes": 3875,
+      "sha256": "fa6509d869eb1ea0fcb8032de5d530ed7bea7b32777aadc40922534f792c25fa"
+    },
+    {
+      "path": "validation/latex_source_audit.json",
+      "bytes": 10177,
+      "sha256": "3f86130c15fa07f04c991b21d31348fdb2dc8d8b2668cbfef2ee7bcde2338656"
+    },
+    {
+      "path": "validation/latex_toolchain_install.json",
+      "bytes": 544,
+      "sha256": "967d8549b710040a8ca48cb371d291e99c715ff7fa4da4c2bf57f441b00d71e4"
     },
     {
       "path": "validation/manuscript_build_receipt.json",
