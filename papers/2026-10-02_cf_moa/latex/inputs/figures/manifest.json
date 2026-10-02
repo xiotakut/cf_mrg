@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "files": [
+    {
+      "file": "framework.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+      "bytes": 78763,
+      "source_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "source_sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507"
+    },
+    {
+      "file": "heads.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361,
+      "source_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "source_sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8"
+    },
+    {
+      "file": "benchmark.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+      "bytes": 85169,
+      "source_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "source_sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101"
+    }
+  ],
+  "use": "Frozen audited summaries; original source score paths and hashes remain within the audits.",
+  "historical_note": "The framework audit contains an older 40-case narrative subsequently corrected in the dossier. No 40-case fields are used in these figures or tables.",
+  "context_document": {
+    "path": "/home/data3/txy/docs/paper/research_dossier.md",
+    "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+    "lines": 953,
+    "reading_coverage": "All content covered: current data chapter lines152–290 read directly; prior complete semantic reading of the six component drafts covers223 matching paragraphs; all32 unmatched remaining paragraphs/headings inspected, including post-merge changes. Current introduction1–90 re-read. No claim of reading every raw experiment log.",
+    "use": "Design/context only; quantitative output derives solely from the three frozen JSON inputs.",
+    "bytes": 141289
+  }
+}

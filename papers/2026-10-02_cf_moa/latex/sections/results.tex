@@ -1,322 +1,62 @@
 \section{Results}
 \label{sec:results}
 
-\subsection{Seven systems reveal different support-update weaknesses}
-\label{sec:results-seven-baselines}
+\subsection{Functional evaluation exposes different weaknesses}
+\label{sec:baseline_results}
+\input{tables/main_system_results}
 
-Table~\ref{tab:seven-baselines} reports the complete selected baseline comparison. ALL
-means range from 47.35\% to 51.61\%, while R1, R2, and R3 expose substantially lower and
-more variable scores. MA-RAG has the highest ALL point estimate (51.61\%) and R5 point
-estimate (73.37\%), yet the lowest R3 score (8.59\%). MedRAG--Qwen leads R2 at 41.77\%
-but scores 25.24\% on R3; MedRAG--Llama reaches 30.42\% on R3. These observations
-motivate task-specific analysis rather than treating the overall ranking as a ranking of
-all reasoning capabilities. We do not claim statistical superiority from these point
-estimates alone.
+The seven baselines occupy a narrow range on the aggregate metric but exhibit substantially different functional profiles (Table~\ref{tab:main-system-results}). MA-RAG has the highest baseline aggregate score, 51.61, and the highest preservation score, 73.37, yet scores 8.59 on candidate comparison. \sysQ{} leads the baselines on support removal at 41.77, while \sysL{} leads on candidate comparison at 30.42. Direct answering reaches 48.10 overall but only 8.86 on support removal. Thus, a system can answer many ordinary or preservation-oriented items correctly while struggling to revise the support for a specific decision.
 
-\input{tables/seven_baselines}
+The taxonomy makes these differences actionable. Support removal calls for checking whether an answer's prerequisites still hold; diagnosis calls for comparing viable candidates under the changed evidence. Neither need is fully described by the number of retrieved passages or generated answers. This distinction motivates the specialized operations evaluated next.
 
-The source composition helps explain what needs investigation. R3 contains 680 MedEinst
-diagnostic units, 10 prescribing units, and 43 single-choice units. R2 contains 75
-MedPIC units, of which 66 have a ``none'' answer and nine still require a drug option,
-plus four single-choice units. R1 includes 1,780 diagnostic, 788 evidence-relation,
-96 prescribing, and 202 single-choice units. Low scores across these strata therefore
-do not identify one common failure mechanism. In particular, many diagnostic failures
-are unrecognized by the frozen label mapping, while R2 improvements must distinguish
-withdrawal from retaining another valid support path.
-
-\subsection{Terminal heads improve all seven configurations}
-\label{sec:results-seven-heads}
-
-Table~\ref{tab:seven-heads} and Figure~\ref{fig:seven-heads} give the complete original-to-head
-comparison. All 21 configuration-by-stratum comparisons have positive net gains. R1
-increases by 14.83--19.12 percentage points, R2 by 16.46--29.11 points, and R3 by
-18.69--35.20 points. For example, MedRAG--Llama improves from 798 to 1,225 correct R1
-units, 23 to 39 R2 units, and 223 to 386 R3 units; MedRAG--Qwen improves from 819 to
-1,367, 33 to 46, and 185 to 443, respectively. The same frozen decision policy is used
-across all configurations. These are established development gains from changing the
-terminal decision procedure, including in systems whose upstream procedures differ
-substantially.
-
-\input{tables/seven_heads}
-
-\begin{figure}[htbp]
+\subsection{Specialized heads transfer across seven configurations}
+\label{sec:head_results}
+\begin{figure*}[t]
 \centering
-\includegraphics[width=0.98\linewidth,height=0.55\textheight,keepaspectratio]{figures/seven_system_heads.pdf}
-\caption{Original and terminal-head accuracy for all seven configurations in the complete
-R1, R2, and R3 development strata. Every uncovered input remains in its stratum's
-denominator. R3 is a subset of R1, and the panels share cases and backbones; they do not
-represent three independent test sets or seven complete CF-MoA evaluations.}
-\label{fig:seven-heads}
-\end{figure}
+\includegraphics[width=\textwidth]{seven_system_head_gains.pdf}
+\caption{Original and head-augmented performance across all seven configurations. Each panel uses the complete corresponding category: support addition ($n=2{,}866$), support removal ($n=79$), and candidate comparison ($n=733$). All 21 comparisons improve. Category memberships overlap; exact correct counts and branch coverage are in Appendix~\ref{app:heads}.}
+\label{fig:seven-head-gains}
+\end{figure*}
 
-The R1 extension adds evidence beyond simply recounting the earlier R3 result. Among the
-2,133 R1 units outside R3, the seven configurations gain 261--319 correct answers. Its
-active new scope includes 1,100 diagnostic inputs and 62 additional rule-covered inputs.
-Conversely, the 1,014 uncovered R1 inputs retain their original answers, including the
-450 selected R5 units that also belong to R1. This establishes gains over the complete
-declared R1 scope without implying that every R1 task was modified.
+Figure~\ref{fig:seven-head-gains} shows improvements in all 21 system--category comparisons. Support addition rises from an original range of 26.73--31.44\% to 42.74--47.70\%; support removal rises from 7.59--41.77\% to 29.11--58.23\%; and candidate comparison rises from 8.59--30.42\% to 32.47--60.44\%. The gains occur across direct answering, retrieval-based systems, and systems with their own agent or control loops. They show that a functional head can repair failures left by different upstream workflows.
 
-Gains coexist with regressions. Across the complete R1 stratum, M4 repairs 481 errors
-and harms 54 previously correct answers; M5 repairs 584 and harms 36. For R3 the
-corresponding counts are 201/38 and 278/20. R2 M7 improves overall while its
-remaining-support subset declines from 3/9 to 2/9. The system-level result is therefore
-consistent positive net improvement across seven configurations, rather than universal
-per-case or per-subgroup improvement.
+The head construction reflects the overlap between categories. On support addition, the adopted wrapper routes 1,780 units to diagnosis, 72 to rule execution, and retains the original result on 1,014 units. On candidate comparison, 680 units use diagnosis, ten use rules, and 43 retain their original result. These shared operations connect the category analysis to an implementable system, while avoiding a separate learned model for every label.
 
-The saved baseline and head records also agree across shared categories: the R1--R3
-intersection reproduces all 5,131 configuration-by-input outcomes. This consistency
-supports the reuse accounting; it does not turn overlapping observations into additional
-independent evidence.
+\paragraph{Candidate presentation accounts for much of the diagnosis gain.}
+On the 680-unit diagnostic subset, averaging across the seven systems, the original score is 20.97\%, a single catalog decision reaches 45.44\%, six uncalibrated decisions reach 46.47\%, and calibrated decisions reach 46.13\%. The largest common improvement therefore comes from asking the model to make an explicit decision over the available diagnoses. Additional voting and calibration have smaller, configuration-dependent effects. For \sysL{}, the correct count changes from 203 to 339 with one catalog decision and to 359 with either six-decision variant. For \sysQ{}, the corresponding counts are 160, 382, 402, and 410. Appendix~\ref{app:heads} gives every configuration and additional source checks.
 
-\subsection{Controls locate the gains and their limits}
-\label{sec:results-head-controls}
+\paragraph{Both support operations contribute.}
+\input{tables/support_operation_ablation}
+The shared support executor uses the extracted facts to add newly justified options and remove contradicted ones. On the 123-input control in Table~\ref{tab:support-ablation}, disabling addition reduces correct answers from 69 to 43 for Llama and from 71 to 48 for Qwen. Disabling removal reduces them to 53 and 60. Both operations contribute under the same fact extraction and rule statuses.
 
-Table~\ref{tab:head-controls} separates the full-head effect from its components. On the
-680 R3 diagnostic inputs, mean accuracy across configurations rises from 20.97\% for
-original answers to 45.44\% for single-pass catalog selection, 46.47\% for uncorrected
-six-vote selection, and 46.13\% for corrected six-vote selection. Thus, catalog
-re-decision already obtains most of the observed gain. Correction changes correct counts
-relative to uncorrected voting by 0, $-10$, $+4$, 0, $+8$, $-12$, and $-6$ in
-M0/M2/M3/M4/M5/M6/M7 order. The full component is retained as one frozen policy; we do
-not choose each system's best aggregation after observing these results.
+The small support-removal category also exposes a dataset prior: a coverage-matched constant ``None'' control obtains more correct answers than the head in each of the seven configurations. The head's value is therefore better assessed together with the operation ablation and the nine covered prescribing examples with remaining support, where the constant control scores zero. On these nine examples, five configurations improve, one is unchanged, and one declines. This result favors explicit support execution as a useful operation while showing why the raw category average alone is an incomplete diagnosis.
 
-\input{tables/head_controls}
+\subsection{The complete controller improves overall and paired correctness}
+\label{sec:full_results}
 
-Of 1,272 R3 diagnostic repairs across systems, 1,186 start from an unmapped diagnosis,
-23 from another native-invalid answer, and 63 from a valid wrong answer. Unmapped
-outputs include names, granularity, lists, and incorrect diseases, so the first two
-groups' 95.05\% share is not a clinical adjudication of ``format-only'' repairs. It
-does show why a large gain under the frozen mapping cannot all be attributed to better
-medical inference. Earlier matched 40-input controls provide a narrower distinction:
-M4 and M5 respectively obtain 12 and 9 correct answers out of 40 originally, 15 and
-11 after name normalization alone, and 18 each after reading the patient and choosing
-within the same catalog. Re-decision has
-value beyond that presentation control on this development subset.
+On the complete benchmark, the aggregate score rises from 48.20 to 58.29 for \sysL{} and from 47.35 to 59.36 for \sysQ{} (Table~\ref{tab:main-system-results}). The gains are 10.09 percentage points (95\% family bootstrap interval: 8.96--11.23) and 12.01 points (10.92--13.15). Both configurations improve on support addition, support removal, candidate comparison, and preservation. Their final scores also exceed the highest aggregate baseline, although the within-configuration contrasts provide the direct measure of the controller's effect.
 
-For R2, all 130 repairs start from native-valid original answers and use exact-set
-scoring. A policy that selects ``none'' on the same 55 covered inputs and preserves
-the other 24 original answers nevertheless scores 48, 47, 58, 58, 56, 52, and 54 out
-of 79, above every default head total. It gets 0/9 remaining-support cases correct,
-whereas the head gets 2--6/9. Both findings matter: the head changes support behavior,
-but its aggregate score has not surpassed this strong answer-distribution control.
-With final facts fixed, switching from all relevant rules to question-scoped rules
-improves both backbones from 24/48 to 48/48 on controlled scope probes. Those probes
-test a specific execution distinction, not 48 independent clinical cases.
+On the 13 clinical consequence units, \sysL{} remains at 53.85 while \sysQ{} decreases from 53.85 to 23.08 under the readout branch. This localized regression is retained in the main table alongside the larger-category gains.
 
-\subsection{External component checks bound the transfer claim}
-\label{sec:results-component-transfer}
-
-Frozen component checks were completed in addition to the exposed v5 development
-experiments. On 47 qualifying ASCENT source records,\footnote{Source implementation and
-data: \url{https://github.com/naver-ai/ascent/tree/89091716698d6a2fa78b81d8380e7fec57e73fa5}.} comprising 42 source-training and five
-source-test records, the catalog head obtains 38 and 39 correct answers for Llama and
-Qwen under the frozen canonical-name metric, exactly the totals of same-prompt
-single-pass catalog selection. These records were subsequently reused for targeted
-development; later variants cannot treat them as unseen confirmation data. On three
-successive CUPCase batches totaling 18 source records,\footnote{Author dataset:
-\url{https://huggingface.co/datasets/ofir408/CupCase/tree/157a85b1a0fa6d0e25e5209a1cdaf41cf1ff8753}.} corrected voting obtains 15
-and 16 correct answers out of 18 for Llama and Qwen, uncorrected voting obtains 16
-and 17, and single-pass native four-candidate selection obtains 15 and 18.
-These are finite-source adaptations using two backbones,
-not seven upstream retrieval systems or an independent counterfactual paired test.
-They support the operability of the candidate interface while leaving stable additional
-calibration benefits unestablished.
-
-In a separate frozen rule evaluation, 11 constructed cases each supply a base, a
-support-added, and an irrelevant-information endpoint. The program obtains 21/33 and
-25/33 correct, compared with 6/33 and 17/33 for a model executing the same facts,
-rules, scope, and assembly contract. This is evidence for finite rule execution under
-the tested resources. It leaves errors in fact extraction and UNKNOWN inheritance,
-and it does not supply a new independent clinical prescribing cohort. A 201-question
-relation control, not included in the seven-system head, improves from ordinary redo
-to target-scoped redo by 102\,$\rightarrow$\,118 for M4 and
-120\,$\rightarrow$\,122 for M5. The respective review-cluster intervals are
-[$+1.03$, $+14.93$] and [$-5.19$, $+7.37$] percentage points; only the first confirms
-an increment within that exposed scope. These controls preserve successful component
-results while identifying which stronger claims remain unsupported.
-
-\subsection{The later CF-MoA core improves the full native-unit
-mean}
-\label{sec:results-the-adopted-core-improves-the-full-native-unit-mean}
-
-The remaining results concern the separate M4/M5 six-arm composition experiment.
-Table~\ref{tab:main_results} reports every arm with both native-unit and input-level outcomes. B increases M4's
-ALL mean from 48.1990\% to 58.2924\%, and M5's from 47.3487\% to 59.3616\%. The paired
-family intervals for these gains are [+8.9580, +11.2340] and [+10.9177, +13.1510]
-percentage points, respectively. These are overall effects of the adopted components and
-their additional resources and computation. They do not isolate the contribution of the
-later verification stage.
-
-Figure~\ref{fig-main} displays the native-unit point estimates.
-
-\input{tables/main_results}
-
-\begin{figure}[htbp]
+\begin{figure*}[t]
 \centering
-\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/main_results.pdf}
-\caption{Full-v5 native-unit scores for the six arms. All bars use the same 6,104-unit denominator;
-the chart shows point estimates, while paired contrast uncertainty is reported separately.}
-\label{fig-main}
-\end{figure}
+\includegraphics[width=\textwidth]{paired_behavior.pdf}
+\caption{Correctness on both members of a pair. On answer-preserving pairs, correct counts increase from 4,005 to 4,440 for Llama and from 3,528 to 4,460 for Qwen ($n=6{,}838$). On answer-changing pairs, they increase from 13 to 347 and from 27 to 360 ($n=1{,}780$). Agreement alone does not satisfy either measure.}
+\label{fig:paired-behavior}
+\end{figure*}
 
-Input correctness and native-unit means need not rank arms identically. For example, M5 C2
-has fewer correct inputs than B, while their ALL means are nearly equal. Different
-native-unit structures and shared mappings explain why an input-level count cannot
-substitute for the declared main metric. We retain both views rather than selecting the
-more favorable one.
+Paired evaluation tests the behavior that motivates the benchmark (Figure~\ref{fig:paired-behavior}). On answer-preserving pairs, both-side correctness rises from 58.57 to 64.93\% for Llama and from 51.59 to 65.22\% for Qwen. On answer-changing pairs, it rises from 0.73 to 19.49\% and from 1.52 to 20.22\%, respectively. All four paired differences have positive family-bootstrap intervals. The controller thus improves selective response to a change as well as correctness under a change that should leave the answer intact. The lower absolute scores on changing pairs identify evidence-sensitive updating as a continuing challenge.
 
-\subsection{Additional verification has configuration-dependent
-effects}
-\label{sec:results-additional-verification-has-configuration-dependent-effects}
+\subsection{Conditional execution and stable readout}
+\label{sec:conditional}
 
-Table~\ref{tab:contrasts} reports the paired contrasts, and
-Figure~\ref{fig-forest} displays their bootstrap intervals.
+The consequence agent addresses tasks with an explicit executable model. On 24 virtual physiological profiles with 12 questions each, typed local intervention produces correct binary and numerical outputs on all 288 questions for both backbones. A same-tools alternative that asks the model to generate a complete plan obtains 270 and 222 correct numerical outputs. Removing the intervention from the patch procedure reduces numerical correctness to 67 for both backbones. These controls support the value of a constrained local edit followed by execution in the supplied model (Appendix~\ref{app:model}).
 
-\input{tables/contrasts}
+Stable readout is evaluated on a separate 208-group component panel combining answer sampling and NLI interfaces. Its group-weighted paired score improves from 60.19 to 65.90\% for Llama and from 59.17 to 66.47\% for Qwen. In the final 16-group extension, both-side correctness improves from 11 to 12 groups and from 12 to 13 groups relative to the matched single-answer control. These observations motivated its use as the broad readout branch of the adopted controller.
 
-C3's effect relative to B is negative for M4 and positive for M5. At input level, M4 C3
-repairs 436 B errors but damages 711 B-correct inputs, for a net loss of 275 correct
-inputs. M5 repairs 452 and damages 363, for a net gain of 89. Both configurations
-therefore contain repairs and regressions. The aggregate difference is not explained by
-counting successful repairs alone.
+\subsection{More aggregation is not uniformly better}
+\label{sec:extensions}
 
-Including rationales improves the point estimate relative to C2 in both configurations.
-The M4 interval crosses zero, whereas the M5 interval is positive. This comparison
-isolates the saved-rationale condition within the verifier's fixed candidate-pool design;
-it does not establish that the rationales are factually reliable. For M4, improving on C2
-still leaves C3 below B.
+We evaluated further aggregation on the same full input set. A rationale-conditioned verifier scores the distinct candidates already present in the saved readout pool and returns an existing complete answer. Relative to B, it changes the aggregate score by $-1.81$ points for Llama and $+0.93$ points for Qwen. Its candidate-only and joint-selection counterparts likewise do not provide a consistent improvement over B; three additional sampled answers yield 58.32 and 59.67, with more unavailable outputs. The complete six-arm comparison is retained in Appendix~\ref{app:full}. Earlier generated-answer aggregation also underperformed the adopted controller on its development panel. These results support sparse execution of useful operations as the default \cfmoa{} design.
 
-C4 has positive ALL point differences from B in both configurations, but the broader
-results do not establish a consistent advantage. M4 C4 is only +0.0295 points above B,
-with an interval of [\ensuremath{-}0.5445, +0.5895], and has 106 additional unavailable inputs. M5
-C4's ALL mean is above B, but its input-level correct count is lower and unavailable
-inputs increase by 64. C5's ALL point estimate is below B in both configurations. We
-preserve C3 as the declared research extension and B as the adopted default, without
-selecting a different winning arm for each configuration.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/verification_forest.pdf}
-\caption{Paired family bootstrap contrasts. Zero marks no change; intervals quantify
-exposed-benchmark variation and do not provide selection-adjusted or
-independent-confirmation evidence.}
-\label{fig-forest}
-\end{figure}
-
-\subsection{Source-level gains and regressions
-coexist}
-\label{sec:results-source-level-gains-and-regressions-coexist}
-
-The aggregate C3 effect contains substantial source variation. On MedCounterFact (M20), C3
-improves over B by +2.4112 points for M4 and +9.6447 for M5. On the AMQA-derived source
-(M12), the corresponding differences are \ensuremath{-}5.8219 and \ensuremath{-}2.0548. Cultural-cue questions (M11)
-also decrease in both configurations, by \ensuremath{-}1.5474 and \ensuremath{-}3.8685 points. These are
-source-specific point estimates; we do not interpret a ranking of small source effects as
-a corrected significance test.
-
-The 13-unit R4 clinical source illustrates the danger of suppressing unfavorable strata.
-B's M5 score is already below C0, and C3 recovers only one unit relative to B. M4 C3
-instead loses three units relative to B. The source remains in the full score. The
-system's separate explicit-model component has no clinical-v5 coverage, so these outcomes
-cannot be presented as evidence that model-based consequence execution succeeded or failed
-on these inputs.
-
-M01 diagnosis scores are identical across B and C2--C5 because the extension leaves the
-catalog route unchanged. Other unchanged source scores should not automatically be
-interpreted as evidence of a particular routing mechanism: multiple routes or changed
-answers can produce the same source aggregate. The released format and route tables
-provide the needed separation. Figure~\ref{fig-sources} and Appendix~\ref{sec:appendix_sources} retain every source rather than
-reporting a selected improvement subset.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/source_heterogeneity.pdf}
-\caption{C3 minus B for every source and configuration. Sources are retained in identifier order,
-including the small R4 clinical source; no source weighting replaces the primary ALL
-score.}
-\label{fig-sources}
-\end{figure}
-
-\subsection{Paired outcomes distinguish maintenance from
-response}
-\label{sec:results-paired-outcomes-distinguish-maintenance-from-response}
-
-Table~\ref{tab:paired} reports the both-endpoints-correct counts.
-
-\input{tables/paired}
-
-Relative to B, C3 reduces M4 maintain correctness by 296 pairs and increases M5 by 26. The
-M4 change is \ensuremath{-}4.3288 percentage points, with a family interval of [\ensuremath{-}5.4864, \ensuremath{-}3.1947].
-All B-based arms have the same respond count in each configuration. The core's improvement
-over C0 on respond pairs is therefore retained, but additional verification has no
-observed aggregate increment on this fixed subset. Pair correctness measures answer
-adequacy at both endpoints and should not be reduced to a preference for either changing
-or keeping an answer.
-
-\subsection{Both support-update operations contribute within the rule
-subset}
-\label{sec:results-both-support-update-operations-contribute-within-the-rule-subset}
-
-The operation ablation reuses the same extracted facts, support states, and native
-assembly policy for all 123 rule-routed inputs. Disabling an operation changes assembly
-alone; it does not rerun extraction or select a favorable subset. Table~\ref{tab:ablations} therefore tests
-the role of the two update directions within the adopted shared rule core.
-
-Figure~\ref{fig-rules} displays the corresponding ablation counts.
-
-\input{tables/ablations}
-
-Removing addition lowers correct counts by 26 and 23; removing withdrawal lowers them by
-16 and 11. Each ablation can also repair some individual errors, so these net changes do
-not imply that either operation is always correct. The results support retaining both
-directions in this shared execution policy. They do not measure an interaction between two
-independently trained agents or an ablation of all 13,905 inputs.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\linewidth,height=0.47\textheight,keepaspectratio]{figures/rule_ablations.pdf}
-\caption{Correctness of the shared rule component with addition or removal disabled. The
-denominator is the complete 123-input rule subset; the same facts and support states are
-reused.}
-\label{fig-rules}
-\end{figure}
-
-\subsection{Additional selection incurs measurable
-computation}
-\label{sec:results-additional-selection-incurs-measurable-computation}
-
-Ordinary F covers 9,293 inputs per configuration. At least two observed legal keys occur
-on 2,964 M4 inputs and 2,295 M5 inputs, corresponding to 21.3161\% and 16.5049\% of the
-complete 13,905-input scope. These coverage counts include unavailable cases and invalid
-old votes in their accounting; they are not counts of successful verification. Candidate
-pools depend on the model configuration, so the triggered subsets are not identical
-controlled populations across configurations.
-
-Table~\ref{tab:costs} reports the attributed B and C3 request and token counts.
-
-\input{tables/costs}
-
-C3 adds approximately 22.25\% to B's attributed request count for M4 and 16.84\% for M5.
-Additional computation accompanies a negative quality change in one configuration and a
-positive change in the other. Figure~\ref{fig-cost} displays the recorded B-based arms against their
-method-attributed requests. C0 is not assigned zero cost to place it on this frontier
-because its common upstream cost is unknown.
-
-The physical ledger for this completed multi-arm full-v5 run records 162,979 requests,
-957,810,324 input tokens, and 18,291,906 output tokens. These totals must not be divided
-by six to estimate a method cost, and method-attributed totals must not be summed to
-recover the physical ledger because they share B. They also do not represent the total
-cost of the project's earlier seven-system, head-development, or external-validation
-experiments. For each configuration and B-based
-method, 2,503 inputs have historical timing gaps. The analysis therefore reports request
-and token attribution with missing-time markers, not a fully measured end-to-end
-efficiency claim.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.95\linewidth,height=0.47\textheight,keepaspectratio]{figures/cost_quality.pdf}
-\caption{Native-unit quality versus attributed physical requests for the B-based methods. Shared B
-computation is assigned once to each method; unknown common original-system and retrieval
-costs are excluded. Lines or proximity do not imply equal prompt length or equal latency.}
-\label{fig-cost}
-\end{figure}
+The controller adds measurable computation. Attributed component requests total 59,800 for Llama and 58,301 for Qwen, before the original answering and retrieval costs. Rationale-conditioned verification adds 13,308 and 9,820 requests. This cost and its mixed gains make it a less attractive default than the adopted controller; Appendix~\ref{app:cost} gives the physical request and token accounting.

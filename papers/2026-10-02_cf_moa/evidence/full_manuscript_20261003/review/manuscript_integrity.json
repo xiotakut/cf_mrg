@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-02T19:12:16.292267+00:00",
+  "status": "PASS",
+  "source_dir": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft",
+  "entrypoint": "main.tex",
+  "source_closure_sha256": "5a87c55ea5ca9d5cfb72501ff85d0a6029432d4c57cea6e46c125f0cb4060aaf",
+  "checker": {
+    "name": "verify_manuscript.py",
+    "sha256": "7a5d9086e9adb0b0f14dd374eaf00b7a3f96703b1e43761519bcede9a28258ca"
+  },
+  "source_hash_definition": "SHA-256 of compact sorted JSON mapping closure-relative filenames to file SHA-256 hashes",
+  "files": {
+    "figures/cf_moa_architecture.pdf": {
+      "kind": "figure",
+      "bytes": 27144,
+      "sha256": "62f688bad230933c477532bc5aea9b8e70cf3528bc8d6bb01f6de757ae4d3b0d",
+      "mtime_ns": 1790967587982243240
+    },
+    "figures/paired_behavior.pdf": {
+      "kind": "figure",
+      "bytes": 20830,
+      "sha256": "22477b6b2de450800cc32a66c642ba19ab48f87d6a5886a2640378bccea1e5cf",
+      "mtime_ns": 1790967589258253044
+    },
+    "figures/seven_system_head_gains.pdf": {
+      "kind": "figure",
+      "bytes": 30076,
+      "sha256": "47f40f02cabb875878d75997fd5ed4ae01522419278b957ffd4bc178b5b36619",
+      "mtime_ns": 1790967588750249141
+    },
+    "main.tex": {
+      "kind": "tex",
+      "bytes": 2440,
+      "sha256": "89663dc5a0f741f14a0cfc1421863bf68f44828f33c8bf17f26c889a1ab7dd9d",
+      "mtime_ns": 1790968245675345825
+    },
+    "references.bib": {
+      "kind": "bibliography",
+      "bytes": 19754,
+      "sha256": "02c3c6402344d61e0c7353284b63fabaf1c51e56ef5934bff0456f9d2773e3e3",
+      "mtime_ns": 1790967981189279981
+    },
+    "sections/abstract.tex": {
+      "kind": "tex",
+      "bytes": 1672,
+      "sha256": "3dc0ec7a4efe4b43c0abd006c7833de8eefdcc90e8d572de965042dd4e204f89",
+      "mtime_ns": 1790967872732432848
+    },
+    "sections/appendix_benchmark.tex": {
+      "kind": "tex",
+      "bytes": 3835,
+      "sha256": "a543607c2808dbd309b2e73d9fcd9fecf163c8b66b76416d344f36ea669e311b",
+      "mtime_ns": 1790967561246037787
+    },
+    "sections/appendix_components.tex": {
+      "kind": "tex",
+      "bytes": 5673,
+      "sha256": "5cc3dcad66d2a70b4c2325d9c54632681f8e0f918dde38e18147463ca6cc8b40",
+      "mtime_ns": 1790967765379606435
+    },
+    "sections/appendix_full_results.tex": {
+      "kind": "tex",
+      "bytes": 4181,
+      "sha256": "013716830e7874a77f1598c16435be4097cd968bb34e0e2c8766000be026efa6",
+      "mtime_ns": 1790967872732432848
+    },
+    "sections/appendix_reproduction.tex": {
+      "kind": "tex",
+      "bytes": 3201,
+      "sha256": "422d04c6010bfaf6bf2d1d6162554325a190a090a2779145da778e991290b42d",
+      "mtime_ns": 1790968083606079936
+    },
+    "sections/benchmark.tex": {
+      "kind": "tex",
+      "bytes": 8154,
+      "sha256": "52c3367a203937e6534772a05198b019f0d0e39ca8341eb5811265d34c23a690",
+      "mtime_ns": 1790968083606079936
+    },
+    "sections/declarations.tex": {
+      "kind": "tex",
+      "bytes": 1244,
+      "sha256": "f14fae007dbb96aeab74e8478ce561a0e5d621d6f82f1276b56085c95d6b79ba",
+      "mtime_ns": 1790967872732432848
+    },
+    "sections/discussion.tex": {
+      "kind": "tex",
+      "bytes": 2141,
+      "sha256": "36b94e1a32838d59a509950b8c80f55c2f116b183b3548e8dfcdbae440cd486b",
+      "mtime_ns": 1790967415396917023
+    },
+    "sections/experimental_setup.tex": {
+      "kind": "tex",
+      "bytes": 3990,
+      "sha256": "22986a70970511d0a8798b65019c107b98ea82ca6bfc75f9bc8fcf276ddf34c7",
+      "mtime_ns": 1790967624094520741
+    },
+    "sections/introduction.tex": {
+      "kind": "tex",
+      "bytes": 4311,
+      "sha256": "9de9148d99089c271311328510ac6f31f1a2f034861ede66953bf3ee4ec74ca6",
+      "mtime_ns": 1790967872732432848
+    },
+    "sections/limitations.tex": {
+      "kind": "tex",
+      "bytes": 2052,
+      "sha256": "7dbdfcc1c18317abe57704135957b1dbf8a40333cfd6a780102f0ea45d502791",
+      "mtime_ns": 1790968083606079936
+    },
+    "sections/method.tex": {
+      "kind": "tex",
+      "bytes": 7712,
+      "sha256": "616e6f56e774d6dc9a34437f2bb4eea757b3747c7467b98650bea55ec053b419",
+      "mtime_ns": 1790967966845167942
+    },
+    "sections/related_work.tex": {
+      "kind": "tex",
+      "bytes": 4582,
+      "sha256": "2584ff66dcee3ad68c6c39cf632a4d7a15c1ee985232a8861f13ee764aed43a8",
+      "mtime_ns": 1790967981189279981
+    },
+    "sections/results.tex": {
+      "kind": "tex",
+      "bytes": 8981,
+      "sha256": "95e2130205a8dafffceeb623c658637a3b5be70bed66f5aa43d90d7e0d765bc3",
+      "mtime_ns": 1790968083606079936
+    },
+    "tables/arms.tex": {
+      "kind": "tex",
+      "bytes": 844,
+      "sha256": "ecb2050f6bd2b572516dbb3d3d1c4becc47d5a6916e97be963968cbc086874ad",
+      "mtime_ns": 1790967646366691890
+    },
+    "tables/contrasts.tex": {
+      "kind": "tex",
+      "bytes": 821,
+      "sha256": "e1adf83fe448a0de9aab4e98431a18d9823001b37a0e268eac449ea4a56dca16",
+      "mtime_ns": 1790952205750150970
+    },
+    "tables/costs.tex": {
+      "kind": "tex",
+      "bytes": 675,
+      "sha256": "e064c27515471a8e042c5bf2aaa275be258d0c69fb877dfe0ac006249092aa08",
+      "mtime_ns": 1790952206214154585
+    },
+    "tables/format_breakdown.tex": {
+      "kind": "tex",
+      "bytes": 678,
+      "sha256": "f7d34491fcc74f0face39d3629599695a1a0590300ddeacbb2f8fa24ecc453cb",
+      "mtime_ns": 1790967646402692166
+    },
+    "tables/full_categories.tex": {
+      "kind": "tex",
+      "bytes": 1142,
+      "sha256": "0250760fa2a81216a0981efea93d4bb9461b53714e592fe1fe456f9e13f7fdea",
+      "mtime_ns": 1790967646402692166
+    },
+    "tables/head_controls.tex": {
+      "kind": "tex",
+      "bytes": 1371,
+      "sha256": "6df15fd47bf5c59668435fcafe5cd042baeb2d8aa30698c2310bcfe5f9bfd101",
+      "mtime_ns": 1790967646366691890
+    },
+    "tables/historical_model.tex": {
+      "kind": "tex",
+      "bytes": 917,
+      "sha256": "3ff4546666283333685c5b813d96048b1e1e28c7de594822ade28f2b93738276",
+      "mtime_ns": 1790967646366691890
+    },
+    "tables/main_results.tex": {
+      "kind": "tex",
+      "bytes": 964,
+      "sha256": "146c30f7988699b25e1f014cb8001e73344344459c2997fa63e9e09f62f6cadf",
+      "mtime_ns": 1790952205530149255
+    },
+    "tables/main_system_results.tex": {
+      "kind": "tex",
+      "bytes": 1601,
+      "sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03",
+      "mtime_ns": 1790967587166236969
+    },
+    "tables/paired.tex": {
+      "kind": "tex",
+      "bytes": 546,
+      "sha256": "32ca9a32961aab55bac43dbf05c2030d47c2a580e07f37a795d6b4acf62ebd50",
+      "mtime_ns": 1790967646366691890
+    },
+    "tables/seven_heads.tex": {
+      "kind": "tex",
+      "bytes": 1105,
+      "sha256": "d1ec1640e3a16f711e7fbe7ea080442aaac6b44229881e7696f57628009fe0b1",
+      "mtime_ns": 1790967646366691890
+    },
+    "tables/source_breakdown.tex": {
+      "kind": "tex",
+      "bytes": 1016,
+      "sha256": "bab5070f6355c7628e4d0af2df931d39cd9ae90956313f873d31247ab7a951aa",
+      "mtime_ns": 1790967646402692166
+    },
+    "tables/story_sources.tex": {
+      "kind": "tex",
+      "bytes": 1564,
+      "sha256": "48384027091f98721590f8e4fb177c607f620aabdc354c942276e984159a571f",
+      "mtime_ns": 1790961035831112681
+    },
+    "tables/support_operation_ablation.tex": {
+      "kind": "tex",
+      "bytes": 744,
+      "sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e",
+      "mtime_ns": 1790967587166236969
+    }
+  },
+  "input_edges": [
+    {
+      "from": "main.tex",
+      "input": "sections/abstract",
+      "resolved": "sections/abstract.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/introduction",
+      "resolved": "sections/introduction.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/related_work",
+      "resolved": "sections/related_work.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/benchmark",
+      "resolved": "sections/benchmark.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/method",
+      "resolved": "sections/method.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/experimental_setup",
+      "resolved": "sections/experimental_setup.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/results",
+      "resolved": "sections/results.tex"
+    },
+    {
+      "from": "sections/results.tex",
+      "input": "tables/main_system_results",
+      "resolved": "tables/main_system_results.tex"
+    },
+    {
+      "from": "sections/results.tex",
+      "input": "tables/support_operation_ablation",
+      "resolved": "tables/support_operation_ablation.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/discussion",
+      "resolved": "sections/discussion.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/limitations",
+      "resolved": "sections/limitations.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/appendix_benchmark",
+      "resolved": "sections/appendix_benchmark.tex"
+    },
+    {
+      "from": "sections/appendix_benchmark.tex",
+      "input": "tables/story_sources",
+      "resolved": "tables/story_sources.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/appendix_components",
+      "resolved": "sections/appendix_components.tex"
+    },
+    {
+      "from": "sections/appendix_components.tex",
+      "input": "tables/seven_heads",
+      "resolved": "tables/seven_heads.tex"
+    },
+    {
+      "from": "sections/appendix_components.tex",
+      "input": "tables/head_controls",
+      "resolved": "tables/head_controls.tex"
+    },
+    {
+      "from": "sections/appendix_components.tex",
+      "input": "tables/historical_model",
+      "resolved": "tables/historical_model.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/appendix_full_results",
+      "resolved": "sections/appendix_full_results.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/arms",
+      "resolved": "tables/arms.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/main_results",
+      "resolved": "tables/main_results.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/full_categories",
+      "resolved": "tables/full_categories.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/source_breakdown",
+      "resolved": "tables/source_breakdown.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/format_breakdown",
+      "resolved": "tables/format_breakdown.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/paired",
+      "resolved": "tables/paired.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/contrasts",
+      "resolved": "tables/contrasts.tex"
+    },
+    {
+      "from": "sections/appendix_full_results.tex",
+      "input": "tables/costs",
+      "resolved": "tables/costs.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/appendix_reproduction",
+      "resolved": "sections/appendix_reproduction.tex"
+    },
+    {
+      "from": "main.tex",
+      "input": "sections/declarations",
+      "resolved": "sections/declarations.tex"
+    }
+  ],
+  "counts": {
+    "tex_files": 29,
+    "source_closure_files": 33,
+    "figure_environments": 3,
+    "graphics_inclusions": 3,
+    "unique_figure_files": 3,
+    "table_environments": 14,
+    "bib_entries": 29,
+    "unique_cited_keys": 29,
+    "labels": 38,
+    "unique_referenced_labels": 27,
+    "main_approximate_english_words": 5347,
+    "appendix_approximate_english_words": 2951
+  },
+  "word_count_scope": "Expanded TeX body split at appendix; approximate English tokens including headings, captions, and table cells, excluding preamble, bibliography text, math, citation/ref keys, and control sequences. Not a venue-certified word count.",
+  "bibliography": {
+    "files": [
+      "references.bib"
+    ],
+    "cited_keys": [
+      "ags2023beers",
+      "benkirane2025bias",
+      "chen2026medeinst",
+      "ddxplus",
+      "dubey2024llama",
+      "frisoni2024medgenie",
+      "gardner2020contrastsets",
+      "gourabathina2025medperturb",
+      "jiang2025tcrag",
+      "kiela2021dynabench",
+      "lewis2020rag",
+      "li2025biorab",
+      "li2026medrgag",
+      "medpicbench",
+      "mo2026faithfulness",
+      "ngo2024medrgb",
+      "prosperi2026hiv",
+      "rawat2024diversitymedqa",
+      "rezaei2026cultural",
+      "ribeiro2020checklist",
+      "shen2026medguidex",
+      "simglucose",
+      "wang2023selfconsistency",
+      "wang2025moa",
+      "wu2026marag",
+      "xiao2025amqa",
+      "xiong2024medrag",
+      "yang2025qwen3",
+      "zhao2021calibrate"
+    ],
+    "all_keys": [
+      "ags2023beers",
+      "benkirane2025bias",
+      "chen2026medeinst",
+      "ddxplus",
+      "dubey2024llama",
+      "frisoni2024medgenie",
+      "gardner2020contrastsets",
+      "gourabathina2025medperturb",
+      "jiang2025tcrag",
+      "kiela2021dynabench",
+      "lewis2020rag",
+      "li2025biorab",
+      "li2026medrgag",
+      "medpicbench",
+      "mo2026faithfulness",
+      "ngo2024medrgb",
+      "prosperi2026hiv",
+      "rawat2024diversitymedqa",
+      "rezaei2026cultural",
+      "ribeiro2020checklist",
+      "shen2026medguidex",
+      "simglucose",
+      "wang2023selfconsistency",
+      "wang2025moa",
+      "wu2026marag",
+      "xiao2025amqa",
+      "xiong2024medrag",
+      "yang2025qwen3",
+      "zhao2021calibrate"
+    ],
+    "unused_keys": [],
+    "nocite_wildcard": false,
+    "compiled": {
+      "path": "build/main.bbl",
+      "sha256": "5f105427e84f8875439f7148cc059f59abef2f48d29f37401ae9d24b045aa4f8",
+      "entries": 29,
+      "keys": [
+        "ags2023beers",
+        "benkirane2025bias",
+        "chen2026medeinst",
+        "ddxplus",
+        "dubey2024llama",
+        "frisoni2024medgenie",
+        "gardner2020contrastsets",
+        "gourabathina2025medperturb",
+        "jiang2025tcrag",
+        "kiela2021dynabench",
+        "lewis2020rag",
+        "li2025biorab",
+        "li2026medrgag",
+        "medpicbench",
+        "mo2026faithfulness",
+        "ngo2024medrgb",
+        "prosperi2026hiv",
+        "rawat2024diversitymedqa",
+        "rezaei2026cultural",
+        "ribeiro2020checklist",
+        "shen2026medguidex",
+        "simglucose",
+        "wang2023selfconsistency",
+        "wang2025moa",
+        "wu2026marag",
+        "xiao2025amqa",
+        "xiong2024medrag",
+        "yang2025qwen3",
+        "zhao2021calibrate"
+      ]
+    }
+  },
+  "graphics": [
+    {
+      "reference": "cf_moa_architecture.pdf",
+      "path": "figures/cf_moa_architecture.pdf",
+      "pdf_pages": 1
+    },
+    {
+      "reference": "seven_system_head_gains.pdf",
+      "path": "figures/seven_system_head_gains.pdf",
+      "pdf_pages": 1
+    },
+    {
+      "reference": "paired_behavior.pdf",
+      "path": "figures/paired_behavior.pdf",
+      "pdf_pages": 1
+    }
+  ],
+  "pdf": {
+    "path": "build/main.pdf",
+    "sha256": "6cd22fbb13b9d591b83fd2cbe0d0ca7a90db705b87d5b9726ac844a5f6c4f581",
+    "bytes": 236283,
+    "pages": 20,
+    "text_characters": 78962,
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "LaTeX with hyperref",
+      "producer": "xdvipdfmx (0.1)",
+      "creationDate": "D:20261002191045-00'00'",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "page_statistics": [
+      {
+        "page": 1,
+        "text_characters": 4940,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 2,
+        "text_characters": 5596,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 3,
+        "text_characters": 5481,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 4,
+        "text_characters": 4948,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 5,
+        "text_characters": 5411,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 6,
+        "text_characters": 2922,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 7,
+        "text_characters": 5255,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 8,
+        "text_characters": 2936,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 9,
+        "text_characters": 3589,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 10,
+        "text_characters": 4997,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 11,
+        "text_characters": 5150,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 12,
+        "text_characters": 4003,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 13,
+        "text_characters": 3545,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 14,
+        "text_characters": 4133,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 15,
+        "text_characters": 3592,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 16,
+        "text_characters": 2315,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 17,
+        "text_characters": 1662,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 18,
+        "text_characters": 3458,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 19,
+        "text_characters": 3857,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      },
+      {
+        "page": 20,
+        "text_characters": 1172,
+        "width_pt": 612.0,
+        "height_pt": 792.0
+      }
+    ],
+    "pymupdf_version": "1.28.2",
+    "mtime_at_least_source_mtimes": true
+  },
+  "compile_log": {
+    "path": "build/main.log",
+    "sha256": "d591d9258ce94311ada67152f914ac32fa145c9c8b9d478f3624c1393a449abf",
+    "blocking_messages": [],
+    "underfull_boxes": 15,
+    "warning_lines": []
+  },
+  "errors": [],
+  "warnings": [],
+  "limits": [
+    "Static literal input/figure/bibliography closure; does not implement TeX macro execution.",
+    "No missing-character log messages or replacement markers is not proof of perfect glyph rendering.",
+    "No automated overlap or visual-layout claim; manual page inspection remains separate.",
+    "Does not validate scientific claims, numerical result provenance, author identities, or citation metadata.",
+    "Hashes bind this check to read files; source/PDF correspondence also requires the build receipt."
+  ]
+}

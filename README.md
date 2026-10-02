@@ -1,3 +1,5 @@
+**2026-10-03 · 完整英文论文：[20页PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [原生LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [Overleaf工程ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。从五类体系、benchmark、七系统、五head到CF-MoA完成全文，3图/14表/29引用；[作者raw底稿](papers/2026-10-02_cf_moa/author_dossier/README.md)与历史框架保留。仓库private，本轮0新增实验。**
+
 **2026-10-03 · 共同作者raw研究底稿：[完整实验路径与逻辑链](papers/2026-10-02_cf_moa/author_dossier/research_dossier.md) · [41页PDF](papers/2026-10-02_cf_moa/author_dossier/research_dossier.pdf) · [LaTeX与完整下载](papers/2026-10-02_cf_moa/author_dossier/README.md)。约3.1万汉字、八章、33张表，配套29份主记录快照及148阶段索引。新底稿更正旧框架40题R3的18/18配置混写；0新增模型/评分，仓库private。**
 
 **2026-10-03 · 五类 benchmark 与五 agent 论文主线已重构：[中文完整逻辑与证据选择](papers/2026-10-02_cf_moa/framework/outline.zh.md) · [10页 LaTeX 框架PDF](papers/2026-10-02_cf_moa/framework/framework.pdf) · [框架源码与复现](papers/2026-10-02_cf_moa/framework/README.md)。数据/分类/基准/七系统/CF-MoA形成统一路径；七基线＋两配置B主表完整保留。上一版完整论文保持，新框架尚未展开为新全文。仓库private。**

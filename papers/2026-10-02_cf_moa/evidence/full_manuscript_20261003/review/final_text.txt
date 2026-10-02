@@ -1,0 +1,2402 @@
+CF-MoA: Taxonomy-Guided Benchmarking and Agent
+Orchestration for Counterfactual Medical Reasoning
+Anonymous Authors
+Abstract
+Medical question answering must respond selectively to changing evidence: a new ﬁnding can justify an ad-
+ditional treatment, invalidate an earlier recommendation, reorder competing diagnoses, or leave the relevant
+conclusion unchanged. Existing evaluations distribute these behaviors across datasets with diﬀerent tasks and
+output formats, making their shared failure modes diﬃcult to identify. We introduce a ﬁve-relation functional
+taxonomy and construct a benchmark of 6,104 units and 13,000 target judgments from 11 sources, retaining
+native task interfaces with frozen source-speciﬁc scoring. An evaluation of seven medical question-answering
+conﬁgurations reveals a consistent gap between overall accuracy and evidence-sensitive updating. Guided by
+this diagnosis, we develop a counterfactual mixture of agents (CF-MoA), with ﬁve functional roles for support
+addition, support removal, candidate comparison, model-based consequence calculation, and stable readout. A
+sparse controller connects these operations to existing systems. Across seven conﬁgurations, the corresponding
+heads improve all 21 comparisons on the three support-update and candidate-comparison categories. In the full
+benchmark evaluation, CF-MoA raises the aggregate score of two MedRAG conﬁgurations from 48.20 to 58.29
+and from 47.35 to 59.36, while increasing correctness on both answer-changing and answer-preserving pairs.
+Component controls identify explicit support execution and catalog-based re-decision as useful mechanisms.
+Together, these results establish a functional framework for diagnosing and improving counterfactual medical
+reasoning across heterogeneous tasks.
+1
+Introduction
+A medical answer is useful only in relation to the ev-
+idence that supports it.
+When a patient’s condition
+changes, a system may need to add a newly indicated
+treatment, withdraw an option whose prerequisites no
+longer hold, or reconsider the leading diagnosis. Other
+changes should leave the answer intact. These behav-
+iors require more than producing a plausible response to
+each question in isolation: the system must track how
+the changed information bears on the particular judg-
+ment being requested.
+Consider a treatment supported by two independent
+indications.
+Removing one indication does not neces-
+sarily justify withdrawing the treatment; conversely,
+preserving an answer after its only supporting condition
+disappears is an error.
+A diagnostic update presents
+a related but diﬀerent problem.
+New evidence can
+strengthen a candidate without making it the most
+likely diagnosis.
+Grouping examples only by whether
+their ﬁnal answer changes loses these distinctions. The
+underlying operation—adding support, removing sup-
+port, or comparing alternatives—is a more informative
+basis for analysis.
+Retrieval-augmented generation (RAG) gives medi-
+cal language models access to external knowledge, and
+agent-based systems add iterative retrieval, multiple
+answers, or explicit control of reasoning (Xiong et al.,
+2024; Li et al., 2026; Wu et al., 2026; Jiang et al.,
+2025). Yet an expanded evidence context does not by
+itself specify how support should be updated. Existing
+counterfactual, perturbation, and robustness resources
+provide complementary tests of this ability, but diﬀer in
+their units, answer spaces, and evaluation rules. A com-
+mon behavioral vocabulary is needed to connect their
+observations without replacing their original tasks.
+We address this problem through a taxonomy that de-
+scribes the functional relation between a change and a
+target judgment. Its ﬁve categories cover support ad-
+dition, support removal, candidate comparison, conse-
+quence calculation, and target preservation. The cate-
+gories can overlap: the same change may add evidence
+for a candidate and require a new comparison among al-
+ternatives. We use this taxonomy to organize an inven-
+tory of 26 candidate resources and construct a bench-
+mark spanning 11 sources.
+Its 6,104 evaluation units
+retain the native questions, options, target deﬁnitions,
+and source-speciﬁc scoring deﬁnitions.
+The resulting evaluation reveals structure that an
+overall score obscures.
+Seven conﬁgurations from six
+system families achieve aggregate scores between 47.35
+and 51.61, but their scores on support removal range
+from 7.59 to 41.77.
+The strongest aggregate baseline
+is not the strongest system on every functional cate-
+gory.
+This motivates an operation-centered approach:
+use the observed failure mode to identify the missing
+computation, then attach a component that performs
+that computation through the existing interface.
+We organize these components as a counterfactual
+mixture of agents (CF-MoA), with ﬁve functional roles.
+Its support agents execute three-valued rules, its com-
+parison agent makes an explicit decision over a diagnosis
+1
+
+
+catalog, its consequence agent applies local interventions
+to a supplied executable model, and its preservation
+agent stabilizes native answers through structured read-
+out. A sparse controller selects the applicable operation
+from the visible input and available capabilities. This
+design gives each agent a concrete responsibility and al-
+lows compatible operations to share an implementation.
+Our contributions are threefold. First, we introduce
+a functional taxonomy and a provenance-preserving
+benchmark that connect diverse medical counterfactual
+and robustness tasks.
+Second, we provide a seven-
+conﬁguration diagnostic evaluation, together with head-
+level comparisons that improve all 21 system–category
+combinations on support addition, support removal,
+and candidate comparison. Third, we develop CF-MoA
+and evaluate the complete adopted controller on two
+MedRAG conﬁgurations, obtaining aggregate gains of
+10.09 and 12.01 percentage points and improved correct-
+ness on both changing and preserving pairs. The accom-
+panying controls explain which operations account for
+these improvements and when further aggregation adds
+little value.
+2
+Related Work
+Behavioral evaluation and counterfactual tests.
+Behavioral testing organizes evaluation around capa-
+bilities and expected responses to controlled changes.
+CheckList combines linguistic capabilities with min-
+imum functionality, invariance, and directional tests
+(Ribeiro et al., 2020).
+Contrast sets probe local deci-
+sion boundaries through small, meaningful edits that
+typically change the reference label (Gardner et al.,
+2020). Dynabench develops this diagnostic perspective
+through human-and-model-in-the-loop data collection
+(Kiela et al., 2021). These approaches motivate evalu-
+ating the relationship between an input change and its
+required response. Our ﬁve-category taxonomy applies
+that perspective to medical tasks: it records the changed
+condition, the requested decision, and the evidence
+needed to justify revision or preservation.
+Categories
+can overlap when one case requires several operations.
+This gives a shared interpretation to tests drawn from
+sources with diﬀerent task formats.
+Medical counterfactual and robustness bench-
+marks.
+Medical datasets expose several distinct con-
+sequences of perturbing an input.
+MedEinst changes
+discriminative evidence to test diﬀerential diagnosis
+(Chen et al., 2026), while MedPIC-Bench provides
+patient-speciﬁc medication questions with counterfac-
+tual task families (MedPIC-Bench). HIV treatment sce-
+narios examine causal consistency across interventions,
+interactions, and side eﬀects (Prosperi et al., 2026).
+Counterfactual Patient Variations and DiversityMedQA
+examine demographic sensitivity in clinical decisions
+(Benkirane et al., 2025; Rawat et al., 2024); cultural-cue
+perturbations and AMQA extend this line to cultural
+context and adversarial medical questions (Rezaei and
+Shakeri, 2026; Xiao et al., 2025).
+MedPerturb varies
+gender cues, language style, and presentation format
+(Gourabathina et al., 2025).
+MedCounterFact studies
+how models follow supplied medical evidence when its
+content conﬂicts with plausibility or safety (Mo et al.,
+2026).
+MedRGB and BioRAB assess retrieval condi-
+tions, including misleading or counterfactual evidence
+(Ngo et al., 2024; Li et al., 2025).
+We bring eligible
+instances from these eleven sources into one benchmark
+while preserving their native questions, answer spaces,
+and reference relations. The resulting functional labels
+connect heterogeneous perturbations to the reasoning
+operation that each instance actually tests.
+Medical RAG.
+Retrieval-augmented generation com-
+bines a language model with external information (Lewis
+et al., 2020). MIRAGE and the MedRAG toolkit exam-
+ine how corpora, retrievers, and language models aﬀect
+medical question answering (Xiong et al., 2024). MedR-
+GAG connects retrieved and parametric knowledge (Li
+et al., 2026); MA-RAG uses multiple rounds of agen-
+tic retrieval and reasoning (Wu et al., 2026). MedGE-
+NIE supplies generated contexts for medical questions
+(Frisoni et al., 2024), and TC-RAG maintains a memory
+stack to control iterative retrieval (Jiang et al., 2025).
+These methods provide complementary ways to acquire
+and organize knowledge. Our seven evaluated conﬁgu-
+rations use them to diagnose which functional require-
+ments remain diﬃcult, then test operation-speciﬁc heads
+on the resulting outputs and admissible evidence. This
+connects system-level evaluation to targeted repairs such
+as recalculating support and comparing diagnostic can-
+didates.
+Agent aggregation.
+Self-consistency aggregates an-
+swers across sampled reasoning paths (Wang et al.,
+2023), while Mixture-of-Agents passes multiple agents’
+outputs between successive layers (Wang et al., 2025).
+Contextual calibration addresses prompt-dependent an-
+swer preferences (Zhao et al., 2021). These ideas moti-
+vate distinct controls for additional sampling, candidate
+comparison, and aggregation.
+MedGuideX transforms
+executable guideline logic into factual and counterfac-
+tual supervision for post-training medical models (Shen
+et al., 2026).
+Our support agents execute guideline
+logic during inference to recompute a current answer.
+CF-MoA gives its ﬁve agents explicit functional respon-
+sibilities and combines their outputs through a shared
+input contract and routing interface.
+Our evaluation
+follows both the gains from integrating these specialized
+operations and the incremental eﬀects of candidate ver-
+iﬁcation, tying each system change to the behavior it is
+intended to improve.
+2
+
+
+3
+A Functional Benchmark for
+Medical
+Counterfactual
+Rea-
+soning
+We organize medical counterfactual tasks around the re-
+lationship between a change and a speciﬁed judgment.
+A comparison unit links a source-provided variant to its
+reference or identiﬁes an explicit within-question hypo-
+thetical. A target judgment identiﬁes what is being as-
+sessed within that unit.
+This distinction lets a single
+clinical narrative support several functional annotations
+while retaining the source’s original question and an-
+swer contract. The resulting taxonomy covers condition
+changes, hypothetical evidence, and perturbations whose
+eﬀects are evaluated through native task performance.
+3.1
+Five overlapping functional relations
+R1: adding support. A change introduces identiﬁ-
+able evidence for a target judgment. For example, newly
+reported wheezing can support a bronchitis candidate
+without establishing it as the unique diagnosis.
+R2:
+withdrawing support.
+An identiﬁable basis for a
+judgment becomes invalid; the annotation states which
+basis is lost and preserves any independent support.
+R3:
+comparing alternatives.
+A change requires
+reassessing the relative support for at least two identi-
+ﬁable candidates.
+Replacing a history of spontaneous
+pneumothorax with deep-vein thrombosis illustrates a
+change relevant to the comparison between pneumoth-
+orax and pulmonary embolism in MedEinst Chen et al.
+(2026).
+R4:
+deriving consequences.
+A changed
+premise requires propagating an established relationship
+to an outcome not directly supplied. R5: preserving a
+judgment. A real change leaves the evidence relevant
+to a speciﬁed target intact; the annotation gives a reason
+for that invariance.
+These relations overlap because they describe func-
+tions at the target level.
+The same observation may
+add support to one diagnosis and alter its comparison
+with another. Annotation therefore records the change,
+target, applicable relations, supporting text, and con-
+clusions that cannot be inferred, then takes the union of
+target labels for the parent unit. Omission of a symptom
+does not establish its explicit absence, and an unchanged
+answer alone does not establish invariance. Native com-
+parison axes are preserved: an internal hypothetical and
+an externally edited patient attribute receive separate
+treatment when they address diﬀerent judgments.
+3.2
+Collection, qualiﬁcation, and sam-
+pling
+We registered 26 candidate sources and obtained 15,
+comprising 14 text resources and one multimodal meta-
+data release lacking required images. Their normalized
+archive contains 55,991 units.
+Source acquisition, se-
+mantic classiﬁcation, and scoring eligibility are recorded
+separately. Qualiﬁcation requires the source materials
+needed to answer the native task and an established
+scoring interface. This process yielded an eligible pool
+of 38,123 units and 77,781 target judgments from 11
+sources.
+The included resources cover diagnostic and
+prescribing edits Chen et al. (2026); MedPIC-Bench,
+treatment hypotheticals Prosperi et al. (2026), demo-
+graphic and cultural perturbations Benkirane et al.
+(2025); Rezaei and Shakeri (2026); Xiao et al. (2025);
+Rawat et al. (2024), clinical-service judgments Goura-
+bathina et al. (2025), hypothetical research evidence Mo
+et al. (2026), and evidence robustness Ngo et al. (2024);
+Li et al. (2025).
+Language-model agents performed structured seman-
+tic annotation and review, supported by cross-checks
+and targeted audits.
+The construction pipeline pre-
+serves provenance and explicit correction history.
+Re-
+view distinguishes whether a functional relation holds
+from whether its reference answer supports scoring. For
+example, a valid invariance annotation can remain while
+an unreliable reference is excluded from scoring. Tar-
+geted review corrected 172 judgments across 130 units;
+these corrections are retained alongside their earlier
+versions.
+Unit identiﬁers, source locations, eligibility
+decisions, and target-to-input mappings make the ﬁnal
+evaluation traceable to the acquired materials.
+The frozen v5 evaluation retains all eligible R1–R4
+targets and samples 450 R5 units without replacement
+from each of eight sources. Sampling uses sorted source-
+speciﬁc identiﬁers and a ﬁxed seeded procedure, with-
+out consulting model predictions. Original semantic la-
+bels remain available, while a separate evaluation-label
+ﬁeld speciﬁes membership in this evaluation. This yields
+6,104 unique comparison units, with category counts of
+2,866/79/733/13/3,600 for R1–R5. Category member-
+ships overlap; in particular, all 733 R3 units also belong
+to R1.
+Equal R5 allocations preserve source coverage
+while reducing the much larger invariance pool.
+3.3
+Native inputs and scoring
+The selected units contain 13,000 target judgments and
+materialize into 13,905 distinct model inputs, includ-
+ing reference endpoints.
+Each method has 15,616 na-
+tive scoring mappings: one input may support multiple
+targets, and shared references can serve several units.
+Models receive the current question, native options, re-
+quired evidence, and output contract.
+Reference and
+variant endpoints are answered independently; gold an-
+swers, functional labels, annotation rationales, and the
+opposite endpoint’s answer remain outside inference.
+Native interfaces preserve the distinctions between
+sources.
+MedEinst requires open diagnosis, MedPIC
+uses multiple-answer selection, and MedPerturb expands
+eligible visit, management, and resource judgments sepa-
+3
+
+
+rately. Hypothetical research evidence remains attached
+to its relation question.
+MedRGB retains the locally
+frozen six evidence conditions, with the fully relevant
+condition serving as the reference endpoint. Under our
+evaluation protocol, systems may additionally retrieve
+external evidence according to their conﬁgured per-
+missions; this combines ﬁxed perturbed evidence with
+dynamic retrieval.
+For unit u, let Ju contain its eligible non-reference na-
+tive scoring mappings and let cj ∈{0, 1} denote primary
+correctness. We report
+su =
+1
+|Ju|
+∑
+j∈Ju
+cj,
+ALL = 1
+|U|
+∑
+u∈U
+su,
+(1)
+where |U| = 6,104.
+Category scores apply the same
+aggregation to their eligible members and mappings.
+Tables report these scores as percentages. Thus, ALL
+weights comparison units equally, rather than averaging
+category percentages or pooling all model inputs.
+Scoring retains native choice keys, multi-answer sets,
+relation labels, and frozen diagnosis normalization. In-
+valid outputs and unresolved protocol failures stay in the
+denominator. We additionally distinguish variant cor-
+rectness, answer agreement, and both-endpoints-correct
+performance. The last measure requires successful an-
+swers on both sides, making it useful for evaluating
+whether systems respond to relevant changes while pre-
+serving correct judgments under irrelevant ones. These
+functional strata provide the diagnostic basis for the
+specialized operations introduced next.
+4
+CF-MoA: Sparse Orchestration
+of Five Functional Roles
+CF-MoA turns the benchmark’s functional perspective
+into ﬁve executable agent roles: adding support (A1),
+withdrawing support (A2), comparing candidates (A3),
+deriving consequences (A4), and preserving task-relevant
+judgments (A5). The roles correspond to R1–R5 as de-
+sign objectives; online execution depends on the current
+input’s capabilities. Agents can share model weights and
+deterministic components. The adopted conﬁguration,
+denoted B, selects an applicable operation and returns
+a native answer, as shown in Figure 1. Its organizing
+principle is sparse specialization, with the base system
+supplying the current answer and its actual inference
+context.
+4.1
+Capability routing and native read-
+out
+Routing follows a ﬁxed priority: diagnosis-format inputs
+enter A3; eligible rule tasks enter the shared A1/A2 ker-
+nel; inputs providing a complete executable model enter
+A4; supported single-choice, robustness, or relation tasks
+with saved original messages enter A5. Other inputs re-
+tain the base response. The router uses task format, vis-
+ible options, question structure, and available computa-
+tional resources. Source identiﬁers, benchmark relation
+labels, gold answers, and paired endpoints are excluded.
+Thus a component developed on one functional subset
+can also operate on compatible inputs elsewhere in the
+benchmark.
+This interface gives each role a concrete applicabil-
+ity domain: ﬁnite prescribing rules for A1/A2, a ﬁxed
+diagnosis catalog for A3, a supplied executable mecha-
+nism and state for A4, and supported native decision for-
+mats for A5. In the complete v5 evaluation, each back-
+bone routes 3,560 inputs to A3, 123 to A1/A2, 10,178
+to A5, and 44 to passthrough.
+A4 has no qualifying
+clinical v5 input; its supplied-model evaluation is re-
+ported separately.
+The controller records the selected
+route, requests, operation traces, and complete returned
+response.
+4.2
+A1/A2: scoped support recomputa-
+tion
+A1 and A2 share a kernel containing 71 manually en-
+coded rules drawn from selected recommendations in the
+2023 American Geriatrics Society Beers Criteria (2023
+American Geriatrics Society Beers Criteria Update Ex-
+pert Panel, 2023). Eligibility checks require a supported
+multiple-choice format, an age of at least 65 in the im-
+plemented question pattern, and a recognized medica-
+tion option.
+The kernel extracts the requested action
+and scope, such as avoidance or renal dose adjustment.
+One call to the original backbone extracts only the re-
+quired patient facts from the numbered current question,
+with evidence sentence identiﬁers. It does not receive the
+base answer or retrieved documents during this extrac-
+tion. Missing or rejected evidence produces an unknown
+value.
+The executor evaluates conditions, exceptions, and
+independent support paths using met, contradicted,
+and unknown.
+Conjunction combines requirements
+within a path; disjunction preserves independent paths.
+Consequently, invalidating one risk does not remove an
+option supported by another satisﬁed risk. Let S0 be the
+initial valid option set and let M, C, U partition options
+by their aggregate status. A1 adds M \ S0; A2 removes
+C ∩S0. For ordinary valid sets, the result is
+S⋆= M ∪(S0 ∩U).
+(2)
+The native assembler additionally handles exclusive
+“None” options, invalid initial answers, and empty out-
+puts. Both roles therefore use one fact extraction and
+one execution, while retaining separate addition and
+withdrawal traces.
+4
+
+
+4.3
+A3:
+catalog-based candidate com-
+parison
+A3 uses all 49 disease names in the public DDXPlus cat-
+alog Fansi Tchango et al. (2022). The same backbone
+reads the current patient and the base system’s actual
+context, with diagnoses bound to scoreable codes under
+six ﬁxed catalog orders. For each order, it subtracts a
+content-free log-score prior from the patient-conditioned
+code score, following the general calibration principle
+of separating contextual evidence from answer prefer-
+ences Zhao et al. (2021). The prior is the logarithm of
+the mean of three content-free candidate distributions,
+computed separately for each order; its subtraction co-
+eﬃcient is ﬁxed at one. A3 selects the highest corrected
+score per order and votes across orders, breaking vote
+ties using average corrected probabilities. The selected
+catalog entry is mapped back to the native diagnosis.
+The catalog and scorer’s frozen normalization are sep-
+arate resources; this decision stage changes candidate
+selection without expanding the scoring dictionary.
+4.4
+A4: executing a local intervention
+A4 compiles an intervention into a typed local patch
+when the input supplies the executable model, parame-
+ters, complete initial state, and factual action schedule.
+Unmodiﬁed actions remain intact. The numerical execu-
+tor runs factual and patched trajectories from the same
+starting state and projects their consequences onto the
+requested time and outcome. Our implementation uses
+the public glucose–insulin simulator Xie (2025). Local
+patches reduce the need to regenerate a complete ac-
+tion plan, allowing intervention ﬁdelity to be evaluated
+against a same-tool full-plan control. The returned con-
+sequence is computed from the supplied mechanism and
+executed actions.
+4.5
+A5: task-adapted robust readout
+A5 retains the adopted component F. For ordinary sup-
+ported tasks, F preserves the complete original messages
+and samples up to ﬁve native responses at temperature
+0.7, seeds 42–46, and a 2,048-token output limit. It votes
+over valid answer keys, stops once one key receives three
+votes, and returns the earliest complete response carry-
+ing a winning key. Final vote ties use earliest occurrence;
+if no vote is valid, the ﬁrst response remains invalid. This
+is a native-output adaptation of sampling and answer ag-
+gregation Wang et al. (2023).
+For explicit premise–hypothesis tasks with two polar-
+ity options, F uses a natural language inference (NLI)
+branch.
+It scores both A/B label mappings directly,
+generates one current-question analysis, and scores both
+mappings again conditioned on that analysis. Each two-
+label distribution is normalized before the four semantic
+distributions are averaged. The highest mean determines
+the answer; exact ties follow native option order. A ﬁnal
+model call generates the complete native response with
+its answer ﬁeld constrained to that decision. This path
+uses four one-token score callbacks and two complete
+generations at temperature zero, preserving the origi-
+nal evidence and required auxiliary ﬁelds. Missing code
+scores require a matching score request and remain vis-
+ible in the cost ledger.
+5
+Experimental Setup
+Seven system conﬁgurations.
+We evaluate direct
+answering with Llama-3.1-8B-Instruct (Dubey et al.,
+2024); an all-Llama implementation of MedRGAG; in-
+trinsic MA-RAG with Qwen3-8B (Yang et al., 2025);
+MedRAG with each of these two backbones; MedGE-
+NIE with Llama; and TC-RAG with Qwen. These are
+seven conﬁgurations from six system families. We refer
+to the two MedRAG conﬁgurations as MedRAG-Llama
+and MedRAG-Qwen.
+Their selected versions include
+structured output handling for MedRAG-Llama, the
+second local prompt version of MedGENIE, and typed
+control for TC-RAG. MA-RAG uses eight solvers per
+round, up to four rounds, with early agreement stop-
+ping. Its available retrieval collection contains PubMed,
+textbooks, and Wikipedia; the other retrieval conﬁg-
+urations have their own corpus and retrieval settings.
+Appendix D records the implementation identities and
+reuse accounting. The comparison measures the com-
+plete conﬁgured systems; it does not equalize all retrieval
+and inference budgets.
+Head and system evaluations.
+We separate two
+experimental scopes. The head evaluation attaches the
+support-update and comparison operations to the saved
+contexts and original answers of all seven conﬁgurations.
+It covers all 2,866 support-addition units, 79 support-
+removal units, and 733 candidate-comparison units. The
+clinical categories overlap, as speciﬁed in Section 3. Di-
+agnosis heads use the corresponding system contexts;
+the rule branches reuse two backbone-speciﬁc sets of
+extracted facts and combine them oﬄine with each
+system’s original answer.
+The subsequent full-system
+evaluation executes the adopted CF-MoA controller,
+denoted B, on MedRAG-Llama and MedRAG-Qwen.
+Each conﬁguration covers the same 13,905 unique in-
+puts and 15,616 native scoring mappings. The earlier
+head outputs and the later full-system outputs are re-
+ported separately.
+Mechanism controls.
+We compare catalog-based di-
+agnosis with its original answer, one catalog decision,
+six uncalibrated decisions, and calibrated decisions on
+the 680-unit diagnostic subset. A 123-input control re-
+moves the addition or removal operation while retain-
+ing the same extracted facts and rule statuses. Model-
+based consequence execution is evaluated separately on
+5
+
+
+a  Functional benchmarking
+Five functional relations
+R1  Add support
+R2  Withdraw support
+R3  Recompare candidates
+R4  Infer consequences
+R5  Maintain judgment
+Benchmark v5
+11 sources
+6,104 comparison units
+13,000 target judgments
+System diagnosis
+7 configurations · 6 families
+2 backbones
+R1–R3 head transfer
+Functional diagnosis motivates operation specialization
+b  CF-MoA: select the first applicable operation
+Current question
+Allowed evidence
+Initial answer
+Capability
+router
+first match
+A3  Candidate comparison
+diagnosis format
+A1 + A2  Support kernel
+rules apply: add + remove
+A4  Consequence execution
+supplied model + state
+A5  Stable task readout (F)
+supported native task
+Preserve initial output
+otherwise
+Native
+output
+Sparse execution: one applicable branch per input
+Figure 1: From functional diagnosis to agent orchestration. The benchmark describes ﬁve relations between a change
+and a target judgment. CF-MoA implements the corresponding operations through a sparse controller: support
+addition and removal share a rule executor, candidate comparison uses a diagnosis catalog, consequence calculation
+requires an executable model, and stable readout handles the remaining eligible interfaces. Routing uses the current
+input and available capabilities; A4 is evaluated separately on supplied-model tasks.
+24 virtual proﬁles with 12 questions each. For the full
+system, we also evaluate three candidate-selection vari-
+ants and an expanded sampling pool; their six-arm de-
+sign and complete results appear in Appendix C. These
+controls distinguish a useful component from a beneﬁt
+attributable to extra sampling alone.
+Metrics and uncertainty.
+The primary metric is the
+native unit-macro score deﬁned in Section 3. Category
+scores use their respective member units. We addition-
+ally measure paired correctness: both the reference and
+changed input must be correct.
+We report this sep-
+arately when the target answer should be maintained
+and when it should change, using 6,838 and 1,780 scored
+pairs, respectively. For paired system contrasts, we draw
+5,000 bootstrap replicates using seed 240924, keeping re-
+lated units together.
+The aggregate, preserving-pair,
+and changing-pair analyses contain 4,766, 2,806, and
+1,780 parent families, respectively. The resulting 95%
+intervals describe variability within the evaluated bench-
+mark.
+This benchmark was also used during method
+development; the implications for generalization are dis-
+cussed in the limitations.
+Computation.
+The
+adopted
+components
+use
+the
+same 8B backbones as their host conﬁgurations.
+The
+full-system ordinary-answer sampler uses temperature
+0.7, top-p
+=
+1, and a 2,048-token output budget.
+Component-speciﬁc scoring and execution settings are
+recorded with the released conﬁgurations.
+We report
+measured requests and tokens separately from unavail-
+able original retrieval costs, and preserve invalid outputs
+in every denominator.
+6
+
+
+6
+Results
+6.1
+Functional evaluation exposes diﬀer-
+ent weaknesses
+The seven baselines occupy a narrow range on the ag-
+gregate metric but exhibit substantially diﬀerent func-
+tional proﬁles (Table 1). MA-RAG has the highest base-
+line aggregate score, 51.61, and the highest preservation
+score, 73.37, yet scores 8.59 on candidate comparison.
+MedRAG-Qwen leads the baselines on support removal
+at 41.77, while MedRAG-Llama leads on candidate com-
+parison at 30.42. Direct answering reaches 48.10 over-
+all but only 8.86 on support removal. Thus, a system
+can answer many ordinary or preservation-oriented items
+correctly while struggling to revise the support for a spe-
+ciﬁc decision.
+The taxonomy makes these diﬀerences actionable.
+Support removal calls for checking whether an answer’s
+prerequisites still hold; diagnosis calls for comparing
+viable candidates under the changed evidence. Neither
+need is fully described by the number of retrieved pas-
+sages or generated answers. This distinction motivates
+the specialized operations evaluated next.
+6.2
+Specialized
+heads
+transfer
+across
+seven conﬁgurations
+Figure 2 shows improvements in all 21 system–category
+comparisons.
+Support addition rises from an original
+range of 26.73–31.44% to 42.74–47.70%; support removal
+rises from 7.59–41.77% to 29.11–58.23%; and candidate
+comparison rises from 8.59–30.42% to 32.47–60.44%.
+The gains occur across direct answering, retrieval-based
+systems, and systems with their own agent or control
+loops.
+They show that a functional head can repair
+failures left by diﬀerent upstream workﬂows.
+The head construction reﬂects the overlap between
+categories. On support addition, the adopted wrapper
+routes 1,780 units to diagnosis, 72 to rule execution, and
+retains the original result on 1,014 units. On candidate
+comparison, 680 units use diagnosis, ten use rules, and
+43 retain their original result. These shared operations
+connect the category analysis to an implementable sys-
+tem, while avoiding a separate learned model for every
+label.
+Candidate presentation accounts for much of the
+diagnosis gain.
+On the 680-unit diagnostic subset,
+averaging across the seven systems, the original score
+is 20.97%, a single catalog decision reaches 45.44%,
+six uncalibrated decisions reach 46.47%, and calibrated
+decisions reach 46.13%. The largest common improve-
+ment therefore comes from asking the model to make
+an explicit decision over the available diagnoses. Addi-
+tional voting and calibration have smaller, conﬁguration-
+dependent eﬀects.
+For MedRAG-Llama, the correct
+count changes from 203 to 339 with one catalog deci-
+sion and to 359 with either six-decision variant.
+For
+MedRAG-Qwen, the corresponding counts are 160, 382,
+402, and 410. Appendix B gives every conﬁguration and
+additional source checks.
+Both support operations contribute.
+The shared
+support executor uses the extracted facts to add newly
+justiﬁed options and remove contradicted ones. On the
+123-input control in Table 2, disabling addition reduces
+correct answers from 69 to 43 for Llama and from 71
+to 48 for Qwen. Disabling removal reduces them to 53
+and 60. Both operations contribute under the same fact
+extraction and rule statuses.
+The small support-removal category also exposes a
+dataset prior: a coverage-matched constant “None” con-
+trol obtains more correct answers than the head in each
+of the seven conﬁgurations. The head’s value is there-
+fore better assessed together with the operation ablation
+and the nine covered prescribing examples with remain-
+ing support, where the constant control scores zero. On
+these nine examples, ﬁve conﬁgurations improve, one is
+unchanged, and one declines. This result favors explicit
+support execution as a useful operation while showing
+why the raw category average alone is an incomplete di-
+agnosis.
+6.3
+The complete controller improves
+overall and paired correctness
+On the complete benchmark, the aggregate score rises
+from 48.20 to 58.29 for MedRAG-Llama and from 47.35
+to 59.36 for MedRAG-Qwen (Table 1). The gains are
+10.09 percentage points (95% family bootstrap inter-
+val: 8.96–11.23) and 12.01 points (10.92–13.15). Both
+conﬁgurations improve on support addition, support re-
+moval, candidate comparison, and preservation. Their
+ﬁnal scores also exceed the highest aggregate baseline,
+although the within-conﬁguration contrasts provide the
+direct measure of the controller’s eﬀect.
+On the 13 clinical consequence units, MedRAG-Llama
+remains at 53.85 while MedRAG-Qwen decreases from
+53.85 to 23.08 under the readout branch. This localized
+regression is retained in the main table alongside the
+larger-category gains.
+Paired evaluation tests the behavior that motivates
+the benchmark (Figure 3). On answer-preserving pairs,
+both-side correctness rises from 58.57 to 64.93% for
+Llama and from 51.59 to 65.22% for Qwen. On answer-
+changing pairs, it rises from 0.73 to 19.49% and from
+1.52 to 20.22%, respectively. All four paired diﬀerences
+have positive family-bootstrap intervals. The controller
+thus improves selective response to a change as well
+as correctness under a change that should leave the
+answer intact. The lower absolute scores on changing
+pairs identify evidence-sensitive updating as a continuing
+challenge.
+7
+
+
+Table 1: Complete v5 results for seven baseline conﬁgurations and two CF-MoA instantiations. Scores are percentages
+of native-unit means; bold denotes the highest value in each column.
+System
+Backbone
+ALL
+R1
+R2
+R3
+R4
+R5
+Comparison units
+6,104
+2,866
+79
+733
+13
+3,600
+Direct
+Llama
+48.10
+30.04
+8.86
+17.87
+38.46
+65.70
+MedRGAG
+Llama
+48.81
+31.33
+7.59
+24.69
+53.85
+65.88
+MA-RAG
+Qwen
+51.61
+26.73
+34.18
+8.59
+38.46
+73.37
+MedRAG
+Llama
+48.20
+27.84
+29.11
+30.42
+53.85
+65.28
+MedRAG
+Qwen
+47.35
+28.58
+41.77
+25.24
+53.85
+63.42
+MedGENIE
+Llama
+48.02
+29.94
+18.99
+21.42
+61.54
+65.15
+TC-RAG
+Qwen
+49.43
+31.44
+29.11
+28.92
+30.77
+66.17
+CF-MoA (B)
+Llama
+58.29
+44.63
+48.10
+53.21
+53.85
+68.84
+CF-MoA (B)
+Qwen
+59.36
+46.62
+58.23
+60.03
+23.08
+68.79
+Each conﬁguration covers 13,905 unique inputs. ALL averages non-reference task scores within units and then across units; R labels
+may overlap. Llama denotes Llama-3.1-8B-Instruct and Qwen denotes Qwen3-8B. The selected MedRAG-Llama baseline includes
+its output repair.
+0
+20
+40
+60
+Native accuracy (%)
+Direct (L)
+MedRGAG (L)
+MA-RAG (Q)
+MedRAG (L)
+MedRAG (Q)
+MedGENIE (L)
+TC-RAG (Q)
+30.0
+46.4
+31.3
+46.2
+26.7
+44.0
+27.8
+42.7
+28.6
+47.7
+29.9
+46.0
+31.4
+46.4
+n = 2,866
+R1 · Add support
+0
+20
+40
+60
+Native accuracy (%)
+8.9
+36.7
+7.6
+29.1
+34.2
+54.4
+29.1
+49.4
+41.8
+58.2
+19.0
+48.1
+29.1
+46.8
+n = 79
+R2 · Withdraw support
+0
+20
+40
+60
+Native accuracy (%)
+17.9
+46.1
+24.7
+46.4
+8.6
+32.5
+30.4
+52.7
+25.2
+60.4
+21.4
+41.6
+28.9
+47.6
+n = 733
+R3 · Recomparison
+Original system
+With terminal head
+Figure 2: Original and head-augmented performance across all seven conﬁgurations. Each panel uses the complete
+corresponding category: support addition (n = 2,866), support removal (n = 79), and candidate comparison (n =
+733). All 21 comparisons improve. Category memberships overlap; exact correct counts and branch coverage are in
+Appendix B.
+6.4
+Conditional
+execution
+and
+stable
+readout
+The consequence agent addresses tasks with an explicit
+executable model. On 24 virtual physiological proﬁles
+with 12 questions each, typed local intervention pro-
+duces correct binary and numerical outputs on all 288
+questions for both backbones. A same-tools alternative
+that asks the model to generate a complete plan obtains
+270 and 222 correct numerical outputs. Removing the
+intervention from the patch procedure reduces numeri-
+cal correctness to 67 for both backbones. These controls
+support the value of a constrained local edit followed by
+execution in the supplied model (Appendix B.4).
+Stable readout is evaluated on a separate 208-group
+component panel combining answer sampling and NLI
+interfaces.
+Its group-weighted paired score improves
+from 60.19 to 65.90% for Llama and from 59.17 to
+66.47% for Qwen. In the ﬁnal 16-group extension, both-
+side correctness improves from 11 to 12 groups and from
+12 to 13 groups relative to the matched single-answer
+control.
+These observations motivated its use as the
+broad readout branch of the adopted controller.
+8
+
+
+0
+25
+50
+75
+100
+Pair accuracy (%)
+Llama
+Qwen
+58.57%
+4,005/6,838
+64.93%
+4,440/6,838
+51.59%
+3,528/6,838
+65.22%
+4,460/6,838
+Both endpoints correct · 6,838 pairs
+Maintain judgment
+0
+25
+50
+75
+100
+Pair accuracy (%)
+0.73%
+13/1,780
+19.49%
+347/1,780
+1.52%
+27/1,780
+20.22%
+360/1,780
+Both endpoints correct · 1,780 pairs
+Respond to change
+MedRAG (C0)
+CF-MoA (B)
+Figure 3: Correctness on both members of a pair. On answer-preserving pairs, correct counts increase from 4,005 to
+4,440 for Llama and from 3,528 to 4,460 for Qwen (n = 6,838). On answer-changing pairs, they increase from 13 to
+347 and from 27 to 360 (n = 1,780). Agreement alone does not satisfy either measure.
+Table 2: Support-operation ablation on all 123 rule in-
+puts, reusing the same extracted facts and execution
+states. Parentheses give the change in correct outputs
+relative to the complete kernel.
+Policy
+Llama
+Qwen
+Full support kernel
+69/123
+71/123
+Without add
+43/123 (-26)
+48/123 (-23)
+Without remove
+53/123 (-16)
+60/123 (-11)
+A1 and A2 share one rule kernel. Unavailable outputs remain in
+the denominator.
+6.5
+More aggregation is not uniformly
+better
+We evaluated further aggregation on the same full input
+set. A rationale-conditioned veriﬁer scores the distinct
+candidates already present in the saved readout pool and
+returns an existing complete answer. Relative to B, it
+changes the aggregate score by −1.81 points for Llama
+and +0.93 points for Qwen. Its candidate-only and joint-
+selection counterparts likewise do not provide a consis-
+tent improvement over B; three additional sampled an-
+swers yield 58.32 and 59.67, with more unavailable out-
+puts. The complete six-arm comparison is retained in
+Appendix C. Earlier generated-answer aggregation also
+underperformed the adopted controller on its develop-
+ment panel. These results support sparse execution of
+useful operations as the default CF-MoA design.
+The controller adds measurable computation.
+At-
+tributed component requests total 59,800 for Llama and
+58,301 for Qwen, before the original answering and re-
+trieval costs.
+Rationale-conditioned veriﬁcation adds
+13,308 and 9,820 requests.
+This cost and its mixed
+gains make it a less attractive default than the adopted
+controller; Appendix C.4 gives the physical request and
+token accounting.
+7
+Discussion and Conclusion
+The experiments connect three levels of analysis:
+a
+functional taxonomy, operations that address its failure
+modes, and a controller that composes those operations
+through existing medical question-answering interfaces.
+The taxonomy reveals weaknesses hidden by the aggre-
+gate ranking. The head evaluation shows that several
+of these weaknesses recur across diﬀerent upstream sys-
+tems.
+The full controller then turns the specialized
+operations into a usable inference procedure, improving
+both aggregate accuracy and correctness across related
+inputs.
+The component controls suggest a practical design
+principle: make the required decision explicit before in-
+creasing the amount of generated reasoning. A catalog
+makes competing diagnoses available for direct com-
+parison. A support executor turns uncertain narrative
+revision into option-level checks with a deﬁned treat-
+ment of unknown facts. An executable model turns an
+intervention speciﬁcation into a veriﬁable calculation.
+These mechanisms diﬀer, but each narrows the gap be-
+tween the behavior requested by the task and the action
+performed by the system.
+The results also clarify the role of a mixture of agents.
+In CF-MoA, the agents are deﬁned by the operations
+they perform, with shared weights and shared execution
+9
+
+
+where appropriate. The useful combination is selective:
+a rule question beneﬁts from support execution, while a
+diagnostic question beneﬁts from candidate comparison.
+The mixed results from additional veriﬁcation and gen-
+eration show that assigning more agents to every input
+is not suﬃcient to improve the system.
+Overall, this work provides a benchmark and an op-
+erational framework for studying how medical language
+systems should respond to changed conditions.
+The
+11-source benchmark, seven-conﬁguration diagnosis, 21
+head comparisons, and two full-system evaluations form
+a connected empirical account.
+Further progress can
+be measured at both levels:
+whether each operation
+generalizes to new cases, and whether their controller
+improves correct change and correct preservation to-
+gether.
+Limitations
+The benchmark and component panels were used dur-
+ing development. The bootstrap intervals quantify un-
+certainty within these evaluated families; a separate
+family-disjoint evaluation after ﬁnal controller selection
+is needed to estimate performance on unseen case fami-
+lies. The ﬁnal controller was evaluated on two MedRAG
+conﬁgurations, while transfer to seven systems was es-
+tablished for the earlier support and comparison heads.
+Source coverage and category balance also matter.
+Support removal contains 79 units and consequence
+calculation contains 13; category labels overlap, and a
+substantial part of the preservation subset comes from
+perturbation and retrieval-robustness tasks. The taxon-
+omy was applied through structured review and source-
+speciﬁc checks, but independent clinician agreement on
+its assignments has not been measured. Source labels
+and rubrics inherit the strengths and limitations of their
+original datasets.
+Several components have explicit resource assump-
+tions.
+The rule executor depends on its 71-rule bank
+and extracted facts, and diagnosis uses a ﬁnite public
+catalog. Consequently, part of the observed gain con-
+cerns candidate coverage and readable output, rather
+than an isolated improvement in latent clinical reason-
+ing. The consequence agent was validated on a supplied
+physiological model and virtual proﬁles. Baselines have
+diﬀerent retrieval, formatting, and inference budgets,
+and a complete resource-matched comparison remains
+open.
+Ethical Considerations
+The study evaluates existing research datasets and sim-
+ulated proﬁles. It does not establish clinical eﬀectiveness
+or authorize patient-care use. Dataset provenance and
+original access conditions must accompany any redistri-
+bution. Evaluation artifacts retain source task contracts,
+including failures and invalid outputs, so that down-
+stream users can inspect the system’s behavior rather
+than relying only on aggregate scores. Author and data-
+availability declarations appear in Appendix E.
+References
+2023 American Geriatrics Society Beers Criteria Update
+Expert Panel. American geriatrics society 2023 up-
+dated AGS Beers Criteria for potentially inappropri-
+ate medication use in older adults.
+Journal of the
+American Geriatrics Society, 71(7):2052–2081, 2023.
+doi: 10.1111/jgs.18372. URL https://agsjournals.
+onlinelibrary.wiley.com/doi/10.1111/jgs.1837
+2.
+Kenza Benkirane, Jackie Kay, and Maria Perez-Ortiz.
+How Can We Diagnose and Treat Bias in Large Lan-
+guage Models for Clinical Decision-Making?
+In Luis
+Chiruzzo, Alan Ritter, and Lu Wang, editors, Pro-
+ceedings of the 2025 Conference of the Nations of
+the Americas Chapter of the Association for Com-
+putational Linguistics:
+Human Language Technolo-
+gies (Volume 1: Long Papers), pages 2263–2288, Al-
+buquerque, New Mexico, April 2025. Association for
+Computational Linguistics. ISBN 979-8-89176-189-6.
+doi: 10.18653/v1/2025.naacl-long.114. URL https:
+//aclanthology.org/2025.naacl-long.114/.
+Wenting Chen, Guolin Huang, Wenxuan Wang, and
+Zhongrui Zhu. MedEinst: Benchmarking the Einstel-
+lung Eﬀect in Medical LLMs through Counterfactual
+Diﬀerential Diagnosis. In Maria Liakata, Viviane P.
+Moreira, Jiajun Zhang, and David Jurgens, editors,
+Proceedings of the 64th Annual Meeting of the As-
+sociation for Computational Linguistics (Volume 1:
+Long Papers), pages 39778–39798, San Diego, Califor-
+nia, United States, July 2026. Association for Com-
+putational Linguistics. ISBN 979-8-89176-390-6. doi:
+10.18653/v1/2026.acl-long.1847.
+URL https:
+//aclanthology.org/2026.acl-long.1847/.
+Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey,
+et al. The Llama 3 Herd of Models, 2024. URL https:
+//arxiv.org/abs/2407.21783v1.
+Arsene Fansi Tchango, Rishab Goel, Zhi Wen, Julien
+Martel, and Joumana Ghosn.
+DDXPlus:
+A New
+Dataset
+For
+Automatic
+Medical
+Diagnosis.
+In
+S. Koyejo, S. Mohamed, A. Agarwal, D. Belgrave,
+K. Cho, and A. Oh, editors, Advances in Neural Infor-
+mation Processing Systems, volume 35, pages 31306–
+31318. Curran Associates, Inc., 2022. doi: 10.52202/0
+68431-2270. URL https://proceedings.neurips.
+cc/paper_files/paper/2022/file/cae73a974390c
+0edd95ae7aeae09139c-Paper-Datasets_and_Benc
+hmarks.pdf.
+10
+
+
+Giacomo Frisoni, Alessio Cocchieri, Alex Presepi, Gian-
+luca Moro, and Zaiqiao Meng. To generate or to re-
+trieve? on the eﬀectiveness of artiﬁcial contexts for
+medical open-domain question answering.
+In Lun-
+Wei Ku, Andre Martins, and Vivek Srikumar, edi-
+tors, Proceedings of the 62nd Annual Meeting of the
+Association for Computational Linguistics (Volume 1:
+Long Papers), pages 9878–9919, Bangkok, Thailand,
+August 2024. Association for Computational Linguis-
+tics.
+doi: 10.18653/v1/2024.acl-long.533.
+URL
+https://aclanthology.org/2024.acl-long.533/.
+Matt Gardner, Yoav Artzi, Victoria Basmov, et al. Eval-
+uating models’ local decision boundaries via contrast
+sets. In Trevor Cohn, Yulan He, and Yang Liu, ed-
+itors, Findings of the Association for Computational
+Linguistics: EMNLP 2020, pages 1307–1323, Online,
+November 2020. Association for Computational Lin-
+guistics. doi: 10.18653/v1/2020.findings-emnlp.117.
+URL https://aclanthology.org/2020.findings
+-emnlp.117/.
+Abinitha Gourabathina, Yuexing Hao, Walter Gerych,
+and Marzyeh Ghassemi.
+The MedPerturb Dataset:
+What Non-Content Perturbations Reveal About Hu-
+man and Clinical LLM Decision Making, 2025. URL
+https://arxiv.org/abs/2506.17163.
+Xinke Jiang, Yue Fang, Rihong Qiu, Haoyu Zhang,
+Yongxin Xu, Hao Chen, Wentao Zhang, Ruizhe Zhang,
+Yuchen Fang, Xinyu Ma, Xu Chu, Junfeng Zhao,
+and Yasha Wang. TC–RAG: Turing–complete RAG’s
+case study on medical LLM systems.
+In Wanxiang
+Che, Joyce Nabende, Ekaterina Shutova, and Mo-
+hammad Taher Pilehvar, editors, Proceedings of the
+63rd Annual Meeting of the Association for Compu-
+tational Linguistics (Volume 1: Long Papers), pages
+11400–11426, Vienna, Austria, July 2025. Association
+for Computational Linguistics.
+ISBN 979-8-89176-
+251-0.
+doi: 10.18653/v1/2025.acl-long.558.
+URL
+https://aclanthology.org/2025.acl-long.558/.
+Douwe Kiela, Max Bartolo, Yixin Nie, et al. Dynabench:
+Rethinking benchmarking in NLP.
+In Kristina
+Toutanova, Anna Rumshisky, Luke Zettlemoyer, Dilek
+Hakkani-Tur, Iz Beltagy, Steven Bethard, Ryan Cot-
+terell, Tanmoy Chakraborty, and Yichao Zhou, edi-
+tors, Proceedings of the 2021 Conference of the North
+American Chapter of the Association for Computa-
+tional Linguistics:
+Human Language Technologies,
+pages 4110–4124, Online, June 2021. Association for
+Computational Linguistics. doi: 10.18653/v1/2021.n
+aacl-main.324. URL https://aclanthology.org/2
+021.naacl-main.324/.
+Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio
+Petroni, Vladimir Karpukhin, Naman Goyal, Hein-
+rich Küttler, Mike Lewis, Wen-tau Yih, Tim Rock-
+täschel, Sebastian Riedel, and Douwe Kiela. Retrieval-
+Augmented Generation for Knowledge-Intensive NLP
+Tasks. In H. Larochelle, M. Ranzato, R. Hadsell, M.F.
+Balcan, and H. Lin, editors, Advances in Neural Infor-
+mation Processing Systems, volume 33, pages 9459–
+9474. Curran Associates, Inc., 2020.
+URL https:
+//proceedings.neurips.cc/paper_files/paper/2
+020/file/6b493230205f780e1bc26945df7481e5-P
+aper.pdf.
+Lei Li, Xiao Zhou, Yingying Zhang, and Xian Wu. From
+Retrieval to Generation: Unifying External and Para-
+metric Knowledge for Medical Question Answering. In
+Proceedings of the ACM Web Conference 2026, WWW
+’26, pages 2419–2430, New York, NY, USA, 2026.
+Association for Computing Machinery. ISBN 979-8-
+4007-2307-0. doi: 10.1145/3774904.3792691. URL
+https://doi.org/10.1145/3774904.3792691.
+Mingchen Li, Zaifu Zhan, Han Yang, Yongkang Xiao, Ji-
+atan Huang, and Rui Zhang. Benchmarking Retrieval-
+Augmented Large Language Models in Biomedical
+NLP: Application, Robustness, and Self-Awareness,
+2025. URL https://arxiv.org/abs/2405.08151v3.
+MedPIC-Bench. MedPIC-Bench: Dataset Card. Hug-
+ging Face dataset repository, n.d. URL https://hu
+ggingface.co/datasets/TIM0927/MedPIC-Bench.
+Uploader: TIM0927. Publication date and author list
+not stated in the card. Accessed 2026-10-02.
+Kaijie Mo, Siddhartha Venkatayogi, Chantal Shaib,
+Ramez Kouzy,
+Wei Xu,
+Byron C Wallace,
+and
+Junyi Jessy Li.
+Faithfulness vs. Safety: Evaluating
+LLM Behavior Under Counterfactual Medical Evi-
+dence. In Maria Liakata, Viviane P. Moreira, Jiajun
+Zhang, and David Jurgens, editors, Findings of the As-
+sociation for Computational Linguistics: ACL 2026,
+pages 37053–37081, San Diego, California, United
+States, July 2026. Association for Computational Lin-
+guistics. ISBN 979-8-89176-395-1. doi: 10.18653/v1/
+2026.findings-acl.1847. URL https://aclanthology
+.org/2026.findings-acl.1847/.
+Nghia Trung Ngo, Chien Van Nguyen, Franck Dernon-
+court, and Thien Huu Nguyen. Comprehensive and
+Practical Evaluation of Retrieval-Augmented Genera-
+tion Systems for Medical Question Answering, 2024.
+URL https://arxiv.org/abs/2411.09213.
+Mattia Prosperi, Simone Rancati, Yi Guo, Jingchuan
+Guo, Rotana M. Radwan, Marco Salemi, Jiang Bian,
+Balu Bhasuran, Eric F. Egelund, Jennifer Janelle,
+Preeti Manavalan, Nicole Maranchick, Simone Marini,
+and Zhe He. Consistency in causal reasoning for large
+language models in scenarios of HIV antiretroviral
+treatment, drug interactions, and side eﬀects. npj Dig-
+ital Medicine, 9(1):691, 2026. doi: 10.1038/s41746-0
+26-02771-7. URL https://www.nature.com/artic
+les/s41746-026-02771-7.
+11
+
+
+Rajat
+Rawat,
+Hudson
+McBride,
+Rajarshi
+Ghosh,
+Dhiyaan Nirmal, Jong Moon, Dhruv Alamuri, Sean
+O’Brien, and Kevin Zhu. DiversityMedQA: A Bench-
+mark for Assessing Demographic Biases in Medical
+Diagnosis using Large Language Models. In Daryna
+Dementieva, Oana Ignat, Zhijing Jin, Rada Mihal-
+cea, Giorgio Piatti, Joel Tetreault, Steven Wilson, and
+Jieyu Zhao, editors, Proceedings of the Third Work-
+shop on NLP for Positive Impact, pages 334–348, Mi-
+ami, Florida, USA, November 2024. Association for
+Computational Linguistics. doi: 10.18653/v1/2024.n
+lp4pi-1.29. URL https://aclanthology.org/2024.
+nlp4pi-1.29/.
+Amirhossein Haji Mohammad Rezaei and Zahra Shakeri.
+Counterfactual Cultural Cues Reduce Medical QA Ac-
+curacy in LLMs: Identiﬁer vs Context Eﬀects, 2026.
+URL https://arxiv.org/abs/2601.20102.
+Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin,
+and Sameer Singh. Beyond accuracy: Behavioral test-
+ing of NLP models with CheckList.
+In Dan Juraf-
+sky, Joyce Chai, Natalie Schluter, and Joel Tetreault,
+editors, Proceedings of the 58th Annual Meeting of
+the Association for Computational Linguistics, pages
+4902–4912, Online, July 2020. Association for Com-
+putational Linguistics. doi: 10.18653/v1/2020.acl-m
+ain.442. URL https://aclanthology.org/2020.ac
+l-main.442/.
+Yuhao Shen, Lang Cao, Simo Du, Yuqing Wang, Juex-
+iao Zhou, Hao Peng, and Yue Guo.
+MedGuideX:
+Internalizing decision logic from executable guide-
+lines into large language models for clinical reason-
+ing.
+arXiv preprint arXiv:2605.26567, 2026.
+doi:
+10.48550/arXiv.2605.26567.
+URL https://arxi
+v.org/abs/2605.26567v1.
+Junlin Wang, Jue Wang, Ben Athiwaratkun, Ce Zhang,
+and James Zou. Mixture-of-Agents Enhances Large
+Language Model Capabilities. In The Thirteenth In-
+ternational Conference on Learning Representations,
+2025. URL https://openreview.net/pdf?id=h0Zf
+DIrj7T.
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le,
+Ed H. Chi, Sharan Narang, Aakanksha Chowdhery,
+and Denny Zhou.
+Self-Consistency Improves Chain
+of Thought Reasoning in Language Models. In The
+Eleventh International Conference on Learning Rep-
+resentations, 2023. URL https://openreview.net
+/pdf?id=1PL1NIMMrw.
+Wenhao Wu, Zhentao Tang, Yafu Li, Shixiong Kai,
+Mingxuan Yuan, Zhenhong Sun, Chunlin Chen, and
+Zhi Wang. From conﬂict to consensus: Boosting med-
+ical reasoning via multi-round agentic RAG. In Forty-
+third International Conference on Machine Learning,
+2026. URL https://openreview.net/forum?id=S7
+lpdz7NAW.
+Ying Xiao, Jie Huang, Ruijuan He, Jing Xiao, Moham-
+mad Reza Mousavi, Yepang Liu, Kezhi Li, Zhenpeng
+Chen, and Jie M. Zhang.
+AMQA: An Adversarial
+Dataset for Benchmarking Bias of LLMs in Medicine
+and Healthcare, 2025. URL https://arxiv.org/ab
+s/2505.19562v1.
+Jinyu Xie.
+simglucose:
+A Type-1 Diabetes Sim-
+ulator Implemented in Python.
+Software source
+snapshot,
+2025.
+URL https://github.com
+/jxx123/simglucose/tree/a6f6777586c8
+60457a2a1e6cce6d0bd3fd33d1cc.
+Source
+commit a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc,
+dated 18 April 2025; setup.py version 0.2.11. Accessed
+2 October 2026.
+Guangzhi Xiong, Qiao Jin, Zhiyong Lu, and Aidong
+Zhang.
+Benchmarking Retrieval-Augmented Gener-
+ation for Medicine.
+In Lun-Wei Ku, Andre Mar-
+tins, and Vivek Srikumar, editors, Findings of the As-
+sociation for Computational Linguistics: ACL 2024,
+pages 6233–6251, Bangkok, Thailand, August 2024.
+Association for Computational Linguistics.
+doi: 10
+.18653/v1/2024.findings-acl.372.
+URL https:
+//aclanthology.org/2024.findings-acl.372/.
+An Yang, Anfeng Li, Baosong Yang, et al. Qwen3 Tech-
+nical Report, 2025. URL https://arxiv.org/abs/
+2505.09388.
+Zihao Zhao, Eric Wallace, Shi Feng, Dan Klein, and
+Sameer Singh. Calibrate Before Use: Improving Few-
+shot Performance of Language Models.
+In Marina
+Meila and Tong Zhang, editors, Proceedings of the
+38th International Conference on Machine Learning,
+volume 139 of Proceedings of Machine Learning Re-
+search, pages 12697–12706. PMLR, 18–24 Jul 2021.
+URL https://proceedings.mlr.press/v139/zha
+o21c.html.
+12
+
+
+Table 3: Complete v5 benchmark composition by source. R1–R5 columns count units bearing each category label.
+ID
+Source
+Units
+Judgments
+R1
+R2
+R3
+R4
+R5
+M01
+MedEinst
+1,780
+2,816
+1,780
+0
+680
+0
+0
+M02
+MedPIC-Bench
+167
+182
+96
+75
+10
+0
+0
+M06
+HIV causal scenarios
+13
+13
+0
+0
+0
+13
+0
+M10
+CPV-MedQA
+451
+451
+1
+0
+0
+0
+450
+M11
+Counterfactual Cultural Cues
+517
+517
+67
+0
+0
+0
+450
+M12
+FairMedQA/AMQA
+584
+584
+134
+0
+43
+0
+450
+M14
+DiversityMedQA
+454
+454
+0
+4
+0
+0
+450
+M17
+MedPerturb
+450
+1,344
+0
+0
+0
+0
+450
+M20
+MedCounterFact
+788
+1,720
+788
+0
+0
+0
+450
+M22
+MedRGB
+450
+4,469
+0
+0
+0
+0
+450
+M23
+BioRAB
+450
+450
+0
+0
+0
+0
+450
+Total
+6,104
+13,000
+2,866
+79
+733
+13
+3,600
+The benchmark contains 6,104 unique units and 13,000 target judgments. Category memberships overlap and must not be summed as
+independent units. Target judgments are distinct from the 13,905 inference inputs and 15,616 native scoring mappings per system. The
+separate supplied-model A4 panel is not added to this table.
+A
+Benchmark Composition and Annotation
+A.1
+Source inventory and qualiﬁcation
+Table 3 gives the exact composition of the frozen evaluation. Source citations and acquisition records accompany the
+source manifest. The original inventory contained 26 candidates, of which 15 were acquired. Four acquired resources
+did not contribute eligible v5 targets: the clinical laboratory and EquityMedQA resources required additional answer
+or rubric adjudication; MedCF required an editing operation outside the implemented answering protocol; and
+MedMKEB lacked the required images. For the other 11 candidates, the speciﬁed ﬁxed cases, counterfactual edits,
+or required restricted context had not been obtained at collection time. These acquisition statuses describe the
+archived study materials.
+The 55,991 archived units comprise 53,494 text units and 2,497 metadata units with missing images. An initial
+review frame contained 28,243 units and 80,910 judgments. Its review ledger records 603 individual semantic reviews,
+13,464 grouped semantic reviews, and 14,176 structural checks. Subsequent completion and eligibility review covered
+all archived units, producing 109,599 reviewed judgments, of which 77,781 were eligible in 38,123 units. The evaluation
+sample is drawn from this completed pool rather than from the initial capped frame.
+A.2
+Annotation examples and overlap
+An annotation identiﬁes the source comparison axis before assigning a relation. In a MedEinst case, the addition of
+wheezing supports a bronchitis candidate (R1), while the associated diagnostic question can require comparison with
+acute laryngitis (R3). A DiversityMedQA sex-attribute change removes one demographic basis for a Lesch–Nyhan
+candidate (R2), while other ﬁndings remain available. In CPV-MedQA, changing an ethnicity description leaves the
+chemotherapy and ototoxicity evidence relevant to a pharmacological question intact (R5). These examples illustrate
+functional labels on speciﬁed targets, rather than rules for assigning a diagnosis from a single feature.
+Labels are assigned to targets and then combined at the unit level. In v5, R3 is contained in R1; R1 and R5
+share 450 units, R1 and R2 share four, and R2 and R3 share three. R1–R3 contain 2,941 distinct units. The sum
+of category memberships is 7,291, whereas the union used for ALL contains 6,104 units. The 13,000 selected target
+judgments, 13,905 distinct inputs, and 15,616 scoring mappings refer to diﬀerent representations of these same tasks.
+Of the scoring mappings, 6,818 address reference endpoints and 8,798 address non-reference endpoints.
+13
+
+
+A.3
+Sampling and version lineage
+The earlier v2 evaluation contained 3,105 units and eight sources. A v3 display assigned overlapping units to a single
+category for presentation, without changing their answers. The completed v4 pool restored multi-label evaluation
+and expanded eligibility review. The v5 evaluation used in this paper retains all eligible R1–R4 targets and samples
+450 R5 units from each of eight sources. These source samples are drawn without replacement from sorted identiﬁers
+using a source-speciﬁc seeded procedure. The original semantic labels and the selected evaluation labels are stored
+separately. Neither prior predictions nor ﬁnal method scores determine sample membership.
+The 450-unit allocation balances source representation within R5; it does not assert equal numbers of independent
+patients or equal sampling probabilities across sources. Related variants remain linked to their parent families for
+paired analysis and bootstrap resampling. The source manifest, membership ﬁles, and scoring mappings are the
+authoritative deﬁnition of the evaluated sample.
+B
+Component Evidence and Controls
+B.1
+Complete head comparisons
+Table 4 reports correct counts for every conﬁguration in the head comparison. The R1 wrapper uses diagnosis on
+1,780 units, support rules on 72, and the saved original answer on 1,014. R2 uses rules on 55 units and preserves 24
+original answers. R3 uses diagnosis on 680 units, rules on ten, and preserves 43 original answers. These are unit-level
+coverage counts for the head experiment; the full controller’s input-level coverage additionally includes reference
+endpoints and other compatible tasks.
+B.2
+Diagnosis: catalog, calibration, and source checks
+The public catalog contains 49 diagnoses, while the frozen task scorer recognizes 46 normalized diagnosis keys. The
+catalog is supplied to the decision component as a ﬁxed resource; it is not constructed from the current item’s gold
+answer. On 680 diagnostic units, Table 5(a) separates the single-catalog improvement from repeated selection and
+calibration. Across repaired R3 outcomes, 1,186 of 1,272 previously failed outputs were unmapped diagnoses, 23 were
+otherwise invalid, and 63 were valid wrong answers. This breakdown indicates that output grounding accounts for a
+large part of the measured improvement; unmapped outputs are not retrospectively counted as clinically correct.
+Additional controls explored alternative name/code presentations on 40 diagnostic inputs. Direct code selection
+with a 384-token budget obtained 18/21 correct for Llama/Qwen; direct name selection at a 128-token budget
+obtained 15/18. Reasoning with names at 384 tokens obtained 18/19, while reasoning with codes at that budget
+obtained 21/22. Because the direct-name and direct-code controls used diﬀerent budgets, their diﬀerence does not
+isolate the eﬀect of codes. The complete run identities and budgets are retained in the evidence ledger.
+Two additional source checks assessed catalog compatibility. On 47 ASCENT records, the calibrated head ob-
+tained 38/39 correct for Llama/Qwen, compared with 39/39 for uncalibrated voting and 38/39 for a single catalog
+decision. These records included 42 source-training and ﬁve source-test examples and subsequently informed devel-
+opment. Across three CUPCase batches totaling 18 records, the calibrated head obtained 15/16, uncalibrated voting
+16/17, single selection 15/18, and character-length-normalized candidate likelihood 15/14. The checks support useful
+catalog-based selection on additional records, while providing no consistent incremental advantage for calibration.
+Table 4: Correct counts before and after the specialized heads. Category memberships overlap; R1–R3 contain 2,941
+distinct units. Section 5 speciﬁes context reuse and rule-fact sharing.
+System
+R1 (n = 2,866)
+R2 (n = 79)
+R3 (n = 733)
+M0 Direct
+861 →1, 329
+7 →29
+131 →338
+M2 MedRGAG
+898 →1, 323
+6 →23
+181 →340
+M3 MA-RAG
+766 →1, 260
+27 →43
+63 →238
+M4 MedRAG–L
+798 →1, 225
+23 →39
+223 →386
+M5 MedRAG–Q
+819 →1, 367
+33 →46
+185 →443
+M6 MedGENIE
+858 →1, 317
+15 →38
+157 →305
+M7 TC-RAG
+901 →1, 331
+23 →37
+212 →349
+14
+
+
+Table 5: Diagnosis and support-removal controls. (a) Original answers, single catalog selection, six-order voting, and
+calibrated voting on 680 diagnostic units. (b) Head and coverage-matched constant “None” results on R2, with the
+nine covered cases retaining support shown separately.
+(a) R3: correct out of 680
+System
+Original
+Order 0
+Majority
+Calibrated
+M0 Direct
+116
+299
+314
+314
+M2 MedRGAG
+163
+320
+325
+315
+M3 MA-RAG
+33
+215
+200
+204
+M4 MedRAG–L
+203
+339
+359
+359
+M5 MedRAG–Q
+160
+382
+402
+410
+M6 MedGENIE
+137
+296
+288
+276
+M7 TC-RAG
+186
+312
+324
+318
+(b) R2: aggregate and remaining-support subset
+System
+Head /79
+None /79
+Head /9
+None /9
+M0 Direct
+29
+48
+6
+0
+M2 MedRGAG
+23
+47
+4
+0
+M3 MA-RAG
+43
+58
+3
+0
+M4 MedRAG–L
+39
+58
+4
+0
+M5 MedRAG–Q
+46
+56
+6
+0
+M6 MedGENIE
+38
+52
+5
+0
+M7 TC-RAG
+37
+54
+2
+0
+B.3
+Support removal and remaining support
+The constant “None” control in Table 5(b) uses the same 55-input rule coverage and retains the same 24 original
+answers outside coverage. Forty-six covered targets have “None” as their answer; the other nine retain support
+for at least one option. On those nine, original correct counts for Direct, MedRGAG, MA-RAG, MedRAG-Llama,
+MedRAG-Qwen, MedGENIE, and TC-RAG are 5/4/1/3/0/2/3, and head counts are 6/4/3/4/6/5/2. This subset
+measures the ability to retain independent support after another basis is removed.
+The 123-input add/remove ablation in the main text holds the extracted facts and statuses ﬁxed. It evaluates
+the shared executor on the complete rule-input panel used by the controller, rather than on the 79-unit R2 category
+alone. The full executor leaves one Llama input and 14 Qwen inputs unavailable; these remain included in the
+123-input denominator. The contrast therefore tests the eﬀect of the speciﬁed operations under the same upstream
+extraction.
+B.4
+Supplied-model consequence execution
+The separate model panel uses 24 virtual parameter and initial-state proﬁles, each with 12 questions. A question
+supplies the physiological mechanism, factual schedule, requested local intervention, and output projection. The
+typed-patch procedure edits the named action and executes the resulting trajectory. The full-plan control has the
+same tool access but regenerates a complete plan; the no-intervention control retains patch structure while omitting
+the actual intervention. Table 6 reports binary, numerical, and full-output correctness. The 288 questions represent
+structured model queries, not 288 independent patients.
+B.5
+Stable readout and generated aggregation
+The F component panel comprises an initial 64 groups, an additional 128 groups, and a ﬁnal frozen extension of 16
+groups. Group-weighted paired scores for the complete 208-group panel are reported in Section 6.4. The ordinary
+branch aggregates valid native answer keys; the NLI branch combines direct and analysis-conditioned semantic
+probabilities across both label mappings. The component’s exact stopping, tie-breaking, and invalid-output policies
+are speciﬁed in Section 4 and the accompanying implementation.
+The development study also tested generated aggregation over the available expert outputs on 121 inputs. The
+adopted controller obtained 87/82 correct for Llama/Qwen, a three-draw alternative 84/74, and the default generated
+aggregator 75/73. Adding a newly developed support-addition proposal to the candidate pool produced 72/57 under
+top-one selection and 79/74 under generated aggregation. These experiments led to the shared support kernel and
+sparse adopted controller. The 121-input panel is a development control and is not added to the full-v5 evaluation
+15
+
+
+Table 6:
+Supplied-model consequence execution.
+Each conﬁguration contains 288 questions from 24 virtual
+parameter/initial-state proﬁles. Counts report correct outputs within the supplied model contract.
+Conﬁg.
+Procedure
+Binary
+/288
+Numerical
+/288
+Full output
+/288
+M4
+Ordinary reanswer
+118
+0
+0
+M4
+Full execution
+286
+270
+270
+M4
+Patch without intervention execution
+234
+67
+67
+M4
+Typed patch and execution
+288
+288
+288
+M5
+Ordinary reanswer
+187
+0
+0
+M5
+Full execution
+265
+222
+222
+M5
+Patch without intervention execution
+234
+67
+67
+M5
+Typed patch and execution
+288
+288
+288
+sample.
+C
+Complete System Results and Aggregation Variants
+C.1
+Six-arm comparison
+The full evaluation uses the same input and scoring-mapping sets for all six arms. Table 7 deﬁnes the arms, and
+Table 8 reports aggregate scores, correct-input counts, and unavailable outputs. Correct-input counts use input-level
+scoring and are therefore distinct from the unit-macro ALL score. Table 9 retains all ﬁve functional categories for
+every arm; Table 10 gives source-speciﬁc C0/B results, and Table 11 gives their native input-format results.
+Table 7: Six evaluation arms. C1 and B denote the same adopted operation core.
+Arm
+Decision rule
+Role in the comparison
+C0
+Original MedRAG conﬁguration
+Original-system reference
+C1 / B
+Adopted operation core
+Adopted CF-MoA controller
+C2
+B plus candidate-only binary veriﬁcation
+Same-pool veriﬁcation without saved rationales
+C3
+B plus rationale-conditioned binary veriﬁcation
+Same-pool veriﬁcation with saved rationales
+C4
+B with old F votes plus three additional answers
+Expanded-pool sampling control
+C5
+B plus joint selection over the same candidates and ra-
+tionales
+Alternative same-pool selection control
+Table 8: Full-v5 results. Each row contains 13,905 inputs, 15,616 scoring mappings, and 6,104 non-reference native
+units. ALL is the mean of native-unit scores. Unavailable inputs remain in the denominators.
+Conﬁg.
+Arm
+ALL (%)
+Correct
+inputs
+Unavailable
+inputs
+M4 Llama
+C0
+48.1990
+7,441
+0
+M4 Llama
+B
+58.2924
+8,924
+51
+M4 Llama
+C2
+55.9939
+8,554
+51
+M4 Llama
+C3
+56.4815
+8,649
+51
+M4 Llama
+C4
+58.3219
+8,951
+157
+M4 Llama
+C5
+56.7295
+8,660
+51
+M5 Qwen
+C0
+47.3487
+6,913
+0
+M5 Qwen
+B
+59.3616
+8,971
+22
+M5 Qwen
+C2
+59.3562
+8,843
+22
+M5 Qwen
+C3
+60.2889
+9,060
+22
+M5 Qwen
+C4
+59.6723
+8,878
+86
+M5 Qwen
+C5
+58.9690
+8,739
+22
+16
+
+
+Table 9: Full six-arm category scores (percent). ALL and category scores use native unit means; categories overlap.
+Backbone
+Arm
+ALL
+R1
+R2
+R3
+R4
+R5
+Llama
+C0
+48.20
+27.84
+29.11
+30.42
+53.85
+65.28
+Llama
+B
+58.29
+44.63
+48.10
+53.21
+53.85
+68.84
+Llama
+C2
+55.99
+43.79
+48.10
+52.11
+46.15
+65.61
+Llama
+C3
+56.48
+44.87
+48.10
+52.80
+30.77
+66.05
+Llama
+C4
+58.32
+44.87
+48.10
+52.52
+38.46
+69.11
+Llama
+C5
+56.73
+44.80
+48.10
+52.39
+38.46
+66.49
+Qwen
+C0
+47.35
+28.58
+41.77
+25.24
+53.85
+63.42
+Qwen
+B
+59.36
+46.62
+58.23
+60.03
+23.08
+68.79
+Qwen
+C2
+59.36
+48.43
+58.23
+60.03
+30.77
+68.39
+Qwen
+C3
+60.29
+49.02
+59.49
+60.30
+30.77
+69.70
+Qwen
+C4
+59.67
+48.15
+58.23
+60.30
+38.46
+68.93
+Qwen
+C5
+58.97
+47.87
+58.23
+59.89
+30.77
+67.99
+Table 10: Source-speciﬁc native unit means (percent) for the original system and adopted controller. Source sizes
+are comparison units.
+Source
+Units
+Llama C0
+Llama B
+Qwen C0
+Qwen B
+MedEinst
+1,780
+13.26
+35.62
+10.90
+40.34
+MedPIC-Bench
+167
+28.74
+53.89
+38.32
+58.08
+HIV scenarios
+13
+53.85
+53.85
+53.85
+23.08
+CPV-MedQA
+451
+68.74
+69.62
+65.85
+65.85
+Cultural Cues
+517
+67.31
+70.02
+68.67
+70.60
+FairMedQA/AMQA
+584
+61.47
+66.78
+64.04
+63.01
+DiversityMedQA
+454
+72.25
+72.91
+67.40
+69.82
+MedPerturb
+450
+87.48
+91.15
+76.26
+81.52
+MedCounterFact
+788
+51.02
+55.33
+56.22
+53.05
+MedRGB
+450
+69.20
+72.00
+52.89
+74.13
+BioRAB
+450
+44.22
+57.78
+59.78
+75.56
+Table 11: Native input-format accuracy (percent), including reference inputs. This input-level metric diﬀers from
+ALL.
+Format
+Inputs
+Llama C0
+Llama B
+Qwen C0
+Qwen B
+diagnosis
+3,560
+9.47
+38.01
+9.49
+42.67
+multi
+167
+28.74
+53.89
+38.32
+58.08
+relation
+989
+52.78
+55.21
+59.45
+55.61
+robustness_single
+2,700
+69.56
+71.96
+53.00
+74.44
+single
+6,489
+71.75
+76.93
+69.22
+73.89
+17
+
+
+C.2
+Paired outcomes and uncertainty
+Table 12 reports the complete both-endpoints-correct counts. All 1,780 answer-changing pairs come from MedEinst;
+the preserving-pair set spans multiple sources.
+The candidate-selection extensions operate on ordinary readout
+disagreements, so the diagnostic response-pair results remain identical across B and the four extensions in this
+evaluation. The family bootstrap resamples parent families as clusters and recomputes paired diﬀerences, preserving
+all units from a sampled family. Table 13 reports the principal aggregate contrasts, and the machine-readable result
+package contains all 36 recorded contrast intervals across aggregate and paired metrics.
+Table 12: Both-endpoints-correct counts for all six arms. Maintain uses 6,838 pairs and respond uses 1,780 pairs.
+Arm
+M4 maintain
+M5 maintain
+M4 respond
+M5 respond
+C0
+4,005
+3,528
+13
+27
+B
+4,440
+4,460
+347
+360
+C2
+4,139
+4,381
+347
+360
+C3
+4,144
+4,486
+347
+360
+C4
+4,509
+4,412
+347
+360
+C5
+4,150
+4,246
+347
+360
+Table 13: Paired contrasts in the ALL mean. Eﬀects and 95% family bootstrap intervals are in percentage points.
+These are descriptive intervals on exposed development data.
+Conﬁg.
+Contrast
+Eﬀect
+95% interval
+M4
+B −C0
++10.0934
+[+8.9580, +11.2340]
+M4
+C3 −B
+−1.8108
+[−2.5287, −1.0819]
+M4
+C3 −C2
++0.4877
+[−0.1275, +1.0907]
+M5
+B −C0
++12.0129
+[+10.9177, +13.1510]
+M5
+C3 −B
++0.9273
+[+0.3039, +1.5562]
+M5
+C3 −C2
++0.9327
+[+0.4641, +1.4010]
+C.3
+Candidate veriﬁcation and alternative selection
+For an ordinary F input with at least two distinct valid answer keys, we retain the earliest complete saved response
+representing each key. C2 scores whether each candidate is correct under two opposite A/B label assignments. C3
+uses the same procedure and includes the saved candidate rationale as model-generated reasoning to be checked. For
+candidate k, the veriﬁer averages its normalized probability of correctness under the two assignments:
+v(k) = 1
+2 [pAB(correct | x, k, rk) + pBA(correct | x, k, rk)] .
+(3)
+The rationale rk is omitted in C2. The highest-scoring candidate is selected; exact ties favor the saved F answer, then
+native order. The complete existing representative is returned, preserving its required auxiliary ﬁelds. Non-ordinary
+F inputs, single-candidate pools, and unavailable B outputs retain B. Technical veriﬁcation failure also falls back to
+B and is recorded.
+The full ledger identiﬁes 2,964 Llama and 2,295 Qwen ordinary disagreement inputs. Two Llama B outputs are
+unavailable, leaving 2,962 actually veriﬁed Llama inputs. C3 records one Llama and eight Qwen technical veriﬁer
+failures with fallback. C5 instead scores a joint ﬁnite choice over the same candidates and rationales. C4 adds three
+predetermined native-answer draws to the old F pool and votes over the expanded pool; its unavailable-output policy
+is reported separately, rather than replaced with the veriﬁer fallback.
+C.4
+Computation and attribution
+Table 14 reports the adopted component cost and the additional C3 cost. B uses 241,675,469 input and 9,686,224 out-
+put tokens for Llama, and 220,580,598 input and 7,645,205 output tokens for Qwen. Across the shared full-evaluation
+execution of all arms, the physical ledger contains 162,979 requests, 957,810,324 input tokens, and 18,291,906 output
+tokens. Method-attributed costs include the shared component once for each method being evaluated; summing
+those attributed totals across arms would double-count reused requests.
+18
+
+
+Table 14: Attributed request costs for B and C3. The table includes the shared core once per method and excludes
+unknown common C0/retrieval costs. Tokens are the total attributed C3 tokens, not only veriﬁer tokens.
+Conﬁg.
+B
+requests
+C3 extra
+requests
+C3 total
+requests
+C3 input
+tokens
+C3 output
+tokens
+M4
+59,800
+13,308
+73,108
+358,643,985
+9,699,532
+M5
+58,301
+9,820
+68,121
+294,927,306
+7,655,025
+Original C0 answering and retrieval costs are incompletely recorded and are left unknown. Timing records cover
+11,402 of 13,905 component input rows per conﬁguration, leaving 2,503 without complete timing. Recorded event
+durations do not establish a complete end-to-end runtime. The physical request totals cover the later full-system
+experiment, not the entire research project.
+D
+Implementation and Reproducibility
+D.1
+Conﬁguration identities
+The selected seven-system comparison uses the following implementation identities:
+M0, direct Llama-3.1-8B-
+Instruct; M2, local all-Llama MedRGAG; M3, intrinsic MA-RAG with Qwen3-8B; M4, MedRAG-Llama with the
+selected structured-output repair; M5, MedRAG-Qwen; M6, MedGENIE v2 with Llama; and M7, TC-RAG with
+Qwen and typed control v2. The paper uses system names, while manifests retain these identiﬁers. The earlier
+i-MedRAG experiment was stopped and is preserved under its own identity; it is not an eighth conﬁguration in the
+current table.
+Selected outputs cover all 13,905 native inputs per conﬁguration. Exact reuse is recorded for M0 (8,877 reused
+and 5,028 newly inferred), M2 (6,687 and 7,218), and M3 (3,690 and 10,215).
+M4–M7 each have 13,905 newly
+inferred outputs in their selected runs. Reuse requires the same input, method conﬁguration, and output contract.
+Structured-output handling is part of the selected method identity; earlier unrestricted and repaired runs are not
+pooled as independent methods.
+D.2
+Rebuilding paper artifacts
+The paper package separates native LaTeX source, frozen numeric inputs, plotting scripts, and audit receipts. The
+main manuscript is maintained in latex/main.tex, with section ﬁles, tables, vector ﬁgures, and references.bib.
+Running latex/build.sh compiles it using Tectonic or a local LATEX toolchain.
+The reproduction scripts read frozen summaries and regenerate the main tables, source and format breakdowns,
+and vector ﬁgures.
+They retain source hashes and assert denominators and selected values before exporting re-
+sults. The source package includes all assets required to compile the paper oﬄine once the TeX dependencies are
+installed. Its companion evidence package identiﬁes the original conﬁguration, prediction, score, and trace artifacts
+for each experiment. Dataset licenses and large model/retrieval assets remain governed by their original distribution
+conditions.
+The deterministic artifact rebuild reproduces the displayed results from saved experiment outcomes. Re-running
+inference additionally requires the exact backbone checkpoints, component prompts, rules and catalogs, native-input
+manifests, retrieval assets, and component-speciﬁc runtime settings. These dependencies are indexed separately so
+that an artifact rebuild is not confused with a fresh experimental replication.
+D.3
+Evidence organization
+The data construction record deﬁnes eligibility and version lineage; the evaluation protocol deﬁnes native scoring
+and input permissions; the selected-system record deﬁnes the seven baseline versions. Head-speciﬁc records contain
+their implemented rules, control experiments, and transfer results.
+The full-system closeout binds the six arms
+to source/category/format results, paired intervals, and request costs. A separate coauthor dossier connects these
+records chronologically. The manuscript draws its claims from this evidence map while retaining the original run
+identities and unsuccessful variants in the companion archive.
+19
+
+
+E
+Author and Availability Declarations
+Data and code availability.
+The manuscript source, ﬁgure-generation scripts, frozen result summaries, and
+experiment evidence indexes are maintained in the authors’ private repository. A public release has not yet been
+made. Redistribution of source datasets must follow each original provider’s terms; where redistribution is restricted,
+the release can provide identiﬁers, acquisition instructions, and derived membership or scoring metadata.
+Author information.
+This generic conference draft uses anonymous author information. Author names, aﬃlia-
+tions, contribution statements, funding information, and competing-interest disclosures remain to be completed by
+the authors before submission.
+AI assistance.
+An artiﬁcial intelligence assistant was used to organize existing experiment records, draft and edit
+text, prepare LaTeX, generate plotting code, and check consistency against saved artifacts. The writing process
+did not generate new model-evaluation results or alter the recorded labels and predictions. The authors remain
+responsible for verifying the manuscript, disclosures, citations, and source-data permissions.
+20

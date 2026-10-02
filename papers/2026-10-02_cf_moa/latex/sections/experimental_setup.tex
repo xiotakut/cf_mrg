@@ -1,111 +1,17 @@
 \section{Experimental Setup}
-\label{sec:experimental_setup}
+\label{sec:setup}
 
-\subsection{Seven-system baseline comparison}
-\label{sec:experimental_setup-model-configurations-and-controls}
+\paragraph{Seven system configurations.}
+We evaluate direct answering with Llama-3.1-8B-Instruct \citep{dubey2024llama}; an all-Llama implementation of MedRGAG; intrinsic MA-RAG with Qwen3-8B \citep{yang2025qwen3}; MedRAG with each of these two backbones; MedGENIE with Llama; and TC-RAG with Qwen. These are seven configurations from six system families. We refer to the two MedRAG configurations as \sysL{} and \sysQ{}. Their selected versions include structured output handling for \sysL{}, the second local prompt version of MedGENIE, and typed control for TC-RAG. MA-RAG uses eight solvers per round, up to four rounds, with early agreement stopping. Its available retrieval collection contains PubMed, textbooks, and Wikipedia; the other retrieval configurations have their own corpus and retrieval settings. Appendix~\ref{app:implementation} records the implementation identities and reuse accounting. The comparison measures the complete configured systems; it does not equalize all retrieval and inference budgets.
 
-The formal v5 comparison uses M0 direct answering, M2 MedRGAG with the local all-Llama
-adaptation, M3 MA-RAG in its intrinsic configuration, M4 MedRAG--Llama, M5 MedRAG--Qwen,
-M6 MedGENIE version 2, and M7 TC-RAG with the selected typed-control version 2. M0, M2,
-M4, and M6 use Llama-3.1-8B-Instruct; M3, M5, and M7 use Qwen3-8B
-\citep{dubey2024llama,yang2025qwen3}. Thus, seven configurations span six baseline
-families and two underlying backbones. MA-RAG generates eight solver candidates per
-round for at most four rounds, with early stopping on agreement. MedRGAG, MedGENIE,
-and TC-RAG are the documented local adaptations, rather
-than claims of exact reproduction of every published model and resource setting.
+\paragraph{Head and system evaluations.}
+We separate two experimental scopes. The head evaluation attaches the support-update and comparison operations to the saved contexts and original answers of all seven configurations. It covers all 2,866 support-addition units, 79 support-removal units, and 733 candidate-comparison units. The clinical categories overlap, as specified in Section~\ref{sec:benchmark}. Diagnosis heads use the corresponding system contexts; the rule branches reuse two backbone-specific sets of extracted facts and combine them offline with each system's original answer. The subsequent full-system evaluation executes the adopted \cfmoa{} controller, denoted B, on \sysL{} and \sysQ{}. Each configuration covers the same 13,905 unique inputs and 15,616 native scoring mappings. The earlier head outputs and the later full-system outputs are reported separately.
 
-Each selected configuration covers the same 13,905 unique inputs and 15,616 scoring
-mappings. Coverage combines new predictions with strictly matched historical reuse where
-available: M0 reuses 8,877 and generates 5,028 predictions; M2 reuses 6,687 and generates
-7,218; M3 reuses 3,690 and generates 10,215. M4--M7 each have 13,905 new predictions in
-their selected complete run. Full coverage therefore means complete evaluated outputs,
-not seven simultaneous runs from scratch. Invalid and unaccepted terminal outputs remain
-in the common denominator.
+\paragraph{Mechanism controls.}
+We compare catalog-based diagnosis with its original answer, one catalog decision, six uncalibrated decisions, and calibrated decisions on the 680-unit diagnostic subset. A 123-input control removes the addition or removal operation while retaining the same extracted facts and rule statuses. Model-based consequence execution is evaluated separately on 24 virtual profiles with 12 questions each. For the full system, we also evaluate three candidate-selection variants and an expanded sampling pool; their six-arm design and complete results appear in Appendix~\ref{app:full}. These controls distinguish a useful component from a benefit attributable to extra sampling alone.
 
-The selected M4 baseline includes structured-output repair, whereas M5 retains its earlier
-unconstrained output protocol. Corpora, upstream procedures, and budgets also vary across
-families. Cross-system differences compare these concrete settings and cannot all be
-assigned to an isolated algorithm or backbone effect. M1, an earlier MedRGAG initial
-retrieval control, and the superseded i-MedRAG implementation are historical experiments,
-not additional completed v5 configurations (Appendix~\ref{sec:appendix_development}).
+\paragraph{Metrics and uncertainty.}
+The primary metric is the native unit-macro score defined in Section~\ref{sec:benchmark}. Category scores use their respective member units. We additionally measure paired correctness: both the reference and changed input must be correct. We report this separately when the target answer should be maintained and when it should change, using 6,838 and 1,780 scored pairs, respectively. For paired system contrasts, we draw 5,000 bootstrap replicates using seed 240924, keeping related units together. The aggregate, preserving-pair, and changing-pair analyses contain 4,766, 2,806, and 1,780 parent families, respectively. The resulting 95\% intervals describe variability within the evaluated benchmark. This benchmark was also used during method development; the implications for generalization are discussed in the limitations.
 
-\subsection{Seven-system terminal-head evaluation}
-\label{sec:experimental_setup-terminal-heads}
-
-We evaluate the frozen terminal heads on every member of R1, R2, and R3 for all seven
-configurations. In R1, each configuration routes 1,780 diagnostic inputs to catalog
-re-decision and 72 prescribing inputs to rules, retaining the other 1,014 answers. R3
-contains 680 catalog inputs, 10 rule inputs, and 43 retained single-choice answers. R2
-covers 55 of 79 inputs with rules and retains the remaining 24. Uncovered inputs remain
-in their category denominators.
-
-Diagnostic scores are generated with each configuration's actual original context and
-backbone; earlier completed scores and exactly identical requests are reused as recorded.
-The fact extractor sees the current question, options, and required fields, but no
-method-specific retrieved history or initial answer. Consequently, its two backbone-specific
-fact sets can be fixed and combined offline with seven original-answer sets. This is a
-valid comparison of seven terminal systems, while the rule branch is not seven newly
-executed upstream retrieval pipelines. No backbone is substituted to improve another
-system's head result.
-
-We compare the diagnostic head with single-pass catalog selection and uncorrected voting.
-For R2, a constant ``none'' control intervenes on the same 55 inputs and preserves each
-original answer on the other 24. Remaining-support correctness is reported alongside its
-total. Additional same-facts execution, question-scope, and external-source evaluations
-are kept within their original experimental scopes. The original formal baseline scores
-and the development head scores remain separate tables.
-
-\subsection{Two-configuration CF-MoA composition and verification}
-\label{sec:experimental_setup-cf-moa}
-
-The later six-arm experiment uses only the two MedRAG configurations M4 and M5, with
-Qwen thinking disabled. Within each configuration, all six arms share the same frozen
-full-v5 input scope and original contexts. It tests the composition of established heads
-with further operations, followed by additional candidate verification; it does not
-extend the six-arm experiment to all seven systems.
-
-The ordinary F readout uses bfloat16 weights, temperature 0.7, top-p 1.0, a 2,048-token
-output budget, and a 131,072-token context limit under the saved vLLM 0.8.5 profiles. The
-F readout uses structured native output in both configurations. The existing catalog and
-fact-extraction components retain their own shorter-context, temperature-zero profiles.
-Exact per-component settings, prompts, code snapshots, and reuse bindings remain in the
-released experiment package. The experiments use inference and deterministic tools; no new
-model training is reported.
-
-Table~\ref{tab:arms} summarizes the six evaluation arms.
-
-\input{tables/arms}
-
-C4 uses the predefined supplementary seeds 42, 43, and 44 on eligible ordinary-F
-disagreements. A failed required supplementary answer leaves the control unavailable,
-rather than silently converting it into a two-draw control. C5 scores a joint finite-code
-choice under two opposing code assignments. C2, C3, and C5 preserve the existing pool.
-Their comparisons share the original computation but have different additional request and
-prompt costs; none is described as equal-cost merely because a common budget ceiling
-exists.
-
-Complete v5 is the scope of this later experiment. Earlier 121-input and 52-input
-development panels informed its design and are not independent confirmation sets. The older 52-input
-panel still lacks four original M5 C0 outputs; that historical gap does not affect the
-complete full-v5 C0 results reported here. No new model calls or native grading are
-performed for this manuscript; the figures and tables are rebuilt from frozen completed
-results.
-
-\subsection{Failure retention and computation
-accounting}
-\label{sec:experimental_setup-failure-retention-and-computation-accounting}
-
-All arms retain the complete input and native-unit denominators. An unavailable answer
-counts against performance under the frozen contract and is also reported explicitly. We
-separate a valid but incorrect answer, an unavailable answer, and a verifier failure with
-a retained F answer. Pool-trigger coverage includes the full scope and is not filtered by
-subsequent success or gold correctness.
-
-For the later composition experiment, per-method computation assigns the shared B computation once to each independently
-considered B-based method, then adds that method's own incremental requests. This
-estimates the attributable computation of a method assembled from the recorded components.
-It is distinct from the physical ledger for the multi-arm experiment, where shared calls
-were actually executed once. Exact cache reuse is not treated as free historical
-computation. The upstream C0 and retrieval costs, and some historical event times, remain
-unknown. Reported event seconds are not exclusive GPU hours, end-to-end latency, or energy
-measurements.
+\paragraph{Computation.}
+The adopted components use the same 8B backbones as their host configurations. The full-system ordinary-answer sampler uses temperature 0.7, top-$p=1$, and a 2,048-token output budget. Component-specific scoring and execution settings are recorded with the released configurations. We report measured requests and tokens separately from unavailable original retrieval costs, and preserve invalid outputs in every denominator.

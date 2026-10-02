@@ -1,0 +1,670 @@
+{
+  "schema_version": 1,
+  "script_sha256": "fa42bef21e061b88f68594edfcfa09520c0639d7d9a411212301d8e4dea27923",
+  "input_manifest": {
+    "schema_version": 2,
+    "files": [
+      {
+        "file": "framework.json",
+        "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+        "bytes": 78763,
+        "source_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+        "source_sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507"
+      },
+      {
+        "file": "heads.json",
+        "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+        "bytes": 48361,
+        "source_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+        "source_sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8"
+      },
+      {
+        "file": "benchmark.json",
+        "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+        "bytes": 85169,
+        "source_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+        "source_sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101"
+      }
+    ],
+    "use": "Frozen audited summaries; original source score paths and hashes remain within the audits.",
+    "historical_note": "The framework audit contains an older 40-case narrative subsequently corrected in the dossier. No 40-case fields are used in these figures or tables.",
+    "context_document": {
+      "path": "/home/data3/txy/docs/paper/research_dossier.md",
+      "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+      "lines": 953,
+      "reading_coverage": "All content covered: current data chapter lines152–290 read directly; prior complete semantic reading of the six component drafts covers223 matching paragraphs; all32 unmatched remaining paragraphs/headings inspected, including post-merge changes. Current introduction1–90 re-read. No claim of reading every raw experiment log.",
+      "use": "Design/context only; quantitative output derives solely from the three frozen JSON inputs.",
+      "bytes": 141289
+    }
+  },
+  "context_document": {
+    "path": "/home/data3/txy/docs/paper/research_dossier.md",
+    "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+    "lines": 953,
+    "reading_coverage": "All content covered: current data chapter lines152–290 read directly; prior complete semantic reading of the six component drafts covers223 matching paragraphs; all32 unmatched remaining paragraphs/headings inspected, including post-merge changes. Current introduction1–90 re-read. No claim of reading every raw experiment log.",
+    "use": "Design/context only; quantitative output derives solely from the three frozen JSON inputs.",
+    "bytes": 141289
+  },
+  "execution": {
+    "new_model_calls": 0,
+    "new_grading_calls": 0,
+    "new_training": 0,
+    "new_simulation": 0
+  },
+  "derived_values": {
+    "systems": [
+      {
+        "configuration": "M0",
+        "system": "Direct",
+        "backbone": "Llama",
+        "ALL": 48.10397553516798,
+        "R1": 30.041870202372646,
+        "R2": 8.860759493670885,
+        "R3": 17.871759890859483,
+        "R4": 38.46153846153846,
+        "R5": 65.70185185185161
+      },
+      {
+        "configuration": "M2",
+        "system": "MedRGAG",
+        "backbone": "Llama",
+        "ALL": 48.813346439492896,
+        "R1": 31.332868108862527,
+        "R2": 7.594936708860759,
+        "R3": 24.69304229195089,
+        "R4": 53.84615384615385,
+        "R5": 65.87685185185134
+      },
+      {
+        "configuration": "M3",
+        "system": "MA-RAG",
+        "backbone": "Qwen",
+        "ALL": 51.60823503713374,
+        "R1": 26.727145847871597,
+        "R2": 34.177215189873415,
+        "R3": 8.594815825375171,
+        "R4": 38.46153846153846,
+        "R5": 73.36574074074008
+      },
+      {
+        "configuration": "M4",
+        "system": "MedRAG",
+        "backbone": "Llama",
+        "ALL": 48.19899519440783,
+        "R1": 27.843684577808794,
+        "R2": 29.11392405063291,
+        "R3": 30.42291950886767,
+        "R4": 53.84615384615385,
+        "R5": 65.27962962962945
+      },
+      {
+        "configuration": "M5",
+        "system": "MedRAG",
+        "backbone": "Qwen",
+        "ALL": 47.34873307120987,
+        "R1": 28.576413119330077,
+        "R2": 41.77215189873418,
+        "R3": 25.238744884038198,
+        "R4": 53.84615384615385,
+        "R5": 63.42129629629608
+      },
+      {
+        "configuration": "M6",
+        "system": "MedGENIE",
+        "backbone": "Llama",
+        "ALL": 48.02479248580132,
+        "R1": 29.937194696441033,
+        "R2": 18.9873417721519,
+        "R3": 21.41882673942701,
+        "R4": 61.53846153846154,
+        "R5": 65.15092592592552
+      },
+      {
+        "configuration": "M7",
+        "system": "TC-RAG",
+        "backbone": "Qwen",
+        "ALL": 49.430428134556266,
+        "R1": 31.437543614794137,
+        "R2": 29.11392405063291,
+        "R3": 28.922237380627557,
+        "R4": 30.76923076923077,
+        "R5": 66.17314814814765
+      },
+      {
+        "configuration": "CF-MoA-B-M4",
+        "system": "CF-MoA (B)",
+        "backbone": "Llama",
+        "ALL": 58.29237658366099,
+        "R1": 44.626657362177255,
+        "R2": 48.10126582278481,
+        "R3": 53.206002728512956,
+        "R4": 53.84615384615385,
+        "R5": 68.83796296296296
+      },
+      {
+        "configuration": "CF-MoA-B-M5",
+        "system": "CF-MoA (B)",
+        "backbone": "Qwen",
+        "ALL": 59.36162079510704,
+        "R1": 46.61549197487788,
+        "R2": 58.22784810126582,
+        "R3": 60.027285129604365,
+        "R4": 23.076923076923077,
+        "R5": 68.78981481481482
+      }
+    ],
+    "heads": [
+      {
+        "category": "R1",
+        "method": "M0",
+        "n": 2866,
+        "original_correct": 861,
+        "head_correct": 1329,
+        "original_percent": 30.041870202372646,
+        "head_percent": 46.37124912770412,
+        "delta_pp": 16.329378925331472
+      },
+      {
+        "category": "R1",
+        "method": "M2",
+        "n": 2866,
+        "original_correct": 898,
+        "head_correct": 1323,
+        "original_percent": 31.332868108862527,
+        "head_percent": 46.16189811584089,
+        "delta_pp": 14.829030006978364
+      },
+      {
+        "category": "R1",
+        "method": "M3",
+        "n": 2866,
+        "original_correct": 766,
+        "head_correct": 1260,
+        "original_percent": 26.727145847871597,
+        "head_percent": 43.96371249127704,
+        "delta_pp": 17.236566643405446
+      },
+      {
+        "category": "R1",
+        "method": "M4",
+        "n": 2866,
+        "original_correct": 798,
+        "head_correct": 1225,
+        "original_percent": 27.843684577808794,
+        "head_percent": 42.742498255408236,
+        "delta_pp": 14.898813677599442
+      },
+      {
+        "category": "R1",
+        "method": "M5",
+        "n": 2866,
+        "original_correct": 819,
+        "head_correct": 1367,
+        "original_percent": 28.576413119330077,
+        "head_percent": 47.697138869504535,
+        "delta_pp": 19.120725750174458
+      },
+      {
+        "category": "R1",
+        "method": "M6",
+        "n": 2866,
+        "original_correct": 858,
+        "head_correct": 1317,
+        "original_percent": 29.937194696441033,
+        "head_percent": 45.95254710397767,
+        "delta_pp": 16.01535240753664
+      },
+      {
+        "category": "R1",
+        "method": "M7",
+        "n": 2866,
+        "original_correct": 901,
+        "head_correct": 1331,
+        "original_percent": 31.437543614794137,
+        "head_percent": 46.44103279832519,
+        "delta_pp": 15.003489183531052
+      },
+      {
+        "category": "R2",
+        "method": "M0",
+        "n": 79,
+        "original_correct": 7,
+        "head_correct": 29,
+        "original_percent": 8.860759493670885,
+        "head_percent": 36.70886075949367,
+        "delta_pp": 27.848101265822784
+      },
+      {
+        "category": "R2",
+        "method": "M2",
+        "n": 79,
+        "original_correct": 6,
+        "head_correct": 23,
+        "original_percent": 7.594936708860759,
+        "head_percent": 29.11392405063291,
+        "delta_pp": 21.518987341772153
+      },
+      {
+        "category": "R2",
+        "method": "M3",
+        "n": 79,
+        "original_correct": 27,
+        "head_correct": 43,
+        "original_percent": 34.177215189873415,
+        "head_percent": 54.43037974683544,
+        "delta_pp": 20.253164556962027
+      },
+      {
+        "category": "R2",
+        "method": "M4",
+        "n": 79,
+        "original_correct": 23,
+        "head_correct": 39,
+        "original_percent": 29.11392405063291,
+        "head_percent": 49.36708860759494,
+        "delta_pp": 20.253164556962027
+      },
+      {
+        "category": "R2",
+        "method": "M5",
+        "n": 79,
+        "original_correct": 33,
+        "head_correct": 46,
+        "original_percent": 41.77215189873418,
+        "head_percent": 58.22784810126582,
+        "delta_pp": 16.45569620253164
+      },
+      {
+        "category": "R2",
+        "method": "M6",
+        "n": 79,
+        "original_correct": 15,
+        "head_correct": 38,
+        "original_percent": 18.9873417721519,
+        "head_percent": 48.10126582278481,
+        "delta_pp": 29.11392405063291
+      },
+      {
+        "category": "R2",
+        "method": "M7",
+        "n": 79,
+        "original_correct": 23,
+        "head_correct": 37,
+        "original_percent": 29.11392405063291,
+        "head_percent": 46.835443037974684,
+        "delta_pp": 17.721518987341774
+      },
+      {
+        "category": "R3",
+        "method": "M0",
+        "n": 733,
+        "original_correct": 131,
+        "head_correct": 338,
+        "original_percent": 17.871759890859483,
+        "head_percent": 46.1118690313779,
+        "delta_pp": 28.240109140518417
+      },
+      {
+        "category": "R3",
+        "method": "M2",
+        "n": 733,
+        "original_correct": 181,
+        "head_correct": 340,
+        "original_percent": 24.69304229195089,
+        "head_percent": 46.384720327421554,
+        "delta_pp": 21.691678035470666
+      },
+      {
+        "category": "R3",
+        "method": "M3",
+        "n": 733,
+        "original_correct": 63,
+        "head_correct": 238,
+        "original_percent": 8.594815825375171,
+        "head_percent": 32.46930422919509,
+        "delta_pp": 23.874488403819917
+      },
+      {
+        "category": "R3",
+        "method": "M4",
+        "n": 733,
+        "original_correct": 223,
+        "head_correct": 386,
+        "original_percent": 30.42291950886767,
+        "head_percent": 52.66030013642565,
+        "delta_pp": 22.23738062755798
+      },
+      {
+        "category": "R3",
+        "method": "M5",
+        "n": 733,
+        "original_correct": 185,
+        "head_correct": 443,
+        "original_percent": 25.238744884038198,
+        "head_percent": 60.43656207366985,
+        "delta_pp": 35.19781718963165
+      },
+      {
+        "category": "R3",
+        "method": "M6",
+        "n": 733,
+        "original_correct": 157,
+        "head_correct": 305,
+        "original_percent": 21.41882673942701,
+        "head_percent": 41.60982264665757,
+        "delta_pp": 20.19099590723056
+      },
+      {
+        "category": "R3",
+        "method": "M7",
+        "n": 733,
+        "original_correct": 212,
+        "head_correct": 349,
+        "original_percent": 28.922237380627557,
+        "head_percent": 47.61255115961801,
+        "delta_pp": 18.69031377899045
+      }
+    ],
+    "pairs": [
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "arm": "C0",
+        "behavior": "maintain",
+        "correct": 4005,
+        "n": 6838,
+        "percent": 58.56975723895876
+      },
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "arm": "C0",
+        "behavior": "respond",
+        "correct": 13,
+        "n": 1780,
+        "percent": 0.7303370786516854
+      },
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "arm": "B",
+        "behavior": "maintain",
+        "correct": 4440,
+        "n": 6838,
+        "percent": 64.931266452179
+      },
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "arm": "B",
+        "behavior": "respond",
+        "correct": 347,
+        "n": 1780,
+        "percent": 19.49438202247191
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "arm": "C0",
+        "behavior": "maintain",
+        "correct": 3528,
+        "n": 6838,
+        "percent": 51.59403334308277
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "arm": "C0",
+        "behavior": "respond",
+        "correct": 27,
+        "n": 1780,
+        "percent": 1.5168539325842696
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "arm": "B",
+        "behavior": "maintain",
+        "correct": 4460,
+        "n": 6838,
+        "percent": 65.22374963439603
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "arm": "B",
+        "behavior": "respond",
+        "correct": 360,
+        "n": 1780,
+        "percent": 20.224719101123597
+      }
+    ],
+    "support": [
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "policy": "Full support kernel",
+        "correct": 69,
+        "n": 123,
+        "delta_correct": 0,
+        "percent": 56.09756097560975
+      },
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "policy": "Without add",
+        "correct": 43,
+        "n": 123,
+        "delta_correct": -26,
+        "percent": 34.959349593495936
+      },
+      {
+        "method": "M4",
+        "backbone": "Llama",
+        "policy": "Without remove",
+        "correct": 53,
+        "n": 123,
+        "delta_correct": -16,
+        "percent": 43.08943089430894
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "policy": "Full support kernel",
+        "correct": 71,
+        "n": 123,
+        "delta_correct": 0,
+        "percent": 57.72357723577236
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "policy": "Without add",
+        "correct": 48,
+        "n": 123,
+        "delta_correct": -23,
+        "percent": 39.02439024390244
+      },
+      {
+        "method": "M5",
+        "backbone": "Qwen",
+        "policy": "Without remove",
+        "correct": 60,
+        "n": 123,
+        "delta_correct": -11,
+        "percent": 48.78048780487805
+      }
+    ],
+    "architecture_counts": {
+      "source_count": 11,
+      "comparison_units": 6104,
+      "target_judgments": 13000,
+      "baseline_configurations": 7,
+      "method_families": 6,
+      "backbones": 2
+    },
+    "head_unique_units": 2941,
+    "category_denominators": {
+      "ALL": 6104,
+      "R1": 2866,
+      "R2": 79,
+      "R3": 733,
+      "R4": 13,
+      "R5": 3600
+    }
+  },
+  "figures": {
+    "cf_moa_architecture": {
+      "label": "fig:architecture",
+      "size_inches": [
+        6.8,
+        4.8
+      ],
+      "caption": "From functional benchmarking to sparse CF-MoA execution. The five relations organize the benchmark and seven-system diagnosis (top). The adopted system selects the first applicable branch using the visible input (bottom). A1 and A2 share a support kernel. A4 requires an explicitly supplied model and state and is evaluated separately from clinical v5, where it has no activations. The terminal output retains the native task contract.",
+      "semantics": [
+        "Offline R labels do not enter the online router.",
+        "The priority is diagnosis, rule support, supplied model, supported F task, then passthrough.",
+        "Arrows denote alternative routes; they do not denote simultaneous five-agent debate.",
+        "A4 is conditional and had zero activation in the clinical v5 run."
+      ],
+      "render_checks": {
+        "size_inches": [
+          6.8,
+          4.8
+        ],
+        "minimum_text_points": 7.1,
+        "maximum_text_points": 10.0,
+        "out_of_canvas_text": []
+      }
+    },
+    "seven_system_head_gains": {
+      "label": "fig:seven-head-gains",
+      "size_inches": [
+        6.8,
+        3.45
+      ],
+      "caption": "Terminal-head transfer across seven system configurations. Each segment links the selected original system to its R1, R2, or R3 head result on the same category. All 21 comparisons improve. L and Q denote the Llama and Qwen backbones. Category memberships overlap: the three panels cover 2,941 unique units, with R3 contained in R1. These are the recorded head-development comparisons, distinct from the complete CF-MoA evaluation.",
+      "semantics": [
+        "All seven configurations and all three reported head categories are included.",
+        "Common 0–70 percent axes preserve the scale of every before/after difference.",
+        "Original endpoints match the selected formal baselines.",
+        "Rule facts were generated for two backbones and combined offline with the seven original answer sets."
+      ],
+      "render_checks": {
+        "size_inches": [
+          6.8,
+          3.45
+        ],
+        "minimum_text_points": 7.1,
+        "maximum_text_points": 8.5,
+        "out_of_canvas_text": []
+      }
+    },
+    "paired_behavior": {
+      "label": "fig:paired-behavior",
+      "size_inches": [
+        6.8,
+        3.05
+      ],
+      "caption": "Correct behavior on paired inputs before and after CF-MoA. Both endpoints must be correct: 6,838 pairs require maintaining the judgment and 1,780 require responding to change. Endpoints are inferred separately, and pair relations are used only for evaluation. Labels show the exact numerator and denominator; the two panels use the same percentage axis.",
+      "semantics": [
+        "Correctness of both endpoints, rather than answer consistency alone.",
+        "C0 and adopted B are compared; no backbone-specific winner selection.",
+        "Pairs may share source roots or endpoints."
+      ],
+      "render_checks": {
+        "size_inches": [
+          6.8,
+          3.05
+        ],
+        "minimum_text_points": 7.15,
+        "maximum_text_points": 9.5,
+        "out_of_canvas_text": []
+      }
+    }
+  },
+  "tables": {
+    "main_system_results.tex": {
+      "label": "tab:main-system-results",
+      "rows": 9,
+      "score_cells": 54
+    },
+    "support_operation_ablation.tex": {
+      "label": "tab:support-ablation",
+      "policies": 3,
+      "backbones": 2,
+      "n_per_backbone": 123
+    }
+  },
+  "outputs": [
+    {
+      "file": "tables/main_system_results.tex",
+      "sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03",
+      "bytes": 1601
+    },
+    {
+      "file": "tables/support_operation_ablation.tex",
+      "sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e",
+      "bytes": 744
+    },
+    {
+      "file": "tables/main_system_results.csv",
+      "sha256": "554219262e8b150b8eb033c5770bfb140f4fc5f48932247d18225fe4da4aecda",
+      "bytes": 1206
+    },
+    {
+      "file": "tables/support_operation_ablation.csv",
+      "sha256": "cbae5b18d27884428788823c30d4eb6daac523fca63bfe9ded1ef7961d421bc6",
+      "bytes": 371
+    },
+    {
+      "file": "tables/seven_system_head_gains.csv",
+      "sha256": "06b2971314c3187a7aedb7a3b1cd91b59b0f950eab4c5cc4b72f96100a327155",
+      "bytes": 1616
+    },
+    {
+      "file": "tables/paired_behavior.csv",
+      "sha256": "77ea86d3446677980e5535f1be0c79ceacf262d4f435b74d725477744e59dce7",
+      "bytes": 422
+    },
+    {
+      "file": "figures/cf_moa_architecture.pdf",
+      "sha256": "62f688bad230933c477532bc5aea9b8e70cf3528bc8d6bb01f6de757ae4d3b0d",
+      "bytes": 27144
+    },
+    {
+      "file": "figures/cf_moa_architecture.png",
+      "sha256": "f84518834ce43018a71a351321e0d90e29b2012d794e132193a074fee8dcd0c0",
+      "bytes": 296040
+    },
+    {
+      "file": "figures/seven_system_head_gains.pdf",
+      "sha256": "47f40f02cabb875878d75997fd5ed4ae01522419278b957ffd4bc178b5b36619",
+      "bytes": 30076
+    },
+    {
+      "file": "figures/seven_system_head_gains.png",
+      "sha256": "1b129aebf8399b91f8392720a0c1fd9b1948d86429df53e8bcd14b376e6472aa",
+      "bytes": 166304
+    },
+    {
+      "file": "figures/paired_behavior.pdf",
+      "sha256": "22477b6b2de450800cc32a66c642ba19ab48f87d6a5886a2640378bccea1e5cf",
+      "bytes": 20830
+    },
+    {
+      "file": "figures/paired_behavior.png",
+      "sha256": "fd5462534398731ff641edc147c358ee6e00d64befccb512b90c511a0b348d61",
+      "bytes": 124219
+    }
+  ],
+  "visual_review": {
+    "status": "passed",
+    "inspector": "/root/head_research_audit",
+    "independent_inspector": "/root/seven_methods_audit",
+    "width_inches": 6.8,
+    "note": "No text overlaps or clipping; full-width publication placement; SVG/raster illustration not used. Seefigure_rebuild_check.json.",
+    "portability_patch": "Prior visual review remains valid: all 12 rendered/table artifacts are byte-identical after the metadata-only portability repair."
+  },
+  "reproduction": "Use the existing MedRGAG/.venv/bin/python; matplotlib only. Frozen inputs are portable; --freeze-inputs intentionally refreshes from this workspace. --check-only works from any cwd."
+}

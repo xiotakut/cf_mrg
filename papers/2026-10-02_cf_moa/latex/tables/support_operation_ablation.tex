@@ -1,0 +1,19 @@
+% Generated from frozen audited summaries by build_paper_figures.py.
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\caption{Support-operation ablation on all 123 rule inputs, reusing the same extracted facts and execution states. Parentheses give the change in correct outputs relative to the complete kernel.}
+\label{tab:support-ablation}
+\begin{tabular}{lrr}
+\toprule
+Policy & Llama & Qwen \\
+\midrule
+Full support kernel & 69/123 & 71/123 \\
+Without add & 43/123 (-26) & 48/123 (-23) \\
+Without remove & 53/123 (-16) & 60/123 (-11) \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\linewidth}\footnotesize A1 and A2 share one rule kernel. Unavailable outputs remain in the denominator.\end{minipage}
+\end{table}

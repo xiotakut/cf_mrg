@@ -1,0 +1,49 @@
+\section{A Functional Benchmark for Medical Counterfactual Reasoning}
+\label{sec:benchmark}
+
+We organize medical counterfactual tasks around the relationship between a change and a specified judgment. A \emph{comparison unit} links a source-provided variant to its reference or identifies an explicit within-question hypothetical. A \emph{target judgment} identifies what is being assessed within that unit. This distinction lets a single clinical narrative support several functional annotations while retaining the source's original question and answer contract. The resulting taxonomy covers condition changes, hypothetical evidence, and perturbations whose effects are evaluated through native task performance.
+% Evidence: docs/data/classification.md, annotation contract and target-level definitions;
+% docs/paper/research_dossier.md, Sections 3.1--3.2.
+
+\subsection{Five overlapping functional relations}
+
+\textbf{R1: adding support.} A change introduces identifiable evidence for a target judgment. For example, newly reported wheezing can support a bronchitis candidate without establishing it as the unique diagnosis. \textbf{R2: withdrawing support.} An identifiable basis for a judgment becomes invalid; the annotation states which basis is lost and preserves any independent support. \textbf{R3: comparing alternatives.} A change requires reassessing the relative support for at least two identifiable candidates. Replacing a history of spontaneous pneumothorax with deep-vein thrombosis illustrates a change relevant to the comparison between pneumothorax and pulmonary embolism in MedEinst~\cite{chen2026medeinst}. \textbf{R4: deriving consequences.} A changed premise requires propagating an established relationship to an outcome not directly supplied. \textbf{R5: preserving a judgment.} A real change leaves the evidence relevant to a specified target intact; the annotation gives a reason for that invariance.
+% Evidence: docs/data/classification.md, definitions and retained examples;
+% cited MedEinst examples are locally retained source cases 10000 and 13249.
+
+These relations overlap because they describe functions at the target level. The same observation may add support to one diagnosis and alter its comparison with another. Annotation therefore records the change, target, applicable relations, supporting text, and conclusions that cannot be inferred, then takes the union of target labels for the parent unit. Omission of a symptom does not establish its explicit absence, and an unchanged answer alone does not establish invariance. Native comparison axes are preserved: an internal hypothetical and an externally edited patient attribute receive separate treatment when they address different judgments.
+% Evidence: docs/data/classification.md, comparison-axis and cannot_infer rules.
+
+\subsection{Collection, qualification, and sampling}
+
+We registered 26 candidate sources and obtained 15, comprising 14 text resources and one multimodal metadata release lacking required images. Their normalized archive contains 55,991 units. Source acquisition, semantic classification, and scoring eligibility are recorded separately. Qualification requires the source materials needed to answer the native task and an established scoring interface. This process yielded an eligible pool of 38,123 units and 77,781 target judgments from 11 sources. The included resources cover diagnostic and prescribing edits~\cite{chen2026medeinst,medpicbench}, treatment hypotheticals~\cite{prosperi2026hiv}, demographic and cultural perturbations~\cite{benkirane2025bias,rezaei2026cultural,xiao2025amqa,rawat2024diversitymedqa}, clinical-service judgments~\cite{gourabathina2025medperturb}, hypothetical research evidence~\cite{mo2026faithfulness}, and evidence robustness~\cite{ngo2024medrgb,li2025biorab}.
+% Evidence: docs/data/sources.md; docs/data/construction.md;
+% paper_story_alignment/benchmark_contribution_audit.json.
+
+Language-model agents performed structured semantic annotation and review, supported by cross-checks and targeted audits. The construction pipeline preserves provenance and explicit correction history. Review distinguishes whether a functional relation holds from whether its reference answer supports scoring. For example, a valid invariance annotation can remain while an unreliable reference is excluded from scoring. Targeted review corrected 172 judgments across 130 units; these corrections are retained alongside their earlier versions. Unit identifiers, source locations, eligibility decisions, and target-to-input mappings make the final evaluation traceable to the acquired materials.
+% Evidence: docs/data/construction.md, review corrections;
+% docs/paper/research_dossier.md, Section 3.3.
+
+The frozen v5 evaluation retains all eligible R1--R4 targets and samples 450 R5 units without replacement from each of eight sources. Sampling uses sorted source-specific identifiers and a fixed seeded procedure, without consulting model predictions. Original semantic labels remain available, while a separate evaluation-label field specifies membership in this evaluation. This yields 6,104 unique comparison units, with category counts of 2,866/79/733/13/3,600 for R1--R5. Category memberships overlap; in particular, all 733 R3 units also belong to R1. Equal R5 allocations preserve source coverage while reducing the much larger invariance pool.
+% Evidence: frozen v5 sampling_protocol.json and source_summary.csv;
+% docs/data/construction.md, v5 sampling; dossier Sections 3.4--3.5.
+
+\subsection{Native inputs and scoring}
+
+The selected units contain 13,000 target judgments and materialize into 13,905 distinct model inputs, including reference endpoints. Each method has 15,616 native scoring mappings: one input may support multiple targets, and shared references can serve several units. Models receive the current question, native options, required evidence, and output contract. Reference and variant endpoints are answered independently; gold answers, functional labels, annotation rationales, and the opposite endpoint's answer remain outside inference.
+% Evidence: docs/evaluation/protocol.md, Sections 2.1 and 5.1.
+
+Native interfaces preserve the distinctions between sources. MedEinst requires open diagnosis, MedPIC uses multiple-answer selection, and MedPerturb expands eligible visit, management, and resource judgments separately. Hypothetical research evidence remains attached to its relation question. MedRGB retains the locally frozen six evidence conditions, with the fully relevant condition serving as the reference endpoint. Under our evaluation protocol, systems may additionally retrieve external evidence according to their configured permissions; this combines fixed perturbed evidence with dynamic retrieval.
+% Evidence: docs/evaluation/protocol.md, native format preservation and MedRGB conditions.
+
+For unit $u$, let $\mathcal{J}_u$ contain its eligible non-reference native scoring mappings and let $c_j\in\{0,1\}$ denote primary correctness. We report
+\begin{equation}
+ s_u=\frac{1}{|\mathcal{J}_u|}\sum_{j\in\mathcal{J}_u}c_j,
+ \qquad
+ \mathrm{ALL}=\frac{1}{|\mathcal{U}|}\sum_{u\in\mathcal{U}}s_u,
+ \label{eq:native-score}
+\end{equation}
+where $|\mathcal{U}|=6{,}104$. Category scores apply the same aggregation to their eligible members and mappings. Tables report these scores as percentages. Thus, ALL weights comparison units equally, rather than averaging category percentages or pooling all model inputs.
+
+Scoring retains native choice keys, multi-answer sets, relation labels, and frozen diagnosis normalization. Invalid outputs and unresolved protocol failures stay in the denominator. We additionally distinguish variant correctness, answer agreement, and both-endpoints-correct performance. The last measure requires successful answers on both sides, making it useful for evaluating whether systems respond to relevant changes while preserving correct judgments under irrelevant ones. These functional strata provide the diagnostic basis for the specialized operations introduced next.
+% Evidence: docs/evaluation/protocol.md, native scoring and failure policy.

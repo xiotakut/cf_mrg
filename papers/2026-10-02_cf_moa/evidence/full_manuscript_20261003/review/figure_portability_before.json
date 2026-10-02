@@ -1,0 +1,79 @@
+{
+  "script_sha256": "447c8c1eeeb8dc728b40bf945ebccd569269931552dea9ad23b7dbee49bc8dc6",
+  "outputs": [
+    {
+      "file": "tables/main_system_results.tex",
+      "sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03",
+      "bytes": 1601
+    },
+    {
+      "file": "tables/support_operation_ablation.tex",
+      "sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e",
+      "bytes": 744
+    },
+    {
+      "file": "tables/main_system_results.csv",
+      "sha256": "554219262e8b150b8eb033c5770bfb140f4fc5f48932247d18225fe4da4aecda",
+      "bytes": 1206
+    },
+    {
+      "file": "tables/support_operation_ablation.csv",
+      "sha256": "cbae5b18d27884428788823c30d4eb6daac523fca63bfe9ded1ef7961d421bc6",
+      "bytes": 371
+    },
+    {
+      "file": "tables/seven_system_head_gains.csv",
+      "sha256": "06b2971314c3187a7aedb7a3b1cd91b59b0f950eab4c5cc4b72f96100a327155",
+      "bytes": 1616
+    },
+    {
+      "file": "tables/paired_behavior.csv",
+      "sha256": "77ea86d3446677980e5535f1be0c79ceacf262d4f435b74d725477744e59dce7",
+      "bytes": 422
+    },
+    {
+      "file": "figures/cf_moa_architecture.pdf",
+      "sha256": "62f688bad230933c477532bc5aea9b8e70cf3528bc8d6bb01f6de757ae4d3b0d",
+      "bytes": 27144
+    },
+    {
+      "file": "figures/cf_moa_architecture.png",
+      "sha256": "f84518834ce43018a71a351321e0d90e29b2012d794e132193a074fee8dcd0c0",
+      "bytes": 296040
+    },
+    {
+      "file": "figures/seven_system_head_gains.pdf",
+      "sha256": "47f40f02cabb875878d75997fd5ed4ae01522419278b957ffd4bc178b5b36619",
+      "bytes": 30076
+    },
+    {
+      "file": "figures/seven_system_head_gains.png",
+      "sha256": "1b129aebf8399b91f8392720a0c1fd9b1948d86429df53e8bcd14b376e6472aa",
+      "bytes": 166304
+    },
+    {
+      "file": "figures/paired_behavior.pdf",
+      "sha256": "22477b6b2de450800cc32a66c642ba19ab48f87d6a5886a2640378bccea1e5cf",
+      "bytes": 20830
+    },
+    {
+      "file": "figures/paired_behavior.png",
+      "sha256": "fd5462534398731ff641edc147c358ee6e00d64befccb512b90c511a0b348d61",
+      "bytes": 124219
+    }
+  ],
+  "visual_review": {
+    "status": "passed",
+    "inspector": "/root/head_research_audit",
+    "independent_inspector": "/root/seven_methods_audit",
+    "width_inches": 6.8,
+    "note": "No text overlaps or clipping; full-width publication placement; SVG/raster illustration not used. Seefigure_rebuild_check.json."
+  },
+  "context_document": {
+    "path": "/home/data3/txy/docs/paper/research_dossier.md",
+    "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+    "lines": 953,
+    "reading_coverage": "All content covered: current data chapter lines152–290 read directly; prior complete semantic reading of the six component drafts covers223 matching paragraphs; all32 unmatched remaining paragraphs/headings inspected, including post-merge changes. Current introduction1–90 re-read. No claim of reading every raw experiment log.",
+    "use": "Design/context only; quantitative output derives solely from the three frozen JSON inputs."
+  }
+}

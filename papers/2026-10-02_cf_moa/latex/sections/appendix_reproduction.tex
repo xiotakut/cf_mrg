@@ -1,52 +1,18 @@
-\section{Selection Procedure and Reproduction}
-\label{sec:appendix_reproduction}
+\section{Implementation and Reproducibility}
+\label{app:implementation}
 
-The later CF-MoA core and verifier can be summarized as the following procedure. The source
-implementation, including native-interface special cases and error handling, remains
-authoritative.
+\subsection{Configuration identities}
+The selected seven-system comparison uses the following implementation identities: M0, direct Llama-3.1-8B-Instruct; M2, local all-Llama MedRGAG; M3, intrinsic MA-RAG with Qwen3-8B; M4, MedRAG-Llama with the selected structured-output repair; M5, MedRAG-Qwen; M6, MedGENIE v2 with Llama; and M7, TC-RAG with Qwen and typed control v2. The paper uses system names, while manifests retain these identifiers. The earlier i-MedRAG experiment was stopped and is preserved under its own identity; it is not an eighth configuration in the current table.
 
-\noindent\begin{minipage}{\linewidth}
-\small
-\begin{verbatim}
-Input: legal current input x; saved original context and answer
-route = fixed_visible_capability_predicate(x)
-B = execute_or_reuse_adopted_component(route, x)
-if route is not ordinary F, or B is unavailable:
-    return B
-C = distinct legal keys actually observed in B's saved F pool
-if |C| < 2:
-    return B
-for each candidate k in native order:
-    choose earliest complete saved representative for k
-    score correctness under both opposite A/B code mappings
-    normalize each two-code distribution; average correctness scores
-if verification has a technical failure:
-    record failure and return saved F output
-select maximum; exact ties prefer B, then native order
-return the selected complete saved representative
-\end{verbatim}
-\end{minipage}
+Selected outputs cover all 13,905 native inputs per configuration. Exact reuse is recorded for M0 (8,877 reused and 5,028 newly inferred), M2 (6,687 and 7,218), and M3 (3,690 and 10,215). M4--M7 each have 13,905 newly inferred outputs in their selected runs. Reuse requires the same input, method configuration, and output contract. Structured-output handling is part of the selected method identity; earlier unrestricted and repaired runs are not pooled as independent methods.
 
-The C2 procedure omits saved rationales from each verification request. C3 includes them
-as untrusted candidate reasoning. C5 replaces per-candidate binary scoring with joint
-finite-code selection. C4 performs three predefined additional native-answer draws and
-votes over old and additional answers; its failure policy is separate from verifier
-fallback.
+\subsection{Rebuilding paper artifacts}
+The paper package separates native LaTeX source, frozen numeric inputs, plotting scripts, and audit receipts. The main manuscript is maintained in \path{latex/main.tex}, with section files, tables, vector figures, and \path{references.bib}. Running \path{latex/build.sh} compiles it using Tectonic or a local \LaTeX{} toolchain.
 
-To rebuild the experimental figures and tables, the companion package provides
-\path{scripts/build_figures_tables.py}. It reads frozen summary inputs and writes CSV,
-LaTeX tables, and PDF/PNG figures. Its optional raw-record check independently
-reaggregates the original compressed result records without invoking a model or grader.
-For the seven-system additions, \path{scripts/build_scope_figures_tables.py} reads the
-separate frozen aggregate inputs and checks 42 baseline values and 21 head comparisons
-before rebuilding three tables and the comparison figure. The companion audit receipts
-document the preceding full-record reconciliation of saved R1/R2/R3 head outcomes with
-the selected original scores, including source hashes. The shipped plotting script
-does not repeat that raw-record audit. Both operations aggregate existing outcomes;
-neither generates answers, runs a semantic grader, or supplies independent validation.
-The manuscript is maintained directly in \texttt{latex/main.tex} and its included section
-files, with citations resolved from \texttt{references.bib} by BibTeX. The accompanying
-\texttt{latex/build.sh} compiles this source with a TeX engine; the normal document build
-does not require Markdown, Pandoc, or Typst. Source and output hashes and execution
-receipts identify the exact inputs used. A rebuild of these artifacts establishes
-agreement with the saved results, not independent experimental replication.
+The reproduction scripts read frozen summaries and regenerate the main tables, source and format breakdowns, and vector figures. They retain source hashes and assert denominators and selected values before exporting results. The source package includes all assets required to compile the paper offline once the TeX dependencies are installed. Its companion evidence package identifies the original configuration, prediction, score, and trace artifacts for each experiment. Dataset licenses and large model/retrieval assets remain governed by their original distribution conditions.
+
+The deterministic artifact rebuild reproduces the displayed results from saved experiment outcomes. Re-running inference additionally requires the exact backbone checkpoints, component prompts, rules and catalogs, native-input manifests, retrieval assets, and component-specific runtime settings. These dependencies are indexed separately so that an artifact rebuild is not confused with a fresh experimental replication.
+
+\subsection{Evidence organization}
+The data construction record defines eligibility and version lineage; the evaluation protocol defines native scoring and input permissions; the selected-system record defines the seven baseline versions. Head-specific records contain their implemented rules, control experiments, and transfer results. The full-system closeout binds the six arms to source/category/format results, paired intervals, and request costs. A separate coauthor dossier connects these records chronologically. The manuscript draws its claims from this evidence map while retaining the original run identities and unsuccessful variants in the companion archive.
+\FloatBarrier

@@ -1,64 +1,68 @@
-% Canonical manuscript source. Edit this project directly; no conversion step is
-% part of the normal build. Initial migration: 2026-10-02 from the frozen draft.
-\documentclass[11pt,a4paper]{article}
-\usepackage[margin=1in]{geometry}
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amsmath,amssymb}
-\usepackage{graphicx}
-\usepackage{booktabs,tabularx,array}
+\usepackage{graphicx,booktabs,tabularx,array}
 \usepackage[round,authoryear]{natbib}
-\usepackage[section]{placeins}
+\usepackage{placeins}
 \usepackage{xurl}
-\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
-\hypersetup{
-  pdftitle={Support Updating and Candidate Re-decision Across Seven Medical Question-Answering Systems},
-  pdflang={en}
-}
-\urlstyle{same}
-\setlength{\emergencystretch}{2em}
-\setlength{\parskip}{0.15em}
-\setlength{\tabcolsep}{5pt}
-\renewcommand{\arraystretch}{1.12}
-\setcounter{topnumber}{3}
-\setcounter{bottomnumber}{2}
-\setcounter{totalnumber}{5}
-\renewcommand{\topfraction}{0.9}
-\renewcommand{\bottomfraction}{0.85}
-\renewcommand{\textfraction}{0.08}
-\renewcommand{\floatpagefraction}{0.7}
-\raggedbottom
-
-\title{Support Updating and Candidate Re-decision Across Seven Medical
-Question-Answering Systems\\[0.5em]
-\large General conference manuscript draft}
-% Real author names and affiliations are pending author input.
-\author{}
-\date{3 October 2026}
-
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\textfloatsep}{11pt plus 3pt minus 2pt}
+\setlength{\floatsep}{9pt plus 2pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\setlength{\emergencystretch}{1em}
+\renewcommand{\topfraction}{0.93}
+\renewcommand{\dbltopfraction}{0.93}
+\renewcommand{\textfraction}{0.05}
+\setcounter{dbltopnumber}{3}
+\newcommand{\cfmoa}{CF-MoA}
+\newcommand{\sysL}{MedRAG-Llama}
+\newcommand{\sysQ}{MedRAG-Qwen}
+\newcommand{\pct}{\%}
+\graphicspath{{figures/}}
 \begin{document}
-\maketitle
+\twocolumn[{
+\begin{center}
+{\LARGE\bfseries CF-MoA: Taxonomy-Guided Benchmarking and Agent\\[3pt]
+Orchestration for Counterfactual Medical Reasoning\par}
+\vspace{10pt}
+{\large Anonymous Authors}\\[9pt]
+\end{center}
+\begin{center}\begin{minipage}{0.95\textwidth}
+\begin{abstract}
 \input{sections/abstract}
+\end{abstract}
+\smallskip
+\end{minipage}\end{center}
+\vspace{7pt}
+}]
 \input{sections/introduction}
 \input{sections/related_work}
-\input{sections/task_contract}
+\input{sections/benchmark}
 \input{sections/method}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{cf_moa_architecture.pdf}
+\caption{From functional diagnosis to agent orchestration. The benchmark describes five relations between a change and a target judgment. CF-MoA implements the corresponding operations through a sparse controller: support addition and removal share a rule executor, candidate comparison uses a diagnosis catalog, consequence calculation requires an executable model, and stable readout handles the remaining eligible interfaces. Routing uses the current input and available capabilities; A4 is evaluated separately on supplied-model tasks.}
+\label{fig:architecture}
+\end{figure*}
 \input{sections/experimental_setup}
 \input{sections/results}
+\FloatBarrier
 \input{sections/discussion}
 \input{sections/limitations}
-\input{sections/conclusion}
-\input{sections/declarations}
-
-\clearpage
-\appendix
-\input{sections/appendix_development}
-\input{sections/appendix_sources}
-\input{sections/appendix_reproduction}
-\clearpage
-\input{sections/appendix_model}
-
-\clearpage
-\bibliographystyle{abbrvnat}
+\FloatBarrier
+\bibliographystyle{plainnat}
 \bibliography{references}
+\clearpage
+\onecolumn
+\appendix
+\input{sections/appendix_benchmark}
+\input{sections/appendix_components}
+\input{sections/appendix_full_results}
+\input{sections/appendix_reproduction}
+\input{sections/declarations}
 \end{document}

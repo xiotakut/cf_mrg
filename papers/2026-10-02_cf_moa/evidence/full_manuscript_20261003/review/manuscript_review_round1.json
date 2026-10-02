@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "reviewer": "/root/seven_methods_audit",
+  "created_at": "2026-10-02T19:07:34.862793+00:00",
+  "review_type": "Non-blind internal field-general logic/readability review, followed by bounded verification of three authorized repairs.",
+  "criteria_binding_unavailable": true,
+  "calibration_status": "NOT_CALIBRATED",
+  "venue_alignment": "NOT_ASSESSED",
+  "precommitment": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/review/reviewer_precommitment.md",
+    "sha256": "3736b545b4c7d49f67e578eeb66ddb2371e8c9220935870e75e54c87b3ccd0ee",
+    "criteria_unchanged": true
+  },
+  "exposure_disclosure": "Reviewer authored related_work.tex and revised references.bib; previously audited benchmark and seven-system/head evidence and wrote the data chapter of the coauthor dossier. This is not paper-blind, external author-independent, or a venue-calibrated assessment. The reviewer examined their own related-work attribution gap.",
+  "inputs": {
+    "round1_manifest": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/review/round1_input_hashes.json",
+    "manifest_sha256": "88e8c030c93a4d52b969903cd098f853c00cff0d6de415c7764bedcb597449c3",
+    "initial_files": {
+      "main.tex": "9fa17a03d5d158b816dbd05d2d87b37c72ef69bb6fa65d9c6fd41e533abe2bbc",
+      "references.bib": "94cdecc00e8eb7f4a28276bae989e4457c7ff56a77da369338c28328a612fd9e",
+      "sections/abstract.tex": "6081c64552ba6db2946dca14475d04ff3be58cf662db4d810222bbe97b53acea",
+      "sections/appendix_benchmark.tex": "a543607c2808dbd309b2e73d9fcd9fecf163c8b66b76416d344f36ea669e311b",
+      "sections/appendix_components.tex": "f56edc222792617e31e7a5dc7a872932a88590b61d507185ce255971523dea70",
+      "sections/appendix_full_results.tex": "4c9ea82c475f973860ed70b12ab058177da74e4c1b79dea6c2154ba2f6d0009c",
+      "sections/appendix_reproduction.tex": "d4590396153305df7f58af6c5f2dc01f6be8a580518eea765c353ad92c423a11",
+      "sections/benchmark.tex": "15818203a8a0d13dbdad9b547837ecded6cfd9d864cfc36c7275343e011443ba",
+      "sections/declarations.tex": "10b42a7ea62233bedd1b7f42234b6e1e8bdbcecad8f0d054fc13e5d1840c34ee",
+      "sections/discussion.tex": "36b94e1a32838d59a509950b8c80f55c2f116b183b3548e8dfcdbae440cd486b",
+      "sections/experimental_setup.tex": "22986a70970511d0a8798b65019c107b98ea82ca6bfc75f9bc8fcf276ddf34c7",
+      "sections/introduction.tex": "3a7f42c333c747e8601ac7db79be4eea619ebf86e0fc2b8285d9768493681a98",
+      "sections/limitations.tex": "48eb53ea8599ec653422d5fb6bd1794780d506d934382ac97e2acb09d98cb3af",
+      "sections/method.tex": "d767f6c6b1c7e2f61aa2c14db4fce5593126efd47bb258593f43566337d24dce",
+      "sections/related_work.tex": "967760906a43cb249f7abe0a223eb4e2f97426863ae6c3ce599e15e2c0a6cd58",
+      "sections/results.tex": "0b61b6f852a54cb20072a61b404e59c70448d9a54658c2690d782369132566b6"
+    },
+    "initial_hash_check": "All 16 files matched the fixed manifest before review corrections. Changes listed below are authorized subsequent repairs; the fixed manifest is retained.",
+    "postrepair_changed_file_hashes": {
+      "references.bib": "02c3c6402344d61e0c7353284b63fabaf1c51e56ef5934bff0456f9d2773e3e3",
+      "sections/abstract.tex": "3dc0ec7a4efe4b43c0abd006c7833de8eefdcc90e8d572de965042dd4e204f89",
+      "sections/appendix_components.tex": "5cc3dcad66d2a70b4c2325d9c54632681f8e0f918dde38e18147463ca6cc8b40",
+      "sections/appendix_full_results.tex": "013716830e7874a77f1598c16435be4097cd968bb34e0e2c8766000be026efa6",
+      "sections/benchmark.tex": "bbe382480d7dfb67b9dbdcfd58193e13632c99bf11d249edaf1d2c60d0b3cba5",
+      "sections/declarations.tex": "f14fae007dbb96aeab74e8478ce561a0e5d621d6f82f1276b56085c95d6b79ba",
+      "sections/introduction.tex": "9de9148d99089c271311328510ac6f31f1a2f034861ede66953bf3ee4ec74ca6",
+      "sections/method.tex": "616e6f56e774d6dc9a34437f2bb4eea757b3747c7467b98650bea55ec053b419",
+      "sections/related_work.tex": "2584ff66dcee3ad68c6c39cf632a4d7a15c1ee985232a8861f13ee764aed43a8",
+      "sections/results.tex": "9261d8ea3ee4530c68cacf275e22d4a141f9774aa4ba126f50bad2e83ae405df"
+    }
+  },
+  "reading_coverage": {
+    "main_tex": "complete",
+    "sections_complete": [
+      "sections/abstract.tex",
+      "sections/appendix_benchmark.tex",
+      "sections/appendix_components.tex",
+      "sections/appendix_full_results.tex",
+      "sections/appendix_reproduction.tex",
+      "sections/benchmark.tex",
+      "sections/declarations.tex",
+      "sections/discussion.tex",
+      "sections/experimental_setup.tex",
+      "sections/introduction.tex",
+      "sections/limitations.tex",
+      "sections/method.tex",
+      "sections/related_work.tex",
+      "sections/results.tex"
+    ],
+    "tables_read_in_this_review": [
+      "main_system_results.tex",
+      "support_operation_ablation.tex",
+      "story_sources.tex",
+      "head_controls.tex",
+      "contrasts.tex",
+      "historical_model.tex"
+    ],
+    "static_ref_and_citation_scan": "main.tex, all sections, and all tables",
+    "previous_specialist_visual_review": [
+      "figures/cf_moa_architecture.png",
+      "figures/seven_system_head_gains.png",
+      "figures/paired_behavior.png"
+    ],
+    "numeric_reuse": "Previous independently verified 54 main-table values/max flags, 6 support-operation counts and 4 differences, 42 head endpoints, and 8 pair values. This review did not re-score examples or inspect every cell of all remaining supplement tables.",
+    "pdf_layout": "Not assessed in this round; parent handles compiled PDF.",
+    "unperformed": [
+      "new model inference",
+      "new scoring",
+      "new simulation",
+      "systematic novelty search",
+      "full retraction certification"
+    ]
+  },
+  "overall": {
+    "initial_disposition": "REQUEST_LOCAL_REVISION",
+    "current_disposition": "PASS_WITH_NONBLOCKING_SUGGESTIONS",
+    "scientific_assessment": "The contribution chain and principal descriptive findings are supported for the evaluated development scope. Three bounded reporting/attribution repairs were required; all three are now present in the source. No new experiments are needed to address this review.",
+    "submission_readiness": "Scientific logic/readability review passes after the local repairs; named-venue compliance, author declarations and final PDF layout remain separately owned checks.",
+    "not_a_numeric_score": true
+  },
+  "dimensions": [
+    {
+      "id": "D1",
+      "criterion": "Originality",
+      "round1": "PARTLY_MEETS",
+      "after_focused_repair": "MEETS",
+      "anchors": [
+        "sections/introduction.tex:12",
+        "sections/related_work.tex:5",
+        "sections/related_work.tex:14",
+        "sections/method.tex:18"
+      ],
+      "rationale": "The contribution is a curated functional benchmark, complete seven-configuration diagnosis, and executable operation-based controller; it does not depend on a first/SOTA claim. The nearest executable-guideline precedent and the rules source were missing; M2 restores their attribution.",
+      "uncertainty": "Literature coverage is bounded, not a systematic novelty certification.",
+      "decision_impact": "Resolved by local citation and two related-work sentences."
+    },
+    {
+      "id": "D2",
+      "criterion": "Methodological Rigor",
+      "round1": "PARTLY_MEETS",
+      "after_focused_repair": "MEETS",
+      "anchors": [
+        "sections/benchmark.tex:23",
+        "sections/benchmark.tex:27",
+        "sections/benchmark.tex:33",
+        "sections/benchmark.tex:39",
+        "sections/method.tex:10",
+        "sections/method.tex:21",
+        "sections/experimental_setup.tex",
+        "sections/appendix_benchmark.tex:7"
+      ],
+      "rationale": "Units, overlapping targets, native inputs, scoring mappings, aggregation, baseline identities, deterministic routing, controls and exposure are distinguishable. A1/A2 partitions and set-update formula are coherent. A3 prose defines prior construction, coefficient, voting and tie breaking sufficiently. Annotation actor provenance was missing; M1 now states language-model agents performed annotation/review.",
+      "uncertainty": "No independent clinician agreement or unseen-family confirmation is claimed; those studies are not supplied by this manuscript.",
+      "decision_impact": "Resolved existing-information reporting gap; no new experiment requested."
+    },
+    {
+      "id": "D3",
+      "criterion": "Evidence Sufficiency",
+      "round1": "MEETS",
+      "after_focused_repair": "MEETS",
+      "anchors": [
+        "sections/results.tex:21",
+        "sections/results.tex:26",
+        "sections/results.tex:28",
+        "sections/results.tex:32",
+        "sections/results.tex:37",
+        "sections/results.tex:39",
+        "sections/results.tex:48",
+        "sections/results.tex:60"
+      ],
+      "rationale": "Complete seven-system/head coverage and full-controller gains lead the evidence. The constant-None prior, limited calibration increment, small clinical R4 regression, separate supplied-model panel and opposing verifier effects are visible. M3 corrects one unsupported secondary paragraph title; the numerical control and main conclusions remain valid.",
+      "uncertainty": "Existing score audits are reused; current review did not repeat inference or scoring. Within-family intervals do not remove development selection.",
+      "decision_impact": "No principal result needs removal or replacement."
+    },
+    {
+      "id": "D4",
+      "criterion": "Argument Coherence",
+      "round1": "MEETS",
+      "after_focused_repair": "MEETS",
+      "anchors": [
+        "sections/abstract.tex",
+        "sections/introduction.tex",
+        "sections/benchmark.tex:48",
+        "sections/results.tex:8",
+        "sections/results.tex:10",
+        "sections/discussion.tex"
+      ],
+      "rationale": "Medical change sensitivity motivates the five relations; the curated benchmark exposes distinct seven-system deficits; targeted operations feed sparse CF-MoA; two full configurations test integration. The later verifier is correctly subordinate to the main contribution. The work reads as a research paper rather than the experiment chronology.",
+      "uncertainty": "A4 remains a conditional component with zero clinical-v5 activation, stated clearly and evaluated separately.",
+      "decision_impact": "No structural rewrite required."
+    },
+    {
+      "id": "D5",
+      "criterion": "Writing Quality",
+      "round1": "MEETS",
+      "after_focused_repair": "MEETS",
+      "anchors": [
+        "sections/method.tex:4",
+        "sections/results.tex:25",
+        "sections/results.tex:34",
+        "sections/limitations.tex",
+        "sections/appendix_reproduction.tex"
+      ],
+      "rationale": "Definitions precede internal symbols, sections lead with results, and the main text directly presents supported gains. Broad qualifications are mostly consolidated. Three small optional reductions/precision edits are listed below; none requires defensive expansion.",
+      "uncertainty": "Source readability and prior figure inspection only; no final PDF layout verdict.",
+      "decision_impact": "Copyediting suggestions are nonblocking."
+    }
+  ],
+  "must_fix_findings": [
+    {
+      "id": "M1",
+      "severity": "reporting",
+      "original_anchor": "sections/benchmark.tex:23; sections/appendix_benchmark.tex:7",
+      "finding": "Structured review was described without identifying that language-model agents performed the semantic annotations and review. Readers should not have to infer the annotator identity from the absence of clinician agreement.",
+      "evidence": [
+        "docs/data/construction.md:849",
+        "docs/data/construction.md:1741",
+        "docs/data/construction.md:1771",
+        "docs/data/construction.md:2569"
+      ],
+      "minimum_repair": "Add one direct annotation-actor sentence in the construction paragraph, retaining the existing distinctions among semantic review, grouped review and structural verification. Do not invent annotator-model versions or a clinician panel.",
+      "effort": "one sentence; existing records",
+      "status": "RESOLVED_VERIFIED",
+      "resolution": "benchmark.tex:23 now begins: Language-model agents performed structured semantic annotation and review, supported by cross-checks and targeted audits.",
+      "verification": "Read the changed paragraph; the existing limitations statement on absent clinician agreement is retained."
+    },
+    {
+      "id": "M2",
+      "severity": "attribution",
+      "original_anchor": "sections/method.tex:18; sections/related_work.tex:14",
+      "finding": "The finite 71-rule bank lacked its AGS Beers 2023 source, and the closely related MedGuideX executable-guideline precedent explicitly used in the project record was absent.",
+      "evidence": [
+        "docs/research/r2_support_head.md:182",
+        "docs/research/r2_support_head.md:560",
+        "docs/research/r2_support_head.md:1264",
+        "https://agsjournals.onlinelibrary.wiley.com/doi/abs/10.1111/jgs.18372",
+        "https://arxiv.org/abs/2605.26567v1"
+      ],
+      "minimum_repair": "Name selected AGS Beers recommendations in the method with a primary citation; add one or two sentences distinguishing MedGuideX training supervision from the present inference-time operation.",
+      "effort": "two bib entries, one method phrase, two related-work sentences",
+      "status": "RESOLVED_VERIFIED",
+      "resolution": "Added ags2023beers and shen2026medguidex after primary-source metadata/abstract checks. Parent inserted the rule citation; reviewer, separately authorized as bibliography owner, added two related-work sentences.",
+      "verification": "Fresh primary-source web checks are recorded in citation_audit.json round1_attribution_addendum. Pandoc parses all 29 BibTeX entries; no unresolved citation keys."
+    },
+    {
+      "id": "M3",
+      "severity": "claim-evidence wording",
+      "original_anchor": "sections/results.tex:28",
+      "finding": "The original heading claimed a benefit beyond a generic revision instruction, but the nearby 123-input table only disables addition or removal under fixed extracted facts and statuses.",
+      "evidence": [
+        "sections/results.tex:30",
+        "tables/support_operation_ablation.tex"
+      ],
+      "minimum_repair": "Replace the heading with Both support operations contribute. The existing counts and explanation then support it directly.",
+      "effort": "one heading",
+      "status": "RESOLVED_VERIFIED",
+      "resolution": "results.tex:28 now uses Both support operations contribute.",
+      "verification": "Read changed heading and adjacent ablation paragraph; no numerical modification."
+    }
+  ],
+  "optional_suggestions": [
+    {
+      "id": "S1",
+      "anchors": [
+        "sections/benchmark.tex:46",
+        "sections/limitations.tex:3"
+      ],
+      "edit": "After the metric equation add We report these means as percentages. In limitations replace independent deployment conditions with unseen case families; a family-disjoint study alone is not a deployment evaluation.",
+      "reason": "Small scale and generalization-target precision improvements.",
+      "blocking": false
+    },
+    {
+      "id": "S2",
+      "anchors": [
+        "sections/method.tex:12",
+        "sections/results.tex:39"
+      ],
+      "edit": "Keep the route counts in method.tex and delete the repeated first sentence of results.tex:39. Preserve the result paragraph’s zero-A4 coverage and clinical R4 regression because they explain the observed score.",
+      "reason": "Reduces repeated setup without hiding material negative evidence.",
+      "blocking": false
+    },
+    {
+      "id": "S3",
+      "anchors": [
+        "sections/limitations.tex:7",
+        "sections/appendix_reproduction.tex:10"
+      ],
+      "edit": "Delete These qualifications define the settings in which the reported evidence applies. Delete No conversion from a word processor or markup draft is required.",
+      "reason": "These meta-writing sentences do not add scientific or reproducibility information. Keep the meaningful distinction between artifact rebuild and new inference.",
+      "blocking": false
+    }
+  ],
+  "mechanical_checks": {
+    "undefined_refs": [],
+    "undefined_citations": [],
+    "uncited_bib_keys": [],
+    "bib_entries_parsed": 29,
+    "figures_previous_check": "No mandatory visual/factual issue; readable at 6.8 inches, do not shrink to one column.",
+    "figure_script_portability_code_check": "Independently read freeze(), load(), main(): only --freeze-inputs touches workspace source files; build and --check-only use frozen input manifest/JSON and generated assets. Rebuild/open-hook test owned by head_research_audit; no duplicate execution claimed."
+  },
+  "review_process": "Criteria were precommitted and unchanged. Main review findings were delivered before the parent authorized local fixes. The final repair check is limited to those findings and bibliography syntax; it is not a second whole-manuscript review. Parent is responsible for incorporating this receipt into docs/paper/writing_record.md."
+}

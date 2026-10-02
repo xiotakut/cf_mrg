@@ -1,0 +1,27 @@
+% Generated from frozen audited summaries by build_paper_figures.py.
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5.5pt}
+\caption{Complete v5 results for seven baseline configurations and two CF-MoA instantiations. Scores are percentages of native-unit means; bold denotes the highest value in each column.}
+\label{tab:main-system-results}
+\begin{tabular}{llrrrrrr}
+\toprule
+System & Backbone & ALL & R1 & R2 & R3 & R4 & R5 \\
+\multicolumn{2}{l}{\emph{Comparison units}} & 6,104 & 2,866 & 79 & 733 & 13 & 3,600 \\
+\midrule
+Direct & Llama & 48.10 & 30.04 & 8.86 & 17.87 & 38.46 & 65.70 \\
+MedRGAG & Llama & 48.81 & 31.33 & 7.59 & 24.69 & 53.85 & 65.88 \\
+MA-RAG & Qwen & 51.61 & 26.73 & 34.18 & 8.59 & 38.46 & \textbf{73.37} \\
+MedRAG & Llama & 48.20 & 27.84 & 29.11 & 30.42 & 53.85 & 65.28 \\
+MedRAG & Qwen & 47.35 & 28.58 & 41.77 & 25.24 & 53.85 & 63.42 \\
+MedGENIE & Llama & 48.02 & 29.94 & 18.99 & 21.42 & \textbf{61.54} & 65.15 \\
+TC-RAG & Qwen & 49.43 & 31.44 & 29.11 & 28.92 & 30.77 & 66.17 \\
+\midrule
+\textbf{CF-MoA (B)} & Llama & 58.29 & 44.63 & 48.10 & 53.21 & 53.85 & 68.84 \\
+\textbf{CF-MoA (B)} & Qwen & \textbf{59.36} & \textbf{46.62} & \textbf{58.23} & \textbf{60.03} & 23.08 & 68.79 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{0.97\textwidth}\footnotesize Each configuration covers 13,905 unique inputs. ALL averages non-reference task scores within units and then across units; R labels may overlap. Llama denotes Llama-3.1-8B-Instruct and Qwen denotes Qwen3-8B. The selected MedRAG-Llama baseline includes its output repair.\end{minipage}
+\end{table*}

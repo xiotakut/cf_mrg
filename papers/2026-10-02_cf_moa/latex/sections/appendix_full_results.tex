@@ -1,0 +1,35 @@
+\section{Complete System Results and Aggregation Variants}
+\label{app:full}
+
+\subsection{Six-arm comparison}
+The full evaluation uses the same input and scoring-mapping sets for all six arms. Table~\ref{tab:arms} defines the arms, and Table~\ref{tab:main_results} reports aggregate scores, correct-input counts, and unavailable outputs. Correct-input counts use input-level scoring and are therefore distinct from the unit-macro ALL score. Table~\ref{tab:full-categories} retains all five functional categories for every arm; Table~\ref{tab:source-breakdown} gives source-specific C0/B results, and Table~\ref{tab:format-breakdown} gives their native input-format results.
+
+\input{tables/arms}
+\input{tables/main_results}
+\input{tables/full_categories}
+\input{tables/source_breakdown}
+\input{tables/format_breakdown}
+
+\subsection{Paired outcomes and uncertainty}
+Table~\ref{tab:paired} reports the complete both-endpoints-correct counts. All 1,780 answer-changing pairs come from MedEinst; the preserving-pair set spans multiple sources. The candidate-selection extensions operate on ordinary readout disagreements, so the diagnostic response-pair results remain identical across B and the four extensions in this evaluation. The family bootstrap resamples parent families as clusters and recomputes paired differences, preserving all units from a sampled family. Table~\ref{tab:contrasts} reports the principal aggregate contrasts, and the machine-readable result package contains all 36 recorded contrast intervals across aggregate and paired metrics.
+
+\input{tables/paired}
+\input{tables/contrasts}
+
+\subsection{Candidate verification and alternative selection}
+For an ordinary F input with at least two distinct valid answer keys, we retain the earliest complete saved response representing each key. C2 scores whether each candidate is correct under two opposite A/B label assignments. C3 uses the same procedure and includes the saved candidate rationale as model-generated reasoning to be checked. For candidate $k$, the verifier averages its normalized probability of correctness under the two assignments:
+\begin{equation}
+ v(k)=\frac{1}{2}\left[p_{AB}(\mathrm{correct}\mid x,k,r_k)+p_{BA}(\mathrm{correct}\mid x,k,r_k)\right].
+\end{equation}
+The rationale $r_k$ is omitted in C2. The highest-scoring candidate is selected; exact ties favor the saved F answer, then native order. The complete existing representative is returned, preserving its required auxiliary fields. Non-ordinary F inputs, single-candidate pools, and unavailable B outputs retain B. Technical verification failure also falls back to B and is recorded.
+
+The full ledger identifies 2,964 Llama and 2,295 Qwen ordinary disagreement inputs. Two Llama B outputs are unavailable, leaving 2,962 actually verified Llama inputs. C3 records one Llama and eight Qwen technical verifier failures with fallback. C5 instead scores a joint finite choice over the same candidates and rationales. C4 adds three predetermined native-answer draws to the old F pool and votes over the expanded pool; its unavailable-output policy is reported separately, rather than replaced with the verifier fallback.
+
+\subsection{Computation and attribution}
+\label{app:cost}
+Table~\ref{tab:costs} reports the adopted component cost and the additional C3 cost. B uses 241,675,469 input and 9,686,224 output tokens for Llama, and 220,580,598 input and 7,645,205 output tokens for Qwen. Across the shared full-evaluation execution of all arms, the physical ledger contains 162,979 requests, 957,810,324 input tokens, and 18,291,906 output tokens. Method-attributed costs include the shared component once for each method being evaluated; summing those attributed totals across arms would double-count reused requests.
+
+\input{tables/costs}
+
+Original C0 answering and retrieval costs are incompletely recorded and are left unknown. Timing records cover 11,402 of 13,905 component input rows per configuration, leaving 2,503 without complete timing. Recorded event durations do not establish a complete end-to-end runtime. The physical request totals cover the later full-system experiment, not the entire research project.
+\FloatBarrier

@@ -1,0 +1,275 @@
+{
+  "snapshot": "d857934",
+  "rows": [
+    {
+      "method": "M4",
+      "planned_inputs": 13905,
+      "terminal_inputs": 13905,
+      "rule": "saved ordinary-F route with >=2 distinct actually legal native keys; no gold/outcome/arm-success filter",
+      "eligible_inputs": 2964,
+      "full_input_denominator": 13905,
+      "coverage_of_all_inputs": 0.21316073354908308,
+      "ordinary_F_trace_inputs": 9293,
+      "coverage_of_known_ordinary_F": 0.31894974712148927,
+      "pool_strata": {
+        "non_F": 3727,
+        "K>=2": 2964,
+        "K=1": 6327,
+        "NLI": 885,
+        "K=0": 2
+      },
+      "selected_component": {
+        "legacy_R1": 3727,
+        "F": 10178
+      },
+      "capability_predicate": {
+        "original_catalog_predicate": 3560,
+        "original_rule_predicate": 123,
+        "original_passthrough_predicate": 44,
+        "adopted_F_native_capability": 10178
+      },
+      "A4_selected_inputs": 0,
+      "A4_denominator": 13905,
+      "by_arm": [
+        {
+          "arm": "strong_B",
+          "all_inputs": 13905,
+          "eligible_inputs": 2964,
+          "eligible_native_unavailable": 2,
+          "all_native_unavailable": 51,
+          "eligible_activation_attempted": 0,
+          "eligible_audit_status": {
+            "baseline_no_verifier": 2962,
+            "whole_native_unavailable": 2
+          },
+          "all_audit_status": {
+            "baseline_no_verifier": 13854,
+            "whole_native_unavailable": 51
+          },
+          "eligible_invalid_F_votes": 533
+        },
+        {
+          "arm": "candidate_only",
+          "all_inputs": 13905,
+          "eligible_inputs": 2964,
+          "eligible_native_unavailable": 2,
+          "all_native_unavailable": 51,
+          "eligible_activation_attempted": 2962,
+          "eligible_audit_status": {
+            "completed_selection": 2962,
+            "whole_native_unavailable": 2
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3723,
+            "whole_native_unavailable": 51,
+            "completed_selection": 2962,
+            "retained_K_below_2": 6327,
+            "retained_NLI": 842
+          },
+          "eligible_invalid_F_votes": 533
+        },
+        {
+          "arm": "candidate_with_rationales",
+          "all_inputs": 13905,
+          "eligible_inputs": 2964,
+          "eligible_native_unavailable": 2,
+          "all_native_unavailable": 51,
+          "eligible_activation_attempted": 2962,
+          "eligible_audit_status": {
+            "completed_selection": 2961,
+            "whole_native_unavailable": 2,
+            "audit_unavailable_saved_F_fallback": 1
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3723,
+            "whole_native_unavailable": 51,
+            "completed_selection": 2961,
+            "retained_K_below_2": 6327,
+            "retained_NLI": 842,
+            "audit_unavailable_saved_F_fallback": 1
+          },
+          "eligible_invalid_F_votes": 533
+        },
+        {
+          "arm": "pool_old_plus_three",
+          "all_inputs": 13905,
+          "eligible_inputs": 2964,
+          "eligible_native_unavailable": 108,
+          "all_native_unavailable": 157,
+          "eligible_activation_attempted": 2962,
+          "eligible_audit_status": {
+            "completed_selection": 2809,
+            "completed_sampling_control": 47,
+            "whole_native_unavailable": 108
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3723,
+            "whole_native_unavailable": 157,
+            "completed_selection": 2809,
+            "retained_K_below_2": 6327,
+            "completed_sampling_control": 47,
+            "retained_NLI": 842
+          },
+          "eligible_invalid_F_votes": 533
+        },
+        {
+          "arm": "joint_selector",
+          "all_inputs": 13905,
+          "eligible_inputs": 2964,
+          "eligible_native_unavailable": 2,
+          "all_native_unavailable": 51,
+          "eligible_activation_attempted": 2962,
+          "eligible_audit_status": {
+            "completed_selection": 2961,
+            "whole_native_unavailable": 2,
+            "audit_unavailable_saved_F_fallback": 1
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3723,
+            "whole_native_unavailable": 51,
+            "completed_selection": 2961,
+            "retained_K_below_2": 6327,
+            "retained_NLI": 842,
+            "audit_unavailable_saved_F_fallback": 1
+          },
+          "eligible_invalid_F_votes": 533
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "planned_inputs": 13905,
+      "terminal_inputs": 13905,
+      "rule": "saved ordinary-F route with >=2 distinct actually legal native keys; no gold/outcome/arm-success filter",
+      "eligible_inputs": 2295,
+      "full_input_denominator": 13905,
+      "coverage_of_all_inputs": 0.1650485436893204,
+      "ordinary_F_trace_inputs": 9293,
+      "coverage_of_known_ordinary_F": 0.24696007747767137,
+      "pool_strata": {
+        "non_F": 3727,
+        "K>=2": 2295,
+        "K=1": 6998,
+        "NLI": 885
+      },
+      "selected_component": {
+        "legacy_R1": 3727,
+        "F": 10178
+      },
+      "capability_predicate": {
+        "original_catalog_predicate": 3560,
+        "original_rule_predicate": 123,
+        "original_passthrough_predicate": 44,
+        "adopted_F_native_capability": 10178
+      },
+      "A4_selected_inputs": 0,
+      "A4_denominator": 13905,
+      "by_arm": [
+        {
+          "arm": "strong_B",
+          "all_inputs": 13905,
+          "eligible_inputs": 2295,
+          "eligible_native_unavailable": 0,
+          "all_native_unavailable": 22,
+          "eligible_activation_attempted": 0,
+          "eligible_audit_status": {
+            "baseline_no_verifier": 2295
+          },
+          "all_audit_status": {
+            "baseline_no_verifier": 13883,
+            "whole_native_unavailable": 22
+          },
+          "eligible_invalid_F_votes": 186
+        },
+        {
+          "arm": "candidate_only",
+          "all_inputs": 13905,
+          "eligible_inputs": 2295,
+          "eligible_native_unavailable": 0,
+          "all_native_unavailable": 22,
+          "eligible_activation_attempted": 2295,
+          "eligible_audit_status": {
+            "completed_selection": 2287,
+            "audit_unavailable_saved_F_fallback": 8
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3706,
+            "whole_native_unavailable": 22,
+            "completed_selection": 2287,
+            "retained_K_below_2": 6998,
+            "retained_NLI": 884,
+            "audit_unavailable_saved_F_fallback": 8
+          },
+          "eligible_invalid_F_votes": 186
+        },
+        {
+          "arm": "candidate_with_rationales",
+          "all_inputs": 13905,
+          "eligible_inputs": 2295,
+          "eligible_native_unavailable": 0,
+          "all_native_unavailable": 22,
+          "eligible_activation_attempted": 2295,
+          "eligible_audit_status": {
+            "completed_selection": 2287,
+            "audit_unavailable_saved_F_fallback": 8
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3706,
+            "whole_native_unavailable": 22,
+            "completed_selection": 2287,
+            "retained_K_below_2": 6998,
+            "retained_NLI": 884,
+            "audit_unavailable_saved_F_fallback": 8
+          },
+          "eligible_invalid_F_votes": 186
+        },
+        {
+          "arm": "pool_old_plus_three",
+          "all_inputs": 13905,
+          "eligible_inputs": 2295,
+          "eligible_native_unavailable": 64,
+          "all_native_unavailable": 86,
+          "eligible_activation_attempted": 2287,
+          "eligible_audit_status": {
+            "completed_selection": 2190,
+            "completed_sampling_control": 41,
+            "whole_native_unavailable": 64
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3706,
+            "whole_native_unavailable": 86,
+            "completed_selection": 2190,
+            "retained_K_below_2": 6998,
+            "completed_sampling_control": 41,
+            "retained_NLI": 884
+          },
+          "eligible_invalid_F_votes": 186
+        },
+        {
+          "arm": "joint_selector",
+          "all_inputs": 13905,
+          "eligible_inputs": 2295,
+          "eligible_native_unavailable": 0,
+          "all_native_unavailable": 22,
+          "eligible_activation_attempted": 2295,
+          "eligible_audit_status": {
+            "completed_selection": 2287,
+            "audit_unavailable_saved_F_fallback": 8
+          },
+          "all_audit_status": {
+            "non_F_no_verifier": 3706,
+            "whole_native_unavailable": 22,
+            "completed_selection": 2287,
+            "retained_K_below_2": 6998,
+            "retained_NLI": 884,
+            "audit_unavailable_saved_F_fallback": 8
+          },
+          "eligible_invalid_F_votes": 186
+        }
+      ]
+    }
+  ],
+  "no_gold_or_outcome_conditions": true,
+  "denominator_policy": "All 13905 per backbone retained; invalid votes, unavailable outputs and verifier failures remain explicit.",
+  "five_roles": "Five roles are not five independent models; A1/A2 share a kernel; clinical v5 A4 coverage is zero."
+}

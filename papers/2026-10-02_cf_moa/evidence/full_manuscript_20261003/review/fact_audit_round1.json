@@ -1,0 +1,659 @@
+{
+  "task": "Independent factual audit of new English full manuscript,round1",
+  "date": "2026-10-03",
+  "status": "pass_after_author_fixes",
+  "reviewer": "early_and_r45_audit",
+  "independence": "Reviewer did not write or modify any manuscript section/table;parent incorporated specific findings. Familiar with project through earlier independent audits/dossier chapter;not a blinded reviewer.",
+  "scope": {
+    "main_sections": [
+      "abstract",
+      "introduction",
+      "benchmark",
+      "method",
+      "experimental_setup",
+      "results",
+      "discussion",
+      "limitations"
+    ],
+    "additional_parent_authorized_appendices": [
+      "appendix_benchmark",
+      "appendix_components",
+      "appendix_full_results",
+      "appendix_reproduction"
+    ],
+    "excluded": [
+      "related_work.tex",
+      "declarations.tex",
+      "layout/compilation",
+      "external citation-metadata verification"
+    ],
+    "read_coverage": "All8 requested sections and4 subsequently authorized appendices read in full. Referenced table rows inspected;specified numeric tables independently matched to frozen summaries. No new raw prediction scoring."
+  },
+  "execution": {
+    "new_models": 0,
+    "new_graders": 0,
+    "new_training": 0,
+    "new_simulations": 0,
+    "GPU_actions": 0,
+    "manuscript_edits": 0,
+    "canonical_doc_edits": 0
+  },
+  "blockers_remaining": [],
+  "findings": [
+    {
+      "id": "F01_BOOTSTRAP_FAMILY_SCOPE",
+      "severity": "medium",
+      "file": "experimental_setup.tex",
+      "line": 14,
+      "original_claim": "For the main paired system contrasts ... over4,766parentfamilies",
+      "issue": "ALL has4,766families;maintain has2,806;respond1,780. Each metric resamples its own family set.",
+      "evidence": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/family_effect_intervals.json B−C0 six rows",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/scripts/summarize_existing_results.py:67–109"
+      ],
+      "requested_fix": "Report family count separately by metric.",
+      "status": "fixed_verified"
+    },
+    {
+      "id": "F02_R2_REMAINING_SUPPORT_SCOPE",
+      "severity": "minor",
+      "file": "results.tex",
+      "line": 32,
+      "original_claim": "the nine remaining non-None examples",
+      "issue": "Nine denotes covered prescribing examples;79-category also contains four non-prescribing tasks. Do not imply only nine non-None cases in entire category.",
+      "evidence": [
+        "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json r2_constant_control",
+        "/home/data3/txy/docs/paper/research_dossier.md:363–367"
+      ],
+      "requested_fix": "Specify nine covered prescribing examples with remaining support.",
+      "status": "fixed_verified"
+    },
+    {
+      "id": "F03_MEDRGB_LOCAL_PROTOCOL",
+      "severity": "medium",
+      "file": "benchmark.tex",
+      "line": 36,
+      "related_locations": [
+        "abstract.tex:1",
+        "introduction.tex:10"
+      ],
+      "original_claim": "Preserve source native contracts;MedRGB sixfixedconditions without noting additionalretrieval",
+      "issue": "Local MedRGB permits external dynamic retrieval while retaining fixed perturbed materials;it is not identical to official static-evidence evaluation.",
+      "evidence": [
+        "/home/data3/txy/docs/evaluation/protocol.md:123,177–179",
+        "/home/data3/txy/docs/paper/research_dossier.md:260–266"
+      ],
+      "requested_fix": "State fixed perturbed evidence+dynamic retrieval under configured permissions;abstract scope frozen source-specific scoring.",
+      "status": "fixed_verified"
+    },
+    {
+      "id": "F04_CUPCASE_CONTROL_IDENTITY",
+      "severity": "medium",
+      "file": "appendix_components.tex",
+      "line": 15,
+      "original_claim": "character-normalized original outputs15/14",
+      "issue": "Control computes character-length-normalized candidate likelihood. It does not normalize original response text. Counts15/14 unchanged.",
+      "evidence": [
+        "/home/data3/txy/docs/research/r3_candidate_comparison.md:1965–1967;also1626"
+      ],
+      "requested_fix": "Use character-length-normalized candidate likelihood.",
+      "status": "fixed_verified"
+    }
+  ],
+  "additional_verified_correction_from_parent": {
+    "file": "appendix_full_results.tex",
+    "line": 30,
+    "claim": "Qwen B input_tokens220,580,598",
+    "result": "correct, directly checked costs/per_method_costs.json;reviewer did not observe prior erroneous draft value and does not invent it."
+  },
+  "numeric_checks": {
+    "full_category_cells": 72,
+    "main_system_cells": 54,
+    "source_breakdown_cells": 44,
+    "format_breakdown_cells": 20,
+    "paired_correct_counts": 24,
+    "cost_cells": 10,
+    "positive_pair_intervals_verified": 4,
+    "r2_none_control_all7_and_retention5_1_1": true,
+    "head_comparisons_all21_improve": true
+  },
+  "head_ranges_verified": {
+    "R1": {
+      "baseline_range_percent": [
+        26.727145847871597,
+        31.437543614794137
+      ],
+      "head_range_percent": [
+        42.742498255408236,
+        47.697138869504535
+      ]
+    },
+    "R2": {
+      "baseline_range_percent": [
+        7.594936708860759,
+        41.77215189873418
+      ],
+      "head_range_percent": [
+        29.11392405063291,
+        58.22784810126582
+      ]
+    },
+    "R3": {
+      "baseline_range_percent": [
+        8.594815825375171,
+        30.42291950886767
+      ],
+      "head_range_percent": [
+        32.46930422919509,
+        60.43656207366985
+      ]
+    }
+  },
+  "four_positive_pair_intervals": [
+    {
+      "method": "M4",
+      "metric": "maintain",
+      "candidate": "strong_B",
+      "baseline": "original_C0",
+      "atoms": 6838,
+      "families": 2806,
+      "delta_pp": 6.3615092132202395,
+      "percentile_95_pp": [
+        5.132734200444245,
+        7.603678062231505
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "paired": true,
+      "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+    },
+    {
+      "method": "M4",
+      "metric": "respond",
+      "candidate": "strong_B",
+      "baseline": "original_C0",
+      "atoms": 1780,
+      "families": 1780,
+      "delta_pp": 18.764044943820224,
+      "percentile_95_pp": [
+        16.96629213483146,
+        20.56179775280899
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "paired": true,
+      "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+    },
+    {
+      "method": "M5",
+      "metric": "maintain",
+      "candidate": "strong_B",
+      "baseline": "original_C0",
+      "atoms": 6838,
+      "families": 2806,
+      "delta_pp": 13.62971629131325,
+      "percentile_95_pp": [
+        12.03002731467996,
+        15.290045247790985
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "paired": true,
+      "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+    },
+    {
+      "method": "M5",
+      "metric": "respond",
+      "candidate": "strong_B",
+      "baseline": "original_C0",
+      "atoms": 1780,
+      "families": 1780,
+      "delta_pp": 18.707865168539325,
+      "percentile_95_pp": [
+        16.91011235955056,
+        20.56179775280899
+      ],
+      "resamples": 5000,
+      "seed": 240924,
+      "paired": true,
+      "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+    }
+  ],
+  "core_facts_verified": [
+    {
+      "claim": "Sevenconfigurations/sixfamilies;M4structuredoutput selected;M5different output protocol;M6MedGENIE notoldiMedRAG",
+      "location": [
+        "experimental_setup.tex:5",
+        "appendix_reproduction.tex:5–7"
+      ],
+      "result": "pass;reusecountsM0 8877+5028,M2 6687+7218,M3 3690+10215,each13905;M4–M7new13905"
+    },
+    {
+      "claim": "6104units,13000judgments,13905inputs,15616mappings;R1–R5 2866/79/733/13/3600;R3nestedR1",
+      "location": [
+        "benchmark.tex:27,33,39–48",
+        "appendix_benchmark.tex:14"
+      ],
+      "result": "pass;distinct representations andnonreferencemacro described"
+    },
+    {
+      "claim": "A1/A2oneadoptedkernel,71rules,age>=65multi eligibility,threevaluedpaths,addMET/removeCONTRADICTED/preserveUNKNOWNinitial",
+      "location": [
+        "method.tex:18–26"
+      ],
+      "result": "pass;ordinaryset formula qualified bynativeNone/invalid/empty assembler;codefactual matches"
+    },
+    {
+      "claim": "Bprioritydiagnosis→rules→suppliedmodel→F→passthrough;3560/123/0/10178/44",
+      "location": [
+        "method.tex:10–12",
+        "results.tex:39"
+      ],
+      "result": "pass;Rlabels/gold/sourceIDnotused;A4clinicalcoverage0distinctfrom288conditionalpanel"
+    },
+    {
+      "claim": "A3fixed49catalog,sixorders,log(mean3contentfreeprobabilities),coefficient1,majorityandprobabilitytiebreak",
+      "location": [
+        "method.tex:32"
+      ],
+      "result": "pass;catalogandscorer46mappingdistinct;actualcodechecked"
+    },
+    {
+      "claim": "Fup-to5temperature.7seeds42–46early3majority;earliestwholewinner;tienativefirstvalid occurrence;nonevalidfirstinvalid",
+      "location": [
+        "method.tex:44"
+      ],
+      "result": "pass"
+    },
+    {
+      "claim": "FNLI2mappings×2paths normalizedthenaveraged;4score+2temperature0generation;nativeoptionordertie",
+      "location": [
+        "method.tex:46"
+      ],
+      "result": "pass;directoriginaldeliverycodechecked"
+    },
+    {
+      "claim": "123add/removecontrol69/71vs43/48and53/60;allunavailretain n123",
+      "location": [
+        "results.tex:30",
+        "appendix_components.tex:20"
+      ],
+      "result": "pass;different scope from79R2;None55coverage24passthroughstrongerall7retained"
+    },
+    {
+      "claim": "A4 24profiles×12=288;patch288binary/numeric;full270/222numeric;nodointervention67/67",
+      "location": [
+        "results.tex:53",
+        "appendix_components.tex:24"
+      ],
+      "result": "pass;model-bound numerical task notrealpatient orclinicalR4substitution"
+    },
+    {
+      "claim": "F208=64+128+16panel;60.19→65.90 and59.17→66.47paired;new16matched11→12,12→13",
+      "location": [
+        "results.tex:55",
+        "appendix_components.tex:29"
+      ],
+      "result": "pass;16included208 notextraunseentest;completebenchmarkexposurelimitation retained"
+    },
+    {
+      "claim": "SixarmsC0/B/C2/C3/C4/C5;C3Bdelta−1.8108/+.9273;C4ALL58.3219/59.6723;C3mechanismearliestkeyrepresentative,tieBthennativeorder",
+      "location": [
+        "results.tex:60",
+        "appendix_full_results.tex:20–26"
+      ],
+      "result": "pass;ordinaryFdisagreementonly;technicalfallbacktoBdistinctfromC4unavailablepolicy"
+    },
+    {
+      "claim": "B59800/58301requests;C3extra13308/9820;162979physicalallarmsnotprojecttotal;2503unknown timing",
+      "location": [
+        "results.tex:62",
+        "appendix_full_results.tex:30–34"
+      ],
+      "result": "pass;C0unknown notzero;sharedcostnotdoublecounted"
+    }
+  ],
+  "nonblocking_scope_note": {
+    "location": "results.tex:48 / limitations.tex",
+    "note": "Answer-changing pair population is concentrated inMedEinst;source-specificgeneralizationshouldnotbe inferred. Source breakdown and existingdevelopmentlimitations bound claim;optional explicit wording,not numericblocker.",
+    "disposition": "addressed in appendix_full_results.tex:14; explicitly notes all1780changingpairs areMedEinst"
+  },
+  "read_receipt": {
+    "current_primary_reads": [
+      "AGENTScurrentfull;docsREADME currentnavigation",
+      "all8maintexand4appendixtexfull;inputtable rows",
+      "dossierrelevantsections3.6,4.4,4.5,4.7,4.8,5.9,5.12,5.13 and fullheadingindex",
+      "protocol37–73,123,164–179",
+      "strong_legacy/minimal_operationsselectedcontrollercode;legacyloader/R1dispatcher/R2eligible",
+      "r3catalogcalibration/distribution code;R5ordinary andNLIcode;A5candidateverification tie/fallbackcode",
+      "all36frozenfamilyintervals;pairsummary;category/source/format/costsummaries;R4R5summary structure andselected historicalresults"
+    ],
+    "prior_verified_reuse": [
+      "sevenbaseline42cells/head21cells/controls audited earlierfromraw",
+      "benchmarkconstructionaudit",
+      "R4R5source-fullhistory audit anddossier factreview"
+    ],
+    "not_claimed": [
+      "No fresh complete raw-log reading",
+      "No independent clinical gold adjudication",
+      "No new bootstrap,rescoring ormodelruns",
+      "No visual/layout approval"
+    ]
+  },
+  "manuscript_receipts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/abstract.tex",
+      "sha256": "3dc0ec7a4efe4b43c0abd006c7833de8eefdcc90e8d572de965042dd4e204f89",
+      "bytes": 1672,
+      "lines": 1
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/introduction.tex",
+      "sha256": "9de9148d99089c271311328510ac6f31f1a2f034861ede66953bf3ee4ec74ca6",
+      "bytes": 4311,
+      "lines": 16
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/benchmark.tex",
+      "sha256": "15818203a8a0d13dbdad9b547837ecded6cfd9d864cfc36c7275343e011443ba",
+      "bytes": 7989,
+      "lines": 49
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/method.tex",
+      "sha256": "8b3bcd85f4b96bc3d2d12f4277886da204cd2f1849a56f867d7a3057552b7691",
+      "bytes": 7619,
+      "lines": 48
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/experimental_setup.tex",
+      "sha256": "22986a70970511d0a8798b65019c107b98ea82ca6bfc75f9bc8fcf276ddf34c7",
+      "bytes": 3990,
+      "lines": 17
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/results.tex",
+      "sha256": "40d83f8e4d6639e9e9b53253b66689c27b54ab2946d3c0bfa07ccd10ef3a468a",
+      "bytes": 9284,
+      "lines": 62
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/discussion.tex",
+      "sha256": "36b94e1a32838d59a509950b8c80f55c2f116b183b3548e8dfcdbae440cd486b",
+      "bytes": 2141,
+      "lines": 10
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/limitations.tex",
+      "sha256": "48eb53ea8599ec653422d5fb6bd1794780d506d934382ac97e2acb09d98cb3af",
+      "bytes": 2149,
+      "lines": 10
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/appendix_benchmark.tex",
+      "sha256": "a543607c2808dbd309b2e73d9fcd9fecf163c8b66b76416d344f36ea669e311b",
+      "bytes": 3835,
+      "lines": 20
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/appendix_components.tex",
+      "sha256": "5cc3dcad66d2a70b4c2325d9c54632681f8e0f918dde38e18147463ca6cc8b40",
+      "bytes": 5673,
+      "lines": 31
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/appendix_full_results.tex",
+      "sha256": "013716830e7874a77f1598c16435be4097cd968bb34e0e2c8766000be026efa6",
+      "bytes": 4181,
+      "lines": 35
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/appendix_reproduction.tex",
+      "sha256": "d4590396153305df7f58af6c5f2dc01f6be8a580518eea765c353ad92c423a11",
+      "bytes": 3266,
+      "lines": 18
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/main_system_results.tex",
+      "sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03",
+      "bytes": 1601,
+      "lines": 27
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/support_operation_ablation.tex",
+      "sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e",
+      "bytes": 744,
+      "lines": 19
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/arms.tex",
+      "sha256": "ecb2050f6bd2b572516dbb3d3d1c4becc47d5a6916e97be963968cbc086874ad",
+      "bytes": 844,
+      "lines": 19
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/main_results.tex",
+      "sha256": "146c30f7988699b25e1f014cb8001e73344344459c2997fa63e9e09f62f6cadf",
+      "bytes": 964,
+      "lines": 28
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/full_categories.tex",
+      "sha256": "0250760fa2a81216a0981efea93d4bb9461b53714e592fe1fe456f9e13f7fdea",
+      "bytes": 1142,
+      "lines": 25
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/source_breakdown.tex",
+      "sha256": "bab5070f6355c7628e4d0af2df931d39cd9ae90956313f873d31247ab7a951aa",
+      "bytes": 1016,
+      "lines": 24
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/format_breakdown.tex",
+      "sha256": "f7d34491fcc74f0face39d3629599695a1a0590300ddeacbb2f8fa24ecc453cb",
+      "bytes": 678,
+      "lines": 18
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/paired.tex",
+      "sha256": "32ca9a32961aab55bac43dbf05c2030d47c2a580e07f37a795d6b4acf62ebd50",
+      "bytes": 546,
+      "lines": 19
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/contrasts.tex",
+      "sha256": "e1adf83fe448a0de9aab4e98431a18d9823001b37a0e268eac449ea4a56dca16",
+      "bytes": 821,
+      "lines": 21
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/historical_model.tex",
+      "sha256": "3ff4546666283333685c5b813d96048b1e1e28c7de594822ade28f2b93738276",
+      "bytes": 917,
+      "lines": 24
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/head_controls.tex",
+      "sha256": "6df15fd47bf5c59668435fcafe5cd042baeb2d8aa30698c2310bcfe5f9bfd101",
+      "bytes": 1371,
+      "lines": 36
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/seven_heads.tex",
+      "sha256": "d1ec1640e3a16f711e7fbe7ea080442aaac6b44229881e7696f57628009fe0b1",
+      "bytes": 1105,
+      "lines": 20
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/story_sources.tex",
+      "sha256": "48384027091f98721590f8e4fb177c607f620aabdc354c942276e984159a571f",
+      "bytes": 1564,
+      "lines": 30
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/tables/costs.tex",
+      "sha256": "e064c27515471a8e042c5bf2aaa275be258d0c69fb877dfe0ac006249092aa08",
+      "bytes": 675,
+      "lines": 17
+    }
+  ],
+  "source_receipts": [
+    {
+      "path": "/home/data3/txy/AGENTS.md",
+      "sha256": "e9a279d9f4922d9e8285ec6048bfe6634ad1a1e17ea5f8c09a483545e1485468",
+      "bytes": 12840,
+      "lines": 154
+    },
+    {
+      "path": "/home/data3/txy/docs/README.md",
+      "sha256": "c9fb20633c1353254d1ec3d69f5cf7ee13fef8f763c45723d2ea14b49460bbb2",
+      "bytes": 51525,
+      "lines": 203
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/research_dossier.md",
+      "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+      "bytes": 141289,
+      "lines": 953
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "sha256": "1e4ec1c645d47a677f727539f1e6a0863f78dc496789de977ab347c02c80ccfe",
+      "bytes": 21377,
+      "lines": 201
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206,
+      "lines": 651
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361,
+      "lines": 1156
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+      "bytes": 85169,
+      "lines": 2147
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_category_results.json",
+      "sha256": "94ec872c3b60dc786201780b6ae5f7d5b8e5e5222893cb893a02d9afcc0cd33e",
+      "bytes": 16445,
+      "lines": 722
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_source_results.json",
+      "sha256": "1149cb8c368229e0467ef6a9ee43811db097ce05cc2ca80f3725bb1f1a65f7b7",
+      "bytes": 29863,
+      "lines": 1322
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/format_input_results.json",
+      "sha256": "1413631df1f98c1f045ba74976240f4d638e3c2b1d7e8ee74de0de33b8b13024",
+      "bytes": 14956,
+      "lines": 602
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/pair_summary.json",
+      "sha256": "7b75f8af8f6baa40c6de5a01c6ee334265083539929e33e567740987b328ffc1",
+      "bytes": 5028,
+      "lines": 218
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/family_effect_intervals.json",
+      "sha256": "cecd19b44b1592d2d78c3a8fefed0413fdb22fb6cbff4b2d4c93ac1b08a9a07c",
+      "bytes": 14924,
+      "lines": 614
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/costs/per_method_costs.json",
+      "sha256": "b72a260b75cf19f863e5e1b646162cee51b6691f07d2ad76abb5c2a75a2f7c9d",
+      "bytes": 53774,
+      "lines": 1881
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/operation_ablations_reused.json",
+      "sha256": "bc0fec0e38732aaf18b3359791720eccf8ba0854302b8b4f936ef1005682ffa9",
+      "bytes": 3090,
+      "lines": 104
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/scripts/summarize_existing_results.py",
+      "sha256": "f39a3986315e2c0f3dd978033670958798bc152ef05cbed8b09ee00b16279f53",
+      "bytes": 10236,
+      "lines": 202
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/controller/strong_legacy.py",
+      "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "bytes": 1011,
+      "lines": 22
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/controller/minimal_operations.py",
+      "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "bytes": 9547,
+      "lines": 169
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+      "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+      "bytes": 13386,
+      "lines": 242
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py",
+      "sha256": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+      "bytes": 1013,
+      "lines": 19
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+      "bytes": 13998,
+      "lines": 166
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_calibration.py",
+      "sha256": "46fb7cd5070c424ec682479b83fbb727ae27915731bc90c5e3c943bdc65965b1",
+      "bytes": 7385,
+      "lines": 120
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_head.py",
+      "sha256": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+      "bytes": 5729,
+      "lines": 115
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+      "bytes": 14626,
+      "lines": 294
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/summary.json",
+      "sha256": "c44b23f33eac9f7068a87ce4a4fa1c31653510b7295ac4bbd8c56812957de3bc",
+      "bytes": 408423,
+      "lines": 17130
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/summary.json",
+      "sha256": "2c0f4e42c2e5f552d830fdc636a47fff11114aa4349001f3218f52bb624b8368",
+      "bytes": 75186,
+      "lines": 3327
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "sha256": "e5188ba4f0877082f245f828219259a261c2759878fa9a0eb36778724cf4b6ac",
+      "bytes": 407929,
+      "lines": 2002
+    }
+  ]
+}

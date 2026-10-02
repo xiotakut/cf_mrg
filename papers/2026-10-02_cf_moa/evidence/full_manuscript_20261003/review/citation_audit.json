@@ -1,0 +1,577 @@
+{
+  "reviewed_at": "2026-10-02T18:51:42.882885+00:00",
+  "scope": "Bibliographic identity, source-to-claim fit, source dataset attribution, and readable natbib entries. Original 24 entries reuse prior documented verification; three new entries fetched from primary ACL metadata. No systematic novelty review or full retraction certification.",
+  "before_sha256": "0b37967c1bce7a30397cde651107c0730c6da171e99f3198b63d95bbda54d18d",
+  "prior_audits": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/reference_verification.json",
+      "sha256": "82f2fc97a9ff7086e4d1db9071d697f78b07e6316e420ac7b4c6bd7b24540550",
+      "reuse": "Reviewed machine-readable verification record; not all underlying sources re-fetched in this task."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/baseline_reference_verification.json",
+      "sha256": "6a93f23154f85761df4b1bb08340cb117572bd407cc7b5b924c515ff85b38b3d",
+      "reuse": "Reviewed machine-readable verification record; not all underlying sources re-fetched in this task."
+    }
+  ],
+  "new_metadata_receipts": [
+    {
+      "key": "ribeiro2020checklist",
+      "metadata_url": "https://aclanthology.org/2020.acl-main.442.bib",
+      "http_status": 200,
+      "bytes": 708,
+      "sha256": "d13e76af2cc7d6618990572af14e5d04bbd3495393950ae3d36273cc8ebd14cb",
+      "official_citation_export": "@inproceedings{ribeiro-etal-2020-beyond,\n    title = \"Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist\",\n    author = \"Ribeiro, Marco Tulio  and\n      Wu, Tongshuang  and\n      Guestrin, Carlos  and\n      Singh, Sameer\",\n    editor = \"Jurafsky, Dan  and\n      Chai, Joyce  and\n      Schluter, Natalie  and\n      Tetreault, Joel\",\n    booktitle = \"Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics\",\n    month = jul,\n    year = \"2020\",\n    address = \"Online\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2020.acl-main.442/\",\n    doi = \"10.18653/v1/2020.acl-main.442\",\n    pages = \"4902--4912\"\n}\n\n"
+    },
+    {
+      "key": "gardner2020contrastsets",
+      "metadata_url": "https://aclanthology.org/2020.findings-emnlp.117.bib",
+      "http_status": 200,
+      "bytes": 1220,
+      "sha256": "0f11ece0499491610a2b5c790bce7d66098a30fd4c68c16bb8fc8644bb9de3f5",
+      "official_citation_export": "@inproceedings{gardner-etal-2020-evaluating,\n    title = \"Evaluating Models' Local Decision Boundaries via Contrast Sets\",\n    author = \"Gardner, Matt  and\n      Artzi, Yoav  and\n      Basmov, Victoria  and\n      Berant, Jonathan  and\n      Bogin, Ben  and\n      Chen, Sihao  and\n      Dasigi, Pradeep  and\n      Dua, Dheeru  and\n      Elazar, Yanai  and\n      Gottumukkala, Ananth  and\n      Gupta, Nitish  and\n      Hajishirzi, Hannaneh  and\n      Ilharco, Gabriel  and\n      Khashabi, Daniel  and\n      Lin, Kevin  and\n      Liu, Jiangming  and\n      Liu, Nelson F.  and\n      Mulcaire, Phoebe  and\n      Ning, Qiang  and\n      Singh, Sameer  and\n      Smith, Noah A.  and\n      Subramanian, Sanjay  and\n      Tsarfaty, Reut  and\n      Wallace, Eric  and\n      Zhang, Ally  and\n      Zhou, Ben\",\n    editor = \"Cohn, Trevor  and\n      He, Yulan  and\n      Liu, Yang\",\n    booktitle = \"Findings of the Association for Computational Linguistics: EMNLP 2020\",\n    month = nov,\n    year = \"2020\",\n    address = \"Online\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2020.findings-emnlp.117/\",\n    doi = \"10.18653/v1/2020.findings-emnlp.117\",\n    pages = \"1307--1323\"\n}\n\n"
+    },
+    {
+      "key": "kiela2021dynabench",
+      "metadata_url": "https://aclanthology.org/2021.naacl-main.324.bib",
+      "http_status": 200,
+      "bytes": 1270,
+      "sha256": "3f29de51984ff2ed39a6dbae25c3d167300b5391e9e9ac969caa6782bc65c19d",
+      "official_citation_export": "@inproceedings{kiela-etal-2021-dynabench,\n    title = \"Dynabench: Rethinking Benchmarking in {NLP}\",\n    author = \"Kiela, Douwe  and\n      Bartolo, Max  and\n      Nie, Yixin  and\n      Kaushik, Divyansh  and\n      Geiger, Atticus  and\n      Wu, Zhengxuan  and\n      Vidgen, Bertie  and\n      Prasad, Grusha  and\n      Singh, Amanpreet  and\n      Ringshia, Pratik  and\n      Ma, Zhiyi  and\n      Thrush, Tristan  and\n      Riedel, Sebastian  and\n      Waseem, Zeerak  and\n      Stenetorp, Pontus  and\n      Jia, Robin  and\n      Bansal, Mohit  and\n      Potts, Christopher  and\n      Williams, Adina\",\n    editor = \"Toutanova, Kristina  and\n      Rumshisky, Anna  and\n      Zettlemoyer, Luke  and\n      Hakkani-Tur, Dilek  and\n      Beltagy, Iz  and\n      Bethard, Steven  and\n      Cotterell, Ryan  and\n      Chakraborty, Tanmoy  and\n      Zhou, Yichao\",\n    booktitle = \"Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies\",\n    month = jun,\n    year = \"2021\",\n    address = \"Online\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2021.naacl-main.324/\",\n    doi = \"10.18653/v1/2021.naacl-main.324\",\n    pages = \"4110--4124\"\n}\n\n"
+    }
+  ],
+  "shortened_author_lists": {
+    "dubey2024llama": {
+      "original_author_count": 533,
+      "retained_author_count": 3,
+      "full_author_field": "Abhimanyu Dubey and Abhinav Jauhri and Abhinav Pandey and Abhishek Kadian and Ahmad Al-Dahle and Aiesha Letman and Akhil Mathur and Alan Schelten and Amy Yang and Angela Fan and Anirudh Goyal and Anthony Hartshorn and Aobo Yang and Archi Mitra and Archie Sravankumar and Artem Korenev and Arthur Hinsvark and Arun Rao and Aston Zhang and Aurelien Rodriguez and Austen Gregerson and Ava Spataru and Baptiste Roziere and Bethany Biron and Binh Tang and Bobbie Chern and Charlotte Caucheteux and Chaya Nayak and Chloe Bi and Chris Marra and Chris McConnell and Christian Keller and Christophe Touret and Chunyang Wu and Corinne Wong and Cristian Canton Ferrer and Cyrus Nikolaidis and Damien Allonsius and Daniel Song and Danielle Pintz and Danny Livshits and David Esiobu and Dhruv Choudhary and Dhruv Mahajan and Diego Garcia-Olano and Diego Perino and Dieuwke Hupkes and Egor Lakomkin and Ehab AlBadawy and Elina Lobanova and Emily Dinan and Eric Michael Smith and Filip Radenovic and Frank Zhang and Gabriel Synnaeve and Gabrielle Lee and Georgia Lewis Anderson and Graeme Nail and Gregoire Mialon and Guan Pang and Guillem Cucurell and Hailey Nguyen and Hannah Korevaar and Hu Xu and Hugo Touvron and Iliyan Zarov and Imanol Arrieta Ibarra and Isabel Kloumann and Ishan Misra and Ivan Evtimov and Jade Copet and Jaewon Lee and Jan Geffert and Jana Vranes and Jason Park and Jay Mahadeokar and Jeet Shah and Jelmer van der Linde and Jennifer Billock and Jenny Hong and Jenya Lee and Jeremy Fu and Jianfeng Chi and Jianyu Huang and Jiawen Liu and Jie Wang and Jiecao Yu and Joanna Bitton and Joe Spisak and Jongsoo Park and Joseph Rocca and Joshua Johnstun and Joshua Saxe and Junteng Jia and Kalyan Vasuden Alwala and Kartikeya Upasani and Kate Plawiak and Ke Li and Kenneth Heafield and Kevin Stone and Khalid El-Arini and Krithika Iyer and Kshitiz Malik and Kuenley Chiu and Kunal Bhalla and Lauren Rantala-Yeary and Laurens van der Maaten and Lawrence Chen and Liang Tan and Liz Jenkins and Louis Martin and Lovish Madaan and Lubo Malo and Lukas Blecher and Lukas Landzaat and Luke de Oliveira and Madeline Muzzi and Mahesh Pasupuleti and Mannat Singh and Manohar Paluri and Marcin Kardas and Mathew Oldham and Mathieu Rita and Maya Pavlova and Melanie Kambadur and Mike Lewis and Min Si and Mitesh Kumar Singh and Mona Hassan and Naman Goyal and Narjes Torabi and Nikolay Bashlykov and Nikolay Bogoychev and Niladri Chatterji and Olivier Duchenne and Onur Çelebi and Patrick Alrassy and Pengchuan Zhang and Pengwei Li and Petar Vasic and Peter Weng and Prajjwal Bhargava and Pratik Dubal and Praveen Krishnan and Punit Singh Koura and Puxin Xu and Qing He and Qingxiao Dong and Ragavan Srinivasan and Raj Ganapathy and Ramon Calderer and Ricardo Silveira Cabral and Robert Stojnic and Roberta Raileanu and Rohit Girdhar and Rohit Patel and Romain Sauvestre and Ronnie Polidoro and Roshan Sumbaly and Ross Taylor and Ruan Silva and Rui Hou and Rui Wang and Saghar Hosseini and Sahana Chennabasappa and Sanjay Singh and Sean Bell and Seohyun Sonia Kim and Sergey Edunov and Shaoliang Nie and Sharan Narang and Sharath Raparthy and Sheng Shen and Shengye Wan and Shruti Bhosale and Shun Zhang and Simon Vandenhende and Soumya Batra and Spencer Whitman and Sten Sootla and Stephane Collot and Suchin Gururangan and Sydney Borodinsky and Tamar Herman and Tara Fowler and Tarek Sheasha and Thomas Georgiou and Thomas Scialom and Tobias Speckbacher and Todor Mihaylov and Tong Xiao and Ujjwal Karn and Vedanuj Goswami and Vibhor Gupta and Vignesh Ramanathan and Viktor Kerkez and Vincent Gonguet and Virginie Do and Vish Vogeti and Vladan Petrovic and Weiwei Chu and Wenhan Xiong and Wenyin Fu and Whitney Meers and Xavier Martinet and Xiaodong Wang and Xiaoqing Ellen Tan and Xinfeng Xie and Xuchao Jia and Xuewei Wang and Yaelle Goldschlag and Yashesh Gaur and Yasmine Babaei and Yi Wen and Yiwen Song and Yuchen Zhang and Yue Li and Yuning Mao and Zacharie Delpierre Coudert and Zheng Yan and Zhengxing Chen and Zoe Papakipos and Aaditya Singh and Aaron Grattafiori and Abha Jain and Adam Kelsey and Adam Shajnfeld and Adithya Gangidi and Adolfo Victoria and Ahuva Goldstand and Ajay Menon and Ajay Sharma and Alex Boesenberg and Alex Vaughan and Alexei Baevski and Allie Feinstein and Amanda Kallet and Amit Sangani and Anam Yunus and Andrei Lupu and Andres Alvarado and Andrew Caples and Andrew Gu and Andrew Ho and Andrew Poulton and Andrew Ryan and Ankit Ramchandani and Annie Franco and Aparajita Saraf and Arkabandhu Chowdhury and Ashley Gabriel and Ashwin Bharambe and Assaf Eisenman and Azadeh Yazdan and Beau James and Ben Maurer and Benjamin Leonhardi and Bernie Huang and Beth Loyd and Beto De Paola and Bhargavi Paranjape and Bing Liu and Bo Wu and Boyu Ni and Braden Hancock and Bram Wasti and Brandon Spence and Brani Stojkovic and Brian Gamido and Britt Montalvo and Carl Parker and Carly Burton and Catalina Mejia and Changhan Wang and Changkyu Kim and Chao Zhou and Chester Hu and Ching-Hsiang Chu and Chris Cai and Chris Tindal and Christoph Feichtenhofer and Damon Civin and Dana Beaty and Daniel Kreymer and Daniel Li and Danny Wyatt and David Adkins and David Xu and Davide Testuggine and Delia David and Devi Parikh and Diana Liskovich and Didem Foss and Dingkang Wang and Duc Le and Dustin Holland and Edward Dowling and Eissa Jamil and Elaine Montgomery and Eleonora Presani and Emily Hahn and Emily Wood and Erik Brinkman and Esteban Arcaute and Evan Dunbar and Evan Smothers and Fei Sun and Felix Kreuk and Feng Tian and Firat Ozgenel and Francesco Caggioni and Francisco Guzmán and Frank Kanayet and Frank Seide and Gabriela Medina Florez and Gabriella Schwarz and Gada Badeer and Georgia Swee and Gil Halpern and Govind Thattai and Grant Herman and Grigory Sizov and Guangyi and Zhang and Guna Lakshminarayanan and Hamid Shojanazeri and Han Zou and Hannah Wang and Hanwen Zha and Haroun Habeeb and Harrison Rudolph and Helen Suk and Henry Aspegren and Hunter Goldman and Igor Molybog and Igor Tufanov and Irina-Elena Veliche and Itai Gat and Jake Weissman and James Geboski and James Kohli and Japhet Asher and Jean-Baptiste Gaya and Jeff Marcus and Jeff Tang and Jennifer Chan and Jenny Zhen and Jeremy Reizenstein and Jeremy Teboul and Jessica Zhong and Jian Jin and Jingyi Yang and Joe Cummings and Jon Carvill and Jon Shepard and Jonathan McPhie and Jonathan Torres and Josh Ginsburg and Junjie Wang and Kai Wu and Kam Hou U and Karan Saxena and Karthik Prasad and Kartikay Khandelwal and Katayoun Zand and Kathy Matosich and Kaushik Veeraraghavan and Kelly Michelena and Keqian Li and Kun Huang and Kunal Chawla and Kushal Lakhotia and Kyle Huang and Lailin Chen and Lakshya Garg and Lavender A and Leandro Silva and Lee Bell and Lei Zhang and Liangpeng Guo and Licheng Yu and Liron Moshkovich and Luca Wehrstedt and Madian Khabsa and Manav Avalani and Manish Bhatt and Maria Tsimpoukelli and Martynas Mankus and Matan Hasson and Matthew Lennie and Matthias Reso and Maxim Groshev and Maxim Naumov and Maya Lathi and Meghan Keneally and Michael L. Seltzer and Michal Valko and Michelle Restrepo and Mihir Patel and Mik Vyatskov and Mikayel Samvelyan and Mike Clark and Mike Macey and Mike Wang and Miquel Jubert Hermoso and Mo Metanat and Mohammad Rastegari and Munish Bansal and Nandhini Santhanam and Natascha Parks and Natasha White and Navyata Bawa and Nayan Singhal and Nick Egebo and Nicolas Usunier and Nikolay Pavlovich Laptev and Ning Dong and Ning Zhang and Norman Cheng and Oleg Chernoguz and Olivia Hart and Omkar Salpekar and Ozlem Kalinli and Parkin Kent and Parth Parekh and Paul Saab and Pavan Balaji and Pedro Rittner and Philip Bontrager and Pierre Roux and Piotr Dollar and Polina Zvyagina and Prashant Ratanchandani and Pritish Yuvraj and Qian Liang and Rachad Alao and Rachel Rodriguez and Rafi Ayub and Raghotham Murthy and Raghu Nayani and Rahul Mitra and Raymond Li and Rebekkah Hogan and Robin Battey and Rocky Wang and Rohan Maheswari and Russ Howes and Ruty Rinott and Sai Jayesh Bondu and Samyak Datta and Sara Chugh and Sara Hunt and Sargun Dhillon and Sasha Sidorov and Satadru Pan and Saurabh Verma and Seiji Yamamoto and Sharadh Ramaswamy and Shaun Lindsay and Shaun Lindsay and Sheng Feng and Shenghao Lin and Shengxin Cindy Zha and Shiva Shankar and Shuqiang Zhang and Shuqiang Zhang and Sinong Wang and Sneha Agarwal and Soji Sajuyigbe and Soumith Chintala and Stephanie Max and Stephen Chen and Steve Kehoe and Steve Satterfield and Sudarshan Govindaprasad and Sumit Gupta and Sungmin Cho and Sunny Virk and Suraj Subramanian and Sy Choudhury and Sydney Goldman and Tal Remez and Tamar Glaser and Tamara Best and Thilo Kohler and Thomas Robinson and Tianhe Li and Tianjun Zhang and Tim Matthews and Timothy Chou and Tzook Shaked and Varun Vontimitta and Victoria Ajayi and Victoria Montanez and Vijai Mohan and Vinay Satish Kumar and Vishal Mangla and Vlad Ionescu and Vlad Poenaru and Vlad Tiberiu Mihailescu and Vladimir Ivanov and Wei Li and Wenchen Wang and Wenwen Jiang and Wes Bouaziz and Will Constable and Xiaocheng Tang and Xiaofang Wang and Xiaojian Wu and Xiaolan Wang and Xide Xia and Xilun Wu and Xinbo Gao and Yanjun Chen and Ye Hu and Ye Jia and Ye Qi and Yenda Li and Yilin Zhang and Ying Zhang and Yossi Adi and Youngjin Nam and Yu and Wang and Yuchen Hao and Yundi Qian and Yuzi He and Zach Rait and Zachary DeVito and Zef Rosnbrick and Zhaoduo Wen and Zhenyu Yang and Zhiwei Zhao",
+      "presentation_author_field": "Abhimanyu Dubey and Abhinav Jauhri and Abhinav Pandey and others"
+    },
+    "yang2025qwen3": {
+      "original_author_count": 60,
+      "retained_author_count": 3,
+      "full_author_field": "An Yang and Anfeng Li and Baosong Yang and Beichen Zhang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Gao and Chengen Huang and Chenxu Lv and Chujie Zheng and Dayiheng Liu and Fan Zhou and Fei Huang and Feng Hu and Hao Ge and Haoran Wei and Huan Lin and Jialong Tang and Jian Yang and Jianhong Tu and Jianwei Zhang and Jianxin Yang and Jiaxi Yang and Jing Zhou and Jingren Zhou and Junyang Lin and Kai Dang and Keqin Bao and Kexin Yang and Le Yu and Lianghao Deng and Mei Li and Mingfeng Xue and Mingze Li and Pei Zhang and Peng Wang and Qin Zhu and Rui Men and Ruize Gao and Shixuan Liu and Shuang Luo and Tianhao Li and Tianyi Tang and Wenbiao Yin and Xingzhang Ren and Xinyu Wang and Xinyu Zhang and Xuancheng Ren and Yang Fan and Yang Su and Yichang Zhang and Yinger Zhang and Yu Wan and Yuqiong Liu and Zekun Wang and Zeyu Cui and Zhenru Zhang and Zhipeng Zhou and Zihan Qiu",
+      "presentation_author_field": "An Yang and Anfeng Li and Baosong Yang and others"
+    },
+    "gardner2020contrastsets": {
+      "original_author_count": 26,
+      "retained_author_count": 3,
+      "full_author_field": "Gardner, Matt  and\n      Artzi, Yoav  and\n      Basmov, Victoria  and\n      Berant, Jonathan  and\n      Bogin, Ben  and\n      Chen, Sihao  and\n      Dasigi, Pradeep  and\n      Dua, Dheeru  and\n      Elazar, Yanai  and\n      Gottumukkala, Ananth  and\n      Gupta, Nitish  and\n      Hajishirzi, Hannaneh  and\n      Ilharco, Gabriel  and\n      Khashabi, Daniel  and\n      Lin, Kevin  and\n      Liu, Jiangming  and\n      Liu, Nelson F.  and\n      Mulcaire, Phoebe  and\n      Ning, Qiang  and\n      Singh, Sameer  and\n      Smith, Noah A.  and\n      Subramanian, Sanjay  and\n      Tsarfaty, Reut  and\n      Wallace, Eric  and\n      Zhang, Ally  and\n      Zhou, Ben",
+      "presentation_author_field": "Gardner, Matt and Artzi, Yoav and Basmov, Victoria and others"
+    },
+    "kiela2021dynabench": {
+      "original_author_count": 19,
+      "retained_author_count": 3,
+      "full_author_field": "Kiela, Douwe  and\n      Bartolo, Max  and\n      Nie, Yixin  and\n      Kaushik, Divyansh  and\n      Geiger, Atticus  and\n      Wu, Zhengxuan  and\n      Vidgen, Bertie  and\n      Prasad, Grusha  and\n      Singh, Amanpreet  and\n      Ringshia, Pratik  and\n      Ma, Zhiyi  and\n      Thrush, Tristan  and\n      Riedel, Sebastian  and\n      Waseem, Zeerak  and\n      Stenetorp, Pontus  and\n      Jia, Robin  and\n      Bansal, Mohit  and\n      Potts, Christopher  and\n      Williams, Adina",
+      "presentation_author_field": "Kiela, Douwe and Bartolo, Max and Nie, Yixin and others"
+    }
+  },
+  "corrections": [
+    "Shortened Llama 3 and Qwen3 consortium author fields with three verified leading authors and BibTeX and others; full author fields retained here.",
+    "Added CheckList, Contrast Sets and Dynabench from official ACL citation exports; the two long new author lists likewise use first three and others."
+  ],
+  "validation": {
+    "entry_count": 27,
+    "unique_keys": true,
+    "pandoc_bibtex_parse": "passed",
+    "parser_warnings": "",
+    "inherited_metadata_changes": {
+      "dubey2024llama": [
+        "author"
+      ],
+      "yang2025qwen3": [
+        "author"
+      ]
+    },
+    "related_work_words_excluding_citations_headings": 458,
+    "related_work_citation_count": 23,
+    "related_work_unresolved_keys": [],
+    "final_11_source_keys_present": true,
+    "final_11_source_keys_cited_in_related_work": true,
+    "not_cited_in_related_work_but_reserved_for_other_sections": [
+      "ddxplus",
+      "dubey2024llama",
+      "simglucose",
+      "yang2025qwen3"
+    ],
+    "full_manuscript_orphan_check": "pending parent integration; no files outside owned scope modified",
+    "latex_compilation": "not performed per assigned scope"
+  },
+  "claim_map": [
+    {
+      "key": "lewis2020rag",
+      "claim": "Retrieval-augmented generation combines parametric generation with retrieved non-parametric evidence; foundational RAG context.",
+      "primary_url": "https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "xiong2024medrag",
+      "claim": "MIRAGE and MedRAG provide a medical RAG benchmark and modular toolkit; supports the medical RAG baseline provenance, not our measured effects.",
+      "primary_url": "https://aclanthology.org/2024.findings-acl.372/",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "wang2025moa",
+      "claim": "Layered Mixture-of-Agents aggregates outputs from multiple LLM agents; comparison background. Our five operations are not a replication of that architecture.",
+      "primary_url": "https://openreview.net/pdf?id=h0ZfDIrj7T",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "wang2023selfconsistency",
+      "claim": "Self-consistency samples reasoning paths and aggregates answers; motivation for an explicit sampling/aggregation control.",
+      "primary_url": "https://openreview.net/pdf?id=1PL1NIMMrw",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "zhao2021calibrate",
+      "claim": "Content-free contextual calibration addresses answer-prior and prompt sensitivity. Does not establish that our order-swapped verifier is calibrated or causally superior.",
+      "primary_url": "https://proceedings.mlr.press/v139/zhao21c.html",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "dubey2024llama",
+      "claim": "The Llama 3 model family and its training/evaluation context; model-family provenance only.",
+      "primary_url": "https://arxiv.org/abs/2407.21783v1",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "yang2025qwen3",
+      "claim": "Qwen3 dense/MoE model family and thinking/non-thinking modes; model-family provenance, not proof of our exact runtime settings.",
+      "primary_url": "https://arxiv.org/abs/2505.09388",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "chen2026medeinst",
+      "claim": "MedEinst introduces counterfactual differential-diagnosis pairs with discriminative evidence changes; original source for M01.",
+      "primary_url": "https://aclanthology.org/2026.acl-long.1847/",
+      "source_id": "M01",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "medpicbench",
+      "claim": "MedPIC-Bench supplies patient-specific medication-safety questions with guideline-following and counterfactual task families; original M02 data-card provenance.",
+      "primary_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+      "source_id": "M02",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "prosperi2026hiv",
+      "claim": "Original HIV antiretroviral-treatment, interaction, and adverse-effect causal-scenario study; provenance for M06. Does not establish correctness of every source reference answer.",
+      "primary_url": "https://www.nature.com/articles/s41746-026-02771-7",
+      "source_id": "M06",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "benkirane2025bias",
+      "claim": "Counterfactual Patient Variations evaluate demographic bias in clinical decision making. M10 specifically uses the authors' MedQA extension, not the paper's JAMA cohort.",
+      "primary_url": "https://aclanthology.org/2025.naacl-long.114/",
+      "source_id": "M10",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "rezaei2026cultural",
+      "claim": "Counterfactual cultural identifiers and contextual cues in medical QA; source provenance for M11.",
+      "primary_url": "https://arxiv.org/abs/2601.20102",
+      "source_id": "M11",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "xiao2025amqa",
+      "claim": "AMQA introduces adversarial medical questions involving race, gender, and socioeconomic attributes. Version 1 matches the AMQA identity used here; later FairMedQA is not a separate independent source.",
+      "primary_url": "https://arxiv.org/abs/2505.19562v1",
+      "source_id": "M12",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "rawat2024diversitymedqa",
+      "claim": "DiversityMedQA evaluates demographic biases in medical diagnosis; original M14 source. Native-option restoration and our eligibility decisions require the local construction record.",
+      "primary_url": "https://aclanthology.org/2024.nlp4pi-1.29/",
+      "source_id": "M14",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "gourabathina2025medperturb",
+      "claim": "MedPerturb studies gender, style, and format perturbations in clinical vignettes and treatment decisions; original M17 source.",
+      "primary_url": "https://arxiv.org/abs/2506.17163",
+      "source_id": "M17",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "mo2026faithfulness",
+      "claim": "Evaluates medical LLM behavior under counterfactual evidence and the tension between following supplied evidence and medical safety; source provenance for MedCounterFact.",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.1847/",
+      "source_id": "M20",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "ngo2024medrgb",
+      "claim": "MedRGB studies medical RAG behavior under varied retrieval/evidence conditions; original M22 source.",
+      "primary_url": "https://arxiv.org/abs/2411.09213",
+      "source_id": "M22",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "li2025biorab",
+      "claim": "Biomedical RAG robustness evaluation includes counterfactual evidence and biomedical NLP tasks such as NLI; original BioRAB source.",
+      "primary_url": "https://arxiv.org/abs/2405.08151v3",
+      "source_id": "M23",
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "simglucose",
+      "claim": "Software provenance of the adopted A4 model execution, including 30 released virtual patient parameter profiles. Appendix C uses a 24-profile historical subset of this model.",
+      "primary_url": "https://github.com/jxx123/simglucose/tree/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "ddxplus",
+      "claim": "DDXPlus is a synthetic medical diagnosis dataset containing differential diagnoses, pathologies, symptoms, and antecedents; provides upstream dataset attribution.",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/cae73a974390c0edd95ae7aeae09139c-Abstract.html",
+      "source_id": null,
+      "verification": "reused 2026-10-02 primary-source audit",
+      "claim_support_checked_this_turn": false
+    },
+    {
+      "key": "li2026medrgag",
+      "claim": "MedRGAG combines retrieval with generated parametric knowledge through context completion and document selection.",
+      "primary_url": "https://arxiv.org/abs/2510.18297",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "wu2026marag",
+      "claim": "MA-RAG iterates reasoning and retrieval, deriving queries from candidate disagreement.",
+      "primary_url": "https://arxiv.org/abs/2603.03292",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "frisoni2024medgenie",
+      "claim": "MedGENIE uses generated contexts for medical question answering.",
+      "primary_url": "https://aclanthology.org/2024.acl-long.533/",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "jiang2025tcrag",
+      "claim": "TC-RAG uses a memory stack and state variables to control iterative retrieval.",
+      "primary_url": "https://aclanthology.org/2025.acl-long.558/",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "ribeiro2020checklist",
+      "claim": "CheckList organizes behavioral tests by capability and minimum-functionality, invariance, and directional expectations.",
+      "primary_url": "https://aclanthology.org/2020.acl-main.442/",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "gardner2020contrastsets",
+      "claim": "Contrast sets use small meaningful edits to probe local decision boundaries, typically changing the label.",
+      "primary_url": "https://aclanthology.org/2020.findings-emnlp.117/",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true
+    },
+    {
+      "key": "kiela2021dynabench",
+      "claim": "Dynabench supports human-and-model-in-the-loop dynamic dataset creation.",
+      "primary_url": "https://aclanthology.org/2021.naacl-main.324/",
+      "source_id": null,
+      "verification": "fresh 2026-10-03 primary-source content check; bibliographic identity uses official export or previously documented formal venue metadata",
+      "claim_support_checked_this_turn": true,
+      "claim_primary_url": "https://aclanthology.org/2021.naacl-main.324.pdf"
+    },
+    {
+      "key": "ags2023beers",
+      "claim": "Source of selected public prescribing recommendations. The local 71-rule count is supported by the project rule file and record, not claimed by the external paper.",
+      "primary_url": "https://agsjournals.onlinelibrary.wiley.com/doi/abs/10.1111/jgs.18372",
+      "metadata_verified": [
+        "corporate author",
+        "title (trademark symbol normalized)",
+        "year",
+        "journal",
+        "volume",
+        "issue",
+        "pages",
+        "DOI"
+      ],
+      "read_scope": "Publisher metadata and abstract, publisher-PDF excerpt for Tables 2/3/6; project source record at docs/research/r2_support_head.md:182,1264.",
+      "local_source_lines": [
+        182,
+        1264
+      ]
+    },
+    {
+      "key": "shen2026medguidex",
+      "claim": "Executable clinical-guideline logic produces factual/counterfactual supervision for medical LLM post-training. Our inference-time use is a local method distinction.",
+      "primary_url": "https://arxiv.org/abs/2605.26567v1",
+      "metadata_verified": [
+        "all seven authors",
+        "title",
+        "year",
+        "arXiv identifier",
+        "DOI"
+      ],
+      "read_scope": "Primary arXiv metadata and complete abstract; local borrowing record at docs/research/r2_support_head.md:560. No fresh full-method verification claimed.",
+      "local_source_lines": [
+        560
+      ]
+    }
+  ],
+  "source_key_map": {
+    "M01": "chen2026medeinst",
+    "M02": "medpicbench",
+    "M06": "prosperi2026hiv",
+    "M10": "benkirane2025bias",
+    "M11": "rezaei2026cultural",
+    "M12": "xiao2025amqa",
+    "M14": "rawat2024diversitymedqa",
+    "M17": "gourabathina2025medperturb",
+    "M20": "mo2026faithfulness",
+    "M22": "ngo2024medrgb",
+    "M23": "li2025biorab"
+  },
+  "fresh_web_content_checks": [
+    {
+      "key": "chen2026medeinst",
+      "url": "https://aclanthology.org/2026.acl-long.1847/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "mo2026faithfulness",
+      "url": "https://aclanthology.org/2026.findings-acl.1847/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "ngo2024medrgb",
+      "url": "https://arxiv.org/abs/2411.09213",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "li2025biorab",
+      "url": "https://arxiv.org/abs/2405.08151v3",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "gourabathina2025medperturb",
+      "url": "https://arxiv.org/abs/2506.17163",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "benkirane2025bias",
+      "url": "https://aclanthology.org/2025.naacl-long.114/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "xiong2024medrag",
+      "url": "https://aclanthology.org/2024.findings-acl.372/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "wang2025moa",
+      "url": "https://openreview.net/pdf?id=h0ZfDIrj7T",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "wang2023selfconsistency",
+      "url": "https://openreview.net/pdf?id=1PL1NIMMrw",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "zhao2021calibrate",
+      "url": "https://proceedings.mlr.press/v139/zhao21c.html",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "li2026medrgag",
+      "url": "https://arxiv.org/abs/2510.18297",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "wu2026marag",
+      "url": "https://arxiv.org/abs/2603.03292",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "frisoni2024medgenie",
+      "url": "https://aclanthology.org/2024.acl-long.533/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "jiang2025tcrag",
+      "url": "https://aclanthology.org/2025.acl-long.558/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "ribeiro2020checklist",
+      "url": "https://aclanthology.org/2020.acl-main.442/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "gardner2020contrastsets",
+      "url": "https://aclanthology.org/2020.findings-emnlp.117/",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "kiela2021dynabench",
+      "url": "https://aclanthology.org/2021.naacl-main.324.pdf",
+      "scope": "abstract and bibliographic identity; not a full paper reread"
+    },
+    {
+      "key": "ribeiro2020checklist",
+      "url": "https://aclanthology.org/2020.acl-main.442.pdf",
+      "scope": "indexed primary paper text and publication abstract"
+    },
+    {
+      "key": "gardner2020contrastsets",
+      "url": "https://aclanthology.org/2020.findings-emnlp.117.pdf",
+      "scope": "indexed primary paper text and publication abstract"
+    }
+  ],
+  "access_limitations": [
+    {
+      "url": "https://aclanthology.org/2021.naacl-main.324/",
+      "result": "web open returned UnexpectedStatusCode; official .bib request succeeded, primary PDF indexed text read."
+    },
+    {
+      "key": "li2026medrgag",
+      "result": "Formal WWW metadata and DOI are preserved from previous local publisher PDF verification; earlier ACM 403 / Crossref 404 remain unresolved by this task. Fresh arXiv content supports method description."
+    }
+  ],
+  "version_and_attribution_notes": [
+    "MedPIC-Bench remains an undated dataset card with key MedPIC-Bench; no author or publication date is invented.",
+    "M10 uses the CPV authors MedQA extension; the cited NAACL paper describes the JAMA cohort. Related work refers to CPV broadly; exact local subset provenance belongs to benchmark data section.",
+    "AMQA uses pinned v1; later FairMedQA naming is not counted as an additional source.",
+    "BioRAB remains pinned v3 (2025), and Llama 3 v1 identity is preserved.",
+    "MedEinst is upstream data, while ECR-Agent is not an evaluated baseline in this paper.",
+    "DDXPlus provides upstream synthetic diagnosis/catalog attribution; simglucose refers to the exact code snapshot used for the separate historical model panel.",
+    "Formal ICLR/ICML entries retain formal publication identity and URL; arXiv DOIs observed for preprints are not silently substituted as venue-assigned DOIs."
+  ],
+  "novelty_scope": {
+    "claims_screened": "draft/sections/related_work.tex",
+    "first_or_absence_claims": false,
+    "positioning": "Original integration, source-preserving benchmark annotation, five functional operations and measured system changes; neighboring behavioral testing and medical counterfactual work explicitly acknowledged.",
+    "not_claimed": [
+      "Systematic literature search",
+      "Proof no earlier five-part taxonomy exists",
+      "Clinical validation",
+      "Retraction-free certification"
+    ]
+  },
+  "retraction_scope": {
+    "fresh_database_check": false,
+    "prior_evidence": {
+      "scope": "The one journal-article reference prosperi2026hiv",
+      "queries": [
+        "\"10.1038/s41746-026-02771-7\" retraction with nature.com and retractionwatch.com filters"
+      ],
+      "result": "Search returned the original publisher article and no retraction notice in the retrieved results; no exhaustive Retraction Watch database check was completed.",
+      "not_a_certification": true
+    },
+    "interpretation": "Retained prior limited check; no new journal citation added and no exhaustive certification."
+  },
+  "reading_coverage": {
+    "instructions": [
+      "/home/data3/txy/AGENTS.md (complete)",
+      "/home/data3/txy/docs/README.md relevant paper/ownership entries",
+      "academic-paper SKILL.md",
+      "citation_compliance_agent.md lines 1–180",
+      "writing_quality_check.md lines 1–160"
+    ],
+    "local_bibliography": "all original 24 entries and all three additions",
+    "prior_audits": "both structured audits read for identity/source mapping and boundaries; no claim of rereading every prior retrieval receipt PDF",
+    "new_text": "related_work.tex complete"
+  },
+  "outputs": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/references.bib",
+      "sha256": "94cdecc00e8eb7f4a28276bae989e4457c7ff56a77da369338c28328a612fd9e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/draft/sections/related_work.tex",
+      "sha256": "967760906a43cb249f7abe0a223eb4e2f97426863ae6c3ce599e15e2c0a6cd58"
+    }
+  ],
+  "round1_attribution_addendum": {
+    "timestamp": "2026-10-02T19:06:21.193005+00:00",
+    "authorization": "Parent explicitly requested bibliography and related-work additions after review findings.",
+    "entries": [
+      {
+        "key": "ags2023beers",
+        "claim": "Source of selected public prescribing recommendations. The local 71-rule count is supported by the project rule file and record, not claimed by the external paper.",
+        "primary_url": "https://agsjournals.onlinelibrary.wiley.com/doi/abs/10.1111/jgs.18372",
+        "metadata_verified": [
+          "corporate author",
+          "title (trademark symbol normalized)",
+          "year",
+          "journal",
+          "volume",
+          "issue",
+          "pages",
+          "DOI"
+        ],
+        "read_scope": "Publisher metadata and abstract, publisher-PDF excerpt for Tables 2/3/6; project source record at docs/research/r2_support_head.md:182,1264.",
+        "local_source_lines": [
+          182,
+          1264
+        ]
+      },
+      {
+        "key": "shen2026medguidex",
+        "claim": "Executable clinical-guideline logic produces factual/counterfactual supervision for medical LLM post-training. Our inference-time use is a local method distinction.",
+        "primary_url": "https://arxiv.org/abs/2605.26567v1",
+        "metadata_verified": [
+          "all seven authors",
+          "title",
+          "year",
+          "arXiv identifier",
+          "DOI"
+        ],
+        "read_scope": "Primary arXiv metadata and complete abstract; local borrowing record at docs/research/r2_support_head.md:560. No fresh full-method verification claimed.",
+        "local_source_lines": [
+          560
+        ]
+      }
+    ],
+    "new_entry_count": 2,
+    "total_entries": 29,
+    "related_work_sentences_added": 2,
+    "source_limits": "Source metadata/claims above are checked; no systematic novelty or retraction certification.",
+    "bib_sha256": "02c3c6402344d61e0c7353284b63fabaf1c51e56ef5934bff0456f9d2773e3e3",
+    "related_work_sha256": "2584ff66dcee3ad68c6c39cf632a4d7a15c1ee985232a8861f13ee764aed43a8"
+  }
+}

@@ -1,40 +1,51 @@
-# Seven-system medical QA study — LaTeX manuscript
+# CF-MoA — complete English LaTeX manuscript
 
-Edit `main.tex`, `sections/*.tex`, `tables/*.tex`, and `references.bib` directly. This is the maintained manuscript source. The initial prose was migrated once from the frozen Markdown draft; subsequent document builds compile LaTeX directly.
+This is the 2026-10-03 full manuscript based on the completed coauthor research dossier.
+Its main thread is the five-relation taxonomy, benchmark construction, seven configured
+systems, specialized heads, and the adopted five-role CF-MoA controller. The appendix
+contains the complete six-arm and component comparisons. This generic conference layout
+uses anonymous author information; the author declarations must be completed before submission.
 
-The study presents seven full-v5 baseline configurations, seven-system R1–R3 terminal-head development results, and the later M4/M5 six-arm CF-MoA comparison as distinct experimental stages. M4 and M5 are two MedRAG configurations; the seven rows span six method families.
+## Compile
 
-The project contains the complete English manuscript, eleven manuscript tables, six vector figures, and twenty-four bibliography entries. The layout is a generic single-column review manuscript, not a specific conference template. Author names and affiliations remain to be supplied by the authors.
-
-## Build
-
-Install [Tectonic](https://github.com/tectonic-typesetting/tectonic) (the recorded build uses 0.17.0), or a TeX Live installation with XeLaTeX, BibTeX, and latexmk. From this directory:
+Open `main.tex` in Overleaf and select XeLaTeX, or run:
 
 ```bash
 bash build.sh
 ```
 
-The script prefers Tectonic when available; otherwise it runs `latexmk -xelatex`. It resolves citations with BibTeX and writes `main.pdf`, retaining compilation logs and intermediates under `build/`. The first Tectonic build downloads required TeX packages. To use a separately installed binary:
+The script uses Tectonic when installed, otherwise `latexmk -xelatex`, and writes
+`build/main.pdf` and `main.pdf`. A standalone Tectonic binary can be supplied with
+`TECTONIC_BIN=/path/to/tectonic bash build.sh`. References use BibTeX and natbib.
+The verified build used Tectonic 0.17.0. Install the TeX packages once before an offline build.
+
+## Edit
+
+Edit `main.tex`, `sections/*.tex`, `tables/*.tex`, and `references.bib` directly.
+The three scientific figures are vector PDFs; PNG previews are also included.
+`SOURCE_MANIFEST.json` records the delivered file hashes. This package is separate from
+the Chinese author dossier and the earlier framework, which remain available in the repository.
+
+## Rebuild figures and tables from saved results
+
+The supplied JSON inputs are frozen summaries of already completed experiments.
+The following commands regenerate artifacts without running inference or a grader:
 
 ```bash
-TECTONIC_BIN=/path/to/tectonic bash build.sh
+python scripts/build_paper_figures.py --input-dir inputs/figures --output-dir . --review-dir audit
+python scripts/build_appendix_tables.py --inputs inputs/full_results --output tables
+python scripts/build_paper_figures.py --input-dir inputs/figures --output-dir . --review-dir audit --check-only
 ```
 
-To build manually with TeX Live:
+Figure generation requires Python 3.10+ and Matplotlib (verified with 3.10.9);
+appendix table generation uses the Python standard library. Do not use `--freeze-inputs`
+when reproducing the released results: that optional maintenance flag intentionally
+reads the original workspace. Ordinary builds use only the included frozen input files.
+The result JSON files include the original identities and denominators; `audit/` contains
+the figure and table receipts. Native generation/scoring and dataset acquisition have
+additional model, retrieval, and source-access dependencies documented in the companion
+research records. Rebuilding a plot from saved scores is distinct from rerunning an experiment.
 
-```bash
-latexmk -xelatex -interaction=nonstopmode -halt-on-error -outdir=build main.tex
-```
-
-For Overleaf, upload the files with their directory structure intact, choose `main.tex` as the main document, and select XeLaTeX. The published `cf_moa_latex.zip` includes this project and its compiled PDF.
-
-## Contents
-
-- `main.tex`: document class, preamble, chapter order, and bibliography configuration.
-- `sections/`: abstract, main sections, declarations, and appendices.
-- `tables/`: eleven native LaTeX manuscript tables with labels and cross-references.
-- `figures/`: six vector PDFs derived from saved results.
-- `references.bib`: twenty-four primary-source-checked bibliography records, used through natbib and BibTeX.
-- `build.sh`: direct LaTeX compilation; no Markdown, Pandoc, or Typst dependency.
-
-The broader delivery directory contains the frozen numerical inputs, CSV/LaTeX data tables, and figure reproduction script. Compiling this manuscript does not execute model inference or native grading. The exposed-development status, negative results, default B, and unexecuted independent confirmation remain part of the paper.
+The repository is private. Original datasets, guidelines, models, and simulator resources
+remain subject to their own distribution terms. This source package adds no new rights
+to those resources.

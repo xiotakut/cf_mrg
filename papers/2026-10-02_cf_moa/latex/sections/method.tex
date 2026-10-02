@@ -1,137 +1,48 @@
-\section{Support Updating and Candidate Re-decision}
+\section{CF-MoA: Sparse Orchestration of Five Functional Roles}
 \label{sec:method}
 
-\subsection{Reusable terminal heads}
-\label{sec:method-terminal-heads}
+CF-MoA turns the benchmark's functional perspective into five executable agent roles: adding support (A1), withdrawing support (A2), comparing candidates (A3), deriving consequences (A4), and preserving task-relevant judgments (A5). The roles correspond to R1--R5 as design objectives; online execution depends on the current input's capabilities. Agents can share model weights and deterministic components. The adopted configuration, denoted B, selects an applicable operation and returns a native answer, as shown in Figure~\ref{fig:architecture}. Its organizing principle is sparse specialization, with the base system supplying the current answer and its actual inference context.
+% Evidence: docs/research/cf_moa.md, adopted_B_five_operations_v1;
+% docs/paper/research_dossier.md, Section 5.9.
 
-The first development stage adds terminal decision components to each original system.
-A head is an external inference procedure, with no newly trained parameters. It receives
-only the current input, the permitted original context where needed, the original answer,
-and a callback to the original backbone. Visible task format and rule eligibility select
-the branch. R labels select evaluation strata offline and never select an answer or a
-branch at inference. The R1 and R3 interfaces combine the two components below and retain
-the original answer on uncovered tasks; the R2 interface uses the rule component alone.
+\subsection{Capability routing and native readout}
 
-\textbf{Shared support addition and removal.} The rule component separates patient-fact
-extraction from execution of a fixed public rule bank. Its established eligibility
-predicate is limited to supported multi-select prescribing questions, including an
-explicit age of at least 65 and a recognized rule-bank drug option. The existing bank
-contains 71 rules; question scope determines the applicable rules and requested actions.
-Facts are extracted from the current question, not from unrelated patients in retrieved
-documents. Missing facts remain unknown.
+Routing follows a fixed priority: diagnosis-format inputs enter A3; eligible rule tasks enter the shared A1/A2 kernel; inputs providing a complete executable model enter A4; supported single-choice, robustness, or relation tasks with saved original messages enter A5. Other inputs retain the base response. The router uses task format, visible options, question structure, and available computational resources. Source identifiers, benchmark relation labels, gold answers, and paired endpoints are excluded. Thus a component developed on one functional subset can also operate on compatible inputs elsewhere in the benchmark.
 
-Each supported option receives a state in
-\(\{\mathrm{MET},\mathrm{CONTRADICTED},\mathrm{UNKNOWN}\}\). Necessary conditions combine
-by conjunction; independent support paths combine by disjunction. The existing
-documented-exception policy and native assembler remain authoritative. For an ordinary
-valid initial option set \(A_0\), away from native special cases, the update is
+This interface gives each role a concrete applicability domain: finite prescribing rules for A1/A2, a fixed diagnosis catalog for A3, a supplied executable mechanism and state for A4, and supported native decision formats for A5. In the complete v5 evaluation, each backbone routes 3,560 inputs to A3, 123 to A1/A2, 10,178 to A5, and 44 to passthrough. A4 has no qualifying clinical v5 input; its supplied-model evaluation is reported separately. The controller records the selected route, requests, operation traces, and complete returned response.
+% Evidence: five_agent_framework_audit.json; complete v5 coverage in
+% docs/research/cf_moa_experiment_report.md, Sections 16.6--16.13.
 
+\subsection{A1/A2: scoped support recomputation}
+
+A1 and A2 share a kernel containing 71 manually encoded rules drawn from selected recommendations in the 2023 American Geriatrics Society Beers Criteria~\citep{ags2023beers}. Eligibility checks require a supported multiple-choice format, an age of at least 65 in the implemented question pattern, and a recognized medication option. The kernel extracts the requested action and scope, such as avoidance or renal dose adjustment. One call to the original backbone extracts only the required patient facts from the numbered current question, with evidence sentence identifiers. It does not receive the base answer or retrieved documents during this extraction. Missing or rejected evidence produces an unknown value.
+% Evidence: docs/research/r2_support_head.md, execution guide Sections 2--3.
+
+The executor evaluates conditions, exceptions, and independent support paths using \textsc{met}, \textsc{contradicted}, and \textsc{unknown}. Conjunction combines requirements within a path; disjunction preserves independent paths. Consequently, invalidating one risk does not remove an option supported by another satisfied risk. Let $S_0$ be the initial valid option set and let $M,C,U$ partition options by their aggregate status. A1 adds $M\setminus S_0$; A2 removes $C\cap S_0$. For ordinary valid sets, the result is
 \begin{equation}
-\label{eq:support_update}
-A_{\mathrm{new}}=\{o:s(o)=\mathrm{MET}\}
-\ \cup\ \bigl(A_0\cap\{o:s(o)=\mathrm{UNKNOWN}\}\bigr).
+ S^{\star}=M\cup(S_0\cap U).
+ \label{eq:support-update}
 \end{equation}
+The native assembler additionally handles exclusive ``None'' options, invalid initial answers, and empty outputs. Both roles therefore use one fact extraction and one execution, while retaining separate addition and withdrawal traces.
+% Evidence: docs/research/cf_moa.md, minimal five-operation B;
+% docs/research/r2_support_head.md, three-valued execution and assembly.
 
-The expression adds newly supported options, removes options whose relevant support is
-contradicted, and preserves selected options with unresolved support. Native ``none''
-exclusivity, invalid initial answers, and extraction failures use the established
-assembler and fallback policies. The same execution can add newly supported options and
-withdraw unsupported ones, allowing the frozen component to serve both R1 and R2
-phenomena. Positive-field extraction and evidence sentence identifiers aid traceability;
-the existence of a cited sentence alone does not establish that it entails the extracted
-fact.
+\subsection{A3: catalog-based candidate comparison}
 
-\textbf{Diagnostic comparison.} The diagnostic component uses a fixed public catalog of 49
-diseases derived from the DDXPlus resource \citep{ddxplus}. The original model scores
-candidate codes under six permutations. Existing content-free distributions provide a
-prior correction for each permutation; the corrected choices are combined by majority
-vote, with mean corrected probability and fixed catalog order resolving ties. The frozen
-diagnostic scorer still uses its existing 46-label mapping. We do not expand that mapping
-after observing predictions. Catalog constraints, candidate resources, repeated decisions,
-and calibration all contribute to this component, so its overall gain cannot be attributed
-to calibration alone.
+A3 uses all 49 disease names in the public DDXPlus catalog~\cite{ddxplus}. The same backbone reads the current patient and the base system's actual context, with diagnoses bound to scoreable codes under six fixed catalog orders. For each order, it subtracts a content-free log-score prior from the patient-conditioned code score, following the general calibration principle of separating contextual evidence from answer preferences~\cite{zhao2021calibrate}. The prior is the logarithm of the mean of three content-free candidate distributions, computed separately for each order; its subtraction coefficient is fixed at one. A3 selects the highest corrected score per order and votes across orders, breaking vote ties using average corrected probabilities. The selected catalog entry is mapped back to the native diagnosis. The catalog and scorer's frozen normalization are separate resources; this decision stage changes candidate selection without expanding the scoring dictionary.
+% Evidence: docs/research/r3_candidate_comparison.md, retained catalog/calibration;
+% r3_catalog_calibration.py and r3_catalog_distribution_head.py.
 
-The catalog head preserves the original system's actual final decision context and
-presents the current case again before scoring the fixed candidates. It does not retrieve
-training-case labels or replace decisions with a nearest-neighbor answer. The six
-permutations, prior correction, and tie policy are shared across configurations, including
-configurations on which one component decreases accuracy. A separate single-permutation
-control and uncorrected six-vote control measure the contribution beyond catalog
-re-decision itself.
+\subsection{A4: executing a local intervention}
 
-\subsection{CF-MoA adopted core B}
-\label{sec:method-adopted-core-b}
+A4 compiles an intervention into a typed local patch when the input supplies the executable model, parameters, complete initial state, and factual action schedule. Unmodified actions remain intact. The numerical executor runs factual and patched trajectories from the same starting state and projects their consequences onto the requested time and outcome. Our implementation uses the public glucose--insulin simulator~\cite{simglucose}. Local patches reduce the need to regenerate a complete action plan, allowing intervention fidelity to be evaluated against a same-tool full-plan control. The returned consequence is computed from the supplied mechanism and executed actions.
+% Evidence: docs/research/r4_consequence_head.md, typed-patch delivery and
+% frozen 24-profile validation; source simulator dependency is cited above.
 
-The later CF-MoA composition incorporates the established terminal heads and additional
-operations. It first routes diagnosis questions to the catalog component, then eligible
-prescribing questions to the rule component. Inputs with a complete supported executable
-model can use the model-execution component. Supported single-choice and relation questions
-with their original message context use repeated native-answer readout, denoted F. Other
-inputs preserve the original answer. In the two-configuration full-v5 evaluation, 3,560
-inputs route to diagnosis, 123 to rules, 10,178 to F, and 44 to passthrough per
-configuration. The explicit-model component covers zero clinical-v5 inputs. A1 and A2
-record support addition and withdrawal from the shared rule execution; their names do
-not introduce two independent fact extractors.
+\subsection{A5: task-adapted robust readout}
 
-\textbf{Conditional model execution.} The A4 component extracts a typed intervention and
-executes it only when the complete supported physiological model, parameters, state, and
-question contract are supplied. Its historical validation uses a fixed glucose simulation
-model and is reported separately in Appendix~\ref{sec:appendix_model}. The clinical v5 data do not meet this
-capability predicate. The 13 R4-labeled clinical units nevertheless remain in the
-evaluation and follow the other applicable routes.
+A5 retains the adopted component F. For ordinary supported tasks, F preserves the complete original messages and samples up to five native responses at temperature $0.7$, seeds 42--46, and a 2,048-token output limit. It votes over valid answer keys, stops once one key receives three votes, and returns the earliest complete response carrying a winning key. Final vote ties use earliest occurrence; if no vote is valid, the first response remains invalid. This is a native-output adaptation of sampling and answer aggregation~\cite{wang2023selfconsistency}.
 
-\textbf{Repeated native-answer readout.} For ordinary supported tasks, F produces up to
-five complete native answers using seeds 42--46 and stops once a key has the required
-absolute majority of three votes. If all five draws complete without that majority,
-plurality among valid keys selects the answer, with ties resolved by the earliest
-response; if no key is valid, the first invalid response is retained for failure
-accounting. Invalid outputs remain in the trace. A separate adopted natural language
-inference (NLI) path uses two reasoning paths and two code mappings; this path is retained
-unchanged by the candidate-verification extension. In both cases, the adopted component's
-complete native response remains the output authority. B has no subsequent global
-generative editor.
-
-\subsection{Rationale-conditioned candidate
-verification}
-\label{sec:method-rationale-conditioned-candidate-verification}
-
-The extension operates only on the ordinary F branch. Let \(\mathcal{C}(x)\) contain the
-distinct legal answer keys observed in the saved F pool. For each key, the earliest
-complete saved response is its representative. Invalid votes remain recorded but do not
-become candidate keys. Candidate membership does not use gold correctness, expected
-improvement, or offline R labels. F must provide an available legal result and at least
-two distinct legal candidates before verification runs.
-
-For candidate \(k\), the verifier retains the original messages, native options, and
-allowed evidence. It appends the target candidate and the observed candidate set. In the
-rationale-conditioned arm, it also appends the earliest saved reasoning associated with
-each candidate, explicitly identified as untrusted model opinion. It does not append vote
-counts, the F winner as an authoritative label, hidden paired inputs, or evaluation
-metadata. A rationale is neither a newly retrieved source nor a verified patient
-observation.
-
-Two scoring calls use opposite binary code mappings. Let \(\ell_{kh}(b)\) be the log score
-of code \(b\in\{A,B\}\) for mapping \(h\in\{1,2\}\), and let \(b_h^+\) be the code meaning
-``the target candidate is correct.'' The ranking score is
-
-\begin{equation}
-\label{eq:verification_score}
-v(k\mid x)=\frac{1}{2}\sum_{h=1}^{2}
-\frac{\exp\ell_{kh}(b_h^+)}
-{\exp\ell_{kh}(A)+\exp\ell_{kh}(B)}.
-\end{equation}
-
-We select the maximum-scoring candidate. An exact tie retains the F key when it is tied;
-otherwise native candidate order breaks the tie. The complete representative response is
-returned without generating a new answer or repairing auxiliary fields. A completed
-verification makes \(2|\mathcal{C}(x)|\) logical binary-scoring requests. Physical
-missing-code retrieval and failed-call costs are separately recorded and can make physical
-request counts differ from this expression. The score \(v\) is an uncalibrated ranking
-signal.
-
-Outside the supported branch, with fewer than two legal candidates, or on the adopted NLI
-route, the system retains B. A candidate-scoring failure records a technical failure and
-uses the saved F answer; an unavailable F answer remains unavailable. Shared backend
-failures stop the affected job rather than triggering a fresh answer draw. This contract
-makes the extension a test of selection among a given pool, with explicit failure
-behavior.
+For explicit premise--hypothesis tasks with two polarity options, F uses a natural language inference (NLI) branch. It scores both A/B label mappings directly, generates one current-question analysis, and scores both mappings again conditioned on that analysis. Each two-label distribution is normalized before the four semantic distributions are averaged. The highest mean determines the answer; exact ties follow native option order. A final model call generates the complete native response with its answer field constrained to that decision. This path uses four one-token score callbacks and two complete generations at temperature zero, preserving the original evidence and required auxiliary fields. Missing code scores require a matching score request and remain visible in the cost ledger.
+% Evidence: docs/research/r5_invariance_head.md, independent combination interface;
+% Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py, optimize/decide_paths.

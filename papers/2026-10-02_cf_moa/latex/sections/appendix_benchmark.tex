@@ -1,0 +1,20 @@
+\section{Benchmark Composition and Annotation}
+\label{app:benchmark}
+
+\subsection{Source inventory and qualification}
+Table~\ref{tab:story-benchmark} gives the exact composition of the frozen evaluation. Source citations and acquisition records accompany the source manifest. The original inventory contained 26 candidates, of which 15 were acquired. Four acquired resources did not contribute eligible v5 targets: the clinical laboratory and EquityMedQA resources required additional answer or rubric adjudication; MedCF required an editing operation outside the implemented answering protocol; and MedMKEB lacked the required images. For the other 11 candidates, the specified fixed cases, counterfactual edits, or required restricted context had not been obtained at collection time. These acquisition statuses describe the archived study materials.
+
+The 55,991 archived units comprise 53,494 text units and 2,497 metadata units with missing images. An initial review frame contained 28,243 units and 80,910 judgments. Its review ledger records 603 individual semantic reviews, 13,464 grouped semantic reviews, and 14,176 structural checks. Subsequent completion and eligibility review covered all archived units, producing 109,599 reviewed judgments, of which 77,781 were eligible in 38,123 units. The evaluation sample is drawn from this completed pool rather than from the initial capped frame.
+
+\input{tables/story_sources}
+
+\subsection{Annotation examples and overlap}
+An annotation identifies the source comparison axis before assigning a relation. In a MedEinst case, the addition of wheezing supports a bronchitis candidate (R1), while the associated diagnostic question can require comparison with acute laryngitis (R3). A DiversityMedQA sex-attribute change removes one demographic basis for a Lesch--Nyhan candidate (R2), while other findings remain available. In CPV-MedQA, changing an ethnicity description leaves the chemotherapy and ototoxicity evidence relevant to a pharmacological question intact (R5). These examples illustrate functional labels on specified targets, rather than rules for assigning a diagnosis from a single feature.
+
+Labels are assigned to targets and then combined at the unit level. In v5, R3 is contained in R1; R1 and R5 share 450 units, R1 and R2 share four, and R2 and R3 share three. R1--R3 contain 2,941 distinct units. The sum of category memberships is 7,291, whereas the union used for ALL contains 6,104 units. The 13,000 selected target judgments, 13,905 distinct inputs, and 15,616 scoring mappings refer to different representations of these same tasks. Of the scoring mappings, 6,818 address reference endpoints and 8,798 address non-reference endpoints.
+
+\subsection{Sampling and version lineage}
+The earlier v2 evaluation contained 3,105 units and eight sources. A v3 display assigned overlapping units to a single category for presentation, without changing their answers. The completed v4 pool restored multi-label evaluation and expanded eligibility review. The v5 evaluation used in this paper retains all eligible R1--R4 targets and samples 450 R5 units from each of eight sources. These source samples are drawn without replacement from sorted identifiers using a source-specific seeded procedure. The original semantic labels and the selected evaluation labels are stored separately. Neither prior predictions nor final method scores determine sample membership.
+
+The 450-unit allocation balances source representation within R5; it does not assert equal numbers of independent patients or equal sampling probabilities across sources. Related variants remain linked to their parent families for paired analysis and bootstrap resampling. The source manifest, membership files, and scoring mappings are the authoritative definition of the evaluated sample.
+\FloatBarrier

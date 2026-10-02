@@ -1,57 +1,10 @@
-\section{Limitations}
-\label{sec:limitations}
+\section*{Limitations}
 
-\textbf{Development exposure and confirmation.} The full v5 benchmark was already exposed
-and contributed to baseline repair, terminal-head development, and later composition
-selection. Current bootstrap intervals do not remove that exposure. Frozen component
-evaluations on ASCENT, CUPCase, constructed rule cases, and new physiological profiles
-were completed and retain their stated narrow scope. ASCENT's 47-record check combines
-source-training and source-test records and was subsequently exposed to further
-development; only its initial frozen comparison retains that evaluation status.
-A planned new-family evaluation
-of the final CF-MoA composition and a second independently generated F pool were
-deferred and have not been executed. The final composition therefore lacks independent
-confirmation and across-pool replication; this does not reclassify the completed
-component checks as unexecuted.
+The benchmark and component panels were used during development. The bootstrap intervals quantify uncertainty within these evaluated families; a separate family-disjoint evaluation after final controller selection is needed to estimate performance on unseen case families. The final controller was evaluated on two MedRAG configurations, while transfer to seven systems was established for the earlier support and comparison heads.
 
-\textbf{Scope and scoring.} The sources differ in task semantics, patient realism,
-perturbation construction, and reference quality. R labels overlap, some groups are small,
-and the 13-unit R4 clinical subset has especially limited coverage. Classification follows
-the project's documented target-level review rules; no clinician inter-annotator agreement
-estimate is reported. Canonical diagnostic matching can penalize clinically related
-wording, while source expected answers do not provide a new clinical adjudication. An
-empty list of newly established data defects in the final closeout is not evidence that
-all items and labels have undergone a complete expert medical review.
+Source coverage and category balance also matter. Support removal contains 79 units and consequence calculation contains 13; category labels overlap, and a substantial part of the preservation subset comes from perturbation and retrieval-robustness tasks. The taxonomy was applied through structured review and source-specific checks, but independent clinician agreement on its assignments has not been measured. Source labels and rubrics inherit the strengths and limitations of their original datasets.
 
-\textbf{Attribution and model comparison.} Seven configurations share two backbones and
-six method families, and their upstream resources and budgets differ. Rule-head results
-reuse backbone-specific facts with seven initial-answer sets, while diagnostic
-re-decision uses each configuration's actual context. Neither procedure establishes
-seven independent data replications or seven new complete upstream runs. B combines
-already developed components with additional resources and inference. Specified local
-comparisons, such as fixed-fact rule ablations and C3 versus C2, isolate narrower design
-changes; single-pass and repeated catalog decisions have different call budgets. M4 and M5
-differ in output protocol as well as model. Their disagreement in C3's effect is
-configuration dependence; a pure backbone explanation requires matched-protocol
-experiments. Candidate-trigger membership also differs because each model generates its
-own pool.
+Several components have explicit resource assumptions. The rule executor depends on its 71-rule bank and extracted facts, and diagnosis uses a finite public catalog. Consequently, part of the observed gain concerns candidate coverage and readable output, rather than an isolated improvement in latent clinical reasoning. The consequence agent was validated on a supplied physiological model and virtual profiles. Baselines have different retrieval, formatting, and inference budgets, and a complete resource-matched comparison remains open.
 
-\textbf{Component coverage.} The rule head covers a limited public rule bank and fixed
-question-scope patterns, and can inherit errors through UNKNOWN states. R2's answer
-imbalance favors the constant ``none'' control. The diagnostic catalog is finite, and
-the small external panels do not establish stable calibration gains. R4's executor
-requires a complete supplied model; the later R5 learning candidates were not adopted.
-The seven-system R1--R3 head table does not establish seven-system R4/R5 optimization.
-
-\textbf{Clinical applicability.} This is an offline benchmark study, not a prospective
-patient study, treatment trial, or deployment evaluation. Rule coverage is limited, and
-the A4 physiological results concern a supplied mathematical model. Neither exact-match
-improvements nor successful model execution establish clinical safety or correctness
-outside those contracts.
-
-\textbf{Computation and reproducibility.} Some original-system costs and historical
-timings are unknown. Shared-call attribution describes the measured components rather than
-complete end-to-end resource use. The figure package reproduces reported summaries and can
-check them against the released compressed result records; it does not rerun the full
-language-model experiment. Original input data, licenses, model access, retrieval indices,
-and environment-specific paths remain separate prerequisites for fresh inference.
+\section*{Ethical Considerations}
+The study evaluates existing research datasets and simulated profiles. It does not establish clinical effectiveness or authorize patient-care use. Dataset provenance and original access conditions must accompany any redistribution. Evaluation artifacts retain source task contracts, including failures and invalid outputs, so that downstream users can inspect the system's behavior rather than relying only on aggregate scores. Author and data-availability declarations appear in Appendix~\ref{app:declarations}.

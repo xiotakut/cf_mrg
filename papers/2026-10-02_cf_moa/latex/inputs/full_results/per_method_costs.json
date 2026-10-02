@@ -1,0 +1,1881 @@
+{
+  "snapshot": "d857934",
+  "inputs_per_method_arm": 13905,
+  "rows": [
+    {
+      "method": "M4",
+      "arm": "original_C0",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "unknown_common_upstream",
+      "cost": {
+        "method_attributed_cost": {
+          "model_requests": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          },
+          "input_tokens": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          },
+          "output_tokens": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          },
+          "model_seconds": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown"
+    },
+    {
+      "method": "M4",
+      "arm": "strong_B",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 59800,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59800
+          },
+          "input_tokens": {
+            "known_subtotal": 241675469,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 241675469
+          },
+          "output_tokens": {
+            "known_subtotal": 9686224,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686224
+          },
+          "model_seconds": {
+            "known_subtotal": 79034.58548999074,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "input_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "output_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "model_seconds": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 59800,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59800
+          },
+          "input_tokens": {
+            "known_subtotal": 241675469,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 241675469
+          },
+          "output_tokens": {
+            "known_subtotal": 9686224,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686224
+          },
+          "model_seconds": {
+            "known_subtotal": 79034.58548999074,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 46255,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 46255
+          },
+          "input_tokens": {
+            "known_subtotal": 197623354,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 197623354
+          },
+          "output_tokens": {
+            "known_subtotal": 9046620,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9046620
+          },
+          "model_seconds": {
+            "known_subtotal": 77090.23498801571,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 77090.23498801571
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 36,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 36
+          },
+          "input_tokens": {
+            "known_subtotal": 190798,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 190798
+          },
+          "output_tokens": {
+            "known_subtotal": 14892,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 14892
+          },
+          "model_seconds": {
+            "known_subtotal": 89.73267568810431,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 89.73267568810431
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 13509,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13509
+          },
+          "input_tokens": {
+            "known_subtotal": 43861317,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 43861317
+          },
+          "output_tokens": {
+            "known_subtotal": 624712,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 624712
+          },
+          "model_seconds": {
+            "known_subtotal": 1854.6178262869375,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M4",
+      "arm": "candidate_only",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 59800,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59800
+          },
+          "input_tokens": {
+            "known_subtotal": 241675469,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 241675469
+          },
+          "output_tokens": {
+            "known_subtotal": 9686224,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686224
+          },
+          "model_seconds": {
+            "known_subtotal": 79034.58548999074,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 13314,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13314
+          },
+          "input_tokens": {
+            "known_subtotal": 109571018,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 109571018
+          },
+          "output_tokens": {
+            "known_subtotal": 13314,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13314
+          },
+          "model_seconds": {
+            "known_subtotal": 35108.91417223356,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 35108.91417223356
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 73114,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 73114
+          },
+          "input_tokens": {
+            "known_subtotal": 351246487,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 351246487
+          },
+          "output_tokens": {
+            "known_subtotal": 9699538,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9699538
+          },
+          "model_seconds": {
+            "known_subtotal": 112782.42555645508,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 13104,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13104
+          },
+          "input_tokens": {
+            "known_subtotal": 108247786,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 108247786
+          },
+          "output_tokens": {
+            "known_subtotal": 13104,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13104
+          },
+          "model_seconds": {
+            "known_subtotal": 34778.72696741951,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 34778.72696741951
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "input_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "output_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "model_seconds": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 60010,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 60010
+          },
+          "input_tokens": {
+            "known_subtotal": 242998701,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 242998701
+          },
+          "output_tokens": {
+            "known_subtotal": 9686434,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686434
+          },
+          "model_seconds": {
+            "known_subtotal": 79291.60804846985,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M4",
+      "arm": "candidate_with_rationales",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 59800,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59800
+          },
+          "input_tokens": {
+            "known_subtotal": 241675469,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 241675469
+          },
+          "output_tokens": {
+            "known_subtotal": 9686224,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686224
+          },
+          "model_seconds": {
+            "known_subtotal": 79034.58548999074,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 13308,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13308
+          },
+          "input_tokens": {
+            "known_subtotal": 116968516,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 116968516
+          },
+          "output_tokens": {
+            "known_subtotal": 13308,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13308
+          },
+          "model_seconds": {
+            "known_subtotal": 34947.15497419884,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 34947.15497419884
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 73108,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 73108
+          },
+          "input_tokens": {
+            "known_subtotal": 358643985,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 358643985
+          },
+          "output_tokens": {
+            "known_subtotal": 9699532,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9699532
+          },
+          "model_seconds": {
+            "known_subtotal": 112725.21493436868,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 13096,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13096
+          },
+          "input_tokens": {
+            "known_subtotal": 115503452,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 115503452
+          },
+          "output_tokens": {
+            "known_subtotal": 13096,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13096
+          },
+          "model_seconds": {
+            "known_subtotal": 34870.76624616483,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 34870.76624616483
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 2,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 2
+          },
+          "input_tokens": {
+            "known_subtotal": 17200,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 17200
+          },
+          "output_tokens": {
+            "known_subtotal": 2,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 2
+          },
+          "model_seconds": {
+            "known_subtotal": 4.9086031510649875,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 4.9086031510649875
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 60010,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 60010
+          },
+          "input_tokens": {
+            "known_subtotal": 243123333,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 243123333
+          },
+          "output_tokens": {
+            "known_subtotal": 9686434,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686434
+          },
+          "model_seconds": {
+            "known_subtotal": 79074.1212095278,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M4",
+      "arm": "pool_old_plus_three",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 59800,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59800
+          },
+          "input_tokens": {
+            "known_subtotal": 241675469,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 241675469
+          },
+          "output_tokens": {
+            "known_subtotal": 9686224,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686224
+          },
+          "model_seconds": {
+            "known_subtotal": 79034.58548999074,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 9249,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9249
+          },
+          "input_tokens": {
+            "known_subtotal": 80326372,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 80326372
+          },
+          "output_tokens": {
+            "known_subtotal": 1233808,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 1233808
+          },
+          "model_seconds": {
+            "known_subtotal": 27538.99174855015,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 27538.99174855015
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 69049,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 69049
+          },
+          "input_tokens": {
+            "known_subtotal": 322001841,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 322001841
+          },
+          "output_tokens": {
+            "known_subtotal": 10920032,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 10920032
+          },
+          "model_seconds": {
+            "known_subtotal": 105555.74290276316,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 9107,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9107
+          },
+          "input_tokens": {
+            "known_subtotal": 79422258,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 79422258
+          },
+          "output_tokens": {
+            "known_subtotal": 1215524,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 1215524
+          },
+          "model_seconds": {
+            "known_subtotal": 27230.381910488377,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 27230.381910488377
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 1,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 1
+          },
+          "input_tokens": {
+            "known_subtotal": 7801,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7801
+          },
+          "output_tokens": {
+            "known_subtotal": 68,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 68
+          },
+          "model_seconds": {
+            "known_subtotal": 2.6982709417992736,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 2.6982709417992736
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 59941,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59941
+          },
+          "input_tokens": {
+            "known_subtotal": 242571782,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 242571782
+          },
+          "output_tokens": {
+            "known_subtotal": 9704440,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9704440
+          },
+          "model_seconds": {
+            "known_subtotal": 79193.68325913869,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M4",
+      "arm": "joint_selector",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 59800,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59800
+          },
+          "input_tokens": {
+            "known_subtotal": 241675469,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 241675469
+          },
+          "output_tokens": {
+            "known_subtotal": 9686224,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686224
+          },
+          "model_seconds": {
+            "known_subtotal": 79034.58548999074,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 5922,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 5922
+          },
+          "input_tokens": {
+            "known_subtotal": 50554208,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 50554208
+          },
+          "output_tokens": {
+            "known_subtotal": 5922,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 5922
+          },
+          "model_seconds": {
+            "known_subtotal": 15709.232078691948,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 15709.232078691948
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 65722,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 65722
+          },
+          "input_tokens": {
+            "known_subtotal": 292229677,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 292229677
+          },
+          "output_tokens": {
+            "known_subtotal": 9692146,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9692146
+          },
+          "model_seconds": {
+            "known_subtotal": 94193.78321619412,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 5828,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 5828
+          },
+          "input_tokens": {
+            "known_subtotal": 49906678,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 49906678
+          },
+          "output_tokens": {
+            "known_subtotal": 5828,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 5828
+          },
+          "model_seconds": {
+            "known_subtotal": 15595.276565767888,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 15595.276565767888
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "input_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "output_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "model_seconds": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 59894,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 59894
+          },
+          "input_tokens": {
+            "known_subtotal": 242322999,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 242322999
+          },
+          "output_tokens": {
+            "known_subtotal": 9686318,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9686318
+          },
+          "model_seconds": {
+            "known_subtotal": 79111.79743910077,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M5",
+      "arm": "original_C0",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "unknown_common_upstream",
+      "cost": {
+        "method_attributed_cost": {
+          "model_requests": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          },
+          "input_tokens": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          },
+          "output_tokens": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          },
+          "model_seconds": {
+            "total": null,
+            "known_subtotal": 0,
+            "known_rows": 0,
+            "unknown_rows": 13905
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown"
+    },
+    {
+      "method": "M5",
+      "arm": "strong_B",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 58301,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58301
+          },
+          "input_tokens": {
+            "known_subtotal": 220580598,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 220580598
+          },
+          "output_tokens": {
+            "known_subtotal": 7645205,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645205
+          },
+          "model_seconds": {
+            "known_subtotal": 74024.74164969052,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "input_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "output_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "model_seconds": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 58301,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58301
+          },
+          "input_tokens": {
+            "known_subtotal": 220580598,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 220580598
+          },
+          "output_tokens": {
+            "known_subtotal": 7645205,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645205
+          },
+          "model_seconds": {
+            "known_subtotal": 74024.74164969052,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 44838,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 44838
+          },
+          "input_tokens": {
+            "known_subtotal": 180292907,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 180292907
+          },
+          "output_tokens": {
+            "known_subtotal": 7099881,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7099881
+          },
+          "model_seconds": {
+            "known_subtotal": 71548.77329242541,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 71548.77329242541
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 14,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 14
+          },
+          "input_tokens": {
+            "known_subtotal": 64293,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 64293
+          },
+          "output_tokens": {
+            "known_subtotal": 2406,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 2406
+          },
+          "model_seconds": {
+            "known_subtotal": 184.5634474882429,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 184.5634474882429
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 13449,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 13449
+          },
+          "input_tokens": {
+            "known_subtotal": 40223398,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 40223398
+          },
+          "output_tokens": {
+            "known_subtotal": 542918,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 542918
+          },
+          "model_seconds": {
+            "known_subtotal": 2291.4049097769766,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M5",
+      "arm": "candidate_only",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 58301,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58301
+          },
+          "input_tokens": {
+            "known_subtotal": 220580598,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 220580598
+          },
+          "output_tokens": {
+            "known_subtotal": 7645205,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645205
+          },
+          "model_seconds": {
+            "known_subtotal": 74024.74164969052,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 9820,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9820
+          },
+          "input_tokens": {
+            "known_subtotal": 69374062,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 69374062
+          },
+          "output_tokens": {
+            "known_subtotal": 9820,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9820
+          },
+          "model_seconds": {
+            "known_subtotal": 22128.889010564337,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 22128.889010564337
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 68121,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 68121
+          },
+          "input_tokens": {
+            "known_subtotal": 289954660,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 289954660
+          },
+          "output_tokens": {
+            "known_subtotal": 7655025,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7655025
+          },
+          "model_seconds": {
+            "known_subtotal": 95023.69087726634,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 9631,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9631
+          },
+          "input_tokens": {
+            "known_subtotal": 67777727,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 67777727
+          },
+          "output_tokens": {
+            "known_subtotal": 9631,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9631
+          },
+          "model_seconds": {
+            "known_subtotal": 21612.803590603697,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 21612.803590603697
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 9,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9
+          },
+          "input_tokens": {
+            "known_subtotal": 280859,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 280859
+          },
+          "output_tokens": {
+            "known_subtotal": 9,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9
+          },
+          "model_seconds": {
+            "known_subtotal": 118.6022505518332,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 118.6022505518332
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 58481,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58481
+          },
+          "input_tokens": {
+            "known_subtotal": 221896074,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 221896074
+          },
+          "output_tokens": {
+            "known_subtotal": 7645385,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645385
+          },
+          "model_seconds": {
+            "known_subtotal": 74364.8564636953,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M5",
+      "arm": "candidate_with_rationales",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 58301,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58301
+          },
+          "input_tokens": {
+            "known_subtotal": 220580598,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 220580598
+          },
+          "output_tokens": {
+            "known_subtotal": 7645205,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645205
+          },
+          "model_seconds": {
+            "known_subtotal": 74024.74164969052,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 9820,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9820
+          },
+          "input_tokens": {
+            "known_subtotal": 74346708,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 74346708
+          },
+          "output_tokens": {
+            "known_subtotal": 9820,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9820
+          },
+          "model_seconds": {
+            "known_subtotal": 21708.09773187601,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 21708.09773187601
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 68121,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 68121
+          },
+          "input_tokens": {
+            "known_subtotal": 294927306,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 294927306
+          },
+          "output_tokens": {
+            "known_subtotal": 7655025,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7655025
+          },
+          "model_seconds": {
+            "known_subtotal": 94696.07630008296,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 9631,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9631
+          },
+          "input_tokens": {
+            "known_subtotal": 72293198,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 72293198
+          },
+          "output_tokens": {
+            "known_subtotal": 9631,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9631
+          },
+          "model_seconds": {
+            "known_subtotal": 21529.525213009165,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 21529.525213009165
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 9,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9
+          },
+          "input_tokens": {
+            "known_subtotal": 635674,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 635674
+          },
+          "output_tokens": {
+            "known_subtotal": 9,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9
+          },
+          "model_seconds": {
+            "known_subtotal": 118.96322494170275,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 118.96322494170275
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 58481,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58481
+          },
+          "input_tokens": {
+            "known_subtotal": 221998434,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 221998434
+          },
+          "output_tokens": {
+            "known_subtotal": 7645385,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645385
+          },
+          "model_seconds": {
+            "known_subtotal": 74068.00831159769,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M5",
+      "arm": "pool_old_plus_three",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 58301,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58301
+          },
+          "input_tokens": {
+            "known_subtotal": 220580598,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 220580598
+          },
+          "output_tokens": {
+            "known_subtotal": 7645205,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645205
+          },
+          "model_seconds": {
+            "known_subtotal": 74024.74164969052,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 7049,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7049
+          },
+          "input_tokens": {
+            "known_subtotal": 53084499,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 53084499
+          },
+          "output_tokens": {
+            "known_subtotal": 873054,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 873054
+          },
+          "model_seconds": {
+            "known_subtotal": 17005.676523098446,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 17005.676523098446
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 65350,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 65350
+          },
+          "input_tokens": {
+            "known_subtotal": 273665097,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 273665097
+          },
+          "output_tokens": {
+            "known_subtotal": 8518259,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 8518259
+          },
+          "model_seconds": {
+            "known_subtotal": 90047.76014100174,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 6922,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 6922
+          },
+          "input_tokens": {
+            "known_subtotal": 52110620,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 52110620
+          },
+          "output_tokens": {
+            "known_subtotal": 856317,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 856317
+          },
+          "model_seconds": {
+            "known_subtotal": 16569.89135809088,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 16569.89135809088
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 4,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 4
+          },
+          "input_tokens": {
+            "known_subtotal": 115399,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 115399
+          },
+          "output_tokens": {
+            "known_subtotal": 396,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 396
+          },
+          "model_seconds": {
+            "known_subtotal": 52.80967062254481,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 52.80967062254481
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 58424,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58424
+          },
+          "input_tokens": {
+            "known_subtotal": 221439078,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 221439078
+          },
+          "output_tokens": {
+            "known_subtotal": 7661546,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7661546
+          },
+          "model_seconds": {
+            "known_subtotal": 74276.88142736649,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    },
+    {
+      "method": "M5",
+      "arm": "joint_selector",
+      "inputs": 13905,
+      "terminal": 13905,
+      "cost_status": "complete_accounting_with_explicit_unknown_history",
+      "cost": {
+        "base_cost_once": {
+          "model_requests": {
+            "known_subtotal": 58301,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58301
+          },
+          "input_tokens": {
+            "known_subtotal": 220580598,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 220580598
+          },
+          "output_tokens": {
+            "known_subtotal": 7645205,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645205
+          },
+          "model_seconds": {
+            "known_subtotal": 74024.74164969052,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "extra_cost": {
+          "model_requests": {
+            "known_subtotal": 4574,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 4574
+          },
+          "input_tokens": {
+            "known_subtotal": 33934362,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 33934362
+          },
+          "output_tokens": {
+            "known_subtotal": 4574,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 4574
+          },
+          "model_seconds": {
+            "known_subtotal": 9972.458724459157,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9972.458724459157
+          }
+        },
+        "method_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 62875,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 62875
+          },
+          "input_tokens": {
+            "known_subtotal": 254514960,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 254514960
+          },
+          "output_tokens": {
+            "known_subtotal": 7649779,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7649779
+          },
+          "model_seconds": {
+            "known_subtotal": 83499.808621802,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        },
+        "new_execution_cost": {
+          "model_requests": {
+            "known_subtotal": 4492,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 4492
+          },
+          "input_tokens": {
+            "known_subtotal": 33320320,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 33320320
+          },
+          "output_tokens": {
+            "known_subtotal": 4492,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 4492
+          },
+          "model_seconds": {
+            "known_subtotal": 9842.635501275057,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 9842.635501275057
+          }
+        },
+        "exact_replay_attributed_cost": {
+          "model_requests": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "input_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "output_tokens": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          },
+          "model_seconds": {
+            "known_subtotal": 0,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 0
+          }
+        },
+        "inherited_other_cost": {
+          "model_requests": {
+            "known_subtotal": 58383,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 58383
+          },
+          "input_tokens": {
+            "known_subtotal": 221194640,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 221194640
+          },
+          "output_tokens": {
+            "known_subtotal": 7645287,
+            "known_rows": 13905,
+            "unknown_rows": 0,
+            "total": 7645287
+          },
+          "model_seconds": {
+            "known_subtotal": 74128.88046297556,
+            "known_rows": 11402,
+            "unknown_rows": 2503,
+            "total": null
+          }
+        }
+      },
+      "end_to_end_total": null,
+      "common_original_C0_upstream_cost": "unknown; excluded from known head/readout subtotal"
+    }
+  ],
+  "accounting": "Each method receives one shared B/F/legacy-head cost plus its own extra cost. Never divide multi-arm physical requests by six or sum attributed costs as physical spend.",
+  "historical_common_C0_upstream": "unknown for all six arms; no end-to-end monetary, energy or latency claim",
+  "timing": "recorded event elapsed attribution, not exclusive GPU time or wall latency",
+  "correction_count": 8,
+  "shared_base_by_component": [
+    {
+      "method": "M4",
+      "component": "F",
+      "inputs": 10178,
+      "cost": {
+        "model_requests": {
+          "known_subtotal": 38317,
+          "known_rows": 10178,
+          "unknown_rows": 0,
+          "total": 38317
+        },
+        "input_tokens": {
+          "known_subtotal": 176558909,
+          "known_rows": 10178,
+          "unknown_rows": 0,
+          "total": 176558909
+        },
+        "output_tokens": {
+          "known_subtotal": 9644538,
+          "known_rows": 10178,
+          "unknown_rows": 0,
+          "total": 9644538
+        },
+        "model_seconds": {
+          "known_subtotal": 75392.55158564934,
+          "known_rows": 9565,
+          "unknown_rows": 613,
+          "total": null
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "component": "legacy_R1",
+      "inputs": 3727,
+      "cost": {
+        "model_requests": {
+          "known_subtotal": 21483,
+          "known_rows": 3727,
+          "unknown_rows": 0,
+          "total": 21483
+        },
+        "input_tokens": {
+          "known_subtotal": 65116560,
+          "known_rows": 3727,
+          "unknown_rows": 0,
+          "total": 65116560
+        },
+        "output_tokens": {
+          "known_subtotal": 41686,
+          "known_rows": 3727,
+          "unknown_rows": 0,
+          "total": 41686
+        },
+        "model_seconds": {
+          "known_subtotal": 3642.0339043413715,
+          "known_rows": 1837,
+          "unknown_rows": 1890,
+          "total": null
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "component": "F",
+      "inputs": 10178,
+      "cost": {
+        "model_requests": {
+          "known_subtotal": 36818,
+          "known_rows": 10178,
+          "unknown_rows": 0,
+          "total": 36818
+        },
+        "input_tokens": {
+          "known_subtotal": 161128024,
+          "known_rows": 10178,
+          "unknown_rows": 0,
+          "total": 161128024
+        },
+        "output_tokens": {
+          "known_subtotal": 7603156,
+          "known_rows": 10178,
+          "unknown_rows": 0,
+          "total": 7603156
+        },
+        "model_seconds": {
+          "known_subtotal": 70866.38825496822,
+          "known_rows": 9565,
+          "unknown_rows": 613,
+          "total": null
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "component": "legacy_R1",
+      "inputs": 3727,
+      "cost": {
+        "model_requests": {
+          "known_subtotal": 21483,
+          "known_rows": 3727,
+          "unknown_rows": 0,
+          "total": 21483
+        },
+        "input_tokens": {
+          "known_subtotal": 59452574,
+          "known_rows": 3727,
+          "unknown_rows": 0,
+          "total": 59452574
+        },
+        "output_tokens": {
+          "known_subtotal": 42049,
+          "known_rows": 3727,
+          "unknown_rows": 0,
+          "total": 42049
+        },
+        "model_seconds": {
+          "known_subtotal": 3158.353394722332,
+          "known_rows": 1837,
+          "unknown_rows": 1890,
+          "total": null
+        }
+      }
+    }
+  ],
+  "timing_known_subtotal_definition": "method_attributed_cost.model_seconds.known_subtotal includes only inputs whose complete attributed elapsed is known (11402/13905); base and extra component subtotals are separately available."
+}

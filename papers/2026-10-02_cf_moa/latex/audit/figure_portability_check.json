@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "workdir": "/tmp",
+  "temporary_package": "/tmp/cf_moa_portability_sg43ikpn",
+  "original_script_sha256": "447c8c1eeeb8dc728b40bf945ebccd569269931552dea9ad23b7dbee49bc8dc6",
+  "updated_script_sha256": "fa42bef21e061b88f68594edfcfa09520c0639d7d9a411212301d8e4dea27923",
+  "test_copy_script_sha256": "bc9e49ac79be69213d6436d104d164c71234b9737053ba46e6d9e761b32d20bf",
+  "test_copy_only_change": "WORKSPACE assigned to an absent path",
+  "absent_workspace": "/tmp/cf_moa_portability_sg43ikpn/workspace-does-not-exist",
+  "absent_workspace_exists": false,
+  "manifest_sha256": "4e1dc75fda14b722914389a7734ee366308cdc46d749b7d23ef0995546a1a186",
+  "guard": "Python open audit hook rejects original workspace access except interpreter runtime under MedRGAG/.venv, and rejects all accesses to the absent test workspace. Matplotlib cache placed in temporary directory.",
+  "access_check": {
+    "blocked_workspace_accesses": [],
+    "frozen_input_read_paths": [
+      "/tmp/cf_moa_portability_sg43ikpn/frozen-inputs/benchmark.json",
+      "/tmp/cf_moa_portability_sg43ikpn/frozen-inputs/framework.json",
+      "/tmp/cf_moa_portability_sg43ikpn/frozen-inputs/heads.json",
+      "/tmp/cf_moa_portability_sg43ikpn/frozen-inputs/manifest.json"
+    ]
+  },
+  "checks": [
+    {
+      "file": "tables/main_system_results.tex",
+      "sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "tables/support_operation_ablation.tex",
+      "sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "tables/main_system_results.csv",
+      "sha256": "554219262e8b150b8eb033c5770bfb140f4fc5f48932247d18225fe4da4aecda",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "tables/support_operation_ablation.csv",
+      "sha256": "cbae5b18d27884428788823c30d4eb6daac523fca63bfe9ded1ef7961d421bc6",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "tables/seven_system_head_gains.csv",
+      "sha256": "06b2971314c3187a7aedb7a3b1cd91b59b0f950eab4c5cc4b72f96100a327155",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "tables/paired_behavior.csv",
+      "sha256": "77ea86d3446677980e5535f1be0c79ceacf262d4f435b74d725477744e59dce7",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "figures/cf_moa_architecture.pdf",
+      "sha256": "62f688bad230933c477532bc5aea9b8e70cf3528bc8d6bb01f6de757ae4d3b0d",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "figures/cf_moa_architecture.png",
+      "sha256": "f84518834ce43018a71a351321e0d90e29b2012d794e132193a074fee8dcd0c0",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "figures/seven_system_head_gains.pdf",
+      "sha256": "47f40f02cabb875878d75997fd5ed4ae01522419278b957ffd4bc178b5b36619",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "figures/seven_system_head_gains.png",
+      "sha256": "1b129aebf8399b91f8392720a0c1fd9b1948d86429df53e8bcd14b376e6472aa",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "figures/paired_behavior.pdf",
+      "sha256": "22477b6b2de450800cc32a66c642ba19ab48f87d6a5886a2640378bccea1e5cf",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    },
+    {
+      "file": "figures/paired_behavior.png",
+      "sha256": "fd5462534398731ff641edc147c358ee6e00d64befccb512b90c511a0b348d61",
+      "original_unchanged": true,
+      "portable_build_identical": true,
+      "actual_script_build_identical": true
+    }
+  ],
+  "check_only_results": {
+    "copied_script": "{\"figures\": [\"cf_moa_architecture\", \"seven_system_head_gains\", \"paired_behavior\"], \"tables\": [\"main_system_results.tex\", \"support_operation_ablation.tex\"], \"audit\": \"/tmp/cf_moa_portability_sg43ikpn/portable-review/figure_audit.json\"}\nPASS: frozen inputs, 54 main-table values, 21 head comparisons, 8 pair counts, 6 ablation counts, generated files and hashes.",
+    "actual_script_custom_paths": "PASS: frozen inputs, 54 main-table values, 21 head comparisons, 8 pair counts, 6 ablation counts, generated files and hashes.",
+    "actual_script_defaults_from_tmp": "PASS: frozen inputs, 54 main-table values, 21 head comparisons, 8 pair counts, 6 ablation counts, generated files and hashes."
+  },
+  "new_model_calls": 0,
+  "new_grading_calls": 0,
+  "verification_script": {
+    "path": "review/check_figure_portability.py",
+    "sha256": "5f5c5dfe0e4900cc5f16e59adbe208f7b657ff93a64aa56e4926a5e12e327405",
+    "purpose": "Records the local verification harness, including the guarded temporary-copy rebuild; publication rebuild uses scripts/build_paper_figures.py."
+  },
+  "independent_code_review": {
+    "agent": "/root/seven_methods_audit",
+    "status": "passed",
+    "findings": "Only freeze() reads SOURCE_MAP originals and the WORKSPACE dossier. load() reads the frozen manifest and three JSON inputs; ordinary build uses manifest.context_document. check-only reads only frozen inputs, generated artifacts, its audit and the script hash. WORKSPACE constants cause no normal-path file access."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "run_cwd": "/tmp",
+  "alternate_output_root": "/tmp/cf_moa_figures_rebuild_nf9z03eh",
+  "byte_identical_output_files": 12,
+  "pdf_vector_checks": [
+    {
+      "file": "draft/figures/cf_moa_architecture.pdf",
+      "image_subtype_dictionary_occurrences": 0,
+      "inspection_method": "Byte inspection of Matplotlib PDF object dictionaries; not a general compressed-object PDF parser.",
+      "png_pixels": [
+        2040,
+        1440
+      ],
+      "vector_generation": "Matplotlib text and geometry; no image artists in source."
+    },
+    {
+      "file": "draft/figures/seven_system_head_gains.pdf",
+      "image_subtype_dictionary_occurrences": 0,
+      "inspection_method": "Byte inspection of Matplotlib PDF object dictionaries; not a general compressed-object PDF parser.",
+      "png_pixels": [
+        2040,
+        1035
+      ],
+      "vector_generation": "Matplotlib text and geometry; no image artists in source."
+    },
+    {
+      "file": "draft/figures/paired_behavior.pdf",
+      "image_subtype_dictionary_occurrences": 0,
+      "inspection_method": "Byte inspection of Matplotlib PDF object dictionaries; not a general compressed-object PDF parser.",
+      "png_pixels": [
+        2040,
+        915
+      ],
+      "vector_generation": "Matplotlib text and geometry; no image artists in source."
+    }
+  ],
+  "new_model_calls": 0,
+  "new_grading_calls": 0,
+  "script_sha256": "447c8c1eeeb8dc728b40bf945ebccd569269931552dea9ad23b7dbee49bc8dc6",
+  "independent_review": {
+    "agent": "/root/seven_methods_audit",
+    "scope": "Three figures and two tables only; no unfinished narrative read; original images checked at 6.8 in.",
+    "result": "No mandatory numeric or visual issues. All 54 main values and 54 bold maximum flags, 6 ablation counts and 4 deltas, 42 head endpoints, and 8 pair percentages match. The long R3 heading was subsequently shortened and endpoint font increased from 6.9 to 7.1 pt.",
+    "caption_action": "Architecture caption states that A4 is evaluated separately and has zero clinical v5 activations. Unique units in the head results and both-endpoints-correct scope in paired results are explicit."
+  },
+  "historical_scope": "Initial figure build before the metadata portability repair; see figure_portability_check.json for current script validation. All 12 rendered and table files remain unchanged."
+}
