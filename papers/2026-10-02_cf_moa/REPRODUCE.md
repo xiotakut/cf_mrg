@@ -1,6 +1,6 @@
 # Compile the LaTeX manuscript and reproduce the saved-result figures and tables
 
-This package renders the completed CF-MoA full-v5 **development** evaluation. It does not run models, invoke native graders, create new experimental outcomes, or overwrite the September 28 closeout. The independent post-freeze confirmation and independent F-pool replica were not executed. The default remains B; C3 is an optional research extension.
+This package renders three completed stages: seven full-v5 baseline configurations; seven-system R1–R3 terminal-head development results; and the later M4/M5 six-arm CF-MoA full-v5 **development** evaluation. It does not run models, invoke native graders, create new experimental outcomes, or overwrite the September 28 closeout. The independent post-freeze confirmation and independent F-pool replica were not executed. The default remains B; C3 is an optional research extension.
 
 ## Compile and maintain the manuscript
 
@@ -27,9 +27,31 @@ For Overleaf, upload [cf_moa_latex.zip](cf_moa_latex.zip), select the archive-ro
 
 The original [cf_moa_paper_bundle.zip](cf_moa_paper_bundle.zip) is unchanged. The root Word, HTML, and Markdown files are frozen references from the earlier delivery, and the prior exported LaTeX/Typst sources reside in `legacy_typst/`. Those earlier formats are not synchronized with the current LaTeX manuscript; historical rendering receipts describe their original build.
 
-## Figure and table inputs and dependencies
+## Seven-system additions (2026-10-03)
 
-`inputs/manifest.json` records original absolute paths, byte sizes, and SHA-256 hashes of 12 exact copies of small saved JSON summaries (about 160 kB). All plotted values and table values are derived from those copies. The script checks their hashes before and after execution. The source closeout was published at commit `2d56c71`; its full-v5 underlying release was `d85793470cf75af57217f3fdc73093f494d9f003`.
+`inputs/scope/input_manifest.json` binds the frozen baseline CSV, head CSV, and audit summaries to their recorded source hashes. These summaries were checked against complete saved scoring files: 42 baseline values and 21 head before/after pairs match. The three overlapping head strata contain 2,941 unique units; they are not three independent datasets. R2 facts were generated on two backbones and combined offline with seven saved system answers; diagnostic heads use each system's saved context. These files do not constitute seven new end-to-end reruns.
+
+Validate the shipped scope inputs (Python standard library only):
+
+```bash
+python3 scripts/build_scope_figures_tables.py \
+  --input-dir inputs/scope --manifest inputs/scope/input_manifest.json \
+  --check-only --receipt validation/scope_check_receipt.json
+```
+
+Rebuild the three added manuscript tables and the vector/PNG comparison figure using matplotlib:
+
+```bash
+python3 scripts/build_scope_figures_tables.py \
+  --input-dir inputs/scope --manifest inputs/scope/input_manifest.json \
+  --output-dir latex --receipt validation/scope_build_receipt.json
+```
+
+This script reads saved aggregate evidence; it does not re-import the original native graders or access model weights. The original raw-score reaggregation was performed separately and is documented in `evidence/scope_20261003/`. The source paths and hashes identify server-side evidence; not all raw prediction files are included in this package. Rebuilding tables from frozen summaries is distinct from rerunning the systems.
+
+## Retained six-arm figure and table inputs and dependencies
+
+`inputs/manifest.json` records original absolute paths, byte sizes, and SHA-256 hashes of 12 exact copies of small saved JSON summaries (about 160 kB). All retained six-arm plotted values and table values are derived from those copies; the seven-system additions use the separate scope manifest above. The script checks their hashes before and after execution. The source closeout was published at commit `2d56c71`; its full-v5 underlying release was `d85793470cf75af57217f3fdc73093f494d9f003`.
 
 The existing environment used for the actual build was `/home/data3/txy/MedRGAG/.venv/bin/python` with Python 3, matplotlib 3.10.9, numpy 1.26.4, and pandas 2.3.3. No environment changes were made. A separate environment with those packages can render the bundle elsewhere. LaTeX tables require `booktabs` and `longtable`; the plotting script itself does not require a TeX installation. PDF figure fonts are embedded as TrueType, and PNG exports use 300 dpi.
 
@@ -59,7 +81,7 @@ The example `--raw-root` assumes a checkout of this repository with the historic
 
 ## Artifacts
 
-Five figure stems under `figures/`, each available as PDF and PNG:
+Five retained CF-MoA figure stems under `figures/`, each available as PDF and PNG; the added seven-system comparison is under `latex/figures/seven_system_heads.*`:
 
 - `main_results`: all six arms on both backbones, with a zero-origin vertical axis.
 - `verification_forest`: C3 minus B and C3 minus C2, for native ALL, maintain-pair correctness, and respond-pair correctness. These are saved 95% paired-family bootstrap intervals, not new resamples.

@@ -1,15 +1,68 @@
 \section{Experimental Setup}
 \label{sec:experimental_setup}
 
-\subsection{Model configurations and controls}
+\subsection{Seven-system baseline comparison}
 \label{sec:experimental_setup-model-configurations-and-controls}
 
-We use the MedRAG Llama-3.1-8B-Instruct configuration, denoted M4, and the MedRAG Qwen3-8B
-configuration with thinking disabled, denoted M5 \citep{dubey2024llama, yang2025qwen3}.
-Their original output protocols differ: M4's selected baseline includes structured-output
-repair, whereas M5's original baseline retains its earlier unconstrained protocol.
-Cross-configuration differences therefore combine model and interface effects. Within each
-configuration, all six arms share the same frozen input scope and original contexts.
+The formal v5 comparison uses M0 direct answering, M2 MedRGAG with the local all-Llama
+adaptation, M3 MA-RAG in its intrinsic configuration, M4 MedRAG--Llama, M5 MedRAG--Qwen,
+M6 MedGENIE version 2, and M7 TC-RAG with the selected typed-control version 2. M0, M2,
+M4, and M6 use Llama-3.1-8B-Instruct; M3, M5, and M7 use Qwen3-8B
+\citep{dubey2024llama,yang2025qwen3}. Thus, seven configurations span six baseline
+families and two underlying backbones. MA-RAG generates eight solver candidates per
+round for at most four rounds, with early stopping on agreement. MedRGAG, MedGENIE,
+and TC-RAG are the documented local adaptations, rather
+than claims of exact reproduction of every published model and resource setting.
+
+Each selected configuration covers the same 13,905 unique inputs and 15,616 scoring
+mappings. Coverage combines new predictions with strictly matched historical reuse where
+available: M0 reuses 8,877 and generates 5,028 predictions; M2 reuses 6,687 and generates
+7,218; M3 reuses 3,690 and generates 10,215. M4--M7 each have 13,905 new predictions in
+their selected complete run. Full coverage therefore means complete evaluated outputs,
+not seven simultaneous runs from scratch. Invalid and unaccepted terminal outputs remain
+in the common denominator.
+
+The selected M4 baseline includes structured-output repair, whereas M5 retains its earlier
+unconstrained output protocol. Corpora, upstream procedures, and budgets also vary across
+families. Cross-system differences compare these concrete settings and cannot all be
+assigned to an isolated algorithm or backbone effect. M1, an earlier MedRGAG initial
+retrieval control, and the superseded i-MedRAG implementation are historical experiments,
+not additional completed v5 configurations (Appendix~\ref{sec:appendix_development}).
+
+\subsection{Seven-system terminal-head evaluation}
+\label{sec:experimental_setup-terminal-heads}
+
+We evaluate the frozen terminal heads on every member of R1, R2, and R3 for all seven
+configurations. In R1, each configuration routes 1,780 diagnostic inputs to catalog
+re-decision and 72 prescribing inputs to rules, retaining the other 1,014 answers. R3
+contains 680 catalog inputs, 10 rule inputs, and 43 retained single-choice answers. R2
+covers 55 of 79 inputs with rules and retains the remaining 24. Uncovered inputs remain
+in their category denominators.
+
+Diagnostic scores are generated with each configuration's actual original context and
+backbone; earlier completed scores and exactly identical requests are reused as recorded.
+The fact extractor sees the current question, options, and required fields, but no
+method-specific retrieved history or initial answer. Consequently, its two backbone-specific
+fact sets can be fixed and combined offline with seven original-answer sets. This is a
+valid comparison of seven terminal systems, while the rule branch is not seven newly
+executed upstream retrieval pipelines. No backbone is substituted to improve another
+system's head result.
+
+We compare the diagnostic head with single-pass catalog selection and uncorrected voting.
+For R2, a constant ``none'' control intervenes on the same 55 inputs and preserves each
+original answer on the other 24. Remaining-support correctness is reported alongside its
+total. Additional same-facts execution, question-scope, and external-source evaluations
+are kept within their original experimental scopes. The original formal baseline scores
+and the development head scores remain separate tables.
+
+\subsection{Two-configuration CF-MoA composition and verification}
+\label{sec:experimental_setup-cf-moa}
+
+The later six-arm experiment uses only the two MedRAG configurations M4 and M5, with
+Qwen thinking disabled. Within each configuration, all six arms share the same frozen
+full-v5 input scope and original contexts. It tests the composition of established heads
+with further operations, followed by additional candidate verification; it does not
+extend the six-arm experiment to all seven systems.
 
 The ordinary F readout uses bfloat16 weights, temperature 0.7, top-p 1.0, a 2,048-token
 output budget, and a 131,072-token context limit under the saved vLLM 0.8.5 profiles. The
@@ -31,8 +84,8 @@ Their comparisons share the original computation but have different additional r
 prompt costs; none is described as equal-cost merely because a common budget ceiling
 exists.
 
-The complete v5 benchmark is the main scope. Earlier 121-input and 52-input development
-panels informed development and are not independent confirmation sets. The older 52-input
+Complete v5 is the scope of this later experiment. Earlier 121-input and 52-input
+development panels informed its design and are not independent confirmation sets. The older 52-input
 panel still lacks four original M5 C0 outputs; that historical gap does not affect the
 complete full-v5 C0 results reported here. No new model calls or native grading are
 performed for this manuscript; the figures and tables are rebuilt from frozen completed
@@ -48,7 +101,7 @@ separate a valid but incorrect answer, an unavailable answer, and a verifier fai
 a retained F answer. Pool-trigger coverage includes the full scope and is not filtered by
 subsequent success or gold correctness.
 
-Per-method computation assigns the shared B computation once to each independently
+For the later composition experiment, per-method computation assigns the shared B computation once to each independently
 considered B-based method, then adds that method's own incremental requests. This
 estimates the attributable computation of a method assembled from the recorded components.
 It is distinct from the physical ledger for the multi-arm experiment, where shared calls

@@ -1,3 +1,5 @@
+**2026-10-03 · 论文范围修订：[七系统基线、七系统 R1–R3 改进及后期双配置 CF-MoA](papers/2026-10-02_cf_moa/README.md)。[原生 LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [英文 PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [Overleaf ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。七系统共六个方法家族；新增图表来自已保存评分，0 新模型或评分。仓库为 private。**
+
 **2026-10-02 · CF-MoA 英文会议论文现以 LaTeX 直接维护：[论文与完整交付](papers/2026-10-02_cf_moa/README.md) · [LaTeX 主文件](papers/2026-10-02_cf_moa/latex/main.tex) · [LaTeX 编译 PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [LaTeX / Overleaf ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip) · [BibTeX](papers/2026-10-02_cf_moa/latex/references.bib) · [中文框架](papers/2026-10-02_cf_moa/outline.zh.md) · [编译与图表复现](papers/2026-10-02_cf_moa/REPRODUCE.md)。包含完整章节、5 组图、8 组表与冻结证据；后续直接编辑 `.tex`，以已有开发实验为依据。旧 Word / HTML / Markdown 保留为初版冻结参考。仓库已按所有者要求设为 private，需授权访问。**
 
 **2026-09-28 · 完整v5透明收尾已完成：[完整结果与区间](benchmarks/2026-09-28_cf_moa_transparent_closeout/full_results.md) · [五张表](benchmarks/2026-09-28_cf_moa_transparent_closeout/five_tables.md) · [费用/范围/交付索引](benchmarks/2026-09-28_cf_moa_transparent_closeout/README.md)。零新增推理，六臂/11来源/5格式全保留；默认B保持，C3研究扩展。统计与费用已实际收尾，冻结后确认及独立F复本未执行/延后，未按输赢筛选。**

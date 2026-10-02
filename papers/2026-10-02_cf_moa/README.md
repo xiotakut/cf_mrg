@@ -1,6 +1,6 @@
-# CF-MoA LaTeX manuscript and experimental figures
+# Seven-system medical QA manuscript and experimental figures
 
-The current generic English conference draft is maintained directly in LaTeX and compiled with XeTeX and BibTeX through Tectonic 0.17.0. It uses the completed full-v5 development evaluation and the existing-result figures and tables. Subsequent writing edits go directly into the `.tex` sources; Markdown is no longer the source for document builds.
+The current generic English conference draft is maintained directly in LaTeX and compiled with XeTeX and BibTeX through Tectonic 0.17.0. The 2026-10-03 scope revision restores the complete seven-configuration v5 benchmark and seven-system R1–R3 terminal-head results, followed by the later two-configuration, six-arm CF-MoA study. Seven configurations span six method families: Direct, MedRGAG, MA-RAG, MedRAG (Llama and Qwen), MedGENIE, and TC-RAG. Subsequent writing edits go directly into the `.tex` sources; Markdown is no longer the source for document builds.
 
 GitHub delivery directory: [`papers/2026-10-02_cf_moa`](https://github.com/xiotakut/cf_mrg/tree/main/papers/2026-10-02_cf_moa). This repository is private and requires authorized access.
 
@@ -18,15 +18,18 @@ The [original manuscript bundle](cf_moa_paper_bundle.zip) is unchanged. The earl
 
 ## Figures and tables
 
-[Reproduction instructions](REPRODUCE.md) explain the frozen inputs, denominator checks, raw-record reaggregation, and five figures. Every figure is available as vector PDF and 300 dpi PNG:
+[Reproduction instructions](REPRODUCE.md) explain the frozen inputs, denominator checks, raw-record reaggregation, and six figures. Every figure is available as vector PDF and 300 dpi PNG:
 
-1. [Six-arm results](figures/main_results.pdf)
-2. [Verification effect intervals](figures/verification_forest.pdf)
-3. [All-source heterogeneity](figures/source_heterogeneity.pdf)
-4. [Support-operation ablations](figures/rule_ablations.pdf)
-5. [Attributed computation and quality](figures/cost_quality.pdf)
+1. [Seven-system R1–R3 baseline and terminal-head results](latex/figures/seven_system_heads.pdf)
+2. [Two-configuration six-arm results](figures/main_results.pdf)
+3. [Verification effect intervals](figures/verification_forest.pdf)
+4. [All-source heterogeneity](figures/source_heterogeneity.pdf)
+5. [Support-operation ablations](figures/rule_ablations.pdf)
+6. [Attributed computation and quality](figures/cost_quality.pdf)
 
-Eight CSV/LaTeX table pairs cover main results, all contrasts, sources, categories, formats, paired outcomes, costs, and rule ablations. The [input manifest](inputs/manifest.json) binds the exact 12 frozen JSON inputs to their original paths and SHA-256 hashes.
+The manuscript now has eleven tables, including [seven baselines](latex/tables/seven_baselines.tex), [seven-system before/after counts](latex/tables/seven_heads.tex), and [head controls](latex/tables/head_controls.tex). The new [frozen scope inputs](inputs/scope/input_manifest.json) and [offline build script](scripts/build_scope_figures_tables.py) reproduce these additions; see the commands in [REPRODUCE.md](REPRODUCE.md).
+
+The retained eight CSV/LaTeX table pairs cover main results, all contrasts, sources, categories, formats, paired outcomes, costs, and rule ablations. The [input manifest](inputs/manifest.json) binds the exact 12 frozen JSON inputs to their original paths and SHA-256 hashes.
 
 From this directory, preferably use an isolated Python environment and install the recorded dependencies to validate the frozen inputs or rebuild the figures and tables:
 
@@ -58,11 +61,13 @@ See [reproduction instructions](REPRODUCE.md) for the separate figure/table work
 ## Verification and boundaries
 
 - [Figure/table build receipt](validation/build_receipt.json) and [raw-record check](validation/check_receipt.json)
-- [Current LaTeX build receipt](validation/latex_build_receipt.json) and [LaTeX source audit](validation/latex_source_audit.json)
+- [Current LaTeX build receipt](validation/latex_build_receipt.json), [scope/numerical review](evidence/scope_20261003/scope_manuscript_review.json), and [scope figure/table checks](validation/scope_build_receipt.json)
+- [Seven-baseline raw-score audit](evidence/scope_20261003/seven_methods_audit.json), [terminal-head raw-score audit](evidence/scope_20261003/head_research_audit.json), and [earlier/R4/R5 phase review](evidence/scope_20261003/early_r45_audit.json)
+- [Earlier 2026-10-02 LaTeX source audit](validation/latex_source_audit.json), retained with its original scope and hashes
 - [Historical initial-render receipt](validation/manuscript_build_receipt.json)
 - [Independent numerical/method audit](validation/manuscript_fact_check.json)
 - [Independent draft review](evidence/peer_review.json) and [revision resolution](evidence/revision_resolution.json)
-- [Reference existence/metadata audit](evidence/reference_verification.json)
+- [Initial 20-reference audit](evidence/reference_verification.json) and [four added baseline-reference checks](evidence/scope_20261003/baseline_reference_verification.json)
 - [Claim-to-evidence map](evidence/claim_evidence_map.json)
 - [Skill selection and stars](evidence/skill_selection.json)
 

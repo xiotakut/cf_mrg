@@ -5,11 +5,16 @@
 retrieved documents \citep{lewis2020rag}. MedRAG and the Medical Information
 Retrieval-Augmented Generation Evaluation (MIRAGE) benchmark examine retrieval-augmented
 medical question answering across corpora, retrievers, and language models
-\citep{xiong2024medrag}. Our two original systems use MedRAG with different language-model
-and output configurations. The present comparison retains their saved contexts and
-evaluates decision operations applied after those original systems. It therefore concerns
-the treatment of available evidence and candidate answers, rather than a new retrieval
-algorithm.
+\citep{xiong2024medrag}. Our baseline set additionally includes local adaptations of
+MedRGAG \citep{li2026medrgag}, MA-RAG \citep{wu2026marag}, MedGENIE
+\citep{frisoni2024medgenie}, and TC-RAG \citep{jiang2025tcrag}, alongside direct answering.
+These systems represent different retrieval, generated-context, and multi-step decision
+procedures. Their original corpora, computation budgets, and model interfaces differ;
+the common benchmark compares concrete system configurations rather than isolating one
+retrieval algorithm. Our terminal interventions retain the allowed context of each
+configuration and evaluate how available information is converted into a native answer.
+MedRAG appears twice because both Llama and Qwen configurations are included, and these
+two configurations also support the later CF-MoA composition study.
 
 \textbf{Repeated reasoning and aggregation.} Self-consistency aggregates sampled reasoning
 paths \citep{wang2023selfconsistency}. Mixture-of-agents uses layered agent outputs as

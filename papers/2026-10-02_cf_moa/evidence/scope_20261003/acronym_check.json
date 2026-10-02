@@ -1,0 +1,296 @@
+{
+  "checker": "ars-acronym-check/1.0",
+  "input": "Documents/Codex/2026-10-03/paper_scope_audit/pdf_text.txt",
+  "input_sha256": "b98bd80fa0e3f78b8ee1fe99ee1095aec9707858151d474e3522fb590c998e99",
+  "status": "partial",
+  "allowlist": {
+    "default": 29,
+    "user": []
+  },
+  "coverage": {
+    "body": "checked",
+    "abstract_en": "not_requested",
+    "abstract_zh": "not_requested"
+  },
+  "scope_lines": {
+    "body": [
+      [
+        1,
+        1860
+      ]
+    ]
+  },
+  "unread_sections": [],
+  "coverage_limits": [
+    {
+      "scope": "body",
+      "line": 37,
+      "acronym": "RAG",
+      "reason": "unconfirmed_definition"
+    },
+    {
+      "scope": "body",
+      "line": 1409,
+      "acronym": "CRediT",
+      "reason": "unconfirmed_definition"
+    }
+  ],
+  "findings": [
+    {
+      "scope": "body",
+      "line": 18,
+      "rule": "undefined",
+      "acronym": "CF",
+      "expansion": null,
+      "occurrences": 21
+    },
+    {
+      "scope": "body",
+      "line": 18,
+      "rule": "undefined",
+      "acronym": "MoA",
+      "expansion": null,
+      "occurrences": 21
+    },
+    {
+      "scope": "body",
+      "line": 19,
+      "rule": "undefined",
+      "acronym": "MedRAG",
+      "expansion": null,
+      "occurrences": 19
+    },
+    {
+      "scope": "body",
+      "line": 45,
+      "rule": "undefined",
+      "acronym": "TC",
+      "expansion": null,
+      "occurrences": 7
+    },
+    {
+      "scope": "body",
+      "line": 153,
+      "rule": "undefined",
+      "acronym": "MedRGB",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 165,
+      "rule": "undefined",
+      "acronym": "ALL",
+      "expansion": null,
+      "occurrences": 23
+    },
+    {
+      "scope": "body",
+      "line": 260,
+      "rule": "undefined",
+      "acronym": "MET",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 279,
+      "rule": "undefined",
+      "acronym": "DDXPlu",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 419,
+      "rule": "undefined",
+      "acronym": "vLLM",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 481,
+      "rule": "undefined",
+      "acronym": "GPU",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 495,
+      "rule": "undefined",
+      "acronym": "MedPIC",
+      "expansion": null,
+      "occurrences": 7
+    },
+    {
+      "scope": "body",
+      "line": 1027,
+      "rule": "undefined",
+      "acronym": "AMQA",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 1063,
+      "rule": "undefined",
+      "acronym": "ID",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1334,
+      "rule": "undefined",
+      "acronym": "ASCENT",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1397,
+      "rule": "undefined",
+      "acronym": "BibTeX",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1397,
+      "rule": "undefined",
+      "acronym": "LaTeX",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1414,
+      "rule": "undefined",
+      "acronym": "AI",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1514,
+      "rule": "undefined",
+      "acronym": "CPV",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1514,
+      "rule": "undefined",
+      "acronym": "MedQA",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1535,
+      "rule": "undefined",
+      "acronym": "BioRAB",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1582,
+      "rule": "undefined",
+      "acronym": "CSV",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1583,
+      "rule": "undefined",
+      "acronym": "PNG",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1593,
+      "rule": "undefined",
+      "acronym": "TeX",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1675,
+      "rule": "undefined",
+      "acronym": "LLM",
+      "expansion": null,
+      "occurrences": 6
+    },
+    {
+      "scope": "body",
+      "line": 1778,
+      "rule": "undefined",
+      "acronym": "NLP",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 1783,
+      "rule": "undefined",
+      "acronym": "ACM",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1784,
+      "rule": "undefined",
+      "acronym": "NY",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1784,
+      "rule": "undefined",
+      "acronym": "WWW",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1799,
+      "rule": "undefined",
+      "acronym": "ACL",
+      "expansion": null,
+      "occurrences": 2
+    },
+    {
+      "scope": "body",
+      "line": 1820,
+      "rule": "undefined",
+      "acronym": "QA",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1835,
+      "rule": "undefined",
+      "acronym": "dz7NAW",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 1858,
+      "rule": "undefined",
+      "acronym": "PMLR",
+      "expansion": null,
+      "occurrences": 1
+    }
+  ]
+}

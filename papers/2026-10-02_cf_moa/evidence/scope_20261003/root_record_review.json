@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-03",
+  "scope": "Root targeted evidence review supplement; team audit files contain baseline, head and early/R4/R5 coverage.",
+  "reading_note": "Ranges identify commands used for reading relevant phases. Some large combined outputs were truncated; this is not a claim of word-for-word reading of every indicated line or all raw logs. Key scope, score and adoption paragraphs were re-read in bounded calls.",
+  "files": [
+    {
+      "path": "docs/data/construction.md",
+      "requested_ranges": [
+        [
+          238,
+          275
+        ],
+        [
+          410,
+          478
+        ]
+      ],
+      "sha256": "7ab015d62bf25066e4a7440f31c5dc4bcd07470b4390301617ef366a867c641b"
+    },
+    {
+      "path": "docs/research/support_update_method.md",
+      "requested_ranges": [
+        [
+          1,
+          335
+        ]
+      ],
+      "sha256": "b61515c277cea6a38c8f3c2b0a7c8a64cd83e90fc924b0441ad0ea4ea5744022"
+    },
+    {
+      "path": "docs/research/r3_candidate_comparison.md",
+      "requested_ranges": [
+        [
+          1450,
+          1485
+        ]
+      ],
+      "sha256": "8160ee113de488a586d0a50069ee8ba8395f1f460a4b21c56322e065f443de6f"
+    },
+    {
+      "path": "docs/research/cf_moa_experiment_report.md",
+      "requested_ranges": [
+        [
+          54,
+          138
+        ],
+        [
+          913,
+          987
+        ],
+        [
+          1056,
+          1178
+        ],
+        [
+          1183,
+          1235
+        ],
+        [
+          1280,
+          1429
+        ],
+        [
+          1433,
+          1480
+        ],
+        [
+          1580,
+          1643
+        ],
+        [
+          1880,
+          1965
+        ],
+        [
+          2000,
+          2054
+        ]
+      ],
+      "sha256": "245fff24ce63b8cf2f649c09bbc50bf00dca12a9550aea655fd1413eaebdc76e"
+    },
+    {
+      "path": "docs/research/cf_moa.md",
+      "requested_ranges": [
+        [
+          1,
+          168
+        ],
+        [
+          2568,
+          2588
+        ]
+      ],
+      "sha256": "1fde8fea1a7891eba9bdca866d787748c2db3a21dd33c7ed5cfdfcc71ea110ce"
+    }
+  ],
+  "decisions": [
+    "Seven configurations spanning six method families are the full-v5 baseline comparison.",
+    "The seven scoped R1/R2/R3 head results remain genuine completed development results.",
+    "Only M4/M5 completed the later full-v5 six-arm CF-MoA comparison.",
+    "Earlier datasets, paired-visible Adapter, R4 simulation and R5 development are distinct protocols.",
+    "All numerical additions are offline reaggregation of saved scoring fields; no new model, grader or GPU work."
+  ]
+}

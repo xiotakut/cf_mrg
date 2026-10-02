@@ -1,32 +1,40 @@
 {
-  "date": "2026-10-02",
-  "format": "Maintained LaTeX source with actual XeTeX/BibTeX compilation",
+  "date": "2026-10-03",
+  "format": "Native LaTeX; seven-system scope revision",
+  "title": "Support Updating and Candidate Re-decision Across Seven Medical Question-Answering Systems",
+  "scope": [
+    "Seven full-v5 baseline configurations spanning six method families",
+    "Seven-system R1/R2/R3 terminal-head development outcomes",
+    "Later two-MedRAG-configuration six-arm CF-MoA study"
+  ],
   "canonical_source": "latex/main.tex",
   "pdf": "manuscript.pdf",
   "compiler": "Tectonic 0.17.0 (XeTeX + BibTeX + xdvipdfmx)",
-  "pdf_sha256": "3c48023e95da9c93a84693ebe6cb09c50a336d5b96c9b3dc59b1bc6c929388f9",
-  "pdf_pages": 21,
-  "previous_publication_commit": "7308479a5b968052b64603080f14b588a5dda30d",
-  "previous_publication_record": "legacy_typst/initial_publication.json",
+  "pdf_sha256": "50a250296d3b8514183eee06580e7ea725cb11d6655dbd12eae5c99523b2f03e",
+  "pdf_pages": 28,
+  "bibliography_items": 24,
+  "tables": 11,
+  "vector_figures": 6,
+  "previous_publication_commit": "cac3fe455678cb4f4a1b34450b3441183fdabd0f",
+  "previous_publication_record": "evidence/latex_20261002/PUBLICATION.json",
   "repository_visibility": "private",
   "latex_zip": {
     "path": "cf_moa_latex.zip",
-    "bytes": 301880,
-    "sha256": "2dd34ccd9ccfa10a8cef9b138720e77ecf126868001241b194d7190e63c4b865",
-    "files": 34
+    "bytes": 476084,
+    "sha256": "7a084c197c266423fc6dda62eff9d4634a3a95ba572ab90205dd3a12dbe0f248",
+    "files": 40
   },
   "unchanged_initial_bundle": {
     "path": "cf_moa_paper_bundle.zip",
     "sha256": "cf7684479fc0e40d60dc76d8c41711f601143cc324116d23a00716cbff401877"
   },
-  "migration": "One-time Pandoc natbib migration followed by direct LaTeX editing, native table/figure/equation labels, real BibTeX and layout review. Normal builds do not use Markdown, Pandoc or Typst.",
-  "historical_formats": "Existing Word/HTML/Markdown are unchanged snapshots of the initial edition; exported .tex and .typ moved to legacy_typst/.",
-  "data_unchanged": "Original inputs, experimental figures/tables and figure reproduction script remain byte-identical.",
+  "data_scope": "No saved predictions or scores changed; added figures use frozen verified seven-system aggregates. Earlier six-arm inputs and figures remain unchanged.",
   "verification": [
     "validation/latex_build_receipt.json",
-    "validation/latex_source_audit.json",
-    "validation/latex_portable_build_receipt.json",
-    "validation/latex_build_attempts.json"
+    "evidence/scope_20261003/scope_manuscript_review.json",
+    "validation/scope_build_receipt.json",
+    "validation/scope_packaged_check.json",
+    "validation/retained_six_arm_check.json"
   ],
   "model_calls": 0,
   "grader_calls": 0,

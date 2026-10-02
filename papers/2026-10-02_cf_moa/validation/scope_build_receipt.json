@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-02T16:16:31.408820+00:00",
+  "passed": true,
+  "mode": "build",
+  "checks": {
+    "input_hashes_verified": 4,
+    "baseline_values_verified": 42,
+    "head_before_after_pairs_verified": 21,
+    "head_integer_counts_verified": 42,
+    "r3_control_cells_verified": 28,
+    "r2_control_rows_verified": 7,
+    "new_model_calls": 0,
+    "new_grading_calls": 0,
+    "new_native_scoring": 0
+  },
+  "input_dir": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/inputs",
+  "manifest_sha256": "241436993b9a26cc9c2265251505cf79ac55796b1e8d9973419ffa411d33f791",
+  "script_sha256": "aa5afe08eda1c3077dd8a337b6c9039f0005a5d16b403057821f1ce27f889362",
+  "outputs": [
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/seven_baselines.tex",
+      "bytes": 1312,
+      "sha256": "b370bed6a880bce318a49a9daf653e6f77065fc44cb393dfcbe2bfe8e2c70295"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/seven_heads.tex",
+      "bytes": 1351,
+      "sha256": "91dfbf11f25f1682a2b92e9598377b4041192f70fb1d27e81b9d7c01e96d22a7"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/head_controls.tex",
+      "bytes": 1622,
+      "sha256": "705cfac87e37a36ec269a9c2ca0ff54f295f08f9b9f43aa11202b1ecc88e87c3"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/figures/seven_system_heads.pdf",
+      "bytes": 24767,
+      "sha256": "e1a18576604603ad832bb6bb49ef109ebbf17b466a6dc00e01efa3fd4c505fd2"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/figures/seven_system_heads.png",
+      "bytes": 97597,
+      "sha256": "8dd45ae39449fbeebc751371d9f794779a8668e9c7da2c15ed7d0d9f92f767a5"
+    }
+  ]
+}

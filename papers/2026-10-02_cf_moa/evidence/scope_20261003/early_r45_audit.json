@@ -1,0 +1,302 @@
+{
+  "date": "2026-10-03",
+  "task": "论文范围全流程记录审计之历史归档与R4/R5分工",
+  "mode": "只读文档；唯一新增证据JSON；无联网/发布/模型/评分/GPU",
+  "read_scope_note": "按阶段阅读导航、结果、协议与停止/采用边界，未宣称9份长文全部逐字审读；标题搜索为定位，不等于正文阅读；原始会话与全量逐题模型输出本次未重新审阅。",
+  "read_receipt": {
+    "docs/archive/medrgag_reproduction.md": {
+      "read_ranges": [
+        [
+          1,
+          80
+        ],
+        [
+          330,
+          450
+        ],
+        [
+          1257,
+          1315
+        ]
+      ],
+      "focus": "Direct、混合Table 1与all-Llama复现边界",
+      "sha256": "56b041cfd07bc35dbb2040d3472d476c3a3ffbe8b27e79c95d30295935b4375a",
+      "lines": 1609,
+      "full_text_read": false
+    },
+    "docs/archive/wm_medrgag.md": {
+      "read_ranges": [
+        [
+          1,
+          90
+        ],
+        [
+          455,
+          608
+        ]
+      ],
+      "focus": "85题代理研究、机制消融、匹配排序及停止",
+      "sha256": "054af204999ec4d2eeecc048b1f4f75ad79ff4aae458a552b1bed17047e5845a",
+      "lines": 3555,
+      "full_text_read": false
+    },
+    "docs/archive/cf_wm.md": {
+      "read_ranges": [
+        [
+          1,
+          14
+        ],
+        [
+          31,
+          63
+        ],
+        [
+          90,
+          128
+        ],
+        [
+          827,
+          864
+        ]
+      ],
+      "focus": "Gate未执行/NO-GO、无效oracle、gold-free 303题负结果",
+      "sha256": "c7c9e1f49ff8f7d0e675d277f5e5d68d94475196649be9d5bb5338c4d95cf215",
+      "lines": 1259,
+      "full_text_read": false
+    },
+    "docs/archive/cf_method_trials.md": {
+      "read_ranges": [
+        [
+          1,
+          80
+        ]
+      ],
+      "focus": "DeltaRev到RiskRoute及Adapter阶段时间线",
+      "sha256": "1683c406e7eabb5c7e35116c3db841948f407e68581b02eb3ec8925a6d5a2b09",
+      "lines": 748,
+      "full_text_read": false
+    },
+    "docs/archive/cf_residual_adapter.md": {
+      "read_ranges": [
+        [
+          1,
+          42
+        ],
+        [
+          380,
+          458
+        ],
+        [
+          887,
+          913
+        ]
+      ],
+      "focus": "四选一配对可见、500对结果、迁移与synergy边界",
+      "sha256": "870e5eb8e5e5e17caff5c2091791b47fb6dd6a2afa2f3206b4c594b328d0e521",
+      "lines": 1364,
+      "full_text_read": false
+    },
+    "docs/archive/native_baseline_screening.md": {
+      "read_ranges": [
+        [
+          37,
+          124
+        ],
+        [
+          1891,
+          2001
+        ]
+      ],
+      "focus": "五入口M0/M1/M2全量、输入/评分/复用与结论",
+      "sha256": "679952c637068b14fe3971c91f8af5f9208a207fe424187fc9db07f044d90a11",
+      "lines": 2165,
+      "full_text_read": false
+    },
+    "docs/archive/r1_r5_early_evaluation.md": {
+      "read_ranges": [
+        [
+          1,
+          95
+        ],
+        [
+          334,
+          438
+        ],
+        [
+          838,
+          901
+        ],
+        [
+          1031,
+          1080
+        ]
+      ],
+      "focus": "R1-R4旧rubric、v2/v3、v4构建到v5选择",
+      "sha256": "774686da8e50ac9e74733c58803f52ade72504961909d1fc8fc2a26d3afc5662",
+      "lines": 1084,
+      "full_text_read": false
+    },
+    "docs/research/r4_consequence_head.md": {
+      "read_ranges": [
+        [
+          1,
+          110
+        ],
+        [
+          343,
+          420
+        ],
+        [
+          421,
+          504
+        ],
+        [
+          540,
+          632
+        ]
+      ],
+      "focus": "已完整读取上述范围；其他阶段仅标题扫描/部分输出。重点原HIV13、形式/生物负结果、生理模型冻结后验证与采用边界",
+      "sha256": "51df24bd28a2276caf4215ec19e5c5a470fbac14006fcc7f63abefa3498ec084",
+      "lines": 632,
+      "full_text_read": false
+    },
+    "docs/research/r5_invariance_head.md": {
+      "read_ranges": [
+        [
+          1,
+          50
+        ],
+        [
+          97,
+          155
+        ],
+        [
+          439,
+          515
+        ],
+        [
+          928,
+          971
+        ],
+        [
+          1031,
+          1094
+        ]
+      ],
+      "focus": "七方法基线、两骨干开发、组合F交付、W/X/Y失败、暂停与未执行确认",
+      "sha256": "0f20ec43b102a51e4f80be1215f521df3852634b76979aec8cbcc9eb334521d5",
+      "lines": 1094,
+      "full_text_read": false
+    }
+  },
+  "timeline": [
+    {
+      "date": "2026-08-14–17",
+      "stage": "早期MedRGAG复现",
+      "evidence": [
+        "docs/archive/medrgag_reproduction.md:35",
+        "docs/archive/medrgag_reproduction.md:1263"
+      ],
+      "finding": "实际Direct两配置各7663题；后续all-Llama为本地变体，原Table 1混合GPT/Llama配置不能等同；旧full-v1在select质量闸停止，尚无rerank/reader/evaluate。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-08-23",
+      "stage": "WM代理机制研究",
+      "evidence": [
+        "docs/archive/wm_medrgag.md:455",
+        "docs/archive/wm_medrgag.md:571"
+      ],
+      "finding": "85题先有表面正效应；同prompt envelope/输入token匹配后，blind direct与WM排序各64/85，停止WM机制主张。human_validated=false，无NICE grounding。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-08-23–25",
+      "stage": "CF-WM Gate与修正版",
+      "evidence": [
+        "docs/archive/cf_wm.md:31",
+        "docs/archive/cf_wm.md:92",
+        "docs/archive/cf_wm.md:831"
+      ],
+      "finding": "Gate A初次数据不足无推理；balanced60 Gate D NO-GO。M12泄露gold，属于无效label oracle。修正gold-free303题13臂完成，full transition20.8%低于proxy31.7%，非world-model正证据。初始320中按合同调试排除17，不称pristine heldout。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-08-27–09-05",
+      "stage": "DeltaRev/DeltaRank/CFShift/CF-KADS-MoE/RiskRoute/CF-Residual Adapter",
+      "evidence": [
+        "docs/archive/cf_method_trials.md:35",
+        "docs/archive/cf_residual_adapter.md:887",
+        "docs/archive/cf_residual_adapter.md:380",
+        "docs/archive/cf_residual_adapter.md:442"
+      ],
+      "finding": "反复复用MedEinst开发/校准。Profile信号强而新机制微弱或负。Adapter在500对四选一协议上MA-RAG39.2→80.0，MedRGAG-style40.8→82.4；without-MA81.8不支持synergy。配对可见、受控四选一与现v5独立输入原生诊断权限不同。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-09-07",
+      "stage": "五来源原生M0/M1/M2全量",
+      "evidence": [
+        "docs/archive/native_baseline_screening.md:43",
+        "docs/archive/native_baseline_screening.md:1893",
+        "docs/archive/native_baseline_screening.md:1918"
+      ],
+      "finding": "三法每法25280唯一输入/27377映射，合75840预测；M2先完成，M0/M1各复用5832补19448。来源指标异质，M2在CPV提升、MedPIC/MedEinst下降；不合成统一CF准确率。",
+      "merge_into_v5": "仅条件完全一致的单项预测可按现协议复用，不直接并表"
+    },
+    {
+      "date": "2026-09-08–10",
+      "stage": "R1–R5分类与v2/v3/v4/v5沿革",
+      "evidence": [
+        "docs/archive/r1_r5_early_evaluation.md:848",
+        "docs/archive/r1_r5_early_evaluation.md:1033",
+        "docs/archive/r1_r5_early_evaluation.md:344",
+        "docs/archive/r1_r5_early_evaluation.md:374",
+        "docs/archive/r1_r5_early_evaluation.md:417"
+      ],
+      "finding": "早期R1-R4 M0/M1 2170单元3296输入含旧AI rubric，后自动评分收缩；v2/v3 3105单元4872输入，v3互斥展示但不改输入gold；M2复用4720补152，M3全4872，四法完成。v4补分类、资格核定；v5保留合格R1-R4及8来源每450个R5，总6104去重单元。旧rubric与v3结果不替代v5。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-09-17",
+      "stage": "R4七法基线与两原骨干head研究",
+      "evidence": [
+        "docs/research/r4_consequence_head.md:11",
+        "docs/research/r4_consequence_head.md:65",
+        "docs/research/r4_consequence_head.md:393",
+        "docs/research/r4_consequence_head.md:399"
+      ],
+      "finding": "v5 R4原HIV13题七方法M0/M2/M3/M4/M5/M6/M7正确5/7/5/7/7/8/4。R4实际研发先用两原骨干M4/M5和匹配普通重答；原临床版本未采用，CLadder40故事1343题有限形式整体正效应，生物唯一120题M4升/M5降。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-09-17 23:28后",
+      "stage": "R4生理模型受限分支采用",
+      "evidence": [
+        "docs/research/r4_consequence_head.md:581",
+        "docs/research/r4_consequence_head.md:585",
+        "docs/research/r4_consequence_head.md:630"
+      ],
+      "finding": "冻结后24新参数/初态profile×12题=288，两骨干typed patch皆288/288；同工具full联合数值270/222、动作263/213。给定完整已知生理模型/状态，标准ODE工具非创新；M4/M5是原骨干及guided/unguided上下文实验，明文说不是七检索系统端到端复测。不替换HIV13或v5，不称七法R4总体提升。",
+      "merge_into_v5": false
+    },
+    {
+      "date": "2026-09-18",
+      "stage": "R5有限组合F交付后继续研发与暂停",
+      "evidence": [
+        "docs/research/r5_invariance_head.md:26",
+        "docs/research/r5_invariance_head.md:439",
+        "docs/research/r5_invariance_head.md:482",
+        "docs/research/r5_invariance_head.md:963",
+        "docs/research/r5_invariance_head.md:1082"
+      ],
+      "finding": "正式v5已有3600 R5单元七方法分数。组合F只两原骨干各208 R5单元：双正确60.19/59.17→65.90/66.47；相对旧192 Maj5增量0.5208/1.5625pp，新16组各多1对。有限研究交付非新核心算法；W/X/Y后续训练/门控失败不采用；128新母题+8强控0确认模型调用，新CAD五头仅plan，论文方法目标未完成。",
+      "merge_into_v5": false
+    }
+  ],
+  "answer_to_user_scope": {
+    "seven_methods": "有正式七方法基线的记录支持，R4/R5原文也明确列七方法。七个实验方法配置与后期选择的两个原骨干head实验是不同层级。",
+    "two_backbones": "R4/R5开发计划写明原骨干M4/M5、同信息匹配控制；R4最终生理验证明确并非七正式检索系统端到端复测。不能因为后期只有两骨干就把全项目概括成只比较两个方法，也不能反过来把后期统一head称七方法全量验证。",
+    "paper_recommendation": "七方法统一v5基线应独立成为主比较；R1–R5针对性研究按真实覆盖分节，后期CF-MoA双配置机制对照另列。早期WM/Adapter/v3及R4仿真保留为研究发展/独立诊断，不能把分数和分母拼成同一排行榜。"
+  }
+}

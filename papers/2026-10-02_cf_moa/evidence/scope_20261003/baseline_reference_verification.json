@@ -1,0 +1,289 @@
+{
+  "http_receipts": [
+    {
+      "url": "https://api.crossref.org/works/10.1145/3774904.3792691",
+      "error": "HTTP Error 404: Not Found",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://aclanthology.org/2024.acl-long.533.bib",
+      "status": 200,
+      "bytes": 784,
+      "sha256": "7923209c954d193a0147fbf7aba4017e28f078118dd5ce9a304cf209c33eebd9",
+      "bibtex": "@inproceedings{frisoni-etal-2024-generate,\n    title = \"To Generate or to Retrieve? On the Effectiveness of Artificial Contexts for Medical Open-Domain Question Answering\",\n    author = \"Frisoni, Giacomo  and\n      Cocchieri, Alessio  and\n      Presepi, Alex  and\n      Moro, Gianluca  and\n      Meng, Zaiqiao\",\n    editor = \"Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek\",\n    booktitle = \"Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.acl-long.533/\",\n    doi = \"10.18653/v1/2024.acl-long.533\",\n    pages = \"9878--9919\"\n}\n\n",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://aclanthology.org/2025.acl-long.558.bib",
+      "status": 200,
+      "bytes": 980,
+      "sha256": "ef769c1dd67367e415be076cac866697e4f194f77957cac98a983c38027f2b3b",
+      "bibtex": "@inproceedings{jiang-etal-2025-tc,\n    title = \"{TC}{--}{RAG}: {T}uring{--}Complete {RAG}{'}s Case study on Medical {LLM} Systems\",\n    author = \"Jiang, Xinke  and\n      Fang, Yue  and\n      Qiu, Rihong  and\n      Zhang, Haoyu  and\n      Xu, Yongxin  and\n      Chen, Hao  and\n      Zhang, Wentao  and\n      Zhang, Ruizhe  and\n      Fang, Yuchen  and\n      Ma, Xinyu  and\n      Chu, Xu  and\n      Zhao, Junfeng  and\n      Wang, Yasha\",\n    editor = \"Che, Wanxiang  and\n      Nabende, Joyce  and\n      Shutova, Ekaterina  and\n      Pilehvar, Mohammad Taher\",\n    booktitle = \"Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2025\",\n    address = \"Vienna, Austria\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.acl-long.558/\",\n    doi = \"10.18653/v1/2025.acl-long.558\",\n    pages = \"11400--11426\",\n    ISBN = \"979-8-89176-251-0\"\n}\n\n",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NJU-RL/MA-RAG/423f031cc0ffca679a047c885be999b9604100a9/README.md",
+      "status": 200,
+      "bytes": 2825,
+      "sha256": "a2f6ad1b93f978885a961160b67c57bbefc89b440f5617b8b1fa8e59873c649c",
+      "citation": "## Citation\r\nIf you find our paper useful, please consider starring this repository and cite it:\r\n```bibtex\r\n@inproceedings{wu2026marag,\r\n    title={From Conflict to Consensus: Boosting Medical Reasoning via Multi-Round Agentic {RAG}},\r\n    author={Wenhao Wu and Zhentao Tang and Yafu Li and Shixiong Kai and Mingxuan Yuan and Zhenhong Sun and Chunlin Chen and Zhi Wang},\r\n    booktitle={Forty-third International Conference on Machine Learning},\r\n    year={2026},\r\n    url={https://openreview.net/forum?id=S7lpdz7NAW}\r\n}\r\n```",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    }
+  ],
+  "verified_at": "2026-10-03T00:08:21.501621+08:00",
+  "scope": "Four method-origin citations for seven-system v5 paper comparison. No canonical manuscript or bibliography edits, no installation, no model/scoring/GPU activity, no publishing.",
+  "artifact": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/baseline_references.bib",
+  "bib_sha256": "e556e294dc07d41b4778298c710e1bacbf98fee4cce14e80a69f9e81e42ae788",
+  "expected_keys": [
+    "li2026medrgag",
+    "wu2026marag",
+    "frisoni2024medgenie",
+    "jiang2025tcrag"
+  ],
+  "web_accesses": [
+    {
+      "url": "https://arxiv.org/abs/2510.18297",
+      "result": "success",
+      "observed": "v1 submitted 2025-10-21; title and four authors match; no formal venue metadata on arXiv page",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://github.com/ll0ruc/MedRGAG",
+      "result": "success",
+      "observed": "Author code repository describes acceptance in WWW 2026",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.03292",
+      "result": "success",
+      "observed": "Current v3 revised 2026-06-08, title and eight authors match the author ICML 2026 citation",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://github.com/NJU-RL/MA-RAG",
+      "result": "success",
+      "observed": "Official codebase, ICML 2026; full citation with OpenReview forum ID S7lpdz7NAW",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://icml.cc/Downloads/2026",
+      "result": "success",
+      "observed": "Official 2026 event list contains exact MA-RAG paper title with poster link 63972",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://icml.cc/virtual/2026/poster/63972",
+      "result": "failed_restricted_url",
+      "observed": "web tool could not fetch; search also reported robots restriction for virtual/2026",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://openreview.net/forum?id=S7lpdz7NAW",
+      "result": "browser_challenge",
+      "redirect": "https://openreview.net/challenge?redirect=/forum?id%3DS7lpdz7NAW",
+      "observed": "Forum contents not read",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://aclanthology.org/2024.acl-long.533/",
+      "result": "success",
+      "observed": "MedGENIE formal ACL 2024 title/authors/venue/pages/DOI verified",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://github.com/disi-unibo-nlp/medgenie",
+      "result": "success",
+      "observed": "Official method identity and paper association verified",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://arxiv.org/abs/2408.09199",
+      "result": "success",
+      "observed": "TC-RAG paper identity; current arXiv version v3 revised 2026-09-03 differs in date from formal ACL 2025 publication",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://aclanthology.org/2025.acl-long.558/",
+      "result": "success",
+      "observed": "TC-RAG formal ACL 2025 title/authors/venue/pages/DOI verified",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://github.com/Artessay/TC-RAG",
+      "result": "success",
+      "observed": "Official author repository associates TC-RAG with ACL Oral 2025",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3774904.3792691",
+      "result": "http_403",
+      "observed": "Metadata instead verified directly in user-provided local publisher PDF; no claim of ACM webpage access",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://doi.org/10.1145/3774904.3792691",
+      "result": "web_tool_inaccessible",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1145/3774904.3792691",
+      "result": "web_tool_inaccessible_then_direct_http_404",
+      "observed": "DOI is copied from publisher PDF but registry resolution not verified",
+      "date": "2026-10-03",
+      "timezone": "Asia/Shanghai"
+    }
+  ],
+  "local_primary_pdf": {
+    "path": "/home/data3/txy/Li - 2026 - From Retrieval to Generation Unifying External and Parametric Knowledge for Medical Question Answer.pdf",
+    "sha256": "0dd05630b325e411ad56d951a53d1a5aabd4ca7ae81b35baf2e00436d5600909",
+    "pages": 12,
+    "read_pages_1_indexed": [
+      1,
+      12
+    ],
+    "metadata_source": "Publisher ACM reference block on page 1, printed pages 2419 and 2430",
+    "title": "From Retrieval to Generation: Unifying External and Parametric Knowledge for Medical Question Answering",
+    "authors": [
+      "Lei Li",
+      "Xiao Zhou",
+      "Yingying Zhang",
+      "Xian Wu"
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the ACM Web Conference 2026",
+    "DOI": "10.1145/3774904.3792691",
+    "ISBN": "979-8-4007-2307-0",
+    "note": "Conference date printed in PDF is original April 13–17 2026 schedule; omitted date/month from citation rather than asserting actual meeting dates."
+  },
+  "method_bindings": [
+    {
+      "method": "M2 MedRGAG all-Llama",
+      "citation_key": "li2026medrgag",
+      "upstream": "https://github.com/ll0ruc/MedRGAG",
+      "commit": "0057853df65dcaa46d2934a28f8d5025fc3de623",
+      "local_evidence": [
+        "docs/baselines/medrgag.md:237",
+        "docs/baselines/medrgag.md:469",
+        "MedRGAG/README.md:51"
+      ],
+      "local_boundary": "All five LLM roles use Llama-3.1-8B, unlike published mixed auxiliary-model configuration. Citation identifies method source, not exact reproduction of published scores. Do not confuse MedRGAG with MedRAG."
+    },
+    {
+      "method": "M3 MA-RAG intrinsic",
+      "citation_key": "wu2026marag",
+      "upstream": "https://github.com/NJU-RL/MA-RAG",
+      "commit": "423f031cc0ffca679a047c885be999b9604100a9",
+      "local_evidence": [
+        "docs/baselines/marag.md:201",
+        "docs/baselines/marag.md:342",
+        "MA-RAG/README.md:49"
+      ],
+      "local_boundary": "Multi-Round Agentic RAG, not similarly named Multi-Agent RAG. Local Qwen3-8B intrinsic N8/T4, MedCorp3, task/output adaptation. Source arXiv v1 used historically; current formal citation is author ICML 2026 metadata and official event listing."
+    },
+    {
+      "method": "M6 MedGENIE v2",
+      "citation_key": "frisoni2024medgenie",
+      "upstream": "https://github.com/disi-unibo-nlp/medgenie",
+      "commit": "6ccff62c19e0a51447263e487efac4521f49259a",
+      "local_evidence": [
+        "docs/baselines/medgenie.md:28",
+        "docs/baselines/medgenie.md:40"
+      ],
+      "local_boundary": "ICL generate-then-read route, local Llama-3.1-8B generator/reader, 3 focused+2 free contexts for option tasks and five free for no-options tasks. Not original PMC-LLaMA model/table reproduction. Historical i-MedRAG M6 remains separate."
+    },
+    {
+      "method": "M7 TC-RAG typed-control-v2",
+      "citation_key": "jiang2025tcrag",
+      "upstream": "https://github.com/Artessay/TC-RAG",
+      "commit": "dd8f32f90832eeb452680cfdb02ca604988648d0",
+      "local_evidence": [
+        "docs/baselines/tcrag.md:235",
+        "docs/baselines/tcrag.md:634",
+        "docs/baselines/tcrag.md:714"
+      ],
+      "local_boundary": "Local Qwen3-8B non-thinking with reproduction repairs plus project additions; retained max_loop8/topK4/sigma1.2. Cite original formal ACL 2025 publication, disclose local control/format changes; not author exact implementation or score reproduction."
+    }
+  ],
+  "validation": {
+    "pandoc_bib_parse": "pass",
+    "entries": 4,
+    "keys": [
+      "li2026medrgag",
+      "wu2026marag",
+      "frisoni2024medgenie",
+      "jiang2025tcrag"
+    ],
+    "canonical_key_collisions": [],
+    "canonical_file_modified": false,
+    "metadata_parsed": [
+      {
+        "key": "li2026medrgag",
+        "title": "From Retrieval to Generation: Unifying External and Parametric Knowledge for Medical Question Answering",
+        "author_count": 4,
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        }
+      },
+      {
+        "key": "wu2026marag",
+        "title": "From conflict to consensus: Boosting medical reasoning via multi-round agentic RAG",
+        "author_count": 8,
+        "issued": {
+          "date-parts": [
+            [
+              2026
+            ]
+          ]
+        }
+      },
+      {
+        "key": "frisoni2024medgenie",
+        "title": "To generate or to retrieve? On the effectiveness of artificial contexts for medical open-domain question answering",
+        "author_count": 5,
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              8
+            ]
+          ]
+        }
+      },
+      {
+        "key": "jiang2025tcrag",
+        "title": "TC–RAG: Turing–complete RAG’s case study on medical LLM systems",
+        "author_count": 13,
+        "issued": {
+          "date-parts": [
+            [
+              2025,
+              7
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}

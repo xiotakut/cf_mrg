@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "Frozen seven-system baseline and R1-R3 head aggregate evidence for offline table and figure reproduction. Original raw scoring files are referenced by audits, not included.",
+  "system_configurations": 7,
+  "method_families": 6,
+  "baseline_values": 42,
+  "head_before_after_pairs": 21,
+  "new_model_calls": 0,
+  "new_native_scoring": 0,
+  "inputs": [
+    {
+      "filename": "category_comparison.csv",
+      "sha256": "aa58c5e47383bea72c073ddf191b76243df0af2c54fbae685c7cd1d691eb7c9b",
+      "bytes": 941,
+      "original_path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_medgenie_v5_full/reports/category_comparison.csv",
+      "original_sha256": "aa58c5e47383bea72c073ddf191b76243df0af2c54fbae685c7cd1d691eb7c9b",
+      "operation": "byte-for-byte copy of aggregate evidence; no raw predictions"
+    },
+    {
+      "filename": "seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206,
+      "original_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "original_sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "operation": "byte-for-byte copy of aggregate evidence; no raw predictions"
+    },
+    {
+      "filename": "head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361,
+      "original_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "original_sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "operation": "byte-for-byte copy of aggregate evidence; no raw predictions"
+    },
+    {
+      "filename": "head_results.csv",
+      "sha256": "e5101949c82aeaa16f59443b143ec9ea1ddafedbcf32c3d3628195a294a01b35",
+      "bytes": 1771,
+      "original_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "original_sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "operation": "full-precision aggregate extraction of verified_results; integer counts retained"
+    }
+  ],
+  "usage": [
+    "python scripts/build_scope_figures_tables.py --check-only",
+    "python scripts/build_scope_figures_tables.py --output-dir /path/to/latex",
+    "Use --input-dir and --manifest when these frozen inputs are nested inside another bundle."
+  ]
+}

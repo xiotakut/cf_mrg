@@ -76,6 +76,14 @@ input formats contain 3,560 diagnosis inputs, 167 multi-select inputs, 989 relat
 inputs, 2,700 robustness inputs with auxiliary output, and 6,489 other single-choice
 inputs.
 
+The earlier terminal-head experiments report the complete R1, R2, and R3 strata. Each
+unit in these three strata has one non-reference scoring task, so their reported correct
+counts divided by 2,866, 79, and 733 equal their corresponding category means. All 733 R3
+units belong to R1; R1 and R2 intersect in four units, including three R3 units. Thus,
+3,678 category memberships represent 2,941 unique units. Seven system evaluations of a
+shared unit are repeated system observations, not seven independent patients. These
+category-specific results do not define a seven-system CF-MoA ALL score.
+
 \subsection{Paired correctness and uncertainty}
 \label{sec:task_contract-paired-correctness-and-uncertainty}
 
@@ -94,7 +102,7 @@ Thus, a model receives credit only when both endpoints are correct; repeating an
 answer does not count as successful maintenance. Native scoring, rather than literal
 string equality where inappropriate, determines each indicator.
 
-For each contrast, 5,000 paired bootstrap samples draw families with replacement using
+For each later full-v5 CF-MoA contrast, 5,000 paired bootstrap samples draw families with replacement using
 seed 240924. All compared arms share a resampled family sequence. Each replicate averages
 the atoms contributed by the sampled families, preserving unit weights within families
 instead of assigning equal weight to family means. ALL uses 6,104 units in 4,766 families;
@@ -102,6 +110,10 @@ maintain uses 6,838 pairs in 2,806 families; respond uses 1,780 pairs in 1,780 f
 We report 95\% percentile intervals. These intervals describe variation in the exposed
 benchmark and do not correct for method selection, multiple comparisons, or previous data
 access.
+
+The seven-system baseline and terminal-head tables report their complete observed point
+estimates. We do not attach the later CF-MoA bootstrap intervals to those earlier
+comparisons or treat overlapping category improvements as independent replications.
 
 Families group the related variants of an original case; cross-source groups with exactly
 matching original questions and options are connected into a dependency group. This

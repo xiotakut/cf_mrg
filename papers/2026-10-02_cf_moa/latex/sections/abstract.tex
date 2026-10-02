@@ -1,24 +1,24 @@
 \begin{abstract}
-Changes to a medical question can introduce support, invalidate a decision premise, alter
-candidate rankings, or leave the correct answer unchanged. Evaluating these behaviors
-requires separating the benefits of a decision system from the value of additional
-verification. We study CF-MoA, an operation-based system that routes visible task inputs
-to established support recomputation, diagnostic candidate comparison, conditional model
-execution, or repeated native-answer readout. We then evaluate rationale-conditioned
-candidate verification, which selects among complete answers already produced by the
-readout component. A six-arm evaluation covers two MedRAG configurations and 13,905 inputs
-per configuration, scored as 6,104 non-reference native units from 11 sources. The adopted
-core improves the native-unit mean over the original systems by 10.09 and 12.01 percentage
-points. Additional rationale-conditioned verification changes that mean by \ensuremath{-}1.81 points on
-the Llama configuration and +0.93 points on the Qwen configuration, with corresponding
-95\% paired family bootstrap intervals of [\ensuremath{-}2.53, \ensuremath{-}1.08] and [+0.30, +1.56].
-Rationale inclusion improves point estimates relative to candidate-only verification, but
-does not produce consistent gains over the core. Source-level results, paired correctness,
-operation ablations, and attributed request costs expose this distinction. All results
-come from an already exposed development benchmark; independent confirmation and a second
-candidate-generation replicate remain unexecuted. The findings support operation-level
-evaluation while limiting claims of a general benefit from additional candidate
-verification.
+Medical question answering requires deciding when changed information adds support,
+invalidates a premise, alters candidate rankings, or leaves a judgment intact. We evaluate
+seven system configurations spanning six baseline families on a frozen benchmark of 13,905
+inputs per configuration and 6,104 non-reference native units from 11 sources. Error
+analysis motivates two reusable terminal components: question-scoped rule execution and
+original-model re-decision within a public diagnostic catalog. These components improve
+every configuration on the complete R1, R2, and R3 development strata, containing 2,866,
+79, and 733 units. Gains range from 14.83--19.12, 16.46--29.11, and 18.69--35.20
+percentage points, respectively. The strata overlap; they are not independent replications.
+Matched controls show substantial benefits from the catalog interface, variable additional
+effects of voting and calibration, and a prescribing head that preserves some remaining
+support but trails a same-coverage constant-answer control in aggregate accuracy. We then
+study the CF-MoA composition and additional candidate verification in a six-arm experiment
+on the two MedRAG configurations. Its adopted core improves the full native-unit mean by
+10.09 and 12.01 points. Rationale-conditioned verification changes that mean by $-1.81$
+and $+0.93$ points, with 95\% paired family intervals of [$-2.53$, $-1.08$] and
+[$+0.30$, $+1.56$]. The study establishes consistent terminal-component gains across seven
+development configurations while separating those gains from the narrower, mixed effect
+of additional verification. Small external component evaluations delimit transfer;
+independent confirmation of the final composition remains unexecuted.
 \end{abstract}
 
 \noindent\textbf{Keywords:} medical question answering; counterfactual evaluation; support

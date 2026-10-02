@@ -1,10 +1,145 @@
 \section{Results}
 \label{sec:results}
 
-\subsection{The adopted core improves the full native-unit
+\subsection{Seven systems reveal different support-update weaknesses}
+\label{sec:results-seven-baselines}
+
+Table~\ref{tab:seven-baselines} reports the complete selected baseline comparison. ALL
+means range from 47.35\% to 51.61\%, while R1, R2, and R3 expose substantially lower and
+more variable scores. MA-RAG has the highest ALL point estimate (51.61\%) and R5 point
+estimate (73.37\%), yet the lowest R3 score (8.59\%). MedRAG--Qwen leads R2 at 41.77\%
+but scores 25.24\% on R3; MedRAG--Llama reaches 30.42\% on R3. These observations
+motivate task-specific analysis rather than treating the overall ranking as a ranking of
+all reasoning capabilities. We do not claim statistical superiority from these point
+estimates alone.
+
+\input{tables/seven_baselines}
+
+The source composition helps explain what needs investigation. R3 contains 680 MedEinst
+diagnostic units, 10 prescribing units, and 43 single-choice units. R2 contains 75
+MedPIC units, of which 66 have a ``none'' answer and nine still require a drug option,
+plus four single-choice units. R1 includes 1,780 diagnostic, 788 evidence-relation,
+96 prescribing, and 202 single-choice units. Low scores across these strata therefore
+do not identify one common failure mechanism. In particular, many diagnostic failures
+are unrecognized by the frozen label mapping, while R2 improvements must distinguish
+withdrawal from retaining another valid support path.
+
+\subsection{Terminal heads improve all seven configurations}
+\label{sec:results-seven-heads}
+
+Table~\ref{tab:seven-heads} and Figure~\ref{fig:seven-heads} give the complete original-to-head
+comparison. All 21 configuration-by-stratum comparisons have positive net gains. R1
+increases by 14.83--19.12 percentage points, R2 by 16.46--29.11 points, and R3 by
+18.69--35.20 points. For example, MedRAG--Llama improves from 798 to 1,225 correct R1
+units, 23 to 39 R2 units, and 223 to 386 R3 units; MedRAG--Qwen improves from 819 to
+1,367, 33 to 46, and 185 to 443, respectively. The same frozen decision policy is used
+across all configurations. These are established development gains from changing the
+terminal decision procedure, including in systems whose upstream procedures differ
+substantially.
+
+\input{tables/seven_heads}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.98\linewidth,height=0.55\textheight,keepaspectratio]{figures/seven_system_heads.pdf}
+\caption{Original and terminal-head accuracy for all seven configurations in the complete
+R1, R2, and R3 development strata. Every uncovered input remains in its stratum's
+denominator. R3 is a subset of R1, and the panels share cases and backbones; they do not
+represent three independent test sets or seven complete CF-MoA evaluations.}
+\label{fig:seven-heads}
+\end{figure}
+
+The R1 extension adds evidence beyond simply recounting the earlier R3 result. Among the
+2,133 R1 units outside R3, the seven configurations gain 261--319 correct answers. Its
+active new scope includes 1,100 diagnostic inputs and 62 additional rule-covered inputs.
+Conversely, the 1,014 uncovered R1 inputs retain their original answers, including the
+450 selected R5 units that also belong to R1. This establishes gains over the complete
+declared R1 scope without implying that every R1 task was modified.
+
+Gains coexist with regressions. Across the complete R1 stratum, M4 repairs 481 errors
+and harms 54 previously correct answers; M5 repairs 584 and harms 36. For R3 the
+corresponding counts are 201/38 and 278/20. R2 M7 improves overall while its
+remaining-support subset declines from 3/9 to 2/9. The system-level result is therefore
+consistent positive net improvement across seven configurations, rather than universal
+per-case or per-subgroup improvement.
+
+The saved baseline and head records also agree across shared categories: the R1--R3
+intersection reproduces all 5,131 configuration-by-input outcomes. This consistency
+supports the reuse accounting; it does not turn overlapping observations into additional
+independent evidence.
+
+\subsection{Controls locate the gains and their limits}
+\label{sec:results-head-controls}
+
+Table~\ref{tab:head-controls} separates the full-head effect from its components. On the
+680 R3 diagnostic inputs, mean accuracy across configurations rises from 20.97\% for
+original answers to 45.44\% for single-pass catalog selection, 46.47\% for uncorrected
+six-vote selection, and 46.13\% for corrected six-vote selection. Thus, catalog
+re-decision already obtains most of the observed gain. Correction changes correct counts
+relative to uncorrected voting by 0, $-10$, $+4$, 0, $+8$, $-12$, and $-6$ in
+M0/M2/M3/M4/M5/M6/M7 order. The full component is retained as one frozen policy; we do
+not choose each system's best aggregation after observing these results.
+
+\input{tables/head_controls}
+
+Of 1,272 R3 diagnostic repairs across systems, 1,186 start from an unmapped diagnosis,
+23 from another native-invalid answer, and 63 from a valid wrong answer. Unmapped
+outputs include names, granularity, lists, and incorrect diseases, so the first two
+groups' 95.05\% share is not a clinical adjudication of ``format-only'' repairs. It
+does show why a large gain under the frozen mapping cannot all be attributed to better
+medical inference. Earlier matched 40-input controls provide a narrower distinction:
+M4 and M5 respectively obtain 12 and 9 correct answers out of 40 originally, 15 and
+11 after name normalization alone, and 18 each after reading the patient and choosing
+within the same catalog. Re-decision has
+value beyond that presentation control on this development subset.
+
+For R2, all 130 repairs start from native-valid original answers and use exact-set
+scoring. A policy that selects ``none'' on the same 55 covered inputs and preserves
+the other 24 original answers nevertheless scores 48, 47, 58, 58, 56, 52, and 54 out
+of 79, above every default head total. It gets 0/9 remaining-support cases correct,
+whereas the head gets 2--6/9. Both findings matter: the head changes support behavior,
+but its aggregate score has not surpassed this strong answer-distribution control.
+With final facts fixed, switching from all relevant rules to question-scoped rules
+improves both backbones from 24/48 to 48/48 on controlled scope probes. Those probes
+test a specific execution distinction, not 48 independent clinical cases.
+
+\subsection{External component checks bound the transfer claim}
+\label{sec:results-component-transfer}
+
+Frozen component checks were completed in addition to the exposed v5 development
+experiments. On 47 qualifying ASCENT source records,\footnote{Source implementation and
+data: \url{https://github.com/naver-ai/ascent/tree/89091716698d6a2fa78b81d8380e7fec57e73fa5}.} comprising 42 source-training and five
+source-test records, the catalog head obtains 38 and 39 correct answers for Llama and
+Qwen under the frozen canonical-name metric, exactly the totals of same-prompt
+single-pass catalog selection. These records were subsequently reused for targeted
+development; later variants cannot treat them as unseen confirmation data. On three
+successive CUPCase batches totaling 18 source records,\footnote{Author dataset:
+\url{https://huggingface.co/datasets/ofir408/CupCase/tree/157a85b1a0fa6d0e25e5209a1cdaf41cf1ff8753}.} corrected voting obtains 15
+and 16 correct answers out of 18 for Llama and Qwen, uncorrected voting obtains 16
+and 17, and single-pass native four-candidate selection obtains 15 and 18.
+These are finite-source adaptations using two backbones,
+not seven upstream retrieval systems or an independent counterfactual paired test.
+They support the operability of the candidate interface while leaving stable additional
+calibration benefits unestablished.
+
+In a separate frozen rule evaluation, 11 constructed cases each supply a base, a
+support-added, and an irrelevant-information endpoint. The program obtains 21/33 and
+25/33 correct, compared with 6/33 and 17/33 for a model executing the same facts,
+rules, scope, and assembly contract. This is evidence for finite rule execution under
+the tested resources. It leaves errors in fact extraction and UNKNOWN inheritance,
+and it does not supply a new independent clinical prescribing cohort. A 201-question
+relation control, not included in the seven-system head, improves from ordinary redo
+to target-scoped redo by 102\,$\rightarrow$\,118 for M4 and
+120\,$\rightarrow$\,122 for M5. The respective review-cluster intervals are
+[$+1.03$, $+14.93$] and [$-5.19$, $+7.37$] percentage points; only the first confirms
+an increment within that exposed scope. These controls preserve successful component
+results while identifying which stronger claims remain unsupported.
+
+\subsection{The later CF-MoA core improves the full native-unit
 mean}
 \label{sec:results-the-adopted-core-improves-the-full-native-unit-mean}
 
+The remaining results concern the separate M4/M5 six-arm composition experiment.
 Table~\ref{tab:main_results} reports every arm with both native-unit and input-level outcomes. B increases M4's
 ALL mean from 48.1990\% to 58.2924\%, and M5's from 47.3487\% to 59.3616\%. The paired
 family intervals for these gains are [+8.9580, +11.2340] and [+10.9177, +13.1510]
@@ -167,10 +302,12 @@ positive change in the other. Figure~\ref{fig-cost} displays the recorded B-base
 method-attributed requests. C0 is not assigned zero cost to place it on this frontier
 because its common upstream cost is unknown.
 
-The physical ledger for the completed multi-arm full-v5 run records 162,979 requests,
+The physical ledger for this completed multi-arm full-v5 run records 162,979 requests,
 957,810,324 input tokens, and 18,291,906 output tokens. These totals must not be divided
 by six to estimate a method cost, and method-attributed totals must not be summed to
-recover the physical ledger because they share B. For each configuration and B-based
+recover the physical ledger because they share B. They also do not represent the total
+cost of the project's earlier seven-system, head-development, or external-validation
+experiments. For each configuration and B-based
 method, 2,503 inputs have historical timing gaps. The analysis therefore reports request
 and token attribution with missing-time markers, not a fully measured end-to-end
 efficiency claim.

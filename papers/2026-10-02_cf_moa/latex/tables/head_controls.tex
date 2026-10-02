@@ -1,0 +1,36 @@
+% Generated from archived controls; all cells are correct counts.
+\begin{table}[tb]
+\centering
+\small
+\caption{Controls expose limits of attributing the head gains. (a) R3 diagnosis subset ($n=680$): original, one catalog order (order 0), majority across catalog orders without calibration, and calibrated majority. Calibration does not improve every system. (b) R2 ($n=79$): the same-coverage None control predicts None on 55 covered inputs and preserves 24 original answers. Its higher aggregate score reflects 46 covered None targets; it misses all nine covered cases with remaining support. The last two columns isolate these nine cases.}
+\label{tab:head-controls}
+\textbf{(a) R3: correct out of 680}\par\smallskip
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+System & Original & Order 0 & Majority & Calibrated \\
+\midrule
+M0 Direct & 116 & 299 & 314 & 314 \\
+M2 MedRGAG & 163 & 320 & 325 & 315 \\
+M3 MA-RAG & 33 & 215 & 200 & 204 \\
+M4 MedRAG--L & 203 & 339 & 359 & 359 \\
+M5 MedRAG--Q & 160 & 382 & 402 & 410 \\
+M6 MedGENIE & 137 & 296 & 288 & 276 \\
+M7 TC-RAG & 186 & 312 & 324 & 318 \\
+\bottomrule
+\end{tabular*}
+\medskip
+\textbf{(b) R2: aggregate and remaining-support subset}\par\smallskip
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+System & Head /79 & None /79 & Head /9 & None /9 \\
+\midrule
+M0 Direct & 29 & 48 & 6 & 0 \\
+M2 MedRGAG & 23 & 47 & 4 & 0 \\
+M3 MA-RAG & 43 & 58 & 3 & 0 \\
+M4 MedRAG--L & 39 & 58 & 4 & 0 \\
+M5 MedRAG--Q & 46 & 56 & 6 & 0 \\
+M6 MedGENIE & 38 & 52 & 5 & 0 \\
+M7 TC-RAG & 37 & 54 & 2 & 0 \\
+\bottomrule
+\end{tabular*}
+\end{table}

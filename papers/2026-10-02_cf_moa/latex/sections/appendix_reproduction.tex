@@ -1,7 +1,7 @@
 \section{Selection Procedure and Reproduction}
 \label{sec:appendix_reproduction}
 
-The core and verifier can be summarized as the following procedure. The source
+The later CF-MoA core and verifier can be summarized as the following procedure. The source
 implementation, including native-interface special cases and error handling, remains
 authoritative.
 
@@ -37,6 +37,13 @@ To rebuild the experimental figures and tables, the companion package provides
 \path{scripts/build_figures_tables.py}. It reads frozen summary inputs and writes CSV,
 LaTeX tables, and PDF/PNG figures. Its optional raw-record check independently
 reaggregates the original compressed result records without invoking a model or grader.
+For the seven-system additions, \path{scripts/build_scope_figures_tables.py} reads the
+separate frozen aggregate inputs and checks 42 baseline values and 21 head comparisons
+before rebuilding three tables and the comparison figure. The companion audit receipts
+document the preceding full-record reconciliation of saved R1/R2/R3 head outcomes with
+the selected original scores, including source hashes. The shipped plotting script
+does not repeat that raw-record audit. Both operations aggregate existing outcomes;
+neither generates answers, runs a semantic grader, or supplies independent validation.
 The manuscript is maintained directly in \texttt{latex/main.tex} and its included section
 files, with citations resolved from \texttt{references.bib} by BibTeX. The accompanying
 \texttt{latex/build.sh} compiles this source with a TeX engine; the normal document build

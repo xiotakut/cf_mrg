@@ -1,0 +1,83 @@
+\section{Experimental Development and Scope Boundaries}
+\label{sec:appendix_development}
+
+The reported system was developed through several experiments with different input
+contracts. The following account identifies the decisions that connect the main results;
+the released records retain the detailed configurations, failures, and intermediate
+outputs. Historical scores are not merged into the current v5 leaderboard.
+
+\textbf{Early replication and paired-input prototypes.} Early work included direct
+answering, MedRGAG reproduction and local adaptations, a world-model proxy, and
+Delta/Residual Adapter variants. The apparent advantage of world-model sorting did not
+survive a matched prompt-and-input comparison: both it and blind direct sorting scored
+64/85. A subsequent counterfactual experiment identified a label-oracle condition;
+that condition was rejected as valid method evidence, and the corrected label-free
+version did not establish the proposed mechanism. A later Residual Adapter achieved
+80.0\% with MA-RAG on a 500-pair four-choice task, while a separately trained
+without-MA configuration reached 81.8\%. Those experiments provided useful controls,
+but their paired-input and constructed-choice permissions differ from the current
+independent-endpoint native protocol. They neither establish synergy nor supply extra
+v5 baseline scores.
+
+\textbf{Baseline lineage.} The evaluation progressed from earlier source-level and
+v2/v3 comparisons to the frozen v5 selection. M1 denotes MedRGAG's initial retrieval
+control, not a separate MedRAG family; its earlier completed evaluations do not provide
+a full v5 result. Historical M6 denoted i-MedRAG. Its original v5 queue paused after
+52 of 13,905 inputs; a later 128-input performance check was not a completed v5
+evaluation. The selected current M6 is MedGENIE and preserves a different method
+identity. M4's structured-output repair and M7's typed-control revision are included
+in the selected baseline versions, with earlier failures retained in their own records.
+
+\textbf{From errors to terminal heads.} R2 development first tested ordinary revision,
+free-form support audits, local withdrawal, atomic decisions, additional guideline
+context, and longer reasoning. Their failures led to a narrower division of labor:
+the model extracts current facts, and a fixed rule executor handles conditions,
+exceptions, question scope, and independent support paths. An answer-assembly type
+error was repaired using saved outputs, and its earlier negative conclusion was
+withdrawn rather than retained as a method failure. The final default preserves
+UNKNOWN initial choices and records its remaining-support regressions.
+
+R3 first tested evidence audits, query changes, and training-case memory. A high-scoring
+nearest-neighbor head was withdrawn from the core method because it returned retrieved
+training labels instead of making the intended original-model decision. The subsequent
+public-catalog head is a distinct implementation. Patient presentation, catalog
+selection, permutations, and prior correction were evaluated separately. More elaborate
+pairwise comparisons, observation selection, knowledge allocation, relation counting,
+and NLI candidates did not replace the retained head. R1 then extended the frozen
+diagnostic and rule components beyond R3, with complete seven-system accounting.
+Single-choice extension and revised fact extraction had negative results; a relation
+candidate remained a separate two-configuration experiment.
+
+\textbf{R4: conditional consequence execution.} The original 13-unit HIV stratum has
+seven-system baseline results, but subsequent R4 head development used two backbones.
+Clinical prompt and evidence-binding variants did not establish a retained clinical
+head. Formal and biological tasks informed the later implementation, whose adopted
+scope is explicitly supplied physiological models and states. Frozen validation on
+24 new virtual profiles, each with 12 questions, is reported in
+Appendix~\ref{sec:appendix_model}. It is completed conditional model validation, not
+seven-system optimization of the 13 HIV units or evidence of unrestricted clinical
+causal reasoning.
+
+\textbf{R5: retained readout and unadopted learning candidates.} The historical F
+component combines two NLI paths and two label mappings, or up to five native-answer
+draws for its other supported tasks. Its 208-unit development/validation panel contains
+64 initial development units, 128 extension units, and 16 new groups evaluated after
+freezing. Across the 208 units, weighted paired correctness changes from 60.19\% to
+65.90\% for Llama and from 59.17\% to 66.47\% for Qwen. Within the 16 frozen-after
+groups, both-correct pairs improve from 11 to 12 for Llama and from 12 to 13 for Qwen
+relative to matched single answers. These
+limited results support retaining F as a component. Later support audits, learned
+representations, and fallback gates failed their controls and were not adopted; a
+further five-head training proposal remained unexecuted. They are not extra successful
+R5 methods hidden within the final composition.
+
+\textbf{Composition and verification follow-up.} CF-MoA subsequently tested global
+aggregation and additional support, comparison, and maintenance variants. These were
+executed experiments with negative or mixed results, not merely unimplemented plans.
+A minimal wrapper then preserved the established B operations, while ordinary fresh
+answer generation and finally candidate verification were tested as additional
+interventions. Earlier 121-input and 52-input panels informed that process. The
+seven-system component migration replay demonstrated equivalence of saved results;
+its cached callbacks were not new quality measurements. The final six-arm, full-v5
+experiment applies only to M4 and M5. Its 162,979-request physical ledger covers that
+run, not the total cost of the development history summarized here.

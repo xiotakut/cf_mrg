@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "standard_library_check_only_passed": true,
+  "relocated_script_and_inputs_passed": true,
+  "original_workspace_paths_not_required": true,
+  "explicit_nested_inputs_supported": true,
+  "artifacts_match_canonical": [
+    {
+      "artifact": "tables/seven_baselines.tex",
+      "identical_sha256": "b370bed6a880bce318a49a9daf653e6f77065fc44cb393dfcbe2bfe8e2c70295"
+    },
+    {
+      "artifact": "tables/seven_heads.tex",
+      "identical_sha256": "91dfbf11f25f1682a2b92e9598377b4041192f70fb1d27e81b9d7c01e96d22a7"
+    },
+    {
+      "artifact": "tables/head_controls.tex",
+      "identical_sha256": "705cfac87e37a36ec269a9c2ca0ff54f295f08f9b9f43aa11202b1ecc88e87c3"
+    },
+    {
+      "artifact": "figures/seven_system_heads.pdf",
+      "identical_sha256": "e1a18576604603ad832bb6bb49ef109ebbf17b466a6dc00e01efa3fd4c505fd2"
+    },
+    {
+      "artifact": "figures/seven_system_heads.png",
+      "identical_sha256": "8dd45ae39449fbeebc751371d9f794779a8668e9c7da2c15ed7d0d9f92f767a5"
+    }
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "new_model_calls": 0,
+  "new_native_scoring": 0
+}

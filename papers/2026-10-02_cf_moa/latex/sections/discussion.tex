@@ -1,11 +1,28 @@
 \section{Discussion}
 \label{sec:discussion}
 
-The largest consistent improvement belongs to the adopted operation core. Its catalog,
-rules, and repeated readout change both the available decision interface and the amount of
-computation. The result supports this particular system composition on the evaluated
-benchmark. It does not identify a single mechanism responsible for the entire improvement,
-and it cannot be reassigned to an extension evaluated later.
+The seven-system results establish that terminal decision procedures can improve a
+range of medical question-answering systems under a common native evaluation contract.
+The benefit is not confined to the two MedRAG configurations: direct answering,
+MedRGAG, MA-RAG, MedGENIE, and TC-RAG also improve throughout the three declared
+development strata. Preserving these results alongside their controls is necessary to
+understand the research outcome. Mixed contributions from calibration, or incomplete
+external validation, do not erase the measured gain of the complete terminal head.
+
+What changes depends on the task. The diagnostic component provides an explicit answer
+space and a new original-model decision; the rule component executes support conditions
+and combines them with the original answer. These are distinct interventions, and R1's
+reuse of R2/R3 components demonstrates useful transfer across support requirements
+without constituting three independent algorithms. A common component can also preserve
+method differences through the original context, UNKNOWN inheritance, and fallback.
+The evidence supports system improvement with explicit attribution limits, rather than
+a claim that all failures share one cause.
+
+The later CF-MoA core combines the catalog, rules, and repeated readout in two
+configurations. Its improvement concerns that broader composition and its additional
+computation. It neither replaces the seven-system findings nor extends the full CF-MoA
+result to five untested configurations. The composition's gain also cannot be reassigned
+to candidate verification introduced afterward.
 
 Additional candidate verification poses a distinct selection problem. By design, C3 cannot
 recover an answer key absent from its pool, and it can replace a correct selected answer

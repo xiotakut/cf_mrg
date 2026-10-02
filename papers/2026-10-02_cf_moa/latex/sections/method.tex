@@ -1,17 +1,16 @@
-\section{CF-MoA}
+\section{Support Updating and Candidate Re-decision}
 \label{sec:method}
 
-\subsection{Adopted core B}
-\label{sec:method-adopted-core-b}
+\subsection{Reusable terminal heads}
+\label{sec:method-terminal-heads}
 
-The adopted core uses fixed predicates over visible inputs. It first routes diagnosis
-questions to the catalog component, then eligible prescribing questions to the rule
-component. Inputs with a complete supported executable model can use the model-execution
-component. Supported single-choice and relation questions with their original message
-context use repeated native-answer readout, denoted F. Other inputs preserve the original
-answer. The full evaluation routes 3,560 inputs to diagnosis, 123 to rules, 10,178 to F,
-and 44 to passthrough. The explicit-model component covers zero inputs in this clinical
-benchmark.
+The first development stage adds terminal decision components to each original system.
+A head is an external inference procedure, with no newly trained parameters. It receives
+only the current input, the permitted original context where needed, the original answer,
+and a callback to the original backbone. Visible task format and rule eligibility select
+the branch. R labels select evaluation strata offline and never select an answer or a
+branch at inference. The R1 and R3 interfaces combine the two components below and retain
+the original answer on uncovered tasks; the R2 interface uses the rule component alone.
 
 \textbf{Shared support addition and removal.} The rule component separates patient-fact
 extraction from execution of a fixed public rule bank. Its established eligibility
@@ -29,16 +28,18 @@ valid initial option set \(A_0\), away from native special cases, the update is
 
 \begin{equation}
 \label{eq:support_update}
-A_B=\{o:s(o)=\mathrm{MET}\}
+A_{\mathrm{new}}=\{o:s(o)=\mathrm{MET}\}
 \ \cup\ \bigl(A_0\cap\{o:s(o)=\mathrm{UNKNOWN}\}\bigr).
 \end{equation}
 
 The expression adds newly supported options, removes options whose relevant support is
 contradicted, and preserves selected options with unresolved support. Native ``none''
 exclusivity, invalid initial answers, and extraction failures use the established
-assembler and fallback policies. A1 and A2 are records of the positive and negative
-operations from this single execution. There is no second fact-extraction model hidden
-behind these role names.
+assembler and fallback policies. The same execution can add newly supported options and
+withdraw unsupported ones, allowing the frozen component to serve both R1 and R2
+phenomena. Positive-field extraction and evidence sentence identifiers aid traceability;
+the existence of a cited sentence alone does not establish that it entails the extracted
+fact.
 
 \textbf{Diagnostic comparison.} The diagnostic component uses a fixed public catalog of 49
 diseases derived from the DDXPlus resource \citep{ddxplus}. The original model scores
@@ -49,6 +50,28 @@ diagnostic scorer still uses its existing 46-label mapping. We do not expand tha
 after observing predictions. Catalog constraints, candidate resources, repeated decisions,
 and calibration all contribute to this component, so its overall gain cannot be attributed
 to calibration alone.
+
+The catalog head preserves the original system's actual final decision context and
+presents the current case again before scoring the fixed candidates. It does not retrieve
+training-case labels or replace decisions with a nearest-neighbor answer. The six
+permutations, prior correction, and tie policy are shared across configurations, including
+configurations on which one component decreases accuracy. A separate single-permutation
+control and uncorrected six-vote control measure the contribution beyond catalog
+re-decision itself.
+
+\subsection{CF-MoA adopted core B}
+\label{sec:method-adopted-core-b}
+
+The later CF-MoA composition incorporates the established terminal heads and additional
+operations. It first routes diagnosis questions to the catalog component, then eligible
+prescribing questions to the rule component. Inputs with a complete supported executable
+model can use the model-execution component. Supported single-choice and relation questions
+with their original message context use repeated native-answer readout, denoted F. Other
+inputs preserve the original answer. In the two-configuration full-v5 evaluation, 3,560
+inputs route to diagnosis, 123 to rules, 10,178 to F, and 44 to passthrough per
+configuration. The explicit-model component covers zero clinical-v5 inputs. A1 and A2
+record support addition and withdrawal from the shared rule execution; their names do
+not introduce two independent fact extractors.
 
 \textbf{Conditional model execution.} The A4 component extracts a typed intervention and
 executes it only when the complete supported physiological model, parameters, state, and

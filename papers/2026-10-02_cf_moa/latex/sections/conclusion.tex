@@ -1,12 +1,14 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-CF-MoA provides an operation-based account of support updating and candidate decisions in
-medical question answering. Across two MedRAG configurations on the complete exposed v5
-benchmark, the adopted core improves the native-unit mean substantially.
-Rationale-conditioned verification of its existing candidates adds a smaller,
-configuration-dependent effect: negative on M4 and positive on M5. The six-arm comparison,
-operation ablations, paired outcomes, and computation ledger show why system gains and
-verification gains require separate evidence. Independent confirmation and candidate-pool
-replication remain the next empirical steps before stronger generalization claims can be
-made.
+We evaluate seven medical question-answering configurations on a common full-v5
+benchmark and improve every configuration on the complete R1, R2, and R3 development
+strata through question-scoped support recomputation and original-model catalog
+re-decision. Component controls distinguish these system gains from the variable effects
+of calibration, repeated decisions, and answer-distribution policies. The subsequent
+two-MedRAG CF-MoA experiment evaluates a broader composition and finds strong core gains,
+followed by mixed incremental effects from rationale-conditioned verification. The
+seven-system comparison, component studies, and six-arm follow-up answer complementary
+questions; each retains its actual scope and computation. The results support reusable
+terminal decision components with measured development benefits, while independent
+confirmation of the final composition and candidate-pool replication remain future work.

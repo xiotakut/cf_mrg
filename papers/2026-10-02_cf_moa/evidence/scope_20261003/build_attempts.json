@@ -1,0 +1,44 @@
+{
+  "latex_compilations": [
+    {
+      "attempt": 1,
+      "pages": 29,
+      "compiler_exit": 0,
+      "warnings": 0,
+      "issue": "Declaration tail spilled to an otherwise empty page."
+    },
+    {
+      "attempt": 2,
+      "pages": 29,
+      "compiler_exit": 0,
+      "warnings": 0,
+      "changes": "Added fixed source revisions and new script reference; shortened availability/ethics; final declaration line still spilled."
+    },
+    {
+      "attempt": 3,
+      "pages": 28,
+      "compiler_exit": 0,
+      "warnings": 0,
+      "changes": "Condensed AI-assistance paragraph without removing author responsibility or zero-new-evaluation disclosure."
+    }
+  ],
+  "validation_attempts": [
+    {
+      "command": "system python3 validate_latex.py",
+      "status": "failed",
+      "reason": "Pillow unavailable in system Python; used existing MedRGAG venv, no installation."
+    },
+    {
+      "command": "venv validate_latex.py",
+      "status": "failed",
+      "reason": "Literal PDF text check expected 1,329; math text extracted a space after comma. Validation now normalizes comma whitespace; source counts unchanged."
+    },
+    {
+      "status": "passed",
+      "pages": 28,
+      "bibliography_items": 24,
+      "warnings": 0,
+      "outside_page_spans": 0
+    }
+  ]
+}

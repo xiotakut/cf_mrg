@@ -1,0 +1,662 @@
+{
+  "task": "Independent scope correction review of seven-system manuscript",
+  "created_at": "2026-10-03T00:15:32.095890+08:00",
+  "reviewer": "early_and_r45_audit",
+  "status": "complete; no blocking scope, numerical, or evidence-attribution findings in reviewed revision",
+  "authorization": "Read-only manuscript/audit review; this JSON is the only written review artifact. No canonical text edit, model call, scorer call, installation or publication.",
+  "skill": {
+    "path": "/home/data3/txy/.codex/skills/academic-paper/SKILL.md",
+    "quality_reference": "/home/data3/txy/.codex/skills/academic-paper/references/writing_quality_check.md",
+    "applied": "Context-sensitive precision, supported claims, terminology, acronym and readability diagnostics. No cosmetic quota, detector or formal venue verdict.",
+    "criteria_binding": "criteria_binding_unavailable; generic conference draft",
+    "acronym_script": "Not run by review agent; caller-owned under skill. Manual terminology review only."
+  },
+  "checklist": [
+    {
+      "id": "scope_7_6_2",
+      "requirement": "Title/abstract/introduction identify seven evaluated configurations, six baseline families, two backbones; later CF-MoA uses only M4/M5.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "main.tex",
+        "sections/abstract.tex",
+        "sections/introduction.tex",
+        "sections/experimental_setup.tex"
+      ]
+    },
+    {
+      "id": "baseline_42",
+      "requirement": "All 42 seven-system ALL/R1–R5 values reproduce the saved selected baseline results with complete common denominators.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "tables/seven_baselines.tex",
+        "static_checks"
+      ]
+    },
+    {
+      "id": "head_21",
+      "requirement": "All 21 R1/R2/R3 before/after results reproduce stored correctness; gains across all seven are described as successful development results.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "tables/seven_heads.tex",
+        "sections/results.tex:27",
+        "static_checks"
+      ]
+    },
+    {
+      "id": "overlap",
+      "requirement": "R3 is contained in R1; 3,678 memberships represent 2,941 unique units, not independent experiments.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/task_contract.tex:79",
+        "sections/results.tex:53"
+      ]
+    },
+    {
+      "id": "controls",
+      "requirement": "R3 baseline/single catalog/uncorrected vote/calibrated vote and R2 same-coverage None/remaining-support controls accompany claims.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "tables/head_controls.tex",
+        "sections/results.tex:71",
+        "derived_prose_checks"
+      ]
+    },
+    {
+      "id": "identities",
+      "requirement": "M2 all-Llama local adaptation, M3 intrinsic N8 T4, selected repaired M4, original-protocol M5, M6 MedGENIE v2, M7 typed-control v2; M1/old i-MedRAG excluded from complete v5.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/experimental_setup.tex:7",
+        "sections/appendix_development.tex:22"
+      ]
+    },
+    {
+      "id": "execution_scope",
+      "requirement": "Strict historical reuse is disclosed; rule branch uses two backbone-specific fact sets combined offline with seven saved original answers, not seven upstream reruns.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/experimental_setup.tex:17",
+        "sections/experimental_setup.tex:41"
+      ]
+    },
+    {
+      "id": "attribution",
+      "requirement": "Concrete configuration/resource effects are separated from isolated algorithm, calibration, backbone, or interaction effects.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/limitations.tex:25",
+        "sections/results.tex:71",
+        "sections/discussion.tex"
+      ]
+    },
+    {
+      "id": "early_boundaries",
+      "requirement": "Earlier WM/oracle/paired-visible Adapter/old rubric/v3 results are historical only and do not inflate v5 evidence.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/appendix_development.tex"
+      ]
+    },
+    {
+      "id": "r4_r5_scope",
+      "requirement": "R4 288 conditional supplied-model questions and R5 component panels remain separate; no invented seven-system R4/R5 head matrix.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/appendix_development.tex:51",
+        "sections/appendix_model.tex"
+      ]
+    },
+    {
+      "id": "confirmation",
+      "requirement": "Actual bounded external component evaluations are acknowledged; only final CF-MoA new-family and second-F-pool confirmation is unexecuted.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/results.tex:106",
+        "sections/limitations.tex:4"
+      ]
+    },
+    {
+      "id": "citations",
+      "requirement": "Method-paper references distinguish original method identity from local implementation; all used keys resolve; no unsupported formal venue/metadata assertions.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/related_work.tex",
+        "sections/results.tex:109",
+        "baseline_reference_verification.json"
+      ]
+    },
+    {
+      "id": "quality",
+      "requirement": "Apply academic-paper writing diagnostics to concrete clarity/support issues; consistent terminology, defined acronyms, no excessive global-negative framing.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/discussion.tex",
+        "sections/conclusion.tex",
+        "resolved_findings"
+      ]
+    },
+    {
+      "id": "reproducibility",
+      "requirement": "Figures/tables/scripts regenerate frozen summaries; no new model/native scoring claimed; private access and fresh-inference prerequisites remain explicit.",
+      "status": "passed_in_assigned_scope",
+      "evidence": [
+        "sections/appendix_reproduction.tex",
+        "sections/declarations.tex",
+        "nonblocking_advisories"
+      ]
+    }
+  ],
+  "preliminary_findings": [
+    {
+      "id": "P01",
+      "issue": "Old limitations/conclusion generalized unexecuted independent confirmation beyond final CF-MoA; bounded external R1–R3 and held-profile R4 evidence exists.",
+      "status": "resolved in final reviewed revision"
+    },
+    {
+      "id": "P02",
+      "issue": "Old abstract/introduction/results centered two CF-MoA configurations and omitted complete seven-system baseline and terminal-head development gains.",
+      "status": "resolved in final reviewed revision"
+    },
+    {
+      "id": "P03",
+      "issue": "CUPCase two-backbone correct counts written 15/16 could be misread as numerator/denominator; use explicit 15 and 16 out of18 each.",
+      "status": "resolved in final reviewed revision"
+    },
+    {
+      "id": "P04",
+      "issue": "R5 total208 includes64 development+128 extension+16 new groups; subsequent16 wording implies accidental extra cohort.",
+      "status": "resolved in final reviewed revision"
+    },
+    {
+      "id": "P05",
+      "issue": "New external-source names require traceable provenance.",
+      "status": "resolved in final reviewed revision"
+    },
+    {
+      "id": "P06",
+      "issue": "Baseline caption input-access difference could imply unequal gold/source-evidence permissions.",
+      "status": "resolved in final reviewed revision"
+    }
+  ],
+  "numerical_evidence": {
+    "seven_methods_audit.json": {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d"
+    },
+    "head_research_audit.json": {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8"
+    },
+    "early_r45_audit.json": {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/early_r45_audit.json",
+      "sha256": "81bfa93745f6ff8cd6bc873b5ec4c0adde3afc0108f333e0650dfa5b6f5b02e1"
+    },
+    "baseline_reference_verification.json": {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/baseline_reference_verification.json",
+      "sha256": "6a93f23154f85761df4b1bb08340cb117572bd407cc7b5b924c515ff85b38b3d"
+    }
+  },
+  "final_findings": [],
+  "review_limitations": [
+    "No new medical adjudication, model inference, native scoring, numerical integration, compilation or publication by this review agent.",
+    "This review compares text and tables to saved audit outputs and selected main-record evidence. Raw-record parity was performed and documented by the baseline/head audit agents.",
+    "Final hashes bind the exact completed manuscript revision read, including the parent final polish. Later changes require a refreshed receipt.",
+    "Parent handles TeX build, PDF pagination, and final delivery. No formal venue criteria were supplied; this review provides no acceptance, ethics, or generalization certification.",
+    "Acronym script was not run by this review agent because the skill assigns it to the caller. Manual terminology review applied; no script-clean claim."
+  ],
+  "static_checks": [
+    {
+      "check": "seven_baseline_tex_42_percentages_vs_verified_audit",
+      "values_compared": 42,
+      "passed": true
+    },
+    {
+      "check": "seven_head_tex_21_before_after_pairs_vs_verified_audit",
+      "pairs_compared": 21,
+      "integer_values_compared": 42,
+      "passed": true
+    },
+    {
+      "check": "head_control_tex_56_counts_vs_verified_audit",
+      "integer_values_compared": 56,
+      "passed": true
+    },
+    {
+      "check": "citation_keys_resolve",
+      "bibliography_keys": 24,
+      "cited_keys": 24,
+      "missing": [],
+      "uncited": [],
+      "new_baseline_keys_cited": [
+        "frisoni2024medgenie",
+        "jiang2025tcrag",
+        "li2026medrgag",
+        "wu2026marag"
+      ],
+      "passed": true
+    }
+  ],
+  "numerical_mismatches": [],
+  "table_read_receipts": [
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/seven_baselines.tex",
+      "sha256": "b370bed6a880bce318a49a9daf653e6f77065fc44cb393dfcbe2bfe8e2c70295",
+      "lines": 22,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/seven_heads.tex",
+      "sha256": "91dfbf11f25f1682a2b92e9598377b4041192f70fb1d27e81b9d7c01e96d22a7",
+      "lines": 20,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/head_controls.tex",
+      "sha256": "705cfac87e37a36ec269a9c2ca0ff54f295f08f9b9f43aa11202b1ecc88e87c3",
+      "lines": 36,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/tables/historical_model.tex",
+      "sha256": "6347e5c417e4e886f8e1bc45536d341129f4c0b5a50ab9b0d865acf8b47f0859",
+      "lines": 24,
+      "read_range": "complete"
+    }
+  ],
+  "derived_prose_checks": {
+    "stratum_gain_ranges_pp": {
+      "R1": [
+        14.83,
+        19.12
+      ],
+      "R2": [
+        16.46,
+        29.11
+      ],
+      "R3": [
+        18.69,
+        35.2
+      ]
+    },
+    "R1_outside_R3_net_correct_gains": {
+      "M0": 261,
+      "M2": 266,
+      "M3": 319,
+      "M4": 264,
+      "M5": 290,
+      "M6": 311,
+      "M7": 293
+    },
+    "R3_control_mean_percent": {
+      "baseline_correct": 20.97,
+      "single_catalog_correct": 45.44,
+      "uncalibrated_vote_correct": 46.47,
+      "calibrated_vote_correct": 46.13
+    },
+    "R2_repairs_total": 130,
+    "R3_invalid_origin_repairs_percent": 95.05,
+    "R1_R2_R3_distinct_unit_check": 2941,
+    "all_21_gains_positive": true
+  },
+  "completed_at": "2026-10-03T00:27:19.303003+08:00",
+  "decision": "Seven-system baseline and R1–R3 terminal-head development gains are restored as principal results; later M4/M5 CF-MoA retains its separate scope. All assigned numerical and manuscript-scope checks pass. This is not a venue acceptance recommendation or new experimental verification.",
+  "final_manuscript_receipts": [
+    {
+      "path": "/home/data3/txy/docs/paper/latex/main.tex",
+      "sha256": "73b4a37704bd701456502c59a8c5291fb0f65e0537c29ed5a2617ca2d554e9cc",
+      "lines": 64,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/abstract.tex",
+      "sha256": "56ba87a7db36e91e2ddd217fa4c20ee36a37b988fd394d05ba0d96e798cc839f",
+      "lines": 25,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/appendix_development.tex",
+      "sha256": "e62002a182b816ba5cfa571826c7627b3d2646f9da32cd20d2b281997a1a8eb5",
+      "lines": 83,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/appendix_model.tex",
+      "sha256": "c864d4be16aff121eb348d653837331db8345ccbf441fddbccd6f94535167e07",
+      "lines": 19,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/appendix_reproduction.tex",
+      "sha256": "b7f6810476e17bd4dcb6f2487dbeb2cfadf3a650b1a17c34114bf1b81d1d6ede",
+      "lines": 52,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/appendix_sources.tex",
+      "sha256": "bd04153c78181d2822f7eb720be35cb2986ed99f74ac03540bd16a87c75ca090",
+      "lines": 27,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/conclusion.tex",
+      "sha256": "72046cb521114a432565490fc5ab7e746ae7e24ff9ca54f7812674773361b6e6",
+      "lines": 14,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/declarations.tex",
+      "sha256": "4d99ee47f176497a1df9813e91614132b4b09b4bb4b467608d3795147dc0fd8b",
+      "lines": 33,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/discussion.tex",
+      "sha256": "d1e3c80a4a3b958f7783a018c43da13dd52a624cf68af42d54016c5872561dba",
+      "lines": 54,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/experimental_setup.tex",
+      "sha256": "a2046e5157954ada086f6913ccd398306853bcab47ca3731b25f0016fce08a4d",
+      "lines": 111,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/introduction.tex",
+      "sha256": "e206dafc27959ac619dd000fff746e1d2f482d32c1b0a339a6ecc13f367773fa",
+      "lines": 62,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/limitations.tex",
+      "sha256": "b3d9adc27e5e737552605501326a8b3a9047133bcecc2f8f541436cf28b6f6c9",
+      "lines": 57,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/method.tex",
+      "sha256": "e9a2c15fa0d2404da85fa6c406acab538f8d2035f506a625d9f988348b7f7d51",
+      "lines": 137,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/related_work.tex",
+      "sha256": "8e0cccbf0e26b5c19fb338a08e185460fa967bdf6822a006dda0078875afbf99",
+      "lines": 44,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/results.tex",
+      "sha256": "1c165646acca8acba0af8fac2a3dc2bf5eebf3686842de84f15111a7a6d3fa27",
+      "lines": 322,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/sections/task_contract.tex",
+      "sha256": "2e40151a0f710251d6bf275d9bc3583a766c32383a61889a1f662e2b4e461706",
+      "lines": 120,
+      "read_range": "complete"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/outline.md",
+      "sha256": "e9e9058866902b13ed64f60856a4a0b1ed6da659b048223bcb5969bdad9ca9b5",
+      "lines": 62,
+      "read_range": "complete"
+    }
+  ],
+  "bibliography_receipt": {
+    "path": "/home/data3/txy/docs/paper/latex/references.bib",
+    "sha256": "0b37967c1bce7a30397cde651107c0730c6da171e99f3198b63d95bbda54d18d",
+    "lines": 377,
+    "read_range": "complete"
+  },
+  "prior_draft_receipt": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/previous_latex_20261002/cf_moa_latex.zip",
+    "sha256": "2dd34ccd9ccfa10a8cef9b138720e77ecf126868001241b194d7190e63c4b865",
+    "sections": [
+      {
+        "member": "sections/abstract.tex",
+        "sha256": "e1e440a4b7347d719d7896b1a152761a881d25cb5fa5f6e3f230da0183f27398",
+        "lines": 25
+      },
+      {
+        "member": "sections/appendix_model.tex",
+        "sha256": "c864d4be16aff121eb348d653837331db8345ccbf441fddbccd6f94535167e07",
+        "lines": 19
+      },
+      {
+        "member": "sections/appendix_reproduction.tex",
+        "sha256": "067e9bf5fe856fdb26e072c335b3690615320481e0254c974c71a8586fbbf768",
+        "lines": 45
+      },
+      {
+        "member": "sections/appendix_sources.tex",
+        "sha256": "d2aacca3303199264c45b747683a00c7cb46d53e07b253b8b439542ea8f6e327",
+        "lines": 25
+      },
+      {
+        "member": "sections/conclusion.tex",
+        "sha256": "f06e6f1f531583aaf0d33f52a3381c715a5d6b0d1191655c001b728764e8b0d6",
+        "lines": 12
+      },
+      {
+        "member": "sections/declarations.tex",
+        "sha256": "6d6bacf5343baa8574368abc8ffca62e489d57e38b69cf6852c979bd38ef29d7",
+        "lines": 37
+      },
+      {
+        "member": "sections/discussion.tex",
+        "sha256": "8914960815fc78970a0129cd1df39b8d9a5a5ce7226d8fab860dc36c15c5c5c7",
+        "lines": 37
+      },
+      {
+        "member": "sections/experimental_setup.tex",
+        "sha256": "27d68d538b297f33f8f9d6ed0e74e6ac7d64993c39f01dd5673eca883daf4cd9",
+        "lines": 58
+      },
+      {
+        "member": "sections/introduction.tex",
+        "sha256": "3fd893bcdd002f09fa6ff7af766820b9332171a5fd1799a5ae512a9d79d1ebd9",
+        "lines": 48
+      },
+      {
+        "member": "sections/limitations.tex",
+        "sha256": "f948f7079e95ee27d3d53c920e71e25596932533ad6f63458b437cfe4931fe60",
+        "lines": 39
+      },
+      {
+        "member": "sections/method.tex",
+        "sha256": "1d25c446d84053ef9ebab9898d3fe2d6ca8d20fd9498468719cbfda5514e1255",
+        "lines": 114
+      },
+      {
+        "member": "sections/related_work.tex",
+        "sha256": "3901d90385727e71a66fa24a4319036d21d8e3581c0ee3e096192c28ae066f0a",
+        "lines": 39
+      },
+      {
+        "member": "sections/results.tex",
+        "sha256": "72ba0bcebe2ca2112eb9edef24803ea2dd87144a868c79657cd8501179a8edc6",
+        "lines": 185
+      },
+      {
+        "member": "sections/task_contract.tex",
+        "sha256": "38d018149ed95d9ebedc7dc9312828e77737d25ebeec663b9b979f2c7b9588d1",
+        "lines": 108
+      }
+    ],
+    "read_scope": "All14 old sections were read before/during initial changes, with the old abstract/introduction/method/setup/related_work/task_contract explicitly reread from the frozenZIP to avoid confusing interim edits with the old draft."
+  },
+  "evidence_receipts_final": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/early_r45_audit.json",
+      "sha256": "81bfa93745f6ff8cd6bc873b5ec4c0adde3afc0108f333e0650dfa5b6f5b02e1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/baseline_reference_verification.json",
+      "sha256": "6a93f23154f85761df4b1bb08340cb117572bd407cc7b5b924c515ff85b38b3d"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "P01",
+      "fix": "Final-composition confirmation gap is scoped to CF-MoA; completed ASCENT/CUPCase/rule/profile component checks retained. ASCENT42train+5test and subsequent exposure explicitly disclosed."
+    },
+    {
+      "id": "P02",
+      "fix": "Seven-system baseline table, all21 head gains, controls, abstract/introduction/results/discussion/conclusion/title/outline restored; no requirement that all internal components improve to acknowledge net development gains."
+    },
+    {
+      "id": "P03",
+      "fix": "CUPCase counts now explicitly15 and16 out of18,16 and17,15 and18 for Llama/Qwen. Small40-case counts also expanded."
+    },
+    {
+      "id": "P04",
+      "fix": "R5 total208 now explicitly64development+128extension+16frozen-after groups; subset11→12/12→13 is not counted again."
+    },
+    {
+      "id": "P05",
+      "fix": "ASCENT/CUPCase have direct author-resource footnotes now pinned to the exact recorded commit/revision; identity and version match sources.md:66–68."
+    },
+    {
+      "id": "P06",
+      "fix": "Baseline caption uses retrieval procedures, avoiding an implication of different task-evidence access permissions."
+    },
+    {
+      "id": "P07",
+      "fix": "MA-RAG correctly describes eight solver candidates per round, at most four rounds with agreement stopping."
+    },
+    {
+      "id": "P08",
+      "fix": "Introduction uses explicit component controls; no blanket equal-cost/resource-matching claim across methods."
+    }
+  ],
+  "nonblocking_advisories": [
+    {
+      "id": "A01",
+      "location": "sections/results.tex external-source footnotes",
+      "advice": "Optionally pin source links to recorded ASCENT commit89091716698d6a2fa78b81d8380e7fec57e73fa5 and CUPCase revision157a85b1a0fa6d0e25e5209a1cdaf41cf1ff8753. Current links correctly identify author resources.",
+      "status": "resolved by parent final polish; independently reread"
+    },
+    {
+      "id": "A02",
+      "location": "sections/appendix_reproduction.tex",
+      "advice": "Name scripts/build_scope_figures_tables.py explicitly alongside existing build_figures_tables.py so the new seven-system artifacts have an immediately visible command entry.",
+      "status": "resolved by parent final polish; independently reread"
+    }
+  ],
+  "citation_support_review": {
+    "new_method_papers": {
+      "li2026medrgag": "Correct MedRGAG source; local all-Llama adaptation declared separately. Formal metadata verified from actual local publisher PDF plus author repository; web ACM/DOI/Crossref failures remain disclosed in verification JSON.",
+      "wu2026marag": "Correct NJU-RL multi-round MA-RAG source, not similarly named generic Multi-Agent RAG. Official repo/ICML/arXiv support identity and bibliographic entry; local intrinsic/Qwen settings not claimed as paper defaults.",
+      "frisoni2024medgenie": "ACL2024 source supports generated medical-context method identity; local Llama v2 explicitly an adaptation.",
+      "jiang2025tcrag": "ACL2025 source supports TC-RAG identity; selected typed-control-v2 remains a documented local version."
+    },
+    "other_citations": "Existing source/background citation contexts retained: MedRAG/MIRAGE, RAG, self-consistency, mixture-of-agents, contextual calibration, DDXPlus and source table. No new literature-wide superiority or novelty claim; metadata of the20 retained entries was parent-audited previously, not independently re-fetched in this review.",
+    "external_source_footnotes": "Pinned URLs match recorded acquisition in docs/data/sources.md:66–68; no fresh network-availability claim in this review.",
+    "all24keys_resolve": true
+  },
+  "rule_stage_boundary_review": {
+    "passed": true,
+    "evidence": [
+      "docs/research/support_update_method.md:164–224",
+      "docs/research/r2_support_head.md:1758–1808",
+      "docs/research/cf_moa.md:44–58"
+    ],
+    "finding": "R1/R2/R3 component coverage72/55/10 is reported within its own strata. Later123-input rule operation ablation is explicitly within two-configuration full-v5 B. Adopted B reuses the frozen final positive-fact/question-scoped rule implementation; later failed extractors are not inserted."
+  },
+  "historical_boundary_review": {
+    "passed": true,
+    "evidence": "early_r45_audit.json contains actual archive read ranges and phase receipts, supplemented here by R4:506–632 and R5:445–502 targeted checks.",
+    "finding": "WM64/85 parity, label-oracle rejection, Adapter500-pair80.0/81.8, incomplete oldM6, R4clinical-vs-model separation, and R5abandoned candidates remain historical evidence only. R4simulator and R5component gains are positively retained within their measured domains."
+  },
+  "additional_read_scope": [
+    {
+      "path": "/home/data3/txy/docs/research/support_update_method.md",
+      "lines": [
+        145,
+        275
+      ],
+      "description": "Development table, mechanism controls, external checks, interpretation; long output inspected with targeted follow-up source sections."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "lines": [
+        1930,
+        1970
+      ],
+      "description": "R3controls, repair-origin decomposition and CUPCase external checks."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "lines": [
+        1740,
+        1815
+      ],
+      "description": "FinalR2method/scoped rule controls and same-coverage None."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/cf_moa.md",
+      "lines": [
+        44,
+        58
+      ],
+      "description": "Adopted historical modules and equivalence reuse, via targeted search."
+    },
+    {
+      "path": "/home/data3/txy/docs/data/sources.md",
+      "lines": [
+        62,
+        72
+      ],
+      "description": "Author resources and fixed versions for external component datasets, via targeted search."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "lines": [
+        445,
+        502
+      ],
+      "description": "Targeted line matches establish208composition and16subset, not full reread."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "lines": [
+        579,
+        632
+      ],
+      "description": "Full retained-profile results and boundaries; targeted506menu also checked."
+    }
+  ],
+  "final_reference_check": {
+    "cited_keys": 24,
+    "bibliography_keys": 24,
+    "missing_citations": [],
+    "missing_labels": [],
+    "duplicate_labels": [],
+    "passed": true
+  },
+  "parent_final_polish_review": {
+    "at": "2026-10-03T00:27:08.623420+08:00",
+    "changes": [
+      {
+        "path": "/home/data3/txy/docs/paper/latex/sections/declarations.tex",
+        "before_sha256": "a57600ece14eb85151be39082fd2f437c5508a36cf750122763b5bf4bb54ddcf",
+        "after_sha256": "4d99ee47f176497a1df9813e91614132b4b09b4bb4b467608d3795147dc0fd8b"
+      }
+    ],
+    "read_scope": "Complete final declarations and appendix_reproduction; results lines105–135 containing the two changed footnotes. Other sections were completely read immediately before these edits.",
+    "finding": "Pinned external-source URLs match recorded acquisition versions. New scope generator is explicitly named and summary plotting is correctly distinguished from prior full-record auditing. Concise declarations retain private-access, source licensing, actual ethics status, author/funding placeholders and AI assistance disclosure. No unsupported new claim introduced.",
+    "passed": true,
+    "final_declarations_note": "Final AI-assistance wording reread after four-sentence compression; assistance scope, no new model-evaluation results, author review/accountability and venue-specific disclosure responsibility preserved."
+  },
+  "open_nonblocking_advisories": []
+}

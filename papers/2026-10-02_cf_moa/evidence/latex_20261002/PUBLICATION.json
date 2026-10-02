@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-02",
+  "format": "Maintained LaTeX source with actual XeTeX/BibTeX compilation",
+  "canonical_source": "latex/main.tex",
+  "pdf": "manuscript.pdf",
+  "compiler": "Tectonic 0.17.0 (XeTeX + BibTeX + xdvipdfmx)",
+  "pdf_sha256": "3c48023e95da9c93a84693ebe6cb09c50a336d5b96c9b3dc59b1bc6c929388f9",
+  "pdf_pages": 21,
+  "previous_publication_commit": "7308479a5b968052b64603080f14b588a5dda30d",
+  "previous_publication_record": "legacy_typst/initial_publication.json",
+  "repository_visibility": "private",
+  "latex_zip": {
+    "path": "cf_moa_latex.zip",
+    "bytes": 301880,
+    "sha256": "2dd34ccd9ccfa10a8cef9b138720e77ecf126868001241b194d7190e63c4b865",
+    "files": 34
+  },
+  "unchanged_initial_bundle": {
+    "path": "cf_moa_paper_bundle.zip",
+    "sha256": "cf7684479fc0e40d60dc76d8c41711f601143cc324116d23a00716cbff401877"
+  },
+  "migration": "One-time Pandoc natbib migration followed by direct LaTeX editing, native table/figure/equation labels, real BibTeX and layout review. Normal builds do not use Markdown, Pandoc or Typst.",
+  "historical_formats": "Existing Word/HTML/Markdown are unchanged snapshots of the initial edition; exported .tex and .typ moved to legacy_typst/.",
+  "data_unchanged": "Original inputs, experimental figures/tables and figure reproduction script remain byte-identical.",
+  "verification": [
+    "validation/latex_build_receipt.json",
+    "validation/latex_source_audit.json",
+    "validation/latex_portable_build_receipt.json",
+    "validation/latex_build_attempts.json"
+  ],
+  "model_calls": 0,
+  "grader_calls": 0,
+  "gpu_operations": 0
+}

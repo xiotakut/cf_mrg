@@ -1,8 +1,10 @@
-# CF-MoA LaTeX manuscript
+# Seven-system medical QA study — LaTeX manuscript
 
 Edit `main.tex`, `sections/*.tex`, `tables/*.tex`, and `references.bib` directly. This is the maintained manuscript source. The initial prose was migrated once from the frozen Markdown draft; subsequent document builds compile LaTeX directly.
 
-The project contains the complete English manuscript, eight manuscript tables, five vector figures, and twenty bibliography entries. The layout is a generic single-column review manuscript, not a specific conference template. Author names and affiliations remain to be supplied by the authors.
+The study presents seven full-v5 baseline configurations, seven-system R1–R3 terminal-head development results, and the later M4/M5 six-arm CF-MoA comparison as distinct experimental stages. M4 and M5 are two MedRAG configurations; the seven rows span six method families.
+
+The project contains the complete English manuscript, eleven manuscript tables, six vector figures, and twenty-four bibliography entries. The layout is a generic single-column review manuscript, not a specific conference template. Author names and affiliations remain to be supplied by the authors.
 
 ## Build
 
@@ -29,10 +31,10 @@ For Overleaf, upload the files with their directory structure intact, choose `ma
 ## Contents
 
 - `main.tex`: document class, preamble, chapter order, and bibliography configuration.
-- `sections/`: abstract, nine main sections, declarations, and three appendices.
-- `tables/`: eight native LaTeX manuscript tables with labels and cross-references.
-- `figures/`: five vector PDFs copied without changing the saved results.
-- `references.bib`: the twenty previously verified bibliography records, used through natbib and BibTeX.
+- `sections/`: abstract, main sections, declarations, and appendices.
+- `tables/`: eleven native LaTeX manuscript tables with labels and cross-references.
+- `figures/`: six vector PDFs derived from saved results.
+- `references.bib`: twenty-four primary-source-checked bibliography records, used through natbib and BibTeX.
 - `build.sh`: direct LaTeX compilation; no Markdown, Pandoc, or Typst dependency.
 
 The broader delivery directory contains the frozen numerical inputs, CSV/LaTeX data tables, and figure reproduction script. Compiling this manuscript does not execute model inference or native grading. The exposed-development status, negative results, default B, and unexecuted independent confirmation remain part of the paper.
