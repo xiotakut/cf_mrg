@@ -1,0 +1,61 @@
+{
+  "status": "passed_content_and_render_parity",
+  "zip_files": 10,
+  "pages": 10,
+  "pdf_byte_equal": false,
+  "pdf_text_equal_each_page": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "pdf_render_equal_each_page": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "canonical_pdf_sha256": "9a8b97fc56f775eb9da52a6f89f0cf3a95db165ba4e3e0bf1dd71d602cb6a475",
+  "isolated_pdf_sha256": "53e9199d0fa5f00ac48ff1c04a798c8d0a09b00e48a9078e48583e414cd588c8",
+  "metadata_canonical": {
+    "format": "PDF 1.5",
+    "title": "CF-MoA: Taxonomy-Guided Benchmarking and Agent Orchestration for Counterfactual Medical Reasoning",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "LaTeX with hyperref",
+    "producer": "xdvipdfmx (0.1)",
+    "creationDate": "D:20261002171236-00'00'",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "metadata_isolated": {
+    "format": "PDF 1.5",
+    "title": "CF-MoA: Taxonomy-Guided Benchmarking and Agent Orchestration for Counterfactual Medical Reasoning",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "LaTeX with hyperref",
+    "producer": "xdvipdfmx (0.1)",
+    "creationDate": "D:20261002171605-00'00'",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "initial_check_failure": "Byte-equality assertion failed; PDF creation timestamps differ between build times. Source, extracted text, and all rendered page pixels are equal. No numerical or visual difference.",
+  "new_model_calls": 0,
+  "new_grader_calls": 0
+}

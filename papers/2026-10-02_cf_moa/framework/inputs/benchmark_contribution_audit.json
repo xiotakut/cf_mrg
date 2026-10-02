@@ -1,0 +1,2147 @@
+{
+  "audit_date": "2026-10-02T16:59:16.769758+00:00",
+  "scope": "Benchmark/taxonomy contribution and original study logic; read-only aggregate and membership verification, no clinical reannotation or new scoring.",
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "new_native_scoring": 0,
+  "counts": {
+    "catalog_sources": 26,
+    "acquired_sources": 15,
+    "acquired_text_sources": 14,
+    "acquired_missing_image_metadata_sources": 1,
+    "unacquired_target_sources": 11,
+    "archive_comparison_records": 55991,
+    "archive_text_records": 53494,
+    "archive_missing_image_metadata_records": 2497,
+    "initial_reviewed_units": 28243,
+    "initial_reviewed_text_units": 25746,
+    "initial_reviewed_judgments": 80910,
+    "sampling_omission_units_completed": 24436,
+    "deferred_R5_units_reviewed_for_eligibility": 18238,
+    "v4_reviewed_judgments": 109599,
+    "v4_eligible_judgments": 77781,
+    "v4_eligible_units": 38123,
+    "v4_eligible_sources": 11,
+    "v4_eligible_R5_units": 35872,
+    "v5_unique_units": 6104,
+    "v5_unique_judgments": 13000,
+    "v5_eligible_sources": 11,
+    "v5_unique_inputs_per_system": 13905,
+    "v5_native_score_mappings_per_system": 15616,
+    "v5_target_input_mapping_rows": 34753,
+    "v5_R5_sources": 8,
+    "v5_R5_units_per_source": 450
+  },
+  "machine_checks": {
+    "archive_unique_rows": 55991,
+    "v4_target_rows": 109599,
+    "v4_unique_eligible_units_match_archive": true,
+    "v4_eligible_target_rows": 77781,
+    "v5_selected_target_rows": 13000,
+    "v5_unique_unit_rows": 6104,
+    "v5_all_v4_target_semantics_preserved_records": 109599,
+    "v5_all_eligible_R1_R4_target_ID_sets_preserved": true,
+    "v5_source_summary_matches_unit_and_target_files": true,
+    "sampling_replay": {
+      "M10": {
+        "pool": 4691,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M11": {
+        "pool": 1098,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M12": {
+        "pool": 4149,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M14": {
+        "pool": 5647,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M17": {
+        "pool": 3570,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M20": {
+        "pool": 703,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M22": {
+        "pool": 3423,
+        "selected": 450,
+        "exact_replay": true
+      },
+      "M23": {
+        "pool": 12591,
+        "selected": 450,
+        "exact_replay": true
+      }
+    },
+    "unique_input_count": 13905,
+    "native_mapping_count": 15616,
+    "all_input_ids_used_in_mappings": true,
+    "item_schema": [
+      "item_id",
+      "question",
+      "options",
+      "fixed_evidence",
+      "answer_format"
+    ],
+    "mapping_schema": [
+      "record_id",
+      "unit_id",
+      "resource_id",
+      "benchmark",
+      "item_id",
+      "group_id",
+      "source_family",
+      "role",
+      "task",
+      "target",
+      "labels",
+      "gold",
+      "scoring_eligible",
+      "scoring_exclusion",
+      "review_resolution",
+      "split",
+      "source",
+      "old_evaluation_record",
+      "judgment_ids",
+      "evaluation_labels"
+    ],
+    "mapping_roles": {
+      "reference": 6818,
+      "variant": 6875,
+      "counterfactual": 167,
+      "variant_08": 37,
+      "variant_00": 56,
+      "variant_04": 52,
+      "variant_09": 42,
+      "variant_05": 45,
+      "variant_07": 39,
+      "variant_01": 52,
+      "variant_02": 54,
+      "variant_06": 28,
+      "variant_03": 44,
+      "variant_10": 1,
+      "variant_13": 1,
+      "t1_i": 57,
+      "t2_c": 62,
+      "t1_c": 61,
+      "t1_ic": 54,
+      "t2_i": 55,
+      "t2_ic": 57,
+      "t3_i": 54,
+      "t3_c": 55,
+      "t3_ic": 62,
+      "variant_1": 198,
+      "variant_2": 198,
+      "variant_3": 197,
+      "variant_4": 195
+    },
+    "target_input_mapping_rows_independently_counted": 34753,
+    "reference_native_mappings": 6818,
+    "nonreference_native_mappings": 8798,
+    "all_recorded_source_hashes_unchanged_at_completion": true,
+    "source_files_verified": 33
+  },
+  "tables": {
+    "archive_sources": {
+      "M01": 5383,
+      "M02": 183,
+      "M12": 4806,
+      "M14": 6296,
+      "M16": 323,
+      "M22": 3680,
+      "M23": 12615,
+      "M24": 4013,
+      "M25": 2497,
+      "M10": 10225,
+      "M11": 1349,
+      "M20": 809,
+      "M05": 33,
+      "M06": 20,
+      "M17": 3759
+    },
+    "v4_sources": [
+      {
+        "resource_id": "M01",
+        "benchmark": "MedEinst",
+        "archive_units": "5383",
+        "adopted_units": "1780",
+        "not_adopted_units": "3603",
+        "previously_ineligible_units": "3603",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "2816",
+        "R1": "1780",
+        "R2": "0",
+        "R3": "680",
+        "R4": "0",
+        "R5": "0",
+        "reason": "无变化参照；前后文本不足以支持具体关系；实际编辑与声明不符、关键上下文删除等构造无效。并非随机抽样。"
+      },
+      {
+        "resource_id": "M02",
+        "benchmark": "MedPIC-Bench",
+        "archive_units": "183",
+        "adopted_units": "167",
+        "not_adopted_units": "16",
+        "previously_ineligible_units": "16",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "182",
+        "R1": "96",
+        "R2": "75",
+        "R3": "10",
+        "R4": "0",
+        "R5": "0",
+        "reason": "12个目标缺少明确前态或风险支持撤销依据；4个目标的病例、变化方向与参考规则不一致。这里每单元一个目标，共16个单元未采用。"
+      },
+      {
+        "resource_id": "M05",
+        "benchmark": "临床检验因果推理评测",
+        "archive_units": "33",
+        "adopted_units": "0",
+        "not_adopted_units": "33",
+        "previously_ineligible_units": "33",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "0",
+        "reason": "30个有标签单元的新答案需人工/rubric语义评分；另2个依据不足、1个题干构造无效。"
+      },
+      {
+        "resource_id": "M06",
+        "benchmark": "HIV治疗因果情景研究",
+        "archive_units": "20",
+        "adopted_units": "13",
+        "not_adopted_units": "7",
+        "previously_ineligible_units": "7",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "13",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "13",
+        "R5": "0",
+        "reason": "5个单元缺少改变前提到结果的充分依据；2个干预指代/构造无效。"
+      },
+      {
+        "resource_id": "M10",
+        "benchmark": "CPV-MedQA",
+        "archive_units": "10225",
+        "adopted_units": "4692",
+        "not_adopted_units": "5533",
+        "previously_ineligible_units": "5533",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "4692",
+        "R1": "1",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "4691",
+        "reason": "患者性别等实际文本冲突、比较构造无效；无法确认具体不变关系；必要图像缺失。含已分类但仍缺图的4个目标，不能把相同gold当评分资格。"
+      },
+      {
+        "resource_id": "M11",
+        "benchmark": "Counterfactual Cultural Cues",
+        "archive_units": "1349",
+        "adopted_units": "1165",
+        "not_adopted_units": "184",
+        "previously_ineligible_units": "184",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "1165",
+        "R1": "67",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "1098",
+        "reason": "173个分类关系依据不足、2个仅格式修改、9个需要缺失图像，共184个单元。"
+      },
+      {
+        "resource_id": "M12",
+        "benchmark": "FairMedQA/AMQA",
+        "archive_units": "4806",
+        "adopted_units": "4283",
+        "not_adopted_units": "523",
+        "previously_ineligible_units": "523",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "4283",
+        "R1": "134",
+        "R2": "0",
+        "R3": "43",
+        "R4": "0",
+        "R5": "4149",
+        "reason": "508个单元未能确立具体分类关系；15个单元依赖缺失图片，共523个单元。"
+      },
+      {
+        "resource_id": "M14",
+        "benchmark": "DiversityMedQA",
+        "archive_units": "6296",
+        "adopted_units": "5651",
+        "not_adopted_units": "645",
+        "previously_ineligible_units": "645",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "5651",
+        "R1": "0",
+        "R2": "4",
+        "R3": "0",
+        "R4": "0",
+        "R5": "5647",
+        "reason": "297个依据不足、112个构造无效、11个五类外；另225个已分类目标因缺图或参考等资格问题未采用，共645个单元。"
+      },
+      {
+        "resource_id": "M16",
+        "benchmark": "EquityMedQA",
+        "archive_units": "323",
+        "adopted_units": "0",
+        "not_adopted_units": "323",
+        "previously_ineligible_units": "323",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "0",
+        "reason": "新答案需人工语义评分；另包含作者因处理错误撤回的配对及依据不足子目标。已发布历史人评分不能用于新模型答案。"
+      },
+      {
+        "resource_id": "M17",
+        "benchmark": "MedPerturb",
+        "archive_units": "3759",
+        "adopted_units": "3570",
+        "not_adopted_units": "189",
+        "previously_ineligible_units": "189",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "10641",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "3570",
+        "reason": "原有无变化参照与新增查明的编辑性声明控制；截断/错改正文等无效构造；分类依据不足；必要图像缺失。按VISIT、MANAGE、RESOURCE分别判断，至少一个合格目标才计采用单元。"
+      },
+      {
+        "resource_id": "M20",
+        "benchmark": "MedCounterFact",
+        "archive_units": "809",
+        "adopted_units": "788",
+        "not_adopted_units": "21",
+        "previously_ineligible_units": "21",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "1720",
+        "R1": "788",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "703",
+        "reason": "21个单元的治疗臂替换后无法恢复清晰的比较指代；数字保留不代表仍有有效对照关系。"
+      },
+      {
+        "resource_id": "M22",
+        "benchmark": "MedRGB",
+        "archive_units": "3680",
+        "adopted_units": "3423",
+        "not_adopted_units": "257",
+        "previously_ineligible_units": "257",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "34027",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "3423",
+        "reason": "200个单元对应长答案语义rubric，57个单元依赖缺失图片，共257个单元未采用。保留单元中的错误文档定位/自由纠正等辅助目标另判资格，不能从主问继承。"
+      },
+      {
+        "resource_id": "M23",
+        "benchmark": "BioRAB",
+        "archive_units": "12615",
+        "adopted_units": "12591",
+        "not_adopted_units": "24",
+        "previously_ineligible_units": "24",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "12591",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "12591",
+        "reason": "8个分类依据不足，16个已分类目标存在原参考冲突、文本截断或结论缺失等评分限制，共24个单元。"
+      },
+      {
+        "resource_id": "M24",
+        "benchmark": "MedCF",
+        "archive_units": "4013",
+        "adopted_units": "0",
+        "not_adopted_units": "4013",
+        "previously_ineligible_units": "4013",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "0",
+        "reason": "3,215个作者train/valid实际编辑不混入test；797个已分类暂缓单元需要原生知识编辑步骤，当前文本问答协议未执行；另1个旧test记录未能定类。"
+      },
+      {
+        "resource_id": "M25",
+        "benchmark": "MedMKEB",
+        "archive_units": "2497",
+        "adopted_units": "0",
+        "not_adopted_units": "2497",
+        "previously_ineligible_units": "2497",
+        "new_scope_excluded_units": "0",
+        "adopted_targets": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "0",
+        "reason": "2,497个eval比较单元缺少当前任务需要的图像，文本方法不能执行；其中子目标是否已分类另行保留。"
+      }
+    ],
+    "v4_category_summary": [
+      {
+        "category": "R1",
+        "classified_units": "2967",
+        "eligible_units": "2866",
+        "classified_targets": "4267",
+        "eligible_targets": "4155"
+      },
+      {
+        "category": "R2",
+        "classified_units": "90",
+        "eligible_units": "79",
+        "classified_targets": "90",
+        "eligible_targets": "79"
+      },
+      {
+        "category": "R3",
+        "classified_units": "795",
+        "eligible_units": "733",
+        "classified_targets": "795",
+        "eligible_targets": "733"
+      },
+      {
+        "category": "R4",
+        "classified_units": "139",
+        "eligible_units": "13",
+        "classified_targets": "139",
+        "eligible_targets": "13"
+      },
+      {
+        "category": "R5",
+        "classified_units": "40003",
+        "eligible_units": "35872",
+        "classified_targets": "83034",
+        "eligible_targets": "74268"
+      }
+    ],
+    "v5_sources": [
+      {
+        "resource_id": "M01",
+        "benchmark": "MedEinst",
+        "adopted_units": "1780",
+        "adopted_targets": "2816",
+        "in_frozen_v3": "843",
+        "R1": "1780",
+        "R2": "0",
+        "R3": "680",
+        "R4": "0",
+        "R5": "0"
+      },
+      {
+        "resource_id": "M02",
+        "benchmark": "MedPIC-Bench",
+        "adopted_units": "167",
+        "adopted_targets": "182",
+        "in_frozen_v3": "167",
+        "R1": "96",
+        "R2": "75",
+        "R3": "10",
+        "R4": "0",
+        "R5": "0"
+      },
+      {
+        "resource_id": "M06",
+        "benchmark": "HIV治疗因果情景研究",
+        "adopted_units": "13",
+        "adopted_targets": "13",
+        "in_frozen_v3": "13",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "13",
+        "R5": "0"
+      },
+      {
+        "resource_id": "M10",
+        "benchmark": "CPV-MedQA",
+        "adopted_units": "451",
+        "adopted_targets": "451",
+        "in_frozen_v3": "102",
+        "R1": "1",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M11",
+        "benchmark": "Counterfactual Cultural Cues",
+        "adopted_units": "517",
+        "adopted_targets": "517",
+        "in_frozen_v3": "67",
+        "R1": "67",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M12",
+        "benchmark": "FairMedQA/AMQA",
+        "adopted_units": "584",
+        "adopted_targets": "584",
+        "in_frozen_v3": "134",
+        "R1": "134",
+        "R2": "0",
+        "R3": "43",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M14",
+        "benchmark": "DiversityMedQA",
+        "adopted_units": "454",
+        "adopted_targets": "454",
+        "in_frozen_v3": "2",
+        "R1": "0",
+        "R2": "4",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M17",
+        "benchmark": "MedPerturb",
+        "adopted_units": "450",
+        "adopted_targets": "1344",
+        "in_frozen_v3": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M20",
+        "benchmark": "MedCounterFact",
+        "adopted_units": "788",
+        "adopted_targets": "1720",
+        "in_frozen_v3": "788",
+        "R1": "788",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M22",
+        "benchmark": "MedRGB",
+        "adopted_units": "450",
+        "adopted_targets": "4469",
+        "in_frozen_v3": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      },
+      {
+        "resource_id": "M23",
+        "benchmark": "BioRAB",
+        "adopted_units": "450",
+        "adopted_targets": "450",
+        "in_frozen_v3": "0",
+        "R1": "0",
+        "R2": "0",
+        "R3": "0",
+        "R4": "0",
+        "R5": "450"
+      }
+    ],
+    "v5_category_summary": [
+      {
+        "category": "R1",
+        "adopted_units": "2866",
+        "adopted_targets": "4155",
+        "benchmark_count": "6"
+      },
+      {
+        "category": "R2",
+        "adopted_units": "79",
+        "adopted_targets": "79",
+        "benchmark_count": "2"
+      },
+      {
+        "category": "R3",
+        "adopted_units": "733",
+        "adopted_targets": "733",
+        "benchmark_count": "3"
+      },
+      {
+        "category": "R4",
+        "adopted_units": "13",
+        "adopted_targets": "13",
+        "benchmark_count": "1"
+      },
+      {
+        "category": "R5",
+        "adopted_units": "3600",
+        "adopted_targets": "8959",
+        "benchmark_count": "8"
+      }
+    ],
+    "r5_sampling": [
+      {
+        "resource_id": "M10",
+        "benchmark": "CPV-MedQA",
+        "pool_units": "4691",
+        "selected_units": "450",
+        "sample_fraction": "0.09592837348113409",
+        "pool_root_ids": "931",
+        "selected_root_ids": "374",
+        "max_variants_per_selected_root": "4",
+        "in_frozen_v3": "101"
+      },
+      {
+        "resource_id": "M11",
+        "benchmark": "Counterfactual Cultural Cues",
+        "pool_units": "1098",
+        "selected_units": "450",
+        "sample_fraction": "0.4098360655737705",
+        "pool_root_ids": "134",
+        "selected_root_ids": "133",
+        "max_variants_per_selected_root": "7",
+        "in_frozen_v3": "0"
+      },
+      {
+        "resource_id": "M12",
+        "benchmark": "FairMedQA/AMQA",
+        "pool_units": "4149",
+        "selected_units": "450",
+        "sample_fraction": "0.10845986984815618",
+        "pool_root_ids": "796",
+        "selected_root_ids": "357",
+        "max_variants_per_selected_root": "4",
+        "in_frozen_v3": "0"
+      },
+      {
+        "resource_id": "M14",
+        "benchmark": "DiversityMedQA",
+        "pool_units": "5647",
+        "selected_units": "450",
+        "sample_fraction": "0.07968833008677173",
+        "pool_root_ids": "1495",
+        "selected_root_ids": "380",
+        "max_variants_per_selected_root": "4",
+        "in_frozen_v3": "0"
+      },
+      {
+        "resource_id": "M17",
+        "benchmark": "MedPerturb",
+        "pool_units": "3570",
+        "selected_units": "450",
+        "sample_fraction": "0.12605042016806722",
+        "pool_root_ids": "1817",
+        "selected_root_ids": "412",
+        "max_variants_per_selected_root": "2",
+        "in_frozen_v3": "0"
+      },
+      {
+        "resource_id": "M20",
+        "benchmark": "MedCounterFact",
+        "pool_units": "703",
+        "selected_units": "450",
+        "sample_fraction": "0.6401137980085349",
+        "pool_root_ids": "190",
+        "selected_root_ids": "183",
+        "max_variants_per_selected_root": "4",
+        "in_frozen_v3": "450"
+      },
+      {
+        "resource_id": "M22",
+        "benchmark": "MedRGB",
+        "pool_units": "3423",
+        "selected_units": "450",
+        "sample_fraction": "0.13146362839614373",
+        "pool_root_ids": "3423",
+        "selected_root_ids": "450",
+        "max_variants_per_selected_root": "1",
+        "in_frozen_v3": "0"
+      },
+      {
+        "resource_id": "M23",
+        "benchmark": "BioRAB",
+        "pool_units": "12591",
+        "selected_units": "450",
+        "sample_fraction": "0.035739814152966405",
+        "pool_root_ids": "5555",
+        "selected_root_ids": "437",
+        "max_variants_per_selected_root": "2",
+        "in_frozen_v3": "0"
+      }
+    ],
+    "baseline_ranges": {
+      "ALL": {
+        "n": 6104,
+        "scores_pct": {
+          "M0": 48.103975535168196,
+          "M2": 48.81334643949323,
+          "M3": 51.60823503713412,
+          "M4": 48.19899519440804,
+          "M5": 47.348733071210134,
+          "M6": 48.02479248580166,
+          "M7": 49.43042813455658
+        },
+        "min_pct": 47.348733071210134,
+        "max_pct": 51.60823503713412
+      },
+      "R1": {
+        "n": 2866,
+        "scores_pct": {
+          "M0": 30.041870202372646,
+          "M2": 31.332868108862527,
+          "M3": 26.727145847871597,
+          "M4": 27.84368457780879,
+          "M5": 28.576413119330073,
+          "M6": 29.937194696441033,
+          "M7": 31.437543614794137
+        },
+        "min_pct": 26.727145847871597,
+        "max_pct": 31.437543614794137
+      },
+      "R2": {
+        "n": 79,
+        "scores_pct": {
+          "M0": 8.860759493670885,
+          "M2": 7.59493670886076,
+          "M3": 34.177215189873415,
+          "M4": 29.11392405063291,
+          "M5": 41.77215189873418,
+          "M6": 18.9873417721519,
+          "M7": 29.11392405063291
+        },
+        "min_pct": 7.59493670886076,
+        "max_pct": 41.77215189873418
+      },
+      "R3": {
+        "n": 733,
+        "scores_pct": {
+          "M0": 17.871759890859483,
+          "M2": 24.69304229195089,
+          "M3": 8.594815825375171,
+          "M4": 30.42291950886767,
+          "M5": 25.2387448840382,
+          "M6": 21.418826739427015,
+          "M7": 28.922237380627557
+        },
+        "min_pct": 8.594815825375171,
+        "max_pct": 30.42291950886767
+      },
+      "R4": {
+        "n": 13,
+        "scores_pct": {
+          "M0": 38.46153846153847,
+          "M2": 53.84615384615385,
+          "M3": 38.46153846153847,
+          "M4": 53.84615384615385,
+          "M5": 53.84615384615385,
+          "M6": 61.53846153846154,
+          "M7": 30.76923076923077
+        },
+        "min_pct": 30.76923076923077,
+        "max_pct": 61.53846153846154
+      },
+      "R5": {
+        "n": 3600,
+        "scores_pct": {
+          "M0": 65.70185185185186,
+          "M2": 65.87685185185185,
+          "M3": 73.36574074074073,
+          "M4": 65.27962962962962,
+          "M5": 63.42129629629629,
+          "M6": 65.15092592592593,
+          "M7": 66.17314814814816
+        },
+        "min_pct": 63.42129629629629,
+        "max_pct": 73.36574074074073
+      }
+    }
+  },
+  "overlap": {
+    "v5_exact_unit_label_combinations": {
+      "R1|R3": 730,
+      "R1": 1682,
+      "R2": 75,
+      "R1|R2": 1,
+      "R1|R2|R3": 3,
+      "R4": 13,
+      "R5": 3150,
+      "R1|R5": 450
+    },
+    "v5_pairwise_intersections": {
+      "R1 & R2": 4,
+      "R1 & R3": 733,
+      "R1 & R4": 0,
+      "R1 & R5": 450,
+      "R2 & R3": 3,
+      "R2 & R4": 0,
+      "R2 & R5": 0,
+      "R3 & R4": 0,
+      "R3 & R5": 0,
+      "R4 & R5": 0
+    },
+    "v5_category_unit_memberships_sum": 7291,
+    "v5_unique_unit_union": 6104,
+    "v5_target_label_memberships": {
+      "R1": 4155,
+      "R3": 733,
+      "R5": 8959,
+      "R2": 79,
+      "R4": 13
+    },
+    "v4_target_semantic_memberships": {
+      "R1": 4267,
+      "R3": 795,
+      "R5": 83034,
+      "R2": 90,
+      "R4": 139
+    },
+    "v4_eligible_target_label_memberships": {
+      "R1": 4155,
+      "R3": 733,
+      "R5": 74268,
+      "R2": 79,
+      "R4": 13
+    }
+  },
+  "quality_audit": {
+    "historical_provenance_audit": {
+      "audit_date": "2026-09-08",
+      "network_mode": "independently_downloaded_dated_snapshots",
+      "source_catalog_review_count": 26,
+      "missing_catalog_reviews": [],
+      "source_catalog_verdicts": {
+        "verified": 26
+      },
+      "control_source_review_count": 2,
+      "control_source_verdicts": {
+        "verified": 2
+      },
+      "counts": {
+        "unit": {
+          "verified": 55991
+        },
+        "unit:M01": {
+          "verified": 5383
+        },
+        "frozen_from_full": {
+          "verified": 28243
+        },
+        "unit:M02": {
+          "verified": 183
+        },
+        "unit:M12": {
+          "verified": 4806
+        },
+        "unit:M14": {
+          "verified": 6296
+        },
+        "unit:M16": {
+          "verified": 323
+        },
+        "unit:M22": {
+          "verified": 3680
+        },
+        "unit:M23": {
+          "verified": 12615
+        },
+        "unit:M24": {
+          "verified": 4013
+        },
+        "unit:M25": {
+          "verified": 2497
+        },
+        "unit:M10": {
+          "verified": 10225
+        },
+        "unit:M11": {
+          "verified": 1349
+        },
+        "unit:M20": {
+          "verified": 809
+        },
+        "unit:M05": {
+          "verified": 33
+        },
+        "unit:M06": {
+          "verified": 20
+        },
+        "unit:M17": {
+          "verified": 3759
+        },
+        "frozen": {
+          "verified": 28243
+        },
+        "frozen:M01": {
+          "verified": 2500
+        },
+        "frozen:M02": {
+          "verified": 183
+        },
+        "frozen:M12": {
+          "verified": 4806
+        },
+        "frozen:M14": {
+          "verified": 2500
+        },
+        "frozen:M16": {
+          "verified": 323
+        },
+        "frozen:M22": {
+          "verified": 3680
+        },
+        "frozen:M23": {
+          "verified": 2500
+        },
+        "frozen:M24": {
+          "verified": 798
+        },
+        "frozen:M25": {
+          "verified": 2497
+        },
+        "frozen:M10": {
+          "verified": 2500
+        },
+        "frozen:M11": {
+          "verified": 1349
+        },
+        "frozen:M20": {
+          "verified": 809
+        },
+        "frozen:M05": {
+          "verified": 33
+        },
+        "frozen:M06": {
+          "verified": 20
+        },
+        "frozen:M17": {
+          "verified": 3745
+        },
+        "root": {
+          "verified": 11751
+        },
+        "root:M12": {
+          "verified": 801
+        },
+        "root:M14": {
+          "verified": 1707
+        },
+        "root:M22": {
+          "verified": 3680
+        },
+        "root:M23": {
+          "verified": 5563
+        },
+        "reference": {
+          "verified": 5763
+        },
+        "reference:M01": {
+          "verified": 83
+        },
+        "reference:M17": {
+          "verified": 14
+        },
+        "reference:M14": {
+          "verified": 84
+        },
+        "reference:M22": {
+          "verified": 3480
+        },
+        "reference:M23": {
+          "verified": 1
+        },
+        "reference:M24": {
+          "verified": 15
+        },
+        "reference:M10": {
+          "verified": 2085
+        },
+        "reference:M11": {
+          "verified": 1
+        }
+      },
+      "used_raw_files": 25,
+      "cached_file_comparisons": 38,
+      "independently_downloaded_files_compared": 36,
+      "raw_file_results": {
+        "verified": 38
+      },
+      "medpic_reference_check": {
+        "file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/parts/clinical_existing/raw/medpic_questions_all467.json",
+        "total_rows": 467,
+        "gf_rows": 284,
+        "status": "verified",
+        "differences": []
+      },
+      "record_issue_count": 0,
+      "boundaries": [
+        "Verified means fidelity to the published data, not medical correctness of author-generated data.",
+        "Paper-to-author links and PDF transcription need reviewed evidence; HTTP 200 alone never verifies authenticity.",
+        "Original source-owned response columns are compared as data only; no model outcome determines functional labels.",
+        "Missing multimodal images are not audited as present; text metadata fidelity does not certify image input completeness."
+      ]
+    },
+    "historical_classification_audit": {
+      "input_file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/分析子集.jsonl",
+      "audit_kind": "read_only_classification_audit",
+      "audit_status": "issues_found",
+      "units": 28243,
+      "resources": 15,
+      "units_by_resource": {
+        "M01": 2500,
+        "M02": 183,
+        "M12": 4806,
+        "M14": 2500,
+        "M16": 323,
+        "M22": 3680,
+        "M23": 2500,
+        "M24": 798,
+        "M25": 2497,
+        "M10": 2500,
+        "M11": 1349,
+        "M20": 809,
+        "M05": 33,
+        "M06": 20,
+        "M17": 3745
+      },
+      "judgments": 80910,
+      "full_structure": {
+        "errors": 0,
+        "checked_units": 28243,
+        "verdict": "pass",
+        "semantic_validity_proved": false
+      },
+      "label_counts": {
+        "R1": 2030,
+        "R3": 389,
+        "R2": 88,
+        "R5": 22814,
+        "R4": 139
+      },
+      "judgment_resolution_counts": {
+        "classified": 64509,
+        "invalid_source": 1972,
+        "insufficient_evidence": 12763,
+        "outside_five_labels": 1666
+      },
+      "heuristic_review_queue": 0,
+      "source_gold_conflict_groups": 2,
+      "semantic_review": {
+        "record_role": "pre_correction_historical_review",
+        "reviewed_judgments": 187,
+        "reviewed_units": 187,
+        "reviewed_resources": 15,
+        "base_sample_judgments": 88,
+        "rule_expansion_judgments": 99,
+        "verdict_counts": {
+          "confirmed_problem": 92,
+          "supported": 83,
+          "needs_review": 3,
+          "gold_requires_review": 9
+        },
+        "base_sample_verdict_counts": {
+          "confirmed_problem": 3,
+          "supported": 80,
+          "needs_review": 1,
+          "gold_requires_review": 4
+        },
+        "issue_counts": {
+          "night_pattern_as_temporal_worsening": 80,
+          "current_absence_as_future_risk_withdrawal": 1,
+          "existing_family_history_as_new": 4,
+          "R3_unspecified_competing_candidate": 1,
+          "BioNLI_reference_needs_semantic_review": 1,
+          "locality_gold_entity_type_or_relation": 1,
+          "incorrect_locality_anatomical_gold": 1,
+          "possible_vs_common_consequence": 1,
+          "wrong_family_disease_binding": 4,
+          "negated_family_history_as_positive": 1,
+          "classification_target_unrelated_to_question": 2,
+          "unproved_family_risk_link": 2,
+          "BioNLI_same_language_conflicting_gold": 5
+        },
+        "missing_sample_judgments": [],
+        "incomplete_reasons": [],
+        "stale_reviews": [],
+        "all_units_semantically_audited": false,
+        "selection": "冻结文件物理顺序；按来源×标签取首个三分位、首/后三分位/末位，另取空标签中位；发现规则错误后明确扩查。未用模型结果。"
+      },
+      "correction_review": {
+        "proposed_corrections": 172,
+        "reviewed_judgments": 172,
+        "additional_to_historical_review": 65,
+        "unique_reviewed_judgments_across_rounds": 252,
+        "verdict_counts": {
+          "resolved": 172
+        },
+        "historical_problems_resolved": 104,
+        "remaining_label_problems": 0,
+        "gold_scoring_exclusions": 11,
+        "missing_reviews": [],
+        "invalid_reviews": [],
+        "unapplied_corrections": [],
+        "history_file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/classification/semantic_review.jsonl",
+        "current_review_file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/classification/correction_review.jsonl",
+        "procedure": "独立读取最终原题、原参考、编辑内容与当前完整子判断后审阅；修正声明和 before/after 相等不等于语义通过。"
+      },
+      "limitations": [
+        "结构通过只证明字段、目标绑定和审阅状态自洽，不证明医学关系或 gold 正确。",
+        "语义审核为非概率、按来源与标签的固定目的抽查及规则扩查，不能把发现比例估计成全库错误率。",
+        "R5 的原任务保持要求与原参考事实可靠性分别检查；未临床专家验收。",
+        "2497 条缺图多模态单元只审核已发布元数据；未进行图像真实性或图像诊断验收。"
+      ],
+      "predictions_read": false,
+      "source_or_labels_modified": false
+    },
+    "initial_review_methods": {
+      "semantic_item_review": 603,
+      "semantic_group_review": 13464,
+      "structural_verification": 14176
+    },
+    "historical_provenance_results_recounted": {
+      "catalog_records": 26,
+      "acquired_resources": 15,
+      "normalized_records_sum": 55991
+    },
+    "note": "This audit rereads historical receipts and counts frozen membership files. It does not repeat all 38 source-download comparisons or medical semantic audit. Purposeful 88+99 review and 172 follow-up corrections cannot estimate whole-corpus error rates.",
+    "interpretation": {
+      "initial_methods": {
+        "semantic_item_review": 603,
+        "semantic_group_review": 13464,
+        "structural_verification": 14176,
+        "total": 28243,
+        "clinical_review": false
+      },
+      "initial_fixed_audit": {
+        "judgments": 88,
+        "supported": 80,
+        "confirmed_problem": 3,
+        "needs_review": 1,
+        "gold_review": 4
+      },
+      "issue_triggered_extension": {
+        "additional_judgments": 99,
+        "total_audited": 187,
+        "supported": 83,
+        "confirmed_problem": 92,
+        "needs_review": 3,
+        "gold_review": 9
+      },
+      "correction": {
+        "judgments": 172,
+        "parent_units": 130,
+        "clinical": 129,
+        "amqa": 30,
+        "gold_family": 13,
+        "labels_withdrawn": 149,
+        "labels_retained_or_reassigned": 23,
+        "specific_native_references_disabled": 11,
+        "distinct_reviewed_targets_after_union": 252,
+        "all_172_rechecks_resolved": true
+      },
+      "cautions": [
+        "The 99-case extension deliberately targeted identified failure modes; 92/187 is not an estimated overall error rate.",
+        "A separate 704-unit AMQA feasibility correction preceded and overlaps the 172-judgment correction; do not add unlike denominators.",
+        "Resolved annotation issues do not certify all source gold or independent clinical truth.",
+        "Group/structural review and agent cross-review are not independent clinician adjudication."
+      ],
+      "evidence": "/home/data3/txy/docs/data/construction.md:1487"
+    }
+  },
+  "source_inventory": [
+    {
+      "resource_id": "M01",
+      "benchmark": "MedEinst",
+      "acquired": true,
+      "normalized_units": 5383,
+      "primary_urls": [
+        "https://arxiv.org/abs/2601.06636",
+        "https://github.com/zhui711/MedEinst",
+        "https://huggingface.co/datasets/zhui711/MedEinst"
+      ],
+      "selected_revision": "354f4b527e764a8f2bebea8f71be55e0a6966402",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留control/trap两个原病例和作者配对ID，开放诊断文本不转换成旧四选项代理。",
+        "归属MedEinst和DDXPlus；CF对与各端原记录分开计数。"
+      ]
+    },
+    {
+      "resource_id": "M02",
+      "benchmark": "MedPIC-Bench",
+      "acquired": true,
+      "normalized_units": 183,
+      "primary_urls": [
+        "https://arxiv.org/html/2608.03028v1",
+        "https://huggingface.co/TIM0927",
+        "https://huggingface.co/datasets/TIM0927/MedPIC-Bench"
+      ],
+      "selected_revision": "9ef6db4f13865b14fc2e6be3f94dcfaf3a0cf983",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留全部183条CF原题、多选答案和taxonomy；另带284条GF参照。",
+        "官方缺少正式pair_id时不猜配对；GF不额外计作CF。"
+      ]
+    },
+    {
+      "resource_id": "M03",
+      "benchmark": "MamaBench",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2607.14385v1",
+        "https://huggingface.co/datasets/HelpMum-Personal/MamaBench"
+      ],
+      "selected_revision": "d85c704fe19706da4dbb9768f7b47f797ca54a33",
+      "pending_reason": "gated病例未取得",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M04",
+      "benchmark": "肿瘤临床CF评测",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2605.30590v1",
+        "https://datalab.withprotege.ai/research/counterfactual-evaluation-reveals-hidden-capability-profiles-in-clinical-llms-and-agents"
+      ],
+      "selected_revision": "arXiv:2605.30590v1",
+      "pending_reason": "未定位原病例发布包",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M05",
+      "benchmark": "临床检验因果推理评测",
+      "acquired": true,
+      "normalized_units": 33,
+      "primary_urls": [
+        "https://www.nature.com/articles/s41746-026-02632-3",
+        "https://balubhasuran.github.io/publications/",
+        "https://github.com/balubhasuran/LLM_Causality_LabTest"
+      ],
+      "selected_revision": "6d0fbd1bc42cf604258f0fde4317a542d0b9090f",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留33条CF问题、XLSX中的题内背景与作者任务结构。",
+        "工作簿的重复模型块不增加独立题数；模型历史回答/人工模型评分不当新gold。"
+      ]
+    },
+    {
+      "resource_id": "M06",
+      "benchmark": "HIV治疗因果情景研究",
+      "acquired": true,
+      "normalized_units": 20,
+      "primary_urls": [
+        "https://www.nature.com/articles/s41746-026-02771-7",
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-026-02771-7/MediaObjects/41746_2026_2771_MOESM1_ESM.pdf"
+      ],
+      "selected_revision": "41746_2026_2771_MOESM1_ESM (2026-05-27)",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留实际取得的20条CF转录、原Scenario ID、问题、作者expected answer/explanation及PDF页定位。",
+        "同时带M06_cf_transcription.json与官方supplement.pdf或精确官方下载入口，说明人工转录/排版变换；不能称取得全部研究题。"
+      ]
+    },
+    {
+      "resource_id": "M07",
+      "benchmark": "CLIR-Bench",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2607.09880v1",
+        "https://huggingface.co/datasets/winall/CLIR-Bench"
+      ],
+      "selected_revision": "e7e1733b74819bbefa2a1b5bf653a0d1e00fbb9a",
+      "pending_reason": "指定CF编辑对未发布于所检树",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M08",
+      "benchmark": "ECG-Expert-QA",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2502.17475v3",
+        "https://github.com/Zaozzz/ECG-Expert-QA"
+      ],
+      "selected_revision": "4fcb46974eed422532772caa483a5e621f006ff1",
+      "pending_reason": "MCo固定文件未定位；MC不能替代",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M09",
+      "benchmark": "GenMedicalEval",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://github.com/MediaBrain-SJTU/GenMedicalEval",
+        "https://github.com/MediaBrain-SJTU/GenMedicalEval/blob/New/class/%E5%8C%BB%E7%96%97%E5%8F%8D%E4%BA%8B%E5%AE%9E.md"
+      ],
+      "selected_revision": "d2e096ab4c49e37517342be04f637915524c3459 (default New); main also inspected bc2d9db1bec27ab1b7e499ccfd3c12c59af4dc69",
+      "pending_reason": "仅栏目文档示例，未取得声明的12000条",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M10",
+      "benchmark": "CPV-MedQA",
+      "acquired": true,
+      "normalized_units": 10225,
+      "primary_urls": [
+        "https://huggingface.co/datasets/kenza-ily/medqa-cpv",
+        "https://huggingface.co/kenza-ily",
+        "https://aclanthology.org/2025.naacl-long.114/",
+        "https://github.com/kenza-ily/diagnose_treat_bias_llm"
+      ],
+      "selected_revision": "ba7e59489f4c8e2a32d977a099e95bc3bc2587b5",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留原MedQA题和每个CPV变体、原题ID、选项/答案及对应关系。",
+        "该发布是作者MedQA扩展；不承袭原论文JAMA病例的样本规模或人工验证声明。"
+      ]
+    },
+    {
+      "resource_id": "M11",
+      "benchmark": "Counterfactual Cultural Cues",
+      "acquired": true,
+      "normalized_units": 1349,
+      "primary_urls": [
+        "https://arxiv.org/html/2601.20102v1",
+        "https://github.com/HIVE-UofT/Evaluatiog-Cultural-Clues-Medical-LLMs",
+        "https://github.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs"
+      ],
+      "selected_revision": "5ded0d24cd3cb09e26ce3128a3fe7fa9f0a4631f",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留公开固定文化变体与对应MedQA原题；记录原题血缘及具体视图。",
+        "所选文件未发布neutral视图，不补造150条neutral；旧license.status末句no text redistribution没有作者条款依据，不作为禁令。"
+      ]
+    },
+    {
+      "resource_id": "M12",
+      "benchmark": "FairMedQA/AMQA",
+      "acquired": true,
+      "normalized_units": 4806,
+      "primary_urls": [
+        "https://arxiv.org/html/2505.19562v1",
+        "https://arxiv.org/html/2505.19562v2",
+        "https://github.com/XY-Showing/AMQA"
+      ],
+      "selected_revision": "335b1752ba4912d00050fa6531ba8d2c2aef6fb9",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留原题、desensitized_question、6种固定变体的文本、options和原answer；新分类另存。",
+        "新标注不引用作者历史模型预测；shared roots中的801个原病例不能丢。"
+      ]
+    },
+    {
+      "resource_id": "M13",
+      "benchmark": "MedEqualQA",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://aclanthology.org/2025.sciprodllm-1.4/",
+        "https://aclanthology.org/2025.sciprodllm-1.4.pdf",
+        "https://github.com/rajarshi51382/MEDEQUALQA"
+      ],
+      "selected_revision": "ef5a978a840747badd7c1a7c04f0b74bb7c9eff1",
+      "pending_reason": "所检作者仓库未发布题库",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M14",
+      "benchmark": "DiversityMedQA",
+      "acquired": true,
+      "normalized_units": 6296,
+      "primary_urls": [
+        "https://aclanthology.org/2024.nlp4pi-1.29.pdf",
+        "https://huggingface.co/datasets/Rajat1212/DiversityMedQA"
+      ],
+      "selected_revision": "b06f1e2f2ff9b07dc31355e650a9b41133ebeefb",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留CSV中的原题和Modified Question、Row Number、变体类型。",
+        "原CSV没有完整选项和gold；发布可审核文本对，但不能声称拿到完整可评分四选项输入。"
+      ]
+    },
+    {
+      "resource_id": "M15",
+      "benchmark": "CLIMB",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2407.05250v1",
+        "https://github.com/uscnlp-lime/climb",
+        "https://github.com/limenlp/CLIMB"
+      ],
+      "selected_revision": "73ca89135e36da44366b15acebffd6c835e3676a",
+      "pending_reason": "未取得固定诊断CF病例对",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M16",
+      "benchmark": "EquityMedQA",
+      "acquired": true,
+      "normalized_units": 323,
+      "primary_urls": [
+        "https://arxiv.org/html/2403.12025v2",
+        "https://arxiv.org/src/2403.12025v2/anc/equitymedqa_ratings.xlsx",
+        "https://www.nature.com/articles/s41591-024-03258-2"
+      ],
+      "selected_revision": "arXiv:2403.12025v2",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留CC-Manual/CC-LLM两端问题和pair ID、问题ID及实际ideal_answers_diff评级。",
+        "作者模型回答差异不是理想答案差异；Natal三题21对的数据问题标记与分歧评级一同保留。",
+        "需可追到官方XLSX及对应sheet/row，不只给本机sheet JSON路径。"
+      ]
+    },
+    {
+      "resource_id": "M17",
+      "benchmark": "MedPerturb",
+      "acquired": true,
+      "normalized_units": 3759,
+      "primary_urls": [
+        "https://arxiv.org/abs/2506.17163",
+        "https://medperturb.csail.mit.edu/",
+        "https://github.com/abinithago/MedPerturb",
+        "https://huggingface.co/datasets/abinitha/MedPerturb"
+      ],
+      "selected_revision": "5a121ca38b80e9d4e106e7f7926206f8c8dfce1e (GitHub); HF metadata 29e7420b421653fa9b84e4c0f06e54332729d049",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留原clinical_context、gender_swap/gender_removal文本、context_id、上游dataset和三类原任务。",
+        "保留既有人工评定覆盖差异，不能把6587行版本全称专家gold；实际原始背景不是全由本项目构造。"
+      ]
+    },
+    {
+      "resource_id": "M18",
+      "benchmark": "DeVisE",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2506.15339v1",
+        "https://github.com/camztag/DeVisE"
+      ],
+      "selected_revision": "d5a0b99e8ebb38a46270b3fe1cd22f3215787159",
+      "pending_reason": "仅生成代码，受限MIMIC病例未取得",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M19",
+      "benchmark": "MedFuzz",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2406.06573v2"
+      ],
+      "selected_revision": null,
+      "pending_reason": "未取得完整固定攻击输入release",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M20",
+      "benchmark": "MedCounterFact",
+      "acquired": true,
+      "normalized_units": 809,
+      "primary_urls": [
+        "https://arxiv.org/html/2601.11886v1",
+        "https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence"
+      ],
+      "selected_revision": "f35b98063b51a63e677829b6d173029d98dd3b1e",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "原始和替换QA均须含完整对应医学证据document、原文比较措辞、数字及作者任务要求。",
+        "作者假设/不合理证据不是现实医学事实；同名治疗臂冲突标记不可因发布删去。"
+      ]
+    },
+    {
+      "resource_id": "M21",
+      "benchmark": "MediEval",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://arxiv.org/html/2512.20822v2",
+        "https://github.com/ZhanQu945/MediEval"
+      ],
+      "selected_revision": "6b3593e2dc25981e936400ddd073d4758e96f94e",
+      "pending_reason": "受限患者上下文/知识源未取得",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    },
+    {
+      "resource_id": "M22",
+      "benchmark": "MedRGB",
+      "acquired": true,
+      "normalized_units": 3680,
+      "primary_urls": [
+        "https://arxiv.org/html/2411.09213",
+        "https://huggingface.co/datasets/ngotrnghia1811/MedRGB",
+        "https://huggingface.co/ngotrnghia1811"
+      ],
+      "selected_revision": "fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "主记录的CF document/子问、原主问和原gold均须保存。",
+        "必须带shared-root中的signal_documents与sub_qa_pairs；只带CF doc/问题会丢清洁对照。",
+        "DOC_n不是signal_documents数组下标，保留作者字段而不补造对应。"
+      ]
+    },
+    {
+      "resource_id": "M23",
+      "benchmark": "BioRAB",
+      "acquired": true,
+      "normalized_units": 12615,
+      "primary_urls": [
+        "https://arxiv.org/html/2405.08151v3",
+        "https://github.com/ToneLi/ToneLi-Evaluating-Retrival-LLM-in-Biomedical-Domain",
+        "https://drive.google.com/drive/folders/19d_pl89iD8I3-KDkqT1EuNr1Mg0zuW-5"
+      ],
+      "selected_revision": "a76aebff66a9612a33a21ad80d995216c08ddd24",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保存noise20/noise100输入和准确匹配的clean instruction/context/target；shared-root链接需能在发布目录内解析。",
+        "保留作者Drive folder和具体file ID；noise20两个公开ID经独立比对相同，不误记为虚构出处。",
+        "错误标注演示干扰不能包装成患者状态反事实。"
+      ]
+    },
+    {
+      "resource_id": "M24",
+      "benchmark": "MedCF",
+      "acquired": true,
+      "normalized_units": 4013,
+      "primary_urls": [
+        "https://arxiv.org/html/2402.18099v3",
+        "https://github.com/quqxui/MedLaSA"
+      ],
+      "selected_revision": "6cc1ec1703103454be393dac066e86b5cb0b0a9b",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留原医学事实、CF编辑目标、改写、locality问题与原ground truth；同时保留编辑协议。",
+        "问题gold的评分禁用/不充分标记不丢；不能把知识编辑改成普通prompt注入。"
+      ]
+    },
+    {
+      "resource_id": "M25",
+      "benchmark": "MedMKEB",
+      "acquired": true,
+      "normalized_units": 2497,
+      "primary_urls": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/40705",
+        "https://ojs.aaai.org/index.php/AAAI/article/download/40705/44666",
+        "https://arxiv.org/html/2508.05083v1",
+        "https://github.com/pkusixspace/MedMKEB"
+      ],
+      "selected_revision": "d9f38639ec2285a0e9f541e22156ec14f87271d8",
+      "pending_reason": null,
+      "native_input_requirements": [
+        "保留已取得的2497条编辑元数据、文字locality/portability问题、图像标识和上游来源。",
+        "所有缺图状态显式保留；图像路径字符串不等于已包含图像。当前不能运行完整多模态任务。"
+      ]
+    },
+    {
+      "resource_id": "M26",
+      "benchmark": "COLLECT",
+      "acquired": false,
+      "normalized_units": 0,
+      "primary_urls": [
+        "https://journals.sagepub.com/doi/10.1177/00220345261466240",
+        "https://doi.org/10.5683/SP3/KXYCNY",
+        "https://borealisdata.ca/api/datasets/:persistentId/?persistentId=doi:10.5683/SP3/KXYCNY",
+        "https://github.com/MadathilSA/COLLECT"
+      ],
+      "selected_revision": "Borealis v1.3; GitHub ce676b997efde476331c92deafafe4ecae002afd",
+      "pending_reason": "受限图像包未取得",
+      "native_input_requirements": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/exports/archive_unit_coverage.csv",
+      "bytes": 16002022,
+      "sha256": "f513e380c6297acb7a9cfa8b29e69162c2f5e87523fc1ab50ffd6bb877ea06f3"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/exports/all_reviewed_target_annotations.jsonl.gz",
+      "bytes": 23146429,
+      "sha256": "83c1ef12e9efb4cbbaacfffc22fa32feaab284d537d29742b15c65e339620f38"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/selected_targets.jsonl.gz",
+      "bytes": 2982652,
+      "sha256": "9dcec2f0a01142183d5d27044e21e6baba011d066723c0c8edbea573068c41cb"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/units.jsonl",
+      "bytes": 2508744,
+      "sha256": "69c1f6b6b85c52e1f6eacb159a3dc021db4ebec36d2c74e491115ca2e800cd73"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/source_summary.csv",
+      "bytes": 561,
+      "sha256": "6a95155c789d6d0475ef540e8a7ee7172b4c8ae49f821b5cd74a72bb5e6e3bea"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/category_summary.csv",
+      "bytes": 126,
+      "sha256": "ed5bbb99c09031de5760f335de1bdbe1cd1697df574c4bfbb923f34154e2c432"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/exports/v4_category_summary.csv",
+      "bytes": 184,
+      "sha256": "4ee5cfa926b97f34d1a2346ab869971c06d922f66b8425245bd803bf59995327"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/reports/two_scenarios/v4_sources.csv",
+      "bytes": 3207,
+      "sha256": "e2fb2e9eee1757bcc0aca524ff30a543e4d1db204de1ba48576e571e72ee662b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/r5_sampling_summary.csv",
+      "bytes": 625,
+      "sha256": "526da724f9beb91fab237f292f729de99686ac7a154d8fa863f4924c4c3215d7"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/sampling_protocol.json",
+      "bytes": 1357,
+      "sha256": "3475b2dfd66b66b76d1e4ec7694d244cdfe30c5f788b31c85a71647659c620fe"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/r5_sampling_frame.csv",
+      "bytes": 4205768,
+      "sha256": "e61679e876abfdd788944694c4958756622ee914929ad2b1637b4e2aff4d98cf"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/selected_r5_unit_ids.json",
+      "bytes": 121739,
+      "sha256": "7419bec8696626b9aad30cc3f47ff6bd101420e9ad149ee175110334414651a5"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/target_annotations.jsonl.gz",
+      "bytes": 24243198,
+      "sha256": "e32cf546d45c5c2e26ee8fb39fc5a75d5ce4693b2d8ad6eed19c0888660e0253"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "bytes": 82283256,
+      "sha256": "f4224ea7f8c2a4922af8a4e7187a09d115093cd3c0fdf039cf806c1f8b683957"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/evaluation.jsonl",
+      "bytes": 22258721,
+      "sha256": "6eed9927ede848d2c737301645349f37e5e77915cabf36231b40f340b42ac504"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json",
+      "bytes": 3580,
+      "sha256": "0ea9469be785bb212137ad95749cec0fa26aad50f204eb81e70f36f095f2397a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/resources.jsonl",
+      "bytes": 42941,
+      "sha256": "9dc0a7ca624e25c56017abd3ab2def8a179ccd9a45434a9daf98a7a3acb10d58"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/source_release_notes.json",
+      "bytes": 55608,
+      "sha256": "b4ae126e9fdf345c6f5ef1563d3e8f2273dc165f4ff9c2d225cb68b738c965d9"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/classification/summary.json",
+      "bytes": 3992,
+      "sha256": "51b6783751f31321fa4f4f423fefdf8aee00bd1eff0939473ffb56f8af444d5d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/collection_counts.json",
+      "bytes": 4696,
+      "sha256": "cc012723717eba1d83bd34f2e81be3d8deff204e1af68a2f75e9636996994ba5"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/completion_audit.json",
+      "bytes": 675,
+      "sha256": "9a38cd43682758dd2a3d842eae8668addb297f2e4fa261b09509ccbec16b53df"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/v4_manifest.json",
+      "bytes": 481,
+      "sha256": "2ec6747506924a6b6d6c7a335ce41429dffb57909dc1de9bec4afb38a3bef0b9"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/exports/all_target_summary.json",
+      "bytes": 651,
+      "sha256": "e634fe037f526c8d18d9738096256b5b96eb9cb53b3e750d4e1e9949164627f1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json",
+      "bytes": 1377,
+      "sha256": "7782d9b52d3005d4ba687dfbea757c276b629d25857e7cc885cf349aee35f8a8"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/verification.json",
+      "bytes": 825,
+      "sha256": "bc8b6fe2f11f2069ac80490a476a1a8e0179e572bc44d738475231b6d1bdc24f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/preparation_validation.json",
+      "bytes": 267,
+      "sha256": "00969e589c3aaf38ce4cf5e7b3a2ea110627ca84cc6628edcbf2df45b6ddba2b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/validation.json",
+      "bytes": 307,
+      "sha256": "3df9169b346b213e8b26b5786ac79440e4f806c86dc28fbae44638ca49b86d1d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "bytes": 24206,
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-12/benchmark-imedrag-medrag-agent-md-tc/data/source_target_input_mapping.jsonl",
+      "bytes": 36891532,
+      "sha256": "829ab4ced250983a7e95569e5a9127e59735b3574dc44fbdbf10aaaab87dd9ec",
+      "role": "many-to-many target-to-native-input mapping, not score denominator"
+    },
+    {
+      "path": "/home/data3/txy/docs/data/sources.md",
+      "bytes": 73537,
+      "sha256": "4ecdce18bbdc2f2f214bfa8a2882dc722525f287db0809ba83e7477a51687aa6",
+      "role": "canonical narrative read for this audit"
+    },
+    {
+      "path": "/home/data3/txy/docs/data/classification.md",
+      "bytes": 38906,
+      "sha256": "fbbdf8f7dfc84c0950d98c71e5eee8a59c95a5ed0d692c71f56860ba55dd2bbe",
+      "role": "canonical narrative read for this audit"
+    },
+    {
+      "path": "/home/data3/txy/docs/data/construction.md",
+      "bytes": 491932,
+      "sha256": "7ab015d62bf25066e4a7440f31c5dc4bcd07470b4390301617ef366a867c641b",
+      "role": "canonical narrative read for this audit"
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "bytes": 21377,
+      "sha256": "1e4ec1c645d47a677f727539f1e6a0863f78dc496789de977ab347c02c80ccfe",
+      "role": "canonical narrative read for this audit"
+    }
+  ],
+  "read_scope": {
+    "canonical_documents": [
+      {
+        "path": "/home/data3/txy/docs/data/sources.md",
+        "lines": [
+          1,
+          581
+        ],
+        "coverage": "Read all source-stage sections, including historical 26-source inventory and later R1/R3/R4/R5 additions. Later additions are not retroactively part of the frozen 26/15/11 ledger."
+      },
+      {
+        "path": "/home/data3/txy/docs/data/classification.md",
+        "lines": [
+          1,
+          349
+        ],
+        "coverage": "All definitions, examples, nonexamples, subjudgments, comparison axes, qualification boundaries and revision instructions."
+      },
+      {
+        "path": "/home/data3/txy/docs/data/construction.md",
+        "lines": [
+          1,
+          3966
+        ],
+        "coverage": "Read section navigation and all substantive stages in sequential/overlapping chunks; filled truncated sections through smaller reads. Covers initial collection/pilot, review/audit/corrections, full v4 completion, rejected scope previews, actual v5 sampling, and later source qualification/exposure records. The later 09-18/09-23 D summaries were actually read in this retrospective writing audit; do not claim ongoing D blinding."
+      },
+      {
+        "path": "/home/data3/txy/docs/evaluation/protocol.md",
+        "lines": [
+          1,
+          201
+        ],
+        "coverage": "Full protocol, including native inputs, scoring, failed outputs, exact reuse, formal/development scope and information permissions."
+      }
+    ],
+    "machine_reading": "All archive rows, v4 target rows, v5 target/selection/unit rows, sampling-frame rows and native items/evaluation JSON records were traversed for identity, membership and count checks. This is not a fresh semantic reading or clinical adjudication of every example.",
+    "historical_evidence_reading": "Historical provenance/classification summaries, manifests, completion_audit and validation receipts were read. The historical download and clinical review exercises were not repeated. Formal 42 baseline values reuse the independently verified seven_methods_audit from this same session.",
+    "not_performed": [
+      "No new literature search in this bounded audit; 26/15/11 describes the frozen project search/acquisition ledger, not current exhaustive availability.",
+      "No new model generation, grader calls, native scoring, training, retrieval or benchmark edits.",
+      "No claim that all source papers, every historical log, all original 55,991 records, or 109,599 judgment texts received new semantic review here."
+    ]
+  },
+  "taxonomy": {
+    "object": "Five nonexclusive functional relations between a specified input change C and a concrete judgment J; not five trained classifiers, not mutually exclusive task IDs, and not a latent-reasoning oracle.",
+    "origin": {
+      "record": "/home/data3/txy/docs/data/classification.md:75",
+      "context": "Guide identifies the original user-provided 2026-09-07 scheme, conveyed during 09-08 work. The contribution should be described as proposing/operationalizing the study taxonomy; do not attribute invention of all five concepts to the writing agent.",
+      "full_process_reference": "/home/data3/txy/docs/data/construction.md:1769"
+    },
+    "rows": [
+      {
+        "id": "R1",
+        "name": "New support",
+        "criterion": "C supplies genuinely new evidence supporting a specified J; the same support must not already be present. Support need not uniquely determine the diagnosis.",
+        "example_id": "M01:case_10000:review_target_0",
+        "example": "New expiratory wheeze supplies compatible support for Bronchitis.",
+        "boundary": "Adding compatible support is not diagnosis proof; an answer change or duplicated old fact alone is insufficient.",
+        "source": "/home/data3/txy/docs/data/classification.md:142"
+      },
+      {
+        "id": "R2",
+        "name": "Support withdrawal",
+        "criterion": "An identifiable basis for an earlier judgment is explicitly negated, invalidated or removed as a valid basis by C.",
+        "example_id": "M14:GenderDataset.csv:row169:source852:review_target_0",
+        "example": "Male-to-female demographic change removes one epidemiological support for Lesch-Nyhan, while other findings remain.",
+        "boundary": "Omitted information is not a clinically negative observation; removing one constraint does not remove all constraints or exclude the disease.",
+        "source": "/home/data3/txy/docs/data/classification.md:160"
+      },
+      {
+        "id": "R3",
+        "name": "Candidate reconsideration",
+        "criterion": "At least two identifiable candidates and evidence changing their relative support must be specified.",
+        "example_id": "M01:case_13249:review_target_1",
+        "example": "Replacing a spontaneous-pneumothorax history with DVT history changes relative support for pneumothorax versus pulmonary embolism.",
+        "boundary": "A gold-label flip alone does not establish a comparison; candidates may coexist and need not be mutually exclusive.",
+        "source": "/home/data3/txy/docs/data/classification.md:176"
+      },
+      {
+        "id": "R4",
+        "name": "Consequence derivation",
+        "criterion": "A changed premise leads through a supported relationship to an outcome that the current input does not already provide.",
+        "example_id": "M05:question_41:review_target_0",
+        "example": "Reason about HDL under the counterfactual that fenofibrate had never been taken.",
+        "boundary": "This is a taxonomy example only: M05 LabTest is not in formal v5. Formal v5 R4 consists of 13 HIV treatment scenarios. Repeating an edited fact or naming a Complication field is insufficient.",
+        "source": "/home/data3/txy/docs/data/classification.md:188"
+      },
+      {
+        "id": "R5",
+        "name": "Target invariance",
+        "criterion": "A specified judgment should remain under an actual input change, with a target-specific irrelevance or task-contract basis.",
+        "example_id": "M10:medqa_00001:variant_02:review_target_0",
+        "example": "Ethnicity changes while chemotherapy and ototoxicity evidence remain, leaving the queried drug mechanism unchanged.",
+        "boundary": "Equal gold labels or equal model answers alone do not establish invariance; demographic variables can be relevant to other targets.",
+        "source": "/home/data3/txy/docs/data/classification.md:205"
+      }
+    ],
+    "annotation_contract": {
+      "fields": [
+        "change",
+        "target",
+        "labels",
+        "rationale",
+        "evidence",
+        "cannot_infer",
+        "comparison_axis"
+      ],
+      "judgment_first": "Split independent judgment targets before assigning labels; a parent comparison unit can carry the union of several target labels.",
+      "separate_decisions": [
+        "functional semantics",
+        "whether current native task can score that target",
+        "reliability/scope of author reference",
+        "actual system answer correctness"
+      ],
+      "source": "/home/data3/txy/docs/data/classification.md:118"
+    },
+    "overlap_evidence": {
+      "v5_unique_units": 6104,
+      "sum_category_memberships": 7291,
+      "R1_R3_intersection": 733,
+      "R1_R5_intersection": 450,
+      "R1_R2_intersection": 4,
+      "R2_R3_intersection": 3,
+      "explanation": "R3 is entirely nested within the selected R1 unit set; overlapping category rows are not independent samples. The JSON overlap table retains exact combinations."
+    },
+    "novelty_supported": "A judgment-centered five-function taxonomy operationalized with explicit positive/negative boundaries and an auditable annotation/eligibility layer across heterogeneous existing medical counterfactual sources.",
+    "novelty_unestablished": [
+      "No verified first-ever taxonomy claim without a dedicated related-work comparison.",
+      "No theorem that the five categories exhaust all clinical counterfactual reasoning.",
+      "No claim of five new trained classifiers or independent clinician consensus gold."
+    ]
+  },
+  "denominator_relationships": [
+    {
+      "expression": "26 = 15 acquired + 11 acquisition gaps",
+      "meaning": "Frozen resource catalog, not all published medical datasets. AMQA/FairMedQA counts once; later research sources do not revise this historical total.",
+      "source": "/home/data3/txy/docs/data/sources.md:258"
+    },
+    {
+      "expression": "55,991 = 53,494 textual comparison records + 2,497 missing-image metadata records",
+      "meaning": "Archival normalized units from 15 acquired sources; not 55,991 independently validated clinical questions or formal test items.",
+      "source": "/home/data3/txy/docs/data/construction.md:1104"
+    },
+    {
+      "expression": "55,991 = 28,243 initially reviewed units + 24,436 sampling omissions + 83 MedEinst no-op records + 14 MedPerturb no-op records + 3,215 MedCF train/valid records",
+      "meaning": "Archive disposition bookkeeping. No-ops and out-of-scope splits remain traceable rather than silently disappearing.",
+      "source": "/home/data3/txy/docs/data/construction.md:2271"
+    },
+    {
+      "expression": "109,599 reviewed judgments -> 77,781 eligible judgments on 38,123 eligible units",
+      "meaning": "Judgment-level annotations can be multiple per comparison unit. Eligibility also requires executable native scoring; semantic validity alone is not sufficient.",
+      "source": "/home/data3/txy/docs/data/construction.md:2635"
+    },
+    {
+      "expression": "38,123 = 3,105 earlier v3 units + 18,023 newly eligible omission units + 16,972 restored R5 units + 20 restored CPV units + 3 newly eligible RESOURCE parent units",
+      "meaning": "Coverage/qualification expansion; old R5 semantics were reused rather than represented as new independent annotations.",
+      "source": "/home/data3/txy/docs/data/construction.md:2271"
+    },
+    {
+      "expression": "6,104 units / 13,000 selected judgments from 11 sources",
+      "meaning": "Actual v5 formal scope. All eligible R1–R4 targets kept; R5 uniformly samples 450 units in each of eight source strata.",
+      "source": "/home/data3/txy/docs/data/construction.md:3356"
+    },
+    {
+      "expression": "R1/R2/R3/R4/R5 unit memberships = 2,866 / 79 / 733 / 13 / 3,600",
+      "meaning": "Nonexclusive membership counts, sum 7,291. Their union is 6,104, not five disjoint test sets.",
+      "source": "/home/data3/txy/docs/data/construction.md:3365"
+    },
+    {
+      "expression": "13,905 unique model inputs -> 15,616 native score mappings = 6,818 reference + 8,798 nonreference mappings",
+      "meaning": "Sharing, multiple native tasks and reference endpoints produce different denominators. These are neither 13,000 unique target judgments nor 6,104 independent patient cases.",
+      "source": "/home/data3/txy/docs/evaluation/protocol.md:89"
+    },
+    {
+      "expression": "34,753 target-to-input links",
+      "meaning": "Many-to-many provenance links; never an accuracy or new-generation denominator.",
+      "source": "/home/data3/txy/Documents/Codex/2026-09-12/benchmark-imedrag-medrag-agent-md-tc/data/source_target_input_mapping.jsonl"
+    },
+    {
+      "expression": "ALL = mean over 6,104 units of each unit's mean nonreference native task score",
+      "meaning": "Not an average of the five class percentages, not per-judgment accuracy, and not a flat average over 13,905 inputs. Failed/invalid outputs remain in the planned denominator.",
+      "source": "/home/data3/txy/docs/evaluation/protocol.md:127"
+    }
+  ],
+  "sampling_design": {
+    "actual_design": "Preserve full annotation archive and all eligible R1–R4 targets; sample 450 unique eligible R5 units without replacement independently in each of eight sources.",
+    "seed": "b87c62c6ca40257d55f671c89c04dc200c2000ba5e46690210677f96830305f1",
+    "replay": "random.Random(master_seed_hex + \":\" + resource_id).sample(sorted_unit_ids, 450)",
+    "choice_justification": "Equal source-level R5 coverage under a practical comparison budget, approved after explicit proportional/equal-allocation discussion. Not a power-optimized or clinically representative sample.",
+    "selection_not_based_on": [
+      "baseline accuracy",
+      "new method scores",
+      "estimated model difficulty",
+      "v3 membership",
+      "demographic balancing"
+    ],
+    "rejected_not_executed": [
+      "Whole-source removal preview retaining only DiversityMedQA R5; would reduce 38,123 to 7,611 units.",
+      "Proportional R5 budget previews of 3,000/3,500/4,000."
+    ],
+    "v3_overlap": {
+      "selected_v3_units": 2116,
+      "selected_not_in_v3_units": 3988,
+      "caution": "Not-in-v3 is not never-exposed. Earlier generation, source review and related versions matter."
+    },
+    "dependencies": "Sampling is by source unit, not by independent patient/root. Several strata contain multiple variants of the same root; selected source roots vary from 133 to 450. Equal units also does not mean equal child targets; unit-level aggregation prevents sources with many children dominating ALL."
+  },
+  "reference_quality_boundaries": [
+    {
+      "source": "MedEinst",
+      "finding": "R1 compatible-support classification does not independently establish a unique clinical diagnosis; six Bronchitis pairs matched author text/gold exactly but clinical exclusivity was not validated.",
+      "doc": "/home/data3/txy/docs/data/construction.md:3477"
+    },
+    {
+      "source": "MedCounterFact",
+      "finding": "Point-estimate versus significance criteria and exact outcome binding vary across examples; author-reference agreement is not automatically causal or evidential correctness. Question families can share original_review and clinical studies.",
+      "doc": "/home/data3/txy/docs/data/construction.md:3461"
+    },
+    {
+      "source": "HIV R4",
+      "finding": "All 13 formal R4 cases originate in author LLM-generated scenarios. Later acquisition confirmed six experts rated entire question/answer/explanation quality (20 CF × 6 ratings); there is no independently chosen expert binary reference. Do not incorrectly say no expert ever reviewed them.",
+      "doc": "/home/data3/txy/docs/data/construction.md:3589"
+    },
+    {
+      "source": "BioRAB/BioNLI",
+      "finding": "Perturbed demonstrations are distinct from current premise/hypothesis evidence; source labels may contain support-scope or generation artifacts. Later diagnostic and training audits do not alter frozen v5 or license a blanket unreliable-label claim.",
+      "doc": "/home/data3/txy/docs/data/construction.md:3723"
+    },
+    {
+      "source": "Cross-source identity",
+      "finding": "Several sources derive from MedQA; question groups/reviews/premises are not independent clinical patients. Deduplication and exposure claims must state the compared identities and exact scope.",
+      "doc": "/home/data3/txy/docs/data/construction.md:3425"
+    }
+  ],
+  "contribution_claims": {
+    "supported_english": [
+      "We organize medical counterfactual evaluation around five judgment-level functions: acquiring support, withdrawing support, reconsidering candidates, deriving consequences, and preserving a target under irrelevant change.",
+      "We curate an auditable evaluation suite from 11 sources, selecting 6,104 comparison units and 13,000 judgment annotations from a provenance-tracked archive of 55,991 records across 15 acquired resources.",
+      "The benchmark preserves source-native tasks and evidence contracts, supports overlapping functional labels, and separates semantic classification from scoring eligibility.",
+      "We evaluate seven system configurations spanning six method families, exposing substantial weaknesses on support acquisition and candidate reconsideration under the frozen native-task metrics."
+    ],
+    "conditional": [
+      "Use “collected and curated” for existing source data; use “constructed” for the taxonomy/annotation/qualification/sampling/input/protocol layer.",
+      "“Counterfactual benchmark” can encompass source-native perturbations and task-specific hypothetical relations, but not every record is an identifiable individual causal counterfactual.",
+      "Use seven systems/configurations, or seven evaluated methods with immediate configuration disclosure; there are six method families because M4/M5 are two MedRAG configurations."
+    ],
+    "unsupported_or_overstated": [
+      "An exhaustive systematic literature review of all counterfactual medical benchmarks.",
+      "55,991 newly authored or clinically validated test questions.",
+      "Five mutually exclusive classifiers.",
+      "All R1–R5 labels directly measure internal reasoning operations.",
+      "Seven distinct algorithms at identical backbone, corpus, format and compute.",
+      "v5 is an untouched independent test set for heads developed using its results.",
+      "All annotations have independent clinician consensus or all reference answers are clinically verified."
+    ]
+  },
+  "strongest_complete_evidence": {
+    "main_motivation": "Across all seven configurations, the best native-task accuracy is only 31.44% on R1 (n=2,866) and 30.42% on R3 (n=733). ALL ranges only 47.35–51.61%, while R5 spans 63.42–73.37%; aggregate success masks uneven performance across functions.",
+    "full_range_table_reference": "tables.baseline_ranges contains all 42 formal values, not selected favorable rows.",
+    "interpretation": "These are operationally defined functional subsets of heterogeneous native tasks. Source/task and category membership are correlated, so low scores motivate targeted diagnosis and controlled heads; they do not alone causally establish that a model failed a specific internal reasoning operation.",
+    "rare_axes": "R2 n=79 and R4 n=13 require exact denominators and cautious generalization. R4 should be called author-reference agreement when interpreting clinical significance.",
+    "bridge_to_heads": "Use the complete seven-system evaluation to identify failure patterns, then present the independent head studies/control evidence and finally the integrated five-agent CF-MoA as successive questions. Do not replace the broad benchmark study with only the later two MedRAG configurations."
+  },
+  "recommended_story": {
+    "logical_chain": [
+      {
+        "stage": 1,
+        "purpose": "Fragmented medical counterfactual tasks lack a common account of what a change demands of a judgment.",
+        "evidence": "26-resource acquisition ledger, 15 acquired sources, preserved native task variety.",
+        "paper_role": "Problem and related-work motivation; avoid claiming exhaustiveness."
+      },
+      {
+        "stage": 2,
+        "purpose": "Define five judgment-centered functional demands and explicit decision boundaries.",
+        "evidence": "Taxonomy criteria, concrete examples/nonexamples, multi-target records, overlapping labels.",
+        "paper_role": "First substantive contribution; not a post-hoc five-class predictor."
+      },
+      {
+        "stage": 3,
+        "purpose": "Build a reproducible benchmark from those criteria with explicit eligibility and denominator control.",
+        "evidence": "55,991 archive → 38,123 eligible units → 6,104 v5 units; 13,000 selected judgments; 11 sources; replayable R5 sampling.",
+        "paper_role": "Benchmark construction, provenance, quality and native protocol."
+      },
+      {
+        "stage": 4,
+        "purpose": "Evaluate a broad set of medical QA/RAG configurations and localize practical weaknesses.",
+        "evidence": "All seven system configurations, all six ALL/R1–R5 metrics, full failed-output denominators.",
+        "paper_role": "Benchmark results should precede head development."
+      },
+      {
+        "stage": 5,
+        "purpose": "Develop five targeted heads and test whether proposed mechanisms improve the diagnosed tasks.",
+        "evidence": "Sibling head audit; seven-system R1–R3 coverage, R4/R5 heterogeneous evidence and negative results kept distinct.",
+        "paper_role": "Method derivation and component evidence; no unverified assumption all heads have equal maturity."
+      },
+      {
+        "stage": 6,
+        "purpose": "Package complementary heads as five agents in CF-MoA and test selection, aggregation and resources.",
+        "evidence": "Sibling CF-MoA audit, complete two-configuration arms and proper controls.",
+        "paper_role": "Integrated system contribution; distinguish configurations and stage-specific validation scopes."
+      }
+    ],
+    "tables": [
+      {
+        "id": "benchmark_sources",
+        "data": "tables.v5_sources",
+        "description": "11-source table: units, judgment annotations, R1–R5 overlapping unit memberships. Add union total separately and reference/input counts in caption."
+      },
+      {
+        "id": "taxonomy",
+        "data": "taxonomy.rows",
+        "description": "Five operations with one positive example and a decisive exclusion boundary each."
+      },
+      {
+        "id": "benchmark_flow",
+        "data": "counts and denominator_relationships",
+        "description": "A collection/qualification/selection flow with separate unit and judgment tracks."
+      },
+      {
+        "id": "seven_system_baselines",
+        "data": "tables.baseline_ranges or prior seven_methods_audit",
+        "description": "Full seven configurations × ALL/R1–R5, exact class denominators and backbone/format disclosure."
+      }
+    ],
+    "figures": [
+      {
+        "id": "source_axis_coverage",
+        "description": "11 × 5 source-category matrix or stacked source composition, with overlap warning; visualizes that taxonomy cuts across sources while R4 is sparse."
+      },
+      {
+        "id": "construction_flow",
+        "description": "26 sources searched/catalogued →15 acquired; archive55,991 →eligible38,123 →v5 6,104, alongside judgment109,599→77,781→13,000; native inputs13,905 and score mappings15,616 as a separate adaptation endpoint."
+      }
+    ],
+    "most_important_scope_statement": "This work contributes an operational taxonomy, curated cross-source evaluation, and a diagnostic-to-system development program. Clinical expert validation, exhaustive novelty priority, and untouched end-to-end generalization are not established by the current records."
+  },
+  "source_availability_scope": {
+    "frozen_date": "2026-09-08 initial collection ledger; v4/v5 completed 2026-09-10",
+    "catalog_is_bounded": true,
+    "not_current_web_verification": true,
+    "acquisition_gaps": [
+      "M03 MamaBench restricted/gated",
+      "M04 oncology fixed CF cases not located",
+      "M07 CLIR specific CF edit pairs not obtained",
+      "M08 ECG MCo required material unavailable; MC not a substitute",
+      "M09 GenMedicalEval only one example, full 12k not obtained",
+      "M13 MedEqualQA fixed release not found in inspected tree",
+      "M15 CLIMB fixed CF pairs not obtained",
+      "M18 DeVisE MIMIC restrictions",
+      "M19 MedFuzz fixed attack release not obtained",
+      "M21 MediEval MIMIC/UMLS constraints",
+      "M26 COLLECT restricted images"
+    ],
+    "whole_sources_not_in_v5": {
+      "M05": "Native open consequences lack established executable scoring; not simply excluded for free response.",
+      "M16": "Scenario-dependent new answer/rubric not established.",
+      "M24": "Knowledge-editing procedure is not executed by a text-QA evaluation.",
+      "M25": "Required multimodal images unavailable; metadata preserved."
+    },
+    "release_boundary": "Original papers/revisions/locators, annotations, evidence excerpts and manifests support traceability. Historical publication did not mirror every complete raw source; a fully self-contained redistributable download package is not demonstrated."
+  },
+  "audit_completed_utc": "2026-10-02T17:07:13.048551+00:00"
+}

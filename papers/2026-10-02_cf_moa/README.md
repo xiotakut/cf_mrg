@@ -1,3 +1,11 @@
+# CF-MoA: benchmark and five-agent paper framework
+
+**Latest, 2026-10-03:** [Complete research logic and Chinese outline](framework/outline.zh.md) · [English LaTeX framework](framework/framework.tex) · [10-page framework PDF](framework/framework.pdf) · [Overleaf source ZIP](cf_moa_framework.zip) · [audits and reproduction](framework/README.md).
+
+The revised main story is resource collection, a five-category functional taxonomy, benchmark construction, seven-system diagnosis, specialized heads, and five-role CF-MoA. The new framework prioritizes the adopted B's complete-scope gains. It has not yet been expanded into a new full manuscript. The following 28-page manuscript is the preceding edition and remains unchanged. The repository is private.
+
+---
+
 # Seven-system medical QA manuscript and experimental figures
 
 The current generic English conference draft is maintained directly in LaTeX and compiled with XeTeX and BibTeX through Tectonic 0.17.0. The 2026-10-03 scope revision restores the complete seven-configuration v5 benchmark and seven-system R1–R3 terminal-head results, followed by the later two-configuration, six-arm CF-MoA study. Seven configurations span six method families: Direct, MedRGAG, MA-RAG, MedRAG (Llama and Qwen), MedGENIE, and TC-RAG. Subsequent writing edits go directly into the `.tex` sources; Markdown is no longer the source for document builds.

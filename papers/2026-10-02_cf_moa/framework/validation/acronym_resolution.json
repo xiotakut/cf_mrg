@@ -1,0 +1,13 @@
+{
+  "status": "manual_advisory_resolution",
+  "raw_report": "acronym_report.json",
+  "decisions": {
+    "CF/MoA": "Expanded as Counterfactual Mixture of Agents in abstract; title precedes definition and detector splits the hyphenated method name.",
+    "NLI/LLM": "Expanded in Figure 1 caption; extracted figure labels precede caption.",
+    "RAG": "Expanded in related-work text; line wrapping/extraction prevents detector match.",
+    "MedRAG/TC": "Cited established method names; TC is a fragment of TC-RAG.",
+    "SHA/CSV/LaTeX": "Standard checksum/file-format/tool names in reproduction, not unexplained method variables.",
+    "ACM/NY/WWW/ACL/PMLR": "Bibliography venue/publisher abbreviations and metadata."
+  },
+  "scope": "English framework, manual language review; no claim raw checker reported zero flags"
+}

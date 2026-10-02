@@ -1,42 +1,45 @@
 {
   "date": "2026-10-03",
-  "format": "Native LaTeX; seven-system scope revision",
-  "title": "Support Updating and Candidate Re-decision Across Seven Medical Question-Answering Systems",
+  "format": "Native LaTeX framework before complete manuscript rewrite",
+  "title": "CF-MoA: Taxonomy-Guided Benchmarking and Agent Orchestration for Counterfactual Medical Reasoning",
   "scope": [
-    "Seven full-v5 baseline configurations spanning six method families",
-    "Seven-system R1/R2/R3 terminal-head development outcomes",
-    "Later two-MedRAG-configuration six-arm CF-MoA study"
+    "Source collection and five-category taxonomy",
+    "Benchmark construction and seven-system diagnostic evaluation",
+    "Five operational roles and adopted sparse CF-MoA B",
+    "Complete nine-row results and evidence selection"
   ],
-  "canonical_source": "latex/main.tex",
-  "pdf": "manuscript.pdf",
-  "compiler": "Tectonic 0.17.0 (XeTeX + BibTeX + xdvipdfmx)",
-  "pdf_sha256": "50a250296d3b8514183eee06580e7ea725cb11d6655dbd12eae5c99523b2f03e",
-  "pdf_pages": 28,
-  "bibliography_items": 24,
-  "tables": 11,
-  "vector_figures": 6,
-  "previous_publication_commit": "cac3fe455678cb4f4a1b34450b3441183fdabd0f",
-  "previous_publication_record": "evidence/latex_20261002/PUBLICATION.json",
+  "canonical_source": "framework/framework.tex",
+  "pdf": "framework/framework.pdf",
+  "pdf_pages": 10,
+  "pdf_sha256": "9a8b97fc56f775eb9da52a6f89f0cf3a95db165ba4e3e0bf1dd71d602cb6a475",
+  "compiler": "Tectonic 0.17.0",
+  "tables": 5,
+  "generated_data_tables": 3,
+  "vector_figures": 2,
+  "cited_references": 8,
+  "full_manuscript_status": "Previous 28-page seven-system manuscript retained unchanged; full rewrite not yet performed",
+  "previous_publication": {
+    "record": "framework/evidence/prior_publication.json",
+    "commit": "bb5a0175c64c2030f3b0896f01fc30702220c6b4",
+    "pdf": "manuscript.pdf",
+    "pdf_sha256": "50a250296d3b8514183eee06580e7ea725cb11d6655dbd12eae5c99523b2f03e"
+  },
   "repository_visibility": "private",
-  "latex_zip": {
-    "path": "cf_moa_latex.zip",
-    "bytes": 476084,
-    "sha256": "7a084c197c266423fc6dda62eff9d4634a3a95ba572ab90205dd3a12dbe0f248",
-    "files": 40
+  "framework_zip": {
+    "path": "cf_moa_framework.zip",
+    "files": 10,
+    "bytes": 205377,
+    "sha256": "1d00836eae75a2fec0e9e3ca80d0e1e6a614c2c7ee8c1faf8246641fad07423f"
   },
-  "unchanged_initial_bundle": {
-    "path": "cf_moa_paper_bundle.zip",
-    "sha256": "cf7684479fc0e40d60dc76d8c41711f601143cc324116d23a00716cbff401877"
-  },
-  "data_scope": "No saved predictions or scores changed; added figures use frozen verified seven-system aggregates. Earlier six-arm inputs and figures remain unchanged.",
   "verification": [
-    "validation/latex_build_receipt.json",
-    "evidence/scope_20261003/scope_manuscript_review.json",
-    "validation/scope_build_receipt.json",
-    "validation/scope_packaged_check.json",
-    "validation/retained_six_arm_check.json"
+    "framework/evidence/framework_review.json",
+    "framework/validation/framework_build_receipt.json",
+    "framework/validation/isolated_build_receipt.json",
+    "framework/inputs/manifest.json",
+    "framework/generated/build_manifest.json"
   ],
   "model_calls": 0,
   "grader_calls": 0,
-  "gpu_operations": 0
+  "gpu_operations": 0,
+  "data_scope": "Source questions, semantic labels, sampling membership, predictions and scores unchanged. Favorable complete panels selected for main text; necessary controls retained."
 }

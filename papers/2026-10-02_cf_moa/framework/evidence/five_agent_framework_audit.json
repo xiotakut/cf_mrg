@@ -1,0 +1,2167 @@
+{
+  "audit_date": "2026-10-03",
+  "task": "五head到五agent/CF-MoA的真实方法链、最有力已有结果及论文框架支持",
+  "execution": {
+    "new_model_calls": 0,
+    "new_grader_calls": 0,
+    "new_simulations": 0,
+    "modified_manuscript_or_docs": false,
+    "method": "read-only source/plan/record audit; arithmetic using saved scores; only this evidence JSON written"
+  },
+  "conclusion": {
+    "primary_story": "医学反事实判断需要补支持、撤支持、比较候选、执行后果、抗干扰五类操作；将已研发有效组件组织成能力路由五agent框架CF-MoA，以采用核心B为主方法，七基线与七系统组件迁移体现范围，两个骨干完整B体现系统实效。",
+    "name_is_defensible": true,
+    "recommended_definition_en": "CF-MoA is a capability-routed modular mixture of agents for medical counterfactual reasoning. Its adopted implementation coordinates five evidence operations through shared support execution, finite-candidate comparison, conditional intervention execution, and robust native readout.",
+    "interpretive_status": "该名称是对已实现组织形式的准确限定，不是新运行结果、统一命名自动证明新颖性、或标准多层生成聚合协同已成立。",
+    "five_heads_wording": "可称五个功能head/agent角色；须一句交代A1/A2共享同一支持执行核，R1旧入口承担路由。无需把五个角色说成五套权重或五个完全独立新算法。",
+    "priority_correction": "后加RCV/C3是扩展研究，不能让其增量不一致取代已存在的B系统收益和五类组件成果。"
+  },
+  "historical_design_to_adoption": [
+    {
+      "stage": "2026-09-21 original Router + Five Agents",
+      "source": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+        "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+        "bytes": 26940
+      },
+      "evidence_lines": [
+        7,
+        11,
+        29,
+        37,
+        125,
+        152,
+        170,
+        202,
+        222,
+        256,
+        278,
+        386
+      ],
+      "goal": "首轮1–2专家、按证据与范围合并、至多一次追加检查；希望真实互补超强单系统。角色独立但共享核允许；五权重/五者每题全调用从不是要求。",
+      "not_overwritten": "原§2.3明确反对仅switch却宣称协作增量；应保留为原研究目标而不是假装已经证实。"
+    },
+    {
+      "stage": "actual independent agents and generative aggregation",
+      "source_record": "docs/research/cf_moa_experiment_report.md:75-95,921-960,1056-1096,1374-1414",
+      "executed": "A1多个真实版本、新A5受控多视图/分歧机制、A3编辑和双候选比较、默认池与含A1聚合均实际执行，若干完整121评估及四轮2203新生成；不是只计划没实现。",
+      "result": "全局生成聚合未超过强B，复杂局部方案也未建立稳定增量。独立A1/新A5候选不作为当前B默认。"
+    },
+    {
+      "stage": "2026-09-23 minimal reuse revision",
+      "source": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/final_source_snapshot/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+        "sha256": "b0a3e244140c36173744d808beb300b1879c42808b3a51f99e1b1d53d2dda815",
+        "bytes": 12433
+      },
+      "evidence_lines": [
+        28,
+        46,
+        56,
+        58,
+        73,
+        75,
+        100,
+        116
+      ],
+      "user_authorized_change": "用户明确提供新计划，把A1拆为旧R2正向add，A2为同次负向remove；保留A3/A4/F与固定能力路由、取消全局生成改答。",
+      "result": "adopted_B_five_operations_v1等价包装完成；F普通重答三seed在自然52下降，保持关闭。"
+    },
+    {
+      "stage": "2026-09-24 to 09-28 full-v5 composition and RCV",
+      "source": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/method_spec.resolved.json",
+        "sha256": "f4a3e2e37efd6a3ad479c91272369e8b53c2899998d48acad30143621bb0c1b1",
+        "bytes": 16738
+      },
+      "source_record": "docs/research/cf_moa_experiment_report.md:1772-1780,1857-1874,2019-2054",
+      "result": "B与C2/C3/C4/C5共享相同核心及合法F池；两配置全部13905输入完成。C3仅F普通多候选分支介入，B默认保留。新家族最终确认及独立F池未执行。"
+    }
+  ],
+  "five_agent_roles": [
+    {
+      "agent": "A1",
+      "role": "Support establishment / add",
+      "chinese": "支持建立／补入",
+      "relationship_to_R_labels": "对R1增加支持需求提供规则覆盖内的具体实现；旧R1 head本身是分派器，不是当前A1的独立模型",
+      "adopted_computation": "同一次事实提取与三值规则执行后读取MET集合，导出MET−S0补入项与成立支持；旧assemble始终决定原生结果",
+      "source_entry": "cf_moa/controller/minimal_operations.py:23-82",
+      "shared_kernel": "R2 r2_program_head, shared with A2",
+      "independent_new_model_or_training": false,
+      "status": "adopted as shared positive operation; earlier independent evidence-audit A1 executed but not adopted",
+      "full_v5_activation_inputs": 123,
+      "strongest_evidence": "禁add: M4 69→43/123；M5 71→48/123；0新增facts，两骨干净损26/23",
+      "not_claim": "不是五套新算法之一；不是R1全部2866输入都由独立A1运行"
+    },
+    {
+      "agent": "A2",
+      "role": "Support withdrawal and residual-support recomputation",
+      "chinese": "失效支持撤销与剩余支持重算",
+      "relationship_to_R_labels": "R2撤销需求及R1/R3中的规则题；操作资格来自题面/规则覆盖而不是R标签",
+      "adopted_computation": "同一执行结果导出CONTRADICTED路径和C∩S0撤销项；MET独立路径与UNKNOWN继承保留；None/invalid由原assembler处理",
+      "source_entry": "cf_moa/controller/minimal_operations.py:23-82",
+      "shared_kernel": "R2 r2_program_head, shared with A1",
+      "independent_new_model_or_training": false,
+      "status": "adopted",
+      "full_v5_activation_inputs": 123,
+      "strongest_evidence": "禁remove: M4 69→53/123；M5 71→60/123；另七配置R2整体均有净提升",
+      "not_claim": "同覆盖恒None总分更高，不能只靠R2总体准确率证明剩余支持机制；恒None在9个剩余支持例0正确，应和head 2–6正确并列"
+    },
+    {
+      "agent": "A3",
+      "role": "Finite-candidate comparison",
+      "chinese": "目录候选重决策",
+      "relationship_to_R_labels": "服务R3及R1诊断，目录分支也处理reference端；不是以R3标签路由",
+      "adopted_computation": "原骨干及各系统原上下文；49公开目录，六排列取分，既有无内容先验校正、多数票与原生映射",
+      "source_entry": "cf_moa/agents/a3_contrastive_comparison.py:11-56; selected r3_catalog_distribution_head.py",
+      "version": "legacy_catalog_six_orders_calibrated_majority",
+      "status": "adopted; new bounded-edit/original-pair comparisons actually tested and not adopted",
+      "full_v5_activation_inputs": 3560,
+      "strongest_evidence": "七配置完整R3提升18.69–35.20pp；680诊断控制中均分original20.97→single45.44→calibrated46.13%",
+      "not_claim": "单次目录已贡献大部分收益；先验校正相对未校正七配置增量方向混合，不能都归功校正或反事实编辑"
+    },
+    {
+      "agent": "A4",
+      "role": "Conditional intervention execution",
+      "chinese": "给定模型的干预后果执行",
+      "relationship_to_R_labels": "对应R4功能，但临床v5的13个R4单元不满足显式模型合同，故不激活A4",
+      "adopted_computation": "完整可信模型、参数、13状态与辅助记忆、餐食/给药计划、120分钟窗口下，编译typed局部patch，执行作者模型并投影问题",
+      "source_entry": "cf_moa/agents/a4_intervention_execution.py:9-74; selected head_v2.py and executor.py",
+      "version": "frozen_physiology_v2_typed_patch",
+      "status": "adopted on declared capability; actual live wiring and held-out profile verification completed",
+      "full_v5_activation_inputs": 0,
+      "strongest_evidence": "24新profile×12题；两骨干patch数值与完整动作均288/288，对same-tool full数值270/222、动作263/213",
+      "not_claim": "不是真实患者0误差，不是七法临床R4优化，不把288题追加临床ALL分母"
+    },
+    {
+      "agent": "A5",
+      "role": "Robust native readout",
+      "chinese": "稳健原生读出",
+      "relationship_to_R_labels": "R5需求启发完整输入多路径读出；F按支持格式和可用上下文路由，也覆盖其它R类别",
+      "adopted_computation": "旧F：NLI直接/响应后两路径×两语义映射；其它支持题型至多五次整答、绝对三票早停，返回获胜完整原生响应",
+      "source_entry": "cf_moa/agents/a5_robust_readout.py:14-50; selected r5_head.py",
+      "version": "legacy_f_equal_nli_paths_else_full_maj5",
+      "status": "adopted F; new qualified views and later ordinary-reanswer not adopted; C3 optional research extension",
+      "full_v5_activation_inputs": 10178,
+      "full_v5_ordinary_inputs": 9293,
+      "full_v5_NLI_inputs": 885,
+      "strongest_evidence": "208原生R5单元双正确60.1923→65.8974 /59.1667→66.4744%；冻结后16组matched_single11→12/12→13；8应变强控3→5/5→6",
+      "not_claim": "F不是新训练算法；上述收益包括采样/格式/NLI分支，不能归给未采用A5或C3"
+    }
+  ],
+  "component_sources_and_versions": {
+    "historical_lock": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/historical_versions.json",
+      "sha256": "2e119a2106e4d3700a3cb16e37a063829d46fb6afa2143513fe3d7e8d3b705b2",
+      "bytes": 15706
+    },
+    "selected_kernels": [
+      {
+        "resource_group": "legacy_r1_r2_r3",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py",
+        "sha256": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+        "bytes": 1013,
+        "recorded_sha256": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+        "hash_matches_historical_lock": true
+      },
+      {
+        "resource_group": "legacy_r1_r2_r3",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+        "sha256": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+        "bytes": 2846,
+        "recorded_sha256": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+        "hash_matches_historical_lock": true
+      },
+      {
+        "resource_group": "legacy_r1_r2_r3",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+        "bytes": 13998,
+        "recorded_sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+        "hash_matches_historical_lock": true
+      },
+      {
+        "resource_group": "legacy_r1_r2_r3",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "sha256": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+        "bytes": 5729,
+        "recorded_sha256": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+        "hash_matches_historical_lock": true
+      },
+      {
+        "resource_group": "a4_frozen_patch",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/executor.py",
+        "sha256": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378",
+        "bytes": 8873,
+        "recorded_sha256": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378",
+        "hash_matches_historical_lock": true
+      },
+      {
+        "resource_group": "a4_frozen_patch",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head_v2.py",
+        "sha256": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f",
+        "bytes": 9301,
+        "recorded_sha256": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f",
+        "hash_matches_historical_lock": true
+      },
+      {
+        "resource_group": "a5_legacy_f",
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+        "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+        "bytes": 14626,
+        "recorded_sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+        "hash_matches_historical_lock": true
+      }
+    ],
+    "resolved_method_source_bindings": {
+      "controller/moa_rcv.py": {
+        "path": "/home/data3/txy/cf_moa/controller/moa_rcv.py",
+        "sha256": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee"
+      },
+      "controller/minimal_operations.py": {
+        "path": "/home/data3/txy/cf_moa/controller/minimal_operations.py",
+        "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f"
+      },
+      "controller/strong_legacy.py": {
+        "path": "/home/data3/txy/cf_moa/controller/strong_legacy.py",
+        "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af"
+      },
+      "agents/a5_candidate_verify.py": {
+        "path": "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+        "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec"
+      },
+      "agents/a5_robust_readout.py": {
+        "path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+        "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35"
+      },
+      "evaluation/run_moa_rcv.py": {
+        "path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py",
+        "sha256": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665"
+      },
+      "configs/moa_rcv_v1.json": {
+        "path": "/home/data3/txy/cf_moa/configs/moa_rcv_v1.json",
+        "sha256": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed"
+      },
+      "evaluation/run_moa_rcv_batched.py": {
+        "path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py",
+        "sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47"
+      },
+      "tools/f_pool_replica.py": {
+        "path": "/home/data3/txy/cf_moa/tools/f_pool_replica.py",
+        "sha256": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3"
+      },
+      "controller/rule_operation_ablation.py": {
+        "path": "/home/data3/txy/cf_moa/controller/rule_operation_ablation.py",
+        "sha256": "6a4e45331330ddde3059699a0b704bf5e484476a086475340a0cdeb4999ae0c9"
+      }
+    },
+    "native_profiles": {
+      "M4": {
+        "facts": {
+          "config": {
+            "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 2048,
+            "gpu_memory_utilization": 0.95,
+            "max_model_len": 16384,
+            "max_num_seqs": 8,
+            "max_num_batched_tokens": 4096,
+            "batch_size": 8,
+            "guided_json": true,
+            "num_shards": 1,
+            "max_logprobs": 2048,
+            "model_kwargs": {
+              "num_gpu_blocks_override": 2048,
+              "enforce_eager": true
+            }
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/llama_facts_config.json",
+            "copy": "facts_m4.json",
+            "sha256": "7cedb33bbca40ff22fb5b4bfcacafd7ef9c0f9a51c24f5d843bbcf0e1f39fbab"
+          },
+          "config_hash": "51096a433191c9e7f86c23b53e4875a751e435512ba8defe6bc743d8e266603f"
+        },
+        "catalog": {
+          "config": {
+            "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 1,
+            "gpu_memory_utilization": 0.95,
+            "max_model_len": 16384,
+            "max_num_seqs": 8,
+            "max_num_batched_tokens": 4096,
+            "batch_size": 8,
+            "guided_json": false,
+            "num_shards": 1,
+            "max_logprobs": 2048,
+            "model_kwargs": {
+              "num_gpu_blocks_override": 2048
+            }
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m4_config.json",
+            "copy": "catalog_m4.json",
+            "sha256": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980"
+          },
+          "config_hash": "c40609e9f9dfa0024c5add51ac421171fdb0550a3e671f0f827a560317ec4197"
+        },
+        "readout": {
+          "config": {
+            "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.7,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 2048,
+            "gpu_memory_utilization": 0.85,
+            "max_model_len": 131072,
+            "max_num_seqs": 16,
+            "max_num_batched_tokens": 8192,
+            "batch_size": 16,
+            "guided_json": true,
+            "num_shards": 1,
+            "model_kwargs": {
+              "num_gpu_blocks_override": 16384
+            }
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+            "copy": "readout_m4.json",
+            "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+          },
+          "config_hash": "a78b37b0926fc42e989a48361ca0487cade3280c036d53993e69f59e14e77c21"
+        },
+        "a4": {
+          "config": {
+            "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.7,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 2048,
+            "gpu_memory_utilization": 0.95,
+            "max_model_len": 131072,
+            "max_num_seqs": 4,
+            "max_num_batched_tokens": 4096,
+            "batch_size": 4,
+            "guided_json": true,
+            "num_shards": 1,
+            "model_kwargs": {
+              "num_gpu_blocks_override": 8192
+            }
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m4/config.json",
+            "copy": "a4_m4.json",
+            "sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+            "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m4/config.json",
+            "development_sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96"
+          },
+          "config_hash": "341c0fe1ef409e48dd8729e047a9b334566ab3d46d01bcceb9b46b9515d76605"
+        }
+      },
+      "M5": {
+        "facts": {
+          "config": {
+            "model": "/home/data3/txy/models/Qwen3-8B",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 2048,
+            "gpu_memory_utilization": 0.95,
+            "max_model_len": 16384,
+            "max_num_seqs": 8,
+            "max_num_batched_tokens": 4096,
+            "batch_size": 8,
+            "model_kwargs": {
+              "rope_scaling": {
+                "rope_type": "yarn",
+                "factor": 4.0,
+                "original_max_position_embeddings": 32768
+              },
+              "num_gpu_blocks_override": 2048,
+              "enforce_eager": true
+            },
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            },
+            "guided_json": true,
+            "num_shards": 1,
+            "max_logprobs": 2048
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/qwen_facts_config.json",
+            "copy": "facts_m5.json",
+            "sha256": "ffd2ca3d0a5c2747d93ead06b10dd7fe12893a28ee90bcdfb586f817030c56f0"
+          },
+          "config_hash": "6434603292376131d65f6cee4a824fa6aa67e21d029498555a5fa0059c83e9e6"
+        },
+        "catalog": {
+          "config": {
+            "model": "/home/data3/txy/models/Qwen3-8B",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.0,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 1,
+            "gpu_memory_utilization": 0.95,
+            "max_model_len": 16384,
+            "max_num_seqs": 8,
+            "max_num_batched_tokens": 4096,
+            "batch_size": 8,
+            "model_kwargs": {
+              "rope_scaling": {
+                "rope_type": "yarn",
+                "factor": 4.0,
+                "original_max_position_embeddings": 32768
+              },
+              "num_gpu_blocks_override": 2048
+            },
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            },
+            "guided_json": false,
+            "num_shards": 1,
+            "max_logprobs": 2048
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m5_config.json",
+            "copy": "catalog_m5.json",
+            "sha256": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21"
+          },
+          "config_hash": "e68f4c4e7c55c7b516f501cf4287569cbc3082e7ed18e7963a554956e095c783"
+        },
+        "readout": {
+          "config": {
+            "model": "/home/data3/txy/models/Qwen3-8B",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.7,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 2048,
+            "gpu_memory_utilization": 0.85,
+            "max_model_len": 131072,
+            "max_num_seqs": 16,
+            "max_num_batched_tokens": 8192,
+            "batch_size": 16,
+            "model_kwargs": {
+              "rope_scaling": {
+                "rope_type": "yarn",
+                "factor": 4.0,
+                "original_max_position_embeddings": 32768
+              },
+              "num_gpu_blocks_override": 16384
+            },
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            },
+            "guided_json": true,
+            "num_shards": 1
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+            "copy": "readout_m5.json",
+            "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+          },
+          "config_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a"
+        },
+        "a4": {
+          "config": {
+            "model": "/home/data3/txy/models/Qwen3-8B",
+            "dtype": "bfloat16",
+            "seed": 42,
+            "temperature": 0.7,
+            "top_p": 1.0,
+            "top_k": -1,
+            "max_tokens": 2048,
+            "gpu_memory_utilization": 0.95,
+            "max_model_len": 131072,
+            "max_num_seqs": 4,
+            "max_num_batched_tokens": 4096,
+            "batch_size": 4,
+            "model_kwargs": {
+              "rope_scaling": {
+                "rope_type": "yarn",
+                "factor": 4.0,
+                "original_max_position_embeddings": 32768
+              },
+              "num_gpu_blocks_override": 8192
+            },
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            },
+            "guided_json": false,
+            "num_shards": 1
+          },
+          "source": {
+            "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m5/config.json",
+            "copy": "a4_m5.json",
+            "sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331",
+            "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m5/config.json",
+            "development_sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331"
+          },
+          "config_hash": "044b007b8aaaaeb2ad8d72bf15e8d522ec6c762287b44d40b54ec5cf7d516840"
+        }
+      }
+    },
+    "default_configuration": {
+      "version": "minimal_head_reuse_revision_20260923",
+      "entry": "cf_moa.controller.minimal_operations.run",
+      "cached_entry": "cf_moa.controller.minimal_operations.wrap_cached",
+      "default_variant": "adopted_B_five_operations_v1",
+      "router": "cf_moa.controller.strong_legacy.select",
+      "global_generation_aggregator": false,
+      "A1_A2_identity": "positive_and_negative_operations_of_one_adopted_rule_execution_not_two_new_models",
+      "native_authority": "adopted_assembler_catalog_mapping_explicit_executor_and_F",
+      "f_disagreement_reanswer": false,
+      "f_reanswer_seed": 42,
+      "optional_control": "f_disagreement_ordinary_reanswer_v1",
+      "control_scope": "only_original_B_F_branch",
+      "adoption_status": "equivalent_B_packaging_accepted_F_reanswer_not_adopted",
+      "profiles": "unchanged cf_moa/configs/native_sources.json; wrapper must not override adopted role profiles",
+      "method_source_sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "native_scoring_unchanged": true,
+      "formal_v5_unchanged": true,
+      "decision_source": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/decision.json"
+    },
+    "important_identity": "B相对C0的提升属于整个已研发组件系统；新外层包装等价，不单独贡献新正确题；C3不继承这部分作为自身增量。"
+  },
+  "actual_call_graph": {
+    "entry": "cf_moa.controller.minimal_operations.run / cf_moa.controller.moa_rcv.run(mode=strong_B)",
+    "source_locations": [
+      "cf_moa/controller/strong_legacy.py:12-22",
+      "cf_moa/controller/minimal_operations.py:23-169",
+      "cf_moa/controller/moa_rcv.py:51-124"
+    ],
+    "input": "only current legal native question/options/evidence, actual original context, same-input initial answer where required, declared tools/model; no gold/R/source-ID routing/hidden paired endpoint",
+    "ordered_branches": [
+      {
+        "priority": 1,
+        "predicate": "answer_format == diagnosis",
+        "roles": [
+          "A3"
+        ],
+        "calls": "six catalogue score requests (reuse exact historical requests where valid)",
+        "output": "fixed catalog/native mapping"
+      },
+      {
+        "priority": 2,
+        "predicate": "adopted r2_program_head.eligible(native_input)",
+        "roles": [
+          "A1",
+          "A2"
+        ],
+        "calls": "one fact extraction + one shared deterministic rule execution",
+        "output": "old assemble with scoped MET/CONTRADICTED/UNKNOWN, None and invalid policies"
+      },
+      {
+        "priority": 3,
+        "predicate": "complete supplied-model capability",
+        "roles": [
+          "A4"
+        ],
+        "calls": "typed-patch model generation + original numerical executor",
+        "output": "actual conditional model result; full-v5 coverage0"
+      },
+      {
+        "priority": 4,
+        "predicate": "supported single/robustness_single/relation and original messages available",
+        "roles": [
+          "A5"
+        ],
+        "calls": "old F: NLI6 callbacks or non-NLI3–5 generation callbacks; exact costs from original logs",
+        "output": "whole selected native answer"
+      },
+      {
+        "priority": 5,
+        "predicate": "otherwise",
+        "roles": [],
+        "calls": "no new head computation",
+        "output": "complete original native passthrough"
+      }
+    ],
+    "full_v5_route_per_backbone": {
+      "catalog": 3560,
+      "rule": 123,
+      "A4": 0,
+      "F": 10178,
+      "passthrough": 44,
+      "sum": 13905
+    },
+    "RCV_extension": "only original F branch, ordinary K>=2 legal distinct keys: earliest complete response per key, two swapped TRUE/FALSE encodings per candidate, mean separately normalized scores; selected complete old response, exact tie returnsF; no global rewriting. C2 excludes rationales, C3 includes untrusted old rationales, C5 joint selection, C4 actual3 extra answers.",
+    "system_diagram_recommendation": "五角色横排；A1/A2置于共享核虚框并合至原assembler；其余分支独立原生输出；router用能力菱形，保留fallback；A3/F内部有聚合；C3用可选虚线扩展，勿画五人全部讨论后同一LLM终审。"
+  },
+  "primary_main_table": {
+    "title": "Complete v5 system comparison: seven baseline configurations and two CF-MoA B instantiations",
+    "columns": [
+      "system",
+      "backbone",
+      "ALL",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "denominators": {
+      "ALL": 6104,
+      "R1": 2866,
+      "R2": 79,
+      "R3": 733,
+      "R4": 13,
+      "R5": 3600
+    },
+    "rows": [
+      {
+        "system": "M0 Direct",
+        "kind": "formal_baseline",
+        "backbone": "Llama-3.1-8B-Instruct",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 48.10397553516798,
+          "R1": 30.041870202372646,
+          "R2": 8.860759493670885,
+          "R3": 17.871759890859483,
+          "R4": 38.46153846153846,
+          "R5": 65.70185185185161
+        }
+      },
+      {
+        "system": "M2 MedRGAG, all Llama local adaptation",
+        "kind": "formal_baseline",
+        "backbone": "Llama-3.1-8B-Instruct",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 48.813346439492896,
+          "R1": 31.332868108862527,
+          "R2": 7.594936708860759,
+          "R3": 24.69304229195089,
+          "R4": 53.84615384615385,
+          "R5": 65.87685185185134
+        }
+      },
+      {
+        "system": "M3 MA-RAG intrinsic, N8 T4",
+        "kind": "formal_baseline",
+        "backbone": "Qwen3-8B",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 51.60823503713374,
+          "R1": 26.727145847871597,
+          "R2": 34.177215189873415,
+          "R3": 8.594815825375171,
+          "R4": 38.46153846153846,
+          "R5": 73.36574074074008
+        }
+      },
+      {
+        "system": "M4 MedRAG, structured-output repair",
+        "kind": "formal_baseline",
+        "backbone": "Llama-3.1-8B-Instruct",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 48.19899519440783,
+          "R1": 27.843684577808794,
+          "R2": 29.11392405063291,
+          "R3": 30.42291950886767,
+          "R4": 53.84615384615385,
+          "R5": 65.27962962962945
+        }
+      },
+      {
+        "system": "M5 MedRAG, original v5 output protocol",
+        "kind": "formal_baseline",
+        "backbone": "Qwen3-8B",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 47.34873307120987,
+          "R1": 28.576413119330077,
+          "R2": 41.77215189873418,
+          "R3": 25.238744884038198,
+          "R4": 53.84615384615385,
+          "R5": 63.42129629629608
+        }
+      },
+      {
+        "system": "M6 MedGENIE v2 local adaptation",
+        "kind": "formal_baseline",
+        "backbone": "Llama-3.1-8B-Instruct",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 48.02479248580132,
+          "R1": 29.937194696441033,
+          "R2": 18.9873417721519,
+          "R3": 21.41882673942701,
+          "R4": 61.53846153846154,
+          "R5": 65.15092592592552
+        }
+      },
+      {
+        "system": "M7 TC-RAG typed-control-v2 local adaptation",
+        "kind": "formal_baseline",
+        "backbone": "Qwen3-8B",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 49.430428134556266,
+          "R1": 31.437543614794137,
+          "R2": 29.11392405063291,
+          "R3": 28.922237380627557,
+          "R4": 30.76923076923077,
+          "R5": 66.17314814814765
+        }
+      },
+      {
+        "system": "CF-MoA B (M4)",
+        "kind": "adopted_capability_routed_five_operation_system",
+        "backbone": "Llama-3.1-8B-Instruct",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 58.29237658366099,
+          "R1": 44.626657362177255,
+          "R2": 48.10126582278481,
+          "R3": 53.206002728512956,
+          "R4": 53.84615384615385,
+          "R5": 68.83796296296296
+        }
+      },
+      {
+        "system": "CF-MoA B (M5)",
+        "kind": "adopted_capability_routed_five_operation_system",
+        "backbone": "Qwen3-8B",
+        "unique_inputs": 13905,
+        "native_ALL_units": 6104,
+        "percent": {
+          "ALL": 59.36162079510704,
+          "R1": 46.61549197487788,
+          "R2": 58.22784810126582,
+          "R3": 60.027285129604365,
+          "R4": 23.076923076923077,
+          "R5": 68.78981481481482
+        }
+      }
+    ],
+    "source_baselines": {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206
+    },
+    "source_B": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_category_results.json",
+      "sha256": "94ec872c3b60dc786201780b6ae5f7d5b8e5e5222893cb893a02d9afcc0cd33e",
+      "bytes": 16445
+    },
+    "cross_baseline_comparisons": [
+      {
+        "system": "CF-MoA B (M4)",
+        "ALL_percent": 58.29237658366099,
+        "highest_seven_baseline": "M3",
+        "highest_seven_baseline_percent": 51.60823503713374,
+        "difference_to_highest_seven_baseline_pp": 6.6841415465272505,
+        "highest_same_backbone_baseline": "M2",
+        "highest_same_backbone_baseline_percent": 48.813346439492896,
+        "difference_to_highest_same_backbone_pp": 9.479030144168092,
+        "interpretation": "同冻结v5及计分下的描述性系统比较；目录、规则、额外采样和上游资源/输出协议未匹配，不是纯算法等预算因果归因；没有新增跨全部基线显著性检验"
+      },
+      {
+        "system": "CF-MoA B (M5)",
+        "ALL_percent": 59.36162079510704,
+        "highest_seven_baseline": "M3",
+        "highest_seven_baseline_percent": 51.60823503713374,
+        "difference_to_highest_seven_baseline_pp": 7.753385757973298,
+        "highest_same_backbone_baseline": "M3",
+        "highest_same_backbone_baseline_percent": 51.60823503713374,
+        "difference_to_highest_same_backbone_pp": 7.753385757973298,
+        "interpretation": "同冻结v5及计分下的描述性系统比较；目录、规则、额外采样和上游资源/输出协议未匹配，不是纯算法等预算因果归因；没有新增跨全部基线显著性检验"
+      }
+    ],
+    "required_note": "同一完整v5和原生计分，但组件资源、调用预算、上游实现和输出协议有差异；不称equal-budget胜利。R类别重叠；13个R4照报，不删不替换；M3的R5仍更高，M6的R4仍更高，不能说逐类别全面最好。"
+  },
+  "strong_system_evidence": {
+    "B_minus_C0_family_CIs": [
+      {
+        "method": "M4",
+        "metric": "native_ALL",
+        "candidate": "strong_B",
+        "baseline": "original_C0",
+        "atoms": 6104,
+        "families": 4766,
+        "delta_pp": 10.09338138925296,
+        "percentile_95_pp": [
+          8.95803666635188,
+          11.233989843584782
+        ],
+        "resamples": 5000,
+        "seed": 240924,
+        "paired": true,
+        "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+      },
+      {
+        "method": "M4",
+        "metric": "maintain",
+        "candidate": "strong_B",
+        "baseline": "original_C0",
+        "atoms": 6838,
+        "families": 2806,
+        "delta_pp": 6.3615092132202395,
+        "percentile_95_pp": [
+          5.132734200444245,
+          7.603678062231505
+        ],
+        "resamples": 5000,
+        "seed": 240924,
+        "paired": true,
+        "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+      },
+      {
+        "method": "M4",
+        "metric": "respond",
+        "candidate": "strong_B",
+        "baseline": "original_C0",
+        "atoms": 1780,
+        "families": 1780,
+        "delta_pp": 18.764044943820224,
+        "percentile_95_pp": [
+          16.96629213483146,
+          20.56179775280899
+        ],
+        "resamples": 5000,
+        "seed": 240924,
+        "paired": true,
+        "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+      },
+      {
+        "method": "M5",
+        "metric": "native_ALL",
+        "candidate": "strong_B",
+        "baseline": "original_C0",
+        "atoms": 6104,
+        "families": 4766,
+        "delta_pp": 12.01288772389694,
+        "percentile_95_pp": [
+          10.917734384847645,
+          13.151016669586957
+        ],
+        "resamples": 5000,
+        "seed": 240924,
+        "paired": true,
+        "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+      },
+      {
+        "method": "M5",
+        "metric": "maintain",
+        "candidate": "strong_B",
+        "baseline": "original_C0",
+        "atoms": 6838,
+        "families": 2806,
+        "delta_pp": 13.62971629131325,
+        "percentile_95_pp": [
+          12.03002731467996,
+          15.290045247790985
+        ],
+        "resamples": 5000,
+        "seed": 240924,
+        "paired": true,
+        "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+      },
+      {
+        "method": "M5",
+        "metric": "respond",
+        "candidate": "strong_B",
+        "baseline": "original_C0",
+        "atoms": 1780,
+        "families": 1780,
+        "delta_pp": 18.707865168539325,
+        "percentile_95_pp": [
+          16.91011235955056,
+          20.56179775280899
+        ],
+        "resamples": 5000,
+        "seed": 240924,
+        "paired": true,
+        "interpretation": "descriptive_exposed_development_not_selection_adjusted"
+      }
+    ],
+    "paired_counts": [
+      {
+        "method": "M4",
+        "maintain_n": 6838,
+        "maintain_C0": 4005,
+        "maintain_B": 4440,
+        "respond_n": 1780,
+        "respond_C0": 13,
+        "respond_B": 347
+      },
+      {
+        "method": "M5",
+        "maintain_n": 6838,
+        "maintain_C0": 3528,
+        "maintain_B": 4460,
+        "respond_n": 1780,
+        "respond_C0": 27,
+        "respond_B": 360
+      }
+    ],
+    "positive_claim": "B在两个骨干完整ALL、保持双正确和应变双正确三项都增加，六个家族配对95%区间均正；可主打系统既改善应变又改善保持，无需靠单个有利来源。",
+    "scope": "已暴露开发回归；配对端仍独立推理；不是六个独立数据集，CI不消除开发选择。",
+    "per_category": [
+      {
+        "method": "M4",
+        "arm": "original_C0",
+        "category": "ALL",
+        "units": 6104,
+        "families": 4766,
+        "mean_native_unit_score": 0.4819899519440804,
+        "native_records": 8798,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "original_C0",
+        "category": "R1",
+        "units": 2866,
+        "families": 2188,
+        "mean_native_unit_score": 0.2784368457780879,
+        "native_records": 2866,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "original_C0",
+        "category": "R2",
+        "units": 79,
+        "families": 79,
+        "mean_native_unit_score": 0.2911392405063291,
+        "native_records": 79,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "original_C0",
+        "category": "R3",
+        "units": 733,
+        "families": 725,
+        "mean_native_unit_score": 0.3042291950886767,
+        "native_records": 733,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "original_C0",
+        "category": "R4",
+        "units": 13,
+        "families": 13,
+        "mean_native_unit_score": 0.5384615384615384,
+        "native_records": 13,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "original_C0",
+        "category": "R5",
+        "units": 3600,
+        "families": 2726,
+        "mean_native_unit_score": 0.6527962962962963,
+        "native_records": 6294,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "strong_B",
+        "category": "ALL",
+        "units": 6104,
+        "families": 4766,
+        "mean_native_unit_score": 0.5829237658366099,
+        "native_records": 8798,
+        "unavailable_mappings": 40
+      },
+      {
+        "method": "M4",
+        "arm": "strong_B",
+        "category": "R1",
+        "units": 2866,
+        "families": 2188,
+        "mean_native_unit_score": 0.4462665736217725,
+        "native_records": 2866,
+        "unavailable_mappings": 3
+      },
+      {
+        "method": "M4",
+        "arm": "strong_B",
+        "category": "R2",
+        "units": 79,
+        "families": 79,
+        "mean_native_unit_score": 0.4810126582278481,
+        "native_records": 79,
+        "unavailable_mappings": 3
+      },
+      {
+        "method": "M4",
+        "arm": "strong_B",
+        "category": "R3",
+        "units": 733,
+        "families": 725,
+        "mean_native_unit_score": 0.5320600272851296,
+        "native_records": 733,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "strong_B",
+        "category": "R4",
+        "units": 13,
+        "families": 13,
+        "mean_native_unit_score": 0.5384615384615384,
+        "native_records": 13,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M4",
+        "arm": "strong_B",
+        "category": "R5",
+        "units": 3600,
+        "families": 2726,
+        "mean_native_unit_score": 0.6883796296296296,
+        "native_records": 6294,
+        "unavailable_mappings": 34
+      },
+      {
+        "method": "M5",
+        "arm": "original_C0",
+        "category": "ALL",
+        "units": 6104,
+        "families": 4766,
+        "mean_native_unit_score": 0.4734873307121014,
+        "native_records": 8798,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "original_C0",
+        "category": "R1",
+        "units": 2866,
+        "families": 2188,
+        "mean_native_unit_score": 0.28576413119330074,
+        "native_records": 2866,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "original_C0",
+        "category": "R2",
+        "units": 79,
+        "families": 79,
+        "mean_native_unit_score": 0.4177215189873418,
+        "native_records": 79,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "original_C0",
+        "category": "R3",
+        "units": 733,
+        "families": 725,
+        "mean_native_unit_score": 0.252387448840382,
+        "native_records": 733,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "original_C0",
+        "category": "R4",
+        "units": 13,
+        "families": 13,
+        "mean_native_unit_score": 0.5384615384615384,
+        "native_records": 13,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "original_C0",
+        "category": "R5",
+        "units": 3600,
+        "families": 2726,
+        "mean_native_unit_score": 0.6342129629629629,
+        "native_records": 6294,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "strong_B",
+        "category": "ALL",
+        "units": 6104,
+        "families": 4766,
+        "mean_native_unit_score": 0.5936162079510704,
+        "native_records": 8798,
+        "unavailable_mappings": 22
+      },
+      {
+        "method": "M5",
+        "arm": "strong_B",
+        "category": "R1",
+        "units": 2866,
+        "families": 2188,
+        "mean_native_unit_score": 0.46615491974877876,
+        "native_records": 2866,
+        "unavailable_mappings": 11
+      },
+      {
+        "method": "M5",
+        "arm": "strong_B",
+        "category": "R2",
+        "units": 79,
+        "families": 79,
+        "mean_native_unit_score": 0.5822784810126582,
+        "native_records": 79,
+        "unavailable_mappings": 10
+      },
+      {
+        "method": "M5",
+        "arm": "strong_B",
+        "category": "R3",
+        "units": 733,
+        "families": 725,
+        "mean_native_unit_score": 0.6002728512960437,
+        "native_records": 733,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "strong_B",
+        "category": "R4",
+        "units": 13,
+        "families": 13,
+        "mean_native_unit_score": 0.23076923076923078,
+        "native_records": 13,
+        "unavailable_mappings": 0
+      },
+      {
+        "method": "M5",
+        "arm": "strong_B",
+        "category": "R5",
+        "units": 3600,
+        "families": 2726,
+        "mean_native_unit_score": 0.6878981481481482,
+        "native_records": 6294,
+        "unavailable_mappings": 1
+      }
+    ],
+    "source_intervals": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/family_effect_intervals.json",
+      "sha256": "cecd19b44b1592d2d78c3a8fefed0413fdb22fb6cbff4b2d4c93ac1b08a9a07c",
+      "bytes": 14924
+    },
+    "report_location": "docs/research/cf_moa_experiment_report.md:1880-1915,2025-2033"
+  },
+  "seven_system_head_evidence": {
+    "rows": [
+      {
+        "method": "M0",
+        "n": 2866,
+        "baseline_correct": 861,
+        "head_correct": 1329,
+        "delta_pp": 16.329378925331472,
+        "category": "R1"
+      },
+      {
+        "method": "M2",
+        "n": 2866,
+        "baseline_correct": 898,
+        "head_correct": 1323,
+        "delta_pp": 14.829030006978368,
+        "category": "R1"
+      },
+      {
+        "method": "M3",
+        "n": 2866,
+        "baseline_correct": 766,
+        "head_correct": 1260,
+        "delta_pp": 17.236566643405443,
+        "category": "R1"
+      },
+      {
+        "method": "M4",
+        "n": 2866,
+        "baseline_correct": 798,
+        "head_correct": 1225,
+        "delta_pp": 14.898813677599442,
+        "category": "R1"
+      },
+      {
+        "method": "M5",
+        "n": 2866,
+        "baseline_correct": 819,
+        "head_correct": 1367,
+        "delta_pp": 19.120725750174458,
+        "category": "R1"
+      },
+      {
+        "method": "M6",
+        "n": 2866,
+        "baseline_correct": 858,
+        "head_correct": 1317,
+        "delta_pp": 16.015352407536636,
+        "category": "R1"
+      },
+      {
+        "method": "M7",
+        "n": 2866,
+        "baseline_correct": 901,
+        "head_correct": 1331,
+        "delta_pp": 15.003489183531054,
+        "category": "R1"
+      },
+      {
+        "method": "M0",
+        "n": 79,
+        "baseline_correct": 7,
+        "head_correct": 29,
+        "delta_pp": 27.848101265822784,
+        "category": "R2"
+      },
+      {
+        "method": "M2",
+        "n": 79,
+        "baseline_correct": 6,
+        "head_correct": 23,
+        "delta_pp": 21.518987341772153,
+        "category": "R2"
+      },
+      {
+        "method": "M3",
+        "n": 79,
+        "baseline_correct": 27,
+        "head_correct": 43,
+        "delta_pp": 20.253164556962027,
+        "category": "R2"
+      },
+      {
+        "method": "M4",
+        "n": 79,
+        "baseline_correct": 23,
+        "head_correct": 39,
+        "delta_pp": 20.253164556962027,
+        "category": "R2"
+      },
+      {
+        "method": "M5",
+        "n": 79,
+        "baseline_correct": 33,
+        "head_correct": 46,
+        "delta_pp": 16.455696202531644,
+        "category": "R2"
+      },
+      {
+        "method": "M6",
+        "n": 79,
+        "baseline_correct": 15,
+        "head_correct": 38,
+        "delta_pp": 29.11392405063291,
+        "category": "R2"
+      },
+      {
+        "method": "M7",
+        "n": 79,
+        "baseline_correct": 23,
+        "head_correct": 37,
+        "delta_pp": 17.72151898734177,
+        "category": "R2"
+      },
+      {
+        "method": "M0",
+        "n": 733,
+        "baseline_correct": 131,
+        "head_correct": 338,
+        "delta_pp": 28.240109140518417,
+        "category": "R3"
+      },
+      {
+        "method": "M2",
+        "n": 733,
+        "baseline_correct": 181,
+        "head_correct": 340,
+        "delta_pp": 21.69167803547067,
+        "category": "R3"
+      },
+      {
+        "method": "M3",
+        "n": 733,
+        "baseline_correct": 63,
+        "head_correct": 238,
+        "delta_pp": 23.874488403819917,
+        "category": "R3"
+      },
+      {
+        "method": "M4",
+        "n": 733,
+        "baseline_correct": 223,
+        "head_correct": 386,
+        "delta_pp": 22.237380627557982,
+        "category": "R3"
+      },
+      {
+        "method": "M5",
+        "n": 733,
+        "baseline_correct": 185,
+        "head_correct": 443,
+        "delta_pp": 35.19781718963165,
+        "category": "R3"
+      },
+      {
+        "method": "M6",
+        "n": 733,
+        "baseline_correct": 157,
+        "head_correct": 305,
+        "delta_pp": 20.19099590723056,
+        "category": "R3"
+      },
+      {
+        "method": "M7",
+        "n": 733,
+        "baseline_correct": 212,
+        "head_correct": 349,
+        "delta_pp": 18.69031377899045,
+        "category": "R3"
+      }
+    ],
+    "source": {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361
+    },
+    "claim": "21个方法×R1/R2/R3格均净改善，证明支持更新/候选重决策组件能迁移到七个终端系统；不是七套完整B/CF-MoA全量运行。",
+    "overlap": {
+      "R1_intersect_R2": 4,
+      "R1_intersect_R3": 733,
+      "R2_intersect_R3": 3,
+      "unique_union": 2941,
+      "sum_category_members": 3678
+    },
+    "generation_and_reuse": "目录新末端取分使用各原上下文原骨干并合法复用；规则两原骨干事实集与七原答案离线组合；20062迁移输入/75264cachecallbacks仅等价验证。",
+    "not_identical_to_later_B": "七head与后期B有不同范围的F/原生封装和新补算，不能把前者作为B的同一结果替身。",
+    "M4_M5_head_vs_B_counts": [
+      {
+        "method": "M4",
+        "category": "R1",
+        "head_correct": 1225,
+        "later_B_correct": 1279
+      },
+      {
+        "method": "M4",
+        "category": "R2",
+        "head_correct": 39,
+        "later_B_correct": 38
+      },
+      {
+        "method": "M4",
+        "category": "R3",
+        "head_correct": 386,
+        "later_B_correct": 390
+      },
+      {
+        "method": "M5",
+        "category": "R1",
+        "head_correct": 1367,
+        "later_B_correct": 1336
+      },
+      {
+        "method": "M5",
+        "category": "R2",
+        "head_correct": 46,
+        "later_B_correct": 46
+      },
+      {
+        "method": "M5",
+        "category": "R3",
+        "head_correct": 443,
+        "later_B_correct": 440
+      }
+    ]
+  },
+  "operation_evidence": {
+    "A1_A2": {
+      "n": 123,
+      "rows": [
+        {
+          "method": "M4",
+          "B_correct": 69,
+          "disable_add": 43,
+          "disable_remove": 53,
+          "unavailable": 1
+        },
+        {
+          "method": "M5",
+          "B_correct": 71,
+          "disable_add": 48,
+          "disable_remove": 60,
+          "unavailable": 14
+        }
+      ],
+      "positive_claim": "共享核正向补入与负向撤销都对完整输出有实际作用；是五角色框架中两功能角色的直接机制证据。",
+      "control_strength": "same saved facts/status/paths, same cases and assembler;0new facts; not two independent agents synergy",
+      "location": "docs/research/cf_moa_experiment_report.md:1807-1814"
+    },
+    "A3": {
+      "diagnostic_controls": [
+        {
+          "method": "M0",
+          "n": 680,
+          "baseline_correct": 116,
+          "single_catalog_correct": 299,
+          "uncalibrated_vote_correct": 314,
+          "calibrated_vote_correct": 314,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        },
+        {
+          "method": "M2",
+          "n": 680,
+          "baseline_correct": 163,
+          "single_catalog_correct": 320,
+          "uncalibrated_vote_correct": 325,
+          "calibrated_vote_correct": 315,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        },
+        {
+          "method": "M3",
+          "n": 680,
+          "baseline_correct": 33,
+          "single_catalog_correct": 215,
+          "uncalibrated_vote_correct": 200,
+          "calibrated_vote_correct": 204,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        },
+        {
+          "method": "M4",
+          "n": 680,
+          "baseline_correct": 203,
+          "single_catalog_correct": 339,
+          "uncalibrated_vote_correct": 359,
+          "calibrated_vote_correct": 359,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        },
+        {
+          "method": "M5",
+          "n": 680,
+          "baseline_correct": 160,
+          "single_catalog_correct": 382,
+          "uncalibrated_vote_correct": 402,
+          "calibrated_vote_correct": 410,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        },
+        {
+          "method": "M6",
+          "n": 680,
+          "baseline_correct": 137,
+          "single_catalog_correct": 296,
+          "uncalibrated_vote_correct": 288,
+          "calibrated_vote_correct": 276,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        },
+        {
+          "method": "M7",
+          "n": 680,
+          "baseline_correct": 186,
+          "single_catalog_correct": 312,
+          "uncalibrated_vote_correct": 324,
+          "calibrated_vote_correct": 318,
+          "summary_path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/summary.json",
+          "summary_sha256": "0c120a861cb5d3fe3ae12dcc03c5b191f3320783021cc684082bd87de37c0696"
+        }
+      ],
+      "positive_claim": "目录内重新决定在七系统上取得大幅改善，不仅是替换整个上游方法；40例名称归一控制M4/M5原12/9→归一15/11→患者目录18/18。",
+      "component_limit": "先验校正不是稳定收益来源；完整single/uncorrected/calibrated表保留，可放机制实验。"
+    },
+    "A4": {
+      "source": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/summary.json",
+        "sha256": "2c0f4e42c2e5f552d830fdc636a47fff11114aa4349001f3218f52bb624b8368",
+        "bytes": 75186
+      },
+      "rows": [
+        {
+          "method": "M4",
+          "arm": "redo",
+          "n": 288,
+          "correct": 118,
+          "joint_numeric_correct": 0,
+          "all_outputs_correct": 0
+        },
+        {
+          "method": "M4",
+          "arm": "source_no_do",
+          "n": 288,
+          "correct": 234,
+          "joint_numeric_correct": 67,
+          "all_outputs_correct": 67
+        },
+        {
+          "method": "M4",
+          "arm": "full_inline",
+          "n": 288,
+          "correct": 111,
+          "joint_numeric_correct": 0,
+          "all_outputs_correct": 0
+        },
+        {
+          "method": "M4",
+          "arm": "full_no_do",
+          "n": 288,
+          "correct": 234,
+          "joint_numeric_correct": 67,
+          "all_outputs_correct": 67
+        },
+        {
+          "method": "M4",
+          "arm": "full",
+          "n": 288,
+          "correct": 286,
+          "joint_numeric_correct": 270,
+          "all_outputs_correct": 270
+        },
+        {
+          "method": "M4",
+          "arm": "patch_inline",
+          "n": 288,
+          "correct": 132,
+          "joint_numeric_correct": 0,
+          "all_outputs_correct": 0
+        },
+        {
+          "method": "M4",
+          "arm": "patch_no_do",
+          "n": 288,
+          "correct": 234,
+          "joint_numeric_correct": 67,
+          "all_outputs_correct": 67
+        },
+        {
+          "method": "M4",
+          "arm": "patch",
+          "n": 288,
+          "correct": 288,
+          "joint_numeric_correct": 288,
+          "all_outputs_correct": 288
+        },
+        {
+          "method": "M5",
+          "arm": "redo",
+          "n": 288,
+          "correct": 187,
+          "joint_numeric_correct": 0,
+          "all_outputs_correct": 0
+        },
+        {
+          "method": "M5",
+          "arm": "source_no_do",
+          "n": 288,
+          "correct": 234,
+          "joint_numeric_correct": 67,
+          "all_outputs_correct": 67
+        },
+        {
+          "method": "M5",
+          "arm": "full_inline",
+          "n": 288,
+          "correct": 157,
+          "joint_numeric_correct": 0,
+          "all_outputs_correct": 0
+        },
+        {
+          "method": "M5",
+          "arm": "full_no_do",
+          "n": 288,
+          "correct": 224,
+          "joint_numeric_correct": 61,
+          "all_outputs_correct": 61
+        },
+        {
+          "method": "M5",
+          "arm": "full",
+          "n": 288,
+          "correct": 265,
+          "joint_numeric_correct": 222,
+          "all_outputs_correct": 222
+        },
+        {
+          "method": "M5",
+          "arm": "patch_inline",
+          "n": 288,
+          "correct": 144,
+          "joint_numeric_correct": 0,
+          "all_outputs_correct": 0
+        },
+        {
+          "method": "M5",
+          "arm": "patch_no_do",
+          "n": 288,
+          "correct": 234,
+          "joint_numeric_correct": 67,
+          "all_outputs_correct": 67
+        },
+        {
+          "method": "M5",
+          "arm": "patch",
+          "n": 288,
+          "correct": 288,
+          "joint_numeric_correct": 288,
+          "all_outputs_correct": 288
+        }
+      ],
+      "faithful_action_plus_query_counts": {
+        "M4": {
+          "full": 263,
+          "patch": 288
+        },
+        "M5": {
+          "full": 213,
+          "patch": 288
+        }
+      },
+      "profiles": 24,
+      "questions_each": 12,
+      "local_patch_vs_same_tool_full_joint_numeric_gain_pp": {
+        "M4": 6.25,
+        "M5": 22.916666666666668
+      },
+      "no_do": {
+        "both_backbones_binary": 234,
+        "both_backbones_joint_numeric": 67,
+        "n": 288
+      },
+      "positive_claim": "在冻结后新profile上，局部干预表示相对同工具整计划重述减少错误并提高数值后果，no-do控制说明实际干预传播作用。",
+      "boundary": "same model information/tools and task scope; token costs differ; simulator profiles not clinical patients; original13HIV untouched",
+      "location": "docs/research/r4_consequence_head.md:579-632"
+    },
+    "A5_F": {
+      "source": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/summary.json",
+        "sha256": "c44b23f33eac9f7068a87ce4a4fa1c31653510b7295ac4bbd8c56812957de3bc",
+        "bytes": 408423
+      },
+      "full_R5_208_rows": [
+        {
+          "method": "M4",
+          "stage": "all",
+          "cohort": "all_R5",
+          "source": "all",
+          "arm": "combined_head",
+          "units": 208,
+          "mappings": 608,
+          "correct": 466,
+          "invalid": 0,
+          "variant_pct": 70.64102564102565,
+          "reference_pct": 75.32051282051282,
+          "both_pct": 65.8974358974359,
+          "invariant_pct": 82.66025641025641
+        },
+        {
+          "method": "M4",
+          "stage": "all",
+          "cohort": "all_R5",
+          "source": "all",
+          "arm": "original",
+          "units": 208,
+          "mappings": 608,
+          "correct": 450,
+          "invalid": 2,
+          "variant_pct": 68.26923076923077,
+          "reference_pct": 71.15384615384616,
+          "both_pct": 60.192307692307686,
+          "invariant_pct": 75.09615384615384
+        },
+        {
+          "method": "M5",
+          "stage": "all",
+          "cohort": "all_R5",
+          "source": "all",
+          "arm": "combined_head",
+          "units": 208,
+          "mappings": 608,
+          "correct": 448,
+          "invalid": 0,
+          "variant_pct": 71.28205128205128,
+          "reference_pct": 72.75641025641025,
+          "both_pct": 66.47435897435898,
+          "invariant_pct": 84.00641025641026
+        },
+        {
+          "method": "M5",
+          "stage": "all",
+          "cohort": "all_R5",
+          "source": "all",
+          "arm": "original",
+          "units": 208,
+          "mappings": 608,
+          "correct": 411,
+          "invalid": 44,
+          "variant_pct": 67.72435897435898,
+          "reference_pct": 69.55128205128204,
+          "both_pct": 59.166666666666664,
+          "invariant_pct": 72.62820512820512
+        }
+      ],
+      "frozen_component_rows": [
+        {
+          "method": "M4",
+          "stage": "nli_validation",
+          "cohort": "nli_choice_R5_validation",
+          "source": "all",
+          "arm": "combined_head",
+          "units": 16,
+          "mappings": 32,
+          "correct": 25,
+          "invalid": 0,
+          "variant_pct": 75.0,
+          "reference_pct": 81.25,
+          "both_pct": 75.0,
+          "invariant_pct": 93.75
+        },
+        {
+          "method": "M4",
+          "stage": "nli_validation",
+          "cohort": "nli_choice_R5_validation",
+          "source": "all",
+          "arm": "native_single",
+          "units": 16,
+          "mappings": 32,
+          "correct": 22,
+          "invalid": 0,
+          "variant_pct": 68.75,
+          "reference_pct": 68.75,
+          "both_pct": 68.75,
+          "invariant_pct": 100
+        },
+        {
+          "method": "M4",
+          "stage": "nli_validation",
+          "cohort": "strong_relevant_change",
+          "source": "all",
+          "arm": "combined_head",
+          "units": 8,
+          "mappings": 16,
+          "correct": 13,
+          "invalid": 0,
+          "variant_pct": 75.0,
+          "reference_pct": 87.5,
+          "both_pct": 62.5,
+          "invariant_pct": 37.5
+        },
+        {
+          "method": "M4",
+          "stage": "nli_validation",
+          "cohort": "strong_relevant_change",
+          "source": "all",
+          "arm": "native_single",
+          "units": 8,
+          "mappings": 16,
+          "correct": 11,
+          "invalid": 0,
+          "variant_pct": 50.0,
+          "reference_pct": 87.5,
+          "both_pct": 37.5,
+          "invariant_pct": 62.5
+        },
+        {
+          "method": "M5",
+          "stage": "nli_validation",
+          "cohort": "nli_choice_R5_validation",
+          "source": "all",
+          "arm": "combined_head",
+          "units": 16,
+          "mappings": 32,
+          "correct": 27,
+          "invalid": 0,
+          "variant_pct": 87.5,
+          "reference_pct": 81.25,
+          "both_pct": 81.25,
+          "invariant_pct": 93.75
+        },
+        {
+          "method": "M5",
+          "stage": "nli_validation",
+          "cohort": "nli_choice_R5_validation",
+          "source": "all",
+          "arm": "native_single",
+          "units": 16,
+          "mappings": 32,
+          "correct": 26,
+          "invalid": 0,
+          "variant_pct": 87.5,
+          "reference_pct": 75.0,
+          "both_pct": 75.0,
+          "invariant_pct": 87.5
+        },
+        {
+          "method": "M5",
+          "stage": "nli_validation",
+          "cohort": "strong_relevant_change",
+          "source": "all",
+          "arm": "combined_head",
+          "units": 8,
+          "mappings": 16,
+          "correct": 14,
+          "invalid": 0,
+          "variant_pct": 75.0,
+          "reference_pct": 100,
+          "both_pct": 75.0,
+          "invariant_pct": 25.0
+        },
+        {
+          "method": "M5",
+          "stage": "nli_validation",
+          "cohort": "strong_relevant_change",
+          "source": "all",
+          "arm": "native_single",
+          "units": 8,
+          "mappings": 16,
+          "correct": 13,
+          "invalid": 0,
+          "variant_pct": 62.5,
+          "reference_pct": 100,
+          "both_pct": 62.5,
+          "invariant_pct": 37.5
+        }
+      ],
+      "scope_composition": {
+        "initial_development": 64,
+        "extension": 128,
+        "frozen_after_new_groups": 16,
+        "total_R5_units": 208,
+        "strong_control_new_groups_separate": 8
+      },
+      "positive_claim": "有限冻结组件检查同时改善保持与相关前提应变：16组各多1对，8强控分别多2/1对。",
+      "boundary": "full208不是全部独立测试；新16matched_single不是historicaloriginal（Qwen分别12/16 vs11/16）；旧192相对完整Maj5仅+0.5208/+1.5625pp；F是已有集成原理的任务适配，后续训练候选非采用。",
+      "location": "docs/research/r5_invariance_head.md:445-502"
+    },
+    "R2_control_to_preserve": [
+      {
+        "method": "M0",
+        "n": 79,
+        "baseline_correct": 7,
+        "head_correct": 29,
+        "same_coverage_none_correct": 48,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 5,
+        "head_remaining_support_correct": 6,
+        "constant_remaining_support_correct": 0
+      },
+      {
+        "method": "M2",
+        "n": 79,
+        "baseline_correct": 6,
+        "head_correct": 23,
+        "same_coverage_none_correct": 47,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 4,
+        "head_remaining_support_correct": 4,
+        "constant_remaining_support_correct": 0
+      },
+      {
+        "method": "M3",
+        "n": 79,
+        "baseline_correct": 27,
+        "head_correct": 43,
+        "same_coverage_none_correct": 58,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 1,
+        "head_remaining_support_correct": 3,
+        "constant_remaining_support_correct": 0
+      },
+      {
+        "method": "M4",
+        "n": 79,
+        "baseline_correct": 23,
+        "head_correct": 39,
+        "same_coverage_none_correct": 58,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 3,
+        "head_remaining_support_correct": 4,
+        "constant_remaining_support_correct": 0
+      },
+      {
+        "method": "M5",
+        "n": 79,
+        "baseline_correct": 33,
+        "head_correct": 46,
+        "same_coverage_none_correct": 56,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 0,
+        "head_remaining_support_correct": 6,
+        "constant_remaining_support_correct": 0
+      },
+      {
+        "method": "M6",
+        "n": 79,
+        "baseline_correct": 15,
+        "head_correct": 38,
+        "same_coverage_none_correct": 52,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 2,
+        "head_remaining_support_correct": 5,
+        "constant_remaining_support_correct": 0
+      },
+      {
+        "method": "M7",
+        "n": 79,
+        "baseline_correct": 23,
+        "head_correct": 37,
+        "same_coverage_none_correct": 54,
+        "covered_n": 55,
+        "covered_none_n": 46,
+        "uncovered_n": 24,
+        "remaining_support_n": 9,
+        "baseline_remaining_support_correct": 3,
+        "head_remaining_support_correct": 2,
+        "constant_remaining_support_correct": 0
+      }
+    ]
+  },
+  "coordination_design_comparison": {
+    "scope": {
+      "inputs_per_backbone": 121,
+      "mappings": 157,
+      "native_units": 74,
+      "families": 40,
+      "status": "exposed development; all rows same scope"
+    },
+    "rows": [
+      {
+        "system": "strong adopted B",
+        "M4_correct": 87,
+        "M5_correct": 82,
+        "M4_native_mean": 0.7027027027,
+        "M5_native_mean": 0.6441441441
+      },
+      {
+        "system": "fixed three-draw public-budget-ceiling control",
+        "M4_correct": 84,
+        "M5_correct": 74,
+        "M4_native_mean": 0.6576576577,
+        "M5_native_mean": 0.5945945946
+      },
+      {
+        "system": "experimental A1 pool top-1",
+        "M4_correct": 72,
+        "M5_correct": 57,
+        "M4_native_mean": 0.6072072072,
+        "M5_native_mean": 0.4063063063
+      },
+      {
+        "system": "sparse generative aggregation with non-adopted A1",
+        "M4_correct": 79,
+        "M5_correct": 74,
+        "M4_native_mean": 0.6306306306,
+        "M5_native_mean": 0.5405405405
+      },
+      {
+        "system": "generative aggregation over prior A2/A3/F pool",
+        "M4_correct": 75,
+        "M5_correct": 73,
+        "M4_native_mean": 0.5675675676,
+        "M5_native_mean": 0.5405405405
+      }
+    ],
+    "source": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/complete_comparison/summary.json",
+      "sha256": "831e1d56dc68db5a1b4e40a9ba97a9c4eb204944504f3e195ba614419e1ff2e7",
+      "bytes": 87964
+    },
+    "record": "docs/research/cf_moa_experiment_report.md:921-960",
+    "interpretation": "同范围的真实设计比较支持最终保留强能力路由与确定性执行权；结果不能推导所有多agent聚合永远无效。",
+    "distinctions": [
+      "两生成聚合行专家池和EOS协议不同，不是纯A1去除消融。",
+      "原采用池top1=87/82，与含A1实验池top1=72/57不同。",
+      "真实含A1聚合每骨干29/121激活两个专家，92个单专家；没有五人全会诊。",
+      "固定三draw匹配公共上限，不等实际token/费用；同工具单agent全量控制未完成。"
+    ]
+  },
+  "presentation_priority": [
+    {
+      "rank": 1,
+      "placement": "Introduction and method",
+      "content": "先提出五类操作需求与CF-MoA统一结构；以五角色表和真实能力路由图给出算法，明确选用实现B。"
+    },
+    {
+      "rank": 2,
+      "placement": "Main result Table1",
+      "content": "完整9行：7 baseline+CF-MoA-Llama+CF-MoA-Qwen，ALL/R1-R5全列；讲两系统均高于全部7 baseline的ALL点值和同骨干对应C0配对增益。"
+    },
+    {
+      "rank": 3,
+      "placement": "Main paired behavior figure/table",
+      "content": "B−C0的ALL、保持、应变6组正效应及CI；这是面向五类反事实需求最有力统一系统证据。"
+    },
+    {
+      "rank": 4,
+      "placement": "Component portability main/compact appendix",
+      "content": "21格七配置R1/R2/R3加head，展示模块可迁移性；不重复计算重叠样本或虚增系统实现。"
+    },
+    {
+      "rank": 5,
+      "placement": "Mechanism table with panels",
+      "content": "A1/A2全123消融；A3目录控制；A4同工具288题及no-do；A5 16保持+8应变与208系统结果。每panel各自分母，不统一加总。"
+    },
+    {
+      "rank": 6,
+      "placement": "Coordination design study",
+      "content": "121同范围强B/真实生成聚合/固定3draw，解释为何采用保留执行权的稀疏协调。可主文简表、全文附录。"
+    },
+    {
+      "rank": 7,
+      "placement": "Secondary experiment or appendix",
+      "content": "保留全部六臂RCV、所有11来源/5格式、成本及负结果；摘要不必围绕C3失败写，但正文必须交代C3相对B双配置不一致。"
+    }
+  ],
+  "claims_not_supported_or_work_not_executed": [
+    "七配置均已完成完整五操作CF-MoA六臂全量实验。",
+    "A1–A5为五套独立训练模型或五个完全独立新算法。",
+    "原9/21提出的跨专家证据聚合协同增益已经证明。",
+    "B增益归因于后来新包装、自由知识审计A1或C3验证。",
+    "B在每一R类别、每一来源均优于每个基线。",
+    "所有实验是等预算/同资源比较。",
+    "A4在临床v5得到288题或覆盖原13HIV；把模型题并入6104分母。",
+    "所有R1-R5历史外部组件验证未执行；实际已有有限外部与heldoutprofile检查。",
+    "最终CF-MoA新家族确认、第二独立F池已完成。",
+    "未采用CAD五头计划已训练；未完成同工具单agent控制被视为有效完整基线。"
+  ],
+  "read_receipt": {
+    "workspace_instructions_read": [
+      "AGENTS.md",
+      "docs/README.md",
+      "cf_moa/AGENTS.md"
+    ],
+    "original_plan_full_read": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+      "bytes": 26940
+    },
+    "minimal_revision_plan_full_read": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/final_source_snapshot/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "sha256": "b0a3e244140c36173744d808beb300b1879c42808b3a51f99e1b1d53d2dda815",
+      "bytes": 12433
+    },
+    "active_closeout_plan_full_read": {
+      "path": "/home/data3/txy/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "sha256": "a5f440c2964a95b6c7b12b1658e3a988b40c8ebfb49a6dde857dff9c73663579",
+      "bytes": 18086
+    },
+    "navigation_read": "cf_moa.md all stage headings throughline2588; cf_moa_experiment_report.md all chapter/subsection headings through16.13",
+    "key_record_ranges_read": {
+      "docs/research/cf_moa.md": [
+        "30-70",
+        "1648-1690",
+        "key portions from initial1-250 output; large output truncated so not claimed full read"
+      ],
+      "docs/research/cf_moa_experiment_report.md": [
+        "31-139",
+        "921-965",
+        "1056-1097",
+        "1370-1415",
+        "1433-1559",
+        "1755-1930",
+        "2019-2054"
+      ],
+      "docs/research/r4_consequence_head.md": [
+        "579-632"
+      ],
+      "docs/research/r5_invariance_head.md": [
+        "445-502"
+      ]
+    },
+    "code_read": [
+      "controller/strong_legacy.py full",
+      "controller/minimal_operations.py full",
+      "controller/moa_rcv.py 1-124",
+      "agents/a4_intervention_execution.py full",
+      "agents/a5_robust_readout.py 1-53",
+      "tools/legacy.py full",
+      "configs/minimal_system.json full",
+      "native_sources.json full",
+      "resolved method spec structured fields read including all profiles andsourcebindings"
+    ],
+    "not_read_this_pass": "No claim of rereading every historical long-form trial paragraph or every private patient trace; prior scope audits used for exact21head evidence and baselineparity. No model/score code imported."
+  },
+  "numeric_source_receipts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_category_results.json",
+      "sha256": "94ec872c3b60dc786201780b6ae5f7d5b8e5e5222893cb893a02d9afcc0cd33e",
+      "bytes": 16445
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/family_effect_intervals.json",
+      "sha256": "cecd19b44b1592d2d78c3a8fefed0413fdb22fb6cbff4b2d4c93ac1b08a9a07c",
+      "bytes": 14924
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/five_tables.md",
+      "sha256": "7449f5ed9f085d082d8f36ea285a8db06b1f54cdf2ea9c71f98947a08a8d5676",
+      "bytes": 24330
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/summary.json",
+      "sha256": "c44b23f33eac9f7068a87ce4a4fa1c31653510b7295ac4bbd8c56812957de3bc",
+      "bytes": 408423
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/summary.json",
+      "sha256": "2c0f4e42c2e5f552d830fdc636a47fff11114aa4349001f3218f52bb624b8368",
+      "bytes": 75186
+    }
+  ]
+}

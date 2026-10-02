@@ -1,0 +1,169 @@
+{
+  "review_date": "2026-10-03",
+  "reviewer": "early_and_r45_audit",
+  "status": "complete_pass",
+  "scope": {
+    "outline_full_read_lines": [
+      1,
+      159
+    ],
+    "english_framework": {
+      "path": "docs/paper/latex/framework.tex",
+      "full_read_lines": [
+        1,
+        186
+      ]
+    },
+    "new_model_or_scoring_calls": 0,
+    "canonical_docs_modified": false,
+    "final_targeted_reread": "Root final edits: acronym expansions, precise patch-without-intervention naming, 40-case positive workflow evidence and unequal reasoning allowance; all read and checked."
+  },
+  "verdict": "PASS: 中英文完整框架准确恢复原始数据—五操作—七系统—CF-MoA主线；量化成果、配置身份、实测流程、对照和未完成范围均有证据；1处必修与2处澄清均已修并核验。",
+  "required_changes": [
+    {
+      "id": "F01",
+      "location": "docs/paper/outline.md §6.3 A3 evidence row",
+      "current": "A3 在680诊断输入单次目录控制均显著提高点估计",
+      "issue": "七配置单次目录提高有计数依据，但此处未提供七个差值的显著性检验；“显著”易被读成统计结论。",
+      "requested": "改为“均大幅提高点估计”或“均提高点估计”。",
+      "status": "resolved and verified: 均大幅提高点估计"
+    }
+  ],
+  "verified": [
+    {
+      "item": "original intent",
+      "result": "原09-08用户消息明确提出五类统一功能视角、保留原题/原生评分、跨来源失败模式。框架数据章节独立且居前，正确。"
+    },
+    {
+      "item": "real chronology",
+      "result": "先有taxonomy再v5诊断；R2/R3/R1研发与R4/F发展；早期独立A1/A5/聚合真实失败→09-23B共享核→09-24RCV扩展→09-28收尾，未倒写成一次预注册成功。"
+    },
+    {
+      "item": "five agents",
+      "result": "五角色、A1/A2共享、A3目录、条件A4、A5采用F及能力路由明确；没有把五套权重/所有题五人讨论/生成协同当既成成果。"
+    },
+    {
+      "item": "positive contribution",
+      "result": "taxonomy/benchmark/七系统诊断/21开发增益/B两个骨干总体及保持应变改善均作为实质成果呈现，不以新增验证器失败否定既有成果。"
+    },
+    {
+      "item": "favorable result selection",
+      "result": "完整7+2矩阵包含M5 B原13临床R4下降，全部六臂扩展保留，无逐题删负或按骨干拼赢家；A4模型288与临床13分开。"
+    },
+    {
+      "item": "scope and controls",
+      "result": "2941unique vs3678 memberships、R3⊂R1、208含16、R2 constantNone、A3 single目录、冻结后确认未执行、C3双骨干方向不同均保留。"
+    },
+    {
+      "item": "numeric verification",
+      "result": "九行结果表与已审七系统/五agent JSON相符；两端双正确与B-C0家族区间相符；本次未重新评分。"
+    },
+    {
+      "item": "actual implementation",
+      "result": "3560+123+0+10178+44=13905，ordered routes与companion源码审计一致；单核消融123计数69/43/53、71/48/60相符。"
+    },
+    {
+      "item": "delivery identity",
+      "result": "明确framework.tex/pdf为新框架，main.tex/pdf仍旧完整稿；没有宣称已完成新全文。"
+    },
+    {
+      "item": "English abstract and contributions",
+      "result": "Complete candidate abstract leads with taxonomy/collection/benchmark, seven-system diagnosis, five-role framework and two-backbone B; exposed-development status stated. All quantities correct."
+    },
+    {
+      "item": "English literature support",
+      "result": "8 citation keys map to previously verified primary references; method references support implementation families, MoA/self-consistency/calibration cited as prior strategies, not evidence for local results."
+    },
+    {
+      "item": "English chronology, selected controls and completion",
+      "result": "Actual reports148 stages, prehistory and original September8 purpose explicit; full-v5 default differentiated from extensions; final independent confirmation unperformed; prior full稿 not silently relabelled."
+    }
+  ],
+  "quality_check": {
+    "source": "/home/data3/txy/.codex/skills/academic-paper/references/writing_quality_check.md",
+    "read": "entire available checklist through Review Outcome",
+    "applied": [
+      "claim strength and statistical wording",
+      "consistent framework/role/core/extension naming",
+      "evidence-supported precise quantities",
+      "paragraph/table organization appropriate for research outline"
+    ],
+    "not_applied": "No acronym script run by this review subagent; caller owns this skill script step. No cosmetic term bans or forced prose rewriting."
+  },
+  "source_receipts": [
+    {
+      "path": "/home/data3/txy/docs/paper/outline.md",
+      "bytes": 22477,
+      "sha256": "ee77e40ee90c9377180aedc614b494d4891f8a3767d2cb63dec874ab1c97e6ba"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/framework.tex",
+      "bytes": 25587,
+      "sha256": "46efffca755349becff2cb0a1fbbcddabad6d3551beed46ac79e75d302375b64"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json",
+      "bytes": 350807,
+      "sha256": "77369dcb2268e99bfaac135a2e1cec01c81337d17835b8efcd82c1faf8877ac1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "bytes": 85169,
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "bytes": 78763,
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507"
+    }
+  ],
+  "optional_clarifications": [
+    {
+      "id": "F02",
+      "location": "framework.tex:134",
+      "suggestion": "将泛称no-intervention control精确到patch-without-intervention control；67/288是patch-no-do和source-no-do，M5 full-no-do为61/288。",
+      "status": "resolved: now patch-without-intervention"
+    },
+    {
+      "id": "F03",
+      "location": "framework.tex:132",
+      "suggestion": "补40例matched名称控制原12/9→名称15/11→目录18/18，正面说明目录重判部分超过包装。",
+      "status": "resolved: 40-case name15/11 vs catalogue18/18 inserted; reasoning allowances differ and not equal-budget single-factor is explicit"
+    }
+  ],
+  "name_control_40_verification": {
+    "n_each": 40,
+    "M4": {
+      "baseline": 12,
+      "name_normalization": 15,
+      "later_name_catalog_redecision": 18
+    },
+    "M5": {
+      "baseline": 9,
+      "name_normalization": 11,
+      "later_name_catalog_redecision": 18
+    },
+    "canonical_record": "docs/research/r3_candidate_comparison.md:655-667;1952",
+    "process_report": "docs/research/support_update_experiment_report.md:650",
+    "identity_caveat": "Later seven-system transfer panel uses short reasoning for Llama and direct selection for Qwen. The earlier max128 direct-catalogue control gave M4 only15/40; later M4 name-reason max384 gives18/40. Therefore use patient-informed catalogue re-decision as overall workflow comparison; do not claim an equal-budget one-factor causal effect.",
+    "suggested_sentence": "On an earlier 40-case development panel, name normalization yielded 15/40 and 11/40, while patient-informed catalogue re-decision yielded 18/40 on both backbones.",
+    "raw_summary_receipts": [
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_controls_m4/name_exact_then_model_summary.json",
+        "sha256": "33504ffb8718bcc9458cbe8c6a26fb3ca1d26502ad6f4036670e5f22ae97d5d2",
+        "bytes": 225
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_controls_m5/name_exact_then_model_summary.json",
+        "sha256": "fd768cdfab959b65516862b61849df38066148bffd012dcded32d576fd2166d4",
+        "bytes": 225
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_transfer_summary/summary.json",
+        "sha256": "d83154c741b6e74e574e715d7d665a2e36bd8b2994e1d13ea253a4b1cfa4c135",
+        "bytes": 1068
+      }
+    ]
+  },
+  "completion_boundary": "Review covers full Chinese/English framework sources and recorded numerical evidence, not a rewritten main.tex article or compilation/layout inspection. Root owns native TeX build, figures/layout and GitHub delivery."
+}
