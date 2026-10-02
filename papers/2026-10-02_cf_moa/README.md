@@ -23,8 +23,8 @@ The [original manuscript bundle](cf_moa_paper_bundle.zip) is unchanged. The earl
 1. [Six-arm results](figures/main_results.pdf)
 2. [Verification effect intervals](figures/verification_forest.pdf)
 3. [All-source heterogeneity](figures/source_heterogeneity.pdf)
-4. [Attributed computation and quality](figures/cost_quality.pdf)
-5. [Support-operation ablations](figures/rule_ablations.pdf)
+4. [Support-operation ablations](figures/rule_ablations.pdf)
+5. [Attributed computation and quality](figures/cost_quality.pdf)
 
 Eight CSV/LaTeX table pairs cover main results, all contrasts, sources, categories, formats, paired outcomes, costs, and rule ablations. The [input manifest](inputs/manifest.json) binds the exact 12 frozen JSON inputs to their original paths and SHA-256 hashes.
 
