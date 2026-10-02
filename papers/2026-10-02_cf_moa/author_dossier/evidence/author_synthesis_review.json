@@ -1,0 +1,228 @@
+{
+  "created_at": "2026-10-03T01:49:43.332055+08:00",
+  "reviewer": "/root/head_research_audit",
+  "review_type": "Independent read-only author dossier synthesis review",
+  "new_model_calls": 0,
+  "new_scoring_calls": 0,
+  "new_training": 0,
+  "mutations": "ThisJSONonly; rootdraftsnotedited.",
+  "inputs": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/00_orientation.md",
+      "sha256": "7e1eeb25add5769864fef680d9149b2b372a3c4219d3f5d43e0b3c7532ff8f11",
+      "bytes": 9105,
+      "lines": 69,
+      "semantic_read": "complete current file"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/01_early_history.md",
+      "sha256": "fac135855ddbea3f6154f2f93ee393191335f72ddeb6f333f8e3128e513d77ee",
+      "bytes": 10292,
+      "lines": 78,
+      "semantic_read": "complete current file"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/90_author_synthesis.md",
+      "sha256": "697d834c4b5d4478eda033a208ad166f57a536dcac12e5f39eb91267819e4ff6",
+      "bytes": 17521,
+      "lines": 113,
+      "semantic_read": "complete current file"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/99_evidence_map.md",
+      "sha256": "ec230d4f8f70cbfc085c0cddeed9794b27061ad791b3653a39a5562a7116d2ac",
+      "bytes": 8257,
+      "lines": 69,
+      "semantic_read": "complete current file"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/home/data3/txy/docs/archive/wm_medrgag.md",
+      "sha256": "054af204999ec4d2eeecc048b1f4f75ad79ff4aae458a552b1bed17047e5845a",
+      "bytes": 214213,
+      "lines": 3555,
+      "direct_read": [
+        [
+          3190,
+          3255
+        ]
+      ],
+      "targeted_search": [
+        "60/85",
+        "69/85",
+        "66/85",
+        "70/85",
+        "74/85",
+        "71/85",
+        "64/85"
+      ],
+      "fact": "Final clean64/85 parity;170conditioninputs→128distinctprompts;42identicalpairs;1repair1harm83unchanged; rawranking andreaderresults not conflated."
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/cf_residual_adapter.md",
+      "sha256": "870e5eb8e5e5e17caff5c2091791b47fb6dd6a2afa2f3206b4c594b328d0e521",
+      "bytes": 83435,
+      "lines": 1364,
+      "direct_read": [
+        [
+          1000,
+          1084
+        ]
+      ],
+      "targeted_search": [
+        "80.0",
+        "81.8",
+        "82.4",
+        "52.6",
+        "55.0",
+        "47.0",
+        "46.8",
+        "79.4",
+        "42.8"
+      ],
+      "fact": "Fouroption construction usescontrol/trapgold andtwohardnegatives;9MAfeatures;400/150/500pairedprotocol; all8 table rows match."
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/medrgag_reproduction.md",
+      "sha256": "56b041cfd07bc35dbb2040d3472d476c3a3ffbe8b27e79c95d30295935b4375a",
+      "bytes": 89036,
+      "lines": 1609,
+      "direct_read": [
+        [
+          625,
+          663
+        ]
+      ],
+      "targeted_search": [
+        "65.38",
+        "63.87",
+        "66.64",
+        "422",
+        "7,663",
+        "7663"
+      ],
+      "fact": "Released-code65.38 versus strict63.87,paper66.64;422strictparse failures; sensitiveappendixrun separate."
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/cf_wm.md",
+      "sha256": "c7c9e1f49ff8f7d0e675d277f5e5d68d94475196649be9d5bb5338c4d95cf215",
+      "bytes": 71175,
+      "lines": 1259,
+      "targeted_search": [
+        "303",
+        "3,939",
+        "20.8",
+        "31.7",
+        "gold-unseen",
+        "326"
+      ],
+      "fact": "303×13=3939;326placeholderoutputs uniformlyinvalid; goldunseen aftercontractdebugging,notpristineholdout."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "sha256": "245fff24ce63b8cf2f649c09bbc50bf00dca12a9550aea655fd1413eaebdc76e",
+      "bytes": 307086,
+      "lines": 2054,
+      "targeted_search": [
+        "8924",
+        "8,924"
+      ],
+      "fact": "8924inputcorrect forB-M4 distinctfrom58.2924nativeALL."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/generated/paired_behavior.csv",
+      "sha256": "fcf1c6ec4477a6d7e54ea98d10dc872b77c7989a6cea04fe1e0f0f41e0466119",
+      "bytes": 438,
+      "lines": 5,
+      "complete_read": true,
+      "fact": "All4C0/B maintain/respond counts anddenominators match author synthesis."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+      "bytes": 78763,
+      "lines": 2167,
+      "coverage": "Previoussame-agent completeaudit reused; current role and123operation evidence checked.",
+      "fact": "A1/A2sharedrulekernel;R1wrapper distinct; A4clinicalzero;FinsideA5;B/C3 identities kept."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+      "bytes": 85169,
+      "lines": 2147,
+      "coverage": "Prior independent benchmark audit reused, current keys/source recognized.",
+      "fact": "26/15/55991 andv5scope; no regrading/review ofallunderlyingdata."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/section_register.csv",
+      "sha256": "d1cba2f9c14d098156c193d6ebae6dc6e66254c143a45f94ac0e4c109eb0ccc3",
+      "bytes": 330756,
+      "lines": 2200,
+      "mechanical_check": "csv DictReader2199rows; indexnotfullsemanticreview."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/head_stage_register.csv",
+      "sha256": "8d3deaf0cd4374d9d7c79bada15bb875031dfbec79523b2a341bdc909c2148b7",
+      "bytes": 190382,
+      "lines": 149,
+      "mechanical_check": "csv DictReader148rows; stageindexnotnewexperiment."
+    }
+  ],
+  "checks": [
+    {
+      "id": "wm_clean_matched",
+      "result": "pass",
+      "evidence": "64/85versus64/85 isfinalcleanresult, intermediary65/85 notsubstituted;170inputs128prompts42identicalpairs correct."
+    },
+    {
+      "id": "adapter_protocol_and_table",
+      "result": "pass",
+      "evidence": "500pairedfouroptionproxy explicated;original→adapterlargegains maintained; without-base separatelytrained and synergy notconfirmed;scoretable8rowsmatchesprimary."
+    },
+    {
+      "id": "formal_and_head_scope",
+      "result": "pass",
+      "evidence": "7configurations6families;3678categorymemberships2941uniqueunits;13clinicalR4 distinctfrom288modelquestions24profiles;208F distinctfrom3600v5R5."
+    },
+    {
+      "id": "paired_behavior",
+      "result": "pass",
+      "evidence": "Respond13→347and27→360/1780;maintain4005→4440and3528→4460/6838matchfrozenCSV."
+    },
+    {
+      "id": "roles_and_versions",
+      "result": "pass",
+      "evidence": "Rtaxonomy separatefromAroles;A1/A2sharedexecution;oldR1wrapper/currentA1notconfused;B/F/C3distinction and absentglobalaggregationclaim clear."
+    },
+    {
+      "id": "research_history_negative_evidence",
+      "result": "pass",
+      "evidence": "InvalidM12oracle withdrawn;CFWMgoldunseennotpristine;Adapterwinsretainedwithoutsynergyclaim;WXY/CAD/independentDstatusesdistinguished."
+    },
+    {
+      "id": "source_navigation",
+      "result": "pass",
+      "evidence": "29recordnavigation isindex, notclaimedfullcurrentsemanticreading;2199titleand148stagecountschecked."
+    },
+    {
+      "id": "raw_dossier_fitness",
+      "result": "pass",
+      "evidence": "Orientation explainsresearchobjectanddenominators;earlyhistory gives mechanism,triggers,actualcontrols,failuresandturns;synthesis attachesclaims tofullresults;evidencemap linksrawrecords. This is usefulauthorresearchmaterial,notonlyanoutline."
+    }
+  ],
+  "must_fix": [],
+  "optional_suggestions": [
+    {
+      "file": "90_author_synthesis.md",
+      "location": "6.4 pairedbehaviorrow",
+      "suggestion": "For maximum clarity writeeachbefore/after count withitsown denominator, e.g.13/1780→347/1780. Current row remains unambiguous with its final denominator and separatepairedtable; not a factual error."
+    }
+  ],
+  "limits": [
+    "No independent rerun of models/scorers or verification ofevery oldtrajectoryrow; targeted primaryread plus existingauditreuse.",
+    "Relative links checked conceptually from intendeddocs/paper destination, nottreatedasbroken because drafts temporarilyresideunderDocuments.",
+    "Benchmark qualification andallsource acquisition details remain independentdatasubagent responsibility."
+  ],
+  "overall": "Readyforrootmerge;no mandatoryfactualcorrectionsidentified."
+}

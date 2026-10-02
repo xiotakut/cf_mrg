@@ -1,0 +1,2420 @@
+{
+  "generated_utc": "2026-10-02T17:54:13.874021+00:00",
+  "canonical_resolution_base": "/home/data3/txy/docs/paper/research_dossier.md",
+  "drafts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/00_orientation.md",
+      "sha256": "7e1eeb25add5769864fef680d9149b2b372a3c4219d3f5d43e0b3c7532ff8f11",
+      "lines": 69
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/01_early_history.md",
+      "sha256": "fac135855ddbea3f6154f2f93ee393191335f72ddeb6f333f8e3128e513d77ee",
+      "lines": 78
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/data.md",
+      "sha256": "5c433f4f18c68f0673026542f835652221025b174dd330e3fdc84b9f4b30f816",
+      "lines": 134
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+      "sha256": "474d78974ae94d0b4bf333cd10dffd34cb1069d599ed2160aaf0d1c4ce09b806",
+      "lines": 180
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/cf_moa.md",
+      "sha256": "e5b187f9e1b97e1802af2a35a5ab336d5efb5424894850b41f1c8d5137427f28",
+      "lines": 283
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/90_author_synthesis.md",
+      "sha256": "697d834c4b5d4478eda033a208ad166f57a536dcac12e5f39eb91267819e4ff6",
+      "lines": 113
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/99_evidence_map.md",
+      "sha256": "ec230d4f8f70cbfc085c0cddeed9794b27061ad791b3653a39a5562a7116d2ac",
+      "lines": 69
+    }
+  ],
+  "parser": "Pandoc markdown-blank_before_header for actual links; explicit HTML IDs and Pandoc/GFM header IDs checked for anchors",
+  "counts": {
+    "link_occurrences": 143,
+    "unique_targets": 128,
+    "status_counts": {
+      "ok_file": 75,
+      "ok_anchor": 3,
+      "ok_file_line": 62,
+      "ok_directory": 3
+    },
+    "flagged": 0,
+    "original_quote_checks": 9,
+    "quote_mismatches": 0
+  },
+  "status": "passed",
+  "issues": [],
+  "links": [
+    {
+      "draft": "00_orientation.md",
+      "draft_line_candidates": [
+        7
+      ],
+      "kind": "Link",
+      "label": "论文框架",
+      "target": "outline.md",
+      "resolved_path": "/home/data3/txy/docs/paper/outline.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "00_orientation.md",
+      "draft_line_candidates": [
+        28
+      ],
+      "kind": "Link",
+      "label": "研究路径审计",
+      "target": "../../Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "00_orientation.md",
+      "draft_line_candidates": [
+        28
+      ],
+      "kind": "Link",
+      "label": "五agent审计",
+      "target": "../../Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        14
+      ],
+      "kind": "Link",
+      "label": "复现主记录",
+      "target": "../archive/medrgag_reproduction.md#record-0258",
+      "resolved_path": "/home/data3/txy/docs/archive/medrgag_reproduction.md",
+      "fragment": "record-0258",
+      "line": null,
+      "status": "ok_anchor",
+      "anchor_matches": [
+        "explicit"
+      ]
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        14
+      ],
+      "kind": "Link",
+      "label": "MedRGAG方法记录",
+      "target": "../baselines/medrgag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/medrgag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        24
+      ],
+      "kind": "Link",
+      "label": "WM最终匹配与停止结论",
+      "target": "../archive/wm_medrgag.md",
+      "resolved_path": "/home/data3/txy/docs/archive/wm_medrgag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        36
+      ],
+      "kind": "Link",
+      "label": "CF-WM归档与撤回说明",
+      "target": "../archive/cf_wm.md",
+      "resolved_path": "/home/data3/txy/docs/archive/cf_wm.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        68
+      ],
+      "kind": "Link",
+      "label": "连续方法归档",
+      "target": "../archive/cf_method_trials.md",
+      "resolved_path": "/home/data3/txy/docs/archive/cf_method_trials.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        68
+      ],
+      "kind": "Link",
+      "label": "Adapter实现与结果",
+      "target": "../archive/cf_residual_adapter.md#adapter-implementation-clarification",
+      "resolved_path": "/home/data3/txy/docs/archive/cf_residual_adapter.md",
+      "fragment": "adapter-implementation-clarification",
+      "line": null,
+      "status": "ok_anchor",
+      "anchor_matches": [
+        "explicit"
+      ]
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        68
+      ],
+      "kind": "Link",
+      "label": "当前适用性分析",
+      "target": "../research/optimization.md#adapter-current-classification",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": "adapter-current-classification",
+      "line": null,
+      "status": "ok_anchor",
+      "anchor_matches": [
+        "explicit"
+      ]
+    },
+    {
+      "draft": "01_early_history.md",
+      "draft_line_candidates": [
+        78
+      ],
+      "kind": "Link",
+      "label": "原生全量比较",
+      "target": "../archive/native_baseline_screening.md",
+      "resolved_path": "/home/data3/txy/docs/archive/native_baseline_screening.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        7
+      ],
+      "kind": "Link",
+      "label": "原始需求及阶段1",
+      "target": "/home/data3/txy/docs/data/construction.md:1810",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 1810,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        9
+      ],
+      "kind": "Link",
+      "label": "来源收集记录",
+      "target": "/home/data3/txy/docs/data/sources.md:258",
+      "resolved_path": "/home/data3/txy/docs/data/sources.md",
+      "fragment": null,
+      "line": 258,
+      "status": "ok_file_line",
+      "file_line_count": 581
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        42
+      ],
+      "kind": "Link",
+      "label": "来源真实性审计收据",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        56
+      ],
+      "kind": "Link",
+      "label": "定义、正例与已纠正反例",
+      "target": "/home/data3/txy/docs/data/classification.md:142",
+      "resolved_path": "/home/data3/txy/docs/data/classification.md",
+      "fragment": null,
+      "line": 142,
+      "status": "ok_file_line",
+      "file_line_count": 349
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        58
+      ],
+      "kind": "Link",
+      "label": "标注合同和比较轴",
+      "target": "/home/data3/txy/docs/data/classification.md:118",
+      "resolved_path": "/home/data3/txy/docs/data/classification.md",
+      "fragment": null,
+      "line": 118,
+      "status": "ok_file_line",
+      "file_line_count": 349
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        66
+      ],
+      "kind": "Link",
+      "label": "实际修改及前后证据",
+      "target": "/home/data3/txy/docs/data/construction.md:1487",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 1487,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        70
+      ],
+      "kind": "Link",
+      "label": "v2的实际纳入规则",
+      "target": "/home/data3/txy/docs/data/construction.md:490",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 490,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        72
+      ],
+      "kind": "Link",
+      "label": "v3的328项归属调整",
+      "target": "/home/data3/txy/docs/data/construction.md:553",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 553,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        76
+      ],
+      "kind": "Link",
+      "label": "补分类、恢复与调整台账",
+      "target": "/home/data3/txy/docs/data/construction.md:2343",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 2343,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        82
+      ],
+      "kind": "Link",
+      "label": "冻结抽样协议",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/sampling_protocol.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/sampling_protocol.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        82
+      ],
+      "kind": "Link",
+      "label": "实际算法及字段含义",
+      "target": "/home/data3/txy/docs/data/construction.md:2467",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 2467,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        86
+      ],
+      "kind": "Link",
+      "label": "原始来源统计CSV",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/source_summary.csv",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/source_summary.csv",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        105
+      ],
+      "kind": "Link",
+      "label": "物化检查",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/preparation_validation.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/preparation_validation.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        105
+      ],
+      "kind": "Link",
+      "label": "冻结接口与34,753链接说明",
+      "target": "/home/data3/txy/docs/evaluation/protocol.md:156",
+      "resolved_path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "fragment": null,
+      "line": 156,
+      "status": "ok_file_line",
+      "file_line_count": 201
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        111
+      ],
+      "kind": "Link",
+      "label": "输入权限和精确复用",
+      "target": "/home/data3/txy/docs/evaluation/protocol.md:37",
+      "resolved_path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "fragment": null,
+      "line": 37,
+      "status": "ok_file_line",
+      "file_line_count": 201
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        113
+      ],
+      "kind": "Link",
+      "label": "评分与失败处理",
+      "target": "/home/data3/txy/docs/evaluation/protocol.md:67",
+      "resolved_path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "fragment": null,
+      "line": 67,
+      "status": "ok_file_line",
+      "file_line_count": 201
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        117
+      ],
+      "kind": "Link",
+      "label": "完整七配置与42项指标核验",
+      "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        119
+      ],
+      "kind": "Link",
+      "label": "HIV参考资格补证",
+      "target": "/home/data3/txy/docs/data/construction.md:3589",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": 3589,
+      "status": "ok_file_line",
+      "file_line_count": 3966
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        123
+      ],
+      "kind": "Link",
+      "label": "来源许可、发布范围和依赖",
+      "target": "/home/data3/txy/docs/data/sources.md:186",
+      "resolved_path": "/home/data3/txy/docs/data/sources.md",
+      "fragment": null,
+      "line": 186,
+      "status": "ok_file_line",
+      "file_line_count": 581
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        127
+      ],
+      "kind": "Link",
+      "label": "采集与出处",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/source_release_notes.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/source_release_notes.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        128
+      ],
+      "kind": "Link",
+      "label": "审核修正",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/corrections/summary.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/corrections/summary.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        129
+      ],
+      "kind": "Link",
+      "label": "完整覆盖",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/completion_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/completion_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        130
+      ],
+      "kind": "Link",
+      "label": "最终选择与重放",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        131
+      ],
+      "kind": "Link",
+      "label": "实际输入与评分映射",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "data.md",
+      "draft_line_candidates": [
+        132
+      ],
+      "kind": "Link",
+      "label": "本轮只读核验",
+      "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        3
+      ],
+      "kind": "Link",
+      "label": "七系统审计",
+      "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        3,
+        117
+      ],
+      "kind": "Link",
+      "label": "head审计",
+      "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        19
+      ],
+      "kind": "Link",
+      "label": "直接回答/初始检索",
+      "target": "/home/data3/txy/docs/baselines/direct_retrieval.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/direct_retrieval.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        19
+      ],
+      "kind": "Link",
+      "label": "i-MedRAG暂停",
+      "target": "/home/data3/txy/docs/baselines/imedrag.md:188",
+      "resolved_path": "/home/data3/txy/docs/baselines/imedrag.md",
+      "fragment": null,
+      "line": 188,
+      "status": "ok_file_line",
+      "file_line_count": 228
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        19
+      ],
+      "kind": "Link",
+      "label": "MedGENIE替代依据",
+      "target": "/home/data3/txy/docs/baselines/medgenie.md:22",
+      "resolved_path": "/home/data3/txy/docs/baselines/medgenie.md",
+      "fragment": null,
+      "line": 22,
+      "status": "ok_file_line",
+      "file_line_count": 329
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        21
+      ],
+      "kind": "Link",
+      "label": "M4修复全过程",
+      "target": "/home/data3/txy/docs/baselines/medrag.md:214",
+      "resolved_path": "/home/data3/txy/docs/baselines/medrag.md",
+      "fragment": null,
+      "line": 214,
+      "status": "ok_file_line",
+      "file_line_count": 1334
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        21
+      ],
+      "kind": "Link",
+      "label": "全量采用",
+      "target": "/home/data3/txy/docs/baselines/medrag.md:1286",
+      "resolved_path": "/home/data3/txy/docs/baselines/medrag.md",
+      "fragment": null,
+      "line": 1286,
+      "status": "ok_file_line",
+      "file_line_count": 1334
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        23
+      ],
+      "kind": "Link",
+      "label": "适配与失败",
+      "target": "/home/data3/txy/docs/baselines/medgenie.md:82",
+      "resolved_path": "/home/data3/txy/docs/baselines/medgenie.md",
+      "fragment": null,
+      "line": 82,
+      "status": "ok_file_line",
+      "file_line_count": 329
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        25
+      ],
+      "kind": "Link",
+      "label": "TC-RAG消融与采用",
+      "target": "/home/data3/txy/docs/baselines/tcrag.md:494",
+      "resolved_path": "/home/data3/txy/docs/baselines/tcrag.md",
+      "fragment": null,
+      "line": 494,
+      "status": "ok_file_line",
+      "file_line_count": 960
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        25
+      ],
+      "kind": "Link",
+      "label": "MA-RAG主记录",
+      "target": "/home/data3/txy/docs/baselines/marag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/marag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        25
+      ],
+      "kind": "Link",
+      "label": "MedRGAG主记录",
+      "target": "/home/data3/txy/docs/baselines/medrgag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/medrgag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        42
+      ],
+      "kind": "Link",
+      "label": "诊断与文献取舍",
+      "target": "/home/data3/txy/docs/research/optimization.md:138",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": null,
+      "line": 138,
+      "status": "ok_file_line",
+      "file_line_count": 973
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        42
+      ],
+      "kind": "Link",
+      "label": "原始病例证据",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:677",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 677,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        44
+      ],
+      "kind": "Link",
+      "label": "受控设计及完整结果",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:805",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 805,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        50
+      ],
+      "kind": "Link",
+      "label": "调查、扩展与交付",
+      "target": "/home/data3/txy/docs/research/optimization.md:380",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": null,
+      "line": 380,
+      "status": "ok_file_line",
+      "file_line_count": 973
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        52
+      ],
+      "kind": "Link",
+      "label": "202/201扩展与取舍",
+      "target": "/home/data3/txy/docs/research/optimization.md:668",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": null,
+      "line": 668,
+      "status": "ok_file_line",
+      "file_line_count": 973
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        52
+      ],
+      "kind": "Link",
+      "label": "同期关系控制",
+      "target": "/home/data3/txy/docs/research/optimization.md:831",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": null,
+      "line": 831,
+      "status": "ok_file_line",
+      "file_line_count": 973
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        71
+      ],
+      "kind": "Link",
+      "label": "失败索引",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:488",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 488,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        73
+      ],
+      "kind": "Link",
+      "label": "完整执行顺序",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:47",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 47,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        75,
+        128
+      ],
+      "kind": "Link",
+      "label": "当前交付及版本取舍",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:526",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 526,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        90
+      ],
+      "kind": "Link",
+      "label": "同口径审计",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:1713",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 1713,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        94
+      ],
+      "kind": "Link",
+      "label": "两轮负结果与记忆路线",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:53",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 53,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        94
+      ],
+      "kind": "Link",
+      "label": "定位修正",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:344",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 344,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        96
+      ],
+      "kind": "Link",
+      "label": "公开目录形成",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:478",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 478,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        96
+      ],
+      "kind": "Link",
+      "label": "规则迁移",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1237",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 1237,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        111
+      ],
+      "kind": "Link",
+      "label": "完整七方法比较",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1388",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 1388,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        113
+      ],
+      "kind": "Link",
+      "label": "完整探索导航及各阶段制品",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:970",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 970,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        113
+      ],
+      "kind": "Link",
+      "label": "方法成立范围审查",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1924",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 1924,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        3,
+        117
+      ],
+      "kind": "Link",
+      "label": "head机器审计",
+      "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        128
+      ],
+      "kind": "Link",
+      "label": "ASCENT及规则验证",
+      "target": "/home/data3/txy/docs/research/optimization.md:736",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": null,
+      "line": 736,
+      "status": "ok_file_line",
+      "file_line_count": 973
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        128
+      ],
+      "kind": "Link",
+      "label": "CUPCase三批与捷径控制",
+      "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1509",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": 1509,
+      "status": "ok_file_line",
+      "file_line_count": 1975
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        75,
+        128
+      ],
+      "kind": "Link",
+      "label": "48范围探针",
+      "target": "/home/data3/txy/docs/research/r2_support_head.md:526",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": 526,
+      "status": "ok_file_line",
+      "file_line_count": 1796
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        132,
+        134
+      ],
+      "kind": "Link",
+      "label": "起点、原参考与首轮尝试",
+      "target": "/home/data3/txy/docs/research/r4_consequence_head.md:1",
+      "resolved_path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "fragment": null,
+      "line": 1,
+      "status": "ok_file_line",
+      "file_line_count": 632
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        134
+      ],
+      "kind": "Link",
+      "label": "当前接口和数学定义",
+      "target": "/home/data3/txy/docs/research/r4_consequence_head.md:15",
+      "resolved_path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "fragment": null,
+      "line": 15,
+      "status": "ok_file_line",
+      "file_line_count": 632
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        149
+      ],
+      "kind": "Link",
+      "label": "冻结验证全表及限制",
+      "target": "/home/data3/txy/docs/research/r4_consequence_head.md:579",
+      "resolved_path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "fragment": null,
+      "line": 579,
+      "status": "ok_file_line",
+      "file_line_count": 632
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        153
+      ],
+      "kind": "Link",
+      "label": "F形成、接口与交付",
+      "target": "/home/data3/txy/docs/research/r5_invariance_head.md:198",
+      "resolved_path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "fragment": null,
+      "line": 198,
+      "status": "ok_file_line",
+      "file_line_count": 1094
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        168
+      ],
+      "kind": "Link",
+      "label": "最终完整结果与组件对照",
+      "target": "/home/data3/txy/docs/research/r5_invariance_head.md:439",
+      "resolved_path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "fragment": null,
+      "line": 439,
+      "status": "ok_file_line",
+      "file_line_count": 1094
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        170
+      ],
+      "kind": "Link",
+      "label": "W/X完整结果",
+      "target": "/home/data3/txy/docs/research/r5_invariance_head.md:928",
+      "resolved_path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "fragment": null,
+      "line": 928,
+      "status": "ok_file_line",
+      "file_line_count": 1094
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        172
+      ],
+      "kind": "Link",
+      "label": "Y停止、CAD计划与归档",
+      "target": "/home/data3/txy/docs/research/r5_invariance_head.md:972",
+      "resolved_path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "fragment": null,
+      "line": 972,
+      "status": "ok_file_line",
+      "file_line_count": 1094
+    },
+    {
+      "draft": "heads_and_baselines.md",
+      "draft_line_candidates": [
+        180
+      ],
+      "kind": "Link",
+      "label": "五角色、源码版本及实际调用图审计",
+      "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        7,
+        25,
+        135
+      ],
+      "kind": "Link",
+      "label": "持续主记录",
+      "target": "/home/data3/txy/docs/research/cf_moa.md",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        7,
+        25,
+        35,
+        45,
+        58,
+        77,
+        91,
+        108,
+        118,
+        135,
+        150,
+        158,
+        194
+      ],
+      "kind": "Link",
+      "label": "2054行全过程报告",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        7,
+        17
+      ],
+      "kind": "Link",
+      "label": "09-21原执行计划快照",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        7
+      ],
+      "kind": "Link",
+      "label": "09-28完整收尾",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/README.md",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/README.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        7,
+        17
+      ],
+      "kind": "Link",
+      "label": "原计划§0–4、§12及§15",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        25
+      ],
+      "kind": "Link",
+      "label": "报告§3",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:101",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 101,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        25
+      ],
+      "kind": "Link",
+      "label": "主记录阶段A–C",
+      "target": "/home/data3/txy/docs/research/cf_moa.md:40",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa.md",
+      "fragment": null,
+      "line": 40,
+      "status": "ok_file_line",
+      "file_line_count": 2588
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        35
+      ],
+      "kind": "Link",
+      "label": "r5终态与成本",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:291",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 291,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        45
+      ],
+      "kind": "Link",
+      "label": "A5/F及控制",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:338",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 338,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        58
+      ],
+      "kind": "Link",
+      "label": "互补分析及逐题来源",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:533",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 533,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        77
+      ],
+      "kind": "Link",
+      "label": "候选版本表与错误归因",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:584",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 584,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        91
+      ],
+      "kind": "Link",
+      "label": "完整结果与证据使用",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:921",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 921,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        108
+      ],
+      "kind": "Link",
+      "label": "报告§11–13",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1056",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1056,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        118
+      ],
+      "kind": "Link",
+      "label": "最简实现与等价回放",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1433",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1433,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        118
+      ],
+      "kind": "Link",
+      "label": "123消融",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1807",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1807,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        135
+      ],
+      "kind": "Link",
+      "label": "95诊断",
+      "target": "/home/data3/txy/docs/research/cf_moa.md:2171",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa.md",
+      "fragment": null,
+      "line": 2171,
+      "status": "ok_file_line",
+      "file_line_count": 2588
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        135
+      ],
+      "kind": "Link",
+      "label": "RCV算法及实际入口",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1584",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1584,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        150
+      ],
+      "kind": "Link",
+      "label": "完整开发结果与反例",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1626",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1626,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        158
+      ],
+      "kind": "Link",
+      "label": "完成过程及故障恢复",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1930",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1930,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        194
+      ],
+      "kind": "Link",
+      "label": "全部质量与辅助表",
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1876",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": 1876,
+      "status": "ok_file_line",
+      "file_line_count": 2054
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        225
+      ],
+      "kind": "Link",
+      "label": "冻结来源结果",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_source_results.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_source_results.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        244
+      ],
+      "kind": "Link",
+      "label": "格式冻结结果",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/format_input_results.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/format_input_results.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        269
+      ],
+      "kind": "Link",
+      "label": "完整费用及机制覆盖",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/attributed_costs.md",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/attributed_costs.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        283
+      ],
+      "kind": "Link",
+      "label": "完整表入口",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/five_tables.md",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/five_tables.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        283
+      ],
+      "kind": "Link",
+      "label": "统计输入与脚本",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics",
+      "fragment": null,
+      "line": null,
+      "status": "ok_directory"
+    },
+    {
+      "draft": "cf_moa.md",
+      "draft_line_candidates": [
+        283
+      ],
+      "kind": "Link",
+      "label": "最终状态",
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/final_status.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/final_status.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "90_author_synthesis.md",
+      "draft_line_candidates": [
+        58
+      ],
+      "kind": "Link",
+      "label": "英文框架",
+      "target": "latex/framework.pdf",
+      "resolved_path": "/home/data3/txy/docs/paper/latex/framework.pdf",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "90_author_synthesis.md",
+      "draft_line_candidates": [
+        105
+      ],
+      "kind": "Link",
+      "label": "工作区记录",
+      "target": "../workspace.md",
+      "resolved_path": "/home/data3/txy/docs/workspace.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        8,
+        29
+      ],
+      "kind": "Link",
+      "label": "数据构建主记录",
+      "target": "../data/construction.md",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        9,
+        45
+      ],
+      "kind": "Link",
+      "label": "R1–R5全过程报告",
+      "target": "../research/support_update_experiment_report.md",
+      "resolved_path": "/home/data3/txy/docs/research/support_update_experiment_report.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        10,
+        47
+      ],
+      "kind": "Link",
+      "label": "CF-MoA全过程报告",
+      "target": "../research/cf_moa_experiment_report.md",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        20
+      ],
+      "kind": "Link",
+      "label": "archive/medrgag_reproduction.md",
+      "target": "../archive/medrgag_reproduction.md",
+      "resolved_path": "/home/data3/txy/docs/archive/medrgag_reproduction.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        21
+      ],
+      "kind": "Link",
+      "label": "archive/wm_medrgag.md",
+      "target": "../archive/wm_medrgag.md",
+      "resolved_path": "/home/data3/txy/docs/archive/wm_medrgag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        22
+      ],
+      "kind": "Link",
+      "label": "archive/cf_wm.md",
+      "target": "../archive/cf_wm.md",
+      "resolved_path": "/home/data3/txy/docs/archive/cf_wm.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        23
+      ],
+      "kind": "Link",
+      "label": "archive/cf_method_trials.md",
+      "target": "../archive/cf_method_trials.md",
+      "resolved_path": "/home/data3/txy/docs/archive/cf_method_trials.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        24
+      ],
+      "kind": "Link",
+      "label": "archive/cf_residual_adapter.md",
+      "target": "../archive/cf_residual_adapter.md",
+      "resolved_path": "/home/data3/txy/docs/archive/cf_residual_adapter.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        25
+      ],
+      "kind": "Link",
+      "label": "archive/native_baseline_screening.md",
+      "target": "../archive/native_baseline_screening.md",
+      "resolved_path": "/home/data3/txy/docs/archive/native_baseline_screening.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        26
+      ],
+      "kind": "Link",
+      "label": "archive/r1_r5_early_evaluation.md",
+      "target": "../archive/r1_r5_early_evaluation.md",
+      "resolved_path": "/home/data3/txy/docs/archive/r1_r5_early_evaluation.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        27
+      ],
+      "kind": "Link",
+      "label": "data/sources.md",
+      "target": "../data/sources.md",
+      "resolved_path": "/home/data3/txy/docs/data/sources.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        28
+      ],
+      "kind": "Link",
+      "label": "data/classification.md",
+      "target": "../data/classification.md",
+      "resolved_path": "/home/data3/txy/docs/data/classification.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        8,
+        29
+      ],
+      "kind": "Link",
+      "label": "data/construction.md",
+      "target": "../data/construction.md",
+      "resolved_path": "/home/data3/txy/docs/data/construction.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        30
+      ],
+      "kind": "Link",
+      "label": "baselines/direct_retrieval.md",
+      "target": "../baselines/direct_retrieval.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/direct_retrieval.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        31
+      ],
+      "kind": "Link",
+      "label": "baselines/medrgag.md",
+      "target": "../baselines/medrgag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/medrgag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        32
+      ],
+      "kind": "Link",
+      "label": "baselines/marag.md",
+      "target": "../baselines/marag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/marag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        33
+      ],
+      "kind": "Link",
+      "label": "baselines/medrag.md",
+      "target": "../baselines/medrag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/medrag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        34
+      ],
+      "kind": "Link",
+      "label": "baselines/imedrag.md",
+      "target": "../baselines/imedrag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/imedrag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        35
+      ],
+      "kind": "Link",
+      "label": "baselines/medgenie.md",
+      "target": "../baselines/medgenie.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/medgenie.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        36
+      ],
+      "kind": "Link",
+      "label": "baselines/tcrag.md",
+      "target": "../baselines/tcrag.md",
+      "resolved_path": "/home/data3/txy/docs/baselines/tcrag.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        37
+      ],
+      "kind": "Link",
+      "label": "evaluation/protocol.md",
+      "target": "../evaluation/protocol.md",
+      "resolved_path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        38
+      ],
+      "kind": "Link",
+      "label": "evaluation/v5.md",
+      "target": "../evaluation/v5.md",
+      "resolved_path": "/home/data3/txy/docs/evaluation/v5.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        39
+      ],
+      "kind": "Link",
+      "label": "research/optimization.md",
+      "target": "../research/optimization.md",
+      "resolved_path": "/home/data3/txy/docs/research/optimization.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        40
+      ],
+      "kind": "Link",
+      "label": "research/r2_support_head.md",
+      "target": "../research/r2_support_head.md",
+      "resolved_path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        41
+      ],
+      "kind": "Link",
+      "label": "research/r3_candidate_comparison.md",
+      "target": "../research/r3_candidate_comparison.md",
+      "resolved_path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        42
+      ],
+      "kind": "Link",
+      "label": "research/r4_consequence_head.md",
+      "target": "../research/r4_consequence_head.md",
+      "resolved_path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        43
+      ],
+      "kind": "Link",
+      "label": "research/r5_invariance_head.md",
+      "target": "../research/r5_invariance_head.md",
+      "resolved_path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        44
+      ],
+      "kind": "Link",
+      "label": "research/support_update_method.md",
+      "target": "../research/support_update_method.md",
+      "resolved_path": "/home/data3/txy/docs/research/support_update_method.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        9,
+        45
+      ],
+      "kind": "Link",
+      "label": "research/support_update_experiment_report.md",
+      "target": "../research/support_update_experiment_report.md",
+      "resolved_path": "/home/data3/txy/docs/research/support_update_experiment_report.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        46
+      ],
+      "kind": "Link",
+      "label": "research/cf_moa.md",
+      "target": "../research/cf_moa.md",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        10,
+        47
+      ],
+      "kind": "Link",
+      "label": "research/cf_moa_experiment_report.md",
+      "target": "../research/cf_moa_experiment_report.md",
+      "resolved_path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        48
+      ],
+      "kind": "Link",
+      "label": "workspace.md",
+      "target": "../workspace.md",
+      "resolved_path": "/home/data3/txy/docs/workspace.md",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        55
+      ],
+      "kind": "Link",
+      "label": "benchmark_contribution_audit.json",
+      "target": "../../Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        56
+      ],
+      "kind": "Link",
+      "label": "seven_methods_audit.json",
+      "target": "../../Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        57
+      ],
+      "kind": "Link",
+      "label": "head_research_audit.json",
+      "target": "../../Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        58
+      ],
+      "kind": "Link",
+      "label": "five_agent_framework_audit.json",
+      "target": "../../Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        59
+      ],
+      "kind": "Link",
+      "label": "research_path_audit.json",
+      "target": "../../Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json",
+      "fragment": null,
+      "line": null,
+      "status": "ok_file"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        60
+      ],
+      "kind": "Link",
+      "label": "09-28收尾目录",
+      "target": "../../Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928",
+      "fragment": null,
+      "line": null,
+      "status": "ok_directory"
+    },
+    {
+      "draft": "99_evidence_map.md",
+      "draft_line_candidates": [
+        61
+      ],
+      "kind": "Link",
+      "label": "本轮证据目录",
+      "target": "../../Documents/Codex/2026-10-03/author_research_dossier/",
+      "resolved_path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier",
+      "fragment": null,
+      "line": null,
+      "status": "ok_directory"
+    }
+  ],
+  "explicit_anchor_duplicates_in_combined_drafts": [],
+  "original_plan_check": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+    "exists": true,
+    "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+    "bytes": 26940,
+    "title_found": true,
+    "line_count": 414,
+    "first_nonempty_lines": [
+      "# CF-MoA：Router + 五个证据操作专家的执行计划",
+      "日期：2026-09-21。状态：研究方案，尚未修改远端代码、训练模型或运行新评测。",
+      "## 0. 本轮决定",
+      "主线改为：当前合法输入 → 操作路由 → 独立专家提出证据与答案 → 有证据约束的聚合 → 原生输出。",
+      "建议工作名：CF-MoA: Operation-Specialized Agents for Medical Counterfactual Reasoning。",
+      "五个专家按“补支持、撤支持、比候选、算后果、抗干扰”分工，而不是按五个医学专科分工。R1–R5继续用于离线评测分层，不作为互斥、可直接观察的路由真值。五个专家不等于五套模型权重，也不要求每题调用全部五个。",
+      "这是对既有系统的研究设计，不意味着以下机制已经有效。简单规则与数值执行器可以继续是主要有效部件；论文的新增贡献应由操作分工、组合、路由与实验归因共同支撑，不能把现有工具的效果归给尚未验证的新提示。",
+      "## 1. 现状核对与修改边界",
+      "| 组件 | 公开记录中的状态 | 本轮建议 |"
+    ]
+  },
+  "quoted_evidence_chain": [
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "user",
+      "quote": "按照下面研究后的计划进行ben c h ma r k收集和分类。",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 9,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "user",
+      "quote": "分类对象是一道反事实题或一个对照组，而不是整份 benchmark。",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 9,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "user",
+      "quote": "保留原题，增加标注，不重写原benchmark。",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 9,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "user",
+      "quote": "不同任务保留不同评分，但可以共享标签。",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 9,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "user",
+      "quote": "从已有医学benchmark中提取CF问题，以五种可解释的功能关系重新标注，揭示按数据集名称看不到的失败模式。",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 9,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "user",
+      "quote": "少量的指的是1000以下的全收录，大量指的是10000～5000条这种的benchmark可以适量收录少一些。",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 612,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/.codex/sessions/2026/09/08/rollout-2026-09-08T08-09-56-01a07e59-984e-7580-a306-3d6c68815e99.jsonl",
+      "exists": true,
+      "role_in_audit": "assistant",
+      "quote": "不足5,000条的已取得目标子集原则上全收；达到5,000条的来源，整理约2,500条",
+      "sha256": "c56f6fb28ccf08c60921decadae3e5a833f8aaca93037c6f8c5d32cea8aa095e",
+      "line": 619,
+      "line_in_bounds": true,
+      "quote_found_in_cited_line": true,
+      "event_kind": "response_item",
+      "payload_kind": "message"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/support_update_experiment_report.md",
+      "exists": true,
+      "role_in_audit": "historical report of user feedback, not direct session transcript quotation",
+      "quote": "已有原模型目录重决策确实是有效开发成果；更一般机制/全部组件/独立CF泛化尚未证明，不是拒绝承认开发结果的条件，也不要求90%才算完成。",
+      "sha256": "3df0f365ec0467d079a8d1cbbcb0a248848dd0d39f0ebff76a53da244abb1cbd",
+      "cited_lines": [
+        930,
+        940
+      ],
+      "quote_found_in_document": true,
+      "quote_found_in_cited_range": true
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "exists": true,
+      "role_in_audit": "user-authorized historical design attachment verified by companion audit",
+      "quote": "CF-MoA: Operation-Specialized Agents for Medical Counterfactual Reasoning",
+      "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+      "cited_lines": [
+        7,
+        13,
+        29,
+        39,
+        386,
+        394
+      ],
+      "quote_found_in_document": true
+    }
+  ],
+  "local_target_receipts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/corrections/summary.json",
+      "sha256": "12ce0fc69fe0c91dbde5734554ed22f66997c8cf32cacd5cc09babb7057d3238",
+      "bytes": 1389
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json",
+      "sha256": "0ea9469be785bb212137ad95749cec0fa26aad50f204eb81e70f36f095f2397a",
+      "bytes": 3580
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/source_release_notes.json",
+      "sha256": "b4ae126e9fdf345c6f5ef1563d3e8f2273dc165f4ff9c2d225cb68b738c965d9",
+      "bytes": 55608
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/completion_audit.json",
+      "sha256": "9a38cd43682758dd2a3d842eae8668addb297f2e4fa261b09509ccbec16b53df",
+      "bytes": 675
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json",
+      "sha256": "7782d9b52d3005d4ba687dfbea757c276b629d25857e7cc885cf349aee35f8a8",
+      "bytes": 1377
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/sampling_protocol.json",
+      "sha256": "3475b2dfd66b66b76d1e4ec7694d244cdfe30c5f788b31c85a71647659c620fe",
+      "bytes": 1357
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/source_summary.csv",
+      "sha256": "6a95155c789d6d0475ef540e8a7ee7172b4c8ae49f821b5cd74a72bb5e6e3bea",
+      "bytes": 561
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "sha256": "f4224ea7f8c2a4922af8a4e7187a09d115093cd3c0fdf039cf806c1f8b683957",
+      "bytes": 82283256
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/preparation_validation.json",
+      "sha256": "00969e589c3aaf38ce4cf5e7b3a2ea110627ca84cc6628edcbf2df45b6ddba2b",
+      "bytes": 267
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+      "bytes": 26940
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/README.md",
+      "sha256": "f4ec6b995121ce6200948f6edbf7c69b12393476f522c84a87f8897e98ebbca2",
+      "bytes": 955
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_source_results.json",
+      "sha256": "1149cb8c368229e0467ef6a9ee43811db097ce05cc2ca80f3725bb1f1a65f7b7",
+      "bytes": 29863
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/attributed_costs.md",
+      "sha256": "f02df8cb6d5e776a60922a121dfb01ac6b44f33a83734f69bfab520ed5a16fd4",
+      "bytes": 6241
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/final_status.json",
+      "sha256": "2d59ee612e934d9b73b812d675d9df5fa00ccb4c90d58281fd0ece9bb7c7328a",
+      "bytes": 3313
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/five_tables.md",
+      "sha256": "7449f5ed9f085d082d8f36ea285a8db06b1f54cdf2ea9c71f98947a08a8d5676",
+      "bytes": 24330
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/format_input_results.json",
+      "sha256": "1413631df1f98c1f045ba74976240f4d638e3c2b1d7e8ee74de0de33b8b13024",
+      "bytes": 14956
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+      "bytes": 85169
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+      "bytes": 78763
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json",
+      "sha256": "77369dcb2268e99bfaac135a2e1cec01c81337d17835b8efcd82c1faf8877ac1",
+      "bytes": 350807
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/cf_method_trials.md",
+      "sha256": "1683c406e7eabb5c7e35116c3db841948f407e68581b02eb3ec8925a6d5a2b09",
+      "bytes": 42470
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/cf_residual_adapter.md",
+      "sha256": "870e5eb8e5e5e17caff5c2091791b47fb6dd6a2afa2f3206b4c594b328d0e521",
+      "bytes": 83435
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/cf_wm.md",
+      "sha256": "c7c9e1f49ff8f7d0e675d277f5e5d68d94475196649be9d5bb5338c4d95cf215",
+      "bytes": 71175
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/medrgag_reproduction.md",
+      "sha256": "56b041cfd07bc35dbb2040d3472d476c3a3ffbe8b27e79c95d30295935b4375a",
+      "bytes": 89036
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/native_baseline_screening.md",
+      "sha256": "679952c637068b14fe3971c91f8af5f9208a207fe424187fc9db07f044d90a11",
+      "bytes": 210207
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/r1_r5_early_evaluation.md",
+      "sha256": "774686da8e50ac9e74733c58803f52ade72504961909d1fc8fc2a26d3afc5662",
+      "bytes": 101101
+    },
+    {
+      "path": "/home/data3/txy/docs/archive/wm_medrgag.md",
+      "sha256": "054af204999ec4d2eeecc048b1f4f75ad79ff4aae458a552b1bed17047e5845a",
+      "bytes": 214213
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/direct_retrieval.md",
+      "sha256": "db3924fc598e3b89f3732de63de36a328863fa971b6ab4fec5777a03996ab356",
+      "bytes": 3367
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/imedrag.md",
+      "sha256": "1f1e5b4c546bed14dc7a4bf2012e86f7cd2eeca66df077ccbe146aa1c716af8f",
+      "bytes": 27315
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/marag.md",
+      "sha256": "2a75fda9dfd08b2612384c6e757e7425205b16fac51ec5f4a7561e7e01824805",
+      "bytes": 49481
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/medgenie.md",
+      "sha256": "981d715f765c6715d1ab4c43543f288a684ff9ad0e04d4db0cbc1eeb9244372c",
+      "bytes": 38271
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/medrag.md",
+      "sha256": "876478dbbcdcd9947ee33e2540f534d95645c56abb88fc9c2d2c6c213ebbbc8c",
+      "bytes": 129856
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/medrgag.md",
+      "sha256": "81f98b9ba463445c677670b7c8279dba8e029147ff40bd921a419037cd084048",
+      "bytes": 33371
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/tcrag.md",
+      "sha256": "135a7080587e5a677c17ce7fd6e1a0399b465e657883fc1017b0e5f656ff0aa3",
+      "bytes": 112983
+    },
+    {
+      "path": "/home/data3/txy/docs/data/classification.md",
+      "sha256": "fbbdf8f7dfc84c0950d98c71e5eee8a59c95a5ed0d692c71f56860ba55dd2bbe",
+      "bytes": 38906
+    },
+    {
+      "path": "/home/data3/txy/docs/data/construction.md",
+      "sha256": "7ab015d62bf25066e4a7440f31c5dc4bcd07470b4390301617ef366a867c641b",
+      "bytes": 491932
+    },
+    {
+      "path": "/home/data3/txy/docs/data/sources.md",
+      "sha256": "4ecdce18bbdc2f2f214bfa8a2882dc722525f287db0809ba83e7477a51687aa6",
+      "bytes": 73537
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "sha256": "1e4ec1c645d47a677f727539f1e6a0863f78dc496789de977ab347c02c80ccfe",
+      "bytes": 21377
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/v5.md",
+      "sha256": "111352f80ee26a9c63c0ee2a228e8232f51848de33d8c427ee8ca1ff11dcf6e7",
+      "bytes": 124525
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/framework.pdf",
+      "sha256": "9a8b97fc56f775eb9da52a6f89f0cf3a95db165ba4e3e0bf1dd71d602cb6a475",
+      "bytes": 131190
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/outline.md",
+      "sha256": "ee77e40ee90c9377180aedc614b494d4891f8a3767d2cb63dec874ab1c97e6ba",
+      "bytes": 22477
+    },
+    {
+      "path": "/home/data3/txy/docs/research/cf_moa.md",
+      "sha256": "1fde8fea1a7891eba9bdca866d787748c2db3a21dd33c7ed5cfdfcc71ea110ce",
+      "bytes": 610618
+    },
+    {
+      "path": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "sha256": "245fff24ce63b8cf2f649c09bbc50bf00dca12a9550aea655fd1413eaebdc76e",
+      "bytes": 307086
+    },
+    {
+      "path": "/home/data3/txy/docs/research/optimization.md",
+      "sha256": "3cfc768eb03e9a7ed14440a7c88714976459198d46714a548e7e8fe90e6dbd7a",
+      "bytes": 155973
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "sha256": "8e455c86bef166773e99414cd03f632cd5ed97f4f6d35f185ed61079e751f4a1",
+      "bytes": 256416
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "sha256": "8160ee113de488a586d0a50069ee8ba8395f1f460a4b21c56322e065f443de6f",
+      "bytes": 402836
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "sha256": "51df24bd28a2276caf4215ec19e5c5a470fbac14006fcc7f63abefa3498ec084",
+      "bytes": 133030
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "sha256": "0f20ec43b102a51e4f80be1215f521df3852634b76979aec8cbcc9eb334521d5",
+      "bytes": 195347
+    },
+    {
+      "path": "/home/data3/txy/docs/research/support_update_experiment_report.md",
+      "sha256": "3df0f365ec0467d079a8d1cbbcb0a248848dd0d39f0ebff76a53da244abb1cbd",
+      "bytes": 406989
+    },
+    {
+      "path": "/home/data3/txy/docs/research/support_update_method.md",
+      "sha256": "b61515c277cea6a38c8f3c2b0a7c8a64cd83e90fc924b0441ad0ea4ea5744022",
+      "bytes": 59596
+    },
+    {
+      "path": "/home/data3/txy/docs/workspace.md",
+      "sha256": "5ffeac024e3b4a369d3769daac211f9be29bbdd4534b51784c85ab257b1d98ef",
+      "bytes": 275587
+    }
+  ],
+  "boundaries": [
+    "Read-only local reachability/anchor/line audit; no draft edits and no new model or scoring.",
+    "Relative paths are resolved as if the seven drafts were already merged into docs/paper/research_dossier.md.",
+    "A reachable file is not by itself proof of every scientific claim. Original user quotations were additionally compared to the cited local transcript lines.",
+    "Links to directories are accepted; file:line syntax is checked against real line counts.",
+    "No external HTTP targets were encountered."
+  ]
+}

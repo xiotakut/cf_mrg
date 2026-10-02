@@ -1,0 +1,651 @@
+{
+  "audit_date": "2026-10-03",
+  "scope": "Read-only audit of seven selected v5 systems; aggregate saved native scoring records without invoking the scorer or any model.",
+  "new_model_calls": 0,
+  "new_grading_calls": 0,
+  "source_files": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl",
+      "sha256_before": "58a3692f33beb16d416cacb5c3320ffeddd0591d64fa6d36675379f4a43c711e",
+      "sha256_after": "58a3692f33beb16d416cacb5c3320ffeddd0591d64fa6d36675379f4a43c711e",
+      "bytes": 115166246
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m3/scored.jsonl",
+      "sha256_before": "5d57ec87f52e5d593d8f5631669653a0b5beea7e66aa501d5eb34fe4487212ca",
+      "sha256_after": "5d57ec87f52e5d593d8f5631669653a0b5beea7e66aa501d5eb34fe4487212ca",
+      "bytes": 28794105
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/scores/scored.jsonl",
+      "sha256_before": "bc4382efcfac0583ec5c2437475e923acf966093c679a1461f17c39bf410bac0",
+      "sha256_after": "bc4382efcfac0583ec5c2437475e923acf966093c679a1461f17c39bf410bac0",
+      "bytes": 28790367
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_medgenie_v5_full/scores/scored.jsonl",
+      "sha256_before": "1185d27a9125cb478d041ba4be219acc0cf2f3bf0a08d9000eb69442585ee810",
+      "sha256_after": "1185d27a9125cb478d041ba4be219acc0cf2f3bf0a08d9000eb69442585ee810",
+      "bytes": 28001004
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m7_typed_v5_full/scores/scored.jsonl",
+      "sha256_before": "f97c8b9a23f3327a2936b4df1bc82a01ba374f4314097a6fb5c5624b6d68e805",
+      "sha256_after": "f97c8b9a23f3327a2936b4df1bc82a01ba374f4314097a6fb5c5624b6d68e805",
+      "bytes": 27959354
+    }
+  ],
+  "cross_method_csv": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_medgenie_v5_full/reports/category_comparison.csv",
+    "sha256": "aa58c5e47383bea72c073ddf191b76243df0af2c54fbae685c7cd1d691eb7c9b"
+  },
+  "checks": {
+    "seven_equal_input_id_sets": true,
+    "seven_13905_inputs_15616_mappings": true,
+    "42_aggregates_match_archived_csv": true,
+    "all_source_hashes_unchanged": true
+  },
+  "methods": [
+    {
+      "method": "M0",
+      "identity": "Direct",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "reused_predictions": 8877,
+      "new_predictions": 5028,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 13509,
+      "native_valid": 11126,
+      "native_invalid_reasons": {
+        "unmapped_diagnosis": 2383,
+        "valid": 11126,
+        "ambiguous_diagnosis": 7,
+        "malformed_json": 155,
+        "invalid_option_key": 234
+      },
+      "runtime_status_unique_inputs": {
+        "not_in_scored_record": 13905
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 48.10397553516798,
+          "reported_accuracy_percent": 48.103975535168196,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 30.041870202372646,
+          "reported_accuracy_percent": 30.041870202372646,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 8.860759493670885,
+          "reported_accuracy_percent": 8.860759493670885,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 17.871759890859483,
+          "reported_accuracy_percent": 17.871759890859483,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 38.46153846153846,
+          "reported_accuracy_percent": 38.46153846153847,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 65.70185185185161,
+          "reported_accuracy_percent": 65.70185185185186,
+          "match": true
+        }
+      },
+      "name": "Direct",
+      "method_family": "Direct"
+    },
+    {
+      "method": "M2",
+      "identity": "MedRGAG, all Llama local adaptation",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "reused_predictions": 6687,
+      "new_predictions": 7218,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 13389,
+      "native_valid": 10778,
+      "native_invalid_reasons": {
+        "unmapped_diagnosis": 2611,
+        "valid": 10778,
+        "ambiguous_diagnosis": 31,
+        "invalid_option_set": 1,
+        "malformed_json": 169,
+        "invalid_option_key": 315
+      },
+      "runtime_status_unique_inputs": {
+        "not_in_scored_record": 13905
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 48.813346439492896,
+          "reported_accuracy_percent": 48.81334643949323,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 31.332868108862527,
+          "reported_accuracy_percent": 31.332868108862527,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 7.594936708860759,
+          "reported_accuracy_percent": 7.59493670886076,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 24.69304229195089,
+          "reported_accuracy_percent": 24.69304229195089,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 53.84615384615385,
+          "reported_accuracy_percent": 53.84615384615385,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 65.87685185185134,
+          "reported_accuracy_percent": 65.87685185185185,
+          "match": true
+        }
+      },
+      "name": "MedRGAG (all Llama)",
+      "method_family": "MedRGAG"
+    },
+    {
+      "method": "M3",
+      "identity": "MA-RAG intrinsic, N8 T4",
+      "backbone": "Qwen3-8B",
+      "reused_predictions": 3690,
+      "new_predictions": 10215,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 13289,
+      "native_valid": 10474,
+      "native_invalid_reasons": {
+        "valid": 10474,
+        "ambiguous_diagnosis": 275,
+        "unmapped_diagnosis": 2815,
+        "invalid_answer_type": 339,
+        "invalid_option_set": 2
+      },
+      "runtime_status_unique_inputs": {
+        "not_in_scored_record": 13905
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 51.60823503713374,
+          "reported_accuracy_percent": 51.60823503713412,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 26.727145847871597,
+          "reported_accuracy_percent": 26.727145847871597,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 34.177215189873415,
+          "reported_accuracy_percent": 34.177215189873415,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 8.594815825375171,
+          "reported_accuracy_percent": 8.594815825375171,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 38.46153846153846,
+          "reported_accuracy_percent": 38.46153846153847,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 73.36574074074008,
+          "reported_accuracy_percent": 73.36574074074073,
+          "match": true
+        }
+      },
+      "name": "MA-RAG (intrinsic)",
+      "method_family": "MA-RAG"
+    },
+    {
+      "method": "M4",
+      "identity": "MedRAG, structured-output repair",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "reused_predictions": 0,
+      "new_predictions": 13905,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 13779,
+      "native_valid": 11044,
+      "native_invalid_reasons": {
+        "unmapped_diagnosis": 2735,
+        "valid": 11044,
+        "ambiguous_diagnosis": 50,
+        "malformed_json": 76
+      },
+      "runtime_status_unique_inputs": {
+        "not_in_scored_record": 13905
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 48.19899519440783,
+          "reported_accuracy_percent": 48.19899519440804,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 27.843684577808794,
+          "reported_accuracy_percent": 27.84368457780879,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 29.11392405063291,
+          "reported_accuracy_percent": 29.11392405063291,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 30.42291950886767,
+          "reported_accuracy_percent": 30.42291950886767,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 53.84615384615385,
+          "reported_accuracy_percent": 53.84615384615385,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 65.27962962962945,
+          "reported_accuracy_percent": 65.27962962962962,
+          "match": true
+        }
+      },
+      "name": "MedRAG (Llama, structured)",
+      "method_family": "MedRAG"
+    },
+    {
+      "method": "M5",
+      "identity": "MedRAG, original v5 output protocol",
+      "backbone": "Qwen3-8B",
+      "reused_predictions": 0,
+      "new_predictions": 13905,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 12841,
+      "native_valid": 10076,
+      "native_invalid_reasons": {
+        "unmapped_diagnosis": 2765,
+        "valid": 10076,
+        "ambiguous_diagnosis": 90,
+        "malformed_json": 24,
+        "invalid_option_set": 17,
+        "invalid_option_key": 933
+      },
+      "runtime_status_unique_inputs": {
+        "not_in_scored_record": 13905
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 47.34873307120987,
+          "reported_accuracy_percent": 47.348733071210134,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 28.576413119330077,
+          "reported_accuracy_percent": 28.576413119330073,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 41.77215189873418,
+          "reported_accuracy_percent": 41.77215189873418,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 25.238744884038198,
+          "reported_accuracy_percent": 25.2387448840382,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 53.84615384615385,
+          "reported_accuracy_percent": 53.84615384615385,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 63.42129629629608,
+          "reported_accuracy_percent": 63.42129629629629,
+          "match": true
+        }
+      },
+      "name": "MedRAG (Qwen)",
+      "method_family": "MedRAG"
+    },
+    {
+      "method": "M6",
+      "identity": "MedGENIE v2 local adaptation",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "reused_predictions": 0,
+      "new_predictions": 13905,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 13417,
+      "native_valid": 10751,
+      "native_invalid_reasons": {
+        "unmapped_diagnosis": 2666,
+        "valid": 10751,
+        "ambiguous_diagnosis": 133,
+        "malformed_json": 355
+      },
+      "runtime_status_unique_inputs": {
+        "ok": 13550,
+        "invalid": 355
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 48.02479248580132,
+          "reported_accuracy_percent": 48.02479248580166,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 29.937194696441033,
+          "reported_accuracy_percent": 29.937194696441033,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 18.9873417721519,
+          "reported_accuracy_percent": 18.9873417721519,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 21.41882673942701,
+          "reported_accuracy_percent": 21.418826739427015,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 61.53846153846154,
+          "reported_accuracy_percent": 61.53846153846154,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 65.15092592592552,
+          "reported_accuracy_percent": 65.15092592592593,
+          "match": true
+        }
+      },
+      "name": "MedGENIE (v2)",
+      "method_family": "MedGENIE"
+    },
+    {
+      "method": "M7",
+      "identity": "TC-RAG typed-control-v2 local adaptation",
+      "backbone": "Qwen3-8B",
+      "reused_predictions": 0,
+      "new_predictions": 13905,
+      "unique_inputs": 13905,
+      "scored_mappings": 15616,
+      "reference_mappings": 6818,
+      "nonreference_mappings": 8798,
+      "unique_input_id_sha256": "4854d3c464bae145f58f2c8f3d1f8a68d5be47f1b409402794326692cc95d23b",
+      "format_valid": 13522,
+      "native_valid": 10909,
+      "native_invalid_reasons": {
+        "unmapped_diagnosis": 2613,
+        "valid": 10909,
+        "ambiguous_diagnosis": 26,
+        "malformed_json": 357
+      },
+      "runtime_status_unique_inputs": {
+        "ok": 13548,
+        "invalid": 357
+      },
+      "categories": {
+        "ALL": {
+          "units": 6104,
+          "accuracy_percent": 49.430428134556266,
+          "reported_accuracy_percent": 49.43042813455658,
+          "match": true
+        },
+        "R1": {
+          "units": 2866,
+          "accuracy_percent": 31.437543614794137,
+          "reported_accuracy_percent": 31.437543614794137,
+          "match": true
+        },
+        "R2": {
+          "units": 79,
+          "accuracy_percent": 29.11392405063291,
+          "reported_accuracy_percent": 29.11392405063291,
+          "match": true
+        },
+        "R3": {
+          "units": 733,
+          "accuracy_percent": 28.922237380627557,
+          "reported_accuracy_percent": 28.922237380627557,
+          "match": true
+        },
+        "R4": {
+          "units": 13,
+          "accuracy_percent": 30.76923076923077,
+          "reported_accuracy_percent": 30.76923076923077,
+          "match": true
+        },
+        "R5": {
+          "units": 3600,
+          "accuracy_percent": 66.17314814814765,
+          "reported_accuracy_percent": 66.17314814814816,
+          "match": true
+        }
+      },
+      "name": "TC-RAG (typed v2)",
+      "method_family": "TC-RAG"
+    }
+  ],
+  "wording": "We evaluate seven system configurations spanning six baseline families on the complete v5 benchmark. MedRAG is represented by two backbone/output-protocol configurations.",
+  "excluded_current_table": {
+    "M1": "Retrieval-only control from MedRGAG initial retrieval/reranking; v3 completed, no full v5.",
+    "historical_M6_iMedRAG": "Different method identity; original v5 queue paused at 52/13905, later 128-input performance validation does not constitute full v5; replaced by MedGENIE."
+  },
+  "limitations": [
+    "Corpora, backbones, budgets and output protocols differ across systems; seven distinct algorithms is not supported.",
+    "M4 repair altered output contract and constrained decoding whereas M5 retained original protocol; their difference is not isolated backbone effect.",
+    "ALL weights 6104 unique nonreference units equally; overlapping R1-R5 counts are not additive; R4 has only 13 units.",
+    "Full coverage includes strictly matched historical reuse for M0/M2/M3, not seven independent from-scratch reruns.",
+    "Native diagnosis validity includes frozen canonical mapping and is not semantic clinical accuracy.",
+    "Formal v5 used for diagnostics and repair selection; not independent held-out confirmation."
+  ],
+  "document_reading": {
+    "docs/AGENTS_note": "Root AGENTS.md read; docs/README.md navigation and current/selected baseline scope read, large unrelated latest-research stream not fully reviewed here.",
+    "docs/evaluation/protocol.md": {
+      "reviewed_lines": [
+        [
+          1,
+          201
+        ]
+      ],
+      "scope": "All protocol sections, including historical evidence protocol; dated historical restrictions distinguished from later completed runs."
+    },
+    "docs/evaluation/v5.md": {
+      "reviewed_lines": [
+        [
+          1,
+          1176
+        ]
+      ],
+      "scope": "Full dated progression; repetitive source blocks include five-method and old M6/M7 snapshots. Long path strings mechanically abbreviated in follow-up reads where needed."
+    },
+    "docs/baselines/direct_retrieval.md": {
+      "reviewed_lines": [
+        [
+          1,
+          36
+        ]
+      ],
+      "scope": "Full document."
+    },
+    "docs/baselines/medrgag.md": {
+      "reviewed_lines": [
+        [
+          1,
+          511
+        ]
+      ],
+      "scope": "Full document, including v3, v5 reuse, local all-Llama v15 and old strict-run failure."
+    },
+    "docs/baselines/marag.md": {
+      "reviewed_lines": [
+        [
+          1,
+          643
+        ]
+      ],
+      "scope": "Full document, including v3, v5, native adapters, entropy vectorization, GPU handoffs, invalid terminal retention."
+    },
+    "docs/baselines/medgenie.md": {
+      "reviewed_lines": [
+        [
+          1,
+          329
+        ]
+      ],
+      "scope": "Full document, including replacement choice, source differences, v1 exemplar-error, v2 repair, 384 pilot and full 13905."
+    },
+    "docs/baselines/imedrag.md": {
+      "reviewed_lines": [
+        [
+          1,
+          228
+        ]
+      ],
+      "scope": "Full document, including formatter semantic changes, unadopted fixes, 52-input pause, later performance/cost context."
+    },
+    "docs/baselines/tcrag.md": {
+      "reviewed_lines": [
+        [
+          1,
+          960
+        ]
+      ],
+      "scope": "Full document, including old 1646 pause, accepted-output repair, typed control, recovery-only negative ablation, 384 pilot and full 13905."
+    },
+    "docs/baselines/medrag.md": {
+      "reviewed_lines": [
+        [
+          1,
+          987
+        ],
+        [
+          1230,
+          1334
+        ]
+      ],
+      "not_read_lines": [
+        [
+          988,
+          1229
+        ]
+      ],
+      "scope": "All local workflow, installation and source-adaptation history, output repair and full result sections read. Embedded upstream generic MedRAG README (988–1229) excluded as not local experiment history; headings inspected."
+    }
+  },
+  "runtime_terminal_followup": {
+    "M3": {
+      "source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m3/m3_predictions.jsonl",
+      "counts": {
+        "complete": 13564,
+        "invalid_answer": 188,
+        "vote_tie": 135,
+        "runtime_invalid": 18
+      },
+      "sum": 13905,
+      "note": "Full predicted set including reuse. The often cited 9926/186/88/15 pertains only to the 10215 newly generated subset."
+    },
+    "M0_M2_M5": "Final coverage audited complete; chosen prediction exports do not encode a common runtime_status field. Do not invent a comparable per-input protocol-valid numerator; format/native validity checked from saved scorer fields.",
+    "M4": "complete.json and scores/validation.json confirm full coverage; document reports zero run failures.",
+    "M6_M7": "final_results.json explicitly reports failed=0, retry_count=0, planned=completed=13905; current runtime invalid 355/357 preserved."
+  },
+  "statistical_note": "Seven-baseline table here reports saved point estimates only. Earlier M6/M7 ALL bootstrap uses 4378 case/dependency clusters, whereas subsequent CF-MoA closeout has a separately constructed 4766-family dependency analysis. Do not present those intervals as a common paired comparison without reconciling grouping.",
+  "baseline_resource_summary": {
+    "M0": "No additional retrieval; full task-required fixed evidence retained; Llama native prompt, final T=0, ordinary max_tokens=64, robustness max_tokens=2048, 98304 total context.",
+    "M2": "Textbooks+Wikipedia BM25 top32/source, MedCPT initial top5; five summaries, exploration, five generations, KADS selection, reranking, reader; 13 LLM stages/new input. All LLM roles Llama, MedCPT separate. 98304 context. Not paper Table1 exact replication.",
+    "M3": "Qwen3-8B N=8 T<=4, solver T=.7/2048/nonthinking, query T=0/8192/thinking; MedCorp3 PubMed+Textbooks+Wikipedia; each query BM25 total32 and MedCPT top2; top20 token entropy/history/vote. YaRN factor4, 131072 context.",
+    "M4": "MedRAG single-round, Llama3.1; full four-corpus MedCorp BM25 top32/source, MedCPT top8; T=.7/top_p1/seed42/2048; 30000 additional-context tokens and 131072 total. Chosen output-contract+JSON Schema/xgrammar version; old retrieval messages reused; all final outputs regenerated.",
+    "M5": "MedRAG single-round, Qwen3 nonthinking; same four-corpus retrieval/topk/budget as M4, but original v5 output contract and unconstrained generation, model-specific tokenizer/chat template and YaRN4.",
+    "M6": "MedGENIE v2 Llama3.1 adaptation, three option-focused+two option-free backgrounds (five option-free without options), T=.9/frequency_penalty1.95/512 per background; one greedy reader <=2048; no retrieval; 131072 context; local backbone/prompt-chat/native-format adaptations.",
+    "M7": "TC-RAG typed-control-v2 Qwen3 nonthinking, MedCorp BM25 top32/source and MedCPT top8, up to8 action generations/2048, minimum accepted zero-basedstep4 and full-vocab entropy sum<1.2; feedback/output-normalization adaptations explicit; vLLM0.8.5 FP32 entropy signal."
+  },
+  "presentation": {
+    "system_configurations": 7,
+    "method_families": 6,
+    "completed_prediction_records": 97335,
+    "native_score_mappings": 109312,
+    "new_calls_not_implied": true,
+    "table_category_order": [
+      "ALL",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "copy_archived_csv_from": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_medgenie_v5_full/reports/category_comparison.csv",
+    "suggested_manuscript_input_copy": "/home/data3/txy/docs/paper/latex/inputs/seven_baseline_category_comparison.csv",
+    "suggested_full_evidence_copy": "/home/data3/txy/docs/paper/latex/inputs/seven_methods_audit.json",
+    "figure": "Seven systems across ALL/R1–R5, all percentages from 42 archived values; include category denominators and distinct M4/M5 labels."
+  }
+}

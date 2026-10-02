@@ -1,6 +1,14 @@
+# CF-MoA 共同作者完整研究底稿
+
+**2026-10-03 最新交付：[完整中文研究底稿](author_dossier/research_dossier.md) · [41页PDF](author_dossier/research_dossier.pdf) · [LaTeX阅读版](author_dossier/research_dossier.tex) · [完整材料ZIP](cf_moa_author_dossier.zip) · [原记录、核验及重建说明](author_dossier/README.md)。**
+
+面向共同作者的raw研究材料，约3.1万汉字、八章、33张表，完整串联原始目的、数据与五类体系、benchmark、七系统、五head和CF-MoA，保留成功失败、版本分母、证据与写作取舍。旧框架40题R3“18/18”的配置混写已在新底稿4.5节更正；以下框架与英文论文保留历史版本身份。仓库private，本轮0模型/评分。
+
+---
+
 # CF-MoA: benchmark and five-agent paper framework
 
-**Latest, 2026-10-03:** [Complete research logic and Chinese outline](framework/outline.zh.md) · [English LaTeX framework](framework/framework.tex) · [10-page framework PDF](framework/framework.pdf) · [Overleaf source ZIP](cf_moa_framework.zip) · [audits and reproduction](framework/README.md).
+**Previous framework, 2026-10-03:** [Complete research logic and Chinese outline](framework/outline.zh.md) · [English LaTeX framework](framework/framework.tex) · [10-page framework PDF](framework/framework.pdf) · [Overleaf source ZIP](cf_moa_framework.zip) · [audits and reproduction](framework/README.md).
 
 The revised main story is resource collection, a five-category functional taxonomy, benchmark construction, seven-system diagnosis, specialized heads, and five-role CF-MoA. The new framework prioritizes the adopted B's complete-scope gains. It has not yet been expanded into a new full manuscript. The following 28-page manuscript is the preceding edition and remains unchanged. The repository is private.
 

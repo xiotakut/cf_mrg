@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-03",
+  "format": "Native LaTeX framework before complete manuscript rewrite",
+  "title": "CF-MoA: Taxonomy-Guided Benchmarking and Agent Orchestration for Counterfactual Medical Reasoning",
+  "scope": [
+    "Source collection and five-category taxonomy",
+    "Benchmark construction and seven-system diagnostic evaluation",
+    "Five operational roles and adopted sparse CF-MoA B",
+    "Complete nine-row results and evidence selection"
+  ],
+  "canonical_source": "framework/framework.tex",
+  "pdf": "framework/framework.pdf",
+  "pdf_pages": 10,
+  "pdf_sha256": "9a8b97fc56f775eb9da52a6f89f0cf3a95db165ba4e3e0bf1dd71d602cb6a475",
+  "compiler": "Tectonic 0.17.0",
+  "tables": 5,
+  "generated_data_tables": 3,
+  "vector_figures": 2,
+  "cited_references": 8,
+  "full_manuscript_status": "Previous 28-page seven-system manuscript retained unchanged; full rewrite not yet performed",
+  "previous_publication": {
+    "record": "framework/evidence/prior_publication.json",
+    "commit": "bb5a0175c64c2030f3b0896f01fc30702220c6b4",
+    "pdf": "manuscript.pdf",
+    "pdf_sha256": "50a250296d3b8514183eee06580e7ea725cb11d6655dbd12eae5c99523b2f03e"
+  },
+  "repository_visibility": "private",
+  "framework_zip": {
+    "path": "cf_moa_framework.zip",
+    "files": 10,
+    "bytes": 205377,
+    "sha256": "1d00836eae75a2fec0e9e3ca80d0e1e6a614c2c7ee8c1faf8246641fad07423f"
+  },
+  "verification": [
+    "framework/evidence/framework_review.json",
+    "framework/validation/framework_build_receipt.json",
+    "framework/validation/isolated_build_receipt.json",
+    "framework/inputs/manifest.json",
+    "framework/generated/build_manifest.json"
+  ],
+  "model_calls": 0,
+  "grader_calls": 0,
+  "gpu_operations": 0,
+  "data_scope": "Source questions, semantic labels, sampling membership, predictions and scores unchanged. Favorable complete panels selected for main text; necessary controls retained."
+}

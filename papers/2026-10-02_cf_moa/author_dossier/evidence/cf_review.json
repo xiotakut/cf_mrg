@@ -1,0 +1,257 @@
+{
+  "created_at": "2026-10-03T01:56:20.939232+08:00",
+  "reviewer": "/root/head_research_audit",
+  "scope": "Complete independent read of283line CF-MoA author dossier draft; roles,chronology,scope,table conclusions,citations,crosschapter consistency. Do notrepeat root264cell numericverification.",
+  "input": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/cf_moa.md",
+    "sha256": "e5b187f9e1b97e1802af2a35a5ab336d5efb5424894850b41f1c8d5137427f28",
+    "bytes": 40238,
+    "lines": 283
+  },
+  "read_ranges": [
+    [
+      1,
+      100
+    ],
+    [
+      101,
+      200
+    ],
+    [
+      201,
+      283
+    ]
+  ],
+  "execution": {
+    "new_model_calls": 0,
+    "new_scoring_calls": 0,
+    "new_training": 0,
+    "new_simulation": 0,
+    "cf_draft_modified": false
+  },
+  "comparison_drafts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+      "sha256": "50affe6cfa26a424d049c3c35192f0bb2f630135c1f6d8e0a0cac317437ad1dd",
+      "bytes": 32933,
+      "lines": 191
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/00_orientation.md",
+      "sha256": "7e1eeb25add5769864fef680d9149b2b372a3c4219d3f5d43e0b3c7532ff8f11",
+      "bytes": 9105,
+      "lines": 69
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/01_early_history.md",
+      "sha256": "fac135855ddbea3f6154f2f93ee393191335f72ddeb6f333f8e3128e513d77ee",
+      "bytes": 10292,
+      "lines": 78
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/90_author_synthesis.md",
+      "sha256": "697d834c4b5d4478eda033a208ad166f57a536dcac12e5f39eb91267819e4ff6",
+      "bytes": 17521,
+      "lines": 113
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/99_evidence_map.md",
+      "sha256": "ec230d4f8f70cbfc085c0cddeed9794b27061ad791b3653a39a5562a7116d2ac",
+      "bytes": 8257,
+      "lines": 69
+    }
+  ],
+  "prior_evidence": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+      "bytes": 78763,
+      "lines": 2167
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/generated/paired_behavior.csv",
+      "sha256": "fcf1c6ec4477a6d7e54ea98d10dc872b77c7989a6cea04fe1e0f0f41e0466119",
+      "bytes": 438,
+      "lines": 5
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361,
+      "lines": 1156
+    }
+  ],
+  "checks": [
+    {
+      "topic": "Roleidentity",
+      "result": "pass",
+      "detail": "OldR1wrapper distinctfromnewA1; originalindependentA1/A3/A5plan separatedfromadoptedsharedA1/A2kernel; fivefunctionalrolesnotfiveweightsets orallactiveexperts."
+    },
+    {
+      "topic": "Actualaggregation",
+      "result": "pass",
+      "detail": "121inputgenerativeaggregation actuallyexecuted andnegative; top1weakpool versusstrongB kept;29/121twoexperts traced ratherthanclaimingeveryoneconsults."
+    },
+    {
+      "topic": "AdoptedBcallgraph",
+      "result": "pass",
+      "detail": "3560diagnosis+123rules+10178F+44passthrough=13905;A4clinical0;123samefactadd/removalablation; sourceID/R/goldnotrouterinputs."
+    },
+    {
+      "topic": "R4/Fcompatibility",
+      "result": "pass",
+      "detail": "24profile288 modelpanel notswappedintov5R4;F208component distinctfromfullsystem;newA5failure notrewrittenasoldFsuccess;Fredooff doesnotmeanFremoved."
+    },
+    {
+      "topic": "Versionsandreuse",
+      "result": "pass",
+      "detail": "20062R1replay/75264callbacks treatedequivalencenotnewquality;oldheadintegerresultsnotforcedtoequalB;history121/natural52/fullv5andpartialC0distinguished."
+    },
+    {
+      "topic": "Denominators",
+      "result": "pass",
+      "detail": "Input13905,mappings15616,units6104,families4766,keep6838/change1780 andsource/formatpercentdistinguished;unavailable separatefromnativevalidity."
+    },
+    {
+      "topic": "Resultsinterpretation",
+      "result": "pass",
+      "detail": "BpositiveALLandkeep/respondretained;C3M4negative/M5positive;C0unavailable0notclaimingvalid;C4 netcorrectaccountsforcorrect→unavailable;full11sourcesand5formatsholdnegativecells."
+    },
+    {
+      "topic": "Costs",
+      "result": "pass",
+      "detail": "162979 onlylatefullv5physicalrequests;sharedBattributionnot summedacrossarms;2503timeunknownnotzero;eventsecondsnotGPUwallclock;input/outputtokenandcallunitsnotconflated."
+    },
+    {
+      "topic": "Unexecutedwork",
+      "result": "pass",
+      "detail": "Finalnewfamily/secondFpool unexecuted;Dpreparednotresults;incompletesingle-agentcontrolnotusedforresourceparityclaims."
+    },
+    {
+      "topic": "Crosschapterstory",
+      "result": "pass",
+      "detail": "Broadsevenbaselines/21headgains precededeep2configsystem;newcanonical40caseheadcorrectiondoesnotconflictwithCFtext;frameworkhistory andpositivemethodclaimsselfcontained."
+    }
+  ],
+  "local_links": [
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/README.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:101",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa.md:40",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:291",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:338",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:533",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:584",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:921",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1056",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1433",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1807",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa.md:2171",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1584",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1626",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1930",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/docs/research/cf_moa_experiment_report.md:1876",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/all_source_results.json",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/format_input_results.json",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/attributed_costs.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/five_tables.md",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/",
+      "exists": true
+    },
+    {
+      "target": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/final_status.json",
+      "exists": true
+    }
+  ],
+  "must_fix_factual": [],
+  "clarity_fix_requested": [
+    {
+      "section": "12.2 finalparagraph",
+      "current": "2700条robustness辅助映射，B的exact为55/425，C3为51/427",
+      "issue": "Slash betweenbackbonecounts visuallylookslikeanaccuracyfraction. Countsarecorrectbutdenominatoridentity shouldbe explicit.",
+      "requested": "B在M4/M5分别55/2700、425/2700；C3分别51/2700、427/2700。",
+      "status": "Senttoroot;reviewerdidnoteditCFdraft."
+    }
+  ],
+  "limits": [
+    "No re-runofrawmodel/scoring;root264cellverificationreusednotrepeated.",
+    "Previoussame-agentfiveframeworkaudit suppliesprimaryCFhistory/codeverification;thissubtaskcompletelyreadthenewdraftandcheckedall26local links."
+  ],
+  "overall": "Ready aftersmallcount/denominatorwordingclarification;no factualcontradiction identified."
+}

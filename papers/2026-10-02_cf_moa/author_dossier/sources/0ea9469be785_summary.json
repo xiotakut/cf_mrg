@@ -1,0 +1,176 @@
+{
+  "audit_date": "2026-09-08",
+  "network_mode": "independently_downloaded_dated_snapshots",
+  "source_catalog_review_count": 26,
+  "missing_catalog_reviews": [],
+  "source_catalog_verdicts": {
+    "verified": 26
+  },
+  "control_source_review_count": 2,
+  "control_source_verdicts": {
+    "verified": 2
+  },
+  "counts": {
+    "unit": {
+      "verified": 55991
+    },
+    "unit:M01": {
+      "verified": 5383
+    },
+    "frozen_from_full": {
+      "verified": 28243
+    },
+    "unit:M02": {
+      "verified": 183
+    },
+    "unit:M12": {
+      "verified": 4806
+    },
+    "unit:M14": {
+      "verified": 6296
+    },
+    "unit:M16": {
+      "verified": 323
+    },
+    "unit:M22": {
+      "verified": 3680
+    },
+    "unit:M23": {
+      "verified": 12615
+    },
+    "unit:M24": {
+      "verified": 4013
+    },
+    "unit:M25": {
+      "verified": 2497
+    },
+    "unit:M10": {
+      "verified": 10225
+    },
+    "unit:M11": {
+      "verified": 1349
+    },
+    "unit:M20": {
+      "verified": 809
+    },
+    "unit:M05": {
+      "verified": 33
+    },
+    "unit:M06": {
+      "verified": 20
+    },
+    "unit:M17": {
+      "verified": 3759
+    },
+    "frozen": {
+      "verified": 28243
+    },
+    "frozen:M01": {
+      "verified": 2500
+    },
+    "frozen:M02": {
+      "verified": 183
+    },
+    "frozen:M12": {
+      "verified": 4806
+    },
+    "frozen:M14": {
+      "verified": 2500
+    },
+    "frozen:M16": {
+      "verified": 323
+    },
+    "frozen:M22": {
+      "verified": 3680
+    },
+    "frozen:M23": {
+      "verified": 2500
+    },
+    "frozen:M24": {
+      "verified": 798
+    },
+    "frozen:M25": {
+      "verified": 2497
+    },
+    "frozen:M10": {
+      "verified": 2500
+    },
+    "frozen:M11": {
+      "verified": 1349
+    },
+    "frozen:M20": {
+      "verified": 809
+    },
+    "frozen:M05": {
+      "verified": 33
+    },
+    "frozen:M06": {
+      "verified": 20
+    },
+    "frozen:M17": {
+      "verified": 3745
+    },
+    "root": {
+      "verified": 11751
+    },
+    "root:M12": {
+      "verified": 801
+    },
+    "root:M14": {
+      "verified": 1707
+    },
+    "root:M22": {
+      "verified": 3680
+    },
+    "root:M23": {
+      "verified": 5563
+    },
+    "reference": {
+      "verified": 5763
+    },
+    "reference:M01": {
+      "verified": 83
+    },
+    "reference:M17": {
+      "verified": 14
+    },
+    "reference:M14": {
+      "verified": 84
+    },
+    "reference:M22": {
+      "verified": 3480
+    },
+    "reference:M23": {
+      "verified": 1
+    },
+    "reference:M24": {
+      "verified": 15
+    },
+    "reference:M10": {
+      "verified": 2085
+    },
+    "reference:M11": {
+      "verified": 1
+    }
+  },
+  "used_raw_files": 25,
+  "cached_file_comparisons": 38,
+  "independently_downloaded_files_compared": 36,
+  "raw_file_results": {
+    "verified": 38
+  },
+  "medpic_reference_check": {
+    "file": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/parts/clinical_existing/raw/medpic_questions_all467.json",
+    "total_rows": 467,
+    "gf_rows": 284,
+    "status": "verified",
+    "differences": []
+  },
+  "record_issue_count": 0,
+  "boundaries": [
+    "Verified means fidelity to the published data, not medical correctness of author-generated data.",
+    "Paper-to-author links and PDF transcription need reviewed evidence; HTTP 200 alone never verifies authenticity.",
+    "Original source-owned response columns are compared as data only; no model outcome determines functional labels.",
+    "Missing multimodal images are not audited as present; text metadata fidelity does not certify image input completeness."
+  ]
+}

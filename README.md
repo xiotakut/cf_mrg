@@ -1,3 +1,5 @@
+**2026-10-03 · 共同作者raw研究底稿：[完整实验路径与逻辑链](papers/2026-10-02_cf_moa/author_dossier/research_dossier.md) · [41页PDF](papers/2026-10-02_cf_moa/author_dossier/research_dossier.pdf) · [LaTeX与完整下载](papers/2026-10-02_cf_moa/author_dossier/README.md)。约3.1万汉字、八章、33张表，配套29份主记录快照及148阶段索引。新底稿更正旧框架40题R3的18/18配置混写；0新增模型/评分，仓库private。**
+
 **2026-10-03 · 五类 benchmark 与五 agent 论文主线已重构：[中文完整逻辑与证据选择](papers/2026-10-02_cf_moa/framework/outline.zh.md) · [10页 LaTeX 框架PDF](papers/2026-10-02_cf_moa/framework/framework.pdf) · [框架源码与复现](papers/2026-10-02_cf_moa/framework/README.md)。数据/分类/基准/七系统/CF-MoA形成统一路径；七基线＋两配置B主表完整保留。上一版完整论文保持，新框架尚未展开为新全文。仓库private。**
 
 **2026-10-03 · 论文范围修订：[七系统基线、七系统 R1–R3 改进及后期双配置 CF-MoA](papers/2026-10-02_cf_moa/README.md)。[原生 LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [英文 PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [Overleaf ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。七系统共六个方法家族；新增图表来自已保存评分，0 新模型或评分。仓库为 private。**

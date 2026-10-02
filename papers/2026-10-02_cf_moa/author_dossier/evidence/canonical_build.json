@@ -1,0 +1,113 @@
+{
+  "kind": "author_research_dossier_markdown_export",
+  "description": "Reading edition exported from collaborative Markdown; not the native LaTeX English conference paper.",
+  "input": {
+    "path": "/home/data3/txy/docs/paper/research_dossier.md",
+    "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb"
+  },
+  "builder": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/scripts/build_dossier.py",
+    "sha256": "cef4bb63f65e5539eb259e1a8310b5630b8fddbd8b5d554e36a4c5080c686d9d"
+  },
+  "fonts": {
+    "cjk": "WenQuanYi Zen Hei",
+    "main": "DejaVu Serif",
+    "mono": "DejaVu Sans Mono"
+  },
+  "stages": [
+    {
+      "command": [
+        "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/.build_deps/pypandoc/files/pandoc",
+        "/home/data3/txy/docs/paper/research_dossier.md",
+        "--from=markdown-blank_before_header",
+        "--to=latex",
+        "--standalone",
+        "--pdf-engine=tectonic",
+        "--table-of-contents",
+        "--toc-depth=2",
+        "--resource-path=/home/data3/txy/docs/paper",
+        "--lua-filter=/home/data3/txy/docs/paper/latex/research_dossier.filter.lua",
+        "--include-in-header=/home/data3/txy/docs/paper/latex/research_dossier.header.tex",
+        "--output=/home/data3/txy/docs/paper/latex/research_dossier.tex",
+        "-V",
+        "documentclass=article",
+        "-V",
+        "papersize=a4",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "geometry=margin=20mm,headsep=8mm,footskip=12mm",
+        "-V",
+        "mainfont=DejaVu Serif",
+        "-V",
+        "sansfont=DejaVu Sans",
+        "-V",
+        "monofont=DejaVu Sans Mono",
+        "-V",
+        "CJKmainfont=WenQuanYi Zen Hei",
+        "-V",
+        "CJKoptions=AutoFakeBold=1.5",
+        "-V",
+        "linestretch=1.15",
+        "-V",
+        "colorlinks=true",
+        "-V",
+        "linkcolor=blue",
+        "-V",
+        "urlcolor=blue",
+        "-M",
+        "toc-title=目录",
+        "-M",
+        "subtitle=共同作者阅读版 · 由 Markdown 导出",
+        "-M",
+        "dossier-source-dir=/home/data3/txy/docs/paper",
+        "-M",
+        "date="
+      ],
+      "returncode": 0,
+      "seconds": 0.614,
+      "log": "/home/data3/txy/docs/paper/latex/research_dossier.pandoc.log"
+    },
+    {
+      "command": [
+        "/home/data3/txy/.local/opt/tectonic-0.17.0/tectonic",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--print",
+        "--outdir",
+        "/home/data3/txy/docs/paper/latex",
+        "--only-cached",
+        "/home/data3/txy/docs/paper/latex/research_dossier.tex"
+      ],
+      "returncode": 0,
+      "seconds": 4.459,
+      "log": "/home/data3/txy/docs/paper/latex/research_dossier.tectonic.stdout.log"
+    }
+  ],
+  "link_base_url": null,
+  "missing_character_lines": [],
+  "overfull_box_lines": [],
+  "status": "complete",
+  "outputs": [
+    {
+      "path": "/home/data3/txy/docs/paper/latex/research_dossier.tex",
+      "bytes": 179283,
+      "sha256": "cde4f2b515ed66afb13dfa34d06bad24bbe15d4f1917cdce8782df97a7411896"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/research_dossier.pdf",
+      "bytes": 522062,
+      "sha256": "ad6f02dc220a9e5723eba563b6779c02069df8e89e3998b9cbe3d2a474532e42"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/research_dossier.header.tex",
+      "bytes": 1067,
+      "sha256": "b60cf01ac313b349e7f6446bdcf813edec9d1b27a8e8459dba005dbe7c5bcfd6"
+    },
+    {
+      "path": "/home/data3/txy/docs/paper/latex/research_dossier.filter.lua",
+      "bytes": 3889,
+      "sha256": "25ad3dc8943c73cb8fdff8954e665b06398250ad089f40af324f3ef3456a736e"
+    }
+  ]
+}

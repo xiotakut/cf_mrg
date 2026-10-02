@@ -1,0 +1,115 @@
+{
+  "kind": "author_research_dossier_markdown_export",
+  "description": "Reading edition exported from collaborative Markdown; not the native LaTeX English conference paper.",
+  "input": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.md",
+    "sha256": "3ab98665728a034e90778948e9fab29ca15c8e96c71b48dbb3f323f312e7aa08"
+  },
+  "builder": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/build_dossier.py",
+    "sha256": "cef4bb63f65e5539eb259e1a8310b5630b8fddbd8b5d554e36a4c5080c686d9d"
+  },
+  "fonts": {
+    "cjk": "WenQuanYi Zen Hei",
+    "main": "DejaVu Serif",
+    "mono": "DejaVu Sans Mono"
+  },
+  "stages": [
+    {
+      "command": [
+        "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/.build_deps/pypandoc/files/pandoc",
+        "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.md",
+        "--from=markdown-blank_before_header",
+        "--to=latex",
+        "--standalone",
+        "--pdf-engine=tectonic",
+        "--table-of-contents",
+        "--toc-depth=2",
+        "--resource-path=/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier",
+        "--lua-filter=/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.filter.lua",
+        "--include-in-header=/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.header.tex",
+        "--output=/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.tex",
+        "-V",
+        "documentclass=article",
+        "-V",
+        "papersize=a4",
+        "-V",
+        "fontsize=11pt",
+        "-V",
+        "geometry=margin=20mm,headsep=8mm,footskip=12mm",
+        "-V",
+        "mainfont=DejaVu Serif",
+        "-V",
+        "sansfont=DejaVu Sans",
+        "-V",
+        "monofont=DejaVu Sans Mono",
+        "-V",
+        "CJKmainfont=WenQuanYi Zen Hei",
+        "-V",
+        "CJKoptions=AutoFakeBold=1.5",
+        "-V",
+        "linestretch=1.15",
+        "-V",
+        "colorlinks=true",
+        "-V",
+        "linkcolor=blue",
+        "-V",
+        "urlcolor=blue",
+        "-M",
+        "toc-title=目录",
+        "-M",
+        "subtitle=共同作者阅读版 · 由 Markdown 导出",
+        "-M",
+        "dossier-source-dir=/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier",
+        "-M",
+        "date=",
+        "-M",
+        "dossier-link-base-url=https://github.com/xiotakut/cf_mrg/blob/main/papers/2026-10-02_cf_moa/author_dossier/"
+      ],
+      "returncode": 0,
+      "seconds": 0.611,
+      "log": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.pandoc.log"
+    },
+    {
+      "command": [
+        "/home/data3/txy/.local/opt/tectonic-0.17.0/tectonic",
+        "--keep-logs",
+        "--keep-intermediates",
+        "--print",
+        "--outdir",
+        "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier",
+        "--only-cached",
+        "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.tex"
+      ],
+      "returncode": 0,
+      "seconds": 9.717,
+      "log": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.tectonic.stdout.log"
+    }
+  ],
+  "link_base_url": "https://github.com/xiotakut/cf_mrg/blob/main/papers/2026-10-02_cf_moa/author_dossier/",
+  "missing_character_lines": [],
+  "overfull_box_lines": [],
+  "status": "complete",
+  "outputs": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.tex",
+      "bytes": 187969,
+      "sha256": "e626ce52b8b52bee5e7df7b520e9a002bd6b08017f2aa66fcbb32a508c0c726c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.pdf",
+      "bytes": 522423,
+      "sha256": "e98633e359ecee70939d7d4829e97a363a0e650d18906c9fd3da00358a70f812"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.header.tex",
+      "bytes": 1067,
+      "sha256": "b60cf01ac313b349e7f6446bdcf813edec9d1b27a8e8459dba005dbe7c5bcfd6"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper_github/papers/2026-10-02_cf_moa/author_dossier/research_dossier.filter.lua",
+      "bytes": 3889,
+      "sha256": "25ad3dc8943c73cb8fdff8954e665b06398250ad089f40af324f3ef3456a736e"
+    }
+  ]
+}

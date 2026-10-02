@@ -1,0 +1,872 @@
+{
+  "created_at": "2026-10-03T01:47:10.022148+08:00",
+  "task": "Chinese author research dossier: seven baselines and five heads, not paper outline",
+  "agent": "/root/head_research_audit",
+  "execution": {
+    "new_model_calls": 0,
+    "new_scoring_calls": 0,
+    "new_training": 0,
+    "canonical_docs_modified": false,
+    "scope": "Only this dossier draft and evidence receipt; arithmetic,hashing andexisting-source reading."
+  },
+  "deliverable": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+    "sha256": "50affe6cfa26a424d049c3c35192f0bb2f630135c1f6d8e0a0cac317437ad1dd",
+    "bytes": 32933,
+    "lines": 191,
+    "chinese_characters": 7374
+  },
+  "coverage_policy": "Targeted primary reading plus explicitly inherited previous audits. Queried ranges do not imply untruncated full semantic reading. Primary source files are hashed current as read; prior audit hashes preserve earlier evidence snapshots. No blanket claim of re-reading every primary record in full.",
+  "primary_records": [
+    {
+      "path": "/home/data3/txy/AGENTS.md",
+      "sha256": "e9a279d9f4922d9e8285ec6048bfe6634ad1a1e17ea5f8c09a483545e1485468",
+      "bytes": 12840,
+      "lines": 154,
+      "coverage": "Current workspace instructions read; also provided directly by user."
+    },
+    {
+      "path": "/home/data3/txy/docs/README.md",
+      "sha256": "499460b94eff123d7901dae2591e9abd4138927fc4e97d3f73b0635d3102a2c0",
+      "bytes": 50456,
+      "lines": 200,
+      "coverage": "Current navigation and research status; not every historical status paragraph was re-read in this drafting subtask."
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/direct_retrieval.md",
+      "sha256": "db3924fc598e3b89f3732de63de36a328863fa971b6ab4fec5777a03996ab356",
+      "bytes": 3367,
+      "lines": 36,
+      "queried_ranges": [
+        [
+          1,
+          36
+        ]
+      ],
+      "complete_current_read": true
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/medrgag.md",
+      "sha256": "81f98b9ba463445c677670b7c8279dba8e029147ff40bd921a419037cd084048",
+      "bytes": 33371,
+      "lines": 511,
+      "queried_ranges": [
+        [
+          83,
+          129
+        ],
+        [
+          191,
+          231
+        ]
+      ],
+      "complete_current_read": false
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/marag.md",
+      "sha256": "2a75fda9dfd08b2612384c6e757e7425205b16fac51ec5f4a7561e7e01824805",
+      "bytes": 49481,
+      "lines": 643,
+      "queried_ranges": [
+        [
+          174,
+          218
+        ],
+        [
+          282,
+          302
+        ],
+        [
+          328,
+          349
+        ]
+      ],
+      "complete_current_read": false
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/medrag.md",
+      "sha256": "876478dbbcdcd9947ee33e2540f534d95645c56abb88fc9c2d2c6c213ebbbc8c",
+      "bytes": 129856,
+      "lines": 1334,
+      "queried_ranges": [
+        [
+          65,
+          88
+        ],
+        [
+          127,
+          184
+        ],
+        [
+          214,
+          279
+        ],
+        [
+          1286,
+          1334
+        ]
+      ],
+      "complete_current_read": false,
+      "tool_output_truncation": "Combined first request was truncated; selected-version and repair facts also checked against existing seven_methods audit."
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/imedrag.md",
+      "sha256": "1f1e5b4c546bed14dc7a4bf2012e86f7cd2eeca66df077ccbe146aa1c716af8f",
+      "bytes": 27315,
+      "lines": 228,
+      "queried_ranges": [
+        [
+          188,
+          228
+        ]
+      ],
+      "complete_current_read": false
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/medgenie.md",
+      "sha256": "981d715f765c6715d1ab4c43543f288a684ff9ad0e04d4db0cbc1eeb9244372c",
+      "bytes": 38271,
+      "lines": 329,
+      "queried_ranges": [
+        [
+          22,
+          180
+        ]
+      ],
+      "complete_current_read": false,
+      "tool_output_truncation": "Small omissions in combined output; do not treat queried range as proof of every line read."
+    },
+    {
+      "path": "/home/data3/txy/docs/baselines/tcrag.md",
+      "sha256": "135a7080587e5a677c17ce7fd6e1a0399b465e657883fc1017b0e5f656ff0aa3",
+      "bytes": 112983,
+      "lines": 960,
+      "queried_ranges": [
+        [
+          303,
+          330
+        ],
+        [
+          402,
+          482
+        ],
+        [
+          494,
+          553
+        ],
+        [
+          628,
+          663
+        ]
+      ],
+      "complete_current_read": false,
+      "tool_output_truncation": "Combined requests truncated; adoption, recovery-only table and frozen384 description were visible and prior audit used."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/optimization.md",
+      "sha256": "3cfc768eb03e9a7ed14440a7c88714976459198d46714a548e7e8fe90e6dbd7a",
+      "bytes": 155973,
+      "lines": 973,
+      "queried_ranges": [
+        [
+          107,
+          134
+        ],
+        [
+          138,
+          233
+        ],
+        [
+          300,
+          373
+        ],
+        [
+          736,
+          849
+        ]
+      ],
+      "complete_current_read": false,
+      "tool_output_truncation": "Some combined ranges truncated; targeted ASCENT47 and33-endpoint result text directly checked."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r2_support_head.md",
+      "sha256": "8e455c86bef166773e99414cd03f632cd5ed97f4f6d35f185ed61079e751f4a1",
+      "bytes": 256416,
+      "lines": 1796,
+      "queried_ranges": [
+        [
+          488,
+          554
+        ],
+        [
+          645,
+          690
+        ],
+        [
+          714,
+          805
+        ],
+        [
+          805,
+          923
+        ]
+      ],
+      "targeted_searches": [
+        "24/48",
+        "48/48",
+        "48个",
+        "48道",
+        "without_scope",
+        "no_scope"
+      ],
+      "complete_current_read": false,
+      "tool_output_truncation": "Long requests truncated; key mechanism table, factor experiment and final48-scope text checked in narrower output/search."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "sha256": "8160ee113de488a586d0a50069ee8ba8395f1f460a4b21c56322e065f443de6f",
+      "bytes": 402836,
+      "lines": 1975,
+      "queried_ranges": [
+        [
+          1535,
+          1629
+        ],
+        [
+          500,
+          560
+        ],
+        [
+          1930,
+          1953
+        ]
+      ],
+      "complete_current_read": false,
+      "coverage": "Earlier same-agent head audit supplies complete development chronology,733/680 table and controls; current direct read resolves CUPCase4+8+6 and two prior development cases. Finaldirectcheckcorrectedhistorical40-caseconfiguration/budgetaggregation."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "sha256": "51df24bd28a2276caf4215ec19e5c5a470fbac14006fcc7f63abefa3498ec084",
+      "bytes": 133030,
+      "lines": 632,
+      "queried_ranges": [
+        [
+          1,
+          95
+        ],
+        [
+          579,
+          632
+        ]
+      ],
+      "complete_current_read": false,
+      "coverage": "Current direct excerpts plus independent sibling check of579–640 and earlier early_r45 audit."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "sha256": "0f20ec43b102a51e4f80be1215f521df3852634b76979aec8cbcc9eb334521d5",
+      "bytes": 195347,
+      "lines": 1094,
+      "queried_ranges": [
+        [
+          439,
+          518
+        ],
+        [
+          928,
+          1031
+        ],
+        [
+          1061,
+          1094
+        ]
+      ],
+      "complete_current_read": false,
+      "coverage": "Current F208/192/16/8, W/X/Y, CAD-plan/D-zero-model excerpts; full timeline supplied by existing early_r45 audit."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/support_update_method.md",
+      "sha256": "b61515c277cea6a38c8f3c2b0a7c8a64cd83e90fc924b0441ad0ea4ea5744022",
+      "bytes": 59596,
+      "lines": 335,
+      "coverage": "Reused existing same-agent head audit; no new full read during this drafting subtask."
+    },
+    {
+      "path": "/home/data3/txy/docs/research/support_update_experiment_report.md",
+      "sha256": "3df0f365ec0467d079a8d1cbbcb0a248848dd0d39f0ebff76a53da244abb1cbd",
+      "bytes": 406989,
+      "lines": 2580,
+      "coverage": "Reused existing head and early_r45 audits; parent/sibling owns whole148-stage dossier chapter; no new full read claim here."
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/v5.md",
+      "sha256": "111352f80ee26a9c63c0ee2a228e8232f51848de33d8c427ee8ca1ff11dcf6e7",
+      "bytes": 124525,
+      "lines": 1176,
+      "coverage": "Formal values through selected-version machine audit and generated frozen CSV; no new full read."
+    }
+  ],
+  "prior_audits": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361,
+      "lines": 1156,
+      "role": "Exact21 before/after, formal baseline parity, R2constant andR3controls; previous same-agent full head audit."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206,
+      "lines": 651,
+      "role": "Seven configuration identities, workflows, repair and exclusion histories; prior independent full baseline audit."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/early_r45_audit.json",
+      "sha256": "81bfa93745f6ff8cd6bc873b5ec4c0adde3afc0108f333e0650dfa5b6f5b02e1",
+      "bytes": 10962,
+      "lines": 302,
+      "role": "Early trajectory and full R4/R5 audit; prior independent coverage."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+      "bytes": 78763,
+      "lines": 2167,
+      "role": "Role mapping, adoptedB composition and separateversion results; previous same-agent audit."
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/generated/system_comparison.csv",
+      "sha256": "a2ebae2ea77daadada0a11f5b224f5fb4fe70582f4b6ff47b9c4974282cc637a",
+      "bytes": 1377,
+      "lines": 10,
+      "role": "Formal seven-baseline42 cells extracted for table; laterB rows excluded frombaseline table."
+    }
+  ],
+  "prior_read_receipts": {
+    "head": {
+      "docs/research/support_update_method.md": "Detailed reading of main argument, all seven-method tables, mechanism/source controls and complete failure/selection appendix (335-line source; no assertion all historical linked runtime files reread)",
+      "docs/research/optimization.md": "Full heading index, historical overview and diagnostic priority; targeted research sections from R1 investigation through seven-method delivery, source/branch controls, frozen validation and cross-head audit. Some long tool excerpts were truncated; no whole-file verbatim-read claim.",
+      "docs/research/r2_support_head.md": "Full heading index; current implementation/execution guide and 79/55/110/142/385/553 units; full success/failure index and engineering recovery; delivery and data-exposure review; final 2026-09-16 audits. Individual historical runtime paragraphs not all reread.",
+      "docs/research/r3_candidate_comparison.md": "Full heading index; memory-head withdrawal and research standards; frozen R2 rule transfer; complete 680/733 seven-method expansion, actual new/reused calls, M7 status repair, final delivery and prior user correction; final paper-readiness and CUPCase audit. Every individual negative-trial runtime paragraph not reread.",
+      "docs/research/support_update_experiment_report.md": "Full chapter and 148-stage heading index; opening chronology and user steering; end-to-end stage delivery/cost/boundary chapter. All 148 detailed stage narratives were not verbatim reread.",
+      "raw_outputs": "Read all selected final per-item scored records for count consistency, not all source patient text, generated rationales, or clinical semantics."
+    },
+    "seven_methods": {
+      "docs/AGENTS_note": "Root AGENTS.md read; docs/README.md navigation and current/selected baseline scope read, large unrelated latest-research stream not fully reviewed here.",
+      "docs/evaluation/protocol.md": {
+        "reviewed_lines": [
+          [
+            1,
+            201
+          ]
+        ],
+        "scope": "All protocol sections, including historical evidence protocol; dated historical restrictions distinguished from later completed runs."
+      },
+      "docs/evaluation/v5.md": {
+        "reviewed_lines": [
+          [
+            1,
+            1176
+          ]
+        ],
+        "scope": "Full dated progression; repetitive source blocks include five-method and old M6/M7 snapshots. Long path strings mechanically abbreviated in follow-up reads where needed."
+      },
+      "docs/baselines/direct_retrieval.md": {
+        "reviewed_lines": [
+          [
+            1,
+            36
+          ]
+        ],
+        "scope": "Full document."
+      },
+      "docs/baselines/medrgag.md": {
+        "reviewed_lines": [
+          [
+            1,
+            511
+          ]
+        ],
+        "scope": "Full document, including v3, v5 reuse, local all-Llama v15 and old strict-run failure."
+      },
+      "docs/baselines/marag.md": {
+        "reviewed_lines": [
+          [
+            1,
+            643
+          ]
+        ],
+        "scope": "Full document, including v3, v5, native adapters, entropy vectorization, GPU handoffs, invalid terminal retention."
+      },
+      "docs/baselines/medgenie.md": {
+        "reviewed_lines": [
+          [
+            1,
+            329
+          ]
+        ],
+        "scope": "Full document, including replacement choice, source differences, v1 exemplar-error, v2 repair, 384 pilot and full 13905."
+      },
+      "docs/baselines/imedrag.md": {
+        "reviewed_lines": [
+          [
+            1,
+            228
+          ]
+        ],
+        "scope": "Full document, including formatter semantic changes, unadopted fixes, 52-input pause, later performance/cost context."
+      },
+      "docs/baselines/tcrag.md": {
+        "reviewed_lines": [
+          [
+            1,
+            960
+          ]
+        ],
+        "scope": "Full document, including old 1646 pause, accepted-output repair, typed control, recovery-only negative ablation, 384 pilot and full 13905."
+      },
+      "docs/baselines/medrag.md": {
+        "reviewed_lines": [
+          [
+            1,
+            987
+          ],
+          [
+            1230,
+            1334
+          ]
+        ],
+        "not_read_lines": [
+          [
+            988,
+            1229
+          ]
+        ],
+        "scope": "All local workflow, installation and source-adaptation history, output repair and full result sections read. Embedded upstream generic MedRAG README (988–1229) excluded as not local experiment history; headings inspected."
+      }
+    },
+    "early_r45": null
+  },
+  "verification": {
+    "table_rows": [
+      {
+        "kind": "baseline_row",
+        "method": "M0",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "baseline_row",
+        "method": "M2",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "baseline_row",
+        "method": "M3",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "baseline_row",
+        "method": "M4",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "baseline_row",
+        "method": "M5",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "baseline_row",
+        "method": "M6",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "baseline_row",
+        "method": "M7",
+        "passed": true,
+        "numeric_cells": 6
+      },
+      {
+        "kind": "head_row",
+        "method": "M0",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "head_row",
+        "method": "M2",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "head_row",
+        "method": "M3",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "head_row",
+        "method": "M4",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "head_row",
+        "method": "M5",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "head_row",
+        "method": "M6",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "head_row",
+        "method": "M7",
+        "passed": true,
+        "comparisons": 3
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M0",
+        "passed": true
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M2",
+        "passed": true
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M3",
+        "passed": true
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M4",
+        "passed": true
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M5",
+        "passed": true
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M6",
+        "passed": true
+      },
+      {
+        "kind": "r2_control_row",
+        "method": "M7",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M0",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M2",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M3",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M4",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M5",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M6",
+        "passed": true
+      },
+      {
+        "kind": "r3_control_row",
+        "method": "M7",
+        "passed": true
+      }
+    ],
+    "baseline_numeric_cells": 42,
+    "head_comparisons": 21,
+    "local_link_checks": [
+      {
+        "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/direct_retrieval.md",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/imedrag.md:188",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/medgenie.md:22",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/medrag.md:214",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/medrag.md:1286",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/medgenie.md:82",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/tcrag.md:494",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/marag.md",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/baselines/medrgag.md",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/optimization.md:138",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:677",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:805",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/optimization.md:380",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/optimization.md:668",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/optimization.md:831",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:488",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:47",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:526",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:1713",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:53",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:344",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:478",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1237",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:508",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1388",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:970",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1924",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/optimization.md:736",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r3_candidate_comparison.md:1509",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r2_support_head.md:526",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r4_consequence_head.md:1",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r4_consequence_head.md:15",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r4_consequence_head.md:579",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r5_invariance_head.md:198",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r5_invariance_head.md:439",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r5_invariance_head.md:928",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/docs/research/r5_invariance_head.md:972",
+        "exists": true
+      },
+      {
+        "target": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+        "exists": true
+      }
+    ],
+    "formal_baseline_parity_reused": true,
+    "independent_review": {
+      "agent": "/root/early_and_r45_audit",
+      "scope": "Dossier sections7 R4 and8 R5 checked againstr4:579–640,r5:439–478 andprior audit",
+      "result": "Core8rowR4 table,208/192/16/8 denominators,608counts,repairs/harms,andmatchednew16controlagree; changedcolumn wording toaction+query fidelity."
+    },
+    "post_review_wording_fix": "Disambiguated W/F two-backbone correct counts as31/40,36/40 versus26/40,33/40; no datachange.",
+    "independent_full_review_correction": {
+      "reviewer": "/root/early_and_r45_audit",
+      "r2_remaining_support": "5 improved: M0,M3,M4,M5,M6; M2 4/9→4/9unchanged;M7 3/9→2/9declined; narrative corrected withoutchanging table.",
+      "input_wording": "13905uniqueinputs,notstatisticalindependence.",
+      "status": "corrected"
+    },
+    "early_40_controls_correction": {
+      "source": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "source_sha256": "8160ee113de488a586d0a50069ee8ba8395f1f460a4b21c56322e065f443de6f",
+      "directly_read_ranges": [
+        [
+          500,
+          560
+        ],
+        [
+          1930,
+          1953
+        ]
+      ],
+      "reason": "Later narrative18/18 doesnotcorrespondtounifiedname-directarm; replaceambiguousaggregatewith6actualarmrowsandexplicit128/384budget.",
+      "rows": [
+        {
+          "arm": "original",
+          "m4": 12,
+          "m5": 9,
+          "n": 40
+        },
+        {
+          "arm": "reliable_name_normalization",
+          "m4": 15,
+          "m5": 11,
+          "n": 40,
+          "max_tokens": 128
+        },
+        {
+          "arm": "name_direct_catalog",
+          "m4": 15,
+          "m5": 18,
+          "n": 40,
+          "max_tokens": 128
+        },
+        {
+          "arm": "code_direct",
+          "m4": 18,
+          "m5": 21,
+          "n": 40,
+          "max_tokens": 384
+        },
+        {
+          "arm": "name_reasoned",
+          "m4": 18,
+          "m5": 19,
+          "n": 40,
+          "max_tokens": 384
+        },
+        {
+          "arm": "code_reasoned",
+          "m4": 21,
+          "m5": 22,
+          "n": 40,
+          "max_tokens": 384
+        }
+      ],
+      "old_model_only_normalization": {
+        "m4": 11,
+        "m5": 11,
+        "m4_harms": 4
+      },
+      "llama_reasoned_length_stops": {
+        "name_reasoned": 4,
+        "code_reasoned": 3
+      },
+      "root_authorized": true,
+      "new_model_scoring_calls": 0
+    }
+  },
+  "key_boundaries": [
+    "Seven configurations fromsixfamilies; M1 andoldM6 notcounted",
+    "21 positive developmental comparisons over2941 uniqueunits withoverlap",
+    "Rule terminal fact extraction on2 backbones reusedoffline with7 originalanswer sets",
+    "R1 wrapper reusesR2/R3; laterB version keptdistinct",
+    "R2 samecoverageconstantNone strongeraggregate but0/9 retainedsupport",
+    "R3 directorydecision gain distinctfrommixedvoting/calibrationincrements",
+    "ASCENT47=42source-train+5source-test; subsequentdevelopmentexposure",
+    "CUPCase18=4+8+6 excludes2earlydevelopmentexamples",
+    "R4 physiological288=24profiles*12,notreplacementforHIV13",
+    "R5 208=64+128+16; fullMaj5,new16,new8strongcontrolreported",
+    "W/X/Y unadopted; CAD5trainingheads onlyplan;Dzeroexperimentalmodel"
+  ]
+}

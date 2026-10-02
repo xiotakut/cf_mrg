@@ -1,0 +1,226 @@
+{
+  "created_utc": "2026-10-02T17:38:51.560014+00:00",
+  "deliverable": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/data.md",
+  "purpose": "Chinese raw data research dossier for shared authors; draft for parent integration, not a replacement for canonical records.",
+  "new_model_calls": 0,
+  "new_scoring_calls": 0,
+  "canonical_edits": false,
+  "reading": {
+    "reread_this_assignment": [
+      {
+        "path": "/home/data3/txy/AGENTS.md",
+        "lines": [
+          1,
+          154
+        ]
+      },
+      {
+        "path": "/home/data3/txy/docs/README.md",
+        "lines": [
+          145,
+          200
+        ]
+      },
+      {
+        "path": "/home/data3/txy/docs/data/sources.md",
+        "ranges": [
+          [
+            186,
+            325
+          ]
+        ]
+      },
+      {
+        "path": "/home/data3/txy/docs/data/classification.md",
+        "ranges": [
+          [
+            69,
+            78
+          ],
+          [
+            100,
+            245
+          ]
+        ]
+      },
+      {
+        "path": "/home/data3/txy/docs/data/construction.md",
+        "ranges": [
+          [
+            490,
+            619
+          ],
+          [
+            1487,
+            1565
+          ],
+          [
+            1769,
+            1830
+          ],
+          [
+            2330,
+            2411
+          ],
+          [
+            2467,
+            2524
+          ],
+          [
+            3585,
+            3601
+          ]
+        ]
+      },
+      {
+        "path": "/home/data3/txy/docs/evaluation/protocol.md",
+        "ranges": [
+          [
+            33,
+            75
+          ],
+          [
+            156,
+            201
+          ]
+        ]
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json",
+        "coverage": "Full JSON summary printed and read."
+      }
+    ],
+    "same_session_prior_full_stage_audit": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+    "prior_scope": {
+      "canonical_documents": [
+        {
+          "path": "/home/data3/txy/docs/data/sources.md",
+          "lines": [
+            1,
+            581
+          ],
+          "coverage": "Read all source-stage sections, including historical 26-source inventory and later R1/R3/R4/R5 additions. Later additions are not retroactively part of the frozen 26/15/11 ledger."
+        },
+        {
+          "path": "/home/data3/txy/docs/data/classification.md",
+          "lines": [
+            1,
+            349
+          ],
+          "coverage": "All definitions, examples, nonexamples, subjudgments, comparison axes, qualification boundaries and revision instructions."
+        },
+        {
+          "path": "/home/data3/txy/docs/data/construction.md",
+          "lines": [
+            1,
+            3966
+          ],
+          "coverage": "Read section navigation and all substantive stages in sequential/overlapping chunks; filled truncated sections through smaller reads. Covers initial collection/pilot, review/audit/corrections, full v4 completion, rejected scope previews, actual v5 sampling, and later source qualification/exposure records. The later 09-18/09-23 D summaries were actually read in this retrospective writing audit; do not claim ongoing D blinding."
+        },
+        {
+          "path": "/home/data3/txy/docs/evaluation/protocol.md",
+          "lines": [
+            1,
+            201
+          ],
+          "coverage": "Full protocol, including native inputs, scoring, failed outputs, exact reuse, formal/development scope and information permissions."
+        }
+      ],
+      "machine_reading": "All archive rows, v4 target rows, v5 target/selection/unit rows, sampling-frame rows and native items/evaluation JSON records were traversed for identity, membership and count checks. This is not a fresh semantic reading or clinical adjudication of every example.",
+      "historical_evidence_reading": "Historical provenance/classification summaries, manifests, completion_audit and validation receipts were read. The historical download and clinical review exercises were not repeated. Formal 42 baseline values reuse the independently verified seven_methods_audit from this same session.",
+      "not_performed": [
+        "No new literature search in this bounded audit; 26/15/11 describes the frozen project search/acquisition ledger, not current exhaustive availability.",
+        "No new model generation, grader calls, native scoring, training, retrieval or benchmark edits.",
+        "No claim that all source papers, every historical log, all original 55,991 records, or 109,599 judgment texts received new semantic review here."
+      ]
+    },
+    "raw_semantic_limit": "This draft does not freshly reread every source record or all source papers; exact numerical tables reuse the previously verified same-session aggregate audit. No new clinical adjudication."
+  },
+  "statistics": {
+    "unicode_characters": 11220,
+    "han_characters": 4843,
+    "lines": 134,
+    "source_catalog_rows": 26,
+    "formal_source_rows": 11
+  },
+  "citations": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/corrections/summary.json",
+      "sha256": "12ce0fc69fe0c91dbde5734554ed22f66997c8cf32cacd5cc09babb7057d3238",
+      "bytes": 1389
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/source_release_notes.json",
+      "sha256": "b4ae126e9fdf345c6f5ef1563d3e8f2273dc165f4ff9c2d225cb68b738c965d9",
+      "bytes": 55608
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/completion_audit.json",
+      "sha256": "9a38cd43682758dd2a3d842eae8668addb297f2e4fa261b09509ccbec16b53df",
+      "bytes": 675
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json",
+      "sha256": "7782d9b52d3005d4ba687dfbea757c276b629d25857e7cc885cf349aee35f8a8",
+      "bytes": 1377
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/sampling_protocol.json",
+      "sha256": "3475b2dfd66b66b76d1e4ec7694d244cdfe30c5f788b31c85a71647659c620fe",
+      "bytes": 1357
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/source_summary.csv",
+      "sha256": "6a95155c789d6d0475ef540e8a7ee7172b4c8ae49f821b5cd74a72bb5e6e3bea",
+      "bytes": 561
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "sha256": "f4224ea7f8c2a4922af8a4e7187a09d115093cd3c0fdf039cf806c1f8b683957",
+      "bytes": 82283256
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/preparation_validation.json",
+      "sha256": "00969e589c3aaf38ce4cf5e7b3a2ea110627ca84cc6628edcbf2df45b6ddba2b",
+      "bytes": 267
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+      "bytes": 85169
+    },
+    {
+      "path": "/home/data3/txy/docs/data/classification.md",
+      "sha256": "fbbdf8f7dfc84c0950d98c71e5eee8a59c95a5ed0d692c71f56860ba55dd2bbe",
+      "bytes": 38906
+    },
+    {
+      "path": "/home/data3/txy/docs/data/construction.md",
+      "sha256": "7ab015d62bf25066e4a7440f31c5dc4bcd07470b4390301617ef366a867c641b",
+      "bytes": 491932
+    },
+    {
+      "path": "/home/data3/txy/docs/data/sources.md",
+      "sha256": "4ecdce18bbdc2f2f214bfa8a2882dc722525f287db0809ba83e7477a51687aa6",
+      "bytes": 73537
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "sha256": "1e4ec1c645d47a677f727539f1e6a0863f78dc496789de977ab347c02c80ccfe",
+      "bytes": 21377
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json",
+      "sha256": "0ea9469be785bb212137ad95749cec0fa26aad50f204eb81e70f36f095f2397a",
+      "bytes": 3580
+    }
+  ],
+  "draft_sha256": "5c433f4f18c68f0673026542f835652221025b174dd330e3fdc84b9f4b30f816",
+  "all_cited_local_paths_exist": true,
+  "final_review": "Read the complete draft after generation; all 26 catalog rows and 11 formal-source rows generated from verified machine audit; all cited paths exist."
+}

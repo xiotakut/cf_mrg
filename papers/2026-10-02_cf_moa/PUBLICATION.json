@@ -1,45 +1,33 @@
 {
   "date": "2026-10-03",
-  "format": "Native LaTeX framework before complete manuscript rewrite",
-  "title": "CF-MoA: Taxonomy-Guided Benchmarking and Agent Orchestration for Counterfactual Medical Reasoning",
-  "scope": [
-    "Source collection and five-category taxonomy",
-    "Benchmark construction and seven-system diagnostic evaluation",
-    "Five operational roles and adopted sparse CF-MoA B",
-    "Complete nine-row results and evidence selection"
-  ],
-  "canonical_source": "framework/framework.tex",
-  "pdf": "framework/framework.pdf",
-  "pdf_pages": 10,
-  "pdf_sha256": "9a8b97fc56f775eb9da52a6f89f0cf3a95db165ba4e3e0bf1dd71d602cb6a475",
-  "compiler": "Tectonic 0.17.0",
-  "tables": 5,
-  "generated_data_tables": 3,
-  "vector_figures": 2,
-  "cited_references": 8,
-  "full_manuscript_status": "Previous 28-page seven-system manuscript retained unchanged; full rewrite not yet performed",
-  "previous_publication": {
-    "record": "framework/evidence/prior_publication.json",
-    "commit": "bb5a0175c64c2030f3b0896f01fc30702220c6b4",
-    "pdf": "manuscript.pdf",
-    "pdf_sha256": "50a250296d3b8514183eee06580e7ea725cb11d6655dbd12eae5c99523b2f03e"
-  },
+  "format": "Chinese coauthor raw research dossier with LaTeX/PDF reading edition",
+  "canonical_source": "author_dossier/research_dossier.md",
+  "latex": "author_dossier/research_dossier.tex",
+  "pdf": "author_dossier/research_dossier.pdf",
+  "pdf_pages": 41,
+  "pdf_sha256": "e98633e359ecee70939d7d4829e97a363a0e650d18906c9fd3da00358a70f812",
+  "chapters": 8,
+  "tables": 33,
+  "scientific_record_snapshots": 29,
+  "head_stage_index": 148,
   "repository_visibility": "private",
-  "framework_zip": {
-    "path": "cf_moa_framework.zip",
-    "files": 10,
-    "bytes": 205377,
-    "sha256": "1d00836eae75a2fec0e9e3ca80d0e1e6a614c2c7ee8c1faf8246641fad07423f"
+  "previous_publication": "author_dossier/evidence/previous_publication.json",
+  "previous_english_paper": "latex/main.tex",
+  "previous_framework": "framework/framework.tex",
+  "erratum": "Early 40-input R3 18/18 shorthand in preceding framework combines arm identities; see dossier 4.5 and R3 master correction.",
+  "zip": {
+    "path": "cf_moa_author_dossier.zip",
+    "files": 80,
+    "bytes": 3015932,
+    "sha256": "56ea83aa029625848b541001920fb8a19b09a11ca97a360ec5f0b2afa581fb70"
   },
   "verification": [
-    "framework/evidence/framework_review.json",
-    "framework/validation/framework_build_receipt.json",
-    "framework/validation/isolated_build_receipt.json",
-    "framework/inputs/manifest.json",
-    "framework/generated/build_manifest.json"
+    "author_dossier/evidence/final_review.json",
+    "author_dossier/evidence/layout_review.json",
+    "author_dossier/evidence/published_pdf_review.json",
+    "author_dossier/evidence/preservation_check.json"
   ],
   "model_calls": 0,
   "grader_calls": 0,
-  "gpu_operations": 0,
-  "data_scope": "Source questions, semantic labels, sampling membership, predictions and scores unchanged. Favorable complete panels selected for main text; necessary controls retained."
+  "gpu_operations": 0
 }

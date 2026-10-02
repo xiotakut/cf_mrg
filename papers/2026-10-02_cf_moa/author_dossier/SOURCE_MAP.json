@@ -1,0 +1,266 @@
+{
+  "canonical_source": "/home/data3/txy/docs/paper/research_dossier.md",
+  "canonical_sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+  "published_sha256": "3ab98665728a034e90778948e9fab29ca15c8e96c71b48dbb3f323f312e7aa08",
+  "transformations": "Link targets only; one large raw-input link becomes an explicit local dependency locator.",
+  "snapshots": {
+    "/home/data3/txy/docs/archive/medrgag_reproduction.md": {
+      "bundle": "records/archive/medrgag_reproduction.md",
+      "sha256": "56b041cfd07bc35dbb2040d3472d476c3a3ffbe8b27e79c95d30295935b4375a",
+      "role": "早期直接回答、论文配置差异与all-Llama复现",
+      "bytes": 89036
+    },
+    "/home/data3/txy/docs/archive/wm_medrgag.md": {
+      "bundle": "records/archive/wm_medrgag.md",
+      "sha256": "054af204999ec4d2eeecc048b1f4f75ad79ff4aae458a552b1bed17047e5845a",
+      "role": "85题WM代理、匹配控制及停止结论",
+      "bytes": 214213
+    },
+    "/home/data3/txy/docs/archive/cf_wm.md": {
+      "bundle": "records/archive/cf_wm.md",
+      "sha256": "c7c9e1f49ff8f7d0e675d277f5e5d68d94475196649be9d5bb5338c4d95cf215",
+      "role": "CF-WM Gate、oracle撤回、gold-free303题",
+      "bytes": 71175
+    },
+    "/home/data3/txy/docs/archive/cf_method_trials.md": {
+      "bundle": "records/archive/cf_method_trials.md",
+      "sha256": "1683c406e7eabb5c7e35116c3db841948f407e68581b02eb3ec8925a6d5a2b09",
+      "role": "DeltaRev/DeltaRank/CFShift/MoE/RiskRoute连续探索",
+      "bytes": 42470
+    },
+    "/home/data3/txy/docs/archive/cf_residual_adapter.md": {
+      "bundle": "records/archive/cf_residual_adapter.md",
+      "sha256": "870e5eb8e5e5e17caff5c2091791b47fb6dd6a2afa2f3206b4c594b328d0e521",
+      "role": "paired四选项Adapter、跨接口迁移及无协同结论",
+      "bytes": 83435
+    },
+    "/home/data3/txy/docs/archive/native_baseline_screening.md": {
+      "bundle": "records/archive/native_baseline_screening.md",
+      "sha256": "679952c637068b14fe3971c91f8af5f9208a207fe424187fc9db07f044d90a11",
+      "role": "五来源25,280输入原生M0/M1/M2全量",
+      "bytes": 210207
+    },
+    "/home/data3/txy/docs/archive/r1_r5_early_evaluation.md": {
+      "bundle": "records/archive/r1_r5_early_evaluation.md",
+      "sha256": "774686da8e50ac9e74733c58803f52ade72504961909d1fc8fc2a26d3afc5662",
+      "role": "早期rubric/自动评分、v2/v3和互斥展示历史",
+      "bytes": 101101
+    },
+    "/home/data3/txy/docs/data/sources.md": {
+      "bundle": "records/data/sources.md",
+      "sha256": "4ecdce18bbdc2f2f214bfa8a2882dc722525f287db0809ba83e7477a51687aa6",
+      "role": "26候选、15取得、官方资源与许可/缺失状态",
+      "bytes": 73537
+    },
+    "/home/data3/txy/docs/data/classification.md": {
+      "bundle": "records/data/classification.md",
+      "sha256": "fbbdf8f7dfc84c0950d98c71e5eee8a59c95a5ed0d692c71f56860ba55dd2bbe",
+      "role": "R1–R5功能定义、正反例与标注边界",
+      "bytes": 38906
+    },
+    "/home/data3/txy/docs/data/construction.md": {
+      "bundle": "records/data/construction.md",
+      "sha256": "7ab015d62bf25066e4a7440f31c5dc4bcd07470b4390301617ef366a867c641b",
+      "role": "审核纠错、资格、抽样、版本沿革和暴露",
+      "bytes": 491932
+    },
+    "/home/data3/txy/docs/baselines/direct_retrieval.md": {
+      "bundle": "records/baselines/direct_retrieval.md",
+      "sha256": "db3924fc598e3b89f3732de63de36a328863fa971b6ab4fec5777a03996ab356",
+      "role": "M0 Direct与历史M1初始检索",
+      "bytes": 3367
+    },
+    "/home/data3/txy/docs/baselines/medrgag.md": {
+      "bundle": "records/baselines/medrgag.md",
+      "sha256": "81f98b9ba463445c677670b7c8279dba8e029147ff40bd921a419037cd084048",
+      "role": "M2本地all-Llama实现与正式适配",
+      "bytes": 33371
+    },
+    "/home/data3/txy/docs/baselines/marag.md": {
+      "bundle": "records/baselines/marag.md",
+      "sha256": "2a75fda9dfd08b2612384c6e757e7425205b16fac51ec5f4a7561e7e01824805",
+      "role": "M3多轮intrinsic候选、熵、检索和全量",
+      "bytes": 49481
+    },
+    "/home/data3/txy/docs/baselines/medrag.md": {
+      "bundle": "records/baselines/medrag.md",
+      "sha256": "876478dbbcdcd9947ee33e2540f534d95645c56abb88fc9c2d2c6c213ebbbc8c",
+      "role": "M4/M5检索/输出配置与M4结构修复",
+      "bytes": 129856
+    },
+    "/home/data3/txy/docs/baselines/imedrag.md": {
+      "bundle": "records/baselines/imedrag.md",
+      "sha256": "1f1e5b4c546bed14dc7a4bf2012e86f7cd2eeca66df077ccbe146aa1c716af8f",
+      "role": "旧M6追问流程、失败、成本与暂停",
+      "bytes": 27315
+    },
+    "/home/data3/txy/docs/baselines/medgenie.md": {
+      "bundle": "records/baselines/medgenie.md",
+      "sha256": "981d715f765c6715d1ab4c43543f288a684ff9ad0e04d4db0cbc1eeb9244372c",
+      "role": "当前M6生成背景、聊天示例修复与v2全量",
+      "bytes": 38271
+    },
+    "/home/data3/txy/docs/baselines/tcrag.md": {
+      "bundle": "records/baselines/tcrag.md",
+      "sha256": "135a7080587e5a677c17ce7fd6e1a0399b465e657883fc1017b0e5f656ff0aa3",
+      "role": "M7状态控制、异常恢复、typed组合与消融",
+      "bytes": 112983
+    },
+    "/home/data3/txy/docs/evaluation/protocol.md": {
+      "bundle": "records/evaluation/protocol.md",
+      "sha256": "1e4ec1c645d47a677f727539f1e6a0863f78dc496789de977ab347c02c80ccfe",
+      "role": "可见输入、原生评分、分母与精确复用",
+      "bytes": 21377
+    },
+    "/home/data3/txy/docs/evaluation/v5.md": {
+      "bundle": "records/evaluation/v5.md",
+      "sha256": "111352f80ee26a9c63c0ee2a228e8232f51848de33d8c427ee8ca1ff11dcf6e7",
+      "role": "当前选用版本、七配置及跨方法比较",
+      "bytes": 124525
+    },
+    "/home/data3/txy/docs/research/optimization.md": {
+      "bundle": "records/research/optimization.md",
+      "sha256": "3cfc768eb03e9a7ed14440a7c88714976459198d46714a548e7e8fe90e6dbd7a",
+      "role": "研究总览、R1wrapper与跨head经验/外部检查",
+      "bytes": 155973
+    },
+    "/home/data3/txy/docs/research/r2_support_head.md": {
+      "bundle": "records/research/r2_support_head.md",
+      "sha256": "8e455c86bef166773e99414cd03f632cd5ed97f4f6d35f185ed61079e751f4a1",
+      "role": "支持撤销/补入、规则/事实/范围、全部失败与控制",
+      "bytes": 256416
+    },
+    "/home/data3/txy/docs/research/r3_candidate_comparison.md": {
+      "bundle": "records/research/r3_candidate_comparison.md",
+      "sha256": "e5188ba4f0877082f245f828219259a261c2759878fa9a0eb36778724cf4b6ac",
+      "role": "公开目录、候选读出、校正、来源扩展与失败",
+      "bytes": 407929
+    },
+    "/home/data3/txy/docs/research/r4_consequence_head.md": {
+      "bundle": "records/research/r4_consequence_head.md",
+      "sha256": "51df24bd28a2276caf4215ec19e5c5a470fbac14006fcc7f63abefa3498ec084",
+      "role": "临床R4、形式/生物探索、给定生理模型局部执行",
+      "bytes": 133030
+    },
+    "/home/data3/txy/docs/research/r5_invariance_head.md": {
+      "bundle": "records/research/r5_invariance_head.md",
+      "sha256": "0f20ec43b102a51e4f80be1215f521df3852634b76979aec8cbcc9eb334521d5",
+      "role": "F组合与后续监督/门控/CAD计划",
+      "bytes": 195347
+    },
+    "/home/data3/txy/docs/research/support_update_method.md": {
+      "bundle": "records/research/support_update_method.md",
+      "sha256": "b61515c277cea6a38c8f3c2b0a7c8a64cd83e90fc924b0441ad0ea4ea5744022",
+      "role": "跨R1–R3的论文机制论证和贡献边界",
+      "bytes": 59596
+    },
+    "/home/data3/txy/docs/research/support_update_experiment_report.md": {
+      "bundle": "records/research/support_update_experiment_report.md",
+      "sha256": "3df0f365ec0467d079a8d1cbbcb0a248848dd0d39f0ebff76a53da244abb1cbd",
+      "role": "R1–R5 148阶段全过程回顾",
+      "bytes": 406989
+    },
+    "/home/data3/txy/docs/research/cf_moa.md": {
+      "bundle": "records/research/cf_moa.md",
+      "sha256": "1fde8fea1a7891eba9bdca866d787748c2db3a21dd33c7ed5cfdfcc71ea110ce",
+      "role": "五agent、路由、聚合、B、RCV及收尾的持续主记录",
+      "bytes": 610618
+    },
+    "/home/data3/txy/docs/research/cf_moa_experiment_report.md": {
+      "bundle": "records/research/cf_moa_experiment_report.md",
+      "sha256": "245fff24ce63b8cf2f649c09bbc50bf00dca12a9550aea655fd1413eaebdc76e",
+      "role": "CF-MoA按版本和执行轮次的全过程回顾",
+      "bytes": 307086
+    },
+    "/home/data3/txy/docs/workspace.md": {
+      "bundle": "records/workspace.md",
+      "sha256": "5ffeac024e3b4a369d3769daac211f9be29bbdd4534b51784c85ab257b1d98ef",
+      "role": "代码/模型/环境位置、公共性能修复、文档和发布沿革",
+      "bytes": 275587
+    },
+    "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/research_path_audit.json": {
+      "bundle": "sources/77369dcb2268_research_path_audit.json",
+      "sha256": "77369dcb2268e99bfaac135a2e1cec01c81337d17835b8efcd82c1faf8877ac1",
+      "bytes": 350807
+    },
+    "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json": {
+      "bundle": "sources/2c8121d3938b_five_agent_framework_audit.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507",
+      "bytes": 78763
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/provenance/summary.json": {
+      "bundle": "sources/0ea9469be785_summary.json",
+      "sha256": "0ea9469be785bb212137ad95749cec0fa26aad50f204eb81e70f36f095f2397a",
+      "bytes": 3580
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/sampling_protocol.json": {
+      "bundle": "sources/3475b2dfd66b_sampling_protocol.json",
+      "sha256": "3475b2dfd66b66b76d1e4ec7694d244cdfe30c5f788b31c85a71647659c620fe",
+      "bytes": 1357
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/source_summary.csv": {
+      "bundle": "sources/6a95155c789d_source_summary.csv",
+      "sha256": "6a95155c789d6d0475ef540e8a7ee7172b4c8ae49f821b5cd74a72bb5e6e3bea",
+      "bytes": 561
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/preparation_validation.json": {
+      "bundle": "sources/00969e589c3a_preparation_validation.json",
+      "sha256": "00969e589c3aaf38ce4cf5e7b3a2ea110627ca84cc6628edcbf2df45b6ddba2b",
+      "bytes": 267
+    },
+    "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json": {
+      "bundle": "sources/13d3f2643dd3_seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d",
+      "bytes": 24206
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/reports/source_release_notes.json": {
+      "bundle": "sources/b4ae126e9fdf_source_release_notes.json",
+      "sha256": "b4ae126e9fdf345c6f5ef1563d3e8f2273dc165f4ff9c2d225cb68b738c965d9",
+      "bytes": 55608
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-08/ben-c-h-ma-r-k/medical_cf_collection/audit_20260908/corrections/summary.json": {
+      "bundle": "sources/12ce0fc69fe0_summary.json",
+      "sha256": "12ce0fc69fe0c91dbde5734554ed22f66997c8cf32cacd5cc09babb7057d3238",
+      "bytes": 1389
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v4_20260910/completion_audit.json": {
+      "bundle": "sources/9a38cd436827_completion_audit.json",
+      "sha256": "9a38cd43682758dd2a3d842eae8668addb297f2e4fa261b09509ccbec16b53df",
+      "bytes": 675
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json": {
+      "bundle": "sources/7782d9b52d30_manifest.json",
+      "sha256": "7782d9b52d3005d4ba687dfbea757c276b629d25857e7cc885cf349aee35f8a8",
+      "bytes": 1377
+    },
+    "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json": {
+      "bundle": "sources/9fc971a0bead_benchmark_contribution_audit.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101",
+      "bytes": 85169
+    },
+    "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json": {
+      "bundle": "sources/05945deac18d_head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8",
+      "bytes": 48361
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/plan_revision_20260923/before/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md": {
+      "bundle": "sources/4d27d8ddefd6_CF_MED_MoA_Router_Five_Agents_Execution_Plan.md",
+      "sha256": "4d27d8ddefd639da24e836f7e95728879c192707986130c4af21a1fa6025b522",
+      "bytes": 26940
+    },
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/README.md": {
+      "bundle": "sources/f4ec6b995121_README.md",
+      "sha256": "f4ec6b995121ce6200948f6edbf7c69b12393476f522c84a87f8897e98ebbca2",
+      "bytes": 955
+    }
+  },
+  "large_dependencies": [
+    {
+      "label": "实际输入与评分映射",
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "bytes": 82283256,
+      "sha256": "f4224ea7f8c2a4922af8a4e7187a09d115093cd3c0fdf039cf806c1f8b683957"
+    }
+  ],
+  "note": "29 record snapshots retain their original internal workspace links. SOURCE_MAP identifies their original locations; the main dossier uses resolvable package links."
+}

@@ -1,0 +1,144 @@
+{
+  "scope": "Final canonical Chinese collaborative Markdown exported by Pandoc to a LaTeX/PDF reading edition. No canonical prose, research data, or native English manuscript edited.",
+  "verified_at": "2026-10-02T18:00:15.192072+00:00",
+  "source": {
+    "path": "/home/data3/txy/docs/paper/research_dossier.md",
+    "sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb"
+  },
+  "builder": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/scripts/build_dossier.py",
+    "sha256": "cef4bb63f65e5539eb259e1a8310b5630b8fddbd8b5d554e36a4c5080c686d9d"
+  },
+  "before": {
+    "overfull_boxes": 23,
+    "receipt": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout_before.json"
+  },
+  "changes": [
+    "Allow separator line breaks in long inline identifiers including robustness_single.",
+    "Assign widths to >=8-column quantitative tables from longest cell values and reserve width for unknown.",
+    "Keep long tables in footnotesize with repeated headings.",
+    "Add optional --link-base-url with relative path normalization and :line to #Lline conversion. Preserve internal anchors and already absolute targets."
+  ],
+  "final": {
+    "pages": 41,
+    "overfull_boxes": 0,
+    "missing_glyph_warnings": 0,
+    "outline_entries": 62,
+    "link_annotations": 228,
+    "fonts": [
+      {
+        "xref": 4,
+        "name": "IHAIZV+DejaVuSerif",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 48178
+      },
+      {
+        "xref": 6,
+        "name": "BZIVMZ+WenQuanYiZenHei",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 504966
+      },
+      {
+        "xref": 12,
+        "name": "IXFAWU+WenQuanYiZenHei",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 189930
+      },
+      {
+        "xref": 14,
+        "name": "TQTHRL+WenQuanYiZenHei",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 210238
+      },
+      {
+        "xref": 17,
+        "name": "YEUUOC+DejaVuSerif-Bold",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 32363
+      },
+      {
+        "xref": 96,
+        "name": "AKHCZK+WenQuanYiZenHei",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 249526
+      },
+      {
+        "xref": 103,
+        "name": "VDVGTR+DejaVuSansMono",
+        "extension": "ttf",
+        "kind": "Type0",
+        "embedded_bytes": 20359
+      }
+    ],
+    "outputs": [
+      {
+        "path": "/home/data3/txy/docs/paper/latex/research_dossier.tex",
+        "bytes": 179283,
+        "sha256": "cde4f2b515ed66afb13dfa34d06bad24bbe15d4f1917cdce8782df97a7411896"
+      },
+      {
+        "path": "/home/data3/txy/docs/paper/latex/research_dossier.pdf",
+        "bytes": 522062,
+        "sha256": "ad6f02dc220a9e5723eba563b6779c02069df8e89e3998b9cbe3d2a474532e42"
+      },
+      {
+        "path": "/home/data3/txy/docs/paper/latex/research_dossier.header.tex",
+        "bytes": 1067,
+        "sha256": "b60cf01ac313b349e7f6446bdcf813edec9d1b27a8e8459dba005dbe7c5bcfd6"
+      },
+      {
+        "path": "/home/data3/txy/docs/paper/latex/research_dossier.filter.lua",
+        "bytes": 3889,
+        "sha256": "25ad3dc8943c73cb8fdff8954e665b06398250ad089f40af324f3ef3456a736e"
+      }
+    ]
+  },
+  "visual_review": {
+    "pages_actually_viewed": [
+      1,
+      2,
+      3,
+      32,
+      33,
+      41
+    ],
+    "findings": [
+      "Title identifies Markdown export reading edition.",
+      "Chinese TOC and page references readable across pages 2–3.",
+      "Format table long identifiers wrap; all numeric columns fit.",
+      "Nine-column costs table fits, including unknown and full precision token/time values, with repeated header at page break.",
+      "Closing statement retains Markdown/LaTeX/native English manuscript distinction."
+    ],
+    "images": [
+      "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout/final_page_1.png",
+      "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout/final_page_2.png",
+      "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout/final_page_3.png",
+      "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout/final_page_32.png",
+      "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout/final_page_33.png",
+      "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/layout/final_page_41.png"
+    ],
+    "not_claimed": "No assertion of full visual review of all 41 pages; source content and research claims remain separate audits."
+  },
+  "link_base_url_smoke": {
+    "checks": {
+      "relative_line_url": true,
+      "relative_anchor_url": true,
+      "internal_anchor_kept": true,
+      "absolute_local_kept": true,
+      "explicit_https_kept": true,
+      "parent_segments_collapsed": true
+    },
+    "passed": true,
+    "network_calls": 0
+  },
+  "local_link_review": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/evidence/link_review.json",
+  "rebuild_command": "python3 Documents/Codex/2026-10-03/author_research_dossier/scripts/build_dossier.py --input docs/paper/research_dossier.md --output docs/paper/latex/research_dossier.tex --only-cached",
+  "publication_link_usage": "Append --link-base-url https://github.com/OWNER/REPO/blob/BRANCH/PATH/TO/MARKDOWN/DIRECTORY/ for a release reading edition. Absolute local links remain local; publisher must explicitly map those into release evidence paths if desired.",
+  "status": "passed"
+}

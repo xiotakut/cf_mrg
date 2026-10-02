@@ -1,0 +1,241 @@
+{
+  "review_date": "2026-10-03",
+  "reviewer": "early_and_r45_audit",
+  "scope": "Full independent author-dossier data and baseline/head chapters, not merely outline. Both chapters read in full.",
+  "status": "pass",
+  "files": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/data.md",
+      "sha256": "5c433f4f18c68f0673026542f835652221025b174dd330e3fdc84b9f4b30f816",
+      "bytes": 21982,
+      "line_count": 134
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+      "sha256": "50affe6cfa26a424d049c3c35192f0bb2f630135c1f6d8e0a0cac317437ad1dd",
+      "bytes": 32933,
+      "line_count": 191
+    }
+  ],
+  "no_new_experiments": {
+    "models": 0,
+    "grading": 0,
+    "training": 0,
+    "simulation": 0
+  },
+  "reviewer_modifications": "Drafts only reviewed; required corrections made by author. Parent then explicitly authorized reviewer to append R3 primary-record correction and dated top status while preserving old paragraph; no other canonical docs or experiments modified.",
+  "machine_validation": {
+    "result": "pass",
+    "archive_sources_all26_counts": 26,
+    "v5_source_table_numeric_cells": 77,
+    "seven_baseline_cells": 42,
+    "head_before_after_pairs": 21,
+    "r2_control_cells_or_pairs": 28,
+    "r3_control_cells": 28,
+    "data_links_existing": 25,
+    "heads_links_existing": 41,
+    "all_markdown_table_shapes_consistent": true,
+    "source": "Previously raw-verified frozen audit summaries; no new scoring. Direct displayed value comparisons, integer/before-after checks, percentage rounding and file existence.",
+    "early_R3_six_arm_cells_directly_matched_to_six_raw_summary_files": 12
+  },
+  "findings": [
+    {
+      "id": "R2-RETAIN-COUNT",
+      "severity": "required factual correction",
+      "location": {
+        "file": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+        "line": 77
+      },
+      "original": "真实head在六系统改善保留侧",
+      "evidence": "7-row table: M0 5→6,M2 4→4,M3 1→3,M4 3→4,M5 0→6,M6 2→5,M7 3→2; five improvements, one tie, one decline",
+      "disposition": "fixed by author; reread updated line77",
+      "verified_text": "真实head在五个系统改善保留侧，M2保持4/9，M7从3/9降至2/9。"
+    },
+    {
+      "id": "INPUT-INDEPENDENCE",
+      "severity": "terminology precision",
+      "location": {
+        "file": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+        "line": 27
+      },
+      "original": "13,905独立输入",
+      "disposition": "fixed to13,905唯一输入 by author; do not imply statistical independence"
+    },
+    {
+      "id": "R4-ACTION-QUERY",
+      "severity": "optional column precision",
+      "location": {
+        "file": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+        "line": 149
+      },
+      "disposition": "fixed to完整动作＋问句忠实/288 by author; exact original metric identity retained"
+    },
+    {
+      "id": "R3-NAME-CONTROL-IDENTITY",
+      "severity": "required configuration-identity correction discovered on direct stage/raw-summary follow-up",
+      "location": {
+        "file": "/home/data3/txy/Documents/Codex/2026-10-03/author_research_dossier/drafts/heads_and_baselines.md",
+        "line": 111
+      },
+      "evidence": "Actual n40 each:original12/9;exact-first normalization15/11;name direct15/18;code direct18/21;name reasoned18/19;code reasoned21/22. Pure-model normalization11/11 with4Llama harms;exact-first fix restores15/11. Name controls max128;three encoding/reasoning trials max384;alltemp0. M4 reasoned length stops4/3 with predefined raw-answer fallback.",
+      "requested": "Use full six-arm table with resource/format identity, preserve old erroneous summary as historical record, update canonical research log.",
+      "disposition": "fixed in author chapter; all12 cells checked directly against6 frozen source summaries. Canonical record correction appended with parent authorization. No model or grader calls.",
+      "original": "Compressed later record gave patient-conditioned catalogue18/18 and initial review accepted this summary. Full stage and raw summary cross-check shows that is not the same arm across models."
+    }
+  ],
+  "content_checks": [
+    {
+      "topic": "Original purpose",
+      "result": "pass",
+      "detail": "Data collection→target-level R1–R5→benchmark→seven-system weaknesses→five functional heads and later agents explicitly connected."
+    },
+    {
+      "topic": "Data versions/units",
+      "result": "pass",
+      "detail": "55991archive/28243firstanalysis/38123v4eligible/6104v5/13905inputs/15616mappings/13000judgments distinguished; sampled450×8R5 and retained overlap correctly described."
+    },
+    {
+      "topic": "Taxonomy/annotation",
+      "result": "pass",
+      "detail": "Labels target judgments, not dataset names; non-exclusive; parentunion/subtarget distinctions, evidence and cannotinfer preserved;clinical annotation and originalgold boundaries stated."
+    },
+    {
+      "topic": "Method identity and resources",
+      "result": "pass",
+      "detail": "Seven configurations/six families;M1excluded;oldM6iMedRAG distinct from MedGENIE;M4structured vs M5original contract;M2 allLlama not MedCPT;M3eightcandidates upto4rounds and3corpora;TC-RAG typed adaptations explicit. Table matches baseline_resource_summary."
+    },
+    {
+      "topic": "21 head results and attribution",
+      "result": "pass",
+      "detail": "All improvements retained positively;R1wrapper reuse and R1/R3overlap noted;R2constantNone strongeroverall andretainsupport caveat;R3directory majorincrement andcalibrationmixed;formalbaseline equality not framed as newcalls."
+    },
+    {
+      "topic": "R4 conditional achievement",
+      "result": "pass",
+      "detail": "8-row288table matches primary r4:profileunit24,ordinary/full/patch/no-do,full action+query;18/66 numericalrepairs zero harms;doesnotreplace HIV13 or imply sevenmethodsclinicalR4."
+    },
+    {
+      "topic": "R5 retained F vs failedlearning",
+      "result": "pass",
+      "detail": "208=64+128+16 with608mappings;old192Maj5 andnew16matchedsingle;8responsecontrols separate;W/X/Y/CAD statuses and costs distinguished;unrunD not a result."
+    },
+    {
+      "topic": "Five roles/CF-MoA boundary",
+      "result": "pass",
+      "detail": "R1historicalwrapper;A1/A2later sharedcore;A3directory,A4conditionalpatch,A5F;doesnotclaim5independentmodels orper-item fivewaymeeting;7systemheads vs2backbone fullB separate."
+    },
+    {
+      "topic": "Completion status",
+      "result": "pass",
+      "detail": "Sevenfullv5 and21heads completed;R4limitedvalidation andFdelivery completed;newlearning/newD notcompleted;R5whole208 exposed;ASCENT42train5test andlaterreuse/CUPCase18excluding2adaptation explicit."
+    }
+  ],
+  "read_receipt": {
+    "data": "all134lines direct",
+    "heads": "all191 final lines reviewed;original full chapter pluschangedR2/uniqueinput/R4label and new40-case six-arm paragraphs/table",
+    "primary_focused": [
+      "r4_consequence_head.md579–640",
+      "r5_invariance_head.md439–478",
+      "construction source/overlap/provenance audit selected matches at1901–1922,2198–2207,2231,2523",
+      "r3_candidate_comparison.md original508–563 and1930–1962;6 originalcatalog_controls/name_exact_then_model/catalog_encoding summaryJSON files read in full"
+    ],
+    "prior_audits_reused": [
+      "benchmark_contribution_audit complete verified counts/tables, sampling and overlap",
+      "seven_methods_audit verified42cells andbaseline resource summary",
+      "head_research_audit all21results/controls and formalbaselineparity",
+      "earliercurrent-threadR4R5 complete historicalaudit"
+    ],
+    "not_claimed": [
+      "No new raw-log reread of every historical experiment",
+      "No new clinical truth audit or original dataset download",
+      "No new external literature/website verification"
+    ],
+    "review_limitation_discovered": "Earlier compact18/18 source summary passed initial reading but mixed arm identities. Direct full-stage/raw-summary follow-up corrected it; prior historical review receipts were not retroactively rewritten."
+  },
+  "source_receipts": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/benchmark_contribution_audit.json",
+      "sha256": "9fc971a0bead91b8dd269c0e6fb359332e7a37141619c92af2457a0ca91ac101"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/seven_methods_audit.json",
+      "sha256": "13d3f2643dd334f35adee8580fc6042f10406bf9632bb2c7a72919493bef720d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_scope_audit/head_research_audit.json",
+      "sha256": "05945deac18db3addef19b03212ac993410eeee1f4dd810e9bbe31c6a2d02da8"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-03/paper_story_alignment/five_agent_framework_audit.json",
+      "sha256": "2c8121d3938b8e8f83d074d78d5d063d6994c3a0240ee0698ee23e42f8484507"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r4_consequence_head.md",
+      "sha256": "51df24bd28a2276caf4215ec19e5c5a470fbac14006fcc7f63abefa3498ec084"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r5_invariance_head.md",
+      "sha256": "0f20ec43b102a51e4f80be1215f521df3852634b76979aec8cbcc9eb334521d5"
+    },
+    {
+      "path": "/home/data3/txy/docs/data/construction.md",
+      "sha256": "7ab015d62bf25066e4a7440f31c5dc4bcd07470b4390301617ef366a867c641b"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "sha256": "e5188ba4f0877082f245f828219259a261c2759878fa9a0eb36778724cf4b6ac",
+      "bytes": 407929,
+      "line_count": 2002
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_controls_m4/summary.json",
+      "sha256": "81964fa5778b26a7c063db1412b8ddd29139d60f5e9c0b6b7878e4a960b2ee86",
+      "bytes": 878,
+      "line_count": 44
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_controls_m4/name_exact_then_model_summary.json",
+      "sha256": "33504ffb8718bcc9458cbe8c6a26fb3ca1d26502ad6f4036670e5f22ae97d5d2",
+      "bytes": 225,
+      "line_count": 9
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_encoding_m4/summary.json",
+      "sha256": "622b231a5c4234f6f4e883293cdc87fffb26b42451d343ffab07a576183c0931",
+      "bytes": 1443,
+      "line_count": 69
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_controls_m5/summary.json",
+      "sha256": "fc60eb0626fa279fdd2b7be570063630dbbd32fb55db34b749588405c9af80c7",
+      "bytes": 877,
+      "line_count": 44
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_controls_m5/name_exact_then_model_summary.json",
+      "sha256": "fd768cdfab959b65516862b61849df38066148bffd012dcded32d576fd2166d4",
+      "bytes": 225,
+      "line_count": 9
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_encoding_m5/summary.json",
+      "sha256": "95e5fb1708eef2bf890efad72583e58c0b036bda1ad7515c102b032b886d508b",
+      "bytes": 1445,
+      "line_count": 69
+    }
+  ],
+  "r3_persistent_correction": {
+    "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+    "before_sha256": "8160ee113de488a586d0a50069ee8ba8395f1f460a4b21c56322e065f443de6f",
+    "after_sha256": "e5188ba4f0877082f245f828219259a261c2759878fa9a0eb36778724cf4b6ac",
+    "top_status_line": 3,
+    "appended_section_line": 1981,
+    "anchor": "r3-name-control-identity-correction-20261003",
+    "original_source_lines_before_insertion": [
+      "508–563",
+      "1930–1962"
+    ],
+    "historical_erroneous_sentence_preserved": true,
+    "experiment_artifacts_unchanged": true
+  }
+}

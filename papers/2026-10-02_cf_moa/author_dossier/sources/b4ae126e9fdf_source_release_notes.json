@@ -1,0 +1,1093 @@
+{
+  "date": "2026-09-08",
+  "intended_github_folder": "benchmarks/2026-09-08_medical_cf_five_labels",
+  "review_scope": "Independent source/license and input-completeness review; not a legal clearance or a Git upload.",
+  "resource_candidates": 26,
+  "acquired_sources": 15,
+  "acquired_text_sources": 14,
+  "acquired_multimodal_metadata_sources": 1,
+  "normalized_units": 55991,
+  "analysis_units": 28243,
+  "source_origin_audit": "26 candidate resources verified; acquired files independently compared in audit_20260908/origin_a and origin_b. Real provenance does not validate every original gold.",
+  "declared_license_acquired_sources": [
+    "M01",
+    "M02",
+    "M05",
+    "M06",
+    "M10",
+    "M16",
+    "M17",
+    "M22"
+  ],
+  "undeclared_license_acquired_sources": [
+    "M11",
+    "M12",
+    "M14",
+    "M20",
+    "M23",
+    "M24",
+    "M25"
+  ],
+  "license_handling": "The release contains this project’s annotations/statistics/audit results and official source locators, not a raw benchmark mirror. Preserve original source licenses and attribution; no repository license is applied to third-party text. Missing source licenses remain not established, not an inferred prohibition.",
+  "portable_release_requirements": [
+    "Retain unit_id/source_root_id, five-label judgments, rationale, source URLs, pinned revision, native row/question IDs and scoring/quality markers.",
+    "Exclude original_records raw-dataset mirrors and historical model answers from result projections; retain reviewed targets, changes and evidence quotations intact. State that some necessary evidence quotations are long; do not claim the release is devoid of original text.",
+    "Publish all exact official retrieval URLs and the relevant parsing/matching rules for local reconstruction; machine absolute paths are not a usable sole source locator.",
+    "Retain the distinction between currently acquired server-side inputs and catalog-only candidates.",
+    "To rerun native tasks, first obtain original data and restore every linked shared root, MedPIC GF reference and M06 PDF transcription relation. This result release alone is not a self-contained runnable benchmark."
+  ],
+  "actual_access_constraints": [
+    {
+      "resource_id": "M03",
+      "reason": "HF login/acceptance required; no cases acquired",
+      "source": "https://huggingface.co/datasets/HelpMum-Personal/MamaBench"
+    },
+    {
+      "resource_id": "M18",
+      "reason": "MIMIC-IV/Note credentialed source access required; no fixed records acquired",
+      "source": "https://github.com/camztag/DeVisE"
+    },
+    {
+      "resource_id": "M21",
+      "reason": "MIMIC-IV application and UMLS inputs required; no fixed clinical records acquired",
+      "source": "https://github.com/ZhanQu945/MediEval"
+    },
+    {
+      "resource_id": "M26",
+      "reason": "Image ZIP restricted; CC BY-NC-ND plus terms prohibit modified/augmented/transformed redistribution",
+      "source": "https://doi.org/10.5683/SP3/KXYCNY",
+      "exact_access_quote": "redistributing transformed versions, are not permitted."
+    }
+  ],
+  "third_party_cache_exclusion": {
+    "path": "parts/new_clinical/raw/M06_efavirenz_medlineplus.html",
+    "reason": "This is a medical reference webpage, not benchmark data. Its ASHP content says commercial duplication needs ASHP authorization; keep the citation, not an unnecessary webpage mirror.",
+    "source": "https://medlineplus.gov/druginfo/meds/a699004.html"
+  },
+  "limitations": [
+    "M06 publisher article endpoint was unavailable during this release check; CC BY evidence comes from the publisher-deposited Crossref record.",
+    "M16 figshare API returned403; publisher article and official arXiv ancillary XLSX were available and already audited.",
+    "The seven undeclared licenses have not been converted into redistribution permission; no author-specific prohibition was found in their inspected public release.",
+    "The published result projection requires original official inputs to reproduce native-task evaluations; this review does not claim a tested one-command download/reconstruction pipeline."
+  ],
+  "resources": [
+    {
+      "resource_id": "M01",
+      "benchmark": "MedEinst",
+      "actual_title": "MedEinst: Benchmarking the Einstellung Effect in Medical LLMs through Counterfactual Differential Diagnosis",
+      "acquired": true,
+      "normalized_units": 5383,
+      "analysis_units": 2500,
+      "acquisition_status": "acquired_reused",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/abs/2601.06636",
+        "https://github.com/zhui711/MedEinst",
+        "https://huggingface.co/datasets/zhui711/MedEinst"
+      ],
+      "selected_revision": "354f4b527e764a8f2bebea8f71be55e0a6966402",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "verification_status": "dataset_card",
+        "primary_url": "https://huggingface.co/datasets/zhui711/MedEinst",
+        "notes": "数据卡明确释放MedEinst，并要求保留DDXPlus来源。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留control/trap两个原病例和作者配对ID，开放诊断文本不转换成旧四选项代理。",
+        "归属MedEinst和DDXPlus；CF对与各端原记录分开计数。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/zhui711/MedEinst/resolve/354f4b527e764a8f2bebea8f71be55e0a6966402/test.jsonl",
+          "format": "jsonl",
+          "snapshot_name": "M01_test.jsonl"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/zhui711/MedEinst/resolve/354f4b527e764a8f2bebea8f71be55e0a6966402/README.md",
+          "format": "md",
+          "snapshot_name": "M01_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M02",
+      "benchmark": "MedPIC-Bench",
+      "actual_title": "Evaluating Counterfactual Sensitivity to Patient Information in Medication-Safety Reasoning",
+      "acquired": true,
+      "normalized_units": 183,
+      "analysis_units": 183,
+      "acquisition_status": "acquired_reused",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2608.03028v1",
+        "https://huggingface.co/TIM0927",
+        "https://huggingface.co/datasets/TIM0927/MedPIC-Bench"
+      ],
+      "selected_revision": "9ef6db4f13865b14fc2e6be3f94dcfaf3a0cf983",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "verification_status": "dataset_card",
+        "primary_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+        "notes": "数据卡YAML明确license: cc-by-4.0。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留全部183条CF原题、多选答案和taxonomy；另带284条GF参照。",
+        "官方缺少正式pair_id时不猜配对；GF不额外计作CF。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench/resolve/9ef6db4f13865b14fc2e6be3f94dcfaf3a0cf983/questions.json",
+          "format": "json",
+          "snapshot_name": "M02_questions.json"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench/resolve/9ef6db4f13865b14fc2e6be3f94dcfaf3a0cf983/README.md",
+          "format": "md",
+          "snapshot_name": "M02_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M03",
+      "benchmark": "MamaBench",
+      "actual_title": "MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "gated_data_pending",
+      "pending_reason": "gated病例未取得",
+      "primary_urls": [
+        "https://arxiv.org/html/2607.14385v1",
+        "https://huggingface.co/datasets/HelpMum-Personal/MamaBench"
+      ],
+      "selected_revision": "d85c704fe19706da4dbb9768f7b47f797ca54a33",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "verification_status": "dataset_card_gated",
+        "primary_url": "https://huggingface.co/datasets/HelpMum-Personal/MamaBench",
+        "notes": "许可开放，但当前下载须登录接受访问条件；作者限定其作为held-out zero-shot评测用途。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/HelpMum-Personal/MamaBench/resolve/d85c704fe19706da4dbb9768f7b47f797ca54a33/README.md",
+          "format": "md",
+          "snapshot_name": "M03_README.md"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/HelpMum-Personal/MamaBench/resolve/d85c704fe19706da4dbb9768f7b47f797ca54a33/data/test-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "M03_test.parquet"
+        }
+      ]
+    },
+    {
+      "resource_id": "M04",
+      "benchmark": "肿瘤临床CF评测",
+      "actual_title": "Counterfactual Evaluation Reveals Hidden Capability Profiles in Clinical LLMs and Agents",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "paper_only_fixed_cases_not_located",
+      "pending_reason": "未定位原病例发布包",
+      "primary_urls": [
+        "https://arxiv.org/html/2605.30590v1",
+        "https://datalab.withprotege.ai/research/counterfactual-evaluation-reveals-hidden-capability-profiles-in-clinical-llms-and-agents"
+      ],
+      "selected_revision": "arXiv:2605.30590v1",
+      "license": {
+        "declared": "CC-BY-4.0 article; dataset license not established",
+        "verification_status": "article_only",
+        "primary_url": "https://arxiv.org/html/2605.30590v1",
+        "notes": "论文许可不能替代未发布病例数据许可；当前没有病例。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M05",
+      "benchmark": "临床检验因果推理评测",
+      "actual_title": "Evaluation of causal reasoning for large language models in contextualized clinical scenarios of laboratory test interpretation",
+      "acquired": true,
+      "normalized_units": 33,
+      "analysis_units": 33,
+      "acquisition_status": "acquired_fixed_first_block_cf",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://www.nature.com/articles/s41746-026-02632-3",
+        "https://balubhasuran.github.io/publications/",
+        "https://github.com/balubhasuran/LLM_Causality_LabTest"
+      ],
+      "selected_revision": "6d0fbd1bc42cf604258f0fde4317a542d0b9090f",
+      "license": {
+        "declared": "MIT",
+        "verification_status": "repository_license",
+        "primary_url": "https://github.com/balubhasuran/LLM_Causality_LabTest/blob/main/LICENSE",
+        "notes": "仓库LICENSE与README明确MIT；复制其数据/代码时保留原版权及许可通知。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留33条CF问题、XLSX中的题内背景与作者任务结构。",
+        "工作簿的重复模型块不增加独立题数；模型历史回答/人工模型评分不当新gold。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/balubhasuran/LLM_Causality_LabTest/6d0fbd1bc42cf604258f0fde4317a542d0b9090f/data/DataSet.xlsx",
+          "format": "xlsx",
+          "snapshot_name": "M05_DataSet.xlsx"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/balubhasuran/LLM_Causality_LabTest/6d0fbd1bc42cf604258f0fde4317a542d0b9090f/README.md",
+          "format": "md",
+          "snapshot_name": "M05_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M06",
+      "benchmark": "HIV治疗因果情景研究",
+      "actual_title": "Consistency in causal reasoning for large language models in scenarios of HIV antiretroviral treatment, drug interactions, and side effects",
+      "acquired": true,
+      "normalized_units": 20,
+      "analysis_units": 20,
+      "acquisition_status": "acquired_supplement_cf_full_study_pending",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://www.nature.com/articles/s41746-026-02771-7",
+        "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-026-02771-7/MediaObjects/41746_2026_2771_MOESM1_ESM.pdf"
+      ],
+      "selected_revision": "41746_2026_2771_MOESM1_ESM (2026-05-27)",
+      "license": {
+        "declared": "CC-BY-4.0 article and associated supplement",
+        "verification_status": "publisher_license_metadata",
+        "primary_url": "https://api.crossref.org/works/10.1038/s41746-026-02771-7",
+        "notes": "出版社Crossref记录给出CC BY 4.0；当前取得官方补充PDF，未发现另行标识的附件许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留实际取得的20条CF转录、原Scenario ID、问题、作者expected answer/explanation及PDF页定位。",
+        "同时带M06_cf_transcription.json与官方supplement.pdf或精确官方下载入口，说明人工转录/排版变换；不能称取得全部研究题。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41746-026-02771-7/MediaObjects/41746_2026_2771_MOESM1_ESM.pdf",
+          "format": "pdf",
+          "snapshot_name": "M06_supplement.pdf"
+        }
+      ]
+    },
+    {
+      "resource_id": "M07",
+      "benchmark": "CLIR-Bench",
+      "actual_title": "CLIR-Bench: Benchmarking Multimodal Question Answering over Irregular Clinical Time Series",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "official_cf_edit_pairs_not_released_in_inspected_tree",
+      "pending_reason": "指定CF编辑对未发布于所检树",
+      "primary_urls": [
+        "https://arxiv.org/html/2607.09880v1",
+        "https://huggingface.co/datasets/winall/CLIR-Bench"
+      ],
+      "selected_revision": "e7e1733b74819bbefa2a1b5bf653a0d1e00fbb9a",
+      "license": {
+        "declared": "ODbL",
+        "verification_status": "dataset_card_cf_not_acquired",
+        "primary_url": "https://huggingface.co/datasets/winall/CLIR-Bench",
+        "notes": "数据卡许可为odbl；已发布普通任务不是本次指定CF编辑对子任务。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/winall/CLIR-Bench/resolve/e7e1733b74819bbefa2a1b5bf653a0d1e00fbb9a/README.md",
+          "format": "md",
+          "snapshot_name": "M07_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M08",
+      "benchmark": "ECG-Expert-QA",
+      "actual_title": "ECG-Expert-QA: A Benchmark for Evaluating Medical Large Language Models in Heart Disease Diagnosis (arXiv v3); published repository title: ... in ECG",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "mco_fixed_file_not_located",
+      "pending_reason": "MCo固定文件未定位；MC不能替代",
+      "primary_urls": [
+        "https://arxiv.org/html/2502.17475v3",
+        "https://github.com/Zaozzz/ECG-Expert-QA"
+      ],
+      "selected_revision": "4fcb46974eed422532772caa483a5e621f006ff1",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/Zaozzz/ECG-Expert-QA",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M09",
+      "benchmark": "GenMedicalEval",
+      "actual_title": "GenMedicalEval: A Unified Medical Evaluation Benchmark for Chinese LLMs (author repository)",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "documentation_example_only",
+      "pending_reason": "仅栏目文档示例，未取得声明的12000条",
+      "primary_urls": [
+        "https://github.com/MediaBrain-SJTU/GenMedicalEval",
+        "https://github.com/MediaBrain-SJTU/GenMedicalEval/blob/New/class/%E5%8C%BB%E7%96%97%E5%8F%8D%E4%BA%8B%E5%AE%9E.md"
+      ],
+      "selected_revision": "d2e096ab4c49e37517342be04f637915524c3459 (default New); main also inspected bc2d9db1bec27ab1b7e499ccfd3c12c59af4dc69",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/MediaBrain-SJTU/GenMedicalEval/blob/New/class/%E5%8C%BB%E7%96%97%E5%8F%8D%E4%BA%8B%E5%AE%9E.md",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M10",
+      "benchmark": "CPV-MedQA",
+      "actual_title": "MedQA CPV (Counterfactual Patient Variations), author-released MedQA extension of How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+      "acquired": true,
+      "normalized_units": 10225,
+      "analysis_units": 2500,
+      "acquisition_status": "acquired_reused",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://huggingface.co/datasets/kenza-ily/medqa-cpv",
+        "https://huggingface.co/kenza-ily",
+        "https://aclanthology.org/2025.naacl-long.114/",
+        "https://github.com/kenza-ily/diagnose_treat_bias_llm"
+      ],
+      "selected_revision": "ba7e59489f4c8e2a32d977a099e95bc3bc2587b5",
+      "license": {
+        "declared": "MIT",
+        "verification_status": "dataset_card",
+        "primary_url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv",
+        "notes": "作者MedQA扩展数据卡明确MIT；保留MedQA原题血缘和该扩展版本出处。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留原MedQA题和每个CPV变体、原题ID、选项/答案及对应关系。",
+        "该发布是作者MedQA扩展；不承袭原论文JAMA病例的样本规模或人工验证声明。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv/resolve/ba7e59489f4c8e2a32d977a099e95bc3bc2587b5/data/train-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "M10_train-00000-of-00001.parquet"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv/resolve/ba7e59489f4c8e2a32d977a099e95bc3bc2587b5/README.md",
+          "format": "md",
+          "snapshot_name": "M10_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M11",
+      "benchmark": "Counterfactual Cultural Cues",
+      "actual_title": "Counterfactual Cultural Cues Reduce Medical QA Accuracy in LLMs: Identifier vs Context Effects",
+      "acquired": true,
+      "normalized_units": 1349,
+      "analysis_units": 1349,
+      "acquisition_status": "acquired_reused",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2601.20102v1",
+        "https://github.com/HIVE-UofT/Evaluatiog-Cultural-Clues-Medical-LLMs",
+        "https://github.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs"
+      ],
+      "selected_revision": "5ded0d24cd3cb09e26ce3128a3fe7fa9f0a4631f",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留公开固定文化变体与对应MedQA原题；记录原题血缘及具体视图。",
+        "所选文件未发布neutral视图，不补造150条neutral；旧license.status末句no text redistribution没有作者条款依据，不作为禁令。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs/5ded0d24cd3cb09e26ce3128a3fe7fa9f0a4631f/Data/final_augment_test_questions.json",
+          "format": "json",
+          "snapshot_name": "M11_final_augment_test_questions.json"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs/5ded0d24cd3cb09e26ce3128a3fe7fa9f0a4631f/Data/test.jsonl",
+          "format": "jsonl",
+          "snapshot_name": "M11_test.jsonl"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs/5ded0d24cd3cb09e26ce3128a3fe7fa9f0a4631f/README.md",
+          "format": "md",
+          "snapshot_name": "M11_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M12",
+      "benchmark": "FairMedQA/AMQA",
+      "actual_title": "FairMedQA: Benchmarking Bias in Large Language Models for Medical Question Answering (v2); AMQA: An Adversarial Dataset for Benchmarking Bias of LLMs in Medicine and Healthcare (v1)",
+      "acquired": true,
+      "normalized_units": 4806,
+      "analysis_units": 4806,
+      "acquisition_status": "downloaded",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2505.19562v1",
+        "https://arxiv.org/html/2505.19562v2",
+        "https://github.com/XY-Showing/AMQA"
+      ],
+      "selected_revision": "335b1752ba4912d00050fa6531ba8d2c2aef6fb9",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/XY-Showing/AMQA",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留原题、desensitized_question、6种固定变体的文本、options和原answer；新分类另存。",
+        "新标注不引用作者历史模型预测；shared roots中的801个原病例不能丢。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/XY-Showing/AMQA/335b1752ba4912d00050fa6531ba8d2c2aef6fb9/AMQA_Dataset/AMQA_Dataset.jsonl",
+          "format": "jsonl",
+          "snapshot_name": "M12_AMQA_Dataset.jsonl"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/XY-Showing/AMQA/335b1752ba4912d00050fa6531ba8d2c2aef6fb9/README.md",
+          "format": "md",
+          "snapshot_name": "M12_README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M13",
+      "benchmark": "MedEqualQA",
+      "actual_title": "MEDEQUALQA: Evaluating Biases in LLMs with Counterfactual Reasoning",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "data_not_released_in_inspected_repository",
+      "pending_reason": "所检作者仓库未发布题库",
+      "primary_urls": [
+        "https://aclanthology.org/2025.sciprodllm-1.4/",
+        "https://aclanthology.org/2025.sciprodllm-1.4.pdf",
+        "https://github.com/rajarshi51382/MEDEQUALQA"
+      ],
+      "selected_revision": "ef5a978a840747badd7c1a7c04f0b74bb7c9eff1",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/rajarshi51382/MEDEQUALQA",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M14",
+      "benchmark": "DiversityMedQA",
+      "actual_title": "DiversityMedQA: A Benchmark for Assessing Demographic Biases in Medical Diagnosis using Large Language Models",
+      "acquired": true,
+      "normalized_units": 6296,
+      "analysis_units": 2500,
+      "acquisition_status": "downloaded_partial_inputs",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://aclanthology.org/2024.nlp4pi-1.29.pdf",
+        "https://huggingface.co/datasets/Rajat1212/DiversityMedQA"
+      ],
+      "selected_revision": "b06f1e2f2ff9b07dc31355e650a9b41133ebeefb",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://huggingface.co/datasets/Rajat1212/DiversityMedQA",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留CSV中的原题和Modified Question、Row Number、变体类型。",
+        "原CSV没有完整选项和gold；发布可审核文本对，但不能声称拿到完整可评分四选项输入。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/Rajat1212/DiversityMedQA/resolve/b06f1e2f2ff9b07dc31355e650a9b41133ebeefb/EthnicityDataset.csv",
+          "format": "csv",
+          "snapshot_name": "EthnicityDataset.csv"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/Rajat1212/DiversityMedQA/resolve/b06f1e2f2ff9b07dc31355e650a9b41133ebeefb/GenderDataset.csv",
+          "format": "csv",
+          "snapshot_name": "GenderDataset.csv"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/Rajat1212/DiversityMedQA/resolve/b06f1e2f2ff9b07dc31355e650a9b41133ebeefb/README.md",
+          "format": "md",
+          "snapshot_name": "README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M15",
+      "benchmark": "CLIMB",
+      "actual_title": "CLIMB: A Benchmark of Clinical Bias in Large Language Models",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "cf_pairs_not_released_in_inspected_repository",
+      "pending_reason": "未取得固定诊断CF病例对",
+      "primary_urls": [
+        "https://arxiv.org/html/2407.05250v1",
+        "https://github.com/uscnlp-lime/climb",
+        "https://github.com/limenlp/CLIMB"
+      ],
+      "selected_revision": "73ca89135e36da44366b15acebffd6c835e3676a",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/limenlp/CLIMB",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M16",
+      "benchmark": "EquityMedQA",
+      "actual_title": "A Toolbox for Surfacing Health Equity Harms and Biases in Large Language Models",
+      "acquired": true,
+      "normalized_units": 323,
+      "analysis_units": 323,
+      "acquisition_status": "downloaded",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2403.12025v2",
+        "https://arxiv.org/src/2403.12025v2/anc/equitymedqa_ratings.xlsx",
+        "https://www.nature.com/articles/s41591-024-03258-2"
+      ],
+      "selected_revision": "arXiv:2403.12025v2",
+      "license": {
+        "declared": "CC-BY-4.0 article and Supplementary Data 1",
+        "verification_status": "publisher_article_and_data_availability",
+        "primary_url": "https://www.nature.com/articles/s41591-024-03258-2",
+        "notes": "文章Rights and permissions明确CC BY 4.0，Data availability明确包含本工作问题及评级工作簿；当前使用论文官方arXiv附件。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留CC-Manual/CC-LLM两端问题和pair ID、问题ID及实际ideal_answers_diff评级。",
+        "作者模型回答差异不是理想答案差异；Natal三题21对的数据问题标记与分歧评级一同保留。",
+        "需可追到官方XLSX及对应sheet/row，不只给本机sheet JSON路径。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://arxiv.org/src/2403.12025v2/anc/equitymedqa_ratings.xlsx",
+          "format": "xlsx",
+          "snapshot_name": "equitymedqa_ratings.xlsx"
+        }
+      ]
+    },
+    {
+      "resource_id": "M17",
+      "benchmark": "MedPerturb",
+      "actual_title": "The MedPerturb Dataset: What Non-Content Perturbations Reveal About Human and Clinical LLM Decision Making",
+      "acquired": true,
+      "normalized_units": 3759,
+      "analysis_units": 3745,
+      "acquisition_status": "acquired_cf_and_references_sample_annotated",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/abs/2506.17163",
+        "https://medperturb.csail.mit.edu/",
+        "https://github.com/abinithago/MedPerturb",
+        "https://huggingface.co/datasets/abinitha/MedPerturb"
+      ],
+      "selected_revision": "5a121ca38b80e9d4e106e7f7926206f8c8dfce1e (GitHub); HF metadata 29e7420b421653fa9b84e4c0f06e54332729d049",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "verification_status": "dataset_card",
+        "primary_url": "https://huggingface.co/datasets/abinitha/MedPerturb",
+        "notes": "作者HF数据卡明确CC BY 4.0；保留AskDocs、MedQA等上游dataset字段，不将其全称为合成病历。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留原clinical_context、gender_swap/gender_removal文本、context_id、上游dataset和三类原任务。",
+        "保留既有人工评定覆盖差异，不能把6587行版本全称专家gold；实际原始背景不是全由本项目构造。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/abinithago/MedPerturb/5a121ca38b80e9d4e106e7f7926206f8c8dfce1e/data.csv",
+          "format": "csv",
+          "snapshot_name": "data.csv"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/abinithago/MedPerturb/5a121ca38b80e9d4e106e7f7926206f8c8dfce1e/clinician_responses.csv",
+          "format": "csv",
+          "snapshot_name": "clinician_responses.csv"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/abinithago/MedPerturb/5a121ca38b80e9d4e106e7f7926206f8c8dfce1e/README.md",
+          "format": "md",
+          "snapshot_name": "README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M18",
+      "benchmark": "DeVisE",
+      "actual_title": "DeVisE: Behavioral Testing of Medical Large Language Models",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "generation_code_only_credentialed_records_pending",
+      "pending_reason": "仅生成代码，受限MIMIC病例未取得",
+      "primary_urls": [
+        "https://arxiv.org/html/2506.15339v1",
+        "https://github.com/camztag/DeVisE"
+      ],
+      "selected_revision": "d5a0b99e8ebb38a46270b3fe1cd22f3215787159",
+      "license": {
+        "declared": "MIT code; credentialed MIMIC data",
+        "verification_status": "restricted_underlying_records",
+        "primary_url": "https://github.com/camztag/DeVisE",
+        "notes": "README明确MIMIC-IV与MIMIC-IV-Note须credentialed PhysioNet access。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M19",
+      "benchmark": "MedFuzz",
+      "actual_title": "MedFuzz: Exploring the Robustness of Large Language Models in Medical Question Answering",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "published_examples_only",
+      "pending_reason": "未取得完整固定攻击输入release",
+      "primary_urls": [
+        "https://arxiv.org/html/2406.06573v2"
+      ],
+      "selected_revision": null,
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://arxiv.org/html/2406.06573v2",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M20",
+      "benchmark": "MedCounterFact",
+      "actual_title": "Faithfulness vs. Safety: Evaluating LLM Behavior Under Counterfactual Medical Evidence",
+      "acquired": true,
+      "normalized_units": 809,
+      "analysis_units": 809,
+      "acquisition_status": "acquired_reused",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2601.11886v1",
+        "https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence"
+      ],
+      "selected_revision": "f35b98063b51a63e677829b6d173029d98dd3b1e",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/KaijieMo-kj/Counterfactual-Medical-Evidence",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "原始和替换QA均须含完整对应医学证据document、原文比较措辞、数字及作者任务要求。",
+        "作者假设/不合理证据不是现实医学事实；同名治疗臂冲突标记不可因发布删去。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/KaijieMo-kj/Counterfactual-Medical-Evidence/f35b98063b51a63e677829b6d173029d98dd3b1e/MedCounterFact_original_data.jsonl",
+          "format": "jsonl",
+          "snapshot_name": "MedCounterFact_original_data.jsonl"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/KaijieMo-kj/Counterfactual-Medical-Evidence/f35b98063b51a63e677829b6d173029d98dd3b1e/MedCounterFact_replaced_data.jsonl",
+          "format": "jsonl",
+          "snapshot_name": "MedCounterFact_replaced_data.jsonl"
+        }
+      ]
+    },
+    {
+      "resource_id": "M21",
+      "benchmark": "MediEval",
+      "actual_title": "MediEval: A Unified Medical Benchmark for Patient-Contextual and Knowledge-Grounded Reasoning in LLMs",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "restricted_source_data_required",
+      "pending_reason": "受限患者上下文/知识源未取得",
+      "primary_urls": [
+        "https://arxiv.org/html/2512.20822v2",
+        "https://github.com/ZhanQu945/MediEval"
+      ],
+      "selected_revision": "6b3593e2dc25981e936400ddd073d4758e96f94e",
+      "license": {
+        "declared": "MIMIC-IV and UMLS access required; dataset license not established",
+        "verification_status": "restricted_underlying_records",
+        "primary_url": "https://github.com/ZhanQu945/MediEval",
+        "notes": "README要求申请MIMIC-IV并自行提供UMLS；本次没有取得固定患者上下文CF题。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    },
+    {
+      "resource_id": "M22",
+      "benchmark": "MedRGB",
+      "actual_title": "Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering",
+      "acquired": true,
+      "normalized_units": 3680,
+      "analysis_units": 3680,
+      "acquisition_status": "downloaded",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2411.09213",
+        "https://huggingface.co/datasets/ngotrnghia1811/MedRGB",
+        "https://huggingface.co/ngotrnghia1811"
+      ],
+      "selected_revision": "fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2",
+      "license": {
+        "declared": "CC-BY-4.0",
+        "verification_status": "dataset_card",
+        "primary_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB",
+        "notes": "数据卡及License节明确CC BY 4.0；保留各子题库与证据文献来源。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "主记录的CF document/子问、原主问和原gold均须保存。",
+        "必须带shared-root中的signal_documents与sub_qa_pairs；只带CF doc/问题会丢清洁对照。",
+        "DOC_n不是signal_documents数组下标，保留作者字段而不补造对应。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/resolve/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/README.md",
+          "format": "md",
+          "snapshot_name": "README.md"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/resolve/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/data/bioasq-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "bioasq-00000-of-00001.parquet"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/resolve/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/data/medlfqa-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "medlfqa-00000-of-00001.parquet"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/resolve/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/data/medqa-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "medqa-00000-of-00001.parquet"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/resolve/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/data/mmlu-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "mmlu-00000-of-00001.parquet"
+        },
+        {
+          "remote_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/resolve/fa2f90e8d4b09e29ad43a9e799f62e69d1ec6aa2/data/pubmedqa-00000-of-00001.parquet",
+          "format": "parquet",
+          "snapshot_name": "pubmedqa-00000-of-00001.parquet"
+        }
+      ]
+    },
+    {
+      "resource_id": "M23",
+      "benchmark": "BioRAB",
+      "actual_title": "Benchmarking Retrieval-Augmented Large Language Models in Biomedical NLP: Application, Robustness, and Self-Awareness",
+      "acquired": true,
+      "normalized_units": 12615,
+      "analysis_units": 2500,
+      "acquisition_status": "downloaded_selected_counterfactual_subset",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2405.08151v3",
+        "https://github.com/ToneLi/ToneLi-Evaluating-Retrival-LLM-in-Biomedical-Domain",
+        "https://drive.google.com/drive/folders/19d_pl89iD8I3-KDkqT1EuNr1Mg0zuW-5"
+      ],
+      "selected_revision": "a76aebff66a9612a33a21ad80d995216c08ddd24",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://drive.google.com/drive/folders/19d_pl89iD8I3-KDkqT1EuNr1Mg0zuW-5",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保存noise20/noise100输入和准确匹配的clean instruction/context/target；shared-root链接需能在发布目录内解析。",
+        "保留作者Drive folder和具体file ID；noise20两个公开ID经独立比对相同，不误记为虚构出处。",
+        "错误标注演示干扰不能包装成患者状态反事实。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://drive.usercontent.google.com/download?id=11sFEdlmtOvXDYFr5a3wZGXabcsc76qXH&export=download&confirm=t",
+          "format": "jsonl (author filename .json)",
+          "snapshot_name": "BioNELL_test_instruction_medcpt.json"
+        },
+        {
+          "remote_url": "https://drive.usercontent.google.com/download?id=188l0RFux6oM9TocHgmmn5lV9-CIBt7Wi&export=download&confirm=t",
+          "format": "jsonl (author filename .json)",
+          "equivalent_source_urls": [
+            "https://drive.google.com/file/d/1KyuTpMbibMa9C5ngtf1KwwFgFxqv1N16/view",
+            "https://drive.google.com/file/d/188l0RFux6oM9TocHgmmn5lV9-CIBt7Wi/view"
+          ],
+          "snapshot_name": "BioNELL_test_instruction_medcpt_noise_20.json"
+        },
+        {
+          "remote_url": "https://drive.usercontent.google.com/download?id=1RBxo33TXaHqOdOyemLU8Clc-4QnwDUqE&export=download&confirm=t",
+          "format": "jsonl (author filename .json)",
+          "snapshot_name": "BioNELL_test_instruction_medcpt_noise_100.json"
+        },
+        {
+          "remote_url": "https://drive.usercontent.google.com/download?id=1KyuTpMbibMa9C5ngtf1KwwFgFxqv1N16&export=download&confirm=t",
+          "format": "jsonl (author filename .json)",
+          "equivalent_source_urls": [
+            "https://drive.google.com/file/d/1KyuTpMbibMa9C5ngtf1KwwFgFxqv1N16/view",
+            "https://drive.google.com/file/d/188l0RFux6oM9TocHgmmn5lV9-CIBt7Wi/view"
+          ],
+          "snapshot_name": "BioNELL_test_instruction_medcpt_noise_20_registered_id.json"
+        }
+      ]
+    },
+    {
+      "resource_id": "M24",
+      "benchmark": "MedCF",
+      "actual_title": "Editing Factual Knowledge and Explanatory Ability of Medical Large Language Models",
+      "acquired": true,
+      "normalized_units": 4013,
+      "analysis_units": 798,
+      "acquisition_status": "downloaded",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://arxiv.org/html/2402.18099v3",
+        "https://github.com/quqxui/MedLaSA"
+      ],
+      "selected_revision": "6cc1ec1703103454be393dac066e86b5cb0b0a9b",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/quqxui/MedLaSA",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留原医学事实、CF编辑目标、改写、locality问题与原ground truth；同时保留编辑协议。",
+        "问题gold的评分禁用/不充分标记不丢；不能把知识编辑改成普通prompt注入。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/quqxui/MedLaSA/6cc1ec1703103454be393dac066e86b5cb0b0a9b/MedCF/test.json",
+          "format": "json",
+          "snapshot_name": "test.json"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/quqxui/MedLaSA/6cc1ec1703103454be393dac066e86b5cb0b0a9b/MedCF/train.json",
+          "format": "json",
+          "snapshot_name": "train.json"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/quqxui/MedLaSA/6cc1ec1703103454be393dac066e86b5cb0b0a9b/MedCF/valid.json",
+          "format": "json",
+          "snapshot_name": "valid.json"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/quqxui/MedLaSA/6cc1ec1703103454be393dac066e86b5cb0b0a9b/README.md",
+          "format": "md",
+          "snapshot_name": "README.md"
+        }
+      ]
+    },
+    {
+      "resource_id": "M25",
+      "benchmark": "MedMKEB",
+      "actual_title": "MedMKEB: A Comprehensive Knowledge Editing Benchmark for Medical Multimodal Large Language Models",
+      "acquired": true,
+      "normalized_units": 2497,
+      "analysis_units": 2497,
+      "acquisition_status": "annotation_files_downloaded_images_missing",
+      "pending_reason": null,
+      "primary_urls": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/40705",
+        "https://ojs.aaai.org/index.php/AAAI/article/download/40705/44666",
+        "https://arxiv.org/html/2508.05083v1",
+        "https://github.com/pkusixspace/MedMKEB"
+      ],
+      "selected_revision": "d9f38639ec2285a0e9f541e22156ec14f87271d8",
+      "license": {
+        "declared": "not_declared_in_inspected_author_release",
+        "verification_status": "not_established",
+        "primary_url": "https://github.com/pkusixspace/MedMKEB",
+        "notes": "公开作者入口和已核文件未发现明确数据许可；未检出LICENSE不等于作者明示禁止再分发，也不能写为已获CC/MIT再许可。",
+        "explicit_adapted_redistribution_restriction": false
+      },
+      "release_scope": "project_annotations_with_reviewed_source_quotations_and_official_locators_without_original_records_mirror",
+      "required_inputs": [
+        "保留已取得的2497条编辑元数据、文字locality/portability问题、图像标识和上游来源。",
+        "所有缺图状态显式保留；图像路径字符串不等于已包含图像。当前不能运行完整多模态任务。"
+      ],
+      "verified_official_files": [
+        {
+          "remote_url": "https://raw.githubusercontent.com/pkusixspace/MedMKEB/d9f38639ec2285a0e9f541e22156ec14f87271d8/README.md",
+          "format": "md",
+          "snapshot_name": "README.md"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/pkusixspace/MedMKEB/d9f38639ec2285a0e9f541e22156ec14f87271d8/data/eval_data_attack.json",
+          "format": "json",
+          "snapshot_name": "eval_data_attack.json"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/pkusixspace/MedMKEB/d9f38639ec2285a0e9f541e22156ec14f87271d8/data/eval_data_threehop_final.json",
+          "format": "json",
+          "snapshot_name": "eval_data_threehop_final.json"
+        },
+        {
+          "remote_url": "https://raw.githubusercontent.com/pkusixspace/MedMKEB/d9f38639ec2285a0e9f541e22156ec14f87271d8/data/train_data.json",
+          "format": "json",
+          "snapshot_name": "train_data.json"
+        }
+      ]
+    },
+    {
+      "resource_id": "M26",
+      "benchmark": "COLLECT",
+      "actual_title": "COLLECT: A Counterfactual Oral Lesion Library for Trustworthy AI Evaluation",
+      "acquired": false,
+      "normalized_units": 0,
+      "analysis_units": 0,
+      "acquisition_status": "image_archive_access_restricted",
+      "pending_reason": "受限图像包未取得",
+      "primary_urls": [
+        "https://journals.sagepub.com/doi/10.1177/00220345261466240",
+        "https://doi.org/10.5683/SP3/KXYCNY",
+        "https://borealisdata.ca/api/datasets/:persistentId/?persistentId=doi:10.5683/SP3/KXYCNY",
+        "https://github.com/MadathilSA/COLLECT"
+      ],
+      "selected_revision": "Borealis v1.3; GitHub ce676b997efde476331c92deafafe4ecae002afd",
+      "license": {
+        "declared": "CC-BY-NC-ND-4.0 plus access terms",
+        "verification_status": "restricted_images_explicit_no_adapted_redistribution",
+        "primary_url": "https://borealisdata.ca/api/datasets/:persistentId/?persistentId=doi:10.5683/SP3/KXYCNY",
+        "notes": "Borealis v1.3的termsOfAccess要求相关研究用途、原样使用和引文，明确不允许修改、衍生、增强或重新分发变换版本；图像ZIP restricted=true，当前没有取得。",
+        "explicit_adapted_redistribution_restriction": true
+      },
+      "release_scope": "catalog_and_official_access_links_only",
+      "required_inputs": [
+        "只保留目录条目、已核论文/作者入口、待获取状态及原任务范围，不生成未取得病例。"
+      ],
+      "verified_official_files": []
+    }
+  ],
+  "publication_mode": "Annotations, statistics and audit results; not a raw benchmark mirror",
+  "repository_policy": "Existing benchmarks/README.md provides historical archiving scope. This release does not bundle an original_records/raw-dataset mirror; reviewed annotation evidence remains intact, including necessary original-question quotations, some of which are long.",
+  "raw_original_records_in_release": false,
+  "raw_shared_roots_in_release": false,
+  "required_inputs_for_local_reconstruction": [
+    {
+      "path": "parts/evidence_other/full_root_records.jsonl",
+      "records": 11751,
+      "by_resource": {
+        "M12": 801,
+        "M14": 1707,
+        "M22": 3680,
+        "M23": 5563
+      },
+      "purpose": "shared native roots, especially MedRGB clean documents and BioRAB clean inputs",
+      "publication_action": "Not bundled as raw benchmark data; obtain from exact official URLs and reconstruct locally before rerunning original tasks."
+    },
+    {
+      "path": "parts/clinical_existing/raw/medpic_gf_references.jsonl",
+      "records": 284,
+      "purpose": "MedPIC guideline-following references, separate from 183 CF rows",
+      "publication_action": "Not bundled as raw benchmark data; obtain from exact official URLs and reconstruct locally before rerunning original tasks."
+    },
+    {
+      "path": "parts/new_clinical/raw/M06_cf_transcription.json",
+      "purpose": "reviewed transcription with supplement question IDs",
+      "publication_action": "Not bundled as raw benchmark data; obtain from exact official URLs and reconstruct locally before rerunning original tasks."
+    },
+    {
+      "path": "parts/new_clinical/raw/M06_supplement.pdf",
+      "purpose": "official supplement; alternative is exact official download URL with page/row locators",
+      "publication_action": "Not bundled as raw benchmark data; obtain from exact official URLs and reconstruct locally before rerunning original tasks."
+    }
+  ],
+  "annotation_evidence_quotations_retained": true,
+  "annotation_evidence_note": "Necessary reviewed source quotations are retained without truncation or rewriting. The absence of original_records does not mean the release contains no original sentences."
+}

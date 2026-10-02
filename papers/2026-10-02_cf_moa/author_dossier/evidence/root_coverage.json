@@ -1,0 +1,46 @@
+{
+  "role": "root synthesis / history / author logic",
+  "new_model_calls": 0,
+  "new_grader_calls": 0,
+  "direct_read_ranges": {
+    "docs/archive/medrgag_reproduction.md": [
+      "330-400",
+      "1263-1328"
+    ],
+    "docs/archive/wm_medrgag.md": [
+      "3190-3255"
+    ],
+    "docs/archive/cf_wm.md": [
+      "1-130",
+      "831-902"
+    ],
+    "docs/archive/cf_method_trials.md": [
+      "1-95"
+    ],
+    "docs/archive/cf_residual_adapter.md": [
+      "1-130",
+      "320-460"
+    ],
+    "docs/archive/native_baseline_screening.md": [
+      "1893-1945"
+    ],
+    "docs/evaluation/protocol.md": [
+      "1-155"
+    ],
+    "docs/research/optimization.md": [
+      "1-90"
+    ],
+    "docs/workspace.md": [
+      "605-630",
+      "655-672",
+      "740-779"
+    ]
+  },
+  "prior_audits_reused": [
+    "paper_scope_audit/early_r45_audit.json",
+    "paper_story_alignment/research_path_audit.json",
+    "paper_story_alignment/benchmark_contribution_audit.json",
+    "paper_story_alignment/five_agent_framework_audit.json"
+  ],
+  "note": "Targeted phase reads plus earlier completed audits. Large combined tool results may truncate display; synthesis does not claim full-line fresh reread of every record or raw log."
+}

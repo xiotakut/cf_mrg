@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "canonical_sha256": "6dc191f0945756e81b3cd0ddb25e94772cc8d97d9cf7568c347ce28853f39adb",
+  "drafts_bound": 7,
+  "chapters": 8,
+  "subsections": 54,
+  "tables": 33,
+  "table_rows": 368,
+  "all_reviewed_table_rows_preserved_except_documented_filename_correction": true,
+  "table_column_consistency": true,
+  "navigation_anchors_valid": true,
+  "independent_reviews": [
+    "drafts/author_synthesis_review.json",
+    "drafts/data_heads_review.json",
+    "drafts/cf_review.json"
+  ],
+  "verified_numeric_panels": {
+    "baseline": 42,
+    "head_before_after_pairs": 21,
+    "v5_source_counts": 77,
+    "cf_category": 72,
+    "cf_source": 132,
+    "cf_format": 60,
+    "cf_attributed_cost_rows": 12,
+    "r3_early_control_counts": 12
+  },
+  "resolved_findings": [
+    "R2: five improve, M2 unchanged, M7 falls",
+    "R3 same-configuration six-arm identity and 128/384 budget correction recorded in original master",
+    "34-input and 2700-mapping backbone denominators explicit",
+    "format_input_results pointer corrected"
+  ],
+  "validation_attempts": [
+    "Initial exact table-row preservation assertion detected the intentional all_format_results → format_input_results filename correction; approved transformation applied before equality check, then all rows pass."
+  ],
+  "limits": [
+    "Review reuses bound earlier numerical audits; no raw inference or grader was rerun",
+    "Initial 2199-heading register predates the appended R3 clarification",
+    "Earlier framework retains the superseded exploratory 18/18 shorthand; new dossier and R3 master supply correction"
+  ],
+  "model_calls": 0,
+  "scoring_calls": 0,
+  "training": 0,
+  "gpu_operations": 0
+}

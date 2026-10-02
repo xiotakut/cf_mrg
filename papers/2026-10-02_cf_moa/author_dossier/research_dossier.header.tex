@@ -1,0 +1,25 @@
+% Author research dossier; generated reading edition from Markdown.
+\usepackage{etoolbox}
+\usepackage{xurl}
+\usepackage{fvextra}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\setlength{\emergencystretch}{3em}
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.2}
+\AtBeginEnvironment{longtable}{\footnotesize\sloppy}
+\RecustomVerbatimEnvironment{verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\small}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines=true,breakanywhere=true,fontsize=\small}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small CF-MoA / 作者研究底稿}
+\fancyhead[R]{\small Markdown 阅读版}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\renewcommand{\headrulewidth}{0.3pt}
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\AtBeginDocument{\let\originaltableofcontents\tableofcontents
+  \renewcommand{\tableofcontents}{\clearpage\originaltableofcontents\clearpage}}
