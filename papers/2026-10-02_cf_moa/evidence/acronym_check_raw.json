@@ -1,0 +1,272 @@
+{
+  "checker": "ars-acronym-check/1.0",
+  "input": "/home/data3/txy/docs/paper/manuscript.md",
+  "input_sha256": "5bca00b543bb7b1e207d580e547cf81cd659ba6d5394cdab75e2dee6c5b659b3",
+  "status": "partial",
+  "allowlist": {
+    "default": 29,
+    "user": []
+  },
+  "coverage": {
+    "body": "checked",
+    "abstract_en": "checked",
+    "abstract_zh": "not_in_input"
+  },
+  "scope_lines": {
+    "body": [
+      [
+        1,
+        7
+      ],
+      [
+        15,
+        25
+      ],
+      [
+        27,
+        35
+      ],
+      [
+        37,
+        37
+      ],
+      [
+        39,
+        45
+      ],
+      [
+        47,
+        61
+      ],
+      [
+        63,
+        74
+      ],
+      [
+        76,
+        76
+      ],
+      [
+        78,
+        97
+      ],
+      [
+        99,
+        115
+      ],
+      [
+        117,
+        117
+      ],
+      [
+        119,
+        136
+      ],
+      [
+        138,
+        142
+      ],
+      [
+        144,
+        144
+      ],
+      [
+        146,
+        169
+      ],
+      [
+        171,
+        190
+      ],
+      [
+        192,
+        200
+      ],
+      [
+        202,
+        215
+      ],
+      [
+        217,
+        230
+      ],
+      [
+        232,
+        247
+      ],
+      [
+        249,
+        259
+      ],
+      [
+        261,
+        271
+      ],
+      [
+        273,
+        275
+      ],
+      [
+        277,
+        287
+      ],
+      [
+        289,
+        310
+      ],
+      [
+        312,
+        337
+      ],
+      [
+        339,
+        354
+      ]
+    ],
+    "abstract_en": [
+      [
+        9,
+        13
+      ]
+    ]
+  },
+  "unread_sections": [],
+  "coverage_limits": [
+    {
+      "scope": "body",
+      "line": 18,
+      "acronym": "RAG",
+      "reason": "unconfirmed_definition"
+    }
+  ],
+  "findings": [
+    {
+      "scope": "body",
+      "line": 20,
+      "rule": "undefined",
+      "acronym": "CF",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 20,
+      "rule": "undefined",
+      "acronym": "MoA",
+      "expansion": null,
+      "occurrences": 3
+    },
+    {
+      "scope": "body",
+      "line": 28,
+      "rule": "undefined",
+      "acronym": "MIRAGE",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 28,
+      "rule": "undefined",
+      "acronym": "MedRAG",
+      "expansion": null,
+      "occurrences": 5
+    },
+    {
+      "scope": "body",
+      "line": 48,
+      "rule": "undefined",
+      "acronym": "ALL",
+      "expansion": null,
+      "occurrences": 9
+    },
+    {
+      "scope": "body",
+      "line": 122,
+      "rule": "undefined",
+      "acronym": "vLLM",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 141,
+      "rule": "undefined",
+      "acronym": "GPU",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 193,
+      "rule": "undefined",
+      "acronym": "AMQA",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 282,
+      "rule": "undefined",
+      "acronym": "CRediT",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 286,
+      "rule": "undefined",
+      "acronym": "AI",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 336,
+      "rule": "undefined",
+      "acronym": "CSV",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 336,
+      "rule": "undefined",
+      "acronym": "LaTeX",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "body",
+      "line": 336,
+      "rule": "undefined",
+      "acronym": "PNG",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "abstract_en",
+      "line": 10,
+      "rule": "undefined",
+      "acronym": "CF",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "abstract_en",
+      "line": 10,
+      "rule": "undefined",
+      "acronym": "MedRAG",
+      "expansion": null,
+      "occurrences": 1
+    },
+    {
+      "scope": "abstract_en",
+      "line": 10,
+      "rule": "undefined",
+      "acronym": "MoA",
+      "expansion": null,
+      "occurrences": 1
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "started_at": "2026-10-02T14:10:20.438247+00:00",
+  "command": [
+    "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/scripts/build_figures_tables.py",
+    "--raw-root",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5"
+  ],
+  "python": "/home/data3/txy/MedRGAG/.venv/bin/python",
+  "python_version": "3.10.12",
+  "script_sha256": "ac17d84dad386c33def76932ef8ee1c069819de965da561e54364908347d7899",
+  "model_calls": 0,
+  "grader_calls": 0,
+  "score_changes": 0,
+  "data_scope": "previously exposed full-v5 development; no new confirmatory experiment",
+  "check_only": false,
+  "raw_validation": {
+    "status": "passed",
+    "raw_root": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5",
+    "files": [
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m4/native_units.jsonl.gz",
+        "sha256": "49a2f56ecdcefb2c87b1cff38ac0c978c6ed3ae78e5fef8137d417a963a5410d",
+        "bytes": 457402,
+        "unchanged": true
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m4/per_input_status.jsonl.gz",
+        "sha256": "e065922a1cf8e8bb78c532c73b1371ab0a0cb6f190827b48cf4b7702c2450177",
+        "bytes": 263907,
+        "unchanged": true
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m4/pairs.jsonl.gz",
+        "sha256": "076909a88011d0b46de7497206d5ab77ce72b30c92cd96701bd63860439b12ec",
+        "bytes": 278680,
+        "unchanged": true
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m5/native_units.jsonl.gz",
+        "sha256": "ad230df78e6453f5f4e1df04db04cb04d5be5cc4195032a5ece1f9fd0a73a130",
+        "bytes": 456375,
+        "unchanged": true
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m5/per_input_status.jsonl.gz",
+        "sha256": "ae98cc7e1ef04d4ba05155ae3aaf2f142cce17a2fecac0a4b62029d76e636748",
+        "bytes": 263336,
+        "unchanged": true
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m5/pairs.jsonl.gz",
+        "sha256": "8cb300c4478489053319b4f9d855e096d9c8dfc0c4b7e6f09a821459a51a9147",
+        "bytes": 280741,
+        "unchanged": true
+      }
+    ],
+    "category_checks": 72,
+    "source_checks": 132,
+    "format_checks": 60,
+    "pair_checks": 24,
+    "method_arm_checks": 12,
+    "duplicate_keys": 0,
+    "model_calls": 0,
+    "grader_calls": 0
+  },
+  "input_manifest_sha256": "ab886b847fa835462080042970f781d7983f82a43b41852b104fede548260f26",
+  "summary_checks": {
+    "category_rows": 72,
+    "source_rows": 132,
+    "format_rows": 60,
+    "paired_rows": 24,
+    "contrast_rows": 36,
+    "cost_rows": 12,
+    "ablation_rows": 6,
+    "all_denominators_valid": true,
+    "all_input_hashes_valid": true,
+    "all_summary_cross_checks_passed": true
+  },
+  "dependencies": {
+    "matplotlib": "3.10.9",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "table_rows": {
+    "main_results": 12,
+    "contrasts": 36,
+    "sources": 132,
+    "categories": 72,
+    "formats": 60,
+    "paired": 24,
+    "costs": 12,
+    "ablations": 6
+  },
+  "artifacts": [
+    {
+      "path": "tables/main_results.csv",
+      "sha256": "93288e1acae1adfb22db81e3d226f83584fb174e96a3d5ec80b7c24210be33ac",
+      "bytes": 797
+    },
+    {
+      "path": "tables/main_results.tex",
+      "sha256": "99ad1883bf1b3ed368b8b684f60df6b72001b122f23b898ddbd64964bae03c25",
+      "bytes": 625
+    },
+    {
+      "path": "tables/contrasts.csv",
+      "sha256": "5d35fbe65ea0df2ba583a2cfe95d03aab509822161c3f0752ada6cf9fb334159",
+      "bytes": 2727
+    },
+    {
+      "path": "tables/contrasts.tex",
+      "sha256": "a93f37e262f6a982ad8b982e75047f995f3df2d21e6577470082364d9c2314d2",
+      "bytes": 2539
+    },
+    {
+      "path": "tables/sources.csv",
+      "sha256": "c53b41c7ed6918f5fa84663f5ed01e02a6527b46316198c605c00d5063246c0b",
+      "bytes": 6982
+    },
+    {
+      "path": "tables/sources.tex",
+      "sha256": "45a82ea250fc912dd7fa8ffd36cdcdf6806e9c89cdd9fcbfc99df20a53c10388",
+      "bytes": 1930
+    },
+    {
+      "path": "tables/categories.csv",
+      "sha256": "189393f0cca27fa9da105627b3e8093f25ebd6c0dbdf0ebe4e1a7c01664a1814",
+      "bytes": 3850
+    },
+    {
+      "path": "tables/categories.tex",
+      "sha256": "b5c70524a30b6c6f01ca2a323680cd3de13f3d8c84649a200e3512a11e9ef8be",
+      "bytes": 1275
+    },
+    {
+      "path": "tables/formats.csv",
+      "sha256": "afcb92f5c598b64825735a889c086578bd2e8e88e0bad8cc8341c5a7b1eaf2dc",
+      "bytes": 5537
+    },
+    {
+      "path": "tables/formats.tex",
+      "sha256": "2e7304601871427a8ec235cf371c76e0b295693f172759a0f58e2abd768ed7b9",
+      "bytes": 1230
+    },
+    {
+      "path": "tables/paired.csv",
+      "sha256": "42110e31b90b61853f0e228eb12bd9ba3da7873abd6843482c39a72cef6491fc",
+      "bytes": 1448
+    },
+    {
+      "path": "tables/paired.tex",
+      "sha256": "d701014ce456d0109b3119453b4c85c33741e7944b06ded67711f073833d7b92",
+      "bytes": 1600
+    },
+    {
+      "path": "tables/costs.csv",
+      "sha256": "a1988e427a3e5e6d8f51973a7662688de9528eef42b09bdf161166447649b9d8",
+      "bytes": 1259
+    },
+    {
+      "path": "tables/costs.tex",
+      "sha256": "9c31b38b9c1e240cd77ca3549530db8224c18ec309ffda6552489310db288f32",
+      "bytes": 1051
+    },
+    {
+      "path": "tables/ablations.csv",
+      "sha256": "703620d864c381e7d9f13c239c1aade442e7161427efaf31d4a1c37a6db51327",
+      "bytes": 1419
+    },
+    {
+      "path": "tables/ablations.tex",
+      "sha256": "2fb87efd2d58f68a16a4f18970a6a02bc97ac48e96ec87ea496de28f4690e995",
+      "bytes": 802
+    },
+    {
+      "path": "figures/main_results.pdf",
+      "sha256": "076d7dfefc29d6ca17d0e81ff3dd86feacf41225f04df8089b8926e1f4f67441",
+      "bytes": 14674
+    },
+    {
+      "path": "figures/main_results.png",
+      "sha256": "8d4c5a4330c9cb9582077b973f56508b10c42087d43d23a7616d9ac314b2937b",
+      "bytes": 121830
+    },
+    {
+      "path": "figures/verification_forest.pdf",
+      "sha256": "8a7154242d132e6ecbd9623f75dedc0dc6277fa06f4f70cafa15035266453299",
+      "bytes": 16780
+    },
+    {
+      "path": "figures/verification_forest.png",
+      "sha256": "501591a14b88cf08b5a0a302b49c311f7d1e09465958e805676c0012fd4beed6",
+      "bytes": 121317
+    },
+    {
+      "path": "figures/source_heterogeneity.pdf",
+      "sha256": "82c99f31496c81f56f6c36a3866648c226947fc3e4602f516908e0625260d697",
+      "bytes": 14572
+    },
+    {
+      "path": "figures/source_heterogeneity.png",
+      "sha256": "06be389bae4861c77f7f82c661e77264f92297f60fae266a5196d61657b7bd74",
+      "bytes": 149626
+    },
+    {
+      "path": "figures/cost_quality.pdf",
+      "sha256": "2f38e0d3c4d7d36a55697575f1d0bfaf693de794ebe66b8f1cf422df084db840",
+      "bytes": 17659
+    },
+    {
+      "path": "figures/cost_quality.png",
+      "sha256": "92bb1e939af98d7786748dade257f1c235fa5f2b475c86e05e818a1b44469c33",
+      "bytes": 174755
+    },
+    {
+      "path": "figures/rule_ablations.pdf",
+      "sha256": "5d9cfcd5fd2590cd93be177096212884f1aa368cee62d45698d6896eb2687273",
+      "bytes": 14061
+    },
+    {
+      "path": "figures/rule_ablations.png",
+      "sha256": "1b8314e3ea2587e5eb98533c5f8ecd1c39a94e007db3ddc242a4c1f1d58fbcb5",
+      "bytes": 141289
+    }
+  ],
+  "input_hashes_after_valid": true,
+  "status": "passed",
+  "elapsed_seconds": 9.647606453043409,
+  "finished_at": "2026-10-02T14:10:30.085922+00:00"
+}

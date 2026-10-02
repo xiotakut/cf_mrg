@@ -1,0 +1,602 @@
+[
+  {
+    "method": "M4",
+    "arm": "candidate_only",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1353,
+    "unavailable": 0,
+    "input_accuracy": 0.3800561797752809,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_only",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 90,
+    "unavailable": 4,
+    "input_accuracy": 0.5389221556886228,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_only",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 553,
+    "unavailable": 2,
+    "input_accuracy": 0.5591506572295247,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_only",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1857,
+    "unavailable": 2,
+    "input_accuracy": 0.6877777777777778,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_only",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4701,
+    "unavailable": 43,
+    "input_accuracy": 0.7244567730004623,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_with_rationales",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1353,
+    "unavailable": 0,
+    "input_accuracy": 0.3800561797752809,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_with_rationales",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 90,
+    "unavailable": 4,
+    "input_accuracy": 0.5389221556886228,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_with_rationales",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 585,
+    "unavailable": 2,
+    "input_accuracy": 0.5915065722952477,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_with_rationales",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1853,
+    "unavailable": 2,
+    "input_accuracy": 0.6862962962962963,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "candidate_with_rationales",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4768,
+    "unavailable": 43,
+    "input_accuracy": 0.7347819386654338,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "joint_selector",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1353,
+    "unavailable": 0,
+    "input_accuracy": 0.3800561797752809,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "joint_selector",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 90,
+    "unavailable": 4,
+    "input_accuracy": 0.5389221556886228,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "joint_selector",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 585,
+    "unavailable": 2,
+    "input_accuracy": 0.5915065722952477,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "joint_selector",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1843,
+    "unavailable": 2,
+    "input_accuracy": 0.6825925925925926,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "joint_selector",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4789,
+    "unavailable": 43,
+    "input_accuracy": 0.7380181846201264,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "original_C0",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 337,
+    "unavailable": 0,
+    "input_accuracy": 0.09466292134831461,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "original_C0",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 48,
+    "unavailable": 0,
+    "input_accuracy": 0.2874251497005988,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "original_C0",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 522,
+    "unavailable": 0,
+    "input_accuracy": 0.5278058645096056,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "original_C0",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1878,
+    "unavailable": 0,
+    "input_accuracy": 0.6955555555555556,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "original_C0",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4656,
+    "unavailable": 0,
+    "input_accuracy": 0.7175219602404068,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "pool_old_plus_three",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1353,
+    "unavailable": 0,
+    "input_accuracy": 0.3800561797752809,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "pool_old_plus_three",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 90,
+    "unavailable": 4,
+    "input_accuracy": 0.5389221556886228,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "pool_old_plus_three",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 574,
+    "unavailable": 99,
+    "input_accuracy": 0.5803842264914054,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "pool_old_plus_three",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1955,
+    "unavailable": 11,
+    "input_accuracy": 0.7240740740740741,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "pool_old_plus_three",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4979,
+    "unavailable": 43,
+    "input_accuracy": 0.7672985051625828,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "strong_B",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1353,
+    "unavailable": 0,
+    "input_accuracy": 0.3800561797752809,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "strong_B",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 90,
+    "unavailable": 4,
+    "input_accuracy": 0.5389221556886228,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "strong_B",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 546,
+    "unavailable": 2,
+    "input_accuracy": 0.5520728008088979,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "strong_B",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1943,
+    "unavailable": 2,
+    "input_accuracy": 0.7196296296296296,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M4",
+    "arm": "strong_B",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4992,
+    "unavailable": 43,
+    "input_accuracy": 0.7693018955154878,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_only",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1519,
+    "unavailable": 0,
+    "input_accuracy": 0.42668539325842697,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_only",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 97,
+    "unavailable": 21,
+    "input_accuracy": 0.5808383233532934,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_only",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 616,
+    "unavailable": 0,
+    "input_accuracy": 0.6228513650151668,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_only",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1964,
+    "unavailable": 0,
+    "input_accuracy": 0.7274074074074074,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_only",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4647,
+    "unavailable": 1,
+    "input_accuracy": 0.7161349976883957,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_with_rationales",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1519,
+    "unavailable": 0,
+    "input_accuracy": 0.42668539325842697,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_with_rationales",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 97,
+    "unavailable": 21,
+    "input_accuracy": 0.5808383233532934,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_with_rationales",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 633,
+    "unavailable": 0,
+    "input_accuracy": 0.6400404448938322,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_with_rationales",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1997,
+    "unavailable": 0,
+    "input_accuracy": 0.7396296296296296,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "candidate_with_rationales",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4814,
+    "unavailable": 1,
+    "input_accuracy": 0.7418708583757128,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "joint_selector",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1519,
+    "unavailable": 0,
+    "input_accuracy": 0.42668539325842697,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "joint_selector",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 97,
+    "unavailable": 21,
+    "input_accuracy": 0.5808383233532934,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "joint_selector",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 592,
+    "unavailable": 0,
+    "input_accuracy": 0.5985844287158746,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "joint_selector",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1986,
+    "unavailable": 0,
+    "input_accuracy": 0.7355555555555555,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "joint_selector",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4545,
+    "unavailable": 1,
+    "input_accuracy": 0.7004160887656034,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "original_C0",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 338,
+    "unavailable": 0,
+    "input_accuracy": 0.0949438202247191,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "original_C0",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 64,
+    "unavailable": 0,
+    "input_accuracy": 0.38323353293413176,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "original_C0",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 588,
+    "unavailable": 0,
+    "input_accuracy": 0.5945399393326593,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "original_C0",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1431,
+    "unavailable": 0,
+    "input_accuracy": 0.53,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "original_C0",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4492,
+    "unavailable": 0,
+    "input_accuracy": 0.6922484204037602,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "pool_old_plus_three",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1519,
+    "unavailable": 0,
+    "input_accuracy": 0.42668539325842697,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "pool_old_plus_three",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 97,
+    "unavailable": 21,
+    "input_accuracy": 0.5808383233532934,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "pool_old_plus_three",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 595,
+    "unavailable": 56,
+    "input_accuracy": 0.6016177957532861,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "pool_old_plus_three",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 1999,
+    "unavailable": 6,
+    "input_accuracy": 0.7403703703703703,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "pool_old_plus_three",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4668,
+    "unavailable": 3,
+    "input_accuracy": 0.7193712436430884,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "strong_B",
+    "answer_format": "diagnosis",
+    "inputs": 3560,
+    "correct": 1519,
+    "unavailable": 0,
+    "input_accuracy": 0.42668539325842697,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "strong_B",
+    "answer_format": "multi",
+    "inputs": 167,
+    "correct": 97,
+    "unavailable": 21,
+    "input_accuracy": 0.5808383233532934,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "strong_B",
+    "answer_format": "relation",
+    "inputs": 989,
+    "correct": 550,
+    "unavailable": 0,
+    "input_accuracy": 0.5561172901921132,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "strong_B",
+    "answer_format": "robustness_single",
+    "inputs": 2700,
+    "correct": 2010,
+    "unavailable": 0,
+    "input_accuracy": 0.7444444444444445,
+    "metric": "input_accuracy_not_native_unit_mean"
+  },
+  {
+    "method": "M5",
+    "arm": "strong_B",
+    "answer_format": "single",
+    "inputs": 6489,
+    "correct": 4795,
+    "unavailable": 1,
+    "input_accuracy": 0.7389428263214671,
+    "metric": "input_accuracy_not_native_unit_mean"
+  }
+]

@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "artifact_type": "independent_manuscript_peer_review",
+  "review_round": 1,
+  "created_at_utc": "2026-10-02T14:16:28.079796+00:00",
+  "calibration_status": "NOT_CALIBRATED",
+  "criteria_binding": "criteria_binding_unavailable",
+  "criteria_precommitment": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/independent_review_criteria.json",
+    "created_at_utc": "2026-10-02T14:08:05.873764+00:00"
+  },
+  "review_scope": "Field-general five-dimensional review in Codex. This is not an upstream full generator/evaluator contract certification, Claude plugin run, actual double-blind conference review or submission approval.",
+  "input": {
+    "canonical_path": "/home/data3/txy/docs/paper/manuscript.md",
+    "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_input_manuscript.md",
+    "sha256": "51afbd4c716358b2363e3b9f31ad71f5186777fd860b07bc38a3c0138e4c9581",
+    "outline_path": "/home/data3/txy/docs/paper/outline.md",
+    "bibliography_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/references.bib",
+    "bibliography_sha256": "ed1cc8229dedcf984606abc71afd62371df871964368ff26d3c3b6d4ba592c53"
+  },
+  "verdict": "Targeted reporting revisions recommended; suitable to continue as a reviewable manuscript draft. Submission readiness is not established.",
+  "submission_review_category": "Major Revision for missing method/reporting detail, not rejection of draft delivery",
+  "numeric_score": null,
+  "core_assessment": "The manuscript correctly distinguishes B versus C0 from C3 versus B, preserves configuration-dependent negative and positive results, reports exposed-development limitations and unavailable outputs, and does not present A4 as contributing to clinical-v5 performance.",
+  "dimension_judgements": [
+    {
+      "id": "D1",
+      "name": "originality",
+      "judgement": "MEETS",
+      "criterion_source": "precommitted D1; field-general research-system and boundary-study contribution",
+      "evidence": [
+        "Introduction lines 20–24",
+        "Related Work lines 28–34",
+        "Discussion lines 250–258"
+      ],
+      "rationale": "An identifiable empirical contribution separates the adopted system effect from incremental verifier selection, with an operation-level account. No first/SOTA claim is made.",
+      "uncertainty": "Targeted background review is not an exhaustive novelty search; no venue-fit claim.",
+      "decision_impact": "Contribution is defensible at the stated development-evaluation scope."
+    },
+    {
+      "id": "D2",
+      "name": "methodological_rigor",
+      "judgement": "PARTLY_MEETS",
+      "criterion_source": "precommitted D2",
+      "evidence": [
+        "Task and Evaluation lines 40–73",
+        "Experimental Setup lines 120–141",
+        "PR1–PR3"
+      ],
+      "rationale": "Metrics, denominators, shared-fact ablations, failure retention, costs and bootstrap weighting are explicit. Selection, retrieval-access and family-construction details should be stated in the paper rather than only in workspace records.",
+      "uncertainty": "No fresh inference or exhaustive source-code audit; raw numerical reaggregation is assigned to another task.",
+      "decision_impact": "Resolve PR1/PR2 with existing records before treating the document as submission ready."
+    },
+    {
+      "id": "D3",
+      "name": "evidence_sufficiency",
+      "judgement": "MEETS",
+      "criterion_source": "precommitted D3",
+      "evidence": [
+        "Abstract line 10",
+        "Results lines 147–244",
+        "Limitations lines 262–270",
+        "PR4"
+      ],
+      "rationale": "Primary claims are bounded to the completed exposed benchmark, countervailing outcomes and costs are retained, and historical panels are distinguished. PR4 is a local inference repair, not a core unsupported claim.",
+      "uncertainty": "This review checks manuscript logic and supplied provenance, not authenticity of all raw experiments or every biomedical source fact.",
+      "decision_impact": "No core positive-result overclaim identified. Independent confirmation remains necessary for stronger generalization claims."
+    },
+    {
+      "id": "D4",
+      "name": "argument_coherence",
+      "judgement": "MEETS",
+      "criterion_source": "precommitted D4",
+      "evidence": [
+        "Introduction lines 20–24",
+        "Results lines 147–187",
+        "Conclusion line 274",
+        "PR5"
+      ],
+      "rationale": "The question–method–finding–implication chain is stable, and B/C3 attribution remains consistent. PR5 is a local ambiguity in the description of C4.",
+      "uncertainty": "No target conference argument conventions were supplied.",
+      "decision_impact": "Retain main framing; clarify C4 wording."
+    },
+    {
+      "id": "D5",
+      "name": "writing_quality",
+      "judgement": "MEETS",
+      "criterion_source": "precommitted D5",
+      "evidence": [
+        "Methods formulas and arm table",
+        "Results table captions",
+        "Declarations lines 278–286"
+      ],
+      "rationale": "The draft is readable, terminology is largely explicit, and source citations are complete after the in-progress insertion. Most acronym-check flags are proper names, metric labels or conventional technical abbreviations.",
+      "uncertainty": "Rendered PDF pagination and figure legibility were not reviewed in this pass.",
+      "decision_impact": "No acronym issue blocks draft delivery; targeted clarity edits remain optional."
+    }
+  ],
+  "findings": [
+    {
+      "id": "PR1",
+      "dimension_id": "D2",
+      "severity": "Major",
+      "manuscript_anchor": {
+        "section": "Task and Evaluation Contract / Native units and denominators",
+        "lines": [
+          48,
+          60
+        ],
+        "quote": "The frozen v5 evaluation contains 13,905 unique inference inputs"
+      },
+      "evidence_anchor": {
+        "path": "/home/data3/txy/docs/data/construction.md",
+        "lines": [
+          249,
+          266
+        ]
+      },
+      "rationale": "The draft gives the final denominator but omits how v5 was selected: all eligible R1–R4 targets were retained while eight R5 source strata were sampled without replacement at 450 units per stratum. These design choices affect the interpretation of the pooled mean and reproducibility. Evaluation membership also differs from unsampled semantic R5 labels.",
+      "uncertainty": "The records document selection; this review did not replay the original sampling code.",
+      "suggested_fix": "Add two concise sentences describing retention of eligible R1–R4, eight random R5 strata of 450 units, preselection seed/manifest provenance, and use of frozen evaluation_labels rather than all semantic labels. In the limitations, explicitly identify project/agent-assisted labeling rather than clinical-expert inter-rater validation if not already stated.",
+      "decision_impact": "Reporting gap before submission; does not invalidate delivery as a reviewable draft or require new experiments.",
+      "estimated_effort": "Moderate text edit with existing evidence"
+    },
+    {
+      "id": "PR2",
+      "dimension_id": "D2",
+      "severity": "Major",
+      "manuscript_anchor": {
+        "section": "Task and Evaluation Contract / Inputs and decision operations; Experimental Setup",
+        "lines": [
+          40,
+          122
+        ],
+        "quote": "the original system's allowed context"
+      },
+      "evidence_anchor": {
+        "path": "/home/data3/txy/docs/evaluation/protocol.md",
+        "lines": [
+          173,
+          177
+        ]
+      },
+      "rationale": "Allowed context is left abstract. The frozen project protocol permits additional MedCorp retrieval while retaining required source evidence, including MedRGB and MedCounterFact. A reader needs this to distinguish the reported source strata from a source's original static-evidence evaluation.",
+      "uncertainty": "No fresh retrieval or inference was performed during review.",
+      "suggested_fix": "Name protocol v5_full_medcorp_plus_required_evidence_20260911 or describe its MedCorp-plus-required-evidence access in one sentence; explicitly state the MedRGB stratum is not the original static-evidence setting.",
+      "decision_impact": "Reproducibility and comparison-scope clarification before submission; readily fixable from existing records.",
+      "estimated_effort": "Quick text edit"
+    },
+    {
+      "id": "PR3",
+      "dimension_id": "D2",
+      "severity": "Minor",
+      "manuscript_anchor": {
+        "section": "Task and Evaluation Contract / Paired correctness and uncertainty",
+        "lines": [
+          73,
+          73
+        ],
+        "quote": "paired bootstrap samples draw families with replacement"
+      },
+      "evidence_anchor": {
+        "path": "/home/data3/txy/docs/evaluation/protocol.md",
+        "lines": [
+          189,
+          189
+        ]
+      },
+      "rationale": "The resampling algorithm is described carefully, but the definition of a family is missing. Cross-source exact original-question/option overlap is connected into a dependency group; semantic near-duplicate independence is not established.",
+      "uncertainty": "This describes documented grouping, not a new duplicate audit.",
+      "suggested_fix": "Add the family-construction rule and the boundary on semantic near duplicates next to the bootstrap description.",
+      "decision_impact": "Improves interpretation of the intervals without changing their values.",
+      "estimated_effort": "Quick text edit"
+    },
+    {
+      "id": "PR4",
+      "dimension_id": "D3",
+      "severity": "Minor",
+      "manuscript_anchor": {
+        "section": "Discussion",
+        "lines": [
+          252,
+          252
+        ],
+        "quote": "The repair and damage counts show both behaviors' relevance"
+      },
+      "evidence_anchor": {
+        "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_input_manuscript.md",
+        "lines": [
+          100,
+          112,
+          183
+        ]
+      },
+      "rationale": "The preceding sentence names inability to recover absent pool keys and harmful switches. Repair/damage counts establish successful versus harmful switches, but do not quantify missing-key coverage. The absent-key constraint follows from the selector design.",
+      "uncertainty": "No additional pool-coverage measurement was requested or inferred.",
+      "suggested_fix": "Separate the design constraint from the observation: the counts quantify successful and harmful switches; absent-key recoverability is bounded by candidate membership.",
+      "decision_impact": "Prevents a small unsupported inference; does not change the main conclusion.",
+      "estimated_effort": "Quick text edit"
+    },
+    {
+      "id": "PR5",
+      "dimension_id": "D4",
+      "severity": "Minor",
+      "manuscript_anchor": {
+        "section": "Results / Additional verification has configuration-dependent effects",
+        "lines": [
+          187,
+          187
+        ],
+        "quote": "C4 and C5 also fail to provide a common improvement pattern"
+      },
+      "evidence_anchor": {
+        "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_input_manuscript.md",
+        "lines": [
+          154,
+          157,
+          160,
+          163,
+          187
+        ]
+      },
+      "rationale": "C4's ALL point estimate is above B for both configurations, even though the M4 interval crosses zero and availability/input accuracy qualify the result. The opening phrase can be read as claiming opposite signs or no common ALL point gain.",
+      "uncertainty": "The draft already provides the correct numbers and caveats immediately afterward.",
+      "suggested_fix": "Say C4 has positive ALL point estimates in both configurations but does not establish a robust overall replacement given uncertainty, regressions in other metrics and unavailable outputs; C5 is below B on ALL in both.",
+      "decision_impact": "Presentation clarification only.",
+      "estimated_effort": "Quick text edit"
+    }
+  ],
+  "supported_strengths": [
+    {
+      "anchor": "Results Tables 1–3",
+      "finding": "Main native-unit score, input correctness and pair correctness remain distinct with explicit denominators."
+    },
+    {
+      "anchor": "Methods lines 79–96; Limitations line 266",
+      "finding": "Five roles are tied to actual computation; A1/A2 share a core and A4 has zero clinical coverage."
+    },
+    {
+      "anchor": "Abstract line 10; Limitations line 262",
+      "finding": "Development exposure and absence of independent confirmation are disclosed prominently."
+    },
+    {
+      "anchor": "Declarations lines 278–286",
+      "finding": "Missing author/ethics/funding declarations are marked pending rather than invented."
+    }
+  ],
+  "citation_audit": {
+    "method": "Static manuscript citation-key and BibTeX entry comparison, followed by review of supplied reference_verification.json; no independent re-fetch of every reference",
+    "manuscript_unique_citation_keys": 18,
+    "bibliography_entries": 18,
+    "unresolved_citation_keys": [],
+    "uncited_bibliography_keys": [],
+    "source_citations_marker_present": false,
+    "source_rows_have_citations": true,
+    "references_rendering": "Pandoc #refs block is intentional, not an empty missing bibliography.",
+    "optional_improvement": "Appendix C should cite or link the exact simglucose software/version as a reproducibility aid if this is not already in the linked experiment release."
+  },
+  "acronym_audit": {
+    "tool": "scripts/check_acronyms.py from pinned upstream commit 9201425a88d729a74aadd75c114f2f34851a93e9",
+    "raw_json": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/acronym_check_raw.json",
+    "raw_text": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/acronym_check_raw.txt",
+    "script_exit_code": 0,
+    "status": "partial",
+    "raw_input_sha256": "5bca00b543bb7b1e207d580e547cf81cd659ba6d5394cdab75e2dee6c5b659b3",
+    "version_note": "Acronym checker ran just before source citations were inserted; the peer-review snapshot includes the completed source citations. No main-body acronym edits occurred between these two reviewed versions.",
+    "expected_coverage_limit": "Chinese abstract absent because user requested an English paper. This is not a failure.",
+    "tool_false_positive": "Retrieval-augmented generation (RAG) is defined; hyphen tokenization prevents the checker from recognizing the expansion.",
+    "not_missing_definitions": [
+      "ALL is a declared metric label with a formula",
+      "M4/M5, C0–C5, R1–R5 and M01–M23 are experiment identifiers",
+      "MedRAG, vLLM, LaTeX and CF-MoA are tool/system names",
+      "GPU, AI, CSV, PNG are conventional technical shorthand for this audience"
+    ],
+    "optional_readability_edits": [
+      "Explain AMQA as the adversarial medical-question benchmark at first main-text mention, without inventing an unofficial expansion.",
+      "Expand CRediT to Contributor Roles Taxonomy in declarations.",
+      "Expand MIRAGE from its verified source if helpful; its citation already identifies the benchmark."
+    ],
+    "mandatory_acronym_changes": []
+  },
+  "submission_evidence_gaps_not_draft_delivery_blocks": [
+    "Independent frozen-method confirmation on new families remains unexecuted.",
+    "Second independently generated candidate pool remains unexecuted.",
+    "Pure backbone attribution needs matched output protocols.",
+    "Clinical expert validation and clinical-use evidence are not established.",
+    "Upstream C0/retrieval costs and some historical timing remain unknown.",
+    "Author names, contributions, institutional/ethics determinations, funding and conflicts require author completion."
+  ],
+  "cross_section_checks": {
+    "title_matches_content": "MEETS",
+    "abstract_matches_results": "MEETS",
+    "introduction_conclusion_alignment": "MEETS",
+    "questions_answered_within_scope": "MEETS",
+    "citation_keys_resolve": "MEETS",
+    "no_orphan_bib_entries": "MEETS",
+    "source_scope_and_sampling_explained": "PARTLY_MEETS",
+    "rendered_layout": "NOT_ASSESSED",
+    "venue_word_or_page_limit": "NOT_ASSESSED"
+  },
+  "confidence": "Medium: manuscript and local method records were read; no venue target, fresh model run, independent statistical reanalysis or rendered-PDF inspection in this review."
+}

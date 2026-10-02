@@ -1,0 +1,9 @@
+{
+  "scope": "body",
+  "machine_coverage": "partial",
+  "machine_output": "final_acronyms.txt",
+  "reason": "Upstream lexical parser does not recognize hyphenated/full-form initialisms for RAG/MIRAGE and mixed-case CRediT; it also splits product/dataset names.",
+  "manual_review": "RAG, MIRAGE and CRediT expanded; NLI expanded; ALL metric defined; CF-MoA, MedRAG, MedRGB, DDXPlus, AMQA, CPV-MedQA, MedPIC-Bench, vLLM treated as system/dataset/software names. GPU, AI, CSV, LaTeX and PNG conventional technical terms.",
+  "claim": "No claim of complete or clean automated acronym coverage.",
+  "source_sha256": "4bf4a0042230f885c1bf2733c370109cfb84677a1d900ddc65ca72da0f1b22d2"
+}

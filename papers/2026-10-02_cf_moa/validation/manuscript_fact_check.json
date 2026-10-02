@@ -1,0 +1,485 @@
+{
+  "at": "2026-10-02T14:16:37.556485+00:00",
+  "status": "passed",
+  "manuscript": {
+    "path": "/home/data3/txy/docs/paper/manuscript.md",
+    "sha256": "d890476cb46a3fd54be3ca35f9162e6cf222a58c1a72a86790415f981ec18bf9",
+    "bytes": 48248
+  },
+  "scope": "Independent factual audit of local experimental claims; bibliography and publication novelty are outside this checker.",
+  "checks": [
+    {
+      "check": "Table 1 six-arm main results",
+      "status": "passed",
+      "rows_checked": 12,
+      "details": {
+        "lines": [
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170
+        ],
+        "tolerance_percentage_points": 5.1e-05
+      }
+    },
+    {
+      "check": "Table 2 ALL contrasts and intervals",
+      "status": "passed",
+      "rows_checked": 6,
+      "details": {
+        "lines": [
+          182,
+          183,
+          184,
+          185,
+          186,
+          187
+        ]
+      }
+    },
+    {
+      "check": "Table 3 maintain/respond paired counts",
+      "status": "passed",
+      "rows_checked": 6,
+      "details": {
+        "lines": [
+          213,
+          214,
+          215,
+          216,
+          217,
+          218
+        ]
+      }
+    },
+    {
+      "check": "Table 4 rule-operation ablations",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "lines": [
+          230,
+          231
+        ]
+      }
+    },
+    {
+      "check": "Table 5 attributed requests and tokens",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "lines": [
+          245,
+          246
+        ]
+      }
+    },
+    {
+      "check": "Appendix A source denominators",
+      "status": "passed",
+      "rows_checked": 11,
+      "details": {
+        "lines": [
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308,
+          309,
+          310
+        ],
+        "total_units": 6104,
+        "source_name_reference": "/home/data3/txy/docs/data/sources.md"
+      }
+    },
+    {
+      "check": "Appendix C historical supplied-model results",
+      "status": "passed",
+      "rows_checked": 8,
+      "details": {
+        "lines": [
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357
+        ],
+        "scope": "24 virtual profiles x12 questions, 288 per backbone; not clinical v5"
+      }
+    },
+    {
+      "check": "Paragraph repair/harm counts",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "M4": [
+          436,
+          711,
+          -275
+        ],
+        "M5": [
+          452,
+          363,
+          89
+        ]
+      }
+    },
+    {
+      "check": "Paragraph source effects",
+      "status": "passed",
+      "rows_checked": 6,
+      "details": {
+        "sources": [
+          "M20",
+          "M12",
+          "M11"
+        ],
+        "rounding_digits": 4
+      }
+    },
+    {
+      "check": "Request growth percentages",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "M4": 22.25,
+        "M5": 16.84
+      }
+    },
+    {
+      "check": "Routing and trigger coverage",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "counts_preserve_full_denominator": true,
+        "unavailable_cases_not_excluded": true
+      }
+    },
+    {
+      "check": "Physical multi-arm costs and historical gaps",
+      "status": "passed",
+      "rows_checked": 1,
+      "details": {
+        "requests": 162979,
+        "input_tokens": 957810324,
+        "output_tokens": 18291906,
+        "unknown_time_inputs_per_method": 2503
+      }
+    },
+    {
+      "check": "Model profiles and native-output settings",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "source": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/method_spec.resolved.json",
+        "vllm_version_history": "/home/data3/txy/docs/research/cf_moa.md"
+      }
+    },
+    {
+      "check": "Rule and catalog sizes",
+      "status": "passed",
+      "rows_checked": 2,
+      "details": {
+        "rule_count": 71,
+        "catalog_count": 49,
+        "canonical_mapping_count": 46,
+        "canonical_count_evidence": "/home/data3/txy/docs/research/r3_candidate_comparison.md"
+      }
+    },
+    {
+      "check": "Unit-score and paired-score equations",
+      "status": "passed",
+      "method": "manual source-to-manuscript review",
+      "details": "Matches saved-score aggregation; primary multiselect exactness and frozen diagnostic mapping; references excluded from ALL.",
+      "evidence": [
+        "/home/data3/txy/docs/evaluation/protocol.md",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/scripts/summarize_existing_results.py"
+      ]
+    },
+    {
+      "check": "Rule-update equation",
+      "status": "passed",
+      "method": "manual source-to-manuscript review",
+      "details": "Equivalent to assemble for ordinary valid initial option sets; native none/invalid/extraction exceptions are explicitly qualified.",
+      "evidence": [
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py"
+      ]
+    },
+    {
+      "check": "Diagnostic calibration and tie breaking",
+      "status": "passed",
+      "method": "manual source-to-manuscript review",
+      "details": "Six catalog permutations; subtract content-free log priors, vote, mean corrected probabilities, fixed order.",
+      "evidence": [
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py"
+      ]
+    },
+    {
+      "check": "Ordinary F early stop and NLI branch",
+      "status": "passed_with_scope_qualifications",
+      "method": "manual source-to-manuscript review",
+      "details": "Up to five seeds 42..46; stop at three votes; NLI direct/reasoned paths x two code mappings with full native completion.",
+      "evidence": [
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+        "/home/data3/txy/cf_moa/agents/a5_robust_readout.py"
+      ]
+    },
+    {
+      "check": "C3 eligibility, two-code normalization, ties and fallback",
+      "status": "passed",
+      "method": "manual source-to-manuscript review",
+      "details": "Ordinary F; base must be available/legal; K>=2; two opposite mapping probabilities normalized separately then averaged; ties prefer F else native order; any local score error retains saved F; shared error propagates.",
+      "evidence": [
+        "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+        "/home/data3/txy/cf_moa/controller/moa_rcv.py"
+      ]
+    },
+    {
+      "check": "C4 and C5 controls",
+      "status": "passed",
+      "method": "manual source-to-manuscript review",
+      "details": "C4 supplementary seeds42,43,44; any required failed answer unavailable; C5 same saved candidates/rationales under forward/reverse mappings.",
+      "evidence": [
+        "/home/data3/txy/cf_moa/agents/a5_pool_expansion_control.py",
+        "/home/data3/txy/cf_moa/agents/a5_joint_selector.py"
+      ]
+    },
+    {
+      "check": "Exposure, defaults, unexecuted experiments",
+      "status": "passed",
+      "method": "manual source-to-manuscript review",
+      "details": "B default and C3 research identity retained; independent confirmation/pool replica unexecuted; natural52 M5 C0 partial48/52 distinct from full-v5.",
+      "evidence": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/final_status.json",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/scope_and_limitations.md"
+      ]
+    },
+    {
+      "check": "Current audited method sources match resolved full-v5 identities",
+      "status": "passed",
+      "modules_checked": 10,
+      "evidence": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/method_spec.resolved.json"
+    }
+  ],
+  "table_rows_checked": 47,
+  "findings": [],
+  "numeric_errors_found": 0,
+  "unsupported_major_method_claims_found": 0,
+  "model_calls": 0,
+  "grader_calls": 0,
+  "figure_rebuilds": 0,
+  "docs_modified": false,
+  "sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json",
+      "sha256": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py",
+      "sha256": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+      "sha256": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+      "sha256": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+      "sha256": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+      "sha256": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+      "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m4/quality_summary.json",
+      "sha256": "600defe5a9ea8c8071625c724e23fbfbbdb8bf1aecabe393040d26383d077668"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5/m5/quality_summary.json",
+      "sha256": "52faa59a0178dd0ffa7fa8f3b870c5369f827ff8f99f644f7f0e30fa825b58f6"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_github_rcv_progress/benchmarks/2026-09-26_cf_moa_rcv_full_v5/method_spec.resolved.json",
+      "sha256": "f4a3e2e37efd6a3ad479c91272369e8b53c2899998d48acad30143621bb0c1b1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/final_status.json",
+      "sha256": "2d59ee612e934d9b73b812d675d9df5fa00ccb4c90d58281fd0ece9bb7c7328a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/review/operation_ablation_binding.json",
+      "sha256": "31aa1f370d38ff83820acdecc86a80df68a37e1fd0a00f860f2c1df6a1c26f3c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/scope_and_limitations.md",
+      "sha256": "7c2daa6333920b8bc6d493e42eed17b58aa8d1f0b3d991b79718243f81a48fc2"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/statistics/scripts/summarize_existing_results.py",
+      "sha256": "f39a3986315e2c0f3dd978033670958798bc152ef05cbed8b09ee00b16279f53"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/all_category_results.json",
+      "sha256": "94ec872c3b60dc786201780b6ae5f7d5b8e5e5222893cb893a02d9afcc0cd33e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/all_source_results.json",
+      "sha256": "1149cb8c368229e0467ef6a9ee43811db097ce05cc2ca80f3725bb1f1a65f7b7"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/family_effect_intervals.json",
+      "sha256": "cecd19b44b1592d2d78c3a8fefed0413fdb22fb6cbff4b2d4c93ac1b08a9a07c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/final_status.json",
+      "sha256": "2d59ee612e934d9b73b812d675d9df5fa00ccb4c90d58281fd0ece9bb7c7328a"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/mechanism_coverage.json",
+      "sha256": "fd4ae7ba51fc658136b45c1b1f3ff803cb2fc037d3dc1a78c65a1c2eafe5a62b"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/operation_ablations_reused.json",
+      "sha256": "bc0fec0e38732aaf18b3359791720eccf8ba0854302b8b4f936ef1005682ffa9"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/pair_summary.json",
+      "sha256": "7b75f8af8f6baa40c6de5a01c6ee334265083539929e33e567740987b328ffc1"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/per_method_costs.json",
+      "sha256": "b72a260b75cf19f863e5e1b646162cee51b6691f07d2ad76abb5c2a75a2f7c9d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/physical_reconciliation.json",
+      "sha256": "bbf60d0e3d08ec5d6b6f1a17981ce44e7bf51ed718f36a8c0517226ffae13368"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/inputs/validation_receipt.json",
+      "sha256": "8cebe0c21cdba24130979eddedadf2e6ec6ee4420bb1263e03ca6a5859cadc61"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+      "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a5_joint_selector.py",
+      "sha256": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a5_pool_expansion_control.py",
+      "sha256": "172b6eb35c144600fc8536746bf1033385f86dca53aef46c9180753473c59964"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+      "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35"
+    },
+    {
+      "path": "/home/data3/txy/cf_moa/controller/moa_rcv.py",
+      "sha256": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee"
+    },
+    {
+      "path": "/home/data3/txy/docs/data/sources.md",
+      "sha256": "4ecdce18bbdc2f2f214bfa8a2882dc722525f287db0809ba83e7477a51687aa6"
+    },
+    {
+      "path": "/home/data3/txy/docs/evaluation/protocol.md",
+      "sha256": "1e4ec1c645d47a677f727539f1e6a0863f78dc496789de977ab347c02c80ccfe"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/cf_moa.md",
+      "sha256": "1fde8fea1a7891eba9bdca866d787748c2db3a21dd33c7ed5cfdfcc71ea110ce"
+    },
+    {
+      "path": "/home/data3/txy/docs/research/r3_candidate_comparison.md",
+      "sha256": "8160ee113de488a586d0a50069ee8ba8395f1f460a4b21c56322e065f443de6f"
+    }
+  ],
+  "notes": [
+    "Numerical aggregates are checked from frozen summaries; the independent raw-record aggregation was already completed in check_receipt.json and was not repeated here.",
+    "The static local guideline module was evaluated only to count its fixed in-memory RULES list; it makes no network/model/scoring calls.",
+    "All final findings refer to the manuscript SHA above. Later parent edits require a delta recheck."
+  ],
+  "source_binding_checks": [
+    {
+      "module": "controller/moa_rcv.py",
+      "sha256": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "controller/minimal_operations.py",
+      "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "controller/strong_legacy.py",
+      "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "agents/a5_candidate_verify.py",
+      "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "agents/a5_robust_readout.py",
+      "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "evaluation/run_moa_rcv.py",
+      "sha256": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "configs/moa_rcv_v1.json",
+      "sha256": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "evaluation/run_moa_rcv_batched.py",
+      "sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "tools/f_pool_replica.py",
+      "sha256": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3",
+      "matches_full_v5_resolved_spec": true
+    },
+    {
+      "module": "controller/rule_operation_ablation.py",
+      "sha256": "6a4e45331330ddde3059699a0b704bf5e484476a086475340a0cdeb4999ae0c9",
+      "matches_full_v5_resolved_spec": true
+    }
+  ],
+  "revision_clarifications_verified": {
+    "completed_verification_request_count": true,
+    "F_seeds_exhaustion_and_ties": true,
+    "note": "Parent applied the two minor suggestions before this receipt snapshot; no unresolved finding remains."
+  }
+}

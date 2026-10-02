@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "artifact_type": "independent_review_precommitment",
+  "created_at_utc": "2026-10-02T14:08:05.873764+00:00",
+  "status": "criteria_fixed_before_receiving_draft",
+  "draft_received": false,
+  "review_conclusion": null,
+  "review_target": "generic English conference research paper; no named venue",
+  "criteria_binding": "criteria_binding_unavailable",
+  "calibration_status": "NOT_CALIBRATED",
+  "workflow_scope": "Independent Codex review using field-general criteria from academic-paper; this is not a claim that Claude-specific orchestration, hooks, full-pipeline certification or stage confirmations were run.",
+  "sources": [
+    {
+      "path": "/home/data3/txy/.codex/skills/academic-paper/agents/peer_reviewer_agent.md",
+      "sections": [
+        "Five-Dimension Criterion Rubric",
+        "Five-Dimension Detailed Criterion Guide",
+        "Cross-Section Checks"
+      ]
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/skill_source/shared/contracts/evaluator/full.json",
+      "contract_id": "academic_paper/evaluator_full/v1",
+      "use": "field-general assessment guidance; no venue binding"
+    }
+  ],
+  "judgement_categories": [
+    "EXCEEDS",
+    "MEETS",
+    "PARTLY_MEETS",
+    "DOES_NOT_MEET",
+    "NOT_ASSESSED"
+  ],
+  "no_numeric_score_or_acceptance_prediction": true,
+  "required_finding_fields": [
+    "dimension_id",
+    "severity",
+    "manuscript_anchor",
+    "evidence_anchor",
+    "rationale",
+    "uncertainty",
+    "suggested_fix",
+    "decision_impact"
+  ],
+  "criteria": [
+    {
+      "id": "D1",
+      "name": "originality",
+      "description_zh": "原创性",
+      "what_to_look_for": "A precise, evidence-supported contribution distinct from relevant prior work, including valid boundary or negative-result contributions.",
+      "what_triggers_block": "No identifiable research contribution or a core novelty claim contradicted by the documented prior work.",
+      "what_triggers_warn": "Contribution is identifiable but weakly differentiated or framed more broadly than its evidence."
+    },
+    {
+      "id": "D2",
+      "name": "methodological_rigor",
+      "description_zh": "严谨性",
+      "what_to_look_for": "Question, design, data construction, evaluation units, controls, metrics and analysis are traceable and the limits of inferences are explicit.",
+      "what_triggers_block": "A design or reporting error makes a main inference invalid or unreconstructable.",
+      "what_triggers_warn": "A fundamentally interpretable design has unresolved method details, denominator definitions, comparison conditions or reproducibility gaps."
+    },
+    {
+      "id": "D3",
+      "name": "evidence_sufficiency",
+      "description_zh": "证据充分",
+      "what_to_look_for": "Material claims map to appropriate data or verified sources; negative and countervailing results are included; uncertainty and the assessed population match the claims.",
+      "what_triggers_block": "Core claims are unsupported, favorable results are selected while contrary results are concealed, or conclusions exceed the actual evaluation population.",
+      "what_triggers_warn": "Core claims are supported but secondary claims or bounded factual details lack adequate evidence or locators."
+    },
+    {
+      "id": "D4",
+      "name": "argument_coherence",
+      "description_zh": "论证一致",
+      "what_to_look_for": "The research question, method, experiments, results and implications form a consistent chain across the title, abstract, introduction and conclusion.",
+      "what_triggers_block": "The argument contains consequential self-contradiction or assigns evidence to a contribution it does not test.",
+      "what_triggers_warn": "The central argument is coherent but local terminology, cross-references or transitions create ambiguity."
+    },
+    {
+      "id": "D5",
+      "name": "writing_quality",
+      "description_zh": "写作质量",
+      "what_to_look_for": "Precise readable academic prose, clearly introduced terminology, informative figures and tables, and consistent citations and formatting.",
+      "what_triggers_block": "The presentation prevents reliable interpretation of the research or identification of the main results.",
+      "what_triggers_warn": "The draft is readable but local wording, acronyms, figure/table labeling, citation presentation or organization needs repair."
+    }
+  ],
+  "planned_cross_checks": [
+    "title_content_alignment",
+    "abstract_results_alignment",
+    "introduction_conclusion_alignment",
+    "question_answered",
+    "table_figure_references_and_denominators",
+    "citations_match_bibliography",
+    "claim_evidence_traceability",
+    "draft_vs_submission_readiness_distinction"
+  ],
+  "venue_specific_checks": "NOT_ASSESSED: no venue-specific length or acceptance standard was provided.",
+  "source_archive_verification": {
+    "sha256_files_checked": 161,
+    "git_blob_hashes_checked": 160,
+    "all_match": true,
+    "installed_skill_matches_pinned_upstream": true
+  }
+}

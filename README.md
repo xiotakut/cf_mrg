@@ -1,3 +1,5 @@
+**2026-10-02 · CF-MoA 英文会议论文：[论文与完整交付](papers/2026-10-02_cf_moa/README.md) · [18 页 PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [中文框架](papers/2026-10-02_cf_moa/outline.zh.md) · [图表复现](papers/2026-10-02_cf_moa/REPRODUCE.md)。包含 5 组图、8 组表、可编辑源文件与冻结证据；基于已有开发实验。仓库已按所有者要求设为 private，需授权访问。**
+
 **2026-09-28 · 完整v5透明收尾已完成：[完整结果与区间](benchmarks/2026-09-28_cf_moa_transparent_closeout/full_results.md) · [五张表](benchmarks/2026-09-28_cf_moa_transparent_closeout/five_tables.md) · [费用/范围/交付索引](benchmarks/2026-09-28_cf_moa_transparent_closeout/README.md)。零新增推理，六臂/11来源/5格式全保留；默认B保持，C3研究扩展。统计与费用已实际收尾，冻结后确认及独立F复本未执行/延后，未按输赢筛选。**
 
 **2026-09-26 · RCV完整v5回归已完成：[完整报告第16章](benchmarks/2026-09-26_cf_moa_rcv_full_v5/docs/research/cf_moa_experiment_report.md#rcv-full-v5-results-20260926) · [运行结果、源码/配置/逐题trace与成本索引](benchmarks/2026-09-26_cf_moa_rcv_full_v5/RUN_AND_DELIVERY.md)。M4/M5各13,905输入、六臂原生评分齐全；主C3相对B原生ALL为−1.8108/+0.9273个百分点，旧默认B保持。全量新增162,979物理调用；冻结后确认、全量区间及最终方法费用仍待完成，不能称整个研究计划完成。**

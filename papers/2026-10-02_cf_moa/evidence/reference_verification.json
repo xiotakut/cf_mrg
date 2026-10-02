@@ -1,0 +1,879 @@
+{
+  "verified_at": "2026-10-02T14:08:49.523658+00:00",
+  "verification_date": "2026-10-02",
+  "scope": "CF-MoA six-arm full-v5 development paper; 18 main method/model/source references plus simglucose software and DDXPlus upstream attribution. No confirmation-set gold was opened.",
+  "references": [
+    {
+      "key": "lewis2020rag",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html",
+      "metadata_url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Bibtex.bib",
+      "source_id": null,
+      "supports": "Retrieval-augmented generation combines parametric generation with retrieved non-parametric evidence; foundational RAG context.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Bibtex.bib",
+          "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Bibtex.bib",
+          "http_status": 200,
+          "bytes": 723,
+          "sha256": "557de0dcbb54024c4f944202a27c3857d2414a5bb09420b5df65f7519a738848"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html",
+          "resolved_url": "https://proceedings.neurips.cc/paper/2020/hash/6b493230-Abstract.html",
+          "http_status": 200,
+          "bytes": 10881,
+          "sha256": "5a425ab1b904e69e8ec394bc5f3cf61cd84db96b72c6cfd2a6c1c139443a73e8"
+        }
+      ],
+      "bibtex_sha256": "62d0532be192e4a57794f5844a00121e607b1d3601bbc6060eef7af4862519c1",
+      "official_citation_export": "@inproceedings{NEURIPS2020_6b493230,\n author = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K\\\"{u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt\\\"{a}schel, Tim and Riedel, Sebastian and Kiela, Douwe},\n booktitle = {Advances in Neural Information Processing Systems},\n editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},\n pages = {9459--9474},\n publisher = {Curran Associates, Inc.},\n title = {Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks},\n url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/6b493230205f780e1bc26945df7481e5-Paper.pdf},\n volume = {33},\n year = {2020}\n}\n"
+    },
+    {
+      "key": "xiong2024medrag",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://aclanthology.org/2024.findings-acl.372/",
+      "metadata_url": "https://aclanthology.org/2024.findings-acl.372.bib",
+      "source_id": null,
+      "supports": "MIRAGE and MedRAG provide a medical RAG benchmark and modular toolkit; supports the medical RAG baseline provenance, not our measured effects.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://aclanthology.org/2024.findings-acl.372.bib",
+          "resolved_url": "https://aclanthology.org/2024.findings-acl.372.bib",
+          "http_status": 200,
+          "bytes": 654,
+          "sha256": "52e64389e55b416a34f4b03effcfcb240c7355b21a72551c9dad5453d3ddb6bc"
+        },
+        {
+          "url": "https://aclanthology.org/2024.findings-acl.372/",
+          "resolved_url": "https://aclanthology.org/2024.findings-acl.372/",
+          "http_status": 200,
+          "bytes": 42736,
+          "sha256": "4c173cbbbacf08848911fc288bef6d26a6bda3b5962b4b0ea50982a6d6c058a2"
+        }
+      ],
+      "bibtex_sha256": "dc6ce4d97aaff690b6e39a54ed09835eaedd06463e630264627c84e545bbf013",
+      "official_citation_export": "@inproceedings{xiong-etal-2024-benchmarking,\n    title = \"Benchmarking Retrieval-Augmented Generation for Medicine\",\n    author = \"Xiong, Guangzhi  and\n      Jin, Qiao  and\n      Lu, Zhiyong  and\n      Zhang, Aidong\",\n    editor = \"Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek\",\n    booktitle = \"Findings of the Association for Computational Linguistics: ACL 2024\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.findings-acl.372/\",\n    doi = \"10.18653/v1/2024.findings-acl.372\",\n    pages = \"6233--6251\"\n}\n\n"
+    },
+    {
+      "key": "wang2025moa",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_arxiv_export_plus_indexed_primary_conference_pdf",
+      "primary_url": "https://openreview.net/pdf?id=h0ZfDIrj7T",
+      "metadata_url": "https://arxiv.org/bibtex/2406.04692",
+      "source_id": null,
+      "supports": "Layered Mixture-of-Agents aggregates outputs from multiple LLM agents; comparison background. Our five operations are not a replication of that architecture.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Used official ICLR 2025 published PDF cover metadata rather than 2024 arXiv preprint year. Forum/API blocked; published PDF cover metadata returned by web search of the official PDF; direct PDF retrieval also hit the OpenReview challenge."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2406.04692",
+          "resolved_url": "https://arxiv.org/bibtex/2406.04692",
+          "http_status": 200,
+          "bytes": 369,
+          "sha256": "f7c67df7d9105591c75df90e0eb469ab9034168c81ef03dc1e2a1bc74402bfd6"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=h0ZfDIrj7T",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=h0ZfDIrj7T",
+          "access_method": "web_search_primary_pdf_extraction",
+          "verified_date": "2026-10-02",
+          "observed_title_and_author_list": true,
+          "observed_conference_cover": "Published as a conference paper at ICLR 2025",
+          "limitation": "Cached/indexed primary PDF text was inspectable; a fresh direct fetch was challenged. No access-control circumvention."
+        }
+      ],
+      "bibtex_sha256": "fa7f051a87ab16967ca16f182edbbe43cada49512e237a86d08fb8f37ef5b172",
+      "official_citation_export": "@misc{wang2024mixtureofagentsenhanceslargelanguage,\n      title={Mixture-of-Agents Enhances Large Language Model Capabilities}, \n      author={Junlin Wang and Jue Wang and Ben Athiwaratkun and Ce Zhang and James Zou},\n      year={2024},\n      eprint={2406.04692},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2406.04692}, \n}"
+    },
+    {
+      "key": "wang2023selfconsistency",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_arxiv_export_plus_indexed_primary_conference_pdf",
+      "primary_url": "https://openreview.net/pdf?id=1PL1NIMMrw",
+      "metadata_url": "https://arxiv.org/bibtex/2203.11171",
+      "source_id": null,
+      "supports": "Self-consistency samples reasoning paths and aggregates answers; motivation for an explicit sampling/aggregation control.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Conference venue and author spelling Ed H. Chi taken from official ICLR 2023 published PDF. Forum/API and direct PDF retrieval blocked; official PDF cover text was available in web search extraction."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2203.11171",
+          "resolved_url": "https://arxiv.org/bibtex/2203.11171",
+          "http_status": 200,
+          "bytes": 432,
+          "sha256": "2d63739d2bcd725ba03820932263a06a4d463c2501a556c22994d001add89970"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=1PL1NIMMrw",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://openreview.net/pdf?id=1PL1NIMMrw",
+          "access_method": "web_search_primary_pdf_extraction",
+          "verified_date": "2026-10-02",
+          "observed_title_and_author_list": true,
+          "observed_conference_cover": "Published as a conference paper at ICLR 2023",
+          "limitation": "Cached/indexed primary PDF text was inspectable; a fresh direct fetch was challenged. No access-control circumvention."
+        }
+      ],
+      "bibtex_sha256": "e52f524ded86afc2f659e1d1d24743f227bfac3618a91f6aa60199d7e49f7228",
+      "official_citation_export": "@misc{wang2023selfconsistencyimproveschainthought,\n      title={Self-Consistency Improves Chain of Thought Reasoning in Language Models}, \n      author={Xuezhi Wang and Jason Wei and Dale Schuurmans and Quoc Le and Ed Chi and Sharan Narang and Aakanksha Chowdhery and Denny Zhou},\n      year={2023},\n      eprint={2203.11171},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2203.11171}, \n}"
+    },
+    {
+      "key": "zhao2021calibrate",
+      "verified_date": "2026-10-02",
+      "metadata_method": "embedded_official_bibtex",
+      "primary_url": "https://proceedings.mlr.press/v139/zhao21c.html",
+      "metadata_url": "https://proceedings.mlr.press/v139/zhao21c.html",
+      "source_id": null,
+      "supports": "Content-free contextual calibration addresses answer-prior and prompt sensitivity. Does not establish that our order-swapped verifier is calibrated or causally superior.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Abstract field omitted; bibliographic fields retained."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://proceedings.mlr.press/v139/zhao21c.html",
+          "resolved_url": "https://proceedings.mlr.press/v139/zhao21c.html",
+          "http_status": 200,
+          "bytes": 15331,
+          "sha256": "e7484c97d555d12a5466808f885302b3ae6e7c50688d15f0245c2ada7e2d7a0a"
+        }
+      ],
+      "bibtex_sha256": "169da81ef4c793d435b5fdba5139e6af0c352bc75e5e10d786555e1e8dda061f",
+      "official_citation_export": "@InProceedings{pmlr-v139-zhao21c,\n  title = \t {Calibrate Before Use: Improving Few-shot Performance of Language Models},\n  author =       {Zhao, Zihao and Wallace, Eric and Feng, Shi and Klein, Dan and Singh, Sameer},\n  booktitle = \t {Proceedings of the 38th International Conference on Machine Learning},\n  pages = \t {12697--12706},\n  year = \t {2021},\n  editor = \t {Meila, Marina and Zhang, Tong},\n  volume = \t {139},\n  series = \t {Proceedings of Machine Learning Research},\n  month = \t {18--24 Jul},\n  publisher =    {PMLR},\n  pdf = \t {http://proceedings.mlr.press/v139/zhao21c/zhao21c.pdf},\n  url = \t {https://proceedings.mlr.press/v139/zhao21c.html}\n}"
+    },
+    {
+      "key": "dubey2024llama",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex_version_pinned",
+      "primary_url": "https://arxiv.org/abs/2407.21783v1",
+      "metadata_url": "https://arxiv.org/bibtex/2407.21783v1",
+      "source_id": null,
+      "supports": "The Llama 3 model family and its training/evaluation context; model-family provenance only.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Pinned arXiv v1 (2024) where first author is Abhimanyu Dubey. Latest version lists Aaron Grattafiori first and is deliberately not silently substituted.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2407.21783v1",
+          "resolved_url": "https://arxiv.org/bibtex/2407.21783v1",
+          "http_status": 200,
+          "bytes": 9714,
+          "sha256": "21c1ae46edb9286a64fc21e07b8f19ace1c8abbabf808dcf59e3e8928f3c42b6"
+        },
+        {
+          "url": "https://arxiv.org/abs/2407.21783v1",
+          "resolved_url": "https://arxiv.org/abs/2407.21783v1",
+          "http_status": 200,
+          "bytes": 130218,
+          "sha256": "49176013cc4a53b78a3461e41e7dce0e6ea9ef32ed0bde9ceb0c995419030b51"
+        },
+        {
+          "url": "https://arxiv.org/abs/2407.21783v1",
+          "resolved_url": "https://arxiv.org/abs/2407.21783v1",
+          "http_status": 200,
+          "bytes": 130218,
+          "sha256": "49176013cc4a53b78a3461e41e7dce0e6ea9ef32ed0bde9ceb0c995419030b51"
+        }
+      ],
+      "bibtex_sha256": "de3e1443f670d701bad69079fe1665b202f32bed363967d20e3ef941e54d9d54",
+      "official_citation_export": "@misc{dubey2024llama3herdmodels,\n      title={The Llama 3 Herd of Models}, \n      author={Abhimanyu Dubey and Abhinav Jauhri and Abhinav Pandey and Abhishek Kadian and Ahmad Al-Dahle and Aiesha Letman and Akhil Mathur and Alan Schelten and Amy Yang and Angela Fan and Anirudh Goyal and Anthony Hartshorn and Aobo Yang and Archi Mitra and Archie Sravankumar and Artem Korenev and Arthur Hinsvark and Arun Rao and Aston Zhang and Aurelien Rodriguez and Austen Gregerson and Ava Spataru and Baptiste Roziere and Bethany Biron and Binh Tang and Bobbie Chern and Charlotte Caucheteux and Chaya Nayak and Chloe Bi and Chris Marra and Chris McConnell and Christian Keller and Christophe Touret and Chunyang Wu and Corinne Wong and Cristian Canton Ferrer and Cyrus Nikolaidis and Damien Allonsius and Daniel Song and Danielle Pintz and Danny Livshits and David Esiobu and Dhruv Choudhary and Dhruv Mahajan and Diego Garcia-Olano and Diego Perino and Dieuwke Hupkes and Egor Lakomkin and Ehab AlBadawy and Elina Lobanova and Emily Dinan and Eric Michael Smith and Filip Radenovic and Frank Zhang and Gabriel Synnaeve and Gabrielle Lee and Georgia Lewis Anderson and Graeme Nail and Gregoire Mialon and Guan Pang and Guillem Cucurell and Hailey Nguyen and Hannah Korevaar and Hu Xu and Hugo Touvron and Iliyan Zarov and Imanol Arrieta Ibarra and Isabel Kloumann and Ishan Misra and Ivan Evtimov and Jade Copet and Jaewon Lee and Jan Geffert and Jana Vranes and Jason Park and Jay Mahadeokar and Jeet Shah and Jelmer van der Linde and Jennifer Billock and Jenny Hong and Jenya Lee and Jeremy Fu and Jianfeng Chi and Jianyu Huang and Jiawen Liu and Jie Wang and Jiecao Yu and Joanna Bitton and Joe Spisak and Jongsoo Park and Joseph Rocca and Joshua Johnstun and Joshua Saxe and Junteng Jia and Kalyan Vasuden Alwala and Kartikeya Upasani and Kate Plawiak and Ke Li and Kenneth Heafield and Kevin Stone and Khalid El-Arini and Krithika Iyer and Kshitiz Malik and Kuenley Chiu and Kunal Bhalla and Lauren Rantala-Yeary and Laurens van der Maaten and Lawrence Chen and Liang Tan and Liz Jenkins and Louis Martin and Lovish Madaan and Lubo Malo and Lukas Blecher and Lukas Landzaat and Luke de Oliveira and Madeline Muzzi and Mahesh Pasupuleti and Mannat Singh and Manohar Paluri and Marcin Kardas and Mathew Oldham and Mathieu Rita and Maya Pavlova and Melanie Kambadur and Mike Lewis and Min Si and Mitesh Kumar Singh and Mona Hassan and Naman Goyal and Narjes Torabi and Nikolay Bashlykov and Nikolay Bogoychev and Niladri Chatterji and Olivier Duchenne and Onur Çelebi and Patrick Alrassy and Pengchuan Zhang and Pengwei Li and Petar Vasic and Peter Weng and Prajjwal Bhargava and Pratik Dubal and Praveen Krishnan and Punit Singh Koura and Puxin Xu and Qing He and Qingxiao Dong and Ragavan Srinivasan and Raj Ganapathy and Ramon Calderer and Ricardo Silveira Cabral and Robert Stojnic and Roberta Raileanu and Rohit Girdhar and Rohit Patel and Romain Sauvestre and Ronnie Polidoro and Roshan Sumbaly and Ross Taylor and Ruan Silva and Rui Hou and Rui Wang and Saghar Hosseini and Sahana Chennabasappa and Sanjay Singh and Sean Bell and Seohyun Sonia Kim and Sergey Edunov and Shaoliang Nie and Sharan Narang and Sharath Raparthy and Sheng Shen and Shengye Wan and Shruti Bhosale and Shun Zhang and Simon Vandenhende and Soumya Batra and Spencer Whitman and Sten Sootla and Stephane Collot and Suchin Gururangan and Sydney Borodinsky and Tamar Herman and Tara Fowler and Tarek Sheasha and Thomas Georgiou and Thomas Scialom and Tobias Speckbacher and Todor Mihaylov and Tong Xiao and Ujjwal Karn and Vedanuj Goswami and Vibhor Gupta and Vignesh Ramanathan and Viktor Kerkez and Vincent Gonguet and Virginie Do and Vish Vogeti and Vladan Petrovic and Weiwei Chu and Wenhan Xiong and Wenyin Fu and Whitney Meers and Xavier Martinet and Xiaodong Wang and Xiaoqing Ellen Tan and Xinfeng Xie and Xuchao Jia and Xuewei Wang and Yaelle Goldschlag and Yashesh Gaur and Yasmine Babaei and Yi Wen and Yiwen Song and Yuchen Zhang and Yue Li and Yuning Mao and Zacharie Delpierre Coudert and Zheng Yan and Zhengxing Chen and Zoe Papakipos and Aaditya Singh and Aaron Grattafiori and Abha Jain and Adam Kelsey and Adam Shajnfeld and Adithya Gangidi and Adolfo Victoria and Ahuva Goldstand and Ajay Menon and Ajay Sharma and Alex Boesenberg and Alex Vaughan and Alexei Baevski and Allie Feinstein and Amanda Kallet and Amit Sangani and Anam Yunus and Andrei Lupu and Andres Alvarado and Andrew Caples and Andrew Gu and Andrew Ho and Andrew Poulton and Andrew Ryan and Ankit Ramchandani and Annie Franco and Aparajita Saraf and Arkabandhu Chowdhury and Ashley Gabriel and Ashwin Bharambe and Assaf Eisenman and Azadeh Yazdan and Beau James and Ben Maurer and Benjamin Leonhardi and Bernie Huang and Beth Loyd and Beto De Paola and Bhargavi Paranjape and Bing Liu and Bo Wu and Boyu Ni and Braden Hancock and Bram Wasti and Brandon Spence and Brani Stojkovic and Brian Gamido and Britt Montalvo and Carl Parker and Carly Burton and Catalina Mejia and Changhan Wang and Changkyu Kim and Chao Zhou and Chester Hu and Ching-Hsiang Chu and Chris Cai and Chris Tindal and Christoph Feichtenhofer and Damon Civin and Dana Beaty and Daniel Kreymer and Daniel Li and Danny Wyatt and David Adkins and David Xu and Davide Testuggine and Delia David and Devi Parikh and Diana Liskovich and Didem Foss and Dingkang Wang and Duc Le and Dustin Holland and Edward Dowling and Eissa Jamil and Elaine Montgomery and Eleonora Presani and Emily Hahn and Emily Wood and Erik Brinkman and Esteban Arcaute and Evan Dunbar and Evan Smothers and Fei Sun and Felix Kreuk and Feng Tian and Firat Ozgenel and Francesco Caggioni and Francisco Guzmán and Frank Kanayet and Frank Seide and Gabriela Medina Florez and Gabriella Schwarz and Gada Badeer and Georgia Swee and Gil Halpern and Govind Thattai and Grant Herman and Grigory Sizov and Guangyi and Zhang and Guna Lakshminarayanan and Hamid Shojanazeri and Han Zou and Hannah Wang and Hanwen Zha and Haroun Habeeb and Harrison Rudolph and Helen Suk and Henry Aspegren and Hunter Goldman and Igor Molybog and Igor Tufanov and Irina-Elena Veliche and Itai Gat and Jake Weissman and James Geboski and James Kohli and Japhet Asher and Jean-Baptiste Gaya and Jeff Marcus and Jeff Tang and Jennifer Chan and Jenny Zhen and Jeremy Reizenstein and Jeremy Teboul and Jessica Zhong and Jian Jin and Jingyi Yang and Joe Cummings and Jon Carvill and Jon Shepard and Jonathan McPhie and Jonathan Torres and Josh Ginsburg and Junjie Wang and Kai Wu and Kam Hou U and Karan Saxena and Karthik Prasad and Kartikay Khandelwal and Katayoun Zand and Kathy Matosich and Kaushik Veeraraghavan and Kelly Michelena and Keqian Li and Kun Huang and Kunal Chawla and Kushal Lakhotia and Kyle Huang and Lailin Chen and Lakshya Garg and Lavender A and Leandro Silva and Lee Bell and Lei Zhang and Liangpeng Guo and Licheng Yu and Liron Moshkovich and Luca Wehrstedt and Madian Khabsa and Manav Avalani and Manish Bhatt and Maria Tsimpoukelli and Martynas Mankus and Matan Hasson and Matthew Lennie and Matthias Reso and Maxim Groshev and Maxim Naumov and Maya Lathi and Meghan Keneally and Michael L. Seltzer and Michal Valko and Michelle Restrepo and Mihir Patel and Mik Vyatskov and Mikayel Samvelyan and Mike Clark and Mike Macey and Mike Wang and Miquel Jubert Hermoso and Mo Metanat and Mohammad Rastegari and Munish Bansal and Nandhini Santhanam and Natascha Parks and Natasha White and Navyata Bawa and Nayan Singhal and Nick Egebo and Nicolas Usunier and Nikolay Pavlovich Laptev and Ning Dong and Ning Zhang and Norman Cheng and Oleg Chernoguz and Olivia Hart and Omkar Salpekar and Ozlem Kalinli and Parkin Kent and Parth Parekh and Paul Saab and Pavan Balaji and Pedro Rittner and Philip Bontrager and Pierre Roux and Piotr Dollar and Polina Zvyagina and Prashant Ratanchandani and Pritish Yuvraj and Qian Liang and Rachad Alao and Rachel Rodriguez and Rafi Ayub and Raghotham Murthy and Raghu Nayani and Rahul Mitra and Raymond Li and Rebekkah Hogan and Robin Battey and Rocky Wang and Rohan Maheswari and Russ Howes and Ruty Rinott and Sai Jayesh Bondu and Samyak Datta and Sara Chugh and Sara Hunt and Sargun Dhillon and Sasha Sidorov and Satadru Pan and Saurabh Verma and Seiji Yamamoto and Sharadh Ramaswamy and Shaun Lindsay and Shaun Lindsay and Sheng Feng and Shenghao Lin and Shengxin Cindy Zha and Shiva Shankar and Shuqiang Zhang and Shuqiang Zhang and Sinong Wang and Sneha Agarwal and Soji Sajuyigbe and Soumith Chintala and Stephanie Max and Stephen Chen and Steve Kehoe and Steve Satterfield and Sudarshan Govindaprasad and Sumit Gupta and Sungmin Cho and Sunny Virk and Suraj Subramanian and Sy Choudhury and Sydney Goldman and Tal Remez and Tamar Glaser and Tamara Best and Thilo Kohler and Thomas Robinson and Tianhe Li and Tianjun Zhang and Tim Matthews and Timothy Chou and Tzook Shaked and Varun Vontimitta and Victoria Ajayi and Victoria Montanez and Vijai Mohan and Vinay Satish Kumar and Vishal Mangla and Vlad Ionescu and Vlad Poenaru and Vlad Tiberiu Mihailescu and Vladimir Ivanov and Wei Li and Wenchen Wang and Wenwen Jiang and Wes Bouaziz and Will Constable and Xiaocheng Tang and Xiaofang Wang and Xiaojian Wu and Xiaolan Wang and Xide Xia and Xilun Wu and Xinbo Gao and Yanjun Chen and Ye Hu and Ye Jia and Ye Qi and Yenda Li and Yilin Zhang and Ying Zhang and Yossi Adi and Youngjin Nam and Yu and Wang and Yuchen Hao and Yundi Qian and Yuzi He and Zach Rait and Zachary DeVito and Zef Rosnbrick and Zhaoduo Wen and Zhenyu Yang and Zhiwei Zhao},\n      year={2024},\n      eprint={2407.21783},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2407.21783}, \n}",
+      "verified_doi": "10.48550/arXiv.2407.21783",
+      "doi_source_url": "https://arxiv.org/abs/2407.21783v1"
+    },
+    {
+      "key": "yang2025qwen3",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://arxiv.org/abs/2505.09388",
+      "metadata_url": "https://arxiv.org/bibtex/2505.09388",
+      "source_id": null,
+      "supports": "Qwen3 dense/MoE model family and thinking/non-thinking modes; model-family provenance, not proof of our exact runtime settings.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2505.09388",
+          "resolved_url": "https://arxiv.org/bibtex/2505.09388",
+          "http_status": 200,
+          "bytes": 1129,
+          "sha256": "2fba437d35a4bd71cc9d1aad1e10cbfb8376c813c41e525104ba0534ceee391b"
+        },
+        {
+          "url": "https://arxiv.org/abs/2505.09388",
+          "resolved_url": "https://arxiv.org/abs/2505.09388",
+          "http_status": 200,
+          "bytes": 51042,
+          "sha256": "006225337c190863a34263dcfd995fd679868d307ccb34d257dda6682733979d"
+        },
+        {
+          "url": "https://arxiv.org/abs/2505.09388",
+          "resolved_url": "https://arxiv.org/abs/2505.09388",
+          "http_status": 200,
+          "bytes": 51042,
+          "sha256": "006225337c190863a34263dcfd995fd679868d307ccb34d257dda6682733979d"
+        }
+      ],
+      "bibtex_sha256": "0150d27feaf034ec03dde7f6dcfe57399ad284d0f779cb3336e0d0d73eb4d5da",
+      "official_citation_export": "@misc{yang2025qwen3technicalreport,\n      title={Qwen3 Technical Report}, \n      author={An Yang and Anfeng Li and Baosong Yang and Beichen Zhang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Gao and Chengen Huang and Chenxu Lv and Chujie Zheng and Dayiheng Liu and Fan Zhou and Fei Huang and Feng Hu and Hao Ge and Haoran Wei and Huan Lin and Jialong Tang and Jian Yang and Jianhong Tu and Jianwei Zhang and Jianxin Yang and Jiaxi Yang and Jing Zhou and Jingren Zhou and Junyang Lin and Kai Dang and Keqin Bao and Kexin Yang and Le Yu and Lianghao Deng and Mei Li and Mingfeng Xue and Mingze Li and Pei Zhang and Peng Wang and Qin Zhu and Rui Men and Ruize Gao and Shixuan Liu and Shuang Luo and Tianhao Li and Tianyi Tang and Wenbiao Yin and Xingzhang Ren and Xinyu Wang and Xinyu Zhang and Xuancheng Ren and Yang Fan and Yang Su and Yichang Zhang and Yinger Zhang and Yu Wan and Yuqiong Liu and Zekun Wang and Zeyu Cui and Zhenru Zhang and Zhipeng Zhou and Zihan Qiu},\n      year={2025},\n      eprint={2505.09388},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2505.09388}, \n}",
+      "verified_doi": "10.48550/arXiv.2505.09388",
+      "doi_source_url": "https://arxiv.org/abs/2505.09388"
+    },
+    {
+      "key": "chen2026medeinst",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://aclanthology.org/2026.acl-long.1847/",
+      "metadata_url": "https://aclanthology.org/2026.acl-long.1847.bib",
+      "source_id": "M01",
+      "supports": "MedEinst introduces counterfactual differential-diagnosis pairs with discriminative evidence changes; original source for M01.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Final ACL author order Chen/Huang/Wang/Zhu retained; dataset-card/arXiv order differs."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://aclanthology.org/2026.acl-long.1847.bib",
+          "resolved_url": "https://aclanthology.org/2026.acl-long.1847.bib",
+          "http_status": 200,
+          "bytes": 839,
+          "sha256": "4f7cf67d8ba7a7a9046ee376f1c25c733bb717d9a7d3852c61401ac399f573f9"
+        },
+        {
+          "url": "https://aclanthology.org/2026.acl-long.1847/",
+          "resolved_url": "https://aclanthology.org/2026.acl-long.1847/",
+          "http_status": 200,
+          "bytes": 45064,
+          "sha256": "1e8287085f46cbe27d44c5a6fb5ba0b37aedbec0963997903291f643aaf9378d"
+        },
+        {
+          "url": "https://huggingface.co/datasets/zhui711/MedEinst/raw/main/README.md",
+          "resolved_url": "https://huggingface.co/datasets/zhui711/MedEinst/raw/main/README.md",
+          "http_status": 200,
+          "bytes": 7678,
+          "sha256": "60494fbea0c735548bb0e505c95c8f6286473bffe7a61b3e0b731e617a090130"
+        }
+      ],
+      "bibtex_sha256": "f7d8f2f48543df103d913ebb16ff892545686889e2dacfca650beb4b69acb0c8",
+      "official_citation_export": "@inproceedings{chen-etal-2026-medeinst,\n    title = \"{M}ed{E}inst: Benchmarking the Einstellung Effect in Medical {LLM}s through Counterfactual Differential Diagnosis\",\n    author = \"Chen, Wenting  and\n      Huang, Guolin  and\n      Wang, Wenxuan  and\n      Zhu, Zhongrui\",\n    editor = \"Liakata, Maria  and\n      Moreira, Viviane P.  and\n      Zhang, Jiajun  and\n      Jurgens, David\",\n    booktitle = \"Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2026\",\n    address = \"San Diego, California, United States\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.acl-long.1847/\",\n    doi = \"10.18653/v1/2026.acl-long.1847\",\n    pages = \"39778--39798\",\n    ISBN = \"979-8-89176-390-6\"\n}\n\n"
+    },
+    {
+      "key": "medpicbench",
+      "verified_date": "2026-10-02",
+      "metadata_method": "dataset_card",
+      "primary_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+      "metadata_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench/raw/main/README.md",
+      "source_id": "M02",
+      "supports": "MedPIC-Bench supplies patient-specific medication-safety questions with guideline-following and counterfactual task families; original M02 data-card provenance.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "No paper, publication date, or personal authors invented; n.d. denotes unknown publication date and TIM0927 is recorded only as uploader."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench/raw/main/README.md",
+          "resolved_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench/raw/main/README.md",
+          "http_status": 200,
+          "bytes": 4038,
+          "sha256": "cdb119c7fae1e99baaca21ffae334b027006fa8a2ff544782c4ce46766fad535"
+        },
+        {
+          "url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+          "resolved_url": "https://huggingface.co/datasets/TIM0927/MedPIC-Bench",
+          "http_status": 200,
+          "bytes": 1197035,
+          "sha256": "b54f1eb5baf13ddc8e0ed9cd0de0464e5e18310e66563a83cbdaa4d98510ab8f"
+        }
+      ],
+      "bibtex_sha256": "a492eb645dbe91094ef2e8d1f73d72a306d17f4fb92456f082baee3c0e07c250"
+    },
+    {
+      "key": "prosperi2026hiv",
+      "verified_date": "2026-10-02",
+      "metadata_method": "publisher_deposited_crossref_metadata",
+      "primary_url": "https://www.nature.com/articles/s41746-026-02771-7",
+      "metadata_url": "https://api.crossref.org/works/10.1038/s41746-026-02771-7",
+      "source_id": "M06",
+      "supports": "Original HIV antiretroviral-treatment, interaction, and adverse-effect causal-scenario study; provenance for M06. Does not establish correctness of every source reference answer.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Article number 691 preserved in pages field for conventional BibTeX compatibility; publisher-deposited Crossref metadata used."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://api.crossref.org/works/10.1038/s41746-026-02771-7",
+          "resolved_url": "https://api.crossref.org/works/10.1038/s41746-026-02771-7",
+          "http_status": 200,
+          "bytes": 20598,
+          "sha256": "31af5b9689b516ae5f313e40d53977e4f33d44162312e2a24510f8ff84e1f1eb"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41746-026-02771-7",
+          "resolved_url": "https://www.nature.com/articles/s41746-026-02771-7",
+          "http_status": 200,
+          "bytes": 3038,
+          "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+        }
+      ],
+      "bibtex_sha256": "ead3474eccd00f298f1441698d001c32924daea25da36a2a0ec63d48248c62c9"
+    },
+    {
+      "key": "benkirane2025bias",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://aclanthology.org/2025.naacl-long.114/",
+      "metadata_url": "https://aclanthology.org/2025.naacl-long.114.bib",
+      "source_id": "M10",
+      "supports": "Counterfactual Patient Variations evaluate demographic bias in clinical decision making. M10 specifically uses the authors' MedQA extension, not the paper's JAMA cohort.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Conference paper describes JAMA CPV. Linked author dataset card explicitly identifies the MedQA extension used as M10; do not claim the two cohorts are identical."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://aclanthology.org/2025.naacl-long.114.bib",
+          "resolved_url": "https://aclanthology.org/2025.naacl-long.114.bib",
+          "http_status": 200,
+          "bytes": 808,
+          "sha256": "f00d2831c82c3ab4e12e9e9c8409727cb94dfb33527b0e3b9db19f2211f21543"
+        },
+        {
+          "url": "https://aclanthology.org/2025.naacl-long.114/",
+          "resolved_url": "https://aclanthology.org/2025.naacl-long.114/",
+          "http_status": 200,
+          "bytes": 43648,
+          "sha256": "70ae9da6868d99fa8f46e2a1fa39f32e70f4c1f4ff9f5654fc8bf9e9b652202f"
+        },
+        {
+          "url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv/raw/main/README.md",
+          "resolved_url": "https://huggingface.co/datasets/kenza-ily/medqa-cpv/raw/main/README.md",
+          "http_status": 200,
+          "bytes": 3083,
+          "sha256": "8a21272845c87436952c26a0bbc6723b148c42ac208b464b2b1e9d3323fef025"
+        }
+      ],
+      "bibtex_sha256": "82a5e81efcdefa9572813e2c0db6a59a3cbe91a6c8fb7d3b05cd342c8f3f380f",
+      "official_citation_export": "@inproceedings{benkirane-etal-2025-diagnose,\n    title = \"How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?\",\n    author = \"Benkirane, Kenza  and\n      Kay, Jackie  and\n      Perez-Ortiz, Maria\",\n    editor = \"Chiruzzo, Luis  and\n      Ritter, Alan  and\n      Wang, Lu\",\n    booktitle = \"Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)\",\n    month = apr,\n    year = \"2025\",\n    address = \"Albuquerque, New Mexico\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.naacl-long.114/\",\n    doi = \"10.18653/v1/2025.naacl-long.114\",\n    pages = \"2263--2288\",\n    ISBN = \"979-8-89176-189-6\"\n}\n\n"
+    },
+    {
+      "key": "rezaei2026cultural",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://arxiv.org/abs/2601.20102",
+      "metadata_url": "https://arxiv.org/bibtex/2601.20102",
+      "source_id": "M11",
+      "supports": "Counterfactual cultural identifiers and contextual cues in medical QA; source provenance for M11.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2601.20102",
+          "resolved_url": "https://arxiv.org/bibtex/2601.20102",
+          "http_status": 200,
+          "bytes": 379,
+          "sha256": "ff9332fa196fbf0b486dd2a7e2e26c5a9123337704c109d0f39ab6beddfb516d"
+        },
+        {
+          "url": "https://arxiv.org/abs/2601.20102",
+          "resolved_url": "https://arxiv.org/abs/2601.20102",
+          "http_status": 200,
+          "bytes": 41560,
+          "sha256": "b2608c32aa8a93082e7d333670a89e8ce3c44f6b763e46ce85037e97736d5daa"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs/main/README.md",
+          "resolved_url": "https://raw.githubusercontent.com/HIVE-UofT/Evaluating-Cultural-Cues-Medical-LLMs/main/README.md",
+          "http_status": 200,
+          "bytes": 2544,
+          "sha256": "e0ebcd68c4fafbca58c836b23f70e83bee3a6d47aef0fc8e7cc75ac857b8bf88"
+        },
+        {
+          "url": "https://arxiv.org/abs/2601.20102",
+          "resolved_url": "https://arxiv.org/abs/2601.20102",
+          "http_status": 200,
+          "bytes": 41560,
+          "sha256": "b2608c32aa8a93082e7d333670a89e8ce3c44f6b763e46ce85037e97736d5daa"
+        }
+      ],
+      "bibtex_sha256": "b2b1082039322f4a11d004a6506ef3530710539b03d0799d85ee5b9b90e12f5f",
+      "official_citation_export": "@misc{rezaei2026counterfactualculturalcuesreduce,\n      title={Counterfactual Cultural Cues Reduce Medical QA Accuracy in LLMs: Identifier vs Context Effects}, \n      author={Amirhossein Haji Mohammad Rezaei and Zahra Shakeri},\n      year={2026},\n      eprint={2601.20102},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2601.20102}, \n}",
+      "verified_doi": "10.48550/arXiv.2601.20102",
+      "doi_source_url": "https://arxiv.org/abs/2601.20102"
+    },
+    {
+      "key": "xiao2025amqa",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex_version_corrected_from_abs",
+      "primary_url": "https://arxiv.org/abs/2505.19562v1",
+      "metadata_url": "https://arxiv.org/bibtex/2505.19562v1",
+      "source_id": "M12",
+      "supports": "AMQA introduces adversarial medical questions involving race, gender, and socioeconomic attributes. Version 1 matches the AMQA identity used here; later FairMedQA is not a separate independent source.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "The /bibtex/v1 endpoint returns year 2026 from latest history despite the v1 title/authors. Corrected year to 2025 using official abs/v1 submission date 26 May 2025; pinned URL to v1.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2505.19562v1",
+          "resolved_url": "https://arxiv.org/bibtex/2505.19562v1",
+          "http_status": 200,
+          "bytes": 461,
+          "sha256": "0d243af71fc328e2a6efdf5e0b4e833b4fb334dcbbb298312cae5ef650fff86c"
+        },
+        {
+          "url": "https://arxiv.org/abs/2505.19562v1",
+          "resolved_url": "https://arxiv.org/abs/2505.19562v1",
+          "http_status": 200,
+          "bytes": 42602,
+          "sha256": "7de9ab90d37345d3fc71fcb93676422cf51419a94795ae215556244ad2e4e55a"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/XY-Showing/AMQA/main/README.md",
+          "resolved_url": "https://raw.githubusercontent.com/XY-Showing/AMQA/main/README.md",
+          "http_status": 200,
+          "bytes": 3944,
+          "sha256": "dad17797ea05e2ac83147bf42c352168b4aa367654d80c3ff8c0243a332c4b90"
+        },
+        {
+          "url": "https://arxiv.org/abs/2505.19562v1",
+          "resolved_url": "https://arxiv.org/abs/2505.19562v1",
+          "http_status": 200,
+          "bytes": 42602,
+          "sha256": "7de9ab90d37345d3fc71fcb93676422cf51419a94795ae215556244ad2e4e55a"
+        }
+      ],
+      "bibtex_sha256": "b05f366d43785f4b14e7b07e486f73d4560f7273bfdeb7485882fc6dc591eb22",
+      "official_citation_export": "@misc{xiao2026amqaadversarialdatasetbenchmarking,\n      title={AMQA: An Adversarial Dataset for Benchmarking Bias of LLMs in Medicine and Healthcare}, \n      author={Ying Xiao and Jie Huang and Ruijuan He and Jing Xiao and Mohammad Reza Mousavi and Yepang Liu and Kezhi Li and Zhenpeng Chen and Jie M. Zhang},\n      year={2026},\n      eprint={2505.19562},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2505.19562}, \n}",
+      "verified_doi": "10.48550/arXiv.2505.19562",
+      "doi_source_url": "https://arxiv.org/abs/2505.19562v1"
+    },
+    {
+      "key": "rawat2024diversitymedqa",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://aclanthology.org/2024.nlp4pi-1.29/",
+      "metadata_url": "https://aclanthology.org/2024.nlp4pi-1.29.bib",
+      "source_id": "M14",
+      "supports": "DiversityMedQA evaluates demographic biases in medical diagnosis; original M14 source. Native-option restoration and our eligibility decisions require the local construction record.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://aclanthology.org/2024.nlp4pi-1.29.bib",
+          "resolved_url": "https://aclanthology.org/2024.nlp4pi-1.29.bib",
+          "http_status": 200,
+          "bytes": 932,
+          "sha256": "d661faedf0fdcf62e86d9eaaa1a815b8a1f60ff51af33099165720e97f4cccca"
+        },
+        {
+          "url": "https://aclanthology.org/2024.nlp4pi-1.29/",
+          "resolved_url": "https://aclanthology.org/2024.nlp4pi-1.29/",
+          "http_status": 200,
+          "bytes": 46194,
+          "sha256": "b7365236983455fb1c615fc75b59ee2efa72d62cbba85cba25a987bd4020fe62"
+        }
+      ],
+      "bibtex_sha256": "4cf21d1fe85c89f81e0f9e5b0918f68fd97f774e8575d5bf04afeb58b794b10f",
+      "official_citation_export": "@inproceedings{rawat-etal-2024-diversitymedqa,\n    title = \"{D}iversity{M}ed{QA}: A Benchmark for Assessing Demographic Biases in Medical Diagnosis using Large Language Models\",\n    author = \"Rawat, Rajat  and\n      McBride, Hudson  and\n      Ghosh, Rajarshi  and\n      Nirmal, Dhiyaan  and\n      Moon, Jong  and\n      Alamuri, Dhruv  and\n      O'Brien, Sean  and\n      Zhu, Kevin\",\n    editor = \"Dementieva, Daryna  and\n      Ignat, Oana  and\n      Jin, Zhijing  and\n      Mihalcea, Rada  and\n      Piatti, Giorgio  and\n      Tetreault, Joel  and\n      Wilson, Steven  and\n      Zhao, Jieyu\",\n    booktitle = \"Proceedings of the Third Workshop on NLP for Positive Impact\",\n    month = nov,\n    year = \"2024\",\n    address = \"Miami, Florida, USA\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.nlp4pi-1.29/\",\n    doi = \"10.18653/v1/2024.nlp4pi-1.29\",\n    pages = \"334--348\"\n}\n\n"
+    },
+    {
+      "key": "gourabathina2025medperturb",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://arxiv.org/abs/2506.17163",
+      "metadata_url": "https://arxiv.org/bibtex/2506.17163",
+      "source_id": "M17",
+      "supports": "MedPerturb studies gender, style, and format perturbations in clinical vignettes and treatment decisions; original M17 source.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2506.17163",
+          "resolved_url": "https://arxiv.org/bibtex/2506.17163",
+          "http_status": 200,
+          "bytes": 431,
+          "sha256": "375db9b2c90c838fc77db87950e09bfae1409268a7269b886944e6ceacd0d36c"
+        },
+        {
+          "url": "https://arxiv.org/abs/2506.17163",
+          "resolved_url": "https://arxiv.org/abs/2506.17163",
+          "http_status": 200,
+          "bytes": 42389,
+          "sha256": "56bedfb4c134989d48472e160a6ec4f62fec58d53e90302972301a32ce2bf0f2"
+        },
+        {
+          "url": "https://huggingface.co/datasets/abinitha/MedPerturb/raw/main/README.md",
+          "resolved_url": "https://huggingface.co/datasets/abinitha/MedPerturb/raw/main/README.md",
+          "http_status": 200,
+          "bytes": 5287,
+          "sha256": "5b1c915bcbcce7eed8558be57bc37ce19261e4fa0d2731c1ce6664129673d5e6"
+        },
+        {
+          "url": "https://arxiv.org/abs/2506.17163",
+          "resolved_url": "https://arxiv.org/abs/2506.17163",
+          "http_status": 200,
+          "bytes": 42389,
+          "sha256": "56bedfb4c134989d48472e160a6ec4f62fec58d53e90302972301a32ce2bf0f2"
+        }
+      ],
+      "bibtex_sha256": "4f2ee64a1fcaf055ebe7344b18c3a9b742ee18f7eb429e49adf2001630918589",
+      "official_citation_export": "@misc{gourabathina2025medperturbdatasetnoncontentperturbations,\n      title={The MedPerturb Dataset: What Non-Content Perturbations Reveal About Human and Clinical LLM Decision Making}, \n      author={Abinitha Gourabathina and Yuexing Hao and Walter Gerych and Marzyeh Ghassemi},\n      year={2025},\n      eprint={2506.17163},\n      archivePrefix={arXiv},\n      primaryClass={cs.AI},\n      url={https://arxiv.org/abs/2506.17163}, \n}",
+      "verified_doi": "10.48550/arXiv.2506.17163",
+      "doi_source_url": "https://arxiv.org/abs/2506.17163"
+    },
+    {
+      "key": "mo2026faithfulness",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.1847/",
+      "metadata_url": "https://aclanthology.org/2026.findings-acl.1847.bib",
+      "source_id": "M20",
+      "supports": "Evaluates medical LLM behavior under counterfactual evidence and the tension between following supplied evidence and medical safety; source provenance for MedCounterFact.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1847.bib",
+          "resolved_url": "https://aclanthology.org/2026.findings-acl.1847.bib",
+          "http_status": 200,
+          "bytes": 863,
+          "sha256": "6bed320ff041d8654a8efad3c947b408e1a2d424495a0fbe001d42d866f2a445"
+        },
+        {
+          "url": "https://aclanthology.org/2026.findings-acl.1847/",
+          "resolved_url": "https://aclanthology.org/2026.findings-acl.1847/",
+          "http_status": 200,
+          "bytes": 45942,
+          "sha256": "d8de4086f16c3f7067213a557af46d1e56adae95e5d36147b513e302a2c4a769"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/KaijieMo-kj/Counterfactual-Medical-Evidence/main/README.md",
+          "resolved_url": "https://raw.githubusercontent.com/KaijieMo-kj/Counterfactual-Medical-Evidence/main/README.md",
+          "http_status": 200,
+          "bytes": 2911,
+          "sha256": "ee40810533b45a58eaf32f33d335c7dc2c5f2d39690bfdae3de67dfc75777d46"
+        }
+      ],
+      "bibtex_sha256": "19146bfe22faf6a6e1e2f233db3cc2e0eb29417ad191217a177d7a36c4bfdb0f",
+      "official_citation_export": "@inproceedings{mo-etal-2026-faithfulness,\n    title = \"Faithfulness vs. Safety: Evaluating {LLM} Behavior Under Counterfactual Medical Evidence\",\n    author = \"Mo, Kaijie  and\n      Venkatayogi, Siddhartha  and\n      Shaib, Chantal  and\n      Kouzy, Ramez  and\n      Xu, Wei  and\n      Wallace, Byron C  and\n      Li, Junyi Jessy\",\n    editor = \"Liakata, Maria  and\n      Moreira, Viviane P.  and\n      Zhang, Jiajun  and\n      Jurgens, David\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026\",\n    month = jul,\n    year = \"2026\",\n    address = \"San Diego, California, United States\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-acl.1847/\",\n    doi = \"10.18653/v1/2026.findings-acl.1847\",\n    pages = \"37053--37081\",\n    ISBN = \"979-8-89176-395-1\"\n}\n\n"
+    },
+    {
+      "key": "ngo2024medrgb",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://arxiv.org/abs/2411.09213",
+      "metadata_url": "https://arxiv.org/bibtex/2411.09213",
+      "source_id": "M22",
+      "supports": "MedRGB studies medical RAG behavior under varied retrieval/evidence conditions; original M22 source.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2411.09213",
+          "resolved_url": "https://arxiv.org/bibtex/2411.09213",
+          "http_status": 200,
+          "bytes": 441,
+          "sha256": "485c8d5e7b1f70896face260721fb342560088e462bbd4c59eafc08115415c58"
+        },
+        {
+          "url": "https://arxiv.org/abs/2411.09213",
+          "resolved_url": "https://arxiv.org/abs/2411.09213",
+          "http_status": 200,
+          "bytes": 42465,
+          "sha256": "df522096c24ea0b2a5bb21ebe827e0a7ac3e2fdea57101a25afb16d6cede8afe"
+        },
+        {
+          "url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/raw/main/README.md",
+          "resolved_url": "https://huggingface.co/datasets/ngotrnghia1811/MedRGB/raw/main/README.md",
+          "http_status": 200,
+          "bytes": 5698,
+          "sha256": "2c7fa2a41e75ff31e0571cdfd763e941e559d6b23474941fee39b902ee7e9549"
+        },
+        {
+          "url": "https://arxiv.org/abs/2411.09213",
+          "resolved_url": "https://arxiv.org/abs/2411.09213",
+          "http_status": 200,
+          "bytes": 42465,
+          "sha256": "df522096c24ea0b2a5bb21ebe827e0a7ac3e2fdea57101a25afb16d6cede8afe"
+        }
+      ],
+      "bibtex_sha256": "200568eec83dc82fc9c40c89ab2048adbd8e9b3b9d4c9ad6b06672a2657bf42e",
+      "official_citation_export": "@misc{ngo2024comprehensivepracticalevaluationretrievalaugmented,\n      title={Comprehensive and Practical Evaluation of Retrieval-Augmented Generation Systems for Medical Question Answering}, \n      author={Nghia Trung Ngo and Chien Van Nguyen and Franck Dernoncourt and Thien Huu Nguyen},\n      year={2024},\n      eprint={2411.09213},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2411.09213}, \n}",
+      "verified_doi": "10.48550/arXiv.2411.09213",
+      "doi_source_url": "https://arxiv.org/abs/2411.09213"
+    },
+    {
+      "key": "li2025biorab",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex_version_pinned",
+      "primary_url": "https://arxiv.org/abs/2405.08151v3",
+      "metadata_url": "https://arxiv.org/bibtex/2405.08151v3",
+      "source_id": "M23",
+      "supports": "Biomedical RAG robustness evaluation includes counterfactual evidence and biomedical NLP tasks such as NLI; original BioRAB source.",
+      "does_not_support": "Does not independently verify this project's eligibility labels, exact frozen counts, observed effect sizes, novelty, clinical validity, or unseen-generalization claims.",
+      "adjustments": [
+        "Citation key normalized for this manuscript.",
+        "Pinned v3, dated 14 November 2025; first submission was 2024. Kept official v3 BibTeX year 2025.",
+        "2026-10-02 citation review: added arXiv DOI explicitly displayed on the official version page; original BibTeX export omitted it."
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://arxiv.org/bibtex/2405.08151v3",
+          "resolved_url": "https://arxiv.org/bibtex/2405.08151v3",
+          "http_status": 200,
+          "bytes": 447,
+          "sha256": "ccf7edf8f97ea80ccb7767a295bac9fb19492f5fd657d4e0e2a3e02785d33d9d"
+        },
+        {
+          "url": "https://arxiv.org/abs/2405.08151v3",
+          "resolved_url": "https://arxiv.org/abs/2405.08151v3",
+          "http_status": 200,
+          "bytes": 43759,
+          "sha256": "c31d6d650497b093abceea72f9b7d8595306ec999db6ff742ab937f541b56c5b"
+        },
+        {
+          "url": "https://arxiv.org/abs/2405.08151v3",
+          "resolved_url": "https://arxiv.org/abs/2405.08151v3",
+          "http_status": 200,
+          "bytes": 43759,
+          "sha256": "c31d6d650497b093abceea72f9b7d8595306ec999db6ff742ab937f541b56c5b"
+        }
+      ],
+      "bibtex_sha256": "2a5f12b91058ea86b7caf574d3decb464d509c5a24a1013cb5d7117daf224d0b",
+      "official_citation_export": "@misc{li2025benchmarkingretrievalaugmentedlargelanguage,\n      title={Benchmarking Retrieval-Augmented Large Language Models in Biomedical NLP: Application, Robustness, and Self-Awareness}, \n      author={Mingchen Li and Zaifu Zhan and Han Yang and Yongkang Xiao and Jiatan Huang and Rui Zhang},\n      year={2025},\n      eprint={2405.08151},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL},\n      url={https://arxiv.org/abs/2405.08151}, \n}",
+      "verified_doi": "10.48550/arXiv.2405.08151",
+      "doi_source_url": "https://arxiv.org/abs/2405.08151v3"
+    },
+    {
+      "key": "simglucose",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_fixed_commit_readme_setup_and_commit_metadata",
+      "primary_url": "https://github.com/jxx123/simglucose/tree/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc",
+      "metadata_url": "https://raw.githubusercontent.com/jxx123/simglucose/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc/setup.py",
+      "source_id": null,
+      "supports": "Software provenance of the adopted A4 model execution, including 30 released virtual patient parameter profiles. Appendix C uses a 24-profile historical subset of this model.",
+      "does_not_support": "Does not certify clinical patient validity, FDA approval of this GitHub snapshot, new experiments, or clinical-v5 coverage.",
+      "actual_source_commit": "a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc",
+      "actual_setup_version": "0.2.11",
+      "snapshot_commit_date": "2025-04-18T18:20:44Z",
+      "legacy_readme_recommended_citation": "Jinyu Xie. Simglucose v0.2.1 (2018).",
+      "adjustments": [
+        "Author Jinyu Xie verified in both the fixed README and setup.py.",
+        "Citation identifies the actual 2025 source snapshot with setup version 0.2.11. The README legacy v0.2.1/2018 citation is retained in this audit but is not substituted for the version used.",
+        "No DOI was invented."
+      ],
+      "local_evidence": [
+        "/home/data3/txy/docs/data/sources.md#r4-physiology-source",
+        "/home/data3/txy/docs/research/r4_consequence_head.md#r4-physiology-probe",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_probe/README.md",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_probe/patient_support_acquisition.json"
+      ],
+      "retrieval_receipts": [
+        {
+          "url": "https://raw.githubusercontent.com/jxx123/simglucose/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc/README.md",
+          "resolved_url": "https://raw.githubusercontent.com/jxx123/simglucose/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc/README.md",
+          "http_status": 200,
+          "bytes": 16123,
+          "sha256": "4215b27992a99c18a7b31602ef5f7424b7381291ddb42ef65cb1a7c2ab594afc"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/jxx123/simglucose/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc/setup.py",
+          "resolved_url": "https://raw.githubusercontent.com/jxx123/simglucose/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc/setup.py",
+          "http_status": 200,
+          "bytes": 759,
+          "sha256": "278ab0fb6a0ed855e205da5a51bd3a6ea6087f4d6bcca825b9cc668bf0033dca"
+        },
+        {
+          "url": "https://api.github.com/repos/jxx123/simglucose/commits/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc",
+          "resolved_url": "https://api.github.com/repos/jxx123/simglucose/commits/a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc",
+          "http_status": 200,
+          "bytes": 14833,
+          "sha256": "1f18a27c226b2976b5c666b0181d6458a3abcfc9cbaf65c7d35f048d8770f06e"
+        }
+      ],
+      "bibtex_sha256": "28497087bdbd2dbd46888340099d90565b89d56857b1660eaa84b8a958f17c41"
+    },
+    {
+      "key": "ddxplus",
+      "verified_date": "2026-10-02",
+      "metadata_method": "official_bibtex",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/cae73a974390c0edd95ae7aeae09139c-Abstract.html",
+      "metadata_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/cae73a974390c0edd95ae7aeae09139c-Bibtex.bib",
+      "source_id": null,
+      "source_relationship": "Upstream synthetic differential-diagnosis dataset of M01 MedEinst and public diagnosis catalog.",
+      "supports": "DDXPlus is a synthetic medical diagnosis dataset containing differential diagnoses, pathologies, symptoms, and antecedents; provides upstream dataset attribution.",
+      "does_not_support": "Does not turn the current MedEinst-derived evaluation into real-patient or independent clinical validation. Frozen v5 counts and catalog/scorer differences remain locally documented.",
+      "adjustments": [
+        "Citation key changed to ddxplus; all official bibliographic fields, including the proceedings DOI, retained."
+      ],
+      "official_citation_export": "@inproceedings{NEURIPS2022_cae73a97,\n author = {Fansi Tchango, Arsene and Goel, Rishab and Wen, Zhi and Martel, Julien and Ghosn, Joumana},\n booktitle = {Advances in Neural Information Processing Systems},\n doi = {10.52202/068431-2270},\n editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},\n pages = {31306--31318},\n publisher = {Curran Associates, Inc.},\n title = {DDXPlus: A New Dataset For Automatic Medical Diagnosis},\n url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/cae73a974390c0edd95ae7aeae09139c-Paper-Datasets_and_Benchmarks.pdf},\n volume = {35},\n year = {2022}\n}\n",
+      "retrieval_receipts": [
+        {
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/cae73a974390c0edd95ae7aeae09139c-Bibtex.bib",
+          "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/cae73a974390c0edd95ae7aeae09139c-Bibtex.bib",
+          "http_status": 200,
+          "bytes": 628,
+          "sha256": "3df1c7089ea8956e855ed8ce1d21340131e4b3d9ffa208f4d0d5855f7cb3f38a"
+        }
+      ],
+      "bibtex_sha256": "87c3105c657854239a2105d84237e623b28910d2be8644ad7bca23d57853b8c7"
+    }
+  ],
+  "source_key_map": {
+    "M01": "chen2026medeinst",
+    "M02": "medpicbench",
+    "M06": "prosperi2026hiv",
+    "M10": "benkirane2025bias",
+    "M11": "rezaei2026cultural",
+    "M12": "xiao2025amqa",
+    "M14": "rawat2024diversitymedqa",
+    "M17": "gourabathina2025medperturb",
+    "M20": "mo2026faithfulness",
+    "M22": "ngo2024medrgb",
+    "M23": "li2025biorab"
+  },
+  "boundaries": [
+    "Source references document origins; local construction/evaluation records remain authoritative for frozen sample scope and project results.",
+    "No unsupported DOI was added. Publisher/ACL DOIs are only retained when present in verified metadata.",
+    "MedPIC-Bench has no declared author list or publication date; uploader identity is not asserted to be paper authorship.",
+    "OpenReview forum and API were blocked by verification/403 and bibtex URL returned 404; indexed text of official published PDFs supplied metadata without accessing private review information.",
+    "No model, grader, experiment cache, or confirmation gold was accessed or modified."
+  ],
+  "validation": {
+    "entry_count": 20,
+    "unique_keys": true,
+    "full_v5_sources_covered": 11,
+    "bibtex_braces_balanced": true,
+    "all_metadata_requests_successful": true,
+    "pandoc_bibtex_parse_entry_count": 20,
+    "pandoc_warnings": "",
+    "all_expected_keys_parsed": true
+  },
+  "bibliography_sha256": "444507a5a58ef4c6a33cd4e97791e62e661e60b37c996aa834071534fe406b75",
+  "citation_review": {
+    "reviewed_at": "2026-10-02T14:18:50.853183+00:00",
+    "skill": "/home/data3/txy/.codex/skills/academic-paper/agents/citation_compliance_agent.md",
+    "manuscript_path": "/home/data3/txy/docs/paper/manuscript.md",
+    "manuscript_sha256_at_review": "a4f467c031d9f523e81dd1b8a1b01223b4fa6d8dcfd43a4e8d15f2dd513d4a02",
+    "review_scope": "Metadata, reference-to-claim fit, source attribution, citation keys, and discoverable DOI completeness; not a fresh replication or exhaustive paper/retraction screening.",
+    "original_18_all_cited": true,
+    "orphan_in_text_keys": [],
+    "new_references_awaiting_parent_text_insertion": [
+      "ddxplus",
+      "simglucose"
+    ],
+    "original_18_major_metadata_mismatches_found": 0,
+    "original_18_major_claim_misrepresentations_found": 0,
+    "corrections": [
+      {
+        "key": "dubey2024llama",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2407.21783"
+      },
+      {
+        "key": "yang2025qwen3",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2505.09388"
+      },
+      {
+        "key": "rezaei2026cultural",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2601.20102"
+      },
+      {
+        "key": "xiao2025amqa",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2505.19562"
+      },
+      {
+        "key": "gourabathina2025medperturb",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2506.17163"
+      },
+      {
+        "key": "ngo2024medrgb",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2411.09213"
+      },
+      {
+        "key": "li2025biorab",
+        "change": "Added verified DOI",
+        "doi": "10.48550/arXiv.2405.08151"
+      },
+      {
+        "key": "simglucose",
+        "change": "Added exact historical model software provenance; parent inserts citation in Appendix C."
+      },
+      {
+        "key": "ddxplus",
+        "change": "Added missing upstream attribution for MedEinst/diagnosis catalog; parent inserts citation in diagnosis description and M01 provenance."
+      }
+    ],
+    "matching_decisions": [
+      "CPV paper versus author MedQA extension is correctly distinguished in Appendix A.",
+      "MedPIC-Bench is correctly cited as an undated card, not a fabricated paper.",
+      "MedEinst uses formal ACL author order; AMQA and Llama 3 use explicitly pinned v1 identities; BioRAB uses v3/2025.",
+      "Self-consistency and layered MoA are background contrasts, not unsupported claims of architectural replication.",
+      "Contextual calibration citation supports the related-work discussion; verifier binary scores are explicitly not treated as calibrated clinical confidence.",
+      "Source references establish upstream origins, while local v5 counts/labels and observed effects remain original experimental facts."
+    ],
+    "limited_retraction_check": {
+      "scope": "The one journal-article reference prosperi2026hiv",
+      "queries": [
+        "\"10.1038/s41746-026-02771-7\" retraction with nature.com and retractionwatch.com filters"
+      ],
+      "result": "Search returned the original publisher article and no retraction notice in the retrieved results; no exhaustive Retraction Watch database check was completed.",
+      "not_a_certification": true
+    },
+    "self_citation_ratio": "unknown_author_identity_not_supplied",
+    "format_scope": "Pandoc citation keys and bibliographic metadata validated; final venue style is owned by parent document renderer."
+  },
+  "bibliography_sha256_before_supplement": "ed1cc8229dedcf984606abc71afd62371df871964368ff26d3c3b6d4ba592c53"
+}

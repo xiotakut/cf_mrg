@@ -1,0 +1,51 @@
+# Reproduce the saved-result figures and tables
+
+This package renders the completed CF-MoA full-v5 **development** evaluation. It does not run models, invoke native graders, create new experimental outcomes, or overwrite the September 28 closeout. The independent post-freeze confirmation and independent F-pool replica were not executed. The default remains B; C3 is an optional research extension.
+
+## Inputs and dependencies
+
+`inputs/manifest.json` records original absolute paths, byte sizes, and SHA-256 hashes of 12 exact copies of small saved JSON summaries (about 160 kB). All plotted values and table values are derived from those copies. The script checks their hashes before and after execution. The source closeout was published at commit `2d56c71`; its full-v5 underlying release was `d85793470cf75af57217f3fdc73093f494d9f003`.
+
+The existing environment used for the actual build was `/home/data3/txy/MedRGAG/.venv/bin/python` with Python 3, matplotlib 3.10.9, numpy 1.26.4, and pandas 2.3.3. No environment changes were made. A separate environment with those packages can render the bundle elsewhere. LaTeX tables require `booktabs` and `longtable`; the plotting script itself does not require a TeX installation. PDF figure fonts are embedded as TrueType, and PNG exports use 300 dpi.
+
+From this package directory, rebuild figures and tables using only the shipped summaries:
+
+```bash
+python3 scripts/build_figures_tables.py
+```
+
+Validate the shipped summaries without rewriting figures or tables:
+
+```bash
+python3 scripts/build_figures_tables.py --check-only
+```
+
+For an independent re-aggregation of the original saved record files, pass the local original-record directory:
+
+```bash
+python3 scripts/build_figures_tables.py \
+  --check-only \
+  --raw-root ../../benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5
+```
+
+The example `--raw-root` assumes a checkout of this repository with the historical `benchmarks/2026-09-26_cf_moa_rcv_full_v5/data/full_v5` directory present. The optional `--raw-root` must contain `m4/` and `m5/`, each with `native_units.jsonl.gz`, `per_input_status.jsonl.gz`, and `pairs.jsonl.gz`. These larger original files are not duplicated in this small package. The raw check reads saved scores only; no scoring function is imported. It independently verifies 72 category means, 132 source means, 60 format strata, 24 paired outcomes, all 12 method/arm input totals, unique row keys, and before/after raw-file hashes. Use the same flag during a full build to save both raw validation and figure output hashes in one receipt. Original record paths are configurable; missing files cause an explicit failure.
+
+`--input-root`, `--output-root`, and `--receipt` override the default locations. Check-only mode writes only its JSON receipt, not the experiment inputs, tables, or figures. Receipts include the exact command, script hash, dependency versions for rendering, elapsed time, zero model/grader calls, validation results, and generated artifact hashes. The actual build and raw checks are recorded in `validation/build_receipt.json` and `validation/check_receipt.json`.
+
+## Artifacts
+
+Five figure stems under `figures/`, each available as PDF and PNG:
+
+- `main_results`: all six arms on both backbones, with a zero-origin vertical axis.
+- `verification_forest`: C3 minus B and C3 minus C2, for native ALL, maintain-pair correctness, and respond-pair correctness. These are saved 95% paired-family bootstrap intervals, not new resamples.
+- `source_heterogeneity`: C3 minus B on every one of the 11 saved source IDs; all sources remain visible, including small and negative strata.
+- `cost_quality`: native ALL against attributed head/readout requests. Historical C0/retrieval costs are unknown for every arm; C0 has no known cost coordinate and is explicitly described as unplottable on this axis. This is not an end-to-end monetary or latency frontier.
+- `rule_ablations`: existing add/remove operation ablations on 123 rule inputs per backbone. It is a shared-kernel mechanism subset, not a full-v5 system ablation.
+
+Eight table stems under `tables/`, each in CSV and LaTeX: `main_results`, `contrasts`, `sources`, `categories`, `formats`, `paired`, `costs`, and `ablations`. CSVs retain machine-readable details; LaTeX versions use compact publication layouts. CSV units are explicit in column names or the copied source field names: `mean_native_unit_score`, `input_accuracy`, and `full_both_correct_rate` are fractions; `ALL_percent`, `delta_pp`, and interval columns are percentages/percentage points. LaTeX rate tables display percentages. `unknown` denotes missing cost evidence, never zero expense.
+
+## Interpretation constraints
+
+Every arm/backbone retains 13,905 inputs and 15,616 native mappings. Native ALL averages the original non-reference scores within each unit and then weights the 6,104 unique units equally. It differs from input accuracy. R1--R5 categories overlap. Family intervals use the existing 5,000 paired bootstrap draws with seed 240924 and preserve unit weights within families. They describe exposed development data and do not correct method selection or multiple comparisons.
+
+The all-source table partitions the 6,104 ALL units; the five input-format strata partition the 13,905 inputs. Maintain and respond metrics retain 6,838 and 1,780 pairs respectively. Failed/unavailable outcomes remain in all relevant denominators. Cost attribution gives each candidate the common B cost once plus its own increment; these per-method totals must not be added across arms or divided into the physical experiment bill. Complete upstream cost and 2,503 historical input times per backbone/arm remain unknown.

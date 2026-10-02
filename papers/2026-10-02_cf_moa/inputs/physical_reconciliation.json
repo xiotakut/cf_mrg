@@ -1,0 +1,90 @@
+{
+  "snapshot": "d857934",
+  "methods": [
+    {
+      "method": "M4",
+      "physical": {
+        "method": "M4",
+        "scope": "current",
+        "callbacks": 87468,
+        "physical_records": 87429,
+        "live_requests": 87429,
+        "input_tokens": 550919327,
+        "output_tokens": 10309134,
+        "model_seconds": 189662.72622763872,
+        "unknown_usage": 0,
+        "cross_run_replay_events": 39,
+        "replayed_original_input_tokens": 215799,
+        "replayed_original_output_tokens": 14962,
+        "replayed_original_unknown_usage": 0,
+        "non_live_physical_events": 0,
+        "failed_callbacks": 0
+      },
+      "inventory_checks": {
+        "live_requests": true,
+        "input_tokens": true,
+        "output_tokens": true,
+        "model_seconds": true
+      },
+      "per_arm_new_execution_sum": {
+        "model_requests": 87390,
+        "input_tokens": 550703528,
+        "output_tokens": 10294172,
+        "model_seconds": 189565.38667785632
+      },
+      "physical_minus_final_rows": {
+        "model_requests": 39,
+        "input_tokens": 215799,
+        "output_tokens": 14962,
+        "model_seconds": 97.3395497823949
+      }
+    },
+    {
+      "method": "M5",
+      "physical": {
+        "method": "M5",
+        "scope": "current",
+        "callbacks": 75686,
+        "physical_records": 75550,
+        "live_requests": 75550,
+        "input_tokens": 406890997,
+        "output_tokens": 7982772,
+        "model_seconds": 141578.56754901426,
+        "unknown_usage": 0,
+        "cross_run_replay_events": 108,
+        "replayed_original_input_tokens": 3288675,
+        "replayed_original_output_tokens": 8460,
+        "replayed_original_unknown_usage": 0,
+        "non_live_physical_events": 0,
+        "failed_callbacks": 28
+      },
+      "inventory_checks": {
+        "live_requests": true,
+        "input_tokens": true,
+        "output_tokens": true,
+        "model_seconds": true
+      },
+      "per_arm_new_execution_sum": {
+        "model_requests": 75514,
+        "input_tokens": 405794772,
+        "output_tokens": 7979952,
+        "model_seconds": 141103.62895540422
+      },
+      "physical_minus_final_rows": {
+        "model_requests": 36,
+        "input_tokens": 1096225,
+        "output_tokens": 2820,
+        "model_seconds": 474.93859361004434
+      }
+    }
+  ],
+  "overall": {
+    "model_requests": 162979,
+    "input_tokens": 957810324,
+    "output_tokens": 18291906,
+    "model_seconds": 331241.293776653
+  },
+  "published_inventory": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/public_preparation/full_v5_publication_20260926/cost_inventory.json",
+  "current_closeout_model_calls": 0,
+  "current_closeout_grader_calls": 0
+}

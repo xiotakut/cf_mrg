@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "artifact_type": "targeted_revision_resolution",
+  "created_at_utc": "2026-10-02T14:19:22.083374+00:00",
+  "calibration_status": "NOT_CALIBRATED",
+  "criteria_binding": "criteria_binding_unavailable",
+  "scope": "Targeted verification of PR1–PR5 and acronym expansion edits against existing review; no expanded full review, new model calls, upstream generator/evaluator certification, or venue-readiness certification.",
+  "original_review": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review.json",
+    "sha256": "764823b015127ceba6c6db44c040074969b3a12db07d2b42c5375c4ec5448b50",
+    "preserved": true
+  },
+  "revised_input": {
+    "path": "/home/data3/txy/docs/paper/manuscript.md",
+    "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+    "sha256": "a4f467c031d9f523e81dd1b8a1b01223b4fa6d8dcfd43a4e8d15f2dd513d4a02"
+  },
+  "resolution": [
+    {
+      "finding_id": "PR1",
+      "status": "RESOLVED",
+      "revised_anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 52,
+        "text": "Construction retained every eligible R1–R4 target in the preceding classified collection. For R5, 450 eligible comparison units were randomly sampled without replacement from each of eight source strata, using a seed generated once before selection and sorted unit identifiers. Model predictions and prior v3 membership did not determine these draws. The resulting R5 evaluation scope has 3,600 units. Frozen evaluation membership is distinct from the original semantic labels: an unsampled R5 label attached to a retained R1 unit does not automatically add that unit to the R5 score."
+      },
+      "verification": "The revised paragraph states all eligible R1–R4 retention, eight R5 strata each sampled without replacement at 450 units, preselection seed and sorted identifiers, no prediction-based selection, and separation of evaluation membership from semantic labels."
+    },
+    {
+      "finding_id": "PR2",
+      "status": "RESOLVED",
+      "revised_anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 46,
+        "text": "The project protocol permits external MedCorp retrieval while retaining all required source evidence. In particular, MedCounterFact inputs preserve their stipulated evidence, and MedRGB inputs retain their six fixed evidence-ratio conditions while also permitting external retrieval. The latter is a project adaptation of MedRGB, rather than a reproduction of its original static-evidence-only setting. Original and modified endpoints have the same information-access permissions. The present study reuses the saved contexts under that protocol."
+      },
+      "verification": "The revised paragraph explicitly states MedCorp plus mandatory source evidence, MedRGB's six fixed evidence-ratio conditions, the distinction from original static-evidence-only evaluation, and equal endpoint access permissions."
+    },
+    {
+      "finding_id": "PR3",
+      "status": "RESOLVED",
+      "revised_anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 79,
+        "text": "Families group the related variants of an original case; cross-source groups with exactly matching original questions and options are connected into a dependency group. This procedure does not establish that all semantic near-duplicates have been identified."
+      },
+      "verification": "The revised paragraph defines related-case families, connects exact original-question/option overlaps across sources, and does not claim all semantic near duplicates were identified."
+    },
+    {
+      "finding_id": "PR4",
+      "status": "RESOLVED",
+      "revised_anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 258,
+        "text": "Additional candidate verification poses a distinct selection problem. By design, C3 cannot recover an answer key absent from its pool, and it can replace a correct selected answer with an incorrect existing candidate. The repair and damage counts establish that successful and harmful switches both occur; they do not measure the frequency of missing correct candidates or diagnose the medical cause of each mistake. Pool quality and selector quality should therefore be measured separately. Enlarging the pool is also not automatically beneficial: the C4 control changes both candidate opportunity and failure exposure, with its unavailable outputs retained in the result."
+      },
+      "verification": "The revised discussion correctly attributes counts to successful and harmful switches, explicitly withholding claims about missing-key frequency or clinical error causes."
+    },
+    {
+      "finding_id": "PR5",
+      "status": "RESOLVED",
+      "revised_anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 193,
+        "text": "C4 has positive ALL point differences from B in both configurations, but the broader results do not establish a consistent advantage. M4 C4 is only +0.0295 points above B, with an interval of [−0.5445, +0.5895], and has 106 additional unavailable inputs. M5 C4's ALL mean is above B, but its input-level correct count is lower and unavailable inputs increase by 64. C5's ALL point estimate is below B in both configurations. We preserve C3 as the declared research extension and B as the adopted default, without selecting a different winning arm for each configuration."
+      },
+      "verification": "The revised opening states C4's positive ALL point differences for both configurations while retaining uncertainty, unavailable-output and input-accuracy qualifications."
+    }
+  ],
+  "resolved_primary_findings": 5,
+  "unresolved_primary_findings": 0,
+  "numeric_table_rows_unchanged": {
+    "verified": true,
+    "count": 48,
+    "scope": "Exact full-row comparison of numeric Markdown table data rows between review input and revision snapshot; not a new raw-data reaggregation."
+  },
+  "acronym_edits": [
+    {
+      "name": "MIRAGE",
+      "status": "RESOLVED",
+      "anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 28,
+        "text": "**Retrieval and medical question answering.** RAG combines generation with access to retrieved documents [@lewis2020rag]. MedRAG and the Medical Information Retrieval-Augmented Generation Evaluation (MIRAGE) benchmark examine retrieval-augmented medical question answering across corpora, retrievers, and language models [@xiong2024medrag]. Our two original systems use MedRAG with different language-model and output configurations. The present comparison retains their saved contexts and evaluates decision operations applied after those original systems. It therefore concerns the treatment of available evidence and candidate answers, rather than a new retrieval algorithm."
+      }
+    },
+    {
+      "name": "CRediT",
+      "status": "RESOLVED",
+      "anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 288,
+        "text": "**Author contributions.** Author names, affiliations, and contributor-specific Contributor Roles Taxonomy (CRediT) roles have not been supplied for this draft and must be completed by the authors. No authorship is assigned to the writing tools."
+      }
+    }
+  ],
+  "nonblocking_notes": [
+    {
+      "id": "RR_NOTE_1",
+      "severity": "Minor",
+      "status": "SUGGESTED_LAYOUT_FOLLOWUP",
+      "anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 209,
+        "text": "**Table 3. Both-endpoints-correct counts.** Maintain and respond have different fixed denominators. Equal respond counts are an observed result of the present outputs, not evidence that the verifier solves arbitrary changes."
+      },
+      "issue": "Shortened column headers no longer carry pair denominators; the current caption only says they differ.",
+      "suggested_fix": "Put Maintain n=6,838 and respond n=1,780 in the caption so the table remains self-contained without wider columns.",
+      "required_for_draft_delivery": false
+    },
+    {
+      "id": "RR_NOTE_2",
+      "severity": "Minor",
+      "status": "REMAINING_SUBMISSION_REPORTING_DETAIL",
+      "anchor": {
+        "path": "/home/data3/txy/docs/paper/manuscript.md",
+        "snapshot_path": "/home/data3/txy/Documents/Codex/2026-10-02/cf_moa_paper/evidence/peer_review_revision_input.md",
+        "line": 270,
+        "text": "**Scope and scoring.** The sources differ in task semantics, patient realism, perturbation construction, and reference quality. R labels overlap, some groups are small, and the 13-unit R4 clinical subset has especially limited coverage. Canonical diagnostic matching can penalize clinically related wording, while source expected answers do not provide a new clinical adjudication. An empty list of newly established data defects in the final closeout is not evidence that all items and labels have undergone a complete expert medical review."
+      },
+      "issue": "The selection part of PR1 is resolved. Its secondary suggestion to identify project/agent-assisted labeling and the absence of measured clinical-expert inter-rater validation is still not explicit. The current limitation states only that not all items had complete expert medical review.",
+      "suggested_fix": "Optionally add one accurate sentence on annotation provenance and absence of clinical-expert agreement measurement, based on the recorded construction process.",
+      "required_for_draft_delivery": false
+    }
+  ],
+  "conclusion": "All five primary review findings are resolved. The revised manuscript is suitable for delivery as a reviewable draft, with prior research-evidence and author-declaration limitations retained. This does not assert submission readiness.",
+  "planned_reference_additions": "DDXPlus and simglucose references are planned by the parent and were not yet part of this targeted review snapshot; no claim that those future additions were verified."
+}

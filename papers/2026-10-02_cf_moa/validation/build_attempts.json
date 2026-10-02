@@ -1,0 +1,26 @@
+[
+  {
+    "step": "environment discovery",
+    "attempt": "python",
+    "observed": "shell command not found",
+    "resolution": "used existing MedRGAG/.venv/bin/python; no experimental environment change"
+  },
+  {
+    "step": "isolated build environment",
+    "attempt": "uv venv",
+    "observed": "snap cannot create /home/data3/txy/snap/astral-uv/1773: permission denied",
+    "resolution": "did not alter permissions; used pip --target within paper package"
+  },
+  {
+    "step": "isolated build environment",
+    "attempt": "python -m venv",
+    "observed": "ensurepip unavailable",
+    "resolution": "used pip --target .build_deps; partial .venv not used"
+  },
+  {
+    "step": "PDF rendering",
+    "attempt": "Pandoc 3.9 to Typst 0.15 initial build",
+    "observed": "unknown variable: sect in set-intersection math",
+    "resolution": "renderer maps emitted sect alias to inter; source LaTeX cap unchanged; later compile succeeded"
+  }
+]
