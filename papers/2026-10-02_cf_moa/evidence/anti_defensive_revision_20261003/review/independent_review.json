@@ -1,0 +1,328 @@
+{
+  "reviewer": "/root/revision_independent_review",
+  "reviewed_at": "2026-10-02T20:24:32.023372+00:00",
+  "scope": "Independent content review of the actual main.tex dependency closure and before/after revision; no participation in drafting or editing. This is manuscript-content quality review, not a venue review or an acceptance prediction.",
+  "skill": {
+    "path": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/anti_defensive_revision/skill/SKILL.md",
+    "sha256": "ef055917cc1407064cd0deaffd78264c251e8a27c30c112c54c64fb5ca46ef7a",
+    "read_in_full": true,
+    "application": "Assess removal of redundant self-defense while retaining claim-essential scope, negative results, and methodological precision."
+  },
+  "decision": "acceptable_no_content_blockers",
+  "classifications": {
+    "directness_and_structure": "improved",
+    "scientific_scope_and_precision": "preserved",
+    "material_negative_results": "preserved",
+    "numeric_and_citation_integrity": "preserved",
+    "unsupported_new_claims": "none_identified_in_revision",
+    "hypothetical_reviewer_disclaimers": "none_requested"
+  },
+  "blockers": [],
+  "optional_suggestions": [],
+  "positive_changes": [
+    {
+      "files": [
+        "sections/abstract.tex",
+        "sections/introduction.tex",
+        "sections/discussion.tex"
+      ],
+      "finding": "The taxonomy-to-operation-to-controller argument is stated directly. Empty contrastive and negotiation-style statements are reduced; evidence remains the basis of strength."
+    },
+    {
+      "files": [
+        "sections/abstract.tex",
+        "sections/experimental_setup.tex",
+        "sections/limitations.tex"
+      ],
+      "finding": "The abstract now identifies the development benchmark, and the methods/limitations retain the unperformed family-disjoint final evaluation. This strengthens scope precision rather than merely adding an apology."
+    },
+    {
+      "files": [
+        "sections/results.tex",
+        "sections/appendix_components.tex",
+        "sections/appendix_reproduction.tex"
+      ],
+      "finding": "Repeated declarations that adverse outcomes were retained or that artifact rebuilds are not inference were replaced with direct descriptions of outcomes and requirements."
+    }
+  ],
+  "material_condition_checks": [
+    {
+      "item": "Seven configurations / six system families / two final full-system configurations",
+      "status": "preserved",
+      "evidence": [
+        "sections/introduction.tex",
+        "sections/experimental_setup.tex",
+        "sections/limitations.tex"
+      ]
+    },
+    {
+      "item": "Development exposure and need for separate family-disjoint final-controller evaluation",
+      "status": "preserved",
+      "evidence": [
+        "sections/abstract.tex",
+        "sections/experimental_setup.tex",
+        "sections/limitations.tex"
+      ]
+    },
+    {
+      "item": "A1/A2 share weights and deterministic rule execution; no attribution to five independently improving agents",
+      "status": "preserved",
+      "evidence": [
+        "sections/method.tex",
+        "sections/discussion.tex"
+      ]
+    },
+    {
+      "item": "A4 zero qualifying clinical v5 coverage and separate supplied-model/virtual-profile panel",
+      "status": "preserved",
+      "evidence": [
+        "sections/method.tex",
+        "sections/results.tex",
+        "sections/appendix_components.tex"
+      ]
+    },
+    {
+      "item": "R2 constant-None control exceeds heads across all seven configurations and remaining-support subgroup has mixed head effects",
+      "status": "preserved",
+      "evidence": [
+        "sections/results.tex",
+        "sections/appendix_components.tex",
+        "tables/head_controls.tex"
+      ]
+    },
+    {
+      "item": "M5 clinical R4 declines from 53.85 to 23.08 on 13 units",
+      "status": "preserved",
+      "evidence": [
+        "sections/results.tex",
+        "tables/main_system_results.tex",
+        "tables/full_categories.tex"
+      ]
+    },
+    {
+      "item": "C3 effects differ by backbone, with added request costs",
+      "status": "preserved",
+      "evidence": [
+        "sections/results.tex",
+        "sections/appendix_full_results.tex",
+        "tables/main_results.tex",
+        "tables/costs.tex"
+      ]
+    },
+    {
+      "item": "C2 and C5 below B on both backbones",
+      "status": "new_more_specific_wording_verified",
+      "evidence": [
+        "tables/main_results.tex"
+      ],
+      "detail": "In Qwen, C2=59.3562 is slightly below B=59.3616 despite both rounding to 59.36; C5=58.9690. Llama C2=55.9939 and C5=56.7295 are below B=58.2924."
+    },
+    {
+      "item": "Diagnosis gain substantially concerns catalog/output grounding; calibration is not consistently beneficial; differing code/name budgets",
+      "status": "preserved",
+      "evidence": [
+        "sections/results.tex",
+        "sections/appendix_components.tex",
+        "sections/limitations.tex"
+      ]
+    },
+    {
+      "item": "Method attribution versus physical cost ledger, missing original retrieval costs, partial timing, no full end-to-end runtime",
+      "status": "preserved",
+      "evidence": [
+        "sections/experimental_setup.tex",
+        "sections/results.tex",
+        "sections/appendix_full_results.tex"
+      ]
+    },
+    {
+      "item": "Clinical validation required beyond research datasets and simulated profiles; dataset terms; AI assistance disclosure",
+      "status": "preserved",
+      "evidence": [
+        "sections/limitations.tex",
+        "sections/declarations.tex"
+      ]
+    },
+    {
+      "item": "LM-agent annotations and no measured independent clinician agreement",
+      "status": "preserved",
+      "evidence": [
+        "sections/benchmark.tex",
+        "sections/limitations.tex"
+      ]
+    },
+    {
+      "item": "Native scoring, overlap, separate denominators, invalid-output policy, inference exclusions and frozen diagnosis normalization",
+      "status": "preserved",
+      "evidence": [
+        "sections/benchmark.tex",
+        "sections/method.tex",
+        "sections/appendix_benchmark.tex"
+      ]
+    }
+  ],
+  "mechanical_checks": {
+    "tex_dependency_count": 29,
+    "section_count": 14,
+    "table_count": 14,
+    "figure_count": 3,
+    "all_table_files_byte_identical": true,
+    "all_figure_files_byte_identical": true,
+    "bibliography_byte_identical": true,
+    "citation_multisets_identical_per_tex": true,
+    "numeric_token_multiset_differences": [
+      {
+        "file": "sections/appendix_components.tex",
+        "removed": {
+          "288": 1
+        },
+        "added": {}
+      }
+    ],
+    "numeric_difference_assessment": "Only one redundant occurrence of 288 removed from appendix_components; the 288-query value, 24 virtual profiles and 12 questions/profile remain unchanged.",
+    "count_limit": "Numeric comparison is a regex-based preservation check plus contextual reading; it is not a new re-scoring of experimental predictions."
+  },
+  "reviewed_files": {
+    "main.tex": {
+      "sha256": "89663dc5a0f741f14a0cfc1421863bf68f44828f33c8bf17f26c889a1ab7dd9d",
+      "before_sha256": "89663dc5a0f741f14a0cfc1421863bf68f44828f33c8bf17f26c889a1ab7dd9d"
+    },
+    "sections/abstract.tex": {
+      "sha256": "efd6fde37a638a0bf8b42dedf86ff21f83fd382a047d25b1d8e536f0404a3ad3",
+      "before_sha256": "3dc0ec7a4efe4b43c0abd006c7833de8eefdcc90e8d572de965042dd4e204f89"
+    },
+    "sections/introduction.tex": {
+      "sha256": "d8df3aa43867586b0271718a3128afdaa92f5d8c3c88f5baa2de12295b40ac8e",
+      "before_sha256": "9de9148d99089c271311328510ac6f31f1a2f034861ede66953bf3ee4ec74ca6"
+    },
+    "sections/related_work.tex": {
+      "sha256": "9a4fb98a3068da8ba57a69e02fcc06ce0a9cbaedee29ac5478fe3ce11ad89cb8",
+      "before_sha256": "2584ff66dcee3ad68c6c39cf632a4d7a15c1ee985232a8861f13ee764aed43a8"
+    },
+    "sections/benchmark.tex": {
+      "sha256": "67b2cdd5c670a4a03054596f7319f882c50dba7da57b4ef3903fddc3d9baf735",
+      "before_sha256": "52c3367a203937e6534772a05198b019f0d0e39ca8341eb5811265d34c23a690"
+    },
+    "sections/method.tex": {
+      "sha256": "6fe38572cfe8100a178fb72684c2311c621c62556bec57f4919936ddee23f727",
+      "before_sha256": "616e6f56e774d6dc9a34437f2bb4eea757b3747c7467b98650bea55ec053b419"
+    },
+    "sections/experimental_setup.tex": {
+      "sha256": "7bb9439b241bdd7f3333bbc86bfe763c0da99e9cb81cab3958f6f23d90b4cf3c",
+      "before_sha256": "22986a70970511d0a8798b65019c107b98ea82ca6bfc75f9bc8fcf276ddf34c7"
+    },
+    "sections/results.tex": {
+      "sha256": "b87221d43f6a14443eb7ec2ae93da4790a288e409129d622687ecd4fbaf5f3cc",
+      "before_sha256": "95e2130205a8dafffceeb623c658637a3b5be70bed66f5aa43d90d7e0d765bc3"
+    },
+    "tables/main_system_results.tex": {
+      "sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03",
+      "before_sha256": "0907d2d4d71810832726f2f52f5abf2348c6dd7adbd1dbd2abf59790b17fea03"
+    },
+    "tables/support_operation_ablation.tex": {
+      "sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e",
+      "before_sha256": "4a2b9388b8747313b4371c34cd6d032e7d9b86fcb942df4984cb5678c1f9d41e"
+    },
+    "sections/discussion.tex": {
+      "sha256": "e7ec35a71e7539bdea9458c29ab3490911aa9bf09ee926d3794c4d5ad0ccfc8f",
+      "before_sha256": "36b94e1a32838d59a509950b8c80f55c2f116b183b3548e8dfcdbae440cd486b"
+    },
+    "sections/limitations.tex": {
+      "sha256": "5fbf61a34dbd87448b745df20db58bb58eb55cafc7e8ce2a672db2c067eef4f2",
+      "before_sha256": "7dbdfcc1c18317abe57704135957b1dbf8a40333cfd6a780102f0ea45d502791"
+    },
+    "sections/appendix_benchmark.tex": {
+      "sha256": "d553a8b8e4270a743602770a5b95551b09e4cb762b097a05b4f91b3b06391408",
+      "before_sha256": "a543607c2808dbd309b2e73d9fcd9fecf163c8b66b76416d344f36ea669e311b"
+    },
+    "tables/story_sources.tex": {
+      "sha256": "48384027091f98721590f8e4fb177c607f620aabdc354c942276e984159a571f",
+      "before_sha256": "48384027091f98721590f8e4fb177c607f620aabdc354c942276e984159a571f"
+    },
+    "sections/appendix_components.tex": {
+      "sha256": "f09bdd2b64986fc278c93c4ecaded09002af6c386a94e1dae507df274034540b",
+      "before_sha256": "5cc3dcad66d2a70b4c2325d9c54632681f8e0f918dde38e18147463ca6cc8b40"
+    },
+    "tables/seven_heads.tex": {
+      "sha256": "d1ec1640e3a16f711e7fbe7ea080442aaac6b44229881e7696f57628009fe0b1",
+      "before_sha256": "d1ec1640e3a16f711e7fbe7ea080442aaac6b44229881e7696f57628009fe0b1"
+    },
+    "tables/head_controls.tex": {
+      "sha256": "6df15fd47bf5c59668435fcafe5cd042baeb2d8aa30698c2310bcfe5f9bfd101",
+      "before_sha256": "6df15fd47bf5c59668435fcafe5cd042baeb2d8aa30698c2310bcfe5f9bfd101"
+    },
+    "tables/historical_model.tex": {
+      "sha256": "3ff4546666283333685c5b813d96048b1e1e28c7de594822ade28f2b93738276",
+      "before_sha256": "3ff4546666283333685c5b813d96048b1e1e28c7de594822ade28f2b93738276"
+    },
+    "sections/appendix_full_results.tex": {
+      "sha256": "8a8a45b15e8384b16ef991c74072d692e9680316e07dc957e75bfd79caa5d2a4",
+      "before_sha256": "013716830e7874a77f1598c16435be4097cd968bb34e0e2c8766000be026efa6"
+    },
+    "tables/arms.tex": {
+      "sha256": "ecb2050f6bd2b572516dbb3d3d1c4becc47d5a6916e97be963968cbc086874ad",
+      "before_sha256": "ecb2050f6bd2b572516dbb3d3d1c4becc47d5a6916e97be963968cbc086874ad"
+    },
+    "tables/main_results.tex": {
+      "sha256": "146c30f7988699b25e1f014cb8001e73344344459c2997fa63e9e09f62f6cadf",
+      "before_sha256": "146c30f7988699b25e1f014cb8001e73344344459c2997fa63e9e09f62f6cadf"
+    },
+    "tables/full_categories.tex": {
+      "sha256": "0250760fa2a81216a0981efea93d4bb9461b53714e592fe1fe456f9e13f7fdea",
+      "before_sha256": "0250760fa2a81216a0981efea93d4bb9461b53714e592fe1fe456f9e13f7fdea"
+    },
+    "tables/source_breakdown.tex": {
+      "sha256": "bab5070f6355c7628e4d0af2df931d39cd9ae90956313f873d31247ab7a951aa",
+      "before_sha256": "bab5070f6355c7628e4d0af2df931d39cd9ae90956313f873d31247ab7a951aa"
+    },
+    "tables/format_breakdown.tex": {
+      "sha256": "f7d34491fcc74f0face39d3629599695a1a0590300ddeacbb2f8fa24ecc453cb",
+      "before_sha256": "f7d34491fcc74f0face39d3629599695a1a0590300ddeacbb2f8fa24ecc453cb"
+    },
+    "tables/paired.tex": {
+      "sha256": "32ca9a32961aab55bac43dbf05c2030d47c2a580e07f37a795d6b4acf62ebd50",
+      "before_sha256": "32ca9a32961aab55bac43dbf05c2030d47c2a580e07f37a795d6b4acf62ebd50"
+    },
+    "tables/contrasts.tex": {
+      "sha256": "e1adf83fe448a0de9aab4e98431a18d9823001b37a0e268eac449ea4a56dca16",
+      "before_sha256": "e1adf83fe448a0de9aab4e98431a18d9823001b37a0e268eac449ea4a56dca16"
+    },
+    "tables/costs.tex": {
+      "sha256": "e064c27515471a8e042c5bf2aaa275be258d0c69fb877dfe0ac006249092aa08",
+      "before_sha256": "e064c27515471a8e042c5bf2aaa275be258d0c69fb877dfe0ac006249092aa08"
+    },
+    "sections/appendix_reproduction.tex": {
+      "sha256": "bf898521c61be681b0925713aabfa7f5724f92f8b9bbcca196e5e765a5f522d5",
+      "before_sha256": "422d04c6010bfaf6bf2d1d6162554325a190a090a2779145da778e991290b42d"
+    },
+    "sections/declarations.tex": {
+      "sha256": "b732531394b633edba31346af94b501749b80f23f31de82afb3d0e67d72921ec",
+      "before_sha256": "f14fae007dbb96aeab74e8478ce561a0e5d621d6f82f1276b56085c95d6b79ba"
+    },
+    "references.bib": {
+      "sha256": "02c3c6402344d61e0c7353284b63fabaf1c51e56ef5934bff0456f9d2773e3e3",
+      "before_sha256": "02c3c6402344d61e0c7353284b63fabaf1c51e56ef5934bff0456f9d2773e3e3"
+    },
+    "figures/cf_moa_architecture.pdf": {
+      "sha256": "62f688bad230933c477532bc5aea9b8e70cf3528bc8d6bb01f6de757ae4d3b0d",
+      "before_sha256": "62f688bad230933c477532bc5aea9b8e70cf3528bc8d6bb01f6de757ae4d3b0d"
+    },
+    "figures/seven_system_head_gains.pdf": {
+      "sha256": "47f40f02cabb875878d75997fd5ed4ae01522419278b957ffd4bc178b5b36619",
+      "before_sha256": "47f40f02cabb875878d75997fd5ed4ae01522419278b957ffd4bc178b5b36619"
+    },
+    "figures/paired_behavior.pdf": {
+      "sha256": "22477b6b2de450800cc32a66c642ba19ab48f87d6a5886a2640378bccea1e5cf",
+      "before_sha256": "22477b6b2de450800cc32a66c642ba19ab48f87d6a5886a2640378bccea1e5cf"
+    }
+  },
+  "review_boundaries": "Read and reviewed all 14 actual manuscript sections and their full diffs, main.tex, and tables supporting changed interpretations; all 14 tables, bibliography and 3 figures checked byte-for-byte against frozen before. No new literature or clinical claim verification was needed for this prose-only revision. PDF compilation/layout and external publication are owned by the parent task.",
+  "last_source_recheck_at": "2026-10-02T20:24:44.249453+00:00",
+  "late_layout_edit_review": {
+    "file": "sections/benchmark.tex",
+    "change": "MedEinst requires open diagnosis -> MedEinst uses open diagnosis",
+    "assessment": "Equivalent description of the native output interface; reread the complete benchmark section after notification. Receipt hash already contained the updated wording.",
+    "status": "accepted"
+  },
+  "all_reviewed_source_hashes_current": true
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "page": 1,
+    "first_lines": [
+      "CF-MoA: Taxonomy-Guided Benchmarking and Agent",
+      "Orchestration for Counterfactual Medical Reasoning",
+      "Anonymous Authors"
+    ]
+  },
+  {
+    "page": 2,
+    "first_lines": [
+      "Our contributions are threefold. First, we introduce",
+      "a functional taxonomy and a provenance-preserving",
+      "benchmark that connect diverse medical counterfactual"
+    ]
+  },
+  {
+    "page": 3,
+    "first_lines": [
+      "that unit. Separating these levels allows several func-",
+      "tional annotations within one clinical narrative while",
+      "preserving the source\u2019s original question and answer"
+    ]
+  },
+  {
+    "page": 4,
+    "first_lines": [
+      "correctness. We report",
+      "su =",
+      "1"
+    ]
+  },
+  {
+    "page": 5,
+    "first_lines": [
+      "computed separately for each order; its subtraction co-",
+      "e\ufb03cient is \ufb01xed at one. A3 selects the highest corrected",
+      "score per order and votes across orders, breaking vote"
+    ]
+  },
+  {
+    "page": 6,
+    "first_lines": [
+      "a  Functional benchmarking",
+      "Five functional relations",
+      "R1  Add support"
+    ]
+  },
+  {
+    "page": 7,
+    "first_lines": [
+      "Table 1: Complete v5 results for seven baseline con\ufb01gurations and two CF-MoA instantiations. Scores are percentages",
+      "of native-unit means; bold denotes the highest value in each column.",
+      "System"
+    ]
+  },
+  {
+    "page": 8,
+    "first_lines": [
+      "0",
+      "20",
+      "40"
+    ]
+  },
+  {
+    "page": 9,
+    "first_lines": [
+      "0",
+      "25",
+      "50"
+    ]
+  },
+  {
+    "page": 10,
+    "first_lines": [
+      "crete direction for further counterfactual medical reason-",
+      "ing research.",
+      "Limitations"
+    ]
+  },
+  {
+    "page": 11,
+    "first_lines": [
+      "November 2020. Association for Computational Lin-",
+      "guistics. doi: 10.18653/v1/2020.findings-emnlp.117.",
+      "URL https://aclanthology.org/2020.findings"
+    ]
+  },
+  {
+    "page": 12,
+    "first_lines": [
+      "Marco Tulio Ribeiro, Tongshuang Wu, Carlos Guestrin,",
+      "and Sameer Singh. Beyond accuracy: Behavioral test-",
+      "ing of NLP models with CheckList."
+    ]
+  },
+  {
+    "page": 13,
+    "first_lines": [
+      "Table 3: Complete v5 benchmark composition by source. R1\u2013R5 columns count units bearing each category label.",
+      "ID",
+      "Source"
+    ]
+  },
+  {
+    "page": 14,
+    "first_lines": [
+      "and expanded eligibility review. The v5 evaluation used in this paper retains all eligible R1\u2013R4 targets and samples",
+      "450 R5 units from each of eight sources. These source samples are drawn without replacement from sorted identi\ufb01ers",
+      "using a source-speci\ufb01c seeded procedure. The original semantic labels and the selected evaluation labels are stored"
+    ]
+  },
+  {
+    "page": 15,
+    "first_lines": [
+      "Table 5: Diagnosis and support-removal controls. (a) Original answers, single catalog selection, six-order voting, and",
+      "calibrated voting on 680 diagnostic units. (b) Head and coverage-matched constant \u201cNone\u201d results on R2, with the",
+      "nine covered cases retaining support shown separately."
+    ]
+  },
+  {
+    "page": 16,
+    "first_lines": [
+      "probabilities across both label mappings. The component\u2019s exact stopping, tie-breaking, and invalid-output policies",
+      "are speci\ufb01ed in Section 4 and the accompanying implementation.",
+      "The development study also tested generated aggregation over the available expert outputs on 121 inputs. The"
+    ]
+  },
+  {
+    "page": 17,
+    "first_lines": [
+      "Table 9: Full six-arm category scores (percent). ALL and category scores use native unit means; categories overlap.",
+      "Backbone",
+      "Arm"
+    ]
+  },
+  {
+    "page": 18,
+    "first_lines": [
+      "Table 13: Paired contrasts in the ALL mean. E\ufb00ects and 95% family bootstrap intervals are in percentage points.",
+      "These are descriptive intervals on exposed development data.",
+      "Con\ufb01g."
+    ]
+  },
+  {
+    "page": 19,
+    "first_lines": [
+      "Qwen and typed control v2. The paper uses system names, while manifests retain these identi\ufb01ers. The discontinued",
+      "i-MedRAG experiment is preserved separately under its own identity in the historical archive.",
+      "Selected outputs cover all 13,905 native inputs per con\ufb01guration. Exact reuse is recorded for M0 (8,877 reused and"
+    ]
+  }
+]

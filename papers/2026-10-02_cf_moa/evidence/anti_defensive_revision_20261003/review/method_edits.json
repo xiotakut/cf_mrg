@@ -1,0 +1,206 @@
+{
+  "timestamp_utc": "2026-10-02T20:22:43.843982+00:00",
+  "editor": "revise_method_prose",
+  "scope": [
+    "docs/paper/latex/sections/benchmark.tex",
+    "docs/paper/latex/sections/method.tex",
+    "docs/paper/latex/sections/related_work.tex"
+  ],
+  "skill": "skill/SKILL.md in same run; complete English and Chinese rules read",
+  "status": "edited; numerical/citation/equation checks passed; full-manuscript integration pending root",
+  "workflow": [
+    "Read workspace AGENTS and paper record ownership plus current revision anchor.",
+    "Read the pinned Kiterlin skill and all assigned sections, main.tex, introduction, setup, discussion and limitations for context.",
+    "Classified negative statements by their evidentiary and methodological function before editing.",
+    "Edited argument-leading sentences, combined redundant motivation, and expressed resource scope directly.",
+    "Compared digit tokens, exact citation commands, equations, labels and cross-reference commands against before snapshot.",
+    "Read final assigned sections for factual preservation and coherent method scope."
+  ],
+  "change_categories": [
+    {
+      "category": "Lead with the benchmark contribution",
+      "file": "benchmark.tex",
+      "before": "We organize medical counterfactual tasks around the relationship between a change and a specified judgment.",
+      "after": "Our benchmark evaluates the relationship between a change and a specified medical judgment.",
+      "reason": "States the evaluated relation immediately; preserves unit/target distinctions and native contracts."
+    },
+    {
+      "category": "Consolidate repeated provenance explanation",
+      "file": "benchmark.tex",
+      "before": "The construction pipeline preserves provenance and explicit correction history. ... Unit identifiers, source locations, eligibility decisions, and target-to-input mappings make the final evaluation traceable to the acquired materials.",
+      "after": "The pipeline records unit identifiers, source locations, eligibility decisions, target-to-input mappings, and correction history, making the final evaluation traceable to the acquired materials.",
+      "reason": "Retains every provenance element and the 172 judgments / 130 units correction evidence without repeating the same point."
+    },
+    {
+      "category": "State resource permissions as positive scope",
+      "file": "benchmark.tex",
+      "before": "Under our evaluation protocol, systems may additionally retrieve external evidence according to their configured permissions; this combines fixed perturbed evidence with dynamic retrieval.",
+      "after": "Systems with retrieval permission can additionally retrieve external evidence, combining fixed perturbed evidence with dynamic retrieval.",
+      "reason": "Keeps permission conditionality and the combination of fixed and dynamic evidence in one direct statement."
+    },
+    {
+      "category": "Explain the agent mechanism directly",
+      "file": "method.tex",
+      "before": "The roles correspond to R1--R5 as design objectives; online execution depends on the current input's capabilities. Agents can share model weights and deterministic components.",
+      "after": "These roles correspond to R1--R5 and operate through a sparse controller. ... The base system supplies its current answer and actual inference context; agents share backbone weights and, where applicable, deterministic components.",
+      "reason": "Makes the actual controller and sharing arrangement explicit while preserving capability routing and the separate A4 evaluation."
+    },
+    {
+      "category": "Replace negative clarification with separate resource roles",
+      "file": "method.tex",
+      "before": "The catalog and scorer's frozen normalization are separate resources; this decision stage changes candidate selection without expanding the scoring dictionary.",
+      "after": "The catalog supplies candidates for this decision stage; the scorer uses its separate, frozen normalization dictionary.",
+      "reason": "Expresses the unchanged scoring boundary through the concrete function of each resource."
+    },
+    {
+      "category": "Place the operation before its complete prerequisites",
+      "file": "method.tex",
+      "before": "A4 compiles an intervention into a typed local patch when the input supplies the executable model, parameters, complete initial state, and factual action schedule.",
+      "after": "A4 compiles an intervention into a typed local patch and executes it to compute its consequences. Its input supplies the executable model, parameters, complete initial state, and factual action schedule.",
+      "reason": "Retains compilation, execution, and all four required resources while giving the paragraph a clear operational opening."
+    },
+    {
+      "category": "Connect literature to the study without repeated motivation",
+      "file": "related_work.tex",
+      "before": "These approaches motivate evaluating the relationship between an input change and its required response. Our five-category taxonomy applies that perspective to medical tasks...",
+      "after": "Our five-category taxonomy applies this behavioral perspective to medical tasks by recording the changed condition, the requested decision, and the evidence needed to justify revision or preservation.",
+      "reason": "Combines overlapping motivation; preserves the relation to CheckList, Contrast Sets and Dynabench and all citations."
+    },
+    {
+      "category": "Describe sparse coordination accurately",
+      "file": "related_work.tex",
+      "before": "CF-MoA gives its five agents explicit functional responsibilities and combines their outputs through a shared input contract and routing interface.",
+      "after": "CF-MoA assigns five functional responsibilities and coordinates their execution through a shared input contract and routing interface.",
+      "reason": "Matches the sparse routed controller described in Methods rather than implying all five outputs are aggregated on every input."
+    }
+  ],
+  "necessary_conditions_preserved": [
+    "R1 support does not by itself uniquely establish a diagnosis; categories overlap and target labels union to unit labels.",
+    "Omitted symptoms do not imply absence; unchanged answers do not establish invariance.",
+    "Acquired archive includes a multimodal metadata release lacking required images; eligibility and scoring are separate.",
+    "Language-model agents performed annotation and review; unreliable references can be excluded while semantic labels remain.",
+    "Gold, functional labels, rationales and opposite endpoints remain excluded from inference.",
+    "ALL is a macro-average over 6,104 units rather than pooled inputs/category averages; invalid outputs remain in denominators.",
+    "Exact routing priority, native passthrough and all route counts unchanged; A4 has no qualifying clinical v5 inputs.",
+    "A1/A2 share 71 rules; supported pattern requires age at least 65; extraction excludes base answer and retrieval; missing facts remain unknown.",
+    "Three-valued independent support and the support-update equation remain unchanged.",
+    "A3 catalog size, six orders, three priors, coefficient one, vote/tie behavior and fixed scoring dictionary remain unchanged.",
+    "A4 requires the complete executable model, parameters, state and factual action schedule; same-tool full-plan control retained.",
+    "A5 sampling temperature/seeds/token cap, voting and invalid-output behavior unchanged; NLI mapping, call counts, tie behavior and cost accounting unchanged."
+  ],
+  "verification": [
+    {
+      "file": "docs/paper/latex/sections/benchmark.tex",
+      "sha256_before": "52c3367a203937e6534772a05198b019f0d0e39ca8341eb5811265d34c23a690",
+      "sha256_after": "c0519f3d2e3dfcc7dcb0886962f99b3d814c579319ea6035f14b852f85569202",
+      "checks": {
+        "number_tokens": {
+          "identical_sequence": true,
+          "before_count": 51,
+          "after_count": 51
+        },
+        "citation_commands": {
+          "identical_sequence": true,
+          "before_count": 7,
+          "after_count": 7
+        },
+        "equations": {
+          "identical_sequence": true,
+          "before_count": 1,
+          "after_count": 1
+        },
+        "labels": {
+          "identical_sequence": true,
+          "before_count": 2,
+          "after_count": 2
+        },
+        "reference_commands": {
+          "identical_sequence": true,
+          "before_count": 0,
+          "after_count": 0
+        }
+      },
+      "approx_word_counts": {
+        "before": 872,
+        "after": 851
+      }
+    },
+    {
+      "file": "docs/paper/latex/sections/method.tex",
+      "sha256_before": "616e6f56e774d6dc9a34437f2bb4eea757b3747c7467b98650bea55ec053b419",
+      "sha256_after": "6fe38572cfe8100a178fb72684c2311c621c62556bec57f4919936ddee23f727",
+      "checks": {
+        "number_tokens": {
+          "identical_sequence": true,
+          "before_count": 56,
+          "after_count": 56
+        },
+        "citation_commands": {
+          "identical_sequence": true,
+          "before_count": 5,
+          "after_count": 5
+        },
+        "equations": {
+          "identical_sequence": true,
+          "before_count": 1,
+          "after_count": 1
+        },
+        "labels": {
+          "identical_sequence": true,
+          "before_count": 2,
+          "after_count": 2
+        },
+        "reference_commands": {
+          "identical_sequence": true,
+          "before_count": 1,
+          "after_count": 1
+        }
+      },
+      "approx_word_counts": {
+        "before": 921,
+        "after": 919
+      }
+    },
+    {
+      "file": "docs/paper/latex/sections/related_work.tex",
+      "sha256_before": "2584ff66dcee3ad68c6c39cf632a4d7a15c1ee985232a8861f13ee764aed43a8",
+      "sha256_after": "9a4fb98a3068da8ba57a69e02fcc06ce0a9cbaedee29ac5478fe3ce11ad89cb8",
+      "checks": {
+        "number_tokens": {
+          "identical_sequence": true,
+          "before_count": 23,
+          "after_count": 23
+        },
+        "citation_commands": {
+          "identical_sequence": true,
+          "before_count": 21,
+          "after_count": 21
+        },
+        "equations": {
+          "identical_sequence": true,
+          "before_count": 0,
+          "after_count": 0
+        },
+        "labels": {
+          "identical_sequence": true,
+          "before_count": 1,
+          "after_count": 1
+        },
+        "reference_commands": {
+          "identical_sequence": true,
+          "before_count": 0,
+          "after_count": 0
+        }
+      },
+      "approx_word_counts": {
+        "before": 504,
+        "after": 469
+      }
+    }
+  ],
+  "notes": [
+    "A first numeric regex incorrectly included punctuation commas after agent labels, yielding a false mismatch; the corrected regex matches numbers with internal thousands groups and confirms identical sequences for all three files.",
+    "No scientific data, experiments, scores, equations, citation identities, headings or labels changed.",
+    "No Git operation, publication, model inference or scoring performed."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "reviewer": "root",
+  "reviewed_at_utc": "2026-10-02T20:26:32.298174+00:00",
+  "pdf_sha256": "45808db27c1be8a2a6adc6c156f3612c92ba4e93da3174c05142b35e53753905",
+  "pages": 19,
+  "contact_sheets": [
+    "layout_contact_1.png",
+    "layout_contact_2.png"
+  ],
+  "detail_pages": [
+    1,
+    7
+  ],
+  "findings": [
+    "All pages inspected through contact sheets: no visibly clipped text or overlapping floats.",
+    "Title/abstract and main results inspected at full rendered page scale.",
+    "Scientific figures and numeric tables unchanged; float placement remains within related sections."
+  ],
+  "scope": "Visual inspection of rendered pages, complemented by clean overfull/missing-reference checks."
+}

@@ -1,6 +1,8 @@
 # CF-MoA — complete English LaTeX manuscript
 
-This is the 2026-10-03 full manuscript based on the completed coauthor research dossier.
+This is the 2026-10-03 full manuscript, revised with the
+[Kiterlin anti-defensive-writing skill](https://github.com/Kiterlin/anti-defensive-writing)
+to state its contributions and findings directly. It is based on the completed coauthor research dossier.
 Its main thread is the five-relation taxonomy, benchmark construction, seven configured
 systems, specialized heads, and the adopted five-role CF-MoA controller. The appendix
 contains the complete six-arm and component comparisons. This generic conference layout

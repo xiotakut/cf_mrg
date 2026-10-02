@@ -1,22 +1,24 @@
-# CF-MoA: complete English LaTeX manuscript
+# CF-MoA: English LaTeX manuscript
 
-**2026-10-03 full rewrite:** [20-page PDF](manuscript.pdf) · [Native LaTeX](latex/main.tex) · [Overleaf/source ZIP](cf_moa_latex.zip) · [Build and figure reproduction](latex/README.md).
+**2026-10-03 writing revision:** [19-page PDF](manuscript.pdf) · [Native LaTeX](latex/main.tex) · [Overleaf/source ZIP](cf_moa_latex.zip) · [Build and figure reproduction](latex/README.md).
 
-完整英文通用会议论文，以五类功能体系、benchmark构建、七系统诊断、五head及CF-MoA串成完整主线。正文突出采用B的两配置全量结果；附录保留六臂、全部类别、来源、格式、组件对照和成本。3张矢量图、14张表、29条参考文献。已有预测、标签和评分未修改；本轮没有新增实验。
+按作者选定的 [Kiterlin anti-defensive-writing skill](https://github.com/Kiterlin/anti-defensive-writing) 修订全文14个章节：突出五类体系、benchmark、七系统诊断与CF-MoA贡献，精简重复辩解和过程旁白。3张图、14张表、29条引用及实验结果保持。独立内容审阅、编译与ZIP逐页重建验收通过。
 
 ## Read and edit
 
-- [main.tex](latex/main.tex), [section sources](latex/sections), [tables](latex/tables), [figures](latex/figures), and [BibTeX](latex/references.bib)
-- [Frozen figure/result inputs](latex/inputs) and [reproduction scripts](latex/scripts)
-- [Writing, factual, bibliography, layout, and rebuild receipts](evidence/full_manuscript_20261003/review)
-- [Skill workflow and evidence-to-claim map](evidence/full_manuscript_20261003/skill/workflow_record.json)
+- [Section sources](latex/sections), [tables](latex/tables), [figures](latex/figures), and [BibTeX](latex/references.bib)
+- [Frozen inputs](latex/inputs) and [figure/table reproduction scripts](latex/scripts)
+- [Revision and validation record](evidence/anti_defensive_revision_20261003/records/writing_record.md#kiterlin-manuscript-revision-20261003)
+- [Before/after diff](evidence/anti_defensive_revision_20261003/review/revision_diff.patch)
+- [Independent content review](evidence/anti_defensive_revision_20261003/review/independent_review.json) and [isolated ZIP rebuild](evidence/anti_defensive_revision_20261003/review/isolated_build_receipt.json)
+- [Invoked skill and fixed-source provenance](evidence/anti_defensive_revision_20261003/skill)
 
-The manuscript is a complete generic conference draft, with anonymous author details. Author identities, affiliations, funding, contributions, and competing interests must be completed before submission. Edit the `.tex` sources directly. The archive contains `main.tex` at its root and all included assets; the verified build uses Tectonic/XeTeX and BibTeX.
+Edit the native `.tex` sources directly. The ZIP contains `main.tex` at its root and all required assets. The verified build uses Tectonic/XeTeX and BibTeX. This generic conference draft uses anonymous author details; authors must complete identities, affiliations, funding, contributions, and competing interests before submission.
 
-## Coauthor research material
+## Coauthor material and earlier versions
 
-The [complete Chinese research dossier](author_dossier/research_dossier.md), [41-page reading PDF](author_dossier/research_dossier.pdf), and [dossier archive](cf_moa_author_dossier.zip) remain unchanged. They explain the entire experimental path and preserve the detailed positive and negative history. The new English manuscript is a scientific narrative built from that dossier, rather than a literal translation.
+The [Chinese research dossier](author_dossier/research_dossier.md), [41-page PDF](author_dossier/research_dossier.pdf), and [dossier ZIP](cf_moa_author_dossier.zip) explain the complete experimental path. The [paper framework](framework/README.md) and [framework ZIP](cf_moa_framework.zip) provide the earlier outline.
 
-The [earlier paper framework](framework/README.md) and [framework ZIP](cf_moa_framework.zip) remain historical artifacts. The prior 28-page English source archive and publication metadata are preserved in [the previous-publication snapshot](evidence/full_manuscript_20261003/previous_publication). The initial Markdown/Word/HTML/Typst deliverables are also historical; they are not synchronized sources for the current manuscript.
+The previous 20-page manuscript and publication metadata are frozen in [the revision snapshot](evidence/anti_defensive_revision_20261003/previous_publication). Earlier full-writing evidence remains in [the original writing package](evidence/full_manuscript_20261003); its previous-publication snapshot contains the 28-page draft. Initial Markdown/Word/HTML/Typst artifacts retain their historical status.
 
-The repository remains **private**. Source data and third-party resources retain their original licensing and access conditions. [Publication metadata](PUBLICATION.json) and [delivery manifest](DELIVERY_MANIFEST.json) identify this package.
+The repository is **private**. Original datasets and third-party resources retain their licensing and access conditions. [Publication metadata](PUBLICATION.json) and [delivery manifest](DELIVERY_MANIFEST.json) identify this version.

@@ -1,0 +1,188 @@
+{
+  "scope": "Kiterlin anti-defensive-writing revision of experimental_setup.tex and results.tex",
+  "created_at": "2026-10-03T04:22:02.994797+08:00",
+  "skill_read_in_full": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/anti_defensive_revision/skill/SKILL.md",
+  "before_directory": "/home/data3/txy/Documents/Codex/2026-10-03/cf_moa_full_manuscript/anti_defensive_revision/before",
+  "files": [
+    {
+      "path": "sections/experimental_setup.tex",
+      "before_sha256": "22986a70970511d0a8798b65019c107b98ea82ca6bfc75f9bc8fcf276ddf34c7",
+      "after_sha256": "7bb9439b241bdd7f3333bbc86bfe763c0da99e9cb81cab3958f6f23d90b4cf3c",
+      "numeric_tokens": 23,
+      "numeric_token_sequence_identical": true,
+      "citation_reference_label_input_graphics_sequence_identical": true,
+      "before_words_approx": 543,
+      "after_words_approx": 530
+    },
+    {
+      "path": "sections/results.tex",
+      "before_sha256": "95e2130205a8dafffceeb623c658637a3b5be70bed66f5aa43d90d7e0d765bc3",
+      "after_sha256": "b87221d43f6a14443eb7ec2ae93da4790a288e409129d622687ecd4fbaf5f3cc",
+      "numeric_tokens": 105,
+      "numeric_token_sequence_identical": true,
+      "citation_reference_label_input_graphics_sequence_identical": true,
+      "before_words_approx": 1201,
+      "after_words_approx": 1162
+    }
+  ],
+  "tables_unchanged": [
+    {
+      "path": "tables/seven_heads.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/main_results.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/story_main_results.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/costs.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/format_breakdown.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/head_controls.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/historical_model.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/source_breakdown.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/arms.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/story_pairs.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/full_categories.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/seven_system_head_gains.csv",
+      "unchanged": true
+    },
+    {
+      "path": "tables/ablations.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/story_sources.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/paired_behavior.csv",
+      "unchanged": true
+    },
+    {
+      "path": "tables/main_system_results.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/main_system_results.csv",
+      "unchanged": true
+    },
+    {
+      "path": "tables/seven_baselines.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/sources.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/support_operation_ablation.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/paired.tex",
+      "unchanged": true
+    },
+    {
+      "path": "tables/support_operation_ablation.csv",
+      "unchanged": true
+    },
+    {
+      "path": "tables/contrasts.tex",
+      "unchanged": true
+    }
+  ],
+  "edits": [
+    {
+      "function": "necessary methodological scope",
+      "before": "The comparison measures the complete configured systems; it does not equalize all retrieval and inference budgets.",
+      "after": "This comparison evaluates complete systems with their respective retrieval and inference budgets.",
+      "reason": "Positive scope preserves unequal configured budgets without defensive negation."
+    },
+    {
+      "function": "experiment purpose",
+      "before": "We separate two experimental scopes.",
+      "after": "The evaluation tests head transfer across seven configurations and complete controller performance on two MedRAG backbones.",
+      "reason": "Leads with the two questions that organize the evidence."
+    },
+    {
+      "function": "evidence-based qualification",
+      "before": "The head's value is therefore better assessed together with the operation ablation...",
+      "after": "On the nine covered prescribing examples with remaining support, the constant control scores zero; the head improves over the original answer in five configurations, is unchanged in one, and declines in one.",
+      "reason": "States control, subset, reference, and result directly; retains constant None outperforming all seven full-category heads."
+    },
+    {
+      "function": "redundant reporting commentary",
+      "before": "This localized regression is retained in the main table alongside the larger-category gains.",
+      "after": "Deleted; exact 13-unit clinical consequence scores remain in their paragraph.",
+      "reason": "The numeric result conveys the regression without reporting that the paper retains it."
+    },
+    {
+      "function": "negative framing to direct question",
+      "before": "More aggregation is not uniformly better",
+      "after": "Aggregation gains depend on the backbone",
+      "reason": "Section title leads with observed C3 heterogeneity; complete C2/C4/C5 and generated-aggregation findings remain."
+    },
+    {
+      "function": "metric precision",
+      "before": "Agreement alone does not satisfy either measure.",
+      "after": "Each pair counts as correct only when both answers match their respective references.",
+      "reason": "Positive operational definition retains the difference between agreement and joint correctness."
+    },
+    {
+      "function": "result precision",
+      "before": "Its candidate-only and joint-selection counterparts likewise do not provide a consistent improvement over B.",
+      "after": "Its candidate-only and joint-selection counterparts score below B on both backbones.",
+      "reason": "Read the complete six-arm table to state the actual C2/C5 direction precisely."
+    }
+  ],
+  "necessary_evidence_preserved": [
+    "Seven configurations / six families and two-backbone complete-controller scope.",
+    "All original numeral tokens in both files, including scores, samples, denominators, costs, intervals, bootstrap seed, and generation settings.",
+    "Benchmark overlap, reused extracted facts, saved contexts, and separate head versus full-system results.",
+    "Benchmark used for method development and bootstrap limited to variability within that benchmark.",
+    "Coverage-matched constant None wins R2 against all seven heads; nine remaining-support cases have five improvements, one tie, one decline.",
+    "M5/Qwen clinical R4 drops from 53.85 to 23.08 on 13 units; Llama remains 53.85.",
+    "C3 changes Llama by -1.81 and Qwen by +0.93; C2/C5 lower than B on both; expanded sampling creates more unavailable outputs.",
+    "A4 288 outputs remain limited to 24 supplied-model virtual profiles.",
+    "All component request counts, unavailable original retrieval costs, and inclusion of invalid outputs in denominators."
+  ],
+  "manual_sources_checked": [
+    "tables/main_system_results.tex",
+    "tables/support_operation_ablation.tex",
+    "tables/main_results.tex",
+    "tables/arms.tex",
+    "sections/appendix_components.tex",
+    "sections/appendix_full_results.tex"
+  ],
+  "facts_data_or_experiments_changed": false,
+  "initial_revision_issue": "An intermediate phrase described C2/C5 as mixed across backbones; review of the full six-arm table showed both are lower on both backbones. Corrected before delivery.",
+  "compilation": "Not performed by section editor; parent task performs whole-manuscript build after all edits."
+}

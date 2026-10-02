@@ -1,3 +1,5 @@
+**2026-10-03 · 论文表达修订完成：[19页PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [Overleaf ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。使用作者指定的Kiterlin anti-defensive-writing，精简全文重复辩解，突出贡献与结果；原图表、数据和29引用保持，独立审阅与重编译通过。下方20页为前轮版本。**
+
 **2026-10-03 · 完整英文论文：[20页PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [原生LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [Overleaf工程ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。从五类体系、benchmark、七系统、五head到CF-MoA完成全文，3图/14表/29引用；[作者raw底稿](papers/2026-10-02_cf_moa/author_dossier/README.md)与历史框架保留。仓库private，本轮0新增实验。**
 
 **2026-10-03 · 共同作者raw研究底稿：[完整实验路径与逻辑链](papers/2026-10-02_cf_moa/author_dossier/research_dossier.md) · [41页PDF](papers/2026-10-02_cf_moa/author_dossier/research_dossier.pdf) · [LaTeX与完整下载](papers/2026-10-02_cf_moa/author_dossier/README.md)。约3.1万汉字、八章、33张表，配套29份主记录快照及148阶段索引。新底稿更正旧框架40题R3的18/18配置混写；0新增模型/评分，仓库private。**

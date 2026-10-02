@@ -1,0 +1,44 @@
+{
+  "editor": "root",
+  "skill": "Kiterlin/anti-defensive-writing",
+  "files": [
+    "sections/abstract.tex",
+    "sections/introduction.tex",
+    "sections/discussion.tex",
+    "sections/limitations.tex"
+  ],
+  "examples": [
+    {
+      "file": "abstract.tex",
+      "change": "Lead with the taxonomy-to-operation contribution; identify development-benchmark scope once before the reported gains.",
+      "before": "Together, these results establish a functional framework for diagnosing and improving counterfactual medical reasoning across heterogeneous tasks.",
+      "after": "The taxonomy, benchmark, and controller connect behavioral diagnosis to concrete operations for improving counterfactual medical reasoning."
+    },
+    {
+      "file": "introduction.tex",
+      "change": "Explain the support example positively, then move directly from baseline profiles to the required computation.",
+      "before": "The strongest aggregate baseline is not the strongest system on every functional category.",
+      "after": "Different systems lead on different functional categories."
+    },
+    {
+      "file": "discussion.tex",
+      "change": "Connect each concrete mechanism to its decision interface and present the observed aggregation tradeoff.",
+      "before": "The mixed results from additional verification and generation show that assigning more agents to every input is not sufficient to improve the system.",
+      "after": "Further verification adds requests and produces different aggregate effects across the two backbones."
+    },
+    {
+      "file": "limitations.tex",
+      "change": "Keep development exposure, coverage, annotation, resource assumptions and clinical-use conditions in precise statements.",
+      "before": "It does not establish clinical effectiveness or authorize patient-care use.",
+      "after": "Patient-care use requires clinical validation beyond these evaluations."
+    }
+  ],
+  "conditions_preserved": [
+    "development reuse and missing unseen-family confirmation",
+    "two final-controller configurations versus seven earlier-head configurations",
+    "79 R2 / 13 R4, overlap, clinician agreement unmeasured",
+    "71-rule and catalog resources, output-coverage attribution, model-supplied physiology",
+    "unequal retrieval and inference budgets",
+    "clinical validation and data redistribution requirements"
+  ]
+}

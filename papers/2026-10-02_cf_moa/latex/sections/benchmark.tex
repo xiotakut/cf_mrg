@@ -1,7 +1,7 @@
 \section{A Functional Benchmark for Medical Counterfactual Reasoning}
 \label{sec:benchmark}
 
-We organize medical counterfactual tasks around the relationship between a change and a specified judgment. A \emph{comparison unit} links a source-provided variant to its reference or identifies an explicit within-question hypothetical. A \emph{target judgment} identifies what is being assessed within that unit. This distinction lets a single clinical narrative support several functional annotations while retaining the source's original question and answer contract. The resulting taxonomy covers condition changes, hypothetical evidence, and perturbations whose effects are evaluated through native task performance.
+Our benchmark evaluates the relationship between a change and a specified medical judgment. A \emph{comparison unit} links a source-provided variant to its reference or identifies an explicit within-question hypothetical. A \emph{target judgment} identifies what is being assessed within that unit. Separating these levels allows several functional annotations within one clinical narrative while preserving the source's original question and answer contract. The taxonomy covers condition changes, hypothetical evidence, and perturbations evaluated through native task performance.
 % Evidence: docs/data/classification.md, annotation contract and target-level definitions;
 % docs/paper/research_dossier.md, Sections 3.1--3.2.
 
@@ -11,7 +11,7 @@ We organize medical counterfactual tasks around the relationship between a chang
 % Evidence: docs/data/classification.md, definitions and retained examples;
 % cited MedEinst examples are locally retained source cases 10000 and 13249.
 
-These relations overlap because they describe functions at the target level. The same observation may add support to one diagnosis and alter its comparison with another. Annotation therefore records the change, target, applicable relations, supporting text, and conclusions that cannot be inferred, then takes the union of target labels for the parent unit. Omission of a symptom does not establish its explicit absence, and an unchanged answer alone does not establish invariance. Native comparison axes are preserved: an internal hypothetical and an externally edited patient attribute receive separate treatment when they address different judgments.
+The taxonomy captures overlapping functions at the target level. The same observation may add support to one diagnosis and alter its comparison with another. Each annotation records the change, target, applicable relations, supporting text, and conclusions that cannot be inferred; the parent unit receives the union of its target labels. Omission of a symptom does not establish its explicit absence, and an unchanged answer alone does not establish invariance. Native comparison axes are preserved: an internal hypothetical and an externally edited patient attribute receive separate treatment when they address different judgments.
 % Evidence: docs/data/classification.md, comparison-axis and cannot_infer rules.
 
 \subsection{Collection, qualification, and sampling}
@@ -20,7 +20,7 @@ We registered 26 candidate sources and obtained 15, comprising 14 text resources
 % Evidence: docs/data/sources.md; docs/data/construction.md;
 % paper_story_alignment/benchmark_contribution_audit.json.
 
-Language-model agents performed structured semantic annotation and review, supported by cross-checks and targeted audits. The construction pipeline preserves provenance and explicit correction history. Review distinguishes whether a functional relation holds from whether its reference answer supports scoring. For example, a valid invariance annotation can remain while an unreliable reference is excluded from scoring. Targeted review corrected 172 judgments across 130 units; these corrections are retained alongside their earlier versions. Unit identifiers, source locations, eligibility decisions, and target-to-input mappings make the final evaluation traceable to the acquired materials.
+Language-model agents performed structured semantic annotation and review, supported by cross-checks and targeted audits. Review assesses both the functional relation and the reference answer's suitability for scoring. A valid invariance annotation, for example, remains in the archive even when its unreliable reference is excluded from scoring. Targeted review corrected 172 judgments across 130 units, with the earlier versions retained. The pipeline records unit identifiers, source locations, eligibility decisions, target-to-input mappings, and correction history, making the final evaluation traceable to the acquired materials.
 % Evidence: docs/data/construction.md, review corrections;
 % docs/paper/research_dossier.md, Section 3.3.
 
@@ -33,7 +33,7 @@ The frozen v5 evaluation retains all eligible R1--R4 targets and samples 450 R5 
 The selected units contain 13,000 target judgments and materialize into 13,905 distinct model inputs, including reference endpoints. Each method has 15,616 native scoring mappings: one input may support multiple targets, and shared references can serve several units. Models receive the current question, native options, required evidence, and output contract. Reference and variant endpoints are answered independently; gold answers, functional labels, annotation rationales, and the opposite endpoint's answer remain outside inference.
 % Evidence: docs/evaluation/protocol.md, Sections 2.1 and 5.1.
 
-Native interfaces preserve the distinctions between sources. MedEinst requires open diagnosis, MedPIC uses multiple-answer selection, and MedPerturb expands eligible visit, management, and resource judgments separately. Hypothetical research evidence remains attached to its relation question. MedRGB retains the locally frozen six evidence conditions, with the fully relevant condition serving as the reference endpoint. Under our evaluation protocol, systems may additionally retrieve external evidence according to their configured permissions; this combines fixed perturbed evidence with dynamic retrieval.
+Native interfaces retain each source's decision task. MedEinst uses open diagnosis, MedPIC uses multiple-answer selection, and MedPerturb expands eligible visit, management, and resource judgments separately. Hypothetical research evidence remains attached to its relation question. MedRGB retains the locally frozen six evidence conditions, with the fully relevant condition serving as the reference endpoint. Systems with retrieval permission can additionally retrieve external evidence, combining fixed perturbed evidence with dynamic retrieval.
 % Evidence: docs/evaluation/protocol.md, native format preservation and MedRGB conditions.
 
 For unit $u$, let $\mathcal{J}_u$ contain its eligible non-reference native scoring mappings and let $c_j\in\{0,1\}$ denote primary correctness. We report
