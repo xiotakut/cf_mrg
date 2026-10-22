@@ -1,0 +1,347 @@
+{
+  "method": "M5",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 24,
+      "macro_recall": 0.4744897959183673,
+      "common_valid": {
+        "n": 40,
+        "correct": 24
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 6,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "native_count": {
+          "repairs": 6,
+          "harms": 2
+        },
+        "native_model": {
+          "repairs": 4,
+          "harms": 2
+        },
+        "coded_count": {
+          "repairs": 5,
+          "harms": 3
+        },
+        "coded_model": {
+          "repairs": 5,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.3647959183673469,
+      "common_valid": {
+        "n": 40,
+        "correct": 20
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 4
+        },
+        "native_count": {
+          "repairs": 4,
+          "harms": 4
+        },
+        "native_model": {
+          "repairs": 2,
+          "harms": 4
+        },
+        "coded_count": {
+          "repairs": 4,
+          "harms": 6
+        },
+        "coded_model": {
+          "repairs": 2,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "count",
+      "n": 40,
+      "correct": 17,
+      "macro_recall": 0.33418367346938777,
+      "common_valid": {
+        "n": 40,
+        "correct": 17
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 5,
+          "harms": 6
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 7
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 8
+        },
+        "native_count": {
+          "repairs": 5,
+          "harms": 8
+        },
+        "native_model": {
+          "repairs": 5,
+          "harms": 10
+        },
+        "coded_count": {
+          "repairs": 2,
+          "harms": 7
+        },
+        "coded_model": {
+          "repairs": 5,
+          "harms": 9
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.28316326530612246,
+      "common_valid": {
+        "n": 40,
+        "correct": 18
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 1,
+          "harms": 3
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 6
+        },
+        "native_count": {
+          "repairs": 5,
+          "harms": 7
+        },
+        "native_model": {
+          "repairs": 2,
+          "harms": 6
+        },
+        "coded_count": {
+          "repairs": 3,
+          "harms": 7
+        },
+        "coded_model": {
+          "repairs": 1,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "variant": "native_count",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.4362244897959184,
+      "common_valid": {
+        "n": 40,
+        "correct": 20
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 7,
+          "harms": 5
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 4
+        },
+        "calibrated": {
+          "repairs": 2,
+          "harms": 6
+        },
+        "native_count": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "native_model": {
+          "repairs": 1,
+          "harms": 3
+        },
+        "coded_count": {
+          "repairs": 4,
+          "harms": 6
+        },
+        "coded_model": {
+          "repairs": 4,
+          "harms": 5
+        }
+      }
+    },
+    {
+      "variant": "native_model",
+      "n": 40,
+      "correct": 22,
+      "macro_recall": 0.4489795918367347,
+      "common_valid": {
+        "n": 40,
+        "correct": 22
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 6,
+          "harms": 2
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 2
+        },
+        "calibrated": {
+          "repairs": 2,
+          "harms": 4
+        },
+        "native_count": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "native_model": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "coded_count": {
+          "repairs": 5,
+          "harms": 5
+        },
+        "coded_model": {
+          "repairs": 3,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "coded_count",
+      "n": 40,
+      "correct": 22,
+      "macro_recall": 0.4362244897959184,
+      "common_valid": {
+        "n": 40,
+        "correct": 22
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 7,
+          "harms": 3
+        },
+        "uncued4": {
+          "repairs": 6,
+          "harms": 4
+        },
+        "calibrated": {
+          "repairs": 3,
+          "harms": 5
+        },
+        "native_count": {
+          "repairs": 6,
+          "harms": 4
+        },
+        "native_model": {
+          "repairs": 5,
+          "harms": 5
+        },
+        "coded_count": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "coded_model": {
+          "repairs": 5,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "variant": "coded_model",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.4260204081632653,
+      "common_valid": {
+        "n": 40,
+        "correct": 21
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 4,
+          "harms": 1
+        },
+        "uncued4": {
+          "repairs": 3,
+          "harms": 2
+        },
+        "calibrated": {
+          "repairs": 2,
+          "harms": 5
+        },
+        "native_count": {
+          "repairs": 5,
+          "harms": 4
+        },
+        "native_model": {
+          "repairs": 2,
+          "harms": 3
+        },
+        "coded_count": {
+          "repairs": 4,
+          "harms": 5
+        },
+        "coded_model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 737,
+    "relation_calls": 577,
+    "final_calls": 160,
+    "input_tokens": 646474,
+    "output_tokens": 27425,
+    "invalid_cases": 0,
+    "length_stops": 0,
+    "order_probe_calls": 40
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 3646303,
+    "gpu": 3,
+    "method": "M5",
+    "finished": [
+      "relations",
+      "final"
+    ],
+    "stage": "final",
+    "elapsed_seconds": 269.21297693252563
+  }
+}

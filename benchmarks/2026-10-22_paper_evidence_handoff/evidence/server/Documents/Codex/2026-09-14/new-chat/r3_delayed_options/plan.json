@@ -1,0 +1,37 @@
+{
+  "status": "prepared",
+  "date": "2026-09-15",
+  "previous_turn": "Progress:3840 completed knowledge-utility scores, full replay and confirmed lack of diagnostic gain.",
+  "source": "https://arxiv.org/html/2507.15337v1",
+  "read_sections": [
+    "3.1",
+    "3.2"
+  ],
+  "adaptation": "Delay explicit native option list until final decision; same original model produces provisional substantive judgment then evaluates native options. Paper studies evaluation artifacts, not guaranteed clinical improvement. Unlike its filtered open-question benchmark, retain all18 native R3 development questions and grade final native answers only.",
+  "criteria": "Delayed versus visible two-stage is primary, matched original-model calls, max384 output tokens/stage, temp0, same medical references and auxiliary system. Direct one-call re-answer and existing baseline are separate controls.",
+  "permissions": "No training cases/labels, public49 disease catalog, test gold or paired reference input. Existing medical documents may have been retrieved using original inputs and can mention option concepts; this is delayed list exposure, not a claim of completely option-independent information.",
+  "scope": "Same frozen14 M12 single-choice and4 M02 multi-choice development targets. No resampling, no diagnosis runs, no new independent generalization.",
+  "formats": "Keep every native option and question verbatim; final context starts with exact original messages and original output schema. Auxiliary draft replaces original option-specific system/answer contract in BOTH arms.",
+  "fallback": "Malformed/empty draft skips the second call and returns the actual original answer; invalid final answer also returns the actual original answer. Retain all cases and report fallback contributions.",
+  "plan_new_calls": 180,
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 18,
+      "single": 14,
+      "multi": 4,
+      "baseline_parity": 18,
+      "max_draft_prompt_tokens": 3248,
+      "planned_calls": 90
+    },
+    {
+      "method": "M5",
+      "cases": 18,
+      "single": 14,
+      "multi": 4,
+      "baseline_parity": 18,
+      "max_draft_prompt_tokens": 3405,
+      "planned_calls": 90
+    }
+  ]
+}

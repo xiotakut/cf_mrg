@@ -1,0 +1,49 @@
+{
+  "started_at": "2026-09-17 18:53:54.138834+08:00",
+  "mode": "sequential_causal_steps_workers_shared_GPU1",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 1,
+      "free_mib": 58465,
+      "pid": 2133344,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "run",
+        "--stage",
+        "causal_steps",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:53:54.280351+08:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:59:56.251536+08:00"
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "free_mib": 62117,
+      "pid": 2137153,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "run",
+        "--stage",
+        "causal_steps",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:59:56.327823+08:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 19:05:03.406670+08:00"
+    }
+  ],
+  "finished_at": "2026-09-17 19:05:03.407276+08:00"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T16:37:17.805505+08:00",
+  "model": "qwen",
+  "new_calls": 302,
+  "native_score_n": 79,
+  "native_fact_calls": 110,
+  "exposed_probe_n": 96,
+  "probe_fact_calls": 192,
+  "note": "Two new extraction arms on55 original R2 inputs and96 already exposed controlled cases. Same original weights, facts, rules and2048 budget; order_only changes schema property order, evidence_first adds evidence-first instructions. Uncovered24 retain original outputs. All_rules/question_scope are offline executions of identical extracted facts. Question_scope applies only to explicit renal-function final questions; absent rules stay UNKNOWN. This probe set is now development data, not a new heldout test."
+}

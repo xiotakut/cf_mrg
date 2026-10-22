@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-09-18 17:14:36 +0800",
+  "reason": "M5 author smoke row5278 changed sign with batch composition before any new J score. Validate actual single-input deployment interface.",
+  "status": "planned; no new J scoring",
+  "batch_size": 1,
+  "views": [
+    "ph",
+    "h_only"
+  ],
+  "rows_per_backbone": 224,
+  "deduplicate": false,
+  "fit_or_reselect": false,
+  "gold_used_to_prepare": false,
+  "D_access": false,
+  "reporting": "Keep U original batch8 analysis as executed; actual single-input candidate uses only singleton encodings with identical frozen parameters/C/threshold. Report both and all differences, never choose by score.",
+  "sources": {
+    "m4": {
+      "requests_sha256": "68ee95c8637c9aecef30fa2651ff137c267f358d5ff78e550aa4bb235b8a47f3",
+      "U_head_sha256": "da0e08e121cb21d50071b217efd30439e1e944f447e10b4c43abbd87cbd75c55"
+    },
+    "m5": {
+      "requests_sha256": "68ee95c8637c9aecef30fa2651ff137c267f358d5ff78e550aa4bb235b8a47f3",
+      "U_head_sha256": "ac25d52dc4de158aa1b70425a3f197b76fcab95765e314e4873b3e5934e9bfca"
+    }
+  }
+}

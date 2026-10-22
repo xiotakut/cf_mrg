@@ -1,0 +1,65 @@
+{
+  "status": "prepared_not_launched",
+  "at": "2026-09-18 09:18:19 +0800",
+  "inputs_per_model": 48,
+  "cohorts": {
+    "nli_choice_R5_validation": 32,
+    "strong_relevant_change": 16
+  },
+  "primary": "equal_four_distributions_two_paths",
+  "control": "reasoned_mean_probability",
+  "code_mappings": "Native option insertion order and its reverse; exactly two unique mappings.",
+  "distributions": 384,
+  "analyses": 96,
+  "minimum_actual_calls": 480,
+  "maximum_actual_calls": 864,
+  "seed": 42,
+  "temperature": 0,
+  "selector_max_tokens": 1,
+  "analysis_max_tokens": 2048,
+  "raw_top_logprobs": 2048,
+  "coverage": "Missing other code is fetched with identical prompt and forced singleton; no floor.",
+  "output_contract": "Intermediate native key only; not a complete native JSON/explanation head.",
+  "reasoned": "Original full messages + new raw assistant response (may include explanation and answer) + identical selector. No old answer.",
+  "selection": "Existing frozen inputs/evaluation; no selection or input changes; gold offline only; no prior.",
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 48,
+      "original_message_equal": 48,
+      "verbatim_current_questions": 48,
+      "matched_selector_pairs": 96,
+      "code_token_ids": {
+        "A": 32,
+        "B": 33
+      },
+      "prepared_direct_distributions": 96,
+      "prepared_analyses": 48,
+      "dependent_reasoned_distributions": 96,
+      "max_direct_prompt_tokens": 5334,
+      "max_analysis_prompt_tokens": 5320
+    },
+    {
+      "method": "M5",
+      "inputs": 48,
+      "original_message_equal": 48,
+      "verbatim_current_questions": 48,
+      "matched_selector_pairs": 96,
+      "code_token_ids": {
+        "A": 32,
+        "B": 33
+      },
+      "prepared_direct_distributions": 96,
+      "prepared_analyses": 48,
+      "dependent_reasoned_distributions": 96,
+      "max_direct_prompt_tokens": 5246,
+      "max_analysis_prompt_tokens": 5232
+    }
+  ],
+  "controls": [
+    "direct_mean_probability",
+    "reasoned_mean_probability",
+    "native_single_full_output"
+  ],
+  "decision_frozen": "Equal semantic probability from direct and reasoned, each in two unique A/B maps; no alpha or threshold search. See already saved nli_choice/equal_path_ensemble.py."
+}

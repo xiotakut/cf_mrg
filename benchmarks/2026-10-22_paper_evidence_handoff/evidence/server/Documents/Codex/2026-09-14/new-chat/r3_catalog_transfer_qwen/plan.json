@@ -1,0 +1,21 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M3",
+    "M7"
+  ],
+  "unique_cases": 40,
+  "method_cases": 80,
+  "calls": 160,
+  "reasoned": false,
+  "selection": "Backbone setting fixed from original M4/M5 development128: Llama brief reasoning, Qwen direct; identical mode for both name/code controls, no per-case selection",
+  "resource": "Same public49 names in both controls; original method-specific upstream context reused; no training cases or test labels passed to inference",
+  "scope": "Same exposed40 diagnosis cases; tests transfer across native methods, not independent clinical cases",
+  "original_model_weights": "/home/data3/txy/models/Qwen3-8B",
+  "head_temperature": 0.0,
+  "max_tokens": 384,
+  "max_prompt_tokens": 9538,
+  "max_model_len": 16384,
+  "upstream_new_calls": 0,
+  "position": "Additional terminal decision after native pipeline; M3 vote and M7 state-monitor result may be revised by the head. Original baseline results preserved."
+}

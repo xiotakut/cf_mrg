@@ -1,0 +1,28 @@
+{
+  "status": "prepared_not_run",
+  "created_at": "2026-09-14T19:15:03.382939+08:00",
+  "model": "llama",
+  "inputs": 146,
+  "variants": [
+    "original_plain",
+    "original_contrastive",
+    "focused_plain",
+    "focused_contrastive",
+    "extractive_plain",
+    "extractive_contrastive"
+  ],
+  "new_final_calls": 876,
+  "shared_query_calls": 146,
+  "split": "development",
+  "max_prompt_tokens": 4450,
+  "controls": "3x2 original/generated-query/extractive-query evidence crossed with plain/contrastive review; same extraction, current initial answer and native output schema in every arm.",
+  "extractive_retrieval": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_extractive_m4",
+  "num_shards": 4,
+  "shard_inputs": [
+    37,
+    37,
+    36,
+    36
+  ],
+  "query_failure_policy": "Use original evidence and empty extraction in all arms; keep all cases in the denominator."
+}

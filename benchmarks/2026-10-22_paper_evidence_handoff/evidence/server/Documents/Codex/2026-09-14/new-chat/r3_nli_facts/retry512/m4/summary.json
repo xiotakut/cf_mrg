@@ -1,0 +1,120 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 2,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 0,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "old",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.3520408163265306,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 1,
+          "harms": 2
+        },
+        "uncued4": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "nli",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.3520408163265306,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 1,
+          "harms": 2
+        },
+        "uncued4": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    }
+  ],
+  "diagnostics": {
+    "nli": {
+      "values": {
+        "yes": 219,
+        "unknown": 869
+      },
+      "invalid_cases": 6
+    },
+    "old": {
+      "values": {
+        "yes": 266,
+        "unknown": 850,
+        "no": 164
+      },
+      "invalid_cases": 0
+    }
+  },
+  "combined_response_accounting": {
+    "input_tokens": 1498887,
+    "output_tokens": 163785,
+    "fact_length_stops": 8,
+    "response_records": 1576
+  },
+  "cost": {
+    "method": "M4",
+    "retry_fact_calls": 21,
+    "valid_retries": 14,
+    "invalid_retries": 7,
+    "new_final_calls": 48,
+    "reused_final_requests": 248,
+    "new_calls": 69,
+    "input_tokens": 141596,
+    "output_tokens": 6184,
+    "retry_length_stops": 7
+  }
+}

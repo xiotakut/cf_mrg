@@ -1,0 +1,240 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 44,
+      "invalid": 10
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 36,
+      "invalid": 9
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 1
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 25,
+      "invalid": 11
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 23,
+      "invalid": 9
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 0,
+      "invalid": 2
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 26,
+      "invalid": 11
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 23,
+      "invalid": 9
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 1,
+      "invalid": 2
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "scope": "synthetic",
+      "method": "program",
+      "subgroup": "all",
+      "n": 96,
+      "correct": 90,
+      "invalid": 6
+    },
+    {
+      "scope": "synthetic",
+      "method": "program",
+      "subgroup": "none",
+      "n": 48,
+      "correct": 42,
+      "invalid": 6
+    },
+    {
+      "scope": "synthetic",
+      "method": "program",
+      "subgroup": "remaining",
+      "n": 48,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "scope": "synthetic",
+      "method": "dsl",
+      "subgroup": "all",
+      "n": 96,
+      "correct": 1,
+      "invalid": 80
+    },
+    {
+      "scope": "synthetic",
+      "method": "dsl",
+      "subgroup": "none",
+      "n": 48,
+      "correct": 1,
+      "invalid": 38
+    },
+    {
+      "scope": "synthetic",
+      "method": "dsl",
+      "subgroup": "remaining",
+      "n": 48,
+      "correct": 0,
+      "invalid": 42
+    },
+    {
+      "scope": "synthetic",
+      "method": "readable",
+      "subgroup": "all",
+      "n": 96,
+      "correct": 1,
+      "invalid": 88
+    },
+    {
+      "scope": "synthetic",
+      "method": "readable",
+      "subgroup": "none",
+      "n": 48,
+      "correct": 1,
+      "invalid": 46
+    },
+    {
+      "scope": "synthetic",
+      "method": "readable",
+      "subgroup": "remaining",
+      "n": 48,
+      "correct": 0,
+      "invalid": 42
+    }
+  ],
+  "costs": [
+    {
+      "variant": "dsl",
+      "calls": 151,
+      "input_tokens": 148678,
+      "output_tokens": 4314,
+      "length_stops": 0
+    },
+    {
+      "variant": "readable",
+      "calls": 151,
+      "input_tokens": 118798,
+      "output_tokens": 4405,
+      "length_stops": 0
+    }
+  ],
+  "parse_errors": {},
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2426707,
+      "started_at": 1789371559.9260075,
+      "total": 76,
+      "initialization_seconds": 65.77487254142761,
+      "completed": 76,
+      "elapsed_seconds": 77.81708121299744,
+      "last_batch_seconds": 0.8604297637939453,
+      "completed_at": 1789371637.7432246
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2426708,
+      "started_at": 1789371559.9259977,
+      "total": 76,
+      "initialization_seconds": 65.80022048950195,
+      "completed": 76,
+      "elapsed_seconds": 77.88818979263306,
+      "last_batch_seconds": 0.885986328125,
+      "completed_at": 1789371637.8143196
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2426709,
+      "started_at": 1789371559.9260252,
+      "total": 76,
+      "initialization_seconds": 65.79332065582275,
+      "completed": 76,
+      "elapsed_seconds": 78.57073044776917,
+      "last_batch_seconds": 0.8702182769775391,
+      "completed_at": 1789371638.4969301
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2426710,
+      "started_at": 1789371559.9259887,
+      "total": 74,
+      "initialization_seconds": 65.78794455528259,
+      "completed": 74,
+      "elapsed_seconds": 78.27041792869568,
+      "last_batch_seconds": 0.7102601528167725,
+      "completed_at": 1789371638.1965952
+    }
+  ]
+}

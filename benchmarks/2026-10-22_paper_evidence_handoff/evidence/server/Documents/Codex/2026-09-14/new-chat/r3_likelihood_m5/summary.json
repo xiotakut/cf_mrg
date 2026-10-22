@@ -1,0 +1,73 @@
+{
+  "status": "complete_development",
+  "results": [
+    {
+      "variant": "uncorrected",
+      "n": 40,
+      "correct": 17,
+      "baseline_correct": 9,
+      "repairs": 9,
+      "harms": 1,
+      "vs_uncorrected_repairs": 0,
+      "vs_uncorrected_harms": 0
+    },
+    {
+      "variant": "local_0.5",
+      "n": 40,
+      "correct": 16,
+      "baseline_correct": 9,
+      "repairs": 8,
+      "harms": 1,
+      "vs_uncorrected_repairs": 0,
+      "vs_uncorrected_harms": 1
+    },
+    {
+      "variant": "local_1",
+      "n": 40,
+      "correct": 16,
+      "baseline_correct": 9,
+      "repairs": 7,
+      "harms": 0,
+      "vs_uncorrected_repairs": 1,
+      "vs_uncorrected_harms": 2
+    },
+    {
+      "variant": "patient_0.5",
+      "n": 40,
+      "correct": 15,
+      "baseline_correct": 9,
+      "repairs": 7,
+      "harms": 1,
+      "vs_uncorrected_repairs": 0,
+      "vs_uncorrected_harms": 2
+    },
+    {
+      "variant": "patient_1",
+      "n": 40,
+      "correct": 15,
+      "baseline_correct": 9,
+      "repairs": 7,
+      "harms": 1,
+      "vs_uncorrected_repairs": 0,
+      "vs_uncorrected_harms": 2
+    }
+  ],
+  "costs": {
+    "calls": 616,
+    "input_tokens": 1174232,
+    "output_tokens": 9615,
+    "length_stops": 0,
+    "forced_one_token_scores": 576
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 2893850,
+    "gpu": 1,
+    "started_at": 1789417340.078015,
+    "completed_calls": 616,
+    "initialization_seconds": 60.13410449028015,
+    "stage": "scoring",
+    "elapsed_seconds": 225.22936010360718,
+    "plan_failures": 0
+  }
+}

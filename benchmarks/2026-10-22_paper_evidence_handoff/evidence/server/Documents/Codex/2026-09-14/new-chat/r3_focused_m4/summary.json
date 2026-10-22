@@ -1,0 +1,689 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "all",
+      "n": 146,
+      "correct": 39,
+      "unmapped": 88,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M01",
+      "n": 128,
+      "correct": 30,
+      "unmapped": 88,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "original_plain",
+      "scope": "all",
+      "n": 146,
+      "correct": 28,
+      "unmapped": 95,
+      "format_invalid": 0,
+      "repairs": 5,
+      "harms": 16
+    },
+    {
+      "method": "original_plain",
+      "scope": "M01",
+      "n": 128,
+      "correct": 20,
+      "unmapped": 95,
+      "format_invalid": 0,
+      "repairs": 4,
+      "harms": 14
+    },
+    {
+      "method": "original_plain",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "original_plain",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "original_contrastive",
+      "scope": "all",
+      "n": 146,
+      "correct": 29,
+      "unmapped": 88,
+      "format_invalid": 1,
+      "repairs": 8,
+      "harms": 18
+    },
+    {
+      "method": "original_contrastive",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 88,
+      "format_invalid": 1,
+      "repairs": 8,
+      "harms": 14
+    },
+    {
+      "method": "original_contrastive",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "original_contrastive",
+      "scope": "M12",
+      "n": 14,
+      "correct": 4,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "focused_plain",
+      "scope": "all",
+      "n": 146,
+      "correct": 32,
+      "unmapped": 91,
+      "format_invalid": 2,
+      "repairs": 10,
+      "harms": 17
+    },
+    {
+      "method": "focused_plain",
+      "scope": "M01",
+      "n": 128,
+      "correct": 23,
+      "unmapped": 91,
+      "format_invalid": 2,
+      "repairs": 7,
+      "harms": 14
+    },
+    {
+      "method": "focused_plain",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "focused_plain",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "focused_contrastive",
+      "scope": "all",
+      "n": 146,
+      "correct": 22,
+      "unmapped": 107,
+      "format_invalid": 0,
+      "repairs": 4,
+      "harms": 21
+    },
+    {
+      "method": "focused_contrastive",
+      "scope": "M01",
+      "n": 128,
+      "correct": 12,
+      "unmapped": 107,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 18
+    },
+    {
+      "method": "focused_contrastive",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "focused_contrastive",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 4,
+      "harms": 3
+    },
+    {
+      "method": "extractive_plain",
+      "scope": "all",
+      "n": 146,
+      "correct": 18,
+      "unmapped": 110,
+      "format_invalid": 2,
+      "repairs": 7,
+      "harms": 28
+    },
+    {
+      "method": "extractive_plain",
+      "scope": "M01",
+      "n": 128,
+      "correct": 12,
+      "unmapped": 110,
+      "format_invalid": 0,
+      "repairs": 6,
+      "harms": 24
+    },
+    {
+      "method": "extractive_plain",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 1,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "extractive_plain",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 1,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "extractive_contrastive",
+      "scope": "all",
+      "n": 146,
+      "correct": 17,
+      "unmapped": 106,
+      "format_invalid": 1,
+      "repairs": 7,
+      "harms": 29
+    },
+    {
+      "method": "extractive_contrastive",
+      "scope": "M01",
+      "n": 128,
+      "correct": 9,
+      "unmapped": 106,
+      "format_invalid": 0,
+      "repairs": 5,
+      "harms": 26
+    },
+    {
+      "method": "extractive_contrastive",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 1,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "extractive_contrastive",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 2
+    },
+    {
+      "method": "original_plain_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 28,
+      "unmapped": 95,
+      "format_invalid": 0,
+      "repairs": 5,
+      "harms": 16
+    },
+    {
+      "method": "original_plain_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 20,
+      "unmapped": 95,
+      "format_invalid": 0,
+      "repairs": 4,
+      "harms": 14
+    },
+    {
+      "method": "original_plain_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "original_plain_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "original_contrastive_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 29,
+      "unmapped": 88,
+      "format_invalid": 1,
+      "repairs": 8,
+      "harms": 18
+    },
+    {
+      "method": "original_contrastive_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 88,
+      "format_invalid": 1,
+      "repairs": 8,
+      "harms": 14
+    },
+    {
+      "method": "original_contrastive_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "original_contrastive_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 4,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "focused_plain_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 32,
+      "unmapped": 91,
+      "format_invalid": 2,
+      "repairs": 10,
+      "harms": 17
+    },
+    {
+      "method": "focused_plain_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 23,
+      "unmapped": 91,
+      "format_invalid": 2,
+      "repairs": 7,
+      "harms": 14
+    },
+    {
+      "method": "focused_plain_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "focused_plain_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "focused_contrastive_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 24,
+      "unmapped": 105,
+      "format_invalid": 0,
+      "repairs": 6,
+      "harms": 21
+    },
+    {
+      "method": "focused_contrastive_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 14,
+      "unmapped": 105,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 18
+    },
+    {
+      "method": "focused_contrastive_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "focused_contrastive_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 4,
+      "harms": 3
+    },
+    {
+      "method": "extractive_plain_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 18,
+      "unmapped": 110,
+      "format_invalid": 2,
+      "repairs": 7,
+      "harms": 28
+    },
+    {
+      "method": "extractive_plain_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 12,
+      "unmapped": 110,
+      "format_invalid": 0,
+      "repairs": 6,
+      "harms": 24
+    },
+    {
+      "method": "extractive_plain_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 1,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "extractive_plain_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 1,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "extractive_contrastive_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 18,
+      "unmapped": 105,
+      "format_invalid": 1,
+      "repairs": 8,
+      "harms": 29
+    },
+    {
+      "method": "extractive_contrastive_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 10,
+      "unmapped": 105,
+      "format_invalid": 0,
+      "repairs": 6,
+      "harms": 26
+    },
+    {
+      "method": "extractive_contrastive_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 1,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "extractive_contrastive_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 2
+    }
+  ],
+  "costs": [
+    {
+      "variant": "original_plain",
+      "calls": 146,
+      "input_tokens": 413952,
+      "output_tokens": 34365,
+      "length_stops": 0
+    },
+    {
+      "variant": "original_contrastive",
+      "calls": 146,
+      "input_tokens": 441546,
+      "output_tokens": 48361,
+      "length_stops": 1
+    },
+    {
+      "variant": "focused_plain",
+      "calls": 146,
+      "input_tokens": 401789,
+      "output_tokens": 37999,
+      "length_stops": 2
+    },
+    {
+      "variant": "focused_contrastive",
+      "calls": 146,
+      "input_tokens": 429383,
+      "output_tokens": 47086,
+      "length_stops": 0
+    },
+    {
+      "variant": "extractive_plain",
+      "calls": 146,
+      "input_tokens": 406329,
+      "output_tokens": 35807,
+      "length_stops": 2
+    },
+    {
+      "variant": "extractive_contrastive",
+      "calls": 146,
+      "input_tokens": 433923,
+      "output_tokens": 49518,
+      "length_stops": 1
+    }
+  ],
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2520883,
+      "started_at": 1789384550.677528,
+      "total": 222,
+      "initialization_seconds": 154.72601294517517,
+      "completed": 222,
+      "elapsed_seconds": 654.7866287231445,
+      "last_batch_seconds": 12.795056819915771,
+      "completed_at": 1789385205.46447
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2520891,
+      "started_at": 1789384550.747493,
+      "total": 222,
+      "initialization_seconds": 154.09394717216492,
+      "completed": 222,
+      "elapsed_seconds": 739.2109909057617,
+      "last_batch_seconds": 11.178476572036743,
+      "completed_at": 1789385289.958737
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2520899,
+      "started_at": 1789384553.6758726,
+      "total": 216,
+      "initialization_seconds": 151.93902492523193,
+      "completed": 216,
+      "elapsed_seconds": 751.4575703144073,
+      "last_batch_seconds": 17.857184886932373,
+      "completed_at": 1789385305.1336918
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2520909,
+      "started_at": 1789384553.5131109,
+      "total": 216,
+      "initialization_seconds": 158.24953937530518,
+      "completed": 216,
+      "elapsed_seconds": 814.7202956676483,
+      "last_batch_seconds": 14.450371980667114,
+      "completed_at": 1789385368.2336016
+    }
+  ],
+  "shared_query_cost": {
+    "calls": 146,
+    "input_tokens": 71099,
+    "output_tokens": 27446,
+    "length_stops": 0
+  },
+  "retrieval": {
+    "status": "complete",
+    "inputs": 146,
+    "retrieval_calls": 145,
+    "query_errors": 1,
+    "initialization_seconds": 7.293226957321167,
+    "wall_seconds": 383.94708371162415
+  },
+  "extractive_retrieval": {
+    "status": "complete",
+    "inputs": 146,
+    "retrieval_calls": 145,
+    "query_errors": 1,
+    "initialization_seconds": 7.7035956382751465,
+    "wall_seconds": 538.2727737426758
+  },
+  "surface_control": {
+    "baseline_correct": 43,
+    "n": 146,
+    "comparisons": [
+      {
+        "variant": "original_plain_surface",
+        "n": 146,
+        "correct": 28,
+        "repairs": 3,
+        "harms": 18
+      },
+      {
+        "variant": "original_contrastive_surface",
+        "n": 146,
+        "correct": 29,
+        "repairs": 5,
+        "harms": 19
+      },
+      {
+        "variant": "focused_plain_surface",
+        "n": 146,
+        "correct": 32,
+        "repairs": 7,
+        "harms": 18
+      },
+      {
+        "variant": "focused_contrastive_surface",
+        "n": 146,
+        "correct": 24,
+        "repairs": 4,
+        "harms": 23
+      },
+      {
+        "variant": "extractive_plain_surface",
+        "n": 146,
+        "correct": 18,
+        "repairs": 7,
+        "harms": 32
+      },
+      {
+        "variant": "extractive_contrastive_surface",
+        "n": 146,
+        "correct": 18,
+        "repairs": 6,
+        "harms": 31
+      }
+    ]
+  }
+}

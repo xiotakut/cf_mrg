@@ -1,3 +1,5 @@
+**2026-10-23 · [论文写作与证据交接入口](benchmarks/2026-10-22_paper_evidence_handoff/README.md)：约16.9MB未压缩文本，覆盖14张表、529条运行登记及失败/限制说明。其他agent可从README按表阅读；完整大原文保留本地，未新增模型调用或评分。当前仓库为public；下方private描述保留其历史时点。**
+
 **2026-10-03 · 论文表达修订完成：[19页PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [Overleaf ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。使用作者指定的Kiterlin anti-defensive-writing，精简全文重复辩解，突出贡献与结果；原图表、数据和29引用保持，独立审阅与重编译通过。下方20页为前轮版本。**
 
 **2026-10-03 · 完整英文论文：[20页PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [原生LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [Overleaf工程ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。从五类体系、benchmark、七系统、五head到CF-MoA完成全文，3图/14表/29引用；[作者raw底稿](papers/2026-10-02_cf_moa/author_dossier/README.md)与历史框架保留。仓库private，本轮0新增实验。**

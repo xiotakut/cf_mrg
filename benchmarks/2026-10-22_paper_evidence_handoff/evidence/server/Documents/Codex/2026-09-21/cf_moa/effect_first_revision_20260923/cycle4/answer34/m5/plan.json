@@ -1,0 +1,1689 @@
+{
+  "protocol": {
+    "version": "a1_retrieval_condition_binding_v1_cycle4",
+    "scope": "Fixed cycle3 34 exposed development inputs, 14 complete families, both backbones. Not independent; no replacement of historical121.",
+    "selection_manifest": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/panel_preparation/offline/family_selection.json",
+    "selection_sha256": "5916eb61d1d0feeeb9771d41b5bd1637be7f3f68c40a118f16e9802aa87cedce",
+    "panel_ids": [
+      "d00010",
+      "d00015",
+      "d00018",
+      "d00019",
+      "d00021",
+      "d00026",
+      "d00035",
+      "d00036",
+      "d00042",
+      "d00046",
+      "d00047",
+      "d00050",
+      "d00054",
+      "d00055",
+      "d00057",
+      "d00058",
+      "d00059",
+      "d00062",
+      "d00068",
+      "d00072",
+      "d00077",
+      "d00078",
+      "d00081",
+      "d00084",
+      "d00088",
+      "d00089",
+      "d00090",
+      "d00094",
+      "d00096",
+      "d00100",
+      "d00106",
+      "d00113",
+      "d00115",
+      "d00120"
+    ],
+    "parent_plan": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/plan.json",
+    "parent_plan_sha256": "4c60d689b6ecaf61c86b57bd6f306c7b2d47418c44965e151859cee1c122ca57",
+    "arms": [
+      "a1_binding_scoped",
+      "a1_binding_ordinary",
+      "a1_binding_verdict_only"
+    ],
+    "generation": {
+      "temperature": 0.7,
+      "seed": 42,
+      "proposal_max_tokens": 512,
+      "answer_max_tokens": 768,
+      "repair_max_tokens": 128
+    },
+    "per_task_budget": {
+      "max_model_requests": 3,
+      "max_input_tokens": 400000,
+      "max_output_tokens": 1408,
+      "max_tool_calls": 0
+    },
+    "source_files": [
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/prepare.py",
+        "sha256": "1abf6f4238b8b00be038e7fc76baab16d6d0d08f1b5e0a02415afce4881fdfaa"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a1_scoped_binding.py",
+        "sha256": "cf63bd60e193ba88be525af86bcb22f99ad99d7a77b1001ae60dee6c04c241ff"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence.py",
+        "sha256": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+        "sha256": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/profile_derived_admission.py",
+        "sha256": "c7598786b232000799a1e428d30dec27b315b71df54bc3f24dbb8fba7162fe8b"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/profile_derived_admission.py",
+        "sha256": "c7598786b232000799a1e428d30dec27b315b71df54bc3f24dbb8fba7162fe8b"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/run_reserved.py",
+        "sha256": "dc6b41b18b09b6e0d66e855c9b43f317e349dc5bef72844ed3a0a376f7e67780"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/queue_answers_reserved.py",
+        "sha256": "7f94540b014a2ea0cd01a57a93e3cb09777d4b25d3faca6846a2acdbf27b3935"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/resources.py",
+        "sha256": "47b8d65fc5bb99de2784ceceb346d660728f21c97bcaebc11613a91d8425812a"
+      }
+    ],
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/panel_preparation/inference/m4.jsonl",
+        "inputs_sha256": "2c77509ea8ba9b68e9b5657dfe9c7484c531a0d83027f811c21256742e8a1c7d",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl",
+        "bases_sha256": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/m4_evidence.jsonl",
+        "proposals_sha256": "a5758eb0350f6dcfbd1320b06108f1c10cf1c82c673f8e4c6b8fec5bf582abef",
+        "tasks": [
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "D",
+            "proposal_key": "d00010",
+            "support_source_task": "d00010:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00015",
+            "support_source_task": "d00015:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": null,
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": null,
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": null,
+            "proposal_key": "d00018",
+            "support_source_task": "d00018:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00019",
+            "support_source_task": "d00019:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021",
+            "support_source_task": "d00021:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "no difference",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "no difference",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "no difference",
+            "proposal_key": "d00026",
+            "support_source_task": "d00026:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "Pneumonia",
+            "proposal_key": "d00035",
+            "support_source_task": "d00035:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00036",
+            "support_source_task": "d00036:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "no",
+            "proposal_key": "d00042",
+            "support_source_task": "d00042:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00046",
+            "support_source_task": "d00046:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00047",
+            "support_source_task": "d00047:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00050",
+            "support_source_task": "d00050:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": null,
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": null,
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": null,
+            "proposal_key": "d00054",
+            "support_source_task": "d00054:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00055",
+            "support_source_task": "d00055:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00057",
+            "support_source_task": "d00057:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00058",
+            "support_source_task": "d00058:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00059",
+            "support_source_task": "d00059:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": null,
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": null,
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": null,
+            "proposal_key": "d00062",
+            "support_source_task": "d00062:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "Pneumonia",
+            "proposal_key": "d00068",
+            "support_source_task": "d00068:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00072",
+            "support_source_task": "d00072:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": null,
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": null,
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": null,
+            "proposal_key": "d00077",
+            "support_source_task": "d00077:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00078",
+            "support_source_task": "d00078:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "no difference",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "no difference",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "no difference",
+            "proposal_key": "d00081",
+            "support_source_task": "d00081:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "uncertainty",
+            "proposal_key": "d00084",
+            "support_source_task": "d00084:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "no difference",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "no difference",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "no difference",
+            "proposal_key": "d00088",
+            "support_source_task": "d00088:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00089",
+            "support_source_task": "d00089:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00090",
+            "support_source_task": "d00090:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "lower",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "lower",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "lower",
+            "proposal_key": "d00094",
+            "support_source_task": "d00094:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00096",
+            "support_source_task": "d00096:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00100",
+            "support_source_task": "d00100:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00106",
+            "support_source_task": "d00106:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00113",
+            "support_source_task": "d00113:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00115",
+            "support_source_task": "d00115:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00120",
+            "support_source_task": "d00120:a1_binding_scoped"
+          }
+        ],
+        "shared_query_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/query34/m4/proposals.jsonl",
+        "retrieval_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/retrieval/m4/tool/evidence.jsonl",
+        "retrieval_source_sha256": "ae6b296f54dc193f251be49cf2566937fb619613c24cc97e93879ab31451a68d"
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/panel_preparation/inference/m5.jsonl",
+        "inputs_sha256": "b7901a01109d2d676810b14200dae3f3306690bd6e5fe719f19a4dcc26357b45",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl",
+        "bases_sha256": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/m5_evidence.jsonl",
+        "proposals_sha256": "608369961c490e539cb2d7d28d4bc123680708fec018590e75ddcc267cb355e0",
+        "tasks": [
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "D",
+            "proposal_key": "d00010",
+            "support_source_task": "d00010:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00015",
+            "support_source_task": "d00015:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00018",
+            "support_source_task": "d00018:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "D",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "D",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "D",
+            "proposal_key": "d00019",
+            "support_source_task": "d00019:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021",
+            "support_source_task": "d00021:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "uncertainty",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "uncertainty",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "uncertainty",
+            "proposal_key": "d00026",
+            "support_source_task": "d00026:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "Pneumonia",
+            "proposal_key": "d00035",
+            "support_source_task": "d00035:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00036",
+            "support_source_task": "d00036:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "no",
+            "proposal_key": "d00042",
+            "support_source_task": "d00042:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00046",
+            "support_source_task": "d00046:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00047",
+            "support_source_task": "d00047:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": null,
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": null,
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": null,
+            "proposal_key": "d00050",
+            "support_source_task": "d00050:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "C",
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "C",
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "C",
+            "proposal_key": "d00054",
+            "support_source_task": "d00054:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "D",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "D",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "D",
+            "proposal_key": "d00055",
+            "support_source_task": "d00055:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00057",
+            "support_source_task": "d00057:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00058",
+            "support_source_task": "d00058:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "D",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "D",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "D",
+            "proposal_key": "d00059",
+            "support_source_task": "d00059:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00062",
+            "support_source_task": "d00062:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "Pneumonia",
+            "proposal_key": "d00068",
+            "support_source_task": "d00068:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "C",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "C",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "C",
+            "proposal_key": "d00072",
+            "support_source_task": "d00072:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "SLE",
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "SLE",
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "SLE",
+            "proposal_key": "d00077",
+            "support_source_task": "d00077:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00078",
+            "support_source_task": "d00078:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "uncertainty",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "uncertainty",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "uncertainty",
+            "proposal_key": "d00081",
+            "support_source_task": "d00081:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "uncertainty",
+            "proposal_key": "d00084",
+            "support_source_task": "d00084:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "uncertainty",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "uncertainty",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "uncertainty",
+            "proposal_key": "d00088",
+            "support_source_task": "d00088:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00089",
+            "support_source_task": "d00089:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "A",
+            "proposal_key": "d00090",
+            "support_source_task": "d00090:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "uncertainty",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "uncertainty",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "uncertainty",
+            "proposal_key": "d00094",
+            "support_source_task": "d00094:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00096",
+            "support_source_task": "d00096:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00100",
+            "support_source_task": "d00100:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00106",
+            "support_source_task": "d00106:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00113",
+            "support_source_task": "d00113:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "B",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "B",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "B",
+            "proposal_key": "d00115",
+            "support_source_task": "d00115:a1_binding_scoped"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_binding_scoped",
+            "arm": "a1_binding_scoped",
+            "target": "D",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_binding_ordinary",
+            "arm": "a1_binding_ordinary",
+            "target": "D",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_binding_verdict_only",
+            "arm": "a1_binding_verdict_only",
+            "target": "D",
+            "proposal_key": "d00120",
+            "support_source_task": "d00120:a1_binding_scoped"
+          }
+        ],
+        "shared_query_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/query34/m5/proposals.jsonl",
+        "retrieval_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/retrieval/m5/tool/evidence.jsonl",
+        "retrieval_source_sha256": "83941eb384ae3780a6e39b894ef51654401d2bee29fff097669a5a20f4185a01"
+      }
+    },
+    "hypothesis": "Current subject/time/polarity binding in a short target-selection proposal may improve complete native readout beyond ordinary targeted reconsideration using the same retrieved knowledge.",
+    "contrast": "Scoped versus ordinary: same material, schema, two-call hard caps. Verdict-only: exact scoped proposal with reason removed; identical final prompt, complete evidence still present. This tests generated-rationale content, not evidence removal or pure independence.",
+    "proposal_semantics": "YES/NO means include/exclude target in the native answer to the complete question as worded, not unconditional medical truth. UNRESOLVED means the intermediate judgment is inconclusive.",
+    "source_use": "Model judgments are unverified. Retrieved general knowledge does not invent current patient facts or override stated hypothetical premises.",
+    "prior_experiments": "Cycle1 already tested B visibility on8; cycle2 tested target judgments without added retrieval. This is a new retrieved-condition/readout comparison, not their first implementation.",
+    "absent_target_policy": "Four M4 failed queries remain failed and in denominator. Each final independently uses complete input; no new target, no failed prefix, no proposal call. M5 d00050 unavailable B retained in all3 arms.",
+    "optional_proposal_policy": "Parse/truncation warnings do not suppress final generation; no proposal retry or extraction from unfinished JSON. Final native invalid gets exactly one format repair per arm.",
+    "exact_request_policy": "Each arm is a separately executed prescribed draw; no within-run cross-arm response cache. Same seed and possible identical missing-target requests are recorded, not repeated until correctness.",
+    "failure_policy": "Ordinary item errors continue with full denominators. Wrong binding/model/leakage or broken shared infrastructure stops affected run.",
+    "expansion_policy": "No automatic full121 or independent expansion. If main does not beat B and ordinary control, preserve negative candidate and stop this version.",
+    "planned_calls": {
+      "proposals": 126,
+      "finals": 201,
+      "nominal_total": 327,
+      "maximum_final_repairs": 201,
+      "maximum_total": 528
+    },
+    "cost_policy": "Only new proposals/readouts generate now. Saved B/query/tools cost separately attributed. Verdict-only includes shared scoped proposal acquisition; do not double-count physical spend. Equal caps do not mean equal actual expense.",
+    "independent_evaluation": false,
+    "new_identity": true
+  },
+  "method": "M5",
+  "profile": {
+    "model": "/home/data3/txy/models/Qwen3-8B",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "model_kwargs": {
+      "rope_scaling": {
+        "rope_type": "yarn",
+        "factor": 4.0,
+        "original_max_position_embeddings": 32768
+      },
+      "num_gpu_blocks_override": 16384
+    },
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "guided_json": true,
+    "num_shards": 1
+  },
+  "profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+    "copy": "readout_m5.json",
+    "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+  },
+  "selected_source_sha256": "07cce6490cb98f229ba0e8e44080db22f9ffcd37f62819fdd3a0642e063ccc69",
+  "code_sources": {
+    "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "229f6483288a4a22ec1baa0d915672e283dbc4ad03af85508232d04d0df58f7d",
+    "/home/data3/txy/cf_moa/controller/effect_first.py": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+    "/home/data3/txy/cf_moa/agents/a1_scoped_binding.py": "cf63bd60e193ba88be525af86bcb22f99ad99d7a77b1001ae60dee6c04c241ff",
+    "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence.py": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71",
+    "/home/data3/txy/cf_moa/agents/a1_support_completion.py": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+    "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+    "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629"
+  }
+}

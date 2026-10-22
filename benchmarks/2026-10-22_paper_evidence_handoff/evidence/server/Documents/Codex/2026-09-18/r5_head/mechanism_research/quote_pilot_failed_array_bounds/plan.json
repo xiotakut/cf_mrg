@@ -1,0 +1,59 @@
+{
+  "status": "prepared_not_launched",
+  "at": "2026-09-18 14:25:49 +0800",
+  "primary_candidate": "target",
+  "inputs_per_model": 72,
+  "new_calls": 720,
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 72,
+      "initial_calls": 216,
+      "dependent_calls": 144,
+      "new_calls": 360,
+      "max_prompt_tokens": {
+        "extract_generic": 957,
+        "extract_target": 998,
+        "all": 4157
+      }
+    },
+    {
+      "method": "M5",
+      "inputs": 72,
+      "initial_calls": 216,
+      "dependent_calls": 144,
+      "new_calls": 360,
+      "max_prompt_tokens": {
+        "extract_generic": 980,
+        "extract_target": 1021,
+        "all": 4044
+      }
+    }
+  ],
+  "cohort_mappings": {
+    "r5_support_development": 56,
+    "weak_relevant_change": 16
+  },
+  "units_per_cohort": {
+    "r5_support_development": 20,
+    "weak_relevant_change": 8
+  },
+  "selection": "All visible clinical single inputs (not explicit premise/hypothesis NLI) from the frozen mechanism pilot. No correctness-based selection.",
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "seed": 42,
+  "temperature": 0,
+  "selection_tokens": 512,
+  "answer_tokens": 2048,
+  "controls": [
+    "Same-program generic clinical extraction, two calls",
+    "Same-frame all-original-sentences view, one call",
+    "Existing exact input full, Maj3/Maj5 and old combined head"
+  ],
+  "failures": "Invalid selector falls back to all sentences; invalid final responses stay in scoring denominator.",
+  "native_contract": "Only the one exact current question occurrence is replaced by a verbatim sentence view. Original options, stipulated evidence, retrieval, system and final native schema retained.",
+  "limitations": "Quote membership and protected strings do not certify semantic sufficiency. Weak old controls are not independent sensitive clinical validation.",
+  "research_status": "Development only; independently frozen new author mother questions remain unseen by generation."
+}

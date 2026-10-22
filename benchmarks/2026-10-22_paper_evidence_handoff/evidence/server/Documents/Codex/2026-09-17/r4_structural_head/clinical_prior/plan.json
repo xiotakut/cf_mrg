@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "at": "2026-09-17 21:31:18 +0800",
+  "arms": [
+    "prior",
+    "revision"
+  ],
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "planned_new_calls": 104,
+  "checks": [
+    {
+      "method": "M4",
+      "stage": "draft",
+      "calls": 26,
+      "max_prompt_tokens": 3348
+    },
+    {
+      "method": "M5",
+      "stage": "draft",
+      "calls": 26,
+      "max_prompt_tokens": 3251
+    }
+  ],
+  "hypothesis": "Does isolating a question-only preliminary answer reduce retrieval-induced patient/mechanism contamination?",
+  "source": "MedCounterFact ACL2026 section7 and AppendixT; original question-only prior plus evidence adaptation, not a novel paradigm or original task replication.",
+  "scope": "All13 exposed original HIV ART questions, no newly created polarity variants or extra synthetic tasks. Author-answer agreement, not new clinical ground truth.",
+  "controls": "prior: question-only draft then full-context review; revision: full-context draft then same review. Each arm2 original-model calls, 2048 tokens per call; native guided/unguided JSON, seed42, temperature.7, batch4. Draft revision is also the one-call full-context control.",
+  "permissions": "Current question/native options and original retrieval only. Final stage retains the exact full original context. No original response, gold, ratings, author explanation or source identifiers enters inference.",
+  "decision": "One common candidate on both models. All invalid outputs and harms retained. Review patient and mechanism statements, not only agreement. Do not choose arms per item/model or upgrade these exposed13 to validation.",
+  "total_output_budget_per_arm": 4096,
+  "ordinary_single_call_output_budget": 2048,
+  "attribution": "The whole source-isolation treatment changes first-pass retrieval visibility plus the corresponding true draft-origin label in the final pass; do not claim to isolate these two factors.",
+  "completed_new_calls": 104,
+  "finished_at": "2026-09-17 21:36:40 +0800"
+}

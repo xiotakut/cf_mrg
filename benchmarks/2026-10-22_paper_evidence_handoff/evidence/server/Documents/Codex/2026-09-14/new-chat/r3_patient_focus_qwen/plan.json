@@ -1,0 +1,20 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M3",
+    "M5",
+    "M7"
+  ],
+  "n": 40,
+  "calls": 240,
+  "max_prompt_tokens": 9699,
+  "variants": [
+    "repeat_patient",
+    "bind_patient"
+  ],
+  "control": "Previously frozen same name-catalog head and native context; add exact patient repetition, then add evidence-role instructions. Name output and backbone-specific reasoning mode fixed.",
+  "resource": "Same public49 names, no new knowledge, training cases or labels. Patient text duplicated exactly from current input. Native context remains intact.",
+  "scope": "Same exposed development40; not independent clinical validation",
+  "max_tokens": 384,
+  "temperature": 0.0
+}

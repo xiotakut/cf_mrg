@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-17T17:18:21.755560+08:00",
+  "gpu_snapshot": "0, 36705, 71\n1, 0, 0\n2, 73391, 100\n3, 81344, 100\n",
+  "scheduling": "M4 then M5 on GPU1; preserve healthy new GPU0 job",
+  "initial_launch_aborted": "Before any process/call: GPU0 usage36703MiB triggered free-device check; other job PID2068082",
+  "jobs": [
+    {
+      "method": "M4",
+      "gpu": 1,
+      "pid": 2070047,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/experiment.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "log": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/m4/gpu.log"
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "pid": 2071786,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/experiment.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "log": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_binding/m5/gpu.log"
+    }
+  ]
+}

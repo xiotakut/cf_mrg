@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "scope": "Frozen development only, existing M3 predictions/candidates; native scorer unchanged.",
+  "results": [
+    {
+      "scope": "all",
+      "n": 146,
+      "cache_found": 146,
+      "final_correct": 17,
+      "first_round_any_correct": 33,
+      "any_round_correct": 33,
+      "correct_candidate_but_final_wrong": 16
+    },
+    {
+      "scope": "M01",
+      "n": 128,
+      "cache_found": 128,
+      "final_correct": 6,
+      "first_round_any_correct": 20,
+      "any_round_correct": 20,
+      "correct_candidate_but_final_wrong": 14
+    },
+    {
+      "scope": "M02",
+      "n": 4,
+      "cache_found": 4,
+      "final_correct": 1,
+      "first_round_any_correct": 2,
+      "any_round_correct": 2,
+      "correct_candidate_but_final_wrong": 1
+    },
+    {
+      "scope": "M12",
+      "n": 14,
+      "cache_found": 14,
+      "final_correct": 10,
+      "first_round_any_correct": 11,
+      "any_round_correct": 11,
+      "correct_candidate_but_final_wrong": 1
+    }
+  ],
+  "new_model_calls": 0,
+  "interpretation": "Gold-based candidate coverage is an offline upper bound, not an inference selector or achieved head score."
+}

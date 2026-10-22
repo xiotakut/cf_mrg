@@ -1,0 +1,2864 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M0",
+      "split": "other_methods",
+      "variant": "original",
+      "n": 1100,
+      "correct": 43,
+      "invalid": 613,
+      "repairs": 0,
+      "harms": 0,
+      "macro_recall": 0.0485272498209932,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 9
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 20
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 7
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 6
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 0
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 0
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 0
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 0
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M0",
+      "split": "other_methods",
+      "variant": "order0",
+      "n": 1100,
+      "correct": 131,
+      "invalid": 7,
+      "repairs": 113,
+      "harms": 25,
+      "macro_recall": 0.16000579935362544,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 39
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 47
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 11
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 6
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 2
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 8
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 1
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 8
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 8
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 0
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 0
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M0",
+      "split": "other_methods",
+      "variant": "uncalibrated_majority",
+      "n": 1100,
+      "correct": 257,
+      "invalid": 6,
+      "repairs": 230,
+      "harms": 16,
+      "macro_recall": 0.27494505229658994,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 81
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 50
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 47
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 5
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 17
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 20
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 4
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 2
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 1
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 9
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 4
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 11
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 1
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 1
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M0",
+      "split": "other_methods",
+      "variant": "calibrated_majority",
+      "n": 1100,
+      "correct": 285,
+      "invalid": 5,
+      "repairs": 251,
+      "harms": 9,
+      "macro_recall": 0.29377278866707573,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 1
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 98
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 41
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 45
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 2
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 4
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 3
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 22
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 19
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 6
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 9
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 3
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 12
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 4
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 10
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 2
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "split": "other_methods",
+      "variant": "original",
+      "n": 1100,
+      "correct": 29,
+      "invalid": 751,
+      "repairs": 0,
+      "harms": 0,
+      "macro_recall": 0.04709386374431815,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 1
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 11
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 3
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 2
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 2
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 4
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 0
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 0
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 2
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 0
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "split": "other_methods",
+      "variant": "order0",
+      "n": 1100,
+      "correct": 162,
+      "invalid": 7,
+      "repairs": 139,
+      "harms": 6,
+      "macro_recall": 0.21729813656188793,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 2
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 41
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 49
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 5
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 10
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 3
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 2
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 18
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 8
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 3
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 2
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 6
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 4
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 0
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "split": "other_methods",
+      "variant": "uncalibrated_majority",
+      "n": 1100,
+      "correct": 295,
+      "invalid": 7,
+      "repairs": 270,
+      "harms": 4,
+      "macro_recall": 0.3039060865177928,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 1
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 99
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 53
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 50
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 5
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 16
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 3
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 2
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 20
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 11
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 7
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 1
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 4
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 5
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 6
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "split": "other_methods",
+      "variant": "calibrated_majority",
+      "n": 1100,
+      "correct": 278,
+      "invalid": 7,
+      "repairs": 253,
+      "harms": 4,
+      "macro_recall": 0.33518111388217986,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 74
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 41
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 46
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 12
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 18
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 4
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 2
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 22
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 10
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 8
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 6
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 7
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 7
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 2
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 7
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 2
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M3",
+      "split": "other_methods",
+      "variant": "original",
+      "n": 1100,
+      "correct": 14,
+      "invalid": 1001,
+      "repairs": 0,
+      "harms": 0,
+      "macro_recall": 0.04557320698625046,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 1
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 2
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 5
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 1
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 0
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 0
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 1
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 1
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M3",
+      "split": "other_methods",
+      "variant": "order0",
+      "n": 1100,
+      "correct": 216,
+      "invalid": 7,
+      "repairs": 202,
+      "harms": 0,
+      "macro_recall": 0.3094598397367564,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 4
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 59
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 49
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 16
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 3
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 4
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 7
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 1
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 5
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 20
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 4
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 4
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 4
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 2
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 3
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 3
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 2
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 2
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M3",
+      "split": "other_methods",
+      "variant": "uncalibrated_majority",
+      "n": 1100,
+      "correct": 325,
+      "invalid": 7,
+      "repairs": 311,
+      "harms": 0,
+      "macro_recall": 0.3519593071815937,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 5
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 158
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 50
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 14
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 2
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 16
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 7
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 1
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 21
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 3
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 4
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 6
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 4
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 2
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 3
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 5
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 2
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 2
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M3",
+      "split": "other_methods",
+      "variant": "calibrated_majority",
+      "n": 1100,
+      "correct": 327,
+      "invalid": 7,
+      "repairs": 314,
+      "harms": 1,
+      "macro_recall": 0.3559591295677219,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 6
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 158
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 48
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 15
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 1
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 15
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 7
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 2
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 21
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 4
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 4
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 7
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 4
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 2
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 3
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 3
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 6
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 2
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 2
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "split": "other_methods",
+      "variant": "original",
+      "n": 1100,
+      "correct": 31,
+      "invalid": 846,
+      "repairs": 0,
+      "harms": 0,
+      "macro_recall": 0.08203833341161018,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 7
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 10
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 4
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 3
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 2
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 0
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 0
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 2
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 1
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 1
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 0
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "split": "other_methods",
+      "variant": "order0",
+      "n": 1100,
+      "correct": 137,
+      "invalid": 8,
+      "repairs": 115,
+      "harms": 9,
+      "macro_recall": 0.20786204454756432,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 5
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 32
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 14
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 4
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 6
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 4
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 4
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 4
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 18
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 6
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 6
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 9
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 7
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 3
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 3
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 3
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 2
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 0
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "split": "other_methods",
+      "variant": "uncalibrated_majority",
+      "n": 1100,
+      "correct": 272,
+      "invalid": 8,
+      "repairs": 244,
+      "harms": 3,
+      "macro_recall": 0.3057563383921838,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 1
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 95
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 50
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 22
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 0
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 16
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 11
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 3
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 19
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 9
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 5
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 10
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 7
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 3
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 2
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 3
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "split": "other_methods",
+      "variant": "calibrated_majority",
+      "n": 1100,
+      "correct": 321,
+      "invalid": 9,
+      "repairs": 297,
+      "harms": 7,
+      "macro_recall": 0.32317894665001834,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 1
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 156
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 38
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 8
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 1
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 20
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 10
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 2
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 20
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 12
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 5
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 14
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 7
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 4
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 1
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 2
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 3
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 0
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 1
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "split": "other_methods",
+      "variant": "original",
+      "n": 1100,
+      "correct": 36,
+      "invalid": 836,
+      "repairs": 0,
+      "harms": 0,
+      "macro_recall": 0.12546248437552784,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 0
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 3
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 6
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 0
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 0
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 8
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 1
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 1
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 0
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 0
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 1
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 6
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 4
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 3
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "split": "other_methods",
+      "variant": "order0",
+      "n": 1100,
+      "correct": 270,
+      "invalid": 5,
+      "repairs": 236,
+      "harms": 2,
+      "macro_recall": 0.3166815598606858,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 6
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 132
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 35
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 15
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 7
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 7
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 1
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 8
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 0
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 21
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 1
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 4
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 1
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 5
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 4
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 6
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 3
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "split": "other_methods",
+      "variant": "uncalibrated_majority",
+      "n": 1100,
+      "correct": 316,
+      "invalid": 6,
+      "repairs": 281,
+      "harms": 1,
+      "macro_recall": 0.3369848495026482,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 6
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 158
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 44
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 17
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 6
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 11
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 2
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 5
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 8
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 1
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 21
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 1
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 4
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 2
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 6
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 4
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 6
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 3
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "split": "other_methods",
+      "variant": "calibrated_majority",
+      "n": 1100,
+      "correct": 316,
+      "invalid": 6,
+      "repairs": 281,
+      "harms": 1,
+      "macro_recall": 0.3411379412621473,
+      "class_results": {
+        "Bronchitis": {
+          "n": 321,
+          "correct": 6
+        },
+        "Acute COPD exacerbation / infection": {
+          "n": 161,
+          "correct": 157
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 117,
+          "correct": 41
+        },
+        "Pneumonia": {
+          "n": 65,
+          "correct": 16
+        },
+        "Unstable angina": {
+          "n": 30,
+          "correct": 6
+        },
+        "URTI": {
+          "n": 57,
+          "correct": 12
+        },
+        "Pulmonary neoplasm": {
+          "n": 25,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 48,
+          "correct": 5
+        },
+        "Acute pulmonary edema": {
+          "n": 23,
+          "correct": 8
+        },
+        "Bronchiectasis": {
+          "n": 21,
+          "correct": 2
+        },
+        "Panic attack": {
+          "n": 24,
+          "correct": 21
+        },
+        "Atrial fibrillation": {
+          "n": 30,
+          "correct": 2
+        },
+        "Pulmonary embolism": {
+          "n": 23,
+          "correct": 1
+        },
+        "Viral pharyngitis": {
+          "n": 41,
+          "correct": 0
+        },
+        "Acute dystonic reactions": {
+          "n": 12,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 6,
+          "correct": 4
+        },
+        "Myocarditis": {
+          "n": 13,
+          "correct": 0
+        },
+        "GERD": {
+          "n": 22,
+          "correct": 2
+        },
+        "HIV (initial infection)": {
+          "n": 6,
+          "correct": 6
+        },
+        "PSVT": {
+          "n": 9,
+          "correct": 1
+        },
+        "Chronic rhinosinusitis": {
+          "n": 6,
+          "correct": 4
+        },
+        "Allergic sinusitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 12,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 11,
+          "correct": 6
+        },
+        "Anaphylaxis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Croup": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 4,
+          "correct": 1
+        },
+        "Cluster headache": {
+          "n": 3,
+          "correct": 3
+        },
+        "Acute otitis media": {
+          "n": 1,
+          "correct": 0
+        },
+        "Acute rhinosinusitis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M0",
+      "new_calls": 6600,
+      "input_tokens": 7115616,
+      "output_tokens": 6600,
+      "runtime": {
+        "status": "complete",
+        "method": "M0",
+        "gpu": 0,
+        "pid": 618342,
+        "started_at": 1789535648.8048737,
+        "completed_calls": 6600,
+        "initialization_seconds": 16.04767870903015,
+        "elapsed_seconds": 1297.5823893547058,
+        "distributions": 6600,
+        "missing_code_calls": 0
+      }
+    },
+    {
+      "method": "M2",
+      "new_calls": 5838,
+      "input_tokens": 13272912,
+      "output_tokens": 5838,
+      "runtime": {
+        "status": "complete",
+        "method": "M2",
+        "gpu": 0,
+        "pid": 646051,
+        "started_at": 1789536955.7209957,
+        "completed_calls": 5838,
+        "initialization_seconds": 15.319003105163574,
+        "elapsed_seconds": 1831.4152405261993,
+        "distributions": 5838,
+        "missing_code_calls": 0,
+        "reused_score_vectors": 762,
+        "total_score_vectors": 6600
+      }
+    },
+    {
+      "method": "M3",
+      "new_calls": 6600,
+      "input_tokens": 34334166,
+      "output_tokens": 6600,
+      "runtime": {
+        "status": "complete",
+        "method": "M3",
+        "gpu": 1,
+        "pid": 662655,
+        "started_at": 1789537659.160001,
+        "completed_calls": 6600,
+        "initialization_seconds": 17.324877500534058,
+        "elapsed_seconds": 2946.7042169570923,
+        "distributions": 6600,
+        "missing_code_calls": 0
+      }
+    },
+    {
+      "method": "M6",
+      "new_calls": 6600,
+      "input_tokens": 24693252,
+      "output_tokens": 6600,
+      "runtime": {
+        "status": "complete",
+        "method": "M6",
+        "gpu": 0,
+        "pid": 685255,
+        "started_at": 1789538796.5166113,
+        "completed_calls": 6600,
+        "initialization_seconds": 20.957838773727417,
+        "elapsed_seconds": 2471.421564102173,
+        "distributions": 6600,
+        "missing_code_calls": 0
+      }
+    },
+    {
+      "method": "M7",
+      "new_calls": 6600,
+      "input_tokens": 35427006,
+      "output_tokens": 6600,
+      "runtime": {
+        "status": "complete",
+        "method": "M7",
+        "gpu": 3,
+        "pid": 686376,
+        "started_at": 1789538853.120039,
+        "completed_calls": 6600,
+        "initialization_seconds": 16.61836266517639,
+        "elapsed_seconds": 2936.3752176761627,
+        "distributions": 6600,
+        "missing_code_calls": 0
+      }
+    }
+  ],
+  "interface_replay": [
+    {
+      "method": "M0",
+      "cases": 1100,
+      "callbacks": 6600,
+      "new_model_calls": 0,
+      "entrypoint": "r1_head.optimize",
+      "module_paths": {
+        "r3_ontology_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+        "r3_catalog_distribution_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "r2_support_interface": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+        "r2_guideline_rules": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+        "r2_program_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "r2_action_scope": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+        "r2_indexed_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+        "r2_task_scoped_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+        "r2_positive_facts": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+        "r2_condition_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+        "r1_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py"
+      }
+    },
+    {
+      "method": "M2",
+      "cases": 1100,
+      "callbacks": 6600,
+      "new_model_calls": 0,
+      "entrypoint": "r1_head.optimize",
+      "module_paths": {
+        "r3_ontology_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+        "r3_catalog_distribution_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "r2_support_interface": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+        "r2_guideline_rules": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+        "r2_program_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "r2_action_scope": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+        "r2_indexed_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+        "r2_task_scoped_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+        "r2_positive_facts": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+        "r2_condition_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+        "r1_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py"
+      }
+    },
+    {
+      "method": "M3",
+      "cases": 1100,
+      "callbacks": 6600,
+      "new_model_calls": 0,
+      "entrypoint": "r1_head.optimize",
+      "module_paths": {
+        "r3_ontology_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+        "r3_catalog_distribution_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "r2_support_interface": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+        "r2_guideline_rules": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+        "r2_program_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "r2_action_scope": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+        "r2_indexed_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+        "r2_task_scoped_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+        "r2_positive_facts": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+        "r2_condition_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+        "r1_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py"
+      }
+    },
+    {
+      "method": "M6",
+      "cases": 1100,
+      "callbacks": 6600,
+      "new_model_calls": 0,
+      "entrypoint": "r1_head.optimize",
+      "module_paths": {
+        "r3_ontology_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+        "r3_catalog_distribution_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "r2_support_interface": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+        "r2_guideline_rules": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+        "r2_program_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "r2_action_scope": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+        "r2_indexed_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+        "r2_task_scoped_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+        "r2_positive_facts": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+        "r2_condition_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+        "r1_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py"
+      }
+    },
+    {
+      "method": "M7",
+      "cases": 1100,
+      "callbacks": 6600,
+      "new_model_calls": 0,
+      "entrypoint": "r1_head.optimize",
+      "module_paths": {
+        "r3_ontology_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py",
+        "r3_catalog_distribution_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py",
+        "r2_support_interface": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py",
+        "r2_guideline_rules": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py",
+        "r2_program_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py",
+        "r2_action_scope": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py",
+        "r2_indexed_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py",
+        "r2_task_scoped_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py",
+        "r2_positive_facts": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py",
+        "r2_condition_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py",
+        "r1_head": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py"
+      }
+    }
+  ],
+  "prior_new_calls": 0,
+  "new_calls": 32238,
+  "scope": "Frozen same-source exposed R1-only development extension"
+}

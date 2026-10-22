@@ -1,0 +1,69 @@
+{
+  "status": "complete_not_adopted",
+  "new_forwards": 880,
+  "input_tokens": 3720408,
+  "new_generations": 0,
+  "worker_seconds": 549.2576236724854,
+  "initialization_seconds": 20.638537168502808,
+  "costs": [
+    {
+      "method": "M4",
+      "arm": "repeat_rendering",
+      "new_forwards": 220,
+      "input_tokens": 953016,
+      "seconds": 136.56765580177307,
+      "initialization_seconds": 4.883180856704712,
+      "peak_allocated_bytes": 16890486272,
+      "new_generations": 0,
+      "reused_fallback_forwards": 4
+    },
+    {
+      "method": "M4",
+      "arm": "bound_rendering",
+      "new_forwards": 220,
+      "input_tokens": 951594,
+      "seconds": 136.77666687965393,
+      "initialization_seconds": 4.915294170379639,
+      "peak_allocated_bytes": 16890486272,
+      "new_generations": 0,
+      "reused_fallback_forwards": 4
+    },
+    {
+      "method": "M5",
+      "arm": "repeat_rendering",
+      "new_forwards": 220,
+      "input_tokens": 908748,
+      "seconds": 137.76608085632324,
+      "initialization_seconds": 5.287323474884033,
+      "peak_allocated_bytes": 17112306176,
+      "new_generations": 0,
+      "reused_fallback_forwards": 4
+    },
+    {
+      "method": "M5",
+      "arm": "bound_rendering",
+      "new_forwards": 220,
+      "input_tokens": 907050,
+      "seconds": 138.1472201347351,
+      "initialization_seconds": 5.552738666534424,
+      "peak_allocated_bytes": 17112306176,
+      "new_generations": 0,
+      "reused_fallback_forwards": 4
+    }
+  ],
+  "matched_changes_read": {
+    "M4": 3,
+    "M5": 5
+  },
+  "source_status": "Original inference code in source; shared worker later fixed separately after all pilot jobs ended.",
+  "decision": "No new arm; not adopted uniformly due M4 R5 harm and M5 strong-control harm.",
+  "files": {
+    "revised_plan.json": "7e03ada0017126f60dc99b01da11132635411c9ca967501187360e995ef66269",
+    "launch.json": "ecb4a93c80a26036c2398221a9ddf7e13f1b17f7d5bc55d8033865c46e0ea710",
+    "output_verification.json": "8171549028510b01a4fba3d1d1a78128f167be1d44697633039fe101bd3876ec",
+    "README.md": "3df3618fd11926bb2a24d0aed2df3e095045db292cdf4c9703282dd93af0b7cd",
+    "semantic_review.md": "6e24bf26d14575d738a107175ff7ed813c82c07d298694244af94484709f2a57",
+    "bound_rendering.py": "447bda0454698328e2b4951689939ebfc1faaef03c84c308192f90e3129da3b2",
+    "analyze.py": "596acf201c4379d304c4a564491cbc6ec3fd4f65d2fa93f3d9632c3911c7500e"
+  }
+}

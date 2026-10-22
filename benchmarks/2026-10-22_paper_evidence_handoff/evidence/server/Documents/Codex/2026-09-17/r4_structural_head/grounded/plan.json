@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "prepared_at": "2026-09-17 18:12:36 +0800",
+  "stage": "development",
+  "arms": [
+    "redo",
+    "compile"
+  ],
+  "planned_new_calls": 96,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 48,
+      "max_prompt_tokens": 1348
+    },
+    {
+      "method": "M5",
+      "calls": 48,
+      "max_prompt_tokens": 1055
+    }
+  ],
+  "sample": "Previously exposed24 deterministic rule diagnostics only;3baseworlds,6interventionworlds. No clinical or new validation results.",
+  "design": "Fresh one-call redo and one-call compiled IR. The same compiled response supplies an LM answer control and a deterministic execution answer, with no extra model calls.",
+  "models": "Original M4 Llama/M5 Qwen, actual full contexts, original sampling and2048 output budget. M4 guided JSON uses native schema for redo and explicit intermediate schema for compile; M5 remains unguided.",
+  "uncertainty": "Incomplete risk mechanisms cannot be closed as deterministic equations. Unsupported or unidentifiable results retain the current compiled LM answer with explicit route; invalid/inconsistent programs remain errors, never old-answer fallback.",
+  "analysis": "Separate author13, modal reverse13, deterministic24; original and fresh controls, compiled-model vs executor repairs, invalid-answer format contribution, coverage and raw program semantic audit.",
+  "validation": "After development freeze, qualify a separate CLadder story holdout and a medically grounded source. Do not claim this development sample is new validation.",
+  "variant": "grounded_outcome",
+  "representation": "One OUTCOME slot, observed/do/equations. Literal negation bound from would main clause, not if antecedent; only determinate execution permits Boolean yes/no projection. Multiple explicit negatives pass through.",
+  "changes": "Current actual Boolean AND/OR/NOT and &,|,~ notation accepted with the same Boolean meaning. One fictional circuit example added; no source labels or held-out text. These changes are combined, not individual causal ablations.",
+  "planned_auxiliary_control": "Native yes/no fixed-IR execution on all valid determinate programs; costs separate.",
+  "started_at": "2026-09-17 18:16:14 +0800",
+  "completed_new_calls": 96,
+  "finished_at": "2026-09-17 18:20:20 +0800"
+}

@@ -1,0 +1,1343 @@
+{
+  "status": "complete_development",
+  "results": [
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 38,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 18,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 37,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 66,
+      "invalid": 0,
+      "repairs": 29,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 46,
+      "invalid": 0,
+      "repairs": 29,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 10,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 20,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 56,
+      "invalid": 0,
+      "repairs": 20,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 47,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 4
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 27,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 4
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 23,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 34,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 19,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 15,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 16,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 31,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 58,
+      "invalid": 0,
+      "repairs": 26,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 26,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 15,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 10,
+      "invalid": 0,
+      "repairs": 7,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 48,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 38,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 6
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 23,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 6
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 15,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 3
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 19,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 3
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 34,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 50,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 29,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 46,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 60,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 8,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 35,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 52,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 50,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 8
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 8
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 27,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 8
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 44,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 8
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 29,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 12,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 14,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 26,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 58,
+      "invalid": 1,
+      "repairs": 31,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 46,
+      "invalid": 0,
+      "repairs": 31,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 12,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 10,
+      "invalid": 0,
+      "repairs": 7,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 24,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 48,
+      "invalid": 1,
+      "repairs": 24,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 36,
+      "invalid": 1,
+      "repairs": 12,
+      "harms": 5
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 24,
+      "invalid": 0,
+      "repairs": 12,
+      "harms": 5
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 12,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 32,
+      "invalid": 1,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 33,
+      "invalid": 11,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 15,
+      "invalid": 8,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 18,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 13,
+      "invalid": 8,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 31,
+      "invalid": 11,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 57,
+      "invalid": 11,
+      "repairs": 27,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 39,
+      "invalid": 8,
+      "repairs": 27,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 18,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 10,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 29,
+      "invalid": 8,
+      "repairs": 19,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 47,
+      "invalid": 11,
+      "repairs": 19,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 41,
+      "invalid": 10,
+      "repairs": 13,
+      "harms": 5
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 23,
+      "invalid": 7,
+      "repairs": 13,
+      "harms": 5
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 18,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 18,
+      "invalid": 7,
+      "repairs": 10,
+      "harms": 5
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 36,
+      "invalid": 10,
+      "repairs": 10,
+      "harms": 5
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 32,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 14,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 18,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 13,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 31,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 62,
+      "invalid": 0,
+      "repairs": 32,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 44,
+      "invalid": 0,
+      "repairs": 32,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 18,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 10,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 34,
+      "invalid": 0,
+      "repairs": 23,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 52,
+      "invalid": 0,
+      "repairs": 23,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 38,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 4
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 4
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 18,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 18,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 3
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 3
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 38,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "covered72",
+      "n": 72,
+      "correct": 21,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 18,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 35,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 56,
+      "invalid": 4,
+      "repairs": 19,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "covered72",
+      "n": 72,
+      "correct": 39,
+      "invalid": 4,
+      "repairs": 19,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 8,
+      "invalid": 0,
+      "repairs": 5,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 31,
+      "invalid": 4,
+      "repairs": 14,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 48,
+      "invalid": 4,
+      "repairs": 14,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "group": "all96",
+      "n": 96,
+      "correct": 44,
+      "invalid": 3,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "group": "covered72",
+      "n": 72,
+      "correct": 27,
+      "invalid": 3,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "group": "uncovered24",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "group": "old_r3_10",
+      "n": 10,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 22,
+      "invalid": 3,
+      "repairs": 7,
+      "harms": 3
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "group": "r1_without_r3_86",
+      "n": 86,
+      "correct": 39,
+      "invalid": 3,
+      "repairs": 7,
+      "harms": 3
+    }
+  ],
+  "costs": [
+    {
+      "model": "llama",
+      "stage": "facts",
+      "status": "new",
+      "calls": 61,
+      "input_tokens": 34133,
+      "output_tokens": 9961,
+      "length_stops": 0
+    },
+    {
+      "model": "llama",
+      "stage": "facts",
+      "status": "reused",
+      "calls": 11,
+      "input_tokens": 7067,
+      "output_tokens": 2256,
+      "length_stops": 0
+    },
+    {
+      "model": "llama",
+      "stage": "execute",
+      "status": "new",
+      "calls": 69,
+      "input_tokens": 55131,
+      "output_tokens": 24754,
+      "length_stops": 0
+    },
+    {
+      "model": "llama",
+      "stage": "execute",
+      "status": "reused",
+      "calls": 3,
+      "input_tokens": 1623,
+      "output_tokens": 1216,
+      "length_stops": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "facts",
+      "status": "new",
+      "calls": 61,
+      "input_tokens": 33097,
+      "output_tokens": 10156,
+      "length_stops": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "facts",
+      "status": "reused",
+      "calls": 11,
+      "input_tokens": 6885,
+      "output_tokens": 2248,
+      "length_stops": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "execute",
+      "status": "new",
+      "calls": 69,
+      "input_tokens": 54649,
+      "output_tokens": 33428,
+      "length_stops": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "execute",
+      "status": "reused",
+      "calls": 3,
+      "input_tokens": 1587,
+      "output_tokens": 1384,
+      "length_stops": 0
+    }
+  ],
+  "interface_replayed_callbacks": 504,
+  "no_new_full_method_runs": true,
+  "native_terminal_policy": "Original M6/M7 non-ok answers remain None; newly generated head answers are scored separately and do not change original runtime status. Strict-state retention is a separate sensitivity control.",
+  "note": "Two original backbones, seven original-answer offline attachments; all exposed v5 development."
+}

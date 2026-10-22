@@ -1,0 +1,245 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "ALL",
+      "n": 24,
+      "correct": 17,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 7,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M10",
+      "n": 1,
+      "correct": 1,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M11",
+      "n": 7,
+      "correct": 6,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M12",
+      "n": 16,
+      "correct": 10,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "ALL",
+      "n": 24,
+      "correct": 15,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "M11",
+      "n": 7,
+      "correct": 4,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "M12",
+      "n": 16,
+      "correct": 11,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "ALL",
+      "n": 24,
+      "correct": 14,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M11",
+      "n": 7,
+      "correct": 6,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M12",
+      "n": 16,
+      "correct": 8,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "ALL",
+      "n": 24,
+      "correct": 12,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 2
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "M11",
+      "n": 7,
+      "correct": 6,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "M12",
+      "n": 16,
+      "correct": 6,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 48,
+      "reused_calls": 0,
+      "total_input_tokens": 128704,
+      "total_output_tokens": 10874,
+      "length_stops": 0,
+      "runtime": [
+        {
+          "status": "complete",
+          "gpu": 3,
+          "pid": 688436,
+          "started_at": 1789538937.2966213,
+          "total": 48,
+          "initialization_seconds": 18.403728008270264,
+          "completed": 48,
+          "elapsed_seconds": 172.19259786605835,
+          "last_batch_seconds": 20.39924430847168,
+          "completed_at": 1789539109.4894302
+        }
+      ],
+      "initialization_failures": []
+    },
+    {
+      "method": "M5",
+      "new_calls": 48,
+      "reused_calls": 0,
+      "total_input_tokens": 115272,
+      "total_output_tokens": 11636,
+      "length_stops": 0,
+      "runtime": [
+        {
+          "status": "complete",
+          "gpu": 3,
+          "pid": 692157,
+          "started_at": 1789539116.0180857,
+          "total": 48,
+          "initialization_seconds": 18.802810430526733,
+          "completed": 48,
+          "elapsed_seconds": 162.82418751716614,
+          "last_batch_seconds": 21.55893611907959,
+          "completed_at": 1789539278.8424594
+        }
+      ],
+      "initialization_failures": []
+    }
+  ],
+  "contrasts": [
+    {
+      "method": "M4",
+      "n": 24,
+      "scope_repairs_vs_redo": 3,
+      "scope_harms_vs_redo": 5
+    },
+    {
+      "method": "M5",
+      "n": 24,
+      "scope_repairs_vs_redo": 1,
+      "scope_harms_vs_redo": 3
+    }
+  ],
+  "new_calls": 96,
+  "reused_calls": 0
+}

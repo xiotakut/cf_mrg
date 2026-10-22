@@ -1,0 +1,21 @@
+{
+  "status": "pilot_complete; no full extension",
+  "reason": "task_scope is below redo in M4, and neither arm changes accuracy or selections in M5",
+  "selected_head": false,
+  "full_202_new_calls": 0,
+  "successful_pilot_calls": 96,
+  "failed_initialization_model_calls": 0,
+  "original_full_202_correct": {
+    "M4": 131,
+    "M5": 149
+  },
+  "M5_new_generations": 48,
+  "M5_same_raw_text_as_original": 1,
+  "no_prompt_tuning_after_pilot": true,
+  "no_method_or_source_arm_mixture": true,
+  "successful_worker_elapsed_seconds": 533.2596361637115,
+  "successful_initialization_seconds": 209.18817114830017,
+  "prompt_tokens": 271092,
+  "completion_tokens": 24264,
+  "failed_M5_elapsed_until_observed_exit_seconds": 208.6311411857605
+}

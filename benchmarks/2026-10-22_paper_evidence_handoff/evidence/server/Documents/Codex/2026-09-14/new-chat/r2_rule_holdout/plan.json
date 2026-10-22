@@ -1,0 +1,20 @@
+{
+  "status": "frozen_unrun",
+  "created_at": "2026-09-14T15:55:26.927148+08:00",
+  "seed": 2026091403,
+  "inputs": 96,
+  "none": 48,
+  "remaining": 48,
+  "families": [
+    "two_measures_retained",
+    "age_withdrawal",
+    "female_condition_withdrawal",
+    "syncope_with_urinary_support",
+    "nitro_renal_withdrawal",
+    "nitro_suppression_retained",
+    "metoclopramide_duration_withdrawal",
+    "metoclopramide_pd_retained"
+  ],
+  "failures": [],
+  "note": "New cases frozen before task-scoped-head generation. Eight controlled mechanism families, twelve realizations each; shared fixed guideline bank, not independent clinical validation. Answers manually declared before oracle comparison. Before/current proof facts and gold never enter extraction prompts. The age-withdrawal family evaluates the rule executor outside65+, not the end-to-end native coverage router. No old method answer in any controlled case."
+}

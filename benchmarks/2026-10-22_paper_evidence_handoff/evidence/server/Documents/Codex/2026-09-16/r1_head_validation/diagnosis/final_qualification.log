@@ -1,0 +1,95 @@
+{
+  "status": "qualification_frozen_47_before_predictions_root_boundary_review_complete",
+  "reviewed_records": 64,
+  "native_text_characters": 76660,
+  "decisions": {
+    "no_new_support": 7,
+    "include": 47,
+    "direct_target_disclosure": 3,
+    "support_scope_unclear": 3,
+    "duplicate_source_case": 2,
+    "previous_source_exposure": 2
+  },
+  "split_decisions": {
+    "test": {
+      "no_new_support": 2,
+      "include": 5,
+      "direct_target_disclosure": 1
+    },
+    "train": {
+      "support_scope_unclear": 3,
+      "duplicate_source_case": 2,
+      "previous_source_exposure": 2,
+      "include": 42,
+      "no_new_support": 5,
+      "direct_target_disclosure": 2
+    }
+  },
+  "included_prior_target_named": 23,
+  "included_ids": [
+    "ascent_test_0054",
+    "ascent_test_0094",
+    "ascent_test_0113",
+    "ascent_test_0172",
+    "ascent_test_0211",
+    "ascent_train_0104",
+    "ascent_train_0129",
+    "ascent_train_0167",
+    "ascent_train_0367",
+    "ascent_train_0371",
+    "ascent_train_0422",
+    "ascent_train_0435",
+    "ascent_train_0475",
+    "ascent_train_0556",
+    "ascent_train_0625",
+    "ascent_train_0669",
+    "ascent_train_0674",
+    "ascent_train_0710",
+    "ascent_train_0832",
+    "ascent_train_0857",
+    "ascent_train_0999",
+    "ascent_train_1013",
+    "ascent_train_1117",
+    "ascent_train_1145",
+    "ascent_train_1218",
+    "ascent_train_1286",
+    "ascent_train_1303",
+    "ascent_train_1328",
+    "ascent_train_1333",
+    "ascent_train_1491",
+    "ascent_train_1650",
+    "ascent_train_1690",
+    "ascent_train_1696",
+    "ascent_train_1859",
+    "ascent_train_1961",
+    "ascent_train_1984",
+    "ascent_train_1993",
+    "ascent_train_2136",
+    "ascent_train_2184",
+    "ascent_train_2243",
+    "ascent_train_2245",
+    "ascent_train_2287",
+    "ascent_train_2335",
+    "ascent_train_2408",
+    "ascent_train_2488",
+    "ascent_train_2539",
+    "ascent_train_2575"
+  ],
+  "reviewer": "Current project agent; no independent clinical-expert adjudication claim.",
+  "limits": "Support means additional compatible positive evidence, not sufficient or unique diagnosis. Earlier allowed impressions may name the target. Natural source stages are not constructed CF pairs. Original inputs/labels remain unchanged. No predictions seen.",
+  "boundary_reviewed_ids": [
+    "ascent_train_0167",
+    "ascent_train_0422",
+    "ascent_train_1491",
+    "ascent_train_1650"
+  ],
+  "boundary_review_sources": [
+    "https://www.nhlbi.nih.gov/health/anemia/symptoms",
+    "https://www.nhlbi.nih.gov/health/angina",
+    "https://www.nice.org.uk/guidance/NG250/chapter/recommendations"
+  ],
+  "source_urls": [
+    "https://proceedings.mlr.press/v333/choi26a.html",
+    "https://github.com/naver-ai/ascent"
+  ]
+}

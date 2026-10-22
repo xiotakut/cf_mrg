@@ -1,0 +1,99 @@
+{
+  "started_at": "2026-09-17 18:16:14 +0800",
+  "gpu": 1,
+  "mode": "sequential",
+  "free_mib": 97367,
+  "total_mib": 97871,
+  "workers": [
+    {
+      "variant": "grounded",
+      "stage": "development",
+      "method": "M4",
+      "pid": 2106381,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/experiment.py",
+        "run",
+        "--variant",
+        "grounded",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:16:14 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:17:19 +0800"
+    },
+    {
+      "variant": "grounded",
+      "stage": "development",
+      "method": "M5",
+      "pid": 2107256,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/experiment.py",
+        "run",
+        "--variant",
+        "grounded",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:17:19 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:18:41 +0800"
+    },
+    {
+      "variant": "compact",
+      "stage": "ir_native",
+      "method": "M4",
+      "pid": 2108728,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/experiment.py",
+        "run_native",
+        "--variant",
+        "compact",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:18:41 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:19:15 +0800"
+    },
+    {
+      "variant": "compact",
+      "stage": "ir_native",
+      "method": "M5",
+      "pid": 2109740,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/experiment.py",
+        "run_native",
+        "--variant",
+        "compact",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:19:15 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:20:34 +0800"
+    }
+  ],
+  "prelaunch_failure": {
+    "calls": 0,
+    "reason": "Initial empty-GPU assumption rejected1829MiB. Query confirmed another healthy1820MiB process PID2099026; sufficient memory remains for the unchanged0.95 initialization and8192KV blocks. Kept that process."
+  },
+  "finished_at": "2026-09-17 18:20:34 +0800",
+  "wall_seconds": 259.70013306615874
+}

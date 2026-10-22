@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-09-18T15:54:54.525975+08:00",
+  "status": "posthoc control refinement planned before fitting either backbone",
+  "trigger": "Initial matched Adam scalar controls select epoch 200 with fitted magnitude about 0.2; training remains incomplete. Do not infer their inferiority excludes pure semantic calibration.",
+  "method": "Solve the strictly convex train mother-weighted logistic CE plus 0.5*lambda*bias^2 by bisection of its derivative. Use same three lambda values .01/.1/1; dev-NLL selects among those three train optima and zero. No new hyperparameters, no optimization of dev threshold, no JS control refinement.",
+  "iterations": 100,
+  "bracket": "[-1/lambda,+1/lambda], guaranteed to bracket weighted logistic derivative with L2",
+  "scope": "Same cached features, same84/28 inputs. Preserve original Adam controls and report additional exact CE-only control separately.",
+  "new_model_forwards": 0,
+  "new_generations": 0
+}

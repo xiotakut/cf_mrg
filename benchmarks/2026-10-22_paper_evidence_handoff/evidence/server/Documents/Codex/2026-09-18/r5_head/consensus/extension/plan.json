@@ -1,0 +1,64 @@
+{
+  "status": "candidate_frozen_ready_to_run",
+  "at": "2026-09-18 08:23:23 +0800",
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 400,
+      "calls": 2000,
+      "original_contexts_and_fixed_evidence": 384,
+      "baseline_score_parity": 384,
+      "author_control_replacements": 16,
+      "schema_parity": 400,
+      "max_prompt_tokens": 32651
+    },
+    {
+      "method": "M5",
+      "inputs": 400,
+      "calls": 2400,
+      "original_contexts_and_fixed_evidence": 384,
+      "baseline_score_parity": 384,
+      "author_control_replacements": 16,
+      "schema_parity": 400,
+      "max_prompt_tokens": 35472
+    }
+  ],
+  "planned_calls": 4400,
+  "unique_inputs": 400,
+  "evaluation_records": 400,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "primary_candidate": "maj5",
+  "secondary_cost_control": "maj3 (prespecified)",
+  "source_counts": {
+    "M12": 32,
+    "M14": 32,
+    "M22": 96,
+    "M23": 32,
+    "M10": 32,
+    "M11": 32,
+    "M20": 32,
+    "M17": 96,
+    "M23_control": 16
+  },
+  "cohorts": {
+    "r5_tuning_heldout_extension": 384,
+    "strong_relevant_change": 16
+  },
+  "controls": "Same actual five guided draws support draw0, mean single draws, Maj3 and Maj5; M5 adds one matching seed42 unguided draw.",
+  "context": "384 R5 inputs retain complete original model-specific messages, evidence, schema and historical response; 16 new controls retain only the native author instruction/context, original model-specific system and task suffix, without additional retrieval.",
+  "author_controls": "Eight author-native positive/negative pairs, original response used only as offline gold. No R1/R2/R5 assignment; no historical answer; original_response is null.",
+  "scope": "128 R5 groups/units not used for this R5 tuning; still historically exposed v5. Eight author-native relevance controls are separate descriptive sensitivity evidence.",
+  "protocol": "Frozen consensus head and current consensus per-model configs; no prompt/schema/seed strategy changes, no per-source/model winner selection.",
+  "selection": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension_selection.json",
+  "source_controls": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/strong_controls.jsonl",
+  "runner": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/experiment.py",
+  "launch": "Use existing --out support only after pilot decision.",
+  "frozen_at": "2026-09-18 08:28:23 +0800",
+  "decision": "Keep prespecified full-context Maj5 unchanged. Pilot both-correct gain versus same-pool single mean is +9.625pp M4/+9.104167pp M5; variant accuracy is slightly below historical original, so continue to the preselected extension before adoption. No per-source/model strategy selection."
+}

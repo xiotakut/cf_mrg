@@ -1,0 +1,1267 @@
+{
+  "status": "complete_development",
+  "results": [
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 10,
+      "repairs": 9,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 3,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 7,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 4,
+      "repairs": 4,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 4,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 4,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 10,
+      "repairs": 7,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 4,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 3,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 4,
+      "repairs": 4,
+      "harms": 3
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 4,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 4,
+      "repairs": 4,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 8,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 2,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 1,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 5,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 4,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 5,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 10,
+      "repairs": 7,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 4,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 5,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 3,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 5,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 10,
+      "repairs": 8,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 5,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 3,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 5,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 6,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 2,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 1,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 5,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 10,
+      "repairs": 9,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 4,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 3,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 7,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 2,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 2,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M6",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 2,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "split": "all",
+      "n": 10,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "split": "all",
+      "n": 10,
+      "correct": 8,
+      "repairs": 5,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "split": "development",
+      "n": 4,
+      "correct": 2,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 6,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 1,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 7,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "split": "all",
+      "n": 10,
+      "correct": 5,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "split": "development",
+      "n": 4,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "split": "confirmation",
+      "n": 6,
+      "correct": 4,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "split": "r2_overlap",
+      "n": 3,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "model_execute",
+      "split": "r2_nonoverlap",
+      "n": 7,
+      "correct": 5,
+      "repairs": 2,
+      "harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "model": "llama",
+      "stage": "facts",
+      "calls": 10,
+      "input_tokens": 6481,
+      "output_tokens": 2055,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "gpu": 3,
+        "pid": 3305003,
+        "started_at": 1789438771.6925855,
+        "total": 10,
+        "initialization_seconds": 15.927058935165405,
+        "completed": 10,
+        "elapsed_seconds": 42.35727310180664,
+        "last_batch_seconds": 12.327596664428711,
+        "completed_at": 1789438814.0500426
+      }
+    },
+    {
+      "model": "llama",
+      "stage": "execute",
+      "calls": 10,
+      "input_tokens": 10408,
+      "output_tokens": 4783,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "gpu": 3,
+        "pid": 3305274,
+        "started_at": 1789438829.1671047,
+        "total": 10,
+        "initialization_seconds": 18.679624795913696,
+        "completed": 10,
+        "elapsed_seconds": 90.50972533226013,
+        "last_batch_seconds": 26.096006393432617,
+        "completed_at": 1789438919.6770046
+      }
+    },
+    {
+      "model": "qwen",
+      "stage": "facts",
+      "calls": 10,
+      "input_tokens": 6317,
+      "output_tokens": 2052,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "gpu": 3,
+        "pid": 3307055,
+        "started_at": 1789438927.650916,
+        "total": 10,
+        "initialization_seconds": 16.834122896194458,
+        "completed": 10,
+        "elapsed_seconds": 49.59496569633484,
+        "last_batch_seconds": 15.448914527893066,
+        "completed_at": 1789438977.246055
+      }
+    },
+    {
+      "model": "qwen",
+      "stage": "execute",
+      "calls": 10,
+      "input_tokens": 10381,
+      "output_tokens": 7281,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "gpu": 3,
+        "pid": 3307895,
+        "started_at": 1789438986.0136275,
+        "total": 10,
+        "initialization_seconds": 15.752599477767944,
+        "completed": 10,
+        "elapsed_seconds": 125.40797328948975,
+        "last_batch_seconds": 39.72775673866272,
+        "completed_at": 1789439111.4217784
+      }
+    }
+  ],
+  "invalids": [],
+  "same_fact_state_mismatches": [
+    {
+      "model": "llama",
+      "item_id": "s001097",
+      "option": "A",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001097",
+      "option": "B",
+      "program": "CONTRADICTED",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001097",
+      "option": "C",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001097",
+      "option": "E",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001099",
+      "option": "C",
+      "program": "MET",
+      "model_state": "CONTRADICTED"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001108",
+      "option": "B",
+      "program": "MET",
+      "model_state": "CONTRADICTED"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001108",
+      "option": "D",
+      "program": "MET",
+      "model_state": "CONTRADICTED"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001110",
+      "option": "A",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001110",
+      "option": "D",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001111",
+      "option": "A",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001111",
+      "option": "C",
+      "program": "UNKNOWN",
+      "model_state": "MET"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001111",
+      "option": "D",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001120",
+      "option": "B",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001120",
+      "option": "E",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001121",
+      "option": "A",
+      "program": "UNKNOWN",
+      "model_state": "MET"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001121",
+      "option": "C",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001121",
+      "option": "E",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001125",
+      "option": "A",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001125",
+      "option": "B",
+      "program": "CONTRADICTED",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001125",
+      "option": "C",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "llama",
+      "item_id": "s001125",
+      "option": "D",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001097",
+      "option": "A",
+      "program": "MET",
+      "model_state": "CONTRADICTED"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001097",
+      "option": "C",
+      "program": "MET",
+      "model_state": "CONTRADICTED"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001097",
+      "option": "E",
+      "program": "MET",
+      "model_state": "CONTRADICTED"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001109",
+      "option": "B",
+      "program": "CONTRADICTED",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001109",
+      "option": "C",
+      "program": "CONTRADICTED",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001121",
+      "option": "C",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001121",
+      "option": "E",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001125",
+      "option": "A",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001125",
+      "option": "B",
+      "program": "CONTRADICTED",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001125",
+      "option": "C",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    },
+    {
+      "model": "qwen",
+      "item_id": "s001125",
+      "option": "D",
+      "program": "MET",
+      "model_state": "UNKNOWN"
+    }
+  ],
+  "original_score_parity": 70,
+  "new_fact_calls": 20,
+  "all_method_new_pipeline_runs": false,
+  "interface_replay": {
+    "status": "passed",
+    "callbacks": 70,
+    "new_model_calls": 0
+  }
+}

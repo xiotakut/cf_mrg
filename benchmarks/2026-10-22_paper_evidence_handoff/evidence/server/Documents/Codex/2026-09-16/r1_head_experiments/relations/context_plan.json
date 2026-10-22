@@ -1,0 +1,26 @@
+{
+  "status": "prepared_not_run",
+  "sample": "same64 exposed pilot cases",
+  "arms": [
+    "no_draft",
+    "supplied_only"
+  ],
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 128,
+      "max_prompt_tokens": 66456
+    },
+    {
+      "method": "M5",
+      "calls": 128,
+      "max_prompt_tokens": 73600
+    }
+  ],
+  "planned_calls": 256,
+  "motivation": "First three-arm pilot did not improve both backbones. Qwen redo/evidence_scope repaired0, target_scope repaired2/harmed4; distinguish anchoring on appended draft from retrieved/supplied evidence role confusion.",
+  "controls": "Same target_scope instructions, original system instructions, decoding and strict native scoring. no_draft keeps all original context; supplied_only retains the exact original question-to-end block, including every fixed_evidence passage and original output instructions. Neither adds the original answer.",
+  "literature": "Given-evidence input organization from the MedCounterFact source study; this is a local original-backbone adaptation, not released author inference code.",
+  "permissions": "Only actual original context and current native task fields; no reference case, replacement metadata, source label, gold or edited medical evidence.",
+  "selection": "One finite two-arm mechanism test; no per-method or per-item choice of the best output. Previous prompt version is not selected."
+}

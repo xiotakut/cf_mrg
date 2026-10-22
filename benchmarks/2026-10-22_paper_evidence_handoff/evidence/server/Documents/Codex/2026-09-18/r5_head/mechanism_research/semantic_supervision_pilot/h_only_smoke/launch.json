@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "pid": 2779724,
+  "started": "2026-09-18 17:12:17 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/h_only_smoke",
+        "--method",
+        "M4",
+        "--gpu",
+        "2",
+        "--batch-size",
+        "8",
+        "--limit",
+        "16"
+      ],
+      "pid": 2779728,
+      "status": "complete",
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/h_only_smoke",
+        "--method",
+        "M5",
+        "--gpu",
+        "2",
+        "--batch-size",
+        "8",
+        "--limit",
+        "16"
+      ],
+      "pid": 2780005,
+      "status": "complete",
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 17:12:37 +0800"
+}

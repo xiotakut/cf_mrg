@@ -1,0 +1,21 @@
+{
+  "status": "blocked_missing_retrieval_indexes",
+  "seed": 20260913,
+  "selection": "20 random unique inputs per answer_format, independent of old correctness/validity",
+  "N": 100,
+  "formats": {
+    "diagnosis": 20,
+    "multi": 20,
+    "relation": 20,
+    "robustness_single": 20,
+    "single": 20
+  },
+  "missing_wikipedia_indexes": [
+    "facebook/contriever/faiss.index",
+    "facebook/contriever/metadatas.jsonl",
+    "allenai/specter/faiss.index",
+    "allenai/specter/metadatas.jsonl"
+  ],
+  "inference_started": false,
+  "note": "Stratified pilot is not an estimate of corpus-weighted validity; full old retrieval must not be replaced silently."
+}

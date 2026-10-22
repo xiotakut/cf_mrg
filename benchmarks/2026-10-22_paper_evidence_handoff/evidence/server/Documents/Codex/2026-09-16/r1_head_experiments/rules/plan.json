@@ -1,0 +1,101 @@
+{
+  "scope": 96,
+  "covered": 72,
+  "uncovered": 24,
+  "r3_overlap": 10,
+  "errors": {
+    "M4": {
+      "missing_only": 35,
+      "extra_and_missing": 18,
+      "correct": 29,
+      "extra_only": 13,
+      "invalid": 1
+    },
+    "M5": {
+      "missing_only": 20,
+      "correct": 33,
+      "invalid": 11,
+      "extra_and_missing": 22,
+      "extra_only": 10
+    }
+  },
+  "operations": {
+    "risk activation": 69,
+    "risk redistribution": 18,
+    "interaction identification": 9
+  },
+  "patient_info": {
+    "disease presence": 29,
+    "composite clinical context": 15,
+    "drug interaction": 9,
+    "dose threshold": 22,
+    "pregnancy status": 10,
+    "age threshold": 9,
+    "pediatric-adult contraindication": 2
+  },
+  "actions": {
+    "avoid": 76,
+    "dose_reduce": 11,
+    "other": 9
+  },
+  "samefacts": "same scope, rules, extracted facts, default exception policy; explanation budget 2048",
+  "facts": {
+    "llama": {
+      "total_requests": 72,
+      "new_calls": 61,
+      "reused": 11,
+      "reused_ids": [
+        "s001097",
+        "s001099",
+        "s001108",
+        "s001109",
+        "s001110",
+        "s001111",
+        "s001115",
+        "s001118",
+        "s001120",
+        "s001121",
+        "s001125"
+      ],
+      "reused_sources": {
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_rule_transfer/llama/facts/gpu3/predictions.jsonl": 10,
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_positive_facts_llama/raw_predictions.jsonl": 1
+      }
+    },
+    "qwen": {
+      "total_requests": 72,
+      "new_calls": 61,
+      "reused": 11,
+      "reused_ids": [
+        "s001097",
+        "s001099",
+        "s001108",
+        "s001109",
+        "s001110",
+        "s001111",
+        "s001115",
+        "s001118",
+        "s001120",
+        "s001121",
+        "s001125"
+      ],
+      "reused_sources": {
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_rule_transfer/qwen/facts/gpu3/predictions.jsonl": 10,
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_positive_facts_qwen/raw_predictions.jsonl": 1
+      }
+    }
+  },
+  "new_inference": 0,
+  "policy": "Frozen MET union (original selection intersect UNKNOWN); outside coverage original pass-through",
+  "original_methods": {
+    "M0": "llama",
+    "M2": "llama",
+    "M3": "qwen",
+    "M4": "llama",
+    "M5": "qwen",
+    "M6": "llama",
+    "M7": "qwen"
+  },
+  "raw_error_strata": 34,
+  "status": "prepared_pending_manual_error_review"
+}

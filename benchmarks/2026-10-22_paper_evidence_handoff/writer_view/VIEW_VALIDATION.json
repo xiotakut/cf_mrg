@@ -1,0 +1,88 @@
+{
+  "operation": "Field projection of existing audit CSVs. No new result, score, selection, source interpretation or experimental run.",
+  "input_sha256": {
+    "TABLE_RUN_MAP.csv": "1e9c7cc5179006c9727a3a0116565899a08962dbcb6bf7aed0630ef0782bb9ce",
+    "RUN_REGISTRY.csv": "c8866280d4badde9fdd79b288a52d063c2fe5f13534ff76140bb83508b9c5fb3",
+    "TABLE_COVERAGE.csv": "5ee9924855140788e8118853dd2395fc0b0d49fd448856c358a3330333875e61"
+  },
+  "source_table_rows": 736,
+  "active_tables": 14,
+  "table_mapping_references": 522,
+  "unique_maps_in_active_tables": 486,
+  "additional_claim_rows": 250,
+  "run_registry_rows_preserved": 529,
+  "all_map_ids_preserved": true,
+  "table_checks": [
+    {
+      "table_id": "tab:main-system-results",
+      "rows": 66,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:support-ablation",
+      "rows": 30,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:story-benchmark",
+      "rows": 84,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:seven-heads",
+      "rows": 42,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:head-controls",
+      "rows": 56,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:historical_model",
+      "rows": 24,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:arms",
+      "rows": 6,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:main_results",
+      "rows": 24,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:full-categories",
+      "rows": 72,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:source-breakdown",
+      "rows": 44,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:format-breakdown",
+      "rows": 20,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:paired",
+      "rows": 24,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:contrasts",
+      "rows": 12,
+      "values_and_notes_equal_source": true
+    },
+    {
+      "table_id": "tab:costs",
+      "rows": 18,
+      "values_and_notes_equal_source": true
+    }
+  ],
+  "publication_status": "local reading view; not committed or uploaded; GitHub delivery uses writer_starter only, full evidence stays in data4"
+}

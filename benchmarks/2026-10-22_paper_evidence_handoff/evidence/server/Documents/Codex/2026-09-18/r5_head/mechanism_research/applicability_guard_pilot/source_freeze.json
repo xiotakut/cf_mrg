@@ -1,0 +1,140 @@
+{
+  "status": "frozen before any Y calibration or J/T gate evaluation",
+  "at": "2026-09-18 19:48:22 +0800",
+  "hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/plan.json": "b477203684a1ff62137a8823353aef5a6935e755d60dfb264a6b3bf2f5f35b98",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/guard.py": "25fedb9240061e9bafbd9bb19d6b4249b370e25f5d82a9c5da69204e10ecfe0f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/prepare.py": "8eb2d786a4770da06884b94132d2446a8becee787e2207f1fa954a63cc3b16bc",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/analyze_development.py": "ed89b658c01ce3a28a804739ef332db62cf9d531a43cecbe5c639ec333064267",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/heads_freeze.json": "5872ca7772b9ba36c1b492640152dac0b4cf2177bd1177405a3c617eca5ca3cf",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/independent_development_checks.json": "921f76b776a3c9a5e320389d3b083033727ba795a0f0a9e2987475df17622402",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/split.jsonl": "e62c8352749e21a86dc8f30caffd87b97560a4d44a186adfba9b8c9b8a144871",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/transfer_failure_diagnostic.json": "76313a6306faa414a84c9470cfdb2acaa913d328a5f905c1ac58e9191f8332fa",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/applicability_gate_review.md": "7a6ee80c17ab200002b0eb82bb23d23468accb6fcb1bbafad7aa7f7cfaf7147b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/evaluation.jsonl": "9a411baeb7dd7a34fb75219cc38f3ecc8a50a9f70917a04cefa98ffd29f7ab35",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/cases.jsonl": "9f6cbdbbe8c8b45ffe9ca946ef7524d7a99b5b2ebd53b21d97ea5e64d1f7e93b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/features.npz": "48f541c61ec4f36536d11e2f513e3d4d4b8da75591d676215961ddb91f89f663",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/features_metadata.json": "5342b01be7fb441edf4ed27214879778a04f8ab27ce85a0a7c493ddf97eac11e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/requests.jsonl": "74e9c877e3e9533fb5450f2a7a7e9b3fade78b69afefd2ac597ae590d05b4095",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/trained_heads.npz": "46ffeb5c191a68182cb2c31965d76ceec7b12c1b31fa5a086392d60863bc3522",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/author_predictions.jsonl": "b76177300481210bb2c6ab5b66eed2d5c375b7a97956a608196e57184421b28b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/training_summary.json": "51fb00474373a80d7d2bcc40ce18801a1460b355fe4495f79f0c8244b044ee67",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/m4/j_scored.jsonl": "9ba90b10c2723efe3db400b10d83005c99caa6095759abd8ff758b7776c4fa78",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/m4/t_scored.jsonl": "19e210384739905565abe4fe37948b1b452dcc17029c411f15b0265ff6b13f6c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m4/inputs.jsonl": "7e115dc89c6cd888e2a4c30621f22d4b4cff0314dbaae59666f7f8f05cd3c163",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m4/request_map.jsonl": "bcdeadea40355e1c5c0a6fa77520068853ca3f8785893f22fd7e679f5e21b44b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m4/requests.jsonl": "ab1be14299c7e06af14474712d9236091eb6543d504b1b20a3ed37d6169b1dd3",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m4/features.npz": "445bf84c32237055a3fcf55aefb5f9bf1bfb64f92c2a2fffbf8522d6fee661da",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m4/features_metadata.json": "575e8dd505772665517c1c797d5a0556f8a2bfe42968c7a59776e7d8ff3e39ab",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/m4/requests.jsonl": "46733cae1f4c25661c733adaa439297d308c6a5fc46a222c8d87619421e6db0b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/m4/features.npz": "298cdfe2be5b77245eae5cecf5779891ce39a3a8f16a9ae91e7dbc3c31d96675",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/m4/features_metadata.json": "0ad30d5aabd1457500016de4ff027a88e1e53609ad4a8a3e0da1c8584139f8db",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/features.npz": "22596638d6edb5e62a9fdbb5842982733477a043c01d2e168cb0b1a7afe17582",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/features_metadata.json": "093c1eacd8291ab17fd5238d030fad12fbf4150c170feab5ddbf38495eaa2d7d",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/requests.jsonl": "587060774e2da4ee8ccc0c620e258fd8071304cbb80b8aca7970c347d7926f6c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/trained_heads.npz": "4c3fdee2956294722786251684d4a295022328e969496623507a02bc692ee8f6",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/author_predictions.jsonl": "41ad45d7b9fe02ee911514499c9364999f701a495641bd17b83d9637e1add96a",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/training_summary.json": "27b10eae9bfb57f6b0813e365ca4d5c89ec9bc46fe7da03fca0dbc04375a2fca",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/m5/j_scored.jsonl": "86acc9504d9d048a8a72ce534b0d93f2a1c0ce62b8ed2557ab4917cb7e47a089",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/m5/t_scored.jsonl": "c78e27ac6f3b92f1204bf248bf1889d2b9723c2c6409bb05e918e05da35cc72e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m5/inputs.jsonl": "5025299141c8c506a871c491122bd23f2e506a2f0c2771ac142e5bea1d2dd93b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m5/request_map.jsonl": "36bc6d7db26ca15adb75eb2251c656f6ffe045d14ffa68d719e5b984e76dbc1c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m5/requests.jsonl": "3bea68ae9279a4bf663247a360ece0c052930c8f25444af029a453ca864193f9",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m5/features.npz": "2f2f8fa83ca3afbf7132c24a64576d08c309cfef560bb4a1220f7b1be2b21641",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/m5/features_metadata.json": "334d4429d2bd10fd0009aaca6dcc5278b5816e5fc5a66529139c1c3f281519ac",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/m5/requests.jsonl": "dc3db3b818c7c6cbaef5608047e0b450fe7e54696b68df96cb34d901dbbaf318",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/m5/features.npz": "55bc299b4dd8f054083fd702b65462c87f1aa53e475a76a65c8cb1b9d6d2aec4",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/m5/features_metadata.json": "ea39c2789f313f0a6bb8eb013db20bc06055e50140ad1b6f5304a2ab02e0f57a",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/source/analyze_development.py": "ed89b658c01ce3a28a804739ef332db62cf9d531a43cecbe5c639ec333064267",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/source/guard.py": "25fedb9240061e9bafbd9bb19d6b4249b370e25f5d82a9c5da69204e10ecfe0f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/source/plan.json": "b477203684a1ff62137a8823353aef5a6935e755d60dfb264a6b3bf2f5f35b98",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/applicability_guard_pilot/source/prepare.py": "8eb2d786a4770da06884b94132d2446a8becee787e2207f1fa954a63cc3b16bc"
+  },
+  "W_X_state": {
+    "W": {
+      "m4": {
+        "selected": {
+          "ph": {
+            "C": 0.01,
+            "val_nll": 0.583468469176935
+          },
+          "h_only": {
+            "C": 0.01,
+            "val_nll": 0.6496896831395571
+          }
+        },
+        "heads_sha256": "46ffeb5c191a68182cb2c31965d76ceec7b12c1b31fa5a086392d60863bc3522",
+        "training_summary_sha256": "51fb00474373a80d7d2bcc40ce18801a1460b355fe4495f79f0c8244b044ee67",
+        "feature_sha256": "48f541c61ec4f36536d11e2f513e3d4d4b8da75591d676215961ddb91f89f663",
+        "feature_metadata_sha256": "5342b01be7fb441edf4ed27214879778a04f8ab27ce85a0a7c493ddf97eac11e"
+      },
+      "m5": {
+        "selected": {
+          "ph": {
+            "C": 0.01,
+            "val_nll": 0.4465503439854732
+          },
+          "h_only": {
+            "C": 0.01,
+            "val_nll": 0.6192036907914654
+          }
+        },
+        "heads_sha256": "4c3fdee2956294722786251684d4a295022328e969496623507a02bc692ee8f6",
+        "training_summary_sha256": "27b10eae9bfb57f6b0813e365ca4d5c89ec9bc46fe7da03fca0dbc04375a2fca",
+        "feature_sha256": "22596638d6edb5e62a9fdbb5842982733477a043c01d2e168cb0b1a7afe17582",
+        "feature_metadata_sha256": "093c1eacd8291ab17fd5238d030fad12fbf4150c170feab5ddbf38495eaa2d7d"
+      }
+    },
+    "X": {
+      "m4": {
+        "selected": {
+          "ph": {
+            "C": 0.01,
+            "val_nll": 0.6291072317510843
+          },
+          "h_only": {
+            "C": 0.01,
+            "val_nll": 0.6880205595110941
+          },
+          "scalar_ph": {
+            "C": 0.01,
+            "val_nll": 0.6764387547052241
+          }
+        },
+        "heads_sha256": "8757b81526f98049bc0004f8fe5cbdf8fb27c8b09883ab1b732c6e6d2e582456",
+        "training_summary_sha256": "e01f5ae5d14471ae2ad59413c3dcad56beb4352fd84e4ec8ce7818c3dcdb867d",
+        "feature_sha256": "48f541c61ec4f36536d11e2f513e3d4d4b8da75591d676215961ddb91f89f663",
+        "feature_metadata_sha256": "5342b01be7fb441edf4ed27214879778a04f8ab27ce85a0a7c493ddf97eac11e"
+      },
+      "m5": {
+        "selected": {
+          "ph": {
+            "C": 0.01,
+            "val_nll": 0.4988827676669528
+          },
+          "h_only": {
+            "C": 0.01,
+            "val_nll": 0.6457672906561123
+          },
+          "scalar_ph": {
+            "C": 0.1,
+            "val_nll": 0.6468615335905425
+          }
+        },
+        "heads_sha256": "5b6d4cc4e9501451f21cbea12e4ebd4e8e8cee05f141cbe6ea601aaa08dae6ed",
+        "training_summary_sha256": "654588fa8ea2f697d25a857a33a1d92a829bff9ca587448a544263c91d7d157c",
+        "feature_sha256": "22596638d6edb5e62a9fdbb5842982733477a043c01d2e168cb0b1a7afe17582",
+        "feature_metadata_sha256": "093c1eacd8291ab17fd5238d030fad12fbf4150c170feab5ddbf38495eaa2d7d"
+      }
+    },
+    "W_heads_freeze_sha256": "d6f1035cf399df209e5e93baff1352027010d3e272963d32d865c80009c9d150",
+    "W_review_sha256": "db9caeccf83a1ce3e4884461b4999a0f5e56a298c3c95de0f26602864558ec69",
+    "X_review_sha256": "d21828fb8f46d42ed334ae44466b79b9983dd633e80bc8db425b2ac4d42d8535",
+    "input_freeze_sha256": "10142285c375cb66e94d71d58cce928cbb2da430a3d0cf92ee232534fa9f0994",
+    "analysis_sha256": "b61502bcf73fdb8c8c2f05b5bbb65ed5dd881a131863780d964e771b20a9c5a9",
+    "analysis_source_freeze_sha256": "6454b2a9082d13b9fea4b65f32fd4067b9cf098cc26a13f7635d655f3fb2df7a"
+  },
+  "new_model_forwards": 0,
+  "new_LR_fits": 0,
+  "D_access": false
+}

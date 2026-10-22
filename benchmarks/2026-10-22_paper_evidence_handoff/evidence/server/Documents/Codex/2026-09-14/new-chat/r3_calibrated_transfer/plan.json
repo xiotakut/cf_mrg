@@ -1,0 +1,18 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M0",
+    "M2",
+    "M3",
+    "M6",
+    "M7"
+  ],
+  "cases_per_method": 40,
+  "full_distributions": 1200,
+  "prior_distributions": 90,
+  "scope": "Same exposed development40, original models and native contexts; no new retrieval or training labels.",
+  "head": "Frozen six-permutation content-free calibrated majority; coefficient1, unchanged catalog/order seed, no per-method strategy selection.",
+  "controls": "Uncalibrated order0 and six-order majority share raw scores; original and old v1 outputs reused. M4/M5 complete initial40 results reused for seven-method table.",
+  "prior": "Replace final current-case user content and repeated case with each content-free string. Preserve original system and all static native example messages. Raw M0/M2 serialization stays literal.",
+  "criterion": "Assess transfer versus v1 and matched uncalibrated majority for every method; report harms, class behavior and spread. No claim of independent generalization."
+}

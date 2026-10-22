@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "pid": 2685670,
+  "method": "M5",
+  "gpu": 2,
+  "started": "2026-09-18 14:43:15 +0800",
+  "planned": 360,
+  "completed": 360,
+  "new_calls": 360,
+  "prompt_tokens": 561310,
+  "completion_tokens": 53055,
+  "stages": {
+    "initial": {
+      "planned": 216,
+      "completed": 216,
+      "batches": [
+        {
+          "start": 0,
+          "size": 16,
+          "seconds": 9.118293285369873
+        },
+        {
+          "start": 16,
+          "size": 16,
+          "seconds": 7.4460413455963135
+        },
+        {
+          "start": 32,
+          "size": 16,
+          "seconds": 11.634546041488647
+        },
+        {
+          "start": 48,
+          "size": 16,
+          "seconds": 6.827688455581665
+        },
+        {
+          "start": 64,
+          "size": 16,
+          "seconds": 9.144581079483032
+        },
+        {
+          "start": 80,
+          "size": 16,
+          "seconds": 8.242053031921387
+        },
+        {
+          "start": 96,
+          "size": 16,
+          "seconds": 6.892290353775024
+        },
+        {
+          "start": 112,
+          "size": 16,
+          "seconds": 7.387337684631348
+        },
+        {
+          "start": 128,
+          "size": 16,
+          "seconds": 7.962112665176392
+        },
+        {
+          "start": 144,
+          "size": 16,
+          "seconds": 5.886610984802246
+        },
+        {
+          "start": 160,
+          "size": 16,
+          "seconds": 5.328872919082642
+        },
+        {
+          "start": 176,
+          "size": 16,
+          "seconds": 5.832568645477295
+        },
+        {
+          "start": 192,
+          "size": 16,
+          "seconds": 6.653579235076904
+        },
+        {
+          "start": 208,
+          "size": 8,
+          "seconds": 5.75390100479126
+        }
+      ],
+      "elapsed_seconds": 104.12238693237305
+    },
+    "answer": {
+      "planned": 144,
+      "completed": 144,
+      "batches": [
+        {
+          "start": 0,
+          "size": 16,
+          "seconds": 6.976670980453491
+        },
+        {
+          "start": 16,
+          "size": 16,
+          "seconds": 9.727924585342407
+        },
+        {
+          "start": 32,
+          "size": 16,
+          "seconds": 8.958560228347778
+        },
+        {
+          "start": 48,
+          "size": 16,
+          "seconds": 9.395517587661743
+        },
+        {
+          "start": 64,
+          "size": 16,
+          "seconds": 6.529658317565918
+        },
+        {
+          "start": 80,
+          "size": 16,
+          "seconds": 9.272440671920776
+        },
+        {
+          "start": 96,
+          "size": 16,
+          "seconds": 5.58492636680603
+        },
+        {
+          "start": 112,
+          "size": 16,
+          "seconds": 6.668081998825073
+        },
+        {
+          "start": 128,
+          "size": 16,
+          "seconds": 6.758371591567993
+        }
+      ],
+      "elapsed_seconds": 69.88097643852234
+    }
+  },
+  "arm_counts": {
+    "extract_generic": 72,
+    "extract_target": 72,
+    "all": 72,
+    "generic": 72,
+    "target": 72
+  },
+  "finish_reasons": {
+    "extract_generic/stop": 72,
+    "extract_target/stop": 72,
+    "all/stop": 72,
+    "generic/stop": 72,
+    "target/stop": 72
+  },
+  "initialization_seconds": 21.491193056106567,
+  "stage": "answer",
+  "elapsed_seconds": 196.29664778709412,
+  "ended": "2026-09-18 14:46:31 +0800"
+}

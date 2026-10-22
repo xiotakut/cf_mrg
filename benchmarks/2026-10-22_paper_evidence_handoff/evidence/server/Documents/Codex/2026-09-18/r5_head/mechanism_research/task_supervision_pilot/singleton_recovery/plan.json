@@ -1,0 +1,13 @@
+{
+  "status": "recovery planned before singleton rerun or full extraction",
+  "at": "2026-09-18 17:54:36 +0800",
+  "reason": "M5 task-position bf16 batch8/singleton smoke exceeded frozen relative-L2 .03 bound (.055303); M4 passed. All original arrays preserved and no full extraction started.",
+  "action": "Use batch_size=1 for both backbones in smoke recovery and all author full extraction; same worker, model, dtype, inputs, heads, C, split, thresholds. No threshold relaxation.",
+  "original_failure": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/launch_smoke.json",
+  "original_worker_sha256": "f33eba863bde516fe3c995455dc8b28fb64053f3a304dc7b966232be6a529350",
+  "smoke": "Same preselected16/bone as initial; 16 singleton plus16 repeated singleton/bone. This verifies exact repeatability, not statistical equivalence for unseen inputs.",
+  "cached_development": "Old S/T features are already singleton; verify a small identical-request original-worker check before using cache.",
+  "full_plan": "Both backbones author training inputs remain22176 each. GPU0/GPU1 concurrently if current memory allows; original full launcher is retained unused. CPU fitting only after successful extraction. No new J/T predictions before both selected heads freeze.",
+  "resources": "Most recent allocated peak smoke16.0GiB; each GPU0/1 currently25.7GiB free. No foreign jobs stopped.",
+  "costs": "Count failed batch8 smoke64 sequences, recovery64, additional interface check separately, full44352. No original generations or D."
+}

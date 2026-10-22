@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "variant": "review",
+      "scope": "all",
+      "n": 48,
+      "baseline_correct": 17,
+      "correct": 6,
+      "repairs": 0,
+      "harms": 11,
+      "unmapped": 28,
+      "invalid": 38
+    },
+    {
+      "variant": "review",
+      "scope": "M01",
+      "n": 40,
+      "baseline_correct": 12,
+      "correct": 3,
+      "repairs": 0,
+      "harms": 9,
+      "unmapped": 28,
+      "invalid": 36
+    },
+    {
+      "variant": "review",
+      "scope": "M02",
+      "n": 4,
+      "baseline_correct": 2,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 1
+    },
+    {
+      "variant": "review",
+      "scope": "M12",
+      "n": 4,
+      "baseline_correct": 3,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 2,
+      "unmapped": 0,
+      "invalid": 1
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "all",
+      "n": 48,
+      "baseline_correct": 17,
+      "correct": 15,
+      "repairs": 1,
+      "harms": 3,
+      "unmapped": 24,
+      "invalid": 29
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "M01",
+      "n": 40,
+      "baseline_correct": 12,
+      "correct": 11,
+      "repairs": 1,
+      "harms": 2,
+      "unmapped": 24,
+      "invalid": 27
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "M02",
+      "n": 4,
+      "baseline_correct": 2,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 0
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "M12",
+      "n": 4,
+      "baseline_correct": 3,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 1,
+      "unmapped": 0,
+      "invalid": 2
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "all",
+      "n": 48,
+      "baseline_correct": 17,
+      "correct": 10,
+      "repairs": 0,
+      "harms": 7,
+      "unmapped": 26,
+      "invalid": 31
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "M01",
+      "n": 40,
+      "baseline_correct": 12,
+      "correct": 7,
+      "repairs": 0,
+      "harms": 5,
+      "unmapped": 26,
+      "invalid": 28
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "M02",
+      "n": 4,
+      "baseline_correct": 2,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 1,
+      "unmapped": 0,
+      "invalid": 1
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "M12",
+      "n": 4,
+      "baseline_correct": 3,
+      "correct": 2,
+      "repairs": 0,
+      "harms": 1,
+      "unmapped": 0,
+      "invalid": 2
+    }
+  ],
+  "cf_vs_factual": {
+    "n": 48,
+    "repairs": 1,
+    "harms": 6
+  },
+  "costs": {
+    "calls": 480,
+    "input_tokens": 1245240,
+    "output_tokens": 144036,
+    "length_stops": 22,
+    "actual_withheld_probes": 144
+  },
+  "runtime": {
+    "status": "complete_with_recovery",
+    "pid": 2847019,
+    "gpu": 3,
+    "started_at": 1789414875.1433454,
+    "completed_calls": 480,
+    "initialization_seconds": 292.8811819553375,
+    "stage": "final",
+    "elapsed_seconds": 2026.9714932441711,
+    "first_exit_code": 143,
+    "recovery": {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2881820,
+      "started_at": 1789416628.9971964,
+      "total": 24,
+      "initialization_seconds": 109.84768533706665,
+      "completed": 24,
+      "elapsed_seconds": 273.1174325942993,
+      "last_batch_seconds": 71.028071641922,
+      "completed_at": 1789416902.1148386
+    },
+    "active_elapsed_lower_bound_seconds": 1840.3864350318909,
+    "original_initialization_seconds": 183.03349661827087,
+    "plan_failures": 0,
+    "rejected_quotes": 0
+  }
+}

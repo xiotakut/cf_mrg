@@ -1,0 +1,184 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "stage": "draft",
+      "arm": "prior",
+      "n": 13,
+      "correct": 8,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 3,
+        "harms": 2
+      },
+      "versus_same_stage_revision": {
+        "repairs": 0,
+        "harms": 1
+      }
+    },
+    {
+      "method": "M4",
+      "stage": "draft",
+      "arm": "revision",
+      "n": 13,
+      "correct": 9,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 4,
+        "harms": 2
+      },
+      "versus_same_stage_revision": {
+        "repairs": 0,
+        "harms": 0
+      }
+    },
+    {
+      "method": "M4",
+      "stage": "final",
+      "arm": "prior",
+      "n": 13,
+      "correct": 6,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 1,
+        "harms": 2
+      },
+      "versus_same_stage_revision": {
+        "repairs": 0,
+        "harms": 3
+      }
+    },
+    {
+      "method": "M4",
+      "stage": "final",
+      "arm": "revision",
+      "n": 13,
+      "correct": 9,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 4,
+        "harms": 2
+      },
+      "versus_same_stage_revision": {
+        "repairs": 0,
+        "harms": 0
+      }
+    },
+    {
+      "method": "M5",
+      "stage": "draft",
+      "arm": "prior",
+      "n": 13,
+      "correct": 4,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 1,
+        "harms": 4
+      },
+      "versus_same_stage_revision": {
+        "repairs": 3,
+        "harms": 2
+      }
+    },
+    {
+      "method": "M5",
+      "stage": "draft",
+      "arm": "revision",
+      "n": 13,
+      "correct": 3,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 1,
+        "harms": 5
+      },
+      "versus_same_stage_revision": {
+        "repairs": 0,
+        "harms": 0
+      }
+    },
+    {
+      "method": "M5",
+      "stage": "final",
+      "arm": "prior",
+      "n": 13,
+      "correct": 4,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 1,
+        "harms": 4
+      },
+      "versus_same_stage_revision": {
+        "repairs": 2,
+        "harms": 3
+      }
+    },
+    {
+      "method": "M5",
+      "stage": "final",
+      "arm": "revision",
+      "n": 13,
+      "correct": 5,
+      "invalid": 0,
+      "baseline_correct": 7,
+      "versus_baseline": {
+        "repairs": 1,
+        "harms": 3
+      },
+      "versus_same_stage_revision": {
+        "repairs": 0,
+        "harms": 0
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "stage": "draft",
+      "calls": 26,
+      "input_tokens": 41864,
+      "output_tokens": 4039,
+      "length_stops": 0,
+      "worker_seconds": 49.706419467926025,
+      "initialization_seconds": 17.29542303085327
+    },
+    {
+      "method": "M4",
+      "stage": "final",
+      "calls": 26,
+      "input_tokens": 72837,
+      "output_tokens": 8150,
+      "length_stops": 0,
+      "worker_seconds": 76.53783369064331,
+      "initialization_seconds": 18.172136306762695
+    },
+    {
+      "method": "M5",
+      "stage": "draft",
+      "calls": 26,
+      "input_tokens": 35083,
+      "output_tokens": 5111,
+      "length_stops": 0,
+      "worker_seconds": 63.619943618774414,
+      "initialization_seconds": 17.12338089942932
+    },
+    {
+      "method": "M5",
+      "stage": "final",
+      "calls": 26,
+      "input_tokens": 68137,
+      "output_tokens": 6817,
+      "length_stops": 0,
+      "worker_seconds": 78.4930374622345,
+      "initialization_seconds": 18.29067587852478
+    }
+  ],
+  "new_calls": 104
+}

@@ -1,0 +1,766 @@
+{
+  "protocol": {
+    "schema_version": "moa_rcv_run_v1",
+    "method_identity": "full_v5_fixed_C1_C5_rcv_20260924",
+    "status": "prepared_before_new_full_v5_results",
+    "development_only": true,
+    "allowed_gpus": [
+      2,
+      3
+    ],
+    "verification_seed": 42,
+    "f_disagreement_reanswer": false,
+    "per_task_budget": {
+      "max_model_requests": 32,
+      "max_input_tokens": 4194304,
+      "max_output_tokens": 16384,
+      "max_tool_calls": 20
+    },
+    "arms": [
+      "strong_B",
+      "candidate_only",
+      "candidate_with_rationales",
+      "pool_old_plus_three",
+      "joint_selector"
+    ],
+    "profiles": {
+      "M4": {
+        "catalog": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 1,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "guided_json": false,
+          "num_shards": 1,
+          "max_logprobs": 2048,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 2048
+          }
+        },
+        "facts": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "guided_json": true,
+          "num_shards": 1,
+          "max_logprobs": 2048,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 2048,
+            "enforce_eager": true
+          }
+        },
+        "readout": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.85,
+          "max_model_len": 131072,
+          "max_num_seqs": 16,
+          "max_num_batched_tokens": 8192,
+          "batch_size": 16,
+          "guided_json": true,
+          "num_shards": 1,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 16384
+          }
+        }
+      },
+      "M5": {
+        "catalog": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 1,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 2048
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": false,
+          "num_shards": 1,
+          "max_logprobs": 2048
+        },
+        "facts": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 2048,
+            "enforce_eager": true
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": true,
+          "num_shards": 1,
+          "max_logprobs": 2048
+        },
+        "readout": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.85,
+          "max_model_len": 131072,
+          "max_num_seqs": 16,
+          "max_num_batched_tokens": 8192,
+          "batch_size": 16,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 16384
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": true,
+          "num_shards": 1
+        }
+      }
+    },
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m4.jsonl",
+        "inputs_sha256": "1ca8b6507fd7a70c5aed82431229762d87178012a94da1e713879b1c7ae9ef73",
+        "saved_f_proposals": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_f_proposals.jsonl",
+        "saved_f_proposals_sha256": "953e5f2952784058c2cc786ae876638c573f4ec4332ad898f71e60b58431d8f5",
+        "saved_bases": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_bases.jsonl",
+        "saved_bases_sha256": "60c419c0056c1ccc00e584dfbfbda1768cfebbb38363079835df5d3c5773a9ab",
+        "tasks": [
+          {
+            "task_id": "v00064:strong_B",
+            "request_id": "v00064",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:candidate_only",
+            "request_id": "v00064",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:candidate_with_rationales",
+            "request_id": "v00064",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:pool_old_plus_three",
+            "request_id": "v00064",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:joint_selector",
+            "request_id": "v00064",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:strong_B",
+            "request_id": "v00066",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:candidate_only",
+            "request_id": "v00066",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:candidate_with_rationales",
+            "request_id": "v00066",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:pool_old_plus_three",
+            "request_id": "v00066",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:joint_selector",
+            "request_id": "v00066",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:strong_B",
+            "request_id": "v00068",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:candidate_only",
+            "request_id": "v00068",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:candidate_with_rationales",
+            "request_id": "v00068",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:pool_old_plus_three",
+            "request_id": "v00068",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:joint_selector",
+            "request_id": "v00068",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:strong_B",
+            "request_id": "v00070",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:candidate_only",
+            "request_id": "v00070",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:candidate_with_rationales",
+            "request_id": "v00070",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:pool_old_plus_three",
+            "request_id": "v00070",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:joint_selector",
+            "request_id": "v00070",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:strong_B",
+            "request_id": "v00072",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:candidate_only",
+            "request_id": "v00072",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:candidate_with_rationales",
+            "request_id": "v00072",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:pool_old_plus_three",
+            "request_id": "v00072",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:joint_selector",
+            "request_id": "v00072",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:strong_B",
+            "request_id": "v00074",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:candidate_only",
+            "request_id": "v00074",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:candidate_with_rationales",
+            "request_id": "v00074",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:pool_old_plus_three",
+            "request_id": "v00074",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:joint_selector",
+            "request_id": "v00074",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:strong_B",
+            "request_id": "v00076",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:candidate_only",
+            "request_id": "v00076",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:candidate_with_rationales",
+            "request_id": "v00076",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:pool_old_plus_three",
+            "request_id": "v00076",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:joint_selector",
+            "request_id": "v00076",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:strong_B",
+            "request_id": "v00078",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:candidate_only",
+            "request_id": "v00078",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:candidate_with_rationales",
+            "request_id": "v00078",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:pool_old_plus_three",
+            "request_id": "v00078",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:joint_selector",
+            "request_id": "v00078",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          }
+        ],
+        "completed_union": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_completed_union.jsonl",
+        "completed_union_sha256": "1d94cddc252692bfb1b8c1ed13b0517234499f00059dfb1801688dd064372f4c",
+        "full_inputs": 13905,
+        "full_arm_rows": 69525
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m5.jsonl",
+        "inputs_sha256": "24c22d3cc850091e27b184747428ebfaf56fc24d1bf94de5b9baa0231618985d",
+        "saved_f_proposals": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_f_proposals.jsonl",
+        "saved_f_proposals_sha256": "d17aad2bcf4a4ff3bd12b061560a19219c983baf0b3bad483a59f23769f7a056",
+        "saved_bases": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_bases.jsonl",
+        "saved_bases_sha256": "8a15244ccfad0f3e771245d49c118fb87dbbbd7bd0564869a427ee6427af5589",
+        "tasks": [
+          {
+            "task_id": "v00064:strong_B",
+            "request_id": "v00064",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:candidate_only",
+            "request_id": "v00064",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:candidate_with_rationales",
+            "request_id": "v00064",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:pool_old_plus_three",
+            "request_id": "v00064",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00064:joint_selector",
+            "request_id": "v00064",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:strong_B",
+            "request_id": "v00066",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:candidate_only",
+            "request_id": "v00066",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:candidate_with_rationales",
+            "request_id": "v00066",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:pool_old_plus_three",
+            "request_id": "v00066",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00066:joint_selector",
+            "request_id": "v00066",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:strong_B",
+            "request_id": "v00068",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:candidate_only",
+            "request_id": "v00068",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:candidate_with_rationales",
+            "request_id": "v00068",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:pool_old_plus_three",
+            "request_id": "v00068",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00068:joint_selector",
+            "request_id": "v00068",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:strong_B",
+            "request_id": "v00070",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:candidate_only",
+            "request_id": "v00070",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:candidate_with_rationales",
+            "request_id": "v00070",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:pool_old_plus_three",
+            "request_id": "v00070",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00070:joint_selector",
+            "request_id": "v00070",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:strong_B",
+            "request_id": "v00072",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:candidate_only",
+            "request_id": "v00072",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:candidate_with_rationales",
+            "request_id": "v00072",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:pool_old_plus_three",
+            "request_id": "v00072",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00072:joint_selector",
+            "request_id": "v00072",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:strong_B",
+            "request_id": "v00074",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:candidate_only",
+            "request_id": "v00074",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:candidate_with_rationales",
+            "request_id": "v00074",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:pool_old_plus_three",
+            "request_id": "v00074",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00074:joint_selector",
+            "request_id": "v00074",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:strong_B",
+            "request_id": "v00076",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:candidate_only",
+            "request_id": "v00076",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:candidate_with_rationales",
+            "request_id": "v00076",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:pool_old_plus_three",
+            "request_id": "v00076",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00076:joint_selector",
+            "request_id": "v00076",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:strong_B",
+            "request_id": "v00078",
+            "arm": "strong_B",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:candidate_only",
+            "request_id": "v00078",
+            "arm": "candidate_only",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:candidate_with_rationales",
+            "request_id": "v00078",
+            "arm": "candidate_with_rationales",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:pool_old_plus_three",
+            "request_id": "v00078",
+            "arm": "pool_old_plus_three",
+            "profile_role": "catalog"
+          },
+          {
+            "task_id": "v00078:joint_selector",
+            "request_id": "v00078",
+            "arm": "joint_selector",
+            "profile_role": "catalog"
+          }
+        ],
+        "completed_union": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_completed_union.jsonl",
+        "completed_union_sha256": "1c2fb554842d8fbfb989145ca3285816e8d787a55e8de55b987282e276553136",
+        "full_inputs": 13905,
+        "full_arm_rows": 69525
+      }
+    },
+    "code_sources": {
+      "/home/data3/txy/cf_moa/controller/moa_rcv.py": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "/home/data3/txy/cf_moa/agents/a5_joint_selector.py": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+      "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+      "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "/home/data3/txy/cf_moa/configs/moa_rcv_v1.json": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+      "/home/data3/txy/cf_moa/tools/f_pool_replica.py": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3"
+    },
+    "C0_policy": "Reuse complete formal native original scores and saved original responses; no new original-method inference.",
+    "family_scope": "All frozen13905 inputs permodel; no outcome-based deletion. Exposed development, not independent.",
+    "failure_policy": "Ordinary single-item errors retain denominator and continue; shared engine/unknown submitted state stops affected worker.",
+    "completed_union_policy": "Complete per-arm denominator is completed_union plus newly produced tasks; never treat pending rows as removed.",
+    "cache_policy": "Same input/request identity only; old F pool generated at most once for each missinginput and shared C1-C5; actual paid old costs remain separate from new physical costs.",
+    "scheduling": "Role-major catalog/facts/readout then input-major contiguous arms. No facts pending: all adopted rulefacts cached.",
+    "freeze_scope": "This freezes the full-v5 run only; independentconfirmation method/control freeze follows regression with explicit exposure ledger."
+  },
+  "method": "M5",
+  "mode": "live_batched",
+  "role": "catalog",
+  "batch_size": 8,
+  "max_inputs": null,
+  "scheduler_source": {
+    "path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py",
+    "sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47"
+  },
+  "selected_input_ids": [
+    "v00064",
+    "v00066",
+    "v00068",
+    "v00070",
+    "v00072",
+    "v00074",
+    "v00076",
+    "v00078"
+  ],
+  "selected_task_ids": [
+    "v00064:strong_B",
+    "v00064:candidate_only",
+    "v00064:candidate_with_rationales",
+    "v00064:pool_old_plus_three",
+    "v00064:joint_selector",
+    "v00066:strong_B",
+    "v00066:candidate_only",
+    "v00066:candidate_with_rationales",
+    "v00066:pool_old_plus_three",
+    "v00066:joint_selector",
+    "v00068:strong_B",
+    "v00068:candidate_only",
+    "v00068:candidate_with_rationales",
+    "v00068:pool_old_plus_three",
+    "v00068:joint_selector",
+    "v00070:strong_B",
+    "v00070:candidate_only",
+    "v00070:candidate_with_rationales",
+    "v00070:pool_old_plus_three",
+    "v00070:joint_selector",
+    "v00072:strong_B",
+    "v00072:candidate_only",
+    "v00072:candidate_with_rationales",
+    "v00072:pool_old_plus_three",
+    "v00072:joint_selector",
+    "v00074:strong_B",
+    "v00074:candidate_only",
+    "v00074:candidate_with_rationales",
+    "v00074:pool_old_plus_three",
+    "v00074:joint_selector",
+    "v00076:strong_B",
+    "v00076:candidate_only",
+    "v00076:candidate_with_rationales",
+    "v00076:pool_old_plus_three",
+    "v00076:joint_selector",
+    "v00078:strong_B",
+    "v00078:candidate_only",
+    "v00078:candidate_with_rationales",
+    "v00078:pool_old_plus_three",
+    "v00078:joint_selector"
+  ]
+}

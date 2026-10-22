@@ -1,0 +1,43 @@
+{
+  "frozen_at": "2026-09-18 17:32:54 +0800",
+  "status": "planned before task-readout inference",
+  "trigger": "Three author-supervised raw-final-token probes largely predict negative on fixed-H changed-P synthetic diagnostic. Test the unchanged backbone using its existing NLI task-scoring interface.",
+  "cases_sha256": "9f6cbdbbe8c8b45ffe9ca946ef7524d7a99b5b2ebd53b21d97ea5e64d1f7e93b",
+  "data": "The same complete 16 families / 64 original P/H inputs, including all premise distractors; no text or gold changes.",
+  "interface": {
+    "builder": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_head.py",
+    "worker": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+    "preparation_helpers": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/prepare.py",
+    "system": "Each backbone original NLI system messages, asserted identical across all existing 112 NLI rows; no original user/RAG/examples",
+    "question": "what is the relationship between premise:{verbatim P} hypothesis:{verbatim H}",
+    "options": {
+      "positive": "positive",
+      "negative": "negative"
+    },
+    "rotations": [
+      0,
+      1
+    ],
+    "score_prefix": "{\"answer_choice\": \"",
+    "rule": "Exact learned_rule_head.RULE; no extra diagnostic-specific instructions",
+    "render": "Same backbone tokenizer chat template/config, then existing JSON value prefix; no truncation",
+    "forward": "One singleton HF forward for each code mapping; 128 per backbone, 256 total; no training or generation"
+  },
+  "aggregation": "Softmax only the first two code logits; align native positive/negative, then mean the two probability vectors. Argmax in fixed positive,negative key order; exact ties positive. No calibration, threshold selection, code weighting or labels in requests.",
+  "reports": [
+    "All existing diagnostic endpoint, positive/negative, R5/strong pair, family all-four, noise repair/harm metrics",
+    "Every single-mapping decision and average probabilities, mapping disagreements",
+    "Matched same-input repairs/harms and paired differences against three frozen supervised probe systems",
+    "Source/request/output hashes and all incremental inference costs"
+  ],
+  "freeze": "Freeze plan,64 inputs,256 requests,code sources and original-system sources before root GPU scheduling. CPU tokenizer and metadata-poison checks first.",
+  "D_access": false,
+  "heads_changed": false,
+  "training": false,
+  "new_model_calls": 0,
+  "limitations": [
+    "Interface control jointly changes task instruction,chat formatting,representation position and use of the pretrained LM output head relative to raw-linear probes; cannot isolate one component.",
+    "Failure or success diagnoses this finite fictional input set; it does not predict whether any new supervised head will work.",
+    "No natural D evaluation, original-format explanation generation or broader generalization claim."
+  ]
+}

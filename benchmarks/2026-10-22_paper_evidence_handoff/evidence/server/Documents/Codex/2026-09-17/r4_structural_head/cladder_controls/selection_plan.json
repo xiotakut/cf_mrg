@@ -1,0 +1,378 @@
+{
+  "status": "selection_frozen_before_controls_preparation",
+  "frozen_at": "2026-09-17T18:46:34.389045+08:00",
+  "seed": 20260917,
+  "selection_rule": "Iterate sorted story_id; random.Random(20260917).sample(sorted(item_ids),2); sort each selected pair; flatten in story order.",
+  "source": "cladder_validation/evaluation.jsonl: story_id and item_id only",
+  "source_questions": 1343,
+  "stories": 40,
+  "per_story": 2,
+  "questions": 80,
+  "selection": [
+    {
+      "story_id": "blood_pressure",
+      "item_ids": [
+        "cladder_20100",
+        "cladder_9701"
+      ]
+    },
+    {
+      "story_id": "cholesterol",
+      "item_ids": [
+        "cladder_20139",
+        "cladder_9740"
+      ]
+    },
+    {
+      "story_id": "college_salary",
+      "item_ids": [
+        "cladder_20153",
+        "cladder_20165"
+      ]
+    },
+    {
+      "story_id": "college_wage",
+      "item_ids": [
+        "cladder_20175",
+        "cladder_20200"
+      ]
+    },
+    {
+      "story_id": "encouagement_program",
+      "item_ids": [
+        "cladder_20224",
+        "cladder_9828"
+      ]
+    },
+    {
+      "story_id": "firing_squad",
+      "item_ids": [
+        "cladder_9591",
+        "cladder_9600"
+      ]
+    },
+    {
+      "story_id": "floor_wet",
+      "item_ids": [
+        "cladder_20000",
+        "cladder_9610"
+      ]
+    },
+    {
+      "story_id": "forest_fire",
+      "item_ids": [
+        "cladder_20017",
+        "cladder_9633"
+      ]
+    },
+    {
+      "story_id": "gender_admission",
+      "item_ids": [
+        "cladder_9842",
+        "cladder_9845"
+      ]
+    },
+    {
+      "story_id": "gender_admission_state",
+      "item_ids": [
+        "cladder_20250",
+        "cladder_9854"
+      ]
+    },
+    {
+      "story_id": "gender_pay",
+      "item_ids": [
+        "cladder_20285",
+        "cladder_20290"
+      ]
+    },
+    {
+      "story_id": "getting_late",
+      "item_ids": [
+        "cladder_20030",
+        "cladder_9648"
+      ]
+    },
+    {
+      "story_id": "getting_tanned",
+      "item_ids": [
+        "cladder_20042",
+        "cladder_20054"
+      ]
+    },
+    {
+      "story_id": "nature_vs_nurture",
+      "item_ids": [
+        "cladder_9938",
+        "cladder_9948"
+      ]
+    },
+    {
+      "story_id": "neg_mediation",
+      "item_ids": [
+        "cladder_20349",
+        "cladder_9955"
+      ]
+    },
+    {
+      "story_id": "nonsense0",
+      "item_ids": [
+        "cladder_29696",
+        "cladder_29719"
+      ]
+    },
+    {
+      "story_id": "nonsense1",
+      "item_ids": [
+        "cladder_29770",
+        "cladder_29822"
+      ]
+    },
+    {
+      "story_id": "nonsense2",
+      "item_ids": [
+        "cladder_29932",
+        "cladder_29936"
+      ]
+    },
+    {
+      "story_id": "nonsense3",
+      "item_ids": [
+        "cladder_30069",
+        "cladder_30131"
+      ]
+    },
+    {
+      "story_id": "nonsense4",
+      "item_ids": [
+        "cladder_30223",
+        "cladder_30291"
+      ]
+    },
+    {
+      "story_id": "nonsense5",
+      "item_ids": [
+        "cladder_30312",
+        "cladder_30353"
+      ]
+    },
+    {
+      "story_id": "nonsense6",
+      "item_ids": [
+        "cladder_30555",
+        "cladder_30574"
+      ]
+    },
+    {
+      "story_id": "nonsense7",
+      "item_ids": [
+        "cladder_30647",
+        "cladder_30652"
+      ]
+    },
+    {
+      "story_id": "nonsense8",
+      "item_ids": [
+        "cladder_30810",
+        "cladder_30868"
+      ]
+    },
+    {
+      "story_id": "nonsense9",
+      "item_ids": [
+        "cladder_30909",
+        "cladder_30971"
+      ]
+    },
+    {
+      "story_id": "obesity_mortality",
+      "item_ids": [
+        "cladder_9978",
+        "cladder_9985"
+      ]
+    },
+    {
+      "story_id": "orange_scurvy",
+      "item_ids": [
+        "cladder_10004",
+        "cladder_10006"
+      ]
+    },
+    {
+      "story_id": "penguin",
+      "item_ids": [
+        "cladder_20060",
+        "cladder_20071"
+      ]
+    },
+    {
+      "story_id": "price",
+      "item_ids": [
+        "cladder_10018",
+        "cladder_20434"
+      ]
+    },
+    {
+      "story_id": "simpson_drug",
+      "item_ids": [
+        "cladder_10065",
+        "cladder_10077"
+      ]
+    },
+    {
+      "story_id": "simpson_hospital",
+      "item_ids": [
+        "cladder_10105",
+        "cladder_20493"
+      ]
+    },
+    {
+      "story_id": "simpson_kidneystone",
+      "item_ids": [
+        "cladder_10153",
+        "cladder_10155"
+      ]
+    },
+    {
+      "story_id": "simpson_vaccine",
+      "item_ids": [
+        "cladder_10173",
+        "cladder_10183"
+      ]
+    },
+    {
+      "story_id": "smoke_birthWeight",
+      "item_ids": [
+        "cladder_10188",
+        "cladder_10208"
+      ]
+    },
+    {
+      "story_id": "smoking_frontdoor",
+      "item_ids": [
+        "cladder_10229",
+        "cladder_20623"
+      ]
+    },
+    {
+      "story_id": "smoking_gene_cancer",
+      "item_ids": [
+        "cladder_10253",
+        "cladder_20674"
+      ]
+    },
+    {
+      "story_id": "smoking_tar_cancer",
+      "item_ids": [
+        "cladder_10295",
+        "cladder_20679"
+      ]
+    },
+    {
+      "story_id": "tax_smoke_birthWeight",
+      "item_ids": [
+        "cladder_10313",
+        "cladder_10318"
+      ]
+    },
+    {
+      "story_id": "vaccine_kills",
+      "item_ids": [
+        "cladder_20082",
+        "cladder_9690"
+      ]
+    },
+    {
+      "story_id": "water_cholera",
+      "item_ids": [
+        "cladder_10360",
+        "cladder_10362"
+      ]
+    }
+  ],
+  "item_ids": [
+    "cladder_20100",
+    "cladder_9701",
+    "cladder_20139",
+    "cladder_9740",
+    "cladder_20153",
+    "cladder_20165",
+    "cladder_20175",
+    "cladder_20200",
+    "cladder_20224",
+    "cladder_9828",
+    "cladder_9591",
+    "cladder_9600",
+    "cladder_20000",
+    "cladder_9610",
+    "cladder_20017",
+    "cladder_9633",
+    "cladder_9842",
+    "cladder_9845",
+    "cladder_20250",
+    "cladder_9854",
+    "cladder_20285",
+    "cladder_20290",
+    "cladder_20030",
+    "cladder_9648",
+    "cladder_20042",
+    "cladder_20054",
+    "cladder_9938",
+    "cladder_9948",
+    "cladder_20349",
+    "cladder_9955",
+    "cladder_29696",
+    "cladder_29719",
+    "cladder_29770",
+    "cladder_29822",
+    "cladder_29932",
+    "cladder_29936",
+    "cladder_30069",
+    "cladder_30131",
+    "cladder_30223",
+    "cladder_30291",
+    "cladder_30312",
+    "cladder_30353",
+    "cladder_30555",
+    "cladder_30574",
+    "cladder_30647",
+    "cladder_30652",
+    "cladder_30810",
+    "cladder_30868",
+    "cladder_30909",
+    "cladder_30971",
+    "cladder_9978",
+    "cladder_9985",
+    "cladder_10004",
+    "cladder_10006",
+    "cladder_20060",
+    "cladder_20071",
+    "cladder_10018",
+    "cladder_20434",
+    "cladder_10065",
+    "cladder_10077",
+    "cladder_10105",
+    "cladder_20493",
+    "cladder_10153",
+    "cladder_10155",
+    "cladder_10173",
+    "cladder_10183",
+    "cladder_10188",
+    "cladder_10208",
+    "cladder_10229",
+    "cladder_20623",
+    "cladder_10253",
+    "cladder_20674",
+    "cladder_10295",
+    "cladder_20679",
+    "cladder_10313",
+    "cladder_10318",
+    "cladder_20082",
+    "cladder_9690",
+    "cladder_10360",
+    "cladder_10362"
+  ],
+  "model_calls": 0,
+  "prediction_or_score_files_read": false,
+  "scope": "Additional controls on a predeclared subset of the current frozen validation; not new independent validation and not a changed head."
+}

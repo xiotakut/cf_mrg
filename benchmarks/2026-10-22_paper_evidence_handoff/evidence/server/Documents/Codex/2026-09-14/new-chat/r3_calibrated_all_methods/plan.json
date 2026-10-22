@@ -1,0 +1,78 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M0",
+    "M2",
+    "M3",
+    "M6",
+    "M7"
+  ],
+  "cases_per_method": 640,
+  "requested_score_vectors": 19200,
+  "scope": "Same680 exposed v5 diagnoses; original40 per new method reused.",
+  "head": "Frozen catalog, six orders, content-free priors, coefficient1 and majority/tie rules. No per-method policy selection.",
+  "controls": [
+    "original",
+    "order0",
+    "uncalibrated_majority",
+    "calibrated_majority"
+  ],
+  "prior_new_calls": 0,
+  "reuse": "Existing M4/M5 all680; other methods initial40;90 content-free prior calls. Exact M2/M0 same-case prompts reuse M0 raw scores when model/config match.",
+  "inference": "Original model and exact native final context. No new retrieval, training labels, test gold or reference case in GPU requests.",
+  "cost": "Each deployed head requests six score vectors. Cross-method evaluation cache is reported separately from this per-invocation cost.",
+  "preflight": [
+    {
+      "method": "M0",
+      "cases": 640,
+      "new_primary_requests": 3840,
+      "reused_score_requests": 0,
+      "baseline_parity": 640,
+      "max_prompt_tokens": 1434,
+      "prior_template_matches": true,
+      "config_change": "2048 KV blocks; all inference/template settings otherwise unchanged"
+    },
+    {
+      "method": "M2",
+      "cases": 640,
+      "new_primary_requests": 3354,
+      "reused_score_requests": 486,
+      "baseline_parity": 640,
+      "max_prompt_tokens": 2662,
+      "prior_template_matches": true,
+      "config_change": "2048 KV blocks; all inference/template settings otherwise unchanged"
+    },
+    {
+      "method": "M3",
+      "cases": 640,
+      "new_primary_requests": 3840,
+      "reused_score_requests": 0,
+      "baseline_parity": 640,
+      "max_prompt_tokens": 8200,
+      "prior_template_matches": true,
+      "config_change": "2048 KV blocks; all inference/template settings otherwise unchanged"
+    },
+    {
+      "method": "M6",
+      "cases": 640,
+      "new_primary_requests": 3840,
+      "reused_score_requests": 0,
+      "baseline_parity": 640,
+      "max_prompt_tokens": 4768,
+      "prior_template_matches": true,
+      "config_change": "2048 KV blocks; all inference/template settings otherwise unchanged"
+    },
+    {
+      "method": "M7",
+      "cases": 640,
+      "new_primary_requests": 3840,
+      "reused_score_requests": 0,
+      "baseline_parity": 640,
+      "max_prompt_tokens": 12732,
+      "prior_template_matches": true,
+      "config_change": "2048 KV blocks; all inference/template settings otherwise unchanged"
+    }
+  ],
+  "new_primary_requests": 18714,
+  "reused_m0_m2_requests": 486
+}

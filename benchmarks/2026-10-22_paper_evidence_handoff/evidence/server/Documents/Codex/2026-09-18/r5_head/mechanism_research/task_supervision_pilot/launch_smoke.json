@@ -1,0 +1,59 @@
+{
+  "status": "failed",
+  "pid": 2808183,
+  "gpu": "0",
+  "stage": "smoke",
+  "started": "2026-09-18 17:51:18 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "kind": "smoke",
+      "pid": 2808186,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py",
+        "--method",
+        "M4",
+        "--gpu",
+        "0",
+        "--batch-size",
+        "8",
+        "--limit",
+        "16"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:51:18 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:51:31 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "smoke",
+      "pid": 2808548,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py",
+        "--method",
+        "M5",
+        "--gpu",
+        "0",
+        "--batch-size",
+        "8",
+        "--limit",
+        "16"
+      ],
+      "status": "failed",
+      "started": "2026-09-18 17:51:31 +0800",
+      "returncode": 1,
+      "ended": "2026-09-18 17:51:44 +0800"
+    }
+  ],
+  "source_hashes": {
+    "extract_features.py": "f33eba863bde516fe3c995455dc8b28fb64053f3a304dc7b966232be6a529350",
+    "train.py": "6382f56aa3264bbb27cd8914ab187dbf5e721d5c7d341582181195439ee57c4f",
+    "launch.py": "7e016f7dac85ce2d7026fcb7ba078ca398d3562f4c774d1098838cd4524f7928",
+    "plan.json": "658220d25cbcaa668e3fe1c695c8d772923459c855bdcc5d1bb0302dea71fdd7"
+  }
+}

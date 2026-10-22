@@ -1,0 +1,63 @@
+{
+  "confirmation_diagnosis_n": 552,
+  "correct": 535,
+  "errors": 17,
+  "accuracy_pct": 96.92028985507247,
+  "wilson95_pct": [
+    95.12360382573428,
+    98.06843713843188
+  ],
+  "error_confusions": [
+    {
+      "gold": "Unstable angina",
+      "prediction": "Acute pulmonary edema",
+      "n": 7
+    },
+    {
+      "gold": "Possible NSTEMI / STEMI",
+      "prediction": "SLE",
+      "n": 5
+    },
+    {
+      "gold": "Myocarditis",
+      "prediction": "Sarcoidosis",
+      "n": 2
+    },
+    {
+      "gold": "Possible NSTEMI / STEMI",
+      "prediction": "Myocarditis",
+      "n": 1
+    },
+    {
+      "gold": "Guillain-Barr\u00e9 syndrome",
+      "prediction": "Myasthenia gravis",
+      "n": 1
+    },
+    {
+      "gold": "Unstable angina",
+      "prediction": "Spontaneous pneumothorax",
+      "n": 1
+    }
+  ],
+  "error_item_ids": [
+    "s003839",
+    "s004763",
+    "s005615",
+    "s005717",
+    "s006454",
+    "s006742",
+    "s007868",
+    "s008070",
+    "s008546",
+    "s009110",
+    "s009685",
+    "s009755",
+    "s010357",
+    "s010607",
+    "s012343",
+    "s012984",
+    "s013730"
+  ],
+  "post_confirmation_head_changes": false,
+  "note": "Error inspection only; no threshold, retrieval pool or head change after confirmation."
+}

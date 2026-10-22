@@ -1,0 +1,68 @@
+{
+  "input": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/closeout_20260928/costs/per_input_routes.jsonl",
+  "rule": "Count saved per-input rows by method and selected_component/capability_predicate; no routing or model execution. selected_component groups legacy_R1; capability_predicate gives finer catalog/rule/passthrough strata.",
+  "component_counts": [
+    {
+      "method": "M4",
+      "selected_component": "legacy_R1",
+      "count": 3727
+    },
+    {
+      "method": "M4",
+      "selected_component": "F",
+      "count": 10178
+    },
+    {
+      "method": "M5",
+      "selected_component": "legacy_R1",
+      "count": 3727
+    },
+    {
+      "method": "M5",
+      "selected_component": "F",
+      "count": 10178
+    }
+  ],
+  "capability_counts": [
+    {
+      "method": "M4",
+      "capability_predicate": "original_catalog_predicate",
+      "count": 3560
+    },
+    {
+      "method": "M4",
+      "capability_predicate": "original_rule_predicate",
+      "count": 123
+    },
+    {
+      "method": "M4",
+      "capability_predicate": "original_passthrough_predicate",
+      "count": 44
+    },
+    {
+      "method": "M4",
+      "capability_predicate": "adopted_F_native_capability",
+      "count": 10178
+    },
+    {
+      "method": "M5",
+      "capability_predicate": "original_catalog_predicate",
+      "count": 3560
+    },
+    {
+      "method": "M5",
+      "capability_predicate": "original_rule_predicate",
+      "count": 123
+    },
+    {
+      "method": "M5",
+      "capability_predicate": "original_passthrough_predicate",
+      "count": 44
+    },
+    {
+      "method": "M5",
+      "capability_predicate": "adopted_F_native_capability",
+      "count": 10178
+    }
+  ]
+}

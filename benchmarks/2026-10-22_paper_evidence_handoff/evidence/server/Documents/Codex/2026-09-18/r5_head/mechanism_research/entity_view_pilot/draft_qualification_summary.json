@@ -1,0 +1,32 @@
+{
+  "status": "pre-score draft eligibility; awaiting semantic-risk review before final preparation",
+  "checks": 224,
+  "eligible": 220,
+  "fallback": [
+    {
+      "method": "m4",
+      "item_id": "s134266",
+      "fallback_reason": "nested_or_uncovered_entity_markers"
+    },
+    {
+      "method": "m4",
+      "item_id": "s134267",
+      "fallback_reason": "nested_or_uncovered_entity_markers"
+    },
+    {
+      "method": "m5",
+      "item_id": "s134266",
+      "fallback_reason": "nested_or_uncovered_entity_markers"
+    },
+    {
+      "method": "m5",
+      "item_id": "s134267",
+      "fallback_reason": "nested_or_uncovered_entity_markers"
+    }
+  ],
+  "common_short_word_matches": [],
+  "question_replacements": 2630,
+  "message_replacements": 10322,
+  "source_sha256": "5b4aaf3f6f32dda048e4711d2a9fb79fdd23fb6affb7b04342ca073db98c30dd",
+  "new_model_calls": 0
+}

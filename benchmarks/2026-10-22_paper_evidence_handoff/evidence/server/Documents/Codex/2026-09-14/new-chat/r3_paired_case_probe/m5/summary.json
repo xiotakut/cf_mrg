@@ -1,0 +1,65 @@
+{
+  "results": [
+    {
+      "method": "M5",
+      "variant": "original",
+      "pairs": 40,
+      "reference_correct": 3,
+      "target_correct": 9,
+      "both_correct": 2,
+      "robust_accuracy": 0.05,
+      "strict_reversion": 0,
+      "strict_btr": 0.0,
+      "other_wrong_given_reference": 0,
+      "invalid_given_reference": 1
+    },
+    {
+      "method": "M5",
+      "variant": "v1",
+      "pairs": 40,
+      "reference_correct": 25,
+      "target_correct": 19,
+      "both_correct": 17,
+      "robust_accuracy": 0.425,
+      "strict_reversion": 1,
+      "strict_btr": 0.04,
+      "other_wrong_given_reference": 7,
+      "invalid_given_reference": 0
+    },
+    {
+      "method": "M5",
+      "variant": "uncalibrated",
+      "pairs": 40,
+      "reference_correct": 26,
+      "target_correct": 21,
+      "both_correct": 18,
+      "robust_accuracy": 0.45,
+      "strict_reversion": 2,
+      "strict_btr": 0.07692307692307693,
+      "other_wrong_given_reference": 6,
+      "invalid_given_reference": 0
+    },
+    {
+      "method": "M5",
+      "variant": "calibrated",
+      "pairs": 40,
+      "reference_correct": 26,
+      "target_correct": 24,
+      "both_correct": 19,
+      "robust_accuracy": 0.475,
+      "strict_reversion": 1,
+      "strict_btr": 0.038461538461538464,
+      "other_wrong_given_reference": 6,
+      "invalid_given_reference": 0
+    }
+  ],
+  "cost": {
+    "new_calls": 280,
+    "full_scoring_calls": 240,
+    "v1_calls": 40,
+    "prior_calls": 0,
+    "input_tokens": 740070,
+    "output_tokens": 797,
+    "v1_fallbacks": 0
+  }
+}

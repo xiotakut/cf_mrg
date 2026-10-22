@@ -1,0 +1,48 @@
+{
+  "status": "superseded_before_model_run",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "calls": 320,
+      "max_tokens": 2266,
+      "target_tokens": {
+        "direct": [
+          2,
+          9
+        ],
+        "channel": [
+          127,
+          333
+        ]
+      }
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "calls": 320,
+      "max_tokens": 2284,
+      "target_tokens": {
+        "direct": [
+          2,
+          9
+        ],
+        "channel": [
+          128,
+          337
+        ]
+      }
+    }
+  ],
+  "new_calls": 640,
+  "source": "https://aclanthology.org/2022.acl-long.365.pdf",
+  "sections": "3,4,4.1.1; Table1 and length normalization footnote2",
+  "method": "Original frozen model mean token log likelihood. Direct scores diagnosis given case; channel scores exact observed case given candidate diagnosis. Uniform candidate priors, fixed initial-pool tie break.",
+  "controls": "Both directions share the same retained original documents, common record-completion instructions and fixed4 candidate pool; 4 score calls each. Existing49 calibrated and list8 controls also reported.",
+  "context_change": "Original diagnostic system/answer contract replaced by identical clinical-record completion instruction in both arms; original retrieved documents retained verbatim. Channel removes patient from conditioning prefix and scores it as target, rather than copying it from context.",
+  "scope": "Same40 exposed R3 diagnosis cases per original backbone M4/M5. Frozen6-call candidate front reused. No training examples, gold, other endpoint, model weight update or new retrieval.",
+  "expansion": "Require credible net gain across both backbones over direct scoring and current calibrated candidate before expansion. No disease-specific prompt or mixing-weight selection.",
+  "runtime": "Prompt logprobs over actual continuation tokens; prefix caching disabled to obtain every prompt score. One unused generated token per scoring call is retained and counted.",
+  "model_calls": 0,
+  "failure": "All160 direct requests per backbone used noncanonical split tokenization at a trailing space; channel0. Changed field separators to newline and require full-string tokenization equality."
+}

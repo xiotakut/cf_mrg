@@ -1,0 +1,459 @@
+{
+  "status": "complete_controlled_mechanism",
+  "results": [
+    {
+      "model": "llama",
+      "policy": "baseline",
+      "scope": "all",
+      "n": 33,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "baseline",
+      "scope": "base",
+      "n": 11,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "baseline",
+      "scope": "added_support",
+      "n": 11,
+      "correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "baseline",
+      "scope": "irrelevant",
+      "n": 11,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "program",
+      "scope": "all",
+      "n": 33,
+      "correct": 21,
+      "invalid": 0,
+      "repairs": 14,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "program",
+      "scope": "base",
+      "n": 11,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "program",
+      "scope": "added_support",
+      "n": 11,
+      "correct": 9,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "program",
+      "scope": "irrelevant",
+      "n": 11,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "model_execute",
+      "scope": "all",
+      "n": 33,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 3
+    },
+    {
+      "model": "llama",
+      "policy": "model_execute",
+      "scope": "base",
+      "n": 11,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "model": "llama",
+      "policy": "model_execute",
+      "scope": "added_support",
+      "n": 11,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "model": "llama",
+      "policy": "model_execute",
+      "scope": "irrelevant",
+      "n": 11,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "model": "qwen",
+      "policy": "baseline",
+      "scope": "all",
+      "n": 33,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "baseline",
+      "scope": "base",
+      "n": 11,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "baseline",
+      "scope": "added_support",
+      "n": 11,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "baseline",
+      "scope": "irrelevant",
+      "n": 11,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "program",
+      "scope": "all",
+      "n": 33,
+      "correct": 25,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "program",
+      "scope": "base",
+      "n": 11,
+      "correct": 8,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "program",
+      "scope": "added_support",
+      "n": 11,
+      "correct": 11,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "program",
+      "scope": "irrelevant",
+      "n": 11,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "model_execute",
+      "scope": "all",
+      "n": 33,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 12,
+      "harms": 1
+    },
+    {
+      "model": "qwen",
+      "policy": "model_execute",
+      "scope": "base",
+      "n": 11,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "model_execute",
+      "scope": "added_support",
+      "n": 11,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 1
+    },
+    {
+      "model": "qwen",
+      "policy": "model_execute",
+      "scope": "irrelevant",
+      "n": 11,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    }
+  ],
+  "group_results": [
+    {
+      "model": "llama",
+      "policy": "baseline",
+      "n_groups": 11,
+      "n_changed_groups": 10,
+      "n_groups_with_existing_support": 10,
+      "all_three_correct": 0,
+      "base_support_both_correct": 0,
+      "base_irrelevant_both_correct": 3,
+      "neutral_answer_invariant": 6,
+      "correctly_activated_choices": 0,
+      "exact_set_transition": 0,
+      "existing_support_retained": 6,
+      "previous_correct_neutral_harmed": 1
+    },
+    {
+      "model": "llama",
+      "policy": "program",
+      "n_groups": 11,
+      "n_changed_groups": 10,
+      "n_groups_with_existing_support": 10,
+      "all_three_correct": 5,
+      "base_support_both_correct": 5,
+      "base_irrelevant_both_correct": 5,
+      "neutral_answer_invariant": 7,
+      "correctly_activated_choices": 4,
+      "exact_set_transition": 5,
+      "existing_support_retained": 9,
+      "previous_correct_neutral_harmed": 0
+    },
+    {
+      "model": "llama",
+      "policy": "model_execute",
+      "n_groups": 11,
+      "n_changed_groups": 10,
+      "n_groups_with_existing_support": 10,
+      "all_three_correct": 0,
+      "base_support_both_correct": 0,
+      "base_irrelevant_both_correct": 2,
+      "neutral_answer_invariant": 6,
+      "correctly_activated_choices": 1,
+      "exact_set_transition": 0,
+      "existing_support_retained": 6,
+      "previous_correct_neutral_harmed": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "baseline",
+      "n_groups": 11,
+      "n_changed_groups": 10,
+      "n_groups_with_existing_support": 10,
+      "all_three_correct": 0,
+      "base_support_both_correct": 0,
+      "base_irrelevant_both_correct": 2,
+      "neutral_answer_invariant": 5,
+      "correctly_activated_choices": 2,
+      "exact_set_transition": 2,
+      "existing_support_retained": 4,
+      "previous_correct_neutral_harmed": 0
+    },
+    {
+      "model": "qwen",
+      "policy": "program",
+      "n_groups": 11,
+      "n_changed_groups": 10,
+      "n_groups_with_existing_support": 10,
+      "all_three_correct": 6,
+      "base_support_both_correct": 8,
+      "base_irrelevant_both_correct": 6,
+      "neutral_answer_invariant": 8,
+      "correctly_activated_choices": 7,
+      "exact_set_transition": 8,
+      "existing_support_retained": 10,
+      "previous_correct_neutral_harmed": 2
+    },
+    {
+      "model": "qwen",
+      "policy": "model_execute",
+      "n_groups": 11,
+      "n_changed_groups": 10,
+      "n_groups_with_existing_support": 10,
+      "all_three_correct": 3,
+      "base_support_both_correct": 3,
+      "base_irrelevant_both_correct": 5,
+      "neutral_answer_invariant": 8,
+      "correctly_activated_choices": 4,
+      "exact_set_transition": 3,
+      "existing_support_retained": 8,
+      "previous_correct_neutral_harmed": 0
+    }
+  ],
+  "costs": [
+    {
+      "model": "llama",
+      "stage": "baseline",
+      "new_calls": 33,
+      "input_tokens": 12082,
+      "output_tokens": 8228,
+      "length_stops": 0,
+      "worker_seconds": 68.33188652992249,
+      "initialization_seconds": 15.233643531799316
+    },
+    {
+      "model": "llama",
+      "stage": "facts",
+      "new_calls": 33,
+      "input_tokens": 19552,
+      "output_tokens": 5032,
+      "length_stops": 0,
+      "worker_seconds": 45.79384803771973,
+      "initialization_seconds": 14.624726295471191
+    },
+    {
+      "model": "llama",
+      "stage": "execute",
+      "new_calls": 33,
+      "input_tokens": 22004,
+      "output_tokens": 10170,
+      "length_stops": 0,
+      "worker_seconds": 82.97691488265991,
+      "initialization_seconds": 15.459956407546997
+    },
+    {
+      "model": "qwen",
+      "stage": "baseline",
+      "new_calls": 33,
+      "input_tokens": 11416,
+      "output_tokens": 8609,
+      "length_stops": 0,
+      "worker_seconds": 59.67230701446533,
+      "initialization_seconds": 14.696210145950317
+    },
+    {
+      "model": "qwen",
+      "stage": "facts",
+      "new_calls": 33,
+      "input_tokens": 19054,
+      "output_tokens": 4986,
+      "length_stops": 0,
+      "worker_seconds": 50.139991998672485,
+      "initialization_seconds": 14.261565923690796
+    },
+    {
+      "model": "qwen",
+      "stage": "execute",
+      "new_calls": 33,
+      "input_tokens": 21735,
+      "output_tokens": 15954,
+      "length_stops": 0,
+      "worker_seconds": 142.34727573394775,
+      "initialization_seconds": 14.366220235824585
+    }
+  ],
+  "calls": 198,
+  "input_tokens": 105843,
+  "output_tokens": 52979,
+  "interface_replayed_fact_callbacks": 66,
+  "samefacts_actual_payload_parity": 66,
+  "paired_program_vs_executor": [
+    {
+      "model": "llama",
+      "n": 33,
+      "program_repairs_executor": 15,
+      "program_harms_executor": 0
+    },
+    {
+      "model": "qwen",
+      "n": 33,
+      "program_repairs_executor": 9,
+      "program_harms_executor": 1
+    }
+  ],
+  "group_metric_definitions": {
+    "correctly_activated_choices": "Groups, not individual choices: all newly gold-supported choices absent in base prediction and present after addition; denominator 10 answer-changing groups. Other spurious choices may remain.",
+    "exact_set_transition": "Groups with predicted added-minus-base exactly equal to new gold choices and no removals; denominator 11 including stable-support group08. Does not alone imply either endpoint correct.",
+    "existing_support_retained": "Groups whose added prediction contains every substantive base-gold choice; denominator 10 with such choices. It does not require the base prediction itself to be correct.",
+    "previous_correct_neutral_harmed": "Within-policy base correct but irrelevant arm wrong; denominator 11 groups. Distinct from harms versus the ordinary baseline on the same endpoint."
+  },
+  "actual_path_diagnostics": {
+    "llama": {
+      "n_groups": 11,
+      "new_path_present": 10,
+      "old_met_paths_preserved": 11,
+      "irrelevant_met_paths_preserved": 11
+    },
+    "qwen": {
+      "n_groups": 11,
+      "new_path_present": 11,
+      "old_met_paths_preserved": 11,
+      "irrelevant_met_paths_preserved": 11
+    }
+  },
+  "independent_clinical_validation": false,
+  "excluded_group": "r1mechanism_09_additional_bph_support",
+  "scope": "11 authored groups,33 inputs,two original backbones; no full RAG pipeline rerun; source/rule concepts shared with development.",
+  "fact_mismatch_counts": {
+    "llama:crcl": 1,
+    "qwen:hf_reduced_ef": 2
+  },
+  "hand_fact_sensitivity": {
+    "llama": {
+      "n": 33,
+      "correct": 22
+    },
+    "qwen": {
+      "n": 33,
+      "correct": 23
+    }
+  },
+  "execution_disagreement_tasks": {
+    "llama": 27,
+    "qwen": 13
+  }
+}

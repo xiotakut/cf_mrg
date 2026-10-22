@@ -1,0 +1,80 @@
+{
+  "status": "posthoc_development_analysis",
+  "new_model_calls": 0,
+  "results": [
+    {
+      "variant": "majority",
+      "scope": "all",
+      "n": 48,
+      "correct": 14,
+      "baseline_correct": 17,
+      "repairs": 2,
+      "harms": 5
+    },
+    {
+      "variant": "majority",
+      "scope": "M01",
+      "n": 40,
+      "correct": 10,
+      "baseline_correct": 12,
+      "repairs": 1,
+      "harms": 3
+    },
+    {
+      "variant": "majority",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "baseline_correct": 2,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "variant": "majority",
+      "scope": "M12",
+      "n": 4,
+      "correct": 2,
+      "baseline_correct": 3,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "variant": "gated",
+      "scope": "all",
+      "n": 48,
+      "correct": 15,
+      "baseline_correct": 17,
+      "repairs": 2,
+      "harms": 4
+    },
+    {
+      "variant": "gated",
+      "scope": "M01",
+      "n": 40,
+      "correct": 11,
+      "baseline_correct": 12,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "variant": "gated",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "baseline_correct": 2,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "variant": "gated",
+      "scope": "M12",
+      "n": 4,
+      "correct": 2,
+      "baseline_correct": 3,
+      "repairs": 0,
+      "harms": 1
+    }
+  ],
+  "scope": "Reuse frozen actual model probes; no test labels or correctness flags enter select_answers.",
+  "deployment_calls": "One shared planning call + three factual + three CF probes for gated; majority can omit CF probes. No final audit call."
+}

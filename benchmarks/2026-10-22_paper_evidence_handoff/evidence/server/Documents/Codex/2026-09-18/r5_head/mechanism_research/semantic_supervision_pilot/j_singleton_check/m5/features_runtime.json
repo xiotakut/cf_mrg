@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "method": "M5",
+  "pid": 2782325,
+  "gpu": "2",
+  "batch_size": 1,
+  "new_generations": 0,
+  "truncated_sequences": 0,
+  "input_and_source_sha256": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py": "11b4ff8145ffb32e2990e6be1374982b58ce0fbd3ee489355174fba9fd76f6be",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/j_singleton_check/m5/config.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/j_singleton_check/m5/requests.jsonl": "68ee95c8637c9aecef30fa2651ff137c267f358d5ff78e550aa4bb235b8a47f3"
+  },
+  "initialization_seconds": 5.129265069961548,
+  "planned_sequences": 224,
+  "completed_sequences": 224,
+  "forward_batches": 224,
+  "actual_input_tokens": 55142,
+  "padded_token_slots": 55142,
+  "max_input_tokens": 755,
+  "elapsed_seconds": 28.886451959609985,
+  "peak_allocated_bytes": 16496073728,
+  "hidden_shape": [
+    224,
+    4096
+  ],
+  "representation": "last nonpadding token of literal text; no chat template or temporary label code",
+  "requests_sha256": "68ee95c8637c9aecef30fa2651ff137c267f358d5ff78e550aa4bb235b8a47f3"
+}

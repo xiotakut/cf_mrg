@@ -1,0 +1,243 @@
+{
+  "protocol": {
+    "schema_version": "formal_C0_run_v1",
+    "status": "frozen_development_missing_control",
+    "entrypoint": "cf_moa.evaluation.c0_native.run",
+    "methods": {
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/inference/m5.jsonl",
+        "inputs_sha256": "1d54fcaf4d65eaa2a4c05b077900bf46f7ab36d90619e4b12b4442f53af908e7",
+        "request_ids": [
+          "n00000",
+          "n00005",
+          "n00019",
+          "n00030"
+        ],
+        "new_requests_required": 4,
+        "original_C0_profile": {
+          "variant": "formal_M5_medrag_qwen3_v5",
+          "original_native_config": {
+            "method_id": "M5",
+            "method": "medrag_qwen3",
+            "paper": "https://arxiv.org/html/2603.03292v1#A4.SS2",
+            "model_id": "Qwen/Qwen3-8B",
+            "model_path": "/home/data3/txy/models/Qwen3-8B",
+            "retriever_name": "BM25+MedCPT",
+            "reranker_path": "models/MedCPT-Cross-Encoder",
+            "corpus_name": "MedCorp",
+            "k": 8,
+            "rrf_k": 100,
+            "max_length": 131072,
+            "context_length": 30000,
+            "seed": 42,
+            "chat_template_kwargs": {
+              "enable_thinking": false
+            },
+            "generation_kwargs": {
+              "do_sample": true,
+              "temperature": 0.7,
+              "top_p": 1.0,
+              "top_k": 0,
+              "max_new_tokens": 2048
+            },
+            "engine": "vllm",
+            "engine_note": "Batched execution; decoding settings retained. Tokens are not claimed equal to Transformers smoke.",
+            "native_task_adapter": "code/run_medrag.py::messages",
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "context_extension_reason": "Preserve complete mandatory v5 evidence; same extension as completed local M3."
+          },
+          "files": [
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/M5/config.json",
+              "sha256": "0f21767326b3e84c54d62d43be6e1378aa6b79c5e3044b3b28b5d04aa5ec307f"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/run_medrag.py",
+              "sha256": "5d871536dbafaa9614876e695e3e5ec89f4afa3bac10ab1478cd3dfc14f29f37"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/run_m0_then_m5.sh",
+              "sha256": "e55b0667f3fef9978f5de3039680d1d6b5b2148cca962bf1509a9fa00dd83835"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/analyze_v5.py",
+              "sha256": "a73b49a1a4db91b58d9ee737d49515a07e7287ca351da81d19912b1cd449ecd9"
+            }
+          ]
+        },
+        "engine_kwargs": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "max_model_len": 131072,
+          "gpu_memory_utilization": 0.55,
+          "max_num_seqs": 16,
+          "enable_prefix_caching": true,
+          "seed": 42,
+          "rope_scaling": {
+            "rope_type": "yarn",
+            "factor": 4.0,
+            "original_max_position_embeddings": 32768
+          }
+        },
+        "sampling": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "max_model_len": 131072,
+          "guided_json": false,
+          "batch_size": 16,
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "complete_panel_denominator": 52,
+        "existing_C0_responses_to_reuse": 48
+      }
+    },
+    "manifest": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/manifest.json",
+      "sha256": "3122f8295396a08af057a79c0d544c2377240eb96a7983d48dc8ef0ad1fac373"
+    },
+    "C0_only": true,
+    "allowed_gpu_ids": [
+      3
+    ],
+    "automatic_queue": false,
+    "helper": {
+      "path": "/home/data3/txy/cf_moa/evaluation/c0_native.py",
+      "sha256": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42"
+    },
+    "do_not_run": [
+      "old48",
+      "oldF",
+      "RCV_C2_C3",
+      "C4",
+      "C5",
+      "grader_before_predictions"
+    ],
+    "method_frozen": true,
+    "scope_identity": "Four preidentified missing C0 rows of exposed natural52 development; old48 reused; not confirmation",
+    "planned_original_C0_requests": 4,
+    "code_sources": {
+      "/home/data3/txy/cf_moa/evaluation/c0_native.py": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42",
+      "/home/data3/txy/cf_moa/evaluation/run_c0_native.py": "6384a6ad012c4d7e4daf755ca2f9932cc7f5dec5900613a0003689fb0b5617ea",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "7706d9efe3b8b49f268444c54e0fbd1cf73574eee667fc4c55700dea726966dd",
+      "/home/data3/txy/cf_moa/tools/vllm_backend.py": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "/home/data3/txy/cf_moa/tools/schema_compat.py": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d"
+    }
+  },
+  "method": "M5",
+  "mode": "formal_C0_live_batched",
+  "profile": {
+    "model": "/home/data3/txy/models/Qwen3-8B",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "max_model_len": 131072,
+    "guided_json": false,
+    "batch_size": 16,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "profile_source": {
+    "variant": "formal_M5_medrag_qwen3_v5",
+    "original_native_config": {
+      "method_id": "M5",
+      "method": "medrag_qwen3",
+      "paper": "https://arxiv.org/html/2603.03292v1#A4.SS2",
+      "model_id": "Qwen/Qwen3-8B",
+      "model_path": "/home/data3/txy/models/Qwen3-8B",
+      "retriever_name": "BM25+MedCPT",
+      "reranker_path": "models/MedCPT-Cross-Encoder",
+      "corpus_name": "MedCorp",
+      "k": 8,
+      "rrf_k": 100,
+      "max_length": 131072,
+      "context_length": 30000,
+      "seed": 42,
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "generation_kwargs": {
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": 0,
+        "max_new_tokens": 2048
+      },
+      "engine": "vllm",
+      "engine_note": "Batched execution; decoding settings retained. Tokens are not claimed equal to Transformers smoke.",
+      "native_task_adapter": "code/run_medrag.py::messages",
+      "rope_scaling": {
+        "rope_type": "yarn",
+        "factor": 4.0,
+        "original_max_position_embeddings": 32768
+      },
+      "context_extension_reason": "Preserve complete mandatory v5 evidence; same extension as completed local M3."
+    },
+    "files": [
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/M5/config.json",
+        "sha256": "0f21767326b3e84c54d62d43be6e1378aa6b79c5e3044b3b28b5d04aa5ec307f"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/run_medrag.py",
+        "sha256": "5d871536dbafaa9614876e695e3e5ec89f4afa3bac10ab1478cd3dfc14f29f37"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/run_m0_then_m5.sh",
+        "sha256": "e55b0667f3fef9978f5de3039680d1d6b5b2148cca962bf1509a9fa00dd83835"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/analyze_v5.py",
+        "sha256": "a73b49a1a4db91b58d9ee737d49515a07e7287ca351da81d19912b1cd449ecd9"
+      }
+    ]
+  },
+  "engine_kwargs": {
+    "model": "/home/data3/txy/models/Qwen3-8B",
+    "dtype": "bfloat16",
+    "max_model_len": 131072,
+    "gpu_memory_utilization": 0.55,
+    "max_num_seqs": 16,
+    "enable_prefix_caching": true,
+    "seed": 42,
+    "rope_scaling": {
+      "rope_type": "yarn",
+      "factor": 4.0,
+      "original_max_position_embeddings": 32768
+    }
+  },
+  "input_hashes": {
+    "n00000": "d0a8ba36853e27179512cb8390f9a99ad2dcabc25e825f5162d53e7cc6ef4627",
+    "n00005": "21a5cf801a08c40e9a2ccd1ac81c39986782d984eb83cb0192ae1efc283712cb",
+    "n00019": "e2533cdde7a47ebb9165541e7df509768d8dcab20bb6a3113f8b9872564339f1",
+    "n00030": "3917f29f45fff160ff52375f16985ba1cb8ab11e2394163a40a3d26923153c63"
+  },
+  "budget": {
+    "max_model_requests": 1,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 2048,
+    "max_tool_calls": 0
+  },
+  "scheduler_source": {
+    "path": "/home/data3/txy/cf_moa/evaluation/run_c0_native.py",
+    "sha256": "6384a6ad012c4d7e4daf755ca2f9932cc7f5dec5900613a0003689fb0b5617ea"
+  }
+}

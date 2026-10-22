@@ -1,0 +1,34 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "new_calls": 960,
+      "pair_calls": 480,
+      "list_calls": 480,
+      "full_request_replay": 240,
+      "max_prompt_tokens": 2934,
+      "prior_calls": 0
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "new_calls": 960,
+      "pair_calls": 480,
+      "list_calls": 480,
+      "full_request_replay": 240,
+      "max_prompt_tokens": 2676,
+      "prior_calls": 0
+    }
+  ],
+  "new_calls": 1920,
+  "reused_full_calls": 480,
+  "source": "https://aclanthology.org/2024.findings-naacl.97.pdf",
+  "pool": "Frozen calibrated-majority answer first, followed by three highest mean-calibrated-probability alternatives. No gold, labels, or another endpoint used; no case exclusion if target absent.",
+  "pair_rule": "Six unordered pairs, both A/B orders. Consistent winner gets1 point, disagreement gives0.5 each. Global ties use initial pool order.",
+  "matched_control": "Same four candidates and native prompt,12 unique balanced four-option orders, each candidate occupies each position3 times; plurality, ties use initial pool order.",
+  "primary": "Pairwise versus matched listwise control, and frozen calibrated49 majority, target correctness and macro recall on each original backbone. Expand only if joint net benefit is supported.",
+  "scope": "Same40 exposed R3 diagnosis cases per model; development only. References are not given to the head. No new source validation.",
+  "cost": "Either deployed arm needs6 shared full-catalog scores plus12 new decision scores per patient. No new training, retrieval or priors."
+}

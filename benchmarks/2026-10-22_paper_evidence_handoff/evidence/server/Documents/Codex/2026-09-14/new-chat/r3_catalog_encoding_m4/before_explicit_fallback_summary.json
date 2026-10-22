@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "variant": "code_direct",
+      "n": 40,
+      "correct": 18,
+      "fallbacks": 0,
+      "repairs": 7,
+      "harms": 1,
+      "vs_name_direct_repairs": 3,
+      "vs_name_direct_harms": 0
+    },
+    {
+      "variant": "name_reasoned",
+      "n": 40,
+      "correct": 18,
+      "fallbacks": 4,
+      "repairs": 6,
+      "harms": 0,
+      "vs_name_direct_repairs": 4,
+      "vs_name_direct_harms": 1
+    },
+    {
+      "variant": "code_reasoned",
+      "n": 40,
+      "correct": 21,
+      "fallbacks": 3,
+      "repairs": 9,
+      "harms": 0,
+      "vs_name_direct_repairs": 6,
+      "vs_name_direct_harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "code_direct",
+      "calls": 40,
+      "input_tokens": 108132,
+      "output_tokens": 320,
+      "length_stops": 0
+    },
+    {
+      "variant": "name_reasoned",
+      "calls": 40,
+      "input_tokens": 102292,
+      "output_tokens": 6160,
+      "length_stops": 4
+    },
+    {
+      "variant": "code_reasoned",
+      "calls": 40,
+      "input_tokens": 108652,
+      "output_tokens": 5806,
+      "length_stops": 3
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 1,
+    "pid": 2919220,
+    "started_at": 1789418606.243785,
+    "total": 120,
+    "initialization_seconds": 73.51667904853821,
+    "completed": 120,
+    "elapsed_seconds": 313.8739426136017,
+    "last_batch_seconds": 10.735747814178467,
+    "completed_at": 1789418920.117906
+  }
+}

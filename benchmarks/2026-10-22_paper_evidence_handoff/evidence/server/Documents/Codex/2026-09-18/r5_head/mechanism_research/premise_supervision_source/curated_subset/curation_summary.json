@@ -1,0 +1,91 @@
+{
+  "status": "complete qualification archive; not a training or feature freeze",
+  "at": "2026-09-18T20:26:00.862168+08:00",
+  "families": 583,
+  "endpoints": 2915,
+  "retained_families": 380,
+  "excluded_families": 203,
+  "endpoint_status": {
+    "supported": 2687,
+    "unsupported": 155,
+    "ambiguous": 73
+  },
+  "material_edit_status": {
+    "True": 2316,
+    "False": 16
+  },
+  "by_split": {
+    "dev": {
+      "total": 199,
+      "retained": 134,
+      "excluded": 65,
+      "retained_original_class_counts": {
+        "neutral": 46,
+        "entailment": 55,
+        "contradiction": 33
+      },
+      "excluded_original_class_counts": {
+        "neutral": 29,
+        "entailment": 18,
+        "contradiction": 18
+      }
+    },
+    "train": {
+      "total": 384,
+      "retained": 246,
+      "excluded": 138,
+      "retained_original_class_counts": {
+        "entailment": 92,
+        "neutral": 70,
+        "contradiction": 84
+      },
+      "excluded_original_class_counts": {
+        "contradiction": 44,
+        "neutral": 58,
+        "entailment": 36
+      }
+    }
+  },
+  "previous_sample_status_differences": [
+    {
+      "family_id": "cad_train_1168",
+      "view": "rp0",
+      "old_status": "supported",
+      "new_status": "ambiguous",
+      "old_reason": "新增 bloow 为不明拼写；未给出 DNA，negative 可支持，但无法确认作者 C 的对象互斥理由。",
+      "new_reason": "bloow拼写对象不可确定，负标支持边界未知",
+      "current_eligible": false
+    }
+  ],
+  "source_hashes_revalidated": true,
+  "all_five_views_and_four_edits_covered": true,
+  "complete_P_H_characters": 306157,
+  "prior_sample_families": 30,
+  "artifacts": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_0.jsonl": "1be5af21e91f1cf8918911543c2e727c40e4c9a5ac6a641ca0677c8dbfe809c7",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_0.md": "f24354a0930ede4012d37deec33f95bfed86dd058b520555080f70c6c30ef0c0",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_0_start.json": "6579c5f8ca538243ec88553ebf094b7578442d0282152d1f466c47014f69e9d5",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/shard_0.jsonl": "7511fe5fa676e27543b216152bf730faa6d6bb6f551fc9c9c484bac2dea0f735",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_1.jsonl": "b6e83e1fbe75922e427bbc88aa4def085dd211595d54d46301a5d20324ab831a",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_1.md": "1195ec02e9dc6a0799837ef7814bbc42aed208990708604486cd09d5b1fe1c85",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_1_start.json": "b765fe39431653cbd5060b820429fa879a5a54ba85a0bf7fab8b8814adb95e54",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/shard_1.jsonl": "0b1ae547c39a5c2d83f9c9b433db404da016f6efe17615df5f01f686cbeccc33",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_2.jsonl": "58fad1d041be434e323c32624b5265e1301ecabe145ce969a38a8f99bd15a014",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_2.md": "28b6ed07965436629cbcee2dde216d9bdbf7e03c39a10a29a58afc892209041a",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/review_shard_2_start.json": "5094476331dea29a9eb3707d1f9ee4600eb05397a57b3cae8fa8d892a71c6aaa",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/shard_2.jsonl": "c96ca569f996d0b892933feca7482473ab653d7abf82c5f9ada66b0efdb8bc90",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/merged_reviews.jsonl": "c33b3273acd26df63b3116abc8427be7369b0a39808de4af48653cc92b878b1e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_supervision_source/curated_subset/eligible_reviewed_families.jsonl": "948cb8cb7f7fb901ac1faf8d93428fb895325b20053e7b6278ef0904a41a9eaf"
+  },
+  "review_freeze_sha256": "8e7ef8f0fb3c49c4c3f2eaf97dfd6ca4b521690993b2b4b507d9c8041525ec42",
+  "checker_sha256": "b3017fdcf0abbe90f393e10d338da47383b2fb5a170a7e18f0c6c470b0629423",
+  "new_experiment_model_calls": 0,
+  "new_fits": 0,
+  "limitations": [
+    "Research-agent judgments, not human/expert reannotation or clean-gold guarantee.",
+    "No performance filtering, replacement, source text or gold changes.",
+    "Curation may change source distribution; no general CAD noise-rate estimate.",
+    "Previous-versus-current judgment difference is retained; affected family excluded in both reviews on eligibility grounds.",
+    "Future five-arm pipeline, exact training/source freeze and CAD features have not been implemented."
+  ]
+}

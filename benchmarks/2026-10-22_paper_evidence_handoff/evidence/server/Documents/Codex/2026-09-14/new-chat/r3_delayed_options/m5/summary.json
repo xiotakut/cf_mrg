@@ -1,0 +1,315 @@
+{
+  "method": "M5",
+  "results": [
+    {
+      "variant": "baseline",
+      "scope": "all",
+      "n": 18,
+      "correct": 8,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "visible": {
+          "repairs": 2,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 1
+        },
+        "visible": {
+          "repairs": 2,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "visible": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "scope": "all",
+      "n": 18,
+      "correct": 6,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 1,
+          "harms": 3
+        },
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "visible": {
+          "repairs": 1,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 1,
+          "harms": 2
+        },
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "visible": {
+          "repairs": 1,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 1
+        },
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "visible": {
+          "repairs": 0,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "visible",
+      "scope": "all",
+      "n": 18,
+      "correct": 7,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 1,
+          "harms": 2
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 1
+        },
+        "visible": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "visible",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 1,
+          "harms": 2
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "visible": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "visible",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "visible": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "delayed",
+      "scope": "all",
+      "n": 18,
+      "correct": 8,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 2,
+          "harms": 2
+        },
+        "direct": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "visible": {
+          "repairs": 3,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "delayed",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 1
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "visible": {
+          "repairs": 1,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "delayed",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 2,
+          "harms": 1
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "visible": {
+          "repairs": 2,
+          "harms": 1
+        }
+      }
+    }
+  ],
+  "costs": [
+    {
+      "policy": "direct",
+      "stage": "final",
+      "calls": 18,
+      "input_tokens": 42668,
+      "output_tokens": 1928,
+      "length_stops": 0
+    },
+    {
+      "policy": "visible",
+      "stage": "draft",
+      "calls": 18,
+      "input_tokens": 41062,
+      "output_tokens": 1877,
+      "length_stops": 0
+    },
+    {
+      "policy": "visible",
+      "stage": "final",
+      "calls": 18,
+      "input_tokens": 44599,
+      "output_tokens": 1940,
+      "length_stops": 0
+    },
+    {
+      "policy": "delayed",
+      "stage": "draft",
+      "calls": 18,
+      "input_tokens": 40382,
+      "output_tokens": 1961,
+      "length_stops": 0
+    },
+    {
+      "policy": "delayed",
+      "stage": "final",
+      "calls": 18,
+      "input_tokens": 44725,
+      "output_tokens": 2036,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "method": "M5",
+    "pid": 3290332,
+    "gpu": 3,
+    "completed_calls": 90,
+    "initialization_seconds": 19.17052936553955,
+    "stage": "final",
+    "elapsed_seconds": 122.18033742904663,
+    "draft_failures": 0
+  },
+  "replay": {
+    "status": "passed",
+    "score_callbacks": 90,
+    "new_model_calls": 0
+  }
+}

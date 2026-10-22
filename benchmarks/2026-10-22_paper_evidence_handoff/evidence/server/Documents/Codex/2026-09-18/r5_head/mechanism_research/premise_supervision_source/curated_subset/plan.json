@@ -1,0 +1,22 @@
+{
+  "status": "frozen curation plan before extended review and any CAD model output",
+  "at": "2026-09-18 20:05 Asia/Shanghai",
+  "seed": "20260918",
+  "train_selection": "Within each original E/N/C class, first 128 of the 1614 common structural candidates sorted by sha256(UTF-8(seed+family_id)), then family_id; 384 total, no replacement",
+  "dev_selection": "All 199 common structurally qualified author dev families; no replacement",
+  "previous_exposure": "The earlier fixed 24 train/6 dev semantic sample is included. Its source-quality findings motivated this curation; no model results exist. Do not call all 583 families unread at freeze.",
+  "label_contract": "Author E maps positive, N/C map negative. Preserve original strings and all three-class labels; only eligibility changes.",
+  "acceptance": "All five complete P/H views support their published binary labels under ordinary literal NLI. RP must keep H and materially change P; RH must keep P and materially change H. Every view is read before family decision.",
+  "allowed_inference": "Ordinary lexical entailment, unambiguous reference, and direct compositional implications. Do not invent exotic possible worlds to reject ordinary text.",
+  "disallowed_inference": "Do not add an unmentioned entity, cause, purpose, destination, device, temporal overlap, exact amount, or scope to make a positive label true.",
+  "negative_contract": "Only absence of entailment is required. Dispute between neutral and contradiction alone is not a binary failure.",
+  "uncertainty": "Ambiguous identity, grammar, referent or necessary relation: mark ambiguous and do not adopt the whole family. No relabeling or repair.",
+  "exclusion": "One unsupported/ambiguous view or non-substantive edit excludes the entire family from every training arm and shared dev pool. Keep all records/reasons; never replace excluded families.",
+  "reviewers": "Research agents, not human or medical-expert reannotation. This is an agent-reviewed nonmedical auxiliary subset, not a clean-gold claim or a full CAD replication.",
+  "review_records": "For each family: every view's supported/unsupported/ambiguous status and short reason, material edit checks, final eligible boolean with reason. Five views must be complete, even when early failure is found.",
+  "shards": "Sort selected family IDs and assign round-robin to three reviewers; no overlapping primary ownership. Root validates full coverage and exclusion consistency before data freeze.",
+  "weight_update": "After curation, recompute original-class family counts and S=4435+retained_train_families under the same class/domain weighting design. No head is fitted until shared membership and training plan are frozen.",
+  "test_or_D_text_read": false,
+  "model_outputs_used": false,
+  "new_model_forwards": 0
+}

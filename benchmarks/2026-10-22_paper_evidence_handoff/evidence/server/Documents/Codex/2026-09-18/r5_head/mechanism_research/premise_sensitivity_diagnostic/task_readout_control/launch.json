@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "pid": 2798117,
+  "gpu": "0",
+  "started": "2026-09-18 17:37:30 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "kind": "features",
+      "pid": 2798118,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control",
+        "--method",
+        "M4",
+        "--gpu",
+        "0"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:37:30 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:38:00 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "features",
+      "pid": 2798533,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control",
+        "--method",
+        "M5",
+        "--gpu",
+        "0"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:38:00 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:38:26 +0800"
+    },
+    {
+      "method": "M4",
+      "kind": "analysis",
+      "pid": 2798973,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/analyze.py",
+        "--method",
+        "M4"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:38:26 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:38:26 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "analysis",
+      "pid": 2799037,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/task_readout_control/analyze.py",
+        "--method",
+        "M5"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:38:26 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:38:26 +0800"
+    }
+  ],
+  "ended": "2026-09-18 17:38:26 +0800"
+}

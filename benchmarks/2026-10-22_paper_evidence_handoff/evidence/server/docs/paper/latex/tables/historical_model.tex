@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Supplied-model consequence execution. Each configuration contains 288 questions from 24
+virtual parameter/initial-state profiles. Counts report correct outputs within the
+supplied model contract.}
+\label{tab:historical_model}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\linewidth}{@{}lXrrr@{}}
+\toprule
+Config. & Procedure & \shortstack{Binary\\/288} & \shortstack{Numerical\\/288} & \shortstack{Full output\\/288} \\
+\midrule
+M4 & Ordinary reanswer & 118 & 0 & 0 \\
+M4 & Full execution & 286 & 270 & 270 \\
+M4 & Patch without intervention execution & 234 & 67 & 67 \\
+M4 & Typed patch and execution & 288 & 288 & 288 \\
+\addlinespace
+M5 & Ordinary reanswer & 187 & 0 & 0 \\
+M5 & Full execution & 265 & 222 & 222 \\
+M5 & Patch without intervention execution & 234 & 67 & 67 \\
+M5 & Typed patch and execution & 288 & 288 & 288 \\
+\bottomrule
+\end{tabularx}
+\end{table}

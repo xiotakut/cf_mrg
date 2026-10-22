@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "prepared_at": "2026-09-16 17:19:33 +0800",
+  "scope": "Previously exposed v5: fixed 201 question families, 91 original_review IDs; mechanistic attribution, not independent validation.",
+  "hypothesis": "Does the frozen evidence/target instruction improve over simple no-draft redo with identical original context and model resources?",
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "arms": [
+    "redo",
+    "target_scope"
+  ],
+  "planned_new_calls": 804,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 402,
+      "target_exact_prior_prompt_matches": 201,
+      "max_prompt_tokens": 66456,
+      "planned_input_tokens": 4633459,
+      "arm_first_counts": {
+        "redo": 101,
+        "target_scope": 100
+      }
+    },
+    {
+      "method": "M5",
+      "calls": 402,
+      "target_exact_prior_prompt_matches": 201,
+      "max_prompt_tokens": 73600,
+      "planned_input_tokens": 4922369,
+      "arm_first_counts": {
+        "redo": 101,
+        "target_scope": 100
+      }
+    }
+  ],
+  "controls": "Both arms generated anew in one paired run per backbone. Same original full context, schema, model, seed 42, temperature 0.7, 2048 output budget and batch 4. No old assistant answer. Frozen target prompt is byte-identical to prior no_draft.",
+  "inference_inputs": "Only original messages and visible question; no gold, paired reference, source IDs, review IDs or R labels in prompts.",
+  "sequence": "Sorted fixed item IDs; alternating redo/target then target/redo. Identical sequence for both backbones; batch 4 places both arms of two questions together.",
+  "scoring": "Frozen native parser and scorer. Malformed, invalid and length-stop outputs remain errors; no fallbacks.",
+  "primary_comparison": "Within each backbone target_scope versus redo over all201; report accuracy, repairs and harms. Keep same target for both backbones regardless of scores.",
+  "uncertainty": "Paired original_review-cluster bootstrap: resample 91 review IDs with replacement, retain all their questions, 10000 replicates, seed20260918, percentile95 CI of accuracy difference. Two-sided cluster sign-flip permutation p with 10000 draws and +1 correction. Review IDs may share underlying clinical studies; uncertainty is descriptive for this exposed cohort.",
+  "secondary_scopes": [
+    "old pilot64",
+    "old extension137",
+    "selected R5 overlap"
+  ],
+  "one_seed_limit": "Matched seed and run remove cross-run confounding but are not replicated stochastic or clinical causal evidence. No prompt search or seed selection.",
+  "runner_source": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+  "failures": [
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/failures/initial_gpu0_below_margin",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/failures/post_m4_stale_gpu3_guard"
+  ],
+  "resource_assignment": "M4 GPU3; M5 explicitly advanced onto GPU1 after free memory returned above 40 GiB. Original serial coordinator adopts M5 rather than loading a duplicate.",
+  "restarted_at": "2026-09-16 17:21:39 +0800",
+  "finished_at": "2026-09-16 18:27:58 +0800"
+}

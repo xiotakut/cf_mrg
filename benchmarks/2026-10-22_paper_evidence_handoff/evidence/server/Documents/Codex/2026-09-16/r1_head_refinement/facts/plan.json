@@ -1,0 +1,21 @@
+{
+  "status": "prepared_before_inference",
+  "prepared_at": 1789557602.7622476,
+  "candidate": "quoted_predicate_entailment",
+  "new_calls": 176,
+  "calls_per_backbone": 88,
+  "probes": 33,
+  "r2_covered": 55,
+  "r2_all_scored": 79,
+  "independent_validation": false,
+  "data_status": "All inputs already exposed development; no frozen validation claim.",
+  "differences": "One extraction design: short exact quote before predicate status/value; boolean established/ruled_out/not_established; quote-grounded numeric validation. Original options, definitions, positive aliases, rule bank, scope, original answers and model parameters preserved.",
+  "controls": "Old extraction reused; unchanged original assembler primary paired score; composition cross handled separately.",
+  "prior_failure": "Old R2 evidence-first long prompts alone did not improve both backbones; current design is not a pure evidence-order ablation.",
+  "stopping": "One candidate and one generation per input/backbone; no output-based prompt retuning.",
+  "max_prompt_tokens": {
+    "llama": 996,
+    "qwen": 980
+  },
+  "resource_change": "GPU1 shared-card worker: gpu_memory_utilization .45 (card budget), eager, fixed2048 KV blocks. No prompt/decoding budget change."
+}

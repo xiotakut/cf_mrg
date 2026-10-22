@@ -1,0 +1,25 @@
+{
+  "protocol": {
+    "schema_version": "moa_rcv_run_v1",
+    "allowed_gpus": [],
+    "arms": [
+      "candidate_with_rationales"
+    ],
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/m4_nonf_inputs.jsonl",
+        "inputs_sha256": "3c17912613ca75edf5016d701434f3beef738ddcf6c46723372493a090e577ca",
+        "saved_bases": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/m4_nonf_bases.jsonl",
+        "saved_bases_sha256": "6639bd71c61528c0c21150a9d9731f0c730164c11efa47229e50bf9701a0cb0c"
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/m5_nonf_inputs.jsonl",
+        "inputs_sha256": "e3c12c779de14a694402cc6ecd2f293ccea2c4e58e513f3e2555aa32742e4b5e",
+        "saved_bases": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/m5_nonf_bases.jsonl",
+        "saved_bases_sha256": "69a0e9233ea00be77fc5e94525bdcb1eb9c5682e518f7bc9eb1e899b2c187ba4"
+      }
+    }
+  },
+  "method": "M5",
+  "mode": "cached"
+}

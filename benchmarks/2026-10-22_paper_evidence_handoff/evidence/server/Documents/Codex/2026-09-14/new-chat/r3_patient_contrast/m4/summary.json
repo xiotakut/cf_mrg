@@ -1,0 +1,131 @@
+{
+  "method": "M4",
+  "endpoints": {
+    "target": {
+      "n": 40,
+      "correct": 16,
+      "macro_recall": 0.25510204081632654,
+      "classes": {
+        "Acute dystonic reactions": {
+          "n": 4,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 8,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 7,
+          "correct": 3
+        },
+        "Pulmonary embolism": {
+          "n": 14,
+          "correct": 12
+        },
+        "Spontaneous pneumothorax": {
+          "n": 2,
+          "correct": 1
+        },
+        "Unstable angina": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    "reference": {
+      "n": 40,
+      "correct": 27,
+      "macro_recall": 0.5714285714285714,
+      "classes": {
+        "Acute laryngitis": {
+          "n": 8,
+          "correct": 4
+        },
+        "Acute pulmonary edema": {
+          "n": 3,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 2,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 7,
+          "correct": 7
+        },
+        "Sarcoidosis": {
+          "n": 5,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 14,
+          "correct": 14
+        }
+      }
+    }
+  },
+  "pairs": 40,
+  "both_correct": 15,
+  "strict_reversion": 4,
+  "strict_btr": 0.14814814814814814,
+  "comparisons": [
+    {
+      "variant": "original",
+      "pair_correct": 1,
+      "pair_repairs": 14,
+      "pair_harms": 0,
+      "target_repairs": 6,
+      "target_harms": 2
+    },
+    {
+      "variant": "v1",
+      "pair_correct": 15,
+      "pair_repairs": 3,
+      "pair_harms": 3,
+      "target_repairs": 2,
+      "target_harms": 7
+    },
+    {
+      "variant": "uncalibrated",
+      "pair_correct": 17,
+      "pair_repairs": 1,
+      "pair_harms": 3,
+      "target_repairs": 1,
+      "target_harms": 3
+    },
+    {
+      "variant": "calibrated",
+      "pair_correct": 19,
+      "pair_repairs": 1,
+      "pair_harms": 5,
+      "target_repairs": 1,
+      "target_harms": 6
+    }
+  ],
+  "cost": {
+    "method": "M4",
+    "new_calls": 480,
+    "input_tokens": 1188258,
+    "output_tokens": 480,
+    "runtime": {
+      "status": "complete",
+      "method": "M4",
+      "gpu": 3,
+      "pid": 3181504,
+      "started_at": 1789430722.2977529,
+      "completed_calls": 480,
+      "initialization_seconds": 16.696917057037354,
+      "elapsed_seconds": 119.7849063873291,
+      "distributions": 480,
+      "missing_code_calls": 0
+    }
+  }
+}

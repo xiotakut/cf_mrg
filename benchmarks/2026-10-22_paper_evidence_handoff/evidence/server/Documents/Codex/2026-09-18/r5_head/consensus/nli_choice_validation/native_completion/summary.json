@@ -1,0 +1,196 @@
+{
+  "results": [
+    {
+      "method": "M4",
+      "cohort": "nli_choice_R5_validation",
+      "arm": "direct",
+      "units": 16,
+      "mappings": 32,
+      "correct": 24,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 75.0,
+      "both_pct": 75.0,
+      "invariant_pct": 100
+    },
+    {
+      "method": "M4",
+      "cohort": "nli_choice_R5_validation",
+      "arm": "equal_path",
+      "units": 16,
+      "mappings": 32,
+      "correct": 25,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 81.25,
+      "both_pct": 75.0,
+      "invariant_pct": 93.75
+    },
+    {
+      "method": "M4",
+      "cohort": "nli_choice_R5_validation",
+      "arm": "native_single",
+      "units": 16,
+      "mappings": 32,
+      "correct": 22,
+      "invalid": 0,
+      "variant_pct": 68.75,
+      "reference_pct": 68.75,
+      "both_pct": 68.75,
+      "invariant_pct": 100
+    },
+    {
+      "method": "M4",
+      "cohort": "strong_relevant_change",
+      "arm": "direct",
+      "units": 8,
+      "mappings": 16,
+      "correct": 11,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 87.5,
+      "both_pct": 37.5,
+      "invariant_pct": 62.5
+    },
+    {
+      "method": "M4",
+      "cohort": "strong_relevant_change",
+      "arm": "equal_path",
+      "units": 8,
+      "mappings": 16,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 87.5,
+      "both_pct": 62.5,
+      "invariant_pct": 37.5
+    },
+    {
+      "method": "M4",
+      "cohort": "strong_relevant_change",
+      "arm": "native_single",
+      "units": 8,
+      "mappings": 16,
+      "correct": 11,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 87.5,
+      "both_pct": 37.5,
+      "invariant_pct": 62.5
+    },
+    {
+      "method": "M5",
+      "cohort": "nli_choice_R5_validation",
+      "arm": "direct",
+      "units": 16,
+      "mappings": 32,
+      "correct": 26,
+      "invalid": 0,
+      "variant_pct": 81.25,
+      "reference_pct": 81.25,
+      "both_pct": 81.25,
+      "invariant_pct": 100
+    },
+    {
+      "method": "M5",
+      "cohort": "nli_choice_R5_validation",
+      "arm": "equal_path",
+      "units": 16,
+      "mappings": 32,
+      "correct": 27,
+      "invalid": 0,
+      "variant_pct": 87.5,
+      "reference_pct": 81.25,
+      "both_pct": 81.25,
+      "invariant_pct": 93.75
+    },
+    {
+      "method": "M5",
+      "cohort": "nli_choice_R5_validation",
+      "arm": "native_single",
+      "units": 16,
+      "mappings": 32,
+      "correct": 26,
+      "invalid": 0,
+      "variant_pct": 87.5,
+      "reference_pct": 75.0,
+      "both_pct": 75.0,
+      "invariant_pct": 87.5
+    },
+    {
+      "method": "M5",
+      "cohort": "strong_relevant_change",
+      "arm": "direct",
+      "units": 8,
+      "mappings": 16,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 62.5,
+      "reference_pct": 100,
+      "both_pct": 62.5,
+      "invariant_pct": 37.5
+    },
+    {
+      "method": "M5",
+      "cohort": "strong_relevant_change",
+      "arm": "equal_path",
+      "units": 8,
+      "mappings": 16,
+      "correct": 14,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 100,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0
+    },
+    {
+      "method": "M5",
+      "cohort": "strong_relevant_change",
+      "arm": "native_single",
+      "units": 8,
+      "mappings": 16,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 62.5,
+      "reference_pct": 100,
+      "both_pct": 62.5,
+      "invariant_pct": 37.5
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 144,
+      "input_tokens": 526212,
+      "output_tokens": 24153,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "pid": 2542739,
+        "gpu": 0,
+        "method": "M4",
+        "planned": 144,
+        "completed": 144,
+        "initialization_seconds": 14.839605808258057,
+        "elapsed_seconds": 67.2033519744873
+      }
+    },
+    {
+      "method": "M5",
+      "new_calls": 144,
+      "input_tokens": 492735,
+      "output_tokens": 24103,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "pid": 2542740,
+        "gpu": 1,
+        "method": "M5",
+        "planned": 144,
+        "completed": 144,
+        "initialization_seconds": 15.102528810501099,
+        "elapsed_seconds": 73.04802799224854
+      }
+    }
+  ]
+}

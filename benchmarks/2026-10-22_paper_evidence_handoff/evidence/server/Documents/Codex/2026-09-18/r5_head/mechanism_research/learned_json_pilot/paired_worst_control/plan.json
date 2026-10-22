@@ -1,0 +1,60 @@
+{
+  "status": "frozen_before_fitting",
+  "time": "2026-09-18 15:57:25 +0800",
+  "parent_authorization": "Bounded post-hoc CPU attribution: stable mean CE versus paired worst-endpoint CE in logit-mean architecture.",
+  "scope": "After observing earlier development results; both backbones fixed together; zero new forwards/generation/confirmation reads.",
+  "architecture": "Frozen per-vector RMS normalized 2x4096 hidden states, zero initialized 5x4096 residual with original code logits; reorder each mapping into native semantics, average logits, then log_softmax.",
+  "arms": [
+    "base_logit",
+    "stable_mean_CE",
+    "pair_worst_CE"
+  ],
+  "training": {
+    "head": "zero initialized 5x4096 residual, no bias; per-vector RMS normalization",
+    "rotations": [
+      0,
+      1
+    ],
+    "losses": [
+      "stable_mean_CE",
+      "pair_worst_CE"
+    ],
+    "js_weight": 1.0,
+    "l2_values": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "epochs": 200,
+    "learning_rate": 0.001,
+    "selection": "minimum dev native NLL separately within each loss, no confirmation selection",
+    "seed": 42
+  },
+  "mean_loss": "Stable endpoint NLL, same learned_group-balanced mean as original CE.",
+  "worst_loss": "Each (unit_id,pair_task) task group: maximum of endpoints own-gold stable NLL. Then mean over tasks in unit, units in learned_group, and learned_groups. Strong/weak controls keep each endpoint own gold; no output-equality penalty. Torch amax distributes gradients equally for exact ties.",
+  "selection": "Minimum original dev learned_group-balanced mean NLL, not paired correctness or worst loss; separately within each arm, include epoch0.",
+  "counts": {
+    "fit_inputs": 488,
+    "dev_fit_inputs": 166,
+    "train_task_groups": 208,
+    "train_units": 172,
+    "train_mothers": 172,
+    "task_group_sizes": {
+      "2": 190,
+      "6": 18
+    },
+    "unit_task_counts": {
+      "1": 154,
+      "3": 18
+    }
+  },
+  "numerical_check": "Record old clamped and stable gradients for all initial losses below 1e-12, including known M5 s024798; compare stable mean fit with existing clamped logit CE.",
+  "not_claimed": "No originality/GroupDRO claim, no complete native output evaluation, no adoption without both-backbone and strong-control evidence.",
+  "hashes": {
+    "evaluation.jsonl": "f4df61ca708ec48cf23c934aa5e4a9b2ed7aa6a2b7ca847dda05d22eeb77623c",
+    "pairs.jsonl": "06d750f9a1ef5a029ec93de1542f04304981f66a36b731b94ca8faa1310b4f02",
+    "plan.json": "1bf59a6a723a71f5079f8d0a8c5b8c3f89ed9391366bf34393ae0e5cd2102249",
+    "m4/features.npz": "3d16699adf2744016264201f2852ea279e4bcfbf54e9e8e6d193631730cf5920",
+    "m5/features.npz": "ca8a880fde0d24119e51348f1dff9906978da33ba7a9ca989b053cadf70890e0"
+  }
+}

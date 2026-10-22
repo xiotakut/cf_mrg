@@ -1,0 +1,54 @@
+{
+  "started_at": "2026-09-17 19:03:19.900773+08:00",
+  "mode": "wait_for_causal_steps_then_sequential_shared_GPU1",
+  "status": "complete",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 1,
+      "free_mib": 62117,
+      "pid": 2141374,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_experiment.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 19:05:20.104568+08:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 19:45:30.545489+08:00"
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "free_mib": 62117,
+      "pid": 2159561,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_experiment.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 19:45:30.630086+08:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:23:35.731955+08:00"
+    }
+  ],
+  "analysis": {
+    "command": [
+      "/home/data3/txy/MedRGAG/.venv/bin/python",
+      "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/biological_experiment.py",
+      "analyze"
+    ],
+    "exit_code": 0
+  },
+  "finished_at": "2026-09-17 20:23:39.911375+08:00"
+}

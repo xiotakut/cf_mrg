@@ -1,0 +1,310 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "program",
+      "scope": "all",
+      "n": 96,
+      "correct": 90,
+      "invalid": 6
+    },
+    {
+      "method": "program",
+      "scope": "none",
+      "n": 48,
+      "correct": 42,
+      "invalid": 6
+    },
+    {
+      "method": "program",
+      "scope": "remaining",
+      "n": 48,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "renal_withdrawal",
+      "n": 12,
+      "correct": 6,
+      "invalid": 6
+    },
+    {
+      "method": "program",
+      "scope": "renal_other_retained",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "hf_withdrawal",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "hf_ulcer_retained",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "pd_withdrawal",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "syncope_pd_retained",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "ulcer_complete_exception",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program",
+      "scope": "hf_partial_ulcer_exception",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "all",
+      "n": 96,
+      "correct": 78,
+      "invalid": 18
+    },
+    {
+      "method": "program_strict",
+      "scope": "none",
+      "n": 48,
+      "correct": 42,
+      "invalid": 6
+    },
+    {
+      "method": "program_strict",
+      "scope": "remaining",
+      "n": 48,
+      "correct": 36,
+      "invalid": 12
+    },
+    {
+      "method": "program_strict",
+      "scope": "renal_withdrawal",
+      "n": 12,
+      "correct": 6,
+      "invalid": 6
+    },
+    {
+      "method": "program_strict",
+      "scope": "renal_other_retained",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "hf_withdrawal",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "hf_ulcer_retained",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "pd_withdrawal",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "syncope_pd_retained",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "ulcer_complete_exception",
+      "n": 12,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "hf_partial_ulcer_exception",
+      "n": 12,
+      "correct": 0,
+      "invalid": 12
+    },
+    {
+      "method": "llm_rules",
+      "scope": "all",
+      "n": 96,
+      "correct": 22,
+      "invalid": 11
+    },
+    {
+      "method": "llm_rules",
+      "scope": "none",
+      "n": 48,
+      "correct": 19,
+      "invalid": 9
+    },
+    {
+      "method": "llm_rules",
+      "scope": "remaining",
+      "n": 48,
+      "correct": 3,
+      "invalid": 2
+    },
+    {
+      "method": "llm_rules",
+      "scope": "renal_withdrawal",
+      "n": 12,
+      "correct": 7,
+      "invalid": 4
+    },
+    {
+      "method": "llm_rules",
+      "scope": "renal_other_retained",
+      "n": 12,
+      "correct": 2,
+      "invalid": 2
+    },
+    {
+      "method": "llm_rules",
+      "scope": "hf_withdrawal",
+      "n": 12,
+      "correct": 9,
+      "invalid": 2
+    },
+    {
+      "method": "llm_rules",
+      "scope": "hf_ulcer_retained",
+      "n": 12,
+      "correct": 0,
+      "invalid": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "pd_withdrawal",
+      "n": 12,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "syncope_pd_retained",
+      "n": 12,
+      "correct": 0,
+      "invalid": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "ulcer_complete_exception",
+      "n": 12,
+      "correct": 1,
+      "invalid": 3
+    },
+    {
+      "method": "llm_rules",
+      "scope": "hf_partial_ulcer_exception",
+      "n": 12,
+      "correct": 1,
+      "invalid": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "facts",
+      "calls": 96,
+      "input_tokens": 68779,
+      "output_tokens": 27871,
+      "length_stops": 0
+    },
+    {
+      "variant": "llm_rules",
+      "calls": 96,
+      "input_tokens": 168595,
+      "output_tokens": 31044,
+      "length_stops": 0
+    }
+  ],
+  "diagnostics": {
+    "extraction_parse_failures": 0,
+    "oracle_mismatch_fields": {
+      "hf_reduced_ef": 5,
+      "alternatives_ineffective": 24
+    },
+    "evidence_rejections": 0
+  },
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2417911,
+      "started_at": 1789370466.5817251,
+      "total": 48,
+      "initialization_seconds": 70.92414808273315,
+      "completed": 48,
+      "elapsed_seconds": 123.58190250396729,
+      "last_batch_seconds": 11.1510751247406,
+      "completed_at": 1789370590.1638303
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2417912,
+      "started_at": 1789370466.5701542,
+      "total": 48,
+      "initialization_seconds": 65.31333446502686,
+      "completed": 48,
+      "elapsed_seconds": 112.47066712379456,
+      "last_batch_seconds": 14.290187358856201,
+      "completed_at": 1789370579.040988
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2417913,
+      "started_at": 1789370466.5343015,
+      "total": 48,
+      "initialization_seconds": 70.31657457351685,
+      "completed": 48,
+      "elapsed_seconds": 117.98737645149231,
+      "last_batch_seconds": 9.219949960708618,
+      "completed_at": 1789370584.5218754
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2417914,
+      "started_at": 1789370466.6057854,
+      "total": 48,
+      "initialization_seconds": 69.30072522163391,
+      "completed": 48,
+      "elapsed_seconds": 114.59889650344849,
+      "last_batch_seconds": 8.242289066314697,
+      "completed_at": 1789370581.2048333
+    }
+  ]
+}

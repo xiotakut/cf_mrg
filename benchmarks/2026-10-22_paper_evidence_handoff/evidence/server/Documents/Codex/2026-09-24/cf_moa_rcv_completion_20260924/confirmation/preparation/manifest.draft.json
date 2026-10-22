@@ -1,0 +1,193 @@
+{
+  "status": "draft_preparation_complete_not_freeze_not_inference",
+  "source_membership": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/frozen_manifest.json",
+    "sha256": "1b32da95ffd0672d951220495e616de29046a3db1d8c07a3cc32753281b306d9"
+  },
+  "method_freeze": false,
+  "original_membership_and_native_materialization_frozen": true,
+  "panels": {
+    "confirmation128": {
+      "families": 128,
+      "inputs_per_model": 512,
+      "declared_maintain_pair_references": 320
+    },
+    "exposed_controls8": {
+      "families": 8,
+      "inputs_per_model": 16,
+      "declared_respond_pair_references": 8
+    }
+  },
+  "methods": {
+    "M4": {
+      "source_inputs": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/inputs.jsonl",
+        "sha256": "3a629bcb78a49be2f916d445eba91fa821da0d43477e0513255b8cdc87352b3f"
+      },
+      "original_prepared_config": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/config.json",
+        "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+      },
+      "original_native_config": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/native_config.json",
+        "sha256": "4e5470144ff9b9c645bfd05d9210343e5a07a781095c8c0cec3b0c4f63687a5f"
+      },
+      "adopted_readout_config": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+        "copy": "readout_m4.json",
+        "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+      },
+      "prepared_config_vs_adopted_readout_differences": {},
+      "route_counts": {
+        "adopted_F_native_capability": 528
+      },
+      "nli_counts": {
+        "confirmation128:ordinary_F": 448,
+        "confirmation128:NLI": 64,
+        "exposed_controls8:NLI": 16
+      },
+      "preserved_context_text_bytes": {
+        "confirmation128": 9417811,
+        "exposed_controls8": 342080
+      },
+      "panels": {
+        "confirmation128": {
+          "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/preparation/inference/m4.jsonl",
+          "inputs_sha256": "a6dda7e43fad09ad36bf3db3d85b02ddf8adeac2ae96d62fc9ef0d8f1e3888ea",
+          "inputs_count": 512,
+          "bytes": 13576286
+        },
+        "exposed_controls8": {
+          "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/preparation/inference/m4_exposed_controls.jsonl",
+          "inputs_sha256": "395c6a0423ef6a4fac3869b7a41b744e96a1870d00e65b5fbd0da9a084a55496",
+          "inputs_count": 16,
+          "bytes": 456268
+        }
+      }
+    },
+    "M5": {
+      "source_inputs": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/inputs.jsonl",
+        "sha256": "70b4344be4eba59017b76acc8813c93d9275aa4328d23871d05955e6d388a41c"
+      },
+      "original_prepared_config": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/config.json",
+        "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+      },
+      "original_native_config": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/native_config.json",
+        "sha256": "0f21767326b3e84c54d62d43be6e1378aa6b79c5e3044b3b28b5d04aa5ec307f"
+      },
+      "adopted_readout_config": {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+        "copy": "readout_m5.json",
+        "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+      },
+      "prepared_config_vs_adopted_readout_differences": {},
+      "route_counts": {
+        "adopted_F_native_capability": 528
+      },
+      "nli_counts": {
+        "confirmation128:ordinary_F": 448,
+        "confirmation128:NLI": 64,
+        "exposed_controls8:NLI": 16
+      },
+      "preserved_context_text_bytes": {
+        "confirmation128": 8666658,
+        "exposed_controls8": 320002
+      },
+      "panels": {
+        "confirmation128": {
+          "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/preparation/inference/m5.jsonl",
+          "inputs_sha256": "bb87e5db0e15043acee79cf670e032c0d9f003f72487a16c2463ef3aa543d22b",
+          "inputs_count": 512,
+          "bytes": 12805485
+        },
+        "exposed_controls8": {
+          "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/preparation/inference/m5_exposed_controls.jsonl",
+          "inputs_sha256": "4a70f5ebc0bcaf845a88967e8011e9cbbc6b0c6644ba4be8eeda57ebf82d8780",
+          "inputs_count": 16,
+          "bytes": 433646
+        }
+      }
+    }
+  },
+  "source_files": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/frozen_manifest.json",
+      "sha256": "1b32da95ffd0672d951220495e616de29046a3db1d8c07a3cc32753281b306d9"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/items.jsonl",
+      "sha256": "922a31bda46669889604f908eca070ad74e797b0185a091071406dcee3adb677"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/evaluation.jsonl",
+      "sha256": "78cabb926b89e273d8d4239dcc513f3e2d2b83fe42cb5919949fadf701337ecf"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/inputs.jsonl",
+      "sha256": "3a629bcb78a49be2f916d445eba91fa821da0d43477e0513255b8cdc87352b3f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/config.json",
+      "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/native_config.json",
+      "sha256": "4e5470144ff9b9c645bfd05d9210343e5a07a781095c8c0cec3b0c4f63687a5f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/inputs.jsonl",
+      "sha256": "70b4344be4eba59017b76acc8813c93d9275aa4328d23871d05955e6d388a41c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/config.json",
+      "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/native_config.json",
+      "sha256": "0f21767326b3e84c54d62d43be6e1378aa6b79c5e3044b3b28b5d04aa5ec307f"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/context_summary.json",
+      "sha256": "fca7101cef30d3afff18495027e63c9baee738af2a225b0dca42e560681d2ab8"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/context_checks.json",
+      "sha256": "8286da63c114263482b59620aa99da161bdfe3acf32b2392e22bb4f5ac37c999"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/retrieval_provenance.json",
+      "sha256": "e955b3f6f3d338567d54a1e1f7004ddcd135d9b6307831065ae210d1d7af6a05"
+    }
+  ],
+  "complete_original_context_rows_preserved": 1056,
+  "native_evaluation_references": 528,
+  "pair_references": 328,
+  "same_native_options_pair_references": 328,
+  "full_original_family_closure": true,
+  "missing_original_contexts": 0,
+  "new_retrieval_calls": 0,
+  "new_model_calls": 0,
+  "new_native_grader_calls": 0,
+  "unavailable_original_answers": 1056,
+  "exposure_ledger": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/scope/exposure_review.json",
+  "exposure_boundary": {
+    "gold_bearing_json_decoded_for_allowlisted_metadata": true,
+    "gold_values_printed": false,
+    "gold_values_copied_to_new_artifacts": false,
+    "gold_values_used": false,
+    "gold_relation_or_quality_computed": false,
+    "prepared_legal_text_processed_but_not_displayed_for_manual_error_analysis": true,
+    "no_new_method_or_prompt_selection": true
+  },
+  "limitations": [
+    "Qualified source/input/retrieval exposure means this is not wholly blind.",
+    "The 8 author controls had prior summary exposure and remain a separate panel.",
+    "No original generated answer or saved F pool exists in these prepared sources.",
+    "Pair semantic-gold relations are not computed here; original-design labels are references only.",
+    "No new clinical patients or pretraining/source-level independence is claimed."
+  ],
+  "elapsed_seconds": 2.4734688680036925
+}

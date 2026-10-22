@@ -1,0 +1,30 @@
+{
+  "status": "failed",
+  "pid": 2681535,
+  "method": "M4",
+  "gpu": 2,
+  "started": "2026-09-18 14:36:13 +0800",
+  "planned": 360,
+  "completed": 0,
+  "new_calls": 0,
+  "prompt_tokens": 0,
+  "completion_tokens": 0,
+  "stages": {
+    "initial": {
+      "planned": 216,
+      "completed": 0,
+      "batches": []
+    },
+    "answer": {
+      "planned": 144,
+      "completed": 0,
+      "batches": []
+    }
+  },
+  "arm_counts": {},
+  "finish_reasons": {},
+  "initialization_seconds": 21.449755668640137,
+  "error": "ValueError('The provided JSON schema contains features not supported by xgrammar.')",
+  "elapsed_seconds": 21.45172429084778,
+  "ended": "2026-09-18 14:36:35 +0800"
+}

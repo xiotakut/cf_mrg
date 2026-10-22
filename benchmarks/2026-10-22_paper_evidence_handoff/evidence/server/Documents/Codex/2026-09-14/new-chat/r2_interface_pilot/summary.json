@@ -1,0 +1,278 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 23,
+      "accuracy_pct": 29.11392405063291,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 17,
+      "accuracy_pct": 25.757575757575758,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "accuracy_pct": 33.333333333333336,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "option_review",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 6,
+      "accuracy_pct": 7.594936708860759,
+      "invalid": 6,
+      "repairs": 4,
+      "harms": 21
+    },
+    {
+      "method": "option_review",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 2,
+      "accuracy_pct": 3.0303030303030303,
+      "invalid": 4,
+      "repairs": 2,
+      "harms": 17
+    },
+    {
+      "method": "option_review",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 2,
+      "accuracy_pct": 22.22222222222222,
+      "invalid": 2,
+      "repairs": 2,
+      "harms": 3
+    },
+    {
+      "method": "option_review",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "accuracy_pct": 50.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "audit_recommend",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 2,
+      "accuracy_pct": 2.5316455696202533,
+      "invalid": 34,
+      "repairs": 1,
+      "harms": 22
+    },
+    {
+      "method": "audit_recommend",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 1,
+      "accuracy_pct": 1.5151515151515151,
+      "invalid": 28,
+      "repairs": 1,
+      "harms": 17
+    },
+    {
+      "method": "audit_recommend",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "audit_recommend",
+      "scope": "M14",
+      "n": 4,
+      "correct": 1,
+      "accuracy_pct": 25.0,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "audit_model",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 1,
+      "accuracy_pct": 1.2658227848101267,
+      "invalid": 34,
+      "repairs": 0,
+      "harms": 22
+    },
+    {
+      "method": "audit_model",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 28,
+      "repairs": 0,
+      "harms": 17
+    },
+    {
+      "method": "audit_model",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "audit_model",
+      "scope": "M14",
+      "n": 4,
+      "correct": 1,
+      "accuracy_pct": 25.0,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "audit_execute",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 2,
+      "accuracy_pct": 2.5316455696202533,
+      "invalid": 34,
+      "repairs": 1,
+      "harms": 22
+    },
+    {
+      "method": "audit_execute",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 1,
+      "accuracy_pct": 1.5151515151515151,
+      "invalid": 28,
+      "repairs": 1,
+      "harms": 17
+    },
+    {
+      "method": "audit_execute",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "audit_execute",
+      "scope": "M14",
+      "n": 4,
+      "correct": 1,
+      "accuracy_pct": 25.0,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 2
+    }
+  ],
+  "costs": [
+    {
+      "review": "option",
+      "calls": 79,
+      "input_tokens": 200348,
+      "output_tokens": 45219,
+      "length_stops": 6
+    },
+    {
+      "review": "support",
+      "calls": 79,
+      "input_tokens": 231948,
+      "output_tokens": 168485,
+      "length_stops": 19
+    }
+  ],
+  "baseline_parity": 79,
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2377566,
+      "started_at": 1789361103.442662,
+      "total": 40,
+      "initialization_seconds": 56.89320945739746,
+      "completed": 40,
+      "elapsed_seconds": 239.12158060073853,
+      "last_batch_seconds": 52.04067039489746,
+      "completed_at": 1789361342.564409
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2377567,
+      "started_at": 1789361103.4428732,
+      "total": 40,
+      "initialization_seconds": 56.463382720947266,
+      "completed": 40,
+      "elapsed_seconds": 226.61741042137146,
+      "last_batch_seconds": 43.716007232666016,
+      "completed_at": 1789361330.0604665
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2377568,
+      "started_at": 1789361103.4638343,
+      "total": 40,
+      "initialization_seconds": 56.38456606864929,
+      "completed": 40,
+      "elapsed_seconds": 232.2966432571411,
+      "last_batch_seconds": 54.767837047576904,
+      "completed_at": 1789361335.7606342
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2377569,
+      "started_at": 1789361103.5207162,
+      "total": 38,
+      "initialization_seconds": 56.361934423446655,
+      "completed": 38,
+      "elapsed_seconds": 229.60375666618347,
+      "last_batch_seconds": 52.37939095497131,
+      "completed_at": 1789361333.124642
+    }
+  ],
+  "mechanism": {
+    "successful_audits": 45,
+    "conditions": 531,
+    "comparison_disagreements": 32,
+    "answers_changed_by_execution": 6
+  }
+}

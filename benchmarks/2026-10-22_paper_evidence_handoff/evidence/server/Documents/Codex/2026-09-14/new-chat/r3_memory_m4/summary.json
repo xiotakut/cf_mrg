@@ -1,0 +1,409 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "all",
+      "n": 146,
+      "correct": 39,
+      "unmapped": 88,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M01",
+      "n": 128,
+      "correct": 30,
+      "unmapped": 88,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "open_reanswer",
+      "scope": "all",
+      "n": 146,
+      "correct": 34,
+      "unmapped": 87,
+      "format_invalid": 2,
+      "repairs": 15,
+      "harms": 20
+    },
+    {
+      "method": "open_reanswer",
+      "scope": "M01",
+      "n": 128,
+      "correct": 28,
+      "unmapped": 87,
+      "format_invalid": 2,
+      "repairs": 13,
+      "harms": 15
+    },
+    {
+      "method": "open_reanswer",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "open_reanswer",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 3
+    },
+    {
+      "method": "labels_only",
+      "scope": "all",
+      "n": 146,
+      "correct": 64,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 30,
+      "harms": 5
+    },
+    {
+      "method": "labels_only",
+      "scope": "M01",
+      "n": 128,
+      "correct": 56,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 28,
+      "harms": 2
+    },
+    {
+      "method": "labels_only",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "labels_only",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "full_pairs",
+      "scope": "all",
+      "n": 146,
+      "correct": 80,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 50,
+      "harms": 9
+    },
+    {
+      "method": "full_pairs",
+      "scope": "M01",
+      "n": 128,
+      "correct": 72,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 47,
+      "harms": 5
+    },
+    {
+      "method": "full_pairs",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "full_pairs",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "delta_pairs",
+      "scope": "all",
+      "n": 146,
+      "correct": 85,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 50,
+      "harms": 4
+    },
+    {
+      "method": "delta_pairs",
+      "scope": "M01",
+      "n": 128,
+      "correct": 78,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 49,
+      "harms": 1
+    },
+    {
+      "method": "delta_pairs",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "delta_pairs",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "open_reanswer_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 39,
+      "unmapped": 82,
+      "format_invalid": 2,
+      "repairs": 15,
+      "harms": 15
+    },
+    {
+      "method": "open_reanswer_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 33,
+      "unmapped": 82,
+      "format_invalid": 2,
+      "repairs": 13,
+      "harms": 10
+    },
+    {
+      "method": "open_reanswer_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "open_reanswer_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 3
+    },
+    {
+      "method": "labels_only_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 64,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 30,
+      "harms": 5
+    },
+    {
+      "method": "labels_only_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 56,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 28,
+      "harms": 2
+    },
+    {
+      "method": "labels_only_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "labels_only_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "full_pairs_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 80,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 50,
+      "harms": 9
+    },
+    {
+      "method": "full_pairs_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 72,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 47,
+      "harms": 5
+    },
+    {
+      "method": "full_pairs_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "full_pairs_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "delta_pairs_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 85,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 50,
+      "harms": 4
+    },
+    {
+      "method": "delta_pairs_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 78,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 49,
+      "harms": 1
+    },
+    {
+      "method": "delta_pairs_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "delta_pairs_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    }
+  ],
+  "costs": [
+    {
+      "variant": "open_reanswer",
+      "calls": 146,
+      "input_tokens": 338633,
+      "output_tokens": 34500,
+      "length_stops": 0
+    },
+    {
+      "variant": "labels_only",
+      "calls": 146,
+      "input_tokens": 378441,
+      "output_tokens": 30409,
+      "length_stops": 0
+    },
+    {
+      "variant": "full_pairs",
+      "calls": 146,
+      "input_tokens": 546134,
+      "output_tokens": 30885,
+      "length_stops": 0
+    },
+    {
+      "variant": "delta_pairs",
+      "calls": 146,
+      "input_tokens": 513527,
+      "output_tokens": 32813,
+      "length_stops": 0
+    }
+  ],
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2527868,
+      "started_at": 1789386355.695115,
+      "total": 584,
+      "initialization_seconds": 149.83998370170593,
+      "completed": 584,
+      "elapsed_seconds": 939.8596732616425,
+      "last_batch_seconds": 12.104384183883667,
+      "completed_at": 1789387295.5549939
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "status": "completed_not_adopted",
+  "created_at": "2026-09-23T19:04:03.430731+08:00",
+  "method_adopted": false,
+  "independent_evaluation_started": false,
+  "comparison": {
+    "M4": {
+      "baseline": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 23,
+          "incorrect": 11,
+          "unavailable": 0,
+          "not_submitted": 0,
+          "submitted_unavailable": 0
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.7142857142857143,
+          "unavailable_native_records": 0,
+          "incorrect_native_answers": 6
+        },
+        "relative_to_B": null
+      },
+      "a1_search_evidence": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 21,
+          "incorrect": 13,
+          "unavailable": 0,
+          "not_submitted": 0,
+          "submitted_unavailable": 0
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.5714285714285714,
+          "unavailable_native_records": 0,
+          "incorrect_native_answers": 9
+        },
+        "relative_to_B": {
+          "repair_ids": [
+            "d00084"
+          ],
+          "harm_ids": [
+            "d00018",
+            "d00068",
+            "d00096"
+          ],
+          "unavailable_recovery_ids": [],
+          "correct_unavailable_recovery_ids": [],
+          "correct_lost_to_unavailable_ids": [],
+          "repairs": 1,
+          "harms": 3,
+          "unavailable_recoveries": 0,
+          "correct_unavailable_recoveries": 0,
+          "correct_lost_to_unavailable": 0,
+          "same_scope_B": {
+            "denominator": 34,
+            "correct": 23,
+            "incorrect": 11,
+            "unavailable": 0,
+            "not_submitted": 0,
+            "submitted_unavailable": 0
+          },
+          "correct_count_delta": -2
+        }
+      },
+      "a1_search_reanswer": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 21,
+          "incorrect": 13,
+          "unavailable": 0,
+          "not_submitted": 0,
+          "submitted_unavailable": 0
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.5714285714285714,
+          "unavailable_native_records": 0,
+          "incorrect_native_answers": 9
+        },
+        "relative_to_B": {
+          "repair_ids": [
+            "d00084"
+          ],
+          "harm_ids": [
+            "d00018",
+            "d00068",
+            "d00096"
+          ],
+          "unavailable_recovery_ids": [],
+          "correct_unavailable_recovery_ids": [],
+          "correct_lost_to_unavailable_ids": [],
+          "repairs": 1,
+          "harms": 3,
+          "unavailable_recoveries": 0,
+          "correct_unavailable_recoveries": 0,
+          "correct_lost_to_unavailable": 0,
+          "same_scope_B": {
+            "denominator": 34,
+            "correct": 23,
+            "incorrect": 11,
+            "unavailable": 0,
+            "not_submitted": 0,
+            "submitted_unavailable": 0
+          },
+          "correct_count_delta": -2
+        }
+      },
+      "a1_search_no_evidence": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 19,
+          "incorrect": 15,
+          "unavailable": 0,
+          "not_submitted": 0,
+          "submitted_unavailable": 0
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.47619047619047616,
+          "unavailable_native_records": 0,
+          "incorrect_native_answers": 11
+        },
+        "relative_to_B": {
+          "repair_ids": [
+            "d00084"
+          ],
+          "harm_ids": [
+            "d00018",
+            "d00047",
+            "d00068",
+            "d00096",
+            "d00120"
+          ],
+          "unavailable_recovery_ids": [],
+          "correct_unavailable_recovery_ids": [],
+          "correct_lost_to_unavailable_ids": [],
+          "repairs": 1,
+          "harms": 5,
+          "unavailable_recoveries": 0,
+          "correct_unavailable_recoveries": 0,
+          "correct_lost_to_unavailable": 0,
+          "same_scope_B": {
+            "denominator": 34,
+            "correct": 23,
+            "incorrect": 11,
+            "unavailable": 0,
+            "not_submitted": 0,
+            "submitted_unavailable": 0
+          },
+          "correct_count_delta": -4
+        }
+      }
+    },
+    "M5": {
+      "baseline": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 19,
+          "incorrect": 14,
+          "unavailable": 1,
+          "not_submitted": 0,
+          "submitted_unavailable": 1
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.47619047619047616,
+          "unavailable_native_records": 1,
+          "incorrect_native_answers": 10
+        },
+        "relative_to_B": null
+      },
+      "a1_search_evidence": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 17,
+          "incorrect": 16,
+          "unavailable": 1,
+          "not_submitted": 0,
+          "submitted_unavailable": 1
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.38095238095238093,
+          "unavailable_native_records": 1,
+          "incorrect_native_answers": 12
+        },
+        "relative_to_B": {
+          "repair_ids": [
+            "d00010",
+            "d00015"
+          ],
+          "harm_ids": [
+            "d00018",
+            "d00047",
+            "d00058",
+            "d00120"
+          ],
+          "unavailable_recovery_ids": [],
+          "correct_unavailable_recovery_ids": [],
+          "correct_lost_to_unavailable_ids": [],
+          "repairs": 2,
+          "harms": 4,
+          "unavailable_recoveries": 0,
+          "correct_unavailable_recoveries": 0,
+          "correct_lost_to_unavailable": 0,
+          "same_scope_B": {
+            "denominator": 34,
+            "correct": 19,
+            "incorrect": 14,
+            "unavailable": 1,
+            "not_submitted": 0,
+            "submitted_unavailable": 1
+          },
+          "correct_count_delta": -2
+        }
+      },
+      "a1_search_reanswer": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 17,
+          "incorrect": 16,
+          "unavailable": 1,
+          "not_submitted": 0,
+          "submitted_unavailable": 1
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.38095238095238093,
+          "unavailable_native_records": 1,
+          "incorrect_native_answers": 12
+        },
+        "relative_to_B": {
+          "repair_ids": [
+            "d00015"
+          ],
+          "harm_ids": [
+            "d00018",
+            "d00058",
+            "d00120"
+          ],
+          "unavailable_recovery_ids": [],
+          "correct_unavailable_recovery_ids": [],
+          "correct_lost_to_unavailable_ids": [],
+          "repairs": 1,
+          "harms": 3,
+          "unavailable_recoveries": 0,
+          "correct_unavailable_recoveries": 0,
+          "correct_lost_to_unavailable": 0,
+          "same_scope_B": {
+            "denominator": 34,
+            "correct": 19,
+            "incorrect": 14,
+            "unavailable": 1,
+            "not_submitted": 0,
+            "submitted_unavailable": 1
+          },
+          "correct_count_delta": -2
+        }
+      },
+      "a1_search_no_evidence": {
+        "unique_inputs": {
+          "denominator": 34,
+          "correct": 15,
+          "incorrect": 18,
+          "unavailable": 1,
+          "not_submitted": 0,
+          "submitted_unavailable": 1
+        },
+        "native_unit_ALL": {
+          "category": "ALL",
+          "units": 21,
+          "mean_native_unit_score": 0.37142857142857144,
+          "unavailable_native_records": 1,
+          "incorrect_native_answers": 13
+        },
+        "relative_to_B": {
+          "repair_ids": [
+            "d00010"
+          ],
+          "harm_ids": [
+            "d00018",
+            "d00047",
+            "d00058",
+            "d00062",
+            "d00120"
+          ],
+          "unavailable_recovery_ids": [],
+          "correct_unavailable_recovery_ids": [],
+          "correct_lost_to_unavailable_ids": [],
+          "repairs": 1,
+          "harms": 5,
+          "unavailable_recoveries": 0,
+          "correct_unavailable_recoveries": 0,
+          "correct_lost_to_unavailable": 0,
+          "same_scope_B": {
+            "denominator": 34,
+            "correct": 19,
+            "incorrect": 14,
+            "unavailable": 1,
+            "not_submitted": 0,
+            "submitted_unavailable": 1
+          },
+          "correct_count_delta": -4
+        }
+      }
+    }
+  },
+  "current121_results_unchanged": true,
+  "actual_answer_generations": {
+    "M4": {
+      "a1_search_evidence": 34,
+      "a1_search_reanswer": 34,
+      "a1_search_no_evidence": 34
+    },
+    "M5": {
+      "a1_search_evidence": 33,
+      "a1_search_reanswer": 33,
+      "a1_search_no_evidence": 33
+    }
+  },
+  "execution_model": "One direct full-native choice; actual_adjudications=0 is expected and does not mean zero inference",
+  "next": "Preserve this negative candidate. Before another fixed development variant, test a specific scope/condition-to-native-choice hypothesis using legal visible information and the same-tools reanswer control; do not enlarge evidence tables or select routes by known per-input correctness.",
+  "reviewed_at": "2026-09-23T19:07:01.710405+08:00",
+  "decision_reason": "Main is two correct inputs below B on both backbones and ties same-evidence ordinary reanswer. Evidence availability improves two inputs versus its same-system ablation on each backbone but does not establish support-expert-specific net benefit. Native-unit means also remain below B.",
+  "full121_expansion_of_this_version": false,
+  "query_failures_retained": {
+    "M4_truncated": [
+      "d00018",
+      "d00054",
+      "d00062",
+      "d00077"
+    ],
+    "M5_original_B_unavailable": [
+      "d00050"
+    ]
+  },
+  "quality_scope": {
+    "unique_inputs_per_backbone": 34,
+    "complete_families": 14,
+    "native_units_per_arm": 21,
+    "development_only": true,
+    "not_a_replacement_for_historical121": true
+  },
+  "interpretation": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/interpretation/comparison.json",
+  "not_done": [
+    "New expert or combination adopted",
+    "Full121 regression of a promising new method",
+    "Complete all-tools single-agent control",
+    "New-source independent validation",
+    "Joint freeze and independent evaluation"
+  ]
+}

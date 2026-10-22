@@ -1,0 +1,1891 @@
+{
+  "status": "complete",
+  "split": "dev",
+  "results": [
+    {
+      "method": "M4",
+      "arm": "redo",
+      "n": 72,
+      "correct": 31,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 65.44890768762096,
+        "rmse": 78.30899653815413,
+        "within_tolerance": 0
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 21.248284784136914,
+        "rmse": 30.985314360047578,
+        "within_tolerance": 3
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 24,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 25,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 8,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "source_no_do",
+      "n": 72,
+      "correct": 64,
+      "invalid": 0,
+      "joint_numeric_correct": 23,
+      "all_outputs_correct": 22,
+      "routes": {
+        "source_model_control": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 12.646356923750986,
+        "rmse": 30.544340057518273,
+        "within_tolerance": 23
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 12.646356923750986,
+        "rmse": 30.544340057518273,
+        "within_tolerance": 23
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 17,
+          "joint_numeric_correct": 11
+        },
+        "B": {
+          "n": 18,
+          "correct": 16,
+          "joint_numeric_correct": 4
+        },
+        "C": {
+          "n": 18,
+          "correct": 16,
+          "joint_numeric_correct": 4
+        },
+        "D": {
+          "n": 18,
+          "correct": 15,
+          "joint_numeric_correct": 4
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 23,
+          "joint_numeric_correct": 18
+        },
+        "60": {
+          "n": 24,
+          "correct": 21,
+          "joint_numeric_correct": 5
+        },
+        "120": {
+          "n": 24,
+          "correct": 20,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 64,
+          "joint_numeric_correct": 22
+        },
+        "True": {
+          "n": 8,
+          "correct": 0,
+          "joint_numeric_correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "full_inline",
+      "n": 72,
+      "correct": 20,
+      "invalid": 2,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 70,
+        "missing_n": 2,
+        "mae": 48.50493986684185,
+        "rmse": 59.99487807203579,
+        "within_tolerance": 2
+      },
+      "difference": {
+        "valid_n": 70,
+        "missing_n": 2,
+        "mae": 20.342678050938723,
+        "rmse": 32.67338948914731,
+        "within_tolerance": 3
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 2,
+          "joint_numeric_correct": 0
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 1,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 24,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 24,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 16,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 8,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "full_no_do",
+      "n": 72,
+      "correct": 27,
+      "invalid": 2,
+      "joint_numeric_correct": 10,
+      "all_outputs_correct": 2,
+      "routes": {
+        "inline_fallback": 51,
+        "executed_no_do": 21
+      },
+      "counterfactual_value": {
+        "valid_n": 70,
+        "missing_n": 2,
+        "mae": 31.676701545557957,
+        "rmse": 45.76809023541338,
+        "within_tolerance": 12
+      },
+      "difference": {
+        "valid_n": 70,
+        "missing_n": 2,
+        "mae": 17.03309453174288,
+        "rmse": 31.111524854827103,
+        "within_tolerance": 11
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 1
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 2
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 2
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 2
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 1
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 7,
+          "joint_numeric_correct": 10
+        },
+        "B": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 10,
+          "joint_numeric_correct": 5
+        },
+        "60": {
+          "n": 24,
+          "correct": 5,
+          "joint_numeric_correct": 5
+        },
+        "120": {
+          "n": 24,
+          "correct": 12,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 23,
+          "joint_numeric_correct": 10
+        },
+        "True": {
+          "n": 8,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "full",
+      "n": 72,
+      "correct": 26,
+      "invalid": 2,
+      "joint_numeric_correct": 20,
+      "all_outputs_correct": 8,
+      "routes": {
+        "inline_fallback": 51,
+        "executed": 21
+      },
+      "counterfactual_value": {
+        "valid_n": 70,
+        "missing_n": 2,
+        "mae": 30.85310497973823,
+        "rmse": 45.64272048306266,
+        "within_tolerance": 22
+      },
+      "difference": {
+        "valid_n": 70,
+        "missing_n": 2,
+        "mae": 16.20949796592314,
+        "rmse": 30.926797895847077,
+        "within_tolerance": 21
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 4
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 3
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 4
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 3
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 4
+        }
+      },
+      "schedule_faithful": 19,
+      "query_faithful": 5,
+      "fully_faithful": 5,
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 17
+        },
+        "B": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 1,
+          "joint_numeric_correct": 2
+        },
+        "D": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 10,
+          "joint_numeric_correct": 5
+        },
+        "60": {
+          "n": 24,
+          "correct": 5,
+          "joint_numeric_correct": 7
+        },
+        "120": {
+          "n": 24,
+          "correct": 11,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 21,
+          "joint_numeric_correct": 19
+        },
+        "True": {
+          "n": 8,
+          "correct": 5,
+          "joint_numeric_correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "patch_inline",
+      "n": 72,
+      "correct": 23,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 54.14687511129253,
+        "rmse": 71.0782696378087,
+        "within_tolerance": 1
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 26.384810149998454,
+        "rmse": 43.22798817067633,
+        "within_tolerance": 2
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 2,
+          "joint_numeric_correct": 0
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 18,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 24,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 24,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 20,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 8,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "patch_no_do",
+      "n": 72,
+      "correct": 39,
+      "invalid": 0,
+      "joint_numeric_correct": 18,
+      "all_outputs_correct": 13,
+      "routes": {
+        "executed_no_do": 56,
+        "inline_fallback": 16
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 24.56135721106219,
+        "rmse": 46.93888987703702,
+        "within_tolerance": 19
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 15.173394085855364,
+        "rmse": 32.057854681841995,
+        "within_tolerance": 20
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 4
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 3
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 4
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 4
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 1
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 11
+        },
+        "B": {
+          "n": 18,
+          "correct": 6,
+          "joint_numeric_correct": 4
+        },
+        "C": {
+          "n": 18,
+          "correct": 12,
+          "joint_numeric_correct": 3
+        },
+        "D": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 9,
+          "joint_numeric_correct": 13
+        },
+        "60": {
+          "n": 24,
+          "correct": 16,
+          "joint_numeric_correct": 5
+        },
+        "120": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 37,
+          "joint_numeric_correct": 17
+        },
+        "True": {
+          "n": 8,
+          "correct": 2,
+          "joint_numeric_correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "patch",
+      "n": 72,
+      "correct": 39,
+      "invalid": 0,
+      "joint_numeric_correct": 52,
+      "all_outputs_correct": 32,
+      "routes": {
+        "executed": 56,
+        "inline_fallback": 16
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 13.937265634687144,
+        "rmse": 36.097808064218306,
+        "within_tolerance": 53
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 4.549302509480317,
+        "rmse": 11.291519426305518,
+        "within_tolerance": 54
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 9
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 8
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 10
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 9
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 8
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 8
+        }
+      },
+      "schedule_faithful": 38,
+      "query_faithful": 18,
+      "fully_faithful": 13,
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 18
+        },
+        "B": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 18
+        },
+        "C": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 14
+        },
+        "D": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 11,
+          "joint_numeric_correct": 16
+        },
+        "60": {
+          "n": 24,
+          "correct": 16,
+          "joint_numeric_correct": 16
+        },
+        "120": {
+          "n": 24,
+          "correct": 12,
+          "joint_numeric_correct": 20
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 34,
+          "joint_numeric_correct": 48
+        },
+        "True": {
+          "n": 8,
+          "correct": 5,
+          "joint_numeric_correct": 4
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "n": 72,
+      "correct": 46,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 30.48983640648665,
+        "rmse": 38.52196387940797,
+        "within_tolerance": 0
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 14.369583364250023,
+        "rmse": 30.26066818116653,
+        "within_tolerance": 6
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 12,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 18,
+          "correct": 15,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 24,
+          "correct": 17,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 24,
+          "correct": 15,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 40,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 8,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "source_no_do",
+      "n": 72,
+      "correct": 64,
+      "invalid": 0,
+      "joint_numeric_correct": 23,
+      "all_outputs_correct": 22,
+      "routes": {
+        "source_model_control": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 12.646356923750986,
+        "rmse": 30.544340057518273,
+        "within_tolerance": 23
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 12.646356923750986,
+        "rmse": 30.544340057518273,
+        "within_tolerance": 23
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 17,
+          "joint_numeric_correct": 11
+        },
+        "B": {
+          "n": 18,
+          "correct": 16,
+          "joint_numeric_correct": 4
+        },
+        "C": {
+          "n": 18,
+          "correct": 16,
+          "joint_numeric_correct": 4
+        },
+        "D": {
+          "n": 18,
+          "correct": 15,
+          "joint_numeric_correct": 4
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 23,
+          "joint_numeric_correct": 18
+        },
+        "60": {
+          "n": 24,
+          "correct": 21,
+          "joint_numeric_correct": 5
+        },
+        "120": {
+          "n": 24,
+          "correct": 20,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 64,
+          "joint_numeric_correct": 22
+        },
+        "True": {
+          "n": 8,
+          "correct": 0,
+          "joint_numeric_correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "full_inline",
+      "n": 72,
+      "correct": 42,
+      "invalid": 1,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 71,
+        "missing_n": 1,
+        "mae": 35.50396278083018,
+        "rmse": 44.33115557855071,
+        "within_tolerance": 1
+      },
+      "difference": {
+        "valid_n": 71,
+        "missing_n": 1,
+        "mae": 16.510510612081944,
+        "rmse": 31.978781489426243,
+        "within_tolerance": 3
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 18,
+          "correct": 12,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 17,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 24,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 37,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 8,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "full_no_do",
+      "n": 72,
+      "correct": 32,
+      "invalid": 1,
+      "joint_numeric_correct": 23,
+      "all_outputs_correct": 9,
+      "routes": {
+        "executed_no_do": 71,
+        "inline_fallback": 1
+      },
+      "counterfactual_value": {
+        "valid_n": 71,
+        "missing_n": 1,
+        "mae": 12.774516482087595,
+        "rmse": 30.75580826352176,
+        "within_tolerance": 23
+      },
+      "difference": {
+        "valid_n": 71,
+        "missing_n": 1,
+        "mae": 12.774516482087595,
+        "rmse": 30.75580826352176,
+        "within_tolerance": 23
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 5
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 5
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 5
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 1
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 5,
+          "joint_numeric_correct": 11
+        },
+        "B": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 4
+        },
+        "C": {
+          "n": 18,
+          "correct": 9,
+          "joint_numeric_correct": 4
+        },
+        "D": {
+          "n": 18,
+          "correct": 5,
+          "joint_numeric_correct": 4
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 9,
+          "joint_numeric_correct": 18
+        },
+        "60": {
+          "n": 24,
+          "correct": 9,
+          "joint_numeric_correct": 5
+        },
+        "120": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 28,
+          "joint_numeric_correct": 22
+        },
+        "True": {
+          "n": 8,
+          "correct": 4,
+          "joint_numeric_correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "full",
+      "n": 72,
+      "correct": 40,
+      "invalid": 1,
+      "joint_numeric_correct": 62,
+      "all_outputs_correct": 36,
+      "routes": {
+        "executed": 71,
+        "inline_fallback": 1
+      },
+      "counterfactual_value": {
+        "valid_n": 71,
+        "missing_n": 1,
+        "mae": 3.716339314425594,
+        "rmse": 15.041637446864787,
+        "within_tolerance": 62
+      },
+      "difference": {
+        "valid_n": 71,
+        "missing_n": 1,
+        "mae": 3.716339314425594,
+        "rmse": 15.041637446864787,
+        "within_tolerance": 62
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 10
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 10
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 11
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 11
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 11
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 9
+        }
+      },
+      "schedule_faithful": 56,
+      "query_faithful": 14,
+      "fully_faithful": 12,
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 5,
+          "joint_numeric_correct": 18
+        },
+        "B": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 11
+        },
+        "C": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 18
+        },
+        "D": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 15
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 15,
+          "joint_numeric_correct": 22
+        },
+        "60": {
+          "n": 24,
+          "correct": 10,
+          "joint_numeric_correct": 20
+        },
+        "120": {
+          "n": 24,
+          "correct": 15,
+          "joint_numeric_correct": 20
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 34,
+          "joint_numeric_correct": 55
+        },
+        "True": {
+          "n": 8,
+          "correct": 6,
+          "joint_numeric_correct": 7
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "patch_inline",
+      "n": 72,
+      "correct": 40,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 72
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 33.83753336681504,
+        "rmse": 43.015822402979346,
+        "within_tolerance": 0
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 14.963178546614342,
+        "rmse": 31.078600301130255,
+        "within_tolerance": 0
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 18,
+          "correct": 12,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 12,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 35,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 8,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "patch_no_do",
+      "n": 72,
+      "correct": 40,
+      "invalid": 0,
+      "joint_numeric_correct": 22,
+      "all_outputs_correct": 13,
+      "routes": {
+        "executed_no_do": 63,
+        "inline_fallback": 9
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 13.512093744049377,
+        "rmse": 30.70432840423616,
+        "within_tolerance": 22
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 12.672922040439568,
+        "rmse": 30.089662355356737,
+        "within_tolerance": 22
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 4
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 5
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 5
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 11
+        },
+        "B": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 4
+        },
+        "C": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 3
+        },
+        "D": {
+          "n": 18,
+          "correct": 8,
+          "joint_numeric_correct": 4
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 12,
+          "joint_numeric_correct": 17
+        },
+        "60": {
+          "n": 24,
+          "correct": 16,
+          "joint_numeric_correct": 5
+        },
+        "120": {
+          "n": 24,
+          "correct": 12,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 34,
+          "joint_numeric_correct": 21
+        },
+        "True": {
+          "n": 8,
+          "correct": 6,
+          "joint_numeric_correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "patch",
+      "n": 72,
+      "correct": 48,
+      "invalid": 0,
+      "joint_numeric_correct": 63,
+      "all_outputs_correct": 43,
+      "routes": {
+        "executed": 63,
+        "inline_fallback": 9
+      },
+      "counterfactual_value": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 2.6112114644226896,
+        "rmse": 9.002262275963629,
+        "within_tolerance": 63
+      },
+      "difference": {
+        "valid_n": 72,
+        "missing_n": 0,
+        "mae": 1.7720397608128788,
+        "rmse": 6.608534178577469,
+        "within_tolerance": 63
+      },
+      "by_profile": {
+        "adolescent#001": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 11
+        },
+        "adolescent#002": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 11
+        },
+        "adult#001": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 10
+        },
+        "adult#002": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 11
+        },
+        "child#001": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 9
+        },
+        "child#002": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 11
+        }
+      },
+      "schedule_faithful": 63,
+      "query_faithful": 17,
+      "fully_faithful": 17,
+      "by_scenario": {
+        "A": {
+          "n": 18,
+          "correct": 11,
+          "joint_numeric_correct": 18
+        },
+        "B": {
+          "n": 18,
+          "correct": 14,
+          "joint_numeric_correct": 18
+        },
+        "C": {
+          "n": 18,
+          "correct": 10,
+          "joint_numeric_correct": 9
+        },
+        "D": {
+          "n": 18,
+          "correct": 13,
+          "joint_numeric_correct": 18
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 24,
+          "correct": 18,
+          "joint_numeric_correct": 21
+        },
+        "60": {
+          "n": 24,
+          "correct": 16,
+          "joint_numeric_correct": 21
+        },
+        "120": {
+          "n": 24,
+          "correct": 14,
+          "joint_numeric_correct": 21
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 64,
+          "correct": 42,
+          "joint_numeric_correct": 56
+        },
+        "True": {
+          "n": 8,
+          "correct": 6,
+          "joint_numeric_correct": 7
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "redo",
+      "repairs": 16,
+      "harms": 8,
+      "numeric_repairs": 52,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "full",
+      "repairs": 25,
+      "harms": 12,
+      "numeric_repairs": 33,
+      "numeric_harms": 1
+    },
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "patch_inline",
+      "repairs": 18,
+      "harms": 2,
+      "numeric_repairs": 52,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "full",
+      "control": "full_inline",
+      "repairs": 6,
+      "harms": 0,
+      "numeric_repairs": 20,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "patch_no_do",
+      "repairs": 4,
+      "harms": 4,
+      "numeric_repairs": 34,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "redo",
+      "repairs": 15,
+      "harms": 13,
+      "numeric_repairs": 63,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "full",
+      "repairs": 17,
+      "harms": 9,
+      "numeric_repairs": 10,
+      "numeric_harms": 9
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "patch_inline",
+      "repairs": 18,
+      "harms": 10,
+      "numeric_repairs": 63,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "full",
+      "control": "full_inline",
+      "repairs": 18,
+      "harms": 20,
+      "numeric_repairs": 62,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "patch_no_do",
+      "repairs": 8,
+      "harms": 0,
+      "numeric_repairs": 41,
+      "numeric_harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 216,
+      "input_tokens": 1021608,
+      "output_tokens": 51169,
+      "length_stops": 2,
+      "worker_seconds": 311.1971924304962,
+      "initialization_seconds": 15.305680513381958
+    },
+    {
+      "method": "M5",
+      "calls": 216,
+      "input_tokens": 1109250,
+      "output_tokens": 66078,
+      "length_stops": 0,
+      "worker_seconds": 436.95339131355286,
+      "initialization_seconds": 15.439347505569458
+    }
+  ],
+  "new_calls": 432,
+  "cached_callbacks": 432,
+  "numeric_tolerance_mg_dL": 1.0,
+  "label_counts": {
+    "no": 61,
+    "yes": 11
+  },
+  "constant_yes_correct": 11,
+  "constant_no_correct": 61
+}

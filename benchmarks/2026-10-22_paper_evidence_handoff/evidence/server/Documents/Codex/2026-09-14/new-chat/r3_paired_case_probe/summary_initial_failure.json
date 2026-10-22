@@ -1,0 +1,19 @@
+{
+  "status": "offline_summary_and_packaging_recovered",
+  "failures": [
+    {
+      "stage": "first_inline_summary",
+      "error": "TypeError: duplicate method keyword",
+      "cause": "runtime already contained method",
+      "resolution": "Persisted summarize() loads runtime then sets method/stage; summary.json completed."
+    },
+    {
+      "stage": "failure_note_and_driver_archive",
+      "error": "ModuleNotFoundError: r3_audit",
+      "cause": "workdir omitted from packaging command",
+      "resolution": "Repeated only packaging in the correct directory using the standard library."
+    }
+  ],
+  "new_model_calls": 0,
+  "prediction_or_scoring_changes": false
+}

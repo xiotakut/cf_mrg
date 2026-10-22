@@ -1,0 +1,237 @@
+{
+  "status": "complete",
+  "new_model_calls": 0,
+  "methods": [
+    {
+      "method": "M4",
+      "n": 18,
+      "program_model_disagreements": [
+        "s001111"
+      ],
+      "answer_generated_before_judgments": [],
+      "fallback_reasons": {
+        "unknown_judgment": 2,
+        "unresolved_cardinality": 3
+      },
+      "fallback_cases": [
+        {
+          "item_id": "s001125",
+          "reason": "unknown_judgment",
+          "answers": {
+            "baseline": [
+              "C"
+            ],
+            "direct": [
+              "C",
+              "D"
+            ],
+            "model": [
+              "C"
+            ],
+            "program": [
+              "C"
+            ],
+            "model_unrestricted": [
+              "C",
+              "D"
+            ]
+          }
+        },
+        {
+          "item_id": "s100179",
+          "reason": "unresolved_cardinality",
+          "answers": {
+            "baseline": "B",
+            "direct": "B",
+            "model": "B",
+            "program": "B",
+            "model_unrestricted": "A"
+          }
+        },
+        {
+          "item_id": "s100707",
+          "reason": "unresolved_cardinality",
+          "answers": {
+            "baseline": "A",
+            "direct": "C",
+            "model": "A",
+            "program": "A",
+            "model_unrestricted": "D"
+          }
+        },
+        {
+          "item_id": "s101059",
+          "reason": "unknown_judgment",
+          "answers": {
+            "baseline": "B",
+            "direct": "B",
+            "model": "B",
+            "program": "B",
+            "model_unrestricted": "B"
+          }
+        },
+        {
+          "item_id": "s101867",
+          "reason": "unresolved_cardinality",
+          "answers": {
+            "baseline": "D",
+            "direct": "C",
+            "model": "D",
+            "program": "D",
+            "model_unrestricted": "C"
+          }
+        }
+      ],
+      "same_resolvable_subset": {
+        "n": 13,
+        "correct": {
+          "baseline": 8,
+          "direct": 8,
+          "model": 6,
+          "program": 6,
+          "model_unrestricted": 6
+        }
+      },
+      "multi_metrics": [
+        {
+          "variant": "baseline",
+          "n": 4,
+          "option_f1": 0.7916666666666666,
+          "mean_count_error": -0.75
+        },
+        {
+          "variant": "direct",
+          "n": 4,
+          "option_f1": 0.95,
+          "mean_count_error": -0.25
+        },
+        {
+          "variant": "model",
+          "n": 4,
+          "option_f1": 0.575,
+          "mean_count_error": -0.25
+        },
+        {
+          "variant": "program",
+          "n": 4,
+          "option_f1": 0.45,
+          "mean_count_error": -0.5
+        },
+        {
+          "variant": "model_unrestricted",
+          "n": 4,
+          "option_f1": 0.65,
+          "mean_count_error": 0.0
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "n": 18,
+      "program_model_disagreements": [],
+      "answer_generated_before_judgments": [],
+      "fallback_reasons": {
+        "unknown_judgment": 3,
+        "unresolved_cardinality": 1
+      },
+      "fallback_cases": [
+        {
+          "item_id": "s001111",
+          "reason": "unknown_judgment",
+          "answers": {
+            "baseline": [
+              "B"
+            ],
+            "direct": [
+              "B"
+            ],
+            "model": [
+              "B"
+            ],
+            "program": [
+              "B"
+            ],
+            "model_unrestricted": [
+              "B"
+            ]
+          }
+        },
+        {
+          "item_id": "s100093",
+          "reason": "unresolved_cardinality",
+          "answers": {
+            "baseline": "D",
+            "direct": "D",
+            "model": "D",
+            "program": "D",
+            "model_unrestricted": "D"
+          }
+        },
+        {
+          "item_id": "s100240",
+          "reason": "unknown_judgment",
+          "answers": {
+            "baseline": "C",
+            "direct": "C",
+            "model": "C",
+            "program": "C",
+            "model_unrestricted": "C"
+          }
+        },
+        {
+          "item_id": "s100707",
+          "reason": "unknown_judgment",
+          "answers": {
+            "baseline": "A",
+            "direct": "C",
+            "model": "A",
+            "program": "A",
+            "model_unrestricted": "C"
+          }
+        }
+      ],
+      "same_resolvable_subset": {
+        "n": 14,
+        "correct": {
+          "baseline": 6,
+          "direct": 5,
+          "model": 6,
+          "program": 6,
+          "model_unrestricted": 6
+        }
+      },
+      "multi_metrics": [
+        {
+          "variant": "baseline",
+          "n": 4,
+          "option_f1": 0.6166666666666667,
+          "mean_count_error": -0.75
+        },
+        {
+          "variant": "direct",
+          "n": 4,
+          "option_f1": 0.575,
+          "mean_count_error": -0.5
+        },
+        {
+          "variant": "model",
+          "n": 4,
+          "option_f1": 0.6166666666666667,
+          "mean_count_error": -0.75
+        },
+        {
+          "variant": "program",
+          "n": 4,
+          "option_f1": 0.6166666666666667,
+          "mean_count_error": -0.75
+        },
+        {
+          "variant": "model_unrestricted",
+          "n": 4,
+          "option_f1": 0.6166666666666667,
+          "mean_count_error": -0.75
+        }
+      ]
+    }
+  ]
+}

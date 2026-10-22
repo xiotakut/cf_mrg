@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "variant": "review",
+      "scope": "all",
+      "n": 48,
+      "baseline_correct": 14,
+      "correct": 14,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 26,
+      "invalid": 26
+    },
+    {
+      "variant": "review",
+      "scope": "M01",
+      "n": 40,
+      "baseline_correct": 9,
+      "correct": 9,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 26,
+      "invalid": 26
+    },
+    {
+      "variant": "review",
+      "scope": "M02",
+      "n": 4,
+      "baseline_correct": 1,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 0
+    },
+    {
+      "variant": "review",
+      "scope": "M12",
+      "n": 4,
+      "baseline_correct": 4,
+      "correct": 4,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 0
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "all",
+      "n": 48,
+      "baseline_correct": 14,
+      "correct": 12,
+      "repairs": 0,
+      "harms": 2,
+      "unmapped": 28,
+      "invalid": 28
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "M01",
+      "n": 40,
+      "baseline_correct": 9,
+      "correct": 8,
+      "repairs": 0,
+      "harms": 1,
+      "unmapped": 28,
+      "invalid": 28
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "M02",
+      "n": 4,
+      "baseline_correct": 1,
+      "correct": 0,
+      "repairs": 0,
+      "harms": 1,
+      "unmapped": 0,
+      "invalid": 0
+    },
+    {
+      "variant": "factual_audit",
+      "scope": "M12",
+      "n": 4,
+      "baseline_correct": 4,
+      "correct": 4,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 0
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "all",
+      "n": 48,
+      "baseline_correct": 14,
+      "correct": 11,
+      "repairs": 0,
+      "harms": 3,
+      "unmapped": 28,
+      "invalid": 30
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "M01",
+      "n": 40,
+      "baseline_correct": 9,
+      "correct": 6,
+      "repairs": 0,
+      "harms": 3,
+      "unmapped": 28,
+      "invalid": 30
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "M02",
+      "n": 4,
+      "baseline_correct": 1,
+      "correct": 1,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 0
+    },
+    {
+      "variant": "cf_audit",
+      "scope": "M12",
+      "n": 4,
+      "baseline_correct": 4,
+      "correct": 4,
+      "repairs": 0,
+      "harms": 0,
+      "unmapped": 0,
+      "invalid": 0
+    }
+  ],
+  "cf_vs_factual": {
+    "n": 48,
+    "repairs": 2,
+    "harms": 3
+  },
+  "costs": {
+    "calls": 480,
+    "input_tokens": 1118060,
+    "output_tokens": 102858,
+    "length_stops": 0,
+    "actual_withheld_probes": 144
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 2845267,
+    "gpu": 1,
+    "started_at": 1789414791.0516376,
+    "completed_calls": 480,
+    "initialization_seconds": 170.77321481704712,
+    "stage": "final",
+    "elapsed_seconds": 1114.6661202907562,
+    "plan_failures": 0,
+    "rejected_quotes": 0
+  }
+}

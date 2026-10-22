@@ -1,0 +1,38 @@
+{
+  "started": "2026-09-18 00:24:47 +0800",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 0,
+      "pid": 2305212,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/experiment.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "0"
+      ],
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "pid": 2305213,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/experiment.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 00:58:56 +0800"
+}

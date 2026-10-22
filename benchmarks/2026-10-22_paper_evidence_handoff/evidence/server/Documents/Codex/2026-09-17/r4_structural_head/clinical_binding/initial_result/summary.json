@@ -1,0 +1,116 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "arm": "bound",
+      "n": 13,
+      "correct": 7,
+      "invalid": 0,
+      "versus_unfiltered": {
+        "repairs": 3,
+        "harms": 2
+      },
+      "selected_excerpts": 15,
+      "empty_items": 6,
+      "selection_reasons": {
+        "participant_not_in_question_and_quote": 45,
+        "unusable_record": 4,
+        "quote_not_in_named_document": 14,
+        "kept": 15
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "unfiltered",
+      "n": 13,
+      "correct": 6,
+      "invalid": 0,
+      "versus_unfiltered": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "selected_excerpts": 74,
+      "empty_items": 0,
+      "selection_reasons": {
+        "kept": 74,
+        "unusable_record": 4
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "bound",
+      "n": 13,
+      "correct": 4,
+      "invalid": 5,
+      "versus_unfiltered": {
+        "repairs": 1,
+        "harms": 2
+      },
+      "selected_excerpts": 0,
+      "empty_items": 13,
+      "selection_reasons": {
+        "quote_not_in_named_document": 78
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "unfiltered",
+      "n": 13,
+      "correct": 5,
+      "invalid": 3,
+      "versus_unfiltered": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "selected_excerpts": 78,
+      "empty_items": 0,
+      "selection_reasons": {
+        "kept": 78
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "stage": "extract",
+      "calls": 13,
+      "input_tokens": 28705,
+      "output_tokens": 5341,
+      "length_stops": 0,
+      "worker_seconds": 55.83451318740845,
+      "initialization_seconds": 15.851948022842407
+    },
+    {
+      "method": "M4",
+      "stage": "final",
+      "calls": 26,
+      "input_tokens": 19291,
+      "output_tokens": 4928,
+      "length_stops": 0,
+      "worker_seconds": 50.77373242378235,
+      "initialization_seconds": 16.473768711090088
+    },
+    {
+      "method": "M5",
+      "stage": "extract",
+      "calls": 13,
+      "input_tokens": 29515,
+      "output_tokens": 6007,
+      "length_stops": 0,
+      "worker_seconds": 55.802496671676636,
+      "initialization_seconds": 15.699589967727661
+    },
+    {
+      "method": "M5",
+      "stage": "final",
+      "calls": 26,
+      "input_tokens": 11534,
+      "output_tokens": 6469,
+      "length_stops": 0,
+      "worker_seconds": 61.39042639732361,
+      "initialization_seconds": 16.356213808059692
+    }
+  ],
+  "new_calls": 78
+}

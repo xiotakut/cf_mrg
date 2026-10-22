@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "prepared_at": "2026-09-17 17:47:14 +0800",
+  "stage": "development",
+  "arms": [
+    "redo",
+    "compile"
+  ],
+  "planned_new_calls": 200,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 100,
+      "max_prompt_tokens": 3623
+    },
+    {
+      "method": "M5",
+      "calls": 100,
+      "max_prompt_tokens": 3526
+    }
+  ],
+  "sample": "Previously exposed26 clinical inputs plus24 deterministic rule diagnostics; no new validation results.",
+  "design": "Fresh one-call redo and one-call compiled IR. The same compiled response supplies an LM answer control and a deterministic execution answer, with no extra model calls.",
+  "models": "Original M4 Llama/M5 Qwen, actual full contexts, original sampling and2048 output budget. M4 guided JSON uses native schema for redo and explicit intermediate schema for compile; M5 remains unguided.",
+  "uncertainty": "Incomplete risk mechanisms cannot be closed as deterministic equations. Unsupported or unidentifiable results retain the current compiled LM answer with explicit route; invalid/inconsistent programs remain errors, never old-answer fallback.",
+  "analysis": "Separate author13, modal reverse13, deterministic24; original and fresh controls, compiled-model vs executor repairs, invalid-answer format contribution, coverage and raw program semantic audit.",
+  "validation": "After development freeze, qualify a separate CLadder story holdout and a medically grounded source. Do not claim this development sample is new validation.",
+  "attribution_note": "The inline compiled-model answer is a same-call control, not a strict fixed-IR solver control: the model also saw original text. A separate same-model execution control will receive only each valid applicable compiled IR, with no original text, model answer or gold.",
+  "planned_auxiliary_execution_control_max_calls": 100,
+  "preparation_failures": [
+    "Unmatched closing parenthesis in prepare plan construction, repaired before execution.",
+    "Dynamic import lacked the sibling binding directory on sys.path; repaired before preparation. Both failures caused0 model calls."
+  ],
+  "started_at": "2026-09-17 17:53:06 +0800",
+  "completed_new_calls": 200,
+  "finished_at": "2026-09-17 18:00:39 +0800"
+}

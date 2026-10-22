@@ -1,0 +1,399 @@
+{
+  "status": "complete_development",
+  "methods": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.40816326530612246,
+          "comparisons": {
+            "topical": {
+              "repairs": 7,
+              "harms": 4
+            },
+            "balanced": {
+              "repairs": 15,
+              "harms": 1
+            },
+            "original_list8": {
+              "repairs": 3,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "original_list8",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "topical": {
+              "repairs": 4,
+              "harms": 4
+            },
+            "balanced": {
+              "repairs": 12,
+              "harms": 1
+            },
+            "original_list8": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "global",
+          "n": 40,
+          "correct": 10,
+          "macro_recall": 0.2474489795918367,
+          "comparisons": {
+            "topical": {
+              "repairs": 2,
+              "harms": 10
+            },
+            "balanced": {
+              "repairs": 4,
+              "harms": 1
+            },
+            "original_list8": {
+              "repairs": 2,
+              "harms": 10
+            },
+            "calibrated": {
+              "repairs": 2,
+              "harms": 13
+            }
+          }
+        },
+        {
+          "variant": "balanced",
+          "n": 40,
+          "correct": 7,
+          "macro_recall": 0.17346938775510204,
+          "comparisons": {
+            "topical": {
+              "repairs": 1,
+              "harms": 12
+            },
+            "balanced": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "original_list8": {
+              "repairs": 1,
+              "harms": 12
+            },
+            "calibrated": {
+              "repairs": 1,
+              "harms": 15
+            }
+          }
+        },
+        {
+          "variant": "topical",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.3112244897959183,
+          "comparisons": {
+            "topical": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "balanced": {
+              "repairs": 12,
+              "harms": 1
+            },
+            "original_list8": {
+              "repairs": 4,
+              "harms": 4
+            },
+            "calibrated": {
+              "repairs": 4,
+              "harms": 7
+            }
+          }
+        },
+        {
+          "variant": "clinical",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.36224489795918363,
+          "comparisons": {
+            "topical": {
+              "repairs": 7,
+              "harms": 7
+            },
+            "balanced": {
+              "repairs": 12,
+              "harms": 1
+            },
+            "original_list8": {
+              "repairs": 6,
+              "harms": 6
+            },
+            "calibrated": {
+              "repairs": 4,
+              "harms": 7
+            }
+          }
+        }
+      ],
+      "costs": {
+        "knowledge": {
+          "new_calls": 1280,
+          "input_tokens": 396832,
+          "output_tokens": 1280,
+          "runtime": {
+            "status": "complete",
+            "method": "M4",
+            "gpu": 3,
+            "pid": 3279589,
+            "started_at": 1789435834.1579618,
+            "completed_calls": 1280,
+            "initialization_seconds": 16.284459829330444,
+            "elapsed_seconds": 72.1777515411377,
+            "distributions": 1280,
+            "missing_code_calls": 0
+          }
+        },
+        "final": {
+          "new_calls": 640,
+          "input_tokens": 1788104,
+          "output_tokens": 640,
+          "runtime": {
+            "status": "complete",
+            "method": "M4",
+            "gpu": 3,
+            "pid": 3280276,
+            "started_at": 1789435920.250353,
+            "completed_calls": 640,
+            "initialization_seconds": 16.266363859176636,
+            "elapsed_seconds": 90.06942701339722,
+            "distributions": 640,
+            "missing_code_calls": 0
+          }
+        }
+      },
+      "knowledge_diagnostics": {
+        "topical": {
+          "candidate_document_pairs": 320,
+          "mapping_conflicts": 4,
+          "all_negative_candidates": 0
+        },
+        "clinical": {
+          "candidate_document_pairs": 320,
+          "mapping_conflicts": 34,
+          "all_negative_candidates": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.4744897959183673,
+          "comparisons": {
+            "topical": {
+              "repairs": 6,
+              "harms": 4
+            },
+            "balanced": {
+              "repairs": 12,
+              "harms": 4
+            },
+            "original_list8": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "original_list8",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "topical": {
+              "repairs": 4,
+              "harms": 6
+            },
+            "balanced": {
+              "repairs": 9,
+              "harms": 5
+            },
+            "original_list8": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 4
+            }
+          }
+        },
+        {
+          "variant": "global",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.46428571428571425,
+          "comparisons": {
+            "topical": {
+              "repairs": 4,
+              "harms": 8
+            },
+            "balanced": {
+              "repairs": 4,
+              "harms": 2
+            },
+            "original_list8": {
+              "repairs": 6,
+              "harms": 8
+            },
+            "calibrated": {
+              "repairs": 5,
+              "harms": 11
+            }
+          }
+        },
+        {
+          "variant": "balanced",
+          "n": 40,
+          "correct": 16,
+          "macro_recall": 0.41071428571428564,
+          "comparisons": {
+            "topical": {
+              "repairs": 3,
+              "harms": 9
+            },
+            "balanced": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "original_list8": {
+              "repairs": 5,
+              "harms": 9
+            },
+            "calibrated": {
+              "repairs": 4,
+              "harms": 12
+            }
+          }
+        },
+        {
+          "variant": "topical",
+          "n": 40,
+          "correct": 22,
+          "macro_recall": 0.4107142857142857,
+          "comparisons": {
+            "topical": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "balanced": {
+              "repairs": 9,
+              "harms": 3
+            },
+            "original_list8": {
+              "repairs": 6,
+              "harms": 4
+            },
+            "calibrated": {
+              "repairs": 4,
+              "harms": 6
+            }
+          }
+        },
+        {
+          "variant": "clinical",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.4362244897959184,
+          "comparisons": {
+            "topical": {
+              "repairs": 4,
+              "harms": 5
+            },
+            "balanced": {
+              "repairs": 8,
+              "harms": 3
+            },
+            "original_list8": {
+              "repairs": 6,
+              "harms": 5
+            },
+            "calibrated": {
+              "repairs": 4,
+              "harms": 7
+            }
+          }
+        }
+      ],
+      "costs": {
+        "knowledge": {
+          "new_calls": 1280,
+          "input_tokens": 374560,
+          "output_tokens": 1280,
+          "runtime": {
+            "status": "complete",
+            "method": "M5",
+            "gpu": 3,
+            "pid": 3281390,
+            "started_at": 1789436018.0204635,
+            "completed_calls": 1280,
+            "initialization_seconds": 18.60536217689514,
+            "elapsed_seconds": 79.92901539802551,
+            "distributions": 1280,
+            "missing_code_calls": 0
+          }
+        },
+        "final": {
+          "new_calls": 640,
+          "input_tokens": 1572392,
+          "output_tokens": 640,
+          "runtime": {
+            "status": "complete",
+            "method": "M5",
+            "gpu": 3,
+            "pid": 3281866,
+            "started_at": 1789436113.502987,
+            "completed_calls": 640,
+            "initialization_seconds": 18.590290307998657,
+            "elapsed_seconds": 94.60807228088379,
+            "distributions": 640,
+            "missing_code_calls": 0
+          }
+        }
+      },
+      "knowledge_diagnostics": {
+        "topical": {
+          "candidate_document_pairs": 320,
+          "mapping_conflicts": 11,
+          "all_negative_candidates": 0
+        },
+        "clinical": {
+          "candidate_document_pairs": 320,
+          "mapping_conflicts": 29,
+          "all_negative_candidates": 0
+        }
+      }
+    }
+  ]
+}

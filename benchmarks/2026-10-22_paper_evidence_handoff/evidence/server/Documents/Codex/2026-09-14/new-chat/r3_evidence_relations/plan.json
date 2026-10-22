@@ -1,0 +1,31 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "relation_calls": 537,
+      "planned_final_calls": 160,
+      "min_blocks": 9,
+      "max_blocks": 18,
+      "max_prompt_tokens": 2865
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "relation_calls": 537,
+      "planned_final_calls": 160,
+      "min_blocks": 9,
+      "max_blocks": 18,
+      "max_prompt_tokens": 2604
+    }
+  ],
+  "planned_calls": 1394,
+  "mechanism": "Original-model relations for every literal observation; fixed support +1, conflict -1, neutral 0, original pool order breaks ties.",
+  "control": "Same relation generations and native context, four cyclic orders for model final choice; same information, different decision policy, four extra model calls.",
+  "reuse": "Existing six-order calibrated front and uncued four-candidate control; no new front calls. All40 exposed cases retained, regardless of gold coverage.",
+  "failure": "Any invalid relation makes both arms return actual initial calibrated answer. Missing information does not produce negative evidence.",
+  "criterion": "Cross-backbone improvement over same-relation model control and current calibrated head before expansion; no weight or posthoc disease-gate search.",
+  "source": "https://arxiv.org/html/2601.06636v1#S4.SS2.SSS3",
+  "scope": "Exposed development only, not independent generalization."
+}

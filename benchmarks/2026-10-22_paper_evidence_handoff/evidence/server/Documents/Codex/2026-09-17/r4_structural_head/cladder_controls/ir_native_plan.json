@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "prepared_at": "2026-09-17 20:07:33 +0800",
+  "selection_plan": "selection_plan.json",
+  "checks": [
+    {
+      "method": "M4",
+      "fixed_selection_n": 80,
+      "eligible_n": 37,
+      "planned_new_calls": 37,
+      "excluded_n": 43,
+      "original_program_routes": {
+        "invalid_program": 31,
+        "executed": 37,
+        "inconsistent_program": 10,
+        "unsupported_model_answer": 1,
+        "unidentified_model_answer": 1
+      },
+      "max_prompt_tokens": 304
+    },
+    {
+      "method": "M5",
+      "fixed_selection_n": 80,
+      "eligible_n": 48,
+      "planned_new_calls": 48,
+      "excluded_n": 32,
+      "original_program_routes": {
+        "executed": 48,
+        "invalid_program": 28,
+        "inconsistent_program": 3,
+        "unidentified_model_answer": 1
+      },
+      "max_prompt_tokens": 259
+    }
+  ],
+  "planned_new_calls": 85,
+  "selection": "Within the predeclared80 IDs, all and only executed TRUE/FALSE programs; no source-correctness or inline-answer filtering.",
+  "input": "Only roots/equations/observed/intervention/target/desired and the existing native IR execution instruction; no original question/explanation/inline answer/source gold/execution result.",
+  "interpretation": "Status match tests executing the same compiled IR; source accuracy also depends on compilation. All comparisons are limited to this method-specific eligible subset.",
+  "model_calls": 0,
+  "costs": "Additional diagnostic calls, separate from the deployed one-call head and causal_steps control.",
+  "finished_at": "2026-09-17 20:11:08 +0800"
+}

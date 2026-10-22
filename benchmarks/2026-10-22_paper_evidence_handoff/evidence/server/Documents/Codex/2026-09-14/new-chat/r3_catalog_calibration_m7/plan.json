@@ -1,0 +1,17 @@
+{
+  "status": "prepared",
+  "method": "M7",
+  "new_distributions": 18,
+  "reuse": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_m7/distributions.jsonl",
+  "reused_distributions": 240,
+  "source": "https://proceedings.mlr.press/v139/zhao21c/zhao21c.pdf",
+  "contents": [
+    "N/A",
+    "[MASK]",
+    ""
+  ],
+  "rule": "For each order, average the three content-free conditional49 distributions; subtract log of this prior from full raw logprobs, normalize, then apply the same frozen six-order aggregation.",
+  "context": "Original system, role layout and any static native examples preserved; final variable user content and repeated current patient replaced by content-free string. No current-patient-specific calibration or gold.",
+  "primary": "Frozen calibrated six-order majority transfer; compare with uncalibrated majority and old v1.",
+  "scope": "Exposed development40. Known contextual-calibration adaptation; not a demonstrated medical causal counterfactual mechanism."
+}

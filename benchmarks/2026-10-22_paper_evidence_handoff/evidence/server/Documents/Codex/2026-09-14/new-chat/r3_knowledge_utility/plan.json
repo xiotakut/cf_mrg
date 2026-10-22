@@ -1,0 +1,41 @@
+{
+  "status": "prepared",
+  "date": "2026-09-15",
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "cases_per_method": 40,
+  "previous_turn": "Progress: completed prior result documentation and confirmed poor medical chunks were actually exposed to final models.",
+  "source": "https://arxiv.org/html/2401.15884v3",
+  "sections": [
+    "4.2",
+    "4.4"
+  ],
+  "adaptation": "Borrow pre-generation passage evaluation and refinement. Use original untuned models on existing whole chunks; not CRAG fine-tuned T5, strip decomposition, thresholds, web search or full reproduction.",
+  "criteria": {
+    "topical": "Is this passage topically relevant to the named diagnosis?",
+    "clinical": "Does this passage explicitly state at least one specific clinical finding, risk factor, time course, examination finding, or diagnostic test result that can help support or distinguish the named diagnosis? A learning objective, a promise to discuss these facts, a generic diagnostic introduction, or treatment advice alone is insufficient. Judge the information actually stated in the passage; do not supply missing facts from memory."
+  },
+  "planned_new_calls": 3840,
+  "knowledge_calls_per_method": 1280,
+  "final_calls_per_method": 640,
+  "shared_inputs": "Same original40 R3 development targets, calibrated4 shortlist, cached40 diagnosis-only queries and top8 documents/query. Same old80 union reranks. No new retrieval or query/spelling repair in this controlled experiment.",
+  "policy": "Each original model independently scores topical relevance and explicit clinical facts for all8 chunks/candidate. Two reversed True/False mappings, mean aligned raw log-odds. Rank within candidate, stable original-rank ties; allocate2 unique chunks/candidate and present8 in existing common MedCPT order. No score threshold or posthoc disease gate.",
+  "final": "Retain exact original model, system, patient question and answer contract; replace only8 documents. Same4 shortlist,8 list orders, plurality and initial-pool ties.",
+  "controls": "Clinical versus topical at equal model calls is primary. Previous MedCPT-balanced/global, original-doc list8 and calibrated49 reused. Require credible cross-backbone benefit versus existing stronger controls before expansion.",
+  "costs": "Each uncached deployed arm:6 frontend+64 document checks+8 final=78 original-model scores;4 retrieval queries+1 rerank. Disease-document checks may be cached per model/criterion. This pilot reuses retrieval/rerank and frontends, shares40 candidate caches within model.",
+  "scope": "Exposed development only; original weights; no training patient labels, target gold, paired reference or method-specific selection enters inference.",
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 1280,
+      "max_prompt_tokens": 802
+    },
+    {
+      "method": "M5",
+      "calls": 1280,
+      "max_prompt_tokens": 824
+    }
+  ]
+}

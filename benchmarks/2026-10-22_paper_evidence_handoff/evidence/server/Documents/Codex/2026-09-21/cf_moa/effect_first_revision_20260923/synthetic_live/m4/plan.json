@@ -1,0 +1,98 @@
+{
+  "protocol": {
+    "variant": "new_synthetic_nli_f_premise_development_v1",
+    "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_preparation/synthetic_panel_inputs.jsonl",
+    "inputs_sha256": "6efa646421135dea8bea13f2d66d98a62b47c105482c9a49fc144c7fd9381735",
+    "request_ids": [
+      "synth_nli_0_positive",
+      "synth_nli_0_positive_irrelevant",
+      "synth_nli_0_negative",
+      "synth_nli_0_negative_irrelevant",
+      "synth_nli_1_positive",
+      "synth_nli_1_positive_irrelevant",
+      "synth_nli_1_negative",
+      "synth_nli_1_negative_irrelevant"
+    ],
+    "source_files": [
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a5_premise.py",
+        "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+        "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+        "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_preparation/run_synthetic.py",
+        "sha256": "a96876bfc68a9b4a051c8b6782b2aa4587c9bb17cbda2c0a245b9866671825cf"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+        "sha256": "090d9d59d76f9bb0b97a8d261e22630b3a753d95d67100fe1a65e37dc199408c",
+        "snapshot": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_preparation/prelaunch_source_snapshot/effect_first_runner.py"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/incremental_runner.py",
+        "sha256": "33f2a61518a3b50bdbb59025e684ca6c4499fa9be7e9c0f1b4336ba39790911d",
+        "snapshot": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_preparation/prelaunch_source_snapshot/incremental_runner.py"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/tools/native_backend.py",
+        "sha256": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+        "snapshot": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/a5_preparation/prelaunch_source_snapshot/native_backend.py"
+      }
+    ],
+    "generation": {
+      "seed": 42,
+      "temperature": 0.7,
+      "max_tokens": 512
+    },
+    "planned_unique_inputs": 8,
+    "planned_arms": [
+      "F",
+      "premise",
+      "ordinary_reanswer",
+      "direct_premise_probe",
+      "direct_ordinary_probe"
+    ],
+    "new_F_max_requests_per_input": 12,
+    "extra_max_requests_per_arm_input": 2,
+    "total_hard_call_upper_bound_per_backbone": 160,
+    "new_panel_only": true,
+    "old_121_rerun": false,
+    "ordinary_item_failure_stops_batch": false,
+    "planned_output_rows_per_backbone": 40,
+    "direct_probe_scope": "Separate all-input diagnostic with all legal candidates; does not assert F disagreement or change F trigger.",
+    "dependency_binding_revision": "prelaunch_runtime_identity_r1_no_method_change"
+  },
+  "method": "M4",
+  "selected_profile": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 16384
+    }
+  },
+  "selected_profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+    "copy": "readout_m4.json",
+    "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+  },
+  "run_script_sha256": "a96876bfc68a9b4a051c8b6782b2aa4587c9bb17cbda2c0a245b9866671825cf"
+}

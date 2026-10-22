@@ -1,0 +1,15 @@
+{
+  "status": "prepared",
+  "backbone": "qwen",
+  "methods": [
+    "M3",
+    "M5",
+    "M7"
+  ],
+  "cases_per_method": 40,
+  "new_calls": 200,
+  "max_prompt_tokens": 9419,
+  "change": "Only replace the original system instruction with one common terminal diagnostic instruction. All other native context and final v1 request remain unchanged. M3/M7 include a separate no-history interaction arm.",
+  "scope": "Same exposed R3 diagnosis development scout; no gold or training-answer bank in requests.",
+  "control": "Reuse original native-system repeat_patient predictions, with identical weights, vocabulary, schema, decoding and max384 output."
+}

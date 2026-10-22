@@ -1,0 +1,25 @@
+{
+  "status": "complete_not_selected",
+  "candidate": "fresh redo on both backbones",
+  "full_n": 202,
+  "pilot_reused_per_backbone": 24,
+  "new_calls": 356,
+  "remaining_n": 178,
+  "source_counts": {
+    "AMQA": 134,
+    "Cultural": 67,
+    "CPV": 1
+  },
+  "selection": "Fixed after the96-call fresh24 pilot: simple redo improved both backbones, while longer task_scope did not. No prompt changes and no per-source/per-method output choice.",
+  "interpretation": "Full202 exposed development; pilot selected using baseline correctness and is not naturally representative. Report pilot24, remaining178 and full202 separately. This two-backbone experiment does not automatically replace all-seven-method main R1 head.",
+  "resources": "Run M4 on GPU0 after M6, M5 on GPU1 after M3, if physical memory fits; do not stop healthy jobs.",
+  "completed_date": "2026-09-16",
+  "results": "summary.json",
+  "scored": "scored.jsonl",
+  "changed_cases": "changed_cases.jsonl",
+  "failure_evidence": [
+    "M5/failures/initial_shared_memory_profile/failure.json",
+    "M5/failures/retry_directory_exists/failure.json"
+  ],
+  "decision": "Pilot gains did not persist: full202 M4 131->134, M5 149->135; remaining178 M4 119->117, M5 137->121. Not selected; no further prompt or variant trials."
+}

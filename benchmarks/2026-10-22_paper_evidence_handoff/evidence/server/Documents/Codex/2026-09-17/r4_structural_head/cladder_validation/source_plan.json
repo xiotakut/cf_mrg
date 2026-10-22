@@ -1,0 +1,29 @@
+{
+  "status": "source_frozen_head_not_yet_frozen",
+  "frozen_at": "2026-09-17 18:17:45 +0800",
+  "questions": 1343,
+  "stories": 40,
+  "models": 519,
+  "graph_counts": {
+    "diamond": 158,
+    "fork": 143,
+    "mediation": 144,
+    "IV": 158,
+    "chain": 158,
+    "arrowhead": 158,
+    "confounding": 158,
+    "frontdoor": 158,
+    "diamondcut": 108
+  },
+  "old_action_conflicts": 282,
+  "excluded_stories": [
+    "alarm",
+    "candle",
+    "firing_employee"
+  ],
+  "protocol": "Source-specific evaluation convention, shared by both methods: this is a self-contained hypothetical Boolean world. The stated causal rules are complete equalities. Only explicitly stated observations constrain the factual world. In the final question, \"instead of\" contrasts the proposed action with another action; it does not add an observation of the old action. Apply the proposed action and recompute its consequences. Answer the exact final proposition.",
+  "selection": "Every qualified question outside all three previously read story groups; no model-result selection or later substitution.",
+  "input": "Only source background + given_info + question; no source answer/reasoning/meta/SCM tables.",
+  "limitations": "Formal source adaptation, not clinical validation. Shared graph families and unknown pretraining exposure. No claim of difficult latent-state abduction.",
+  "model_calls": 0
+}

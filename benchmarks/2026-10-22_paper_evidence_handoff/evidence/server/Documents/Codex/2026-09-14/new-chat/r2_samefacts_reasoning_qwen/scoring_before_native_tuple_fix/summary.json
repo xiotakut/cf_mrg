@@ -1,0 +1,179 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 44,
+      "invalid": 10
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 36,
+      "invalid": 9
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 1
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "reasoned",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 10
+    },
+    {
+      "scope": "native",
+      "method": "reasoned",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 32,
+      "invalid": 9
+    },
+    {
+      "scope": "native",
+      "method": "reasoned",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 0,
+      "invalid": 1
+    },
+    {
+      "scope": "native",
+      "method": "reasoned",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "scope": "synthetic",
+      "method": "program",
+      "subgroup": "all",
+      "n": 96,
+      "correct": 90,
+      "invalid": 6
+    },
+    {
+      "scope": "synthetic",
+      "method": "program",
+      "subgroup": "none",
+      "n": 48,
+      "correct": 42,
+      "invalid": 6
+    },
+    {
+      "scope": "synthetic",
+      "method": "program",
+      "subgroup": "remaining",
+      "n": 48,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "scope": "synthetic",
+      "method": "reasoned",
+      "subgroup": "all",
+      "n": 96,
+      "correct": 87,
+      "invalid": 8
+    },
+    {
+      "scope": "synthetic",
+      "method": "reasoned",
+      "subgroup": "none",
+      "n": 48,
+      "correct": 40,
+      "invalid": 8
+    },
+    {
+      "scope": "synthetic",
+      "method": "reasoned",
+      "subgroup": "remaining",
+      "n": 48,
+      "correct": 47,
+      "invalid": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "reasoned",
+      "calls": 151,
+      "input_tokens": 133747,
+      "output_tokens": 520490,
+      "length_stops": 3
+    }
+  ],
+  "parse_errors": {
+    "reasoned": 3
+  },
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2431663,
+      "started_at": 1789371983.4489377,
+      "total": 38,
+      "initialization_seconds": 62.81082201004028,
+      "completed": 38,
+      "elapsed_seconds": 730.8037574291229,
+      "last_batch_seconds": 108.16392779350281,
+      "completed_at": 1789372714.2528865
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2431664,
+      "started_at": 1789371983.4356866,
+      "total": 38,
+      "initialization_seconds": 62.826735496520996,
+      "completed": 38,
+      "elapsed_seconds": 718.2677302360535,
+      "last_batch_seconds": 78.97286820411682,
+      "completed_at": 1789372701.7036176
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2431665,
+      "started_at": 1789371983.4523103,
+      "total": 38,
+      "initialization_seconds": 62.82227110862732,
+      "completed": 38,
+      "elapsed_seconds": 970.2664451599121,
+      "last_batch_seconds": 118.00592708587646,
+      "completed_at": 1789372953.718951
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2431666,
+      "started_at": 1789371983.4442053,
+      "total": 37,
+      "initialization_seconds": 62.822919607162476,
+      "completed": 37,
+      "elapsed_seconds": 822.8749787807465,
+      "last_batch_seconds": 83.05878949165344,
+      "completed_at": 1789372806.319372
+    }
+  ]
+}

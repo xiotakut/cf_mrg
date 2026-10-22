@@ -1,0 +1,197 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "topical": {
+          "repairs": 7,
+          "harms": 4
+        },
+        "balanced": {
+          "repairs": 15,
+          "harms": 1
+        },
+        "original_list8": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "original_list8",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "topical": {
+          "repairs": 4,
+          "harms": 4
+        },
+        "balanced": {
+          "repairs": 12,
+          "harms": 1
+        },
+        "original_list8": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "global",
+      "n": 40,
+      "correct": 10,
+      "macro_recall": 0.2474489795918367,
+      "comparisons": {
+        "topical": {
+          "repairs": 2,
+          "harms": 10
+        },
+        "balanced": {
+          "repairs": 4,
+          "harms": 1
+        },
+        "original_list8": {
+          "repairs": 2,
+          "harms": 10
+        },
+        "calibrated": {
+          "repairs": 2,
+          "harms": 13
+        }
+      }
+    },
+    {
+      "variant": "balanced",
+      "n": 40,
+      "correct": 7,
+      "macro_recall": 0.17346938775510204,
+      "comparisons": {
+        "topical": {
+          "repairs": 1,
+          "harms": 12
+        },
+        "balanced": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "original_list8": {
+          "repairs": 1,
+          "harms": 12
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 15
+        }
+      }
+    },
+    {
+      "variant": "topical",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.3112244897959183,
+      "comparisons": {
+        "topical": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "balanced": {
+          "repairs": 12,
+          "harms": 1
+        },
+        "original_list8": {
+          "repairs": 4,
+          "harms": 4
+        },
+        "calibrated": {
+          "repairs": 4,
+          "harms": 7
+        }
+      }
+    },
+    {
+      "variant": "clinical",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.36224489795918363,
+      "comparisons": {
+        "topical": {
+          "repairs": 7,
+          "harms": 7
+        },
+        "balanced": {
+          "repairs": 12,
+          "harms": 1
+        },
+        "original_list8": {
+          "repairs": 6,
+          "harms": 6
+        },
+        "calibrated": {
+          "repairs": 4,
+          "harms": 7
+        }
+      }
+    }
+  ],
+  "costs": {
+    "knowledge": {
+      "new_calls": 1280,
+      "input_tokens": 396832,
+      "output_tokens": 1280,
+      "runtime": {
+        "status": "complete",
+        "method": "M4",
+        "gpu": 3,
+        "pid": 3279589,
+        "started_at": 1789435834.1579618,
+        "completed_calls": 1280,
+        "initialization_seconds": 16.284459829330444,
+        "elapsed_seconds": 72.1777515411377,
+        "distributions": 1280,
+        "missing_code_calls": 0
+      }
+    },
+    "final": {
+      "new_calls": 640,
+      "input_tokens": 1788104,
+      "output_tokens": 640,
+      "runtime": {
+        "status": "complete",
+        "method": "M4",
+        "gpu": 3,
+        "pid": 3280276,
+        "started_at": 1789435920.250353,
+        "completed_calls": 640,
+        "initialization_seconds": 16.266363859176636,
+        "elapsed_seconds": 90.06942701339722,
+        "distributions": 640,
+        "missing_code_calls": 0
+      }
+    }
+  },
+  "knowledge_diagnostics": {
+    "topical": {
+      "candidate_document_pairs": 320,
+      "mapping_conflicts": 4,
+      "all_negative_candidates": 0
+    },
+    "clinical": {
+      "candidate_document_pairs": 320,
+      "mapping_conflicts": 34,
+      "all_negative_candidates": 0
+    }
+  }
+}

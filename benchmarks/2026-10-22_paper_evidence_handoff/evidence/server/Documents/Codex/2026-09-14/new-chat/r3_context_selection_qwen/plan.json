@@ -1,0 +1,31 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M3",
+    "M7"
+  ],
+  "cases_per_method": 40,
+  "new_calls": 228,
+  "exact_request_reuses": 12,
+  "original_weights": "/home/data3/txy/models/Qwen3-8B",
+  "max_prompt_tokens": 9159,
+  "variants": {
+    "no_history": [
+      false,
+      true
+    ],
+    "no_documents": [
+      true,
+      false
+    ],
+    "patient_only": [
+      false,
+      false
+    ]
+  },
+  "control": "Reuse same40 native-context repeat_patient outputs; unchanged weights, catalog, temperature, schema and output budget.",
+  "scope": "Exposed R3 diagnosis development cases. Upstream retrieval/history reused from each original method. No training-answer lookup or current-gold input.",
+  "history": "M3 previous-answer section; M7 typed thought/plan entries and protocol feedback. Only active tool observations retained; removed/backtracked documents are not restored.",
+  "inference_calls_for_other_methods": 0,
+  "criterion": "Choose no_history only if benefit survives retained-document and patient-only controls; report harms and no blanket cross-method claim."
+}

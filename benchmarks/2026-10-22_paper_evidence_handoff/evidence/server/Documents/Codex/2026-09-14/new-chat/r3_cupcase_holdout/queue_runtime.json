@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "gpu": 3,
+  "pid": 3524159,
+  "finished": [
+    [
+      "llama",
+      "head"
+    ],
+    [
+      "llama",
+      "sequence"
+    ],
+    [
+      "qwen",
+      "head"
+    ],
+    [
+      "qwen",
+      "sequence"
+    ]
+  ],
+  "recovery": "Set required CUDA_VISIBLE_DEVICES=3; prior failure happened before model initialization, zero calls.",
+  "current": "analysis",
+  "elapsed_seconds": 233.8857777118683,
+  "exit_code": 0
+}

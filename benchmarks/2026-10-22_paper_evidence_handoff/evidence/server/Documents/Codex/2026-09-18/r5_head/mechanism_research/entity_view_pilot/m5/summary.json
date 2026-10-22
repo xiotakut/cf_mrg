@@ -1,0 +1,968 @@
+{
+  "method": "M5",
+  "status": "complete",
+  "results": [
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "bound_rendering",
+      "units": 30,
+      "mappings": 60,
+      "correct": 52,
+      "invalid": 0,
+      "variant_pct": 86.66666666666667,
+      "reference_pct": 86.66666666666667,
+      "both_pct": 86.66666666666667,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 26
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "repeat_rendering",
+      "units": 30,
+      "mappings": 60,
+      "correct": 51,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 86.66666666666667,
+      "both_pct": 83.33333333333334,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 25
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "native_rule_base",
+      "units": 30,
+      "mappings": 60,
+      "correct": 48,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 76.66666666666667,
+      "invariant_pct": 93.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 22
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "old_direct_vLLM",
+      "units": 30,
+      "mappings": 60,
+      "correct": 51,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 86.66666666666667,
+      "both_pct": 83.33333333333334,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 28
+        },
+        "negative": {
+          "n": 32,
+          "correct": 23
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "old_combined_head",
+      "units": 30,
+      "mappings": 60,
+      "correct": 53,
+      "invalid": 0,
+      "variant_pct": 90.0,
+      "reference_pct": 86.66666666666667,
+      "both_pct": 86.66666666666667,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 28
+        },
+        "negative": {
+          "n": 32,
+          "correct": 25
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "bound_rendering",
+      "units": 12,
+      "mappings": 24,
+      "correct": 21,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 100,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 9
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "repeat_rendering",
+      "units": 12,
+      "mappings": 24,
+      "correct": 22,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 100,
+      "both_pct": 83.33333333333334,
+      "invariant_pct": 16.666666666666664,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "native_rule_base",
+      "units": 12,
+      "mappings": 24,
+      "correct": 20,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 100,
+      "both_pct": 66.66666666666666,
+      "invariant_pct": 33.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "old_direct_vLLM",
+      "units": 12,
+      "mappings": 24,
+      "correct": 21,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 100,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 9
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "old_combined_head",
+      "units": 12,
+      "mappings": 24,
+      "correct": 22,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 100,
+      "both_pct": 83.33333333333334,
+      "invariant_pct": 16.666666666666664,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "bound_rendering",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 80.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "repeat_rendering",
+      "units": 10,
+      "mappings": 20,
+      "correct": 14,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 80.0,
+      "both_pct": 60.0,
+      "invariant_pct": 80.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "native_rule_base",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "old_direct_vLLM",
+      "units": 10,
+      "mappings": 20,
+      "correct": 15,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 70.0,
+      "both_pct": 70.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "old_combined_head",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 70.0,
+      "invariant_pct": 80.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "bound_rendering",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "repeat_rendering",
+      "units": 4,
+      "mappings": 8,
+      "correct": 6,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 100,
+      "both_pct": 50.0,
+      "invariant_pct": 50.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "native_rule_base",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "old_direct_vLLM",
+      "units": 4,
+      "mappings": 8,
+      "correct": 6,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 75.0,
+      "both_pct": 50.0,
+      "invariant_pct": 50.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "old_combined_head",
+      "units": 4,
+      "mappings": 8,
+      "correct": 7,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 75.0,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 4
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "bound_rendering",
+      "units": 40,
+      "mappings": 80,
+      "correct": 68,
+      "invalid": 0,
+      "variant_pct": 85.0,
+      "reference_pct": 85.0,
+      "both_pct": 85.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 34
+        },
+        "negative": {
+          "n": 44,
+          "correct": 34
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "repeat_rendering",
+      "units": 40,
+      "mappings": 80,
+      "correct": 65,
+      "invalid": 0,
+      "variant_pct": 77.5,
+      "reference_pct": 85.0,
+      "both_pct": 77.5,
+      "invariant_pct": 92.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 34
+        },
+        "negative": {
+          "n": 44,
+          "correct": 31
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "native_rule_base",
+      "units": 40,
+      "mappings": 80,
+      "correct": 61,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 77.5,
+      "both_pct": 72.5,
+      "invariant_pct": 92.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 34
+        },
+        "negative": {
+          "n": 44,
+          "correct": 27
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "old_direct_vLLM",
+      "units": 40,
+      "mappings": 80,
+      "correct": 66,
+      "invalid": 0,
+      "variant_pct": 82.5,
+      "reference_pct": 82.5,
+      "both_pct": 80.0,
+      "invariant_pct": 95.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 36
+        },
+        "negative": {
+          "n": 44,
+          "correct": 30
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "old_combined_head",
+      "units": 40,
+      "mappings": 80,
+      "correct": 69,
+      "invalid": 0,
+      "variant_pct": 87.5,
+      "reference_pct": 85.0,
+      "both_pct": 82.5,
+      "invariant_pct": 92.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 36
+        },
+        "negative": {
+          "n": 44,
+          "correct": 33
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "bound_rendering",
+      "units": 16,
+      "mappings": 32,
+      "correct": 26,
+      "invalid": 0,
+      "variant_pct": 62.5,
+      "reference_pct": 100,
+      "both_pct": 62.5,
+      "invariant_pct": 37.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 16
+        },
+        "negative": {
+          "n": 16,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "repeat_rendering",
+      "units": 16,
+      "mappings": 32,
+      "correct": 28,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 100,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 16
+        },
+        "negative": {
+          "n": 16,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "native_rule_base",
+      "units": 16,
+      "mappings": 32,
+      "correct": 25,
+      "invalid": 0,
+      "variant_pct": 56.25,
+      "reference_pct": 100,
+      "both_pct": 56.25,
+      "invariant_pct": 43.75,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 16
+        },
+        "negative": {
+          "n": 16,
+          "correct": 9
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "old_direct_vLLM",
+      "units": 16,
+      "mappings": 32,
+      "correct": 27,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 93.75,
+      "both_pct": 68.75,
+      "invariant_pct": 31.25,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 15
+        },
+        "negative": {
+          "n": 16,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "old_combined_head",
+      "units": 16,
+      "mappings": 32,
+      "correct": 29,
+      "invalid": 0,
+      "variant_pct": 87.5,
+      "reference_pct": 93.75,
+      "both_pct": 81.25,
+      "invariant_pct": 18.75,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 15
+        },
+        "negative": {
+          "n": 16,
+          "correct": 14
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "repeat_rendering",
+      "mappings": 60,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "native_rule_base",
+      "mappings": 60,
+      "repairs": 4,
+      "harms": 0,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "old_direct_vLLM",
+      "mappings": 60,
+      "repairs": 3,
+      "harms": 2,
+      "changed": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "old_combined_head",
+      "mappings": 60,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "repeat_rendering",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "native_rule_base",
+      "mappings": 24,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "old_direct_vLLM",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "old_combined_head",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "repeat_rendering",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "native_rule_base",
+      "mappings": 20,
+      "repairs": 3,
+      "harms": 0,
+      "changed": 3
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "old_direct_vLLM",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 1,
+      "changed": 3
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "old_combined_head",
+      "mappings": 20,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "repeat_rendering",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "native_rule_base",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "old_direct_vLLM",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 2,
+      "changed": 3
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "old_combined_head",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 3,
+      "changed": 4
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "repeat_rendering",
+      "mappings": 80,
+      "repairs": 3,
+      "harms": 0,
+      "changed": 3
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "native_rule_base",
+      "mappings": 80,
+      "repairs": 7,
+      "harms": 0,
+      "changed": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "old_direct_vLLM",
+      "mappings": 80,
+      "repairs": 5,
+      "harms": 3,
+      "changed": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "bound_rendering",
+      "control": "old_combined_head",
+      "mappings": 80,
+      "repairs": 3,
+      "harms": 4,
+      "changed": 7
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "repeat_rendering",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "native_rule_base",
+      "mappings": 32,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "old_direct_vLLM",
+      "mappings": 32,
+      "repairs": 1,
+      "harms": 2,
+      "changed": 3
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "bound_rendering",
+      "control": "old_combined_head",
+      "mappings": 32,
+      "repairs": 1,
+      "harms": 4,
+      "changed": 5
+    }
+  ],
+  "mapping_disagreement": {
+    "native_rule_base": 11,
+    "repeat_rendering": 9,
+    "bound_rendering": 11
+  },
+  "costs": [
+    {
+      "method": "M5",
+      "arm": "repeat_rendering",
+      "new_forwards": 220,
+      "input_tokens": 908748,
+      "seconds": 137.76608085632324,
+      "initialization_seconds": 5.287323474884033,
+      "peak_allocated_bytes": 17112306176,
+      "new_generations": 0,
+      "reused_fallback_forwards": 4
+    },
+    {
+      "method": "M5",
+      "arm": "bound_rendering",
+      "new_forwards": 220,
+      "input_tokens": 907050,
+      "seconds": 138.1472201347351,
+      "initialization_seconds": 5.552738666534424,
+      "peak_allocated_bytes": 17112306176,
+      "new_generations": 0,
+      "reused_fallback_forwards": 4
+    }
+  ],
+  "limitation": "Posthoc exposed-development decision-only trial. Primary contrast is anonymous-reference second copy versus original-name second copy under the same literal table. The contrast does not isolate the effect of adding a table. Original complete input preserved. No new generation or confirmation."
+}

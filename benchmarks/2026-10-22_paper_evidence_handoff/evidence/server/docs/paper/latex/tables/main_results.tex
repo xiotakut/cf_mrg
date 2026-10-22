@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Full-v5 results. Each row contains 13,905 inputs, 15,616 scoring mappings, and 6,104
+non-reference native units. ALL is the mean of native-unit scores. Unavailable inputs
+remain in the denominators.}
+\label{tab:main_results}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Config. & Arm & ALL (\%) & \shortstack{Correct\\inputs} & \shortstack{Unavailable\\inputs} \\
+\midrule
+M4 Llama & C0 & 48.1990 & 7,441 & 0 \\
+M4 Llama & B & 58.2924 & 8,924 & 51 \\
+M4 Llama & C2 & 55.9939 & 8,554 & 51 \\
+M4 Llama & C3 & 56.4815 & 8,649 & 51 \\
+M4 Llama & C4 & 58.3219 & 8,951 & 157 \\
+M4 Llama & C5 & 56.7295 & 8,660 & 51 \\
+\addlinespace
+M5 Qwen & C0 & 47.3487 & 6,913 & 0 \\
+M5 Qwen & B & 59.3616 & 8,971 & 22 \\
+M5 Qwen & C2 & 59.3562 & 8,843 & 22 \\
+M5 Qwen & C3 & 60.2889 & 9,060 & 22 \\
+M5 Qwen & C4 & 59.6723 & 8,878 & 86 \\
+M5 Qwen & C5 & 58.9690 & 8,739 & 22 \\
+\bottomrule
+\end{tabular}
+\end{table}

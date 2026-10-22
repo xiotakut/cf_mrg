@@ -1,0 +1,118 @@
+{
+  "results": [
+    {
+      "method": "M3",
+      "variant": "system",
+      "n": 40,
+      "correct": 12,
+      "macro_recall": 0.2270408163265306,
+      "original_correct": 1,
+      "control_correct": 10,
+      "repairs": 2,
+      "harms": 0,
+      "fallbacks": 0
+    },
+    {
+      "method": "M3",
+      "variant": "system_no_history",
+      "n": 40,
+      "correct": 9,
+      "macro_recall": 0.18112244897959182,
+      "original_correct": 1,
+      "control_correct": 10,
+      "repairs": 3,
+      "harms": 4,
+      "fallbacks": 0
+    },
+    {
+      "method": "M5",
+      "variant": "system",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.28061224489795916,
+      "original_correct": 9,
+      "control_correct": 19,
+      "repairs": 0,
+      "harms": 1,
+      "fallbacks": 0
+    },
+    {
+      "method": "M7",
+      "variant": "system",
+      "n": 40,
+      "correct": 17,
+      "macro_recall": 0.3392857142857143,
+      "original_correct": 13,
+      "control_correct": 20,
+      "repairs": 0,
+      "harms": 3,
+      "fallbacks": 0
+    },
+    {
+      "method": "M7",
+      "variant": "system_no_history",
+      "n": 40,
+      "correct": 19,
+      "macro_recall": 0.39285714285714285,
+      "original_correct": 13,
+      "control_correct": 20,
+      "repairs": 3,
+      "harms": 4,
+      "fallbacks": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M3",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 187351,
+      "output_tokens": 539,
+      "length_stops": 0
+    },
+    {
+      "method": "M3",
+      "variant": "system_no_history",
+      "calls": 40,
+      "input_tokens": 102312,
+      "output_tokens": 494,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 98082,
+      "output_tokens": 598,
+      "length_stops": 0
+    },
+    {
+      "method": "M7",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 194085,
+      "output_tokens": 483,
+      "length_stops": 0
+    },
+    {
+      "method": "M7",
+      "variant": "system_no_history",
+      "calls": 40,
+      "input_tokens": 172370,
+      "output_tokens": 483,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 3056964,
+    "started_at": 1789425282.3109138,
+    "total": 200,
+    "initialization_seconds": 70.07800936698914,
+    "completed": 200,
+    "elapsed_seconds": 307.9289152622223,
+    "last_batch_seconds": 5.185664176940918,
+    "completed_at": 1789425590.2400143
+  }
+}

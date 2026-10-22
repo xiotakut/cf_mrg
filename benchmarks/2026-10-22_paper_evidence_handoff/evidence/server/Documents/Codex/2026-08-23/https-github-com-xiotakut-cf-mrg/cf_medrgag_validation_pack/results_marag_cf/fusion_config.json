@@ -1,0 +1,161 @@
+{
+  "cpg_score": "unchanged cpg_core; structurally inapplicable edits are neutral",
+  "entropy_temperature": 0.05000032401354733,
+  "invalid_policy": "core runtime or numeric failure is invalid; never replace with base prediction",
+  "marag": {
+    "calibration_variants": [
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.0
+      },
+      {
+        "calibration_accuracy": 0.7933333333333333,
+        "regularization": 0.01
+      },
+      {
+        "calibration_accuracy": 0.7866666666666666,
+        "regularization": 0.1
+      },
+      {
+        "calibration_accuracy": 0.7933333333333333,
+        "regularization": 1.0
+      }
+    ],
+    "feature_names": [
+      "marag_vote",
+      "marag_entropy_vote",
+      "profile",
+      "cpg",
+      "vote_x_consensus",
+      "entropy_x_rounds",
+      "profile_x_agreement",
+      "profile_x_margin",
+      "cpg_x_available"
+    ],
+    "regularization": 0.0,
+    "weights": [
+      -0.1334486659331649,
+      0.5423353574064129,
+      0.9911390521061177,
+      0.22222075980345513,
+      -0.15906834752331867,
+      0.14994858048530094,
+      -0.24280728166985632,
+      0.11651717411666612,
+      0.22222004144942878
+    ]
+  },
+  "marag_without_base": {
+    "calibration_variants": [
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.0
+      },
+      {
+        "calibration_accuracy": 0.8066666666666666,
+        "regularization": 0.01
+      },
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.1
+      },
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 1.0
+      }
+    ],
+    "feature_names": [
+      "profile",
+      "cpg",
+      "profile_x_margin",
+      "cpg_x_available"
+    ],
+    "regularization": 0.0,
+    "weights": [
+      0.9614279940052721,
+      0.212275175203746,
+      0.12434213525392894,
+      0.212275175203746
+    ]
+  },
+  "medrgag": {
+    "calibration_variants": [
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.0
+      },
+      {
+        "calibration_accuracy": 0.8066666666666666,
+        "regularization": 0.01
+      },
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.1
+      },
+      {
+        "calibration_accuracy": 0.7933333333333333,
+        "regularization": 1.0
+      }
+    ],
+    "feature_names": [
+      "medrgag",
+      "profile",
+      "cpg",
+      "medrgag_x_margin",
+      "profile_x_agreement",
+      "profile_x_margin",
+      "cpg_x_available"
+    ],
+    "regularization": 0.0,
+    "weights": [
+      0.19808474296192882,
+      1.1429915827228192,
+      0.2087048145165198,
+      -0.0340066208944586,
+      -0.4940511110934781,
+      0.1500906086277113,
+      0.20870484611260143
+    ]
+  },
+  "medrgag_without_base": {
+    "calibration_variants": [
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.0
+      },
+      {
+        "calibration_accuracy": 0.8066666666666666,
+        "regularization": 0.01
+      },
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 0.1
+      },
+      {
+        "calibration_accuracy": 0.8133333333333334,
+        "regularization": 1.0
+      }
+    ],
+    "feature_names": [
+      "profile",
+      "cpg",
+      "profile_x_margin",
+      "cpg_x_available"
+    ],
+    "regularization": 0.0,
+    "weights": [
+      0.9594509070687067,
+      0.21276216156741132,
+      0.12531013674925998,
+      0.21276216156741132
+    ]
+  },
+  "profile_score": "unchanged profile_no_document (weight=2.0)",
+  "regularization_candidates": [
+    0.0,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "status": "frozen_before_fresh_test_selection"
+}

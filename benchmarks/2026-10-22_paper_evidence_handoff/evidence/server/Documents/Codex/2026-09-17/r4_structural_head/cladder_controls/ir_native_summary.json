@@ -1,0 +1,118 @@
+{
+  "status": "complete",
+  "stage": "ir_native",
+  "results": [
+    {
+      "method": "M4",
+      "fixed_selection_n": 80,
+      "comparison_n": 37,
+      "scope": "method_specific_executed_binary_subset_of_fixed80",
+      "scores": {
+        "ir_native": {
+          "n": 37,
+          "correct": 21,
+          "invalid": 0
+        },
+        "redo": {
+          "n": 37,
+          "correct": 23,
+          "invalid": 0
+        },
+        "compiled_model": {
+          "n": 37,
+          "correct": 29,
+          "invalid": 0
+        },
+        "head": {
+          "n": 37,
+          "correct": 30,
+          "invalid": 0
+        }
+      },
+      "control_vs_redo": {
+        "repairs": 8,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "head_vs_control": {
+        "repairs": 11,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "same_ir_status_n": 37,
+      "same_ir_status_correct": 24,
+      "source_accuracy_n": 37,
+      "source_correct": 21,
+      "excluded_n": 43
+    },
+    {
+      "method": "M5",
+      "fixed_selection_n": 80,
+      "comparison_n": 48,
+      "scope": "method_specific_executed_binary_subset_of_fixed80",
+      "scores": {
+        "ir_native": {
+          "n": 48,
+          "correct": 37,
+          "invalid": 0
+        },
+        "redo": {
+          "n": 48,
+          "correct": 40,
+          "invalid": 0
+        },
+        "compiled_model": {
+          "n": 48,
+          "correct": 38,
+          "invalid": 0
+        },
+        "head": {
+          "n": 48,
+          "correct": 37,
+          "invalid": 0
+        }
+      },
+      "control_vs_redo": {
+        "repairs": 3,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "head_vs_control": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "same_ir_status_n": 48,
+      "same_ir_status_correct": 48,
+      "source_accuracy_n": 48,
+      "source_correct": 37,
+      "excluded_n": 32
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 37,
+      "reused_validation_scores": 111,
+      "input_tokens": 9117,
+      "output_tokens": 6199,
+      "length_stops": 0,
+      "worker_seconds": 83.20958065986633,
+      "initialization_seconds": 16.673462867736816,
+      "previous_initialization_seconds": 0
+    },
+    {
+      "method": "M5",
+      "new_calls": 48,
+      "reused_validation_scores": 144,
+      "input_tokens": 10547,
+      "output_tokens": 10665,
+      "length_stops": 0,
+      "worker_seconds": 114.43755006790161,
+      "initialization_seconds": 17.172441720962524,
+      "previous_initialization_seconds": 0
+    }
+  ],
+  "new_calls": 85,
+  "scope": "Additional controls; original frozen validation results are reused and not replaced."
+}

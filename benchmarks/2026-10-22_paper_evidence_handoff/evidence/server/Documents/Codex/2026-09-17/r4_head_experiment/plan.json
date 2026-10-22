@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "at": "2026-09-17 16:53:24 +0800",
+  "hypothesis": "Can one explicit intervention/mechanism/outcome/polarity instruction improve on a matched ordinary redo?",
+  "arms": [
+    "redo",
+    "consequence"
+  ],
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "planned_new_calls": 104,
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 26,
+      "planned_calls": 52,
+      "original_score_parity": 13,
+      "max_prompt_tokens": 3508
+    },
+    {
+      "method": "M5",
+      "cases": 26,
+      "planned_calls": 52,
+      "original_score_parity": 13,
+      "max_prompt_tokens": 3411
+    }
+  ],
+  "clinical_scope": "13 already-exposed author-generated HIV scenarios; frozen author-answer agreement, not clinical truth.",
+  "polarity_probe": "13 manually reviewed opposite-outcome questions using identical cases, interventions and retrieved context; answer-opposition consistency is diagnostic, not independent validation. Formal reversed author labels are not new clinical gold.",
+  "controls": "Fresh one-call redo and consequence; no previous assistant answer; same original model, full context, schema, seed42, temperature0.7, max2048, paired batch4. M4 retains guided JSON; M5 retains original unconstrained decoding.",
+  "inference": "Only original messages, current question and native options. No R labels, gold, author explanations or newly audited NIH/DailyMed content.",
+  "simple_controls": "Original scores plus constant yes8/13 and no5/13; constants have0/13 polarity-opposed pairs.",
+  "selection": "One common prompt, no per-item or per-backbone selection. Review all repairs/harms and source conflicts before any expansion. Useful bounded improvements need no90% threshold or reduced method gap.",
+  "runner": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+  "finished_at": "2026-09-17 16:59:59 +0800",
+  "completed_new_calls": 104,
+  "exact_request_replays": 52
+}

@@ -1,0 +1,43 @@
+{
+  "started": "2026-09-18 09:26:52 +0800",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 2,
+      "pid": 2546154,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice/probe.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "2",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_integration"
+      ],
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "gpu": 3,
+      "pid": 2546155,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice/probe.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "3",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_integration"
+      ],
+      "returncode": 0
+    }
+  ],
+  "analysis_returncode": 0,
+  "ended": "2026-09-18 09:28:08 +0800"
+}

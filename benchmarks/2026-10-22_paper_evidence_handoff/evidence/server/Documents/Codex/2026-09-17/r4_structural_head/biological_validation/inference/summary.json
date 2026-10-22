@@ -1,0 +1,124 @@
+{
+  "status": "complete",
+  "new_calls": 576,
+  "results": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 144,
+          "correct": 80,
+          "invalid": 1,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 144,
+          "correct": 91,
+          "invalid": 15,
+          "vs_redo": {
+            "repairs": 29,
+            "harms": 18
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "executed",
+          "n": 144,
+          "correct": 92,
+          "invalid": 15,
+          "vs_redo": {
+            "repairs": 33,
+            "harms": 21
+          },
+          "vs_compiled_model": {
+            "repairs": 9,
+            "harms": 8,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "inconsistent_program_model_answer": 15,
+            "executed": 32,
+            "invalid_program_model_answer": 82,
+            "invalid_program": 15
+          }
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 144,
+          "correct": 117,
+          "invalid": 9,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 144,
+          "correct": 101,
+          "invalid": 10,
+          "vs_redo": {
+            "repairs": 12,
+            "harms": 28
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "executed",
+          "n": 144,
+          "correct": 102,
+          "invalid": 10,
+          "vs_redo": {
+            "repairs": 12,
+            "harms": 27
+          },
+          "vs_compiled_model": {
+            "repairs": 1,
+            "harms": 0,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "executed": 41,
+            "inconsistent_program_model_answer": 8,
+            "invalid_program_model_answer": 85,
+            "invalid_program": 10
+          }
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 288,
+      "input_tokens": 921360,
+      "output_tokens": 188298,
+      "length_stops": 17,
+      "worker_seconds": 2403.0183296203613,
+      "initialization_seconds": 15.561177253723145
+    },
+    {
+      "method": "M5",
+      "calls": 288,
+      "input_tokens": 878624,
+      "output_tokens": 274907,
+      "length_stops": 15,
+      "worker_seconds": 2278.4839708805084,
+      "initialization_seconds": 15.839186668395996
+    }
+  ]
+}

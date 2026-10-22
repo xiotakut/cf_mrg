@@ -1,0 +1,49 @@
+{
+  "status": "prepared_native_inputs_not_launched",
+  "at": "2026-09-18T09:13:25.576544+08:00",
+  "unique_inputs": 48,
+  "evaluation_records": 48,
+  "models": [
+    "M4",
+    "M5"
+  ],
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 48,
+      "original_full_contexts": 32,
+      "baseline_score_parity": 32,
+      "author_full_question_instruction": 16,
+      "schemas_checked": 48,
+      "original_schema_parity": 48,
+      "config_equal_to": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice/m4/config.json",
+      "original_response_null_controls": 16,
+      "generated_requests": 0,
+      "new_model_calls": 0
+    },
+    {
+      "method": "M5",
+      "inputs": 48,
+      "original_full_contexts": 32,
+      "baseline_score_parity": 32,
+      "author_full_question_instruction": 16,
+      "schemas_checked": 48,
+      "original_schema_parity": 48,
+      "config_equal_to": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice/m5/config.json",
+      "original_response_null_controls": 16,
+      "generated_requests": 0,
+      "new_model_calls": 0
+    }
+  ],
+  "cohorts": {
+    "nli_choice_R5_validation": 32,
+    "strong_relevant_change": 16
+  },
+  "source_selection": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation_selection/selection.json",
+  "source_controls": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation_selection/strong_controls.jsonl",
+  "native_contexts": "32 R5 retain original method-specific messages and historical responses; 16 controls retain full author current question/instruction and original system/task suffix, no invented retrieval or historical response.",
+  "schema": "All 48 native schemas retained, including for future discrete-choice use; no choice request created.",
+  "config": "Exact copies of current nli_choice model configs; no outcome-dependent choice.",
+  "status_boundary": "Data prepared only; no direct/reasoned requests, tokenization or new inference; mechanism freeze/launch remains a later decision.",
+  "exposure": "Historically exposed v5/source; new target group/premise for this R5 work, not independent clinical validation."
+}

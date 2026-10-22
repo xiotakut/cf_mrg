@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-09-17T13:57:09.200709+00:00",
+  "status": "frozen_before_simulation",
+  "source_commit": "a6f6777586c860457a2a1e6cce6d0bd3fd33d1cc",
+  "selection_rule": "first two numbered patient IDs in each source age group; fixed before any trajectory",
+  "development_patient_ids": [
+    "adolescent#001",
+    "adolescent#002",
+    "adult#001",
+    "adult#002",
+    "child#001",
+    "child#002"
+  ],
+  "held_out_patient_ids": [
+    "adolescent#003",
+    "adolescent#004",
+    "adolescent#005",
+    "adolescent#006",
+    "adolescent#007",
+    "adolescent#008",
+    "adolescent#009",
+    "adolescent#010",
+    "adult#003",
+    "adult#004",
+    "adult#005",
+    "adult#006",
+    "adult#007",
+    "adult#008",
+    "adult#009",
+    "adult#010",
+    "child#003",
+    "child#004",
+    "child#005",
+    "child#006",
+    "child#007",
+    "child#008",
+    "child#009",
+    "child#010"
+  ],
+  "smoke_patient_id": "adult#001",
+  "patients_to_simulate": 1,
+  "held_out_trajectories_to_generate": 0,
+  "initialization": "author parameter x0 columns 1..13, random_init_bg=False; complete author reset auxiliary state",
+  "seed": 20260917,
+  "t0_minutes": 0,
+  "step_minutes": 1,
+  "horizon_minutes": 120,
+  "readout_minutes": [
+    30,
+    60,
+    120
+  ],
+  "meal_announcement_g": {
+    "0": 30
+  },
+  "factual_insulin": "constant author basal u2ss*BW/6000 U/min",
+  "intervention_insulin": "constant 2 * same basal U/min for [0,120)",
+  "endpoint": "Gsub=state[12]/Vg, mg/dL, at exact stated elapsed minutes; no CGM sensor",
+  "checks": [
+    "factual and intervention share initial full and auxiliary state",
+    "identical action duplicate factual trajectory is identical",
+    "identical CHO announcements and consumed meal amounts",
+    "integrated insulin differs by exactly baseline dose",
+    "solver successful and all states/readouts finite"
+  ],
+  "scope": "CPU smoke only; model-conditioned physiology, not patient counterfactual clinical gold"
+}

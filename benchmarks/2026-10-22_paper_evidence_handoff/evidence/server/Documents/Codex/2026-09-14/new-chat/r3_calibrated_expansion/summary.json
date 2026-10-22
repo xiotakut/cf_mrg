@@ -1,0 +1,1460 @@
+{
+  "status": "complete_exposed_expansion",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "extension552",
+      "variant": "original",
+      "n": 552,
+      "correct": 173,
+      "invalid": 342,
+      "macro_recall": 0.1918555135294827,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 18
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 0
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 22
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 130
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 1
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "order0": {
+          "repairs": 32,
+          "harms": 146
+        },
+        "uncalibrated_majority": {
+          "repairs": 32,
+          "harms": 162
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension552",
+      "variant": "order0",
+      "n": 552,
+      "correct": 287,
+      "invalid": 2,
+      "macro_recall": 0.31674797255406173,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 27
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 84
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 7
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 160
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 6
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 3
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 146,
+          "harms": 32
+        },
+        "order0": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncalibrated_majority": {
+          "repairs": 21,
+          "harms": 37
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension552",
+      "variant": "uncalibrated_majority",
+      "n": 552,
+      "correct": 303,
+      "invalid": 1,
+      "macro_recall": 0.44899454106874614,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 41
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 81
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 160
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 16
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 162,
+          "harms": 32
+        },
+        "order0": {
+          "repairs": 37,
+          "harms": 21
+        },
+        "uncalibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension552",
+      "variant": "calibrated_majority",
+      "n": 552,
+      "correct": 301,
+      "invalid": 8,
+      "macro_recall": 0.47311447676350504,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 42
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 72
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 159
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 22
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 1
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 161,
+          "harms": 33
+        },
+        "order0": {
+          "repairs": 44,
+          "harms": 30
+        },
+        "uncalibrated_majority": {
+          "repairs": 14,
+          "harms": 16
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "development128",
+      "variant": "original",
+      "n": 128,
+      "correct": 30,
+      "invalid": 88,
+      "macro_recall": 0.13321995464852607,
+      "class_results": {
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 22
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 7
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 1
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "order0": {
+          "repairs": 5,
+          "harms": 27
+        },
+        "uncalibrated_majority": {
+          "repairs": 4,
+          "harms": 30
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "development128",
+      "variant": "order0",
+      "n": 128,
+      "correct": 52,
+      "invalid": 1,
+      "macro_recall": 0.26606528392242673,
+      "class_results": {
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 29
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 15
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 1
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 5
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 2
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 27,
+          "harms": 5
+        },
+        "order0": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncalibrated_majority": {
+          "repairs": 4,
+          "harms": 8
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "development128",
+      "variant": "uncalibrated_majority",
+      "n": 128,
+      "correct": 56,
+      "invalid": 0,
+      "macro_recall": 0.3234959484959485,
+      "class_results": {
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 29
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 14
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 5
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 8
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 30,
+          "harms": 4
+        },
+        "order0": {
+          "repairs": 8,
+          "harms": 4
+        },
+        "uncalibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "development128",
+      "variant": "calibrated_majority",
+      "n": 128,
+      "correct": 58,
+      "invalid": 2,
+      "macro_recall": 0.37105394605394604,
+      "class_results": {
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 29
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 1
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 15
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 7
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 6
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 33,
+          "harms": 5
+        },
+        "order0": {
+          "repairs": 11,
+          "harms": 5
+        },
+        "uncalibrated_majority": {
+          "repairs": 4,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all680",
+      "variant": "original",
+      "n": 680,
+      "correct": 203,
+      "invalid": 430,
+      "macro_recall": 0.18292948615760668,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 25
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 0
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 23
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 152
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 1
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "order0": {
+          "repairs": 37,
+          "harms": 173
+        },
+        "uncalibrated_majority": {
+          "repairs": 36,
+          "harms": 192
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all680",
+      "variant": "order0",
+      "n": 680,
+      "correct": 339,
+      "invalid": 3,
+      "macro_recall": 0.30772721415578697,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 32
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 99
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 9
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 189
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 7
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 3
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 173,
+          "harms": 37
+        },
+        "order0": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncalibrated_majority": {
+          "repairs": 25,
+          "harms": 45
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all680",
+      "variant": "uncalibrated_majority",
+      "n": 680,
+      "correct": 359,
+      "invalid": 1,
+      "macro_recall": 0.44065812378003877,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 49
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 95
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 189
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 21
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 192,
+          "harms": 36
+        },
+        "order0": {
+          "repairs": 45,
+          "harms": 25
+        },
+        "uncalibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all680",
+      "variant": "calibrated_majority",
+      "n": 680,
+      "correct": 359,
+      "invalid": 10,
+      "macro_recall": 0.46759931130416515,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 48
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 87
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 188
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 29
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 2
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 194,
+          "harms": 38
+        },
+        "order0": {
+          "repairs": 55,
+          "harms": 35
+        },
+        "uncalibrated_majority": {
+          "repairs": 18,
+          "harms": 18
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension552",
+      "variant": "original",
+      "n": 552,
+      "correct": 136,
+      "invalid": 389,
+      "macro_recall": 0.14817635970989526,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 4
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 0
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 3
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 124
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 3
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "order0": {
+          "repairs": 5,
+          "harms": 187
+        },
+        "uncalibrated_majority": {
+          "repairs": 13,
+          "harms": 206
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension552",
+      "variant": "order0",
+      "n": 552,
+      "correct": 318,
+      "invalid": 0,
+      "macro_recall": 0.39778113778310387,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 43
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 91
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 5
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 164
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 10
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 187,
+          "harms": 5
+        },
+        "order0": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncalibrated_majority": {
+          "repairs": 23,
+          "harms": 34
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension552",
+      "variant": "uncalibrated_majority",
+      "n": 552,
+      "correct": 329,
+      "invalid": 0,
+      "macro_recall": 0.445976468668582,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 58
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 93
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 152
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 21
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 206,
+          "harms": 13
+        },
+        "order0": {
+          "repairs": 34,
+          "harms": 23
+        },
+        "uncalibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension552",
+      "variant": "calibrated_majority",
+      "n": 552,
+      "correct": 334,
+      "invalid": 0,
+      "macro_recall": 0.47657139914723323,
+      "class_results": {
+        "Bronchitis": {
+          "n": 150,
+          "correct": 59
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 112,
+          "correct": 95
+        },
+        "Unstable angina": {
+          "n": 54,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 172,
+          "correct": 146
+        },
+        "Spontaneous pneumothorax": {
+          "n": 23,
+          "correct": 21
+        },
+        "Acute dystonic reactions": {
+          "n": 28,
+          "correct": 8
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 6,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 217,
+          "harms": 19
+        },
+        "order0": {
+          "repairs": 47,
+          "harms": 31
+        },
+        "uncalibrated_majority": {
+          "repairs": 17,
+          "harms": 12
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "development128",
+      "variant": "original",
+      "n": 128,
+      "correct": 24,
+      "invalid": 97,
+      "macro_recall": 0.10281385281385282,
+      "class_results": {
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 0
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 21
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 3
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 0
+        },
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "order0": {
+          "repairs": 2,
+          "harms": 42
+        },
+        "uncalibrated_majority": {
+          "repairs": 2,
+          "harms": 51
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "development128",
+      "variant": "order0",
+      "n": 128,
+      "correct": 64,
+      "invalid": 0,
+      "macro_recall": 0.3273115773115773,
+      "class_results": {
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 23
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 29
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 10
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 42,
+          "harms": 2
+        },
+        "order0": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncalibrated_majority": {
+          "repairs": 2,
+          "harms": 11
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "development128",
+      "variant": "uncalibrated_majority",
+      "n": 128,
+      "correct": 73,
+      "invalid": 0,
+      "macro_recall": 0.40352702852702854,
+      "class_results": {
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 22
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 30
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 16
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 51,
+          "harms": 2
+        },
+        "order0": {
+          "repairs": 11,
+          "harms": 2
+        },
+        "uncalibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "development128",
+      "variant": "calibrated_majority",
+      "n": 128,
+      "correct": 76,
+      "invalid": 0,
+      "macro_recall": 0.4591075591075591,
+      "class_results": {
+        "Possible NSTEMI / STEMI": {
+          "n": 26,
+          "correct": 21
+        },
+        "Unstable angina": {
+          "n": 14,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 33,
+          "correct": 31
+        },
+        "Acute dystonic reactions": {
+          "n": 10,
+          "correct": 3
+        },
+        "Bronchitis": {
+          "n": 36,
+          "correct": 15
+        },
+        "Spontaneous pneumothorax": {
+          "n": 8,
+          "correct": 6
+        },
+        "Myocarditis": {
+          "n": 1,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 53,
+          "harms": 1
+        },
+        "order0": {
+          "repairs": 15,
+          "harms": 3
+        },
+        "uncalibrated_majority": {
+          "repairs": 5,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all680",
+      "variant": "original",
+      "n": 680,
+      "correct": 160,
+      "invalid": 486,
+      "macro_recall": 0.14287148026445476,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 7
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 0
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 3
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 145
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 3
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 2
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "order0": {
+          "repairs": 7,
+          "harms": 229
+        },
+        "uncalibrated_majority": {
+          "repairs": 15,
+          "harms": 257
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all680",
+      "variant": "order0",
+      "n": 680,
+      "correct": 382,
+      "invalid": 0,
+      "macro_recall": 0.39034697707480887,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 53
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 114
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 5
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 193
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 12
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 229,
+          "harms": 7
+        },
+        "order0": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncalibrated_majority": {
+          "repairs": 25,
+          "harms": 45
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all680",
+      "variant": "uncalibrated_majority",
+      "n": 680,
+      "correct": 402,
+      "invalid": 0,
+      "macro_recall": 0.4397441501296734,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 74
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 115
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 182
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 26
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 257,
+          "harms": 15
+        },
+        "order0": {
+          "repairs": 45,
+          "harms": 25
+        },
+        "uncalibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all680",
+      "variant": "calibrated_majority",
+      "n": 680,
+      "correct": 410,
+      "invalid": 0,
+      "macro_recall": 0.4735872480892078,
+      "class_results": {
+        "Bronchitis": {
+          "n": 186,
+          "correct": 74
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 138,
+          "correct": 116
+        },
+        "Unstable angina": {
+          "n": 68,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 205,
+          "correct": 177
+        },
+        "Spontaneous pneumothorax": {
+          "n": 31,
+          "correct": 27
+        },
+        "Acute dystonic reactions": {
+          "n": 38,
+          "correct": 11
+        },
+        "Guillain-Barré syndrome": {
+          "n": 5,
+          "correct": 5
+        },
+        "Myocarditis": {
+          "n": 7,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        }
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 270,
+          "harms": 20
+        },
+        "order0": {
+          "repairs": 62,
+          "harms": 34
+        },
+        "uncalibrated_majority": {
+          "repairs": 22,
+          "harms": 14
+        }
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 3312,
+      "input_tokens": 9808956,
+      "output_tokens": 3312,
+      "runtime": {
+        "status": "complete",
+        "method": "M4",
+        "gpu": 3,
+        "pid": 3372312,
+        "started_at": 1789444962.3544922,
+        "completed_calls": 3312,
+        "initialization_seconds": 52.95182657241821,
+        "elapsed_seconds": 581.5577511787415,
+        "distributions": 3312,
+        "missing_code_calls": 0
+      }
+    },
+    {
+      "method": "M5",
+      "calls": 3312,
+      "input_tokens": 8896350,
+      "output_tokens": 3312,
+      "runtime": {
+        "status": "complete",
+        "method": "M5",
+        "gpu": 3,
+        "pid": 3375663,
+        "started_at": 1789445553.2910018,
+        "completed_calls": 3312,
+        "initialization_seconds": 69.04355955123901,
+        "elapsed_seconds": 586.6077108383179,
+        "distributions": 3312,
+        "missing_code_calls": 0
+      }
+    }
+  ],
+  "new_calls": 6624,
+  "reused_development_scoring_calls": 1536,
+  "reused_prior_calls": 36,
+  "scope": "All680 exposed diagnosis targets per method, not independent generalization. No new original-pipeline calls.",
+  "runtime": {
+    "status": "complete",
+    "pid": 3372310,
+    "gpu": 3,
+    "started_at": 1789444954.3968549,
+    "finished": [
+      "M4",
+      "M5"
+    ],
+    "method": "M5",
+    "elapsed_seconds": 1187.175143480301,
+    "child_pid": 3375663
+  }
+}

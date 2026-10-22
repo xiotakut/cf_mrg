@@ -1,0 +1,46 @@
+{
+  "status": "prepared_not_run",
+  "at": "2026-09-18 00:58:43 +0800",
+  "arms": [
+    "old_scope",
+    "all_documents"
+  ],
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 48,
+      "planned_new_calls": 96,
+      "old_prompt_parity": 48,
+      "adjacent_alternating_pairs": 48,
+      "unchanged_config": true,
+      "max_prompt_tokens": 7365
+    },
+    {
+      "method": "M5",
+      "inputs": 48,
+      "planned_new_calls": 96,
+      "old_prompt_parity": 48,
+      "adjacent_alternating_pairs": 48,
+      "unchanged_config": true,
+      "max_prompt_tokens": 7217
+    }
+  ],
+  "units": 8,
+  "inputs": 48,
+  "evaluation_records": 48,
+  "planned_new_calls": 192,
+  "planned_calls_per_method": 96,
+  "planned_calls_per_arm": 96,
+  "planned_exact_request_callbacks": 192,
+  "parent_package": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head",
+  "runner": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+  "hypothesis": "Clarify that all supplied D documents must be checked independently of main-question relevance.",
+  "revision": {
+    "before": "Check D-numbered documents against the current question, corroborating material, and medical knowledge; do not infer truth from repeated wording or an assigned label. A false detail unrelated to the main question does not reverse an otherwise supported main answer.",
+    "after": "Check every supplied D-numbered document for factual errors using corroborating material and medical knowledge, and report errors even when they are unrelated to the main question; do not infer truth from repeated wording or an assigned label. Decide the main answer from relevant, factually supported information, without letting an unrelated error overturn it."
+  },
+  "scope": "All frozen pilot M22 inputs; exposed v5 development; no correctness-based selection.",
+  "controls": "Both arms newly generated on both original backbones; full original messages/schema/decoding retained; adjacent item pairs with alternating arm order.",
+  "reporting": "Eight units: reference/variant/both/valid-invariance; 48 records: repairs/harms; independent document detection valid/exact/TP/FP/FN; token/time costs.",
+  "limits": "Document-ID detection does not score correction-text meaning. Same questions and noisy variants are not independent clinical cases. No further prompt search."
+}

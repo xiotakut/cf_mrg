@@ -1,0 +1,346 @@
+{
+  "status": "complete_development",
+  "method": "M5",
+  "results": [
+    {
+      "variant": "order0",
+      "n": 88,
+      "correct": 44,
+      "macro_recall": 0.40142021720969095,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 8
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 18
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 16
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 2
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "vs_v1": {
+        "repairs": 11,
+        "harms": 12
+      }
+    },
+    {
+      "variant": "order1",
+      "n": 88,
+      "correct": 56,
+      "macro_recall": 0.5847953216374269,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 3
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 14
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 17
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 18
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 4
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 13,
+        "harms": 1
+      },
+      "vs_v1": {
+        "repairs": 15,
+        "harms": 4
+      }
+    },
+    {
+      "variant": "order2",
+      "n": 88,
+      "correct": 50,
+      "macro_recall": 0.5511695906432749,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 2
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 14
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 13
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 15
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 6
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 13,
+        "harms": 7
+      },
+      "vs_v1": {
+        "repairs": 13,
+        "harms": 8
+      }
+    },
+    {
+      "variant": "order3",
+      "n": 88,
+      "correct": 53,
+      "macro_recall": 0.5500208855472014,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 4
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 17
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 15
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 14
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 3
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 15,
+        "harms": 6
+      },
+      "vs_v1": {
+        "repairs": 15,
+        "harms": 7
+      }
+    },
+    {
+      "variant": "order4",
+      "n": 88,
+      "correct": 29,
+      "macro_recall": 0.29239766081871343,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 0
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 17
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 10
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 2
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 2,
+        "harms": 17
+      },
+      "vs_v1": {
+        "repairs": 9,
+        "harms": 25
+      }
+    },
+    {
+      "variant": "order5",
+      "n": 88,
+      "correct": 37,
+      "macro_recall": 0.3259189640768588,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 13
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 10
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 12
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 2
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 9,
+        "harms": 16
+      },
+      "vs_v1": {
+        "repairs": 4,
+        "harms": 12
+      }
+    },
+    {
+      "variant": "mean_probability",
+      "n": 88,
+      "correct": 52,
+      "macro_recall": 0.47368421052631576,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 14
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 18
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 17
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 3
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 8,
+        "harms": 0
+      },
+      "vs_v1": {
+        "repairs": 12,
+        "harms": 5
+      }
+    },
+    {
+      "variant": "majority_vote",
+      "n": 88,
+      "correct": 52,
+      "macro_recall": 0.47368421052631576,
+      "class_results": {
+        "Acute dystonic reactions": {
+          "n": 6,
+          "correct": 0
+        },
+        "Bronchitis": {
+          "n": 28,
+          "correct": 14
+        },
+        "Possible NSTEMI / STEMI": {
+          "n": 19,
+          "correct": 18
+        },
+        "Pulmonary embolism": {
+          "n": 19,
+          "correct": 17
+        },
+        "Spontaneous pneumothorax": {
+          "n": 6,
+          "correct": 3
+        },
+        "Unstable angina": {
+          "n": 10,
+          "correct": 0
+        }
+      },
+      "vs_order0": {
+        "repairs": 8,
+        "harms": 0
+      },
+      "vs_v1": {
+        "repairs": 12,
+        "harms": 5
+      }
+    }
+  ],
+  "costs": {
+    "calls": 528,
+    "input_tokens": 1419576,
+    "output_tokens": 528
+  },
+  "original_correct": 15,
+  "v1_correct": 45,
+  "changed_by_permutation": 63,
+  "runtime": {
+    "status": "complete",
+    "method": "M5",
+    "gpu": 3,
+    "pid": 3094555,
+    "started_at": 1789427439.012656,
+    "completed_calls": 528,
+    "initialization_seconds": 16.001434564590454,
+    "elapsed_seconds": 139.33871507644653,
+    "distributions": 528,
+    "missing_code_calls": 0
+  }
+}

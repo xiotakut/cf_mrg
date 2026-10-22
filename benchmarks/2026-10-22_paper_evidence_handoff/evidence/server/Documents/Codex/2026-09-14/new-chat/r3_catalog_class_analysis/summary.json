@@ -1,0 +1,347 @@
+{
+  "scope_counts": {
+    "scout40": {
+      "bronchitis": 8,
+      "acute dystonic reactions": 4,
+      "pulmonary embolism": 14,
+      "unstable angina": 4,
+      "possible nstemi / stemi": 7,
+      "spontaneous pneumothorax": 2,
+      "myocarditis": 1
+    },
+    "development128": {
+      "bronchitis": 36,
+      "acute dystonic reactions": 10,
+      "pulmonary embolism": 33,
+      "possible nstemi / stemi": 26,
+      "unstable angina": 14,
+      "spontaneous pneumothorax": 8,
+      "myocarditis": 1
+    },
+    "all680": {
+      "bronchitis": 186,
+      "pulmonary embolism": 205,
+      "acute dystonic reactions": 38,
+      "unstable angina": 68,
+      "possible nstemi / stemi": 138,
+      "spontaneous pneumothorax": 31,
+      "myocarditis": 7,
+      "atrial fibrillation": 2,
+      "guillain-barré syndrome": 5
+    }
+  },
+  "metrics": [
+    {
+      "scope": "development128",
+      "method": "M4",
+      "variant": "baseline",
+      "n": 128,
+      "correct": 30,
+      "micro": 0.234375,
+      "macro_recall": 0.13321995464852607,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M4",
+      "variant": "code_direct",
+      "n": 128,
+      "correct": 53,
+      "micro": 0.4140625,
+      "macro_recall": 0.3291331684188827,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M4",
+      "variant": "code_reasoned",
+      "n": 128,
+      "correct": 63,
+      "micro": 0.4921875,
+      "macro_recall": 0.3622072372072372,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M4",
+      "variant": "name_direct",
+      "n": 128,
+      "correct": 48,
+      "micro": 0.375,
+      "macro_recall": 0.2533973962545391,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M4",
+      "variant": "name_reasoned",
+      "n": 128,
+      "correct": 53,
+      "micro": 0.4140625,
+      "macro_recall": 0.3027825349253921,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M5",
+      "variant": "baseline",
+      "n": 128,
+      "correct": 24,
+      "micro": 0.1875,
+      "macro_recall": 0.10281385281385282,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M5",
+      "variant": "code_direct",
+      "n": 128,
+      "correct": 73,
+      "micro": 0.5703125,
+      "macro_recall": 0.39269064269064263,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M5",
+      "variant": "code_reasoned",
+      "n": 128,
+      "correct": 66,
+      "micro": 0.515625,
+      "macro_recall": 0.39180541680541675,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M5",
+      "variant": "name_direct",
+      "n": 128,
+      "correct": 62,
+      "micro": 0.484375,
+      "macro_recall": 0.3335200513771942,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "development128",
+      "method": "M5",
+      "variant": "name_reasoned",
+      "n": 128,
+      "correct": 62,
+      "micro": 0.484375,
+      "macro_recall": 0.3345547309833024,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M0",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 6,
+      "micro": 0.15,
+      "macro_recall": 0.061224489795918366,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M0",
+      "variant": "code",
+      "n": 40,
+      "correct": 17,
+      "micro": 0.425,
+      "macro_recall": 0.2857142857142857,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M0",
+      "variant": "name",
+      "n": 40,
+      "correct": 19,
+      "micro": 0.475,
+      "macro_recall": 0.30357142857142855,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M2",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 10,
+      "micro": 0.25,
+      "macro_recall": 0.10204081632653061,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M2",
+      "variant": "code",
+      "n": 40,
+      "correct": 25,
+      "micro": 0.625,
+      "macro_recall": 0.4362244897959184,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M2",
+      "variant": "name",
+      "n": 40,
+      "correct": 23,
+      "micro": 0.575,
+      "macro_recall": 0.38010204081632654,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M3",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 1,
+      "micro": 0.025,
+      "macro_recall": 0.01020408163265306,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M3",
+      "variant": "code",
+      "n": 40,
+      "correct": 9,
+      "micro": 0.225,
+      "macro_recall": 0.1913265306122449,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M3",
+      "variant": "name",
+      "n": 40,
+      "correct": 9,
+      "micro": 0.225,
+      "macro_recall": 0.18622448979591838,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M4",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 12,
+      "micro": 0.3,
+      "macro_recall": 0.13010204081632654,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M4",
+      "variant": "code",
+      "n": 40,
+      "correct": 21,
+      "micro": 0.525,
+      "macro_recall": 0.36989795918367346,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M4",
+      "variant": "name",
+      "n": 40,
+      "correct": 18,
+      "micro": 0.45,
+      "macro_recall": 0.3112244897959184,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M5",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 9,
+      "micro": 0.225,
+      "macro_recall": 0.09183673469387756,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M5",
+      "variant": "code",
+      "n": 40,
+      "correct": 21,
+      "micro": 0.525,
+      "macro_recall": 0.34183673469387754,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M5",
+      "variant": "name",
+      "n": 40,
+      "correct": 18,
+      "micro": 0.45,
+      "macro_recall": 0.2959183673469387,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M6",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 8,
+      "micro": 0.2,
+      "macro_recall": 0.08163265306122448,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M6",
+      "variant": "code",
+      "n": 40,
+      "correct": 14,
+      "micro": 0.35,
+      "macro_recall": 0.2576530612244898,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M6",
+      "variant": "name",
+      "n": 40,
+      "correct": 16,
+      "micro": 0.4,
+      "macro_recall": 0.32142857142857145,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M7",
+      "variant": "baseline",
+      "n": 40,
+      "correct": 13,
+      "micro": 0.325,
+      "macro_recall": 0.19387755102040818,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M7",
+      "variant": "code",
+      "n": 40,
+      "correct": 18,
+      "micro": 0.45,
+      "macro_recall": 0.3443877551020408,
+      "represented_diagnoses": 7
+    },
+    {
+      "scope": "scout40",
+      "method": "M7",
+      "variant": "name",
+      "n": 40,
+      "correct": 18,
+      "micro": 0.45,
+      "macro_recall": 0.3596938775510204,
+      "represented_diagnoses": 7
+    }
+  ],
+  "new_model_calls": 0,
+  "interpretation": "Macro recall over gold diagnoses represented in this exposed scope only; unchanged native correctness. Gold distribution is offline descriptive analysis, never a candidate filter or inference prior."
+}

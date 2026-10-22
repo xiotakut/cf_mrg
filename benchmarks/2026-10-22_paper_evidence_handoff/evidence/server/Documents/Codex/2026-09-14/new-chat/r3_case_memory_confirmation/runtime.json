@@ -1,0 +1,25 @@
+{
+  "status": "predicted_not_scored",
+  "load_seconds": 2.0028223991394043,
+  "development_parity": 128,
+  "development_parity_seconds": 23.965277194976807,
+  "costs": [
+    {
+      "variant": "case_memory",
+      "inputs": 552,
+      "seconds": 5.239329099655151
+    },
+    {
+      "variant": "control_only",
+      "inputs": 552,
+      "seconds": 2.843599319458008
+    },
+    {
+      "variant": "random_one_endpoint",
+      "inputs": 552,
+      "seconds": 4.138366222381592
+    }
+  ],
+  "total_seconds": 38.23912334442139,
+  "new_llm_calls": 0
+}

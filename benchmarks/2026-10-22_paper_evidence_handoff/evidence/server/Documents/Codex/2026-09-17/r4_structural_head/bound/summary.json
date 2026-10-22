@@ -1,0 +1,122 @@
+{
+  "status": "complete",
+  "new_calls": 0,
+  "results": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 24,
+          "correct": 20,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 1,
+            "harms": 2
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "head",
+          "n": 24,
+          "correct": 19,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 4
+          },
+          "vs_compiled_model": {
+            "repairs": 2,
+            "harms": 3,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "invalid_program_model_answer": 7,
+            "executed": 15,
+            "inconsistent_program_model_answer": 2
+          }
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 2
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "head",
+          "n": 24,
+          "correct": 22,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 1
+          },
+          "vs_compiled_model": {
+            "repairs": 3,
+            "harms": 2,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "executed": 24
+          }
+        }
+      ]
+    }
+  ],
+  "reused_generation_calls": 96,
+  "reused_generation_costs": [
+    {
+      "method": "M4",
+      "calls": 48,
+      "input_tokens": 51764,
+      "output_tokens": 8392,
+      "length_stops": 0,
+      "worker_seconds": 58.24829959869385,
+      "initialization_seconds": 16.180939435958862
+    },
+    {
+      "method": "M5",
+      "calls": 48,
+      "input_tokens": 37572,
+      "output_tokens": 9097,
+      "length_stops": 0,
+      "worker_seconds": 74.77512717247009,
+      "initialization_seconds": 16.06856656074524
+    }
+  ],
+  "costs": []
+}

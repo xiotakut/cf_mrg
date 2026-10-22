@@ -1,0 +1,15 @@
+{
+  "variant": "targeted_support_delta_v1",
+  "status": "not_qualified_not_adopted_no_development_extension",
+  "diagnostic_denominator": 6,
+  "audit_unavailable": 6,
+  "qualified_support_proposals": 0,
+  "adjudication_model_calls": 0,
+  "historical_failures_preserved": true,
+  "new_model_calls_for_diagnosis": 0,
+  "native_scoring_calls": 0,
+  "prompt_validator_contract_observation": "Prompt says general knowledge is model_knowledge and visible_source needs an ID, and NONE for unused slots; the converse model_knowledge implies knowledge_evidence NONE is only explicit in validator, not a direct conditional sentence in prompt/schema. Both backbones failed this cross-field convention. This does not establish a backbone-specific reasoning failure.",
+  "target_binding_observation": "Several knowledge conditions discuss a different option/topic than the fixed target; no clinical correctness or causal gain inferred. Do not fix just by ignoring citation error.",
+  "decision": "Preserve original candidate and 4096-era/r5 failures. Do not expand or relabel fallback as expert success. Any further prompt/schema semantic convention revision needs a separately bounded candidate decision; no budget escalation or automatic iteration.",
+  "source_protocol_sha256": "3ab468467561278088e55f74bffb2bba96743a8f13ed2e9ba95efacefc460f88"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-15T04:15:23.474717+08:00",
+  "method": "M5",
+  "n": 40,
+  "scope": "Same 40 exposed diagnosis development inputs; no resampling; no independent validation",
+  "public_resource": "DDXPlus 49 disease names only; identical candidate pool for every scoring variant; no patient examples or labels retrieved",
+  "variants": [
+    "uncorrected",
+    "local_0.5",
+    "local_1",
+    "patient_0.5",
+    "patient_1"
+  ],
+  "formula": "(1+alpha) log P(same candidate code | full) - alpha mean log P(same code | withheld)",
+  "scoring": "One forced code per request, max_tokens=1, logprobs=0. Installed vLLM V1 computes raw logprobs before allowed-token masking.",
+  "max_calls": 640,
+  "model_weights_unchanged": true,
+  "additional_training_cases": false,
+  "eager": true,
+  "limitations": "Generated 3-candidate pool may omit the answer; code likelihoods are not clinical probabilities. Patient-withheld view retains original retrieved documents and candidates.",
+  "source": "https://aclanthology.org/2024.naacl-short.69.pdf"
+}

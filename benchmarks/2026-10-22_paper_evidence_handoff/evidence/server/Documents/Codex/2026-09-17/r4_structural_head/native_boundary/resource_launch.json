@@ -1,0 +1,45 @@
+{
+  "started_at": "2026-09-17 18:45:05.278340+08:00",
+  "mode": "sequential_auxiliary_workers_shared_GPU1",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 1,
+      "free_mib": 61093,
+      "pid": 2127645,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/native_boundary.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:45:05.418857+08:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:48:49.135066+08:00"
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "free_mib": 58465,
+      "pid": 2129990,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/native_boundary.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 18:48:49.222521+08:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:51:39.743637+08:00"
+    }
+  ],
+  "finished_at": "2026-09-17 18:51:39.744211+08:00"
+}

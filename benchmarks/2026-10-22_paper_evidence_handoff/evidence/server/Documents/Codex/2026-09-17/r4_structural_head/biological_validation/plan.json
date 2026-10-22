@@ -1,0 +1,66 @@
+{
+  "protocol": "biological_synchronous_consequences_v1",
+  "frozen_before_generation_utc": "2026-09-17T10:45:58.572334+00:00",
+  "status": "protocol_fixed_before_cohort_or_oracle_generation",
+  "purpose": "Model-conditioned biomedical Boolean network consequences under explicitly adapted synchronous dynamics; not clinical gold or original asynchronous/stochastic reproduction.",
+  "repository": "https://github.com/PhysiBoSS/boolean-models",
+  "commit": "fb904c0fa0dacec92799cb7c1e683d3b1ed79b4f",
+  "source_root": "../sources/biological_models",
+  "horizon": 3,
+  "model_order": [
+    "tnf",
+    "gastric",
+    "prostate"
+  ],
+  "readouts": {
+    "tnf": [
+      "Apoptosis",
+      "NonACD",
+      "Survival"
+    ],
+    "gastric": [
+      "Antisurvival_b1",
+      "Antisurvival_b2",
+      "Antisurvival_b3",
+      "Prosurvival_b1",
+      "Prosurvival_b2",
+      "Prosurvival_b3"
+    ],
+    "prostate": [
+      "Apoptosis",
+      "Metastasis",
+      "Proliferation"
+    ]
+  },
+  "initialization": {
+    "tnf": "Published cfg: ATP=cIAP=1, others=0; two complete states with FADD=0 and FADD=1.",
+    "gastric": "Published cfg: all 83 encoded Boolean nodes=0.",
+    "prostate": "Independent random.Random(20260917); model node names sorted lexicographically; call getrandbits(1) for each node in each of two consecutive full states. This conditions the generic cfg random initialization, including outputs, rather than reproducing the paper WT-specific protocol."
+  },
+  "selection": {
+    "seed": 20260917,
+    "algorithm": "Use a separate random.Random(20260917) stream. Visit model_order then lexicographically sorted readouts. Compute all ancestors at time layers 0,1,2 of target at layer3 under the complete adapted network. Map nodes to original components (AGS encoded groups kept whole); exclude the target component. Draw sample(sorted(pool), min(2,len(pool))) once per readout, sort selected names for emission, and reuse across all source initial states. No oracle or label is available to this selection.",
+    "components_per_readout_max": 2,
+    "values": "Boolean 0/1; multivalued entire component at 0/highest legal level.",
+    "no_resampling": true
+  },
+  "interventions": "Sustained component clamp overrides initial values at step0 and structural updates at steps1,2,3; all nonintervened components obey unchanged synchronous rules.",
+  "tnf_adaptation": "FASL and FADD retain previous state; cIAP next=(cIAP or mcIAP) and not SMAC under published zero perturbation flags. Other nodes use logic. Positive rate magnitudes are omitted.",
+  "gastric_adaptation": "Keep legal threshold encoding b1>=b2>=b3 (or b1>=b2); no independent threshold bit interventions. Verify all full trajectories remain legal.",
+  "visible_input": "Complete unpruned 3-step ancestor cone in time-indexed natural-language iff rules; all step0 boundary states; model scope, synchronous updates, threshold meaning when present and sustained clamp semantics; one final Would... if...? question. No executable Python program, oracle, future values, labels, hidden graph or original article conclusions.",
+  "questions": {
+    "polarities": [
+      "affirmative",
+      "explicit_not"
+    ],
+    "format": "single",
+    "options": {
+      "yes": "yes",
+      "no": "no"
+    },
+    "maximum_inputs": 144
+  },
+  "verification": "Independently parse original bnd in full-network oracle; compare every local cone node at every time slice against full-network baseline and counterfactual traces. Frozen existing head eligibility and literal polarity routing only; no model generation or candidate edits.",
+  "evaluation": "All generated inputs retained; save initial-state noop, full-trajectory noop and target-outcome noop. Score all inputs and paired polarities, report per model and initial state/readout/component grouping. Multiple inputs share three networks and five initial states.",
+  "fixed_candidate": "Existing frozen bound candidate remains unchanged. Candidate inference belongs to parent task after this CPU preparation."
+}

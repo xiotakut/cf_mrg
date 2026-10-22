@@ -1,0 +1,13 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T14:21:29.733686+08:00",
+  "original_method": "Original M5 plus population guideline tables",
+  "inputs": 79,
+  "new_calls": 158,
+  "coverage": 65,
+  "variants": [
+    "coverage_plain",
+    "coverage_condition"
+  ],
+  "note": "Same M5 own draft/evidence, Qwen non-thinking, 2048 cap, seed42 and order-independent grammar. Only age and visible medication task route public evidence: >=65 AGS PDF6-23, <18 full KIDs article, otherwise no added corpus. Both arms get the same evidence; generic/condition prompts stay unchanged. All 79 inputs are freshly generated, even when no extra source is available. No gold, benchmark source rule or paired patient controls retrieval."
+}

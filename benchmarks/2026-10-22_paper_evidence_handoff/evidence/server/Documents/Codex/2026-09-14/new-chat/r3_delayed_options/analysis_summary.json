@@ -1,0 +1,32 @@
+{
+  "status": "complete_offline",
+  "new_model_calls": 0,
+  "methods": [
+    {
+      "method": "M4",
+      "multi_mean_option_f1": {
+        "baseline": 0.7916666666666666,
+        "direct": 0.95,
+        "visible": 0.6666666666666666,
+        "delayed": 0.75
+      },
+      "prompt_max_tokens": 3723,
+      "length_stops": 0,
+      "final_calls": 54
+    },
+    {
+      "method": "M5",
+      "multi_mean_option_f1": {
+        "baseline": 0.6166666666666667,
+        "direct": 0.375,
+        "visible": 0.7416666666666667,
+        "delayed": 0.625
+      },
+      "prompt_max_tokens": 3591,
+      "length_stops": 0,
+      "final_calls": 54
+    }
+  ],
+  "case_records": 20,
+  "scope": "All delayed-correctness changes against baseline/direct/visible plus the two declared illustrative development inputs. Drafts are not independently graded by exact text matching."
+}

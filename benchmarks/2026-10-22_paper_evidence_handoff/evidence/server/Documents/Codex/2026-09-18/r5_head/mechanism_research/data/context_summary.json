@@ -1,0 +1,44 @@
+{
+  "status": "prepared_no_language_model_generation",
+  "completed_at": "2026-09-18T14:28:09.429814+08:00",
+  "unique_inputs": 528,
+  "model_context_rows": 1056,
+  "unique_queries": 336,
+  "formal_cache_query_hits": 0,
+  "new_retrieval_queries": 336,
+  "reused_query_assignments_across_input_views_and_models": 720,
+  "new_language_model_calls": 0,
+  "confirmation_requests_created": 0,
+  "initialization_seconds": 3.9127330309711397,
+  "cache_scan_seconds": 5.742990247905254,
+  "new_retrieval_seconds": 1001.0824654940516,
+  "context_construction_seconds": 15.635049727978185,
+  "total_wall_seconds": 1031.0157222910784,
+  "reranker_peak_allocated_gpu_bytes": 2823010816,
+  "model_checks": [
+    {
+      "method": "M4",
+      "inputs": 528,
+      "native_question_and_evidence_preserved": 528,
+      "native_schema_checked": 528,
+      "original_responses_all_null": true,
+      "prompt_tokens_sum": 2139223,
+      "max_prompt_tokens": 9381,
+      "retrieval_truncated_input_count": 0,
+      "retrieval_truncated_tokens": 0
+    },
+    {
+      "method": "M5",
+      "inputs": 528,
+      "native_question_and_evidence_preserved": 528,
+      "native_schema_checked": 528,
+      "original_responses_all_null": true,
+      "prompt_tokens_sum": 2023787,
+      "max_prompt_tokens": 9487,
+      "retrieval_truncated_input_count": 0,
+      "retrieval_truncated_tokens": 0
+    }
+  ],
+  "schemas": "Visible native answer/error contract for both; accepted formal M4 extra format instructions preserved, formal M5 messages unchanged. Future decoding/candidate strategy not frozen here.",
+  "scope": "All original mandatory evidence retained. Additional native retrieval also applied to new author controls. No old/new model answer or score read."
+}

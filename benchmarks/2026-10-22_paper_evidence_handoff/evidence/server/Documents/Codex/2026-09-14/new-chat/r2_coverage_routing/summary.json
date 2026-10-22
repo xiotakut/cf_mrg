@@ -1,0 +1,120 @@
+{
+  "status": "offline_complete",
+  "new_model_calls": 0,
+  "results": [
+    {
+      "method": "program_if_covered_else_independent_condition",
+      "scope": "all",
+      "n": 79,
+      "correct": 50,
+      "invalid": 6,
+      "repairs": 18,
+      "harms": 1
+    },
+    {
+      "method": "program_if_covered_else_independent_condition",
+      "scope": "none",
+      "n": 66,
+      "correct": 41,
+      "invalid": 5,
+      "repairs": 11,
+      "harms": 1
+    },
+    {
+      "method": "program_if_covered_else_independent_condition",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 1,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "program_if_covered_else_independent_condition",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "program_if_covered_else_independent_condition",
+      "scope": "covered",
+      "n": 55,
+      "correct": 34,
+      "invalid": 6,
+      "repairs": 12,
+      "harms": 1
+    },
+    {
+      "method": "program_if_covered_else_independent_condition",
+      "scope": "uncovered",
+      "n": 24,
+      "correct": 16,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "program_if_covered_else_source_redo",
+      "scope": "all",
+      "n": 79,
+      "correct": 47,
+      "invalid": 6,
+      "repairs": 16,
+      "harms": 2
+    },
+    {
+      "method": "program_if_covered_else_source_redo",
+      "scope": "none",
+      "n": 66,
+      "correct": 38,
+      "invalid": 5,
+      "repairs": 9,
+      "harms": 2
+    },
+    {
+      "method": "program_if_covered_else_source_redo",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 1,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "program_if_covered_else_source_redo",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "program_if_covered_else_source_redo",
+      "scope": "covered",
+      "n": 55,
+      "correct": 34,
+      "invalid": 6,
+      "repairs": 12,
+      "harms": 1
+    },
+    {
+      "method": "program_if_covered_else_source_redo",
+      "scope": "uncovered",
+      "n": 24,
+      "correct": 13,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 1
+    }
+  ],
+  "online_head_calls_if_executed": 79,
+  "online_routes": {
+    "program_facts": 55,
+    "generic_review": 24
+  },
+  "note": "Fixed visible-input coverage predicate; no per-item gold/correctness routing. Every output reused from existing development runs. New online batching and transfer remain unverified. Original M5 fallback inside the program is unchanged."
+}

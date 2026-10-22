@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-09-18 16:53:22 +0800",
+  "status": "planned before any new J score read",
+  "execution_gate": "Both training_summary status complete; first --freeze-heads records hashes for both heads and summaries without reading J. Actual scoring requires unchanged manifest plus unchanged analysis script/plan.",
+  "primary_candidate": "ph",
+  "main_component_control": "h_only",
+  "other_controls": [
+    "native_rule_base",
+    "old_combined_head",
+    "task_scope",
+    "repeat_rendering",
+    "old_direct_vLLM",
+    "constant_positive",
+    "constant_negative"
+  ],
+  "selection": "No J-dependent C, threshold, backbone strategy, refit, or head changes. Fixed learned heads and margin>=0 decision, equivalently ppositive>=.5.",
+  "population": "All original J112 per backbone, old train/dev slices descriptive only. 40 R5 and 16 strong changed-H pairs. No D.",
+  "reports": [
+    "all/train/dev R5 and strong: reference/variant/both correct, valid invariance, correct endpoints and positive/negative breakdown",
+    "candidate repairs/harms/changed decisions plus pair repairs/harms versus each control",
+    "exact current-question duplicate decision agreement as observed, without guaranteeing invariance across bf16 batches",
+    "selected C inherited from author validation only; source/head/features hashes",
+    "decision-only, no native generation or explanation claim; no model call during analysis"
+  ],
+  "controls_scope": "Only P/H versus H-only shares author supervised split/selection; original K/old combined/scope/E are existing systems with different inputs/budgets, not isolated classifier ablations."
+}

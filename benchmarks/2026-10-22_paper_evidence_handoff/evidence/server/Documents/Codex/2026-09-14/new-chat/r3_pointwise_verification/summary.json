@@ -1,0 +1,233 @@
+{
+  "status": "complete_development",
+  "methods": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.40816326530612246,
+          "comparisons": {
+            "compatible": {
+              "repairs": 5,
+              "harms": 2
+            },
+            "list8": {
+              "repairs": 3,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "list8",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "compatible": {
+              "repairs": 2,
+              "harms": 2
+            },
+            "list8": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "compatible",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.3290816326530613,
+          "comparisons": {
+            "compatible": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "list8": {
+              "repairs": 2,
+              "harms": 2
+            },
+            "calibrated": {
+              "repairs": 2,
+              "harms": 5
+            }
+          }
+        },
+        {
+          "variant": "primary",
+          "n": 40,
+          "correct": 19,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "compatible": {
+              "repairs": 2,
+              "harms": 1
+            },
+            "list8": {
+              "repairs": 3,
+              "harms": 2
+            },
+            "calibrated": {
+              "repairs": 3,
+              "harms": 5
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 640,
+        "input_tokens": 1622964,
+        "output_tokens": 640
+      },
+      "diagnostics": {
+        "compatible": {
+          "order_conflicts": 58,
+          "candidate_pairs": 160,
+          "all_negative_cases": 12
+        },
+        "primary": {
+          "order_conflicts": 51,
+          "candidate_pairs": 160,
+          "all_negative_cases": 28
+        }
+      },
+      "runtime": {
+        "status": "complete",
+        "method": "M4",
+        "gpu": 3,
+        "pid": 3259127,
+        "started_at": 1789433730.361995,
+        "completed_calls": 640,
+        "initialization_seconds": 17.07823944091797,
+        "elapsed_seconds": 56.801817655563354,
+        "distributions": 640,
+        "missing_code_calls": 0
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.4744897959183673,
+          "comparisons": {
+            "compatible": {
+              "repairs": 8,
+              "harms": 1
+            },
+            "list8": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "list8",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "compatible": {
+              "repairs": 4,
+              "harms": 1
+            },
+            "list8": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 4
+            }
+          }
+        },
+        {
+          "variant": "compatible",
+          "n": 40,
+          "correct": 17,
+          "macro_recall": 0.26275510204081637,
+          "comparisons": {
+            "compatible": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "list8": {
+              "repairs": 1,
+              "harms": 4
+            },
+            "calibrated": {
+              "repairs": 1,
+              "harms": 8
+            }
+          }
+        },
+        {
+          "variant": "primary",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.375,
+          "comparisons": {
+            "compatible": {
+              "repairs": 4,
+              "harms": 1
+            },
+            "list8": {
+              "repairs": 1,
+              "harms": 1
+            },
+            "calibrated": {
+              "repairs": 1,
+              "harms": 5
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 640,
+        "input_tokens": 1445088,
+        "output_tokens": 640
+      },
+      "diagnostics": {
+        "compatible": {
+          "order_conflicts": 18,
+          "candidate_pairs": 160,
+          "all_negative_cases": 3
+        },
+        "primary": {
+          "order_conflicts": 10,
+          "candidate_pairs": 160,
+          "all_negative_cases": 8
+        }
+      },
+      "runtime": {
+        "status": "complete",
+        "method": "M5",
+        "gpu": 3,
+        "pid": 3260899,
+        "started_at": 1789433795.7160356,
+        "completed_calls": 640,
+        "initialization_seconds": 16.799156427383423,
+        "elapsed_seconds": 63.20907020568848,
+        "distributions": 640,
+        "missing_code_calls": 0
+      }
+    }
+  ]
+}

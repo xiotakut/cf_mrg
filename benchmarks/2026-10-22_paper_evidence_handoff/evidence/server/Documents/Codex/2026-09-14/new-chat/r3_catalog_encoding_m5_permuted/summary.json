@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "variant": "code_direct",
+      "n": 40,
+      "correct": 20,
+      "fallbacks": 0,
+      "repairs": 13,
+      "harms": 2,
+      "vs_name_direct_repairs": 6,
+      "vs_name_direct_harms": 4
+    },
+    {
+      "variant": "code_reasoned",
+      "n": 40,
+      "correct": 24,
+      "fallbacks": 1,
+      "repairs": 15,
+      "harms": 0,
+      "vs_name_direct_repairs": 7,
+      "vs_name_direct_harms": 1
+    }
+  ],
+  "costs": [
+    {
+      "variant": "code_direct",
+      "calls": 40,
+      "input_tokens": 96928,
+      "output_tokens": 335,
+      "length_stops": 0
+    },
+    {
+      "variant": "code_reasoned",
+      "calls": 40,
+      "input_tokens": 97488,
+      "output_tokens": 4979,
+      "length_stops": 1
+    }
+  ],
+  "order_comparison": [
+    {
+      "variant": "code_direct",
+      "n": 40,
+      "answer_changes": 15,
+      "repairs": 3,
+      "harms": 4
+    },
+    {
+      "variant": "code_reasoned",
+      "n": 40,
+      "answer_changes": 11,
+      "repairs": 3,
+      "harms": 1
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 1,
+    "pid": 2948041,
+    "started_at": 1789420137.5370092,
+    "total": 80,
+    "initialization_seconds": 64.24894404411316,
+    "completed": 80,
+    "elapsed_seconds": 98.90614175796509,
+    "last_batch_seconds": 3.4248647689819336,
+    "completed_at": 1789420236.4433253
+  }
+}

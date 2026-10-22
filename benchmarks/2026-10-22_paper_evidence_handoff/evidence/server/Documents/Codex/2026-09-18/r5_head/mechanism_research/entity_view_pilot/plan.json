@@ -1,0 +1,29 @@
+{
+  "status": "planned before any anonymous model scores",
+  "created_at": "2026-09-18T16:06:04.930360+08:00",
+  "scope": "Same112 already-exposed NLI inputs/bone as learned_json_pilot; same train/dev assignments. No confirmation access.",
+  "primary": "Anonymous view alone: mean of two code-mapped semantic probabilities. No training or tuned mixtures.",
+  "secondary": "Equal mean of native RULE and anonymous semantic probabilities; diagnostic only.",
+  "transform": "Extract all valid nonnested paired <el>name<le>/<re>name<er> spans in current hypothesis; strip outer name whitespace, deduplicate casefold; require exactly two unique names and every marker covered. Bind names by casefold lexical order to ENTITY_X, ENTITY_Y. One case-insensitive regex with non-word lookarounds, longest-first alternatives; replace matching original phrases consistently in current question and all original message content. Preserve every other character, all tags, sentence ordering, negation and numbers outside matched entity names. No name legend or role inference.",
+  "fallback": "Malformed/nested marker spans or ambiguous extraction: leave entire input unchanged, reuse native RULE features, retain denominator. Expected s134266/s134267 only; unexpected eligibility outcomes must be reported before launch.",
+  "native_control": "learned_rule_pilot base, sameHFbackend, original fullmessages, explicitRULE, JSON score prefix and two mappings",
+  "model_plan": "Existing learned_features.py; GPU2, serial M4 then M5; only220 changed requests per bone, 4 fallback forwards reused; no new generations.",
+  "comparisons": [
+    "native_rule_base",
+    "old_delivery_combined_head",
+    "old_direct_vLLM",
+    "anonymous_primary",
+    "native_anonymous_equal_diagnostic"
+  ],
+  "metrics": "train/dev and R5/strong: input accuracy, reference/variant, paired both, invariance, positive/negative endpoints, repairs/harms, mapping disagreement; original denominator112/bone",
+  "literature": {
+    "url": "https://aclanthology.org/2022.findings-emnlp.374.pdf",
+    "read": "Sections3.1–3.3 including rule-based and generated counterfactual construction",
+    "use": "Motivates preserving exact named-entity, role, negation and quantity structure; the paper does not validate this anonymization method."
+  },
+  "limitations": [
+    "Reversible string substitution does not guarantee semantic equivalence when marked names encode processes, aliases or quantities. Independent risk audit underway.",
+    "All cases exposed development. No paper novelty or independent generalization claim.",
+    "Classification decision only until candidate survives and full native generation is separately tested."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "started_at": "2026-09-17 19:06:53.211769+08:00",
+  "status": "complete",
+  "steps": [
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "analyze",
+        "--stage",
+        "causal_steps"
+      ],
+      "started_at": "2026-09-17 20:07:26.606837+08:00",
+      "pid": 2170652,
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:07:30.301684+08:00"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "prepare_ir"
+      ],
+      "started_at": "2026-09-17 20:07:30.302052+08:00",
+      "pid": 2170786,
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:07:34.171999+08:00"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "run",
+        "--stage",
+        "ir_native",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 20:07:34.275851+08:00",
+      "pid": 2171045,
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:09:04.208611+08:00"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "run",
+        "--stage",
+        "ir_native",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 20:09:04.208954+08:00",
+      "pid": 2172439,
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:11:05.397024+08:00"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation_controls.py",
+        "analyze",
+        "--stage",
+        "ir_native"
+      ],
+      "started_at": "2026-09-17 20:11:05.397443+08:00",
+      "pid": 2173574,
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:11:09.498800+08:00"
+    }
+  ],
+  "finished_at": "2026-09-17 20:11:09.499163+08:00"
+}

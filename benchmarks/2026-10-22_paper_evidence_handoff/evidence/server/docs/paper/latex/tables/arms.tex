@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Six evaluation arms. C1 and B denote the same adopted operation core.}
+\label{tab:arms}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\linewidth}{@{}lXX@{}}
+\toprule
+Arm & Decision rule & Role in the comparison \\
+\midrule
+C0 & Original MedRAG configuration & Original-system reference \\
+C1 / B & Adopted operation core & Adopted CF-MoA controller \\
+C2 & B plus candidate-only binary verification & Same-pool verification without saved rationales \\
+C3 & B plus rationale-conditioned binary verification & Same-pool verification with saved rationales \\
+C4 & B with old F votes plus three additional answers & Expanded-pool sampling control \\
+C5 & B plus joint selection over the same candidates and rationales & Alternative same-pool selection control \\
+\bottomrule
+\end{tabularx}
+\end{table}

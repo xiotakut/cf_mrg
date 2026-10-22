@@ -1,0 +1,193 @@
+{
+  "status": "complete_development",
+  "methods": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.40816326530612246,
+          "comparisons": {
+            "general": {
+              "repairs": 3,
+              "harms": 0
+            },
+            "uncued": {
+              "repairs": 3,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "uncued",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "general": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "uncued": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "general",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "general": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "uncued": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "discriminative",
+          "n": 40,
+          "correct": 19,
+          "macro_recall": 0.3163265306122449,
+          "comparisons": {
+            "general": {
+              "repairs": 1,
+              "harms": 0
+            },
+            "uncued": {
+              "repairs": 1,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 2
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 380,
+        "selection_calls": 80,
+        "final_calls": 300,
+        "input_tokens": 989796,
+        "output_tokens": 1521,
+        "selector_errors": 5,
+        "selector_length_stops": 0
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.4744897959183673,
+          "comparisons": {
+            "general": {
+              "repairs": 3,
+              "harms": 3
+            },
+            "uncued": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "uncued",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "general": {
+              "repairs": 0,
+              "harms": 4
+            },
+            "uncued": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 4
+            }
+          }
+        },
+        {
+          "variant": "general",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.44642857142857145,
+          "comparisons": {
+            "general": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "uncued": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 3,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "discriminative",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.44387755102040816,
+          "comparisons": {
+            "general": {
+              "repairs": 1,
+              "harms": 1
+            },
+            "uncued": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 3,
+              "harms": 3
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 396,
+        "selection_calls": 80,
+        "final_calls": 316,
+        "input_tokens": 919590,
+        "output_tokens": 1813,
+        "selector_errors": 1,
+        "selector_length_stops": 0
+      }
+    }
+  ]
+}

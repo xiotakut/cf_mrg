@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "form": "original",
+      "n": 0,
+      "same_ir_status_correct": 0,
+      "source_correct": 0,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "form": "reversed",
+      "n": 0,
+      "same_ir_status_correct": 0,
+      "source_correct": 0,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "form": "diagnostic",
+      "n": 12,
+      "same_ir_status_correct": 2,
+      "source_correct": 6,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "form": "original",
+      "n": 0,
+      "same_ir_status_correct": 0,
+      "source_correct": 0,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "form": "reversed",
+      "n": 0,
+      "same_ir_status_correct": 0,
+      "source_correct": 0,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "form": "diagnostic",
+      "n": 0,
+      "same_ir_status_correct": 0,
+      "source_correct": 0,
+      "invalid": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 12,
+      "input_tokens": 3110,
+      "output_tokens": 1920,
+      "worker_seconds": 36.169185161590576,
+      "initialization_seconds": 26.964425802230835,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "worker_seconds": 0,
+      "initialization_seconds": 0,
+      "length_stops": 0
+    }
+  ],
+  "interpretation": "Status match measures execution of compiled IR, not correctness of compilation. Source score applies to this selected valid-program subset only; UNKNOWN/INCONSISTENT do not supply a native binary key."
+}

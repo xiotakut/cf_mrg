@@ -1,0 +1,56 @@
+{
+  "version": "development_candidate_v1",
+  "variant": "repeat_patient",
+  "encoding": "name",
+  "reasoned": {
+    "llama": true,
+    "qwen": false
+  },
+  "generation": {
+    "llama": {
+      "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 384,
+      "gpu_memory_utilization": 0.9,
+      "max_model_len": 16384,
+      "max_num_seqs": 8,
+      "max_num_batched_tokens": 4096,
+      "batch_size": 8,
+      "guided_json": true,
+      "num_shards": 1
+    },
+    "qwen": {
+      "model": "/home/data3/txy/models/Qwen3-8B",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 384,
+      "gpu_memory_utilization": 0.9,
+      "max_model_len": 16384,
+      "max_num_seqs": 8,
+      "max_num_batched_tokens": 4096,
+      "batch_size": 8,
+      "model_kwargs": {
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        }
+      },
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "guided_json": true,
+      "num_shards": 1
+    }
+  },
+  "scope": "R3 diagnosis inputs with caller-supplied public49 DDXPlus names; other formats return the original answer",
+  "selection": "Selected from exposed40 seven-method controls. Not independently validated; no per-method/per-case arm selection.",
+  "replay_requests": 560
+}

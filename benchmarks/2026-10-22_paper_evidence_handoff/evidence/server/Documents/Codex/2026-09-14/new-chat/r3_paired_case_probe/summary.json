@@ -1,0 +1,223 @@
+{
+  "status": "complete_same_pair_control",
+  "pairs": 40,
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "results": [
+    {
+      "method": "M4",
+      "variant": "original",
+      "pairs": 40,
+      "reference_correct": 3,
+      "target_correct": 12,
+      "both_correct": 1,
+      "robust_accuracy": 0.025,
+      "strict_reversion": 0,
+      "strict_btr": 0.0,
+      "other_wrong_given_reference": 1,
+      "invalid_given_reference": 1
+    },
+    {
+      "method": "M4",
+      "variant": "v1",
+      "pairs": 40,
+      "reference_correct": 25,
+      "target_correct": 21,
+      "both_correct": 15,
+      "robust_accuracy": 0.375,
+      "strict_reversion": 3,
+      "strict_btr": 0.12,
+      "other_wrong_given_reference": 6,
+      "invalid_given_reference": 1
+    },
+    {
+      "method": "M4",
+      "variant": "uncalibrated",
+      "pairs": 40,
+      "reference_correct": 27,
+      "target_correct": 18,
+      "both_correct": 17,
+      "robust_accuracy": 0.425,
+      "strict_reversion": 3,
+      "strict_btr": 0.1111111111111111,
+      "other_wrong_given_reference": 7,
+      "invalid_given_reference": 0
+    },
+    {
+      "method": "M4",
+      "variant": "calibrated",
+      "pairs": 40,
+      "reference_correct": 28,
+      "target_correct": 21,
+      "both_correct": 19,
+      "robust_accuracy": 0.475,
+      "strict_reversion": 2,
+      "strict_btr": 0.07142857142857142,
+      "other_wrong_given_reference": 7,
+      "invalid_given_reference": 0
+    },
+    {
+      "method": "M5",
+      "variant": "original",
+      "pairs": 40,
+      "reference_correct": 3,
+      "target_correct": 9,
+      "both_correct": 2,
+      "robust_accuracy": 0.05,
+      "strict_reversion": 0,
+      "strict_btr": 0.0,
+      "other_wrong_given_reference": 0,
+      "invalid_given_reference": 1
+    },
+    {
+      "method": "M5",
+      "variant": "v1",
+      "pairs": 40,
+      "reference_correct": 25,
+      "target_correct": 19,
+      "both_correct": 17,
+      "robust_accuracy": 0.425,
+      "strict_reversion": 1,
+      "strict_btr": 0.04,
+      "other_wrong_given_reference": 7,
+      "invalid_given_reference": 0
+    },
+    {
+      "method": "M5",
+      "variant": "uncalibrated",
+      "pairs": 40,
+      "reference_correct": 26,
+      "target_correct": 21,
+      "both_correct": 18,
+      "robust_accuracy": 0.45,
+      "strict_reversion": 2,
+      "strict_btr": 0.07692307692307693,
+      "other_wrong_given_reference": 6,
+      "invalid_given_reference": 0
+    },
+    {
+      "method": "M5",
+      "variant": "calibrated",
+      "pairs": 40,
+      "reference_correct": 26,
+      "target_correct": 24,
+      "both_correct": 19,
+      "robust_accuracy": 0.475,
+      "strict_reversion": 1,
+      "strict_btr": 0.038461538461538464,
+      "other_wrong_given_reference": 6,
+      "invalid_given_reference": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "method": "M4",
+      "control": "v1",
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "method": "M4",
+      "control": "uncalibrated",
+      "pair_repairs": 2,
+      "pair_harms": 0
+    },
+    {
+      "method": "M5",
+      "control": "v1",
+      "pair_repairs": 4,
+      "pair_harms": 2
+    },
+    {
+      "method": "M5",
+      "control": "uncalibrated",
+      "pair_repairs": 2,
+      "pair_harms": 1
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 280,
+      "full_scoring_calls": 240,
+      "v1_calls": 40,
+      "prior_calls": 0,
+      "input_tokens": 817531,
+      "output_tokens": 5795,
+      "v1_fallbacks": 2
+    },
+    {
+      "method": "M5",
+      "new_calls": 280,
+      "full_scoring_calls": 240,
+      "v1_calls": 40,
+      "prior_calls": 0,
+      "input_tokens": 740070,
+      "output_tokens": 797,
+      "v1_fallbacks": 0
+    }
+  ],
+  "total_new_calls": 560,
+  "new_input_tokens": 1557601,
+  "new_output_tokens": 6592,
+  "failed_stage_new_model_calls": 0,
+  "scope": "Same40 exposed source pairs, independently answered endpoints; not new-patient generalization.",
+  "runtimes": [
+    {
+      "status": "complete",
+      "method": "M4",
+      "gpu": 3,
+      "pid": 3144086,
+      "started_at": 1789428984.0412018,
+      "completed_calls": 240,
+      "initialization_seconds": 27.074470043182373,
+      "elapsed_seconds": 64.34742617607117,
+      "distributions": 240,
+      "missing_code_calls": 0,
+      "stage": "full"
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 3150350,
+      "started_at": 1789429187.8953362,
+      "total": 40,
+      "initialization_seconds": 80.85012102127075,
+      "completed": 40,
+      "elapsed_seconds": 120.04916405677795,
+      "last_batch_seconds": 8.285405397415161,
+      "completed_at": 1789429307.944721,
+      "method": "M4",
+      "stage": "v1"
+    },
+    {
+      "status": "complete",
+      "method": "M5",
+      "gpu": 3,
+      "pid": 3153347,
+      "started_at": 1789429322.6783736,
+      "completed_calls": 240,
+      "initialization_seconds": 20.586912870407104,
+      "elapsed_seconds": 76.7653751373291,
+      "distributions": 240,
+      "missing_code_calls": 0,
+      "stage": "full"
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 3155039,
+      "started_at": 1789429407.5722518,
+      "total": 40,
+      "initialization_seconds": 75.5962483882904,
+      "completed": 40,
+      "elapsed_seconds": 95.79883813858032,
+      "last_batch_seconds": 3.6091387271881104,
+      "completed_at": 1789429503.371264,
+      "method": "M5",
+      "stage": "v1"
+    }
+  ]
+}

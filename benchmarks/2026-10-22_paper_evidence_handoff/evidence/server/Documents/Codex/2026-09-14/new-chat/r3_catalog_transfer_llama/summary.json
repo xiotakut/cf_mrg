@@ -1,0 +1,138 @@
+{
+  "results": [
+    {
+      "method": "M0",
+      "variant": "name",
+      "n": 40,
+      "correct": 19,
+      "baseline_correct": 6,
+      "repairs": 13,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 0,
+      "vs_name_harms": 0
+    },
+    {
+      "method": "M0",
+      "variant": "code",
+      "n": 40,
+      "correct": 17,
+      "baseline_correct": 6,
+      "repairs": 12,
+      "harms": 1,
+      "fallbacks": 0,
+      "vs_name_repairs": 1,
+      "vs_name_harms": 3
+    },
+    {
+      "method": "M2",
+      "variant": "name",
+      "n": 40,
+      "correct": 23,
+      "baseline_correct": 10,
+      "repairs": 13,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 0,
+      "vs_name_harms": 0
+    },
+    {
+      "method": "M2",
+      "variant": "code",
+      "n": 40,
+      "correct": 25,
+      "baseline_correct": 10,
+      "repairs": 15,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 3,
+      "vs_name_harms": 1
+    },
+    {
+      "method": "M6",
+      "variant": "name",
+      "n": 40,
+      "correct": 16,
+      "baseline_correct": 8,
+      "repairs": 9,
+      "harms": 1,
+      "fallbacks": 0,
+      "vs_name_repairs": 0,
+      "vs_name_harms": 0
+    },
+    {
+      "method": "M6",
+      "variant": "code",
+      "n": 40,
+      "correct": 14,
+      "baseline_correct": 8,
+      "repairs": 7,
+      "harms": 1,
+      "fallbacks": 0,
+      "vs_name_repairs": 3,
+      "vs_name_harms": 5
+    }
+  ],
+  "costs": [
+    {
+      "method": "M0",
+      "variant": "name",
+      "calls": 40,
+      "input_tokens": 28402,
+      "output_tokens": 4460,
+      "length_stops": 0
+    },
+    {
+      "method": "M0",
+      "variant": "code",
+      "calls": 40,
+      "input_tokens": 34762,
+      "output_tokens": 4190,
+      "length_stops": 0
+    },
+    {
+      "method": "M2",
+      "variant": "name",
+      "calls": 40,
+      "input_tokens": 63411,
+      "output_tokens": 4345,
+      "length_stops": 0
+    },
+    {
+      "method": "M2",
+      "variant": "code",
+      "calls": 40,
+      "input_tokens": 69771,
+      "output_tokens": 4131,
+      "length_stops": 0
+    },
+    {
+      "method": "M6",
+      "variant": "name",
+      "calls": 40,
+      "input_tokens": 135137,
+      "output_tokens": 4445,
+      "length_stops": 0
+    },
+    {
+      "method": "M6",
+      "variant": "code",
+      "calls": 40,
+      "input_tokens": 141497,
+      "output_tokens": 4207,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 0,
+    "pid": 2961777,
+    "started_at": 1789420677.6889255,
+    "total": 240,
+    "initialization_seconds": 72.40829634666443,
+    "completed": 240,
+    "elapsed_seconds": 344.705037355423,
+    "last_batch_seconds": 10.148468494415283,
+    "completed_at": 1789421022.394127
+  }
+}

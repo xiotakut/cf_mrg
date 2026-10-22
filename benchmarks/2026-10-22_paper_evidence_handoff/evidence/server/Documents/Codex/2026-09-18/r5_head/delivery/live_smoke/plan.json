@@ -1,0 +1,24 @@
+{
+  "selection": "First saved new NLI input and first original relation/robustness_single inputs, by format and saved order only; no correctness selection.",
+  "purpose": "Real sequential callbacks for standalone composed head; operational check, not a quality estimate.",
+  "inputs_per_model": 3,
+  "max_expected_new_calls": 32,
+  "checks": [
+    {
+      "method": "m4",
+      "item_ids": [
+        "M23_control:bionli_choice_relevant_01:negative",
+        "s003494",
+        "s113406"
+      ]
+    },
+    {
+      "method": "m5",
+      "item_ids": [
+        "M23_control:bionli_choice_relevant_01:negative",
+        "s003494",
+        "s113406"
+      ]
+    }
+  ]
+}

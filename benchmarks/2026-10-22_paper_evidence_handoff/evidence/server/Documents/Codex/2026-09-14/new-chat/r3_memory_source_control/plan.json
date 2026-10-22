@@ -1,0 +1,31 @@
+{
+  "status": "predicted_before_scoring",
+  "n": 128,
+  "same_train_cohort": 10115,
+  "subset_rows": {
+    "control_only": 10115,
+    "random_one_endpoint": 10115,
+    "all_endpoints": 20230
+  },
+  "subset_endpoint_counts": {
+    "control_only": {
+      "control": 10115
+    },
+    "random_one_endpoint": {
+      "control": 5099,
+      "trap": 5016
+    },
+    "all_endpoints": {
+      "control": 10115,
+      "trap": 10115
+    }
+  },
+  "subset_train_labels": {
+    "control_only": 45,
+    "random_one_endpoint": 45,
+    "all_endpoints": 46
+  },
+  "shared_idf": "Same previously fitted full train IDF; control-only does not receive trap labels or trap texts as neighbors.",
+  "inference_seconds": 4.910334587097168,
+  "new_llm_calls": 0
+}

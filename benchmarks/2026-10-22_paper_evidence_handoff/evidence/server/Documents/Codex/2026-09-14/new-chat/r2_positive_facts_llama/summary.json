@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "scope": "native",
+      "group": "all",
+      "n": 79,
+      "correct": 39,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "group": "none",
+      "n": 66,
+      "correct": 32,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "group": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "scope": "rule_probe",
+      "group": "all",
+      "n": 96,
+      "correct": 93,
+      "invalid": 3
+    },
+    {
+      "scope": "rule_probe",
+      "group": "none",
+      "n": 48,
+      "correct": 45,
+      "invalid": 3
+    },
+    {
+      "scope": "rule_probe",
+      "group": "remaining",
+      "n": 48,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "scope": "scope_probe",
+      "group": "all",
+      "n": 48,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "scope": "scope_probe",
+      "group": "none",
+      "n": 24,
+      "correct": 24,
+      "invalid": 0
+    },
+    {
+      "scope": "scope_probe",
+      "group": "remaining",
+      "n": 24,
+      "correct": 24,
+      "invalid": 0
+    }
+  ],
+  "costs": {
+    "calls": 71,
+    "input_tokens": 42824,
+    "output_tokens": 14252,
+    "length_stops": 0
+  },
+  "reused_calls": 128,
+  "diagnostics": [
+    {
+      "scope": "native",
+      "parse_errors": 0,
+      "evidence_rejections": 17,
+      "mismatch_fields": {}
+    },
+    {
+      "scope": "rule_probe",
+      "parse_errors": 0,
+      "evidence_rejections": 0,
+      "mismatch_fields": {
+        "syncope": 3,
+        "orthostatic_related_syncope": 14
+      }
+    },
+    {
+      "scope": "scope_probe",
+      "parse_errors": 0,
+      "evidence_rejections": 0,
+      "mismatch_fields": {}
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 2491053,
+    "started_at": 1789378052.5156994,
+    "total": 71,
+    "initialization_seconds": 161.4578309059143,
+    "completed": 71,
+    "elapsed_seconds": 256.14834547042847,
+    "last_batch_seconds": 7.840558290481567,
+    "completed_at": 1789378308.6642127
+  }
+}

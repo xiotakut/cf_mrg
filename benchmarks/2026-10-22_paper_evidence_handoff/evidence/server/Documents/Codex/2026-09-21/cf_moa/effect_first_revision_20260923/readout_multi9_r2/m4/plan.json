@@ -1,0 +1,265 @@
+{
+  "protocol": {
+    "version": "effect_first_readout_multi9_r2",
+    "scope": "All9 legal multi inputs selected by native format, not failures; nine r2 short and five never-run free tasks per backbone; reuse four panel free results",
+    "generation": {
+      "temperature": 0.7,
+      "seed": 42,
+      "diagnostic_max_tokens": 768,
+      "answer_max_tokens": 1024,
+      "repair_max_tokens": 256,
+      "target_max_tokens": 128,
+      "multi_protocol": "add_remove_v2"
+    },
+    "per_task_budget": {
+      "max_model_requests": 3,
+      "max_input_tokens": 600000,
+      "max_output_tokens": 4096,
+      "max_tool_calls": 4
+    },
+    "panel_ids": [
+      "d00000",
+      "d00018",
+      "d00047",
+      "d00050",
+      "d00052",
+      "d00095",
+      "d00096",
+      "d00098",
+      "d00103"
+    ],
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl",
+        "inputs_sha256": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl",
+        "bases_sha256": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/quality34/m4_proposals.jsonl",
+        "proposals_sha256": "0944e237a330b5031c84808bedc64ea62e1728f07c9f9f45803629f2f7e35ed0",
+        "tasks": [
+          {
+            "task_id": "d00000:readout_short",
+            "request_id": "d00000",
+            "arm": "readout_short",
+            "proposal_key": "d00000:old_pool"
+          },
+          {
+            "task_id": "d00018:readout_short",
+            "request_id": "d00018",
+            "arm": "readout_short",
+            "proposal_key": "d00018:old_pool"
+          },
+          {
+            "task_id": "d00018:readout_free",
+            "request_id": "d00018",
+            "arm": "readout_free",
+            "proposal_key": "d00018:old_pool"
+          },
+          {
+            "task_id": "d00047:readout_short",
+            "request_id": "d00047",
+            "arm": "readout_short",
+            "proposal_key": "d00047:old_pool"
+          },
+          {
+            "task_id": "d00047:readout_free",
+            "request_id": "d00047",
+            "arm": "readout_free",
+            "proposal_key": "d00047:old_pool"
+          },
+          {
+            "task_id": "d00050:readout_short",
+            "request_id": "d00050",
+            "arm": "readout_short",
+            "proposal_key": "d00050:old_pool"
+          },
+          {
+            "task_id": "d00050:readout_free",
+            "request_id": "d00050",
+            "arm": "readout_free",
+            "proposal_key": "d00050:old_pool"
+          },
+          {
+            "task_id": "d00052:readout_short",
+            "request_id": "d00052",
+            "arm": "readout_short",
+            "proposal_key": "d00052:old_pool"
+          },
+          {
+            "task_id": "d00095:readout_short",
+            "request_id": "d00095",
+            "arm": "readout_short",
+            "proposal_key": "d00095:old_pool"
+          },
+          {
+            "task_id": "d00096:readout_short",
+            "request_id": "d00096",
+            "arm": "readout_short",
+            "proposal_key": "d00096:old_pool"
+          },
+          {
+            "task_id": "d00096:readout_free",
+            "request_id": "d00096",
+            "arm": "readout_free",
+            "proposal_key": "d00096:old_pool"
+          },
+          {
+            "task_id": "d00098:readout_short",
+            "request_id": "d00098",
+            "arm": "readout_short",
+            "proposal_key": "d00098:old_pool"
+          },
+          {
+            "task_id": "d00098:readout_free",
+            "request_id": "d00098",
+            "arm": "readout_free",
+            "proposal_key": "d00098:old_pool"
+          },
+          {
+            "task_id": "d00103:readout_short",
+            "request_id": "d00103",
+            "arm": "readout_short",
+            "proposal_key": "d00103:old_pool"
+          }
+        ]
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl",
+        "inputs_sha256": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl",
+        "bases_sha256": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/quality34/m5_proposals.jsonl",
+        "proposals_sha256": "e8c61bc71708d2432307991ff51131782eed6b493504a0f90254f5d8a27a9299",
+        "tasks": [
+          {
+            "task_id": "d00000:readout_short",
+            "request_id": "d00000",
+            "arm": "readout_short",
+            "proposal_key": "d00000:old_pool"
+          },
+          {
+            "task_id": "d00018:readout_short",
+            "request_id": "d00018",
+            "arm": "readout_short",
+            "proposal_key": "d00018:old_pool"
+          },
+          {
+            "task_id": "d00018:readout_free",
+            "request_id": "d00018",
+            "arm": "readout_free",
+            "proposal_key": "d00018:old_pool"
+          },
+          {
+            "task_id": "d00047:readout_short",
+            "request_id": "d00047",
+            "arm": "readout_short",
+            "proposal_key": "d00047:old_pool"
+          },
+          {
+            "task_id": "d00047:readout_free",
+            "request_id": "d00047",
+            "arm": "readout_free",
+            "proposal_key": "d00047:old_pool"
+          },
+          {
+            "task_id": "d00050:readout_short",
+            "request_id": "d00050",
+            "arm": "readout_short",
+            "proposal_key": "d00050:old_pool"
+          },
+          {
+            "task_id": "d00050:readout_free",
+            "request_id": "d00050",
+            "arm": "readout_free",
+            "proposal_key": "d00050:old_pool"
+          },
+          {
+            "task_id": "d00052:readout_short",
+            "request_id": "d00052",
+            "arm": "readout_short",
+            "proposal_key": "d00052:old_pool"
+          },
+          {
+            "task_id": "d00095:readout_short",
+            "request_id": "d00095",
+            "arm": "readout_short",
+            "proposal_key": "d00095:old_pool"
+          },
+          {
+            "task_id": "d00096:readout_short",
+            "request_id": "d00096",
+            "arm": "readout_short",
+            "proposal_key": "d00096:old_pool"
+          },
+          {
+            "task_id": "d00096:readout_free",
+            "request_id": "d00096",
+            "arm": "readout_free",
+            "proposal_key": "d00096:old_pool"
+          },
+          {
+            "task_id": "d00098:readout_short",
+            "request_id": "d00098",
+            "arm": "readout_short",
+            "proposal_key": "d00098:old_pool"
+          },
+          {
+            "task_id": "d00098:readout_free",
+            "request_id": "d00098",
+            "arm": "readout_free",
+            "proposal_key": "d00098:old_pool"
+          },
+          {
+            "task_id": "d00103:readout_short",
+            "request_id": "d00103",
+            "arm": "readout_short",
+            "proposal_key": "d00103:old_pool"
+          }
+        ]
+      }
+    },
+    "failure_policy": "ordinary item failure continues; one uniform final format repair; systemic execution failure stops affected backend",
+    "independent_evaluation": false,
+    "launch_authorized": false,
+    "preparation_only": true,
+    "historical_results_overwritten": false,
+    "maximum_new_model_calls": 56,
+    "reuse_manifest": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/readout_multi9_r2/reuse_manifest.json",
+    "multi_protocol_change": "Remove keep only; unchanged ADD/REMOVE mapping, explicit nonempty message, identical generation budgets. Original r1 multi outcomes persist separately.",
+    "source_quality34_plan": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/quality34/plan.json",
+      "sha256": "35e97a91a54ceeab6b8cec77bfd68eb12231ff892166086c6dd8a4b462a5d9bb"
+    },
+    "reuse_manifest_sha256": "317ba08c5a4871538233af754be693ba33050f2d98ea293c776359b11f1c548f"
+  },
+  "method": "M4",
+  "profile": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 16384
+    }
+  },
+  "profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+    "copy": "readout_m4.json",
+    "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+  },
+  "selected_source_sha256": "0d9f624625f61faf163e5cb3fa63aa6def6727e76091fe080110eec2a7f17ffa",
+  "code_sources": {
+    "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "090d9d59d76f9bb0b97a8d261e22630b3a753d95d67100fe1a65e37dc199408c",
+    "/home/data3/txy/cf_moa/controller/effect_first.py": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a"
+  }
+}

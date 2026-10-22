@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "method": "M4",
+      "n": 128,
+      "correct": 59,
+      "baseline_correct": 30,
+      "catalog_correct": 53,
+      "fallbacks": 2,
+      "vs_baseline": {
+        "repairs": 31,
+        "harms": 2
+      },
+      "vs_catalog": {
+        "repairs": 11,
+        "harms": 5
+      },
+      "macro_recall": 0.30797179011464726,
+      "catalog_macro_recall": 0.3027825349253921
+    },
+    {
+      "method": "M5",
+      "n": 128,
+      "correct": 64,
+      "baseline_correct": 24,
+      "catalog_correct": 62,
+      "fallbacks": 0,
+      "vs_baseline": {
+        "repairs": 40,
+        "harms": 0
+      },
+      "vs_catalog": {
+        "repairs": 7,
+        "harms": 5
+      },
+      "macro_recall": 0.3233552162123591,
+      "catalog_macro_recall": 0.3335200513771942
+    }
+  ],
+  "scope": "128 exposed development diagnoses, seven represented target diseases; not independent validation"
+}

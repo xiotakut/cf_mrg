@@ -1,0 +1,38 @@
+{
+  "status": "prepared",
+  "at": "2026-09-18 00:20:06 +0800",
+  "arms": [
+    "redo",
+    "repeat",
+    "boundary"
+  ],
+  "checks": [
+    {
+      "method": "M4",
+      "baseline_parity": 208,
+      "inputs": 208,
+      "planned_calls": 624,
+      "max_prompt_tokens": 36926
+    },
+    {
+      "method": "M5",
+      "baseline_parity": 208,
+      "inputs": 208,
+      "planned_calls": 624,
+      "max_prompt_tokens": 40470
+    }
+  ],
+  "planned_new_calls": 1248,
+  "hypothesis": "Task-bound evidence roles improve correctness under irrelevant changes beyond ordinary redo and exact-question repetition.",
+  "scope": "Exposed v5 development; original and perturbed ends inferred independently. No paired answer, R label, gold or source ID in head.",
+  "controls": "All arms one original-backbone call with unchanged full original messages, schema and decoding. No old assistant answer. Repeat isolates the contribution of repeating the target question.",
+  "reporting": "Native task-to-unit averaging; source strata, reference/variant/both-correct/valid-invariance, repairs/harms, format and document-detection separately. Relevant-change controls separate.",
+  "decision": "Review both backbones and actual errors; no per-item or per-backbone winner mixture. A pilot is not proof of generalization.",
+  "runner": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+  "resource_adjustment": {
+    "at": "2026-09-18 00:24:47 +0800",
+    "gpu_memory_utilization_before": 0.95,
+    "gpu_memory_utilization_after": 0.85,
+    "reason": "GPU0/1 now each have an unrelated 5GB training process. Reserve lower fraction; fixed 8192 KV blocks, batching, full inputs and decoding unchanged."
+  }
+}

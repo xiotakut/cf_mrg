@@ -1,0 +1,110 @@
+{
+  "protocol": {
+    "variant": "synthetic_scope_subject_polarity_compound32_v1",
+    "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a5_scope32/inference/inputs.jsonl",
+    "inputs_sha256": "37ad660bb4bd9caf1ff5994a4b6e5597faeab8367297c28b2e1204b0fd3c9029",
+    "request_ids": [
+      "scope32_000",
+      "scope32_001",
+      "scope32_002",
+      "scope32_003",
+      "scope32_004",
+      "scope32_005",
+      "scope32_006",
+      "scope32_007",
+      "scope32_008",
+      "scope32_009",
+      "scope32_010",
+      "scope32_011",
+      "scope32_012",
+      "scope32_013",
+      "scope32_014",
+      "scope32_015",
+      "scope32_016",
+      "scope32_017",
+      "scope32_018",
+      "scope32_019",
+      "scope32_020",
+      "scope32_021",
+      "scope32_022",
+      "scope32_023",
+      "scope32_024",
+      "scope32_025",
+      "scope32_026",
+      "scope32_027",
+      "scope32_028",
+      "scope32_029",
+      "scope32_030",
+      "scope32_031"
+    ],
+    "source_files": [
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a5_premise.py",
+        "sha256": "9fe30627c6b158ac40a9b792c9438ffb31cf90f1404c70cdc19e5e56604080e6"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+        "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+        "sha256": "841756d0df28345c58a1c8fff975206e4453216b18f532aa5170e0ff480e9122"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py",
+        "sha256": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a5_scope32/run_synthetic.py",
+        "sha256": "a25aca7e1a166d47bbf0b3b942d27cd6615bcdfdbf2a5a6bb0690cf8c60ec345"
+      }
+    ],
+    "generation": {
+      "seed": 42,
+      "temperature": 0.7,
+      "max_tokens": 512
+    },
+    "planned_unique_inputs": 32,
+    "planned_arms": [
+      "F",
+      "premise",
+      "ordinary_reanswer",
+      "direct_premise_probe",
+      "direct_ordinary_probe"
+    ],
+    "planned_output_rows_per_backbone": 160,
+    "total_hard_call_upper_bound_per_backbone": 640,
+    "new_F_max_requests_per_input": 12,
+    "extra_max_requests_per_arm_input": 2,
+    "new_panel_only": true,
+    "old_121_rerun": false,
+    "ordinary_item_failure_stops_batch": false,
+    "direct_probe_scope": "All32 fixed inputs, independent of F agreement; no manufactured disagreement."
+  },
+  "method": "M4",
+  "selected_profile": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 16384
+    }
+  },
+  "selected_profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+    "copy": "readout_m4.json",
+    "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+  },
+  "run_script_sha256": "a25aca7e1a166d47bbf0b3b942d27cd6615bcdfdbf2a5a6bb0690cf8c60ec345"
+}

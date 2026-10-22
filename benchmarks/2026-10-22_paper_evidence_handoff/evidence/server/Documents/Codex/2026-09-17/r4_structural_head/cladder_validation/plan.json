@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "frozen_at": "2026-09-17 18:28:45 +0800",
+  "head": "bound_head with exact declared-label binding and explicit current-answer fallback; frozen_head/ contains every head module",
+  "new_calls": 5372,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 2686,
+      "max_prompt_tokens": 1147
+    },
+    {
+      "method": "M5",
+      "calls": 2686,
+      "max_prompt_tokens": 987
+    }
+  ],
+  "protocol": "Source-specific evaluation convention, shared by both methods: this is a self-contained hypothetical Boolean world. The stated causal rules are complete equalities. Only explicitly stated observations constrain the factual world. In the final question, \"instead of\" contrasts the proposed action with another action; it does not add an observation of the old action. Apply the proposed action and recompute its consequences. Answer the exact final proposition.",
+  "controls": "Fresh same-call-budget redo plus the inline answer from each compile call. Native fixed-IR model execution is separately measured on development programs.",
+  "generation": "Original Llama/Qwen backbones and decoding,2048max output,batch4. Memory fraction0.45 to coexist with healthy GPU0/1 jobs; unchanged8192KV blocks and token budgets. M4 guided/M5 unguided.",
+  "scoring": "Full1343per backbone, no failure exclusions. Raw native key scoring; compilation/execution failures and actual execution coverage separate from final native validity. Report graph,story,and predeclared old-action-conflict strata.",
+  "exposure": "All1343remain untouched by evaluated model inference at this freeze. Shared graph families/pretraining unknown; formal adapted benchmark,not clinical generalization.",
+  "stopping": "Complete the fixed cohort; do not choose prompts, seeds or subsets from these results. Any later change makes this exposed development for the changed version.",
+  "started_at": "2026-09-17 18:30:06 +0800",
+  "finished_at": "2026-09-17 20:06:56 +0800"
+}

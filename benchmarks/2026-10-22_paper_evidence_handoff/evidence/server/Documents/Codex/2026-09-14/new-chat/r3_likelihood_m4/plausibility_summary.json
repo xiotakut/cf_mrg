@@ -1,0 +1,54 @@
+{
+  "ratio": 0.1,
+  "new_calls": 0,
+  "results": [
+    {
+      "variant": "local_0.5",
+      "n": 40,
+      "correct": 12,
+      "vs_uncorrected_repairs": 1,
+      "vs_uncorrected_harms": 0,
+      "eligible_counts": {
+        "3": 18,
+        "1": 13,
+        "2": 9
+      }
+    },
+    {
+      "variant": "local_1",
+      "n": 40,
+      "correct": 12,
+      "vs_uncorrected_repairs": 1,
+      "vs_uncorrected_harms": 0,
+      "eligible_counts": {
+        "3": 18,
+        "1": 13,
+        "2": 9
+      }
+    },
+    {
+      "variant": "patient_0.5",
+      "n": 40,
+      "correct": 11,
+      "vs_uncorrected_repairs": 0,
+      "vs_uncorrected_harms": 0,
+      "eligible_counts": {
+        "3": 18,
+        "1": 13,
+        "2": 9
+      }
+    },
+    {
+      "variant": "patient_1",
+      "n": 40,
+      "correct": 10,
+      "vs_uncorrected_repairs": 0,
+      "vs_uncorrected_harms": 1,
+      "eligible_counts": {
+        "3": 18,
+        "1": 13,
+        "2": 9
+      }
+    }
+  ]
+}

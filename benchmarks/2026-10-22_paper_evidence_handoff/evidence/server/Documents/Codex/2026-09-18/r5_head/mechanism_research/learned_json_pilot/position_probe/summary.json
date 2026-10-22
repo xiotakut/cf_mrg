@@ -1,0 +1,295 @@
+{
+  "rows": [
+    {
+      "item_id": "M23_control:bionli_choice_relevant_01:negative",
+      "rotation": 0,
+      "order": [
+        "positive",
+        "negative"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "positive",
+        "logits": [
+          16.625,
+          15.1875
+        ]
+      },
+      "prefix_only": {
+        "code": "A",
+        "native_key": "positive",
+        "logits": [
+          23.625,
+          23.0
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "A",
+        "native_key": "positive",
+        "logits": [
+          28.75,
+          27.5
+        ]
+      }
+    },
+    {
+      "item_id": "M23_control:bionli_choice_relevant_01:negative",
+      "rotation": 1,
+      "order": [
+        "negative",
+        "positive"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "negative",
+        "logits": [
+          17.0,
+          15.4375
+        ]
+      },
+      "prefix_only": {
+        "code": "B",
+        "native_key": "positive",
+        "logits": [
+          21.75,
+          22.5
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "B",
+        "native_key": "positive",
+        "logits": [
+          27.125,
+          28.375
+        ]
+      }
+    },
+    {
+      "item_id": "s001305",
+      "rotation": 0,
+      "order": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "A",
+        "logits": [
+          10.9375,
+          5.9375,
+          6.25,
+          7.75
+        ]
+      },
+      "prefix_only": {
+        "code": "C",
+        "native_key": "C",
+        "logits": [
+          19.375,
+          18.625,
+          23.0,
+          21.125
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "C",
+        "native_key": "C",
+        "logits": [
+          20.125,
+          19.75,
+          24.375,
+          22.0
+        ]
+      }
+    },
+    {
+      "item_id": "s001305",
+      "rotation": 1,
+      "order": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "B",
+        "logits": [
+          11.3125,
+          6.25,
+          6.375,
+          7.96875
+        ]
+      },
+      "prefix_only": {
+        "code": "B",
+        "native_key": "C",
+        "logits": [
+          19.75,
+          22.375,
+          21.5,
+          21.875
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "B",
+        "native_key": "C",
+        "logits": [
+          22.625,
+          25.625,
+          24.875,
+          24.5
+        ]
+      }
+    },
+    {
+      "item_id": "s003404",
+      "rotation": 0,
+      "order": [
+        "higher",
+        "lower",
+        "no difference",
+        "uncertainty"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "higher",
+        "logits": [
+          13.625,
+          10.125,
+          10.3125,
+          10.875
+        ]
+      },
+      "prefix_only": {
+        "code": "C",
+        "native_key": "no difference",
+        "logits": [
+          20.75,
+          19.625,
+          21.875,
+          17.375
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "C",
+        "native_key": "no difference",
+        "logits": [
+          25.75,
+          25.375,
+          28.125,
+          20.375
+        ]
+      }
+    },
+    {
+      "item_id": "s003404",
+      "rotation": 1,
+      "order": [
+        "lower",
+        "no difference",
+        "uncertainty",
+        "higher"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "lower",
+        "logits": [
+          13.3125,
+          9.3125,
+          9.3125,
+          10.1875
+        ]
+      },
+      "prefix_only": {
+        "code": "B",
+        "native_key": "no difference",
+        "logits": [
+          21.125,
+          22.125,
+          19.125,
+          21.5
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "B",
+        "native_key": "no difference",
+        "logits": [
+          24.25,
+          27.375,
+          23.0,
+          26.375
+        ]
+      }
+    },
+    {
+      "item_id": "s108678",
+      "rotation": 0,
+      "order": [
+        "A",
+        "B"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "A",
+        "logits": [
+          12.625,
+          6.90625
+        ]
+      },
+      "prefix_only": {
+        "code": "B",
+        "native_key": "B",
+        "logits": [
+          19.75,
+          23.0
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "B",
+        "native_key": "B",
+        "logits": [
+          24.0,
+          26.5
+        ]
+      }
+    },
+    {
+      "item_id": "s108678",
+      "rotation": 1,
+      "order": [
+        "B",
+        "A"
+      ],
+      "bare": {
+        "code": "A",
+        "native_key": "B",
+        "logits": [
+          12.75,
+          7.125
+        ]
+      },
+      "prefix_only": {
+        "code": "A",
+        "native_key": "B",
+        "logits": [
+          23.125,
+          22.25
+        ]
+      },
+      "json_request_and_prefix": {
+        "code": "A",
+        "native_key": "B",
+        "logits": [
+          28.0,
+          26.375
+        ]
+      }
+    }
+  ],
+  "new_forwards": 8,
+  "full_request_and_prefix_smoke_forwards": 16,
+  "scope": "M4 prefix-only matched intervention on four preselected visible tasks; no correctness selection or new labels."
+}

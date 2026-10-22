@@ -1,0 +1,28 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "selection_calls": 80,
+      "planned_final_calls": 320,
+      "max_selection_prompt": 2994,
+      "schema_checks": 80
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "selection_calls": 80,
+      "planned_final_calls": 320,
+      "max_selection_prompt": 2746,
+      "schema_checks": 80
+    }
+  ],
+  "planned_new_calls": 800,
+  "primary": "Discriminative versus general observation selection, matched1 selector +4 answer calls; compare uncued four cyclic orders and existing calibrated49 head separately.",
+  "policy": "At most3 existing observation IDs, duplicate IDs deduplicated and restored to original text order. Copy exact blocks; retain all native context and full current question.",
+  "final": "Same four cyclic candidate orders already used by the completed listwise control; hard plurality with original pool-order ties.",
+  "fallback": "Invalid selector or final scores retain the actual initial calibrated answer from the already-computed pool, no new facts or gold.",
+  "scope": "Same40 exposed R3 diagnosis development cases per original model. No new retrieval, training, reference inputs or independent generalization.",
+  "costs": "Each deployed arm needs6 candidate-front-end scores +1 selector generation +4 final scores; selectors shared across its four orders. Full candidate scores and uncued control reused."
+}

@@ -1,0 +1,64 @@
+{
+  "status": "failed",
+  "pid": 2751178,
+  "gpu": "2",
+  "started": "2026-09-18 16:30:00 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "kind": "features",
+      "pid": 2751182,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot",
+        "--method",
+        "M4",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:30:00 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:30:27 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "features",
+      "pid": 2751620,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot",
+        "--method",
+        "M5",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:30:27 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:30:53 +0800"
+    },
+    {
+      "method": "M4",
+      "kind": "analysis",
+      "pid": 2752317,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_scope_pilot/analyze.py",
+        "--method",
+        "M4"
+      ],
+      "status": "failed",
+      "started": "2026-09-18 16:30:53 +0800",
+      "returncode": 2,
+      "ended": "2026-09-18 16:30:53 +0800"
+    }
+  ]
+}

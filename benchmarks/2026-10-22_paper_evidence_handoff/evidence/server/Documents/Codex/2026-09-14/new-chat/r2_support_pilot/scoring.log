@@ -1,0 +1,408 @@
+{
+  "status": "complete",
+  "scope": "development pilot, frozen native scoring; no independent confirmation",
+  "unique_inputs": 232,
+  "evaluation_records_per_method": 241,
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2",
+      "units": 79,
+      "records": 79,
+      "unit_accuracy_pct": 29.11392405063291,
+      "correct_records": 23,
+      "invalid_records": 3,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "MedPIC_R2",
+      "units": 75,
+      "records": 75,
+      "unit_accuracy_pct": 26.666666666666668,
+      "correct_records": 20,
+      "invalid_records": 3,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "MedPIC_R2_none",
+      "units": 66,
+      "records": 66,
+      "unit_accuracy_pct": 25.757575757575758,
+      "correct_records": 17,
+      "invalid_records": 3,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "MedPIC_R2_remaining",
+      "units": 9,
+      "records": 9,
+      "unit_accuracy_pct": 33.333333333333336,
+      "correct_records": 3,
+      "invalid_records": 0,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "MedPIC_other",
+      "units": 92,
+      "records": 92,
+      "unit_accuracy_pct": 30.434782608695652,
+      "correct_records": 28,
+      "invalid_records": 1,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "MedPIC_all",
+      "units": 167,
+      "records": 167,
+      "unit_accuracy_pct": 28.74251497005988,
+      "correct_records": 48,
+      "invalid_records": 4,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R5_probe",
+      "units": 22,
+      "records": 34,
+      "unit_accuracy_pct": 50.0,
+      "correct_records": 19,
+      "invalid_records": 0,
+      "repairs_records": 0,
+      "harms_records": 0
+    },
+    {
+      "method": "self_review",
+      "scope": "R2",
+      "units": 79,
+      "records": 79,
+      "unit_accuracy_pct": 15.189873417721518,
+      "correct_records": 12,
+      "invalid_records": 0,
+      "repairs_records": 2,
+      "harms_records": 13
+    },
+    {
+      "method": "self_review",
+      "scope": "MedPIC_R2",
+      "units": 75,
+      "records": 75,
+      "unit_accuracy_pct": 12.0,
+      "correct_records": 9,
+      "invalid_records": 0,
+      "repairs_records": 2,
+      "harms_records": 13
+    },
+    {
+      "method": "self_review",
+      "scope": "MedPIC_R2_none",
+      "units": 66,
+      "records": 66,
+      "unit_accuracy_pct": 9.090909090909092,
+      "correct_records": 6,
+      "invalid_records": 0,
+      "repairs_records": 1,
+      "harms_records": 12
+    },
+    {
+      "method": "self_review",
+      "scope": "MedPIC_R2_remaining",
+      "units": 9,
+      "records": 9,
+      "unit_accuracy_pct": 33.333333333333336,
+      "correct_records": 3,
+      "invalid_records": 0,
+      "repairs_records": 1,
+      "harms_records": 1
+    },
+    {
+      "method": "self_review",
+      "scope": "MedPIC_other",
+      "units": 92,
+      "records": 92,
+      "unit_accuracy_pct": 30.434782608695652,
+      "correct_records": 28,
+      "invalid_records": 1,
+      "repairs_records": 13,
+      "harms_records": 13
+    },
+    {
+      "method": "self_review",
+      "scope": "MedPIC_all",
+      "units": 167,
+      "records": 167,
+      "unit_accuracy_pct": 22.15568862275449,
+      "correct_records": 37,
+      "invalid_records": 1,
+      "repairs_records": 15,
+      "harms_records": 26
+    },
+    {
+      "method": "self_review",
+      "scope": "R5_probe",
+      "units": 22,
+      "records": 34,
+      "unit_accuracy_pct": 50.0,
+      "correct_records": 19,
+      "invalid_records": 0,
+      "repairs_records": 2,
+      "harms_records": 2
+    },
+    {
+      "method": "source_review",
+      "scope": "R2",
+      "units": 79,
+      "records": 79,
+      "unit_accuracy_pct": 15.189873417721518,
+      "correct_records": 12,
+      "invalid_records": 5,
+      "repairs_records": 2,
+      "harms_records": 13
+    },
+    {
+      "method": "source_review",
+      "scope": "MedPIC_R2",
+      "units": 75,
+      "records": 75,
+      "unit_accuracy_pct": 13.333333333333334,
+      "correct_records": 10,
+      "invalid_records": 5,
+      "repairs_records": 2,
+      "harms_records": 12
+    },
+    {
+      "method": "source_review",
+      "scope": "MedPIC_R2_none",
+      "units": 66,
+      "records": 66,
+      "unit_accuracy_pct": 13.636363636363637,
+      "correct_records": 9,
+      "invalid_records": 5,
+      "repairs_records": 2,
+      "harms_records": 10
+    },
+    {
+      "method": "source_review",
+      "scope": "MedPIC_R2_remaining",
+      "units": 9,
+      "records": 9,
+      "unit_accuracy_pct": 11.11111111111111,
+      "correct_records": 1,
+      "invalid_records": 0,
+      "repairs_records": 0,
+      "harms_records": 2
+    },
+    {
+      "method": "source_review",
+      "scope": "MedPIC_other",
+      "units": 92,
+      "records": 92,
+      "unit_accuracy_pct": 35.869565217391305,
+      "correct_records": 33,
+      "invalid_records": 0,
+      "repairs_records": 16,
+      "harms_records": 11
+    },
+    {
+      "method": "source_review",
+      "scope": "MedPIC_all",
+      "units": 167,
+      "records": 167,
+      "unit_accuracy_pct": 25.748502994011975,
+      "correct_records": 43,
+      "invalid_records": 5,
+      "repairs_records": 18,
+      "harms_records": 23
+    },
+    {
+      "method": "source_review",
+      "scope": "R5_probe",
+      "units": 22,
+      "records": 34,
+      "unit_accuracy_pct": 40.90909090909091,
+      "correct_records": 17,
+      "invalid_records": 1,
+      "repairs_records": 1,
+      "harms_records": 3
+    },
+    {
+      "method": "support_review",
+      "scope": "R2",
+      "units": 79,
+      "records": 79,
+      "unit_accuracy_pct": 27.848101265822784,
+      "correct_records": 22,
+      "invalid_records": 0,
+      "repairs_records": 6,
+      "harms_records": 7
+    },
+    {
+      "method": "support_review",
+      "scope": "MedPIC_R2",
+      "units": 75,
+      "records": 75,
+      "unit_accuracy_pct": 25.333333333333332,
+      "correct_records": 19,
+      "invalid_records": 0,
+      "repairs_records": 6,
+      "harms_records": 7
+    },
+    {
+      "method": "support_review",
+      "scope": "MedPIC_R2_none",
+      "units": 66,
+      "records": 66,
+      "unit_accuracy_pct": 24.242424242424242,
+      "correct_records": 16,
+      "invalid_records": 0,
+      "repairs_records": 5,
+      "harms_records": 6
+    },
+    {
+      "method": "support_review",
+      "scope": "MedPIC_R2_remaining",
+      "units": 9,
+      "records": 9,
+      "unit_accuracy_pct": 33.333333333333336,
+      "correct_records": 3,
+      "invalid_records": 0,
+      "repairs_records": 1,
+      "harms_records": 1
+    },
+    {
+      "method": "support_review",
+      "scope": "MedPIC_other",
+      "units": 92,
+      "records": 92,
+      "unit_accuracy_pct": 31.52173913043478,
+      "correct_records": 29,
+      "invalid_records": 1,
+      "repairs_records": 5,
+      "harms_records": 4
+    },
+    {
+      "method": "support_review",
+      "scope": "MedPIC_all",
+      "units": 167,
+      "records": 167,
+      "unit_accuracy_pct": 28.74251497005988,
+      "correct_records": 48,
+      "invalid_records": 1,
+      "repairs_records": 11,
+      "harms_records": 11
+    },
+    {
+      "method": "support_review",
+      "scope": "R5_probe",
+      "units": 22,
+      "records": 34,
+      "unit_accuracy_pct": 50.0,
+      "correct_records": 19,
+      "invalid_records": 2,
+      "repairs_records": 0,
+      "harms_records": 0
+    }
+  ],
+  "incremental_cost": [
+    {
+      "method": "self_review",
+      "new_calls": 232,
+      "input_tokens": 1230137,
+      "output_tokens": 113650,
+      "truncated": 1
+    },
+    {
+      "method": "source_review",
+      "new_calls": 232,
+      "input_tokens": 1245681,
+      "output_tokens": 112846,
+      "truncated": 6
+    },
+    {
+      "method": "support_review",
+      "new_calls": 232,
+      "input_tokens": 1290689,
+      "output_tokens": 150093,
+      "truncated": 1
+    }
+  ],
+  "r5_pair_summary": [
+    {
+      "method": "baseline",
+      "units": 22,
+      "both_correct_pct": 36.36363636363637,
+      "invariant_pct": 59.09090909090909
+    },
+    {
+      "method": "self_review",
+      "units": 22,
+      "both_correct_pct": 36.36363636363637,
+      "invariant_pct": 59.09090909090909
+    },
+    {
+      "method": "source_review",
+      "units": 22,
+      "both_correct_pct": 31.818181818181817,
+      "invariant_pct": 63.63636363636363
+    },
+    {
+      "method": "support_review",
+      "units": 22,
+      "both_correct_pct": 27.272727272727273,
+      "invariant_pct": 53.63636363636363
+    }
+  ],
+  "baseline_scoring_parity_records": 241,
+  "option_consistency": [
+    {
+      "method": "baseline",
+      "none_plus_substantive_items": [
+        "s001151",
+        "s001118",
+        "s001169"
+      ]
+    },
+    {
+      "method": "self_review",
+      "none_plus_substantive_items": [
+        "s001087",
+        "s001138",
+        "s001151",
+        "s001155",
+        "s001161",
+        "s001182",
+        "s001223",
+        "s001232",
+        "s001236",
+        "s001294"
+      ]
+    },
+    {
+      "method": "source_review",
+      "none_plus_substantive_items": [
+        "s001102",
+        "s001126",
+        "s001155",
+        "s001169"
+      ]
+    },
+    {
+      "method": "support_review",
+      "none_plus_substantive_items": [
+        "s001096",
+        "s001126",
+        "s001221"
+      ]
+    }
+  ]
+}

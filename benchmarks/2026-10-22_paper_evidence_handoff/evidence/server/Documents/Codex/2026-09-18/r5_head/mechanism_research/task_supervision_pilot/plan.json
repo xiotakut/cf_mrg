@@ -1,0 +1,74 @@
+{
+  "status": "frozen plan before preparation and inference",
+  "at": "2026-09-18 17:43:59 +0800",
+  "purpose": "Bounded localization of task-conditioned representation versus raw-P/H linear readout; one PH candidate and H-only bias control, no new algorithm claim.",
+  "author_rows": 5544,
+  "train_rows": 4435,
+  "validation_rows": 1109,
+  "split_source": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/split.jsonl",
+  "split_sha256": "e62c8352749e21a86dc8f30caffd87b97560a4d44a186adfba9b8c9b8a144871",
+  "inputs": "Exact public balanced author train P/H. PH uses original P; H-only substitutes only P with empty string, never a placeholder. Only existing S original system and K choice_request/RULE/SCORE_PREFIX; no original names altered.",
+  "question_template": "what is the relationship between premise:{P} hypothesis:{H}",
+  "views": [
+    "ph",
+    "h_only"
+  ],
+  "rotations": [
+    0,
+    1
+  ],
+  "request_schema": [
+    "request_index",
+    "dataset",
+    "row_index",
+    "view",
+    "rotation",
+    "order",
+    "text",
+    "text_sha256",
+    "prompt_tokens"
+  ],
+  "representation": "Final nonpadding token at same task-conditioned JSON value prefix. Convert each rot0/rot1 hidden to float64, then np.stack([rot0,rot1]).mean(axis=0), fixed order. No normalization before mean. Feature storage float32; downstream float64.",
+  "training": {
+    "scaler": "StandardScaler fit only author training rows separately per view",
+    "classifier": "sklearn LogisticRegression",
+    "C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "solver": "lbfgs",
+    "penalty": "l2",
+    "fit_intercept": true,
+    "class_weight": null,
+    "max_iter": 2000,
+    "tol": 1e-06,
+    "random_state": 20260918,
+    "selection": "Lowest author internal validation stable NLL among converged fits; exact tie smaller C",
+    "threshold": "margin >= 0 is positive",
+    "refit": false
+  },
+  "baseline": "Original frozen LM A/B logits softmax separately per mapping, align via order, then mean probabilities. No calibration/weight fitting. Separate PH and H-only.",
+  "requests_per_backbone": 22176,
+  "new_full_sequences_both_backbones": 44352,
+  "smoke": {
+    "seed": 20260918,
+    "sampling": "Python random.Random(seed); sample 4 sorted val row ids independently in ph then h_only; rows may overlap across views, unique within each; each row both rotations",
+    "per_backbone_requests": 16,
+    "singleton_repetitions": 16,
+    "full_does_not_reuse_smoke": true,
+    "numeric_gate": "minimum cosine > .999 and maximum relative L2 < .03; save failure, never loosen after outcome",
+    "logit_and_margin_differences": "Record all; signs not a numeric gate"
+  },
+  "reuse": "J PH: exact prompt/token/config mapping to existing S144 actual/224 logical requests per backbone; synthetic T PH: existing task_readout_control128 requests per backbone. Reuse source hashes and all text equality, never labels. No new J/T inference in this plan. H-only fitted on author only; no J/T H-only features claimed.",
+  "new_generation": 0,
+  "forbidden": [
+    "D read/inference",
+    "J/T fit or selection",
+    "residual head",
+    "new loss",
+    "threshold tuning",
+    "new hyperparameters"
+  ],
+  "limits": "J and synthetic T already exposed diagnostics. Task format/readout position jointly change versus U; numerical batch8-to-singleton differences separately audited; favorable results would not establish novelty or independent generalization."
+}

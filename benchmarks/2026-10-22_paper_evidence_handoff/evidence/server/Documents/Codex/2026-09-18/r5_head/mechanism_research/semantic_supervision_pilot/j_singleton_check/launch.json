@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "pid": 2781942,
+  "started": "2026-09-18 17:14:36 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/j_singleton_check",
+        "--method",
+        "M4",
+        "--gpu",
+        "2",
+        "--batch-size",
+        "1"
+      ],
+      "pid": 2781945,
+      "status": "complete",
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/j_singleton_check",
+        "--method",
+        "M5",
+        "--gpu",
+        "2",
+        "--batch-size",
+        "1"
+      ],
+      "pid": 2782325,
+      "status": "complete",
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 17:15:41 +0800"
+}

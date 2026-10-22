@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "variant": "name_direct",
+      "n": 88,
+      "correct": 33,
+      "fallbacks": 0,
+      "repairs": 18,
+      "harms": 3,
+      "vs_name_direct_repairs": 0,
+      "vs_name_direct_harms": 0
+    },
+    {
+      "variant": "code_direct",
+      "n": 88,
+      "correct": 35,
+      "fallbacks": 0,
+      "repairs": 22,
+      "harms": 5,
+      "vs_name_direct_repairs": 8,
+      "vs_name_direct_harms": 6
+    },
+    {
+      "variant": "name_reasoned",
+      "n": 88,
+      "correct": 35,
+      "fallbacks": 1,
+      "repairs": 19,
+      "harms": 2,
+      "vs_name_direct_repairs": 9,
+      "vs_name_direct_harms": 7
+    },
+    {
+      "variant": "code_reasoned",
+      "n": 88,
+      "correct": 42,
+      "fallbacks": 5,
+      "repairs": 25,
+      "harms": 1,
+      "vs_name_direct_repairs": 13,
+      "vs_name_direct_harms": 4
+    }
+  ],
+  "costs": [
+    {
+      "variant": "name_direct",
+      "calls": 88,
+      "input_tokens": 223815,
+      "output_tokens": 1077,
+      "length_stops": 0
+    },
+    {
+      "variant": "code_direct",
+      "calls": 88,
+      "input_tokens": 238247,
+      "output_tokens": 704,
+      "length_stops": 0
+    },
+    {
+      "variant": "name_reasoned",
+      "calls": 88,
+      "input_tokens": 225399,
+      "output_tokens": 11519,
+      "length_stops": 1
+    },
+    {
+      "variant": "code_reasoned",
+      "calls": 88,
+      "input_tokens": 239391,
+      "output_tokens": 12190,
+      "length_stops": 5
+    }
+  ],
+  "order_comparison": [],
+  "runtime": {
+    "status": "complete",
+    "gpu": 1,
+    "pid": 2939339,
+    "started_at": 1789419658.7465184,
+    "total": 352,
+    "initialization_seconds": 70.99276328086853,
+    "completed": 352,
+    "elapsed_seconds": 471.6355667114258,
+    "last_batch_seconds": 2.415487766265869,
+    "completed_at": 1789420130.3822541
+  }
+}

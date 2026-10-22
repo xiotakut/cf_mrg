@@ -1,0 +1,237 @@
+{
+  "protocol": {
+    "schema_version": "moa_rcv_run_v1",
+    "allowed_gpus": [
+      2,
+      3
+    ],
+    "verification_seed": 42,
+    "arms": [
+      "candidate_with_rationales"
+    ],
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/m4_live_smoke_inputs.jsonl",
+        "inputs_sha256": "d1aa5dd575ad026f65edd876e26c7083d1ef65e53c33f1766e9c05db64580d54"
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/integration/m5_live_smoke_inputs.jsonl",
+        "inputs_sha256": "bdf1d2ebefc84b1bd97543ebc79db57a8684b9f916f26192cf9083612e3cb522"
+      }
+    },
+    "profiles": {
+      "M4": {
+        "facts": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "guided_json": true,
+          "num_shards": 1,
+          "max_logprobs": 2048,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 2048,
+            "enforce_eager": true
+          }
+        },
+        "catalog": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 1,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "guided_json": false,
+          "num_shards": 1,
+          "max_logprobs": 2048,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 2048
+          }
+        },
+        "readout": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.85,
+          "max_model_len": 131072,
+          "max_num_seqs": 16,
+          "max_num_batched_tokens": 8192,
+          "batch_size": 16,
+          "guided_json": true,
+          "num_shards": 1,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 16384
+          }
+        },
+        "a4": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 131072,
+          "max_num_seqs": 4,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 4,
+          "guided_json": true,
+          "num_shards": 1,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 8192
+          }
+        }
+      },
+      "M5": {
+        "facts": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 2048,
+            "enforce_eager": true
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": true,
+          "num_shards": 1,
+          "max_logprobs": 2048
+        },
+        "catalog": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 1,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 2048
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": false,
+          "num_shards": 1,
+          "max_logprobs": 2048
+        },
+        "readout": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.85,
+          "max_model_len": 131072,
+          "max_num_seqs": 16,
+          "max_num_batched_tokens": 8192,
+          "batch_size": 16,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 16384
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": true,
+          "num_shards": 1
+        },
+        "a4": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 131072,
+          "max_num_seqs": 4,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 4,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 8192
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": false,
+          "num_shards": 1
+        }
+      }
+    },
+    "per_task_budget": {
+      "max_model_requests": 32,
+      "max_input_tokens": 4194304,
+      "max_output_tokens": 32768,
+      "max_tool_calls": 20
+    },
+    "scope": "fixed_minimum_live_connectivity_not_quality_panel",
+    "code_sources": {
+      "/home/data3/txy/cf_moa/controller/moa_rcv.py": "6dbaca19ef81587cf17bf4f9f3187d403d23d9d5d4524d5458b3b33f4d1eaccc",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "/home/data3/txy/cf_moa/agents/a5_joint_selector.py": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+      "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec",
+      "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "/home/data3/txy/cf_moa/configs/moa_rcv_v1.json": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed"
+    }
+  },
+  "method": "M5",
+  "mode": "live"
+}

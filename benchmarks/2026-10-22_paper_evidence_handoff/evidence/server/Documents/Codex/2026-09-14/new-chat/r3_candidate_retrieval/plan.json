@@ -1,0 +1,15 @@
+{
+  "status": "prepared_retrieval",
+  "method_cases": 80,
+  "unique_candidate_queries": 40,
+  "planned_new_llm_calls": 1280,
+  "source": "https://arxiv.org/html/2607.14385v1#S4.SS2",
+  "adaptation": "Candidate knowledge allocation, not a reproduction of typed-parameter gap auditing. Query each original-model candidate independently; retrieve8 per query from the existing MedCorp BM25+MedCPT resources.",
+  "control": "Both policies share every query and the union of the same four top8 lists. Rerank the union with the same candidate-only joint query and original MedCPT cross-encoder. Global policy takes top8; balanced policy allocates two distinct documents per candidate, then presents them in the same global relevance order.",
+  "cache": "Identical disease-only queries reused across cases/models. Final head still depends on each original-model candidate pool and original-model decision. Cache contains medical documents, not patient labels.",
+  "decision": "Replace only the8 native retrieved documents, preserve original system, complete current question and answer contract. Same4 candidates and8 list orders, fixed plurality and initial-pool tie break.",
+  "comparisons": "Balanced versus global8 is primary; original-document list8 and current calibrated49 are separate controls. Require cross-backbone net benefit before expansion.",
+  "scope": "Same40 exposed R3 diagnosis cases per original M4/M5. No new independent generalization, training patients, target labels, or opposite endpoint in inference.",
+  "cost": "6 reused candidate scores +4 retrieval queries +1 common rerank +8 final original-model scores per deployed arm; query cache reduces actual shared retrieval work. No new candidate generation calls.",
+  "fallback": "Incomplete front-end retains original answer; missing knowledge or invalid final scores retain the actual initial calibrated answer. Preserve every case."
+}

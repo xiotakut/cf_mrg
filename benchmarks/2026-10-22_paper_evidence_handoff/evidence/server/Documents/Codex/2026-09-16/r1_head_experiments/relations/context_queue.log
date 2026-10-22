@@ -1,0 +1,182 @@
+[
+  {
+    "method": "M4",
+    "results": [
+      {
+        "arm": "no_draft",
+        "n": 64,
+        "correct": 39,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 24,
+          "uncertainty": 8,
+          "no difference": 12,
+          "higher": 20
+        },
+        "repairs": 11,
+        "harms": 5,
+        "vs_no_draft": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 15
+          },
+          "lower": {
+            "n": 21,
+            "correct": 15
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 9
+          }
+        }
+      },
+      {
+        "arm": "supplied_only",
+        "n": 64,
+        "correct": 41,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 23,
+          "no difference": 15,
+          "uncertainty": 10,
+          "higher": 16
+        },
+        "repairs": 10,
+        "harms": 2,
+        "vs_no_draft": {
+          "repairs": 6,
+          "harms": 4
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 14
+          },
+          "lower": {
+            "n": 21,
+            "correct": 17
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 10
+          }
+        }
+      }
+    ],
+    "calls": 128,
+    "input_tokens": 1175412,
+    "output_tokens": 28768,
+    "length_stops": 0,
+    "runtime": {
+      "status": "complete",
+      "pid": 645074,
+      "gpu": 3,
+      "method": "M4",
+      "stage": "context",
+      "arms": [
+        "no_draft",
+        "supplied_only"
+      ],
+      "completed": 128,
+      "planned": 128,
+      "initialization_seconds": 15.657526016235352,
+      "elapsed_seconds": 946.6351778507233
+    }
+  },
+  {
+    "method": "M5",
+    "results": [
+      {
+        "arm": "no_draft",
+        "n": 64,
+        "correct": 40,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 22,
+          "uncertainty": 10,
+          "no difference": 15,
+          "higher": 17
+        },
+        "repairs": 9,
+        "harms": 2,
+        "vs_no_draft": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 14
+          },
+          "lower": {
+            "n": 21,
+            "correct": 15
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 11
+          }
+        }
+      },
+      {
+        "arm": "supplied_only",
+        "n": 64,
+        "correct": 44,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 17,
+          "no difference": 18,
+          "higher": 19,
+          "uncertainty": 10
+        },
+        "repairs": 14,
+        "harms": 3,
+        "vs_no_draft": {
+          "repairs": 8,
+          "harms": 4
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 16
+          },
+          "lower": {
+            "n": 21,
+            "correct": 14
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 14
+          }
+        }
+      }
+    ],
+    "calls": 128,
+    "input_tokens": 1246632,
+    "output_tokens": 29320,
+    "length_stops": 0,
+    "runtime": {
+      "status": "complete",
+      "pid": 666506,
+      "gpu": 3,
+      "method": "M5",
+      "stage": "context",
+      "arms": [
+        "no_draft",
+        "supplied_only"
+      ],
+      "completed": 128,
+      "planned": 128,
+      "initialization_seconds": 16.69411015510559,
+      "elapsed_seconds": 924.9235758781433
+    }
+  }
+]

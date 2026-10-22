@@ -1,0 +1,30 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "new_calls": 640,
+      "full_replayed": 240,
+      "list_replayed": 320,
+      "max_prompt_tokens": 2948
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "new_calls": 640,
+      "full_replayed": 240,
+      "list_replayed": 320,
+      "max_prompt_tokens": 2691
+    }
+  ],
+  "new_calls": 1280,
+  "source": "https://aclanthology.org/2023.findings-emnlp.167.pdf",
+  "sections": "3.2, 3.2.2, 3.2.3; general-task true/false verification, not arithmetic condition reconstruction",
+  "adaptation": "Original-model binary raw log-odds rather than sampled chains; four fixed candidates each verified independently with two True/False code mappings. Mean aligned log-odds, maximum wins, ties initial pool order.",
+  "controls": "Compatibility versus most-likely-primary-diagnosis criteria, both8 calls. Reuse same-pool balanced first8 list orders, same8 decision calls per deployed arm. Existing49 calibrated majority also compared.",
+  "primary": "Primary criterion must show cross-backbone net benefit over compatibility/list8 and existing calibrated head before expansion. No threshold, mixing-weight or per-method strategy selection.",
+  "scope": "Same40 exposed R3 diagnosis cases per method. No new retrieval, training, other endpoint or gold in inference. Original weights and native contexts retained.",
+  "cost": "6 shared front-end calls +8 binary verification calls per deployed arm. This batch reuses480 front-end and640 list-control calls; no new priors.",
+  "fallback": "Invalid front-end retains actual original answer; invalid verification retains actual initial calibrated answer; all40 cases remain in scoring."
+}

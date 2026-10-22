@@ -1,0 +1,60 @@
+{
+  "dataset": "cladder",
+  "status": "complete",
+  "new_model_calls": 0,
+  "interpretation": "Offline attribution on existing compiled IRs; not new validation. The sole IR change is intervention={}. All original observations, equations, roots, target, desired and same-call fallback remain.",
+  "paired_count_direction": "repairs: no-do correct / original head wrong; harms: no-do wrong / original head correct.",
+  "frozen_project": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/frozen_head/structural_head.py",
+  "results": [
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "original_head_correct": 995,
+      "original_head_invalid": 0,
+      "no_do_correct": 963,
+      "no_do_invalid": 0,
+      "changed_predictions": 228,
+      "vs_original_head": {
+        "repairs": 98,
+        "harms": 130
+      },
+      "ablation_applied": 929,
+      "nonempty_intervention_removed": 929,
+      "routes": {
+        "executed": 595,
+        "invalid_program_model_answer": 395,
+        "inconsistent_program_model_answer": 83,
+        "unidentified_model_answer": 251,
+        "unsupported_model_answer": 19
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "original_head_correct": 993,
+      "original_head_invalid": 16,
+      "no_do_correct": 903,
+      "no_do_invalid": 16,
+      "changed_predictions": 220,
+      "vs_original_head": {
+        "repairs": 65,
+        "harms": 155
+      },
+      "ablation_applied": 991,
+      "nonempty_intervention_removed": 991,
+      "routes": {
+        "executed": 741,
+        "unidentified_model_answer": 171,
+        "invalid_program_model_answer": 336,
+        "inconsistent_program_model_answer": 79,
+        "invalid_program": 16
+      }
+    }
+  ]
+}

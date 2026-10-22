@@ -1,0 +1,457 @@
+{
+  "status": "complete",
+  "inputs": 733,
+  "units": 733,
+  "source_groups": 725,
+  "sources": {
+    "M01": 680,
+    "M02": 10,
+    "M12": 43
+  },
+  "split_counts": {
+    "development": 146,
+    "confirmation": 587
+  },
+  "split_source_counts": {
+    "development": {
+      "M01": 128,
+      "M02": 4,
+      "M12": 14
+    },
+    "confirmation": {
+      "M01": 552,
+      "M02": 6,
+      "M12": 29
+    }
+  },
+  "seed": 20260914,
+  "known_exposed_groups_in_development": [
+    "M01:case_10000",
+    "M01:case_1075",
+    "M01:case_121660",
+    "M01:case_130293",
+    "M01:case_130593",
+    "M01:case_13249",
+    "M01:case_18683",
+    "M01:case_19333",
+    "M01:case_21279",
+    "M01:case_27568",
+    "M01:case_37149",
+    "M01:case_52378",
+    "M01:case_5545",
+    "M01:case_57675",
+    "M01:case_64837",
+    "M01:case_68048",
+    "M01:case_72044",
+    "M01:case_74253",
+    "M01:case_7590",
+    "M01:case_85920",
+    "M01:case_86330",
+    "M01:case_86596",
+    "M01:case_87004",
+    "M01:case_87344",
+    "M01:case_99453",
+    "M12:1"
+  ],
+  "baseline_parity": 1466,
+  "results": [
+    {
+      "method": "M0",
+      "scope": "all",
+      "n": 733,
+      "correct": 131,
+      "invalid": 528,
+      "unmapped": 527,
+      "format_invalid": 1
+    },
+    {
+      "method": "M0",
+      "scope": "M01",
+      "n": 680,
+      "correct": 116,
+      "invalid": 528,
+      "unmapped": 527,
+      "format_invalid": 1
+    },
+    {
+      "method": "M0",
+      "scope": "M02",
+      "n": 10,
+      "correct": 1,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M0",
+      "scope": "M12",
+      "n": 43,
+      "correct": 14,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M0",
+      "scope": "development",
+      "n": 146,
+      "correct": 25,
+      "invalid": 102,
+      "unmapped": 101,
+      "format_invalid": 1
+    },
+    {
+      "method": "M0",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 106,
+      "invalid": 426,
+      "unmapped": 426,
+      "format_invalid": 0
+    },
+    {
+      "method": "M2",
+      "scope": "all",
+      "n": 733,
+      "correct": 181,
+      "invalid": 453,
+      "unmapped": 442,
+      "format_invalid": 11
+    },
+    {
+      "method": "M2",
+      "scope": "M01",
+      "n": 680,
+      "correct": 163,
+      "invalid": 453,
+      "unmapped": 442,
+      "format_invalid": 11
+    },
+    {
+      "method": "M2",
+      "scope": "M02",
+      "n": 10,
+      "correct": 3,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M2",
+      "scope": "M12",
+      "n": 43,
+      "correct": 15,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M2",
+      "scope": "development",
+      "n": 146,
+      "correct": 32,
+      "invalid": 91,
+      "unmapped": 88,
+      "format_invalid": 3
+    },
+    {
+      "method": "M2",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 149,
+      "invalid": 362,
+      "unmapped": 354,
+      "format_invalid": 8
+    },
+    {
+      "method": "M3",
+      "scope": "all",
+      "n": 733,
+      "correct": 63,
+      "invalid": 513,
+      "unmapped": 440,
+      "format_invalid": 73
+    },
+    {
+      "method": "M3",
+      "scope": "M01",
+      "n": 680,
+      "correct": 33,
+      "invalid": 513,
+      "unmapped": 440,
+      "format_invalid": 73
+    },
+    {
+      "method": "M3",
+      "scope": "M02",
+      "n": 10,
+      "correct": 4,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M3",
+      "scope": "M12",
+      "n": 43,
+      "correct": 26,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M3",
+      "scope": "development",
+      "n": 146,
+      "correct": 17,
+      "invalid": 103,
+      "unmapped": 89,
+      "format_invalid": 14
+    },
+    {
+      "method": "M3",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 46,
+      "invalid": 410,
+      "unmapped": 351,
+      "format_invalid": 59
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "n": 733,
+      "correct": 223,
+      "invalid": 430,
+      "unmapped": 421,
+      "format_invalid": 9
+    },
+    {
+      "method": "M4",
+      "scope": "M01",
+      "n": 680,
+      "correct": 203,
+      "invalid": 430,
+      "unmapped": 421,
+      "format_invalid": 9
+    },
+    {
+      "method": "M4",
+      "scope": "M02",
+      "n": 10,
+      "correct": 3,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M4",
+      "scope": "M12",
+      "n": 43,
+      "correct": 17,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M4",
+      "scope": "development",
+      "n": 146,
+      "correct": 39,
+      "invalid": 88,
+      "unmapped": 88,
+      "format_invalid": 0
+    },
+    {
+      "method": "M4",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 184,
+      "invalid": 342,
+      "unmapped": 333,
+      "format_invalid": 9
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "n": 733,
+      "correct": 185,
+      "invalid": 486,
+      "unmapped": 472,
+      "format_invalid": 14
+    },
+    {
+      "method": "M5",
+      "scope": "M01",
+      "n": 680,
+      "correct": 160,
+      "invalid": 486,
+      "unmapped": 472,
+      "format_invalid": 14
+    },
+    {
+      "method": "M5",
+      "scope": "M02",
+      "n": 10,
+      "correct": 2,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M5",
+      "scope": "M12",
+      "n": 43,
+      "correct": 23,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M5",
+      "scope": "development",
+      "n": 146,
+      "correct": 32,
+      "invalid": 97,
+      "unmapped": 92,
+      "format_invalid": 5
+    },
+    {
+      "method": "M5",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 153,
+      "invalid": 389,
+      "unmapped": 380,
+      "format_invalid": 9
+    },
+    {
+      "method": "M6",
+      "scope": "all",
+      "n": 733,
+      "correct": 157,
+      "invalid": 484,
+      "unmapped": 470,
+      "format_invalid": 14
+    },
+    {
+      "method": "M6",
+      "scope": "M01",
+      "n": 680,
+      "correct": 137,
+      "invalid": 484,
+      "unmapped": 470,
+      "format_invalid": 14
+    },
+    {
+      "method": "M6",
+      "scope": "M02",
+      "n": 10,
+      "correct": 1,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M6",
+      "scope": "M12",
+      "n": 43,
+      "correct": 19,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M6",
+      "scope": "development",
+      "n": 146,
+      "correct": 26,
+      "invalid": 97,
+      "unmapped": 92,
+      "format_invalid": 5
+    },
+    {
+      "method": "M6",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 131,
+      "invalid": 387,
+      "unmapped": 378,
+      "format_invalid": 9
+    },
+    {
+      "method": "M7",
+      "scope": "all",
+      "n": 733,
+      "correct": 212,
+      "invalid": 436,
+      "unmapped": 426,
+      "format_invalid": 10
+    },
+    {
+      "method": "M7",
+      "scope": "M01",
+      "n": 680,
+      "correct": 186,
+      "invalid": 436,
+      "unmapped": 426,
+      "format_invalid": 10
+    },
+    {
+      "method": "M7",
+      "scope": "M02",
+      "n": 10,
+      "correct": 3,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M7",
+      "scope": "M12",
+      "n": 43,
+      "correct": 23,
+      "invalid": 0,
+      "unmapped": 0,
+      "format_invalid": 0
+    },
+    {
+      "method": "M7",
+      "scope": "development",
+      "n": 146,
+      "correct": 44,
+      "invalid": 85,
+      "unmapped": 84,
+      "format_invalid": 1
+    },
+    {
+      "method": "M7",
+      "scope": "confirmation",
+      "n": 587,
+      "correct": 168,
+      "invalid": 351,
+      "unmapped": 342,
+      "format_invalid": 9
+    }
+  ],
+  "surface_control": [
+    {
+      "method": "M4",
+      "n": 733,
+      "original_correct": 223,
+      "surface_correct": 246,
+      "repairs": 23,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "n": 733,
+      "original_correct": 185,
+      "surface_correct": 185,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "confirmation_scope": "Prospectively held from head development within an already exposed v5 benchmark; not independent-source validation.",
+  "new_model_calls": 0
+}

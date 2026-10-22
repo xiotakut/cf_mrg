@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "stage": "causal_steps",
+  "results": [
+    {
+      "method": "M4",
+      "fixed_selection_n": 80,
+      "comparison_n": 80,
+      "scope": "fixed80",
+      "scores": {
+        "causal_steps": {
+          "n": 80,
+          "correct": 53,
+          "invalid": 0
+        },
+        "redo": {
+          "n": 80,
+          "correct": 56,
+          "invalid": 0
+        },
+        "compiled_model": {
+          "n": 80,
+          "correct": 56,
+          "invalid": 0
+        },
+        "head": {
+          "n": 80,
+          "correct": 57,
+          "invalid": 0
+        }
+      },
+      "control_vs_redo": {
+        "repairs": 11,
+        "harms": 14,
+        "repairs_from_invalid": 0
+      },
+      "head_vs_control": {
+        "repairs": 18,
+        "harms": 14,
+        "repairs_from_invalid": 0
+      }
+    },
+    {
+      "method": "M5",
+      "fixed_selection_n": 80,
+      "comparison_n": 80,
+      "scope": "fixed80",
+      "scores": {
+        "causal_steps": {
+          "n": 80,
+          "correct": 57,
+          "invalid": 0
+        },
+        "redo": {
+          "n": 80,
+          "correct": 61,
+          "invalid": 0
+        },
+        "compiled_model": {
+          "n": 80,
+          "correct": 62,
+          "invalid": 0
+        },
+        "head": {
+          "n": 80,
+          "correct": 61,
+          "invalid": 0
+        }
+      },
+      "control_vs_redo": {
+        "repairs": 3,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "head_vs_control": {
+        "repairs": 10,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 80,
+      "reused_validation_scores": 240,
+      "input_tokens": 59791,
+      "output_tokens": 26163,
+      "length_stops": 0,
+      "worker_seconds": 349.0833809375763,
+      "initialization_seconds": 29.82234025001526,
+      "previous_initialization_seconds": 0
+    },
+    {
+      "method": "M5",
+      "new_calls": 80,
+      "reused_validation_scores": 240,
+      "input_tokens": 46919,
+      "output_tokens": 29627,
+      "length_stops": 0,
+      "worker_seconds": 299.2846133708954,
+      "initialization_seconds": 18.30517292022705,
+      "previous_initialization_seconds": 0
+    }
+  ],
+  "new_calls": 160,
+  "scope": "Additional controls; original frozen validation results are reused and not replaced."
+}

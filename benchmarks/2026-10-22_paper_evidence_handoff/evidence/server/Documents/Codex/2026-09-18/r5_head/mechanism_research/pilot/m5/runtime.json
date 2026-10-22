@@ -1,0 +1,248 @@
+{
+  "status": "complete",
+  "pid": 2655265,
+  "method": "M5",
+  "gpu": 1,
+  "started": "2026-09-18 13:52:32 +0800",
+  "planned": 640,
+  "completed": 640,
+  "new_calls": 640,
+  "prompt_tokens": 2004527,
+  "completion_tokens": 152135,
+  "stages": {
+    "initial": {
+      "planned": 384,
+      "completed": 384,
+      "batches": [
+        {
+          "start": 0,
+          "size": 16,
+          "seconds": 7.225990056991577
+        },
+        {
+          "start": 16,
+          "size": 16,
+          "seconds": 6.5080649852752686
+        },
+        {
+          "start": 32,
+          "size": 16,
+          "seconds": 6.7386133670806885
+        },
+        {
+          "start": 48,
+          "size": 16,
+          "seconds": 10.237201452255249
+        },
+        {
+          "start": 64,
+          "size": 16,
+          "seconds": 10.189374923706055
+        },
+        {
+          "start": 80,
+          "size": 16,
+          "seconds": 12.322286128997803
+        },
+        {
+          "start": 96,
+          "size": 16,
+          "seconds": 17.491544008255005
+        },
+        {
+          "start": 112,
+          "size": 16,
+          "seconds": 11.06724500656128
+        },
+        {
+          "start": 128,
+          "size": 16,
+          "seconds": 45.79964590072632
+        },
+        {
+          "start": 144,
+          "size": 16,
+          "seconds": 11.067408323287964
+        },
+        {
+          "start": 160,
+          "size": 16,
+          "seconds": 15.50855278968811
+        },
+        {
+          "start": 176,
+          "size": 16,
+          "seconds": 9.634606838226318
+        },
+        {
+          "start": 192,
+          "size": 16,
+          "seconds": 46.43782949447632
+        },
+        {
+          "start": 208,
+          "size": 16,
+          "seconds": 21.651020288467407
+        },
+        {
+          "start": 224,
+          "size": 16,
+          "seconds": 13.073753833770752
+        },
+        {
+          "start": 240,
+          "size": 16,
+          "seconds": 15.061858177185059
+        },
+        {
+          "start": 256,
+          "size": 16,
+          "seconds": 13.784991025924683
+        },
+        {
+          "start": 272,
+          "size": 16,
+          "seconds": 14.686429023742676
+        },
+        {
+          "start": 288,
+          "size": 16,
+          "seconds": 8.265599727630615
+        },
+        {
+          "start": 304,
+          "size": 16,
+          "seconds": 6.9581520557403564
+        },
+        {
+          "start": 320,
+          "size": 16,
+          "seconds": 7.561132431030273
+        },
+        {
+          "start": 336,
+          "size": 16,
+          "seconds": 7.211516618728638
+        },
+        {
+          "start": 352,
+          "size": 16,
+          "seconds": 9.452964305877686
+        },
+        {
+          "start": 368,
+          "size": 16,
+          "seconds": 8.602003812789917
+        }
+      ],
+      "elapsed_seconds": 336.56252098083496
+    },
+    "audit": {
+      "planned": 256,
+      "completed": 256,
+      "batches": [
+        {
+          "start": 0,
+          "size": 16,
+          "seconds": 6.797586441040039
+        },
+        {
+          "start": 16,
+          "size": 16,
+          "seconds": 8.910028219223022
+        },
+        {
+          "start": 32,
+          "size": 16,
+          "seconds": 10.746312141418457
+        },
+        {
+          "start": 48,
+          "size": 16,
+          "seconds": 12.365082502365112
+        },
+        {
+          "start": 64,
+          "size": 16,
+          "seconds": 17.02224850654602
+        },
+        {
+          "start": 80,
+          "size": 16,
+          "seconds": 10.823245525360107
+        },
+        {
+          "start": 96,
+          "size": 16,
+          "seconds": 13.215400218963623
+        },
+        {
+          "start": 112,
+          "size": 16,
+          "seconds": 10.964989423751831
+        },
+        {
+          "start": 128,
+          "size": 16,
+          "seconds": 14.83378791809082
+        },
+        {
+          "start": 144,
+          "size": 16,
+          "seconds": 18.084609508514404
+        },
+        {
+          "start": 160,
+          "size": 16,
+          "seconds": 17.813828706741333
+        },
+        {
+          "start": 176,
+          "size": 16,
+          "seconds": 15.800478458404541
+        },
+        {
+          "start": 192,
+          "size": 16,
+          "seconds": 8.842055320739746
+        },
+        {
+          "start": 208,
+          "size": 16,
+          "seconds": 7.670021057128906
+        },
+        {
+          "start": 224,
+          "size": 16,
+          "seconds": 9.552866697311401
+        },
+        {
+          "start": 240,
+          "size": 16,
+          "seconds": 12.199614524841309
+        }
+      ],
+      "elapsed_seconds": 195.66018795967102
+    }
+  },
+  "arm_counts": {
+    "kernel": 128,
+    "full": 128,
+    "support_single": 128,
+    "generic": 128,
+    "support": 128
+  },
+  "finish_reasons": {
+    "kernel/stop": 128,
+    "full/stop": 127,
+    "support_single/stop": 127,
+    "support_single/length": 1,
+    "full/length": 1,
+    "generic/stop": 128,
+    "support/stop": 128
+  },
+  "initialization_seconds": 21.370901823043823,
+  "stage": "audit",
+  "elapsed_seconds": 556.0910274982452,
+  "ended": "2026-09-18 14:01:48 +0800"
+}

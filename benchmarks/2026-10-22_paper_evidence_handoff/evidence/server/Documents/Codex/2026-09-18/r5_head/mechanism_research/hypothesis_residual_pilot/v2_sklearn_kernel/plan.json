@@ -1,0 +1,66 @@
+{
+  "frozen_at": "2026-09-18T17:14:57.992631+08:00",
+  "status": "planned before fitting; no new J predictions read",
+  "identity": "Separate follow-up candidate adapted from DRiFt; U PH remains original primary candidate.",
+  "trigger": "Literature and U author-internal validation observations, before new J evaluation; not a preplanned single-candidate validation.",
+  "paper": "https://aclanthology.org/D19-6115.pdf",
+  "paper_scope": "Sections 2-3.2 and 4.2; restricted frozen linear adaptation, not full model reproduction or original algorithm.",
+  "data": "Reuse U author balanced train and frozen P+PMID+H connected-component split: 4435 train / 1109 validation; no author dev/test or J for fitting/selection.",
+  "features": "U original-backbone PH and H-only final-token features, each using its frozen train-only scaler. No hidden-vector subtraction, no new forward passes.",
+  "bias": "Selected frozen U H-only logistic margin, C already selected by author internal validation. No crossfit, recalibration, weighting or offset-scale tuning.",
+  "objective": "mean(logaddexp(0, X_PH @ w + b + margin_H) - y * (X_PH @ w + b + margin_H)) + dot(w,w)/(2*C*n_train)",
+  "inference": "Only X_PH @ w + b; omit H-only offset. positive iff margin >= 0. No threshold tuning.",
+  "training": {
+    "C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "solver": "scipy.optimize.minimize L-BFGS-B",
+    "parameters": 4097,
+    "initialization": "zeros independently for every C",
+    "maxiter": 2000,
+    "maxls": 50,
+    "gtol": 1e-06,
+    "ftol": "64 * float64 epsilon",
+    "intercept_regularized": false,
+    "threads": 1
+  },
+  "selection": "Lowest residual-only author internal val stable NLL among successful optimizer results; exact tie smaller C; no train+val refit.",
+  "offset0_check": {
+    "reference": "All 3 frozen U PH sklearn grid fits on same standardized features",
+    "max_probability_difference": 0.001,
+    "max_validation_NLL_difference": 1e-05,
+    "required_decision_disagreements": 0,
+    "require_same_selected_C": true,
+    "report": "Coefficient, margin, objective, probability, NLL differences and decisions; numerical mismatch stops residual fitting, does not alter tolerance after seeing scores."
+  },
+  "checks": [
+    "Stable objective analytic gradient vs central differences on fixed synthetic data including extreme margins.",
+    "Both U training summaries complete and source/features/heads hashed before fitting; start/end immutable input checks.",
+    "Offset0 comparison before residual fitting; report all converged fits and offset train/val diagnostics."
+  ],
+  "outputs": [
+    "source_freeze.json",
+    "u_inputs_freeze.json",
+    "m4|m5/offset0_check.json",
+    "m4|m5/trained_head.npz",
+    "m4|m5/grid_parameters.npz",
+    "m4|m5/training_summary.json",
+    "m4|m5/author_predictions.jsonl"
+  ],
+  "J": "No new J scoring until both U and new candidate heads selected/frozen; current script cannot score J.",
+  "D": "No D access or inference.",
+  "limitations": [
+    "Insufficient H-only features may carry valid semantics; suppression can hurt.",
+    "High bias confidence on its own training rows may reduce learning gradients; report rather than silently change protocol.",
+    "BioNLI annotation/marker ambiguities remain; no label change.",
+    "Repeated internal validation use is exploratory; PH-vs-H-only and residual improvements do not alone establish causal premise use."
+  ],
+  "numerical_revision": {
+    "prior_plan_sha256": "7a7e44a70167b5f7219e0d96f4f1c56a2b155e36b266b82cf56d81eb3471c07f",
+    "trigger": "Original M4 zero-offset numerical precheck failed before residual fitting: 0 decision disagreements, max probability difference .000522, but val NLL differences at C=.1/1 exceeded frozen 1e-5.",
+    "change": "Reuse installed sklearn 1.7.2 LinearModelLoss/HalfBinomialLoss stable loss_gradient, supplying PH+fixed-H raw_prediction; mathematical objective, optimizer settings, selection and all parity tolerances unchanged.",
+    "preserved": "Original source, plan, frozen hashes, failed M4 check/log remain at parent. No new J or D scored."
+  }
+}

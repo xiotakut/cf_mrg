@@ -1,0 +1,55 @@
+{
+  "method": "M3",
+  "name": "marag_intrinsic_qwen3_8b",
+  "upstream": "/home/data3/txy/MA-RAG",
+  "upstream_commit": "423f031cc0ffca679a047c885be999b9604100a9",
+  "model": "/home/data3/txy/models/Qwen3-8B",
+  "dtype": "bfloat16",
+  "candidates": 8,
+  "max_rounds": 4,
+  "solver": {
+    "temperature": 0.7,
+    "max_tokens": 2048,
+    "thinking": false
+  },
+  "query": {
+    "temperature": 0.0,
+    "max_tokens": 8192,
+    "thinking": true
+  },
+  "top_logprobs": 20,
+  "server_seed": 223,
+  "max_model_len": 131072,
+  "rope_scaling": {
+    "rope_type": "yarn",
+    "factor": 4.0,
+    "original_max_position_embeddings": 32768
+  },
+  "generation_config": "/home/data3/txy/models/Qwen3-8B/generation_config.json",
+  "endpoints": [
+    "http://127.0.0.1:8011/v1",
+    "http://127.0.0.1:8012/v1"
+  ],
+  "retrieval": {
+    "host": "http://127.0.0.1:8993",
+    "corpus": "MedCorp3",
+    "sources": [
+      "pubmed",
+      "textbooks",
+      "wikipedia"
+    ],
+    "retriever": "BM25",
+    "total_k": 32,
+    "top_k": 2,
+    "reranker": "MedCPT-Cross-Encoder"
+  },
+  "vote": "unique highest final candidate count; ties invalid",
+  "stopping": "unanimous parsed answers or four rounds",
+  "history": "upstream descending mean top-20 token entropy order",
+  "diagnosis_vote_normalization": "case and whitespace/punctuation normalization only; no canonical labels or synonyms",
+  "query_format_failure": "save original output; missing thinking delimiter is runtime-invalid; no unbounded semantic retries",
+  "transport_failure": "stop affected worker and preserve completed stages for technical recovery",
+  "additional_modules": [],
+  "format_repairs": 0,
+  "judge_calls": 0
+}

@@ -1,0 +1,20 @@
+{
+  "status": "complete_development_controls",
+  "checks": [
+    {
+      "model": "llama",
+      "new_calls": 12,
+      "identical_requests_reused": 4
+    },
+    {
+      "model": "qwen",
+      "new_calls": 12,
+      "identical_requests_reused": 4
+    }
+  ],
+  "source": "Same two exposed cases106/654, original models, native plain and chat contexts.",
+  "intervention": "Every complete diagnosis continuation ends with exactly one period, identical to the existing uniform-style head. Raw source labels remain unchanged.",
+  "metrics": "Sum of complete-target token logprobs, and sum / len(uniform_candidate). Native-source exact ties use original candidate order. Report all controls and head arms; no best-arm selection.",
+  "reuse": "Only when encoded prefix, target and complete token sequence are identical to the saved original request. New requests12 per backbone, reused4 per backbone.",
+  "independent_generalization": false
+}

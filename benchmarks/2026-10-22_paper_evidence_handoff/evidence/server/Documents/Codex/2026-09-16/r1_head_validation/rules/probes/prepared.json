@@ -1,0 +1,36 @@
+{
+  "status": "prepared_waiting_for_diagnosis",
+  "prepared_at": 1789551459.438875,
+  "preflights": [
+    {
+      "model": "llama",
+      "stage": "baseline",
+      "calls": 33,
+      "max_prompt_tokens": 388
+    },
+    {
+      "model": "llama",
+      "stage": "facts",
+      "calls": 33,
+      "max_prompt_tokens": 724
+    },
+    {
+      "model": "qwen",
+      "stage": "baseline",
+      "calls": 33,
+      "max_prompt_tokens": 371
+    },
+    {
+      "model": "qwen",
+      "stage": "facts",
+      "calls": 33,
+      "max_prompt_tokens": 713
+    }
+  ],
+  "freeze": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/frozen_head",
+  "new_calls_expected": 198,
+  "head_source": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/frozen_head/r2_condition_head.py",
+  "baseline": "One user current question/options plus existing multi-answer M4 format contract; no RAG, prior endpoint, hidden facts, or guideline table. These are backbone controlled baselines, not full M4/M5 pipelines.",
+  "decoding": "Baseline temp0.7 seed42 max2048; Llama original structured schema, Qwen nonthinking unguided. Facts/execution temp0 seed42 max2048, both JSON-guided; frozen fact prompts unchanged.",
+  "samefacts": "Exact existing R1 same-facts readable rule execution with <=300 word explanation and same scope/default exceptions; actual cleaned model facts only."
+}

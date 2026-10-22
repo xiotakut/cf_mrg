@@ -1,0 +1,160 @@
+{
+  "version": "effect_first_cycle2_development_decision_v1",
+  "created_at": "2026-09-23T17:26:23.439961+08:00",
+  "status": "completed_not_adopted",
+  "method_adopted": false,
+  "independent_evaluation_started": false,
+  "fixed_scopes": {
+    "a1_target34": {
+      "unique_inputs_per_backbone": 34,
+      "arms": 2,
+      "families": 14
+    },
+    "a3_original8": {
+      "unique_inputs_per_backbone": 8,
+      "arms": 2,
+      "respond_pairs": 4
+    },
+    "a5_scope32": {
+      "unique_inputs_per_backbone": 32,
+      "arms": 5,
+      "maintain_pairs": 16,
+      "respond_pairs": 16,
+      "synthetic_development": true
+    }
+  },
+  "conclusions": {
+    "a1_target_answer_evidence_local_edit_v1": {
+      "decision": "not_adopted_do_not_expand_this_version_to_121",
+      "B_correct": [
+        24,
+        28
+      ],
+      "candidate_correct": [
+        19,
+        23
+      ],
+      "matched_control_correct": [
+        21,
+        23
+      ],
+      "repairs": [
+        1,
+        0
+      ],
+      "harms": [
+        6,
+        5
+      ],
+      "unavailable": [
+        0,
+        0
+      ],
+      "reason": "Complete native answers did not establish evidence-specific net benefit. M5 count ties control but native-unit score is lower. The target-only multi action cannot express a replacement of the only selected target with another key."
+    },
+    "a3_original_compare": {
+      "decision": "not_adopted_keep_adopted_catalog_kernel",
+      "B_correct": [
+        3,
+        4
+      ],
+      "candidate_correct": [
+        2,
+        3
+      ],
+      "matched_control_correct": [
+        3,
+        4
+      ],
+      "repairs": [
+        0,
+        0
+      ],
+      "harms": [
+        1,
+        1
+      ],
+      "reason": "Correct competitors already present in five old wrong cases were not used; increased relation changes did not improve both-correct outcomes."
+    },
+    "a5_premise_on_scope32": {
+      "decision": "not_adopted_keep_F_identity",
+      "F_correct": [
+        31,
+        31
+      ],
+      "candidate_correct": [
+        30,
+        31
+      ],
+      "matched_control_correct": [
+        30,
+        31
+      ],
+      "natural_triggers": [
+        1,
+        1
+      ],
+      "reason": "Candidate and matched control identical on all32 per backbone; M4 harms one old correct input. Direct probes also show no advantage."
+    },
+    "direct_verdict_postprocessing": {
+      "decision": "diagnostic_only_not_adopted",
+      "correct": [
+        15,
+        18
+      ],
+      "unavailable": [
+        11,
+        10
+      ],
+      "fixed_denominator_per_backbone": 34,
+      "repairs_vs_B": [
+        0,
+        0
+      ],
+      "within_original_1_repair_11_harms": {
+        "rescued_harms": 5,
+        "lost_only_repair": 1,
+        "unavailable": 6
+      },
+      "full_scope_vs_actual_A1": {
+        "repairs": 5,
+        "harms": 4,
+        "correct_lost_to_unavailable": 10
+      },
+      "new_model_calls": 0,
+      "old_method_results_changed": false,
+      "reason": "Removing adjudication recovers some lost correct judgments but cannot resolve ambiguous/unfinished proposals and yields no available repair of B. This is posthoc development diagnosis, not a new default."
+    }
+  },
+  "evidence": {
+    "a1_target34": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a1_target34/results/summary.json",
+    "a3_original8": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a3_original8/results/summary.json",
+    "a5_scope32": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a5_scope32/comparison.json",
+    "direct_verdict_readout": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a1_target34/direct_verdict_readout/results/summary.json"
+  },
+  "research_boundary": {
+    "development_results_not_independent": true,
+    "same_budget_means_equal_predeclared_caps_not_exact_realized_cost": true,
+    "full121_not_replaced_by_small_panels": true,
+    "old_failure_denominators_retained": true,
+    "old_native_answers_not_relabelled": true,
+    "optional_diagnostic_truncation_not_hidden_by_valid_final": true
+  },
+  "next_finite_hypothesis": "Before further aggregation tuning, use existing lawful knowledge/tool access to obtain candidate-discriminating support bound to current entity, scope and condition; compare on a newly fixed development family panel with the same-tool, same-budget ordinary reanswer. Current direct-status readout yielded zero available B repairs, so do not iterate citation validators or prompt wording on these same cases.",
+  "not_done": [
+    "New method adopted",
+    "Full121 regression of a promising cycle2 combination",
+    "Complete compact same-tools single-agent control",
+    "New source/family validation",
+    "Joint method freeze",
+    "Independent evaluation"
+  ],
+  "preserved": [
+    "Formal v5",
+    "Native scorer",
+    "B interface v2",
+    "Adopted A2/A3/A4/F",
+    "All previous negative results and costs"
+  ],
+  "updated_at": "2026-09-23T17:37:32.379250+08:00"
+}

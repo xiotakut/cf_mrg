@@ -1,0 +1,161 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 2,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469388,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 1,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "variant": "statistical",
+      "n": 40,
+      "correct": 12,
+      "macro_recall": 0.4056122448979592,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 6,
+          "harms": 15
+        },
+        "uncued4": {
+          "repairs": 8,
+          "harms": 14
+        },
+        "model": {
+          "repairs": 6,
+          "harms": 15
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.4056122448979592,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 2,
+          "harms": 2
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 1452,
+    "fact_calls": 1280,
+    "scope_probe_calls": 12,
+    "final_calls": 160,
+    "input_tokens": 1525549,
+    "output_tokens": 23412,
+    "invalid_cases": 0,
+    "length_stops": 0
+  },
+  "diagnostics": {
+    "values": {
+      "yes": 266,
+      "unknown": 850,
+      "no": 164
+    },
+    "rejected_quotes": 17,
+    "known_per_case": [
+      12,
+      13,
+      8,
+      11,
+      9,
+      11,
+      12,
+      13,
+      10,
+      11,
+      13,
+      10,
+      4,
+      12,
+      9,
+      11,
+      14,
+      9,
+      11,
+      10,
+      11,
+      5,
+      6,
+      7,
+      10,
+      13,
+      14,
+      11,
+      13,
+      12,
+      15,
+      13,
+      11,
+      7,
+      7,
+      12,
+      12,
+      12,
+      13,
+      13
+    ],
+    "all_unknown_cases": 0,
+    "scope_probes_correct": 8,
+    "scope_probes_n": 12
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 3696862,
+    "method": "M4",
+    "gpu": 3,
+    "finished": [
+      "facts",
+      "final"
+    ],
+    "elapsed_seconds": 135.6344392299652,
+    "elapsed_scope": "recovery only; initial main duration retained separately",
+    "initial_run_elapsed_seconds": 249.78573298454285
+  }
+}

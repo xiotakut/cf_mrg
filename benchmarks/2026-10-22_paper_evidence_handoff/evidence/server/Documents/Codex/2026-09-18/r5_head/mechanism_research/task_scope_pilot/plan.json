@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-09-18 16:27:00 +0800",
+  "status": "planned; no new forwards",
+  "arm": "task_scope",
+  "population": "All 112 existing exposed J NLI inputs per backbone: 40 R5 pairs and 16 strong different-H pairs. Keep existing train/dev only as reporting slices; no training/selection.",
+  "intervention": "Exactly learned_rule_head.choice_request(item, all original system messages, rotation) for audited eligible inputs. No new instruction, rewritten question, entity rendering, code prefix, or aggregation.",
+  "eligibility": "single positive/negative identity options; unique nonempty explicit P/H; one fixed TASK menu plus one complete different-premise example with terminal label only; audited native system(s)+one user wrapper. Extra fixed facts, definitions, ambiguous boundaries, or unknown wrapper -> full K request. Unknown unsupported choice task -> untouched original messages/order None; caller must preserve native path.",
+  "inference": "Same HF bf16 SDPA worker/model/config as K, JSON answer_choice prefix, two code rotations, semantic mean probabilities. Zero new training and zero native generation.",
+  "dedup": "Full rendered prompt SHA256 independently per backbone, expected 224 logical -> 144 actual. No gold/pair/group metadata in eligibility or prompt. Exact hash duplicates reuse one forward via explicit map.",
+  "primary_control": "K full-input base on same 112: cached 224 forwards per backbone, same rule/prefix/model/scoring. No newly trained K weights.",
+  "secondary_controls": [
+    "E repeat_rendering under common literal bindings (different added-input control)",
+    "old direct vLLM code scoring (backend/prompt difference)",
+    "old combined head (strong system control, different budget)"
+  ],
+  "reports": [
+    "all/train/dev R5 and strong controls",
+    "both-correct, reference, variant, valid invariance, endpoint gold-label accuracy",
+    "repairs, harms, decisions changed vs each control",
+    "per-order disagreement; request dedup / actual costs",
+    "constant positive/negative offline descriptive baselines, not candidate selection"
+  ],
+  "decision": "Do not adopt without both-backbone R5 improvement and preserved strong different-H sensitivity; no backbone-specific strategy picking. Development evidence only; D remains 0 inference.",
+  "limitations": [
+    "Removing non-system messages is a deliberate research input-processing intervention, not unchanged formal full-input evaluation.",
+    "Dedup makes same-request decision invariance a program property, not learned correctness.",
+    "This request API has no full native generation/faithful explanation validation.",
+    "Audited constructor family only; not a universal inference-authority parser for arbitrary messages."
+  ],
+  "prior": "RP kernel already failed to improve strong controls broadly; see nli_authority_scope.md. New trial differs by matched K definition/code-score interface, not by claiming removal has never been tested."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "prepared",
+  "backbone": "llama",
+  "methods": [
+    "M0",
+    "M2",
+    "M4",
+    "M6"
+  ],
+  "cases_per_method": 40,
+  "new_calls": 160,
+  "max_prompt_tokens": 4377,
+  "change": "Only replace the original system instruction with one common terminal diagnostic instruction. All other native context and final v1 request remain unchanged. M3/M7 include a separate no-history interaction arm.",
+  "scope": "Same exposed R3 diagnosis development scout; no gold or training-answer bank in requests.",
+  "control": "Reuse original native-system repeat_patient predictions, with identical weights, vocabulary, schema, decoding and max384 output."
+}

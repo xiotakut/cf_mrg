@@ -1,0 +1,19 @@
+{
+  "status": "prepared",
+  "prepared_at": "2026-09-14T12:40:36.902567+08:00",
+  "original_method": "M4 structured full v5",
+  "target_inputs": 79,
+  "medpic_inputs": 75,
+  "m14_inputs": 4,
+  "new_calls": 158,
+  "calls_per_candidate_per_input": 1,
+  "methods": [
+    "baseline",
+    "option_review",
+    "audit_recommend",
+    "audit_model",
+    "audit_execute"
+  ],
+  "labels_and_gold_used_only_in_preparation_and_scoring": true,
+  "note": "audit_recommend, audit_model and audit_execute reuse the SAME support generation."
+}

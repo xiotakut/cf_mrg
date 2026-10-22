@@ -1,0 +1,38 @@
+{
+  "status": "frozen_before_predictions",
+  "prepared_at": 1789551146.4393768,
+  "preflights": [
+    {
+      "method": "M4",
+      "cases": 47,
+      "head_distributions": 282,
+      "direct_calls": 47,
+      "max_head_tokens": 1605,
+      "max_direct_tokens": 558
+    },
+    {
+      "method": "M5",
+      "cases": 47,
+      "head_distributions": 282,
+      "direct_calls": 47,
+      "max_head_tokens": 1588,
+      "max_direct_tokens": 537
+    }
+  ],
+  "inputs": "47 final qualified complete native ASCENT Text fields; all source train/test results separate",
+  "variants": [
+    "native_direct",
+    "copy_last_impression",
+    "order0",
+    "uncalibrated_majority",
+    "calibrated_majority"
+  ],
+  "native_direct": "Original backbone, native one-user prompt; temperature0.7, top_p1, top_k-1, seed42, max_tokens2048, no output schema",
+  "scoring": "Frozen project canonical-name accuracy on public full-name-matched subset, not ASCENT official GPT4.1x5 semantic precision/recall/F1. Gold casing mapped through frozen canonical names before scoring.",
+  "parser": "Last complete boxed answer; one text/mathrm wrapper stripped; no content rewriting or subtype aliases; absent box invalid",
+  "priors": "Frozen m4/m5 priors transferred unchanged across source prompt template; no source-prior refit",
+  "controls": "Frozen order0, six uncalibrated votes, six calibrated votes; last-prior whole-string strict catalog control; no newly selected settings",
+  "new_primary_calls": 658,
+  "prior_new_calls": 0,
+  "inference_reads_gold": false
+}

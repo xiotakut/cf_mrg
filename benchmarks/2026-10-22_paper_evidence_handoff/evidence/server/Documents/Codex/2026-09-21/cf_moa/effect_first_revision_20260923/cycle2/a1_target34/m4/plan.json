@@ -1,0 +1,941 @@
+{
+  "protocol": {
+    "version": "a1_target_answer_evidence_local_edit_v1_fixed34",
+    "status": "prepared_not_run",
+    "scope": "Exactly the prior fixed 34 exposed-development inputs per backbone; no outcome-based reselection",
+    "selection_manifest": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/panel_selection.json",
+    "selection_sha256": "1a8bcb631b35807f6dc27d1f21bae20a794eede88aa553851d9d195505db8279",
+    "original_plan": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/quality34/plan.json",
+    "original_plan_sha256": "35e97a91a54ceeab6b8cec77bfd68eb12231ff892166086c6dd8a4b462a5d9bb",
+    "panel_ids": [
+      "d00000",
+      "d00003",
+      "d00004",
+      "d00005",
+      "d00006",
+      "d00008",
+      "d00009",
+      "d00011",
+      "d00013",
+      "d00014",
+      "d00023",
+      "d00032",
+      "d00038",
+      "d00040",
+      "d00043",
+      "d00051",
+      "d00052",
+      "d00063",
+      "d00064",
+      "d00070",
+      "d00071",
+      "d00073",
+      "d00080",
+      "d00083",
+      "d00091",
+      "d00095",
+      "d00099",
+      "d00101",
+      "d00103",
+      "d00104",
+      "d00108",
+      "d00112",
+      "d00117",
+      "d00118"
+    ],
+    "generation": {
+      "temperature": 0.7,
+      "seed": 42,
+      "diagnostic_max_tokens": 768,
+      "answer_max_tokens": 512,
+      "repair_max_tokens": 128
+    },
+    "per_task_budget": {
+      "max_model_requests": 3,
+      "max_input_tokens": 600000,
+      "max_output_tokens": 1408,
+      "max_tool_calls": 0
+    },
+    "arms": [
+      "a1_target_evidence",
+      "a1_target_reanswer"
+    ],
+    "target_selection": "Reuse the actual prior visible target key, identically in both arms; no new target selection",
+    "final_action_space": "Multi changes only the chosen target membership; single/relation/diagnosis chooses one legal native key",
+    "failure_policy": "One shared native-format repair; optional audit warnings continue; unavailable final remains in denominator; systemic failure stops affected backbone",
+    "live_model_calls": 0,
+    "native_scoring_calls": 0,
+    "independent_evaluation": false,
+    "historical_results_overwritten": false,
+    "actual_live_release": "Parent runner release/launch records are required; this preparation is not a model launch",
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl",
+        "inputs_sha256": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl",
+        "bases_sha256": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a1_target34/m4_unused_proposals.jsonl",
+        "proposals_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tasks": [
+          {
+            "task_id": "d00000:a1_target_evidence",
+            "request_id": "d00000",
+            "arm": "a1_target_evidence",
+            "target": "B"
+          },
+          {
+            "task_id": "d00000:a1_target_reanswer",
+            "request_id": "d00000",
+            "arm": "a1_target_reanswer",
+            "target": "B"
+          },
+          {
+            "task_id": "d00003:a1_target_evidence",
+            "request_id": "d00003",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00003:a1_target_reanswer",
+            "request_id": "d00003",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00004:a1_target_evidence",
+            "request_id": "d00004",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00004:a1_target_reanswer",
+            "request_id": "d00004",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00005:a1_target_evidence",
+            "request_id": "d00005",
+            "arm": "a1_target_evidence",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00005:a1_target_reanswer",
+            "request_id": "d00005",
+            "arm": "a1_target_reanswer",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00006:a1_target_evidence",
+            "request_id": "d00006",
+            "arm": "a1_target_evidence",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00006:a1_target_reanswer",
+            "request_id": "d00006",
+            "arm": "a1_target_reanswer",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00008:a1_target_evidence",
+            "request_id": "d00008",
+            "arm": "a1_target_evidence",
+            "target": "Pulmonary embolism"
+          },
+          {
+            "task_id": "d00008:a1_target_reanswer",
+            "request_id": "d00008",
+            "arm": "a1_target_reanswer",
+            "target": "Pulmonary embolism"
+          },
+          {
+            "task_id": "d00009:a1_target_evidence",
+            "request_id": "d00009",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00009:a1_target_reanswer",
+            "request_id": "d00009",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00011:a1_target_evidence",
+            "request_id": "d00011",
+            "arm": "a1_target_evidence",
+            "target": "Sarcoidosis"
+          },
+          {
+            "task_id": "d00011:a1_target_reanswer",
+            "request_id": "d00011",
+            "arm": "a1_target_reanswer",
+            "target": "Sarcoidosis"
+          },
+          {
+            "task_id": "d00013:a1_target_evidence",
+            "request_id": "d00013",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00013:a1_target_reanswer",
+            "request_id": "d00013",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00014:a1_target_evidence",
+            "request_id": "d00014",
+            "arm": "a1_target_evidence",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00014:a1_target_reanswer",
+            "request_id": "d00014",
+            "arm": "a1_target_reanswer",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00023:a1_target_evidence",
+            "request_id": "d00023",
+            "arm": "a1_target_evidence",
+            "target": "negative"
+          },
+          {
+            "task_id": "d00023:a1_target_reanswer",
+            "request_id": "d00023",
+            "arm": "a1_target_reanswer",
+            "target": "negative"
+          },
+          {
+            "task_id": "d00032:a1_target_evidence",
+            "request_id": "d00032",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00032:a1_target_reanswer",
+            "request_id": "d00032",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00038:a1_target_evidence",
+            "request_id": "d00038",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00038:a1_target_reanswer",
+            "request_id": "d00038",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00040:a1_target_evidence",
+            "request_id": "d00040",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00040:a1_target_reanswer",
+            "request_id": "d00040",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00043:a1_target_evidence",
+            "request_id": "d00043",
+            "arm": "a1_target_evidence",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00043:a1_target_reanswer",
+            "request_id": "d00043",
+            "arm": "a1_target_reanswer",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00051:a1_target_evidence",
+            "request_id": "d00051",
+            "arm": "a1_target_evidence",
+            "target": "Myocarditis"
+          },
+          {
+            "task_id": "d00051:a1_target_reanswer",
+            "request_id": "d00051",
+            "arm": "a1_target_reanswer",
+            "target": "Myocarditis"
+          },
+          {
+            "task_id": "d00052:a1_target_evidence",
+            "request_id": "d00052",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00052:a1_target_reanswer",
+            "request_id": "d00052",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00063:a1_target_evidence",
+            "request_id": "d00063",
+            "arm": "a1_target_evidence",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00063:a1_target_reanswer",
+            "request_id": "d00063",
+            "arm": "a1_target_reanswer",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00064:a1_target_evidence",
+            "request_id": "d00064",
+            "arm": "a1_target_evidence",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00064:a1_target_reanswer",
+            "request_id": "d00064",
+            "arm": "a1_target_reanswer",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00070:a1_target_evidence",
+            "request_id": "d00070",
+            "arm": "a1_target_evidence",
+            "target": "Acute pulmonary edema"
+          },
+          {
+            "task_id": "d00070:a1_target_reanswer",
+            "request_id": "d00070",
+            "arm": "a1_target_reanswer",
+            "target": "Acute pulmonary edema"
+          },
+          {
+            "task_id": "d00071:a1_target_evidence",
+            "request_id": "d00071",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00071:a1_target_reanswer",
+            "request_id": "d00071",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00073:a1_target_evidence",
+            "request_id": "d00073",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00073:a1_target_reanswer",
+            "request_id": "d00073",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00080:a1_target_evidence",
+            "request_id": "d00080",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00080:a1_target_reanswer",
+            "request_id": "d00080",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00083:a1_target_evidence",
+            "request_id": "d00083",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00083:a1_target_reanswer",
+            "request_id": "d00083",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00091:a1_target_evidence",
+            "request_id": "d00091",
+            "arm": "a1_target_evidence",
+            "target": "positive"
+          },
+          {
+            "task_id": "d00091:a1_target_reanswer",
+            "request_id": "d00091",
+            "arm": "a1_target_reanswer",
+            "target": "positive"
+          },
+          {
+            "task_id": "d00095:a1_target_evidence",
+            "request_id": "d00095",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00095:a1_target_reanswer",
+            "request_id": "d00095",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00099:a1_target_evidence",
+            "request_id": "d00099",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00099:a1_target_reanswer",
+            "request_id": "d00099",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00101:a1_target_evidence",
+            "request_id": "d00101",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00101:a1_target_reanswer",
+            "request_id": "d00101",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00103:a1_target_evidence",
+            "request_id": "d00103",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00103:a1_target_reanswer",
+            "request_id": "d00103",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00104:a1_target_evidence",
+            "request_id": "d00104",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00104:a1_target_reanswer",
+            "request_id": "d00104",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00108:a1_target_evidence",
+            "request_id": "d00108",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00108:a1_target_reanswer",
+            "request_id": "d00108",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00112:a1_target_evidence",
+            "request_id": "d00112",
+            "arm": "a1_target_evidence",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00112:a1_target_reanswer",
+            "request_id": "d00112",
+            "arm": "a1_target_reanswer",
+            "target": "uncertainty"
+          },
+          {
+            "task_id": "d00117:a1_target_evidence",
+            "request_id": "d00117",
+            "arm": "a1_target_evidence",
+            "target": "no difference"
+          },
+          {
+            "task_id": "d00117:a1_target_reanswer",
+            "request_id": "d00117",
+            "arm": "a1_target_reanswer",
+            "target": "no difference"
+          },
+          {
+            "task_id": "d00118:a1_target_evidence",
+            "request_id": "d00118",
+            "arm": "a1_target_evidence",
+            "target": "yes"
+          },
+          {
+            "task_id": "d00118:a1_target_reanswer",
+            "request_id": "d00118",
+            "arm": "a1_target_reanswer",
+            "target": "yes"
+          }
+        ]
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl",
+        "inputs_sha256": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl",
+        "bases_sha256": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a1_target34/m5_unused_proposals.jsonl",
+        "proposals_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tasks": [
+          {
+            "task_id": "d00000:a1_target_evidence",
+            "request_id": "d00000",
+            "arm": "a1_target_evidence",
+            "target": "B"
+          },
+          {
+            "task_id": "d00000:a1_target_reanswer",
+            "request_id": "d00000",
+            "arm": "a1_target_reanswer",
+            "target": "B"
+          },
+          {
+            "task_id": "d00003:a1_target_evidence",
+            "request_id": "d00003",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00003:a1_target_reanswer",
+            "request_id": "d00003",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00004:a1_target_evidence",
+            "request_id": "d00004",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00004:a1_target_reanswer",
+            "request_id": "d00004",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00005:a1_target_evidence",
+            "request_id": "d00005",
+            "arm": "a1_target_evidence",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00005:a1_target_reanswer",
+            "request_id": "d00005",
+            "arm": "a1_target_reanswer",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00006:a1_target_evidence",
+            "request_id": "d00006",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00006:a1_target_reanswer",
+            "request_id": "d00006",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00008:a1_target_evidence",
+            "request_id": "d00008",
+            "arm": "a1_target_evidence",
+            "target": "Pulmonary neoplasm"
+          },
+          {
+            "task_id": "d00008:a1_target_reanswer",
+            "request_id": "d00008",
+            "arm": "a1_target_reanswer",
+            "target": "Pulmonary neoplasm"
+          },
+          {
+            "task_id": "d00009:a1_target_evidence",
+            "request_id": "d00009",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00009:a1_target_reanswer",
+            "request_id": "d00009",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00011:a1_target_evidence",
+            "request_id": "d00011",
+            "arm": "a1_target_evidence",
+            "target": "Tuberculosis"
+          },
+          {
+            "task_id": "d00011:a1_target_reanswer",
+            "request_id": "d00011",
+            "arm": "a1_target_reanswer",
+            "target": "Tuberculosis"
+          },
+          {
+            "task_id": "d00013:a1_target_evidence",
+            "request_id": "d00013",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00013:a1_target_reanswer",
+            "request_id": "d00013",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00014:a1_target_evidence",
+            "request_id": "d00014",
+            "arm": "a1_target_evidence",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00014:a1_target_reanswer",
+            "request_id": "d00014",
+            "arm": "a1_target_reanswer",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00023:a1_target_evidence",
+            "request_id": "d00023",
+            "arm": "a1_target_evidence",
+            "target": "positive"
+          },
+          {
+            "task_id": "d00023:a1_target_reanswer",
+            "request_id": "d00023",
+            "arm": "a1_target_reanswer",
+            "target": "positive"
+          },
+          {
+            "task_id": "d00032:a1_target_evidence",
+            "request_id": "d00032",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00032:a1_target_reanswer",
+            "request_id": "d00032",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00038:a1_target_evidence",
+            "request_id": "d00038",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00038:a1_target_reanswer",
+            "request_id": "d00038",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00040:a1_target_evidence",
+            "request_id": "d00040",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00040:a1_target_reanswer",
+            "request_id": "d00040",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00043:a1_target_evidence",
+            "request_id": "d00043",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00043:a1_target_reanswer",
+            "request_id": "d00043",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00051:a1_target_evidence",
+            "request_id": "d00051",
+            "arm": "a1_target_evidence",
+            "target": "Possible NSTEMI / STEMI"
+          },
+          {
+            "task_id": "d00051:a1_target_reanswer",
+            "request_id": "d00051",
+            "arm": "a1_target_reanswer",
+            "target": "Possible NSTEMI / STEMI"
+          },
+          {
+            "task_id": "d00052:a1_target_evidence",
+            "request_id": "d00052",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00052:a1_target_reanswer",
+            "request_id": "d00052",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00063:a1_target_evidence",
+            "request_id": "d00063",
+            "arm": "a1_target_evidence",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00063:a1_target_reanswer",
+            "request_id": "d00063",
+            "arm": "a1_target_reanswer",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00064:a1_target_evidence",
+            "request_id": "d00064",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00064:a1_target_reanswer",
+            "request_id": "d00064",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00070:a1_target_evidence",
+            "request_id": "d00070",
+            "arm": "a1_target_evidence",
+            "target": "Acute pulmonary edema"
+          },
+          {
+            "task_id": "d00070:a1_target_reanswer",
+            "request_id": "d00070",
+            "arm": "a1_target_reanswer",
+            "target": "Acute pulmonary edema"
+          },
+          {
+            "task_id": "d00071:a1_target_evidence",
+            "request_id": "d00071",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00071:a1_target_reanswer",
+            "request_id": "d00071",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00073:a1_target_evidence",
+            "request_id": "d00073",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00073:a1_target_reanswer",
+            "request_id": "d00073",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00080:a1_target_evidence",
+            "request_id": "d00080",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00080:a1_target_reanswer",
+            "request_id": "d00080",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00083:a1_target_evidence",
+            "request_id": "d00083",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00083:a1_target_reanswer",
+            "request_id": "d00083",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00091:a1_target_evidence",
+            "request_id": "d00091",
+            "arm": "a1_target_evidence",
+            "target": "positive"
+          },
+          {
+            "task_id": "d00091:a1_target_reanswer",
+            "request_id": "d00091",
+            "arm": "a1_target_reanswer",
+            "target": "positive"
+          },
+          {
+            "task_id": "d00095:a1_target_evidence",
+            "request_id": "d00095",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00095:a1_target_reanswer",
+            "request_id": "d00095",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00099:a1_target_evidence",
+            "request_id": "d00099",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00099:a1_target_reanswer",
+            "request_id": "d00099",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          },
+          {
+            "task_id": "d00101:a1_target_evidence",
+            "request_id": "d00101",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00101:a1_target_reanswer",
+            "request_id": "d00101",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00103:a1_target_evidence",
+            "request_id": "d00103",
+            "arm": "a1_target_evidence",
+            "target": "A"
+          },
+          {
+            "task_id": "d00103:a1_target_reanswer",
+            "request_id": "d00103",
+            "arm": "a1_target_reanswer",
+            "target": "A"
+          },
+          {
+            "task_id": "d00104:a1_target_evidence",
+            "request_id": "d00104",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00104:a1_target_reanswer",
+            "request_id": "d00104",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00108:a1_target_evidence",
+            "request_id": "d00108",
+            "arm": "a1_target_evidence",
+            "target": "C"
+          },
+          {
+            "task_id": "d00108:a1_target_reanswer",
+            "request_id": "d00108",
+            "arm": "a1_target_reanswer",
+            "target": "C"
+          },
+          {
+            "task_id": "d00112:a1_target_evidence",
+            "request_id": "d00112",
+            "arm": "a1_target_evidence",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00112:a1_target_reanswer",
+            "request_id": "d00112",
+            "arm": "a1_target_reanswer",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00117:a1_target_evidence",
+            "request_id": "d00117",
+            "arm": "a1_target_evidence",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00117:a1_target_reanswer",
+            "request_id": "d00117",
+            "arm": "a1_target_reanswer",
+            "target": "higher"
+          },
+          {
+            "task_id": "d00118:a1_target_evidence",
+            "request_id": "d00118",
+            "arm": "a1_target_evidence",
+            "target": "no"
+          },
+          {
+            "task_id": "d00118:a1_target_reanswer",
+            "request_id": "d00118",
+            "arm": "a1_target_reanswer",
+            "target": "no"
+          }
+        ]
+      }
+    }
+  },
+  "method": "M4",
+  "profile": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 16384
+    }
+  },
+  "profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+    "copy": "readout_m4.json",
+    "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+  },
+  "selected_source_sha256": "686972d9442aee22eb7ce8c61fdfdba6e33f397a6a7e609c20b62c95ed4381f0",
+  "code_sources": {
+    "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "841756d0df28345c58a1c8fff975206e4453216b18f532aa5170e0ff480e9122",
+    "/home/data3/txy/cf_moa/controller/effect_first.py": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+    "/home/data3/txy/cf_moa/agents/a1_target_evidence.py": "d6953f295f6e3ba3dce99befdbd7e93ba9c9f5989175e5c531b9e98c8f1b9552"
+  }
+}

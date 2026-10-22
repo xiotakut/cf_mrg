@@ -1,0 +1,144 @@
+{
+  "results": [
+    {
+      "method": "M4",
+      "cohort": "r5_development",
+      "arm": "direct",
+      "units": 8,
+      "mappings": 16,
+      "correct": 8,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 50.0,
+      "both_pct": 37.5,
+      "invariant_pct": 75.0
+    },
+    {
+      "method": "M4",
+      "cohort": "r5_development",
+      "arm": "native_single",
+      "units": 8,
+      "mappings": 16,
+      "correct": 8,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 50.0,
+      "both_pct": 37.5,
+      "invariant_pct": 75.0
+    },
+    {
+      "method": "M4",
+      "cohort": "strong_relevant_change",
+      "arm": "direct",
+      "units": 8,
+      "mappings": 16,
+      "correct": 10,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0
+    },
+    {
+      "method": "M4",
+      "cohort": "strong_relevant_change",
+      "arm": "native_single",
+      "units": 8,
+      "mappings": 16,
+      "correct": 10,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0
+    },
+    {
+      "method": "M5",
+      "cohort": "r5_development",
+      "arm": "direct",
+      "units": 8,
+      "mappings": 16,
+      "correct": 12,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 75.0,
+      "both_pct": 62.5,
+      "invariant_pct": 75.0
+    },
+    {
+      "method": "M5",
+      "cohort": "r5_development",
+      "arm": "native_single",
+      "units": 8,
+      "mappings": 16,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 87.5,
+      "both_pct": 62.5,
+      "invariant_pct": 62.5
+    },
+    {
+      "method": "M5",
+      "cohort": "strong_relevant_change",
+      "arm": "direct",
+      "units": 8,
+      "mappings": 16,
+      "correct": 14,
+      "invalid": 0,
+      "variant_pct": 87.5,
+      "reference_pct": 87.5,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0
+    },
+    {
+      "method": "M5",
+      "cohort": "strong_relevant_change",
+      "arm": "native_single",
+      "units": 8,
+      "mappings": 16,
+      "correct": 14,
+      "invalid": 0,
+      "variant_pct": 87.5,
+      "reference_pct": 87.5,
+      "both_pct": 75.0,
+      "invariant_pct": 25.0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 64,
+      "input_tokens": 194578,
+      "output_tokens": 10815,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "pid": 2536933,
+        "gpu": 0,
+        "method": "M4",
+        "planned": 64,
+        "completed": 64,
+        "initialization_seconds": 14.772200584411621,
+        "elapsed_seconds": 41.4527153968811
+      }
+    },
+    {
+      "method": "M5",
+      "new_calls": 64,
+      "input_tokens": 178966,
+      "output_tokens": 11611,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "pid": 2536934,
+        "gpu": 1,
+        "method": "M5",
+        "planned": 64,
+        "completed": 64,
+        "initialization_seconds": 15.005683660507202,
+        "elapsed_seconds": 47.06251931190491
+      }
+    }
+  ]
+}

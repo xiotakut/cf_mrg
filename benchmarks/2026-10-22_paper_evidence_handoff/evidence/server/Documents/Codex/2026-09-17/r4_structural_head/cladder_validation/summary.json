@@ -1,0 +1,4974 @@
+{
+  "status": "complete",
+  "new_calls": 5372,
+  "results": [
+    {
+      "method": "M4",
+      "grouping": "all",
+      "group": "all",
+      "arm": "redo",
+      "n": 1343,
+      "correct": 922,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "all",
+      "group": "all",
+      "arm": "compiled_model",
+      "n": 1343,
+      "correct": 936,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "all",
+      "group": "all",
+      "arm": "head",
+      "n": 1343,
+      "correct": 995,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 276,
+        "harms": 203,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 145,
+        "harms": 86,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 818,
+        "inconsistent_program_model_answer": 83,
+        "invalid_program_model_answer": 395,
+        "unidentified_model_answer": 28,
+        "unsupported_model_answer": 19
+      },
+      "program_routes": {
+        "executed": 818,
+        "inconsistent_program": 83,
+        "invalid_program": 395,
+        "unidentified_model_answer": 28,
+        "unsupported_model_answer": 19
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "IV",
+      "arm": "redo",
+      "n": 158,
+      "correct": 111,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "IV",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 106,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "IV",
+      "arm": "head",
+      "n": 158,
+      "correct": 109,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 24,
+        "harms": 26,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 92,
+        "executed": 47,
+        "unidentified_model_answer": 2,
+        "inconsistent_program_model_answer": 16,
+        "unsupported_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 92,
+        "executed": 47,
+        "unidentified_model_answer": 2,
+        "inconsistent_program": 16,
+        "unsupported_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "arrowhead",
+      "arm": "redo",
+      "n": 158,
+      "correct": 103,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "arrowhead",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 112,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "arrowhead",
+      "arm": "head",
+      "n": 158,
+      "correct": 127,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 38,
+        "harms": 14,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 19,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 13,
+        "invalid_program_model_answer": 70,
+        "executed": 70,
+        "unidentified_model_answer": 4,
+        "unsupported_model_answer": 1
+      },
+      "program_routes": {
+        "inconsistent_program": 13,
+        "invalid_program": 70,
+        "executed": 70,
+        "unidentified_model_answer": 4,
+        "unsupported_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "chain",
+      "arm": "redo",
+      "n": 158,
+      "correct": 117,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "chain",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 114,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "chain",
+      "arm": "head",
+      "n": 158,
+      "correct": 89,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 22,
+        "harms": 50,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 10,
+        "harms": 35,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 3,
+        "invalid_program_model_answer": 23,
+        "unidentified_model_answer": 4,
+        "executed": 125,
+        "unsupported_model_answer": 3
+      },
+      "program_routes": {
+        "inconsistent_program": 3,
+        "invalid_program": 23,
+        "unidentified_model_answer": 4,
+        "executed": 125,
+        "unsupported_model_answer": 3
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "confounding",
+      "arm": "redo",
+      "n": 158,
+      "correct": 111,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "confounding",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 113,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "confounding",
+      "arm": "head",
+      "n": 158,
+      "correct": 122,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 34,
+        "harms": 23,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 17,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 91,
+        "inconsistent_program_model_answer": 14,
+        "invalid_program_model_answer": 48,
+        "unsupported_model_answer": 4,
+        "unidentified_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 91,
+        "inconsistent_program": 14,
+        "invalid_program": 48,
+        "unsupported_model_answer": 4,
+        "unidentified_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "diamond",
+      "arm": "redo",
+      "n": 158,
+      "correct": 99,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "diamond",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 105,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "diamond",
+      "arm": "head",
+      "n": 158,
+      "correct": 102,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 33,
+        "harms": 30,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 14,
+        "harms": 17,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 108,
+        "inconsistent_program_model_answer": 12,
+        "invalid_program_model_answer": 34,
+        "unidentified_model_answer": 1,
+        "unsupported_model_answer": 3
+      },
+      "program_routes": {
+        "executed": 108,
+        "inconsistent_program": 12,
+        "invalid_program": 34,
+        "unidentified_model_answer": 1,
+        "unsupported_model_answer": 3
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "diamondcut",
+      "arm": "redo",
+      "n": 108,
+      "correct": 74,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "diamondcut",
+      "arm": "compiled_model",
+      "n": 108,
+      "correct": 72,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "diamondcut",
+      "arm": "head",
+      "n": 108,
+      "correct": 94,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 30,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 25,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 98,
+        "unidentified_model_answer": 4,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 2
+      },
+      "program_routes": {
+        "executed": 98,
+        "unidentified_model_answer": 4,
+        "inconsistent_program": 4,
+        "invalid_program": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "fork",
+      "arm": "redo",
+      "n": 143,
+      "correct": 102,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "fork",
+      "arm": "compiled_model",
+      "n": 143,
+      "correct": 107,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "fork",
+      "arm": "head",
+      "n": 143,
+      "correct": 121,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 29,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 17,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 31,
+        "executed": 103,
+        "unsupported_model_answer": 2,
+        "inconsistent_program_model_answer": 7
+      },
+      "program_routes": {
+        "invalid_program": 31,
+        "executed": 103,
+        "unsupported_model_answer": 2,
+        "inconsistent_program": 7
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "frontdoor",
+      "arm": "redo",
+      "n": 158,
+      "correct": 103,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "frontdoor",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 102,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "frontdoor",
+      "arm": "head",
+      "n": 158,
+      "correct": 119,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 39,
+        "harms": 23,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 26,
+        "harms": 9,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 117,
+        "invalid_program_model_answer": 30,
+        "unidentified_model_answer": 2,
+        "inconsistent_program_model_answer": 9
+      },
+      "program_routes": {
+        "executed": 117,
+        "invalid_program": 30,
+        "unidentified_model_answer": 2,
+        "inconsistent_program": 9
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "mediation",
+      "arm": "redo",
+      "n": 144,
+      "correct": 102,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "mediation",
+      "arm": "compiled_model",
+      "n": 144,
+      "correct": 105,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "graph_id",
+      "group": "mediation",
+      "arm": "head",
+      "n": 144,
+      "correct": 112,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 27,
+        "harms": 17,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 11,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 65,
+        "executed": 59,
+        "unsupported_model_answer": 5,
+        "inconsistent_program_model_answer": 5,
+        "unidentified_model_answer": 10
+      },
+      "program_routes": {
+        "invalid_program": 65,
+        "executed": 59,
+        "unsupported_model_answer": 5,
+        "inconsistent_program": 5,
+        "unidentified_model_answer": 10
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "old_action_conflict",
+      "group": false,
+      "arm": "redo",
+      "n": 1061,
+      "correct": 717,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "old_action_conflict",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 1061,
+      "correct": 735,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "old_action_conflict",
+      "group": false,
+      "arm": "head",
+      "n": 1061,
+      "correct": 771,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 220,
+        "harms": 166,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 112,
+        "harms": 76,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 647,
+        "inconsistent_program_model_answer": 60,
+        "invalid_program_model_answer": 312,
+        "unidentified_model_answer": 26,
+        "unsupported_model_answer": 16
+      },
+      "program_routes": {
+        "executed": 647,
+        "inconsistent_program": 60,
+        "invalid_program": 312,
+        "unidentified_model_answer": 26,
+        "unsupported_model_answer": 16
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "old_action_conflict",
+      "group": true,
+      "arm": "redo",
+      "n": 282,
+      "correct": 205,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "old_action_conflict",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 282,
+      "correct": 201,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "old_action_conflict",
+      "group": true,
+      "arm": "head",
+      "n": 282,
+      "correct": 224,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 56,
+        "harms": 37,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 33,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 83,
+        "executed": 171,
+        "inconsistent_program_model_answer": 23,
+        "unsupported_model_answer": 3,
+        "unidentified_model_answer": 2
+      },
+      "program_routes": {
+        "invalid_program": 83,
+        "executed": 171,
+        "inconsistent_program": 23,
+        "unsupported_model_answer": 3,
+        "unidentified_model_answer": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "blood_pressure",
+      "arm": "redo",
+      "n": 18,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "blood_pressure",
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 11,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "blood_pressure",
+      "arm": "head",
+      "n": 18,
+      "correct": 11,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 17,
+        "unsupported_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 17,
+        "unsupported_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "cholesterol",
+      "arm": "redo",
+      "n": 21,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "cholesterol",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "cholesterol",
+      "arm": "head",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 11,
+        "executed": 10
+      },
+      "program_routes": {
+        "invalid_program": 11,
+        "executed": 10
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "college_salary",
+      "arm": "redo",
+      "n": 18,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "college_salary",
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "college_salary",
+      "arm": "head",
+      "n": 18,
+      "correct": 12,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 0,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 11,
+        "unidentified_model_answer": 1,
+        "executed": 4
+      },
+      "program_routes": {
+        "inconsistent_program": 2,
+        "invalid_program": 11,
+        "unidentified_model_answer": 1,
+        "executed": 4
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "college_wage",
+      "arm": "redo",
+      "n": 27,
+      "correct": 22,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "college_wage",
+      "arm": "compiled_model",
+      "n": 27,
+      "correct": 23,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "college_wage",
+      "arm": "head",
+      "n": 27,
+      "correct": 23,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 25,
+        "executed": 2
+      },
+      "program_routes": {
+        "invalid_program": 25,
+        "executed": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "encouagement_program",
+      "arm": "redo",
+      "n": 12,
+      "correct": 8,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "encouagement_program",
+      "arm": "compiled_model",
+      "n": 12,
+      "correct": 9,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "encouagement_program",
+      "arm": "head",
+      "n": 12,
+      "correct": 9,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 10,
+        "executed": 2
+      },
+      "program_routes": {
+        "invalid_program": 10,
+        "executed": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "firing_squad",
+      "arm": "redo",
+      "n": 25,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "firing_squad",
+      "arm": "compiled_model",
+      "n": 25,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "firing_squad",
+      "arm": "head",
+      "n": 25,
+      "correct": 16,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 15,
+        "inconsistent_program_model_answer": 3,
+        "invalid_program_model_answer": 6,
+        "unsupported_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 15,
+        "inconsistent_program": 3,
+        "invalid_program": 6,
+        "unsupported_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "floor_wet",
+      "arm": "redo",
+      "n": 22,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "floor_wet",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "floor_wet",
+      "arm": "head",
+      "n": 22,
+      "correct": 11,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 13,
+        "unidentified_model_answer": 1,
+        "executed": 8
+      },
+      "program_routes": {
+        "invalid_program": 13,
+        "unidentified_model_answer": 1,
+        "executed": 8
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "forest_fire",
+      "arm": "redo",
+      "n": 21,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "forest_fire",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 14,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "forest_fire",
+      "arm": "head",
+      "n": 21,
+      "correct": 14,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 16,
+        "executed": 3,
+        "inconsistent_program_model_answer": 2
+      },
+      "program_routes": {
+        "invalid_program": 16,
+        "executed": 3,
+        "inconsistent_program": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_admission",
+      "arm": "redo",
+      "n": 18,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_admission",
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_admission",
+      "arm": "head",
+      "n": 18,
+      "correct": 14,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "unsupported_model_answer": 4,
+        "invalid_program_model_answer": 12,
+        "executed": 2
+      },
+      "program_routes": {
+        "unsupported_model_answer": 4,
+        "invalid_program": 12,
+        "executed": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_admission_state",
+      "arm": "redo",
+      "n": 26,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_admission_state",
+      "arm": "compiled_model",
+      "n": 26,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_admission_state",
+      "arm": "head",
+      "n": 26,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 1,
+        "invalid_program_model_answer": 21,
+        "executed": 4
+      },
+      "program_routes": {
+        "inconsistent_program": 1,
+        "invalid_program": 21,
+        "executed": 4
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_pay",
+      "arm": "redo",
+      "n": 19,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_pay",
+      "arm": "compiled_model",
+      "n": 19,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "gender_pay",
+      "arm": "head",
+      "n": 19,
+      "correct": 17,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 13,
+        "executed": 6
+      },
+      "program_routes": {
+        "invalid_program": 13,
+        "executed": 6
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "getting_late",
+      "arm": "redo",
+      "n": 20,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "getting_late",
+      "arm": "compiled_model",
+      "n": 20,
+      "correct": 14,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "getting_late",
+      "arm": "head",
+      "n": 20,
+      "correct": 14,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 8,
+        "invalid_program_model_answer": 9,
+        "unsupported_model_answer": 2,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 8,
+        "invalid_program": 9,
+        "unsupported_model_answer": 2,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "getting_tanned",
+      "arm": "redo",
+      "n": 12,
+      "correct": 9,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "getting_tanned",
+      "arm": "compiled_model",
+      "n": 12,
+      "correct": 9,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "getting_tanned",
+      "arm": "head",
+      "n": 12,
+      "correct": 11,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 5,
+        "executed": 7
+      },
+      "program_routes": {
+        "invalid_program": 5,
+        "executed": 7
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nature_vs_nurture",
+      "arm": "redo",
+      "n": 16,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nature_vs_nurture",
+      "arm": "compiled_model",
+      "n": 16,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nature_vs_nurture",
+      "arm": "head",
+      "n": 16,
+      "correct": 15,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 3,
+        "executed": 6,
+        "invalid_program_model_answer": 7
+      },
+      "program_routes": {
+        "inconsistent_program": 3,
+        "executed": 6,
+        "invalid_program": 7
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "neg_mediation",
+      "arm": "redo",
+      "n": 11,
+      "correct": 7,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "neg_mediation",
+      "arm": "compiled_model",
+      "n": 11,
+      "correct": 4,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "neg_mediation",
+      "arm": "head",
+      "n": 11,
+      "correct": 5,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 4,
+        "executed": 5,
+        "inconsistent_program_model_answer": 2
+      },
+      "program_routes": {
+        "invalid_program": 4,
+        "executed": 5,
+        "inconsistent_program": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense0",
+      "arm": "redo",
+      "n": 84,
+      "correct": 56,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense0",
+      "arm": "compiled_model",
+      "n": 84,
+      "correct": 54,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense0",
+      "arm": "head",
+      "n": 84,
+      "correct": 65,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 21,
+        "harms": 12,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 19,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 74,
+        "invalid_program_model_answer": 5,
+        "inconsistent_program_model_answer": 2,
+        "unidentified_model_answer": 3
+      },
+      "program_routes": {
+        "executed": 74,
+        "invalid_program": 5,
+        "inconsistent_program": 2,
+        "unidentified_model_answer": 3
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense1",
+      "arm": "redo",
+      "n": 78,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense1",
+      "arm": "compiled_model",
+      "n": 78,
+      "correct": 51,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense1",
+      "arm": "head",
+      "n": 78,
+      "correct": 56,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 22,
+        "harms": 14,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 13,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 64,
+        "invalid_program_model_answer": 8,
+        "inconsistent_program_model_answer": 6
+      },
+      "program_routes": {
+        "executed": 64,
+        "invalid_program": 8,
+        "inconsistent_program": 6
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense2",
+      "arm": "redo",
+      "n": 72,
+      "correct": 50,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense2",
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 56,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense2",
+      "arm": "head",
+      "n": 72,
+      "correct": 56,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 19,
+        "harms": 13,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 12,
+        "harms": 12,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 65,
+        "unidentified_model_answer": 1,
+        "inconsistent_program_model_answer": 6
+      },
+      "program_routes": {
+        "executed": 65,
+        "unidentified_model_answer": 1,
+        "inconsistent_program": 6
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense3",
+      "arm": "redo",
+      "n": 71,
+      "correct": 49,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense3",
+      "arm": "compiled_model",
+      "n": 71,
+      "correct": 55,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense3",
+      "arm": "head",
+      "n": 71,
+      "correct": 67,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 20,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 13,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 63,
+        "invalid_program_model_answer": 7,
+        "unsupported_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 63,
+        "invalid_program": 7,
+        "unsupported_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense4",
+      "arm": "redo",
+      "n": 61,
+      "correct": 39,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense4",
+      "arm": "compiled_model",
+      "n": 61,
+      "correct": 40,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense4",
+      "arm": "head",
+      "n": 61,
+      "correct": 44,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 15,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 10,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 53,
+        "invalid_program_model_answer": 6,
+        "inconsistent_program_model_answer": 1,
+        "unidentified_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 53,
+        "invalid_program": 6,
+        "inconsistent_program": 1,
+        "unidentified_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense5",
+      "arm": "redo",
+      "n": 69,
+      "correct": 49,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense5",
+      "arm": "compiled_model",
+      "n": 69,
+      "correct": 47,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense5",
+      "arm": "head",
+      "n": 69,
+      "correct": 51,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 15,
+        "harms": 13,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 13,
+        "harms": 9,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 65,
+        "invalid_program_model_answer": 1,
+        "inconsistent_program_model_answer": 2,
+        "unidentified_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 65,
+        "invalid_program": 1,
+        "inconsistent_program": 2,
+        "unidentified_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense6",
+      "arm": "redo",
+      "n": 76,
+      "correct": 47,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense6",
+      "arm": "compiled_model",
+      "n": 76,
+      "correct": 54,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense6",
+      "arm": "head",
+      "n": 76,
+      "correct": 62,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 23,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 14,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 62,
+        "inconsistent_program_model_answer": 7,
+        "invalid_program_model_answer": 3,
+        "unidentified_model_answer": 4
+      },
+      "program_routes": {
+        "executed": 62,
+        "inconsistent_program": 7,
+        "invalid_program": 3,
+        "unidentified_model_answer": 4
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense7",
+      "arm": "redo",
+      "n": 68,
+      "correct": 52,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense7",
+      "arm": "compiled_model",
+      "n": 68,
+      "correct": 56,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense7",
+      "arm": "head",
+      "n": 68,
+      "correct": 56,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 62,
+        "unidentified_model_answer": 1,
+        "inconsistent_program_model_answer": 3,
+        "invalid_program_model_answer": 2
+      },
+      "program_routes": {
+        "executed": 62,
+        "unidentified_model_answer": 1,
+        "inconsistent_program": 3,
+        "invalid_program": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense8",
+      "arm": "redo",
+      "n": 76,
+      "correct": 49,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense8",
+      "arm": "compiled_model",
+      "n": 76,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense8",
+      "arm": "head",
+      "n": 76,
+      "correct": 55,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 16,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 11,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 58,
+        "invalid_program_model_answer": 5,
+        "unidentified_model_answer": 6,
+        "inconsistent_program_model_answer": 7
+      },
+      "program_routes": {
+        "executed": 58,
+        "invalid_program": 5,
+        "unidentified_model_answer": 6,
+        "inconsistent_program": 7
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense9",
+      "arm": "redo",
+      "n": 71,
+      "correct": 47,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense9",
+      "arm": "compiled_model",
+      "n": 71,
+      "correct": 54,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "nonsense9",
+      "arm": "head",
+      "n": 71,
+      "correct": 53,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 20,
+        "harms": 14,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 7,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 64,
+        "invalid_program_model_answer": 7
+      },
+      "program_routes": {
+        "executed": 64,
+        "invalid_program": 7
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "obesity_mortality",
+      "arm": "redo",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "obesity_mortality",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 14,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "obesity_mortality",
+      "arm": "head",
+      "n": 21,
+      "correct": 14,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 9,
+        "inconsistent_program_model_answer": 4,
+        "executed": 8
+      },
+      "program_routes": {
+        "invalid_program": 9,
+        "inconsistent_program": 4,
+        "executed": 8
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "orange_scurvy",
+      "arm": "redo",
+      "n": 22,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "orange_scurvy",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 10,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "orange_scurvy",
+      "arm": "head",
+      "n": 22,
+      "correct": 11,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 9,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 11,
+        "invalid_program_model_answer": 7,
+        "unsupported_model_answer": 3,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 11,
+        "invalid_program": 7,
+        "unsupported_model_answer": 3,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "penguin",
+      "arm": "redo",
+      "n": 14,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "penguin",
+      "arm": "compiled_model",
+      "n": 14,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "penguin",
+      "arm": "head",
+      "n": 14,
+      "correct": 13,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 11,
+        "executed": 2,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 11,
+        "executed": 2,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "price",
+      "arm": "redo",
+      "n": 21,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "price",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 10,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "price",
+      "arm": "head",
+      "n": 21,
+      "correct": 10,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 20,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 20,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_drug",
+      "arm": "redo",
+      "n": 21,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_drug",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_drug",
+      "arm": "head",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 8,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 11
+      },
+      "program_routes": {
+        "executed": 8,
+        "inconsistent_program": 2,
+        "invalid_program": 11
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_hospital",
+      "arm": "redo",
+      "n": 25,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_hospital",
+      "arm": "compiled_model",
+      "n": 25,
+      "correct": 20,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_hospital",
+      "arm": "head",
+      "n": 25,
+      "correct": 20,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 7,
+        "inconsistent_program_model_answer": 7,
+        "unsupported_model_answer": 2,
+        "invalid_program_model_answer": 8,
+        "unidentified_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 7,
+        "inconsistent_program": 7,
+        "unsupported_model_answer": 2,
+        "invalid_program": 8,
+        "unidentified_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_kidneystone",
+      "arm": "redo",
+      "n": 28,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_kidneystone",
+      "arm": "compiled_model",
+      "n": 28,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_kidneystone",
+      "arm": "head",
+      "n": 28,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 2,
+        "executed": 7,
+        "invalid_program_model_answer": 17,
+        "unsupported_model_answer": 2
+      },
+      "program_routes": {
+        "inconsistent_program": 2,
+        "executed": 7,
+        "invalid_program": 17,
+        "unsupported_model_answer": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_vaccine",
+      "arm": "redo",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_vaccine",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "simpson_vaccine",
+      "arm": "head",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 11,
+        "invalid_program_model_answer": 8,
+        "inconsistent_program_model_answer": 2
+      },
+      "program_routes": {
+        "executed": 11,
+        "invalid_program": 8,
+        "inconsistent_program": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoke_birthWeight",
+      "arm": "redo",
+      "n": 12,
+      "correct": 8,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoke_birthWeight",
+      "arm": "compiled_model",
+      "n": 12,
+      "correct": 8,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoke_birthWeight",
+      "arm": "head",
+      "n": 12,
+      "correct": 9,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 6,
+        "executed": 5,
+        "unsupported_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 6,
+        "executed": 5,
+        "unsupported_model_answer": 1
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_frontdoor",
+      "arm": "redo",
+      "n": 45,
+      "correct": 34,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_frontdoor",
+      "arm": "compiled_model",
+      "n": 45,
+      "correct": 32,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_frontdoor",
+      "arm": "head",
+      "n": 45,
+      "correct": 33,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 16,
+        "invalid_program_model_answer": 22,
+        "unidentified_model_answer": 2,
+        "inconsistent_program_model_answer": 5
+      },
+      "program_routes": {
+        "executed": 16,
+        "invalid_program": 22,
+        "unidentified_model_answer": 2,
+        "inconsistent_program": 5
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_gene_cancer",
+      "arm": "redo",
+      "n": 14,
+      "correct": 10,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_gene_cancer",
+      "arm": "compiled_model",
+      "n": 14,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_gene_cancer",
+      "arm": "head",
+      "n": 14,
+      "correct": 11,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 5,
+        "executed": 5,
+        "unidentified_model_answer": 2,
+        "inconsistent_program_model_answer": 2
+      },
+      "program_routes": {
+        "invalid_program": 5,
+        "executed": 5,
+        "unidentified_model_answer": 2,
+        "inconsistent_program": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_tar_cancer",
+      "arm": "redo",
+      "n": 19,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_tar_cancer",
+      "arm": "compiled_model",
+      "n": 19,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "smoking_tar_cancer",
+      "arm": "head",
+      "n": 19,
+      "correct": 10,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 12,
+        "invalid_program_model_answer": 5,
+        "unidentified_model_answer": 2
+      },
+      "program_routes": {
+        "executed": 12,
+        "invalid_program": 5,
+        "unidentified_model_answer": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "tax_smoke_birthWeight",
+      "arm": "redo",
+      "n": 22,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "tax_smoke_birthWeight",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "tax_smoke_birthWeight",
+      "arm": "head",
+      "n": 22,
+      "correct": 12,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 20,
+        "executed": 2
+      },
+      "program_routes": {
+        "invalid_program": 20,
+        "executed": 2
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "vaccine_kills",
+      "arm": "redo",
+      "n": 22,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "vaccine_kills",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "vaccine_kills",
+      "arm": "head",
+      "n": 22,
+      "correct": 12,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 13,
+        "unsupported_model_answer": 2,
+        "executed": 3
+      },
+      "program_routes": {
+        "inconsistent_program": 4,
+        "invalid_program": 13,
+        "unsupported_model_answer": 2,
+        "executed": 3
+      }
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "water_cholera",
+      "arm": "redo",
+      "n": 24,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "water_cholera",
+      "arm": "compiled_model",
+      "n": 24,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "grouping": "story_id",
+      "group": "water_cholera",
+      "arm": "head",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 9,
+        "unidentified_model_answer": 2,
+        "executed": 9,
+        "inconsistent_program_model_answer": 4
+      },
+      "program_routes": {
+        "invalid_program": 9,
+        "unidentified_model_answer": 2,
+        "executed": 9,
+        "inconsistent_program": 4
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "all",
+      "group": "all",
+      "arm": "redo",
+      "n": 1343,
+      "correct": 930,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "all",
+      "group": "all",
+      "arm": "compiled_model",
+      "n": 1343,
+      "correct": 967,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "grouping": "all",
+      "group": "all",
+      "arm": "head",
+      "n": 1343,
+      "correct": 993,
+      "invalid": 16,
+      "vs_redo": {
+        "repairs": 201,
+        "harms": 138,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 75,
+        "harms": 49,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 336,
+        "executed": 842,
+        "invalid_program": 16,
+        "inconsistent_program_model_answer": 79,
+        "unidentified_model_answer": 70
+      },
+      "program_routes": {
+        "invalid_program": 352,
+        "executed": 842,
+        "inconsistent_program": 79,
+        "unidentified_model_answer": 70
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "IV",
+      "arm": "redo",
+      "n": 158,
+      "correct": 110,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "IV",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 132,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "IV",
+      "arm": "head",
+      "n": 158,
+      "correct": 137,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 33,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 7,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 82,
+        "invalid_program_model_answer": 72,
+        "unidentified_model_answer": 3,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 82,
+        "invalid_program": 72,
+        "unidentified_model_answer": 3,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "arrowhead",
+      "arm": "redo",
+      "n": 158,
+      "correct": 114,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "arrowhead",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 135,
+      "invalid": 6
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "arrowhead",
+      "arm": "head",
+      "n": 158,
+      "correct": 139,
+      "invalid": 6,
+      "vs_redo": {
+        "repairs": 32,
+        "harms": 7,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 7,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 74,
+        "executed": 76,
+        "invalid_program": 6,
+        "unidentified_model_answer": 2
+      },
+      "program_routes": {
+        "invalid_program": 80,
+        "executed": 76,
+        "unidentified_model_answer": 2
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "chain",
+      "arm": "redo",
+      "n": 158,
+      "correct": 110,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "chain",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 108,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "chain",
+      "arm": "head",
+      "n": 158,
+      "correct": 112,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 31,
+        "harms": 29,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 16,
+        "harms": 12,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 15,
+        "executed": 95,
+        "inconsistent_program_model_answer": 48
+      },
+      "program_routes": {
+        "invalid_program": 15,
+        "executed": 95,
+        "inconsistent_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "confounding",
+      "arm": "redo",
+      "n": 158,
+      "correct": 119,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "confounding",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 113,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "confounding",
+      "arm": "head",
+      "n": 158,
+      "correct": 118,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 12,
+        "harms": 13,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 7,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 118,
+        "invalid_program_model_answer": 34,
+        "inconsistent_program_model_answer": 5,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "executed": 118,
+        "invalid_program": 35,
+        "inconsistent_program": 5
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "diamond",
+      "arm": "redo",
+      "n": 158,
+      "correct": 109,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "diamond",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 98,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "diamond",
+      "arm": "head",
+      "n": 158,
+      "correct": 97,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 27,
+        "harms": 39,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 16,
+        "harms": 17,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 46,
+        "executed": 106,
+        "invalid_program": 5,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 51,
+        "executed": 106,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "diamondcut",
+      "arm": "redo",
+      "n": 108,
+      "correct": 70,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "diamondcut",
+      "arm": "compiled_model",
+      "n": 108,
+      "correct": 66,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "diamondcut",
+      "arm": "head",
+      "n": 108,
+      "correct": 70,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 76,
+        "unidentified_model_answer": 25,
+        "inconsistent_program_model_answer": 5,
+        "invalid_program_model_answer": 2
+      },
+      "program_routes": {
+        "executed": 76,
+        "unidentified_model_answer": 25,
+        "inconsistent_program": 5,
+        "invalid_program": 2
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "fork",
+      "arm": "redo",
+      "n": 143,
+      "correct": 97,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "fork",
+      "arm": "compiled_model",
+      "n": 143,
+      "correct": 102,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "fork",
+      "arm": "head",
+      "n": 143,
+      "correct": 110,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 18,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 10,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 108,
+        "invalid_program_model_answer": 18,
+        "inconsistent_program_model_answer": 1,
+        "unidentified_model_answer": 16
+      },
+      "program_routes": {
+        "executed": 108,
+        "invalid_program": 18,
+        "inconsistent_program": 1,
+        "unidentified_model_answer": 16
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "frontdoor",
+      "arm": "redo",
+      "n": 158,
+      "correct": 102,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "frontdoor",
+      "arm": "compiled_model",
+      "n": 158,
+      "correct": 115,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "frontdoor",
+      "arm": "head",
+      "n": 158,
+      "correct": 116,
+      "invalid": 4,
+      "vs_redo": {
+        "repairs": 22,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 15,
+        "executed": 108,
+        "invalid_program_model_answer": 29,
+        "invalid_program": 4,
+        "unidentified_model_answer": 2
+      },
+      "program_routes": {
+        "inconsistent_program": 15,
+        "executed": 108,
+        "invalid_program": 33,
+        "unidentified_model_answer": 2
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "mediation",
+      "arm": "redo",
+      "n": 144,
+      "correct": 99,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "mediation",
+      "arm": "compiled_model",
+      "n": 144,
+      "correct": 98,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "graph_id",
+      "group": "mediation",
+      "arm": "head",
+      "n": 144,
+      "correct": 94,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 19,
+        "harms": 24,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 9,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 73,
+        "invalid_program_model_answer": 46,
+        "unidentified_model_answer": 22,
+        "inconsistent_program_model_answer": 3
+      },
+      "program_routes": {
+        "executed": 73,
+        "invalid_program": 46,
+        "unidentified_model_answer": 22,
+        "inconsistent_program": 3
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "old_action_conflict",
+      "group": false,
+      "arm": "redo",
+      "n": 1061,
+      "correct": 714,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "old_action_conflict",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 1061,
+      "correct": 745,
+      "invalid": 13
+    },
+    {
+      "method": "M5",
+      "grouping": "old_action_conflict",
+      "group": false,
+      "arm": "head",
+      "n": 1061,
+      "correct": 768,
+      "invalid": 13,
+      "vs_redo": {
+        "repairs": 173,
+        "harms": 119,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 67,
+        "harms": 44,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 263,
+        "executed": 663,
+        "invalid_program": 13,
+        "inconsistent_program_model_answer": 66,
+        "unidentified_model_answer": 56
+      },
+      "program_routes": {
+        "invalid_program": 276,
+        "executed": 663,
+        "inconsistent_program": 66,
+        "unidentified_model_answer": 56
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "old_action_conflict",
+      "group": true,
+      "arm": "redo",
+      "n": 282,
+      "correct": 216,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "old_action_conflict",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 282,
+      "correct": 222,
+      "invalid": 3
+    },
+    {
+      "method": "M5",
+      "grouping": "old_action_conflict",
+      "group": true,
+      "arm": "head",
+      "n": 282,
+      "correct": 225,
+      "invalid": 3,
+      "vs_redo": {
+        "repairs": 28,
+        "harms": 19,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 8,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 179,
+        "invalid_program_model_answer": 73,
+        "inconsistent_program_model_answer": 13,
+        "unidentified_model_answer": 14,
+        "invalid_program": 3
+      },
+      "program_routes": {
+        "executed": 179,
+        "invalid_program": 76,
+        "inconsistent_program": 13,
+        "unidentified_model_answer": 14
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "blood_pressure",
+      "arm": "redo",
+      "n": 18,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "blood_pressure",
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "blood_pressure",
+      "arm": "head",
+      "n": 18,
+      "correct": 14,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 12,
+        "executed": 6
+      },
+      "program_routes": {
+        "invalid_program": 12,
+        "executed": 6
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "cholesterol",
+      "arm": "redo",
+      "n": 21,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "cholesterol",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "cholesterol",
+      "arm": "head",
+      "n": 21,
+      "correct": 21,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 21
+      },
+      "program_routes": {
+        "executed": 21
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "college_salary",
+      "arm": "redo",
+      "n": 18,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "college_salary",
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 14,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "college_salary",
+      "arm": "head",
+      "n": 18,
+      "correct": 14,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 13,
+        "executed": 2,
+        "inconsistent_program_model_answer": 3
+      },
+      "program_routes": {
+        "invalid_program": 13,
+        "executed": 2,
+        "inconsistent_program": 3
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "college_wage",
+      "arm": "redo",
+      "n": 27,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "college_wage",
+      "arm": "compiled_model",
+      "n": 27,
+      "correct": 24,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "college_wage",
+      "arm": "head",
+      "n": 27,
+      "correct": 24,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 13,
+        "invalid_program_model_answer": 13,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 13,
+        "invalid_program": 13,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "encouagement_program",
+      "arm": "redo",
+      "n": 12,
+      "correct": 9,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "encouagement_program",
+      "arm": "compiled_model",
+      "n": 12,
+      "correct": 6,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "encouagement_program",
+      "arm": "head",
+      "n": 12,
+      "correct": 6,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 8,
+        "executed": 4
+      },
+      "program_routes": {
+        "invalid_program": 8,
+        "executed": 4
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "firing_squad",
+      "arm": "redo",
+      "n": 25,
+      "correct": 20,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "firing_squad",
+      "arm": "compiled_model",
+      "n": 25,
+      "correct": 20,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "firing_squad",
+      "arm": "head",
+      "n": 25,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 17,
+        "executed": 8
+      },
+      "program_routes": {
+        "invalid_program": 17,
+        "executed": 8
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "floor_wet",
+      "arm": "redo",
+      "n": 22,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "floor_wet",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "floor_wet",
+      "arm": "head",
+      "n": 22,
+      "correct": 15,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 21,
+        "executed": 1
+      },
+      "program_routes": {
+        "invalid_program": 21,
+        "executed": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "forest_fire",
+      "arm": "redo",
+      "n": 21,
+      "correct": 14,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "forest_fire",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "forest_fire",
+      "arm": "head",
+      "n": 21,
+      "correct": 20,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 20,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 20,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_admission",
+      "arm": "redo",
+      "n": 18,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_admission",
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_admission",
+      "arm": "head",
+      "n": 18,
+      "correct": 11,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 14,
+        "executed": 4
+      },
+      "program_routes": {
+        "invalid_program": 14,
+        "executed": 4
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_admission_state",
+      "arm": "redo",
+      "n": 26,
+      "correct": 25,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_admission_state",
+      "arm": "compiled_model",
+      "n": 26,
+      "correct": 25,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_admission_state",
+      "arm": "head",
+      "n": 26,
+      "correct": 26,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 19,
+        "executed": 7
+      },
+      "program_routes": {
+        "invalid_program": 19,
+        "executed": 7
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_pay",
+      "arm": "redo",
+      "n": 19,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_pay",
+      "arm": "compiled_model",
+      "n": 19,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "gender_pay",
+      "arm": "head",
+      "n": 19,
+      "correct": 19,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 14,
+        "executed": 5
+      },
+      "program_routes": {
+        "invalid_program": 14,
+        "executed": 5
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "getting_late",
+      "arm": "redo",
+      "n": 20,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "getting_late",
+      "arm": "compiled_model",
+      "n": 20,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "getting_late",
+      "arm": "head",
+      "n": 20,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 12,
+        "executed": 8
+      },
+      "program_routes": {
+        "invalid_program": 12,
+        "executed": 8
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "getting_tanned",
+      "arm": "redo",
+      "n": 12,
+      "correct": 10,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "getting_tanned",
+      "arm": "compiled_model",
+      "n": 12,
+      "correct": 10,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "getting_tanned",
+      "arm": "head",
+      "n": 12,
+      "correct": 10,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 10,
+        "invalid_program_model_answer": 2
+      },
+      "program_routes": {
+        "executed": 10,
+        "invalid_program": 2
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nature_vs_nurture",
+      "arm": "redo",
+      "n": 16,
+      "correct": 11,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nature_vs_nurture",
+      "arm": "compiled_model",
+      "n": 16,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nature_vs_nurture",
+      "arm": "head",
+      "n": 16,
+      "correct": 15,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 6,
+        "executed": 10
+      },
+      "program_routes": {
+        "invalid_program": 6,
+        "executed": 10
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "neg_mediation",
+      "arm": "redo",
+      "n": 11,
+      "correct": 8,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "neg_mediation",
+      "arm": "compiled_model",
+      "n": 11,
+      "correct": 7,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "neg_mediation",
+      "arm": "head",
+      "n": 11,
+      "correct": 7,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 7,
+        "invalid_program_model_answer": 3,
+        "unidentified_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 7,
+        "invalid_program": 3,
+        "unidentified_model_answer": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense0",
+      "arm": "redo",
+      "n": 84,
+      "correct": 54,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense0",
+      "arm": "compiled_model",
+      "n": 84,
+      "correct": 59,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense0",
+      "arm": "head",
+      "n": 84,
+      "correct": 55,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 14,
+        "harms": 13,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 5,
+        "executed": 66,
+        "unidentified_model_answer": 10,
+        "invalid_program_model_answer": 2,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "inconsistent_program": 5,
+        "executed": 66,
+        "unidentified_model_answer": 10,
+        "invalid_program": 3
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense1",
+      "arm": "redo",
+      "n": 78,
+      "correct": 44,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense1",
+      "arm": "compiled_model",
+      "n": 78,
+      "correct": 45,
+      "invalid": 3
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense1",
+      "arm": "head",
+      "n": 78,
+      "correct": 49,
+      "invalid": 3,
+      "vs_redo": {
+        "repairs": 15,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 8,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 56,
+        "inconsistent_program_model_answer": 4,
+        "unidentified_model_answer": 10,
+        "invalid_program_model_answer": 5,
+        "invalid_program": 3
+      },
+      "program_routes": {
+        "executed": 56,
+        "inconsistent_program": 4,
+        "unidentified_model_answer": 10,
+        "invalid_program": 8
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense2",
+      "arm": "redo",
+      "n": 72,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense2",
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 46,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense2",
+      "arm": "head",
+      "n": 72,
+      "correct": 48,
+      "invalid": 4,
+      "vs_redo": {
+        "repairs": 9,
+        "harms": 9,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 48,
+        "inconsistent_program_model_answer": 6,
+        "unidentified_model_answer": 6,
+        "invalid_program_model_answer": 8,
+        "invalid_program": 4
+      },
+      "program_routes": {
+        "executed": 48,
+        "inconsistent_program": 6,
+        "unidentified_model_answer": 6,
+        "invalid_program": 12
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense3",
+      "arm": "redo",
+      "n": 71,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense3",
+      "arm": "compiled_model",
+      "n": 71,
+      "correct": 51,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense3",
+      "arm": "head",
+      "n": 71,
+      "correct": 53,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 65,
+        "unidentified_model_answer": 5,
+        "invalid_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 65,
+        "unidentified_model_answer": 5,
+        "invalid_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense4",
+      "arm": "redo",
+      "n": 61,
+      "correct": 39,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense4",
+      "arm": "compiled_model",
+      "n": 61,
+      "correct": 40,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense4",
+      "arm": "head",
+      "n": 61,
+      "correct": 40,
+      "invalid": 2,
+      "vs_redo": {
+        "repairs": 8,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 43,
+        "inconsistent_program_model_answer": 1,
+        "invalid_program_model_answer": 8,
+        "unidentified_model_answer": 7,
+        "invalid_program": 2
+      },
+      "program_routes": {
+        "executed": 43,
+        "inconsistent_program": 1,
+        "invalid_program": 10,
+        "unidentified_model_answer": 7
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense5",
+      "arm": "redo",
+      "n": 69,
+      "correct": 41,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense5",
+      "arm": "compiled_model",
+      "n": 69,
+      "correct": 47,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense5",
+      "arm": "head",
+      "n": 69,
+      "correct": 50,
+      "invalid": 2,
+      "vs_redo": {
+        "repairs": 13,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 5,
+        "executed": 53,
+        "unidentified_model_answer": 7,
+        "invalid_program_model_answer": 2,
+        "invalid_program": 2
+      },
+      "program_routes": {
+        "inconsistent_program": 5,
+        "executed": 53,
+        "unidentified_model_answer": 7,
+        "invalid_program": 4
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense6",
+      "arm": "redo",
+      "n": 76,
+      "correct": 44,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense6",
+      "arm": "compiled_model",
+      "n": 76,
+      "correct": 44,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense6",
+      "arm": "head",
+      "n": 76,
+      "correct": 47,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 6,
+        "executed": 53,
+        "unidentified_model_answer": 8,
+        "invalid_program": 1,
+        "invalid_program_model_answer": 8
+      },
+      "program_routes": {
+        "inconsistent_program": 6,
+        "executed": 53,
+        "unidentified_model_answer": 8,
+        "invalid_program": 9
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense7",
+      "arm": "redo",
+      "n": 68,
+      "correct": 48,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense7",
+      "arm": "compiled_model",
+      "n": 68,
+      "correct": 46,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense7",
+      "arm": "head",
+      "n": 68,
+      "correct": 53,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 11,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 10,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 58,
+        "inconsistent_program_model_answer": 1,
+        "invalid_program": 1,
+        "invalid_program_model_answer": 3,
+        "unidentified_model_answer": 5
+      },
+      "program_routes": {
+        "executed": 58,
+        "inconsistent_program": 1,
+        "invalid_program": 4,
+        "unidentified_model_answer": 5
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense8",
+      "arm": "redo",
+      "n": 76,
+      "correct": 54,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense8",
+      "arm": "compiled_model",
+      "n": 76,
+      "correct": 50,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense8",
+      "arm": "head",
+      "n": 76,
+      "correct": 54,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 60,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 7,
+        "unidentified_model_answer": 6,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "executed": 60,
+        "inconsistent_program": 2,
+        "invalid_program": 8,
+        "unidentified_model_answer": 6
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense9",
+      "arm": "redo",
+      "n": 71,
+      "correct": 46,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense9",
+      "arm": "compiled_model",
+      "n": 71,
+      "correct": 51,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "nonsense9",
+      "arm": "head",
+      "n": 71,
+      "correct": 50,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 13,
+        "harms": 9,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 10,
+        "executed": 47,
+        "unidentified_model_answer": 2,
+        "invalid_program_model_answer": 12
+      },
+      "program_routes": {
+        "inconsistent_program": 10,
+        "executed": 47,
+        "unidentified_model_answer": 2,
+        "invalid_program": 12
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "obesity_mortality",
+      "arm": "redo",
+      "n": 21,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "obesity_mortality",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "obesity_mortality",
+      "arm": "head",
+      "n": 21,
+      "correct": 19,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 10,
+        "executed": 11
+      },
+      "program_routes": {
+        "invalid_program": 10,
+        "executed": 11
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "orange_scurvy",
+      "arm": "redo",
+      "n": 22,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "orange_scurvy",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "orange_scurvy",
+      "arm": "head",
+      "n": 22,
+      "correct": 15,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 5,
+        "executed": 16,
+        "invalid_program_model_answer": 1
+      },
+      "program_routes": {
+        "inconsistent_program": 5,
+        "executed": 16,
+        "invalid_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "penguin",
+      "arm": "redo",
+      "n": 14,
+      "correct": 10,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "penguin",
+      "arm": "compiled_model",
+      "n": 14,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "penguin",
+      "arm": "head",
+      "n": 14,
+      "correct": 10,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 5,
+        "invalid_program_model_answer": 9
+      },
+      "program_routes": {
+        "executed": 5,
+        "invalid_program": 9
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "price",
+      "arm": "redo",
+      "n": 21,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "price",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "price",
+      "arm": "head",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 21
+      },
+      "program_routes": {
+        "invalid_program": 21
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_drug",
+      "arm": "redo",
+      "n": 21,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_drug",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_drug",
+      "arm": "head",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 17,
+        "invalid_program_model_answer": 1,
+        "inconsistent_program_model_answer": 3
+      },
+      "program_routes": {
+        "executed": 17,
+        "invalid_program": 1,
+        "inconsistent_program": 3
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_hospital",
+      "arm": "redo",
+      "n": 25,
+      "correct": 21,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_hospital",
+      "arm": "compiled_model",
+      "n": 25,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_hospital",
+      "arm": "head",
+      "n": 25,
+      "correct": 17,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 19,
+        "invalid_program_model_answer": 5,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 19,
+        "invalid_program": 5,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_kidneystone",
+      "arm": "redo",
+      "n": 28,
+      "correct": 21,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_kidneystone",
+      "arm": "compiled_model",
+      "n": 28,
+      "correct": 22,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_kidneystone",
+      "arm": "head",
+      "n": 28,
+      "correct": 20,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 12,
+        "invalid_program_model_answer": 16
+      },
+      "program_routes": {
+        "executed": 12,
+        "invalid_program": 16
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_vaccine",
+      "arm": "redo",
+      "n": 21,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_vaccine",
+      "arm": "compiled_model",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "simpson_vaccine",
+      "arm": "head",
+      "n": 21,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 9,
+        "executed": 11,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "invalid_program": 9,
+        "executed": 11,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoke_birthWeight",
+      "arm": "redo",
+      "n": 12,
+      "correct": 8,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoke_birthWeight",
+      "arm": "compiled_model",
+      "n": 12,
+      "correct": 8,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoke_birthWeight",
+      "arm": "head",
+      "n": 12,
+      "correct": 8,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 11,
+        "executed": 1
+      },
+      "program_routes": {
+        "invalid_program": 11,
+        "executed": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_frontdoor",
+      "arm": "redo",
+      "n": 45,
+      "correct": 33,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_frontdoor",
+      "arm": "compiled_model",
+      "n": 45,
+      "correct": 39,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_frontdoor",
+      "arm": "head",
+      "n": 45,
+      "correct": 38,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 15,
+        "executed": 30
+      },
+      "program_routes": {
+        "inconsistent_program": 15,
+        "executed": 30
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_gene_cancer",
+      "arm": "redo",
+      "n": 14,
+      "correct": 9,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_gene_cancer",
+      "arm": "compiled_model",
+      "n": 14,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_gene_cancer",
+      "arm": "head",
+      "n": 14,
+      "correct": 13,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 3,
+        "executed": 11
+      },
+      "program_routes": {
+        "invalid_program": 3,
+        "executed": 11
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_tar_cancer",
+      "arm": "redo",
+      "n": 19,
+      "correct": 16,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_tar_cancer",
+      "arm": "compiled_model",
+      "n": 19,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "smoking_tar_cancer",
+      "arm": "head",
+      "n": 19,
+      "correct": 15,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 8,
+        "executed": 11
+      },
+      "program_routes": {
+        "inconsistent_program": 8,
+        "executed": 11
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "tax_smoke_birthWeight",
+      "arm": "redo",
+      "n": 22,
+      "correct": 13,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "tax_smoke_birthWeight",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "tax_smoke_birthWeight",
+      "arm": "head",
+      "n": 22,
+      "correct": 17,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 22
+      },
+      "program_routes": {
+        "invalid_program": 22
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "vaccine_kills",
+      "arm": "redo",
+      "n": 22,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "vaccine_kills",
+      "arm": "compiled_model",
+      "n": 22,
+      "correct": 12,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "vaccine_kills",
+      "arm": "head",
+      "n": 22,
+      "correct": 14,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 12,
+        "invalid_program_model_answer": 8,
+        "invalid_program": 1,
+        "inconsistent_program_model_answer": 1
+      },
+      "program_routes": {
+        "executed": 12,
+        "invalid_program": 9,
+        "inconsistent_program": 1
+      }
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "water_cholera",
+      "arm": "redo",
+      "n": 24,
+      "correct": 17,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "water_cholera",
+      "arm": "compiled_model",
+      "n": 24,
+      "correct": 19,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "grouping": "story_id",
+      "group": "water_cholera",
+      "arm": "head",
+      "n": 24,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 10,
+        "executed": 11,
+        "unidentified_model_answer": 3
+      },
+      "program_routes": {
+        "invalid_program": 10,
+        "executed": 11,
+        "unidentified_model_answer": 3
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 2686,
+      "input_tokens": 2281319,
+      "output_tokens": 441941,
+      "length_stops": 1,
+      "worker_seconds": 4600.0895936489105,
+      "initialization_seconds": 36.705838441848755
+    },
+    {
+      "method": "M5",
+      "calls": 2686,
+      "input_tokens": 1850157,
+      "output_tokens": 542451,
+      "length_stops": 0,
+      "worker_seconds": 5767.516002416611,
+      "initialization_seconds": 37.67454695701599
+    }
+  ]
+}

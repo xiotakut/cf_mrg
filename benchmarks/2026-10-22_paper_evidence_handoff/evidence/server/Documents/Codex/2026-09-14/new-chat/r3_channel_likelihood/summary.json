@@ -1,0 +1,173 @@
+{
+  "status": "complete_development",
+  "methods": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.40816326530612246,
+          "comparisons": {
+            "direct": {
+              "repairs": 4,
+              "harms": 3
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "list8",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "direct": {
+              "repairs": 2,
+              "harms": 4
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "direct",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.41836734693877553,
+          "comparisons": {
+            "direct": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 3,
+              "harms": 4
+            }
+          }
+        },
+        {
+          "variant": "channel",
+          "n": 40,
+          "correct": 1,
+          "macro_recall": 0.01020408163265306,
+          "comparisons": {
+            "direct": {
+              "repairs": 0,
+              "harms": 19
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 20
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 320,
+        "input_tokens": 587780,
+        "scored_target_tokens": 39530,
+        "output_tokens": 320
+      },
+      "runtime": {
+        "status": "complete",
+        "method": "M4",
+        "gpu": 3,
+        "pid": 3324664,
+        "completed_calls": 320,
+        "initialization_seconds": 17.22737145423889,
+        "elapsed_seconds": 178.02420091629028
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.4744897959183673,
+          "comparisons": {
+            "direct": {
+              "repairs": 9,
+              "harms": 3
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "list8",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "direct": {
+              "repairs": 6,
+              "harms": 4
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 4
+            }
+          }
+        },
+        {
+          "variant": "direct",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.3979591836734694,
+          "comparisons": {
+            "direct": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 3,
+              "harms": 9
+            }
+          }
+        },
+        {
+          "variant": "channel",
+          "n": 40,
+          "correct": 11,
+          "macro_recall": 0.24744897959183673,
+          "comparisons": {
+            "direct": {
+              "repairs": 11,
+              "harms": 18
+            },
+            "calibrated": {
+              "repairs": 7,
+              "harms": 20
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 320,
+        "input_tokens": 586808,
+        "scored_target_tokens": 40148,
+        "output_tokens": 320
+      },
+      "runtime": {
+        "status": "complete",
+        "method": "M5",
+        "gpu": 3,
+        "pid": 3326383,
+        "completed_calls": 320,
+        "initialization_seconds": 18.33989644050598,
+        "elapsed_seconds": 181.44966006278992
+      }
+    }
+  ]
+}

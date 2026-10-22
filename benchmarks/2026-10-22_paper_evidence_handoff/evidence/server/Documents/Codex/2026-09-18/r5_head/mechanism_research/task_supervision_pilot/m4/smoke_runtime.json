@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "method": "M4",
+  "pid": 2808186,
+  "gpu": "0",
+  "batch_size": 8,
+  "new_generations": 0,
+  "truncated_sequences": 0,
+  "input_and_source_sha256": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py": "f33eba863bde516fe3c995455dc8b28fb64053f3a304dc7b966232be6a529350",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/config.json": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m4/requests.jsonl": "74e9c877e3e9533fb5450f2a7a7e9b3fade78b69afefd2ac597ae590d05b4095",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/smoke_indices.json": "8fdbcf591f881cde631f5ff7456df91111b150465765e841292b83b1b12c4789"
+  },
+  "initialization_seconds": 5.259196519851685,
+  "planned_sequences": 16,
+  "completed_sequences": 16,
+  "forward_batches": 2,
+  "actual_input_tokens": 10836,
+  "padded_token_slots": 12472,
+  "max_input_tokens": 1030,
+  "elapsed_seconds": 9.014894008636475,
+  "peak_allocated_bytes": 17096421376,
+  "singleton_check": {
+    "extra_sequences": 16,
+    "extra_forward_batches": 16,
+    "extra_input_tokens": 10836,
+    "max_absolute_difference": 0.4375,
+    "minimum_cosine": 0.999797523021698,
+    "maximum_relative_l2": 0.0202056635171175,
+    "max_logit_absolute_difference": 0.25,
+    "note": "bf16 batching can change rounding; this checks extraction, not final classifier decisions"
+  },
+  "hidden_shape": [
+    16,
+    4096
+  ],
+  "representation": "last nonpadding token of original-system NLI task prompt plus JSON prefix; A-E native logits and 4096 hidden",
+  "requests_sha256": "74e9c877e3e9533fb5450f2a7a7e9b3fade78b69afefd2ac597ae590d05b4095"
+}

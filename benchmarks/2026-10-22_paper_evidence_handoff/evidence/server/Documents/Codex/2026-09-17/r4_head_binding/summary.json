@@ -1,0 +1,354 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "arm": "redo",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 7,
+          "invalid": 0,
+          "original_repairs": 2,
+          "original_harms": 2,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "predictions": {
+            "yes": 12,
+            "no": 1
+          },
+          "reversed_formal_agreement": 5,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 7,
+          "both_formal_correct": 3,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 20,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "diagnostic_by_context": {
+            "clean": 10,
+            "distractor": 10
+          },
+          "diagnostic_both_polarities_correct": 9,
+          "diagnostic_context_invariant": 10
+        },
+        {
+          "arm": "scope",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 5,
+          "invalid": 0,
+          "original_repairs": 1,
+          "original_harms": 3,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 2
+          },
+          "predictions": {
+            "no": 3,
+            "yes": 10
+          },
+          "reversed_formal_agreement": 6,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 8,
+          "both_formal_correct": 3,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 21,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 1,
+            "harms": 0
+          },
+          "diagnostic_by_context": {
+            "clean": 10,
+            "distractor": 11
+          },
+          "diagnostic_both_polarities_correct": 10,
+          "diagnostic_context_invariant": 9
+        },
+        {
+          "arm": "outcome",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 6,
+          "invalid": 0,
+          "original_repairs": 2,
+          "original_harms": 3,
+          "vs_redo": {
+            "repairs": 3,
+            "harms": 4
+          },
+          "predictions": {
+            "no": 6,
+            "yes": 7
+          },
+          "reversed_formal_agreement": 7,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 6,
+          "both_formal_correct": 3,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 14,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 1,
+            "harms": 7
+          },
+          "diagnostic_by_context": {
+            "clean": 8,
+            "distractor": 6
+          },
+          "diagnostic_both_polarities_correct": 4,
+          "diagnostic_context_invariant": 6
+        },
+        {
+          "arm": "scope_outcome",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 8,
+          "invalid": 0,
+          "original_repairs": 1,
+          "original_harms": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 1
+          },
+          "predictions": {
+            "yes": 9,
+            "no": 4
+          },
+          "reversed_formal_agreement": 3,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 8,
+          "both_formal_correct": 3,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 18,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 1,
+            "harms": 3
+          },
+          "diagnostic_by_context": {
+            "clean": 10,
+            "distractor": 8
+          },
+          "diagnostic_both_polarities_correct": 6,
+          "diagnostic_context_invariant": 6
+        }
+      ],
+      "factorial_differences": {
+        "author_agreement": {
+          "scope_without_outcome": -2,
+          "scope_with_outcome": 2,
+          "outcome_without_scope": -1,
+          "outcome_with_scope": 3,
+          "interaction": 4
+        },
+        "diagnostic_correct": {
+          "scope_without_outcome": 1,
+          "scope_with_outcome": 4,
+          "outcome_without_scope": -6,
+          "outcome_with_scope": -3,
+          "interaction": 3
+        },
+        "polarity_opposed_pairs": {
+          "scope_without_outcome": 1,
+          "scope_with_outcome": 2,
+          "outcome_without_scope": -1,
+          "outcome_with_scope": 0,
+          "interaction": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "arm": "redo",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 5,
+          "invalid": 0,
+          "original_repairs": 2,
+          "original_harms": 4,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "predictions": {
+            "no": 7,
+            "yes": 6
+          },
+          "reversed_formal_agreement": 8,
+          "reversed_invalid": 1,
+          "polarity_opposed_pairs": 6,
+          "both_formal_correct": 3,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 21,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "diagnostic_by_context": {
+            "clean": 9,
+            "distractor": 12
+          },
+          "diagnostic_both_polarities_correct": 9,
+          "diagnostic_context_invariant": 9
+        },
+        {
+          "arm": "scope",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 4,
+          "invalid": 0,
+          "original_repairs": 1,
+          "original_harms": 4,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 3
+          },
+          "predictions": {
+            "no": 8,
+            "yes": 5
+          },
+          "reversed_formal_agreement": 8,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 5,
+          "both_formal_correct": 2,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 24,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 3,
+            "harms": 0
+          },
+          "diagnostic_by_context": {
+            "clean": 12,
+            "distractor": 12
+          },
+          "diagnostic_both_polarities_correct": 12,
+          "diagnostic_context_invariant": 12
+        },
+        {
+          "arm": "outcome",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 7,
+          "invalid": 0,
+          "original_repairs": 3,
+          "original_harms": 3,
+          "vs_redo": {
+            "repairs": 3,
+            "harms": 1
+          },
+          "predictions": {
+            "no": 7,
+            "yes": 6
+          },
+          "reversed_formal_agreement": 8,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 6,
+          "both_formal_correct": 4,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 22,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 2,
+            "harms": 1
+          },
+          "diagnostic_by_context": {
+            "clean": 11,
+            "distractor": 11
+          },
+          "diagnostic_both_polarities_correct": 10,
+          "diagnostic_context_invariant": 12
+        },
+        {
+          "arm": "scope_outcome",
+          "original_n": 13,
+          "baseline_correct": 7,
+          "author_agreement": 6,
+          "invalid": 0,
+          "original_repairs": 1,
+          "original_harms": 2,
+          "vs_redo": {
+            "repairs": 3,
+            "harms": 2
+          },
+          "predictions": {
+            "yes": 5,
+            "no": 8
+          },
+          "reversed_formal_agreement": 7,
+          "reversed_invalid": 0,
+          "polarity_opposed_pairs": 4,
+          "both_formal_correct": 2,
+          "diagnostic_n": 24,
+          "diagnostic_correct": 24,
+          "diagnostic_invalid": 0,
+          "diagnostic_vs_redo": {
+            "repairs": 3,
+            "harms": 0
+          },
+          "diagnostic_by_context": {
+            "clean": 12,
+            "distractor": 12
+          },
+          "diagnostic_both_polarities_correct": 12,
+          "diagnostic_context_invariant": 12
+        }
+      ],
+      "factorial_differences": {
+        "author_agreement": {
+          "scope_without_outcome": -1,
+          "scope_with_outcome": -1,
+          "outcome_without_scope": 2,
+          "outcome_with_scope": 2,
+          "interaction": 0
+        },
+        "diagnostic_correct": {
+          "scope_without_outcome": 3,
+          "scope_with_outcome": 2,
+          "outcome_without_scope": 1,
+          "outcome_with_scope": 0,
+          "interaction": -1
+        },
+        "polarity_opposed_pairs": {
+          "scope_without_outcome": -1,
+          "scope_with_outcome": -2,
+          "outcome_without_scope": 0,
+          "outcome_with_scope": -1,
+          "interaction": -1
+        }
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 200,
+      "input_tokens": 367560,
+      "output_tokens": 30678,
+      "length_stops": 0,
+      "worker_seconds": 162.05208683013916,
+      "initialization_seconds": 16.01595115661621
+    },
+    {
+      "method": "M5",
+      "calls": 200,
+      "input_tokens": 316040,
+      "output_tokens": 40275,
+      "length_stops": 0,
+      "worker_seconds": 251.12530303001404,
+      "initialization_seconds": 15.842732906341553
+    }
+  ],
+  "new_calls": 400
+}

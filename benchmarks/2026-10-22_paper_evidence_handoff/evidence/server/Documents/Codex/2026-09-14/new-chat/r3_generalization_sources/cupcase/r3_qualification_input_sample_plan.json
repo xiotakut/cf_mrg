@@ -1,0 +1,29 @@
+{
+  "status": "input_qualification_sample",
+  "total_rows": 3562,
+  "keyword_case_groups": 1174,
+  "sample_rows": [
+    106,
+    265,
+    363,
+    582,
+    586,
+    654,
+    748,
+    895,
+    925,
+    1120,
+    1197,
+    1710,
+    1943,
+    2367,
+    2649,
+    3471
+  ],
+  "seed": 20260915,
+  "selection": "Input-only diagnostic/temporal keyword screen, then random16 unique normalized case texts. Rows0–7 and their exact-text duplicates excluded.",
+  "label_access": "Selected four source candidate columns read to preserve the native candidate set; candidates sorted before display, gold-column identity omitted. No gold choice identity or model output used for selection.",
+  "scope": "Additional adapter/qualification development examples, not a frozen independent evaluation set. No model predictions.",
+  "review_status": "all16_input_and_native_candidate_structural_review_complete_clinical_r3_qualification_pending",
+  "review_file": "r3_qualification_structural_review.json"
+}

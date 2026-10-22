@@ -1,0 +1,26 @@
+{
+  "rule": "All table mapping code/config/scores/inputs, all run configs/summaries, and recorded decision/protocol filenames are candidates. Include complete UTF-8 files only, ordered by evidence role then original path. No selection by result.",
+  "per_file_limit_bytes": 131072,
+  "evidence_budget_bytes": 12582912,
+  "evidence_bytes": 12582509,
+  "distinct_source_files_delivered": 2070,
+  "candidate_source_files": 2569,
+  "status_counts": {
+    "complete small source delivered": 2439,
+    "complete source exceeds per-file text limit": 74,
+    "original file is index-only; check full package raw_export fields for separately delivered text layers": 20,
+    "non-text source retained in full archive": 2,
+    "complete source exceeds total evidence budget": 32,
+    "dedicated export requires full archive and decoder": 2
+  },
+  "missing_core_files": [],
+  "oversize_core_reports": [],
+  "input_sha256": {
+    "TABLE_RUN_MAP.csv": "1e9c7cc5179006c9727a3a0116565899a08962dbcb6bf7aed0630ef0782bb9ce",
+    "RUN_REGISTRY.csv": "c8866280d4badde9fdd79b288a52d063c2fe5f13534ff76140bb83508b9c5fb3",
+    "TABLE_COVERAGE.csv": "5ee9924855140788e8118853dd2395fc0b0d49fd448856c358a3330333875e61"
+  },
+  "no_new_inference_or_scores": true,
+  "not_published": true,
+  "scope_limit": "A selected small-file supplement, not full raw evidence and not a self-contained replay of every table. Full score streams, prompts and responses remain in archive."
+}

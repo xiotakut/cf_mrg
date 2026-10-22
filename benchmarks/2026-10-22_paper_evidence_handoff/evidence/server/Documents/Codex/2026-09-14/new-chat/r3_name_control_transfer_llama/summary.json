@@ -1,0 +1,85 @@
+{
+  "results": [
+    {
+      "method": "M0",
+      "n": 40,
+      "correct": 6,
+      "baseline_correct": 6,
+      "repairs": 0,
+      "harms": 0,
+      "fallbacks": 4,
+      "heads_vs_normalization": {
+        "name": {
+          "correct": 19,
+          "repairs": 13,
+          "harms": 0
+        },
+        "code": {
+          "correct": 17,
+          "repairs": 12,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "n": 40,
+      "correct": 11,
+      "baseline_correct": 10,
+      "repairs": 1,
+      "harms": 0,
+      "fallbacks": 1,
+      "heads_vs_normalization": {
+        "name": {
+          "correct": 23,
+          "repairs": 12,
+          "harms": 0
+        },
+        "code": {
+          "correct": 25,
+          "repairs": 14,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "n": 40,
+      "correct": 11,
+      "baseline_correct": 8,
+      "repairs": 3,
+      "harms": 0,
+      "fallbacks": 4,
+      "heads_vs_normalization": {
+        "name": {
+          "correct": 16,
+          "repairs": 7,
+          "harms": 2
+        },
+        "code": {
+          "correct": 14,
+          "repairs": 5,
+          "harms": 2
+        }
+      }
+    }
+  ],
+  "costs": {
+    "calls": 42,
+    "input_tokens": 17409,
+    "output_tokens": 646,
+    "length_stops": 0
+  },
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 2975495,
+    "started_at": 1789421476.4926794,
+    "total": 42,
+    "initialization_seconds": 61.47560524940491,
+    "completed": 42,
+    "elapsed_seconds": 71.31400895118713,
+    "last_batch_seconds": 0.9685094356536865,
+    "completed_at": 1789421547.8068652
+  }
+}

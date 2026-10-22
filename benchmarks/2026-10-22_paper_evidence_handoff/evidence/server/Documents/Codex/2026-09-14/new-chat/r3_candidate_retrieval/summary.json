@@ -1,0 +1,227 @@
+{
+  "status": "complete_development",
+  "methods": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.40816326530612246,
+          "comparisons": {
+            "global": {
+              "repairs": 13,
+              "harms": 2
+            },
+            "original_list8": {
+              "repairs": 3,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "original_list8",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "global": {
+              "repairs": 10,
+              "harms": 2
+            },
+            "original_list8": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            }
+          }
+        },
+        {
+          "variant": "global",
+          "n": 40,
+          "correct": 10,
+          "macro_recall": 0.24744897959183673,
+          "comparisons": {
+            "global": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "original_list8": {
+              "repairs": 2,
+              "harms": 10
+            },
+            "calibrated": {
+              "repairs": 2,
+              "harms": 13
+            }
+          }
+        },
+        {
+          "variant": "balanced",
+          "n": 40,
+          "correct": 7,
+          "macro_recall": 0.17346938775510207,
+          "comparisons": {
+            "global": {
+              "repairs": 1,
+              "harms": 4
+            },
+            "original_list8": {
+              "repairs": 1,
+              "harms": 12
+            },
+            "calibrated": {
+              "repairs": 1,
+              "harms": 15
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 640,
+        "input_tokens": 1377952,
+        "output_tokens": 640
+      },
+      "runtime": {
+        "status": "complete",
+        "method": "M4",
+        "gpu": 3,
+        "pid": 3268848,
+        "started_at": 1789434631.6521628,
+        "completed_calls": 640,
+        "initialization_seconds": 16.0024995803833,
+        "elapsed_seconds": 77.03488945960999,
+        "distributions": 640,
+        "missing_code_calls": 0
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.4744897959183673,
+          "comparisons": {
+            "global": {
+              "repairs": 11,
+              "harms": 5
+            },
+            "original_list8": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "original_list8",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "global": {
+              "repairs": 8,
+              "harms": 6
+            },
+            "original_list8": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "calibrated": {
+              "repairs": 0,
+              "harms": 4
+            }
+          }
+        },
+        {
+          "variant": "global",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.4642857142857143,
+          "comparisons": {
+            "global": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "original_list8": {
+              "repairs": 6,
+              "harms": 8
+            },
+            "calibrated": {
+              "repairs": 5,
+              "harms": 11
+            }
+          }
+        },
+        {
+          "variant": "balanced",
+          "n": 40,
+          "correct": 16,
+          "macro_recall": 0.4107142857142857,
+          "comparisons": {
+            "global": {
+              "repairs": 2,
+              "harms": 4
+            },
+            "original_list8": {
+              "repairs": 5,
+              "harms": 9
+            },
+            "calibrated": {
+              "repairs": 4,
+              "harms": 12
+            }
+          }
+        }
+      ],
+      "cost": {
+        "new_calls": 640,
+        "input_tokens": 1201264,
+        "output_tokens": 640
+      },
+      "runtime": {
+        "status": "complete",
+        "method": "M5",
+        "gpu": 3,
+        "pid": 3269343,
+        "started_at": 1789434716.8771987,
+        "completed_calls": 640,
+        "initialization_seconds": 18.748712062835693,
+        "elapsed_seconds": 82.23326015472412,
+        "distributions": 640,
+        "missing_code_calls": 0
+      }
+    }
+  ],
+  "retrieval": {
+    "status": "complete",
+    "unique_queries": 40,
+    "rerank_calls": 80,
+    "runtime": {
+      "status": "complete",
+      "pid": 3268162,
+      "gpu": "0",
+      "candidate_completed": 40,
+      "pools_completed": 80,
+      "initialization_seconds": 4.986159086227417,
+      "elapsed_seconds": 92.06458783149719
+    },
+    "mean_policy_overlap": 3.55,
+    "identical_sets": 0,
+    "union_min": 28,
+    "union_max": 32
+  }
+}

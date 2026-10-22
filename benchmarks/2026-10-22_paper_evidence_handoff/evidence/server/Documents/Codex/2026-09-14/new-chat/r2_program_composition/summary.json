@@ -1,0 +1,250 @@
+{
+  "status": "complete",
+  "new_model_calls": 0,
+  "baseline_parity_per_arm": 79,
+  "results": [
+    {
+      "initial": "source_redo",
+      "policy": "initial",
+      "scope": "all",
+      "n": 79,
+      "correct": 37,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "initial",
+      "scope": "none",
+      "n": 66,
+      "correct": 32,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "initial",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "initial",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program",
+      "scope": "all",
+      "n": 79,
+      "correct": 49,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program",
+      "scope": "none",
+      "n": 66,
+      "correct": 41,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 1
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program_strict",
+      "scope": "all",
+      "n": 79,
+      "correct": 49,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program_strict",
+      "scope": "none",
+      "n": 66,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 11,
+      "harms": 0
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program_strict",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "initial": "source_redo",
+      "policy": "program_strict",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "initial",
+      "scope": "all",
+      "n": 79,
+      "correct": 54,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "initial",
+      "scope": "none",
+      "n": 66,
+      "correct": 51,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "initial",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 0,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "initial",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program",
+      "scope": "all",
+      "n": 79,
+      "correct": 55,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 5
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program",
+      "scope": "none",
+      "n": 66,
+      "correct": 49,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 5
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program_strict",
+      "scope": "all",
+      "n": 79,
+      "correct": 57,
+      "invalid": 0,
+      "repairs": 5,
+      "harms": 2
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program_strict",
+      "scope": "none",
+      "n": 66,
+      "correct": 52,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program_strict",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "initial": "independent_condition",
+      "policy": "program_strict",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "inputs_from": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_fresh_control",
+  "head_traces_from": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_indexed_pilot",
+  "note": "Both previously matched initial arms are reported. No per-item choice of initial answer or policy. Offline composition on exposed79 R2 cases; online execution would require original method,79 initial review calls and55 fact calls."
+}

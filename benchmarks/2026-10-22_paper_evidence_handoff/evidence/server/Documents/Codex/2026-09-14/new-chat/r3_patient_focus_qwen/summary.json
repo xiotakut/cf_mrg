@@ -1,0 +1,162 @@
+{
+  "results": [
+    {
+      "method": "M3",
+      "variant": "repeat_patient",
+      "n": 40,
+      "correct": 10,
+      "baseline_correct": 1,
+      "fallbacks": 0,
+      "vs_catalog": {
+        "repairs": 3,
+        "harms": 2
+      },
+      "vs_repeat": {
+        "repairs": 0,
+        "harms": 0
+      }
+    },
+    {
+      "method": "M3",
+      "variant": "bind_patient",
+      "n": 40,
+      "correct": 9,
+      "baseline_correct": 1,
+      "fallbacks": 0,
+      "vs_catalog": {
+        "repairs": 2,
+        "harms": 2
+      },
+      "vs_repeat": {
+        "repairs": 0,
+        "harms": 1
+      }
+    },
+    {
+      "method": "M5",
+      "variant": "repeat_patient",
+      "n": 40,
+      "correct": 19,
+      "baseline_correct": 9,
+      "fallbacks": 0,
+      "vs_catalog": {
+        "repairs": 2,
+        "harms": 1
+      },
+      "vs_repeat": {
+        "repairs": 0,
+        "harms": 0
+      }
+    },
+    {
+      "method": "M5",
+      "variant": "bind_patient",
+      "n": 40,
+      "correct": 20,
+      "baseline_correct": 9,
+      "fallbacks": 0,
+      "vs_catalog": {
+        "repairs": 2,
+        "harms": 0
+      },
+      "vs_repeat": {
+        "repairs": 2,
+        "harms": 1
+      }
+    },
+    {
+      "method": "M7",
+      "variant": "repeat_patient",
+      "n": 40,
+      "correct": 20,
+      "baseline_correct": 13,
+      "fallbacks": 0,
+      "vs_catalog": {
+        "repairs": 2,
+        "harms": 0
+      },
+      "vs_repeat": {
+        "repairs": 0,
+        "harms": 0
+      }
+    },
+    {
+      "method": "M7",
+      "variant": "bind_patient",
+      "n": 40,
+      "correct": 21,
+      "baseline_correct": 13,
+      "fallbacks": 0,
+      "vs_catalog": {
+        "repairs": 3,
+        "harms": 0
+      },
+      "vs_repeat": {
+        "repairs": 1,
+        "harms": 0
+      }
+    }
+  ],
+  "costs": [
+    {
+      "method": "M3",
+      "variant": "repeat_patient",
+      "calls": 40,
+      "input_tokens": 188711,
+      "output_tokens": 496,
+      "length_stops": 0
+    },
+    {
+      "method": "M3",
+      "variant": "bind_patient",
+      "calls": 40,
+      "input_tokens": 191071,
+      "output_tokens": 497,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "variant": "repeat_patient",
+      "calls": 40,
+      "input_tokens": 100362,
+      "output_tokens": 541,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "variant": "bind_patient",
+      "calls": 40,
+      "input_tokens": 102722,
+      "output_tokens": 498,
+      "length_stops": 0
+    },
+    {
+      "method": "M7",
+      "variant": "repeat_patient",
+      "calls": 40,
+      "input_tokens": 202925,
+      "output_tokens": 490,
+      "length_stops": 0
+    },
+    {
+      "method": "M7",
+      "variant": "bind_patient",
+      "calls": 40,
+      "input_tokens": 205285,
+      "output_tokens": 491,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 2981765,
+    "started_at": 1789421751.3367941,
+    "total": 240,
+    "initialization_seconds": 72.25713467597961,
+    "completed": 240,
+    "elapsed_seconds": 267.0094909667969,
+    "last_batch_seconds": 3.664893388748169,
+    "completed_at": 1789422018.3464885
+  }
+}

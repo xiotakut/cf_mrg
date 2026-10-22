@@ -1,0 +1,1385 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "all201",
+      "arm": "original",
+      "n": 201,
+      "correct": 100,
+      "invalid": 0,
+      "predictions": {
+        "lower": 50,
+        "uncertainty": 53,
+        "higher": 53,
+        "no difference": 45
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 16,
+          "harms": 39
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 53,
+          "correct": 36
+        },
+        "lower": {
+          "n": 56,
+          "correct": 31
+        },
+        "no difference": {
+          "n": 92,
+          "correct": 33
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all201",
+      "arm": "no_draft",
+      "n": 201,
+      "correct": 123,
+      "invalid": 0,
+      "predictions": {
+        "lower": 65,
+        "uncertainty": 34,
+        "higher": 53,
+        "no difference": 49
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 39,
+          "harms": 16
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 53,
+          "correct": 41
+        },
+        "lower": {
+          "n": 56,
+          "correct": 41
+        },
+        "no difference": {
+          "n": 92,
+          "correct": 41
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all201",
+      "arm": "supplied_only",
+      "n": 201,
+      "correct": 130,
+      "invalid": 0,
+      "predictions": {
+        "lower": 66,
+        "higher": 50,
+        "no difference": 61,
+        "uncertainty": 24
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 42,
+          "harms": 12
+        },
+        "no_draft": {
+          "repairs": 24,
+          "harms": 17
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 53,
+          "correct": 38
+        },
+        "lower": {
+          "n": 56,
+          "correct": 45
+        },
+        "no difference": {
+          "n": 92,
+          "correct": 47
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "pilot64",
+      "arm": "original",
+      "n": 64,
+      "correct": 33,
+      "invalid": 0,
+      "predictions": {
+        "lower": 16,
+        "uncertainty": 17,
+        "higher": 18,
+        "no difference": 13
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 5,
+          "harms": 11
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 21,
+          "correct": 15
+        },
+        "lower": {
+          "n": 21,
+          "correct": 11
+        },
+        "no difference": {
+          "n": 22,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "pilot64",
+      "arm": "no_draft",
+      "n": 64,
+      "correct": 39,
+      "invalid": 0,
+      "predictions": {
+        "lower": 24,
+        "uncertainty": 8,
+        "no difference": 12,
+        "higher": 20
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 11,
+          "harms": 5
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 21,
+          "correct": 15
+        },
+        "lower": {
+          "n": 21,
+          "correct": 15
+        },
+        "no difference": {
+          "n": 22,
+          "correct": 9
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "pilot64",
+      "arm": "supplied_only",
+      "n": 64,
+      "correct": 41,
+      "invalid": 0,
+      "predictions": {
+        "lower": 23,
+        "no difference": 15,
+        "uncertainty": 10,
+        "higher": 16
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 10,
+          "harms": 2
+        },
+        "no_draft": {
+          "repairs": 6,
+          "harms": 4
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 21,
+          "correct": 14
+        },
+        "lower": {
+          "n": 21,
+          "correct": 17
+        },
+        "no difference": {
+          "n": 22,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension137",
+      "arm": "original",
+      "n": 137,
+      "correct": 67,
+      "invalid": 0,
+      "predictions": {
+        "lower": 34,
+        "higher": 35,
+        "uncertainty": 36,
+        "no difference": 32
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 11,
+          "harms": 28
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 21
+        },
+        "lower": {
+          "n": 35,
+          "correct": 20
+        },
+        "no difference": {
+          "n": 70,
+          "correct": 26
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension137",
+      "arm": "no_draft",
+      "n": 137,
+      "correct": 84,
+      "invalid": 0,
+      "predictions": {
+        "lower": 41,
+        "higher": 33,
+        "uncertainty": 26,
+        "no difference": 37
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 28,
+          "harms": 11
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 26
+        },
+        "lower": {
+          "n": 35,
+          "correct": 26
+        },
+        "no difference": {
+          "n": 70,
+          "correct": 32
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension137",
+      "arm": "supplied_only",
+      "n": 137,
+      "correct": 89,
+      "invalid": 0,
+      "predictions": {
+        "lower": 43,
+        "higher": 34,
+        "uncertainty": 14,
+        "no difference": 46
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 32,
+          "harms": 10
+        },
+        "no_draft": {
+          "repairs": 18,
+          "harms": 13
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 24
+        },
+        "lower": {
+          "n": 35,
+          "correct": 28
+        },
+        "no difference": {
+          "n": 70,
+          "correct": 37
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension_seen_review",
+      "arm": "original",
+      "n": 68,
+      "correct": 30,
+      "invalid": 0,
+      "predictions": {
+        "lower": 22,
+        "higher": 17,
+        "uncertainty": 18,
+        "no difference": 11
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 5,
+          "harms": 15
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 9
+        },
+        "lower": {
+          "n": 22,
+          "correct": 14
+        },
+        "no difference": {
+          "n": 30,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension_seen_review",
+      "arm": "no_draft",
+      "n": 68,
+      "correct": 40,
+      "invalid": 0,
+      "predictions": {
+        "lower": 27,
+        "higher": 16,
+        "uncertainty": 10,
+        "no difference": 15
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 15,
+          "harms": 5
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 12
+        },
+        "lower": {
+          "n": 22,
+          "correct": 17
+        },
+        "no difference": {
+          "n": 30,
+          "correct": 11
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension_seen_review",
+      "arm": "supplied_only",
+      "n": 68,
+      "correct": 41,
+      "invalid": 0,
+      "predictions": {
+        "lower": 27,
+        "higher": 14,
+        "uncertainty": 9,
+        "no difference": 18
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 16,
+          "harms": 5
+        },
+        "no_draft": {
+          "repairs": 6,
+          "harms": 5
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 11
+        },
+        "lower": {
+          "n": 22,
+          "correct": 18
+        },
+        "no difference": {
+          "n": 30,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension_new_review",
+      "arm": "original",
+      "n": 69,
+      "correct": 37,
+      "invalid": 0,
+      "predictions": {
+        "lower": 12,
+        "higher": 18,
+        "no difference": 21,
+        "uncertainty": 18
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 6,
+          "harms": 13
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 12
+        },
+        "lower": {
+          "n": 13,
+          "correct": 6
+        },
+        "no difference": {
+          "n": 40,
+          "correct": 19
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension_new_review",
+      "arm": "no_draft",
+      "n": 69,
+      "correct": 44,
+      "invalid": 0,
+      "predictions": {
+        "lower": 14,
+        "higher": 17,
+        "uncertainty": 16,
+        "no difference": 22
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 13,
+          "harms": 6
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 14
+        },
+        "lower": {
+          "n": 13,
+          "correct": 9
+        },
+        "no difference": {
+          "n": 40,
+          "correct": 21
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "extension_new_review",
+      "arm": "supplied_only",
+      "n": 69,
+      "correct": 48,
+      "invalid": 0,
+      "predictions": {
+        "lower": 16,
+        "higher": 20,
+        "uncertainty": 5,
+        "no difference": 28
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 16,
+          "harms": 5
+        },
+        "no_draft": {
+          "repairs": 12,
+          "harms": 8
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 13
+        },
+        "lower": {
+          "n": 13,
+          "correct": 10
+        },
+        "no difference": {
+          "n": 40,
+          "correct": 25
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "selected_r5",
+      "arm": "original",
+      "n": 118,
+      "correct": 61,
+      "invalid": 0,
+      "predictions": {
+        "lower": 29,
+        "uncertainty": 33,
+        "higher": 32,
+        "no difference": 24
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 13,
+          "harms": 25
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 23
+        },
+        "lower": {
+          "n": 38,
+          "correct": 19
+        },
+        "no difference": {
+          "n": 48,
+          "correct": 19
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "selected_r5",
+      "arm": "no_draft",
+      "n": 118,
+      "correct": 73,
+      "invalid": 0,
+      "predictions": {
+        "lower": 43,
+        "higher": 31,
+        "uncertainty": 23,
+        "no difference": 21
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 25,
+          "harms": 13
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 26
+        },
+        "lower": {
+          "n": 38,
+          "correct": 29
+        },
+        "no difference": {
+          "n": 48,
+          "correct": 18
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "selected_r5",
+      "arm": "supplied_only",
+      "n": 118,
+      "correct": 78,
+      "invalid": 0,
+      "predictions": {
+        "lower": 44,
+        "higher": 32,
+        "uncertainty": 12,
+        "no difference": 30
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 27,
+          "harms": 10
+        },
+        "no_draft": {
+          "repairs": 16,
+          "harms": 11
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 25
+        },
+        "lower": {
+          "n": 38,
+          "correct": 30
+        },
+        "no difference": {
+          "n": 48,
+          "correct": 23
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all201",
+      "arm": "original",
+      "n": 201,
+      "correct": 112,
+      "invalid": 1,
+      "predictions": {
+        "lower": 47,
+        "no difference": 58,
+        "uncertainty": 57,
+        "higher": 38,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 10,
+          "harms": 30
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 53,
+          "correct": 28
+        },
+        "lower": {
+          "n": 56,
+          "correct": 36
+        },
+        "no difference": {
+          "n": 92,
+          "correct": 48
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all201",
+      "arm": "no_draft",
+      "n": 201,
+      "correct": 132,
+      "invalid": 0,
+      "predictions": {
+        "lower": 56,
+        "no difference": 60,
+        "higher": 51,
+        "uncertainty": 34
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 30,
+          "harms": 10
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 53,
+          "correct": 39
+        },
+        "lower": {
+          "n": 56,
+          "correct": 42
+        },
+        "no difference": {
+          "n": 92,
+          "correct": 51
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all201",
+      "arm": "supplied_only",
+      "n": 201,
+      "correct": 131,
+      "invalid": 1,
+      "predictions": {
+        "lower": 52,
+        "uncertainty": 33,
+        "higher": 51,
+        "no difference": 64,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 37,
+          "harms": 18
+        },
+        "no_draft": {
+          "repairs": 17,
+          "harms": 18
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 53,
+          "correct": 39
+        },
+        "lower": {
+          "n": 56,
+          "correct": 40
+        },
+        "no difference": {
+          "n": 92,
+          "correct": 52
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "pilot64",
+      "arm": "original",
+      "n": 64,
+      "correct": 33,
+      "invalid": 0,
+      "predictions": {
+        "lower": 15,
+        "uncertainty": 21,
+        "no difference": 15,
+        "higher": 13
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 2,
+          "harms": 9
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 21,
+          "correct": 10
+        },
+        "lower": {
+          "n": 21,
+          "correct": 12
+        },
+        "no difference": {
+          "n": 22,
+          "correct": 11
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "pilot64",
+      "arm": "no_draft",
+      "n": 64,
+      "correct": 40,
+      "invalid": 0,
+      "predictions": {
+        "lower": 22,
+        "uncertainty": 10,
+        "no difference": 15,
+        "higher": 17
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 9,
+          "harms": 2
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 21,
+          "correct": 14
+        },
+        "lower": {
+          "n": 21,
+          "correct": 15
+        },
+        "no difference": {
+          "n": 22,
+          "correct": 11
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "pilot64",
+      "arm": "supplied_only",
+      "n": 64,
+      "correct": 44,
+      "invalid": 0,
+      "predictions": {
+        "lower": 17,
+        "no difference": 18,
+        "higher": 19,
+        "uncertainty": 10
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 14,
+          "harms": 3
+        },
+        "no_draft": {
+          "repairs": 8,
+          "harms": 4
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 21,
+          "correct": 16
+        },
+        "lower": {
+          "n": 21,
+          "correct": 14
+        },
+        "no difference": {
+          "n": 22,
+          "correct": 14
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension137",
+      "arm": "original",
+      "n": 137,
+      "correct": 79,
+      "invalid": 1,
+      "predictions": {
+        "no difference": 43,
+        "lower": 32,
+        "higher": 25,
+        "uncertainty": 36,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 8,
+          "harms": 21
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 18
+        },
+        "lower": {
+          "n": 35,
+          "correct": 24
+        },
+        "no difference": {
+          "n": 70,
+          "correct": 37
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension137",
+      "arm": "no_draft",
+      "n": 137,
+      "correct": 92,
+      "invalid": 0,
+      "predictions": {
+        "no difference": 45,
+        "lower": 34,
+        "higher": 34,
+        "uncertainty": 24
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 21,
+          "harms": 8
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 25
+        },
+        "lower": {
+          "n": 35,
+          "correct": 27
+        },
+        "no difference": {
+          "n": 70,
+          "correct": 40
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension137",
+      "arm": "supplied_only",
+      "n": 137,
+      "correct": 87,
+      "invalid": 1,
+      "predictions": {
+        "uncertainty": 23,
+        "lower": 35,
+        "higher": 32,
+        "no difference": 46,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 23,
+          "harms": 15
+        },
+        "no_draft": {
+          "repairs": 9,
+          "harms": 14
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 23
+        },
+        "lower": {
+          "n": 35,
+          "correct": 26
+        },
+        "no difference": {
+          "n": 70,
+          "correct": 38
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension_seen_review",
+      "arm": "original",
+      "n": 68,
+      "correct": 36,
+      "invalid": 1,
+      "predictions": {
+        "no difference": 18,
+        "higher": 11,
+        "uncertainty": 20,
+        "lower": 18,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 2,
+          "harms": 11
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 8
+        },
+        "lower": {
+          "n": 22,
+          "correct": 14
+        },
+        "no difference": {
+          "n": 30,
+          "correct": 14
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension_seen_review",
+      "arm": "no_draft",
+      "n": 68,
+      "correct": 45,
+      "invalid": 0,
+      "predictions": {
+        "no difference": 22,
+        "higher": 13,
+        "uncertainty": 13,
+        "lower": 20
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 11,
+          "harms": 2
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 10
+        },
+        "lower": {
+          "n": 22,
+          "correct": 17
+        },
+        "no difference": {
+          "n": 30,
+          "correct": 18
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension_seen_review",
+      "arm": "supplied_only",
+      "n": 68,
+      "correct": 43,
+      "invalid": 0,
+      "predictions": {
+        "uncertainty": 12,
+        "lower": 23,
+        "higher": 12,
+        "no difference": 21
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 11,
+          "harms": 4
+        },
+        "no_draft": {
+          "repairs": 2,
+          "harms": 4
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 9
+        },
+        "lower": {
+          "n": 22,
+          "correct": 18
+        },
+        "no difference": {
+          "n": 30,
+          "correct": 16
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension_new_review",
+      "arm": "original",
+      "n": 69,
+      "correct": 43,
+      "invalid": 0,
+      "predictions": {
+        "lower": 14,
+        "no difference": 25,
+        "higher": 14,
+        "uncertainty": 16
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 6,
+          "harms": 10
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 10
+        },
+        "lower": {
+          "n": 13,
+          "correct": 10
+        },
+        "no difference": {
+          "n": 40,
+          "correct": 23
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension_new_review",
+      "arm": "no_draft",
+      "n": 69,
+      "correct": 47,
+      "invalid": 0,
+      "predictions": {
+        "lower": 14,
+        "no difference": 23,
+        "higher": 21,
+        "uncertainty": 11
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 10,
+          "harms": 6
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 15
+        },
+        "lower": {
+          "n": 13,
+          "correct": 10
+        },
+        "no difference": {
+          "n": 40,
+          "correct": 22
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "extension_new_review",
+      "arm": "supplied_only",
+      "n": 69,
+      "correct": 44,
+      "invalid": 1,
+      "predictions": {
+        "lower": 12,
+        "higher": 20,
+        "no difference": 25,
+        "uncertainty": 11,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 12,
+          "harms": 11
+        },
+        "no_draft": {
+          "repairs": 7,
+          "harms": 10
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 16,
+          "correct": 14
+        },
+        "lower": {
+          "n": 13,
+          "correct": 8
+        },
+        "no difference": {
+          "n": 40,
+          "correct": 22
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "selected_r5",
+      "arm": "original",
+      "n": 118,
+      "correct": 63,
+      "invalid": 1,
+      "predictions": {
+        "no difference": 32,
+        "uncertainty": 36,
+        "higher": 21,
+        "lower": 28,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "no_draft": {
+          "repairs": 6,
+          "harms": 22
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 16
+        },
+        "lower": {
+          "n": 38,
+          "correct": 23
+        },
+        "no difference": {
+          "n": 48,
+          "correct": 24
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "selected_r5",
+      "arm": "no_draft",
+      "n": 118,
+      "correct": 79,
+      "invalid": 0,
+      "predictions": {
+        "no difference": 32,
+        "lower": 36,
+        "uncertainty": 21,
+        "higher": 29
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 22,
+          "harms": 6
+        },
+        "no_draft": {
+          "repairs": 0,
+          "harms": 0
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 24
+        },
+        "lower": {
+          "n": 38,
+          "correct": 29
+        },
+        "no difference": {
+          "n": 48,
+          "correct": 26
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "selected_r5",
+      "arm": "supplied_only",
+      "n": 118,
+      "correct": 78,
+      "invalid": 1,
+      "predictions": {
+        "uncertainty": 18,
+        "lower": 35,
+        "higher": 31,
+        "no difference": 33,
+        "null": 1
+      },
+      "comparisons": {
+        "original": {
+          "repairs": 25,
+          "harms": 10
+        },
+        "no_draft": {
+          "repairs": 9,
+          "harms": 10
+        }
+      },
+      "classes": {
+        "higher": {
+          "n": 32,
+          "correct": 25
+        },
+        "lower": {
+          "n": 38,
+          "correct": 27
+        },
+        "no difference": {
+          "n": 48,
+          "correct": 26
+        }
+      }
+    }
+  ],
+  "new_calls_in_combination": 0,
+  "scope": "201 source question families from exposed v5.91 unique original_review IDs;27 IDs shared across pilot/extension. No independent generalization or full788 score.",
+  "original_scoring_unchanged": true,
+  "main_seven_method_head_replacement": false
+}

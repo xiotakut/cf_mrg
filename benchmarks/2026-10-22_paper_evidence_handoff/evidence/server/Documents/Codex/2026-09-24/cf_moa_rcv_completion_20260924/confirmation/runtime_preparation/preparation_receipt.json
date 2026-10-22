@@ -1,0 +1,90 @@
+{
+  "status": "prepared_only_not_run",
+  "timestamp": "2026-09-25T00:24:39.595821+08:00",
+  "files": {
+    "launch_fixed.py": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/runtime_preparation/launch_fixed.py",
+      "sha256": "bdfa9730a5db15e585633bae009301bce4e990b7eaee920a514831a0923600fe",
+      "bytes": 16139
+    },
+    "test_launch_fixed.py": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/runtime_preparation/test_launch_fixed.py",
+      "sha256": "75df4f4243bd3e8d4db51529bdb4a2ec60a23a4edf9e39336423655b57f8e972",
+      "bytes": 10577
+    },
+    "README.md": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/runtime_preparation/README.md",
+      "sha256": "a1d23196f01d4025ff76155444603f0bca87e03cf342d01be6856debea11d049",
+      "bytes": 6340
+    },
+    "tests.log": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/confirmation/runtime_preparation/tests.log",
+      "sha256": "e6309443b4fc9d71e6734421b1964be0e6cccef3400d784dd077dd64c55eddea",
+      "bytes": 1019
+    }
+  },
+  "fixed_stages": [
+    "C0_confirmation128",
+    "C0_exposed_controls8",
+    "pool42_confirmation128",
+    "pool42_exposed_controls8",
+    "pool142_confirmation128",
+    "pool142_exposed_controls8"
+  ],
+  "permitted_backbones": [
+    "M4",
+    "M5"
+  ],
+  "permitted_gpu_ids": [
+    1,
+    2,
+    3
+  ],
+  "general_autoqueue_enabled": false,
+  "runtime_binding": "Actual common_freeze + fixed stage plan; real loader/source/profile/input checks; same original native C0 or readout resource estimator; no profile edits",
+  "stage_denominators": {
+    "confirmation128_inputs_per_backbone": 512,
+    "exposed_controls8_inputs_per_backbone": 16,
+    "RCV_arms": 5,
+    "C0_runs_per_input": 1
+  },
+  "reservation": {
+    "script": {
+      "path": "/home/data3/txy/.local/bin/gpu_watch.py",
+      "sha256": "a6ef2550000a72d3fa558b48f0e665d4861a29204d0a8898ef97ef1105913ec0",
+      "bytes": 9814
+    },
+    "requested_gib": 60,
+    "min_free_gib": 50,
+    "only_after_known_child_exit": true,
+    "actual_occupancy": "Never inferred from watcher Popen; wait for original watcher ready record"
+  },
+  "tests": {
+    "count": 9,
+    "status": "passed",
+    "source": "Temporary synthetic freeze/job files and fake child/watcher processes. No alternate model parser or native grader."
+  },
+  "exact_callback_API_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/callback_reuse_preparation/staged_driver/run_moa_rcv_batched.py",
+    "sha256": "9aefbf2e987d72b65d05cac762120785a504ea162684be34a65339fbc835a831",
+    "bytes": 22166
+  },
+  "actual_execution": {
+    "actual_confirmation_input_reads": 0,
+    "actual_confirmation_evaluation_or_gold_reads": 0,
+    "common_freeze_runs": 0,
+    "GPU_queries": 0,
+    "CUDA_initializations": 0,
+    "model_calls": 0,
+    "grader_calls": 0,
+    "watchers_started": 0,
+    "live_jobs_started": 0,
+    "processes_stopped": 0
+  },
+  "limitations": [
+    "Actual admission/launch has not run; requires real common freeze after full-v5 and installed staged driver.",
+    "Ready is a CPU estimate; resource races retain one failed attempt without automatic retry.",
+    "General queue/current full-v5 plans and active source files were not modified.",
+    "This launcher does not freeze, bind replicas, analyze, publish or launch a following stage."
+  ]
+}

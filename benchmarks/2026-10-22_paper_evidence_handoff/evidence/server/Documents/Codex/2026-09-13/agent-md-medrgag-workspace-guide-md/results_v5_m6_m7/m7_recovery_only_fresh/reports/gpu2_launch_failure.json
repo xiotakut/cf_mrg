@@ -1,0 +1,12 @@
+{
+  "failed_run": "runs/gpu2",
+  "retry_run": "runs/gpu2_retry",
+  "cause": "GPU2 initialization CUDA OOM while another user process held 35.97 GiB",
+  "other_pid": 2146449,
+  "our_failed_pid": 2147228,
+  "failed_phase": "vLLM KV cache initialization",
+  "completed_inputs": 0,
+  "completed_llm_requests": 0,
+  "policy": "Keep original failure artifacts; execute same 128 inputs on the first released authorized GPU1 or GPU3",
+  "method_config_unchanged": true
+}

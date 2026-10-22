@@ -1,0 +1,143 @@
+{
+  "variant": "baseline_targeted_delta_adjudication_v1",
+  "method": "M5",
+  "profile": {
+    "model": "/home/data3/txy/models/Qwen3-8B",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "model_kwargs": {
+      "rope_scaling": {
+        "rope_type": "yarn",
+        "factor": 4.0,
+        "original_max_position_embeddings": 32768
+      },
+      "num_gpu_blocks_override": 16384
+    },
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "guided_json": true,
+    "num_shards": 1
+  },
+  "profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+    "copy": "readout_m5.json",
+    "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+  },
+  "protocol": {
+    "status": "fixed_for_technical_smoke",
+    "variant": "baseline_targeted_delta_adjudication_v1",
+    "selection": "first input in native format multi,single,robustness_single; no outcome selection; identical IDs on both backbones; invalid B stops preparation",
+    "smoke_ids": [
+      "d00000",
+      "d00001",
+      "d00003"
+    ],
+    "methods": [
+      "M4",
+      "M5"
+    ],
+    "arms": [
+      "baseline",
+      "targeted_reanswer",
+      "delta_adjudication",
+      "unconditional_reanswer"
+    ],
+    "source_hashes": {
+      "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395",
+      "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+      "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e",
+      "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1"
+    },
+    "method_files": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl"
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl"
+      }
+    },
+    "code_lock": {
+      "/home/data3/txy/cf_moa/agents/a1_delta.py": "ae8f5a30dc5d6549b9794e18558e13a5cc1d741e11524912c7eb758c0c7e6e4a",
+      "/home/data3/txy/cf_moa/controller/incremental.py": "cac81822cfaddb52317478d7039c73a69c1d3a22d18c8ab358164b93bd8cb885",
+      "/home/data3/txy/cf_moa/configs/incremental_v1.json": "f07b6fca05181dc60019cbfff379fd98e6e36577ff93f7447fdf893ce0e71b61",
+      "/home/data3/txy/cf_moa/evaluation/prepare_incremental.py": "fb7f880eec8e165a9190b209d6438d2e77733b41b44184d9f2c0cc5700d74464",
+      "/home/data3/txy/cf_moa/evaluation/incremental_runner.py": "59bd46314d260eb824430b7bf5e1a70f0460b91624a7cb8e094af23bb3a92d91",
+      "/home/data3/txy/cf_moa/evaluation/journal.py": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+      "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+      "/home/data3/txy/cf_moa/tools/vllm_backend.py": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "/home/data3/txy/cf_moa/tools/evidence_ids.py": "d8ae42678c37e0844c4584c75da12c54368480b8847b367aad7c46771c8f2912",
+      "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "/home/data3/txy/cf_moa/agents/a1_support_completion.py": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+      "/home/data3/txy/cf_moa/tools/provenance.py": "e93a15fe243840fe47decdaf0f8654e465749331b7dd6982fdfdfef46c4f5ed0",
+      "/home/data3/txy/cf_moa/tools/schema_compat.py": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "/home/data3/txy/cf_moa/tools/legacy.py": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+      "/home/data3/txy/cf_moa/tools/adopted.py": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+      "/home/data3/txy/cf_moa/configs/native_sources.json": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+      "/home/data3/txy/cf_moa/configs/readout_m4.json": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+      "/home/data3/txy/cf_moa/configs/readout_m5.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+      "/home/data3/txy/cf_moa/CF_MED_MoA_Router_Five_Agents_Execution_Plan.md": "2e86d0a6cb7302ca671cd68bfbe3f738396dea85b1cfbf8b8a225759d1414935",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m6_log_priors.json": "24d191587cfb04ff0cdc9202c3069c3ce978e7032ae36af3861097b4e18cbef6",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m0_config.json": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py": "e4e4bbd1aed35c3439291f34b027db0d35b31569c71158b39f67fe21cf9950b8",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m7_config.json": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m0_log_priors.json": "58782cdd16570c8248bf0d663132e576771dfaca7c8c3e6478b8a9cf8cb0bb1c",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m2_log_priors.json": "58782cdd16570c8248bf0d663132e576771dfaca7c8c3e6478b8a9cf8cb0bb1c",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m6_config.json": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py": "331cbec06e22b8345ba86e432195fe9c968d3cb8647500228226f0efa024e37e",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/isolated_import_check.json": "9459afe69a3467f1493064b1cc96adece43857f2b5b3b382f51e4ea568524e28",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/candidate.json": "538ae990f10a950240710eeeb5d00211f907c5b626a55b62ddf2eda02ce63597",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py": "7c6e177b7a8a5bddd3cbf0f2b5ba1f23df6b4bce1c227fac4357ae57de2f7373",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m7_log_priors.json": "951fa4830b13c686807ee562d275b15a9ea88b623b507a8285867dbce454352d",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m5_config.json": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m3_config.json": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m5_log_priors.json": "f4032a8f9db862e95a325153309ca39c8d113b06b636752c835cc2d426cdf867",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/qwen_facts_config.json": "ffd2ca3d0a5c2747d93ead06b10dd7fe12893a28ee90bcdfb586f817030c56f0",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m4_config.json": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py": "ecd3ea5c5ce31f9239f9d721aadc5c1a8bb04394fc674aee83dc5503aa9b9a65",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m2_config.json": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m3_log_priors.json": "756de6dd3ce1d5e1752eff24193f91844468204cdfc691e78acd1bd71a47b519",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m4_log_priors.json": "4395ca00e13772de8b2264ca017e4fcbac36d9782ef07972ac46dc121591c720",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py": "0e4c793c14c6ab83f0abd11ca45259380975f628fd50776e40df95cdb591943c",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+      "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/llama_facts_config.json": "7cedb33bbca40ff22fb5b4bfcacafd7ef9c0f9a51c24f5d843bbcf0e1f39fbab"
+    },
+    "generation": {
+      "seed": 42,
+      "temperature": 0.7,
+      "diagnostic_max_tokens": 1024,
+      "answer_max_tokens": 2048
+    },
+    "max_new_calls_per_method": 18,
+    "max_new_output_reservation_per_method": 27648,
+    "core_comparators": "B; two-stage same-target reanswer; A1_delta plus local adjudication; unconditional two-stage reanswer",
+    "budget_interpretation": "same 2-call/1024 diagnostic+2048 native per-input cap; realized tokens/time separate; shared historical B charged once per method, not summed across arms",
+    "unsupported_or_invalid_B": "retain historical full denominator and failure identity; no inferred native repairs beyond separately authorized deterministic B wrapper",
+    "first_error": "shared atomic latch across backbones; no new core submissions after observed latch; existing in-flight may finish; no resampling",
+    "optional_diagnostic": "unavailable including length termination returns exact complete saved B with status, never partial response salvage",
+    "native_failure": "length even with parseable JSON or invalid full schema stops and remains unavailable",
+    "expansion": "not_automatic; inspect fixed smoke reliability, support/proposal utility and all controls before releasing a fixed development stage",
+    "qualification": "technical smoke only; no independence or quality gain claim",
+    "independent_data_access": false,
+    "actual_inference_in_this_preparation": false
+  },
+  "protocol_sha256": "3ab468467561278088e55f74bffb2bba96743a8f13ed2e9ba95efacefc460f88"
+}

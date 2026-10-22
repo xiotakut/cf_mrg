@@ -1,0 +1,224 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "model": "llama",
+      "scope": "rules33",
+      "n": 33,
+      "old_correct": 21,
+      "new_correct": 20,
+      "repairs": 1,
+      "harms": 2,
+      "invalid": 0
+    },
+    {
+      "model": "llama",
+      "scope": "r2_native",
+      "n": 79,
+      "old_correct": 39,
+      "new_correct": 36,
+      "repairs": 0,
+      "harms": 3,
+      "invalid": 3
+    },
+    {
+      "model": "llama",
+      "scope": "r2_covered",
+      "n": 55,
+      "old_correct": 27,
+      "new_correct": 24,
+      "repairs": 0,
+      "harms": 3,
+      "invalid": 1
+    },
+    {
+      "model": "qwen",
+      "scope": "rules33",
+      "n": 33,
+      "old_correct": 25,
+      "new_correct": 22,
+      "repairs": 0,
+      "harms": 3,
+      "invalid": 0
+    },
+    {
+      "model": "qwen",
+      "scope": "r2_native",
+      "n": 79,
+      "old_correct": 46,
+      "new_correct": 42,
+      "repairs": 0,
+      "harms": 4,
+      "invalid": 10
+    },
+    {
+      "model": "qwen",
+      "scope": "r2_covered",
+      "n": 55,
+      "old_correct": 36,
+      "new_correct": 32,
+      "repairs": 0,
+      "harms": 4,
+      "invalid": 6
+    }
+  ],
+  "costs": [
+    {
+      "model": "llama",
+      "new_calls": 88,
+      "input_tokens": 61357,
+      "output_tokens": 26857,
+      "length_stops": 2,
+      "worker_seconds": 130.87435841560364,
+      "initialization_seconds": 17.349926233291626
+    },
+    {
+      "model": "qwen",
+      "new_calls": 88,
+      "input_tokens": 59925,
+      "output_tokens": 27979,
+      "length_stops": 1,
+      "worker_seconds": 166.9626762866974,
+      "initialization_seconds": 15.169016599655151
+    }
+  ],
+  "new_calls": 176,
+  "field_changes": {
+    "llama": 75,
+    "qwen": 61
+  },
+  "known_audit": [
+    {
+      "model": "llama",
+      "item_id": "r1mechanism_12_clearance_identity__base",
+      "field": "crcl",
+      "expected": null,
+      "observed": null,
+      "reason": "Raw extraction incorrectly proposed eGFR54 as CrCl54; existing measure check rejected it. Cleaned unknown is correct here; this records a caught raw extraction error.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": true
+    },
+    {
+      "model": "llama",
+      "item_id": "r1mechanism_12_clearance_identity__irrelevant",
+      "field": "crcl",
+      "expected": null,
+      "observed": null,
+      "reason": "Raw extraction incorrectly proposed eGFR54 as CrCl54; existing measure check rejected it. Cleaned unknown is correct here; this records a caught raw extraction error.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": true
+    },
+    {
+      "model": "llama",
+      "item_id": "r1mechanism_12_clearance_identity__added_support",
+      "field": "crcl",
+      "expected": 48,
+      "observed": null,
+      "reason": "Raw extraction again proposed old eGFR54 despite newly supplied CrCl48; existing measure check rejected it, leaving the clinically relevant new numeric fact unknown.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": 48.0,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_02_ejection_fraction_report__base",
+      "field": "hf_reduced_ef",
+      "expected": null,
+      "observed": false,
+      "reason": "The note does not classify heart failure by ejection fraction; this is unestablished, not false. Valid sentence IDs did not establish semantic entailment. This accepted false can remove original verapamil/diltiazem selections.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_02_ejection_fraction_report__irrelevant",
+      "field": "hf_reduced_ef",
+      "expected": null,
+      "observed": false,
+      "reason": "The note does not classify heart failure by ejection fraction; this is unestablished, not false. Valid sentence IDs did not establish semantic entailment. This accepted false can remove original verapamil/diltiazem selections.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_05_syncope_mechanism__base",
+      "field": "dementia",
+      "expected": null,
+      "observed": true,
+      "reason": "Discussion of cognitive medicines does not document a dementia diagnosis. Additional age-based hydroxyzine support already holds, so this extra fact does not change these option states.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_05_syncope_mechanism__added_support",
+      "field": "dementia",
+      "expected": null,
+      "observed": true,
+      "reason": "Discussion of cognitive medicines does not document a dementia diagnosis. Additional age-based hydroxyzine support already holds, so this extra fact does not change these option states.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_05_syncope_mechanism__irrelevant",
+      "field": "dementia",
+      "expected": null,
+      "observed": true,
+      "reason": "Discussion of cognitive medicines does not document a dementia diagnosis. Additional age-based hydroxyzine support already holds, so this extra fact does not change these option states.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_01_heart_failure_record__irrelevant",
+      "field": "high_delirium_risk",
+      "expected": null,
+      "observed": false,
+      "reason": "Raw evidence S7 is task wording, not patient evidence establishing absence of delirium risk. Hydroxyzine already has the age-based support.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "r1mechanism_07_prescription_detail__irrelevant",
+      "field": "falls_or_fractures",
+      "expected": null,
+      "observed": false,
+      "reason": "No syncope history does not establish no falls/fractures; the provided sentence ID establishes only the former. The age-based doxepin/cyclobenzaprine paths or unknown dose still govern these selections.",
+      "stage": "post_prediction_manual_fact_audit",
+      "method_changed": false,
+      "new_observed": null,
+      "new_matches_audited_expectation": true,
+      "old_matches_audited_expectation": false
+    }
+  ],
+  "independent_validation": false,
+  "manual_fact_audit_scope": "Ten previously audited fields only; full changed-field review is separate and not assumed from exact-set score."
+}

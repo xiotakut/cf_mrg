@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "prepared_at": "2026-09-17 18:56:57 +0800",
+  "planned_new_calls": 576,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 288,
+      "max_prompt_tokens": 5150
+    },
+    {
+      "method": "M5",
+      "calls": 288,
+      "max_prompt_tokens": 5036
+    }
+  ],
+  "head": "Unchanged cladder_validation/frozen_head; no biological examples added",
+  "inference": "Only source question, yes/no options and original system/native output instructions; no source IDs, oracle, evaluation, future states or labels appended.",
+  "generation": "Original backbones and seed42/temp0.7/top_p1/top_k-1/batch4/2048output/M4guided/M5unguided;8192fixedKV blocks,standby0.95 memory.",
+  "analysis": "All144 plus fixed120 unique visible inputs; per source, polarity and predeclared noop strata; paired72/60 both-correct/complementary; execution and native validity separate.",
+  "interpretation": "Explicit synchronous adaptations of three published networks, not original asynchronous probability reproduction or clinical truth. Shared networks/states/pairs are dependent.",
+  "stop": "Complete frozen cohort; no head/prompt/seed changes or score-based subset selection.",
+  "completed_new_calls": 576,
+  "finished_at": "2026-09-17 20:23:39 +0800"
+}

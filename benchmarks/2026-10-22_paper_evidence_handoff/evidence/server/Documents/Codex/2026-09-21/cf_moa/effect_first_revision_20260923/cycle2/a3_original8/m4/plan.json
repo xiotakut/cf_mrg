@@ -1,0 +1,291 @@
+{
+  "protocol": {
+    "version": "a3_original_case_pair_comparison_v1",
+    "scope": "All eight existing legal diagnosis inputs, selected by native format and public catalogue capability only; full-original comparison, no patient edit.",
+    "generation": {
+      "temperature": 0.7,
+      "seed": 42,
+      "diagnostic_max_tokens": 768,
+      "answer_max_tokens": 512,
+      "repair_max_tokens": 128
+    },
+    "per_task_budget": {
+      "max_model_requests": 2,
+      "max_input_tokens": 400000,
+      "max_output_tokens": 640,
+      "max_tool_calls": 0
+    },
+    "failure_policy": "Ordinary per-input output errors continue; one fixed native-key repair for both arms; infrastructure stops affected run.",
+    "candidate_selection": "B plus the strongest non-B saved six-order calibrated mean probability; frozen catalogue order breaks ties.",
+    "final_selection": "Any exact label in the full 49-label catalogue; pair focuses comparison only.",
+    "independent_evaluation": false,
+    "new_old_head_calls": 0,
+    "maximum_new_model_calls": 64,
+    "nominal_new_calls": 32,
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl",
+        "inputs_sha256": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl",
+        "bases_sha256": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a3_original8/m4_proposals.jsonl",
+        "proposals_sha256": "6b6a7a848202a411fa749638b23809edfca84653f95c16ca77be3bcc79facc56",
+        "tasks": [
+          {
+            "task_id": "d00008:a3_original_compare",
+            "request_id": "d00008",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00008:original_pair"
+          },
+          {
+            "task_id": "d00008:a3_original_reanswer",
+            "request_id": "d00008",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00008:original_pair"
+          },
+          {
+            "task_id": "d00011:a3_original_compare",
+            "request_id": "d00011",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00011:original_pair"
+          },
+          {
+            "task_id": "d00011:a3_original_reanswer",
+            "request_id": "d00011",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00011:original_pair"
+          },
+          {
+            "task_id": "d00021:a3_original_compare",
+            "request_id": "d00021",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00021:original_pair"
+          },
+          {
+            "task_id": "d00021:a3_original_reanswer",
+            "request_id": "d00021",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00021:original_pair"
+          },
+          {
+            "task_id": "d00035:a3_original_compare",
+            "request_id": "d00035",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00035:original_pair"
+          },
+          {
+            "task_id": "d00035:a3_original_reanswer",
+            "request_id": "d00035",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00035:original_pair"
+          },
+          {
+            "task_id": "d00051:a3_original_compare",
+            "request_id": "d00051",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00051:original_pair"
+          },
+          {
+            "task_id": "d00051:a3_original_reanswer",
+            "request_id": "d00051",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00051:original_pair"
+          },
+          {
+            "task_id": "d00068:a3_original_compare",
+            "request_id": "d00068",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00068:original_pair"
+          },
+          {
+            "task_id": "d00068:a3_original_reanswer",
+            "request_id": "d00068",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00068:original_pair"
+          },
+          {
+            "task_id": "d00070:a3_original_compare",
+            "request_id": "d00070",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00070:original_pair"
+          },
+          {
+            "task_id": "d00070:a3_original_reanswer",
+            "request_id": "d00070",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00070:original_pair"
+          },
+          {
+            "task_id": "d00077:a3_original_compare",
+            "request_id": "d00077",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00077:original_pair"
+          },
+          {
+            "task_id": "d00077:a3_original_reanswer",
+            "request_id": "d00077",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00077:original_pair"
+          }
+        ]
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m5.jsonl",
+        "inputs_sha256": "2aa36c5a3d4c1957596eb2582ed1eaf256b9cb3ac8d2868075a645d8ed55ff6e",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl",
+        "bases_sha256": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle2/a3_original8/m5_proposals.jsonl",
+        "proposals_sha256": "c8c5bc44ee47aba9a58a67d484365ae91977e4d480350fa3f3190cf9d2f9cf21",
+        "tasks": [
+          {
+            "task_id": "d00008:a3_original_compare",
+            "request_id": "d00008",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00008:original_pair"
+          },
+          {
+            "task_id": "d00008:a3_original_reanswer",
+            "request_id": "d00008",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00008:original_pair"
+          },
+          {
+            "task_id": "d00011:a3_original_compare",
+            "request_id": "d00011",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00011:original_pair"
+          },
+          {
+            "task_id": "d00011:a3_original_reanswer",
+            "request_id": "d00011",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00011:original_pair"
+          },
+          {
+            "task_id": "d00021:a3_original_compare",
+            "request_id": "d00021",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00021:original_pair"
+          },
+          {
+            "task_id": "d00021:a3_original_reanswer",
+            "request_id": "d00021",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00021:original_pair"
+          },
+          {
+            "task_id": "d00035:a3_original_compare",
+            "request_id": "d00035",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00035:original_pair"
+          },
+          {
+            "task_id": "d00035:a3_original_reanswer",
+            "request_id": "d00035",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00035:original_pair"
+          },
+          {
+            "task_id": "d00051:a3_original_compare",
+            "request_id": "d00051",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00051:original_pair"
+          },
+          {
+            "task_id": "d00051:a3_original_reanswer",
+            "request_id": "d00051",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00051:original_pair"
+          },
+          {
+            "task_id": "d00068:a3_original_compare",
+            "request_id": "d00068",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00068:original_pair"
+          },
+          {
+            "task_id": "d00068:a3_original_reanswer",
+            "request_id": "d00068",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00068:original_pair"
+          },
+          {
+            "task_id": "d00070:a3_original_compare",
+            "request_id": "d00070",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00070:original_pair"
+          },
+          {
+            "task_id": "d00070:a3_original_reanswer",
+            "request_id": "d00070",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00070:original_pair"
+          },
+          {
+            "task_id": "d00077:a3_original_compare",
+            "request_id": "d00077",
+            "arm": "a3_original_compare",
+            "proposal_key": "d00077:original_pair"
+          },
+          {
+            "task_id": "d00077:a3_original_reanswer",
+            "request_id": "d00077",
+            "arm": "a3_original_reanswer",
+            "proposal_key": "d00077:original_pair"
+          }
+        ]
+      }
+    },
+    "panel_ids": [
+      "d00008",
+      "d00011",
+      "d00021",
+      "d00035",
+      "d00051",
+      "d00068",
+      "d00070",
+      "d00077"
+    ],
+    "source_files": [
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a3_original_compare.py",
+        "sha256": "b9c445ce207a14c934bfdb5a6e17a6b7a7cbb10e1313db92f9481f12676c5ea6"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json",
+        "sha256": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b"
+      }
+    ]
+  },
+  "method": "M4",
+  "profile": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 16384
+    }
+  },
+  "profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+    "copy": "readout_m4.json",
+    "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+  },
+  "selected_source_sha256": "246d2687c2c6697a3a757447ec5f131861bd87fb815b60f80c1b58bc0509a18e",
+  "code_sources": {
+    "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "841756d0df28345c58a1c8fff975206e4453216b18f532aa5170e0ff480e9122",
+    "/home/data3/txy/cf_moa/controller/effect_first.py": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+    "/home/data3/txy/cf_moa/agents/a3_original_compare.py": "b9c445ce207a14c934bfdb5a6e17a6b7a7cbb10e1313db92f9481f12676c5ea6"
+  }
+}

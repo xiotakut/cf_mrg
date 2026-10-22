@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "method": "M4",
+  "pid": 2762909,
+  "gpu": "2",
+  "batch_size": 8,
+  "new_generations": 0,
+  "truncated_sequences": 0,
+  "input_and_source_sha256": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py": "11b4ff8145ffb32e2990e6be1374982b58ce0fbd3ee489355174fba9fd76f6be",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/m4/config.json": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/m4/requests.jsonl": "334776990fe19038c89b505c15e370ad0619256205ff5af75a25ccac50f05a67"
+  },
+  "initialization_seconds": 5.168043613433838,
+  "planned_sequences": 16,
+  "completed_sequences": 16,
+  "forward_batches": 2,
+  "actual_input_tokens": 5405,
+  "padded_token_slots": 6848,
+  "max_input_tokens": 519,
+  "elapsed_seconds": 7.569097280502319,
+  "peak_allocated_bytes": 16595599360,
+  "singleton_check": {
+    "extra_sequences": 16,
+    "extra_forward_batches": 16,
+    "extra_input_tokens": 5405,
+    "max_absolute_difference": 0.625,
+    "minimum_cosine": 0.9996843338012695,
+    "maximum_relative_l2": 0.0251381304115057,
+    "note": "bf16 batching can change rounding; this checks extraction, not final classifier decisions"
+  },
+  "hidden_shape": [
+    16,
+    4096
+  ],
+  "representation": "last nonpadding token of literal text; no chat template or temporary label code",
+  "requests_sha256": "334776990fe19038c89b505c15e370ad0619256205ff5af75a25ccac50f05a67"
+}

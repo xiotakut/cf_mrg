@@ -1,0 +1,114 @@
+{
+  "method": "M5",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 24,
+      "macro_recall": 0.4744897959183673,
+      "comparisons": {
+        "compatible": {
+          "repairs": 8,
+          "harms": 1
+        },
+        "list8": {
+          "repairs": 4,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "list8",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.364795918367347,
+      "comparisons": {
+        "compatible": {
+          "repairs": 4,
+          "harms": 1
+        },
+        "list8": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "variant": "compatible",
+      "n": 40,
+      "correct": 17,
+      "macro_recall": 0.26275510204081637,
+      "comparisons": {
+        "compatible": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "list8": {
+          "repairs": 1,
+          "harms": 4
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 8
+        }
+      }
+    },
+    {
+      "variant": "primary",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.375,
+      "comparisons": {
+        "compatible": {
+          "repairs": 4,
+          "harms": 1
+        },
+        "list8": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 5
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 640,
+    "input_tokens": 1445088,
+    "output_tokens": 640
+  },
+  "diagnostics": {
+    "compatible": {
+      "order_conflicts": 18,
+      "candidate_pairs": 160,
+      "all_negative_cases": 3
+    },
+    "primary": {
+      "order_conflicts": 10,
+      "candidate_pairs": 160,
+      "all_negative_cases": 8
+    }
+  },
+  "runtime": {
+    "status": "complete",
+    "method": "M5",
+    "gpu": 3,
+    "pid": 3260899,
+    "started_at": 1789433795.7160356,
+    "completed_calls": 640,
+    "initialization_seconds": 16.799156427383423,
+    "elapsed_seconds": 63.20907020568848,
+    "distributions": 640,
+    "missing_code_calls": 0
+  }
+}

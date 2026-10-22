@@ -1,0 +1,9 @@
+﻿label,resource_id,source,split,task,native_metric,metric_cn,comparison_units,source_groups,M0_pct,M1_pct,M1_minus_M0_pp,delta_ci_low_pp,delta_ci_high_pp,M0_invalid,M1_invalid
+ALL_NATIVE,M01,MedEinst,unspecified,native,canonical_diagnosis_match,诊断标签匹配率,843,843,9.9644128113879,10.913404507710558,0.9489916963226569,-1.1862396204033214,3.084223013048636,577,672
+ALL_NATIVE,M02,MedPIC-Bench,unspecified,native,exact_set_accuracy,答案集合完全匹配率,167,167,25.149700598802394,26.34730538922156,1.1976047904191656,-2.3952095808383236,4.790419161676647,0,0
+ALL_NATIVE,M06,HIV ART,unspecified,native,author_expected_answer_agreement,作者预期答案一致率,13,13,38.46153846153847,38.46153846153847,0.0,-23.076923076923077,23.076923076923077,0,0
+ALL_NATIVE,M10,CPV-MedQA,unspecified,native,option_accuracy,选项准确率,1,1,0.0,0.0,0.0,nan,nan,0,0
+ALL_NATIVE,M11,Cultural Cues,unspecified,native,option_accuracy,选项准确率,67,15,97.77777777777779,85.55555555555556,-12.222222222222234,-30.0,0.0,0,0
+ALL_NATIVE,M12,AMQA,released_evaluation,native,option_accuracy,选项准确率,134,95,53.59649122807018,59.03508771929824,5.438596491228065,-1.754385964912281,12.105263157894736,0,0
+ALL_NATIVE,M14,DiversityMedQA,author_test,native,option_accuracy,选项准确率,2,2,100.0,100.0,0.0,0.0,0.0,0,0
+ALL_NATIVE,M20,MedCounterFact,unspecified,native,evidence_agreement,证据关系一致率,788,201,66.66666666666666,61.69154228855721,-4.975124378109452,-7.711442786069651,-2.36318407960199,0,0

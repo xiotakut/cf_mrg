@@ -1,0 +1,35 @@
+{
+  "n": 48,
+  "probes": 144,
+  "actually_edited": 144,
+  "same_focus_probe_answer_changes": 67,
+  "factual_probe_native_coverage": 16,
+  "final_answer_text_changes": 21,
+  "surface_correct": {
+    "baseline": 18,
+    "review": 6,
+    "factual_audit": 16,
+    "cf_audit": 13
+  },
+  "stage_costs": {
+    "initial": {
+      "calls": 96,
+      "input_tokens": 180249,
+      "output_tokens": 33632,
+      "length_stops": 9
+    },
+    "probes": {
+      "calls": 288,
+      "input_tokens": 694957,
+      "output_tokens": 69131,
+      "length_stops": 3
+    },
+    "final": {
+      "calls": 96,
+      "input_tokens": 370034,
+      "output_tokens": 41273,
+      "length_stops": 10
+    }
+  },
+  "note": "All are development diagnostics. Hypothetical probes are not scored against original gold. Answer changes are normalized text changes, not medically verified causal effects."
+}

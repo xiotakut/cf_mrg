@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "at": "2026-09-17 21:44:31 +0800",
+  "stage": "extract",
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 13,
+      "max_prompt_tokens": 2940
+    },
+    {
+      "method": "M5",
+      "calls": 13,
+      "max_prompt_tokens": 3125
+    }
+  ],
+  "planned_total_new_calls": 78,
+  "hypothesis": "On the same extracted excerpts, does source-span and participant binding reduce mechanism misbinding?",
+  "scope": "All13 previously exposed original HIV ART inputs; author-answer agreement only, no new clinical gold.",
+  "controls": "One shared extraction per input/model and two final calls. Each arm depends on2 calls; actual new calls13x2x3=78. Same final template, original native system/question/options, quote-only rendering. Bound filters excerpt provenance and named participants; unfiltered passes all usable extracted quotes.",
+  "budget": "Original seed42,temperature.7,max2048 per call,M4guided/M5unguided,batch4. Extraction has its own three-field record schema. No reference/ratings/source metadata or old answer enters inference.",
+  "interpretation": "Bound changes evidence amount as well as anchoring. Shared extraction may omit necessary participants; co-mention and quote existence do not prove a relationship, causal sufficiency, treatment presence or target match. Generic classes/aliases may be lost. Empty selection becomes question-only with no hidden fallback.",
+  "decision": "One common candidate, no item/model selection, all outputs retained. Compare same-extraction unfiltered, prior-stage single redo and two-call revision descriptively; only bound-vs-unfiltered isolates this filtering treatment. Review13 cases and selected/rejected spans.",
+  "completed_new_calls": 78,
+  "finished_at": "2026-09-17 21:51:20 +0800"
+}

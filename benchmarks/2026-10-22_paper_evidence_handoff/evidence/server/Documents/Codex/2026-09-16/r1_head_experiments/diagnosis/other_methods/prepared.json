@@ -1,0 +1,72 @@
+{
+  "status": "cpu_prepared_not_run",
+  "preflights": [
+    {
+      "method": "M0",
+      "cases": 1100,
+      "requests": 6600,
+      "baseline_parity": 1100,
+      "native_statuses": {},
+      "max_prompt_tokens": 1630,
+      "prior_template_matches": true,
+      "new_prior_calls": 0,
+      "reusable_m0_vectors": 0
+    },
+    {
+      "method": "M2",
+      "cases": 1100,
+      "requests": 6600,
+      "baseline_parity": 1100,
+      "native_statuses": {},
+      "max_prompt_tokens": 2771,
+      "prior_template_matches": true,
+      "new_prior_calls": 0,
+      "reusable_m0_vectors": 762
+    },
+    {
+      "method": "M3",
+      "cases": 1100,
+      "requests": 6600,
+      "baseline_parity": 1100,
+      "native_statuses": {},
+      "max_prompt_tokens": 8660,
+      "prior_template_matches": true,
+      "new_prior_calls": 0,
+      "reusable_m0_vectors": 0
+    },
+    {
+      "method": "M6",
+      "cases": 1100,
+      "requests": 6600,
+      "baseline_parity": 1100,
+      "native_statuses": {
+        "ok": 1100
+      },
+      "max_prompt_tokens": 4740,
+      "prior_template_matches": true,
+      "new_prior_calls": 0,
+      "reusable_m0_vectors": 0
+    },
+    {
+      "method": "M7",
+      "cases": 1100,
+      "requests": 6600,
+      "baseline_parity": 1100,
+      "native_statuses": {
+        "ok": 1094,
+        "invalid": 6
+      },
+      "max_prompt_tokens": 15073,
+      "prior_template_matches": true,
+      "new_prior_calls": 0,
+      "reusable_m0_vectors": 0
+    }
+  ],
+  "requested_distributions": 33000,
+  "exact_m0_m2_reusable": 762,
+  "instruction": "No GPU run authorized for these additional methods yet. requests.jsonl contains all6600/method; reusable_m0_requests.jsonl records optional exact-request reuse, not already computed scores.",
+  "original_contexts": 5500,
+  "original_upstream_calls": 0,
+  "new_model_calls": 0,
+  "new_prior_calls": 0
+}

@@ -1,0 +1,25 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-15T03:29:54.939795+08:00",
+  "method": "M5",
+  "scope": "48 seeded development inputs:40 diagnosis,4 multi,4 single; not an independent test",
+  "seed": 20260915,
+  "variants": [
+    "baseline",
+    "review",
+    "factual_audit",
+    "cf_audit"
+  ],
+  "max_new_calls": 480,
+  "primary": "cf_audit vs factual_audit: shared plan and final prompt;three focus-matched probe questions differ only by actual span withholding",
+  "original_context_and_weights": true,
+  "additional_train_cases_or_label_inventory": false,
+  "max_initial_prompt_tokens": 3423,
+  "invalid_plan_policy": "Reuse ordinary review for both audit variants, retaining failures in denominator",
+  "invalid_quote_policy": "Leave that probe question unchanged and record rejected quote",
+  "sources": [
+    "https://arxiv.org/html/2603.27820v1#S4.SS3",
+    "https://arxiv.org/html/2601.06636v1#A8.SS2"
+  ],
+  "adaptation": "Single-original-backbone mechanism adaptation; no multi-agent reproduction, calibrated causal score, or experience memory"
+}

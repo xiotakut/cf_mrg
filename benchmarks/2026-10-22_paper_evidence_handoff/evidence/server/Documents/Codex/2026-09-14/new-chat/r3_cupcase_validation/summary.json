@@ -1,0 +1,85 @@
+{
+  "status": "complete_frozen_subset_evaluation",
+  "cases": 6,
+  "correct_counts": {
+    "llama": {
+      "head_order0": 6,
+      "head_uncalibrated_vote": 6,
+      "head_calibrated_vote": 6,
+      "native_plain_sequence_sum": 4,
+      "native_plain_sequence_character_norm": 6,
+      "chat_sequence_sum": 5,
+      "chat_sequence_character_norm": 6,
+      "prior_only_vote": 4
+    },
+    "qwen": {
+      "head_order0": 6,
+      "head_uncalibrated_vote": 6,
+      "head_calibrated_vote": 6,
+      "native_plain_sequence_sum": 4,
+      "native_plain_sequence_character_norm": 6,
+      "chat_sequence_sum": 5,
+      "chat_sequence_character_norm": 6,
+      "prior_only_vote": 3
+    }
+  },
+  "cost": [
+    {
+      "model": "llama",
+      "head_calls": 144,
+      "sequence_calls": 48,
+      "input_tokens": 139430,
+      "output_tokens": 192,
+      "head_runtime": {
+        "status": "complete",
+        "method": "llama",
+        "gpu": 2,
+        "pid": 3806902,
+        "started_at": 1789469190.6482823,
+        "completed_calls": 144,
+        "initialization_seconds": 25.00624918937683,
+        "elapsed_seconds": 36.689812660217285,
+        "distributions": 144,
+        "missing_code_calls": 0
+      },
+      "sequence_runtime": {
+        "status": "complete",
+        "method": "llama",
+        "gpu": 2,
+        "pid": 3807121,
+        "completed_calls": 48,
+        "initialization_seconds": 24.957094430923462,
+        "elapsed_seconds": 41.47233819961548
+      }
+    },
+    {
+      "model": "qwen",
+      "head_calls": 144,
+      "sequence_calls": 48,
+      "input_tokens": 139768,
+      "output_tokens": 192,
+      "head_runtime": {
+        "status": "complete",
+        "method": "qwen",
+        "gpu": 2,
+        "pid": 3807946,
+        "started_at": 1789469288.6591148,
+        "completed_calls": 144,
+        "initialization_seconds": 26.068700075149536,
+        "elapsed_seconds": 36.95531892776489,
+        "distributions": 144,
+        "missing_code_calls": 0
+      },
+      "sequence_runtime": {
+        "status": "complete",
+        "method": "qwen",
+        "gpu": 2,
+        "pid": 3809775,
+        "completed_calls": 48,
+        "initialization_seconds": 24.332652807235718,
+        "elapsed_seconds": 37.82831573486328
+      }
+    }
+  ],
+  "scope": "Qualified source records; original models with source-native inputs and uniform candidates. Not paired CF or all-method generalization; no method changes based on these outcomes."
+}

@@ -1,0 +1,153 @@
+{
+  "status": "complete",
+  "new_calls": 52,
+  "results": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "form": "original",
+          "arm": "redo",
+          "n": 13,
+          "correct": 8,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 3,
+            "harms": 2
+          }
+        },
+        {
+          "form": "original",
+          "arm": "compiled_model",
+          "n": 13,
+          "correct": 5,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 1,
+            "harms": 4
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 1,
+            "harms": 3
+          }
+        },
+        {
+          "form": "original",
+          "arm": "executed",
+          "n": 13,
+          "correct": 6,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 4
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 1,
+            "harms": 2
+          },
+          "vs_compiled_model": {
+            "repairs": 1,
+            "harms": 0,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "unsupported_model_answer": 6,
+            "invalid_program_model_answer": 5,
+            "inconsistent_program_model_answer": 1,
+            "executed": 1
+          }
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "form": "original",
+          "arm": "redo",
+          "n": 13,
+          "correct": 5,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 2,
+            "harms": 4
+          }
+        },
+        {
+          "form": "original",
+          "arm": "compiled_model",
+          "n": 13,
+          "correct": 1,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 4
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 1,
+            "harms": 7
+          }
+        },
+        {
+          "form": "original",
+          "arm": "executed",
+          "n": 13,
+          "correct": 3,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 1,
+            "harms": 3
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 2,
+            "harms": 6
+          },
+          "vs_compiled_model": {
+            "repairs": 2,
+            "harms": 0,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "unsupported_model_answer": 8,
+            "executed": 4,
+            "invalid_program_model_answer": 1
+          }
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 26,
+      "input_tokens": 73331,
+      "output_tokens": 7491,
+      "length_stops": 0,
+      "worker_seconds": 209.23377418518066,
+      "initialization_seconds": 38.889254570007324
+    },
+    {
+      "method": "M5",
+      "calls": 26,
+      "input_tokens": 67559,
+      "output_tokens": 6390,
+      "length_stops": 0,
+      "worker_seconds": 153.9924967288971,
+      "initialization_seconds": 30.484490394592285
+    }
+  ]
+}

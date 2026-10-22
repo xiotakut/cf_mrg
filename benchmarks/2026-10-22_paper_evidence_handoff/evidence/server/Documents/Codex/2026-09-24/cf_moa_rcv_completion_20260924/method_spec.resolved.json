@@ -1,0 +1,457 @@
+{
+  "document_type": "resolved_running_research_entry",
+  "date": "2026-09-24",
+  "research_variant": "cf_moa_rcv_rationales_v1",
+  "default_baseline_unchanged": "adopted_B_five_operations_v1",
+  "basis": "2026-09-24_cf_moa_candidate_verification, chapter 15",
+  "router": {
+    "reuse": "cf_moa.controller.strong_legacy.select",
+    "learned": false,
+    "evaluation_metadata_as_input": false
+  },
+  "operation_roles": {
+    "A1": "established support / add; shared adopted rule execution",
+    "A2": "invalid support / remove; same execution as A1",
+    "A3": "adopted catalogue comparison and native mapping",
+    "A4": "adopted explicitly supplied-model intervention executor",
+    "A5": "adopted F; optional RCV within ordinary disagreement path"
+  },
+  "verifier": {
+    "module": "cf_moa.agents.a5_candidate_verify",
+    "function": "run",
+    "include_rationales": true,
+    "allowed_module_config": {
+      "seed": 42
+    },
+    "candidate_source": "adopted_F.trace.predictions and responses",
+    "representative": "earliest complete response per distinct legal key",
+    "selection": "mean of separately normalized TRUE probabilities in two swapped encodings; maximum",
+    "output": "whole existing response of selected candidate",
+    "interpretation": "uncalibrated ranking signal"
+  },
+  "evaluation": {
+    "primary": "unchanged native ALL non-reference unit mean",
+    "mandatory_secondary": [
+      "unique-input correct",
+      "repair/harm",
+      "qualified maintain/respond pair both-correct",
+      "auxiliary-valid/exact",
+      "candidate coverage and selection",
+      "cost and scope"
+    ],
+    "candidate_and_B_share_F_pool": true,
+    "full_v5_use_frozen_manifest": true,
+    "confirmatory_identity": "requires actual family-level exposure audit; old panels are development"
+  },
+  "controls": [
+    "original_method",
+    "strong_B",
+    "candidate_only",
+    "candidate_with_rationales",
+    "old_pool_plus_three_reanswers",
+    "same_pool_joint_selector"
+  ],
+  "statistics": {
+    "resampling_unit": "family",
+    "paired_same_draws": true,
+    "native_atom_weights_unchanged": true,
+    "bootstrap_resamples": 5000,
+    "statistics_seed": 240924
+  },
+  "delivery": [
+    "integrated cached/live runner",
+    "paired effect report",
+    "full-scope and exposure manifest",
+    "controls and costs",
+    "architecture and five tables"
+  ],
+  "explicit_runtime_flags": {
+    "f_disagreement_reanswer": false,
+    "global_generative_aggregator": false
+  },
+  "disabled_features": [
+    "ordinary_reanswer_replacement",
+    "global_generative_aggregator",
+    "new_A1_audit_prompt",
+    "new_A3_editing_branch",
+    "NLI_to_vote_conversion",
+    "source_ID_or_gold_based_gating"
+  ],
+  "spec_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/source_request/extracted/CF_MoA_Completion_Plan/03_Research_Method_Spec.json",
+    "sha256": "86402a0741d13dd16de877b24619dedfd0a3f21aee889735b16938d0c252936d"
+  },
+  "entry": "cf_moa.controller.moa_rcv.run",
+  "cli": "cf_moa.evaluation.run_moa_rcv",
+  "runtime_config": "/home/data3/txy/cf_moa/configs/moa_rcv_v1.json",
+  "method_source_bindings": {
+    "controller/moa_rcv.py": {
+      "path": "/home/data3/txy/cf_moa/controller/moa_rcv.py",
+      "sha256": "9422637908b55ca84fb48521dbeef360980a89b6468b4ba195cd0b6a59d4c8ee"
+    },
+    "controller/minimal_operations.py": {
+      "path": "/home/data3/txy/cf_moa/controller/minimal_operations.py",
+      "sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f"
+    },
+    "controller/strong_legacy.py": {
+      "path": "/home/data3/txy/cf_moa/controller/strong_legacy.py",
+      "sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af"
+    },
+    "agents/a5_candidate_verify.py": {
+      "path": "/home/data3/txy/cf_moa/agents/a5_candidate_verify.py",
+      "sha256": "47f3b2d3f4a32872ed209fe49be8efe96c50ff6addce0a780040bf228a4500ec"
+    },
+    "agents/a5_robust_readout.py": {
+      "path": "/home/data3/txy/cf_moa/agents/a5_robust_readout.py",
+      "sha256": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35"
+    },
+    "evaluation/run_moa_rcv.py": {
+      "path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py",
+      "sha256": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665"
+    },
+    "configs/moa_rcv_v1.json": {
+      "path": "/home/data3/txy/cf_moa/configs/moa_rcv_v1.json",
+      "sha256": "cd32aa5c0c6083ca74d52528b2cd0c0dc6883d2bb6b6d1d6676ce2d782ad03ed"
+    },
+    "evaluation/run_moa_rcv_batched.py": {
+      "path": "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py",
+      "sha256": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47"
+    },
+    "tools/f_pool_replica.py": {
+      "path": "/home/data3/txy/cf_moa/tools/f_pool_replica.py",
+      "sha256": "bbd704d4433f945228ca5747626a3aaf77dd845eacf68832a99e174622e378a3"
+    },
+    "controller/rule_operation_ablation.py": {
+      "path": "/home/data3/txy/cf_moa/controller/rule_operation_ablation.py",
+      "sha256": "6a4e45331330ddde3059699a0b704bf5e484476a086475340a0cdeb4999ae0c9"
+    }
+  },
+  "profiles": {
+    "M4": {
+      "facts": {
+        "config": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "guided_json": true,
+          "num_shards": 1,
+          "max_logprobs": 2048,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 2048,
+            "enforce_eager": true
+          }
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/llama_facts_config.json",
+          "copy": "facts_m4.json",
+          "sha256": "7cedb33bbca40ff22fb5b4bfcacafd7ef9c0f9a51c24f5d843bbcf0e1f39fbab"
+        },
+        "config_hash": "51096a433191c9e7f86c23b53e4875a751e435512ba8defe6bc743d8e266603f"
+      },
+      "catalog": {
+        "config": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 1,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "guided_json": false,
+          "num_shards": 1,
+          "max_logprobs": 2048,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 2048
+          }
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m4_config.json",
+          "copy": "catalog_m4.json",
+          "sha256": "9aacd4a281612709a6254166e8eca05981071a9d51c7644cef0fa53910552980"
+        },
+        "config_hash": "c40609e9f9dfa0024c5add51ac421171fdb0550a3e671f0f827a560317ec4197"
+      },
+      "readout": {
+        "config": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.85,
+          "max_model_len": 131072,
+          "max_num_seqs": 16,
+          "max_num_batched_tokens": 8192,
+          "batch_size": 16,
+          "guided_json": true,
+          "num_shards": 1,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 16384
+          }
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+          "copy": "readout_m4.json",
+          "sha256": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e"
+        },
+        "config_hash": "a78b37b0926fc42e989a48361ca0487cade3280c036d53993e69f59e14e77c21"
+      },
+      "a4": {
+        "config": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 131072,
+          "max_num_seqs": 4,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 4,
+          "guided_json": true,
+          "num_shards": 1,
+          "model_kwargs": {
+            "num_gpu_blocks_override": 8192
+          }
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m4/config.json",
+          "copy": "a4_m4.json",
+          "sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+          "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m4/config.json",
+          "development_sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96"
+        },
+        "config_hash": "341c0fe1ef409e48dd8729e047a9b334566ab3d46d01bcceb9b46b9515d76605"
+      }
+    },
+    "M5": {
+      "facts": {
+        "config": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 2048,
+            "enforce_eager": true
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": true,
+          "num_shards": 1,
+          "max_logprobs": 2048
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/qwen_facts_config.json",
+          "copy": "facts_m5.json",
+          "sha256": "ffd2ca3d0a5c2747d93ead06b10dd7fe12893a28ee90bcdfb586f817030c56f0"
+        },
+        "config_hash": "6434603292376131d65f6cee4a824fa6aa67e21d029498555a5fa0059c83e9e6"
+      },
+      "catalog": {
+        "config": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.0,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 1,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 16384,
+          "max_num_seqs": 8,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 8,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 2048
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": false,
+          "num_shards": 1,
+          "max_logprobs": 2048
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m5_config.json",
+          "copy": "catalog_m5.json",
+          "sha256": "6869a11bdb7d00736a5a88def7a11c3e3c775af101dbe0c9e80868eba0640f21"
+        },
+        "config_hash": "e68f4c4e7c55c7b516f501cf4287569cbc3082e7ed18e7963a554956e095c783"
+      },
+      "readout": {
+        "config": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.85,
+          "max_model_len": 131072,
+          "max_num_seqs": 16,
+          "max_num_batched_tokens": 8192,
+          "batch_size": 16,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 16384
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": true,
+          "num_shards": 1
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+          "copy": "readout_m5.json",
+          "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+        },
+        "config_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a"
+      },
+      "a4": {
+        "config": {
+          "model": "/home/data3/txy/models/Qwen3-8B",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "gpu_memory_utilization": 0.95,
+          "max_model_len": 131072,
+          "max_num_seqs": 4,
+          "max_num_batched_tokens": 4096,
+          "batch_size": 4,
+          "model_kwargs": {
+            "rope_scaling": {
+              "rope_type": "yarn",
+              "factor": 4.0,
+              "original_max_position_embeddings": 32768
+            },
+            "num_gpu_blocks_override": 8192
+          },
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "guided_json": false,
+          "num_shards": 1
+        },
+        "source": {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m5/config.json",
+          "copy": "a4_m5.json",
+          "sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331",
+          "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m5/config.json",
+          "development_sha256": "ee39099fb86acba54b37ef559483b4e6f4c86c2488b362d8fcf0423f4b45f331"
+        },
+        "config_hash": "044b007b8aaaaeb2ad8d72bf15e8d522ec6c762287b44d40b54ec5cf7d516840"
+      }
+    }
+  },
+  "resolved_verifier_call": {
+    "include_rationales": true,
+    "config": {
+      "seed": 42
+    },
+    "actual_score": {
+      "temperature": 0,
+      "max_tokens": 1
+    },
+    "adopted_F_generation_profile_unchanged": true
+  },
+  "cost_accounting": "one outer ModelSession checkpoint delta; non-overlapping B and verification phase deltas; saved historical cost separately labelled",
+  "control_entries": {
+    "a5_joint_selector": {
+      "path": "/home/data3/txy/cf_moa/agents/a5_joint_selector.py",
+      "sha256": "3cfab416a466d319b198e54c480de2a055a13d960668060e4029ec643600488e",
+      "function": "run",
+      "configuration": {
+        "seed": 42
+      },
+      "shared_adopted_F_pool": true
+    },
+    "a5_pool_expansion_control": {
+      "path": "/home/data3/txy/cf_moa/agents/a5_pool_expansion_control.py",
+      "sha256": "172b6eb35c144600fc8536746bf1033385f86dca53aef46c9180753473c59964",
+      "function": "run",
+      "configuration": {
+        "seed": 42
+      },
+      "shared_adopted_F_pool": true
+    }
+  },
+  "controller_arms": [
+    "strong_B",
+    "candidate_only",
+    "candidate_with_rationales",
+    "joint_selector",
+    "pool_old_plus_three"
+  ],
+  "nonF_wrapper_revision": "restore existing baseline_native schema validation on already complete objects; preserve invalid candidate and unavailable native",
+  "batched_cli": "cf_moa.evaluation.run_moa_rcv_batched",
+  "batching": {
+    "scope": "different inputs, one ready callback per input, no speculative F draws",
+    "batch_sizes": {
+      "catalog": 8,
+      "readout": 16
+    },
+    "source": "existing adopted role profiles",
+    "physical_usage": "unique journal rows; model time is event.elapsed_seconds, not SQL replay callback_seconds",
+    "acceptance": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/batch_scheduling/live_batch8_receipt.json"
+  },
+  "confirmation_seed_replica": {
+    "state": "implementation_prepared_not_frozen_or_run",
+    "only_ordinary_F_generation_stage": true,
+    "actual_generation_seeds": [
+      142,
+      143,
+      144,
+      145,
+      146
+    ],
+    "unchanged_verifier_seed": 42,
+    "no_reuse_of_original_seed_pool_for_replica": true
+  }
+}

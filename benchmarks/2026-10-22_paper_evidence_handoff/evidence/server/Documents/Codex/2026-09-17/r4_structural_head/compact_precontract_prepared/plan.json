@@ -1,0 +1,34 @@
+{
+  "status": "superseded_before_inference",
+  "prepared_at": "2026-09-17 17:59:29 +0800",
+  "stage": "development",
+  "arms": [
+    "redo",
+    "compile"
+  ],
+  "planned_new_calls": 200,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 100,
+      "max_prompt_tokens": 3681
+    },
+    {
+      "method": "M5",
+      "calls": 100,
+      "max_prompt_tokens": 3584
+    }
+  ],
+  "sample": "Previously exposed26 clinical inputs plus24 deterministic rule diagnostics; no new validation results.",
+  "design": "Fresh one-call redo and one-call compiled IR. The same compiled response supplies an LM answer control and a deterministic execution answer, with no extra model calls.",
+  "models": "Original M4 Llama/M5 Qwen, actual full contexts, original sampling and2048 output budget. M4 guided JSON uses native schema for redo and explicit intermediate schema for compile; M5 remains unguided.",
+  "uncertainty": "Incomplete risk mechanisms cannot be closed as deterministic equations. Unsupported or unidentifiable results retain the current compiled LM answer with explicit route; invalid/inconsistent programs remain errors, never old-answer fallback.",
+  "analysis": "Separate author13, modal reverse13, deterministic24; original and fresh controls, compiled-model vs executor repairs, invalid-answer format contribution, coverage and raw program semantic audit.",
+  "validation": "After development freeze, qualify a separate CLadder story holdout and a medically grounded source. Do not claim this development sample is new validation.",
+  "variant": "compact",
+  "representation": "Downstream equations, factual observations, do changes, and literal query expression. Roots and query polarity are derived in code without model duplication.",
+  "preparation_basis": "Original-IR M4 completed development programs showed overlapping root/equation nodes, missing outcome equations, and 24/24 false desired bits including all positive queries. Compact prepared before CLadder held-out prompts or outputs.",
+  "auxiliary_control": "After generation, all valid applicable programs receive separate same-backbone frozen-IR execution control; extra calls and cost reported.",
+  "new_calls": 0,
+  "reason": "M5 original-IR 50/50 returned the native two-field answer without IR. Inspection found the original system format remained active; revised compact request explicitly replaces only the internal output contract through an appended system instruction."
+}

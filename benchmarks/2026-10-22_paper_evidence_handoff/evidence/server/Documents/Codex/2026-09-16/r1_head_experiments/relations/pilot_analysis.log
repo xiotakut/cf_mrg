@@ -1,0 +1,250 @@
+[
+  {
+    "method": "M4",
+    "results": [
+      {
+        "arm": "redo",
+        "n": 64,
+        "correct": 35,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 21,
+          "uncertainty": 13,
+          "higher": 21,
+          "no difference": 9
+        },
+        "repairs": 5,
+        "harms": 3,
+        "vs_redo": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 17
+          },
+          "lower": {
+            "n": 21,
+            "correct": 14
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 4
+          }
+        }
+      },
+      {
+        "arm": "evidence_scope",
+        "n": 64,
+        "correct": 36,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 16,
+          "no difference": 16,
+          "uncertainty": 14,
+          "higher": 18
+        },
+        "repairs": 6,
+        "harms": 3,
+        "vs_redo": {
+          "repairs": 7,
+          "harms": 6
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 14
+          },
+          "lower": {
+            "n": 21,
+            "correct": 11
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 11
+          }
+        }
+      },
+      {
+        "arm": "target_scope",
+        "n": 64,
+        "correct": 37,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 20,
+          "uncertainty": 14,
+          "no difference": 12,
+          "higher": 18
+        },
+        "repairs": 9,
+        "harms": 5,
+        "vs_redo": {
+          "repairs": 10,
+          "harms": 8
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 15
+          },
+          "lower": {
+            "n": 21,
+            "correct": 13
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 9
+          }
+        }
+      }
+    ],
+    "calls": 192,
+    "input_tokens": 2146485,
+    "output_tokens": 36277,
+    "length_stops": 0,
+    "runtime": {
+      "status": "complete",
+      "pid": 598319,
+      "gpu": 3,
+      "method": "M4",
+      "stage": "pilot",
+      "arms": [
+        "redo",
+        "evidence_scope",
+        "target_scope"
+      ],
+      "completed": 192,
+      "planned": 192,
+      "initialization_seconds": 16.689760446548462,
+      "elapsed_seconds": 796.9320993423462
+    }
+  },
+  {
+    "method": "M5",
+    "results": [
+      {
+        "arm": "redo",
+        "n": 64,
+        "correct": 31,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 14,
+          "uncertainty": 22,
+          "no difference": 14,
+          "higher": 14
+        },
+        "repairs": 0,
+        "harms": 2,
+        "vs_redo": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 10
+          },
+          "lower": {
+            "n": 21,
+            "correct": 11
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 10
+          }
+        }
+      },
+      {
+        "arm": "evidence_scope",
+        "n": 64,
+        "correct": 31,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 14,
+          "uncertainty": 22,
+          "no difference": 15,
+          "higher": 13
+        },
+        "repairs": 0,
+        "harms": 2,
+        "vs_redo": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 9
+          },
+          "lower": {
+            "n": 21,
+            "correct": 11
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 11
+          }
+        }
+      },
+      {
+        "arm": "target_scope",
+        "n": 64,
+        "correct": 31,
+        "invalid": 0,
+        "baseline_correct": 33,
+        "predictions": {
+          "lower": 16,
+          "uncertainty": 21,
+          "no difference": 13,
+          "higher": 14
+        },
+        "repairs": 2,
+        "harms": 4,
+        "vs_redo": {
+          "repairs": 2,
+          "harms": 2
+        },
+        "classes": {
+          "higher": {
+            "n": 21,
+            "correct": 10
+          },
+          "lower": {
+            "n": 21,
+            "correct": 12
+          },
+          "no difference": {
+            "n": 22,
+            "correct": 9
+          }
+        }
+      }
+    ],
+    "calls": 192,
+    "input_tokens": 2258346,
+    "output_tokens": 35268,
+    "length_stops": 0,
+    "runtime": {
+      "status": "complete",
+      "pid": 617438,
+      "gpu": 3,
+      "method": "M5",
+      "stage": "pilot",
+      "arms": [
+        "redo",
+        "evidence_scope",
+        "target_scope"
+      ],
+      "completed": 192,
+      "planned": 192,
+      "initialization_seconds": 17.410758018493652,
+      "elapsed_seconds": 957.5760698318481
+    }
+  }
+]

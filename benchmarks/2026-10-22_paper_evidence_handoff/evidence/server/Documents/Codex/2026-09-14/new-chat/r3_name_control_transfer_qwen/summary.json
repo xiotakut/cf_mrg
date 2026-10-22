@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "method": "M3",
+      "n": 40,
+      "correct": 3,
+      "baseline_correct": 1,
+      "repairs": 2,
+      "harms": 0,
+      "fallbacks": 14,
+      "heads_vs_normalization": {
+        "name": {
+          "correct": 9,
+          "repairs": 7,
+          "harms": 1
+        },
+        "code": {
+          "correct": 9,
+          "repairs": 7,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "n": 40,
+      "correct": 15,
+      "baseline_correct": 13,
+      "repairs": 2,
+      "harms": 0,
+      "fallbacks": 15,
+      "heads_vs_normalization": {
+        "name": {
+          "correct": 18,
+          "repairs": 3,
+          "harms": 0
+        },
+        "code": {
+          "correct": 18,
+          "repairs": 3,
+          "harms": 0
+        }
+      }
+    }
+  ],
+  "costs": {
+    "calls": 46,
+    "input_tokens": 18353,
+    "output_tokens": 598,
+    "length_stops": 0
+  },
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 2976989,
+    "started_at": 1789421555.1950274,
+    "total": 46,
+    "initialization_seconds": 72.6680600643158,
+    "completed": 46,
+    "elapsed_seconds": 82.11133813858032,
+    "last_batch_seconds": 1.1406896114349365,
+    "completed_at": 1789421637.306556
+  }
+}

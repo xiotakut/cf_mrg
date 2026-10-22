@@ -1,0 +1,35 @@
+{
+  "status": "prepared",
+  "at": "2026-09-18 08:13:30 +0800",
+  "method": "Five independently seeded, full-original-context native-choice generations; vote on exact valid native keys; preserve one whole winning response.",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 208,
+      "calls": 1040,
+      "max_prompt_tokens": 36828
+    },
+    {
+      "method": "M5",
+      "inputs": 208,
+      "calls": 1248,
+      "max_prompt_tokens": 40371
+    }
+  ],
+  "planned_calls": 2288,
+  "primary_candidate": "maj5",
+  "secondary_cost_control": "maj3 (not selected after observing results)",
+  "controls": "Preassigned draw0 and mean over all five single draws. M5 also one matched unguided draw0; M4 original schema was already constrained.",
+  "evidence": "DiversityMedQA Maj@5 original inference method, adapted to local JSON multi-field tasks and original backbones.",
+  "scope": "Same exposed development 64 R5 units plus 8 weak relevant-change controls; no paired endpoint, R label, gold or source label enters inference.",
+  "decoding_changes": "Both backbones use existing M4 native schema. Same .7 temperature, 2048 max output, full original contexts. More KV capacity and batch parallelism, shared across new controls.",
+  "decision": "Evaluate both original backbones and reference/variant/both metrics. Vote gains must be separated from format-only and new prompt effects; no per-source/model winner mixture.",
+  "composite_task": "M22 retains complete errors and reasoning from the preassigned first winning sample; document correction quality is separately evaluated, not claimed improved by main-answer voting."
+}

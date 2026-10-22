@@ -1,0 +1,98 @@
+{
+  "results": [
+    {
+      "method": "M0",
+      "variant": "system",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2346938775510204,
+      "original_correct": 6,
+      "control_correct": 18,
+      "repairs": 2,
+      "harms": 2,
+      "fallbacks": 0
+    },
+    {
+      "method": "M2",
+      "variant": "system",
+      "n": 40,
+      "correct": 22,
+      "macro_recall": 0.36989795918367346,
+      "original_correct": 10,
+      "control_correct": 22,
+      "repairs": 0,
+      "harms": 0,
+      "fallbacks": 0
+    },
+    {
+      "method": "M4",
+      "variant": "system",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469388,
+      "original_correct": 12,
+      "control_correct": 21,
+      "repairs": 0,
+      "harms": 3,
+      "fallbacks": 0
+    },
+    {
+      "method": "M6",
+      "variant": "system",
+      "n": 40,
+      "correct": 16,
+      "macro_recall": 0.24234693877551017,
+      "original_correct": 8,
+      "control_correct": 19,
+      "repairs": 0,
+      "harms": 3,
+      "fallbacks": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M0",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 37724,
+      "output_tokens": 4720,
+      "length_stops": 0
+    },
+    {
+      "method": "M2",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 72733,
+      "output_tokens": 4776,
+      "length_stops": 0
+    },
+    {
+      "method": "M4",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 104294,
+      "output_tokens": 4806,
+      "length_stops": 0
+    },
+    {
+      "method": "M6",
+      "variant": "system",
+      "calls": 40,
+      "input_tokens": 145179,
+      "output_tokens": 4567,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 3064037,
+    "started_at": 1789425597.2874491,
+    "total": 160,
+    "initialization_seconds": 64.66552233695984,
+    "completed": 160,
+    "elapsed_seconds": 276.440801858902,
+    "last_batch_seconds": 12.235751628875732,
+    "completed_at": 1789425873.7284203
+  }
+}

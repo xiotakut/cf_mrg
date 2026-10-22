@@ -1,0 +1,43 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "relation_calls": 2308,
+      "planned_final_calls": 160,
+      "min_blocks": 9,
+      "max_blocks": 18,
+      "max_prompt_tokens": 316,
+      "local_observation_only": true,
+      "representation": "single",
+      "verified_previous_requests": 537,
+      "order_probe_calls": 160,
+      "max_example_payload_tokens": 10
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "relation_calls": 2308,
+      "planned_final_calls": 160,
+      "min_blocks": 9,
+      "max_blocks": 18,
+      "max_prompt_tokens": 298,
+      "local_observation_only": true,
+      "representation": "single",
+      "verified_previous_requests": 537,
+      "order_probe_calls": 160,
+      "max_example_payload_tokens": 10
+    }
+  ],
+  "planned_calls": 4936,
+  "local_observation_only": true,
+  "representation": "single",
+  "mechanism": "Original-model relations for every literal observation; fixed support +1, conflict -1, neutral 0, original pool order breaks ties.",
+  "control": "Same relation generations and native context, four cyclic orders for model final choice; same information, different decision policy, four extra model calls.",
+  "reuse": "Existing six-order calibrated front and uncued four-candidate control; no new front calls. All40 exposed cases retained, regardless of gold coverage.",
+  "failure": "Any invalid relation makes both arms return actual initial calibrated answer. Missing information does not produce negative evidence.",
+  "criterion": "A bound-relation arm must improve over its coded-local counterpart and current calibrated head on both backbones before expansion; schema validity/order stability alone is not head success.",
+  "source": "https://arxiv.org/html/2601.06636v1#S4.SS2.SSS3",
+  "scope": "Exposed development only, not independent generalization."
+}

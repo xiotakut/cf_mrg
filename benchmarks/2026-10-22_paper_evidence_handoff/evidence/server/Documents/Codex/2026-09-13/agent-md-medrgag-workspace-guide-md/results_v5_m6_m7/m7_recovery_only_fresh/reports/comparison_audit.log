@@ -1,0 +1,104 @@
+{
+  "N": 384,
+  "baseline": "typed_control_v2",
+  "candidate": "recovery_only",
+  "same_inputs": true,
+  "baseline_metrics": {
+    "N": 384,
+    "protocol_valid": {
+      "count": 366,
+      "pct": 95.3125
+    },
+    "format_valid": {
+      "count": 366,
+      "pct": 95.3125
+    },
+    "native_valid": {
+      "count": 290,
+      "pct": 75.52083333333333
+    }
+  },
+  "candidate_metrics": {
+    "N": 384,
+    "protocol_valid": {
+      "count": 269,
+      "pct": 70.05208333333333
+    },
+    "format_valid": {
+      "count": 269,
+      "pct": 70.05208333333333
+    },
+    "native_valid": {
+      "count": 202,
+      "pct": 52.604166666666664
+    }
+  },
+  "transitions": {
+    "protocol_valid": {
+      "1->1": 259,
+      "1->0": 107,
+      "0->0": 8,
+      "0->1": 10
+    },
+    "format_valid": {
+      "1->1": 259,
+      "1->0": 107,
+      "0->0": 8,
+      "0->1": 10
+    },
+    "native_valid": {
+      "1->1": 186,
+      "1->0": 104,
+      "0->0": 78,
+      "0->1": 16
+    }
+  },
+  "protocol_invalid_reasons": {
+    "budget_exhausted": 99,
+    "invalid_option_key": 15,
+    "invalid_errors": 1
+  },
+  "baseline_costs": {
+    "llm_requests": 2459,
+    "backend_generate_calls": 2459,
+    "prompt_tokens": 9570503,
+    "completion_tokens": 272567,
+    "retrieval_requests": 756,
+    "retrieval_no_hits": 0,
+    "generated_truncations": 8,
+    "scoring_forward_calls": 0,
+    "backend_seconds": 1040.0981742687284,
+    "attempt_count": 3215,
+    "failed_requests": 0,
+    "retry_count": 0
+  },
+  "candidate_costs": {
+    "llm_requests": 2605,
+    "backend_generate_calls": 2605,
+    "prompt_tokens": 10458615,
+    "completion_tokens": 295319,
+    "retrieval_requests": 772,
+    "retrieval_no_hits": 0,
+    "generated_truncations": 3,
+    "scoring_forward_calls": 0,
+    "backend_seconds": 1032.0665262868863,
+    "attempt_count": 3377,
+    "failed_requests": 0,
+    "retry_count": 0
+  },
+  "baseline_throughput": 1291.8516165624217,
+  "candidate_throughput": 1299.4892483036879,
+  "checks": {
+    "model_and_token_identity": 2605,
+    "active_stack_prompt_and_required_evidence": 2605,
+    "entropy_recalculation_from_saved_full_signal": 2012,
+    "acceptance_boundary": 748,
+    "budget_not_promoted_to_answer": 99,
+    "removed_memory_and_state_restore": 34,
+    "invalid_output_continued_within_budget": 48,
+    "exception_feedback": 51
+  },
+  "limitation": "Same inputs and matched stage seeds for identical messages; prompt changes and continuous-batch numerics can change trajectories. Not a full v5 score.",
+  "matched_prompt_seed_checks": 753,
+  "matched_prompt_token_identical": 383
+}

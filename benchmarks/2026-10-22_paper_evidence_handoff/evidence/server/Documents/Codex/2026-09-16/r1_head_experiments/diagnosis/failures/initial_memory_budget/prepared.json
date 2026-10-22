@@ -1,0 +1,54 @@
+{
+  "status": "prepared_not_run",
+  "preflights": [
+    {
+      "method": "M4",
+      "split": "pilot",
+      "cases": 60,
+      "requests": 360,
+      "max_prompt_tokens": 3795,
+      "native_contexts_preserved": true,
+      "prior_template_matches": true,
+      "prior_new_calls": 0,
+      "config_change": "gpu_memory_utilization0.9→0.30 only; original2048 KV blocks retained"
+    },
+    {
+      "method": "M4",
+      "split": "remaining",
+      "cases": 1040,
+      "requests": 6240,
+      "max_prompt_tokens": 4507,
+      "native_contexts_preserved": true,
+      "prior_template_matches": true,
+      "prior_new_calls": 0,
+      "config_change": "gpu_memory_utilization0.9→0.30 only; original2048 KV blocks retained"
+    },
+    {
+      "method": "M5",
+      "split": "pilot",
+      "cases": 60,
+      "requests": 360,
+      "max_prompt_tokens": 3572,
+      "native_contexts_preserved": true,
+      "prior_template_matches": true,
+      "prior_new_calls": 0,
+      "config_change": "gpu_memory_utilization0.9→0.30 only; original2048 KV blocks retained"
+    },
+    {
+      "method": "M5",
+      "split": "remaining",
+      "cases": 1040,
+      "requests": 6240,
+      "max_prompt_tokens": 4397,
+      "native_contexts_preserved": true,
+      "prior_template_matches": true,
+      "prior_new_calls": 0,
+      "config_change": "gpu_memory_utilization0.9→0.30 only; original2048 KV blocks retained"
+    }
+  ],
+  "pilot_distributions": 720,
+  "remaining_distributions": 12480,
+  "prior_new_calls": 0,
+  "head_source": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_calibrated_all_methods/candidate",
+  "runner_source": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_catalog_distribution_pilot.py"
+}

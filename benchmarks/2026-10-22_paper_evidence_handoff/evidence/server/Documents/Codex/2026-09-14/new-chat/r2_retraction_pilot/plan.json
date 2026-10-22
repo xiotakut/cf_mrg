@@ -1,0 +1,43 @@
+{
+  "status": "prepared",
+  "prepared_at": "2026-09-14T12:56:20.211382+08:00",
+  "evaluation_inputs": 79,
+  "active_audit_inputs": 54,
+  "new_calls": 108,
+  "original_method": "M4 structured full v5",
+  "methods": [
+    "baseline",
+    "local_review",
+    "local_model",
+    "local_execute"
+  ],
+  "routing": "Only original valid multi-choice predictions containing substantive options and a visible None option.",
+  "unchanged_inputs": [
+    "s001086",
+    "s001092",
+    "s001119",
+    "s001127",
+    "s001137",
+    "s001161",
+    "s001165",
+    "s001167",
+    "s001181",
+    "s001187",
+    "s001219",
+    "s001222",
+    "s001225",
+    "s001227",
+    "s001229",
+    "s001231",
+    "s001235",
+    "s001284",
+    "s001286",
+    "s001298",
+    "s001300",
+    "s104925",
+    "s105257",
+    "s200001",
+    "s200022"
+  ],
+  "note": "Failed or inconclusive audits preserve original output, with audit failure separately reported. No new answer options are introduced."
+}

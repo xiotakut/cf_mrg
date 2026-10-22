@@ -1,0 +1,94 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "general": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "uncued": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "uncued",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "general": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "general",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "general": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "discriminative",
+      "n": 40,
+      "correct": 19,
+      "macro_recall": 0.3163265306122449,
+      "comparisons": {
+        "general": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "uncued": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 2
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 380,
+    "selection_calls": 80,
+    "final_calls": 300,
+    "input_tokens": 989796,
+    "output_tokens": 1521,
+    "selector_errors": 5,
+    "selector_length_stops": 0
+  }
+}

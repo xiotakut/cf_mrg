@@ -1,0 +1,419 @@
+{
+  "variant": "experimental_saved_A1_r5_same_pool_top1_native_dispatch_v1",
+  "control_id": "top1_same_experts_EP_saved_A1",
+  "dispatch_semantics": "pure_selected_native_proposal",
+  "method": "M4",
+  "mode": "top1",
+  "aggregation": "none",
+  "additional_checks_max": 0,
+  "allow_unadopted": true,
+  "experimental_allow_unadopted": true,
+  "routing_config": {
+    "variant": "visible_capability_sparse_router_v1_cpu_candidate",
+    "status": "cpu_preparation_not_adopted",
+    "execution_authorized": false,
+    "experimental_allow_unadopted": true,
+    "initial_max_experts": 2,
+    "additional_checks_max": 1,
+    "priority": [
+      "A4",
+      "A2",
+      "A3",
+      "A1",
+      "F"
+    ],
+    "experts": {
+      "A1": {
+        "variant": "bounded_evidence_id_coverage_audit_v2_relation_codes_r5",
+        "operation": "support_completion",
+        "adoption_status": "candidate_not_adopted",
+        "default_enabled": false
+      },
+      "A2": {
+        "variant": "legacy_positive_facts_scoped_inherit_unknown",
+        "operation": "support_revision",
+        "adoption_status": "adopted_component",
+        "default_enabled": true
+      },
+      "A3": {
+        "variant": "legacy_catalog_six_orders_calibrated_majority",
+        "operation": "candidate_comparison",
+        "adoption_status": "adopted_component",
+        "default_enabled": true
+      },
+      "A4": {
+        "variant": "frozen_physiology_v2_typed_patch",
+        "operation": "intervention_execution",
+        "adoption_status": "adopted_component",
+        "default_enabled": true
+      },
+      "F": {
+        "variant": "legacy_f_equal_nli_paths_else_full_maj5",
+        "operation": "robust_readout",
+        "adoption_status": "adopted_component",
+        "default_enabled": true
+      },
+      "A5": {
+        "variant": "qualified_code_views_original_adjudication_v1",
+        "operation": "robust_readout",
+        "adoption_status": "candidate_not_adopted",
+        "default_enabled": false
+      }
+    }
+  },
+  "A1_adopted": false,
+  "A5_enabled": false,
+  "A3_edit_enabled": false,
+  "independent_evaluation": false,
+  "development_only": true,
+  "execution_scope": "finite_cache_regression",
+  "selection_uses_quality": false,
+  "inputs": [
+    {
+      "request_id": "d00000",
+      "input_hash": "7998cd52898baa23b76df008f81249893533410f2455787caacca8e75ad6be8a",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    }
+  ],
+  "input_binding": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/inference/m4.jsonl",
+    "sha256": "5e1ab9bf6fb35b7218aecd7eb683b0583f14ccd8e06c672353d4d678ffd0d395"
+  },
+  "EP_manifest": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/prepared/manifest.json",
+    "sha256": "78c97ccbdc8ccd25f4bd697f3f371e50a6241a60d56c6204a785e45b9603ea9d"
+  },
+  "A1_proof": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/multiexpert_preparation/prepared/a1_source_proof.json",
+    "sha256": "493b979c3d73b756b0d8eb7d19d3bd813ee2fa9fdf4014299b08828d473e3caa"
+  },
+  "adopted_proof": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/cached_prefix/source_audit_v4.json",
+    "sha256": "972520d62db34a9737dd554031595da5ce6d9b6dad1a2cb1152ddd16d96e906b"
+  },
+  "cached_sources": {
+    "method": "M4",
+    "sources": {
+      "A2": {
+        "paths": {
+          "plan.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/plan.json",
+          "status.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/status.json",
+          "proposals.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/proposals.jsonl",
+          "model_calls.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/model_calls.jsonl"
+        },
+        "hashes": {
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/plan.json": "ae1fd3d01aa495668e77b0905dc3059aca56968f3c0a28e9d5b1ef185cb0a20f",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/status.json": "9b5f0375c4f67095893b9c20942343a639f12a0df7cbc1aec2a6348d976e1ec4",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/proposals.jsonl": "7d1382c23483b5d2fb0e0625285593bbedc1e1e769c445690ac8ee76262b128f",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A2/model_calls.jsonl": "db93854cd0423e7d3abdce3266abd3db7654d952ac92a997dac0277f47ee0648"
+        }
+      },
+      "A3": {
+        "paths": {
+          "plan.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/plan.json",
+          "status.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/status.json",
+          "proposals.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/proposals.jsonl",
+          "model_calls.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/model_calls.jsonl"
+        },
+        "hashes": {
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/plan.json": "2a75789d297dc5ae8de5006b34d17ef2c95313b08caaaf078314f8384f957bfc",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/status.json": "6e882ac900a524e86c96192506d565e74ffdad17b460a3f27b61591b31932a83",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/proposals.jsonl": "68733d47369d17fdee6d6796a0e3a00b3ad1035cddce75276dc427e59428e4ce",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/expert_development/m4/A3/model_calls.jsonl": "65a5c82e3e7f2f2e1b3536b6e0f723f6b98168d77a60a2b61134d9ef4da4f15c"
+        }
+      },
+      "F": {
+        "paths": {
+          "plan.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json",
+          "status.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/status.json",
+          "proposals.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/proposals.jsonl",
+          "model_calls.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/model_calls.jsonl"
+        },
+        "hashes": {
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/plan.json": "40c4ea50ec715912f7946e581e05d5b77f3ad666f7e017f89240bc76f96c1d8d",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/status.json": "2a656ad475c4b6c10ec38b2c5c8908816ff306de2e811ff45873ff8e2c8cbe10",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/proposals.jsonl": "895adfd43bc14a33091a9b616499b088045a430da6c5e61717fd6496f0e0a743",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a5_f_preparation/f_complete/m4/model_calls.jsonl": "a2e9e9a61f37e3e8affd83c43b49d68d017ad5809d283236a534b700c61ada1f"
+        }
+      },
+      "A1": {
+        "paths": {
+          "plan.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/plan.json",
+          "status.json": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/status.json",
+          "proposals.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/proposals.jsonl",
+          "model_calls.jsonl": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/model_calls.jsonl"
+        },
+        "hashes": {
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/plan.json": "8d010ee6d7b6fdd7cab9a493fe45e53b9c9e5df2ca198d0a0761d0d3d4f7dfdb",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/status.json": "22188f6bf0377f8a6dfdc6c5b25f6251f73701aa0df031936f5b2a642835567e",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/proposals.jsonl": "4e117fa67a29ccfe14794210718c3fa13e37b3e6026622aa3fe92589a4f76dfc",
+          "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/a1_v2_relational_20260922/relation_codes/complete/m4/model_calls.jsonl": "e0d5cabc91134bf68e92cf23d6689bac3465ebead45104d7d48cc56f0b7dd5d0"
+        }
+      }
+    },
+    "inputs": [
+      {
+        "request_id": "d00000",
+        "input_hash": "7998cd52898baa23b76df008f81249893533410f2455787caacca8e75ad6be8a",
+        "budget": {
+          "max_model_requests": 16,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 32768,
+          "max_tool_calls": 4
+        }
+      }
+    ],
+    "reuse_policy": "exact_saved_requests_responses_and_proposal_order_v1",
+    "quality_selection": false,
+    "new_expert_model_requests": 0,
+    "experimental_reader_revision": "experimental_saved_A1_r5_reader_v1_cpu_only",
+    "experimental_candidate_identity": {
+      "role": "A1",
+      "source_plan_expert": "A1_v2_codes",
+      "variant": "bounded_evidence_id_coverage_audit_v2_relation_codes_r5",
+      "adoption_status": "candidate_not_adopted"
+    },
+    "experimental_allow_unadopted": true,
+    "experimental_router_hash": "b4dc2e617fa64a85bbd334992427e286fffc053f8dd4c1497dffa3ab5f2cd53f",
+    "a1_source_proof": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/multiexpert_preparation/prepared/a1_source_proof.json",
+      "sha256": "493b979c3d73b756b0d8eb7d19d3bd813ee2fa9fdf4014299b08828d473e3caa"
+    }
+  },
+  "source_hashes": {
+    "/home/data3/txy/cf_moa/controller/sparse_router.py": "4f8e0f3642663d07136c47603dd7eaa8d7e28bec47ff77a5e58a1fa34b1efa85",
+    "/home/data3/txy/cf_moa/configs/router_v1.json": "6bac587eb2a5a75a001e31abdb067c0c5f29710c6adfb2cc4a630827f2c40400",
+    "/home/data3/txy/cf_moa/agents/a1_coded_coverage.py": "1aca353cce31d4d901376ce0294127d090b74a23d126eff6e667766ffe09cdb5",
+    "/home/data3/txy/cf_moa/agents/a2_support_revision.py": "3fc2c41c5276ce1ce9c54c991358cbbc49f70d544000c75e91d881eba6d50ed1",
+    "/home/data3/txy/cf_moa/agents/a3_contrastive_comparison.py": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+    "/home/data3/txy/cf_moa/agents/a4_intervention_execution.py": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+    "/home/data3/txy/cf_moa/agents/a5_robust_readout.py": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+    "/home/data3/txy/cf_moa/agents/a1_relational_coverage.py": "c8ec4de389c5186e16edeff02876e528ca43f5f4009515e30bf0c11d17842c55",
+    "/home/data3/txy/cf_moa/agents/a1_bounded_coverage.py": "e72ef0e68ba8e2c783dfbe9a4884393aebb1453f936fdb5b7c85b3ee061d30f6",
+    "/home/data3/txy/cf_moa/agents/a1_support_completion.py": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b",
+    "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head_v2.py": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f",
+    "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head.py": "3fa3ac6667ade90b8fff99e7156f078345c62bc77f3a5386a4a737c2b9c20771",
+    "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/executor.py": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378",
+    "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/author/simglucose/patient/t1dpatient.py": "7ad1302fbf064805e2294bbcffd482e55448e37e48b63e629a1ed7f11c701547",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+    "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+    "/home/data3/txy/cf_moa/controller/moa_execution.py": "2c2d84fb45b47afa341e830f4210c8661a9956ff3ee4e1f82f01e2b0493c8cee",
+    "/home/data3/txy/cf_moa/evaluation/cached_experts.py": "fa69a421f9df5df1785241fe2786f1280456370a2bcfbca0b7333ceb956e5270",
+    "/home/data3/txy/cf_moa/evaluation/journal.py": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+    "/home/data3/txy/cf_moa/evaluation/cost_accounting.py": "2902cb98131774730e1e0a9170b2d56dbdafc3dd4df35a2843507c541cbf6208",
+    "/home/data3/txy/cf_moa/evaluation/cached_moa.py": "15d145259b3d40a848500e731c53a7a6ace09c1b344ae8d2bc3d2eff69e20565",
+    "/home/data3/txy/cf_moa/evaluation/native_runner.py": "ae2005017a9208bc44a0c96f0c7d4dc38ca9e25d72441c4f4ba9650af61a3b81",
+    "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+    "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/native_explanation_stability_preparation/evidence_first_preparation/stability_preparation/nonempty_description_preparation/multiexpert_preparation/eos_alignment_preparation/same_pool_top1_control/build.py": "a84de46b7518120a62eb5f1c53ca5858b15328c219236a467d2b807fe20ccc7c",
+    "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/router_aggregation_preparation/multiexpert_cached_preparation/experimental_cached_reader.py": "e4abc9d7fa9ff761dea64fa14a2c951c63f6272bac1c0debd10b7b5cd926c6c0"
+  },
+  "routes": [
+    {
+      "router_variant": "visible_capability_sparse_router_v1_cpu_candidate",
+      "mode": "top1",
+      "control_identity": "top1_same_experts",
+      "selected": [
+        "A2"
+      ],
+      "reasons": {
+        "A2": "Selected finite medication-rule entry predicate"
+      },
+      "decisions": {
+        "A1": {
+          "identity": "A1",
+          "variant": "bounded_evidence_id_coverage_audit_v2_relation_codes_r5",
+          "operation": "support_completion",
+          "adoption_status": "candidate_not_adopted",
+          "enabled": true,
+          "applicable": true,
+          "reason": "r5 requires legal candidates and its complete bounded evidence catalog",
+          "capability_is_quality_estimate": false
+        },
+        "A2": {
+          "identity": "A2",
+          "variant": "legacy_positive_facts_scoped_inherit_unknown",
+          "operation": "support_revision",
+          "adoption_status": "adopted_component",
+          "enabled": true,
+          "applicable": true,
+          "reason": "Selected finite medication-rule entry predicate",
+          "capability_is_quality_estimate": false
+        },
+        "A3": {
+          "identity": "A3",
+          "variant": "legacy_catalog_six_orders_calibrated_majority",
+          "operation": "candidate_comparison",
+          "adoption_status": "adopted_component",
+          "enabled": true,
+          "applicable": false,
+          "reason": "Native diagnosis format and supplied public catalog capability",
+          "capability_is_quality_estimate": false
+        },
+        "A4": {
+          "identity": "A4",
+          "variant": "frozen_physiology_v2_typed_patch",
+          "operation": "intervention_execution",
+          "adoption_status": "adopted_component",
+          "enabled": true,
+          "applicable": false,
+          "reason": "No explicitly supplied executable physiological model input",
+          "capability_is_quality_estimate": false
+        },
+        "F": {
+          "identity": "F",
+          "variant": "legacy_f_equal_nli_paths_else_full_maj5",
+          "operation": "robust_readout",
+          "adoption_status": "adopted_component",
+          "enabled": true,
+          "applicable": false,
+          "reason": "Selected F formats require complete original messages",
+          "capability_is_quality_estimate": false
+        },
+        "A5": {
+          "identity": "A5",
+          "variant": "qualified_code_views_original_adjudication_v1",
+          "operation": "robust_readout",
+          "adoption_status": "candidate_not_adopted",
+          "enabled": false,
+          "applicable": false,
+          "reason": "Negative qualified-view candidate remains disabled",
+          "capability_is_quality_estimate": false
+        }
+      },
+      "visible_markers": {
+        "explicit_coverage_request": false,
+        "explicit_scope_or_negation": true,
+        "explicit_comparison_request": false,
+        "explicit_presentation_or_source_request": false,
+        "robustness_native_contract": false
+      },
+      "unsupported": {
+        "A3": "Native diagnosis format and supplied public catalog capability",
+        "A4": "No explicitly supplied executable physiological model input",
+        "F": "Selected F formats require complete original messages"
+      },
+      "disabled": {
+        "A5": "Negative qualified-view candidate remains disabled"
+      },
+      "input_hash": "7998cd52898baa23b76df008f81249893533410f2455787caacca8e75ad6be8a",
+      "config_hash": "b4dc2e617fa64a85bbd334992427e286fffc053f8dd4c1497dffa3ab5f2cd53f",
+      "config": {
+        "variant": "visible_capability_sparse_router_v1_cpu_candidate",
+        "status": "cpu_preparation_not_adopted",
+        "execution_authorized": false,
+        "experimental_allow_unadopted": true,
+        "initial_max_experts": 2,
+        "additional_checks_max": 1,
+        "priority": [
+          "A4",
+          "A2",
+          "A3",
+          "A1",
+          "F"
+        ],
+        "experts": {
+          "A1": {
+            "variant": "bounded_evidence_id_coverage_audit_v2_relation_codes_r5",
+            "operation": "support_completion",
+            "adoption_status": "candidate_not_adopted",
+            "default_enabled": false
+          },
+          "A2": {
+            "variant": "legacy_positive_facts_scoped_inherit_unknown",
+            "operation": "support_revision",
+            "adoption_status": "adopted_component",
+            "default_enabled": true
+          },
+          "A3": {
+            "variant": "legacy_catalog_six_orders_calibrated_majority",
+            "operation": "candidate_comparison",
+            "adoption_status": "adopted_component",
+            "default_enabled": true
+          },
+          "A4": {
+            "variant": "frozen_physiology_v2_typed_patch",
+            "operation": "intervention_execution",
+            "adoption_status": "adopted_component",
+            "default_enabled": true
+          },
+          "F": {
+            "variant": "legacy_f_equal_nli_paths_else_full_maj5",
+            "operation": "robust_readout",
+            "adoption_status": "adopted_component",
+            "default_enabled": true
+          },
+          "A5": {
+            "variant": "qualified_code_views_original_adjudication_v1",
+            "operation": "robust_readout",
+            "adoption_status": "candidate_not_adopted",
+            "default_enabled": false
+          }
+        }
+      },
+      "source_hashes": {
+        "/home/data3/txy/cf_moa/controller/sparse_router.py": "4f8e0f3642663d07136c47603dd7eaa8d7e28bec47ff77a5e58a1fa34b1efa85",
+        "/home/data3/txy/cf_moa/configs/router_v1.json": "6bac587eb2a5a75a001e31abdb067c0c5f29710c6adfb2cc4a630827f2c40400",
+        "/home/data3/txy/cf_moa/agents/a1_coded_coverage.py": "1aca353cce31d4d901376ce0294127d090b74a23d126eff6e667766ffe09cdb5",
+        "/home/data3/txy/cf_moa/agents/a2_support_revision.py": "3fc2c41c5276ce1ce9c54c991358cbbc49f70d544000c75e91d881eba6d50ed1",
+        "/home/data3/txy/cf_moa/agents/a3_contrastive_comparison.py": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+        "/home/data3/txy/cf_moa/agents/a4_intervention_execution.py": "5d1f179ed3d22230ccdad0b86d1a3c2f4cdf78363436da9d6cffaa9f5cc3cdcb",
+        "/home/data3/txy/cf_moa/agents/a5_robust_readout.py": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+        "/home/data3/txy/cf_moa/agents/a1_relational_coverage.py": "c8ec4de389c5186e16edeff02876e528ca43f5f4009515e30bf0c11d17842c55",
+        "/home/data3/txy/cf_moa/agents/a1_bounded_coverage.py": "e72ef0e68ba8e2c783dfbe9a4884393aebb1453f936fdb5b7c85b3ee061d30f6",
+        "/home/data3/txy/cf_moa/agents/a1_support_completion.py": "2093fd7007a3ed7025ebc3f88942aafaa6b8b7f5039823f71605b1f1aa5c71d5",
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+        "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head_v2.py": "81acd4e83f28c84949c6826851020e5b555fbdc3286ee102e3aebe1d9e58b19f",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/head.py": "3fa3ac6667ade90b8fff99e7156f078345c62bc77f3a5386a4a737c2b9c20771",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_head/executor.py": "7697ddba7edd0778366b20097ea38f79de12e005105504aae3d464d37e439378",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method/physiology_probe/author/simglucose/patient/t1dpatient.py": "7ad1302fbf064805e2294bbcffd482e55448e37e48b63e629a1ed7f11c701547",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559"
+      },
+      "decision_fields": [
+        "question",
+        "native_input.answer_format",
+        "native_input.options",
+        "available_tools",
+        "model_input",
+        "original_context representation",
+        "A1 enabled only: complete legal evidence catalog"
+      ],
+      "budget_plan": {
+        "limits": {
+          "max_model_requests": 16,
+          "max_input_tokens": 400000,
+          "max_output_tokens": 32768,
+          "max_tool_calls": 4
+        },
+        "initial_expert_slots": 1,
+        "additional_checks_max": 0,
+        "allocation_status": "not_allocated",
+        "actual_cost": null,
+        "requires_runtime_global_budget_check": true,
+        "adopted_decoding_parameters_must_not_be_reduced": true
+      },
+      "requires_native_readjudication": false,
+      "fallback": null,
+      "baseline_retention_forced": false,
+      "hidden_change_inferred": false,
+      "execution_authorized": false,
+      "status": "cpu_preparation_not_adopted",
+      "new_model_calls": 0
+    }
+  ],
+  "no_eligible_policy": "stop_with_full_denominator; no generation or fallback",
+  "unavailable_policy": "preserve_None_flags_and_all_historical_cost; no fallback; not_scored",
+  "initial_answer_cost": "Shared historical original answer outside selected-head cost; unavailable cost is not zero"
+}

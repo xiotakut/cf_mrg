@@ -1,0 +1,108 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 2,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 0,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "old",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.3520408163265306,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 1,
+          "harms": 2
+        },
+        "uncued4": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "nli",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.336734693877551,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 1
+        },
+        "uncued4": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "old": {
+          "repairs": 1,
+          "harms": 1
+        }
+      }
+    }
+  ],
+  "diagnostics": {
+    "nli": {
+      "values": {
+        "yes": 151,
+        "unknown": 553
+      },
+      "invalid_cases": 18
+    },
+    "old": {
+      "values": {
+        "yes": 266,
+        "unknown": 850,
+        "no": 164
+      },
+      "invalid_cases": 0
+    }
+  },
+  "cost": {
+    "new_calls": 1528,
+    "input_tokens": 1368535,
+    "output_tokens": 164769,
+    "fact_length_stops": 22
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "new_calls": 40,
+      "reused_first_block_calls": 40,
+      "max_prompt_tokens": 258
+    },
+    {
+      "method": "M5",
+      "new_calls": 40,
+      "reused_first_block_calls": 40,
+      "max_prompt_tokens": 240
+    }
+  ],
+  "new_calls": 80,
+  "change": "ABCD -> DCBA code assignment; same sorted disease display order, observation0, schema, instruction and decoding. Original-model weights unchanged.",
+  "scope": "All40 existing exposed cases per backbone, diagnostic invariance probe only. No new head accuracy, weights or patient exclusion."
+}

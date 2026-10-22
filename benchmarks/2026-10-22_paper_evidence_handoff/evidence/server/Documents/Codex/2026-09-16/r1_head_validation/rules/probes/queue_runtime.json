@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "pid": 987624,
+  "gpu": 0,
+  "started_at": 1789551523.032535,
+  "finished": [
+    {
+      "model": "llama",
+      "stage": "baseline",
+      "exit_code": 0
+    },
+    {
+      "model": "llama",
+      "stage": "facts",
+      "exit_code": 0
+    },
+    {
+      "model": "llama",
+      "stage": "execute",
+      "exit_code": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "baseline",
+      "exit_code": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "facts",
+      "exit_code": 0
+    },
+    {
+      "model": "qwen",
+      "stage": "execute",
+      "exit_code": 0
+    }
+  ],
+  "diagnosis_state": {
+    "status": "running",
+    "pid": 983715,
+    "gpu": 0,
+    "started_at": 1789551368.574861,
+    "finished": [
+      "M4_direct"
+    ],
+    "method": "M4",
+    "stage": "head",
+    "child_pid": 986584,
+    "free_mib_before": 37859,
+    "log": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/diagnosis/m4/head_gpu0.log"
+  },
+  "model": "qwen",
+  "stage": "execute",
+  "free_mib_before": 96897,
+  "log": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/rules/probes/qwen/execute/worker.log",
+  "child_pid": 997092,
+  "completed_at": 1789552334.1356905,
+  "elapsed_seconds": 811.1031556129456
+}

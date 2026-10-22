@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "train_rows": 21218,
+  "train_groups": 10609,
+  "train_labels": 46,
+  "test_rows": 10766,
+  "test_groups": 5383,
+  "test_file": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/private_data/gate-a-public-20260823-seed13-v3/raw/medeinst/354f4b527e764a8f2bebea8f71be55e0a6966402/00-test.jsonl",
+  "eligible_pairs": 10115,
+  "eligible_rows": 20230,
+  "eligible_labels": 46,
+  "excluded_groups": 494,
+  "reason_counts": {
+    "normalized_text_in_test": 64,
+    "case_id_in_test": 339,
+    "no_text_change": 151,
+    "conflicting_train_labels_for_same_text": 151
+  },
+  "grouping_policy": "Exclude the whole training pair on any ID/text overlap with full released test; exclude unchanged, malformed and exact-text conflicting training pairs.",
+  "test_labels_used_for_memory": false,
+  "new_model_calls": 0
+}

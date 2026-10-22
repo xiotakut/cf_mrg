@@ -1,0 +1,15 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T17:08:14.366654+08:00",
+  "model": "llama",
+  "completed_calls_reused": 0,
+  "new_remaining_calls": 96,
+  "physical_gpu": 0,
+  "max_prompt_tokens": 842,
+  "max_output_tokens": 2048,
+  "context_limit": 8192,
+  "note": "Recover missing requests only after original processes terminated with KV memory initialization errors. Preserve completed GPU2 Qwen outputs and all failed logs/runtime files. Same original weights, static RoPE settings, prompts, decoding and2048 output limit. Only engine context/preallocation/concurrency and partitioning change. No failed slot produced an output.",
+  "gpu_memory_utilization": 0.75,
+  "previous_attempt": "recovery",
+  "reason": "Installed vLLM V1 peak_memory adds all non-torch allocations, including other processes. A .35 total-device fraction cannot hold existing usage plus model; .75 leaves about 24GiB total-device headroom at current observed usage. Prior Qwen recovery terminated with zero outputs; Llama recovery never started. Same weights, prompts, RoPE, sampling and output budget; engine context8192 unchanged from failed recovery."
+}

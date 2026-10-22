@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "started": "2026-09-18 15:49:21 +0800",
+  "pid": 2724640,
+  "jobs": [
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_pilot/m4",
+        "--method",
+        "nli_delta",
+        "--gpu",
+        "2"
+      ],
+      "pid": 2724706,
+      "status": "complete",
+      "started": "2026-09-18 15:49:21 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:51:30 +0800"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_train.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_pilot",
+        "--method",
+        "M4"
+      ],
+      "pid": 2728501,
+      "status": "complete",
+      "started": "2026-09-18 15:53:41 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:53:48 +0800"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_compare.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_pilot",
+        "--method",
+        "M4"
+      ],
+      "pid": 2728663,
+      "status": "complete",
+      "started": "2026-09-18 15:53:48 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:53:50 +0800"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_pilot/m5",
+        "--method",
+        "nli_delta",
+        "--gpu",
+        "2"
+      ],
+      "pid": 2728804,
+      "status": "complete",
+      "started": "2026-09-18 15:53:50 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:55:57 +0800"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_train.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_pilot",
+        "--method",
+        "M5"
+      ],
+      "pid": 2731848,
+      "status": "complete",
+      "started": "2026-09-18 15:58:09 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:58:16 +0800"
+    },
+    {
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_compare.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_rule_pilot",
+        "--method",
+        "M5"
+      ],
+      "pid": 2732049,
+      "status": "complete",
+      "started": "2026-09-18 15:58:16 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:58:17 +0800"
+    }
+  ],
+  "ended": "2026-09-18 15:58:17 +0800"
+}

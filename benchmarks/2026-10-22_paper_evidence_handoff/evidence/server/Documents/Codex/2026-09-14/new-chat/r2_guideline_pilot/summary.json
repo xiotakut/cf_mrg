@@ -1,0 +1,192 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 23,
+      "accuracy_pct": 29.11392405063291,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 17,
+      "accuracy_pct": 25.757575757575758,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "accuracy_pct": 33.333333333333336,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain_review",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 17,
+      "accuracy_pct": 21.518987341772153,
+      "invalid": 4,
+      "repairs": 7,
+      "harms": 13
+    },
+    {
+      "method": "plain_review",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 11,
+      "accuracy_pct": 16.666666666666668,
+      "invalid": 3,
+      "repairs": 6,
+      "harms": 12
+    },
+    {
+      "method": "plain_review",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "accuracy_pct": 33.333333333333336,
+      "invalid": 1,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "plain_review",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "guideline_review",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 15,
+      "accuracy_pct": 18.9873417721519,
+      "invalid": 2,
+      "repairs": 5,
+      "harms": 13
+    },
+    {
+      "method": "guideline_review",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 10,
+      "accuracy_pct": 15.151515151515152,
+      "invalid": 2,
+      "repairs": 5,
+      "harms": 12
+    },
+    {
+      "method": "guideline_review",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 2,
+      "accuracy_pct": 22.22222222222222,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "guideline_review",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "plain_review",
+      "calls": 79,
+      "input_tokens": 231452,
+      "output_tokens": 49684,
+      "length_stops": 4
+    },
+    {
+      "variant": "guideline_review",
+      "calls": 79,
+      "input_tokens": 437615,
+      "output_tokens": 42661,
+      "length_stops": 2
+    }
+  ],
+  "baseline_parity": 79,
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2390988,
+      "started_at": 1789364539.8461862,
+      "total": 40,
+      "initialization_seconds": 53.829123973846436,
+      "completed": 40,
+      "elapsed_seconds": 176.71774888038635,
+      "last_batch_seconds": 21.567655563354492,
+      "completed_at": 1789364716.564139
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2390989,
+      "started_at": 1789364539.6015434,
+      "total": 40,
+      "initialization_seconds": 54.085301876068115,
+      "completed": 40,
+      "elapsed_seconds": 155.5626037120819,
+      "last_batch_seconds": 27.570878505706787,
+      "completed_at": 1789364695.1642985
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2390990,
+      "started_at": 1789364539.6690474,
+      "total": 40,
+      "initialization_seconds": 55.95572376251221,
+      "completed": 40,
+      "elapsed_seconds": 170.6999626159668,
+      "last_batch_seconds": 16.37252163887024,
+      "completed_at": 1789364710.3692048
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2390991,
+      "started_at": 1789364539.78628,
+      "total": 38,
+      "initialization_seconds": 53.901938676834106,
+      "completed": 38,
+      "elapsed_seconds": 149.36556267738342,
+      "last_batch_seconds": 13.129962682723999,
+      "completed_at": 1789364689.1520023
+    }
+  ]
+}

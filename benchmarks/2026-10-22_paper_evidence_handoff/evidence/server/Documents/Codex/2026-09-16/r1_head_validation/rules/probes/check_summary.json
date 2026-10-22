@@ -1,0 +1,25 @@
+{
+  "status": "completed_no_changes_to_frozen_gold_or_head",
+  "checked_at": "2026-09-16T09:29:33.460498+00:00",
+  "items": 36,
+  "input_eligible": 36,
+  "hand_fact_program_gold_agreements": 36,
+  "hand_fact_disagreements": [],
+  "pure_addition_groups": 12,
+  "irrelevant_support_preserved": 12,
+  "old_probe_files": {
+    "r2_rule_counterexamples": 96,
+    "r2_medical_rule_probes": 96,
+    "r2_medical_rules_schema_draft": 96,
+    "r2_rule_holdout": 96,
+    "r2_scope_holdout": 48
+  },
+  "old_probe_rows": 432,
+  "unique_old_questions": 319,
+  "exact_question_matches": 0,
+  "normalized_stem_matches": 0,
+  "same_option_set_matches": 0,
+  "max_nearest_stem_ratio": 0.5593667546174143,
+  "new_model_calls": 0,
+  "caveat": "Hand facts and a fixed None initial test source/logic consistency only. They do not measure extraction accuracy or clinical generalization; missing facts remain UNKNOWN. Text dissimilarity does not establish independent rules or clinical patients."
+}

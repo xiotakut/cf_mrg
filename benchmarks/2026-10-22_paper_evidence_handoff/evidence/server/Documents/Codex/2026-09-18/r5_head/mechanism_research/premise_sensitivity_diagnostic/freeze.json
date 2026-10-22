@@ -1,0 +1,292 @@
+{
+  "frozen_at": "2026-09-18 17:20:26 +0800",
+  "status": "data_and_request_plan_frozen_before_inference",
+  "files": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/cases.jsonl": "9f6cbdbbe8c8b45ffe9ca946ef7524d7a99b5b2ebd53b21d97ea5e64d1f7e93b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/semantic_review.json": "b7483b60750439ab8d0ee0b779f02e51ac08c8acc7d96a1715f4cfa69920e6da",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/plan.json": "3de96408b8a35ca729abb5e6829d2f2117bf4424cca9ead536d03ae443d5f21b",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/prepare.py": "a1b952192bd88103562ec2c3b10abe5198b183da5e383941b754eb4797d84f63",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/draft_cases.jsonl": "6e0eb3eaf64059ab1daae3b311505f65e6a984df911fad76976f48c99aebc5dc",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/draft_checks.json": "cc2c08b93f2d3a613ca9f75797fd7954cd5a5108ded818ece3b2ebb15a514d8e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/m4/config.json": "218981885c2e732d88725ea8efcf8277664df6df8d4f1cfea3afd58ae271428e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/m4/requests.jsonl": "45e616de71b837d6e28cef2cc67f0849b13cb014807e0895832596584825f1d1",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/m5/config.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/premise_sensitivity_diagnostic/m5/requests.jsonl": "45e616de71b837d6e28cef2cc67f0849b13cb014807e0895832596584825f1d1",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py": "11b4ff8145ffb32e2990e6be1374982b58ce0fbd3ee489355174fba9fd76f6be"
+  },
+  "families": 16,
+  "inputs": 64,
+  "sequences_per_backbone": 128,
+  "expected_total_forward_batches": 256,
+  "labels": {
+    "positive": 32,
+    "negative": 32
+  },
+  "new_model_calls": 0,
+  "r5_pairs": [
+    [
+      "ps01_support_clean",
+      "ps01_support_distractor"
+    ],
+    [
+      "ps01_contradict_clean",
+      "ps01_contradict_distractor"
+    ],
+    [
+      "ps02_support_clean",
+      "ps02_support_distractor"
+    ],
+    [
+      "ps02_contradict_clean",
+      "ps02_contradict_distractor"
+    ],
+    [
+      "ps03_support_clean",
+      "ps03_support_distractor"
+    ],
+    [
+      "ps03_contradict_clean",
+      "ps03_contradict_distractor"
+    ],
+    [
+      "ps04_support_clean",
+      "ps04_support_distractor"
+    ],
+    [
+      "ps04_contradict_clean",
+      "ps04_contradict_distractor"
+    ],
+    [
+      "ps05_support_clean",
+      "ps05_support_distractor"
+    ],
+    [
+      "ps05_contradict_clean",
+      "ps05_contradict_distractor"
+    ],
+    [
+      "ps06_support_clean",
+      "ps06_support_distractor"
+    ],
+    [
+      "ps06_contradict_clean",
+      "ps06_contradict_distractor"
+    ],
+    [
+      "ps07_support_clean",
+      "ps07_support_distractor"
+    ],
+    [
+      "ps07_contradict_clean",
+      "ps07_contradict_distractor"
+    ],
+    [
+      "ps08_support_clean",
+      "ps08_support_distractor"
+    ],
+    [
+      "ps08_contradict_clean",
+      "ps08_contradict_distractor"
+    ],
+    [
+      "ps09_support_clean",
+      "ps09_support_distractor"
+    ],
+    [
+      "ps09_contradict_clean",
+      "ps09_contradict_distractor"
+    ],
+    [
+      "ps10_support_clean",
+      "ps10_support_distractor"
+    ],
+    [
+      "ps10_contradict_clean",
+      "ps10_contradict_distractor"
+    ],
+    [
+      "ps11_support_clean",
+      "ps11_support_distractor"
+    ],
+    [
+      "ps11_contradict_clean",
+      "ps11_contradict_distractor"
+    ],
+    [
+      "ps12_support_clean",
+      "ps12_support_distractor"
+    ],
+    [
+      "ps12_contradict_clean",
+      "ps12_contradict_distractor"
+    ],
+    [
+      "ps13_support_clean",
+      "ps13_support_distractor"
+    ],
+    [
+      "ps13_contradict_clean",
+      "ps13_contradict_distractor"
+    ],
+    [
+      "ps14_support_clean",
+      "ps14_support_distractor"
+    ],
+    [
+      "ps14_contradict_clean",
+      "ps14_contradict_distractor"
+    ],
+    [
+      "ps15_support_clean",
+      "ps15_support_distractor"
+    ],
+    [
+      "ps15_contradict_clean",
+      "ps15_contradict_distractor"
+    ],
+    [
+      "ps16_support_clean",
+      "ps16_support_distractor"
+    ],
+    [
+      "ps16_contradict_clean",
+      "ps16_contradict_distractor"
+    ]
+  ],
+  "fixed_h_change_p_pairs": [
+    [
+      "ps01_support_clean",
+      "ps01_contradict_clean"
+    ],
+    [
+      "ps01_support_distractor",
+      "ps01_contradict_distractor"
+    ],
+    [
+      "ps02_support_clean",
+      "ps02_contradict_clean"
+    ],
+    [
+      "ps02_support_distractor",
+      "ps02_contradict_distractor"
+    ],
+    [
+      "ps03_support_clean",
+      "ps03_contradict_clean"
+    ],
+    [
+      "ps03_support_distractor",
+      "ps03_contradict_distractor"
+    ],
+    [
+      "ps04_support_clean",
+      "ps04_contradict_clean"
+    ],
+    [
+      "ps04_support_distractor",
+      "ps04_contradict_distractor"
+    ],
+    [
+      "ps05_support_clean",
+      "ps05_contradict_clean"
+    ],
+    [
+      "ps05_support_distractor",
+      "ps05_contradict_distractor"
+    ],
+    [
+      "ps06_support_clean",
+      "ps06_contradict_clean"
+    ],
+    [
+      "ps06_support_distractor",
+      "ps06_contradict_distractor"
+    ],
+    [
+      "ps07_support_clean",
+      "ps07_contradict_clean"
+    ],
+    [
+      "ps07_support_distractor",
+      "ps07_contradict_distractor"
+    ],
+    [
+      "ps08_support_clean",
+      "ps08_contradict_clean"
+    ],
+    [
+      "ps08_support_distractor",
+      "ps08_contradict_distractor"
+    ],
+    [
+      "ps09_support_clean",
+      "ps09_contradict_clean"
+    ],
+    [
+      "ps09_support_distractor",
+      "ps09_contradict_distractor"
+    ],
+    [
+      "ps10_support_clean",
+      "ps10_contradict_clean"
+    ],
+    [
+      "ps10_support_distractor",
+      "ps10_contradict_distractor"
+    ],
+    [
+      "ps11_support_clean",
+      "ps11_contradict_clean"
+    ],
+    [
+      "ps11_support_distractor",
+      "ps11_contradict_distractor"
+    ],
+    [
+      "ps12_support_clean",
+      "ps12_contradict_clean"
+    ],
+    [
+      "ps12_support_distractor",
+      "ps12_contradict_distractor"
+    ],
+    [
+      "ps13_support_clean",
+      "ps13_contradict_clean"
+    ],
+    [
+      "ps13_support_distractor",
+      "ps13_contradict_distractor"
+    ],
+    [
+      "ps14_support_clean",
+      "ps14_contradict_clean"
+    ],
+    [
+      "ps14_support_distractor",
+      "ps14_contradict_distractor"
+    ],
+    [
+      "ps15_support_clean",
+      "ps15_contradict_clean"
+    ],
+    [
+      "ps15_support_distractor",
+      "ps15_contradict_distractor"
+    ],
+    [
+      "ps16_support_clean",
+      "ps16_contradict_clean"
+    ],
+    [
+      "ps16_support_distractor",
+      "ps16_contradict_distractor"
+    ]
+  ],
+  "model_inputs": [
+    "premise",
+    "hypothesis"
+  ],
+  "metadata_enters_text": false,
+  "scoring_gate": "joint U/V head manifest and independent head review required"
+}

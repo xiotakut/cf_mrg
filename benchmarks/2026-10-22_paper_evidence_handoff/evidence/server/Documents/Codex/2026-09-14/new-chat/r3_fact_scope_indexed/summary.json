@@ -1,0 +1,153 @@
+{
+  "status": "complete_component_development",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "old12",
+      "variant": "control",
+      "n": 12,
+      "correct": 9,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M4",
+      "scope": "old12",
+      "variant": "indexed",
+      "n": 12,
+      "correct": 7,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M4",
+      "scope": "new12",
+      "variant": "control",
+      "n": 12,
+      "correct": 8,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M4",
+      "scope": "new12",
+      "variant": "indexed",
+      "n": 12,
+      "correct": 8,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M4",
+      "scope": "all24",
+      "variant": "control",
+      "n": 24,
+      "correct": 17,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M4",
+      "scope": "all24",
+      "variant": "indexed",
+      "n": 24,
+      "correct": 15,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "old12",
+      "variant": "control",
+      "n": 12,
+      "correct": 7,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "old12",
+      "variant": "indexed",
+      "n": 12,
+      "correct": 9,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "new12",
+      "variant": "control",
+      "n": 12,
+      "correct": 8,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "new12",
+      "variant": "indexed",
+      "n": 12,
+      "correct": 9,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "all24",
+      "variant": "control",
+      "n": 24,
+      "correct": 15,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "all24",
+      "variant": "indexed",
+      "n": 24,
+      "correct": 18,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 36,
+      "input_tokens": 8705,
+      "output_tokens": 699,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "gpu": 3,
+        "pid": 3751833,
+        "started_at": 1789465170.2482696,
+        "total": 36,
+        "initialization_seconds": 19.296844720840454,
+        "completed": 36,
+        "elapsed_seconds": 27.21634030342102,
+        "last_batch_seconds": 1.0208439826965332,
+        "completed_at": 1789465197.464813
+      }
+    },
+    {
+      "method": "M5",
+      "new_calls": 36,
+      "input_tokens": 7961,
+      "output_tokens": 619,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "gpu": 3,
+        "pid": 3752937,
+        "started_at": 1789465205.6711748,
+        "total": 36,
+        "initialization_seconds": 26.595696926116943,
+        "completed": 36,
+        "elapsed_seconds": 35.41205859184265,
+        "last_batch_seconds": 1.4040155410766602,
+        "completed_at": 1789465241.0834093
+      }
+    }
+  ]
+}

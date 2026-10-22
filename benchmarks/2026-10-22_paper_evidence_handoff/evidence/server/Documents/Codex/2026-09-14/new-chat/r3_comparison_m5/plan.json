@@ -1,0 +1,19 @@
+{
+  "status": "prepared",
+  "time": "2026-09-14T18:36:02.650335+08:00",
+  "inputs": 146,
+  "new_calls": 292,
+  "original_method": "M5 full v5",
+  "variants": [
+    "plain",
+    "contrastive"
+  ],
+  "split": "frozen development only",
+  "same_original_context_and_draft": true,
+  "same_answer_schema": true,
+  "same_max_tokens": true,
+  "max_prompt_tokens": 4108,
+  "schema_variants": 3,
+  "schema_backend_check": "xgrammar.Grammar.from_json_schema",
+  "excludes": "No gold/canonical inventory/R tags/reference case in generation; no new retrieval."
+}

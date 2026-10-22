@@ -1,0 +1,54 @@
+{
+  "status": "planned before fitting either backbone; posthoc exposed-development diagnostic",
+  "created_at": "2026-09-18T15:52:36.646595+08:00",
+  "scope": "Existing 112 NLI inputs per backbone; 84 train in 42 mother groups, 28 dev in 14 mother groups; train R5 30 pairs, strong 12; dev R5 10, strong 4. No confirmation inputs.",
+  "features": "Mean of two separately RMS-normalized last-position hidden vectors, fixed 4096 dimensions. Frozen backbone; no new forwards.",
+  "base_margin": "Mean over two mappings of native-semantic positive logit minus negative logit. This changes probabilities from historical mean-softmax, so preserve both zero-margin-update and saved base probability/NLL controls. Binary decisions are mathematically identical.",
+  "learned_arms": [
+    "semantic_CE",
+    "semantic_CE+JS",
+    "bias_CE",
+    "bias_CE+JS"
+  ],
+  "fixed_controls": [
+    "mean_logit_zero",
+    "saved_mean_probability_base",
+    "train_mother_weighted_semantic_prior"
+  ],
+  "optimizer": {
+    "type": "Adam",
+    "learning_rate": 0.001,
+    "epochs": 200,
+    "l2_values": [
+      0.01,
+      0.1,
+      1
+    ],
+    "l2_definition": "0.5 * lambda * sum(parameter squared)",
+    "js_weight": 1.0,
+    "checkpoint": "minimum mother-weighted dev native NLL; epoch 0 included",
+    "initialization": "zero",
+    "seed": 42,
+    "torch_cpu_threads": 4
+  },
+  "loss": "Mother-balanced BCE; +JS only on 30 training R5 pairs with same gold, unit-balanced. Strong controls are supervised but not JS-paired.",
+  "semantic_parameterization": "One weight vector of 4096 entries, no bias; semantic margin=base_margin+h_sem dot w",
+  "bias_parameterization": "One scalar added to the same base margin; same fitting/selection grid, both CE/CE+JS",
+  "prior": "Training mother-weighted positive-label frequency; dev gold is not used to estimate prior",
+  "metrics": [
+    "train/dev R5 and strong input correctness, paired both correctness, reference/variant and positive/negative endpoint accuracy",
+    "repairs and harms versus same-margin zero, saved mean-probability base, prior and bias calibration",
+    "dev NLL and selected epochs/L2",
+    "direct decision parity check"
+  ],
+  "limitations": [
+    "Posthoc diagnostic triggered by existing results, not independent confirmation.",
+    "Fixed semantic labels are intrinsic to visible NLI task, but this probe is not a general arbitrary-option learned head.",
+    "No innovation or robust-generalization claim.",
+    "Decision-only CPU reuse; no new complete native explanation and no new GPU call."
+  ],
+  "sources": {
+    "evaluation.jsonl": "f4df61ca708ec48cf23c934aa5e4a9b2ed7aa6a2b7ca847dda05d22eeb77623c",
+    "pairs.jsonl": "06d750f9a1ef5a029ec93de1542f04304981f66a36b731b94ca8faa1310b4f02"
+  }
+}

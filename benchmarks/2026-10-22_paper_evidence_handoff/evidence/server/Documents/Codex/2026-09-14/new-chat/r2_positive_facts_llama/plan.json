@@ -1,0 +1,14 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T17:25:43.915825+08:00",
+  "model": "llama",
+  "new_calls": 71,
+  "exact_reused_calls": 128,
+  "physical_gpu": 3,
+  "changed_by_scope": {
+    "native": 27,
+    "rule_probe": 12,
+    "scope_probe": 32
+  },
+  "note": "Only two negative Boolean extraction fields are renamed positively and complemented back for the same71 rules. UNKNOWN stays UNKNOWN. Same original weights/short prompt/evidence order/temperature0/2048 budget. Native79, already exposed96 rule probes and48 scope probes; no new independent dataset. Regenerate only changed requests, reuse exact unchanged requests. Default standalone API unchanged pending results."
+}

@@ -1,0 +1,28 @@
+{
+  "method": "M4",
+  "n": 40,
+  "changed_cases": 28,
+  "changed_relations": 34,
+  "relation_denominator": 160,
+  "transitions": {
+    "neutral -> neutral": 124,
+    "support -> neutral": 14,
+    "neutral -> support": 19,
+    "support -> support": 2,
+    "conflict -> neutral": 1
+  },
+  "reversed_output_fields": {
+    "A:neutral": 40,
+    "B:neutral": 40,
+    "C:neutral": 31,
+    "D:neutral": 28,
+    "D:support": 12,
+    "C:support": 9
+  },
+  "cost": {
+    "new_calls": 40,
+    "input_tokens": 10130,
+    "output_tokens": 1240,
+    "length_stops": 0
+  }
+}

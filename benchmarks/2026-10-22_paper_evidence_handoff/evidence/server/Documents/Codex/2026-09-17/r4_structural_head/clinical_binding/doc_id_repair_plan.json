@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "at": "2026-09-17 21:53:30 +0800",
+  "changes": [
+    {
+      "method": "M4",
+      "new_calls": 0,
+      "changed_ids": [],
+      "unchanged_final_requests": 26
+    },
+    {
+      "method": "M5",
+      "new_calls": 8,
+      "changed_ids": [
+        "s134924",
+        "s134926",
+        "s134927",
+        "s134930",
+        "s134934",
+        "s134935",
+        "s134938",
+        "s134940"
+      ],
+      "unchanged_final_requests": 18
+    }
+  ],
+  "repair": "Document identifiers are nominal: normalize both integer0 and string0 to the same visible document label. No re-extraction or prompt edits.",
+  "exposure": "Initial v1 complete results retained. Repair triggered by78/78 M5 string identifiers rejected before source verification. Change selection uses rendered-request differences only, never answer correctness.",
+  "reuse": "M4 all26 final and M5 unfiltered13 unchanged; only changed M5 bound requests get new generation. Unchanged empty bound requests reuse original exact requests.",
+  "accounting": "Original78 calls and original final raw/requests remain intact; corrected scores combine unchanged original requests and new repair requests with explicit additional cost.",
+  "completed_new_calls": 8,
+  "finished_at": "2026-09-17 21:55:30 +0800"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "prepared_not_started",
+  "checks": [
+    {
+      "method": "M4",
+      "requests": 48,
+      "actual_original_context_preserved": true,
+      "old_answer_removed": true,
+      "decoding_unchanged": true,
+      "enforce_eager": true
+    },
+    {
+      "method": "M5",
+      "requests": 48,
+      "actual_original_context_preserved": true,
+      "old_answer_removed": true,
+      "decoding_unchanged": true,
+      "enforce_eager": true
+    }
+  ],
+  "calls": 96,
+  "arms": [
+    "redo",
+    "task_scope"
+  ],
+  "selection": "Same24 source and baseline-correctness enriched audit; no new sample or prompt search.",
+  "motivation": "Qwen rewrote47/48 explanations but kept all48 choices when supplied its old answer. Remove the appended answer and the draft sentence from both matched arms.",
+  "resource": "Disable CUDA graphs to reduce shared-GPU memory; unchanged weights, native schema, temperature and token budget.",
+  "interpretation": "Local fresh-answer adaptation, not an exact author reproduction. Eager execution changes runtime scheduling, so prior-vs-fresh differences are not an isolated deterministic causal estimate.",
+  "decision": "One finite two-arm trial; no automatic extension to202 or per-backbone output selection.",
+  "execution_status": "complete",
+  "run_command": "MedRGAG/.venv/bin/python mcq_experiment.py run --scope fresh --method M4|M5 --gpu 3",
+  "next": "Fixed simple redo selected for full202 check; task_scope not selected."
+}

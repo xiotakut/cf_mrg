@@ -1,0 +1,676 @@
+{
+  "dataset": "bio",
+  "status": "complete",
+  "new_model_calls": 0,
+  "interpretation": "Offline attribution on existing compiled IRs; not new validation. The sole IR change is intervention={}. All original observations, equations, roots, target, desired and same-call fallback remain.",
+  "paired_count_direction": "repairs: no-do correct / original head wrong; harms: no-do wrong / original head correct.",
+  "frozen_project": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/cladder_validation/frozen_head/structural_head.py",
+  "results": [
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "all",
+      "group": "all",
+      "n": 144,
+      "original_head_correct": 92,
+      "original_head_invalid": 15,
+      "no_do_correct": 89,
+      "no_do_invalid": 15,
+      "changed_predictions": 3,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 3
+      },
+      "ablation_applied": 47,
+      "nonempty_intervention_removed": 47,
+      "routes": {
+        "invalid_program_model_answer": 82,
+        "invalid_program": 15,
+        "executed": 32,
+        "inconsistent_program_model_answer": 15
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "source_model",
+      "group": "gastric",
+      "n": 48,
+      "original_head_correct": 29,
+      "original_head_invalid": 11,
+      "no_do_correct": 29,
+      "no_do_invalid": 11,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 8,
+      "nonempty_intervention_removed": 8,
+      "routes": {
+        "invalid_program": 11,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 29,
+        "executed": 6
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "source_model",
+      "group": "prostate",
+      "n": 48,
+      "original_head_correct": 29,
+      "original_head_invalid": 4,
+      "no_do_correct": 29,
+      "no_do_invalid": 4,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 9,
+      "nonempty_intervention_removed": 9,
+      "routes": {
+        "invalid_program_model_answer": 35,
+        "invalid_program": 4,
+        "executed": 6,
+        "inconsistent_program_model_answer": 3
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "source_model",
+      "group": "tnf",
+      "n": 48,
+      "original_head_correct": 34,
+      "original_head_invalid": 0,
+      "no_do_correct": 31,
+      "no_do_invalid": 0,
+      "changed_predictions": 3,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 3
+      },
+      "ablation_applied": 30,
+      "nonempty_intervention_removed": 30,
+      "routes": {
+        "invalid_program_model_answer": 18,
+        "executed": 20,
+        "inconsistent_program_model_answer": 10
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "outcome_noop",
+      "group": false,
+      "n": 24,
+      "original_head_correct": 13,
+      "original_head_invalid": 1,
+      "no_do_correct": 13,
+      "no_do_invalid": 1,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 10,
+      "nonempty_intervention_removed": 10,
+      "routes": {
+        "invalid_program_model_answer": 13,
+        "inconsistent_program_model_answer": 4,
+        "executed": 6,
+        "invalid_program": 1
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all",
+      "grouping": "outcome_noop",
+      "group": true,
+      "n": 120,
+      "original_head_correct": 79,
+      "original_head_invalid": 14,
+      "no_do_correct": 76,
+      "no_do_invalid": 14,
+      "changed_predictions": 3,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 3
+      },
+      "ablation_applied": 37,
+      "nonempty_intervention_removed": 37,
+      "routes": {
+        "invalid_program_model_answer": 69,
+        "invalid_program": 14,
+        "executed": 26,
+        "inconsistent_program_model_answer": 11
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "n": 120,
+      "original_head_correct": 76,
+      "original_head_invalid": 15,
+      "no_do_correct": 74,
+      "no_do_invalid": 15,
+      "changed_predictions": 2,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 2
+      },
+      "ablation_applied": 31,
+      "nonempty_intervention_removed": 31,
+      "routes": {
+        "invalid_program_model_answer": 74,
+        "invalid_program": 15,
+        "inconsistent_program_model_answer": 10,
+        "executed": 21
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "n": 48,
+      "original_head_correct": 29,
+      "original_head_invalid": 11,
+      "no_do_correct": 29,
+      "no_do_invalid": 11,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 8,
+      "nonempty_intervention_removed": 8,
+      "routes": {
+        "invalid_program": 11,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 29,
+        "executed": 6
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "n": 48,
+      "original_head_correct": 29,
+      "original_head_invalid": 4,
+      "no_do_correct": 29,
+      "no_do_invalid": 4,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 9,
+      "nonempty_intervention_removed": 9,
+      "routes": {
+        "invalid_program_model_answer": 35,
+        "invalid_program": 4,
+        "executed": 6,
+        "inconsistent_program_model_answer": 3
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "n": 24,
+      "original_head_correct": 18,
+      "original_head_invalid": 0,
+      "no_do_correct": 16,
+      "no_do_invalid": 0,
+      "changed_predictions": 2,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 2
+      },
+      "ablation_applied": 14,
+      "nonempty_intervention_removed": 14,
+      "routes": {
+        "invalid_program_model_answer": 10,
+        "inconsistent_program_model_answer": 5,
+        "executed": 9
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "n": 18,
+      "original_head_correct": 9,
+      "original_head_invalid": 1,
+      "no_do_correct": 9,
+      "no_do_invalid": 1,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 6,
+      "nonempty_intervention_removed": 6,
+      "routes": {
+        "executed": 4,
+        "invalid_program_model_answer": 11,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program": 1
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "n": 102,
+      "original_head_correct": 67,
+      "original_head_invalid": 14,
+      "no_do_correct": 65,
+      "no_do_invalid": 14,
+      "changed_predictions": 2,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 2
+      },
+      "ablation_applied": 25,
+      "nonempty_intervention_removed": 25,
+      "routes": {
+        "invalid_program_model_answer": 63,
+        "invalid_program": 14,
+        "inconsistent_program_model_answer": 8,
+        "executed": 17
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "all",
+      "group": "all",
+      "n": 144,
+      "original_head_correct": 102,
+      "original_head_invalid": 10,
+      "no_do_correct": 92,
+      "no_do_invalid": 10,
+      "changed_predictions": 10,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 10
+      },
+      "ablation_applied": 49,
+      "nonempty_intervention_removed": 49,
+      "routes": {
+        "invalid_program_model_answer": 85,
+        "inconsistent_program_model_answer": 8,
+        "executed": 41,
+        "invalid_program": 10
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "source_model",
+      "group": "gastric",
+      "n": 48,
+      "original_head_correct": 29,
+      "original_head_invalid": 10,
+      "no_do_correct": 29,
+      "no_do_invalid": 10,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 0,
+      "nonempty_intervention_removed": 0,
+      "routes": {
+        "invalid_program_model_answer": 38,
+        "invalid_program": 10
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "source_model",
+      "group": "prostate",
+      "n": 48,
+      "original_head_correct": 33,
+      "original_head_invalid": 0,
+      "no_do_correct": 33,
+      "no_do_invalid": 0,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 1,
+      "nonempty_intervention_removed": 1,
+      "routes": {
+        "invalid_program_model_answer": 47,
+        "executed": 1
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "source_model",
+      "group": "tnf",
+      "n": 48,
+      "original_head_correct": 40,
+      "original_head_invalid": 0,
+      "no_do_correct": 30,
+      "no_do_invalid": 0,
+      "changed_predictions": 10,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 10
+      },
+      "ablation_applied": 48,
+      "nonempty_intervention_removed": 48,
+      "routes": {
+        "executed": 40,
+        "inconsistent_program_model_answer": 8
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "outcome_noop",
+      "group": false,
+      "n": 24,
+      "original_head_correct": 21,
+      "original_head_invalid": 2,
+      "no_do_correct": 15,
+      "no_do_invalid": 2,
+      "changed_predictions": 6,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 6
+      },
+      "ablation_applied": 13,
+      "nonempty_intervention_removed": 13,
+      "routes": {
+        "executed": 11,
+        "invalid_program": 2,
+        "invalid_program_model_answer": 9,
+        "inconsistent_program_model_answer": 2
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all",
+      "grouping": "outcome_noop",
+      "group": true,
+      "n": 120,
+      "original_head_correct": 81,
+      "original_head_invalid": 8,
+      "no_do_correct": 77,
+      "no_do_invalid": 8,
+      "changed_predictions": 4,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 4
+      },
+      "ablation_applied": 36,
+      "nonempty_intervention_removed": 36,
+      "routes": {
+        "invalid_program_model_answer": 76,
+        "inconsistent_program_model_answer": 6,
+        "executed": 30,
+        "invalid_program": 8
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "n": 120,
+      "original_head_correct": 82,
+      "original_head_invalid": 10,
+      "no_do_correct": 77,
+      "no_do_invalid": 10,
+      "changed_predictions": 5,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 5
+      },
+      "ablation_applied": 25,
+      "nonempty_intervention_removed": 25,
+      "routes": {
+        "invalid_program_model_answer": 85,
+        "executed": 21,
+        "invalid_program": 10,
+        "inconsistent_program_model_answer": 4
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "n": 48,
+      "original_head_correct": 29,
+      "original_head_invalid": 10,
+      "no_do_correct": 29,
+      "no_do_invalid": 10,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 0,
+      "nonempty_intervention_removed": 0,
+      "routes": {
+        "invalid_program_model_answer": 38,
+        "invalid_program": 10
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "n": 48,
+      "original_head_correct": 33,
+      "original_head_invalid": 0,
+      "no_do_correct": 33,
+      "no_do_invalid": 0,
+      "changed_predictions": 0,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 0
+      },
+      "ablation_applied": 1,
+      "nonempty_intervention_removed": 1,
+      "routes": {
+        "invalid_program_model_answer": 47,
+        "executed": 1
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "n": 24,
+      "original_head_correct": 20,
+      "original_head_invalid": 0,
+      "no_do_correct": 15,
+      "no_do_invalid": 0,
+      "changed_predictions": 5,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 5
+      },
+      "ablation_applied": 24,
+      "nonempty_intervention_removed": 24,
+      "routes": {
+        "executed": 20,
+        "inconsistent_program_model_answer": 4
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "n": 18,
+      "original_head_correct": 15,
+      "original_head_invalid": 2,
+      "no_do_correct": 12,
+      "no_do_invalid": 2,
+      "changed_predictions": 3,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 3
+      },
+      "ablation_applied": 7,
+      "nonempty_intervention_removed": 7,
+      "routes": {
+        "executed": 6,
+        "invalid_program": 2,
+        "invalid_program_model_answer": 9,
+        "inconsistent_program_model_answer": 1
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "n": 102,
+      "original_head_correct": 67,
+      "original_head_invalid": 8,
+      "no_do_correct": 65,
+      "no_do_invalid": 8,
+      "changed_predictions": 2,
+      "vs_original_head": {
+        "repairs": 0,
+        "harms": 2
+      },
+      "ablation_applied": 18,
+      "nonempty_intervention_removed": 18,
+      "routes": {
+        "invalid_program_model_answer": 76,
+        "executed": 15,
+        "invalid_program": 8,
+        "inconsistent_program_model_answer": 3
+      }
+    }
+  ],
+  "source_oracle_factual_target_diagnostic": {
+    "label": "SOURCE ORACLE: retain factual target and project the asked polarity",
+    "is_model_baseline": false,
+    "new_model_calls": 0,
+    "interpretation": "Privileged evaluation.factual_target ignores the intervention. It exposes the source noop prevalence; it is neither an LLM prediction nor an additional validation cohort.",
+    "results": [
+      {
+        "view": "all",
+        "grouping": "all",
+        "group": "all",
+        "n": 144,
+        "correct": 120,
+        "invalid": 0
+      },
+      {
+        "view": "all",
+        "grouping": "source_model",
+        "group": "gastric",
+        "n": 48,
+        "correct": 44,
+        "invalid": 0
+      },
+      {
+        "view": "all",
+        "grouping": "source_model",
+        "group": "prostate",
+        "n": 48,
+        "correct": 40,
+        "invalid": 0
+      },
+      {
+        "view": "all",
+        "grouping": "source_model",
+        "group": "tnf",
+        "n": 48,
+        "correct": 36,
+        "invalid": 0
+      },
+      {
+        "view": "all",
+        "grouping": "outcome_noop",
+        "group": false,
+        "n": 24,
+        "correct": 0,
+        "invalid": 0
+      },
+      {
+        "view": "all",
+        "grouping": "outcome_noop",
+        "group": true,
+        "n": 120,
+        "correct": 120,
+        "invalid": 0
+      },
+      {
+        "view": "unique120",
+        "grouping": "all",
+        "group": "all",
+        "n": 120,
+        "correct": 102,
+        "invalid": 0
+      },
+      {
+        "view": "unique120",
+        "grouping": "source_model",
+        "group": "gastric",
+        "n": 48,
+        "correct": 44,
+        "invalid": 0
+      },
+      {
+        "view": "unique120",
+        "grouping": "source_model",
+        "group": "prostate",
+        "n": 48,
+        "correct": 40,
+        "invalid": 0
+      },
+      {
+        "view": "unique120",
+        "grouping": "source_model",
+        "group": "tnf",
+        "n": 24,
+        "correct": 18,
+        "invalid": 0
+      },
+      {
+        "view": "unique120",
+        "grouping": "outcome_noop",
+        "group": false,
+        "n": 18,
+        "correct": 0,
+        "invalid": 0
+      },
+      {
+        "view": "unique120",
+        "grouping": "outcome_noop",
+        "group": true,
+        "n": 102,
+        "correct": 102,
+        "invalid": 0
+      }
+    ]
+  }
+}

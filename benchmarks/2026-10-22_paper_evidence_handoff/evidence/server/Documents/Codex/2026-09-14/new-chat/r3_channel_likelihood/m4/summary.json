@@ -1,0 +1,84 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "direct": {
+          "repairs": 4,
+          "harms": 3
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "list8",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "direct": {
+          "repairs": 2,
+          "harms": 4
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.41836734693877553,
+      "comparisons": {
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 3,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "variant": "channel",
+      "n": 40,
+      "correct": 1,
+      "macro_recall": 0.01020408163265306,
+      "comparisons": {
+        "direct": {
+          "repairs": 0,
+          "harms": 19
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 20
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 320,
+    "input_tokens": 587780,
+    "scored_target_tokens": 39530,
+    "output_tokens": 320
+  },
+  "runtime": {
+    "status": "complete",
+    "method": "M4",
+    "gpu": 3,
+    "pid": 3324664,
+    "completed_calls": 320,
+    "initialization_seconds": 17.22737145423889,
+    "elapsed_seconds": 178.02420091629028
+  }
+}

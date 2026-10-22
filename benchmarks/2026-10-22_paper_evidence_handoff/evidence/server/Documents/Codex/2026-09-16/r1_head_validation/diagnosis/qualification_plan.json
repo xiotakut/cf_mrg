@@ -1,0 +1,89 @@
+{
+  "status": "candidate_scope_frozen_before_case_review_and_model_predictions",
+  "frozen_date": "2026-09-16",
+  "summaries": {
+    "test": {
+      "source_rows": 305,
+      "strict_compatible_rows": 17,
+      "strict_compatible_case_groups": 8,
+      "unexposed_candidate_case_groups": 8,
+      "class_counts": {
+        "Anemia": 3,
+        "Tuberculosis": 1,
+        "Bronchiolitis": 1,
+        "Stable angina": 1,
+        "SLE": 1,
+        "Panic attack": 1
+      }
+    },
+    "train": {
+      "source_rows": 2773,
+      "strict_compatible_rows": 97,
+      "strict_compatible_case_groups": 57,
+      "unexposed_candidate_case_groups": 56,
+      "class_counts": {
+        "Bronchitis": 1,
+        "Pneumonia": 9,
+        "Guillain-Barré syndrome": 2,
+        "Pulmonary embolism": 4,
+        "Anemia": 13,
+        "Stable angina": 2,
+        "Tuberculosis": 6,
+        "Anaphylaxis": 4,
+        "Pericarditis": 5,
+        "SLE": 2,
+        "Bronchiectasis": 1,
+        "Atrial fibrillation": 2,
+        "Cluster headache": 1,
+        "Spontaneous pneumothorax": 1,
+        "Myasthenia gravis": 2,
+        "Bronchiolitis": 1
+      }
+    }
+  },
+  "previous_review_train_rows": [
+    552,
+    1127,
+    548,
+    1822,
+    92,
+    2189,
+    1605,
+    702,
+    2429,
+    867,
+    215,
+    333,
+    602,
+    834,
+    1064,
+    1375
+  ],
+  "conservative_initial_exposure_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "previous_exposure_case_groups": 20,
+  "excluded_case_groups": [
+    {
+      "split": "train",
+      "compatible_rows": [
+        91,
+        92,
+        93
+      ],
+      "reason": "same initial case context as previous development exposure"
+    }
+  ],
+  "selection": "All whole-string exact public49-compatible groups; exclude prior audited initial-case groups; choose longest native context per group, with largest original row index as tie-break. Test and train reported separately; no score selection or replacement.",
+  "semantic_review": "Read complete chosen native input. Require distinct earlier content and a newly presented finding that materially increases support for current native target. No requirement that diagnosis name change or earlier Imp be present. Exclude merely repeated diagnosis, direct target disclosure, wrong native granularity/label, or overlap with already exposed source question.",
+  "inference": "Preserve complete native Text as user content, including all previous impressions and reasoning. Current gt_diagnosis never enters inference. answer_format=diagnosis with fixed49 public catalog; no native choice removal or substituted diagnoses.",
+  "scope_limit": "Natural stepwise diagnostic updates, not author-provided counterfactual pairs; dataset train refers to author split and was not used to train our head; no claim of absence from base-model pretraining."
+}

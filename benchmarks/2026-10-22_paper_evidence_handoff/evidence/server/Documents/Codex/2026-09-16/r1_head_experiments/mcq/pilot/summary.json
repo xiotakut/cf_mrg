@@ -1,0 +1,272 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "ALL",
+      "n": 24,
+      "correct": 14,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M11",
+      "n": 7,
+      "correct": 6,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M12",
+      "n": 16,
+      "correct": 8,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "ALL",
+      "n": 24,
+      "correct": 13,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 3
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "M11",
+      "n": 7,
+      "correct": 3,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "review": "task_scope",
+      "source": "M12",
+      "n": 16,
+      "correct": 10,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "ALL",
+      "n": 24,
+      "correct": 12,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M11",
+      "n": 7,
+      "correct": 4,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M12",
+      "n": 16,
+      "correct": 8,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "ALL",
+      "n": 24,
+      "correct": 12,
+      "baseline_correct": 12,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "M11",
+      "n": 7,
+      "correct": 4,
+      "baseline_correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "task_scope",
+      "source": "M12",
+      "n": 16,
+      "correct": 8,
+      "baseline_correct": 8,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 48,
+      "reused_calls": 0,
+      "total_input_tokens": 141800,
+      "total_output_tokens": 14013,
+      "length_stops": 0,
+      "runtime": [
+        {
+          "status": "complete",
+          "gpu": 3,
+          "pid": 621527,
+          "started_at": 1789535756.0792272,
+          "total": 48,
+          "initialization_seconds": 134.26605892181396,
+          "completed": 48,
+          "elapsed_seconds": 366.34467697143555,
+          "last_batch_seconds": 24.238252639770508,
+          "completed_at": 1789536122.4241211
+        }
+      ],
+      "initialization_failures": [
+        {
+          "status": "failed_before_model_loading",
+          "reason": "Independent MedRAG .venv lacks vllm; use shared MedRGAG .venv runtime",
+          "new_model_calls": 0
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "new_calls": 48,
+      "reused_calls": 0,
+      "total_input_tokens": 129292,
+      "total_output_tokens": 10251,
+      "length_stops": 0,
+      "runtime": [
+        {
+          "status": "complete",
+          "gpu": 3,
+          "pid": 639317,
+          "started_at": 1789536640.9376273,
+          "total": 48,
+          "initialization_seconds": 74.9221122264862,
+          "completed": 48,
+          "elapsed_seconds": 166.914959192276,
+          "last_batch_seconds": 9.850627660751343,
+          "completed_at": 1789536807.852764
+        }
+      ],
+      "initialization_failures": [
+        {
+          "status": "failed_during_initialization",
+          "reason": "Another user EngineCore PID 623348 acquired 35226 MiB; GPU3 free only 3054 MiB before MCQ KV/graph allocation. Stop only MCQ parent/child per root coordination.",
+          "parent_pid": 629937,
+          "child_pid": 630481,
+          "new_model_calls": 0,
+          "previous_runtime": {
+            "status": "loading",
+            "gpu": 3,
+            "pid": 629937,
+            "started_at": 1789536152.9050627,
+            "total": 48
+          },
+          "error": "ValueError: No available memory for the cache blocks",
+          "exit_code": 1,
+          "termination_attempt": "Both own PIDs had already exited; no signal delivered to a live process",
+          "log": "resource_failure.log",
+          "observed_exited_at": 1789536361.5362036,
+          "elapsed_until_observed_exit_seconds": 208.6311411857605
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "method": "M4",
+      "n": 24,
+      "scope_repairs_vs_redo": 4,
+      "scope_harms_vs_redo": 5
+    },
+    {
+      "method": "M5",
+      "n": 24,
+      "scope_repairs_vs_redo": 0,
+      "scope_harms_vs_redo": 0
+    }
+  ],
+  "new_calls": 96,
+  "reused_calls": 0
+}

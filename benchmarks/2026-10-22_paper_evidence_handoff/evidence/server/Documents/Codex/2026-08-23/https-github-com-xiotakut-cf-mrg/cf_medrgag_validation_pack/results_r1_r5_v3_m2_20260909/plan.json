@@ -1,0 +1,50 @@
+{
+  "status": "frozen",
+  "prepared_at": "2026-09-09T16:53:40.350882+08:00",
+  "benchmark": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/benchmark_r1_r5_text_auto_cpv_v3_exclusive_20260909",
+  "benchmark_version": "v3_20260909_exclusive_text_auto_cpv",
+  "methods": [
+    "M2"
+  ],
+  "unique_inputs": 4872,
+  "units": 3105,
+  "category_counts": {
+    "R3": 324,
+    "R1": 1601,
+    "R2": 77,
+    "R4": 13,
+    "R5": 1090
+  },
+  "evaluation_records": 6030,
+  "reused_M2_predictions": 4720,
+  "new_M2_inputs": 152,
+  "new_LLM_stage_calls": 1976,
+  "generated_candidates": 760,
+  "initial_documents": 5,
+  "new_initial_retrieval_calls": 0,
+  "reused_initial_retrievals": 152,
+  "historical_M2_run": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test",
+  "historical_stage_audit": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/artifact_audit.json",
+  "model_config": "config.json",
+  "inference_input_file": "screening_items.jsonl",
+  "scheduling_only_file": "evaluation_labels.jsonl",
+  "methods_for_comparison": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "comparison_controls": "unchanged saved v3 M0/M1 predictions and scores",
+  "gpu_allocation": {
+    "worker-0": 1,
+    "worker-1": 2
+  },
+  "batch_size": 64,
+  "chunk_size": 64,
+  "estimated_minutes": [
+    10,
+    30
+  ],
+  "supplemental_runs": [],
+  "judge_calls": 0,
+  "scoring": "existing native scorer; invalid counts wrong; role != reference for unit scores"
+}

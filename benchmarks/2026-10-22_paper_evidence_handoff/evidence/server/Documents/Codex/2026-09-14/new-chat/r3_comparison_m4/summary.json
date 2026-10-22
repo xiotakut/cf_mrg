@@ -1,0 +1,235 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "all",
+      "n": 146,
+      "correct": 39,
+      "unmapped": 88,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M01",
+      "n": 128,
+      "correct": 30,
+      "unmapped": 88,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 2,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain",
+      "scope": "all",
+      "n": 146,
+      "correct": 31,
+      "unmapped": 94,
+      "format_invalid": 0,
+      "repairs": 10,
+      "harms": 18
+    },
+    {
+      "method": "plain",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 94,
+      "format_invalid": 0,
+      "repairs": 9,
+      "harms": 15
+    },
+    {
+      "method": "plain",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "plain",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "contrastive",
+      "scope": "all",
+      "n": 146,
+      "correct": 28,
+      "unmapped": 101,
+      "format_invalid": 1,
+      "repairs": 5,
+      "harms": 16
+    },
+    {
+      "method": "contrastive",
+      "scope": "M01",
+      "n": 128,
+      "correct": 19,
+      "unmapped": 101,
+      "format_invalid": 1,
+      "repairs": 2,
+      "harms": 13
+    },
+    {
+      "method": "contrastive",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "contrastive",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "plain_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 33,
+      "unmapped": 92,
+      "format_invalid": 0,
+      "repairs": 12,
+      "harms": 18
+    },
+    {
+      "method": "plain_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 26,
+      "unmapped": 92,
+      "format_invalid": 0,
+      "repairs": 11,
+      "harms": 15
+    },
+    {
+      "method": "plain_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "plain_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 31,
+      "unmapped": 98,
+      "format_invalid": 1,
+      "repairs": 8,
+      "harms": 16
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 22,
+      "unmapped": 98,
+      "format_invalid": 1,
+      "repairs": 5,
+      "harms": 13
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 8,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    }
+  ],
+  "costs": [
+    {
+      "variant": "plain",
+      "calls": 146,
+      "input_tokens": 392739,
+      "output_tokens": 37514,
+      "length_stops": 0
+    },
+    {
+      "variant": "contrastive",
+      "calls": 146,
+      "input_tokens": 420333,
+      "output_tokens": 52228,
+      "length_stops": 0
+    }
+  ],
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2507866,
+      "started_at": 1789381935.650771,
+      "total": 292,
+      "initialization_seconds": 250.5002679824829,
+      "completed": 292,
+      "elapsed_seconds": 1014.7901384830475,
+      "last_batch_seconds": 13.406333923339844,
+      "completed_at": 1789382950.441115
+    }
+  ]
+}

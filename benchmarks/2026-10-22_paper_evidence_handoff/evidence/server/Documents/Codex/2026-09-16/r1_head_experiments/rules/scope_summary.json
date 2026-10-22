@@ -1,0 +1,1061 @@
+{
+  "status": "offline_complete_development",
+  "trigger": "last current question contains add to ... current regimen",
+  "scanned": 96,
+  "triggered": 9,
+  "newly_passthrough": 8,
+  "new_model_calls": 0,
+  "rules_unchanged": true,
+  "results": [
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 38,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 18,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 66,
+      "invalid": 0,
+      "repairs": 29,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 46,
+      "invalid": 0,
+      "repairs": 29,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 20,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 65,
+      "invalid": 0,
+      "repairs": 28,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 45,
+      "invalid": 0,
+      "repairs": 28,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 35,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 1
+    },
+    {
+      "method": "M0",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 34,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 19,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 16,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 58,
+      "invalid": 0,
+      "repairs": 26,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 26,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 58,
+      "invalid": 0,
+      "repairs": 25,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 25,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 18,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 50,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 29,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 60,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 35,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 3
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 61,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 2
+    },
+    {
+      "method": "M3",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 44,
+      "invalid": 0,
+      "repairs": 13,
+      "harms": 2
+    },
+    {
+      "method": "M3",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 9,
+      "harms": 2
+    },
+    {
+      "method": "M3",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 29,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 14,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 58,
+      "invalid": 1,
+      "repairs": 31,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 46,
+      "invalid": 0,
+      "repairs": 31,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 24,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 57,
+      "invalid": 1,
+      "repairs": 30,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 45,
+      "invalid": 0,
+      "repairs": 30,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 35,
+      "invalid": 0,
+      "repairs": 23,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 33,
+      "invalid": 11,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 15,
+      "invalid": 8,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 13,
+      "invalid": 8,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 57,
+      "invalid": 11,
+      "repairs": 27,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 39,
+      "invalid": 8,
+      "repairs": 27,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 29,
+      "invalid": 8,
+      "repairs": 19,
+      "harms": 3
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 56,
+      "invalid": 11,
+      "repairs": 25,
+      "harms": 2
+    },
+    {
+      "method": "M5",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 38,
+      "invalid": 8,
+      "repairs": 25,
+      "harms": 2
+    },
+    {
+      "method": "M5",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 28,
+      "invalid": 8,
+      "repairs": 17,
+      "harms": 2
+    },
+    {
+      "method": "M5",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 32,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 14,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 13,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 62,
+      "invalid": 0,
+      "repairs": 32,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 44,
+      "invalid": 0,
+      "repairs": 32,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 34,
+      "invalid": 0,
+      "repairs": 23,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 61,
+      "invalid": 0,
+      "repairs": 31,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 43,
+      "invalid": 0,
+      "repairs": 31,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 33,
+      "invalid": 0,
+      "repairs": 22,
+      "harms": 2
+    },
+    {
+      "method": "M6",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "all96",
+      "n": 96,
+      "correct": 38,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 21,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 18,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 2,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "all96",
+      "n": 96,
+      "correct": 56,
+      "invalid": 4,
+      "repairs": 19,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 39,
+      "invalid": 4,
+      "repairs": 19,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 31,
+      "invalid": 4,
+      "repairs": 14,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 3,
+      "invalid": 2,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 3,
+      "invalid": 2,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program_scoped",
+      "group": "all96",
+      "n": 96,
+      "correct": 55,
+      "invalid": 4,
+      "repairs": 18,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program_scoped",
+      "group": "old_covered72",
+      "n": 72,
+      "correct": 38,
+      "invalid": 4,
+      "repairs": 18,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program_scoped",
+      "group": "new_covered62",
+      "n": 62,
+      "correct": 30,
+      "invalid": 4,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "program_scoped",
+      "group": "triggered9",
+      "n": 9,
+      "correct": 2,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "program_scoped",
+      "group": "triggered_eligible8",
+      "n": 8,
+      "correct": 2,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    }
+  ]
+}

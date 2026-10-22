@@ -1,0 +1,405 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 33,
+      "invalid": 11,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 31,
+      "invalid": 9,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "active",
+      "n": 55,
+      "correct": 23,
+      "invalid": 7,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 10,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 18,
+      "invalid": 9,
+      "repairs": 1,
+      "harms": 16
+    },
+    {
+      "method": "llm_rules",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 16,
+      "invalid": 8,
+      "repairs": 1,
+      "harms": 16
+    },
+    {
+      "method": "llm_rules",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "active",
+      "n": 55,
+      "correct": 8,
+      "invalid": 5,
+      "repairs": 1,
+      "harms": 16
+    },
+    {
+      "method": "llm_rules",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 10,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 40,
+      "invalid": 10,
+      "repairs": 9,
+      "harms": 2
+    },
+    {
+      "method": "program",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 34,
+      "invalid": 9,
+      "repairs": 5,
+      "harms": 2
+    },
+    {
+      "method": "program",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 1,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "program",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program",
+      "scope": "active",
+      "n": 55,
+      "correct": 30,
+      "invalid": 6,
+      "repairs": 9,
+      "harms": 2
+    },
+    {
+      "method": "program",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 10,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 40,
+      "invalid": 10,
+      "repairs": 8,
+      "harms": 1
+    },
+    {
+      "method": "program_strict",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 35,
+      "invalid": 9,
+      "repairs": 5,
+      "harms": 1
+    },
+    {
+      "method": "program_strict",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 1,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "active",
+      "n": 55,
+      "correct": 30,
+      "invalid": 6,
+      "repairs": 8,
+      "harms": 1
+    },
+    {
+      "method": "program_strict",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 10,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_addonly",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 35,
+      "invalid": 10,
+      "repairs": 4,
+      "harms": 2
+    },
+    {
+      "method": "program_addonly",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 29,
+      "invalid": 9,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "program_addonly",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 1,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "program_addonly",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_addonly",
+      "scope": "active",
+      "n": 55,
+      "correct": 25,
+      "invalid": 6,
+      "repairs": 4,
+      "harms": 2
+    },
+    {
+      "method": "program_addonly",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 10,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_only",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 4,
+      "invalid": 72,
+      "repairs": 2,
+      "harms": 31
+    },
+    {
+      "method": "program_only",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 3,
+      "invalid": 62,
+      "repairs": 1,
+      "harms": 29
+    },
+    {
+      "method": "program_only",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 1,
+      "invalid": 6,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "program_only",
+      "scope": "M14",
+      "n": 4,
+      "correct": 0,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "program_only",
+      "scope": "active",
+      "n": 55,
+      "correct": 4,
+      "invalid": 48,
+      "repairs": 2,
+      "harms": 21
+    },
+    {
+      "method": "program_only",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 0,
+      "invalid": 24,
+      "repairs": 0,
+      "harms": 10
+    }
+  ],
+  "costs": [
+    {
+      "variant": "facts",
+      "calls": 55,
+      "input_tokens": 29517,
+      "output_tokens": 15386,
+      "length_stops": 0
+    },
+    {
+      "variant": "llm_rules",
+      "calls": 55,
+      "input_tokens": 100374,
+      "output_tokens": 18181,
+      "length_stops": 0
+    }
+  ],
+  "baseline_parity": 79,
+  "diagnostics": {
+    "fact_parse_failures": 0,
+    "quote_rejections": 105,
+    "option_states": {
+      "CONTRADICTED": 68,
+      "UNKNOWN": 129,
+      "MET": 23
+    }
+  },
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2410527,
+      "started_at": 1789369329.7832723,
+      "total": 28,
+      "initialization_seconds": 60.6324028968811,
+      "completed": 28,
+      "elapsed_seconds": 92.04573440551758,
+      "last_batch_seconds": 6.39919638633728,
+      "completed_at": 1789369421.8291771
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2410528,
+      "started_at": 1789369329.8900635,
+      "total": 28,
+      "initialization_seconds": 59.719491958618164,
+      "completed": 28,
+      "elapsed_seconds": 91.1323573589325,
+      "last_batch_seconds": 8.730769395828247,
+      "completed_at": 1789369421.0225666
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2410529,
+      "started_at": 1789369329.8166616,
+      "total": 28,
+      "initialization_seconds": 60.61702060699463,
+      "completed": 28,
+      "elapsed_seconds": 93.12951016426086,
+      "last_batch_seconds": 4.041247367858887,
+      "completed_at": 1789369422.946383
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2410530,
+      "started_at": 1789369329.8358443,
+      "total": 26,
+      "initialization_seconds": 59.786749601364136,
+      "completed": 26,
+      "elapsed_seconds": 87.3105616569519,
+      "last_batch_seconds": 3.840113878250122,
+      "completed_at": 1789369417.146562
+    }
+  ]
+}

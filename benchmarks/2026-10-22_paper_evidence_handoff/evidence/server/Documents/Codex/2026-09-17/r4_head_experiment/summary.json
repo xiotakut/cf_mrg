@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "arm": "redo",
+      "n": 13,
+      "original_correct": 7,
+      "author_agreement": 7,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 2,
+      "vs_redo_repairs": 0,
+      "vs_redo_harms": 0,
+      "predictions": {
+        "yes": 12,
+        "no": 1
+      },
+      "reversed_formal_agreement": 7,
+      "reversed_invalid": 0,
+      "polarity_opposed_pairs": 7,
+      "both_formal_correct": 4
+    },
+    {
+      "method": "M4",
+      "arm": "consequence",
+      "n": 13,
+      "original_correct": 7,
+      "author_agreement": 8,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 3,
+      "vs_redo_repairs": 4,
+      "vs_redo_harms": 3,
+      "predictions": {
+        "yes": 7,
+        "no": 6
+      },
+      "reversed_formal_agreement": 7,
+      "reversed_invalid": 0,
+      "polarity_opposed_pairs": 4,
+      "both_formal_correct": 3
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "n": 13,
+      "original_correct": 7,
+      "author_agreement": 4,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 4,
+      "vs_redo_repairs": 0,
+      "vs_redo_harms": 0,
+      "predictions": {
+        "no": 6,
+        "yes": 7
+      },
+      "reversed_formal_agreement": 7,
+      "reversed_invalid": 0,
+      "polarity_opposed_pairs": 8,
+      "both_formal_correct": 3
+    },
+    {
+      "method": "M5",
+      "arm": "consequence",
+      "n": 13,
+      "original_correct": 7,
+      "author_agreement": 4,
+      "invalid": 1,
+      "repairs": 1,
+      "harms": 4,
+      "vs_redo_repairs": 3,
+      "vs_redo_harms": 3,
+      "predictions": {
+        "no": 9,
+        "yes": 3,
+        "None": 1
+      },
+      "reversed_formal_agreement": 7,
+      "reversed_invalid": 2,
+      "polarity_opposed_pairs": 2,
+      "both_formal_correct": 1
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 52,
+      "input_tokens": 139288,
+      "output_tokens": 11889,
+      "length_stops": 0,
+      "worker_seconds": 164.8846881389618,
+      "initialization_seconds": 102.11567401885986
+    },
+    {
+      "method": "M5",
+      "calls": 52,
+      "input_tokens": 127744,
+      "output_tokens": 13734,
+      "length_stops": 0,
+      "worker_seconds": 184.94108819961548,
+      "initialization_seconds": 102.97230434417725
+    }
+  ],
+  "new_completed_calls": 104,
+  "interpretation": "Original author-answer agreement and polarity diagnostics only; source labels not clinically validated."
+}

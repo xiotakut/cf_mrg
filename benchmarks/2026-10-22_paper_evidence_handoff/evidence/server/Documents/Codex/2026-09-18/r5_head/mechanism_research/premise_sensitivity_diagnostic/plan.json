@@ -1,0 +1,53 @@
+{
+  "frozen_at": "2026-09-18 17:20:26 +0800",
+  "status": "planned; no diagnostic features or predictions",
+  "dataset": "16 fictional controlled-experiment families, 64 inputs; separate from natural D",
+  "source": "Manually authored before any new U/V J score was read; root reviewed complete text before freezing",
+  "arms": [
+    "u_ph",
+    "u_h_only",
+    "v2_residual"
+  ],
+  "selection": "All three heads selected only on author internal val; no diagnostic fitting, threshold selection, head selection or text revision from scores",
+  "interface": {
+    "worker": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+    "batch_size": 1,
+    "sequences_per_backbone": 128,
+    "forward_batches_per_backbone": 128,
+    "views": [
+      "ph",
+      "h_only"
+    ],
+    "deduplicate": false,
+    "truncation": false,
+    "add_special_tokens": true,
+    "chat_template": false,
+    "representation": "Original frozen backbone final nonpadding token, 4096 dimensions, bf16/SDPA as U",
+    "rendering": {
+      "ph": "Premise:\n{P}\nHypothesis:\n{H}",
+      "h_only": "Hypothesis:\n{H}"
+    },
+    "config": "Byte-for-byte U config copy; HF worker batch size fixed by CLI, historical generation settings unused"
+  },
+  "inference": {
+    "threshold": "margin >= 0 means positive",
+    "u_ph": "((PH-hidden - ph_mean) / ph_scale) @ ph_coef + ph_intercept",
+    "u_h_only": "((H-hidden - h_only_mean) / h_only_scale) @ h_only_coef + h_only_intercept",
+    "v2_residual": "((PH-hidden - mean) / scale) @ coef + intercept; NO frozen H offset at inference"
+  },
+  "head_manifest": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/hypothesis_residual_pilot/joint_heads_freeze.json",
+  "evaluation_gate": "Require completed U/V independent review and joint manifest with both backbone head hashes before any scoring",
+  "reports": [
+    "64 endpoints correct and positive/negative strata",
+    "32 R5 invariance pairs: both correct and decision consistency",
+    "32 fixed-H changed-P strong pairs: both correct and changed decision",
+    "16 families: all four endpoints correct",
+    "32 clean-to-noise pairs: repairs, harms, decision changes",
+    "H-only same-H four-end decision equality and strong-both=0 mathematical control",
+    "Per-family records and paired U-PH/U-H-only/V2 comparisons; all original denominators"
+  ],
+  "failures": "Do not silently drop or fabricate missing/nonfinite predictions; preserve failure and refuse incomplete score tables",
+  "limitations": "Mechanism diagnosis only; no old-combination strong baseline, no new original-format generation, no clinical generalization or algorithm novelty claim",
+  "new_generations": 0,
+  "D_access": false
+}

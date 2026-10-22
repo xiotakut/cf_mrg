@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-09-18 16:43:19 +0800",
+  "status": "planned; no features or training yet",
+  "source": "Author balanced train CSV, SHA256 41a144a904c3080a1683425b7dccee9815b17cf8a6a317b397bab9abbee64ca0; 5544 rows. No author dev/test supervision.",
+  "model": "Both original 8B backbones frozen; final nonpad hidden vector of literal raw text, no LM logits or temporary code residual.",
+  "views": {
+    "ph": "Premise:\n{P}\nHypothesis:\n{H}",
+    "h_only": "Hypothesis:\n{H}"
+  },
+  "input": "P=supp_set and H=conclusion verbatim; preserve entity markers; no ori_conclusion, PMID, label or mutation type in text; add_special_tokens=True, no chat template, no truncation.",
+  "split": {
+    "seed": 20260918,
+    "fraction_validation": 0.2,
+    "unit": "Connected components under same PMID OR normalized complete premise OR normalized complete hypothesis. P normalization casefold+whitespace+terminal periods; H casefold+whitespace only.",
+    "stratification": "sklearn 1.7.2 train_test_split on components, stratify by sorted set of author label_cat within component; no model score enters split.",
+    "update": "Original P+PMID plan expanded before split to include duplicate H to prevent H-only same-text leakage; actual two duplicate-H groups already share P, so component count stays 5542."
+  },
+  "training": {
+    "classifier": "sklearn.linear_model.LogisticRegression",
+    "penalty": "l2",
+    "C": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "tol": 1e-06,
+    "fit_intercept": true,
+    "class_weight": null,
+    "standardization": "Separate per view/backbone StandardScaler fit on internal train rows only; reuse training mean/scale for validation and future J. Zero-variance scale=1 per sklearn.",
+    "selection": "Lowest stable validation NLL over converged grid fits; exact tie smaller C. No retraining on train+val after selection; fixed selected trained model remains.",
+    "label_map": "pos->1 (positive), every other supplied author mutation type->0 (negative)",
+    "threshold": "margin>=0, equivalently p(positive)>=0.5, selects positive. No threshold tuning.",
+    "loss": "Ordinary unweighted binary cross entropy with sklearn L2 inverse strength C; no paired consistency or new robust loss.",
+    "threads": 1
+  },
+  "reports": [
+    "internal train/val stable NLL, accuracy, balanced accuracy, confusion, per mutation type",
+    "convergence warning/iteration count and all three grid fits",
+    "training-only scaler and source/feature hashes",
+    "P/H vs H-only same split and selection rule"
+  ],
+  "J": "112 inputs may have features extracted now; no J label or correctness used for fitting or selection. J score reporting deferred to next step.",
+  "D": "No D feature extraction, training or output access.",
+  "controls": "P/H and H-only, plus later unchanged full K/old combined/task-scope untrained comparisons on J. Better than H-only is necessary to support P-use, not sufficient for broad causal reasoning.",
+  "limits": "This is supervised linear probing/adaptation of original frozen representations, not an original learning algorithm or exact reproduction of author PubMedBERT/BioLinkBERT fine-tuning. Prior dev overlap and negative experiments retained."
+}

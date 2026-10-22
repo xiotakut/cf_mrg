@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "patient_id": "adult#001",
+  "unique_patients_simulated": 1,
+  "integrations": 3,
+  "integration_steps": 360,
+  "held_out_patients_simulated": 0,
+  "checks": {
+    "factual and intervention share initial full and auxiliary state": true,
+    "identical action duplicate factual trajectory is identical": true,
+    "identical CHO announcements and consumed meal amounts": true,
+    "integrated insulin differs by exactly baseline dose": true,
+    "solver successful and all states/readouts finite": true
+  },
+  "identical_action_repeat": "exactly identical all states/actions",
+  "factual_total_insulin_U": 2.53472099999104,
+  "intervention_total_insulin_U": 5.06944199998208,
+  "meal_announced_and_consumed_g": 30,
+  "initial_derivative_max_abs": 3.848832363928523e-11,
+  "readouts": [
+    {
+      "t_min": 30,
+      "factual_Gsub_mg_dL": 147.02169065833215,
+      "intervention_Gsub_mg_dL": 147.01142852533164,
+      "delta_Gsub_mg_dL": -0.010262133000509266
+    },
+    {
+      "t_min": 60,
+      "factual_Gsub_mg_dL": 165.38805141141432,
+      "intervention_Gsub_mg_dL": 165.16038805401485,
+      "delta_Gsub_mg_dL": -0.22766335739947863
+    },
+    {
+      "t_min": 120,
+      "factual_Gsub_mg_dL": 173.03064425172647,
+      "intervention_Gsub_mg_dL": 170.02462305929012,
+      "delta_Gsub_mg_dL": -3.00602119243635
+    }
+  ],
+  "python": "/home/data3/txy/MedRGAG/.venv/bin/python",
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3"
+  },
+  "elapsed_seconds": 1.086116018006578
+}

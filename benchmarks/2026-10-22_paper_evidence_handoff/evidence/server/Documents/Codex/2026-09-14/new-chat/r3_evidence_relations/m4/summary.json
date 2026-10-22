@@ -1,0 +1,126 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "common_valid": {
+        "n": 40,
+        "correct": 21
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "uncued4": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "common_valid": {
+        "n": 40,
+        "correct": 18
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 0,
+          "harms": 1
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "count",
+      "n": 40,
+      "correct": 16,
+      "macro_recall": 0.2423469387755102,
+      "common_valid": {
+        "n": 40,
+        "correct": 16
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 0,
+          "harms": 3
+        },
+        "uncued4": {
+          "repairs": 1,
+          "harms": 3
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 6
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "n": 40,
+      "correct": 19,
+      "macro_recall": 0.3163265306122449,
+      "common_valid": {
+        "n": 40,
+        "correct": 19
+      },
+      "comparisons": {
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 3
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 697,
+    "relation_calls": 537,
+    "final_calls": 160,
+    "input_tokens": 1854225,
+    "output_tokens": 13606,
+    "invalid_cases": 0,
+    "length_stops": 0
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 3592220,
+    "gpu": 3,
+    "method": "M4",
+    "finished": [
+      "relations",
+      "final"
+    ],
+    "stage": "final",
+    "elapsed_seconds": 181.32601857185364,
+    "returncode": 0,
+    "recovery_started_at": 1789458636.3283103,
+    "failed_stage_elapsed_seconds": 114.57662320137024,
+    "recovery_elapsed_seconds": 66.74939274787903
+  }
+}

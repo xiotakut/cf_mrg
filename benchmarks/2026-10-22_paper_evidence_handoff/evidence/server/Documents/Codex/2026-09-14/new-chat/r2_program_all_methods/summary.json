@@ -1,0 +1,859 @@
+{
+  "status": "complete",
+  "created_at": "2026-09-14T16:25:23.406516+08:00",
+  "new_model_calls": 0,
+  "scope": "79 exposed native R2 cases",
+  "fact_models": {
+    "M0": "llama",
+    "M2": "llama",
+    "M3": "qwen",
+    "M4": "llama",
+    "M5": "qwen",
+    "M6": "llama",
+    "M7": "qwen"
+  },
+  "diagonal_record_parity": 316,
+  "results": [
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 7,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 27,
+      "invalid": 0,
+      "repairs": 22,
+      "harms": 2
+    },
+    {
+      "method": "M0",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 19,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "M0",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 26,
+      "invalid": 0,
+      "repairs": 21,
+      "harms": 2
+    },
+    {
+      "method": "M0",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 20,
+      "harms": 0
+    },
+    {
+      "method": "M0",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "M0",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 19,
+      "invalid": 0,
+      "repairs": 15,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 14,
+      "invalid": 0,
+      "repairs": 14,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M2",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 20,
+      "invalid": 0,
+      "repairs": 16,
+      "harms": 2
+    },
+    {
+      "method": "M2",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 15,
+      "invalid": 0,
+      "repairs": 15,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "M2",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 27,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 22,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 1,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 41,
+      "invalid": 2,
+      "repairs": 16,
+      "harms": 2
+    },
+    {
+      "method": "M3",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 34,
+      "invalid": 1,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 1,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M3",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 41,
+      "invalid": 2,
+      "repairs": 16,
+      "harms": 2
+    },
+    {
+      "method": "M3",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 35,
+      "invalid": 1,
+      "repairs": 14,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 1,
+      "repairs": 2,
+      "harms": 1
+    },
+    {
+      "method": "M3",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 23,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 17,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 36,
+      "invalid": 3,
+      "repairs": 16,
+      "harms": 3
+    },
+    {
+      "method": "M4",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 29,
+      "invalid": 3,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 3,
+      "repairs": 14,
+      "harms": 3
+    },
+    {
+      "method": "M4",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 29,
+      "invalid": 3,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 33,
+      "invalid": 11,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 31,
+      "invalid": 9,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 0,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 44,
+      "invalid": 10,
+      "repairs": 12,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 36,
+      "invalid": 9,
+      "repairs": 6,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 1,
+      "repairs": 6,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 43,
+      "invalid": 10,
+      "repairs": 11,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 37,
+      "invalid": 9,
+      "repairs": 7,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 1,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 15,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 9,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 36,
+      "invalid": 0,
+      "repairs": 21,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 27,
+      "invalid": 0,
+      "repairs": 18,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 35,
+      "invalid": 0,
+      "repairs": 20,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 28,
+      "invalid": 0,
+      "repairs": 19,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M6",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "all",
+      "n": 79,
+      "correct": 23,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "none",
+      "n": 66,
+      "correct": 16,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "baseline",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "documented",
+      "group": "all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 2,
+      "repairs": 14,
+      "harms": 3
+    },
+    {
+      "method": "M7",
+      "policy": "documented",
+      "group": "none",
+      "n": 66,
+      "correct": 28,
+      "invalid": 2,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "documented",
+      "group": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "M7",
+      "policy": "documented",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M7",
+      "policy": "strict",
+      "group": "all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 2,
+      "repairs": 14,
+      "harms": 3
+    },
+    {
+      "method": "M7",
+      "policy": "strict",
+      "group": "none",
+      "n": 66,
+      "correct": 28,
+      "invalid": 2,
+      "repairs": 13,
+      "harms": 1
+    },
+    {
+      "method": "M7",
+      "policy": "strict",
+      "group": "remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "M7",
+      "policy": "strict",
+      "group": "M14",
+      "n": 4,
+      "correct": 4,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "note": "Fixed same-backbone task-scoped facts reused. Original24 uncovered answers stay unchanged for every method. This is offline attachment; only M4/M5 fact extractors were newly run. No other92 cases or R5 evaluated."
+}

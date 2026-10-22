@@ -1,0 +1,36 @@
+{
+  "result": {
+    "method": "M4",
+    "n": 88,
+    "baseline_correct": 18,
+    "catalog_correct": 35,
+    "correct": 38,
+    "fallbacks": 1,
+    "vs_baseline": {
+      "repairs": 22,
+      "harms": 2
+    },
+    "vs_catalog": {
+      "repairs": 8,
+      "harms": 5
+    }
+  },
+  "costs": {
+    "calls": 88,
+    "input_tokens": 247596,
+    "output_tokens": 10975,
+    "length_stops": 1
+  },
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 2999668,
+    "started_at": 1789422718.4443827,
+    "total": 88,
+    "initialization_seconds": 63.61301136016846,
+    "completed": 88,
+    "elapsed_seconds": 209.85685515403748,
+    "last_batch_seconds": 12.802109479904175,
+    "completed_at": 1789422928.3014016
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T14:30:48.970862+08:00",
+  "original_method": "Original M5 plus focused rule evidence",
+  "inputs": 79,
+  "new_calls": 237,
+  "coverage": 64,
+  "page_counts": {
+    "5": 19,
+    "3": 7,
+    "4": 5,
+    "2": 23,
+    "0": 15,
+    "18": 10
+  },
+  "variants": [
+    "focused_plain",
+    "focused_condition",
+    "independent_condition"
+  ],
+  "note": "Same original M5 weights/documents; source selection uses visible age, question action and disease mentions (including explicit negation). Old draft precedes focused source evidence. Generic vs condition have same evidence/draft; independent_condition removes only the old draft, keeping original M5 messages and exact condition instruction. Whole-table-to-focused comparison also changes source placement; do not isolate a single causal effect from that difference."
+}

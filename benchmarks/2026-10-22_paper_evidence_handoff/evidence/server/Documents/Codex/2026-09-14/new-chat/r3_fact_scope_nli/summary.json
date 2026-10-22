@@ -1,0 +1,230 @@
+{
+  "status": "complete_component_development",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "patient",
+      "mode": "direct",
+      "n": 24,
+      "correct": 19,
+      "errors": 0,
+      "by_label": {
+        "entailment": {
+          "n": 6,
+          "correct": 5
+        },
+        "contradiction": {
+          "n": 7,
+          "correct": 7
+        },
+        "neutral": {
+          "n": 11,
+          "correct": 7
+        }
+      },
+      "macro_recall": 0.8232323232323232
+    },
+    {
+      "method": "M4",
+      "scope": "patient",
+      "mode": "reasoned",
+      "n": 24,
+      "correct": 23,
+      "errors": 0,
+      "by_label": {
+        "entailment": {
+          "n": 6,
+          "correct": 6
+        },
+        "contradiction": {
+          "n": 7,
+          "correct": 6
+        },
+        "neutral": {
+          "n": 11,
+          "correct": 11
+        }
+      },
+      "macro_recall": 0.9523809523809524
+    },
+    {
+      "method": "M4",
+      "scope": "empty",
+      "mode": "direct",
+      "n": 5,
+      "correct": 5,
+      "errors": 0,
+      "by_label": {
+        "neutral": {
+          "n": 5,
+          "correct": 5
+        }
+      },
+      "macro_recall": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "empty",
+      "mode": "reasoned",
+      "n": 5,
+      "correct": 5,
+      "errors": 0,
+      "by_label": {
+        "neutral": {
+          "n": 5,
+          "correct": 5
+        }
+      },
+      "macro_recall": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "patient",
+      "mode": "direct",
+      "n": 24,
+      "correct": 20,
+      "errors": 0,
+      "by_label": {
+        "entailment": {
+          "n": 6,
+          "correct": 5
+        },
+        "contradiction": {
+          "n": 7,
+          "correct": 7
+        },
+        "neutral": {
+          "n": 11,
+          "correct": 8
+        }
+      },
+      "macro_recall": 0.8535353535353535
+    },
+    {
+      "method": "M5",
+      "scope": "patient",
+      "mode": "reasoned",
+      "n": 24,
+      "correct": 23,
+      "errors": 0,
+      "by_label": {
+        "entailment": {
+          "n": 6,
+          "correct": 5
+        },
+        "contradiction": {
+          "n": 7,
+          "correct": 7
+        },
+        "neutral": {
+          "n": 11,
+          "correct": 11
+        }
+      },
+      "macro_recall": 0.9444444444444445
+    },
+    {
+      "method": "M5",
+      "scope": "empty",
+      "mode": "direct",
+      "n": 5,
+      "correct": 5,
+      "errors": 0,
+      "by_label": {
+        "neutral": {
+          "n": 5,
+          "correct": 5
+        }
+      },
+      "macro_recall": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "empty",
+      "mode": "reasoned",
+      "n": 5,
+      "correct": 5,
+      "errors": 0,
+      "by_label": {
+        "neutral": {
+          "n": 5,
+          "correct": 5
+        }
+      },
+      "macro_recall": 1.0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "mode": "direct",
+      "new_calls": 29,
+      "input_tokens": 5118,
+      "output_tokens": 322,
+      "length_stops": 0
+    },
+    {
+      "method": "M4",
+      "mode": "reasoned",
+      "new_calls": 29,
+      "input_tokens": 6800,
+      "output_tokens": 2599,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "mode": "direct",
+      "new_calls": 29,
+      "input_tokens": 4567,
+      "output_tokens": 233,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "mode": "reasoned",
+      "new_calls": 29,
+      "input_tokens": 6249,
+      "output_tokens": 2252,
+      "length_stops": 0
+    }
+  ],
+  "reused_controls": [
+    {
+      "method": "M4",
+      "scope": "all24",
+      "variant": "control",
+      "n": 24,
+      "correct": 17,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M4",
+      "scope": "all24",
+      "variant": "indexed",
+      "n": 24,
+      "correct": 15,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "all24",
+      "variant": "control",
+      "n": 24,
+      "correct": 15,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    },
+    {
+      "method": "M5",
+      "scope": "all24",
+      "variant": "indexed",
+      "n": 24,
+      "correct": 18,
+      "format_errors": 0,
+      "rejected_evidence": 0
+    }
+  ],
+  "control_scope": "Previously measured same24 probes; not fresh inference."
+}

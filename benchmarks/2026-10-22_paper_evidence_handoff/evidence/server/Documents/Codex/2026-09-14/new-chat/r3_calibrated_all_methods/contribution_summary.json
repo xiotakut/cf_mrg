@@ -1,0 +1,268 @@
+{
+  "increments": [
+    {
+      "method": "M0",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 184,
+      "harms": 1,
+      "net": 183
+    },
+    {
+      "method": "M0",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 28,
+      "harms": 13,
+      "net": 15
+    },
+    {
+      "method": "M0",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 21,
+      "harms": 21,
+      "net": 0
+    },
+    {
+      "method": "M2",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 159,
+      "harms": 2,
+      "net": 157
+    },
+    {
+      "method": "M2",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 16,
+      "harms": 11,
+      "net": 5
+    },
+    {
+      "method": "M2",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 6,
+      "harms": 16,
+      "net": -10
+    },
+    {
+      "method": "M3",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 184,
+      "harms": 2,
+      "net": 182
+    },
+    {
+      "method": "M3",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 34,
+      "harms": 49,
+      "net": -15
+    },
+    {
+      "method": "M3",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 18,
+      "harms": 14,
+      "net": 4
+    },
+    {
+      "method": "M4",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 173,
+      "harms": 37,
+      "net": 136
+    },
+    {
+      "method": "M4",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 45,
+      "harms": 25,
+      "net": 20
+    },
+    {
+      "method": "M4",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 18,
+      "harms": 18,
+      "net": 0
+    },
+    {
+      "method": "M5",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 229,
+      "harms": 7,
+      "net": 222
+    },
+    {
+      "method": "M5",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 45,
+      "harms": 25,
+      "net": 20
+    },
+    {
+      "method": "M5",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 22,
+      "harms": 14,
+      "net": 8
+    },
+    {
+      "method": "M6",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 161,
+      "harms": 2,
+      "net": 159
+    },
+    {
+      "method": "M6",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 14,
+      "harms": 22,
+      "net": -8
+    },
+    {
+      "method": "M6",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 12,
+      "harms": 24,
+      "net": -12
+    },
+    {
+      "method": "M7",
+      "previous": "original",
+      "current": "order0",
+      "n": 680,
+      "repairs": 126,
+      "harms": 0,
+      "net": 126
+    },
+    {
+      "method": "M7",
+      "previous": "order0",
+      "current": "uncalibrated_majority",
+      "n": 680,
+      "repairs": 30,
+      "harms": 18,
+      "net": 12
+    },
+    {
+      "method": "M7",
+      "previous": "uncalibrated_majority",
+      "current": "calibrated_majority",
+      "n": 680,
+      "repairs": 4,
+      "harms": 10,
+      "net": -6
+    }
+  ],
+  "seven_method_gaps": [
+    {
+      "variant": "original",
+      "correct": {
+        "M0": 116,
+        "M2": 163,
+        "M3": 33,
+        "M4": 203,
+        "M5": 160,
+        "M6": 137,
+        "M7": 186
+      },
+      "gap_cases": 170,
+      "gap_percentage_points": 25.0
+    },
+    {
+      "variant": "order0",
+      "correct": {
+        "M0": 299,
+        "M2": 320,
+        "M3": 215,
+        "M4": 339,
+        "M5": 382,
+        "M6": 296,
+        "M7": 312
+      },
+      "gap_cases": 167,
+      "gap_percentage_points": 24.558823529411764
+    },
+    {
+      "variant": "uncalibrated_majority",
+      "correct": {
+        "M0": 314,
+        "M2": 325,
+        "M3": 200,
+        "M4": 359,
+        "M5": 402,
+        "M6": 288,
+        "M7": 324
+      },
+      "gap_cases": 202,
+      "gap_percentage_points": 29.705882352941178
+    },
+    {
+      "variant": "calibrated_majority",
+      "correct": {
+        "M0": 314,
+        "M2": 315,
+        "M3": 204,
+        "M4": 359,
+        "M5": 410,
+        "M6": 276,
+        "M7": 318
+      },
+      "gap_cases": 206,
+      "gap_percentage_points": 30.294117647058822
+    }
+  ],
+  "identical_request_m0_m2": {
+    "n": 81,
+    "identical_calibrated_answers": 81,
+    "original_correct": {
+      "M0": 13,
+      "M2": 13
+    },
+    "calibrated_correct": {
+      "M0": 47,
+      "M2": 47
+    }
+  },
+  "new_calls": 18714,
+  "new_input_tokens": 65803542,
+  "new_output_tokens": 18714,
+  "new_model_calls_for_analysis": 0,
+  "scope": "Descriptive680-case development comparison. Order0 combines public catalog, patient repetition and a new terminal score; its gain is not solely CF reasoning."
+}

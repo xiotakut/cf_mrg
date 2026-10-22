@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "started": "2026-09-18 16:11:55 +0800",
+  "pid": 2738990,
+  "gpu": "2",
+  "jobs": [
+    {
+      "method": "M4",
+      "arm": "repeat_rendering",
+      "pid": 2738993,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/entity_view_pilot/m4",
+        "--method",
+        "repeat_rendering",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:11:55 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:14:15 +0800"
+    },
+    {
+      "method": "M4",
+      "arm": "bound_rendering",
+      "pid": 2740686,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/entity_view_pilot/m4",
+        "--method",
+        "bound_rendering",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:14:15 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:16:35 +0800"
+    },
+    {
+      "method": "M5",
+      "arm": "repeat_rendering",
+      "pid": 2742310,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/entity_view_pilot/m5",
+        "--method",
+        "repeat_rendering",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:16:36 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:18:57 +0800"
+    },
+    {
+      "method": "M5",
+      "arm": "bound_rendering",
+      "pid": 2743654,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/entity_view_pilot/m5",
+        "--method",
+        "bound_rendering",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:18:57 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:21:18 +0800"
+    }
+  ],
+  "analysis": [
+    {
+      "method": "M4",
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 16:21:19 +0800"
+}

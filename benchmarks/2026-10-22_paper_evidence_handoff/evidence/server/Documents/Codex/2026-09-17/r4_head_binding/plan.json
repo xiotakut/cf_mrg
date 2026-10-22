@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "at": "2026-09-17 17:15:25 +0800",
+  "arms": [
+    "redo",
+    "scope",
+    "outcome",
+    "scope_outcome"
+  ],
+  "planned_new_calls": 400,
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 200,
+      "max_prompt_tokens": 3500
+    },
+    {
+      "method": "M5",
+      "calls": 200,
+      "max_prompt_tokens": 3403
+    }
+  ],
+  "hypothesis": "Separate patient/source binding and outcome/proposition binding with a 2x2 one-call experiment.",
+  "scope": "13 exposed clinical originals, their 13 modal opposite-outcome probes, and 24 deterministic simulations from3 base worlds/6 intervention worlds.",
+  "controls": "Four fresh calls per input, each original model, actual full context, original schema/decoding, seed42, max2048. Rotate four arms within each batch4 by input index. No old answer appended.",
+  "inference": "Original/native question, documents and choices only. Diagnostics expose their fictional rules. No gold, grouping metadata, expected_event or rationale enters any request.",
+  "interpretation": "Clinical author agreement is not clinical truth; clinical question opposition is diagnostic only. Synthetic rules give exact labels but no clinical generalization. No mechanical answer inversion.",
+  "decision": "One fixed prompt per factor shared across both models. Review original-baseline and fresh-redo repairs/harms and component effects; do not select different arms by item/model or tune on diagnostics.",
+  "previous_artifacts": "/home/data3/txy/Documents/Codex/2026-09-17/r4_head_experiment",
+  "runner": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/relations/experiment.py",
+  "started_at": "2026-09-17T17:18:21.755560+08:00",
+  "actual_scheduling": "M4 then M5 on GPU1; preserve healthy new GPU0 job",
+  "finished_at": "2026-09-17 17:25:41 +0800",
+  "completed_new_calls": 400,
+  "semantic_review_complete": true,
+  "selected_candidate": null,
+  "final_decision": "Combined head not adopted; retain scope-only local rule-diagnostic gains without clinical or cross-method generalization."
+}

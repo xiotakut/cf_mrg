@@ -1,0 +1,222 @@
+{
+  "status": "complete_development",
+  "methods": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.40816326530612246,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "uncued4": {
+              "repairs": 3,
+              "harms": 0
+            },
+            "old": {
+              "repairs": 2,
+              "harms": 1
+            }
+          }
+        },
+        {
+          "variant": "uncued4",
+          "n": 40,
+          "correct": 18,
+          "macro_recall": 0.2959183673469387,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 0,
+              "harms": 3
+            },
+            "uncued4": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "old": {
+              "repairs": 0,
+              "harms": 2
+            }
+          }
+        },
+        {
+          "variant": "old",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.3520408163265306,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 1,
+              "harms": 2
+            },
+            "uncued4": {
+              "repairs": 2,
+              "harms": 0
+            },
+            "old": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "nli",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.336734693877551,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 0,
+              "harms": 1
+            },
+            "uncued4": {
+              "repairs": 2,
+              "harms": 0
+            },
+            "old": {
+              "repairs": 1,
+              "harms": 1
+            }
+          }
+        }
+      ],
+      "diagnostics": {
+        "nli": {
+          "values": {
+            "yes": 151,
+            "unknown": 553
+          },
+          "invalid_cases": 18
+        },
+        "old": {
+          "values": {
+            "yes": 266,
+            "unknown": 850,
+            "no": 164
+          },
+          "invalid_cases": 0
+        }
+      },
+      "cost": {
+        "new_calls": 1528,
+        "input_tokens": 1368535,
+        "output_tokens": 164769,
+        "fact_length_stops": 22
+      }
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "variant": "calibrated",
+          "n": 40,
+          "correct": 24,
+          "macro_recall": 0.4744897959183673,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "uncued4": {
+              "repairs": 4,
+              "harms": 0
+            },
+            "old": {
+              "repairs": 4,
+              "harms": 1
+            }
+          }
+        },
+        {
+          "variant": "uncued4",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.364795918367347,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 0,
+              "harms": 4
+            },
+            "uncued4": {
+              "repairs": 0,
+              "harms": 0
+            },
+            "old": {
+              "repairs": 1,
+              "harms": 2
+            }
+          }
+        },
+        {
+          "variant": "old",
+          "n": 40,
+          "correct": 21,
+          "macro_recall": 0.38010204081632654,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 1,
+              "harms": 4
+            },
+            "uncued4": {
+              "repairs": 2,
+              "harms": 1
+            },
+            "old": {
+              "repairs": 0,
+              "harms": 0
+            }
+          }
+        },
+        {
+          "variant": "nli",
+          "n": 40,
+          "correct": 20,
+          "macro_recall": 0.3137755102040816,
+          "comparisons": {
+            "calibrated": {
+              "repairs": 1,
+              "harms": 5
+            },
+            "uncued4": {
+              "repairs": 1,
+              "harms": 1
+            },
+            "old": {
+              "repairs": 2,
+              "harms": 3
+            }
+          }
+        }
+      ],
+      "diagnostics": {
+        "nli": {
+          "values": {
+            "unknown": 1141,
+            "yes": 135,
+            "no": 4
+          },
+          "invalid_cases": 0
+        },
+        "old": {
+          "values": {
+            "no": 584,
+            "unknown": 525,
+            "yes": 171
+          },
+          "invalid_cases": 0
+        }
+      },
+      "cost": {
+        "new_calls": 1600,
+        "input_tokens": 1473277,
+        "output_tokens": 127907,
+        "fact_length_stops": 0
+      }
+    }
+  ]
+}

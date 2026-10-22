@@ -1,0 +1,41 @@
+{
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "model_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+  "weight_id": "a719d53433877a6eb929eb3c39e73396bd55429eeecac69c11efc9f8b3cb85d6",
+  "tokenizer_id": "0b55dab76c0283472bc3af219f1225195e2e954e37d41e18c28a07d2cd96237b",
+  "dtype": "bfloat16",
+  "engine": "vllm",
+  "seed": 42,
+  "top_p": 1.0,
+  "top_k": 0,
+  "max_length": 131072,
+  "chat_template_kwargs": {},
+  "transport_retries": 2,
+  "retry_backoff_seconds": [
+    1,
+    2
+  ],
+  "gpu_memory_utilization": 0.7,
+  "max_num_seqs": 128,
+  "method": "medgenie",
+  "method_version": "medgenie-llama31-v5-v2",
+  "temperature": 0.9,
+  "generator_sampling": {
+    "temperature": 0.9,
+    "frequency_penalty": 1.95
+  },
+  "reader_sampling": {
+    "temperature": 0.0,
+    "frequency_penalty": 0.0
+  },
+  "budgets": {
+    "contexts": 512,
+    "reader": 2048
+  },
+  "format_repairs": 0,
+  "evidence_protocol": "v5_required_evidence_plus_generated_contexts",
+  "upstream_commit": "6ccff62c19e0a51447263e487efac4521f49259a",
+  "option_focused_contexts": 3,
+  "option_free_contexts": 2,
+  "open_question_contexts": 5
+}

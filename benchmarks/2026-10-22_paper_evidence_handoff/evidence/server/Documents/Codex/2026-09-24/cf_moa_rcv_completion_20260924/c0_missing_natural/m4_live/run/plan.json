@@ -1,0 +1,227 @@
+{
+  "protocol": {
+    "schema_version": "formal_C0_run_v1",
+    "status": "frozen_development_missing_control",
+    "entrypoint": "cf_moa.evaluation.c0_native.run",
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/inference/m4.jsonl",
+        "inputs_sha256": "6829c624f00b0cae5d75d9fd3b547df7c86ee0bf21fd6f4e3d3ee85259e53884",
+        "request_ids": [
+          "n00000",
+          "n00005",
+          "n00019",
+          "n00030"
+        ],
+        "new_requests_required": 4,
+        "original_C0_profile": {
+          "variant": "formal_M4_structured_fix_20260913",
+          "original_native_config": {
+            "method_id": "M4",
+            "method": "medrag_llama31",
+            "paper": "https://arxiv.org/html/2603.03292v1#A4.SS2",
+            "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+            "model_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+            "retriever_name": "BM25+MedCPT",
+            "reranker_path": "models/MedCPT-Cross-Encoder",
+            "corpus_name": "MedCorp",
+            "k": 8,
+            "rrf_k": 100,
+            "max_length": 131072,
+            "context_length": 30000,
+            "seed": 42,
+            "chat_template_kwargs": {},
+            "generation_kwargs": {
+              "do_sample": true,
+              "temperature": 0.7,
+              "top_p": 1.0,
+              "top_k": 0,
+              "max_new_tokens": 2048
+            },
+            "engine": "vllm",
+            "engine_note": "Batched execution; decoding settings retained. Tokens are not claimed equal to Transformers smoke.",
+            "native_task_adapter": "code/run_medrag.py::messages"
+          },
+          "files": [
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/config.json",
+              "sha256": "d141c7c4b2c840132eb0cc04d563955bd6c2df1b009daf7dc6f0910ae1690723"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/worker.py",
+              "sha256": "12978d28a58510f6be21a0df935b5794ff1258088e36be4beebc823172761f5c"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/m4_output_schema.py",
+              "sha256": "2607ebcbff71bea17ef02628eaad4a1905753df2ed6b9ecc723a7305e8aca4c3"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/m4_format_pilot.py",
+              "sha256": "6f75a3474b7ff8c9aadd234308ae1002bc5569743fc2a9b94b02b29e9f81a166"
+            },
+            {
+              "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/analyze_v5.py",
+              "sha256": "a73b49a1a4db91b58d9ee737d49515a07e7287ca351da81d19912b1cd449ecd9"
+            }
+          ]
+        },
+        "engine_kwargs": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "max_model_len": 131072,
+          "seed": 42,
+          "gpu_memory_utilization": 0.9,
+          "max_num_seqs": 128,
+          "max_num_batched_tokens": 16384,
+          "enable_prefix_caching": true,
+          "enable_chunked_prefill": true,
+          "guided_decoding_backend": "xgrammar"
+        },
+        "sampling": {
+          "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+          "dtype": "bfloat16",
+          "seed": 42,
+          "temperature": 0.7,
+          "top_p": 1.0,
+          "top_k": -1,
+          "max_tokens": 2048,
+          "max_model_len": 131072,
+          "guided_json": true,
+          "batch_size": 128,
+          "chat_template_kwargs": {}
+        },
+        "complete_panel_denominator": 52,
+        "existing_C0_responses_to_reuse": 48
+      }
+    },
+    "manifest": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c0_missing_natural/manifest.json",
+      "sha256": "3122f8295396a08af057a79c0d544c2377240eb96a7983d48dc8ef0ad1fac373"
+    },
+    "C0_only": true,
+    "allowed_gpu_ids": [
+      3
+    ],
+    "automatic_queue": false,
+    "helper": {
+      "path": "/home/data3/txy/cf_moa/evaluation/c0_native.py",
+      "sha256": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42"
+    },
+    "do_not_run": [
+      "old48",
+      "oldF",
+      "RCV_C2_C3",
+      "C4",
+      "C5",
+      "grader_before_predictions"
+    ],
+    "method_frozen": true,
+    "scope_identity": "Four preidentified missing C0 rows of exposed natural52 development; old48 reused; not confirmation",
+    "planned_original_C0_requests": 4,
+    "code_sources": {
+      "/home/data3/txy/cf_moa/evaluation/c0_native.py": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42",
+      "/home/data3/txy/cf_moa/evaluation/run_c0_native.py": "6384a6ad012c4d7e4daf755ca2f9932cc7f5dec5900613a0003689fb0b5617ea",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv_batched.py": "db06c973db607a3073cc669cc184ccb26d629abf219f20219ed8f47f659c0a47",
+      "/home/data3/txy/cf_moa/evaluation/run_moa_rcv.py": "c6705757d3a461697a10fa4805c70772beb413e1feefe180a40c2b94e7fcf665",
+      "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "7706d9efe3b8b49f268444c54e0fbd1cf73574eee667fc4c55700dea726966dd",
+      "/home/data3/txy/cf_moa/tools/vllm_backend.py": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13",
+      "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+      "/home/data3/txy/cf_moa/tools/schema_compat.py": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+      "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d"
+    }
+  },
+  "method": "M4",
+  "mode": "formal_C0_live_batched",
+  "profile": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "max_model_len": 131072,
+    "guided_json": true,
+    "batch_size": 128,
+    "chat_template_kwargs": {}
+  },
+  "profile_source": {
+    "variant": "formal_M4_structured_fix_20260913",
+    "original_native_config": {
+      "method_id": "M4",
+      "method": "medrag_llama31",
+      "paper": "https://arxiv.org/html/2603.03292v1#A4.SS2",
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "model_path": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+      "retriever_name": "BM25+MedCPT",
+      "reranker_path": "models/MedCPT-Cross-Encoder",
+      "corpus_name": "MedCorp",
+      "k": 8,
+      "rrf_k": 100,
+      "max_length": 131072,
+      "context_length": 30000,
+      "seed": 42,
+      "chat_template_kwargs": {},
+      "generation_kwargs": {
+        "do_sample": true,
+        "temperature": 0.7,
+        "top_p": 1.0,
+        "top_k": 0,
+        "max_new_tokens": 2048
+      },
+      "engine": "vllm",
+      "engine_note": "Batched execution; decoding settings retained. Tokens are not claimed equal to Transformers smoke.",
+      "native_task_adapter": "code/run_medrag.py::messages"
+    },
+    "files": [
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/config.json",
+        "sha256": "d141c7c4b2c840132eb0cc04d563955bd6c2df1b009daf7dc6f0910ae1690723"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/worker.py",
+        "sha256": "12978d28a58510f6be21a0df935b5794ff1258088e36be4beebc823172761f5c"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/m4_output_schema.py",
+        "sha256": "2607ebcbff71bea17ef02628eaad4a1905753df2ed6b9ecc723a7305e8aca4c3"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/m4_format_pilot.py",
+        "sha256": "6f75a3474b7ff8c9aadd234308ae1002bc5569743fc2a9b94b02b29e9f81a166"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/analyze_v5.py",
+        "sha256": "a73b49a1a4db91b58d9ee737d49515a07e7287ca351da81d19912b1cd449ecd9"
+      }
+    ]
+  },
+  "engine_kwargs": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "max_model_len": 131072,
+    "seed": 42,
+    "gpu_memory_utilization": 0.9,
+    "max_num_seqs": 128,
+    "max_num_batched_tokens": 16384,
+    "enable_prefix_caching": true,
+    "enable_chunked_prefill": true,
+    "guided_decoding_backend": "xgrammar"
+  },
+  "input_hashes": {
+    "n00000": "4be3d0451e5ef53fa1f41347c4122a128919868dc2ce8a846298021fbc111fcf",
+    "n00005": "aa2531eb363a5cf0cfceaa7f355ea35f4fc1db2b7f75728bd6ad9475d297c998",
+    "n00019": "05f5eddf7a5d5ec5e973a7bcdb8372a59fb2245ca8bb09f4a556bbe07ea7b616",
+    "n00030": "f98d723bce80a973a67a7a747302408d19c4881e2326e84509c002ba42510b6d"
+  },
+  "budget": {
+    "max_model_requests": 1,
+    "max_input_tokens": 131072,
+    "max_output_tokens": 2048,
+    "max_tool_calls": 0
+  },
+  "scheduler_source": {
+    "path": "/home/data3/txy/cf_moa/evaluation/run_c0_native.py",
+    "sha256": "6384a6ad012c4d7e4daf755ca2f9932cc7f5dec5900613a0003689fb0b5617ea"
+  }
+}

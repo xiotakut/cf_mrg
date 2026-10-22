@@ -1,0 +1,168 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 26,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "program",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 26,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 20,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "dsl",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "all",
+      "n": 79,
+      "correct": 22,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "none",
+      "n": 66,
+      "correct": 16,
+      "invalid": 3
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "scope": "native",
+      "method": "readable",
+      "subgroup": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "dsl",
+      "calls": 55,
+      "input_tokens": 51249,
+      "output_tokens": 1601,
+      "length_stops": 0
+    },
+    {
+      "variant": "readable",
+      "calls": 55,
+      "input_tokens": 41733,
+      "output_tokens": 1393,
+      "length_stops": 0
+    }
+  ],
+  "parse_errors": {},
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2428392,
+      "started_at": 1789371645.5407617,
+      "total": 28,
+      "initialization_seconds": 77.10451316833496,
+      "completed": 28,
+      "elapsed_seconds": 81.74973106384277,
+      "last_batch_seconds": 0.5671360492706299,
+      "completed_at": 1789371727.2906456
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2428393,
+      "started_at": 1789371645.546263,
+      "total": 28,
+      "initialization_seconds": 77.48802709579468,
+      "completed": 28,
+      "elapsed_seconds": 82.41795778274536,
+      "last_batch_seconds": 0.6221823692321777,
+      "completed_at": 1789371727.9643836
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2428394,
+      "started_at": 1789371645.5751574,
+      "total": 28,
+      "initialization_seconds": 77.44462943077087,
+      "completed": 28,
+      "elapsed_seconds": 82.84322929382324,
+      "last_batch_seconds": 0.5200057029724121,
+      "completed_at": 1789371728.4185474
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2428395,
+      "started_at": 1789371645.5234742,
+      "total": 26,
+      "initialization_seconds": 77.5192039012909,
+      "completed": 26,
+      "elapsed_seconds": 82.51526951789856,
+      "last_batch_seconds": 0.4852159023284912,
+      "completed_at": 1789371728.038908
+    }
+  ]
+}

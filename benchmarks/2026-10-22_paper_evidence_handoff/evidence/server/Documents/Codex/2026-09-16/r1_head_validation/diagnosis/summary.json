@@ -1,0 +1,3271 @@
+{
+  "status": "complete_frozen_validation",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "all",
+      "variant": "native_direct",
+      "n": 47,
+      "correct": 4,
+      "invalid": 42,
+      "macro_recall": 0.15714285714285717,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "variant": "copy_last_impression",
+      "n": 47,
+      "correct": 19,
+      "invalid": 28,
+      "macro_recall": 0.3353741496598639,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 3
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 2
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 4
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 3
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "variant": "order0",
+      "n": 47,
+      "correct": 38,
+      "invalid": 0,
+      "macro_recall": 0.7738095238095237,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 11
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 2
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 7
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "variant": "uncalibrated_majority",
+      "n": 47,
+      "correct": 39,
+      "invalid": 0,
+      "macro_recall": 0.7916666666666666,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 11
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 7
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "variant": "calibrated_majority",
+      "n": 47,
+      "correct": 38,
+      "invalid": 0,
+      "macro_recall": 0.7857142857142857,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 10
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 7
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "variant": "native_direct",
+      "n": 5,
+      "correct": 1,
+      "invalid": 4,
+      "macro_recall": 0.2,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "variant": "copy_last_impression",
+      "n": 5,
+      "correct": 3,
+      "invalid": 2,
+      "macro_recall": 0.6,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "variant": "order0",
+      "n": 5,
+      "correct": 4,
+      "invalid": 0,
+      "macro_recall": 0.8,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "variant": "uncalibrated_majority",
+      "n": 5,
+      "correct": 4,
+      "invalid": 0,
+      "macro_recall": 0.8,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "variant": "calibrated_majority",
+      "n": 5,
+      "correct": 4,
+      "invalid": 0,
+      "macro_recall": 0.8,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "variant": "native_direct",
+      "n": 42,
+      "correct": 3,
+      "invalid": 38,
+      "macro_recall": 0.15384615384615385,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "variant": "copy_last_impression",
+      "n": 42,
+      "correct": 16,
+      "invalid": 26,
+      "macro_recall": 0.33016983016983015,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 3
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "variant": "order0",
+      "n": 42,
+      "correct": 34,
+      "invalid": 0,
+      "macro_recall": 0.75,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 11
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 2
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 7
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "variant": "uncalibrated_majority",
+      "n": 42,
+      "correct": 35,
+      "invalid": 0,
+      "macro_recall": 0.7692307692307693,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 11
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 7
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "variant": "calibrated_majority",
+      "n": 42,
+      "correct": 34,
+      "invalid": 0,
+      "macro_recall": 0.7622377622377623,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 10
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 7
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "variant": "native_direct",
+      "n": 23,
+      "correct": 2,
+      "invalid": 21,
+      "macro_recall": 0.1388888888888889,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "variant": "copy_last_impression",
+      "n": 23,
+      "correct": 19,
+      "invalid": 4,
+      "macro_recall": 0.8018518518518518,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 4
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "variant": "order0",
+      "n": 23,
+      "correct": 22,
+      "invalid": 0,
+      "macro_recall": 0.9629629629629629,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 2
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "variant": "uncalibrated_majority",
+      "n": 23,
+      "correct": 23,
+      "invalid": 0,
+      "macro_recall": 1.0,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "variant": "calibrated_majority",
+      "n": 23,
+      "correct": 23,
+      "invalid": 0,
+      "macro_recall": 1.0,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "variant": "native_direct",
+      "n": 24,
+      "correct": 2,
+      "invalid": 21,
+      "macro_recall": 0.09090909090909091,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "variant": "copy_last_impression",
+      "n": 24,
+      "correct": 0,
+      "invalid": 24,
+      "macro_recall": 0.0,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "variant": "order0",
+      "n": 24,
+      "correct": 16,
+      "invalid": 0,
+      "macro_recall": 0.577922077922078,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 4
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "variant": "uncalibrated_majority",
+      "n": 24,
+      "correct": 16,
+      "invalid": 0,
+      "macro_recall": 0.577922077922078,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 4
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "variant": "calibrated_majority",
+      "n": 24,
+      "correct": 15,
+      "invalid": 0,
+      "macro_recall": 0.564935064935065,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 5
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 4
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "variant": "native_direct",
+      "n": 47,
+      "correct": 20,
+      "invalid": 25,
+      "macro_recall": 0.5156462585034014,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 3
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 4
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "variant": "copy_last_impression",
+      "n": 47,
+      "correct": 19,
+      "invalid": 28,
+      "macro_recall": 0.3353741496598639,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 3
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 2
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 4
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 3
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "variant": "order0",
+      "n": 47,
+      "correct": 39,
+      "invalid": 0,
+      "macro_recall": 0.8171768707482993,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 11
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "variant": "uncalibrated_majority",
+      "n": 47,
+      "correct": 39,
+      "invalid": 0,
+      "macro_recall": 0.8605442176870748,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 11
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "variant": "calibrated_majority",
+      "n": 47,
+      "correct": 39,
+      "invalid": 0,
+      "macro_recall": 0.8605442176870748,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 5,
+          "correct": 5
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 3,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 12,
+          "correct": 11
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "variant": "native_direct",
+      "n": 5,
+      "correct": 2,
+      "invalid": 3,
+      "macro_recall": 0.4,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "variant": "copy_last_impression",
+      "n": 5,
+      "correct": 3,
+      "invalid": 2,
+      "macro_recall": 0.6,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "variant": "order0",
+      "n": 5,
+      "correct": 4,
+      "invalid": 0,
+      "macro_recall": 0.8,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "variant": "uncalibrated_majority",
+      "n": 5,
+      "correct": 4,
+      "invalid": 0,
+      "macro_recall": 0.8,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "variant": "calibrated_majority",
+      "n": 5,
+      "correct": 4,
+      "invalid": 0,
+      "macro_recall": 0.8,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "variant": "native_direct",
+      "n": 42,
+      "correct": 18,
+      "invalid": 22,
+      "macro_recall": 0.47302697302697305,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 0
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "variant": "copy_last_impression",
+      "n": 42,
+      "correct": 16,
+      "invalid": 26,
+      "macro_recall": 0.33016983016983015,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 3
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "variant": "order0",
+      "n": 42,
+      "correct": 35,
+      "invalid": 0,
+      "macro_recall": 0.7967032967032968,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 11
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "variant": "uncalibrated_majority",
+      "n": 42,
+      "correct": 35,
+      "invalid": 0,
+      "macro_recall": 0.8434065934065935,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 11
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "variant": "calibrated_majority",
+      "n": 42,
+      "correct": 35,
+      "invalid": 0,
+      "macro_recall": 0.8434065934065935,
+      "class_results": {
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 11,
+          "correct": 11
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Anaphylaxis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Pneumonia": {
+          "n": 7,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 4,
+          "correct": 1
+        },
+        "SLE": {
+          "n": 2,
+          "correct": 2
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "variant": "native_direct",
+      "n": 23,
+      "correct": 14,
+      "invalid": 9,
+      "macro_recall": 0.6537037037037037,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 0
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 4
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 1
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "variant": "copy_last_impression",
+      "n": 23,
+      "correct": 19,
+      "invalid": 4,
+      "macro_recall": 0.8018518518518518,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 3
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 2
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 4
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "variant": "order0",
+      "n": 23,
+      "correct": 23,
+      "invalid": 0,
+      "macro_recall": 1.0,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "variant": "uncalibrated_majority",
+      "n": 23,
+      "correct": 23,
+      "invalid": 0,
+      "macro_recall": 1.0,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "variant": "calibrated_majority",
+      "n": 23,
+      "correct": 23,
+      "invalid": 0,
+      "macro_recall": 1.0,
+      "class_results": {
+        "Tuberculosis": {
+          "n": 4,
+          "correct": 4
+        },
+        "Stable angina": {
+          "n": 2,
+          "correct": 2
+        },
+        "SLE": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anaphylaxis": {
+          "n": 3,
+          "correct": 3
+        },
+        "Anemia": {
+          "n": 5,
+          "correct": 5
+        },
+        "Pericarditis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 3,
+          "correct": 3
+        },
+        "Bronchiectasis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Myasthenia gravis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "variant": "native_direct",
+      "n": 24,
+      "correct": 6,
+      "invalid": 16,
+      "macro_recall": 0.29545454545454547,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 1
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "variant": "copy_last_impression",
+      "n": 24,
+      "correct": 0,
+      "invalid": 24,
+      "macro_recall": 0.0,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 0
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 0
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 0
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 0
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "variant": "order0",
+      "n": 24,
+      "correct": 16,
+      "invalid": 0,
+      "macro_recall": 0.6006493506493507,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 3
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 0
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 0
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "variant": "uncalibrated_majority",
+      "n": 24,
+      "correct": 16,
+      "invalid": 0,
+      "macro_recall": 0.7142857142857143,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 2
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "variant": "calibrated_majority",
+      "n": 24,
+      "correct": 16,
+      "invalid": 0,
+      "macro_recall": 0.7142857142857143,
+      "class_results": {
+        "Bronchiolitis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Anemia": {
+          "n": 7,
+          "correct": 6
+        },
+        "Guillain-Barré syndrome": {
+          "n": 1,
+          "correct": 1
+        },
+        "Pulmonary embolism": {
+          "n": 2,
+          "correct": 1
+        },
+        "Pneumonia": {
+          "n": 4,
+          "correct": 2
+        },
+        "Atrial fibrillation": {
+          "n": 2,
+          "correct": 2
+        },
+        "Pericarditis": {
+          "n": 3,
+          "correct": 0
+        },
+        "Stable angina": {
+          "n": 1,
+          "correct": 0
+        },
+        "Anaphylaxis": {
+          "n": 1,
+          "correct": 1
+        },
+        "Spontaneous pneumothorax": {
+          "n": 1,
+          "correct": 1
+        },
+        "Tuberculosis": {
+          "n": 1,
+          "correct": 1
+        }
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "method": "M4",
+      "scope": "all",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 47,
+      "repairs": 35,
+      "harms": 1,
+      "net": 34,
+      "paired_exact_p": 1.076841726899147e-09
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 47,
+      "repairs": 2,
+      "harms": 1,
+      "net": 1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 47,
+      "repairs": 0,
+      "harms": 1,
+      "net": -1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 47,
+      "repairs": 34,
+      "harms": 0,
+      "net": 34,
+      "paired_exact_p": 1.1641532182693481e-10
+    },
+    {
+      "method": "M4",
+      "scope": "all",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 47,
+      "repairs": 19,
+      "harms": 0,
+      "net": 19,
+      "paired_exact_p": 3.814697265625e-06
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 5,
+      "repairs": 3,
+      "harms": 0,
+      "net": 3,
+      "paired_exact_p": 0.25
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 5,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 5,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 5,
+      "repairs": 3,
+      "harms": 0,
+      "net": 3,
+      "paired_exact_p": 0.25
+    },
+    {
+      "method": "M4",
+      "scope": "test",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 5,
+      "repairs": 1,
+      "harms": 0,
+      "net": 1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 42,
+      "repairs": 32,
+      "harms": 1,
+      "net": 31,
+      "paired_exact_p": 7.916241884231567e-09
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 42,
+      "repairs": 2,
+      "harms": 1,
+      "net": 1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 42,
+      "repairs": 0,
+      "harms": 1,
+      "net": -1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 42,
+      "repairs": 31,
+      "harms": 0,
+      "net": 31,
+      "paired_exact_p": 9.313225746154785e-10
+    },
+    {
+      "method": "M4",
+      "scope": "train",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 42,
+      "repairs": 18,
+      "harms": 0,
+      "net": 18,
+      "paired_exact_p": 7.62939453125e-06
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 23,
+      "repairs": 20,
+      "harms": 0,
+      "net": 20,
+      "paired_exact_p": 1.9073486328125e-06
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 23,
+      "repairs": 1,
+      "harms": 0,
+      "net": 1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 23,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 23,
+      "repairs": 21,
+      "harms": 0,
+      "net": 21,
+      "paired_exact_p": 9.5367431640625e-07
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_named",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 23,
+      "repairs": 4,
+      "harms": 0,
+      "net": 4,
+      "paired_exact_p": 0.125
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 24,
+      "repairs": 15,
+      "harms": 1,
+      "net": 14,
+      "paired_exact_p": 0.000518798828125
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 24,
+      "repairs": 1,
+      "harms": 1,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 24,
+      "repairs": 0,
+      "harms": 1,
+      "net": -1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 24,
+      "repairs": 13,
+      "harms": 0,
+      "net": 13,
+      "paired_exact_p": 0.000244140625
+    },
+    {
+      "method": "M4",
+      "scope": "prior_target_not_named",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 24,
+      "repairs": 15,
+      "harms": 0,
+      "net": 15,
+      "paired_exact_p": 6.103515625e-05
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 47,
+      "repairs": 20,
+      "harms": 1,
+      "net": 19,
+      "paired_exact_p": 2.09808349609375e-05
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 47,
+      "repairs": 2,
+      "harms": 2,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 47,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 47,
+      "repairs": 21,
+      "harms": 2,
+      "net": 19,
+      "paired_exact_p": 6.604194641113281e-05
+    },
+    {
+      "method": "M5",
+      "scope": "all",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 47,
+      "repairs": 20,
+      "harms": 0,
+      "net": 20,
+      "paired_exact_p": 1.9073486328125e-06
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 5,
+      "repairs": 2,
+      "harms": 0,
+      "net": 2,
+      "paired_exact_p": 0.5
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 5,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 5,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 5,
+      "repairs": 2,
+      "harms": 0,
+      "net": 2,
+      "paired_exact_p": 0.5
+    },
+    {
+      "method": "M5",
+      "scope": "test",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 5,
+      "repairs": 1,
+      "harms": 0,
+      "net": 1,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 42,
+      "repairs": 18,
+      "harms": 1,
+      "net": 17,
+      "paired_exact_p": 7.62939453125e-05
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 42,
+      "repairs": 2,
+      "harms": 2,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 42,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 42,
+      "repairs": 19,
+      "harms": 2,
+      "net": 17,
+      "paired_exact_p": 0.00022125244140625
+    },
+    {
+      "method": "M5",
+      "scope": "train",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 42,
+      "repairs": 19,
+      "harms": 0,
+      "net": 19,
+      "paired_exact_p": 3.814697265625e-06
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 23,
+      "repairs": 9,
+      "harms": 0,
+      "net": 9,
+      "paired_exact_p": 0.00390625
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 23,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 23,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 23,
+      "repairs": 9,
+      "harms": 0,
+      "net": 9,
+      "paired_exact_p": 0.00390625
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_named",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 23,
+      "repairs": 4,
+      "harms": 0,
+      "net": 4,
+      "paired_exact_p": 0.125
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "control": "native_direct",
+      "candidate": "order0",
+      "n": 24,
+      "repairs": 11,
+      "harms": 1,
+      "net": 10,
+      "paired_exact_p": 0.00634765625
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "control": "order0",
+      "candidate": "uncalibrated_majority",
+      "n": 24,
+      "repairs": 2,
+      "harms": 2,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "control": "uncalibrated_majority",
+      "candidate": "calibrated_majority",
+      "n": 24,
+      "repairs": 0,
+      "harms": 0,
+      "net": 0,
+      "paired_exact_p": 1.0
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "control": "native_direct",
+      "candidate": "calibrated_majority",
+      "n": 24,
+      "repairs": 12,
+      "harms": 2,
+      "net": 10,
+      "paired_exact_p": 0.012939453125
+    },
+    {
+      "method": "M5",
+      "scope": "prior_target_not_named",
+      "control": "copy_last_impression",
+      "candidate": "calibrated_majority",
+      "n": 24,
+      "repairs": 16,
+      "harms": 0,
+      "net": 16,
+      "paired_exact_p": 3.0517578125e-05
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 329,
+      "input_tokens": 333773,
+      "output_tokens": 4260,
+      "length_stops": 0,
+      "worker_seconds": 217.28784465789795,
+      "runtimes": {
+        "": {
+          "status": "complete",
+          "method": "M4",
+          "gpu": 0,
+          "pid": 986584,
+          "started_at": 1789551495.0970132,
+          "completed_calls": 282,
+          "initialization_seconds": 18.644034147262573,
+          "elapsed_seconds": 103.1734836101532,
+          "distributions": 282,
+          "missing_code_calls": 0
+        },
+        "direct_": {
+          "status": "complete",
+          "method": "M4",
+          "gpu": 0,
+          "pid": 983723,
+          "started_at": 1789551373.7242782,
+          "completed_calls": 47,
+          "initialization_seconds": 47.411638021469116,
+          "elapsed_seconds": 114.11436104774475
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "new_calls": 329,
+      "input_tokens": 328274,
+      "output_tokens": 8123,
+      "length_stops": 0,
+      "worker_seconds": 219.86430883407593,
+      "runtimes": {
+        "": {
+          "status": "complete",
+          "method": "M5",
+          "gpu": 0,
+          "pid": 992017,
+          "started_at": 1789551742.5893657,
+          "completed_calls": 282,
+          "initialization_seconds": 19.3833065032959,
+          "elapsed_seconds": 89.64437413215637,
+          "distributions": 282,
+          "missing_code_calls": 0
+        },
+        "direct_": {
+          "status": "complete",
+          "method": "M5",
+          "gpu": 0,
+          "pid": 989207,
+          "started_at": 1789551605.1850827,
+          "completed_calls": 47,
+          "initialization_seconds": 30.053287029266357,
+          "elapsed_seconds": 130.21993470191956
+        }
+      }
+    }
+  ],
+  "interface_replay": [
+    {
+      "method": "M4",
+      "cases": 47,
+      "callbacks": 282,
+      "entrypoint": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/frozen_head/r1_head.py",
+      "new_model_calls": 0
+    },
+    {
+      "method": "M5",
+      "cases": 47,
+      "callbacks": 282,
+      "entrypoint": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/frozen_head/r1_head.py",
+      "new_model_calls": 0
+    }
+  ],
+  "prior_new_calls": 0,
+  "scope": "Qualified postfreeze ASCENT cases; compatible catalog subset, limited case overlap review; project canonical-name metric, not official ASCENT semantic F1; frozen old-template priors transferred without refit"
+}

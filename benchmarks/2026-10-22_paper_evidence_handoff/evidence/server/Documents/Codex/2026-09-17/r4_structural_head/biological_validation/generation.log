@@ -1,0 +1,145 @@
+{
+  "generated_utc": "2026-09-17T10:53:46.827063+00:00",
+  "inputs": 144,
+  "scenarios": 72,
+  "models": 3,
+  "full_initial_states": 5,
+  "inputs_by_model": {
+    "tnf": 48,
+    "gastric": 48,
+    "prostate": 48
+  },
+  "labels": {
+    "no": 72,
+    "yes": 72
+  },
+  "scenario_noop_counts": {
+    "initial_noop": 36,
+    "trajectory_noop": 16,
+    "outcome_noop": 60
+  },
+  "distinct_visible_inputs": 120,
+  "duplicate_question_groups": [
+    [
+      "bio_tnf_fadd0_Apoptosis_CASP3_0_affirmative",
+      "bio_tnf_fadd1_Apoptosis_CASP3_0_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_CASP3_0_negative",
+      "bio_tnf_fadd1_Apoptosis_CASP3_0_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_CASP3_1_affirmative",
+      "bio_tnf_fadd1_Apoptosis_CASP3_1_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_CASP3_1_negative",
+      "bio_tnf_fadd1_Apoptosis_CASP3_1_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_XIAP_0_affirmative",
+      "bio_tnf_fadd1_Apoptosis_XIAP_0_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_XIAP_0_negative",
+      "bio_tnf_fadd1_Apoptosis_XIAP_0_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_XIAP_1_affirmative",
+      "bio_tnf_fadd1_Apoptosis_XIAP_1_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Apoptosis_XIAP_1_negative",
+      "bio_tnf_fadd1_Apoptosis_XIAP_1_negative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_BCL2_0_affirmative",
+      "bio_tnf_fadd1_NonACD_BCL2_0_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_BCL2_0_negative",
+      "bio_tnf_fadd1_NonACD_BCL2_0_negative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_BCL2_1_affirmative",
+      "bio_tnf_fadd1_NonACD_BCL2_1_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_BCL2_1_negative",
+      "bio_tnf_fadd1_NonACD_BCL2_1_negative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_MPT_0_affirmative",
+      "bio_tnf_fadd1_NonACD_MPT_0_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_MPT_0_negative",
+      "bio_tnf_fadd1_NonACD_MPT_0_negative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_MPT_1_affirmative",
+      "bio_tnf_fadd1_NonACD_MPT_1_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_NonACD_MPT_1_negative",
+      "bio_tnf_fadd1_NonACD_MPT_1_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_IKK_0_affirmative",
+      "bio_tnf_fadd1_Survival_IKK_0_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_IKK_0_negative",
+      "bio_tnf_fadd1_Survival_IKK_0_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_IKK_1_affirmative",
+      "bio_tnf_fadd1_Survival_IKK_1_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_IKK_1_negative",
+      "bio_tnf_fadd1_Survival_IKK_1_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_XIAP_0_affirmative",
+      "bio_tnf_fadd1_Survival_XIAP_0_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_XIAP_0_negative",
+      "bio_tnf_fadd1_Survival_XIAP_0_negative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_XIAP_1_affirmative",
+      "bio_tnf_fadd1_Survival_XIAP_1_affirmative"
+    ],
+    [
+      "bio_tnf_fadd0_Survival_XIAP_1_negative",
+      "bio_tnf_fadd1_Survival_XIAP_1_negative"
+    ]
+  ],
+  "affirmative_reference_by_model": {
+    "tnf": {
+      "scenarios": 24,
+      "target_on": 6,
+      "outcome_changes": 6
+    },
+    "gastric": {
+      "scenarios": 24,
+      "target_on": 10,
+      "outcome_changes": 2
+    },
+    "prostate": {
+      "scenarios": 24,
+      "target_on": 8,
+      "outcome_changes": 4
+    }
+  },
+  "node_time_values_compared": 3464,
+  "local_full_mismatches": 0,
+  "eligible_inputs": 144,
+  "correct_literal_polarity_bindings": 144,
+  "oracle_and_gold_visible": false,
+  "inference_calls": 0,
+  "maximum_question_characters": 6373,
+  "validation": "full source oracle vs separately parsed local cone; all inputs retained"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "frozen_not_run",
+  "created_at": "2026-09-14T18:34:21.215916+08:00",
+  "inputs": 96,
+  "requests_per_model": 192,
+  "design": "4 rule families × 3 evidence states × 2 initial-answer correctness states × 4 order/distractor layouts",
+  "state_counts": {
+    "supports_first": 32,
+    "supports_second": 32,
+    "unknown": 32
+  },
+  "initial_correct": 48,
+  "purpose": "Discriminating evidence, missing versus absent, current versus past facts, measurement identity, distractor repetition, and unnecessary revision.",
+  "limitations": "Explicit fictional rules and closed options; 96 realizations of four mechanisms, not independent clinical validation or proof of an open-diagnosis advantage."
+}

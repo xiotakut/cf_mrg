@@ -1,0 +1,36 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "relation_calls": 537,
+      "planned_final_calls": 160,
+      "min_blocks": 9,
+      "max_blocks": 18,
+      "max_prompt_tokens": 310,
+      "local_observation_only": true,
+      "verified_previous_requests": 537
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "relation_calls": 537,
+      "planned_final_calls": 160,
+      "min_blocks": 9,
+      "max_blocks": 18,
+      "max_prompt_tokens": 294,
+      "local_observation_only": true,
+      "verified_previous_requests": 537
+    }
+  ],
+  "planned_calls": 1394,
+  "local_observation_only": true,
+  "mechanism": "Original-model relations for every literal observation; fixed support +1, conflict -1, neutral 0, original pool order breaks ties.",
+  "control": "Same relation generations and native context, four cyclic orders for model final choice; same information, different decision policy, four extra model calls.",
+  "reuse": "Existing six-order calibrated front and uncued four-candidate control; no new front calls. All40 exposed cases retained, regardless of gold coverage.",
+  "failure": "Any invalid relation makes both arms return actual initial calibrated answer. Missing information does not produce negative evidence.",
+  "criterion": "A local arm must improve over its native-context counterpart and current calibrated head on both backbones before expansion; heading correction alone is not head success.",
+  "source": "https://arxiv.org/html/2601.06636v1#S4.SS2.SSS3",
+  "scope": "Exposed development only, not independent generalization."
+}

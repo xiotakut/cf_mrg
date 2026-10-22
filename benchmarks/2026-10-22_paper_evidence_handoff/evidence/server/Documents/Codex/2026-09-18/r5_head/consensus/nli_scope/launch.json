@@ -1,0 +1,42 @@
+{
+  "started": "2026-09-18 08:38:56 +0800",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 2,
+      "pid": 2512855,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/experiment.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "2",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_scope"
+      ],
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "gpu": 3,
+      "pid": 2512856,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/experiment.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "3",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_scope"
+      ],
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 08:40:55 +0800"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T13:53:48.970389+08:00",
+  "inputs": 79,
+  "new_calls": 316,
+  "original_method": "M5 Qwen3-8B native v5",
+  "variants": [
+    "structured_redo",
+    "plain_review",
+    "condition_review",
+    "guideline_review"
+  ],
+  "guide_pages_reused_from": "r2_guideline_pilot/retrieval.jsonl",
+  "note": "Original M5 weights, archived prompts/evidence and draft. Every new arm has the same visible-option output schema. structured_redo adds grammar only; review arms additionally use original draft. Condition and guideline arms differ only by public guideline pages."
+}

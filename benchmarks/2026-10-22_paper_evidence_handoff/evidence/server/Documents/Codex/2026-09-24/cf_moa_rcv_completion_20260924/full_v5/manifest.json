@@ -1,0 +1,56 @@
+{
+  "version": "full_v5_rcv_input_and_cache_inventory_20260924",
+  "status": "inputs_and_existing_cache_prepared_no_new_inference",
+  "scope": "All13905 frozen-v5 inputs perM4/M5;15616 native mappings;6104 nonreferenceALL units;4766 families. Historical exposed development, not independent confirmation.",
+  "frozen_manifest": "/home/data3/txy/Documents/Codex/2026-09-09/agent-md-medrgag-workspace-guide-md/benchmark_r1_r5_v5_20260910/manifest.json",
+  "frozen_manifest_sha256": "7782d9b52d3005d4ba687dfbea757c276b629d25857e7cc885cf349aee35f8a8",
+  "packet_construction": "cf_moa.evaluation.prepare_development.current_packet using saved adopted originalmessages/schema/rawresponse; no additional truncation; handles use existing item order. Only NATIVE_FIELDS enter packet.",
+  "input_files": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m4.jsonl",
+      "bytes": 359901428,
+      "sha256": "1ca8b6507fd7a70c5aed82431229762d87178012a94da1e713879b1c7ae9ef73",
+      "inputs": 13905
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m5.jsonl",
+      "bytes": 336204056,
+      "sha256": "24c22d3cc850091e27b184747428ebfaf56fc24d1bf94de5b9baa0231618985d",
+      "inputs": 13905
+    }
+  ],
+  "models": {
+    "M4": {
+      "inputs": 13905,
+      "B_cached": 2668,
+      "B_missing": 11237,
+      "F_cached": 717,
+      "F_missing": 9461,
+      "F_missing_ordinary": 8660,
+      "F_missing_NLI": 801,
+      "A3_missing": 1776,
+      "A1_A2_missing": 0
+    },
+    "M5": {
+      "inputs": 13905,
+      "B_cached": 2668,
+      "B_missing": 11237,
+      "F_cached": 717,
+      "F_missing": 9461,
+      "F_missing_ordinary": 8660,
+      "F_missing_NLI": 801,
+      "A3_missing": 1776,
+      "A1_A2_missing": 0
+    }
+  },
+  "cache_source": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/scope/cache_coverage.jsonl",
+  "past_result_map": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/previous_panel_handle_map.jsonl",
+  "prior_verification_reuse": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/previous_verification_results.jsonl",
+  "new_model_calls": 0,
+  "new_native_scores": 0,
+  "new_B_minimum_callback_estimate_per_model": 41442,
+  "new_B_maximum_callback_estimate_per_model": 58762,
+  "callback_estimate_scope": "8660 ordinary F×3–5 generations +801 NLI×6 callbacks +1776 diagnosis×6 scores; missing-code fetch may add actual requests. Verification/C4/C5 additional costs excluded.",
+  "engine_scheduling": "Group pending profiles catalog/facts/readout. All123 rules already cached: no full-v5 facts generation needed. Cache is selected by input/request identity, never by scores.",
+  "final_inference_status": "partial_until_actual_complete_outputs_exist"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "prepared_not_launched",
+  "at": "2026-09-18 08:37:22 +0800",
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 16,
+      "calls": 160,
+      "per_arm_calls": {
+        "full": 80,
+        "target_only": 80
+      },
+      "max_prompt_tokens": {
+        "full": 4791,
+        "target_only": 988
+      },
+      "same_projected_r5_pairs": 8,
+      "distinct_projected_control_pairs": 8
+    },
+    {
+      "method": "M5",
+      "inputs": 16,
+      "calls": 160,
+      "per_arm_calls": {
+        "full": 80,
+        "target_only": 80
+      },
+      "max_prompt_tokens": {
+        "full": 4620,
+        "target_only": 688
+      },
+      "same_projected_r5_pairs": 8,
+      "distinct_projected_control_pairs": 8
+    }
+  ],
+  "planned_calls": 320,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "arms": [
+    "full",
+    "target_only"
+  ],
+  "nli_rule": "NLI positive iff entire current hypothesis supported by current premise; negative otherwise.",
+  "source": "Original sixteen pilot NLI inputs, eight already-exposed R5 units.",
+  "visible_route": "single format, positive/negative option keys, native premise/hypothesis question prefix.",
+  "contrast": "Both arms append the identical existing consensus native-JSON instruction and identical NLI support rule. Full retains all original messages. Target-only retains original system, complete current question and original options/output suffix; removes preceding retrieval and the whole supplied demonstration block only.",
+  "pairing": "Each endpoint is projected alone. Pair equality is audited only after construction; no gold or other endpoint enters request/optimize.",
+  "control_audit": "Eight author-native positive/negative pairs checked offline to retain different original hypotheses; not generated in this 320-call batch.",
+  "candidate": "optimize always uses target_only five seeds and existing exact-key aggregation; unsupported visible tasks return the original response.",
+  "runner": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/experiment.py",
+  "worker_command": "CUDA_VISIBLE_DEVICES=<gpu> MedRGAG/.venv/bin/python consensus/experiment.py run --method <M4|M5> --gpu <gpu> --out consensus/nli_scope",
+  "analysis": "Use separate nli_scope/analyze.py; original consensus analyze does not know these arm names.",
+  "scope": "Mechanism development on eight exposed NLI units. Identical projected R5 endpoints are expected by construction and are not themselves evidence of correct predictions or clinical generalization."
+}

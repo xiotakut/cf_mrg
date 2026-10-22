@@ -1,0 +1,148 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "all",
+      "n": 146,
+      "correct": 32,
+      "unmapped": 92,
+      "format_invalid": 5,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 92,
+      "format_invalid": 5,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "delta_normalized",
+      "scope": "all",
+      "n": 146,
+      "correct": 89,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 61,
+      "harms": 4
+    },
+    {
+      "method": "delta_normalized",
+      "scope": "M01",
+      "n": 128,
+      "correct": 83,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 61,
+      "harms": 2
+    },
+    {
+      "method": "delta_normalized",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "delta_normalized",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "delta_normalized_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 89,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 61,
+      "harms": 4
+    },
+    {
+      "method": "delta_normalized_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 83,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 61,
+      "harms": 2
+    },
+    {
+      "method": "delta_normalized_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 0,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "delta_normalized_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    }
+  ],
+  "costs": [
+    {
+      "variant": "delta_normalized",
+      "calls": 146,
+      "input_tokens": 444579,
+      "output_tokens": 32410,
+      "length_stops": 0
+    }
+  ],
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2530409,
+      "started_at": 1789387128.6908996,
+      "total": 146,
+      "initialization_seconds": 172.68377327919006,
+      "completed": 146,
+      "elapsed_seconds": 350.13862323760986,
+      "last_batch_seconds": 6.4021618366241455,
+      "completed_at": 1789387478.8297968
+    }
+  ]
+}

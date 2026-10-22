@@ -1,0 +1,22 @@
+{
+  "status": "prepared",
+  "primary": "equal_path",
+  "control": "native_single",
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 48,
+      "new_calls": 144,
+      "max_prompt_tokens": 5334
+    },
+    {
+      "method": "M5",
+      "inputs": 48,
+      "new_calls": 144,
+      "max_prompt_tokens": 5246
+    }
+  ],
+  "contract": "Same full current inputs, completion prompt and native fields. Both answer_choice-first JSON; direct enum is the precomputed two-mapping decision, single enum has both native choices.",
+  "cost": "Direct uses two score requests plus one complete JSON; equal_path uses four scores, one preceding response and one complete JSON; matched single uses one complete JSON. Earlier probe generation is existing evidence, not counted again.",
+  "interpretation": "Complete explanations require content review; fixing the answer schema does not prove faithful reasoning."
+}

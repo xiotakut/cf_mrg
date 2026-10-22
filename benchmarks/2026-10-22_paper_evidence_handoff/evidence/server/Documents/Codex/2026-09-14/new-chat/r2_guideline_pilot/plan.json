@@ -1,0 +1,16 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T13:42:14.693908+08:00",
+  "inputs": 79,
+  "new_calls": 158,
+  "original_method": "M4 structured v5",
+  "corpus": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/guideline_sources/pages.jsonl",
+  "guideline_coverage": 72,
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "top_k": 3,
+    "option_term_weight": 3
+  },
+  "note": "Frozen original M4 prompt, schema, documents and draft; same review instruction in both arms. Additional public guideline pages differ. No benchmark rule metadata or gold is used for retrieval."
+}

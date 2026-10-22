@@ -1,0 +1,57 @@
+{
+  "status": "frozen_before_heldout_trajectories",
+  "frozen_at": "2026-09-17T14:49:38.808550+00:00",
+  "method": "typed_single_intervention_with_visible_question_projection",
+  "version": "v2_after_tool_field_and_window_repairs",
+  "candidate": "patch",
+  "controls": [
+    "redo",
+    "full"
+  ],
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "profiles": [
+    "adolescent#003",
+    "adolescent#004",
+    "adolescent#005",
+    "adolescent#006",
+    "adolescent#007",
+    "adolescent#008",
+    "adolescent#009",
+    "adolescent#010",
+    "adult#003",
+    "adult#004",
+    "adult#005",
+    "adult#006",
+    "adult#007",
+    "adult#008",
+    "adult#009",
+    "adult#010",
+    "child#003",
+    "child#004",
+    "child#005",
+    "child#006",
+    "child#007",
+    "child#008",
+    "child#009",
+    "child#010"
+  ],
+  "questions": 288,
+  "profiles_n": 24,
+  "planned_new_calls": 1728,
+  "schema_and_prompt": "Current head_v2.py; unchanged from the288 v2 development tool requests. Three-arm heldout order rotates by question index.",
+  "execution": "Same author ODE, complete native state, source-question grammar. Isolated valid JSON tool fields; full control keeps only native120min window, preserving all in-window errors.",
+  "numerical_tolerance_mg_dL": 1.0,
+  "decoding": "Existing M4/M5 config; seed42 temperature.7 max2048 batch4; M4 guided JSON, M5 unguided.",
+  "dataset_plan": "case_plan.json, unchanged four interventions x three times. No outcome-based selection.",
+  "disclosure": "Same public physiological model and fixed language/action families, new heldout parameter/initial-state profiles. Not new clinical patients or open-language generalization.",
+  "expected_artifacts": "heldout/ source reference and trajectories; v2/heldout/ model requests, outputs, scoring and execution.",
+  "snapshot": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/frozen_method",
+  "method_files": [
+    "head.py",
+    "head_v2.py",
+    "executor.py"
+  ]
+}

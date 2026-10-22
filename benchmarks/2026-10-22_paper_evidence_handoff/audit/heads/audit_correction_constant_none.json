@@ -1,0 +1,228 @@
+{
+  "reason": "First audit incorrectly attempted to use support_only as a rowwise constant-None proxy because aggregate counts match. Corrected before delivery; no original scores changed or new scoring performed.",
+  "wrong_proxy_rows": [
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M0/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M0",
+      "system": "M0",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_head_figure_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    },
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M2/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M2",
+      "system": "M2",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_head_figure_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    },
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M3/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M3",
+      "system": "M3",
+      "backbone": "Qwen3-8B",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_head_figure_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    },
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M4/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M4",
+      "system": "M4",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/d…41 tokens truncated…hat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    },
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M5/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M5",
+      "system": "M5",
+      "backbone": "Qwen3-8B",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_head_figure_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    },
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M6/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M6",
+      "system": "M6",
+      "backbone": "Llama-3.1-8B-Instruct",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_head_figure_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    },
+    {
+      "table_claim_id": "tab:head-controls(b)",
+      "row_or_cell": "M7/support_only/remaining",
+      "run_id": "HEAD-PAPER-R2-M7",
+      "system": "M7",
+      "backbone": "Qwen3-8B",
+      "arm": "support_only",
+      "dataset": "v5 R2",
+      "sample_scope": "9持久化逐项记录",
+      "metric": "correct",
+      "unit": "correct_count",
+      "denominator": 9,
+      "value_existing": 0,
+      "value_recomputed": 5,
+      "comparison_status": "实质冲突",
+      "code_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_validation_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_condition_head_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_head_figure_short_version.py",
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/r2_question_scope_analysis.py"
+      ],
+      "config_paths": [],
+      "input_paths": [],
+      "output_paths": [],
+      "score_paths": [
+        "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r2_question_scope_analysis/positive_facts_scored.jsonl"
+      ],
+      "aggregation_script": "/home/data3/txy/paper_evidence_handoff_20261022/scripts/heads/reaggregate.py",
+      "aggregation_rule": "筛选method/policy；remaining仅M02且保存semantic_gold非none；求和保存correct",
+      "notes": "None列现存独立审计摘要same_coverage_none与support_only总分相同。本次仅重汇总保存support_only，不新生成/评分None；None逐题独立评分未在所审计目录找到，不能把此列写成新验证。"
+    }
+  ],
+  "resolution": "Treat constant-None as archived-summary-only; do not misreport these as source conflicts.",
+  "rebuild_provenance": {
+    "date": "2026-10-23",
+    "restored_from": "/home/data3/txy/.codex/sessions/2026/10/22/rollout-2026-10-22T22-37-21-01a1640b-8ff9-7691-ac6f-7c1a9948d1fd.jsonl",
+    "line_1based": 181,
+    "rule": "Historical tool output recovered; wrong proxy not rerun."
+  }
+}

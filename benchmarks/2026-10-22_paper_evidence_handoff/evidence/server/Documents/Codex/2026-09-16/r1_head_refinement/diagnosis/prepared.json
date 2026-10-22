@@ -1,0 +1,35 @@
+{
+  "status": "prepared_before_new_predictions",
+  "prepared_at": 1789557570.4035325,
+  "instruction": "Answer-format control for the same case: Give exactly one most likely disorder or related system supported at the final Findings stage. Use a standard diagnostic name at the level of specificity justified by the available evidence. Do not provide a differential list, alternatives, or an unsupported subtype. Put only that single name inside \\boxed{}.",
+  "preflights": [
+    {
+      "method": "M4",
+      "n": 47,
+      "max_prompt_tokens": 627,
+      "original_context_unchanged": true,
+      "appended_instruction_same_for_all": true,
+      "inference_reads_evaluation": false,
+      "explicit_catalog_in_new_instruction": false
+    },
+    {
+      "method": "M5",
+      "n": 47,
+      "max_prompt_tokens": 606,
+      "original_context_unchanged": true,
+      "appended_instruction_same_for_all": true,
+      "inference_reads_evaluation": false,
+      "explicit_catalog_in_new_instruction": false
+    }
+  ],
+  "expected_new_calls": 94,
+  "source_inputs": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/diagnosis/inputs.jsonl",
+  "source_evaluation": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/diagnosis/evaluation.jsonl",
+  "exposure": "Previously frozen validation47 is now exposed development. No new holdout.",
+  "interpretation": "The native task permits plural impressions; single-answer selection is an interface attribution control, not equivalent native ASCENT evaluation.",
+  "worker": "Reuse previous direct_worker unchanged with output directory rebound locally; original model and temperature0.7/top_p1/top_k-1/seed42/max_tokens2048/batch8; eager and fixed2048KV. Total-card memory budget reduced from0.95 to0.45 for co-resident workers; not a decoding change.",
+  "primary_score": "Unchanged frozen canonical-name score and last complete boxed extraction.",
+  "alias_and_multiple_answer_protocol": "No new alias mapping or gold-specific extraction. Complete extracted answers, including lists, go through the same frozen scorer. Lexical variants, same-identity descriptors, multiple impressions, granularity/system answers, and another disease are reviewed separately as explanatory categories only. Target presence and human semantic categories are not medical accuracy or official F1.",
+  "official_evaluation": "Author evaluator requires external GPT-4.1, temperature0, five judgments per response, position-wise majority over 1=equivalent/2=too-specific/3=too-broad/4=wrong followed by micro P/R/F1. No faithful local GPT-4.1 backend or existing judgments for these arms; no external API invoked or credential values reported, and no authentication check attempted. Thus official score not produced.",
+  "contrasts": "native_free -> single_current_free controls single-answer/current-stage instruction without a catalog. single_current_free -> existing order0 additionally differs in catalog, request structure (question repetition), and one-token likelihood choice; not an isolated catalog-only causal estimate. Existing calibrated arm is contextual reference."
+}

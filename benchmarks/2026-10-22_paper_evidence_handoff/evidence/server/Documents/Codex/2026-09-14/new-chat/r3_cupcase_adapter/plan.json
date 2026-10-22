@@ -1,0 +1,58 @@
+{
+  "status": "complete_development_adapter",
+  "rows": [
+    106,
+    654
+  ],
+  "scope": "Two already-exposed CUPCase qualification examples. No independent generalization denominator.",
+  "candidate_rule": "Keep all four source candidate strings unchanged; sort only their display order. Internal diagnosis format adapts the existing diagnosis branch, not the complete733 source router.",
+  "head": "Unchanged six orders Random(20260916), three content-free priors per order and native candidate set, coefficient1, majority tie by mean probability then sorted catalog.",
+  "controls": [
+    "native_plain_sequence_sum",
+    "native_plain_sequence_character_norm",
+    "chat_sequence_sum",
+    "chat_sequence_character_norm",
+    "head_order0",
+    "head_uncalibrated_vote"
+  ],
+  "baseline": "Author local-model zero-shot prompt; no chat template or BOS, space plus diagnosis continuation. acc_norm divides summed log likelihood by Python len(candidate), not token count. Chat control adds original tokenizer template and assistant Diagnosis: prefix.",
+  "resources": "Original Llama3.1-8B-Instruct and Qwen3-8B weights/configs; no retrieval or train-case labels. These are source controls, not fresh M4/M5 MedRAG runs.",
+  "planned_calls": 128,
+  "head_patient_calls": 24,
+  "prior_calls": 72,
+  "sequence_calls": 32,
+  "next": "Verify adapter and controls on these examples, then freeze independent input-only qualification and evaluation away from all24 development cases. No selection by model scores.",
+  "checks": [
+    {
+      "model": "llama",
+      "cases": 2,
+      "score_calls": 64,
+      "max_tokens": 2552,
+      "distinct_orders": 6,
+      "sequence_boundary_checks": 16,
+      "code_tokens": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      }
+    },
+    {
+      "model": "qwen",
+      "cases": 2,
+      "score_calls": 64,
+      "max_tokens": 2590,
+      "distinct_orders": 6,
+      "sequence_boundary_checks": 16,
+      "code_tokens": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      }
+    }
+  ],
+  "summary": "summary.json",
+  "interface_replay": "interface_replay.json",
+  "followup": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_cupcase_option_style/plan.json"
+}

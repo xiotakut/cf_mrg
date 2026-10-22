@@ -1,0 +1,286 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 33,
+      "accuracy_pct": 41.77215189873418,
+      "invalid": 11,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 31,
+      "accuracy_pct": 46.96969696969697,
+      "invalid": 9,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "accuracy_pct": 50.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "structured_redo",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 38,
+      "accuracy_pct": 48.10126582278481,
+      "invalid": 0,
+      "repairs": 12,
+      "harms": 7
+    },
+    {
+      "method": "structured_redo",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 36,
+      "accuracy_pct": 54.54545454545455,
+      "invalid": 0,
+      "repairs": 12,
+      "harms": 7
+    },
+    {
+      "method": "structured_redo",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "structured_redo",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "accuracy_pct": 50.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain_review",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 42,
+      "accuracy_pct": 53.164556962025316,
+      "invalid": 0,
+      "repairs": 11,
+      "harms": 2
+    },
+    {
+      "method": "plain_review",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 39,
+      "accuracy_pct": 59.09090909090909,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 2
+    },
+    {
+      "method": "plain_review",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 1,
+      "accuracy_pct": 11.11111111111111,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "plain_review",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "accuracy_pct": 50.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "condition_review",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 47,
+      "accuracy_pct": 59.49367088607595,
+      "invalid": 1,
+      "repairs": 14,
+      "harms": 0
+    },
+    {
+      "method": "condition_review",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 45,
+      "accuracy_pct": 68.18181818181819,
+      "invalid": 0,
+      "repairs": 14,
+      "harms": 0
+    },
+    {
+      "method": "condition_review",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "condition_review",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "accuracy_pct": 50.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "guideline_review",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 40,
+      "accuracy_pct": 50.63291139240506,
+      "invalid": 0,
+      "repairs": 11,
+      "harms": 4
+    },
+    {
+      "method": "guideline_review",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 37,
+      "accuracy_pct": 56.06060606060606,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 4
+    },
+    {
+      "method": "guideline_review",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 1,
+      "accuracy_pct": 11.11111111111111,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "guideline_review",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "accuracy_pct": 50.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "structured_redo",
+      "calls": 79,
+      "input_tokens": 156108,
+      "output_tokens": 28358,
+      "length_stops": 0
+    },
+    {
+      "variant": "plain_review",
+      "calls": 79,
+      "input_tokens": 189555,
+      "output_tokens": 24704,
+      "length_stops": 0
+    },
+    {
+      "variant": "condition_review",
+      "calls": 79,
+      "input_tokens": 206856,
+      "output_tokens": 26127,
+      "length_stops": 1
+    },
+    {
+      "variant": "guideline_review",
+      "calls": 79,
+      "input_tokens": 426381,
+      "output_tokens": 27318,
+      "length_stops": 0
+    }
+  ],
+  "baseline_parity": 79,
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2393895,
+      "started_at": 1789365288.2220597,
+      "total": 80,
+      "initialization_seconds": 59.52228379249573,
+      "completed": 80,
+      "elapsed_seconds": 129.4903564453125,
+      "last_batch_seconds": 9.199734210968018,
+      "completed_at": 1789365417.7125812
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2393896,
+      "started_at": 1789365288.2369664,
+      "total": 80,
+      "initialization_seconds": 59.97705936431885,
+      "completed": 80,
+      "elapsed_seconds": 133.60941100120544,
+      "last_batch_seconds": 11.516611099243164,
+      "completed_at": 1789365421.8465507
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2393897,
+      "started_at": 1789365288.2443442,
+      "total": 80,
+      "initialization_seconds": 59.96301341056824,
+      "completed": 80,
+      "elapsed_seconds": 160.0094177722931,
+      "last_batch_seconds": 8.621655702590942,
+      "completed_at": 1789365448.253914
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2393898,
+      "started_at": 1789365288.2234526,
+      "total": 76,
+      "initialization_seconds": 59.91567611694336,
+      "completed": 76,
+      "elapsed_seconds": 134.91950750350952,
+      "last_batch_seconds": 8.483615159988403,
+      "completed_at": 1789365423.1431358
+    }
+  ]
+}

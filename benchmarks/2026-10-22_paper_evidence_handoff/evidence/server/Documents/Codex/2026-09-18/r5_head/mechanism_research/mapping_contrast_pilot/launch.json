@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "pid": 2847308,
+  "started": "2026-09-18 19:14:29 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "kind": "training",
+      "pid": 2847313,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/train.py",
+        "--method",
+        "M4"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 19:14:29 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 19:16:28 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "training",
+      "pid": 2847314,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/train.py",
+        "--method",
+        "M5"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 19:14:29 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 19:16:18 +0800"
+    }
+  ],
+  "new_model_forwards": 0,
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/train.py": "b209c21b244ec62320b5fbf13a83cbf679c822e32ef0bd960826008d0e7f3cd8",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/prepare.py": "a0788b42ab4e1b9f4a24aa603365259e6c8d9798a8364e2d9de68765ed088ecd",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/plan.json": "c6d7a53efa58154c34d6e13a5ec70ca6eb5bcb2ec495297cc212a8b60539111e",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/mapping_contrast_pilot/launch.py": "a83db283c2d670cfa6be244c4085d2cce5d0651562dae9b90399844b6b7ec6e7"
+  },
+  "input_freeze_sha256": "10142285c375cb66e94d71d58cce928cbb2da430a3d0cf92ee232534fa9f0994",
+  "ended": "2026-09-18 19:16:28 +0800"
+}

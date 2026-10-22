@@ -1,0 +1,113 @@
+{
+  "status": "complete_component_development",
+  "results": [
+    {
+      "method": "M4",
+      "stage": "guided",
+      "prompt": "original",
+      "n": 12,
+      "correct": 8,
+      "format_errors": 0,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M4",
+      "stage": "guided",
+      "prompt": "explicit",
+      "n": 12,
+      "correct": 9,
+      "format_errors": 0,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M4",
+      "stage": "free",
+      "prompt": "original",
+      "n": 12,
+      "correct": 0,
+      "format_errors": 12,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M4",
+      "stage": "free",
+      "prompt": "explicit",
+      "n": 12,
+      "correct": 9,
+      "format_errors": 0,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M5",
+      "stage": "guided",
+      "prompt": "original",
+      "n": 12,
+      "correct": 3,
+      "format_errors": 0,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M5",
+      "stage": "guided",
+      "prompt": "explicit",
+      "n": 12,
+      "correct": 7,
+      "format_errors": 0,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M5",
+      "stage": "free",
+      "prompt": "original",
+      "n": 12,
+      "correct": 0,
+      "format_errors": 12,
+      "rejected_quotes": 0
+    },
+    {
+      "method": "M5",
+      "stage": "free",
+      "prompt": "explicit",
+      "n": 12,
+      "correct": 7,
+      "format_errors": 0,
+      "rejected_quotes": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "stage": "guided",
+      "new_calls": 12,
+      "input_tokens": 2562,
+      "output_tokens": 241,
+      "length_stops": 0
+    },
+    {
+      "method": "M4",
+      "stage": "free",
+      "new_calls": 24,
+      "input_tokens": 4764,
+      "output_tokens": 481,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "stage": "guided",
+      "new_calls": 12,
+      "input_tokens": 2274,
+      "output_tokens": 254,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "stage": "free",
+      "new_calls": 24,
+      "input_tokens": 4188,
+      "output_tokens": 514,
+      "length_stops": 0
+    }
+  ],
+  "new_calls": 72,
+  "reused_calls": 24
+}

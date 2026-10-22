@@ -1,0 +1,22 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "fact_calls": 1280,
+      "max_final_calls": 320,
+      "max_prompt_tokens": 646
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "fact_calls": 1280,
+      "max_final_calls": 320,
+      "max_prompt_tokens": 629
+    }
+  ],
+  "max_new_calls": 3200,
+  "criterion": "NLI facts improve both old-fact matched control and calibrated head on both original backbones.",
+  "scope": "Same40 exposed diagnoses per method, original4 pools including missing gold, fixed32 selected features."
+}

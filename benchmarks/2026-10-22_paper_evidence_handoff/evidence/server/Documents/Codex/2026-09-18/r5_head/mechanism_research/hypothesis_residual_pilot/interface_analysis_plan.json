@@ -1,0 +1,27 @@
+{
+  "frozen_at": "2026-09-18T17:18:13.590779+08:00",
+  "status": "planned before all new J scores",
+  "candidate_identity": "U PH remains primary; V is separate DRiFt follow-up; no score-driven candidate/interface selection.",
+  "gating": "Require both U and both V complete author-only training and passing V zero-offset checks, then jointly freeze all heads/selection files and both interface feature hashes before scoring.",
+  "interfaces": [
+    "original batch8 U extraction retained",
+    "singleton deployment interface fixed by root after author-only batching sign discrepancy, before new J scores"
+  ],
+  "arms": [
+    "U PH",
+    "U H-only",
+    "V residual-only"
+  ],
+  "controls": [
+    "K full input",
+    "old combined",
+    "untrained task_scope",
+    "E repeat",
+    "old direct vLLM",
+    "constant positive",
+    "constant negative"
+  ],
+  "evaluation": "Original J112 all/train/dev, R5 and strong original denominators; both-correct/endpoint-gold stratification/repair-harm; report all batch8 vs singleton changes and maximum margin difference.",
+  "no_selection": "No J selection/refit/threshold tuning; no V bias offset at inference; no new GPU calls by analysis; no D.",
+  "original_U": "U original analysis/source unchanged, execute and retain its pre-frozen batch8 outputs separately."
+}

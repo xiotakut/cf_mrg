@@ -1,0 +1,136 @@
+{
+  "status": "complete",
+  "new_model_calls": 0,
+  "diagonal_parity_per_method": 79,
+  "results": [
+    {
+      "initial": "M4_Llama",
+      "extractor": "M4_Llama",
+      "scope": "all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 3
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M4_Llama",
+      "scope": "none",
+      "n": 66,
+      "correct": 26,
+      "invalid": 3
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M4_Llama",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M4_Llama",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M5_Qwen",
+      "scope": "all",
+      "n": 79,
+      "correct": 36,
+      "invalid": 3
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M5_Qwen",
+      "scope": "none",
+      "n": 66,
+      "correct": 29,
+      "invalid": 3
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M5_Qwen",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 4,
+      "invalid": 0
+    },
+    {
+      "initial": "M4_Llama",
+      "extractor": "M5_Qwen",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M4_Llama",
+      "scope": "all",
+      "n": 79,
+      "correct": 42,
+      "invalid": 11
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M4_Llama",
+      "scope": "none",
+      "n": 66,
+      "correct": 34,
+      "invalid": 9
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M4_Llama",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 2
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M4_Llama",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M5_Qwen",
+      "scope": "all",
+      "n": 79,
+      "correct": 44,
+      "invalid": 10
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M5_Qwen",
+      "scope": "none",
+      "n": 66,
+      "correct": 36,
+      "invalid": 9
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M5_Qwen",
+      "scope": "remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 1
+    },
+    {
+      "initial": "M5_Qwen",
+      "extractor": "M5_Qwen",
+      "scope": "M14",
+      "n": 4,
+      "correct": 2,
+      "invalid": 0
+    }
+  ],
+  "note": "Off-diagonal uses another backbone facts as a controlled offline intervention, not an original-model-only method result. Same exposed79 cases, fixed rule bank and assembly; no causal separation of original retrieval vs reasoning."
+}

@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-09-17 17:53:06 +0800",
+  "gpu": 1,
+  "mode": "sequential",
+  "workers": [
+    {
+      "method": "M4",
+      "pid": 2088480,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/experiment.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 17:53:06 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 17:56:14 +0800"
+    },
+    {
+      "method": "M5",
+      "pid": 2090866,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/experiment.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "started_at": "2026-09-17 17:56:14 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 18:00:18 +0800"
+    }
+  ],
+  "finished_at": "2026-09-17 18:00:18 +0800",
+  "wall_seconds": 431.9855448969174
+}

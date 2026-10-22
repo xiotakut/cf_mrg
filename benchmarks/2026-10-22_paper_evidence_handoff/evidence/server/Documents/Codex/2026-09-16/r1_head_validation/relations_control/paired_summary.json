@@ -1,0 +1,193 @@
+[
+  {
+    "method": "M4",
+    "results": [
+      {
+        "arm": "redo",
+        "n": 201,
+        "correct": 102,
+        "invalid": 1,
+        "baseline_correct": 100,
+        "predictions": {
+          "lower": 58,
+          "uncertainty": 52,
+          "higher": 51,
+          "no difference": 39,
+          "None": 1
+        },
+        "repairs": 27,
+        "harms": 25,
+        "vs_redo": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "classes": {
+          "higher": {
+            "n": 53,
+            "correct": 34
+          },
+          "lower": {
+            "n": 56,
+            "correct": 37
+          },
+          "no difference": {
+            "n": 92,
+            "correct": 31
+          }
+        }
+      },
+      {
+        "arm": "target_scope",
+        "n": 201,
+        "correct": 118,
+        "invalid": 0,
+        "baseline_correct": 100,
+        "predictions": {
+          "lower": 62,
+          "higher": 55,
+          "uncertainty": 35,
+          "no difference": 49
+        },
+        "repairs": 34,
+        "harms": 16,
+        "vs_redo": {
+          "repairs": 34,
+          "harms": 18
+        },
+        "classes": {
+          "higher": {
+            "n": 53,
+            "correct": 38
+          },
+          "lower": {
+            "n": 56,
+            "correct": 40
+          },
+          "no difference": {
+            "n": 92,
+            "correct": 40
+          }
+        }
+      }
+    ],
+    "calls": 402,
+    "input_tokens": 4633861,
+    "output_tokens": 97898,
+    "length_stops": 1,
+    "runtime": {
+      "status": "complete",
+      "pid": 963494,
+      "gpu": 3,
+      "method": "M4",
+      "stage": "paired",
+      "arms": [
+        "redo",
+        "target_scope"
+      ],
+      "completed": 402,
+      "planned": 402,
+      "resumed_prefix_calls": 0,
+      "previous_logged_elapsed_seconds": 0,
+      "previous_initialization_seconds": 0,
+      "initialization_seconds": 49.08485770225525,
+      "elapsed_seconds": 3904.988681077957,
+      "attempt_elapsed_seconds": 3904.9886815547943,
+      "new_durable_calls": 402
+    }
+  },
+  {
+    "method": "M5",
+    "results": [
+      {
+        "arm": "redo",
+        "n": 201,
+        "correct": 120,
+        "invalid": 0,
+        "baseline_correct": 112,
+        "predictions": {
+          "lower": 53,
+          "no difference": 56,
+          "uncertainty": 43,
+          "higher": 49
+        },
+        "repairs": 27,
+        "harms": 19,
+        "vs_redo": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "classes": {
+          "higher": {
+            "n": 53,
+            "correct": 37
+          },
+          "lower": {
+            "n": 56,
+            "correct": 39
+          },
+          "no difference": {
+            "n": 92,
+            "correct": 44
+          }
+        }
+      },
+      {
+        "arm": "target_scope",
+        "n": 201,
+        "correct": 122,
+        "invalid": 0,
+        "baseline_correct": 112,
+        "predictions": {
+          "lower": 53,
+          "no difference": 57,
+          "uncertainty": 46,
+          "higher": 45
+        },
+        "repairs": 28,
+        "harms": 18,
+        "vs_redo": {
+          "repairs": 18,
+          "harms": 16
+        },
+        "classes": {
+          "higher": {
+            "n": 53,
+            "correct": 33
+          },
+          "lower": {
+            "n": 56,
+            "correct": 41
+          },
+          "no difference": {
+            "n": 92,
+            "correct": 48
+          }
+        }
+      }
+    ],
+    "calls": 402,
+    "input_tokens": 4922369,
+    "output_tokens": 86833,
+    "length_stops": 0,
+    "runtime": {
+      "status": "complete",
+      "pid": 973767,
+      "gpu": 1,
+      "method": "M5",
+      "stage": "paired",
+      "arms": [
+        "redo",
+        "target_scope"
+      ],
+      "completed": 402,
+      "planned": 402,
+      "resumed_prefix_calls": 0,
+      "previous_logged_elapsed_seconds": 0,
+      "previous_initialization_seconds": 0,
+      "initialization_seconds": 53.375622510910034,
+      "elapsed_seconds": 1427.2809550762177,
+      "attempt_elapsed_seconds": 1427.2809555530548,
+      "new_durable_calls": 402
+    }
+  }
+]

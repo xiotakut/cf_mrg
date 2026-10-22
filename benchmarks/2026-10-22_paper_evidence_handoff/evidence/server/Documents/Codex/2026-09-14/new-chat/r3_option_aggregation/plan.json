@@ -1,0 +1,39 @@
+{
+  "status": "prepared",
+  "date": "2026-09-15",
+  "checks": [
+    {
+      "method": "M4",
+      "n": 18,
+      "single": 14,
+      "multi": 4,
+      "planned_calls": 36,
+      "max_prompt_tokens": 3758,
+      "schema_backend": "vllm xgrammar validation passed"
+    },
+    {
+      "method": "M5",
+      "n": 18,
+      "single": 14,
+      "multi": 4,
+      "planned_calls": 36,
+      "max_prompt_tokens": 3620,
+      "schema_backend": "vllm xgrammar validation passed"
+    }
+  ],
+  "planned_calls": 72,
+  "previous_turn": "Progress: completed 180 delayed-option calls, exact replay, negative adoption decision and actual judgment-to-set inconsistency.",
+  "source": "https://aclanthology.org/2023.ijcnlp-main.20.pdf",
+  "read_sections": [
+    "3",
+    "3.2",
+    "6.1"
+  ],
+  "mechanism": "Original model emits question target, per-option clinical reason/yes-no-unknown, then native answer_choice. Program executes the same judgments: set of yes for multi, unique yes for single, native NOTA iff all substantive options no.",
+  "adaptation": "Only logical answer aggregation is deterministic; clinical judgments and question interpretation remain original-model outputs. This is not a complete Faithful CoT reproduction or verified medical guideline execution.",
+  "controls": "Fresh one-call direct re-answer with same original messages, model, temperature0 and max768 tokens. Structured model and program use the SAME generated judgments/response; same fallback policy. Raw model answer also scored separately to quantify fallback contribution.",
+  "fallback": "Any unknown, unresolved single cardinality, absent nonempty native set or malformed response returns the actual original answer. Fallback applies equally to both structured branches; retain all18 denominator.",
+  "permissions": "No new retrieval, answer-label retrieval, canonical49 catalog, paired reference or gold in inference. Only original item/options/context; output schema extended for intermediate judgments.",
+  "scope": "Same frozen18 native-option R3 development questions, original M4/M5. Native53 and diagnosis680 remain overall goal; no independent generalization or all-method claim.",
+  "selection": "Look for program improvement over the model using identical judgments, report repair/harm, compare baseline and matched direct. No posthoc threshold or per-disease routing search."
+}

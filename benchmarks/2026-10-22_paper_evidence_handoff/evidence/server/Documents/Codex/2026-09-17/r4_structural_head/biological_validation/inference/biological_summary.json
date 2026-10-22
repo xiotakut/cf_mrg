@@ -1,0 +1,2528 @@
+{
+  "results": [
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "all",
+      "group": "all",
+      "arm": "redo",
+      "n": 144,
+      "correct": 80,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "all",
+      "group": "all",
+      "arm": "compiled_model",
+      "n": 144,
+      "correct": 91,
+      "invalid": 15
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "all",
+      "group": "all",
+      "arm": "head",
+      "n": 144,
+      "correct": 92,
+      "invalid": 15,
+      "vs_redo": {
+        "repairs": 33,
+        "harms": 21,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 9,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 15,
+        "executed": 32,
+        "invalid_program_model_answer": 82,
+        "invalid_program": 15
+      },
+      "program_routes": {
+        "inconsistent_program": 15,
+        "executed": 32,
+        "invalid_program": 97
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "redo",
+      "n": 48,
+      "correct": 29,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 27,
+      "invalid": 11
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "head",
+      "n": 48,
+      "correct": 29,
+      "invalid": 11,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program": 11,
+        "invalid_program_model_answer": 29,
+        "inconsistent_program_model_answer": 2,
+        "executed": 6
+      },
+      "program_routes": {
+        "invalid_program": 40,
+        "inconsistent_program": 2,
+        "executed": 6
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "redo",
+      "n": 48,
+      "correct": 26,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 30,
+      "invalid": 4
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "head",
+      "n": 48,
+      "correct": 29,
+      "invalid": 4,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program": 4,
+        "invalid_program_model_answer": 35,
+        "executed": 6,
+        "inconsistent_program_model_answer": 3
+      },
+      "program_routes": {
+        "invalid_program": 39,
+        "executed": 6,
+        "inconsistent_program": 3
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "redo",
+      "n": 48,
+      "correct": 25,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 34,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "head",
+      "n": 48,
+      "correct": 34,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 16,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 10,
+        "executed": 20,
+        "invalid_program_model_answer": 18
+      },
+      "program_routes": {
+        "inconsistent_program": 10,
+        "executed": 20,
+        "invalid_program": 18
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "redo",
+      "n": 72,
+      "correct": 40,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 48,
+      "invalid": 5
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "head",
+      "n": 72,
+      "correct": 45,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 15,
+        "harms": 10,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 8,
+        "invalid_program_model_answer": 40,
+        "executed": 19,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "inconsistent_program": 8,
+        "invalid_program": 45,
+        "executed": 19
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "redo",
+      "n": 72,
+      "correct": 40,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 43,
+      "invalid": 10
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "head",
+      "n": 72,
+      "correct": 47,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 18,
+        "harms": 11,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 7,
+        "executed": 13,
+        "invalid_program_model_answer": 42,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "inconsistent_program": 7,
+        "executed": 13,
+        "invalid_program": 52
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 72,
+      "correct": 39,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 47,
+      "invalid": 10
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "head",
+      "n": 72,
+      "correct": 45,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 19,
+        "harms": 13,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 6,
+        "invalid_program_model_answer": 37,
+        "executed": 19,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "inconsistent_program": 6,
+        "invalid_program": 47,
+        "executed": 19
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 72,
+      "correct": 41,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 44,
+      "invalid": 5
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "head",
+      "n": 72,
+      "correct": 47,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 14,
+        "harms": 8,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 9,
+        "executed": 13,
+        "invalid_program_model_answer": 45,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "inconsistent_program": 9,
+        "executed": 13,
+        "invalid_program": 50
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 112,
+      "correct": 65,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 112,
+      "correct": 73,
+      "invalid": 13
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "head",
+      "n": 112,
+      "correct": 71,
+      "invalid": 13,
+      "vs_redo": {
+        "repairs": 24,
+        "harms": 18,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 9,
+        "invalid_program_model_answer": 66,
+        "executed": 24,
+        "invalid_program": 13
+      },
+      "program_routes": {
+        "inconsistent_program": 9,
+        "invalid_program": 79,
+        "executed": 24
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 32,
+      "correct": 15,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 32,
+      "correct": 18,
+      "invalid": 2
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "head",
+      "n": 32,
+      "correct": 21,
+      "invalid": 2,
+      "vs_redo": {
+        "repairs": 9,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 5,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 6,
+        "executed": 8,
+        "invalid_program_model_answer": 16,
+        "invalid_program": 2
+      },
+      "program_routes": {
+        "inconsistent_program": 6,
+        "executed": 8,
+        "invalid_program": 18
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 24,
+      "correct": 16,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 24,
+      "correct": 15,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "head",
+      "n": 24,
+      "correct": 13,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 4,
+        "executed": 6,
+        "invalid_program_model_answer": 13,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "inconsistent_program": 4,
+        "executed": 6,
+        "invalid_program": 14
+      }
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 120,
+      "correct": 64,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 120,
+      "correct": 76,
+      "invalid": 14
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "head",
+      "n": 120,
+      "correct": 79,
+      "invalid": 14,
+      "vs_redo": {
+        "repairs": 29,
+        "harms": 14,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 8,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 11,
+        "executed": 26,
+        "invalid_program_model_answer": 69,
+        "invalid_program": 14
+      },
+      "program_routes": {
+        "inconsistent_program": 11,
+        "executed": 26,
+        "invalid_program": 83
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "arm": "redo",
+      "n": 120,
+      "correct": 67,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "arm": "compiled_model",
+      "n": 120,
+      "correct": 75,
+      "invalid": 15
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "arm": "head",
+      "n": 120,
+      "correct": 76,
+      "invalid": 15,
+      "vs_redo": {
+        "repairs": 27,
+        "harms": 18,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 10,
+        "executed": 21,
+        "invalid_program_model_answer": 74,
+        "invalid_program": 15
+      },
+      "program_routes": {
+        "inconsistent_program": 10,
+        "executed": 21,
+        "invalid_program": 89
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "redo",
+      "n": 48,
+      "correct": 29,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 27,
+      "invalid": 11
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "head",
+      "n": 48,
+      "correct": 29,
+      "invalid": 11,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program": 11,
+        "invalid_program_model_answer": 29,
+        "inconsistent_program_model_answer": 2,
+        "executed": 6
+      },
+      "program_routes": {
+        "invalid_program": 40,
+        "inconsistent_program": 2,
+        "executed": 6
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "redo",
+      "n": 48,
+      "correct": 26,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 30,
+      "invalid": 4
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "head",
+      "n": 48,
+      "correct": 29,
+      "invalid": 4,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program": 4,
+        "invalid_program_model_answer": 35,
+        "executed": 6,
+        "inconsistent_program_model_answer": 3
+      },
+      "program_routes": {
+        "invalid_program": 39,
+        "executed": 6,
+        "inconsistent_program": 3
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "redo",
+      "n": 24,
+      "correct": 12,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "compiled_model",
+      "n": 24,
+      "correct": 18,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "head",
+      "n": 24,
+      "correct": 18,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 5,
+        "executed": 9,
+        "invalid_program_model_answer": 10
+      },
+      "program_routes": {
+        "inconsistent_program": 5,
+        "executed": 9,
+        "invalid_program": 10
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "redo",
+      "n": 60,
+      "correct": 32,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 40,
+      "invalid": 5
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "head",
+      "n": 60,
+      "correct": 38,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 13,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 5,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 5,
+        "invalid_program_model_answer": 38,
+        "executed": 12,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "inconsistent_program": 5,
+        "invalid_program": 43,
+        "executed": 12
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "redo",
+      "n": 60,
+      "correct": 35,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 35,
+      "invalid": 10
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "head",
+      "n": 60,
+      "correct": 38,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 14,
+        "harms": 11,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 5,
+        "executed": 9,
+        "invalid_program_model_answer": 36,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "inconsistent_program": 5,
+        "executed": 9,
+        "invalid_program": 46
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 60,
+      "correct": 32,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 37,
+      "invalid": 10
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "head",
+      "n": 60,
+      "correct": 36,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 15,
+        "harms": 11,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 2,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 34,
+        "executed": 12,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "inconsistent_program": 4,
+        "invalid_program": 44,
+        "executed": 12
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 60,
+      "correct": 35,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 38,
+      "invalid": 5
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "head",
+      "n": 60,
+      "correct": 40,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 12,
+        "harms": 7,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 4,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 6,
+        "executed": 9,
+        "invalid_program_model_answer": 40,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "inconsistent_program": 6,
+        "executed": 9,
+        "invalid_program": 45
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 100,
+      "correct": 58,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 100,
+      "correct": 63,
+      "invalid": 13
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "head",
+      "n": 100,
+      "correct": 62,
+      "invalid": 13,
+      "vs_redo": {
+        "repairs": 20,
+        "harms": 16,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 4,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 7,
+        "invalid_program_model_answer": 63,
+        "executed": 17,
+        "invalid_program": 13
+      },
+      "program_routes": {
+        "inconsistent_program": 7,
+        "invalid_program": 76,
+        "executed": 17
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 20,
+      "correct": 9,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 20,
+      "correct": 12,
+      "invalid": 2
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "head",
+      "n": 20,
+      "correct": 14,
+      "invalid": 2,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 3,
+        "harms": 1,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 3,
+        "executed": 4,
+        "invalid_program_model_answer": 11,
+        "invalid_program": 2
+      },
+      "program_routes": {
+        "inconsistent_program": 3,
+        "executed": 4,
+        "invalid_program": 13
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 18,
+      "correct": 12,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 11,
+      "invalid": 1
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "head",
+      "n": 18,
+      "correct": 9,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 6,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 2,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 2,
+        "executed": 4,
+        "invalid_program_model_answer": 11,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "inconsistent_program": 2,
+        "executed": 4,
+        "invalid_program": 12
+      }
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 102,
+      "correct": 55,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 102,
+      "correct": 64,
+      "invalid": 14
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "head",
+      "n": 102,
+      "correct": 67,
+      "invalid": 14,
+      "vs_redo": {
+        "repairs": 24,
+        "harms": 12,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 6,
+        "harms": 3,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "inconsistent_program_model_answer": 8,
+        "executed": 17,
+        "invalid_program_model_answer": 63,
+        "invalid_program": 14
+      },
+      "program_routes": {
+        "inconsistent_program": 8,
+        "executed": 17,
+        "invalid_program": 77
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "all",
+      "group": "all",
+      "arm": "redo",
+      "n": 144,
+      "correct": 117,
+      "invalid": 9
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "all",
+      "group": "all",
+      "arm": "compiled_model",
+      "n": 144,
+      "correct": 101,
+      "invalid": 10
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "all",
+      "group": "all",
+      "arm": "head",
+      "n": 144,
+      "correct": 102,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 12,
+        "harms": 27,
+        "repairs_from_invalid": 6
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 41,
+        "inconsistent_program_model_answer": 8,
+        "invalid_program_model_answer": 85,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "executed": 41,
+        "inconsistent_program": 8,
+        "invalid_program": 95
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "redo",
+      "n": 48,
+      "correct": 36,
+      "invalid": 6
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 29,
+      "invalid": 10
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "head",
+      "n": 48,
+      "correct": 29,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 14,
+        "repairs_from_invalid": 4
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 38,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "invalid_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "redo",
+      "n": 48,
+      "correct": 41,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 33,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "head",
+      "n": 48,
+      "correct": 33,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 12,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 47,
+        "executed": 1
+      },
+      "program_routes": {
+        "invalid_program": 47,
+        "executed": 1
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "redo",
+      "n": 48,
+      "correct": 40,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 39,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "head",
+      "n": 48,
+      "correct": 40,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 1,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 40,
+        "inconsistent_program_model_answer": 8
+      },
+      "program_routes": {
+        "executed": 40,
+        "inconsistent_program": 8
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "redo",
+      "n": 72,
+      "correct": 58,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 51,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "head",
+      "n": 72,
+      "correct": 52,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 12,
+        "repairs_from_invalid": 2
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 25,
+        "invalid_program_model_answer": 42,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 25,
+        "invalid_program": 47
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "redo",
+      "n": 72,
+      "correct": 59,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 50,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "head",
+      "n": 72,
+      "correct": 50,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 15,
+        "repairs_from_invalid": 4
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 16,
+        "inconsistent_program_model_answer": 8,
+        "invalid_program_model_answer": 43,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 16,
+        "inconsistent_program": 8,
+        "invalid_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 72,
+      "correct": 59,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 54,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "head",
+      "n": 72,
+      "correct": 55,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 11,
+        "repairs_from_invalid": 3
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 20,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 43,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 20,
+        "inconsistent_program": 4,
+        "invalid_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 72,
+      "correct": 58,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 72,
+      "correct": 47,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "head",
+      "n": 72,
+      "correct": 47,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 16,
+        "repairs_from_invalid": 3
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 21,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 42,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 21,
+        "inconsistent_program": 4,
+        "invalid_program": 47
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 112,
+      "correct": 90,
+      "invalid": 7
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 112,
+      "correct": 75,
+      "invalid": 9
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "head",
+      "n": 112,
+      "correct": 76,
+      "invalid": 9,
+      "vs_redo": {
+        "repairs": 11,
+        "harms": 25,
+        "repairs_from_invalid": 5
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 21,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 78,
+        "invalid_program": 9
+      },
+      "program_routes": {
+        "executed": 21,
+        "inconsistent_program": 4,
+        "invalid_program": 87
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 32,
+      "correct": 27,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 32,
+      "correct": 26,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "head",
+      "n": 32,
+      "correct": 26,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 2,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 20,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 7,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "executed": 20,
+        "inconsistent_program": 4,
+        "invalid_program": 8
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 24,
+      "correct": 21,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 24,
+      "correct": 20,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "head",
+      "n": 24,
+      "correct": 21,
+      "invalid": 2,
+      "vs_redo": {
+        "repairs": 3,
+        "harms": 3,
+        "repairs_from_invalid": 2
+      },
+      "vs_compiled_model": {
+        "repairs": 1,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 11,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program": 2,
+        "invalid_program_model_answer": 9
+      },
+      "program_routes": {
+        "executed": 11,
+        "inconsistent_program": 2,
+        "invalid_program": 11
+      }
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 120,
+      "correct": 96,
+      "invalid": 7
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 120,
+      "correct": 81,
+      "invalid": 8
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "head",
+      "n": 120,
+      "correct": 81,
+      "invalid": 8,
+      "vs_redo": {
+        "repairs": 9,
+        "harms": 24,
+        "repairs_from_invalid": 4
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 30,
+        "inconsistent_program_model_answer": 6,
+        "invalid_program_model_answer": 76,
+        "invalid_program": 8
+      },
+      "program_routes": {
+        "executed": 30,
+        "inconsistent_program": 6,
+        "invalid_program": 84
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "arm": "redo",
+      "n": 120,
+      "correct": 97,
+      "invalid": 8
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "arm": "compiled_model",
+      "n": 120,
+      "correct": 82,
+      "invalid": 10
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "all",
+      "group": "all",
+      "arm": "head",
+      "n": 120,
+      "correct": 82,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 11,
+        "harms": 26,
+        "repairs_from_invalid": 5
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 21,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 85,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "executed": 21,
+        "inconsistent_program": 4,
+        "invalid_program": 95
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "redo",
+      "n": 48,
+      "correct": 36,
+      "invalid": 6
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 29,
+      "invalid": 10
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "gastric",
+      "arm": "head",
+      "n": 48,
+      "correct": 29,
+      "invalid": 10,
+      "vs_redo": {
+        "repairs": 7,
+        "harms": 14,
+        "repairs_from_invalid": 4
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 38,
+        "invalid_program": 10
+      },
+      "program_routes": {
+        "invalid_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "redo",
+      "n": 48,
+      "correct": 41,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "compiled_model",
+      "n": 48,
+      "correct": 33,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "prostate",
+      "arm": "head",
+      "n": 48,
+      "correct": 33,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 4,
+        "harms": 12,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "invalid_program_model_answer": 47,
+        "executed": 1
+      },
+      "program_routes": {
+        "invalid_program": 47,
+        "executed": 1
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "redo",
+      "n": 24,
+      "correct": 20,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "compiled_model",
+      "n": 24,
+      "correct": 20,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "source_model",
+      "group": "tnf",
+      "arm": "head",
+      "n": 24,
+      "correct": 20,
+      "invalid": 0,
+      "vs_redo": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 20,
+        "inconsistent_program_model_answer": 4
+      },
+      "program_routes": {
+        "executed": 20,
+        "inconsistent_program": 4
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "redo",
+      "n": 60,
+      "correct": 48,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 42,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "affirmative",
+      "arm": "head",
+      "n": 60,
+      "correct": 42,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 12,
+        "repairs_from_invalid": 2
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 13,
+        "invalid_program_model_answer": 42,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 13,
+        "invalid_program": 47
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "redo",
+      "n": 60,
+      "correct": 49,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 40,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "polarity",
+      "group": "negative",
+      "arm": "head",
+      "n": 60,
+      "correct": 40,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 14,
+        "repairs_from_invalid": 3
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 8,
+        "inconsistent_program_model_answer": 4,
+        "invalid_program_model_answer": 43,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 8,
+        "inconsistent_program": 4,
+        "invalid_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 60,
+      "correct": 50,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 45,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": false,
+      "arm": "head",
+      "n": 60,
+      "correct": 45,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 6,
+        "harms": 11,
+        "repairs_from_invalid": 2
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 10,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 43,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 10,
+        "inconsistent_program": 2,
+        "invalid_program": 48
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 60,
+      "correct": 47,
+      "invalid": 4
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 60,
+      "correct": 37,
+      "invalid": 5
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "initial_noop",
+      "group": true,
+      "arm": "head",
+      "n": 60,
+      "correct": 37,
+      "invalid": 5,
+      "vs_redo": {
+        "repairs": 5,
+        "harms": 15,
+        "repairs_from_invalid": 3
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 11,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 42,
+        "invalid_program": 5
+      },
+      "program_routes": {
+        "executed": 11,
+        "inconsistent_program": 2,
+        "invalid_program": 47
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 100,
+      "correct": 81,
+      "invalid": 6
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 100,
+      "correct": 66,
+      "invalid": 9
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": false,
+      "arm": "head",
+      "n": 100,
+      "correct": 66,
+      "invalid": 9,
+      "vs_redo": {
+        "repairs": 10,
+        "harms": 25,
+        "repairs_from_invalid": 4
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 11,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 78,
+        "invalid_program": 9
+      },
+      "program_routes": {
+        "executed": 11,
+        "inconsistent_program": 2,
+        "invalid_program": 87
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 20,
+      "correct": 16,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 20,
+      "correct": 16,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "trajectory_noop",
+      "group": true,
+      "arm": "head",
+      "n": 20,
+      "correct": 16,
+      "invalid": 1,
+      "vs_redo": {
+        "repairs": 1,
+        "harms": 1,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 10,
+        "inconsistent_program_model_answer": 2,
+        "invalid_program_model_answer": 7,
+        "invalid_program": 1
+      },
+      "program_routes": {
+        "executed": 10,
+        "inconsistent_program": 2,
+        "invalid_program": 8
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "redo",
+      "n": 18,
+      "correct": 16,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "compiled_model",
+      "n": 18,
+      "correct": 15,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": false,
+      "arm": "head",
+      "n": 18,
+      "correct": 15,
+      "invalid": 2,
+      "vs_redo": {
+        "repairs": 2,
+        "harms": 3,
+        "repairs_from_invalid": 1
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 6,
+        "inconsistent_program_model_answer": 1,
+        "invalid_program": 2,
+        "invalid_program_model_answer": 9
+      },
+      "program_routes": {
+        "executed": 6,
+        "inconsistent_program": 1,
+        "invalid_program": 11
+      }
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "redo",
+      "n": 102,
+      "correct": 81,
+      "invalid": 7
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "compiled_model",
+      "n": 102,
+      "correct": 67,
+      "invalid": 8
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "grouping": "outcome_noop",
+      "group": true,
+      "arm": "head",
+      "n": 102,
+      "correct": 67,
+      "invalid": 8,
+      "vs_redo": {
+        "repairs": 9,
+        "harms": 23,
+        "repairs_from_invalid": 4
+      },
+      "vs_compiled_model": {
+        "repairs": 0,
+        "harms": 0,
+        "repairs_from_invalid": 0
+      },
+      "routes": {
+        "executed": 15,
+        "inconsistent_program_model_answer": 3,
+        "invalid_program_model_answer": 76,
+        "invalid_program": 8
+      },
+      "program_routes": {
+        "executed": 15,
+        "inconsistent_program": 3,
+        "invalid_program": 84
+      }
+    }
+  ],
+  "paired_polarity": [
+    {
+      "method": "M4",
+      "view": "all144",
+      "arm": "redo",
+      "n": 72,
+      "both_correct": 23,
+      "complementary_valid": 38
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "arm": "compiled_model",
+      "n": 72,
+      "both_correct": 32,
+      "complementary_valid": 39
+    },
+    {
+      "method": "M4",
+      "view": "all144",
+      "arm": "head",
+      "n": 72,
+      "both_correct": 33,
+      "complementary_valid": 40
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "arm": "redo",
+      "n": 60,
+      "both_correct": 19,
+      "complementary_valid": 31
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "arm": "compiled_model",
+      "n": 60,
+      "both_correct": 26,
+      "complementary_valid": 31
+    },
+    {
+      "method": "M4",
+      "view": "unique120",
+      "arm": "head",
+      "n": 60,
+      "both_correct": 28,
+      "complementary_valid": 34
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "arm": "redo",
+      "n": 72,
+      "both_correct": 49,
+      "complementary_valid": 52
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "arm": "compiled_model",
+      "n": 72,
+      "both_correct": 43,
+      "complementary_valid": 55
+    },
+    {
+      "method": "M5",
+      "view": "all144",
+      "arm": "head",
+      "n": 72,
+      "both_correct": 44,
+      "complementary_valid": 56
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "arm": "redo",
+      "n": 60,
+      "both_correct": 40,
+      "complementary_valid": 42
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "arm": "compiled_model",
+      "n": 60,
+      "both_correct": 34,
+      "complementary_valid": 44
+    },
+    {
+      "method": "M5",
+      "view": "unique120",
+      "arm": "head",
+      "n": 60,
+      "both_correct": 34,
+      "complementary_valid": 44
+    }
+  ],
+  "source_networks": 3,
+  "initial_states": 5,
+  "new_calls": 576,
+  "exact_request_replays": 288
+}

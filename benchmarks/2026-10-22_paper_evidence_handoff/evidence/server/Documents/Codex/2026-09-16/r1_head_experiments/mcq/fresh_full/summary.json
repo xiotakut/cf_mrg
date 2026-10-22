@@ -1,0 +1,345 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "ALL",
+      "n": 202,
+      "correct": 134,
+      "baseline_correct": 131,
+      "invalid": 0,
+      "repairs": 17,
+      "harms": 14
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M10",
+      "n": 1,
+      "correct": 1,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M11",
+      "n": 67,
+      "correct": 60,
+      "baseline_correct": 60,
+      "invalid": 0,
+      "repairs": 5,
+      "harms": 5
+    },
+    {
+      "method": "M4",
+      "review": "redo",
+      "source": "M12",
+      "n": 134,
+      "correct": 73,
+      "baseline_correct": 71,
+      "invalid": 0,
+      "repairs": 11,
+      "harms": 9
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "ALL",
+      "n": 202,
+      "correct": 135,
+      "baseline_correct": 149,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 22
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M10",
+      "n": 1,
+      "correct": 0,
+      "baseline_correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M11",
+      "n": 67,
+      "correct": 64,
+      "baseline_correct": 64,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 2
+    },
+    {
+      "method": "M5",
+      "review": "redo",
+      "source": "M12",
+      "n": 134,
+      "correct": 71,
+      "baseline_correct": 85,
+      "invalid": 0,
+      "repairs": 6,
+      "harms": 20
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 178,
+      "reused_calls": 24,
+      "new_input_tokens": 448816,
+      "new_output_tokens": 40021,
+      "total_input_tokens": 511956,
+      "total_output_tokens": 45213,
+      "length_stops": 0,
+      "runtime": [
+        {
+          "status": "complete",
+          "gpu": 0,
+          "pid": 740333,
+          "started_at": 1789541302.7339804,
+          "total": 178,
+          "initialization_seconds": 42.05289673805237,
+          "completed": 178,
+          "elapsed_seconds": 643.0891056060791,
+          "last_batch_seconds": 13.342008590698242,
+          "completed_at": 1789541945.8232787
+        }
+      ],
+      "initialization_failures": []
+    },
+    {
+      "method": "M5",
+      "new_calls": 178,
+      "reused_calls": 24,
+      "new_input_tokens": 399732,
+      "new_output_tokens": 41227,
+      "total_input_tokens": 456156,
+      "total_output_tokens": 46934,
+      "length_stops": 0,
+      "runtime": [
+        {
+          "status": "complete",
+          "gpu": 1,
+          "pid": 730067,
+          "started_at": 1789540852.9357207,
+          "total": 178,
+          "initialization_seconds": 25.488869667053223,
+          "completed": 178,
+          "elapsed_seconds": 331.5159068107605,
+          "last_batch_seconds": 5.560163259506226,
+          "completed_at": 1789541184.4517944
+        }
+      ],
+      "initialization_failures": [
+        {
+          "reason": "Recovery operator had copied failed runtime but not moved the old gpu1 directory; existing runner uses mkdir without exist_ok",
+          "new_calls": 0,
+          "model_loading_attempted": false,
+          "resolution": "Archive failed gpu1 directory before retry_2; keep runner unchanged",
+          "evidence_file": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/mcq/fresh_full/M5/failures/retry_directory_exists/failure.json"
+        },
+        {
+          "reason": "vLLM shared-memory profiling assertion: free increased during model load",
+          "initial_free_bytes": 27514044416,
+          "current_free_bytes": 38719127552,
+          "new_predictions": 0,
+          "model_or_request_config_changed": false,
+          "failed_worker_pid": 725250,
+          "cpu_handoff_pid_stopped": 701412,
+          "retry": "same configuration after memory release; preserve failed run.log",
+          "evidence_file": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/mcq/fresh_full/M5/failures/initial_shared_memory_profile/failure.json"
+        }
+      ]
+    }
+  ],
+  "contrasts": [],
+  "split_results": [
+    {
+      "method": "M4",
+      "split": "pilot24",
+      "source": "ALL",
+      "n": 24,
+      "baseline_correct": 12,
+      "correct": 17,
+      "invalid": 0,
+      "repairs": 7,
+      "harms": 2
+    },
+    {
+      "method": "M4",
+      "split": "pilot24",
+      "source": "M10",
+      "n": 1,
+      "baseline_correct": 0,
+      "correct": 1,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "split": "pilot24",
+      "source": "M11",
+      "n": 7,
+      "baseline_correct": 4,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "split": "pilot24",
+      "source": "M12",
+      "n": 16,
+      "baseline_correct": 8,
+      "correct": 10,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M4",
+      "split": "remaining178",
+      "source": "ALL",
+      "n": 178,
+      "baseline_correct": 119,
+      "correct": 117,
+      "invalid": 0,
+      "repairs": 10,
+      "harms": 12
+    },
+    {
+      "method": "M4",
+      "split": "remaining178",
+      "source": "M10",
+      "n": 0,
+      "baseline_correct": 0,
+      "correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "split": "remaining178",
+      "source": "M11",
+      "n": 60,
+      "baseline_correct": 56,
+      "correct": 54,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 4
+    },
+    {
+      "method": "M4",
+      "split": "remaining178",
+      "source": "M12",
+      "n": 118,
+      "baseline_correct": 63,
+      "correct": 63,
+      "invalid": 0,
+      "repairs": 8,
+      "harms": 8
+    },
+    {
+      "method": "M5",
+      "split": "pilot24",
+      "source": "ALL",
+      "n": 24,
+      "baseline_correct": 12,
+      "correct": 14,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "split": "pilot24",
+      "source": "M10",
+      "n": 1,
+      "baseline_correct": 0,
+      "correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "split": "pilot24",
+      "source": "M11",
+      "n": 7,
+      "baseline_correct": 4,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "split": "pilot24",
+      "source": "M12",
+      "n": 16,
+      "baseline_correct": 8,
+      "correct": 8,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "M5",
+      "split": "remaining178",
+      "source": "ALL",
+      "n": 178,
+      "baseline_correct": 137,
+      "correct": 121,
+      "invalid": 0,
+      "repairs": 5,
+      "harms": 21
+    },
+    {
+      "method": "M5",
+      "split": "remaining178",
+      "source": "M10",
+      "n": 0,
+      "baseline_correct": 0,
+      "correct": 0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "split": "remaining178",
+      "source": "M11",
+      "n": 60,
+      "baseline_correct": 60,
+      "correct": 58,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "M5",
+      "split": "remaining178",
+      "source": "M12",
+      "n": 118,
+      "baseline_correct": 77,
+      "correct": 63,
+      "invalid": 0,
+      "repairs": 5,
+      "harms": 19
+    }
+  ],
+  "new_calls": 356,
+  "reused_calls": 48
+}

@@ -1,0 +1,137 @@
+{
+  "status": "M4_complete_M5_pending_full_interface_replay_pending",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "pilot",
+      "variant": "original",
+      "n": 60,
+      "correct": 3,
+      "invalid": 53,
+      "macro_recall": 0.05,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "pilot",
+      "variant": "order0",
+      "n": 60,
+      "correct": 13,
+      "invalid": 0,
+      "macro_recall": 0.2222222222222222,
+      "repairs": 10,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "pilot",
+      "variant": "uncalibrated_majority",
+      "n": 60,
+      "correct": 18,
+      "invalid": 0,
+      "macro_recall": 0.3277777777777778,
+      "repairs": 15,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "pilot",
+      "variant": "calibrated_majority",
+      "n": 60,
+      "correct": 18,
+      "invalid": 0,
+      "macro_recall": 0.3277777777777778,
+      "repairs": 15,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "remaining",
+      "variant": "original",
+      "n": 1040,
+      "correct": 30,
+      "invalid": 789,
+      "macro_recall": 0.052336604695095254,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "remaining",
+      "variant": "order0",
+      "n": 1040,
+      "correct": 145,
+      "invalid": 8,
+      "macro_recall": 0.1971704862676257,
+      "repairs": 129,
+      "harms": 14
+    },
+    {
+      "method": "M4",
+      "scope": "remaining",
+      "variant": "uncalibrated_majority",
+      "n": 1040,
+      "correct": 240,
+      "invalid": 8,
+      "macro_recall": 0.2594383804920084,
+      "repairs": 226,
+      "harms": 16
+    },
+    {
+      "method": "M4",
+      "scope": "remaining",
+      "variant": "calibrated_majority",
+      "n": 1040,
+      "correct": 257,
+      "invalid": 11,
+      "macro_recall": 0.2734659934463649,
+      "repairs": 241,
+      "harms": 14
+    },
+    {
+      "method": "M4",
+      "scope": "all1100",
+      "variant": "original",
+      "n": 1100,
+      "correct": 33,
+      "invalid": 842,
+      "macro_recall": 0.05183551015829293,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "all1100",
+      "variant": "order0",
+      "n": 1100,
+      "correct": 158,
+      "invalid": 8,
+      "macro_recall": 0.21672218889237263,
+      "repairs": 139,
+      "harms": 14
+    },
+    {
+      "method": "M4",
+      "scope": "all1100",
+      "variant": "uncalibrated_majority",
+      "n": 1100,
+      "correct": 258,
+      "invalid": 8,
+      "macro_recall": 0.3087171184506787,
+      "repairs": 241,
+      "harms": 16
+    },
+    {
+      "method": "M4",
+      "scope": "all1100",
+      "variant": "calibrated_majority",
+      "n": 1100,
+      "correct": 275,
+      "invalid": 11,
+      "macro_recall": 0.3202232446370829,
+      "repairs": 256,
+      "harms": 14
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "status": "complete_development_controls",
+  "independent_generalization": false,
+  "sequence": [
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "native_plain_sequence_sum",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "native_plain_sequence_character_norm",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "chat_sequence_sum",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "chat_sequence_character_norm",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "native_plain_sequence_sum",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "native_plain_sequence_character_norm",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "chat_sequence_sum",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "chat_sequence_character_norm",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "native_plain_sequence_sum",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "native_plain_sequence_character_norm",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "chat_sequence_sum",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "chat_sequence_character_norm",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "native_plain_sequence_sum",
+      "answer": "Kaposi's sarcoma",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "native_plain_sequence_character_norm",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "chat_sequence_sum",
+      "answer": "Kaposi's sarcoma",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": false
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "chat_sequence_character_norm",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true
+    }
+  ],
+  "head": [
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "head_order0",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true,
+      "raw_style": {
+        "model": "llama",
+        "item_id": "cupcase_106",
+        "variant": "head_order0",
+        "answer": "Hypocomplementemic urticarial vasculitis.",
+        "gold": "Hypocomplementemic urticarial vasculitis.",
+        "correct": true
+      }
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "head_uncalibrated_vote",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true,
+      "raw_style": {
+        "model": "llama",
+        "item_id": "cupcase_106",
+        "variant": "head_uncalibrated_vote",
+        "answer": "Hypocomplementemic urticarial vasculitis.",
+        "gold": "Hypocomplementemic urticarial vasculitis.",
+        "correct": true
+      }
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_106",
+      "variant": "head_calibrated_vote",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true,
+      "raw_style": {
+        "model": "llama",
+        "item_id": "cupcase_106",
+        "variant": "head_calibrated_vote",
+        "answer": "Hypocomplementemic urticarial vasculitis.",
+        "gold": "Hypocomplementemic urticarial vasculitis.",
+        "correct": true
+      }
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "head_order0",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true,
+      "raw_style": {
+        "model": "llama",
+        "item_id": "cupcase_654",
+        "variant": "head_order0",
+        "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+        "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+        "correct": true
+      }
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "head_uncalibrated_vote",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true,
+      "raw_style": {
+        "model": "llama",
+        "item_id": "cupcase_654",
+        "variant": "head_uncalibrated_vote",
+        "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+        "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+        "correct": true
+      }
+    },
+    {
+      "model": "llama",
+      "item_id": "cupcase_654",
+      "variant": "head_calibrated_vote",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true,
+      "raw_style": {
+        "model": "llama",
+        "item_id": "cupcase_654",
+        "variant": "head_calibrated_vote",
+        "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+        "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+        "correct": true
+      }
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "head_order0",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true,
+      "raw_style": {
+        "model": "qwen",
+        "item_id": "cupcase_106",
+        "variant": "head_order0",
+        "answer": "Hypocomplementemic urticarial vasculitis.",
+        "gold": "Hypocomplementemic urticarial vasculitis.",
+        "correct": true
+      }
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "head_uncalibrated_vote",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true,
+      "raw_style": {
+        "model": "qwen",
+        "item_id": "cupcase_106",
+        "variant": "head_uncalibrated_vote",
+        "answer": "Hypocomplementemic urticarial vasculitis.",
+        "gold": "Hypocomplementemic urticarial vasculitis.",
+        "correct": true
+      }
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_106",
+      "variant": "head_calibrated_vote",
+      "answer": "Hypocomplementemic urticarial vasculitis.",
+      "gold": "Hypocomplementemic urticarial vasculitis.",
+      "correct": true,
+      "raw_style": {
+        "model": "qwen",
+        "item_id": "cupcase_106",
+        "variant": "head_calibrated_vote",
+        "answer": "Hypocomplementemic urticarial vasculitis.",
+        "gold": "Hypocomplementemic urticarial vasculitis.",
+        "correct": true
+      }
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "head_order0",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true,
+      "raw_style": {
+        "model": "qwen",
+        "item_id": "cupcase_654",
+        "variant": "head_order0",
+        "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+        "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+        "correct": true
+      }
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "head_uncalibrated_vote",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true,
+      "raw_style": {
+        "model": "qwen",
+        "item_id": "cupcase_654",
+        "variant": "head_uncalibrated_vote",
+        "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+        "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+        "correct": true
+      }
+    },
+    {
+      "model": "qwen",
+      "item_id": "cupcase_654",
+      "variant": "head_calibrated_vote",
+      "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+      "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+      "correct": true,
+      "raw_style": {
+        "model": "qwen",
+        "item_id": "cupcase_654",
+        "variant": "head_calibrated_vote",
+        "answer": "Low-grade endometrial stromal sarcoma (ESS).",
+        "gold": "Low-grade endometrial stromal sarcoma (ESS).",
+        "correct": true
+      }
+    }
+  ],
+  "cost": [
+    {
+      "model": "llama",
+      "new_calls": 12,
+      "reused_calls": 4,
+      "input_tokens": 14628,
+      "output_tokens": 12,
+      "runtime": {
+        "status": "complete",
+        "method": "llama",
+        "gpu": 3,
+        "pid": 3491683,
+        "completed_calls": 12,
+        "initialization_seconds": 20.737567901611328,
+        "elapsed_seconds": 25.244768619537354
+      }
+    },
+    {
+      "model": "qwen",
+      "new_calls": 12,
+      "reused_calls": 4,
+      "input_tokens": 14954,
+      "output_tokens": 12,
+      "runtime": {
+        "status": "complete",
+        "method": "qwen",
+        "gpu": 3,
+        "pid": 3492558,
+        "completed_calls": 12,
+        "initialization_seconds": 58.19359087944031,
+        "elapsed_seconds": 62.53507614135742
+      }
+    }
+  ]
+}

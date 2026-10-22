@@ -1,0 +1,20 @@
+{
+  "status": "frozen_before_model_inference",
+  "frozen_at": 1789551453.816988,
+  "groups": 11,
+  "inputs": 33,
+  "arms": [
+    "base",
+    "added_support",
+    "irrelevant"
+  ],
+  "excluded_group": "r1mechanism_09_additional_bph_support",
+  "exclusion": "Base already implied LUTS; added BPH does not independently establish a newly supported criterion. Entire group removed without replacement; original36 and checks retained.",
+  "answer_changing_support_groups": 10,
+  "stable_answer_new_support_groups": 1,
+  "unchanged_gold": true,
+  "unchanged_frozen_head": true,
+  "independent_clinical_validation": false,
+  "new_calls_expected": 198,
+  "qualification": "New documented support only; unestablished conditions do not imply clinical safety."
+}

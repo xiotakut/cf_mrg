@@ -1,0 +1,60 @@
+{
+  "status": "complete",
+  "pid": 2762906,
+  "gpu": "2",
+  "stage": "smoke",
+  "started": "2026-09-18 16:49:15 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "kind": "smoke",
+      "pid": 2762909,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+        "--method",
+        "M4",
+        "--gpu",
+        "2",
+        "--batch-size",
+        "8",
+        "--limit",
+        "16"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:49:15 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:49:26 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "smoke",
+      "pid": 2763173,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/semantic_supervision_pilot/extract_features.py",
+        "--method",
+        "M5",
+        "--gpu",
+        "2",
+        "--batch-size",
+        "8",
+        "--limit",
+        "16"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 16:49:26 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 16:49:37 +0800"
+    }
+  ],
+  "source_hashes": {
+    "extract_features.py": "11b4ff8145ffb32e2990e6be1374982b58ce0fbd3ee489355174fba9fd76f6be",
+    "train.py": "ef0417cd2df8cf78218277b6b531f8e64fabfeed2ae11809f4d22be32624381d",
+    "launch.py": "a94da22792e3aaf38cba2adb970f0a08919a2e77f08aa2db07622b1eca69cb05",
+    "plan.json": "866fdc8b61686c0ce26fe509da3bc99cd4ab9806a933afbb0ca014443fe02366"
+  },
+  "ended": "2026-09-18 16:49:37 +0800"
+}

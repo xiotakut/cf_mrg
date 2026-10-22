@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "pid": 2810288,
+  "stage": "smoke",
+  "batch_size": 1,
+  "started": "2026-09-18 17:54:36 +0800",
+  "jobs": [
+    {
+      "method": "M4",
+      "gpu": "0",
+      "kind": "smoke",
+      "pid": 2810290,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py",
+        "--method",
+        "M4",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/singleton_recovery",
+        "--gpu",
+        "0",
+        "--batch-size",
+        "1",
+        "--limit",
+        "16"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:54:36 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:54:53 +0800"
+    },
+    {
+      "method": "M5",
+      "gpu": "1",
+      "kind": "smoke",
+      "pid": 2810291,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py",
+        "--method",
+        "M5",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/singleton_recovery",
+        "--gpu",
+        "1",
+        "--batch-size",
+        "1",
+        "--limit",
+        "16"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 17:54:36 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 17:54:51 +0800"
+    }
+  ],
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py": "f33eba863bde516fe3c995455dc8b28fb64053f3a304dc7b966232be6a529350",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/train.py": "6382f56aa3264bbb27cd8914ab187dbf5e721d5c7d341582181195439ee57c4f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/plan.json": "658220d25cbcaa668e3fe1c695c8d772923459c855bdcc5d1bb0302dea71fdd7",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/launch_singleton.py": "282a2249e2bbaf53ba89a90e5420f628d589e339b1a4b13ebe84d9537869bcb7",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/singleton_recovery/plan.json": "26aa5cda132cddb44f91ab3fff7775942fab8e31139330401fdb5626185fe658"
+  },
+  "ended": "2026-09-18 17:54:53 +0800"
+}

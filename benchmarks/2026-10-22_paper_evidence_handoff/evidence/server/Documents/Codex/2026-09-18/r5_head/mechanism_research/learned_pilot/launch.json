@@ -1,0 +1,60 @@
+{
+  "status": "failed",
+  "started": "2026-09-18 14:59:28 +0800",
+  "schedule": "M4 then M5 HF feature forwards on GPU2; CPU fitting after each backbone",
+  "jobs": [
+    {
+      "kind": "features",
+      "method": "M4",
+      "pid": 2693750,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_pilot",
+        "--method",
+        "M4",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "returncode": 0
+    },
+    {
+      "kind": "training",
+      "method": "M4",
+      "pid": 2700958,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_train.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_pilot",
+        "--method",
+        "M4"
+      ],
+      "status": "complete",
+      "returncode": 0
+    },
+    {
+      "kind": "features",
+      "method": "M5",
+      "pid": 2700959,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_pilot",
+        "--method",
+        "M5",
+        "--gpu",
+        "2"
+      ],
+      "status": "failed",
+      "returncode": -2
+    }
+  ],
+  "ended": "2026-09-18 15:14:43 +0800"
+}

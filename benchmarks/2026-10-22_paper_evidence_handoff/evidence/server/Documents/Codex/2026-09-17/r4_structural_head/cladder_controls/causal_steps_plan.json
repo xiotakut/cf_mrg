@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "prepared_at": "2026-09-17 18:49:53 +0800",
+  "selection_plan": "selection_plan.json",
+  "checks": [
+    {
+      "method": "M4",
+      "planned_new_calls": 80,
+      "max_prompt_tokens": 783
+    },
+    {
+      "method": "M5",
+      "planned_new_calls": 80,
+      "max_prompt_tokens": 623
+    }
+  ],
+  "planned_new_calls": 160,
+  "source_paper": "https://proceedings.neurips.cc/paper_files/paper/2023/file/631bb9434d718ea309af82566347d607-Paper-Conference.pdf",
+  "attribution": "CausalCoT-inspired single-response deterministic Boolean adaptation of Section4/AppendixB.1; not an exact reproduction of the authors probability/estimand prompt and separate final-answer turn.",
+  "input": "All original saved validation messages and shared source protocol, plus one common causal-steps instruction; no answer/meta/SCM oracle fields.",
+  "generation": "Original backbone/seed42/temperature0.7/top_p1/top_k-1/2048output/batch4/M4guided/M5unguided; standby memory fraction0.95 and unchanged8192KV blocks.",
+  "prediction_or_score_files_read": false,
+  "model_calls": 0,
+  "comparison": "Compare with existing redo/compiled_model/head on exactly these80 IDs; no new independent validation; extra calls and costs reported separately.",
+  "finished_at": "2026-09-17 20:07:29 +0800"
+}

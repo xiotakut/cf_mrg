@@ -1,0 +1,33 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 80,
+      "source_pairs": 40,
+      "new_calls": 480,
+      "full_request_replay": 480,
+      "masked_only_exact_patient_occurrences": 960,
+      "max_prompt_tokens": 2925
+    },
+    {
+      "method": "M5",
+      "cases": 80,
+      "source_pairs": 40,
+      "new_calls": 480,
+      "full_request_replay": 480,
+      "masked_only_exact_patient_occurrences": 960,
+      "max_prompt_tokens": 2669
+    }
+  ],
+  "new_calls": 960,
+  "reused_full_calls": 960,
+  "new_prior_calls": 0,
+  "formula": "For each fixed order: 2*log P(full patient + native context) - log P(patient masked + same native context) - log P(frozen content-free prior); then existing majority/mean tie-break.",
+  "alpha": 1,
+  "source": "https://aclanthology.org/2024.naacl-short.69.pdf",
+  "primary": "Patient contrast versus existing calibrated majority: both-endpoint accuracy and target accuracy per model. Require joint benefit before expansion; compare old v1 and uncalibrated vote separately.",
+  "scope": "Same40 exposed R3 source pairs, endpoints answered independently. Not independent generalization; not medical causal inference.",
+  "permissions": "Only two exact current-question occurrences replaced by [MASK] in background prompts. Native retrieval/system/role content otherwise identical; no labels, other endpoint, or training answers in model requests.",
+  "costs": "Deployment12 scores per case, versus6 for calibrated control; same original model and public resources. Deterministic extra score calls add computation, not new evidence."
+}

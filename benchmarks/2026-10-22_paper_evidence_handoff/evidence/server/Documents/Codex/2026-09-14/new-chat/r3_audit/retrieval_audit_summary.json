@@ -1,0 +1,32 @@
+{
+  "inputs": 146,
+  "selected_document_pairs": 1168,
+  "pairs_with_query_truncation": 13,
+  "inputs_with_any_query_truncation": 9,
+  "maximum_original_query_tokens": 322,
+  "minimum_retained_query_tokens": 75,
+  "procedure": "Replay the installed tokenizer on each actual archived selected query/document pair, longest-first max_length=512, as in src/baselines.py. No new retrieval, model or gold use.",
+  "limitation": "Only the final 8 documents are archived here; this does not reconstruct all 128 BM25 candidates or measure the causal score impact of truncation.",
+  "example_titles": {
+    "s007432": [
+      "Nursing Admission Assessment and Examination -- Issues of Concern -- History Taking Techniques",
+      "Chest Pain -- History and Physical -- History",
+      "Pain Catastrophizing Scale",
+      "Neurology_Adams",
+      "Pain catastrophizing",
+      "Fingerprint",
+      "Dagdu Maruti Pawar",
+      "R&B/Hip-Hop Airplay"
+    ],
+    "s008364": [
+      "Nursing Admission Assessment and Examination -- Issues of Concern -- History Taking Techniques",
+      "Chronic Pain Syndrome -- History and Physical",
+      "Pediatrics_Nelson",
+      "Tonsil stones",
+      "Infectious mononucleosis",
+      "Pediatrics_Nelson",
+      "Tonsillitis",
+      "Pain Catastrophizing Scale"
+    ]
+  }
+}

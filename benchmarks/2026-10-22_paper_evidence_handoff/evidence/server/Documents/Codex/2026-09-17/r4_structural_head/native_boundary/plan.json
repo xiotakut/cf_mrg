@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "at": "2026-09-17 18:42:54 +0800",
+  "candidate": "Exact frozen CLadder head dependencies; no new prompt or policy changes",
+  "planned_new_calls": 52,
+  "checks": [
+    {
+      "method": "M4",
+      "calls": 26,
+      "max_prompt_tokens": 3790
+    },
+    {
+      "method": "M5",
+      "calls": 26,
+      "max_prompt_tokens": 3693
+    }
+  ],
+  "scope": "All 13 repeatedly exposed native clinical author scenarios. Author agreement, not independent clinical truth.",
+  "controls": "Fresh redo and same-call inline answer; full original M4/M5 contexts, original backbones/decoding/2048 output/batch4.",
+  "purpose": "Document applicability and unsupported clinical closure of the frozen formal candidate, regardless of CLadder results.",
+  "resource": "Sequential extra workers on GPU1 only while fixed-cache allocation fits available memory; do not interrupt ongoing validation.",
+  "analysis": "Original baseline, fresh redo, inline and execution; compiler failures separate from native answer invalidity. No case/model-specific selection.",
+  "completed_new_calls": 52,
+  "finished_at": "2026-09-17 18:51:52 +0800"
+}

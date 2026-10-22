@@ -1,0 +1,98 @@
+{
+  "results": [
+    {
+      "method": "M3",
+      "variant": "name",
+      "n": 40,
+      "correct": 9,
+      "baseline_correct": 1,
+      "repairs": 8,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 0,
+      "vs_name_harms": 0
+    },
+    {
+      "method": "M3",
+      "variant": "code",
+      "n": 40,
+      "correct": 9,
+      "baseline_correct": 1,
+      "repairs": 8,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 4,
+      "vs_name_harms": 4
+    },
+    {
+      "method": "M7",
+      "variant": "name",
+      "n": 40,
+      "correct": 18,
+      "baseline_correct": 13,
+      "repairs": 5,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 0,
+      "vs_name_harms": 0
+    },
+    {
+      "method": "M7",
+      "variant": "code",
+      "n": 40,
+      "correct": 18,
+      "baseline_correct": 13,
+      "repairs": 5,
+      "harms": 0,
+      "fallbacks": 0,
+      "vs_name_repairs": 1,
+      "vs_name_harms": 1
+    }
+  ],
+  "costs": [
+    {
+      "method": "M3",
+      "variant": "name",
+      "calls": 40,
+      "input_tokens": 178717,
+      "output_tokens": 489,
+      "length_stops": 0
+    },
+    {
+      "method": "M3",
+      "variant": "code",
+      "calls": 40,
+      "input_tokens": 185277,
+      "output_tokens": 320,
+      "length_stops": 0
+    },
+    {
+      "method": "M7",
+      "variant": "name",
+      "calls": 40,
+      "input_tokens": 192931,
+      "output_tokens": 483,
+      "length_stops": 0
+    },
+    {
+      "method": "M7",
+      "variant": "code",
+      "calls": 40,
+      "input_tokens": 199491,
+      "output_tokens": 320,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 2963601,
+    "started_at": 1789420779.3212721,
+    "total": 160,
+    "initialization_seconds": 69.31614851951599,
+    "completed": 160,
+    "elapsed_seconds": 207.51358842849731,
+    "last_batch_seconds": 5.978859901428223,
+    "completed_at": 1789420986.8351157
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T15:57:14.818717+08:00",
+  "model": "qwen",
+  "new_calls": 199,
+  "native_inputs": 79,
+  "holdout_inputs": 96,
+  "native_routes": {
+    "program": 55,
+    "generic": 24
+  },
+  "variants": [
+    "baseline",
+    "scoped_program",
+    "scoped_strict",
+    "route_plain",
+    "route_condition"
+  ],
+  "note": "Unchanged original model weights and finite71-rule bank. Query action is parsed; only action-relevant patient facts are extracted. Native55 uses program plus its own original method answer; native24 has matched plain/condition new-answer controls with own archived method evidence. Each routed pipeline requires79 added calls;24 extra generic controls make103 native calls. Holdout96 facts exercise the program component without initial answers, including age<65 outside the native router. Labels/proofs absent from prompts. All model calls are new at temperature0/2048; earlier offline50/79 is not silently reused."
+}

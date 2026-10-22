@@ -1,0 +1,482 @@
+{
+  "status": "complete; internal author validation only",
+  "method": "M5",
+  "elapsed_seconds": 25.51840615272522,
+  "scipy_version": "1.15.3",
+  "selected": {
+    "C": 0.01,
+    "converged": true,
+    "optimizer_status": 0,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 134,
+    "function_evaluations": 147,
+    "objective": 0.11219012769199944,
+    "gradient_linf": 9.865990709210376e-07,
+    "coefficient_l2": 1.6701404887455698,
+    "intercept": -0.2991466532039372,
+    "train": {
+      "n": 4435,
+      "nll": 0.23397784483429812,
+      "accuracy": 0.9341600901916572,
+      "balanced_accuracy": 0.9340865014634654,
+      "confusion": {
+        "0": {
+          "0": 2033,
+          "1": 170
+        },
+        "1": {
+          "0": 122,
+          "1": 2110
+        }
+      }
+    },
+    "val": {
+      "n": 1109,
+      "nll": 0.4221171006020379,
+      "accuracy": 0.799819657348963,
+      "balanced_accuracy": 0.7997092285775618,
+      "confusion": {
+        "0": {
+          "0": 431,
+          "1": 120
+        },
+        "1": {
+          "0": 102,
+          "1": 456
+        }
+      }
+    },
+    "train_with_offset": {
+      "n": 4435,
+      "nll": 0.0807428982427628,
+      "accuracy": 0.9943630214205186,
+      "balanced_accuracy": 0.9943524592564392,
+      "confusion": {
+        "0": {
+          "0": 2187,
+          "1": 16
+        },
+        "1": {
+          "0": 9,
+          "1": 2223
+        }
+      }
+    },
+    "val_with_offset": {
+      "n": 1109,
+      "nll": 0.4589308391055006,
+      "accuracy": 0.8088367899008115,
+      "balanced_accuracy": 0.8087267203975828,
+      "confusion": {
+        "0": {
+          "0": 436,
+          "1": 115
+        },
+        "1": {
+          "0": 97,
+          "1": 461
+        }
+      }
+    },
+    "validation_mutation_types": {
+      "LPR": {
+        "n": 62,
+        "correct": 51
+      },
+      "SEN": {
+        "n": 83,
+        "correct": 72
+      },
+      "SEP": {
+        "n": 91,
+        "correct": 80
+      },
+      "SRE": {
+        "n": 16,
+        "correct": 13
+      },
+      "SREO": {
+        "n": 67,
+        "correct": 61
+      },
+      "generation": {
+        "n": 32,
+        "correct": 19
+      },
+      "generation_nd": {
+        "n": 11,
+        "correct": 6
+      },
+      "generation_nd_SEN": {
+        "n": 105,
+        "correct": 74
+      },
+      "generation_nd_SRE": {
+        "n": 1,
+        "correct": 1
+      },
+      "negToPos": {
+        "n": 2,
+        "correct": 0
+      },
+      "pos": {
+        "n": 558,
+        "correct": 456
+      },
+      "posToNeg": {
+        "n": 30,
+        "correct": 20
+      },
+      "swap_number": {
+        "n": 51,
+        "correct": 34
+      }
+    }
+  },
+  "grid": [
+    {
+      "C": 0.01,
+      "converged": true,
+      "optimizer_status": 0,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 134,
+      "function_evaluations": 147,
+      "objective": 0.11219012769199944,
+      "gradient_linf": 9.865990709210376e-07,
+      "coefficient_l2": 1.6701404887455698,
+      "intercept": -0.2991466532039372,
+      "train": {
+        "n": 4435,
+        "nll": 0.23397784483429812,
+        "accuracy": 0.9341600901916572,
+        "balanced_accuracy": 0.9340865014634654,
+        "confusion": {
+          "0": {
+            "0": 2033,
+            "1": 170
+          },
+          "1": {
+            "0": 122,
+            "1": 2110
+          }
+        }
+      },
+      "val": {
+        "n": 1109,
+        "nll": 0.4221171006020379,
+        "accuracy": 0.799819657348963,
+        "balanced_accuracy": 0.7997092285775618,
+        "confusion": {
+          "0": {
+            "0": 431,
+            "1": 120
+          },
+          "1": {
+            "0": 102,
+            "1": 456
+          }
+        }
+      },
+      "train_with_offset": {
+        "n": 4435,
+        "nll": 0.0807428982427628,
+        "accuracy": 0.9943630214205186,
+        "balanced_accuracy": 0.9943524592564392,
+        "confusion": {
+          "0": {
+            "0": 2187,
+            "1": 16
+          },
+          "1": {
+            "0": 9,
+            "1": 2223
+          }
+        }
+      },
+      "val_with_offset": {
+        "n": 1109,
+        "nll": 0.4589308391055006,
+        "accuracy": 0.8088367899008115,
+        "balanced_accuracy": 0.8087267203975828,
+        "confusion": {
+          "0": {
+            "0": 436,
+            "1": 115
+          },
+          "1": {
+            "0": 97,
+            "1": 461
+          }
+        }
+      },
+      "validation_mutation_types": {
+        "LPR": {
+          "n": 62,
+          "correct": 51
+        },
+        "SEN": {
+          "n": 83,
+          "correct": 72
+        },
+        "SEP": {
+          "n": 91,
+          "correct": 80
+        },
+        "SRE": {
+          "n": 16,
+          "correct": 13
+        },
+        "SREO": {
+          "n": 67,
+          "correct": 61
+        },
+        "generation": {
+          "n": 32,
+          "correct": 19
+        },
+        "generation_nd": {
+          "n": 11,
+          "correct": 6
+        },
+        "generation_nd_SEN": {
+          "n": 105,
+          "correct": 74
+        },
+        "generation_nd_SRE": {
+          "n": 1,
+          "correct": 1
+        },
+        "negToPos": {
+          "n": 2,
+          "correct": 0
+        },
+        "pos": {
+          "n": 558,
+          "correct": 456
+        },
+        "posToNeg": {
+          "n": 30,
+          "correct": 20
+        },
+        "swap_number": {
+          "n": 51,
+          "correct": 34
+        }
+      }
+    },
+    {
+      "C": 0.1,
+      "converged": true,
+      "optimizer_status": 0,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 230,
+      "function_evaluations": 247,
+      "objective": 0.047216640101442664,
+      "gradient_linf": 9.268386191266405e-07,
+      "coefficient_l2": 4.43586378080179,
+      "intercept": -0.5648537577036337,
+      "train": {
+        "n": 4435,
+        "nll": 0.09634857618967532,
+        "accuracy": 0.9799323562570462,
+        "balanced_accuracy": 0.979912330367355,
+        "confusion": {
+          "0": {
+            "0": 2152,
+            "1": 51
+          },
+          "1": {
+            "0": 38,
+            "1": 2194
+          }
+        }
+      },
+      "val": {
+        "n": 1109,
+        "nll": 0.5690013059902308,
+        "accuracy": 0.7844905320108205,
+        "balanced_accuracy": 0.7844990210044949,
+        "confusion": {
+          "0": {
+            "0": 433,
+            "1": 118
+          },
+          "1": {
+            "0": 121,
+            "1": 437
+          }
+        }
+      },
+      "train_with_offset": {
+        "n": 4435,
+        "nll": 0.025033001452255347,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "confusion": {
+          "0": {
+            "0": 2203,
+            "1": 0
+          },
+          "1": {
+            "0": 0,
+            "1": 2232
+          }
+        }
+      },
+      "val_with_offset": {
+        "n": 1109,
+        "nll": 0.5929396704262877,
+        "accuracy": 0.8016230838593328,
+        "balanced_accuracy": 0.8016265636282028,
+        "confusion": {
+          "0": {
+            "0": 442,
+            "1": 109
+          },
+          "1": {
+            "0": 111,
+            "1": 447
+          }
+        }
+      }
+    },
+    {
+      "C": 1.0,
+      "converged": true,
+      "optimizer_status": 0,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 277,
+      "function_evaluations": 303,
+      "objective": 0.013354625919641493,
+      "gradient_linf": 9.86962434503126e-07,
+      "coefficient_l2": 8.551044613531715,
+      "intercept": -0.9524751173997533,
+      "train": {
+        "n": 4435,
+        "nll": 0.02701094366006119,
+        "accuracy": 0.9972942502818489,
+        "balanced_accuracy": 0.9973029812718727,
+        "confusion": {
+          "0": {
+            "0": 2200,
+            "1": 3
+          },
+          "1": {
+            "0": 9,
+            "1": 2223
+          }
+        }
+      },
+      "val": {
+        "n": 1109,
+        "nll": 0.903536777681879,
+        "accuracy": 0.7781785392245266,
+        "balanced_accuracy": 0.7782038522334758,
+        "confusion": {
+          "0": {
+            "0": 431,
+            "1": 120
+          },
+          "1": {
+            "0": 126,
+            "1": 432
+          }
+        }
+      },
+      "train_with_offset": {
+        "n": 4435,
+        "nll": 0.005111067409764411,
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "confusion": {
+          "0": {
+            "0": 2203,
+            "1": 0
+          },
+          "1": {
+            "0": 0,
+            "1": 2232
+          }
+        }
+      },
+      "val_with_offset": {
+        "n": 1109,
+        "nll": 0.9067888076217916,
+        "accuracy": 0.7935076645626691,
+        "balanced_accuracy": 0.7935165128245159,
+        "confusion": {
+          "0": {
+            "0": 438,
+            "1": 113
+          },
+          "1": {
+            "0": 116,
+            "1": 442
+          }
+        }
+      }
+    }
+  ],
+  "train_rows": 4435,
+  "validation_rows": 1109,
+  "parameters": 4097,
+  "frozen_H": {
+    "C": 0.01,
+    "train": {
+      "n": 4435,
+      "nll": 0.26202874469948007,
+      "accuracy": 0.9280721533258174,
+      "balanced_accuracy": 0.9280145232063803,
+      "confusion": {
+        "0": {
+          "0": 2025,
+          "1": 178
+        },
+        "1": {
+          "0": 141,
+          "1": 2091
+        }
+      }
+    },
+    "val": {
+      "n": 1109,
+      "nll": 0.6342593432137775,
+      "accuracy": 0.7204688908926962,
+      "balanced_accuracy": 0.720412218904696,
+      "confusion": {
+        "0": {
+          "0": 392,
+          "1": 159
+        },
+        "1": {
+          "0": 151,
+          "1": 407
+        }
+      }
+    },
+    "train_abs_margin_quantiles": [
+      0.0011412809241653499,
+      1.6341508175684174,
+      4.044394651688078,
+      8.697224171485475,
+      12.992871498387366
+    ],
+    "initial_residual_abs_gradient_quantiles": [
+      2.2764945529955177e-06,
+      0.16400061956003673,
+      0.45811393955051877,
+      0.7154476294046772,
+      0.9307979883124853
+    ],
+    "initial_abs_gradient_below_1e_3": 106
+  },
+  "J_scored": 0,
+  "D_scored": 0,
+  "new_forward_passes": 0,
+  "generated_outputs": 0,
+  "trained_head_sha256": "939e145e5e7fff975939fa418fffc1ae96defee409a666a2d94910bbc7f668cd",
+  "source_freeze_sha256": "fc30cce0ccc4d97565451684d022a2d165c68795ad6bb1a97a3fe8227cbd779b",
+  "u_inputs_freeze_sha256": "7749f63fbe33de6b50dfa2bd7a56c7ad4710bee8bf396130e1007f0bf7950123",
+  "selection": "Lowest residual-only val NLL among successful C fits; tie smaller C, no refit, fixed zero-margin threshold.",
+  "limitation": "Separate DRiFt-inspired frozen linear candidate; U unchanged; no evidence of new J performance or original algorithm."
+}

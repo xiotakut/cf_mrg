@@ -1,0 +1,1551 @@
+{
+  "status": "complete",
+  "new_model_calls": 0,
+  "scope": "All 1343 unchanged questions and predictions per backbone, separately rescored against the mechanism-wording-adjusted source oracle.",
+  "timing": "Source correction discovered after head/request freeze but before completed validation predictions/scores were read; not part of the initial preregistered reference.",
+  "original_scores_preserved": true,
+  "results": [
+    {
+      "method": "M4",
+      "arm": "redo",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 922,
+      "wording_correct": 919,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "redo",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 884,
+      "wording_correct": 884,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "redo",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 485,
+      "wording_correct": 481,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "compiled_model",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 936,
+      "wording_correct": 937,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "compiled_model",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 903,
+      "wording_correct": 903,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "compiled_model",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 493,
+      "wording_correct": 493,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "head",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 995,
+      "wording_correct": 986,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "head",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 948,
+      "wording_correct": 948,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "head",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 566,
+      "wording_correct": 564,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "redo",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 347,
+      "wording_correct": 347,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "compiled_model",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 348,
+      "wording_correct": 348,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "head",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 329,
+      "wording_correct": 329,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "redo",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 90,
+      "wording_correct": 91,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "compiled_model",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 95,
+      "wording_correct": 96,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "head",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 100,
+      "wording_correct": 93,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "redo",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 38,
+      "wording_correct": 35,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "compiled_model",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 33,
+      "wording_correct": 34,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "head",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 47,
+      "wording_correct": 38,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 930,
+      "wording_correct": 927,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 893,
+      "wording_correct": 893,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 500,
+      "wording_correct": 494,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "arm": "compiled_model",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 967,
+      "wording_correct": 966,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "arm": "compiled_model",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 932,
+      "wording_correct": 932,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "arm": "compiled_model",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 535,
+      "wording_correct": 531,
+      "invalid": 13
+    },
+    {
+      "method": "M5",
+      "arm": "head",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 993,
+      "wording_correct": 988,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "arm": "head",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 956,
+      "wording_correct": 956,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "arm": "head",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 549,
+      "wording_correct": 545,
+      "invalid": 13
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 342,
+      "wording_correct": 342,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "arm": "compiled_model",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 343,
+      "wording_correct": 343,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "arm": "head",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 344,
+      "wording_correct": 344,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 88,
+      "wording_correct": 91,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "arm": "compiled_model",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 89,
+      "wording_correct": 92,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "arm": "head",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 100,
+      "wording_correct": 99,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 37,
+      "wording_correct": 34,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "arm": "compiled_model",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 35,
+      "wording_correct": 34,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "arm": "head",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 37,
+      "wording_correct": 32,
+      "invalid": 0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "method": "M4",
+      "control": "redo",
+      "n": 1343,
+      "stories": 40,
+      "repairs": 273,
+      "harms": 206,
+      "repairs_from_invalid": 0,
+      "delta_accuracy": 0.04988830975428146,
+      "story_cluster_bootstrap_95": [
+        0.009847806624888093,
+        0.08968307484828052
+      ],
+      "exact_mcnemar_p_descriptive": 0.002528646680868845
+    },
+    {
+      "method": "M4",
+      "control": "compiled_model",
+      "n": 1343,
+      "stories": 40,
+      "repairs": 140,
+      "harms": 91,
+      "repairs_from_invalid": 0,
+      "delta_accuracy": 0.03648548026805659,
+      "story_cluster_bootstrap_95": [
+        0.012005649717514125,
+        0.061042524005486966
+      ],
+      "exact_mcnemar_p_descriptive": 0.001531997719599448
+    },
+    {
+      "method": "M5",
+      "control": "redo",
+      "n": 1343,
+      "stories": 40,
+      "repairs": 200,
+      "harms": 139,
+      "repairs_from_invalid": 1,
+      "delta_accuracy": 0.045420699925539834,
+      "story_cluster_bootstrap_95": [
+        0.018670649738610903,
+        0.07307307307307308
+      ],
+      "exact_mcnemar_p_descriptive": 0.0010886804949963465
+    },
+    {
+      "method": "M5",
+      "control": "compiled_model",
+      "n": 1343,
+      "stories": 40,
+      "repairs": 73,
+      "harms": 51,
+      "repairs_from_invalid": 0,
+      "delta_accuracy": 0.016381236038719285,
+      "story_cluster_bootstrap_95": [
+        -0.002152080344332855,
+        0.03540462427745665
+      ],
+      "exact_mcnemar_p_descriptive": 0.05887587328073501
+    },
+    {
+      "method": "pooled_two_backbones",
+      "control": "redo",
+      "n": 2686,
+      "stories": 40,
+      "repairs": 473,
+      "harms": 345,
+      "repairs_from_invalid": 1,
+      "delta_accuracy": 0.04765450483991065,
+      "story_cluster_bootstrap_95": [
+        0.022476675148430873,
+        0.07183186951066499
+      ],
+      "exact_mcnemar_p_descriptive": 8.627392544268272e-06
+    },
+    {
+      "method": "pooled_two_backbones",
+      "control": "compiled_model",
+      "n": 2686,
+      "stories": 40,
+      "repairs": 213,
+      "harms": 142,
+      "repairs_from_invalid": 0,
+      "delta_accuracy": 0.02643335815338794,
+      "story_cluster_bootstrap_95": [
+        0.011722272317403066,
+        0.040972684876748836
+      ],
+      "exact_mcnemar_p_descriptive": 0.00019412687215801603
+    }
+  ],
+  "source_reference": "wording_audit.jsonl; observations/action/query semantics retain source metadata",
+  "statistical_limits": "Same 40-story paired bootstrap as original analysis; one decoding seed, shared graph families, no clinical inference.",
+  "completed_controls": {
+    "causal_steps": [
+      {
+        "method": "M4",
+        "arm": "causal_steps",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 53,
+        "wording_correct": 52,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "causal_steps",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 51,
+        "wording_correct": 51,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "causal_steps",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 23,
+        "wording_correct": 23,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "causal_steps",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 26,
+        "wording_correct": 25,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "causal_steps",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 4,
+        "wording_correct": 4,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "causal_steps",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 56,
+        "wording_correct": 55,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 54,
+        "wording_correct": 54,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 25,
+        "wording_correct": 25,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 27,
+        "wording_correct": 26,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 4,
+        "wording_correct": 4,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 56,
+        "wording_correct": 55,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 54,
+        "wording_correct": 54,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 22,
+        "wording_correct": 22,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 27,
+        "wording_correct": 26,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 7,
+        "wording_correct": 7,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 57,
+        "wording_correct": 56,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 55,
+        "wording_correct": 55,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 22,
+        "wording_correct": 22,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 29,
+        "wording_correct": 28,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 6,
+        "wording_correct": 6,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "causal_steps",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 57,
+        "wording_correct": 56,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "causal_steps",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 55,
+        "wording_correct": 55,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "causal_steps",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 25,
+        "wording_correct": 25,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "causal_steps",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 29,
+        "wording_correct": 28,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "causal_steps",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 3,
+        "wording_correct": 3,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "causal_steps",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 61,
+        "wording_correct": 60,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 59,
+        "wording_correct": 59,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 26,
+        "wording_correct": 26,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 31,
+        "wording_correct": 30,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 4,
+        "wording_correct": 4,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 62,
+        "wording_correct": 61,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 60,
+        "wording_correct": 60,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 27,
+        "wording_correct": 27,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 30,
+        "wording_correct": 29,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 5,
+        "wording_correct": 5,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "all",
+        "group": "all",
+        "n": 80,
+        "author_correct": 61,
+        "wording_correct": 60,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 78,
+        "author_correct": 59,
+        "wording_correct": 59,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 31,
+        "author_correct": 25,
+        "wording_correct": 25,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 42,
+        "author_correct": 30,
+        "wording_correct": 29,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 7,
+        "author_correct": 6,
+        "wording_correct": 6,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 2,
+        "author_correct": 2,
+        "wording_correct": 1,
+        "invalid": 0
+      }
+    ],
+    "ir_native": [
+      {
+        "method": "M4",
+        "arm": "ir_native",
+        "grouping": "all",
+        "group": "all",
+        "n": 37,
+        "author_correct": 21,
+        "wording_correct": 21,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "ir_native",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 36,
+        "author_correct": 20,
+        "wording_correct": 20,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "ir_native",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "ir_native",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 17,
+        "author_correct": 10,
+        "wording_correct": 10,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "ir_native",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 16,
+        "author_correct": 10,
+        "wording_correct": 10,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "ir_native",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "all",
+        "group": "all",
+        "n": 37,
+        "author_correct": 23,
+        "wording_correct": 23,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 36,
+        "author_correct": 22,
+        "wording_correct": 22,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 2,
+        "wording_correct": 2,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 17,
+        "author_correct": 10,
+        "wording_correct": 10,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 16,
+        "author_correct": 11,
+        "wording_correct": 11,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "all",
+        "group": "all",
+        "n": 37,
+        "author_correct": 29,
+        "wording_correct": 29,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 36,
+        "author_correct": 28,
+        "wording_correct": 28,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 4,
+        "wording_correct": 4,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 17,
+        "author_correct": 14,
+        "wording_correct": 14,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 16,
+        "author_correct": 11,
+        "wording_correct": 11,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "all",
+        "group": "all",
+        "n": 37,
+        "author_correct": 30,
+        "wording_correct": 30,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 36,
+        "author_correct": 29,
+        "wording_correct": 29,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 3,
+        "wording_correct": 3,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 17,
+        "author_correct": 16,
+        "wording_correct": 16,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 16,
+        "author_correct": 11,
+        "wording_correct": 11,
+        "invalid": 0
+      },
+      {
+        "method": "M4",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "ir_native",
+        "grouping": "all",
+        "group": "all",
+        "n": 48,
+        "author_correct": 37,
+        "wording_correct": 37,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "ir_native",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 47,
+        "author_correct": 36,
+        "wording_correct": 36,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "ir_native",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 19,
+        "author_correct": 14,
+        "wording_correct": 14,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "ir_native",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 3,
+        "wording_correct": 3,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "ir_native",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 25,
+        "author_correct": 20,
+        "wording_correct": 20,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "ir_native",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "all",
+        "group": "all",
+        "n": 48,
+        "author_correct": 40,
+        "wording_correct": 40,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 47,
+        "author_correct": 39,
+        "wording_correct": 39,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 19,
+        "author_correct": 17,
+        "wording_correct": 17,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 2,
+        "wording_correct": 2,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 25,
+        "author_correct": 21,
+        "wording_correct": 21,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "redo",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "all",
+        "group": "all",
+        "n": 48,
+        "author_correct": 38,
+        "wording_correct": 38,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 47,
+        "author_correct": 37,
+        "wording_correct": 37,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 19,
+        "author_correct": 16,
+        "wording_correct": 16,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 2,
+        "wording_correct": 2,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 25,
+        "author_correct": 20,
+        "wording_correct": 20,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "compiled_model",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "all",
+        "group": "all",
+        "n": 48,
+        "author_correct": 37,
+        "wording_correct": 37,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": false,
+        "n": 47,
+        "author_correct": 36,
+        "wording_correct": 36,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "some_worlds",
+        "n": 19,
+        "author_correct": 14,
+        "wording_correct": 14,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "all_worlds",
+        "n": 4,
+        "author_correct": 3,
+        "wording_correct": 3,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "wording_target_changed",
+        "group": "no_worlds",
+        "n": 25,
+        "author_correct": 20,
+        "wording_correct": 20,
+        "invalid": 0
+      },
+      {
+        "method": "M5",
+        "arm": "head",
+        "grouping": "mechanism_differs",
+        "group": true,
+        "n": 1,
+        "author_correct": 1,
+        "wording_correct": 1,
+        "invalid": 0
+      }
+    ]
+  },
+  "no_do_results": [
+    {
+      "method": "M4",
+      "arm": "no_do",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 963,
+      "wording_correct": 950,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "no_do",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 930,
+      "wording_correct": 930,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "no_do",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 568,
+      "wording_correct": 564,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "no_do",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 334,
+      "wording_correct": 334,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "no_do",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 61,
+      "wording_correct": 52,
+      "invalid": 0
+    },
+    {
+      "method": "M4",
+      "arm": "no_do",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 33,
+      "wording_correct": 20,
+      "invalid": 0
+    },
+    {
+      "method": "M5",
+      "arm": "no_do",
+      "grouping": "all",
+      "group": "all",
+      "n": 1343,
+      "author_correct": 903,
+      "wording_correct": 898,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "arm": "no_do",
+      "grouping": "mechanism_differs",
+      "group": false,
+      "n": 1287,
+      "author_correct": 870,
+      "wording_correct": 870,
+      "invalid": 16
+    },
+    {
+      "method": "M5",
+      "arm": "no_do",
+      "grouping": "wording_target_changed",
+      "group": "no_worlds",
+      "n": 733,
+      "author_correct": 551,
+      "wording_correct": 547,
+      "invalid": 13
+    },
+    {
+      "method": "M5",
+      "arm": "no_do",
+      "grouping": "wording_target_changed",
+      "group": "some_worlds",
+      "n": 472,
+      "author_correct": 290,
+      "wording_correct": 290,
+      "invalid": 2
+    },
+    {
+      "method": "M5",
+      "arm": "no_do",
+      "grouping": "wording_target_changed",
+      "group": "all_worlds",
+      "n": 138,
+      "author_correct": 62,
+      "wording_correct": 61,
+      "invalid": 1
+    },
+    {
+      "method": "M5",
+      "arm": "no_do",
+      "grouping": "mechanism_differs",
+      "group": true,
+      "n": 56,
+      "author_correct": 33,
+      "wording_correct": 28,
+      "invalid": 0
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "new_model_calls": 0,
+  "reused_compilations": 48,
+  "results": [
+    {
+      "method": "M4",
+      "label_binding": false,
+      "current_answer_fallback": false,
+      "n": 24,
+      "correct": 1,
+      "invalid": 23,
+      "executed": 1
+    },
+    {
+      "method": "M4",
+      "label_binding": false,
+      "current_answer_fallback": true,
+      "n": 24,
+      "correct": 20,
+      "invalid": 0,
+      "executed": 1
+    },
+    {
+      "method": "M4",
+      "label_binding": true,
+      "current_answer_fallback": false,
+      "n": 24,
+      "correct": 12,
+      "invalid": 9,
+      "executed": 15
+    },
+    {
+      "method": "M4",
+      "label_binding": true,
+      "current_answer_fallback": true,
+      "n": 24,
+      "correct": 19,
+      "invalid": 0,
+      "executed": 15
+    },
+    {
+      "method": "M5",
+      "label_binding": false,
+      "current_answer_fallback": false,
+      "n": 24,
+      "correct": 0,
+      "invalid": 24,
+      "executed": 0
+    },
+    {
+      "method": "M5",
+      "label_binding": false,
+      "current_answer_fallback": true,
+      "n": 24,
+      "correct": 21,
+      "invalid": 0,
+      "executed": 0
+    },
+    {
+      "method": "M5",
+      "label_binding": true,
+      "current_answer_fallback": false,
+      "n": 24,
+      "correct": 22,
+      "invalid": 0,
+      "executed": 24
+    },
+    {
+      "method": "M5",
+      "label_binding": true,
+      "current_answer_fallback": true,
+      "n": 24,
+      "correct": 22,
+      "invalid": 0,
+      "executed": 24
+    }
+  ],
+  "interpretation": "Same 48 grounded responses and fixed outcome/polarity/compiler. Changes only exact declared-label encoding and failed-program fallback. Diagnostic development: 3 fictional worlds, not independent validation."
+}

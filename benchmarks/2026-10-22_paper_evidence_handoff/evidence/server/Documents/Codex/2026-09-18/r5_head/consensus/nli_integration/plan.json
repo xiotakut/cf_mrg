@@ -1,0 +1,58 @@
+{
+  "status": "prepared_not_launched",
+  "at": "2026-09-18 09:25:57 +0800",
+  "inputs_per_model": 32,
+  "cohorts": {
+    "r5_tuning_heldout_extension": 32
+  },
+  "primary": "direct_mean_probability",
+  "control": "reasoned_mean_probability",
+  "code_mappings": "Native option insertion order and its reverse; exactly two unique mappings.",
+  "distributions": 256,
+  "analyses": 64,
+  "minimum_actual_calls": 320,
+  "maximum_actual_calls": 576,
+  "seed": 42,
+  "temperature": 0,
+  "selector_max_tokens": 1,
+  "analysis_max_tokens": 2048,
+  "raw_top_logprobs": 2048,
+  "coverage": "Missing other code is fetched with identical prompt and forced singleton; no floor.",
+  "output_contract": "Intermediate native key only; not a complete native JSON/explanation head.",
+  "reasoned": "Original full messages + new raw assistant response (may include explanation and answer) + identical selector. No old answer.",
+  "selection": "Existing frozen inputs/evaluation; no selection or input changes; gold offline only; no prior.",
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 32,
+      "original_message_equal": 32,
+      "verbatim_current_questions": 32,
+      "matched_selector_pairs": 64,
+      "code_token_ids": {
+        "A": 32,
+        "B": 33
+      },
+      "prepared_direct_distributions": 64,
+      "prepared_analyses": 32,
+      "dependent_reasoned_distributions": 64,
+      "max_direct_prompt_tokens": 6024,
+      "max_analysis_prompt_tokens": 6010
+    },
+    {
+      "method": "M5",
+      "inputs": 32,
+      "original_message_equal": 32,
+      "verbatim_current_questions": 32,
+      "matched_selector_pairs": 64,
+      "code_token_ids": {
+        "A": 32,
+        "B": 33
+      },
+      "prepared_direct_distributions": 64,
+      "prepared_analyses": 32,
+      "dependent_reasoned_distributions": 64,
+      "max_direct_prompt_tokens": 5858,
+      "max_analysis_prompt_tokens": 5844
+    }
+  ]
+}

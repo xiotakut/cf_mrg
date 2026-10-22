@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "method": "M4",
+      "scope": "development",
+      "n": 128,
+      "original_correct": 30,
+      "correct": 34,
+      "invalid": 84,
+      "repairs": 4,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "confirmation",
+      "n": 552,
+      "original_correct": 173,
+      "correct": 192,
+      "invalid": 323,
+      "repairs": 19,
+      "harms": 0
+    },
+    {
+      "method": "M4",
+      "scope": "all680",
+      "n": 680,
+      "original_correct": 203,
+      "correct": 226,
+      "invalid": 407,
+      "repairs": 23,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "scope": "development",
+      "n": 128,
+      "original_correct": 24,
+      "correct": 24,
+      "invalid": 97,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "scope": "confirmation",
+      "n": 552,
+      "original_correct": 136,
+      "correct": 136,
+      "invalid": 389,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "M5",
+      "scope": "all680",
+      "n": 680,
+      "original_correct": 160,
+      "correct": 160,
+      "invalid": 486,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "new_calls": 0,
+  "control": "Unchanged r3_audit.surface_label: remove diagnosis sentence prefix, terminal uppercase acronym parentheses and period. No new synonyms, label lookup or scoring changes."
+}

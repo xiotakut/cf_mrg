@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "started": "2026-09-18 14:39:34 +0800",
+  "schedule": "M4 then M5 on GPU2; healthy jobs on GPUs0/1/3 preserved",
+  "processes": [
+    {
+      "method": "M4",
+      "gpu": 2,
+      "pid": 2683623,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/quote_run.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/quote_pilot",
+        "--method",
+        "M4",
+        "--gpu",
+        "2"
+      ],
+      "log": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/quote_pilot/m4/worker.log",
+      "status": "complete",
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "gpu": 2,
+      "pid": 2685670,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/quote_run.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/quote_pilot",
+        "--method",
+        "M5",
+        "--gpu",
+        "2"
+      ],
+      "log": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/quote_pilot/m5/worker.log",
+      "status": "complete",
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 14:46:32 +0800"
+}

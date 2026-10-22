@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "scope": "Actual model callbacks and original native JSON schema; operational smoke on fixed exposed inputs, not a quality estimate or exact historical-response reproduction.",
+  "results": [
+    {
+      "method": "M4",
+      "inputs": 2,
+      "calls": 7,
+      "calls_by_input": [
+        4,
+        3
+      ],
+      "native_schema_valid": 2,
+      "input_tokens": 27928,
+      "output_tokens": 2108,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "inputs": 2,
+        "gpu": 2,
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "initialization_seconds": 16.19041156768799,
+        "elapsed_seconds": 45.41956377029419
+      }
+    },
+    {
+      "method": "M5",
+      "inputs": 2,
+      "calls": 8,
+      "calls_by_input": [
+        5,
+        3
+      ],
+      "native_schema_valid": 2,
+      "input_tokens": 28758,
+      "output_tokens": 2235,
+      "length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "inputs": 2,
+        "gpu": 3,
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "initialization_seconds": 17.016008138656616,
+        "elapsed_seconds": 88.23616051673889
+      }
+    }
+  ],
+  "new_calls": 15,
+  "new_input_tokens": 56686,
+  "new_output_tokens": 4343
+}

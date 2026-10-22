@@ -1,0 +1,15 @@
+{
+  "status": "prepared",
+  "created_at": "2026-09-14T17:17:26.869794+08:00",
+  "model": "llama",
+  "completed_calls_reused": 0,
+  "new_remaining_calls": 96,
+  "physical_gpu": 3,
+  "max_prompt_tokens": 842,
+  "max_output_tokens": 2048,
+  "context_limit": 8192,
+  "note": "Recover missing requests only after original processes terminated with KV memory initialization errors. Preserve completed GPU2 Qwen outputs and all failed logs/runtime files. Same original weights, static RoPE settings, prompts, decoding and2048 output limit. Only engine context/preallocation/concurrency and partitioning change. No failed slot produced an output.",
+  "gpu_memory_utilization": 0.75,
+  "previous_attempt": "recovery_memory",
+  "reason": "Llama GPU0 terminated with no KV blocks and zero outputs while external GPU0 allocations rose from46.6 to64.6GiB. Move the same96 requests to physical GPU3, currently40.3GiB used; .75 total-device budget and all previous generation settings unchanged. num_shards1 processes all requests on the selected physical GPU."
+}

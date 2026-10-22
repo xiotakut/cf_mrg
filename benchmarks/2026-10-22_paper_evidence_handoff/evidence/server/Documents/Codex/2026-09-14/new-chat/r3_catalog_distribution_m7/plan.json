@@ -1,0 +1,21 @@
+{
+  "status": "prepared",
+  "method": "M7",
+  "cases": 40,
+  "distributions": 240,
+  "scope": "Exposed R3 diagnosis development40; not independent validation.",
+  "model": "/home/data3/txy/models/Qwen3-8B",
+  "max_prompt_tokens": 9809,
+  "variants": [
+    "order0",
+    "mean_probability",
+    "majority_vote"
+  ],
+  "permutations": "Public sorted order + 5 global shuffles from Random(20260916), shared across methods; never selected using gold.",
+  "inference": "Original native context plus exact current-patient repetition; direct code prompt, JSON answer prefix, one-token raw logprobs.",
+  "coverage": "Top2048 raw token logprobs, then force any missing catalog codes in identical prompts. No probability floor or omitted candidate.",
+  "aggregation": "Normalize each complete49 vector; equally average six distributions; majority tie-break by mean probability then original catalog order.",
+  "controls": "Same order0 scoring is the matched single-call control. Existing v1/name/code results are separate controls with differing output/reasoning protocols.",
+  "criterion": "Frozen calibrated six-order majority transfer to another original method; same40 exposed cases, compare with uncalibrated majority and old v1, no method-specific policy selection.",
+  "resources": "Public49 disease names only. No new retrieval, training patients, or label input. No model weight changes."
+}

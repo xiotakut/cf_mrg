@@ -1,0 +1,19 @@
+{
+  "status": "frozen_unrun",
+  "created_at": "2026-09-14T16:41:35.489951+08:00",
+  "seed": 2026091404,
+  "inputs": 48,
+  "none": 24,
+  "remaining": 24,
+  "families": [
+    "nitrofurantoin suppression",
+    "duloxetine falls",
+    "nsaid ulcer"
+  ],
+  "variants": [
+    "general question",
+    "renal-only question"
+  ],
+  "realizations": 8,
+  "note": "Three mechanism templates x two explicit question scopes x eight realizations. Hand-declared before/current answers precede oracle checks. All cases remove CrCl<30 support without adding support. The patient facts also occur in general questions, so renal words in the patient body must not narrow the task. Different realizations are not48 independent clinical scenarios. No initial answer, previous patient or gold enters extraction prompts."
+}

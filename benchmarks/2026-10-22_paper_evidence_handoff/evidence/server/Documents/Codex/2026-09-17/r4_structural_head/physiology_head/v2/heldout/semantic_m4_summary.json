@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "n": 576,
+  "fixed_profile": "adolescent#003",
+  "selected_full_text": 32,
+  "new_integrations": 0,
+  "llm_calls": 0,
+  "redo_full_text_reviewed": 0,
+  "arms": {
+    "full": {
+      "n": 288,
+      "schedule_faithful": 263,
+      "query_faithful": 288,
+      "fully_faithful": 263,
+      "structural_fallback": 0,
+      "invalid_inline": 0,
+      "recovered_tool_with_invalid_inline": 0,
+      "cropped_rows": 216,
+      "cropped_items": 287,
+      "error_counts": {}
+    },
+    "patch": {
+      "n": 288,
+      "schedule_faithful": 288,
+      "query_faithful": 288,
+      "fully_faithful": 288,
+      "structural_fallback": 0,
+      "invalid_inline": 0,
+      "recovered_tool_with_invalid_inline": 0,
+      "cropped_rows": 0,
+      "cropped_items": 0,
+      "error_counts": {}
+    }
+  },
+  "full_text_read": 32,
+  "full_text_read_by_arm": {
+    "full": 28,
+    "patch": 4
+  },
+  "remaining_structure_only": 544,
+  "action_error_types": {
+    "move_copies_original_bolus": 20,
+    "omits_unchanged_bolus": 3,
+    "wrong_bolus_time_and_dose": 2
+  },
+  "crop_types": {
+    "outside_basal": 216,
+    "outside_bolus": 71
+  },
+  "finish_reasons": {
+    "stop": 576
+  }
+}

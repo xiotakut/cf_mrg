@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "status": "invalid",
+      "n": 5,
+      "native_correct": 0,
+      "native_invalid": 5,
+      "raw_answer_parsed": 5,
+      "permissive_parse_correct": 1,
+      "terminations": {
+        "budget_exhausted": 5
+      }
+    },
+    {
+      "status": "ok",
+      "n": 675,
+      "native_correct": 186,
+      "native_invalid": 431,
+      "raw_answer_parsed": 675,
+      "permissive_parse_correct": 186,
+      "terminations": {
+        "accepted": 675
+      }
+    }
+  ],
+  "new_calls": 0,
+  "interpretation": "Permissive raw parsing is a descriptive acceptance control, not a correction to the frozen TC baseline."
+}

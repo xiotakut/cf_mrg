@@ -1,0 +1,48 @@
+{
+  "started_at": "2026-09-17 18:30:06 +0800",
+  "mode": "parallel_shared_GPU0_and_1",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 0,
+      "pid": 2116469,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "0"
+      ],
+      "free_mib": 55467,
+      "total_mib": 97871,
+      "started_at": "2026-09-17 18:30:06 +0800",
+      "exit_code": 1,
+      "finished_at": "2026-09-17 18:31:09 +0800"
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "pid": 2116473,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "free_mib": 91887,
+      "total_mib": 97871,
+      "started_at": "2026-09-17 18:30:06 +0800",
+      "exit_code": 0,
+      "finished_at": "2026-09-17 20:06:32 +0800"
+    }
+  ],
+  "finished_at": "2026-09-17 20:06:32 +0800",
+  "wall_seconds": 5785.635015329113
+}

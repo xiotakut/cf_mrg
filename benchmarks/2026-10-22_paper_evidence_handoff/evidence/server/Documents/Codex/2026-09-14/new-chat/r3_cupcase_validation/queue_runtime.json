@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "pid": 3806901,
+  "started": "2026-09-15 18:46:21 +0800",
+  "devices": {
+    "llama": 2,
+    "qwen": 2
+  },
+  "finished": [
+    "llama"
+  ],
+  "elapsed_seconds": 184.457612991333,
+  "error": "Command '['/home/data3/txy/MedRGAG/.venv/bin/python', '-u', '/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_cupcase_holdout.py', 'sequence', '--model', 'qwen', '--gpu', '2', '--qualification', '/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/validation_qualification', '--out', '/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_cupcase_validation']' returned non-zero exit status 1."
+}

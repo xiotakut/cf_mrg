@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "source_rows": [
+    284,
+    702,
+    1228,
+    1432,
+    1479,
+    1783,
+    1833,
+    2769
+  ],
+  "cases": 8,
+  "planned_calls": 512,
+  "checks": [
+    {
+      "model": "llama",
+      "head_calls": 192,
+      "sequence_calls": 64,
+      "max_tokens": 2864
+    },
+    {
+      "model": "qwen",
+      "head_calls": 192,
+      "sequence_calls": 64,
+      "max_tokens": 2986
+    }
+  ],
+  "protocol": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/frozen_qualification/evaluation_protocol.json",
+  "qualification": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/expansion_qualification",
+  "scope": "Frozen-method new source records after input/source qualification; one family record is one unit. Natural update, not paired CF accuracy. Small selected subset, no seven-method RAG transfer claim.",
+  "label_access": "Native target identities for these qualified rows read for reference verification/evaluation after selection; kept out of prompts.",
+  "queue": "run_queue.py",
+  "queue_pid": 3562551,
+  "devices": {
+    "llama": 3,
+    "qwen": 2
+  },
+  "completed_new_calls": 512,
+  "interface_callbacks": 96,
+  "interface_new_calls": 0
+}

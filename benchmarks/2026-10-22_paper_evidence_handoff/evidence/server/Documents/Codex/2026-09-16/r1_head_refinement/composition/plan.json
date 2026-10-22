@@ -1,0 +1,14 @@
+{
+  "status": "planned_before_candidate_scoring",
+  "date": "2026-09-16",
+  "new_model_calls": 0,
+  "populations": ["exposed authored mechanism33, two actual backbones", "exposed R1 native96, seven original methods", "exposed R2 native79, seven original methods", "R3 medication10 as overlapping R1 stratum"],
+  "fixed": ["actual original answers", "actual cleaned positive model facts", "frozen71 rules", "question action/scope", "default exception policy", "native scoring"],
+  "candidates": {
+    "documented_support": "Only the last instruction explicitly requiring only documented information and an established reason/indication triggers MET-only selection for options having an applicable rule path. Options without any applicable rule path retain their valid original selection; invalid initial plus uncovered option falls back. Other questions use frozen assembler.",
+    "covered_support": "Across eligible questions, require MET for an option with applicable rule paths, but preserve valid original selections having no applicable path. Invalid initial answer with an uncovered option falls back. Diagnostic policy only."
+  },
+  "pre_scoring_revision": "Before any candidate scoring or new model output, root review required both candidates to retain uncovered options: the full AGS question does not establish completeness of the71-rule subset. The initially proposed all-MET narrow arm was not run or retained.",
+  "risks": ["Wording gate only demonstrates the two observed probe instruction templates, not general semantic routing.", "An encoded path is not proof that all real indications for a drug are encoded.", "MET follows existing default recommendation when an exception remains unknown; it is not fully observed clinical proof.", "All data are exposed development; none is a new frozen validation of these candidates."],
+  "checks": ["Frozen assembler matches archived predictions and scores before interpreting changes.", "Report exact-set repair/harm against both original answer and frozen head, including gold retention and uncovered options.", "Keep invalid None-plus-drug initial answers as evidence; do not silently sanitize."]
+}

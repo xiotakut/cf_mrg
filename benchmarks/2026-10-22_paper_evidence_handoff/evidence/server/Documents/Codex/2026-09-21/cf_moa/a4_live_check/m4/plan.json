@@ -1,0 +1,63 @@
+{
+  "method": "M4",
+  "indices": [
+    0,
+    3,
+    6,
+    9
+  ],
+  "source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/inputs.jsonl",
+  "selection": "first profile, first time for each of four actions; fixed before fresh generation",
+  "inputs": [
+    {
+      "request_id": "M4-smoke-0",
+      "source_item_id": "phys_dev_adolescent_001_A_t030"
+    },
+    {
+      "request_id": "M4-smoke-1",
+      "source_item_id": "phys_dev_adolescent_001_B_t030"
+    },
+    {
+      "request_id": "M4-smoke-2",
+      "source_item_id": "phys_dev_adolescent_001_C_t030"
+    },
+    {
+      "request_id": "M4-smoke-3",
+      "source_item_id": "phys_dev_adolescent_001_D_t030"
+    }
+  ],
+  "config": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.95,
+    "max_model_len": 131072,
+    "max_num_seqs": 4,
+    "max_num_batched_tokens": 4096,
+    "batch_size": 4,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 8192
+    }
+  },
+  "config_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/heldout/m4/config.json",
+    "copy": "a4_m4.json",
+    "sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96",
+    "development_source": "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/physiology_head/v2/dev/m4/config.json",
+    "development_sha256": "0d63d26b83315fb84ed8441c2fba8e81410b448f9e2e1951f1c6fed3bf14ec96"
+  },
+  "max_new_requests": 4,
+  "checks": [
+    "engine accepted adopted parameters",
+    "one compile request per input",
+    "tool execution and complete native numerical format"
+  ],
+  "no_historical_text_or_answer_matching": true,
+  "no_resampling": true
+}

@@ -1,0 +1,120 @@
+{
+  "status": "complete",
+  "started": "2026-09-18 15:20:18 +0800",
+  "schedule": "M4 then M5; full forward, CPU fitting, CPU comparison; other jobs untouched",
+  "jobs": [
+    {
+      "method": "M4",
+      "kind": "features",
+      "pid": 2706522,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_json_pilot",
+        "--method",
+        "M4",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 15:20:18 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:33:49 +0800"
+    },
+    {
+      "method": "M4",
+      "kind": "training",
+      "pid": 2714488,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_train.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_json_pilot",
+        "--method",
+        "M4"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 15:33:49 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:33:56 +0800"
+    },
+    {
+      "method": "M4",
+      "kind": "comparison",
+      "pid": 2714880,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_compare.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_json_pilot",
+        "--method",
+        "M4"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 15:33:56 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:33:58 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "features",
+      "pid": 2715010,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_features.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_json_pilot",
+        "--method",
+        "M5",
+        "--gpu",
+        "2"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 15:33:58 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:47:49 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "training",
+      "pid": 2723422,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_train.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_json_pilot",
+        "--method",
+        "M5"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 15:47:49 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:47:57 +0800"
+    },
+    {
+      "method": "M5",
+      "kind": "comparison",
+      "pid": 2723803,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_compare.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_json_pilot",
+        "--method",
+        "M5"
+      ],
+      "status": "complete",
+      "started": "2026-09-18 15:47:57 +0800",
+      "returncode": 0,
+      "ended": "2026-09-18 15:47:58 +0800"
+    }
+  ],
+  "ended": "2026-09-18 15:47:58 +0800"
+}

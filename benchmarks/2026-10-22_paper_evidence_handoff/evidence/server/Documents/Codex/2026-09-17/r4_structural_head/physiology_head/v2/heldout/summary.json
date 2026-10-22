@@ -1,0 +1,3327 @@
+{
+  "status": "complete",
+  "split": "heldout",
+  "results": [
+    {
+      "method": "M4",
+      "arm": "redo",
+      "n": 288,
+      "correct": 118,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 63.834759039538625,
+        "rmse": 73.12033582810824,
+        "within_tolerance": 0
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 23.68431429068699,
+        "rmse": 35.93668764447874,
+        "within_tolerance": 11
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 2,
+          "joint_numeric_correct": 0
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 35,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 72,
+          "correct": 25,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 72,
+          "correct": 21,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 72,
+          "correct": 37,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 32,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 96,
+          "correct": 55,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 96,
+          "correct": 31,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 83,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 54,
+          "correct": 35,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "source_no_do",
+      "n": 288,
+      "correct": 234,
+      "invalid": 0,
+      "joint_numeric_correct": 67,
+      "all_outputs_correct": 67,
+      "routes": {
+        "source_model_control": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 70,
+          "joint_numeric_correct": 43
+        },
+        "B": {
+          "n": 72,
+          "correct": 53,
+          "joint_numeric_correct": 8
+        },
+        "C": {
+          "n": 72,
+          "correct": 66,
+          "joint_numeric_correct": 8
+        },
+        "D": {
+          "n": 72,
+          "correct": 45,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 94,
+          "joint_numeric_correct": 48
+        },
+        "60": {
+          "n": 96,
+          "correct": 72,
+          "joint_numeric_correct": 19
+        },
+        "120": {
+          "n": 96,
+          "correct": 68,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 67
+        },
+        "True": {
+          "n": 54,
+          "correct": 0,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "full_inline",
+      "n": 288,
+      "correct": 111,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 55.45241012870829,
+        "rmse": 69.4100259697064,
+        "within_tolerance": 2
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 21.90156705005252,
+        "rmse": 34.91547914528057,
+        "within_tolerance": 6
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 1,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 1,
+          "joint_numeric_correct": 0
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 29,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 72,
+          "correct": 16,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 72,
+          "correct": 20,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 72,
+          "correct": 46,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 42,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 96,
+          "correct": 37,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 96,
+          "correct": 32,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 83,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 54,
+          "correct": 28,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "full_no_do",
+      "n": 288,
+      "correct": 234,
+      "invalid": 0,
+      "joint_numeric_correct": 67,
+      "all_outputs_correct": 67,
+      "routes": {
+        "executed_no_do": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 70,
+          "joint_numeric_correct": 43
+        },
+        "B": {
+          "n": 72,
+          "correct": 53,
+          "joint_numeric_correct": 8
+        },
+        "C": {
+          "n": 72,
+          "correct": 66,
+          "joint_numeric_correct": 8
+        },
+        "D": {
+          "n": 72,
+          "correct": 45,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 94,
+          "joint_numeric_correct": 48
+        },
+        "60": {
+          "n": 96,
+          "correct": 72,
+          "joint_numeric_correct": 19
+        },
+        "120": {
+          "n": 96,
+          "correct": 68,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 67
+        },
+        "True": {
+          "n": 54,
+          "correct": 0,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "full",
+      "n": 288,
+      "correct": 286,
+      "invalid": 0,
+      "joint_numeric_correct": 270,
+      "all_outputs_correct": 270,
+      "routes": {
+        "executed": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 0.3103684366770214,
+        "rmse": 1.7378910171205926,
+        "within_tolerance": 270
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 0.3103684366770214,
+        "rmse": 1.7378910171205926,
+        "within_tolerance": 270
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 10
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 10
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 11
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 10
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 11
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        }
+      },
+      "schedule_faithful": 263,
+      "query_faithful": 288,
+      "fully_faithful": 263,
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 71
+        },
+        "B": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "C": {
+          "n": 72,
+          "correct": 70,
+          "joint_numeric_correct": 57
+        },
+        "D": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 70
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 94,
+          "joint_numeric_correct": 78
+        },
+        "60": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        },
+        "120": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 218
+        },
+        "True": {
+          "n": 54,
+          "correct": 52,
+          "joint_numeric_correct": 52
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "patch_inline",
+      "n": 288,
+      "correct": 132,
+      "invalid": 0,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 55.084904638183026,
+        "rmse": 67.70550229181762,
+        "within_tolerance": 2
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 23.02150112736975,
+        "rmse": 36.234531190314414,
+        "within_tolerance": 5
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 38,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 72,
+          "correct": 31,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 72,
+          "correct": 21,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 72,
+          "correct": 42,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 58,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 96,
+          "correct": 45,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 96,
+          "correct": 29,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 101,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 54,
+          "correct": 31,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "patch_no_do",
+      "n": 288,
+      "correct": 234,
+      "invalid": 0,
+      "joint_numeric_correct": 67,
+      "all_outputs_correct": 67,
+      "routes": {
+        "executed_no_do": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 70,
+          "joint_numeric_correct": 43
+        },
+        "B": {
+          "n": 72,
+          "correct": 53,
+          "joint_numeric_correct": 8
+        },
+        "C": {
+          "n": 72,
+          "correct": 66,
+          "joint_numeric_correct": 8
+        },
+        "D": {
+          "n": 72,
+          "correct": 45,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 94,
+          "joint_numeric_correct": 48
+        },
+        "60": {
+          "n": 96,
+          "correct": 72,
+          "joint_numeric_correct": 19
+        },
+        "120": {
+          "n": 96,
+          "correct": 68,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 67
+        },
+        "True": {
+          "n": 54,
+          "correct": 0,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "arm": "patch",
+      "n": 288,
+      "correct": 288,
+      "invalid": 0,
+      "joint_numeric_correct": 288,
+      "all_outputs_correct": 288,
+      "routes": {
+        "executed": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 0.0,
+        "rmse": 0.0,
+        "within_tolerance": 288
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 0.0,
+        "rmse": 0.0,
+        "within_tolerance": 288
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        }
+      },
+      "schedule_faithful": 288,
+      "query_faithful": 288,
+      "fully_faithful": 288,
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "B": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "C": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "D": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        },
+        "60": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        },
+        "120": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 234
+        },
+        "True": {
+          "n": 54,
+          "correct": 54,
+          "joint_numeric_correct": 54
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "redo",
+      "n": 288,
+      "correct": 187,
+      "invalid": 1,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 287,
+        "missing_n": 1,
+        "mae": 35.73959133860475,
+        "rmse": 46.905408845603034,
+        "within_tolerance": 1
+      },
+      "difference": {
+        "valid_n": 287,
+        "missing_n": 1,
+        "mae": 16.290155582778294,
+        "rmse": 26.791170904824735,
+        "within_tolerance": 18
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 41,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 72,
+          "correct": 62,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 72,
+          "correct": 31,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 72,
+          "correct": 53,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 64,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 96,
+          "correct": 70,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 96,
+          "correct": 53,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 146,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 54,
+          "correct": 41,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "source_no_do",
+      "n": 288,
+      "correct": 234,
+      "invalid": 0,
+      "joint_numeric_correct": 67,
+      "all_outputs_correct": 67,
+      "routes": {
+        "source_model_control": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 70,
+          "joint_numeric_correct": 43
+        },
+        "B": {
+          "n": 72,
+          "correct": 53,
+          "joint_numeric_correct": 8
+        },
+        "C": {
+          "n": 72,
+          "correct": 66,
+          "joint_numeric_correct": 8
+        },
+        "D": {
+          "n": 72,
+          "correct": 45,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 94,
+          "joint_numeric_correct": 48
+        },
+        "60": {
+          "n": 96,
+          "correct": 72,
+          "joint_numeric_correct": 19
+        },
+        "120": {
+          "n": 96,
+          "correct": 68,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 67
+        },
+        "True": {
+          "n": 54,
+          "correct": 0,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "full_inline",
+      "n": 288,
+      "correct": 157,
+      "invalid": 8,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 280,
+        "missing_n": 8,
+        "mae": 37.28663172642662,
+        "rmse": 47.726468727867996,
+        "within_tolerance": 0
+      },
+      "difference": {
+        "valid_n": 280,
+        "missing_n": 8,
+        "mae": 16.420868303488696,
+        "rmse": 27.705925578557036,
+        "within_tolerance": 15
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 3,
+          "joint_numeric_correct": 0
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 31,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 72,
+          "correct": 37,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 72,
+          "correct": 34,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 72,
+          "correct": 55,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 60,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 96,
+          "correct": 55,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 96,
+          "correct": 42,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 122,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 54,
+          "correct": 35,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "full_no_do",
+      "n": 288,
+      "correct": 224,
+      "invalid": 0,
+      "joint_numeric_correct": 61,
+      "all_outputs_correct": 61,
+      "routes": {
+        "executed_no_do": 263,
+        "inline_fallback": 25
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 16.962504824903608,
+        "rmse": 31.38401974072649,
+        "within_tolerance": 61
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.583567967382757,
+        "rmse": 27.502221998267927,
+        "within_tolerance": 62
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 4
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 4
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 1
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 66,
+          "joint_numeric_correct": 37
+        },
+        "B": {
+          "n": 72,
+          "correct": 51,
+          "joint_numeric_correct": 8
+        },
+        "C": {
+          "n": 72,
+          "correct": 62,
+          "joint_numeric_correct": 8
+        },
+        "D": {
+          "n": 72,
+          "correct": 45,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 91,
+          "joint_numeric_correct": 46
+        },
+        "60": {
+          "n": 96,
+          "correct": 67,
+          "joint_numeric_correct": 15
+        },
+        "120": {
+          "n": 96,
+          "correct": 66,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 223,
+          "joint_numeric_correct": 61
+        },
+        "True": {
+          "n": 54,
+          "correct": 1,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "full",
+      "n": 288,
+      "correct": 265,
+      "invalid": 0,
+      "joint_numeric_correct": 222,
+      "all_outputs_correct": 222,
+      "routes": {
+        "executed": 263,
+        "inline_fallback": 25
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 7.016926032398233,
+        "rmse": 21.03391826048,
+        "within_tolerance": 222
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 4.637989174877375,
+        "rmse": 14.623311428819953,
+        "within_tolerance": 223
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 9
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 10
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 8
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 10
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 11
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 10
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 8
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 9
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 8
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 10
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 11
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 7
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 7
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 9
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 8
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 8
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 10,
+          "joint_numeric_correct": 7
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 9
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 9
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 8
+        }
+      },
+      "schedule_faithful": 213,
+      "query_faithful": 263,
+      "fully_faithful": 213,
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 68,
+          "joint_numeric_correct": 64
+        },
+        "B": {
+          "n": 72,
+          "correct": 64,
+          "joint_numeric_correct": 35
+        },
+        "C": {
+          "n": 72,
+          "correct": 61,
+          "joint_numeric_correct": 52
+        },
+        "D": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 71
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 93,
+          "joint_numeric_correct": 78
+        },
+        "60": {
+          "n": 96,
+          "correct": 88,
+          "joint_numeric_correct": 69
+        },
+        "120": {
+          "n": 96,
+          "correct": 84,
+          "joint_numeric_correct": 75
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 217,
+          "joint_numeric_correct": 176
+        },
+        "True": {
+          "n": 54,
+          "correct": 48,
+          "joint_numeric_correct": 46
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "patch_inline",
+      "n": 288,
+      "correct": 144,
+      "invalid": 68,
+      "joint_numeric_correct": 0,
+      "all_outputs_correct": 0,
+      "routes": {
+        "inline": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 220,
+        "missing_n": 68,
+        "mae": 38.17071084831955,
+        "rmse": 48.3841144370241,
+        "within_tolerance": 1
+      },
+      "difference": {
+        "valid_n": 220,
+        "missing_n": 68,
+        "mae": 17.64393295793208,
+        "rmse": 28.82431774725037,
+        "within_tolerance": 12
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 0
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 7,
+          "joint_numeric_correct": 0
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 0
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 5,
+          "joint_numeric_correct": 0
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 6,
+          "joint_numeric_correct": 0
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 4,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 28,
+          "joint_numeric_correct": 0
+        },
+        "B": {
+          "n": 72,
+          "correct": 40,
+          "joint_numeric_correct": 0
+        },
+        "C": {
+          "n": 72,
+          "correct": 26,
+          "joint_numeric_correct": 0
+        },
+        "D": {
+          "n": 72,
+          "correct": 50,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 49,
+          "joint_numeric_correct": 0
+        },
+        "60": {
+          "n": 96,
+          "correct": 52,
+          "joint_numeric_correct": 0
+        },
+        "120": {
+          "n": 96,
+          "correct": 43,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 110,
+          "joint_numeric_correct": 0
+        },
+        "True": {
+          "n": 54,
+          "correct": 34,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "patch_no_do",
+      "n": 288,
+      "correct": 234,
+      "invalid": 0,
+      "joint_numeric_correct": 67,
+      "all_outputs_correct": 67,
+      "routes": {
+        "executed_no_do": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 14.336526076255463,
+        "rmse": 27.440033336743245,
+        "within_tolerance": 67
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 5
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 5
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 8,
+          "joint_numeric_correct": 1
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 11,
+          "joint_numeric_correct": 2
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 1
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 9,
+          "joint_numeric_correct": 2
+        }
+      },
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 70,
+          "joint_numeric_correct": 43
+        },
+        "B": {
+          "n": 72,
+          "correct": 53,
+          "joint_numeric_correct": 8
+        },
+        "C": {
+          "n": 72,
+          "correct": 66,
+          "joint_numeric_correct": 8
+        },
+        "D": {
+          "n": 72,
+          "correct": 45,
+          "joint_numeric_correct": 8
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 94,
+          "joint_numeric_correct": 48
+        },
+        "60": {
+          "n": 96,
+          "correct": 72,
+          "joint_numeric_correct": 19
+        },
+        "120": {
+          "n": 96,
+          "correct": 68,
+          "joint_numeric_correct": 0
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 67
+        },
+        "True": {
+          "n": 54,
+          "correct": 0,
+          "joint_numeric_correct": 0
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "arm": "patch",
+      "n": 288,
+      "correct": 288,
+      "invalid": 0,
+      "joint_numeric_correct": 288,
+      "all_outputs_correct": 288,
+      "routes": {
+        "executed": 288
+      },
+      "counterfactual_value": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 0.0,
+        "rmse": 0.0,
+        "within_tolerance": 288
+      },
+      "difference": {
+        "valid_n": 288,
+        "missing_n": 0,
+        "mae": 0.0,
+        "rmse": 0.0,
+        "within_tolerance": 288
+      },
+      "by_profile": {
+        "adolescent#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adolescent#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "adult#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#003": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#004": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#005": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#006": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#007": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#008": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#009": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        },
+        "child#010": {
+          "n": 12,
+          "correct": 12,
+          "joint_numeric_correct": 12
+        }
+      },
+      "schedule_faithful": 288,
+      "query_faithful": 288,
+      "fully_faithful": 288,
+      "by_scenario": {
+        "A": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "B": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "C": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        },
+        "D": {
+          "n": 72,
+          "correct": 72,
+          "joint_numeric_correct": 72
+        }
+      },
+      "by_time_min": {
+        "30": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        },
+        "60": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        },
+        "120": {
+          "n": 96,
+          "correct": 96,
+          "joint_numeric_correct": 96
+        }
+      },
+      "by_predicate_changes": {
+        "False": {
+          "n": 234,
+          "correct": 234,
+          "joint_numeric_correct": 234
+        },
+        "True": {
+          "n": 54,
+          "correct": 54,
+          "joint_numeric_correct": 54
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "redo",
+      "repairs": 170,
+      "harms": 0,
+      "numeric_repairs": 288,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "full",
+      "repairs": 2,
+      "harms": 0,
+      "numeric_repairs": 18,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "patch_inline",
+      "repairs": 156,
+      "harms": 0,
+      "numeric_repairs": 288,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "full",
+      "control": "full_inline",
+      "repairs": 175,
+      "harms": 0,
+      "numeric_repairs": 270,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M4",
+      "candidate": "patch",
+      "control": "patch_no_do",
+      "repairs": 54,
+      "harms": 0,
+      "numeric_repairs": 221,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "redo",
+      "repairs": 101,
+      "harms": 0,
+      "numeric_repairs": 288,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "full",
+      "repairs": 23,
+      "harms": 0,
+      "numeric_repairs": 66,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "patch_inline",
+      "repairs": 144,
+      "harms": 0,
+      "numeric_repairs": 288,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "full",
+      "control": "full_inline",
+      "repairs": 112,
+      "harms": 4,
+      "numeric_repairs": 222,
+      "numeric_harms": 0
+    },
+    {
+      "method": "M5",
+      "candidate": "patch",
+      "control": "patch_no_do",
+      "repairs": 54,
+      "harms": 0,
+      "numeric_repairs": 221,
+      "numeric_harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 864,
+      "reused_calls": 0,
+      "input_tokens": 4060584,
+      "output_tokens": 140744,
+      "length_stops": 0,
+      "worker_seconds": 766.2314260005951,
+      "initialization_seconds": 15.472152709960938
+    },
+    {
+      "method": "M5",
+      "calls": 864,
+      "reused_calls": 0,
+      "input_tokens": 4412700,
+      "output_tokens": 231077,
+      "length_stops": 0,
+      "worker_seconds": 1433.120364665985,
+      "initialization_seconds": 15.592221021652222
+    }
+  ],
+  "new_calls": 1728,
+  "cached_callbacks": 1728,
+  "numeric_tolerance_mg_dL": 1.0,
+  "label_counts": {
+    "no": 212,
+    "yes": 76
+  },
+  "constant_yes_correct": 76,
+  "constant_no_correct": 212
+}

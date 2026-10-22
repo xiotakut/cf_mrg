@@ -1,0 +1,76 @@
+{
+  "status": "complete_post_hoc_sensitivity",
+  "new_calls": 0,
+  "results": [
+    {
+      "model": "llama",
+      "scope": "rules33",
+      "n": 33,
+      "old_correct": 21,
+      "strict_correct": 20,
+      "case_restored_correct": 21,
+      "repairs": 1,
+      "harms": 0,
+      "invalid": 0
+    },
+    {
+      "model": "llama",
+      "scope": "r2_native",
+      "n": 79,
+      "old_correct": 39,
+      "strict_correct": 36,
+      "case_restored_correct": 36,
+      "repairs": 0,
+      "harms": 0,
+      "invalid": 3
+    },
+    {
+      "model": "llama",
+      "scope": "r2_covered",
+      "n": 55,
+      "old_correct": 27,
+      "strict_correct": 24,
+      "case_restored_correct": 24,
+      "repairs": 0,
+      "harms": 0,
+      "invalid": 1
+    },
+    {
+      "model": "qwen",
+      "scope": "rules33",
+      "n": 33,
+      "old_correct": 25,
+      "strict_correct": 22,
+      "case_restored_correct": 22,
+      "repairs": 0,
+      "harms": 0,
+      "invalid": 0
+    },
+    {
+      "model": "qwen",
+      "scope": "r2_native",
+      "n": 79,
+      "old_correct": 46,
+      "strict_correct": 42,
+      "case_restored_correct": 42,
+      "repairs": 0,
+      "harms": 0,
+      "invalid": 10
+    },
+    {
+      "model": "qwen",
+      "scope": "r2_covered",
+      "n": 55,
+      "old_correct": 36,
+      "strict_correct": 32,
+      "case_restored_correct": 32,
+      "repairs": 0,
+      "harms": 0,
+      "invalid": 6
+    }
+  ],
+  "changed_quote_records": 4,
+  "changed_quote_fields": 4,
+  "operation": "For otherwise identical case-insensitive substrings inside the cited source sentences, restore only source casing before the unchanged cleaner. No content, numeric, negation, or JSON brace repairs.",
+  "main_frozen_results_unchanged": true
+}

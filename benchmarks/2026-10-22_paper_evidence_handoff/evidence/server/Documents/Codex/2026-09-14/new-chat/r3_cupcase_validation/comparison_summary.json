@@ -1,0 +1,399 @@
+{
+  "validation": {
+    "llama": {
+      "cases": 6,
+      "correct": {
+        "head_order0": 6,
+        "head_uncalibrated_vote": 6,
+        "head_calibrated_vote": 6,
+        "native_plain_sequence_sum": 4,
+        "native_plain_sequence_character_norm": 6,
+        "chat_sequence_sum": 5,
+        "chat_sequence_character_norm": 6,
+        "prior_only_vote": 4
+      },
+      "comparisons": [
+        {
+          "head": "head_order0",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_order0",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_order0",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [],
+          "harmed": []
+        }
+      ]
+    },
+    "qwen": {
+      "cases": 6,
+      "correct": {
+        "head_order0": 6,
+        "head_uncalibrated_vote": 6,
+        "head_calibrated_vote": 6,
+        "native_plain_sequence_sum": 4,
+        "native_plain_sequence_character_norm": 6,
+        "chat_sequence_sum": 5,
+        "chat_sequence_character_norm": 6,
+        "prior_only_vote": 3
+      },
+      "comparisons": [
+        {
+          "head": "head_order0",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_order0",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_order0",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [],
+          "harmed": []
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [],
+          "harmed": []
+        }
+      ]
+    }
+  },
+  "cumulative_supplement": {
+    "llama": {
+      "cases": 18,
+      "correct": {
+        "head_order0": 15,
+        "head_uncalibrated_vote": 16,
+        "head_calibrated_vote": 15,
+        "native_plain_sequence_sum": 12,
+        "chat_sequence_sum": 12,
+        "native_plain_sequence_character_norm": 15,
+        "chat_sequence_character_norm": 15,
+        "prior_only_vote": 8
+      },
+      "comparisons": [
+        {
+          "head": "head_order0",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_1783",
+            "cupcase_1833"
+          ]
+        },
+        {
+          "head": "head_order0",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_1783",
+            "cupcase_1833"
+          ]
+        },
+        {
+          "head": "head_order0",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [
+            "cupcase_702"
+          ],
+          "harmed": [
+            "cupcase_1783",
+            "cupcase_1833"
+          ]
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [
+            "cupcase_1783",
+            "cupcase_1833"
+          ],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_1833",
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_1833",
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [
+            "cupcase_1783"
+          ],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [],
+          "harmed": [
+            "cupcase_1833"
+          ]
+        }
+      ]
+    },
+    "qwen": {
+      "cases": 18,
+      "correct": {
+        "head_order0": 18,
+        "head_uncalibrated_vote": 17,
+        "head_calibrated_vote": 16,
+        "prior_only_vote": 10,
+        "native_plain_sequence_sum": 10,
+        "native_plain_sequence_character_norm": 14,
+        "chat_sequence_sum": 8,
+        "chat_sequence_character_norm": 14
+      },
+      "comparisons": [
+        {
+          "head": "head_order0",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_1833",
+            "cupcase_282",
+            "cupcase_702"
+          ],
+          "harmed": []
+        },
+        {
+          "head": "head_order0",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_1432",
+            "cupcase_1833",
+            "cupcase_282"
+          ],
+          "harmed": []
+        },
+        {
+          "head": "head_order0",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [
+            "cupcase_702"
+          ],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_1833",
+            "cupcase_282"
+          ],
+          "harmed": []
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_1432",
+            "cupcase_1833",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_uncalibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "native_plain_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_1833",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_1432"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "chat_sequence_character_norm",
+          "fixed": [
+            "cupcase_1228",
+            "cupcase_1833",
+            "cupcase_282"
+          ],
+          "harmed": [
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_order0",
+          "fixed": [],
+          "harmed": [
+            "cupcase_1432",
+            "cupcase_702"
+          ]
+        },
+        {
+          "head": "head_calibrated_vote",
+          "baseline": "head_uncalibrated_vote",
+          "fixed": [],
+          "harmed": [
+            "cupcase_1432"
+          ]
+        }
+      ]
+    }
+  },
+  "note": "Same cases on two backbones are not independent doubled sample size. No strategy selection or new calls."
+}

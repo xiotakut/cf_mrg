@@ -1,0 +1,19 @@
+{
+  "status": "frozen_before_confirmation_predictions",
+  "time": "2026-09-14T20:14:56.820306+08:00",
+  "primary": "case_memory",
+  "controls": [
+    "control_only",
+    "random_one_endpoint"
+  ],
+  "inputs": 587,
+  "new_diagnosis_inputs": 552,
+  "native_choice_passthrough": 35,
+  "memory": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_train_memory",
+  "train_pairs": 10115,
+  "train_endpoints": 20230,
+  "policy": "Top-one TF-IDF cosine train endpoint; no threshold or LLM revision. Native choices retain original answer.",
+  "new_llm_calls": 0,
+  "comparison": "New diagnosis-head predictions plus existing per-method choice scores; not seven model reruns.",
+  "confirmation_exposure": "Reserved for this head, but drawn from already exposed v5 with a templated MedEinst source."
+}

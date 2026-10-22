@@ -1,0 +1,122 @@
+{
+  "method": "M5",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 24,
+      "macro_recall": 0.4744897959183673,
+      "common_valid": {
+        "n": 38,
+        "correct": 23
+      },
+      "comparisons": {
+        "case_visible": {
+          "repairs": 3,
+          "harms": 2
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.3647959183673469,
+      "common_valid": {
+        "n": 38,
+        "correct": 20
+      },
+      "comparisons": {
+        "case_visible": {
+          "repairs": 2,
+          "harms": 5
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "variant": "names_only",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.3826530612244898,
+      "common_valid": {
+        "n": 38,
+        "correct": 20
+      },
+      "comparisons": {
+        "case_visible": {
+          "repairs": 2,
+          "harms": 4
+        },
+        "uncued4": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "case_visible",
+      "n": 40,
+      "correct": 23,
+      "macro_recall": 0.4795918367346939,
+      "common_valid": {
+        "n": 38,
+        "correct": 22
+      },
+      "comparisons": {
+        "case_visible": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 5,
+          "harms": 2
+        },
+        "calibrated": {
+          "repairs": 2,
+          "harms": 3
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 387,
+    "input_tokens": 822848,
+    "output_tokens": 23572,
+    "knowledge_calls": 75,
+    "final_calls": 312,
+    "knowledge_errors": 2,
+    "knowledge_length_stops": 2
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 3349554,
+    "method": "M5",
+    "gpu": 3,
+    "finished": [
+      "knowledge",
+      "final"
+    ],
+    "stage": "final",
+    "elapsed_seconds": 284.7478573322296
+  }
+}

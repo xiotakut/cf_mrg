@@ -1,0 +1,1313 @@
+{
+  "variant": "fixed_pair_critical_random_original_rescore_v1",
+  "method": "M5",
+  "profile": {
+    "role": "readout",
+    "config": {
+      "model": "/home/data3/txy/models/Qwen3-8B",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 2048,
+      "gpu_memory_utilization": 0.85,
+      "max_model_len": 131072,
+      "max_num_seqs": 16,
+      "max_num_batched_tokens": 8192,
+      "batch_size": 16,
+      "model_kwargs": {
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        },
+        "num_gpu_blocks_override": 16384
+      },
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "guided_json": true,
+      "num_shards": 1
+    },
+    "config_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a",
+    "source": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+      "copy": "readout_m5.json",
+      "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+    }
+  },
+  "inputs": [
+    {
+      "request_id": "d00000",
+      "input_hash": "ee8d1c31c28c4975b21223e34b6e58ec07a892984328e61b03aa7949d4c9bc43",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00001",
+      "input_hash": "5a41828df4e68b57524a472030741983cb3738f078cf9d334e51e8b6f39750a2",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00002",
+      "input_hash": "504fbb07889b3175209fe055c179519e7760dd00f64b5e24e8e4eda2e9788d82",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00003",
+      "input_hash": "33777274d9c4235525aa683f57feb481c1af037e949f1279850e1ffd7a413401",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00004",
+      "input_hash": "eaf2636c111c283502d5a91dd9fb3048e35cf5308eb530661c4ebe2f4bb07a74",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00005",
+      "input_hash": "c1282d8121aee794be60bbb8ddfcb99639dbfdd0782e3fd0126f39a72e95e15a",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00006",
+      "input_hash": "c6d48da9f04f3ac6506f691d10ff17336e8df57e277b4a72cf47109ef040e83d",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00007",
+      "input_hash": "1c94942e770a14e42518605e91540d0c3b0a597722fed10e960999512a494490",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00008",
+      "input_hash": "c67d8be912ef121358ca525fb42010d31516ebf322deb6fc6b5903e01ee712bf",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00009",
+      "input_hash": "c4d75ec2bcb8e96706662996ca85d13d6263a04267af0d694d7b373acd0d3135",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00010",
+      "input_hash": "3e4f11df2d090bf3085176a682086c446f8e95087bf9eeb124eaf1816e8f07cc",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00011",
+      "input_hash": "dca0d7a849ecd870b5eed3e1c1d2c16494cf0c2fb4714ed8ee6a10718e7280c7",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00012",
+      "input_hash": "f4ddb586ad70d50932faa77cc668eaa53f383b22bbcf24760a6821d936507dc7",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00013",
+      "input_hash": "c35566a73ce77288b2be8ba8aa6f3636de4813de8bb6b04f85c96f5ab95f9d4c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00014",
+      "input_hash": "2d5c74d0ffbe0920809c8063806832582f4e47d97d63e6f06b5fe97c502dcd47",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00015",
+      "input_hash": "8d85a71287d16505f760986b3244ed07e099ce36109d127ea1ba0ad803eaf6dc",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00016",
+      "input_hash": "71c3b8daa8d01d8dbe19a0dd694e9fcfde3f5ccd74930d9d2fe29f9917b62920",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00017",
+      "input_hash": "b6c409eeafca0128b9a962ada6fc90fd93cf069a7000636f64713dc1d0406930",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00018",
+      "input_hash": "1b814c624560ad24f3657211d150a8d290ecd6f7dc41a930a3e45aebb1c0d4a3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00019",
+      "input_hash": "175e6c64f983689871792eca3d069e0a0a5d02c37c49d2ea8457856d4f69e824",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00020",
+      "input_hash": "dac3efe7091c07a6bf023b010aa18a145b3939fc09c18f30052f1a675e44fb55",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00021",
+      "input_hash": "7034c20832af4e8f81b1c50d33e4776c964c9eb60a281ffb0665b7b8af2a7303",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00022",
+      "input_hash": "aa44ab224715a66df6d0b66c44ab7edf931eba4f52994c11e05918397bba37fb",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00023",
+      "input_hash": "8bf495e4c0c911b93bd5e36003f1c87063fac61cd381e0fafce9d56725893338",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00024",
+      "input_hash": "9fea2a8c843ffc5db378302b5d4004bf5e728b51be6a872e6fe1c6c858dab7ca",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00025",
+      "input_hash": "a84e6340c6142c1c74b7c3f80bfcb9fd4d3020f5cb89d88754389159a786e011",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00026",
+      "input_hash": "2d0148db30e43952ac39b0c2d8aab4dbc5da4c50cc36a3aaff2014c26f2e06be",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00027",
+      "input_hash": "fead7e71c9f4da54bcfd0645ad23be92b457366c854ea41d6113f2beb284ba0f",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00028",
+      "input_hash": "e0ba3a9250fce902f758d03015ff0151dbd1e1a698c76d9bc9d7b1d467eef102",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00029",
+      "input_hash": "73d86d7b3d22da244d2d8026d6c87fccb8ae0141776ae0e9b8c49032886c7932",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00030",
+      "input_hash": "a1ca85c34ec05745d1406beed237293eaad1d2a3cd5832967796367e95ccc8d2",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00031",
+      "input_hash": "18852cad0da94e994746606b5d59c2c3f2880fdcdb7b42af748e992caeeb3e9f",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00032",
+      "input_hash": "5efba161237f9d089add93d8cca355527499d1b0a1c70a229494b7677a1a0d77",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00033",
+      "input_hash": "bac28e393b10a377afec0f4ad6a4f7f6ec35e08e4406ad1297c39c6d85e3866c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00034",
+      "input_hash": "dd4930a9589570a30d1b8685dc3efc887c15d52b5995d2d26df9565c5506d0f2",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00035",
+      "input_hash": "5e5eededbd306579534f9f6ecb4830b4da38c71268234a4866c387b631666037",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00036",
+      "input_hash": "7dca1774be57206585f149b8168a5d3af989f00cba209d5abc9061fc61cda4f5",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00037",
+      "input_hash": "efff58f04a3fdc85605aba115016863d3efa2d0951110c579268a625c0b67ff7",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00038",
+      "input_hash": "3cc51e3543792977d91dee47a1a1181f815d4fef3757620422a4db5024c24c0f",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00039",
+      "input_hash": "2690f5e790714293a3639a0708bd75a41e757637defd532a9c1b4c04dfed6690",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00040",
+      "input_hash": "7440a79c5d36bf29680fd7d5742e17afb66eca7387ae848172f9b0246179480c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00041",
+      "input_hash": "2608646d69b93e4de40581dd0d8238bad01834b30fbb1bcd309f7712716b1b67",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00042",
+      "input_hash": "be36e04ae2068d768bd3b4881ac69f6f2b0de4cc6ebc3e42770dcb45f8cbd58e",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00043",
+      "input_hash": "63555103feec711188ac8512b26c441a5069dbdaeb1058ba76cbbda28fb2e1f5",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00044",
+      "input_hash": "ec2796adf6245a935bb2097d0a79a941837e5409fd3525d806d75b8e34965cab",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00045",
+      "input_hash": "b01efbf69d6b44347d26567ee5b8dde4fa6a72e4ee7a41a29a13941324c1a7d8",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00046",
+      "input_hash": "2b30e9adde835d3924cc68b5035021a613491a26ef0e21c62f8cc11bcc6e7808",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00047",
+      "input_hash": "2308be2d381c0f2b0c03fc359838b40ec6f2dbbb58cffe12708a3eaf384cc854",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00048",
+      "input_hash": "7a5dc936b77f3c47769abd3f30e1cd67333c74f851bce1f8de9f531d552a7e9f",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00049",
+      "input_hash": "a3578a38683a61f5254415e83a8d1efdf3fc51feb1d506e76317e7e481fc8da7",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00050",
+      "input_hash": "813a7c10eb215eb20cd28da9a3099237f891fe8f936db38460198340339fe1b1",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00051",
+      "input_hash": "07668825cd068d6c9ae1356511383e954d0b0492875ecf223d713e01cdc6479a",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00052",
+      "input_hash": "e6e856450ded5c5396ba8e9633d28bfbb1e424d426db368abce903956c5d50af",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00053",
+      "input_hash": "56cba321d999ed4e4b7093a42f82035cdf9142fe3d4a9f20d0eb031a5cea0afe",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00054",
+      "input_hash": "7cf60ec9f0ffb07b1ee7fce3540885c63a15f5fbe3c259c0a5c6fb17246a7fa1",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00055",
+      "input_hash": "1e19980913f01b845ad593b08aec64d57c6caebeee1fe278bd384a3e895d006a",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00056",
+      "input_hash": "c08233e9a2970782f8fc23c6d146db8a03ca9a2f9353a93a5e564bafa4b79980",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00057",
+      "input_hash": "c90bbf4eb705474b9d2486bd48b6b90412be8e573299741c378435ea8e2c62d3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00058",
+      "input_hash": "3150d56a94c2a49c438cdcb2659d29e0855475456c7dc3bfc114c74c3fffbdde",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00059",
+      "input_hash": "cc0e033793de0a93e1d6ff5cc9668f5deb55abf9747090aaeeb6e693c35614d5",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00060",
+      "input_hash": "c09d583b78c7ec12840d29572de6fe5b4162fbc14c6fc2fb616b9e069729a125",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00061",
+      "input_hash": "a6795b2822239a67a768ad843fb0b133621387865d7bfb3b00afa79ca4f973f3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00062",
+      "input_hash": "f7c79b4a0d22f52e3a42600949a6341b08fe21020e656200f0a71a63c1c21eff",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00063",
+      "input_hash": "ec98a9f48558e890d79ffa947cf13b1f4350d43668073f4b31afdf05cfcc90ab",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00064",
+      "input_hash": "68a56fc249fac3ced6e677d5c0e626d8c849d40535ab61499453d1e5bedac1a9",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00065",
+      "input_hash": "05a4ab75ff75bb94553d49aba16e7972847067128c7fdf59741efb46114cbbee",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00066",
+      "input_hash": "8fe9745d87735aa17530ed5bd38ffdc342d27204a091bcd95c22eff4ff81d036",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00067",
+      "input_hash": "4b20c768c42bb0618ae340ed2ef8347fe1a7ef06d5a77c0b38572f094dd745f5",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00068",
+      "input_hash": "96c64bd83b6ea58549bd197d0418068e487c79477a83892c2ce8b0d6804b4be9",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00069",
+      "input_hash": "d67f544c5bd3921c956e37facbdf1f9bf2d3bf27b59fd0fc1e391acf872705dc",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00070",
+      "input_hash": "2017f1ef40666f90719ab7c38d0de47c0963746ec2241678be330febe06c3d2b",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00071",
+      "input_hash": "a1dc8e99e5bcfc4b37166069e35f74bccc50d27e41e9333cd384fc9da5bc3ebf",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00072",
+      "input_hash": "bf18e0fb118814d5ca405536aea695d1586d65c28f96279518c3db460d105528",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00073",
+      "input_hash": "62529ca7a1ef7aa76b2c7c04004c2d666d850ca7a2d2342e7e72ed784811c711",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00074",
+      "input_hash": "1c1400716a855cc43cd90ace9e685313538f1bc935b495a9b6941888995db815",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00075",
+      "input_hash": "a6d66a4c9806dfac9c934276fc0be1f2d1e028ad9809c858e68655d0a82202ed",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00076",
+      "input_hash": "1f76347473ceedd11005848f52f22a252a832fba50d04214bdbbb73e2c32e11f",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00077",
+      "input_hash": "05fa049a7e98a93a153f2e7ee798c13d5bec7ad965ce0a98241037a99396b0bf",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00078",
+      "input_hash": "41ebc6ab6c0786a2a425ff73fe2bebeb4354ec55f3f241e523e18b7454dc13ca",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00079",
+      "input_hash": "5bb2eba0d4ca4ce5a689ed6e35ab4bb81b2b527fc5ef56fdacd253ce973e19c6",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00080",
+      "input_hash": "55e9e83f0bb9ab91cd889eb9a0481e70b6eb177ef96c9227d78a35b866767468",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00081",
+      "input_hash": "2d182b395bf8b10ff1e4a391eae27b3bde79310b8afe83ed409ffc54330fe961",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00082",
+      "input_hash": "cda51c9e2fdf0039bb931a9061d0ac38b2006830b997119a859806c62b25ed25",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00083",
+      "input_hash": "72d601b727f1eeaa3b7fd2fbac837e4eccf7bcfb2ff49f1cb8521635b8f5dc3c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00084",
+      "input_hash": "541f59f5a240c6a11c5094e232b247d97f71520b0d4510826938ff9caa3c87e3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00085",
+      "input_hash": "e9ff973da1558a361b8df5b7ddb2f451d41c9f11a563ca01ad004fb1e5fc659e",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00086",
+      "input_hash": "e9bd7d3fa4c7206d519182ef14d13968c32932cbbdaf295561e83d4b36f4702b",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00087",
+      "input_hash": "4bf57592fe18635ced93e93fefb63009543864c48a78e710d40ff034faa9aaac",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00088",
+      "input_hash": "9562253ca1ca77d1b6b941c5b6d703bee912da75c841edf37afbe678104971c3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00089",
+      "input_hash": "02873acb2560379d2159cc5eb86f1c02d08bc051033eb54a931e24667c4a1c85",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00090",
+      "input_hash": "21df68509881e3f4561b6f92deb3dc8f182a9d4f7405870f5d3ff82aee1630f1",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00091",
+      "input_hash": "ee128d60d90f34a91c894bc9752c9ee65da8c45b0d3d5fb10a21924f59243d6d",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00092",
+      "input_hash": "a5bbea4a22066009837bc5d4a79ef7c614c8bdc20aebd5f45439b289eddacaee",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00093",
+      "input_hash": "006eecf3092598e23a598419ec20153a0d7c3962a6725f929ccc7c30592271ba",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00094",
+      "input_hash": "ea4baf0b55fef5fbb4b30732b1960dab1e4e0e3e49e894645d83a64f29668e69",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00095",
+      "input_hash": "91483a437e2fe0d96c5c47cee33be2a04e434a949b0b4d8795b127f7dba2a3f7",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00096",
+      "input_hash": "e62e7b32b61b3d84d6b0ead653a9d65a20d1cea757be90fd296fd69cab25f473",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00097",
+      "input_hash": "2414f5b9d268c3183d794f3ac9713fc84a6659e62c0756a2f7838eedadce40d3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00098",
+      "input_hash": "3b56864b855e658950a84d105b3315381f8079f026e55bc79d7513ef86eb152d",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00099",
+      "input_hash": "a1ff3a140d9922fb68319b821c033ef469fc1cec49e3d1c98719d09dd890423b",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00100",
+      "input_hash": "af99ce184b7e86729289077dbac4375829f506510004a58dbff63d587b53cb24",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00101",
+      "input_hash": "d0d6af7dfc753ada4466a0a876ef572760e3a9bb8c68bd10dace64defd1e3600",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00102",
+      "input_hash": "b1fd695515c859995c56a8879ec6bdd522a33efc3240a59d929b10b9cbe86ed3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00103",
+      "input_hash": "d8440457f6fb9f5756e5a1118649e14fe3f4e73365ebb72c7e1c5870b0b89dda",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00104",
+      "input_hash": "3ed3fa7479807d0e13618d6474a61a42651472d99b8be8923b727a51f8daf702",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00105",
+      "input_hash": "74858d7b14dfa3db6e68ee1ff22f87c3ab58fb903aaa807fc92d328dd6511e9c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00106",
+      "input_hash": "3eccb2abc8e49a7775ade8b105c42f59db3c90749fd08b1f12b532592d7aa1a3",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00107",
+      "input_hash": "9b14d928bed8e36107a67e9e7d3e94acb0a514c728e71e4d28e0c752d224a06c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00108",
+      "input_hash": "7515c067fb7ee4d8e8d6d86364c76087793a46c55dda16b3eb97af86860c983b",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00109",
+      "input_hash": "5fd8e5685509ee4e7441ad8352b02e8a655ff41c87cdc9e975f38f44774feae8",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00110",
+      "input_hash": "eb9baf90d24007d366136d42d0b9503f2f48e0d7f40aa4cbf056c501b5e935d8",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00111",
+      "input_hash": "79919f3009d0843af162d230567997016422a9c1aedebf75bb61d6110d3b8c68",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00112",
+      "input_hash": "eb9e898317441fb6817f6d9176fab5d7f11d63dbb87469a0353de434d17e8507",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00113",
+      "input_hash": "3b73636e606825b2b7688b8a30366c30af83f288c1b0951c44158c6224dec012",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00114",
+      "input_hash": "3f17e1d2a43e98657df34ce5231ee0cb73420b90408ede99e1041db2ce1d2647",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00115",
+      "input_hash": "dd2c117508a5697c436febc36820196746f77101a9eb0eddff0d0fbd3ef5bbe6",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00116",
+      "input_hash": "6a7e92872590fa5738b33eb11f0dcb868639a2b29249615971d330335bf8e5ab",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00117",
+      "input_hash": "a11b0ead518fa76a9b55b4262e8a9366b22ab9e5451762c6613088a740eed854",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00118",
+      "input_hash": "80fc002ae866571b3eea857b512a121b980b4fed2689c3aa18a2f1aabcae71b2",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00119",
+      "input_hash": "e3c3efc04a2d56ca8ec8fd914f885163c0be2323af1ab51a222db443aaa9b32c",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00120",
+      "input_hash": "987133047b97beed83376c87b1eb910cbeba75fe6d6508e1393401f33c387f03",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    }
+  ],
+  "arm_order": [
+    "critical_edit",
+    "random_edit",
+    "original_rescore"
+  ],
+  "final_policy": "Answer the complete ORIGINAL patient question in its original JSON format. The following independent checks are either bounded hypothetical evidence edits or repeated scoring of the unchanged original question, as explicitly marked in each record. All checks use the same fixed candidate identities and scoring contract. Their signed deltas measure model score sensitivity, not clinical causal effects, and are not proof of either diagnosis. An original_rescore record makes no patient edit. Do not treat an edited finding as an original fact. Use the actual original evidence and public candidates; retain or change the answer only if supported, without a forced-flip rule.\nPublic catalog:\n",
+  "generation": {
+    "editor": {
+      "seed": 42,
+      "temperature": 0.7,
+      "max_tokens": 1024
+    },
+    "answer": {
+      "seed": 42,
+      "temperature": 0.7,
+      "max_tokens": 2048
+    }
+  },
+  "source_lock": {
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m5_log_priors.json": "f4032a8f9db862e95a325153309ca39c8d113b06b636752c835cc2d426cdf867",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py": "ecd3ea5c5ce31f9239f9d721aadc5c1a8bb04394fc674aee83dc5503aa9b9a65",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py": "7c6e177b7a8a5bddd3cbf0f2b5ba1f23df6b4bce1c227fac4357ae57de2f7373",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py": "331cbec06e22b8345ba86e432195fe9c968d3cb8647500228226f0efa024e37e",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py": "e4e4bbd1aed35c3439291f34b027db0d35b31569c71158b39f67fe21cf9950b8",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py": "0e4c793c14c6ab83f0abd11ca45259380975f628fd50776e40df95cdb591943c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/cf_moa/agents/a3_contrastive_comparison.py": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+    "/home/data3/txy/cf_moa/configs/a3_paired_controls.json": "5a901e0ddf4cc3c510ce717ba14b4e084b04f13e9bb4fe88a54c4a342d4233a4",
+    "/home/data3/txy/cf_moa/configs/native_sources.json": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+    "/home/data3/txy/cf_moa/configs/prototype.json": "631b4218e4f63e65fd8ca0927e823dfc9c8e3017dd24d9b7732ea404c0d776e7",
+    "/home/data3/txy/cf_moa/configs/readout_m5.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+    "/home/data3/txy/cf_moa/controller/a3_paired_controls.py": "ec2ccbf6eff8939943e43943078e9b0864d7d829ab8ff1a5135a7c116308e251",
+    "/home/data3/txy/cf_moa/controller/a3_random_edits.py": "581af8353004d64a1b359cc5f17f79417c98c3e74621241475ff846c98d468c2",
+    "/home/data3/txy/cf_moa/evaluation/a3_paired_runner.py": "d2f41c8d5e73a4ca8a4d229111121c30f353824325c194de30d5cfc11cde5174",
+    "/home/data3/txy/cf_moa/evaluation/journal.py": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+    "/home/data3/txy/cf_moa/tools/__init__.py": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+    "/home/data3/txy/cf_moa/tools/a3_edit_grammar.py": "7725c72bf8eed3158ff8cd18dff3e50a2248134b6c04626e6f56bbe1ffe48000",
+    "/home/data3/txy/cf_moa/tools/a5_structural_grammar.py": "61e4fe0fb4e36d472ab3873bcc524a5dda8fe3e461cd1d02c3b4899ad458b843",
+    "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+    "/home/data3/txy/cf_moa/tools/adopted.py": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+    "/home/data3/txy/cf_moa/tools/bounded_edits.py": "b37f46529fe963c19d8d10191c2b316e0cc0e0dd94c4c198f8ffc40cafc7b3f8",
+    "/home/data3/txy/cf_moa/tools/bounded_json.py": "1cc18f49727ff748a9d9728555f101484841837466b07cf01f0dee6fdd76a042",
+    "/home/data3/txy/cf_moa/tools/evidence_ids.py": "d8ae42678c37e0844c4584c75da12c54368480b8847b367aad7c46771c8f2912",
+    "/home/data3/txy/cf_moa/tools/experiment_config.py": "9485029f9effc84155da385efaf11df527cb426b1fc242fb23618a4cea362c44",
+    "/home/data3/txy/cf_moa/tools/legacy.py": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+    "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+    "/home/data3/txy/cf_moa/tools/provenance.py": "e93a15fe243840fe47decdaf0f8654e465749331b7dd6982fdfdfef46c4f5ed0",
+    "/home/data3/txy/cf_moa/tools/relational_json.py": "32c6a4c02c0defcca6ce694821eeddf3cbb25a79af27bedcfeb5fad5a39ffe92",
+    "/home/data3/txy/cf_moa/tools/schema_compat.py": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+    "/home/data3/txy/cf_moa/tools/single_agent_tools.py": "92adf67b3d6eadd25c0b9369ee118745c8142714e47ce2610191e01496fe2a37",
+    "/home/data3/txy/cf_moa/tools/validated_views.py": "d5f74667e6e1285317c2293f6804ba237ba41aacc3efa4c71c4db038d794bd05",
+    "/home/data3/txy/cf_moa/tools/vllm_backend.py": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13"
+  }
+}

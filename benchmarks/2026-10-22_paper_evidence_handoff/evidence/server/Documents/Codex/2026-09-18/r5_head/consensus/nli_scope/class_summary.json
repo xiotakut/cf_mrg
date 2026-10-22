@@ -1,0 +1,842 @@
+[
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw0",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw0",
+    "gold": "negative",
+    "n": 12,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 8,
+      "negative": 4
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw1",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw1",
+    "gold": "negative",
+    "n": 12,
+    "correct": 2,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 10,
+      "negative": 2
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw2",
+    "gold": "positive",
+    "n": 4,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 3,
+      "negative": 1
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw2",
+    "gold": "negative",
+    "n": 12,
+    "correct": 2,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 10,
+      "negative": 2
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw3",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw3",
+    "gold": "negative",
+    "n": 12,
+    "correct": 2,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 10,
+      "negative": 2
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw4",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_draw4",
+    "gold": "negative",
+    "n": 12,
+    "correct": 2,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 10,
+      "negative": 2
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_maj5",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_maj5",
+    "gold": "negative",
+    "n": 12,
+    "correct": 2,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 10,
+      "negative": 2
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_single_mean",
+    "gold": "positive",
+    "n": 4,
+    "correct": 3.8,
+    "invalid": 0,
+    "reference_n": 2,
+    "variant_n": 2,
+    "prediction_counts": {
+      "positive": 3.8,
+      "negative": 0.2
+    }
+  },
+  {
+    "method": "M4",
+    "view": "full",
+    "arm": "full_single_mean",
+    "gold": "negative",
+    "n": 12,
+    "correct": 2.4,
+    "invalid": 0,
+    "reference_n": 6,
+    "variant_n": 6,
+    "prediction_counts": {
+      "positive": 9.6,
+      "negative": 2.4
+    }
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw0",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw0",
+    "gold": "negative",
+    "n": 12,
+    "correct": 0,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 12,
+      "negative": 0
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw1",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw1",
+    "gold": "negative",
+    "n": 12,
+    "correct": 1,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 11,
+      "negative": 1
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw2",
+    "gold": "positive",
+    "n": 4,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 3,
+      "negative": 1
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw2",
+    "gold": "negative",
+    "n": 12,
+    "correct": 0,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 12,
+      "negative": 0
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw3",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw3",
+    "gold": "negative",
+    "n": 12,
+    "correct": 0,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 12,
+      "negative": 0
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw4",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_draw4",
+    "gold": "negative",
+    "n": 12,
+    "correct": 1,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 11,
+      "negative": 1
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_maj5",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_maj5",
+    "gold": "negative",
+    "n": 12,
+    "correct": 0,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 12,
+      "negative": 0
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_single_mean",
+    "gold": "positive",
+    "n": 4,
+    "correct": 3.8,
+    "invalid": 0,
+    "reference_n": 2,
+    "variant_n": 2,
+    "prediction_counts": {
+      "positive": 3.8,
+      "negative": 0.2
+    }
+  },
+  {
+    "method": "M4",
+    "view": "target_only",
+    "arm": "target_only_single_mean",
+    "gold": "negative",
+    "n": 12,
+    "correct": 0.4,
+    "invalid": 0,
+    "reference_n": 6,
+    "variant_n": 6,
+    "prediction_counts": {
+      "positive": 11.6,
+      "negative": 0.4
+    }
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw0",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw0",
+    "gold": "negative",
+    "n": 12,
+    "correct": 5,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 7,
+      "negative": 5
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw1",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw1",
+    "gold": "negative",
+    "n": 12,
+    "correct": 6,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 6,
+      "negative": 6
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw2",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw2",
+    "gold": "negative",
+    "n": 12,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 8,
+      "negative": 4
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw3",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw3",
+    "gold": "negative",
+    "n": 12,
+    "correct": 5,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 7,
+      "negative": 5
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw4",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_draw4",
+    "gold": "negative",
+    "n": 12,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 8,
+      "negative": 4
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_maj5",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_maj5",
+    "gold": "negative",
+    "n": 12,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 9,
+      "negative": 3
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_single_mean",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "reference_n": 2,
+    "variant_n": 2,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    }
+  },
+  {
+    "method": "M5",
+    "view": "full",
+    "arm": "full_single_mean",
+    "gold": "negative",
+    "n": 12,
+    "correct": 4.8,
+    "invalid": 0,
+    "reference_n": 6,
+    "variant_n": 6,
+    "prediction_counts": {
+      "positive": 7.2,
+      "negative": 4.8
+    }
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw0",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw0",
+    "gold": "negative",
+    "n": 12,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 9,
+      "negative": 3
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw1",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw1",
+    "gold": "negative",
+    "n": 12,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 9,
+      "negative": 3
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw2",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw2",
+    "gold": "negative",
+    "n": 12,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 9,
+      "negative": 3
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw3",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw3",
+    "gold": "negative",
+    "n": 12,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 8,
+      "negative": 4
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw4",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_draw4",
+    "gold": "negative",
+    "n": 12,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 8,
+      "negative": 4
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_maj5",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    },
+    "reference_n": 2,
+    "variant_n": 2
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_maj5",
+    "gold": "negative",
+    "n": 12,
+    "correct": 3,
+    "invalid": 0,
+    "prediction_counts": {
+      "positive": 9,
+      "negative": 3
+    },
+    "reference_n": 6,
+    "variant_n": 6
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_single_mean",
+    "gold": "positive",
+    "n": 4,
+    "correct": 4,
+    "invalid": 0,
+    "reference_n": 2,
+    "variant_n": 2,
+    "prediction_counts": {
+      "positive": 4,
+      "negative": 0
+    }
+  },
+  {
+    "method": "M5",
+    "view": "target_only",
+    "arm": "target_only_single_mean",
+    "gold": "negative",
+    "n": 12,
+    "correct": 3.4,
+    "invalid": 0,
+    "reference_n": 6,
+    "variant_n": 6,
+    "prediction_counts": {
+      "positive": 8.6,
+      "negative": 3.4
+    }
+  }
+]

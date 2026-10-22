@@ -1,0 +1,74 @@
+{
+  "status": "prepared",
+  "time": "2026-09-18 15:16:27 +0800",
+  "components": 231,
+  "splits": {
+    "train": 490,
+    "dev": 166
+  },
+  "strata": {
+    "('M12', 'weak')": 4,
+    "('M12', 'r5')": 24,
+    "('M14', 'r5')": 23,
+    "('M11', 'weak')": 4,
+    "('M22', 'r5')": 24,
+    "('M23', 'r5')": 40,
+    "('M10', 'r5')": 24,
+    "('M11', 'r5')": 24,
+    "('M20', 'r5')": 24,
+    "('M17', 'r5')": 24,
+    "('M23_control', 'strong')": 16
+  },
+  "checks": [
+    {
+      "method": "M4",
+      "forwards": 1312,
+      "max_prompt_tokens": 36970,
+      "smoke": {
+        "nli": "M23_control:bionli_choice_relevant_01:negative",
+        "single": "s001305",
+        "relation": "s003404",
+        "robustness_single": "s108678"
+      }
+    },
+    {
+      "method": "M5",
+      "forwards": 1312,
+      "max_prompt_tokens": 40513,
+      "smoke": {
+        "nli": "M23_control:bionli_choice_relevant_01:negative",
+        "single": "s001305",
+        "relation": "s003404",
+        "robustness_single": "s108678"
+      }
+    }
+  ],
+  "pairs": 352,
+  "training": {
+    "head": "zero initialized 5x4096 residual, no bias; per-vector RMS normalization",
+    "rotations": [
+      0,
+      1
+    ],
+    "losses": [
+      "CE"
+    ],
+    "js_weight": 1.0,
+    "l2_values": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "epochs": 200,
+    "learning_rate": 0.001,
+    "selection": "minimum dev native NLL separately within each loss, no confirmation selection",
+    "seed": 42
+  },
+  "reference_caveat": "M20:255 retained in evaluation but excluded from supervised loss due preexisting documented reference dispute.",
+  "scope": "All 656 inputs already exposed. Group-disjoint development is not independent confirmation. No final explanations used as supervision.",
+  "previous_run": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/learned_pilot",
+  "change": "JSON-compatible choice request plus explicit answer_choice string prefill. Exact same inputs, labels, group split, pair loss and hyperparameters. First 8 forwards are 4 fixed visible-task examples, two mappings each.",
+  "score_prefix": "{\"answer_choice\": \"",
+  "control": "R5 reference-only CE: R5 train variants excluded, same complete dev labels, same strong/weak controls, optimizer, grouped weighting, hyperparameter selection, representations and code mappings; no new model forwards.",
+  "fit_inputs": 226
+}

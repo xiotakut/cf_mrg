@@ -1,0 +1,25 @@
+{
+  "status": "planned before any W trained results or X fitting/J/T scores",
+  "at": "2026-09-18 18:09:08 +0800",
+  "trigger": "Existing T analytical check: native semantic readout belongs to antisymmetric mapping direction. Mean hidden need not preserve that direction. W remains unchanged and is the matched mean control.",
+  "source": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot",
+  "author_split": "Exact W/U 4435 train +1109 internal val, 5544 total; no new data, no J/T fitting, no D.",
+  "primary": "x=(float64(h_rotation0)-float64(h_rotation1))/2, fixed rotation0 positive-A and rotation1 positive-B; PH is sole main candidate.",
+  "bias_control": "Same contrast on empty-P H-only, fitted/selected on author only.",
+  "scalar_control": "One PH semantic margin m=mean([z_positive0-z_negative0,z_positive1-z_negative1]), using saved native A/B logits. One train-standardized scalar, intercept plus coefficient, same three C and internal val selection. Report slope; only positive slope preserves orientation. No logit(mean_probability) alternative.",
+  "training": "Same W/U train-only StandardScaler separately per view; LogisticRegression C=.01,.1,1, L2, lbfgs,max_iter2000,tol1e-6,random_state20260918,no class_weight,intercept. Lowest converged author-val stable NLL,tie lowerC; margin>=0 positive; no refit.",
+  "parameters": {
+    "ph": 4097,
+    "h_only": 4097,
+    "scalar_ph": 2
+  },
+  "feature_calls": "Reuse complete W author hidden/logits. Freeze final feature/meta hashes when both finish. No additional GPU or new generated outputs.",
+  "comparison": "W mean-PH, same-request original LM mean probabilities, scalar contrast calibration, old F/K/U/V on all112 exposed J; same16 exposed T families. H-only author-internal only. Candidate remains one PH branch, no backbone-dependent routing.",
+  "original_LM": "Do not redefine prior mean-probability baseline using mean logits: real-arithmetic decision equivalence has floating-point saturation/tie exceptions.",
+  "limitations": "Counterexample establishes no generic information-preservation guarantee for mean hidden, not that W loses all semantics. Contrast feature is code-mapping alignment, not a clinical causal contrast or new general learning algorithm. All current T/J exposed; future D untouched.",
+  "stop": "No adoption if no gain over native/scalar strong controls or if relevant-change accuracy is damaged. No J/T-based C/threshold/layer/loss changes.",
+  "W_source_freeze_sha256": "6452ac1ee079488f36e7a76cd74e6124ce289bd1deeef453d54760abff02a26b",
+  "mathematical_evidence": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/mapping_geometry_checks.json",
+  "new_model_calls": 0,
+  "D_access": false
+}

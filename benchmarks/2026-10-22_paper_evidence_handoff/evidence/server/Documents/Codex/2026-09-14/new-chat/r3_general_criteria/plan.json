@@ -1,0 +1,36 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "knowledge_calls": 70,
+      "names_only_calls": 30,
+      "case_visible_calls": 40,
+      "planned_final_calls": 320,
+      "max_knowledge_prompt": 509
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "knowledge_calls": 75,
+      "names_only_calls": 35,
+      "case_visible_calls": 40,
+      "planned_final_calls": 320,
+      "max_knowledge_prompt": 495
+    }
+  ],
+  "planned_calls": 785,
+  "mechanism": "Generate supporting and opposing diagnostic criteria from sorted candidate names before applying them to current case; compare same generation with current case visible.",
+  "sharing": "Exact same candidate set shares names-only request/output within one original backbone. Candidate set still depends on patient via frozen front end; no claim of full data independence.",
+  "controls": "Same1 knowledge-generation+4 cyclic-order final scores per instance, except names-only cache reuse. Same schemas, output limits, final original contexts and decision policy. Reuse original uncued4 and calibrated49.",
+  "inference": "Original weights and own native context. Generated knowledge is marked as fallible general knowledge, not patient observations. No new retrieval or training labels.",
+  "scope": "Same40 exposed R3 diagnosis cases per M4/M5. Fixed candidate pool, no exclusion for missing gold. Invalid knowledge returns actual initial calibrated answer.",
+  "sources": [
+    "https://arxiv.org/html/2603.27820v1#S4",
+    "https://proceedings.iclr.cc/paper_files/paper/2024/file/592da1445a51e54a3987958b5831948f-Paper-Conference.pdf",
+    "https://aclanthology.org/2024.findings-acl.212.pdf"
+  ],
+  "adaptation": "CFDX4.1–4.5 candidate evidence motivation, StepBack2 principles-before-application, CoVe3.3 context separation. No full method reproduction or clinical-rule validation.",
+  "criterion": "Cross-backbone net benefit versus case-visible knowledge and current calibrated head before expansion; report repair/harm and common-valid subset; no posthoc per-disease gates."
+}

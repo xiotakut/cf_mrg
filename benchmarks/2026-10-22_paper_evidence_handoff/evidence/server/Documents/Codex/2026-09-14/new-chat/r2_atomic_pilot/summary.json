@@ -1,0 +1,204 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 23,
+      "accuracy_pct": 29.11392405063291,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 17,
+      "accuracy_pct": 25.757575757575758,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "accuracy_pct": 33.333333333333336,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "atomic",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 7,
+      "accuracy_pct": 8.860759493670885,
+      "invalid": 1,
+      "repairs": 1,
+      "harms": 17
+    },
+    {
+      "method": "atomic",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 2,
+      "accuracy_pct": 3.0303030303030303,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 15
+    },
+    {
+      "method": "atomic",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 2,
+      "accuracy_pct": 22.22222222222222,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "atomic",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "counterexample",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 8,
+      "accuracy_pct": 10.126582278481013,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 18
+    },
+    {
+      "method": "counterexample",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 5,
+      "accuracy_pct": 7.575757575757576,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 15
+    },
+    {
+      "method": "counterexample",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "counterexample",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "atomic",
+      "calls": 316,
+      "input_tokens": 670189,
+      "output_tokens": 25370,
+      "length_stops": 0
+    },
+    {
+      "variant": "counterexample",
+      "calls": 316,
+      "input_tokens": 702737,
+      "output_tokens": 41331,
+      "length_stops": 0
+    }
+  ],
+  "baseline_parity": 79,
+  "audit_status": {
+    "atomic": {
+      "failed_checks": 0,
+      "unknown_checks": 51,
+      "changed_answers": 66
+    },
+    "counterexample": {
+      "failed_checks": 0,
+      "unknown_checks": 29,
+      "changed_answers": 69
+    }
+  },
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2384498,
+      "started_at": 1789363424.1199274,
+      "total": 160,
+      "initialization_seconds": 53.886640310287476,
+      "completed": 160,
+      "elapsed_seconds": 98.99738788604736,
+      "last_batch_seconds": 5.126906633377075,
+      "completed_at": 1789363523.1174884
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2384499,
+      "started_at": 1789363423.9886374,
+      "total": 160,
+      "initialization_seconds": 54.05271816253662,
+      "completed": 160,
+      "elapsed_seconds": 100.76448106765747,
+      "last_batch_seconds": 4.1258344650268555,
+      "completed_at": 1789363524.753276
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2384500,
+      "started_at": 1789363423.947169,
+      "total": 160,
+      "initialization_seconds": 55.038504123687744,
+      "completed": 160,
+      "elapsed_seconds": 104.27818155288696,
+      "last_batch_seconds": 4.855568170547485,
+      "completed_at": 1789363528.2255206
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2384501,
+      "started_at": 1789363424.3103065,
+      "total": 152,
+      "initialization_seconds": 55.20814871788025,
+      "completed": 152,
+      "elapsed_seconds": 97.09863185882568,
+      "last_batch_seconds": 4.193135738372803,
+      "completed_at": 1789363521.409382
+    }
+  ]
+}

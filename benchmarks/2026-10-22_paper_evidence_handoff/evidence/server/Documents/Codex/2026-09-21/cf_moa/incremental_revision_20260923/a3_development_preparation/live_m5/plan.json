@@ -1,0 +1,170 @@
+{
+  "variant": "fixed_pair_critical_random_original_rescore_v1",
+  "method": "M5",
+  "profile": {
+    "role": "readout",
+    "config": {
+      "model": "/home/data3/txy/models/Qwen3-8B",
+      "dtype": "bfloat16",
+      "seed": 42,
+      "temperature": 0.7,
+      "top_p": 1.0,
+      "top_k": -1,
+      "max_tokens": 2048,
+      "gpu_memory_utilization": 0.85,
+      "max_model_len": 131072,
+      "max_num_seqs": 16,
+      "max_num_batched_tokens": 8192,
+      "batch_size": 16,
+      "model_kwargs": {
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        },
+        "num_gpu_blocks_override": 16384
+      },
+      "chat_template_kwargs": {
+        "enable_thinking": false
+      },
+      "guided_json": true,
+      "num_shards": 1
+    },
+    "config_hash": "dac651ca2f36bfeaadc4839b6f913c47fbac1b9e580e3cf0de263ec95471153a",
+    "source": {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+      "copy": "readout_m5.json",
+      "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+    }
+  },
+  "inputs": [
+    {
+      "request_id": "d00021",
+      "input_hash": "7034c20832af4e8f81b1c50d33e4776c964c9eb60a281ffb0665b7b8af2a7303",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00035",
+      "input_hash": "5e5eededbd306579534f9f6ecb4830b4da38c71268234a4866c387b631666037",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00051",
+      "input_hash": "07668825cd068d6c9ae1356511383e954d0b0492875ecf223d713e01cdc6479a",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00068",
+      "input_hash": "96c64bd83b6ea58549bd197d0418068e487c79477a83892c2ce8b0d6804b4be9",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00070",
+      "input_hash": "2017f1ef40666f90719ab7c38d0de47c0963746ec2241678be330febe06c3d2b",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    },
+    {
+      "request_id": "d00077",
+      "input_hash": "05fa049a7e98a93a153f2e7ee798c13d5bec7ad965ce0a98241037a99396b0bf",
+      "budget": {
+        "max_model_requests": 16,
+        "max_input_tokens": 400000,
+        "max_output_tokens": 32768,
+        "max_tool_calls": 4
+      }
+    }
+  ],
+  "arm_order": [
+    "critical_edit",
+    "random_edit",
+    "original_rescore"
+  ],
+  "final_policy": "Answer the complete ORIGINAL patient question in its original JSON format. The following independent checks are either bounded hypothetical evidence edits or repeated scoring of the unchanged original question, as explicitly marked in each record. All checks use the same fixed candidate identities and scoring contract. Their signed deltas measure model score sensitivity, not clinical causal effects, and are not proof of either diagnosis. An original_rescore record makes no patient edit. Do not treat an edited finding as an original fact. Use the actual original evidence and public candidates; retain or change the answer only if supported, without a forced-flip rule.\nPublic catalog:\n",
+  "generation": {
+    "editor": {
+      "seed": 42,
+      "temperature": 0.7,
+      "max_tokens": 1024
+    },
+    "answer": {
+      "seed": 42,
+      "temperature": 0.7,
+      "max_tokens": 2048
+    }
+  },
+  "source_lock": {
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/m5_log_priors.json": "f4032a8f9db862e95a325153309ca39c8d113b06b636752c835cc2d426cdf867",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r1_head.py": "309cfa88b58849ec231d083b902dd0a971d6f573d781ad679f9f8d6d3f43a335",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_action_scope.py": "ecd3ea5c5ce31f9239f9d721aadc5c1a8bb04394fc674aee83dc5503aa9b9a65",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_condition_head.py": "925cddda313a2e46a3da44f5b79ef59b970d817df0a313f9fc4f6891b2dd3325",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_guideline_rules.py": "2c8f6b90256335011628472ae630dab9ca19f7c283406628e07520336b98c9c0",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_indexed_head.py": "7c6e177b7a8a5bddd3cbf0f2b5ba1f23df6b4bce1c227fac4357ae57de2f7373",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_positive_facts.py": "331cbec06e22b8345ba86e432195fe9c968d3cb8647500228226f0efa024e37e",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_program_head.py": "dadc44c239ec6e7d7a7b32071a43ccf5801c89bf51e467fd77c7d2d1ce0157cd",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_support_interface.py": "91b831fa70e7b319e6b951e95bd50edbab1b78d3df18ce0b5e67652f1526c4a6",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r2_task_scoped_head.py": "e4e4bbd1aed35c3439291f34b027db0d35b31569c71158b39f67fe21cf9950b8",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_catalog_distribution_head.py": "767885a87650ffa9a6430bbe8c927387f5e01269c788cc262f6a6fbc44e3635e",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/r3_ontology_head.py": "0e4c793c14c6ab83f0abd11ca45259380975f628fd50776e40df95cdb591943c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/cf_moa/agents/a3_contrastive_comparison.py": "642b26940cb9dea6c391b3702dbc6827e0d1bb0a2f9c9def04e0d01be442baec",
+    "/home/data3/txy/cf_moa/configs/a3_paired_controls.json": "5a901e0ddf4cc3c510ce717ba14b4e084b04f13e9bb4fe88a54c4a342d4233a4",
+    "/home/data3/txy/cf_moa/configs/native_sources.json": "0677f76378e8e4dbc92c7f15cd138cdd267c45e42ac2cd8e62a641042785e090",
+    "/home/data3/txy/cf_moa/configs/prototype.json": "631b4218e4f63e65fd8ca0927e823dfc9c8e3017dd24d9b7732ea404c0d776e7",
+    "/home/data3/txy/cf_moa/configs/readout_m5.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/cf_moa/contracts.py": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+    "/home/data3/txy/cf_moa/controller/a3_paired_controls.py": "ec2ccbf6eff8939943e43943078e9b0864d7d829ab8ff1a5135a7c116308e251",
+    "/home/data3/txy/cf_moa/controller/a3_random_edits.py": "581af8353004d64a1b359cc5f17f79417c98c3e74621241475ff846c98d468c2",
+    "/home/data3/txy/cf_moa/evaluation/a3_paired_runner.py": "d2f41c8d5e73a4ca8a4d229111121c30f353824325c194de30d5cfc11cde5174",
+    "/home/data3/txy/cf_moa/evaluation/journal.py": "adae2cb5d0999c70efa7d6752777fc8d568d87a1c5dc6b6487d3aa4f7ddf86be",
+    "/home/data3/txy/cf_moa/tools/__init__.py": "dc2cb702bd9e3d822687cab522ef8a7be571a17f73798ed5cf7ebc428be1ce30",
+    "/home/data3/txy/cf_moa/tools/a3_edit_grammar.py": "7725c72bf8eed3158ff8cd18dff3e50a2248134b6c04626e6f56bbe1ffe48000",
+    "/home/data3/txy/cf_moa/tools/a5_structural_grammar.py": "61e4fe0fb4e36d472ab3873bcc524a5dda8fe3e461cd1d02c3b4899ad458b843",
+    "/home/data3/txy/cf_moa/tools/adapters.py": "212aa8b820556d6a34ae80fe5455fc976a71b64d67d1d512756a0e1a7a7d8629",
+    "/home/data3/txy/cf_moa/tools/adopted.py": "3c41cd8cc3dc77b17ec0434f3036b9633c5466f86b0f806aba7144b214d03b7f",
+    "/home/data3/txy/cf_moa/tools/aggregation_backend.py": "b78be2762ea8138a02522db1735ff9060e67ca06e8e2141823690e44eb2a8771",
+    "/home/data3/txy/cf_moa/tools/aggregation_compact_grammar.py": "28f35cb4ddda133af284484ed9498b6b3be794c74c04675591fd4ad245aa943c",
+    "/home/data3/txy/cf_moa/tools/aggregation_evidence_first_grammar.py": "bb95a191ecf0aad4bbed18005fc533ca0542543e7778165d6fcd8a08f7d66bbb",
+    "/home/data3/txy/cf_moa/tools/aggregation_frequency_sampling.py": "795cf8cff614598b6e8903bf44b6d0e2c9c32f822a39ffb9d88df7f9628aa96f",
+    "/home/data3/txy/cf_moa/tools/aggregation_grammar.py": "3898f628fe651773d4f387263153dd66d1d05cc5f6c555b4d5ee9798b3999809",
+    "/home/data3/txy/cf_moa/tools/aggregation_reason_codes_crossfield_grammar.py": "4dad357fed079178d4ef4b800a50c3a5d4f74992433c4b26e71745e808025893",
+    "/home/data3/txy/cf_moa/tools/aggregation_reason_codes_grammar.py": "75df57907fa96f4e8361e8a2c5c6e9267e8539df79d0bdc8579c48e53914573b",
+    "/home/data3/txy/cf_moa/tools/bounded_edits.py": "b37f46529fe963c19d8d10191c2b316e0cc0e0dd94c4c198f8ffc40cafc7b3f8",
+    "/home/data3/txy/cf_moa/tools/bounded_json.py": "1cc18f49727ff748a9d9728555f101484841837466b07cf01f0dee6fdd76a042",
+    "/home/data3/txy/cf_moa/tools/evidence_ids.py": "d8ae42678c37e0844c4584c75da12c54368480b8847b367aad7c46771c8f2912",
+    "/home/data3/txy/cf_moa/tools/experiment_config.py": "9485029f9effc84155da385efaf11df527cb426b1fc242fb23618a4cea362c44",
+    "/home/data3/txy/cf_moa/tools/legacy.py": "9b5e23e7215e75ed9e35d15a0a94b2dbf796278e2b76a807a3a1caa89dc96265",
+    "/home/data3/txy/cf_moa/tools/native_backend.py": "76b8e2fc334aa6e7182187f96de1089f83bc71624cc4edfa623a2ecc6faf1815",
+    "/home/data3/txy/cf_moa/tools/provenance.py": "e93a15fe243840fe47decdaf0f8654e465749331b7dd6982fdfdfef46c4f5ed0",
+    "/home/data3/txy/cf_moa/tools/relational_json.py": "32c6a4c02c0defcca6ce694821eeddf3cbb25a79af27bedcfeb5fad5a39ffe92",
+    "/home/data3/txy/cf_moa/tools/schema_compat.py": "a4884cd4010634900fc3b958cb53e5a8b749d941d3aca32f23426a9224059dea",
+    "/home/data3/txy/cf_moa/tools/single_agent_tools.py": "92adf67b3d6eadd25c0b9369ee118745c8142714e47ce2610191e01496fe2a37",
+    "/home/data3/txy/cf_moa/tools/validated_views.py": "d5f74667e6e1285317c2293f6804ba237ba41aacc3efa4c71c4db038d794bd05",
+    "/home/data3/txy/cf_moa/tools/vllm_backend.py": "870bff0971b27fcd22117d55091ab4cbc034660388a4731697670b89c80b6c13"
+  }
+}

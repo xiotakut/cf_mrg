@@ -1,0 +1,26 @@
+{
+  "protocol_invalid_reasons": {
+    "invalid_option_key": 16,
+    "budget_exhausted": 1,
+    "missing_or_conflicting_answer": 1
+  },
+  "invalid_option_key_spaces": {
+    "A/B/C": 1,
+    "yes/no": 14,
+    "A/B/C/D": 1
+  },
+  "all_protocol_invalid_used_eight_steps": true,
+  "aggregate_checks": {
+    "model_and_token_identity": 2459,
+    "active_stack_prompt_and_required_evidence": 2459,
+    "entropy_recalculation_from_saved_full_signal": 1900,
+    "acceptance_boundary": 758,
+    "protocol_feedback": 525,
+    "removed_memory_and_state_restore": 22,
+    "accepted_output_normalization": 39,
+    "invalid_output_continued_within_budget": 28,
+    "budget_not_promoted_to_answer": 1
+  },
+  "retrieval_backend_calls": 676,
+  "within_trial_retrieval_cache_hits": 80
+}

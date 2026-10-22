@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "method": "M5",
+  "pid": 2812173,
+  "gpu": "1",
+  "batch_size": 1,
+  "new_generations": 0,
+  "truncated_sequences": 0,
+  "input_and_source_sha256": {
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/extract_features.py": "f33eba863bde516fe3c995455dc8b28fb64053f3a304dc7b966232be6a529350",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/config.json": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/task_supervision_pilot/m5/requests.jsonl": "587060774e2da4ee8ccc0c620e258fd8071304cbb80b8aca7970c347d7926f6c"
+  },
+  "initialization_seconds": 27.259255170822144,
+  "planned_sequences": 22176,
+  "completed_sequences": 22176,
+  "forward_batches": 22176,
+  "actual_input_tokens": 11493764,
+  "padded_token_slots": 11493764,
+  "max_input_tokens": 1735,
+  "elapsed_seconds": 4059.0662508010864,
+  "peak_allocated_bytes": 16601228288,
+  "hidden_shape": [
+    22176,
+    4096
+  ],
+  "representation": "last nonpadding token of original-system NLI task prompt plus JSON prefix; A-E native logits and 4096 hidden",
+  "requests_sha256": "587060774e2da4ee8ccc0c620e258fd8071304cbb80b8aca7970c347d7926f6c"
+}

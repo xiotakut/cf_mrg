@@ -1,0 +1,1602 @@
+{
+  "protocol": {
+    "version": "retrieved_candidate_evidence_optional_search_v2_answer34_schedule_v2",
+    "scope": "New A1 development families; not independent, blind, or a replacement of historical121",
+    "selection_manifest": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/panel_preparation/offline/family_selection.json",
+    "selection_sha256": "5916eb61d1d0feeeb9771d41b5bd1637be7f3f68c40a118f16e9802aa87cedce",
+    "panel_ids": [
+      "d00010",
+      "d00015",
+      "d00018",
+      "d00019",
+      "d00021",
+      "d00026",
+      "d00035",
+      "d00036",
+      "d00042",
+      "d00046",
+      "d00047",
+      "d00050",
+      "d00054",
+      "d00055",
+      "d00057",
+      "d00058",
+      "d00059",
+      "d00062",
+      "d00068",
+      "d00072",
+      "d00077",
+      "d00078",
+      "d00081",
+      "d00084",
+      "d00088",
+      "d00089",
+      "d00090",
+      "d00094",
+      "d00096",
+      "d00100",
+      "d00106",
+      "d00113",
+      "d00115",
+      "d00120"
+    ],
+    "panel_plan_sha256": "23ae26a015da42a3c149f72edcdda5b754eeb180a9167cc0247c4c9c2606b113",
+    "generation": {
+      "temperature": 0.7,
+      "seed": 42,
+      "query_max_tokens": 256,
+      "answer_max_tokens": 768,
+      "repair_max_tokens": 128
+    },
+    "source_files": [
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence.py",
+        "sha256": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py",
+        "sha256": "6fc25dc0c8ebe13f4d5f9bbc04f4158e5c46a87ef8224b7aff40dbc0d2fca027"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/prepare_stages.py",
+        "sha256": "bdbe31b8badea114e156891b8c78d5a6e8cff26147987e7f11cac198b828ea82"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence_answers.py",
+        "sha256": "71e6ab46e82f34612e261090898068b56bd29b03b8705358a847ddc4b8c516da"
+      },
+      {
+        "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/profile_derived_admission.py",
+        "sha256": "c7598786b232000799a1e428d30dec27b315b71df54bc3f24dbb8fba7162fe8b"
+      },
+      {
+        "path": "/home/data3/txy/cf_moa/evaluation/resources.py",
+        "sha256": "47b8d65fc5bb99de2784ceceb346d660728f21c97bcaebc11613a91d8425812a"
+      }
+    ],
+    "methods": {
+      "M4": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/panel_preparation/inference/m4.jsonl",
+        "inputs_sha256": "2c77509ea8ba9b68e9b5657dfe9c7484c531a0d83027f811c21256742e8a1c7d",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m4/proposals.jsonl",
+        "bases_sha256": "520232c97d81247d78286678e3a9feefa672e45d45e78e85ff65cf868155c143",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/m4_evidence.jsonl",
+        "proposals_sha256": "a5758eb0350f6dcfbd1320b06108f1c10cf1c82c673f8e4c6b8fec5bf582abef",
+        "tasks": [
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": null,
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": null,
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": null,
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "no difference",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "no difference",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "no difference",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": null,
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": null,
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": null,
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": null,
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": null,
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": null,
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": null,
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": null,
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": null,
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "no difference",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "no difference",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "no difference",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "no difference",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "no difference",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "no difference",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "lower",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "lower",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "lower",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00120"
+          }
+        ],
+        "shared_query_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/query34/m4/proposals.jsonl",
+        "retrieval_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/retrieval/m4/tool/evidence.jsonl",
+        "retrieval_source_sha256": "ae6b296f54dc193f251be49cf2566937fb619613c24cc97e93879ab31451a68d"
+      },
+      "M5": {
+        "inputs": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/panel_preparation/inference/m5.jsonl",
+        "inputs_sha256": "b7901a01109d2d676810b14200dae3f3306690bd6e5fe719f19a4dcc26357b45",
+        "bases": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/incremental_revision_20260923/baseline_contract/v2/m5/proposals.jsonl",
+        "bases_sha256": "b12fb5d980d567148bd840eac682a82dc5a84d0a996f59abfe4a54a76beddda1",
+        "proposals": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/answer34/m5_evidence.jsonl",
+        "proposals_sha256": "608369961c490e539cb2d7d28d4bc123680708fec018590e75ddcc267cb355e0",
+        "tasks": [
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00010",
+            "task_id": "d00010:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "D",
+            "proposal_key": "d00010"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00015",
+            "task_id": "d00015:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00015"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00018",
+            "task_id": "d00018:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00018"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "D",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "D",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00019",
+            "task_id": "d00019:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "D",
+            "proposal_key": "d00019"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00021",
+            "task_id": "d00021:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "Possible NSTEMI / STEMI",
+            "proposal_key": "d00021"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "uncertainty",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00026",
+            "task_id": "d00026:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00026"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00035",
+            "task_id": "d00035:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00035"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00036",
+            "task_id": "d00036:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00036"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00042",
+            "task_id": "d00042:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "no",
+            "proposal_key": "d00042"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00046",
+            "task_id": "d00046:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00046"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00047",
+            "task_id": "d00047:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00047"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": null,
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": null,
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00050",
+            "task_id": "d00050:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": null,
+            "proposal_key": "d00050"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "C",
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "C",
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00054",
+            "task_id": "d00054:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "C",
+            "proposal_key": "d00054"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "D",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "D",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00055",
+            "task_id": "d00055:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "D",
+            "proposal_key": "d00055"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00057",
+            "task_id": "d00057:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00057"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00058",
+            "task_id": "d00058:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00058"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "D",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "D",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00059",
+            "task_id": "d00059:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "D",
+            "proposal_key": "d00059"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00062",
+            "task_id": "d00062:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00062"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00068",
+            "task_id": "d00068:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "Pneumonia",
+            "proposal_key": "d00068"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "C",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "C",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00072",
+            "task_id": "d00072:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "C",
+            "proposal_key": "d00072"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "SLE",
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "SLE",
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00077",
+            "task_id": "d00077:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "SLE",
+            "proposal_key": "d00077"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00078",
+            "task_id": "d00078:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00078"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "uncertainty",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00081",
+            "task_id": "d00081:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00081"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00084",
+            "task_id": "d00084:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00084"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "uncertainty",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00088",
+            "task_id": "d00088:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00088"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00089",
+            "task_id": "d00089:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00089"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00090",
+            "task_id": "d00090:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "A",
+            "proposal_key": "d00090"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "uncertainty",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00094",
+            "task_id": "d00094:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "uncertainty",
+            "proposal_key": "d00094"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00096",
+            "task_id": "d00096:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00096"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00100",
+            "task_id": "d00100:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00100"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00106",
+            "task_id": "d00106:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00106"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00113",
+            "task_id": "d00113:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00113"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "B",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "B",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00115",
+            "task_id": "d00115:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "B",
+            "proposal_key": "d00115"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_search_evidence",
+            "arm": "a1_search_evidence",
+            "target": "D",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_search_reanswer",
+            "arm": "a1_search_reanswer",
+            "target": "D",
+            "proposal_key": "d00120"
+          },
+          {
+            "request_id": "d00120",
+            "task_id": "d00120:a1_search_no_evidence",
+            "arm": "a1_search_no_evidence",
+            "target": "D",
+            "proposal_key": "d00120"
+          }
+        ],
+        "shared_query_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/query34/m5/proposals.jsonl",
+        "retrieval_source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/retrieval/m5/tool/evidence.jsonl",
+        "retrieval_source_sha256": "83941eb384ae3780a6e39b894ef51654401d2bee29fff097669a5a20f4185a01"
+      }
+    },
+    "independent_evaluation": false,
+    "new_identity": true,
+    "failure_policy": "Ordinary per-item failures continue. One answer format repair in each arm. Query has no retry. All planned members remain.",
+    "phases": "One shared query generation, actual fixed retrieval, then three direct full-native-choice arms. No second adjudication.",
+    "tool_policy": "Two queries each BM25 per-corpus32 plus adopted MedCPT top8; interleave, deduplicate normalized full content, exclude exact full-content repeats from original context, keep at most8 added chunks. Complete original materials retained.",
+    "common_cost": "B/query/retrieval shared source cost retained once physically, attributed per method separately. Same caps are not equal realized expense.",
+    "optional_search_policy": "Query failures remain failures. All three answer arms independently run on the complete original input when no valid query exists; target=null, queries=[], additional_evidence=[]. B-invalid inputs remain unavailable. No failed-query prefix recovery, query retry or post-hoc native rescue.",
+    "evidence_ablation": "No-new-evidence arm uses the same support-expert system as main; ordinary reanswer receives the same evidence and user payload as main.",
+    "per_task_budget": {
+      "max_model_requests": 2,
+      "max_input_tokens": 400000,
+      "max_output_tokens": 896,
+      "max_tool_calls": 0
+    },
+    "arms": [
+      "a1_search_evidence",
+      "a1_search_reanswer",
+      "a1_search_no_evidence"
+    ],
+    "resource_scheduling_revision": {
+      "prior_plan_sha256": "e70371aedaef101eb64ae5b547544536b778e73215bfa6054ba1f7b7ef566d14",
+      "prior_plan": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/scheduler_before_profile_derived_admission/answer34/plan.json",
+      "kind": "scheduling_only_not_method_tuning",
+      "change": "Use the existing profile formula including 3GiB margin without extra60GiB floor; M4 ceil50GiB/M5 ceil55GiB, actual launch rechecked",
+      "model_engine_context_KV_decoding_inputs_tasks_unchanged": true,
+      "global_resource_policy_unchanged": true,
+      "entry": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle3/profile_derived_admission.py"
+    }
+  },
+  "method": "M5",
+  "profile": {
+    "model": "/home/data3/txy/models/Qwen3-8B",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.85,
+    "max_model_len": 131072,
+    "max_num_seqs": 16,
+    "max_num_batched_tokens": 8192,
+    "batch_size": 16,
+    "model_kwargs": {
+      "rope_scaling": {
+        "rope_type": "yarn",
+        "factor": 4.0,
+        "original_max_position_embeddings": 32768
+      },
+      "num_gpu_blocks_override": 16384
+    },
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "guided_json": true,
+    "num_shards": 1
+  },
+  "profile_source": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+    "copy": "readout_m5.json",
+    "sha256": "fe95355405dc2e52bba4e829b5ee287faedac5f9d82212f629a663c6fd9d43e4"
+  },
+  "selected_source_sha256": "4c60d689b6ecaf61c86b57bd6f306c7b2d47418c44965e151859cee1c122ca57",
+  "code_sources": {
+    "/home/data3/txy/cf_moa/evaluation/effect_first_runner.py": "6fc25dc0c8ebe13f4d5f9bbc04f4158e5c46a87ef8224b7aff40dbc0d2fca027",
+    "/home/data3/txy/cf_moa/controller/effect_first.py": "539eed0723bada73064c79d0e12439a242f4d462037ceb60c4a11c23c9eb248a",
+    "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence.py": "e03dae93a0d4ed93f0796c704e0e63ef2858d96cd8ddd801351c88c380f07c71",
+    "/home/data3/txy/cf_moa/agents/a1_retrieved_evidence_answers.py": "71e6ab46e82f34612e261090898068b56bd29b03b8705358a847ddc4b8c516da"
+  }
+}

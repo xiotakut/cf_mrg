@@ -1,0 +1,235 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "all",
+      "n": 146,
+      "correct": 32,
+      "unmapped": 92,
+      "format_invalid": 5,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 92,
+      "format_invalid": 5,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain",
+      "scope": "all",
+      "n": 146,
+      "correct": 32,
+      "unmapped": 95,
+      "format_invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 95,
+      "format_invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "contrastive",
+      "scope": "all",
+      "n": 146,
+      "correct": 29,
+      "unmapped": 97,
+      "format_invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "contrastive",
+      "scope": "M01",
+      "n": 128,
+      "correct": 21,
+      "unmapped": 97,
+      "format_invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "contrastive",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "contrastive",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 32,
+      "unmapped": 95,
+      "format_invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 24,
+      "unmapped": 95,
+      "format_invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "plain_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "all",
+      "n": 146,
+      "correct": 29,
+      "unmapped": 97,
+      "format_invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "M01",
+      "n": 128,
+      "correct": 21,
+      "unmapped": 97,
+      "format_invalid": 3,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "contrastive_surface",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "unmapped": 0,
+      "format_invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    }
+  ],
+  "costs": [
+    {
+      "variant": "plain",
+      "calls": 146,
+      "input_tokens": 350920,
+      "output_tokens": 28960,
+      "length_stops": 0
+    },
+    {
+      "variant": "contrastive",
+      "calls": 146,
+      "input_tokens": 378514,
+      "output_tokens": 35856,
+      "length_stops": 0
+    }
+  ],
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2509739,
+      "started_at": 1789382258.7255542,
+      "total": 292,
+      "initialization_seconds": 350.19831371307373,
+      "completed": 292,
+      "elapsed_seconds": 841.1893620491028,
+      "last_batch_seconds": 8.6327064037323,
+      "completed_at": 1789383099.9151053
+    }
+  ]
+}

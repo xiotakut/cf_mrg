@@ -1,0 +1,115 @@
+{
+  "status": "completed_not_adopted",
+  "at": "2026-09-23T20:32:26.098043+08:00",
+  "plan": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/answer34/plan.json",
+  "plan_sha256": "07cce6490cb98f229ba0e8e44080db22f9ffcd37f62819fdd3a0642e063ccc69",
+  "scope": "Both backbones, fixed34 exposed-development inputs and full planned denominators. Historical121 unchanged.",
+  "correct": {
+    "M4": {
+      "baseline": {
+        "denominator": 34,
+        "correct": 23,
+        "incorrect": 11,
+        "unavailable": 0
+      },
+      "a1_binding_scoped": {
+        "denominator": 34,
+        "correct": 18,
+        "incorrect": 15,
+        "unavailable": 1
+      },
+      "a1_binding_ordinary": {
+        "denominator": 34,
+        "correct": 20,
+        "incorrect": 13,
+        "unavailable": 1
+      },
+      "a1_binding_verdict_only": {
+        "denominator": 34,
+        "correct": 20,
+        "incorrect": 13,
+        "unavailable": 1
+      }
+    },
+    "M5": {
+      "baseline": {
+        "denominator": 34,
+        "correct": 19,
+        "incorrect": 14,
+        "unavailable": 1
+      },
+      "a1_binding_scoped": {
+        "denominator": 34,
+        "correct": 15,
+        "incorrect": 18,
+        "unavailable": 1
+      },
+      "a1_binding_ordinary": {
+        "denominator": 34,
+        "correct": 14,
+        "incorrect": 19,
+        "unavailable": 1
+      },
+      "a1_binding_verdict_only": {
+        "denominator": 34,
+        "correct": 15,
+        "incorrect": 18,
+        "unavailable": 1
+      }
+    }
+  },
+  "basis": "Scoped proposal/readout is below B on both backbones and has no consistent advantage over the matched ordinary target control. Generated-rationale ablation gives no general improvement proof.",
+  "not_adopted_variants": [
+    "a1_scoped_knowledge_binding_v1",
+    "same_retrieval_target_reconsideration_v1",
+    "a1_scoped_binding_reason_removed_v1"
+  ],
+  "new_native_failures": {
+    "M4": {
+      "request_id": "d00077",
+      "arms": 3,
+      "type": "repeated_diagnosis_string_output_truncation",
+      "first_limit": 768,
+      "repair_limit": 128,
+      "semantic_result": "unavailable",
+      "method_score": "not_scored",
+      "denominator_preserved": true
+    }
+  },
+  "retained_prior_failure": {
+    "M5": {
+      "request_id": "d00050",
+      "type": "baseline_native_invalid",
+      "arms": 3
+    }
+  },
+  "implementation_gap": {
+    "kind": "inherited_free_string_diagnosis_schema_not_finite_key_mapping",
+    "source": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/native_diagnosis_contract_diagnosis.json",
+    "claim_correction": "JSON/schema-valid assignment does not establish deterministic catalog diagnosis decoding or one-label task validity.",
+    "affected_future_path": "C3/C4 free-string diagnosis readout is not qualified for further expansion. Keep valid adopted A3 untouched.",
+    "remediation": "Before any future use, separately implement and bind finite public-catalog decision keys and program mapping, without changing native scoring or reinterpreting old responses.",
+    "remediation_status": "diagnosed_and_proposed_not_implemented_not_model_tested"
+  },
+  "next_research": "Do not force final answers to obey proposals: one repair also rejects the proposal. Diagnose target relevance/polarity and seek an operation that adds verifiable discriminating information before another broad A1 prompt sweep.",
+  "expands_full121": false,
+  "independent_evaluation_started": false,
+  "retry_current_run": false,
+  "preserved": [
+    "formal_v5",
+    "native_scorer",
+    "B",
+    "adopted_A2_A3_A4_F",
+    "all_prior_negative_results",
+    "all_current_traces"
+  ],
+  "cost": {
+    "physical_model_requests": 330,
+    "new_model_requests": 330,
+    "live_input_tokens": 2294909,
+    "live_output_tokens": 19461,
+    "live_model_seconds": 545.6935437079082,
+    "unresolved_model_usage": 0
+  },
+  "quality_analysis": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/effect_first_revision_20260923/cycle4/analysis/comparison.json"
+}

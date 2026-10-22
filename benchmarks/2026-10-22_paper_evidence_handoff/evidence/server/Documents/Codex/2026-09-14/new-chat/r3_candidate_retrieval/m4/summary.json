@@ -1,0 +1,102 @@
+{
+  "method": "M4",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 21,
+      "macro_recall": 0.40816326530612246,
+      "comparisons": {
+        "global": {
+          "repairs": 13,
+          "harms": 2
+        },
+        "original_list8": {
+          "repairs": 3,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "original_list8",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.2959183673469387,
+      "comparisons": {
+        "global": {
+          "repairs": 10,
+          "harms": 2
+        },
+        "original_list8": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "calibrated": {
+          "repairs": 0,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "global",
+      "n": 40,
+      "correct": 10,
+      "macro_recall": 0.24744897959183673,
+      "comparisons": {
+        "global": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "original_list8": {
+          "repairs": 2,
+          "harms": 10
+        },
+        "calibrated": {
+          "repairs": 2,
+          "harms": 13
+        }
+      }
+    },
+    {
+      "variant": "balanced",
+      "n": 40,
+      "correct": 7,
+      "macro_recall": 0.17346938775510207,
+      "comparisons": {
+        "global": {
+          "repairs": 1,
+          "harms": 4
+        },
+        "original_list8": {
+          "repairs": 1,
+          "harms": 12
+        },
+        "calibrated": {
+          "repairs": 1,
+          "harms": 15
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 640,
+    "input_tokens": 1377952,
+    "output_tokens": 640
+  },
+  "runtime": {
+    "status": "complete",
+    "method": "M4",
+    "gpu": 3,
+    "pid": 3268848,
+    "started_at": 1789434631.6521628,
+    "completed_calls": 640,
+    "initialization_seconds": 16.0024995803833,
+    "elapsed_seconds": 77.03488945960999,
+    "distributions": 640,
+    "missing_code_calls": 0
+  }
+}

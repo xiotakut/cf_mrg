@@ -1,0 +1,39 @@
+{
+  "started": "2026-09-18 09:09:23 +0800",
+  "workers": [
+    {
+      "method": "M4",
+      "gpu": 0,
+      "pid": 2530692,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice/probe.py",
+        "run",
+        "--method",
+        "M4",
+        "--gpu",
+        "0"
+      ],
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "pid": 2530693,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice/probe.py",
+        "run",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "returncode": 0
+    }
+  ],
+  "analysis_returncode": 0,
+  "ended": "2026-09-18 09:10:15 +0800"
+}

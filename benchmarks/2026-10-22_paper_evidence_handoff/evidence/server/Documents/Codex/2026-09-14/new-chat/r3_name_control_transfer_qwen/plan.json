@@ -1,0 +1,15 @@
+{
+  "status": "prepared",
+  "methods": [
+    "M3",
+    "M7"
+  ],
+  "method_cases": 80,
+  "new_calls": 46,
+  "exact_matches": 25,
+  "scope": "Same exposed40 diagnosis cases; no new patient inputs",
+  "resource": "Only original diagnosis string plus public49 names. No patient evidence, retrieval documents or labels. Same exact original string reuses one original-backbone normalization.",
+  "policy": "Casefold/strip exact public-name match first; otherwise original existing name_only prompt. NONE, empty or invalid output retains original answer.",
+  "comparator": "Previously generated matched name/code terminal decisions",
+  "upstream_new_calls": 0
+}

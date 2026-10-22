@@ -1,0 +1,60 @@
+{
+  "status": "prepared",
+  "time": "2026-09-18 14:57:18 +0800",
+  "components": 231,
+  "splits": {
+    "train": 490,
+    "dev": 166
+  },
+  "strata": {
+    "('M12', 'weak')": 4,
+    "('M12', 'r5')": 24,
+    "('M14', 'r5')": 23,
+    "('M11', 'weak')": 4,
+    "('M22', 'r5')": 24,
+    "('M23', 'r5')": 40,
+    "('M10', 'r5')": 24,
+    "('M11', 'r5')": 24,
+    "('M20', 'r5')": 24,
+    "('M17', 'r5')": 24,
+    "('M23_control', 'strong')": 16
+  },
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 656,
+      "forwards": 1312,
+      "max_prompt_tokens": 36956
+    },
+    {
+      "method": "M5",
+      "inputs": 656,
+      "forwards": 1312,
+      "max_prompt_tokens": 40499
+    }
+  ],
+  "pairs": 352,
+  "training": {
+    "head": "zero initialized 5x4096 residual, no bias; per-vector RMS normalization",
+    "rotations": [
+      0,
+      1
+    ],
+    "losses": [
+      "CE",
+      "CE+JS"
+    ],
+    "js_weight": 1.0,
+    "l2_values": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "epochs": 200,
+    "learning_rate": 0.001,
+    "selection": "minimum dev native NLL separately within each loss, no confirmation selection",
+    "seed": 42
+  },
+  "reference_caveat": "M20:255 retained in evaluation but excluded from supervised loss due preexisting documented reference dispute.",
+  "scope": "All 656 inputs already exposed. Group-disjoint development is not independent confirmation. No final explanations used as supervision."
+}

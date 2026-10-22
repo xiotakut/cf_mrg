@@ -1,0 +1,272 @@
+{
+  "method": "M5",
+  "candidates": [
+    {
+      "l2": null,
+      "bias": 0.0,
+      "train_nll": 2.454631437830124,
+      "dev_nll": 4.936018658471741,
+      "role": "zero"
+    },
+    {
+      "l2": 0.01,
+      "bias": -6.894756792850703,
+      "train_nll": 1.7344524352657882,
+      "dev_nll": 2.7468027904960755,
+      "gradient": 4.163336342344337e-17,
+      "role": "train_optimum"
+    },
+    {
+      "l2": 0.1,
+      "bias": -1.248529304910353,
+      "train_nll": 2.2948133095853143,
+      "dev_nll": 4.484437094648934,
+      "gradient": 2.7755575615628914e-17,
+      "role": "train_optimum"
+    },
+    {
+      "l2": 1.0,
+      "bias": -0.1302820226337706,
+      "train_nll": 2.4376222828152994,
+      "dev_nll": 4.888112207910185,
+      "gradient": 0.0,
+      "role": "train_optimum"
+    }
+  ],
+  "selected": {
+    "l2": 0.01,
+    "bias": -6.894756792850703,
+    "train_nll": 1.7344524352657882,
+    "dev_nll": 2.7468027904960755,
+    "gradient": 4.163336342344337e-17,
+    "role": "train_optimum"
+  },
+  "results": [
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "exact_bias_CE",
+      "units": 30,
+      "mappings": 60,
+      "correct": 51,
+      "invalid": 0,
+      "variant_pct": 86.66666666666667,
+      "reference_pct": 83.33333333333334,
+      "both_pct": 83.33333333333334,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 25
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "exact_bias_CE",
+      "units": 12,
+      "mappings": 24,
+      "correct": 20,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 83.33333333333334,
+      "both_pct": 66.66666666666666,
+      "invariant_pct": 33.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 10
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "exact_bias_CE",
+      "units": 10,
+      "mappings": 20,
+      "correct": 14,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 80.0,
+      "both_pct": 60.0,
+      "invariant_pct": 80.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "exact_bias_CE",
+      "units": 4,
+      "mappings": 8,
+      "correct": 6,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 75.0,
+      "both_pct": 50.0,
+      "invariant_pct": 50.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "mean_logit_zero",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "exact_bias_CE",
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "exact_bias_CE",
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "bias_CE",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "mean_logit_zero",
+      "control": "exact_bias_CE",
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "bias_CE",
+      "control": "exact_bias_CE",
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "mean_logit_zero",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "exact_bias_CE",
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "exact_bias_CE",
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "bias_CE",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "mean_logit_zero",
+      "control": "exact_bias_CE",
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "exact_bias_CE",
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "bias_CE",
+      "control": "exact_bias_CE",
+      "repairs": 1,
+      "harms": 2
+    }
+  ],
+  "elapsed_seconds": 0.07024598121643066,
+  "new_model_forwards": 0,
+  "new_generations": 0,
+  "limitation": "Additional posthoc converged scalar CE control. Original matched Adam controls preserved. No held-out confirmation or full native response."
+}

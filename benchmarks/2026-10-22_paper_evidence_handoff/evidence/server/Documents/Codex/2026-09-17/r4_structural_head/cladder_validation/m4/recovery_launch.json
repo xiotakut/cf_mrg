@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/data3/txy/MedRGAG/.venv/bin/python",
+    "-u",
+    "/home/data3/txy/Documents/Codex/2026-09-17/r4_structural_head/validation.py",
+    "run",
+    "--method",
+    "M4",
+    "--gpu",
+    "0"
+  ],
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "gpu": 0,
+  "started_at": "2026-09-17 18:38:07.769469+08:00",
+  "gpu_snapshot": "index, memory.used [MiB], memory.free [MiB]\n0, 41900 MiB, 55467 MiB\n1, 40470 MiB, 56898 MiB\n2, 37987 MiB, 59381 MiB\n3, 45011 MiB, 52357 MiB\n",
+  "pid": 2123005,
+  "exit_code": 0,
+  "finished_at": "2026-09-17 19:55:05.320130+08:00"
+}

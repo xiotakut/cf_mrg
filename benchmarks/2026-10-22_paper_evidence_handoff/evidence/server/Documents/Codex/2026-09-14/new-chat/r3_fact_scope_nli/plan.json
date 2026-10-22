@@ -1,0 +1,25 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "new_calls": 58,
+      "max_prompt_tokens": 244
+    },
+    {
+      "method": "M5",
+      "new_calls": 58,
+      "max_prompt_tokens": 226
+    }
+  ],
+  "new_calls": 116,
+  "patient_calls": 96,
+  "empty_calls": 20,
+  "patient_label_counts": {
+    "entailment": 6,
+    "contradiction": 7,
+    "neutral": 11
+  },
+  "scope": "Same24 exposed engineering probes,5 fixed literal statements; no medical diagnosis labels or new weights.",
+  "criterion": "Same NLI arm must improve both backbones over explicit question and indexed controls before diagnosis expansion."
+}

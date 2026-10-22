@@ -1,0 +1,405 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 23,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 17,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "active",
+      "n": 55,
+      "correct": 11,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 12,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 16,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 7
+    },
+    {
+      "method": "llm_rules",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 11,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 6
+    },
+    {
+      "method": "llm_rules",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 2,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "llm_rules",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "llm_rules",
+      "scope": "active",
+      "n": 55,
+      "correct": 4,
+      "invalid": 1,
+      "repairs": 0,
+      "harms": 7
+    },
+    {
+      "method": "llm_rules",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 12,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 34,
+      "invalid": 3,
+      "repairs": 13,
+      "harms": 2
+    },
+    {
+      "method": "program",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 26,
+      "invalid": 3,
+      "repairs": 10,
+      "harms": 1
+    },
+    {
+      "method": "program",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 5,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "program",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program",
+      "scope": "active",
+      "n": 55,
+      "correct": 22,
+      "invalid": 1,
+      "repairs": 13,
+      "harms": 2
+    },
+    {
+      "method": "program",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 12,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 32,
+      "invalid": 3,
+      "repairs": 11,
+      "harms": 2
+    },
+    {
+      "method": "program_strict",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 26,
+      "invalid": 3,
+      "repairs": 10,
+      "harms": 1
+    },
+    {
+      "method": "program_strict",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 1
+    },
+    {
+      "method": "program_strict",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_strict",
+      "scope": "active",
+      "n": 55,
+      "correct": 20,
+      "invalid": 1,
+      "repairs": 11,
+      "harms": 2
+    },
+    {
+      "method": "program_strict",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 12,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_addonly",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 25,
+      "invalid": 3,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "program_addonly",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 16,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 1
+    },
+    {
+      "method": "program_addonly",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 6,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 0
+    },
+    {
+      "method": "program_addonly",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_addonly",
+      "scope": "active",
+      "n": 55,
+      "correct": 13,
+      "invalid": 1,
+      "repairs": 3,
+      "harms": 1
+    },
+    {
+      "method": "program_addonly",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 12,
+      "invalid": 2,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "program_only",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 4,
+      "invalid": 74,
+      "repairs": 3,
+      "harms": 22
+    },
+    {
+      "method": "program_only",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 3,
+      "invalid": 62,
+      "repairs": 2,
+      "harms": 16
+    },
+    {
+      "method": "program_only",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 1,
+      "invalid": 8,
+      "repairs": 1,
+      "harms": 3
+    },
+    {
+      "method": "program_only",
+      "scope": "M14",
+      "n": 4,
+      "correct": 0,
+      "invalid": 4,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "program_only",
+      "scope": "active",
+      "n": 55,
+      "correct": 4,
+      "invalid": 50,
+      "repairs": 3,
+      "harms": 10
+    },
+    {
+      "method": "program_only",
+      "scope": "inactive",
+      "n": 24,
+      "correct": 0,
+      "invalid": 24,
+      "repairs": 0,
+      "harms": 12
+    }
+  ],
+  "costs": [
+    {
+      "variant": "facts",
+      "calls": 55,
+      "input_tokens": 36907,
+      "output_tokens": 12969,
+      "length_stops": 0
+    },
+    {
+      "variant": "llm_rules",
+      "calls": 55,
+      "input_tokens": 98730,
+      "output_tokens": 68921,
+      "length_stops": 15
+    }
+  ],
+  "baseline_parity": 79,
+  "diagnostics": {
+    "fact_parse_failures": 0,
+    "quote_rejections": 17,
+    "option_states": {
+      "UNKNOWN": 134,
+      "CONTRADICTED": 65,
+      "MET": 21
+    }
+  },
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2420179,
+      "started_at": 1789370597.6785676,
+      "total": 28,
+      "initialization_seconds": 90.75577092170715,
+      "completed": 28,
+      "elapsed_seconds": 258.51553225517273,
+      "last_batch_seconds": 3.912644624710083,
+      "completed_at": 1789370856.1945114
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2420180,
+      "started_at": 1789370597.8325512,
+      "total": 28,
+      "initialization_seconds": 91.27942204475403,
+      "completed": 28,
+      "elapsed_seconds": 257.7299335002899,
+      "last_batch_seconds": 51.773245334625244,
+      "completed_at": 1789370855.5626998
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2420181,
+      "started_at": 1789370597.705913,
+      "total": 28,
+      "initialization_seconds": 93.01532793045044,
+      "completed": 28,
+      "elapsed_seconds": 305.29722023010254,
+      "last_batch_seconds": 62.66952896118164,
+      "completed_at": 1789370903.0033324
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2420182,
+      "started_at": 1789370597.7643511,
+      "total": 26,
+      "initialization_seconds": 91.19703888893127,
+      "completed": 26,
+      "elapsed_seconds": 257.1374886035919,
+      "last_batch_seconds": 4.0973405838012695,
+      "completed_at": 1789370854.9019988
+    }
+  ]
+}

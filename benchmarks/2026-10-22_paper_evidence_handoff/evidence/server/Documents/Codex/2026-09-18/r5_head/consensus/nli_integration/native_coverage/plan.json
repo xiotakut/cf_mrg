@@ -1,0 +1,21 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "inputs": 64,
+      "new_completion_calls": 64,
+      "max_prompt_tokens": 6024
+    },
+    {
+      "method": "M5",
+      "inputs": 64,
+      "new_completion_calls": 64,
+      "max_prompt_tokens": 5858
+    }
+  ],
+  "new_calls": 128,
+  "purpose": "Complete every NLI endpoint in prior broad development/extension, reusing the actually generated frozen two-path vectors. No new group or strategy selection.",
+  "existing_generation": "Old32 path probe320 calls and new32 integration probe320 calls are separately recorded; not generated again here.",
+  "head": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py"
+}

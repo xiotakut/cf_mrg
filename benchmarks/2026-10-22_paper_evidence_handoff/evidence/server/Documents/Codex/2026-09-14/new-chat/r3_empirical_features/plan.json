@@ -1,0 +1,29 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "cases": 40,
+      "feature_calls": 1280,
+      "scope_probe_calls": 12,
+      "final_calls": 160,
+      "max_prompt_tokens": 533
+    },
+    {
+      "method": "M5",
+      "cases": 40,
+      "feature_calls": 1280,
+      "scope_probe_calls": 12,
+      "final_calls": 160,
+      "max_prompt_tokens": 506
+    }
+  ],
+  "planned_calls": 2904,
+  "feature_budget": 32,
+  "binary_only": true,
+  "smoothing": 1,
+  "prior": "uniform within original4 pool",
+  "source": "https://arxiv.org/html/2604.20022v1#S3.SS1",
+  "criterion": "Statistical arm improves both calibrated and same-facts/same-statistics model control on both backbones before expansion.",
+  "scope": "All original40 exposed cases, including gold outside original4 pool; extra supervised training resource declared."
+}

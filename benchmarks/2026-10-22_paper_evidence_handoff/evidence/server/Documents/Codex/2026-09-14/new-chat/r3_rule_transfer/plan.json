@@ -1,0 +1,32 @@
+{
+  "status": "prepared",
+  "date": "2026-09-15",
+  "scope": "All10 existing native R3 M02 medication cases, frozen R2 head transferred without changes. Original development4 and remaining6 separately reported; all already-exposed v5, no new independent generalization.",
+  "planned_calls": 40,
+  "checks": {
+    "llama": {
+      "calls": 10,
+      "max_prompt_tokens": 735,
+      "schema_validation": "passed"
+    },
+    "qwen": {
+      "calls": 10,
+      "max_prompt_tokens": 718,
+      "schema_validation": "passed"
+    }
+  },
+  "head": "r2_condition_head.optimize using current selected positive-fact extraction, 71-rule bank, question scope and inherit-UNKNOWN policy; unchanged.",
+  "permissions": "Only current patient sentences and native options enter original-backbone fact calls. Program uses the existing finite guideline rules. No original retrieved documents, gold, paired reference or training-case labels enter extraction or execution.",
+  "comparison": "Each backbone10 fact calls, then10 same-facts/readable-rule model execution controls with explicit reasoning and max2048 tokens. Both program and model rule states pass through the identical native-set assemble function with each original method answer. No policy search.",
+  "all_method_reuse": {
+    "M0": "llama",
+    "M2": "llama",
+    "M3": "qwen",
+    "M4": "llama",
+    "M5": "qwen",
+    "M6": "llama",
+    "M7": "qwen"
+  },
+  "provenance": "Only Llama and Qwen fact/execution calls are new; seven methods use their actual original answers and same-backbone cached facts. Not seven complete pipeline runs.",
+  "resources": "Model weights and Qwen nonthinking configuration match prior R2 selected head. Fixed2048 KV blocks and eager for GPU3; batch8,temperature0. Public rule resource is additional to native baselines and must be named as such."
+}

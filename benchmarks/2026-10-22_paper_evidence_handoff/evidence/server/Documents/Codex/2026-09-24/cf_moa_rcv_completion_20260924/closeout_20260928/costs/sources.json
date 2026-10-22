@@ -1,0 +1,289 @@
+{
+  "native_semantics": {
+    "parser_source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+    "normalizer_source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+    "canonical_source": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json"
+  },
+  "methods": {
+    "M4": {
+      "items": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/items.jsonl",
+      "evaluations": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/evaluations.jsonl",
+      "native_scores": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/m4_C0_native_scored.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis/m4/native_scored.jsonl"
+      ],
+      "f_proposals": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_f_proposals.jsonl"
+      ],
+      "bases": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_bases.jsonl"
+      ],
+      "outputs": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_completed_union.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16_gpu1/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/proposals.jsonl"
+      ],
+      "cost_source_outputs": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m4/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c5/runs/m4/proposals.jsonl"
+      ],
+      "completed_receipt": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis/m4/receipt.json",
+      "expected_output_sources": [
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m4_completed_union.jsonl",
+          "size": 24610816,
+          "sha256": "1d94cddc252692bfb1b8c1ed13b0517234499f00059dfb1801688dd064372f4c",
+          "terminal_rows": 12756
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m4/proposals.jsonl",
+          "size": 4105411,
+          "sha256": "75ca54925f36c6e95c29caa3939dca90488da8a2b35868246577a700e6afa345",
+          "terminal_rows": 160
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m4/proposals.jsonl",
+          "size": 1033500,
+          "sha256": "7c3b84a37843681ad46f3ef540b8995e9112a10567e765af441cb869396ab54f",
+          "terminal_rows": 40
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m4/proposals.jsonl",
+          "size": 222754475,
+          "sha256": "0384fc828493f472893d138796609e34e6067f3d86c9cd12878c581d446519cc",
+          "terminal_rows": 8680
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16_gpu1/runs/m4/proposals.jsonl",
+          "size": 3326703,
+          "sha256": "0b5b8c0460ff79c7bb2d27af65ef7f4bf403b8f51c03f89dc332ce527bfe45ca",
+          "terminal_rows": 80
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/proposals.jsonl",
+          "size": 710575076,
+          "sha256": "e912ef5b26ee09109d76ba69517ea5391cc4cff7d4824a061d93306ec8fb6dd7",
+          "terminal_rows": 12021
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4/proposals.jsonl",
+          "size": 1468550186,
+          "sha256": "d2dba13be68afe73fe0c30071d16b7a52885cb24aa30e02a2c08a2b2455be8e4",
+          "terminal_rows": 17927
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/proposals.jsonl",
+          "size": 1443377188,
+          "sha256": "7915b46614775030f808432a96e977d43af78c2012bd3b97f44689d7f9d5bdf6",
+          "terminal_rows": 17861
+        }
+      ]
+    },
+    "M5": {
+      "items": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/items.jsonl",
+      "evaluations": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/evaluations.jsonl",
+      "native_scores": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/m5_C0_native_scored.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis/m5/native_scored.jsonl"
+      ],
+      "f_proposals": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_f_proposals.jsonl"
+      ],
+      "bases": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_bases.jsonl"
+      ],
+      "outputs": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_completed_union.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5/proposals.jsonl"
+      ],
+      "cost_source_outputs": [
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_candidate_verify_20260924/recovery_gpu23/runs/m5/proposals.jsonl",
+        "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/c5/runs/m5/proposals.jsonl"
+      ],
+      "completed_receipt": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/analysis/m5/receipt.json",
+      "expected_output_sources": [
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/cache/m5_completed_union.jsonl",
+          "size": 24142718,
+          "sha256": "1c2fb554842d8fbfb989145ca3285816e8d787a55e8de55b987282e276553136",
+          "terminal_rows": 12876
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m5/proposals.jsonl",
+          "size": 3827707,
+          "sha256": "92075bc5e12dd0eb6f37e298b95722ab3b3dc57115220b44645468baa5e94305",
+          "terminal_rows": 160
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m5/proposals.jsonl",
+          "size": 965313,
+          "sha256": "222d7c6f3d7cbf8186a05aa3ad360dd8d61726639cca2ccae1b227f63005e222",
+          "terminal_rows": 40
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m5/proposals.jsonl",
+          "size": 207217946,
+          "sha256": "cdb61d749b8c1cabb2a04c9fcf9a2ef2c0b340e01e4aa008caf26e4e349cd3dd",
+          "terminal_rows": 8680
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16/runs/m5/proposals.jsonl",
+          "size": 2780587,
+          "sha256": "4daad1a91f96556ee50ff267631cf5148b7cee331e5dae216e51edbc349ffece",
+          "terminal_rows": 80
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/proposals.jsonl",
+          "size": 2066422411,
+          "sha256": "acdfeb0226644eaa820457362ef8b4181f6543bc874e31039f27907f9f7fb97c",
+          "terminal_rows": 33438
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5/proposals.jsonl",
+          "size": 206535958,
+          "sha256": "a4bf8f73ea13a67fef133198974fbfdbbb955ed9ebdf3ab1382712b632b42081",
+          "terminal_rows": 4731
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5/proposals.jsonl",
+          "size": 214841230,
+          "sha256": "6eb4ca209475d7d21d9eadae7ea56958df03f0c78389c58687a872609e4a4bff",
+          "terminal_rows": 4729
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5/proposals.jsonl",
+          "size": 69308966,
+          "sha256": "5729fc8afa91e4c924cdd0b8c454bc012f4127ecf692c4765d26261528eda386",
+          "terminal_rows": 1594
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5/proposals.jsonl",
+          "size": 67654210,
+          "sha256": "bd10c48b687b693d3ce4a0d6b1330da3d76a42a86996613f4319c192ee940dd4",
+          "terminal_rows": 1598
+        },
+        {
+          "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5/proposals.jsonl",
+          "size": 69092700,
+          "sha256": "aaa50d9072bbeaf5702f2cb27da129720e1f324644e58bdd75118afba4360f2d",
+          "terminal_rows": 1599
+        }
+      ]
+    }
+  },
+  "journals": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/batch8/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/catalog_remaining/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/prefix32/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout16_gpu1/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu1/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_gpu13_20260925/gpu3/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu1/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu2_recovery1/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_parallel_m5_20260926/gpu3/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_remaining_gpu1/runs/m4/journal.sqlite3",
+      "method": "M4",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu1/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu2/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/readout_tail_gpu123_20260926/gpu3/runs/m5/journal.sqlite3",
+      "method": "M5",
+      "scope": "current"
+    }
+  ],
+  "physical_scope_complete": true,
+  "physical_scope_description": "Complete declared full_v5 new-physical scope from d857934 publication: 17 nonzero sources plus two zero-call initialization failures; excludes all other historical project costs. Exact callback replay is not new physical execution.",
+  "snapshot_commit": "d857934",
+  "source_inventory": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/public_preparation/full_v5_publication_20260926/cost_inventory.json"
+}

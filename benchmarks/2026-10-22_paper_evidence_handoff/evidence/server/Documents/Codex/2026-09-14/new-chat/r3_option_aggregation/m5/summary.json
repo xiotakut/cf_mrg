@@ -1,0 +1,355 @@
+{
+  "method": "M5",
+  "results": [
+    {
+      "variant": "baseline",
+      "scope": "all",
+      "n": 18,
+      "correct": 8,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "baseline",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "baseline",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "scope": "all",
+      "n": 18,
+      "correct": 6,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 1,
+          "harms": 3
+        },
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 1,
+          "harms": 3
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "scope": "M12",
+      "n": 14,
+      "correct": 5,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 2
+        },
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "direct",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "direct": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 1,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "scope": "all",
+      "n": 18,
+      "correct": 8,
+      "fallbacks": 4,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "fallbacks": 3,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 1,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "program",
+      "scope": "all",
+      "n": 18,
+      "correct": 8,
+      "fallbacks": 4,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 3,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "program",
+      "scope": "M12",
+      "n": 14,
+      "correct": 7,
+      "fallbacks": 3,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "program",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 1,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "model_unrestricted",
+      "scope": "all",
+      "n": 18,
+      "correct": 7,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 1
+        },
+        "direct": {
+          "repairs": 2,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "model_unrestricted",
+      "scope": "M12",
+      "n": 14,
+      "correct": 6,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 1
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "model_unrestricted",
+      "scope": "M02",
+      "n": 4,
+      "correct": 1,
+      "fallbacks": 0,
+      "comparisons": {
+        "baseline": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "direct": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    }
+  ],
+  "costs": [
+    {
+      "policy": "direct",
+      "calls": 18,
+      "input_tokens": 42562,
+      "output_tokens": 2626,
+      "length_stops": 0
+    },
+    {
+      "policy": "structured",
+      "calls": 18,
+      "input_tokens": 44988,
+      "output_tokens": 4543,
+      "length_stops": 0
+    }
+  ],
+  "runtime": {
+    "status": "complete",
+    "gpu": 3,
+    "pid": 3300234,
+    "started_at": 1789438234.6560318,
+    "total": 36,
+    "initialization_seconds": 16.689140558242798,
+    "completed": 36,
+    "elapsed_seconds": 92.07170629501343,
+    "last_batch_seconds": 10.779833793640137,
+    "completed_at": 1789438326.7279196
+  },
+  "replay": {
+    "status": "passed",
+    "structured_callbacks": 18,
+    "direct_requests": 18,
+    "original_score_parity": 18,
+    "new_model_calls": 0
+  }
+}

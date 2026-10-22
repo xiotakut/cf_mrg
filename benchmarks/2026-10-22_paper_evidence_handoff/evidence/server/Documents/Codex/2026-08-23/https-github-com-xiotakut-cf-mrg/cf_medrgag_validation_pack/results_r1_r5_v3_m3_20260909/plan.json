@@ -1,0 +1,49 @@
+{
+  "status": "frozen",
+  "frozen_at": "2026-09-09T17:21:08.952068+08:00",
+  "benchmark": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/benchmark_r1_r5_text_auto_cpv_v3_exclusive_20260909",
+  "controls": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_r1_r5_v3_m2_20260909",
+  "methods": [
+    "M3"
+  ],
+  "unique_inputs": 4872,
+  "units": 3105,
+  "evaluation_mappings": 6030,
+  "reused_M3_predictions": 0,
+  "category_counts": {
+    "R1": 1601,
+    "R2": 77,
+    "R3": 324,
+    "R4": 13,
+    "R5": 1090
+  },
+  "minimum_solver_candidates": 38976,
+  "maximum_solver_candidates": 155904,
+  "maximum_query_generations": 14616,
+  "maximum_total_generations": 170520,
+  "smoke_item_ids": [
+    "s001053",
+    "s004434",
+    "s017725",
+    "s025080",
+    "s025189",
+    "s134923"
+  ],
+  "smoke_outputs_reused_in_full_run": true,
+  "gpu_allocation": {
+    "Qwen endpoint 8011": 1,
+    "Qwen endpoint 8012": 2,
+    "MedCorp3 retriever": 1
+  },
+  "original_framework": "MA-RAG intrinsic with documented local N8/T4 and MedCorp3 settings",
+  "io_adaptations": [
+    "native answer formats and vote serialization",
+    "full fixed evidence in each task prompt"
+  ],
+  "capacity_adaptation": "official Qwen YaRN factor 4, 131072 context, consistently for every input",
+  "expected_wall_hours": [
+    4,
+    16
+  ],
+  "supplemental_runs": []
+}

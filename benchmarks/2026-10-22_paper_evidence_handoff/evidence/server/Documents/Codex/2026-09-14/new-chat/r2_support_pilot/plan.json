@@ -1,0 +1,43 @@
+{
+  "status": "prepared",
+  "prepared_at": "2026-09-14T11:33:36.442695+08:00",
+  "inputs": 232,
+  "evaluation_records": 241,
+  "units": 196,
+  "r2_units": 79,
+  "medpic_inputs": 167,
+  "regression_groups": [
+    "M10:medqa_00707",
+    "M10:medqa_01066",
+    "M11:54",
+    "M11:86",
+    "M12:0",
+    "M12:708",
+    "M14:exact_source_text:1566",
+    "M14:exact_source_text:995",
+    "M17:usmle_derm_802",
+    "M17:usmle_derm_828",
+    "M20:19",
+    "M20:71",
+    "M22:pubmedqa/21712147",
+    "M22:pubmedqa/24739448",
+    "M23:BioNLI:exact_context:4504",
+    "M23:BioNLI:exact_context:5198"
+  ],
+  "regression_seed": 20260914,
+  "r5_units": 22,
+  "formats": {
+    "multi": 167,
+    "single": 43,
+    "relation": 10,
+    "robustness_single": 12
+  },
+  "methods": [
+    "baseline",
+    "self_review",
+    "source_review",
+    "support_review"
+  ],
+  "planned_new_calls": 696,
+  "labels_used_only_for_selection_and_scoring": true
+}

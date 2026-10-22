@@ -1,0 +1,28 @@
+{
+  "status": "planned before either matched rendering arm scored",
+  "created_at": "2026-09-18T16:09:27.982041+08:00",
+  "scope": "Same112 exposed NLI inputs/bone, unchanged84/28 train/dev and original denominator. No confirmation.",
+  "primary": "bound_rendering: K RULE choice request, shared literal entity-binding table, second current question with exact case-sensitive whole-phrase entity references replaced by ENTITY_X/Y; mean semantic probabilities of two code mappings. No training.",
+  "matched_control": "repeat_rendering: identical K request and literal binding table and SECOND RENDERING OF CURRENT QUESTION heading; second question is unchanged original. Only appended second-copy names differ between arms.",
+  "preservation": "All original messages and item.question untouched. Full native entity strings preserved in original context and literal binding table; no interpretation of marker as grammatical subject/object.",
+  "qualification": "Existing valid nonnested marked span parser, two unique casefold names; repeated markers allowed; lexical casefold order defines arbitraryX/Y. Only second-copy replacement is case-sensitive with non-word lookarounds, longest-first one regex. Expected two malformedHA inputs fallback originalK in both arms.",
+  "calls": {
+    "new_forwards_per_arm_per_backbone": 220,
+    "new_total_forwards": 880,
+    "new_generations": 0,
+    "fallback_per_backbone_per_arm": 2
+  },
+  "gpu": "2, serial M4 repeat/bound then M5 repeat/bound; existing learned_features.py; preserve other jobs.",
+  "comparisons": [
+    "bound_rendering vs repeat_rendering primary",
+    "each arm vs native K base diagnostic",
+    "old direct vLLM and delivered combined historical controls"
+  ],
+  "metrics": "train/dev/all R5/strong, input correctness, pairedboth, ref/variant, positive/negative endpoints, repairs/harms, mappingdisagreement; all112 included",
+  "limitations": [
+    "This tests explicit reference binding with redundant original information, not removal of entity knowledge or semantic information.",
+    "Repeatedly exposed development, no independent confirmation or innovation claim.",
+    "Decisions only; native complete output generation not yet tested."
+  ],
+  "replaces_plan": "plan.json remains as unexecuted global anonymization proposal"
+}

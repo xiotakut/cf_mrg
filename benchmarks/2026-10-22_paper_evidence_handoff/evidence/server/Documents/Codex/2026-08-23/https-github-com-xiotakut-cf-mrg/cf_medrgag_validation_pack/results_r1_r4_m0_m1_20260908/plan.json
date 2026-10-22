@@ -1,0 +1,91 @@
+{
+  "status": "frozen",
+  "methods": [
+    "M0",
+    "M1"
+  ],
+  "labels": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "original_cohort_units": 28243,
+  "included_units": 2170,
+  "unit_statuses": {
+    "included": 2170,
+    "deferred_unclassified": 3857,
+    "deferred_r5": 18168,
+    "excluded_multimodal": 3250,
+    "not_applicable": 798
+  },
+  "unique_inputs": 3296,
+  "evaluation_records_per_method": 4130,
+  "reused_predictions": 6192,
+  "new_llm_calls": 400,
+  "M2_calls": 0,
+  "source_result_directory": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_r1_r5_m0_m1_20260908",
+  "sampling": "All previously included evaluation records carrying R1-R4; original IDs, questions, gold, references and evidence preserved",
+  "per_source": [
+    {
+      "resource_id": "M01",
+      "units": 843,
+      "unique_inputs": 1686,
+      "evaluation_records": 1686
+    },
+    {
+      "resource_id": "M02",
+      "units": 167,
+      "unique_inputs": 167,
+      "evaluation_records": 167
+    },
+    {
+      "resource_id": "M05",
+      "units": 30,
+      "unique_inputs": 30,
+      "evaluation_records": 30
+    },
+    {
+      "resource_id": "M06",
+      "units": 13,
+      "unique_inputs": 13,
+      "evaluation_records": 13
+    },
+    {
+      "resource_id": "M10",
+      "units": 1,
+      "unique_inputs": 2,
+      "evaluation_records": 2
+    },
+    {
+      "resource_id": "M11",
+      "units": 67,
+      "unique_inputs": 82,
+      "evaluation_records": 134
+    },
+    {
+      "resource_id": "M12",
+      "units": 134,
+      "unique_inputs": 229,
+      "evaluation_records": 268
+    },
+    {
+      "resource_id": "M14",
+      "units": 2,
+      "unique_inputs": 4,
+      "evaluation_records": 4
+    },
+    {
+      "resource_id": "M16",
+      "units": 125,
+      "unique_inputs": 94,
+      "evaluation_records": 250
+    },
+    {
+      "resource_id": "M20",
+      "units": 788,
+      "unique_inputs": 989,
+      "evaluation_records": 1576
+    }
+  ]
+}

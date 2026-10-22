@@ -1,0 +1,26 @@
+{
+  "status": "indexed_development_only",
+  "time": "2026-09-14T19:44:24.556295+08:00",
+  "train_pairs": 10115,
+  "train_rows": 20230,
+  "train_labels": 46,
+  "development_inputs": 146,
+  "vocabulary_size": 5926,
+  "word_ngrams": [
+    1,
+    2
+  ],
+  "min_df": 2,
+  "max_features": 60000,
+  "stop_words": null,
+  "token_pattern": "(?u)\\b\\w+\\b",
+  "dtype": "float32",
+  "l2_normalized": true,
+  "query": "Current question only",
+  "pair_score": "Max cosine of either endpoint; stable top two pairs",
+  "endpoint_order_seed": 20260914,
+  "selected_distinct_pairs": 243,
+  "fit_seconds": 9.05623459815979,
+  "wall_seconds": 12.18282413482666,
+  "new_llm_calls": 0
+}

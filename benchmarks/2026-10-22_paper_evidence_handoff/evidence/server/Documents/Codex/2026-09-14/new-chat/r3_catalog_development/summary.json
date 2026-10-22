@@ -1,0 +1,86 @@
+{
+  "status": "complete128_development",
+  "results": [
+    {
+      "method": "M4",
+      "variant": "name_direct",
+      "n": 128,
+      "correct": 48,
+      "baseline_correct": 30,
+      "repairs": 22,
+      "harms": 4,
+      "fallbacks": 0
+    },
+    {
+      "method": "M4",
+      "variant": "code_direct",
+      "n": 128,
+      "correct": 53,
+      "baseline_correct": 30,
+      "repairs": 29,
+      "harms": 6,
+      "fallbacks": 0
+    },
+    {
+      "method": "M4",
+      "variant": "name_reasoned",
+      "n": 128,
+      "correct": 53,
+      "baseline_correct": 30,
+      "repairs": 25,
+      "harms": 2,
+      "fallbacks": 5
+    },
+    {
+      "method": "M4",
+      "variant": "code_reasoned",
+      "n": 128,
+      "correct": 63,
+      "baseline_correct": 30,
+      "repairs": 34,
+      "harms": 1,
+      "fallbacks": 8
+    },
+    {
+      "method": "M5",
+      "variant": "name_direct",
+      "n": 128,
+      "correct": 62,
+      "baseline_correct": 24,
+      "repairs": 39,
+      "harms": 1,
+      "fallbacks": 0
+    },
+    {
+      "method": "M5",
+      "variant": "code_direct",
+      "n": 128,
+      "correct": 73,
+      "baseline_correct": 24,
+      "repairs": 51,
+      "harms": 2,
+      "fallbacks": 0
+    },
+    {
+      "method": "M5",
+      "variant": "name_reasoned",
+      "n": 128,
+      "correct": 62,
+      "baseline_correct": 24,
+      "repairs": 39,
+      "harms": 1,
+      "fallbacks": 2
+    },
+    {
+      "method": "M5",
+      "variant": "code_reasoned",
+      "n": 128,
+      "correct": 66,
+      "baseline_correct": 24,
+      "repairs": 43,
+      "harms": 1,
+      "fallbacks": 1
+    }
+  ],
+  "note": "Disjoint40+88 original diagnosis development cases; original40 name_direct max128 vs new384, neither reached limit. No independent clinical validation."
+}

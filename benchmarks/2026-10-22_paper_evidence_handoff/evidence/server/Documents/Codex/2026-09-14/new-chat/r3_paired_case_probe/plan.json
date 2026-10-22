@@ -1,0 +1,36 @@
+{
+  "status": "prepared",
+  "checks": [
+    {
+      "method": "M4",
+      "reference_cases": 40,
+      "baseline_score_parity": 40,
+      "new_calls": 280,
+      "max_scoring_prompt": 3335,
+      "max_v1_prompt": 3184,
+      "prior_template_matches": true
+    },
+    {
+      "method": "M5",
+      "reference_cases": 40,
+      "baseline_score_parity": 40,
+      "new_calls": 280,
+      "max_scoring_prompt": 3089,
+      "max_v1_prompt": 2920,
+      "prior_template_matches": true
+    }
+  ],
+  "new_calls": 560,
+  "scope": "Same40 source pairs; references are mechanism controls, not new patients or independent generalization.",
+  "variants": [
+    "original",
+    "v1",
+    "uncalibrated",
+    "calibrated"
+  ],
+  "fixed_target_outputs": true,
+  "primary": "Reference accuracy and robust pair accuracy, all40 pairs; strict BTR includes only reversion to control diagnosis, conditional on correct reference. Other mapped errors and invalid/unmapped outputs separated.",
+  "zero_denominator": "null, never zero",
+  "input_permissions": "Each endpoint answered with only its own original context. Pair IDs and gold used by offline scoring only.",
+  "prior": "Reuse frozen18 priors per model after exact system/role-template match; no new prior calls."
+}

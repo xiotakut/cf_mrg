@@ -1,0 +1,5280 @@
+{
+  "method": "M4",
+  "status": "complete; exposed J development only",
+  "results": [
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "ph_batch8",
+      "units": 40,
+      "mappings": 80,
+      "correct": 56,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 70.0,
+      "both_pct": 70.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 16
+        },
+        "negative": {
+          "n": 44,
+          "correct": 40
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "ph_singleton",
+      "units": 40,
+      "mappings": 80,
+      "correct": 56,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 70.0,
+      "both_pct": 70.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 16
+        },
+        "negative": {
+          "n": 44,
+          "correct": 40
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "h_only_batch8",
+      "units": 40,
+      "mappings": 80,
+      "correct": 54,
+      "invalid": 0,
+      "variant_pct": 67.5,
+      "reference_pct": 67.5,
+      "both_pct": 67.5,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 20
+        },
+        "negative": {
+          "n": 44,
+          "correct": 34
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "h_only_singleton",
+      "units": 40,
+      "mappings": 80,
+      "correct": 52,
+      "invalid": 0,
+      "variant_pct": 65.0,
+      "reference_pct": 65.0,
+      "both_pct": 65.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 18
+        },
+        "negative": {
+          "n": 44,
+          "correct": 34
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "residual_batch8",
+      "units": 40,
+      "mappings": 80,
+      "correct": 58,
+      "invalid": 0,
+      "variant_pct": 72.5,
+      "reference_pct": 72.5,
+      "both_pct": 72.5,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 18
+        },
+        "negative": {
+          "n": 44,
+          "correct": 40
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "residual_singleton",
+      "units": 40,
+      "mappings": 80,
+      "correct": 58,
+      "invalid": 0,
+      "variant_pct": 72.5,
+      "reference_pct": 72.5,
+      "both_pct": 72.5,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 18
+        },
+        "negative": {
+          "n": 44,
+          "correct": 40
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "native_rule_base",
+      "units": 40,
+      "mappings": 80,
+      "correct": 54,
+      "invalid": 0,
+      "variant_pct": 65.0,
+      "reference_pct": 70.0,
+      "both_pct": 62.5,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 31
+        },
+        "negative": {
+          "n": 44,
+          "correct": 23
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "old_combined_head",
+      "units": 40,
+      "mappings": 80,
+      "correct": 57,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 72.5,
+      "both_pct": 65.0,
+      "invariant_pct": 87.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 30
+        },
+        "negative": {
+          "n": 44,
+          "correct": 27
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "task_scope",
+      "units": 40,
+      "mappings": 80,
+      "correct": 42,
+      "invalid": 0,
+      "variant_pct": 52.5,
+      "reference_pct": 52.5,
+      "both_pct": 52.5,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 34
+        },
+        "negative": {
+          "n": 44,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "repeat_rendering",
+      "units": 40,
+      "mappings": 80,
+      "correct": 58,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 75.0,
+      "both_pct": 70.0,
+      "invariant_pct": 95.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 32
+        },
+        "negative": {
+          "n": 44,
+          "correct": 26
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "old_direct_vLLM",
+      "units": 40,
+      "mappings": 80,
+      "correct": 54,
+      "invalid": 0,
+      "variant_pct": 65.0,
+      "reference_pct": 70.0,
+      "both_pct": 62.5,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 32
+        },
+        "negative": {
+          "n": 44,
+          "correct": 22
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "constant_positive",
+      "units": 40,
+      "mappings": 80,
+      "correct": 36,
+      "invalid": 0,
+      "variant_pct": 45.0,
+      "reference_pct": 45.0,
+      "both_pct": 45.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 36
+        },
+        "negative": {
+          "n": 44,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "arm": "constant_negative",
+      "units": 40,
+      "mappings": 80,
+      "correct": 44,
+      "invalid": 0,
+      "variant_pct": 55.00000000000001,
+      "reference_pct": 55.00000000000001,
+      "both_pct": 55.00000000000001,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 36,
+          "correct": 0
+        },
+        "negative": {
+          "n": 44,
+          "correct": 44
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "ph_batch8",
+      "units": 16,
+      "mappings": 32,
+      "correct": 20,
+      "invalid": 0,
+      "variant_pct": 93.75,
+      "reference_pct": 31.25,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 5
+        },
+        "negative": {
+          "n": 16,
+          "correct": 15
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "ph_singleton",
+      "units": 16,
+      "mappings": 32,
+      "correct": 20,
+      "invalid": 0,
+      "variant_pct": 93.75,
+      "reference_pct": 31.25,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 5
+        },
+        "negative": {
+          "n": 16,
+          "correct": 15
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "h_only_batch8",
+      "units": 16,
+      "mappings": 32,
+      "correct": 20,
+      "invalid": 0,
+      "variant_pct": 62.5,
+      "reference_pct": 62.5,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 10
+        },
+        "negative": {
+          "n": 16,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "h_only_singleton",
+      "units": 16,
+      "mappings": 32,
+      "correct": 20,
+      "invalid": 0,
+      "variant_pct": 62.5,
+      "reference_pct": 62.5,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 10
+        },
+        "negative": {
+          "n": 16,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "residual_batch8",
+      "units": 16,
+      "mappings": 32,
+      "correct": 22,
+      "invalid": 0,
+      "variant_pct": 93.75,
+      "reference_pct": 43.75,
+      "both_pct": 37.5,
+      "invariant_pct": 62.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 7
+        },
+        "negative": {
+          "n": 16,
+          "correct": 15
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "residual_singleton",
+      "units": 16,
+      "mappings": 32,
+      "correct": 21,
+      "invalid": 0,
+      "variant_pct": 93.75,
+      "reference_pct": 37.5,
+      "both_pct": 31.25,
+      "invariant_pct": 68.75,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 6
+        },
+        "negative": {
+          "n": 16,
+          "correct": 15
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "native_rule_base",
+      "units": 16,
+      "mappings": 32,
+      "correct": 21,
+      "invalid": 0,
+      "variant_pct": 37.5,
+      "reference_pct": 93.75,
+      "both_pct": 31.25,
+      "invariant_pct": 68.75,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 15
+        },
+        "negative": {
+          "n": 16,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "old_combined_head",
+      "units": 16,
+      "mappings": 32,
+      "correct": 24,
+      "invalid": 0,
+      "variant_pct": 62.5,
+      "reference_pct": 87.5,
+      "both_pct": 50.0,
+      "invariant_pct": 50.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 14
+        },
+        "negative": {
+          "n": 16,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "task_scope",
+      "units": 16,
+      "mappings": 32,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 18.75,
+      "reference_pct": 100,
+      "both_pct": 18.75,
+      "invariant_pct": 81.25,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 16
+        },
+        "negative": {
+          "n": 16,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "repeat_rendering",
+      "units": 16,
+      "mappings": 32,
+      "correct": 22,
+      "invalid": 0,
+      "variant_pct": 43.75,
+      "reference_pct": 93.75,
+      "both_pct": 37.5,
+      "invariant_pct": 62.5,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 15
+        },
+        "negative": {
+          "n": 16,
+          "correct": 7
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "old_direct_vLLM",
+      "units": 16,
+      "mappings": 32,
+      "correct": 21,
+      "invalid": 0,
+      "variant_pct": 37.5,
+      "reference_pct": 93.75,
+      "both_pct": 31.25,
+      "invariant_pct": 68.75,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 15
+        },
+        "negative": {
+          "n": 16,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "constant_positive",
+      "units": 16,
+      "mappings": 32,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 0,
+      "reference_pct": 100,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 16
+        },
+        "negative": {
+          "n": 16,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "arm": "constant_negative",
+      "units": 16,
+      "mappings": 32,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 16,
+          "correct": 0
+        },
+        "negative": {
+          "n": 16,
+          "correct": 16
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "ph_batch8",
+      "units": 30,
+      "mappings": 60,
+      "correct": 40,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 66.66666666666666,
+      "both_pct": 66.66666666666666,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 10
+        },
+        "negative": {
+          "n": 32,
+          "correct": 30
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "ph_singleton",
+      "units": 30,
+      "mappings": 60,
+      "correct": 40,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 66.66666666666666,
+      "both_pct": 66.66666666666666,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 10
+        },
+        "negative": {
+          "n": 32,
+          "correct": 30
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "h_only_batch8",
+      "units": 30,
+      "mappings": 60,
+      "correct": 38,
+      "invalid": 0,
+      "variant_pct": 63.33333333333333,
+      "reference_pct": 63.33333333333333,
+      "both_pct": 63.33333333333333,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 14
+        },
+        "negative": {
+          "n": 32,
+          "correct": 24
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "h_only_singleton",
+      "units": 30,
+      "mappings": 60,
+      "correct": 38,
+      "invalid": 0,
+      "variant_pct": 63.33333333333333,
+      "reference_pct": 63.33333333333333,
+      "both_pct": 63.33333333333333,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 14
+        },
+        "negative": {
+          "n": 32,
+          "correct": 24
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "residual_batch8",
+      "units": 30,
+      "mappings": 60,
+      "correct": 42,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 70.0,
+      "both_pct": 70.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 12
+        },
+        "negative": {
+          "n": 32,
+          "correct": 30
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "residual_singleton",
+      "units": 30,
+      "mappings": 60,
+      "correct": 42,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 70.0,
+      "both_pct": 70.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 12
+        },
+        "negative": {
+          "n": 32,
+          "correct": 30
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "native_rule_base",
+      "units": 30,
+      "mappings": 60,
+      "correct": 41,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 70.0,
+      "both_pct": 63.33333333333333,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 23
+        },
+        "negative": {
+          "n": 32,
+          "correct": 18
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "old_combined_head",
+      "units": 30,
+      "mappings": 60,
+      "correct": 44,
+      "invalid": 0,
+      "variant_pct": 73.33333333333333,
+      "reference_pct": 73.33333333333333,
+      "both_pct": 66.66666666666666,
+      "invariant_pct": 86.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 22
+        },
+        "negative": {
+          "n": 32,
+          "correct": 22
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "task_scope",
+      "units": 30,
+      "mappings": 60,
+      "correct": 32,
+      "invalid": 0,
+      "variant_pct": 53.333333333333336,
+      "reference_pct": 53.333333333333336,
+      "both_pct": 53.333333333333336,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "repeat_rendering",
+      "units": 30,
+      "mappings": 60,
+      "correct": 45,
+      "invalid": 0,
+      "variant_pct": 73.33333333333333,
+      "reference_pct": 76.66666666666667,
+      "both_pct": 73.33333333333333,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 24
+        },
+        "negative": {
+          "n": 32,
+          "correct": 21
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "old_direct_vLLM",
+      "units": 30,
+      "mappings": 60,
+      "correct": 41,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 70.0,
+      "both_pct": 63.33333333333333,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 24
+        },
+        "negative": {
+          "n": 32,
+          "correct": 17
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "constant_positive",
+      "units": 30,
+      "mappings": 60,
+      "correct": 28,
+      "invalid": 0,
+      "variant_pct": 46.666666666666664,
+      "reference_pct": 46.666666666666664,
+      "both_pct": 46.666666666666664,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 28
+        },
+        "negative": {
+          "n": 32,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "constant_negative",
+      "units": 30,
+      "mappings": 60,
+      "correct": 32,
+      "invalid": 0,
+      "variant_pct": 53.333333333333336,
+      "reference_pct": 53.333333333333336,
+      "both_pct": 53.333333333333336,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 0
+        },
+        "negative": {
+          "n": 32,
+          "correct": 32
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "ph_batch8",
+      "units": 12,
+      "mappings": 24,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 33.33333333333333,
+      "both_pct": 33.33333333333333,
+      "invariant_pct": 66.66666666666666,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 4
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "ph_singleton",
+      "units": 12,
+      "mappings": 24,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 33.33333333333333,
+      "both_pct": 33.33333333333333,
+      "invariant_pct": 66.66666666666666,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 4
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "h_only_batch8",
+      "units": 12,
+      "mappings": 24,
+      "correct": 15,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 58.333333333333336,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 7
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "h_only_singleton",
+      "units": 12,
+      "mappings": 24,
+      "correct": 15,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 58.333333333333336,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 7
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "residual_batch8",
+      "units": 12,
+      "mappings": 24,
+      "correct": 18,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 50.0,
+      "both_pct": 50.0,
+      "invariant_pct": 50.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "residual_singleton",
+      "units": 12,
+      "mappings": 24,
+      "correct": 17,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 41.66666666666667,
+      "both_pct": 41.66666666666667,
+      "invariant_pct": 58.333333333333336,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 5
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "native_rule_base",
+      "units": 12,
+      "mappings": 24,
+      "correct": 17,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 41.66666666666667,
+      "invariant_pct": 58.333333333333336,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "old_combined_head",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "task_scope",
+      "units": 12,
+      "mappings": 24,
+      "correct": 15,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "repeat_rendering",
+      "units": 12,
+      "mappings": 24,
+      "correct": 17,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 41.66666666666667,
+      "invariant_pct": 58.333333333333336,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 6
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "old_direct_vLLM",
+      "units": 12,
+      "mappings": 24,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 41.66666666666667,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 33.33333333333333,
+      "invariant_pct": 66.66666666666666,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "constant_positive",
+      "units": 12,
+      "mappings": 24,
+      "correct": 12,
+      "invalid": 0,
+      "variant_pct": 0,
+      "reference_pct": 100,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 12
+        },
+        "negative": {
+          "n": 12,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "constant_negative",
+      "units": 12,
+      "mappings": 24,
+      "correct": 12,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 0
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "ph_batch8",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 80.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "ph_singleton",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 80.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "h_only_batch8",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 80.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "h_only_singleton",
+      "units": 10,
+      "mappings": 20,
+      "correct": 14,
+      "invalid": 0,
+      "variant_pct": 70.0,
+      "reference_pct": 70.0,
+      "both_pct": 70.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 4
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "residual_batch8",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 80.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "residual_singleton",
+      "units": 10,
+      "mappings": 20,
+      "correct": 16,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 80.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "native_rule_base",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "old_combined_head",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "task_scope",
+      "units": 10,
+      "mappings": 20,
+      "correct": 10,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 50.0,
+      "both_pct": 50.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "repeat_rendering",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "old_direct_vLLM",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "constant_positive",
+      "units": 10,
+      "mappings": 20,
+      "correct": 8,
+      "invalid": 0,
+      "variant_pct": 40.0,
+      "reference_pct": 40.0,
+      "both_pct": 40.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "constant_negative",
+      "units": 10,
+      "mappings": 20,
+      "correct": 12,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 60.0,
+      "both_pct": 60.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 0
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "ph_batch8",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 25.0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 1
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "ph_singleton",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 25.0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 1
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "h_only_batch8",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 75.0,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "h_only_singleton",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 75.0,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "residual_batch8",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 25.0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 1
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "residual_singleton",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 25.0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 1
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "native_rule_base",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 0,
+      "reference_pct": 100,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "old_combined_head",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 75.0,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 2
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "task_scope",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 0,
+      "reference_pct": 100,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "repeat_rendering",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "old_direct_vLLM",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "constant_positive",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 0,
+      "reference_pct": 100,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 0
+        }
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "constant_negative",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 0
+        },
+        "negative": {
+          "n": 4,
+          "correct": 4
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "ph_singleton",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "h_only_batch8",
+      "mappings": 80,
+      "repairs": 14,
+      "harms": 12,
+      "changed": 26,
+      "pair_repairs": 7,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "h_only_singleton",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 12,
+      "changed": 28,
+      "pair_repairs": 8,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "residual_batch8",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "residual_singleton",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "native_rule_base",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 16,
+      "changed": 34,
+      "pair_repairs": 10,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "old_combined_head",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 17,
+      "changed": 33,
+      "pair_repairs": 9,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "task_scope",
+      "mappings": 80,
+      "repairs": 32,
+      "harms": 18,
+      "changed": 50,
+      "pair_repairs": 16,
+      "pair_harms": 9
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "repeat_rendering",
+      "mappings": 80,
+      "repairs": 15,
+      "harms": 17,
+      "changed": 32,
+      "pair_repairs": 8,
+      "pair_harms": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 80,
+      "repairs": 19,
+      "harms": 17,
+      "changed": 36,
+      "pair_repairs": 11,
+      "pair_harms": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "constant_positive",
+      "mappings": 80,
+      "repairs": 40,
+      "harms": 20,
+      "changed": 60,
+      "pair_repairs": 20,
+      "pair_harms": 10
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "constant_negative",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 4,
+      "changed": 20,
+      "pair_repairs": 8,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "ph_batch8",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "h_only_batch8",
+      "mappings": 80,
+      "repairs": 14,
+      "harms": 12,
+      "changed": 26,
+      "pair_repairs": 7,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "h_only_singleton",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 12,
+      "changed": 28,
+      "pair_repairs": 8,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "residual_batch8",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "residual_singleton",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "native_rule_base",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 16,
+      "changed": 34,
+      "pair_repairs": 10,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "old_combined_head",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 17,
+      "changed": 33,
+      "pair_repairs": 9,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "task_scope",
+      "mappings": 80,
+      "repairs": 32,
+      "harms": 18,
+      "changed": 50,
+      "pair_repairs": 16,
+      "pair_harms": 9
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "repeat_rendering",
+      "mappings": 80,
+      "repairs": 15,
+      "harms": 17,
+      "changed": 32,
+      "pair_repairs": 8,
+      "pair_harms": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 80,
+      "repairs": 19,
+      "harms": 17,
+      "changed": 36,
+      "pair_repairs": 11,
+      "pair_harms": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "constant_positive",
+      "mappings": 80,
+      "repairs": 40,
+      "harms": 20,
+      "changed": 60,
+      "pair_repairs": 20,
+      "pair_harms": 10
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "constant_negative",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 4,
+      "changed": 20,
+      "pair_repairs": 8,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "ph_batch8",
+      "mappings": 80,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "ph_singleton",
+      "mappings": 80,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "h_only_batch8",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 12,
+      "changed": 28,
+      "pair_repairs": 8,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "h_only_singleton",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 12,
+      "changed": 30,
+      "pair_repairs": 9,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "residual_singleton",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "native_rule_base",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 14,
+      "changed": 32,
+      "pair_repairs": 10,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "old_combined_head",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 15,
+      "changed": 31,
+      "pair_repairs": 9,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "task_scope",
+      "mappings": 80,
+      "repairs": 32,
+      "harms": 16,
+      "changed": 48,
+      "pair_repairs": 16,
+      "pair_harms": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "repeat_rendering",
+      "mappings": 80,
+      "repairs": 15,
+      "harms": 15,
+      "changed": 30,
+      "pair_repairs": 8,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 80,
+      "repairs": 19,
+      "harms": 15,
+      "changed": 34,
+      "pair_repairs": 11,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "constant_positive",
+      "mappings": 80,
+      "repairs": 40,
+      "harms": 18,
+      "changed": 58,
+      "pair_repairs": 20,
+      "pair_harms": 9
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "constant_negative",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 4,
+      "changed": 22,
+      "pair_repairs": 9,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "ph_batch8",
+      "mappings": 80,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "ph_singleton",
+      "mappings": 80,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "h_only_batch8",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 12,
+      "changed": 28,
+      "pair_repairs": 8,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "h_only_singleton",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 12,
+      "changed": 30,
+      "pair_repairs": 9,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "residual_batch8",
+      "mappings": 80,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "native_rule_base",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 14,
+      "changed": 32,
+      "pair_repairs": 10,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "old_combined_head",
+      "mappings": 80,
+      "repairs": 16,
+      "harms": 15,
+      "changed": 31,
+      "pair_repairs": 9,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "task_scope",
+      "mappings": 80,
+      "repairs": 32,
+      "harms": 16,
+      "changed": 48,
+      "pair_repairs": 16,
+      "pair_harms": 8
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "repeat_rendering",
+      "mappings": 80,
+      "repairs": 15,
+      "harms": 15,
+      "changed": 30,
+      "pair_repairs": 8,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 80,
+      "repairs": 19,
+      "harms": 15,
+      "changed": 34,
+      "pair_repairs": 11,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "constant_positive",
+      "mappings": 80,
+      "repairs": 40,
+      "harms": 18,
+      "changed": 58,
+      "pair_repairs": 20,
+      "pair_harms": 9
+    },
+    {
+      "split": "all",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "constant_negative",
+      "mappings": 80,
+      "repairs": 18,
+      "harms": 4,
+      "changed": 22,
+      "pair_repairs": 9,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "ph_singleton",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "h_only_batch8",
+      "mappings": 32,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 2,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "h_only_singleton",
+      "mappings": 32,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 2,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "residual_batch8",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "residual_singleton",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "native_rule_base",
+      "mappings": 32,
+      "repairs": 9,
+      "harms": 10,
+      "changed": 19,
+      "pair_repairs": 3,
+      "pair_harms": 4
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "old_combined_head",
+      "mappings": 32,
+      "repairs": 5,
+      "harms": 9,
+      "changed": 14,
+      "pair_repairs": 3,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "task_scope",
+      "mappings": 32,
+      "repairs": 12,
+      "harms": 11,
+      "changed": 23,
+      "pair_repairs": 3,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "repeat_rendering",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 10,
+      "changed": 18,
+      "pair_repairs": 4,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 32,
+      "repairs": 9,
+      "harms": 10,
+      "changed": 19,
+      "pair_repairs": 4,
+      "pair_harms": 5
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "constant_positive",
+      "mappings": 32,
+      "repairs": 15,
+      "harms": 11,
+      "changed": 26,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "constant_negative",
+      "mappings": 32,
+      "repairs": 5,
+      "harms": 1,
+      "changed": 6,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "ph_batch8",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "h_only_batch8",
+      "mappings": 32,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 2,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "h_only_singleton",
+      "mappings": 32,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 2,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "residual_batch8",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "residual_singleton",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "native_rule_base",
+      "mappings": 32,
+      "repairs": 9,
+      "harms": 10,
+      "changed": 19,
+      "pair_repairs": 3,
+      "pair_harms": 4
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "old_combined_head",
+      "mappings": 32,
+      "repairs": 5,
+      "harms": 9,
+      "changed": 14,
+      "pair_repairs": 3,
+      "pair_harms": 7
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "task_scope",
+      "mappings": 32,
+      "repairs": 12,
+      "harms": 11,
+      "changed": 23,
+      "pair_repairs": 3,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "repeat_rendering",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 10,
+      "changed": 18,
+      "pair_repairs": 4,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 32,
+      "repairs": 9,
+      "harms": 10,
+      "changed": 19,
+      "pair_repairs": 4,
+      "pair_harms": 5
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "constant_positive",
+      "mappings": 32,
+      "repairs": 15,
+      "harms": 11,
+      "changed": 26,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "constant_negative",
+      "mappings": 32,
+      "repairs": 5,
+      "harms": 1,
+      "changed": 6,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "ph_batch8",
+      "mappings": 32,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 2,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "ph_singleton",
+      "mappings": 32,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 2,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "h_only_batch8",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 6,
+      "changed": 14,
+      "pair_repairs": 4,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "h_only_singleton",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 6,
+      "changed": 14,
+      "pair_repairs": 4,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "residual_singleton",
+      "mappings": 32,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "native_rule_base",
+      "mappings": 32,
+      "repairs": 10,
+      "harms": 9,
+      "changed": 19,
+      "pair_repairs": 5,
+      "pair_harms": 4
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "old_combined_head",
+      "mappings": 32,
+      "repairs": 5,
+      "harms": 7,
+      "changed": 12,
+      "pair_repairs": 3,
+      "pair_harms": 5
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "task_scope",
+      "mappings": 32,
+      "repairs": 12,
+      "harms": 9,
+      "changed": 21,
+      "pair_repairs": 5,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "repeat_rendering",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 8,
+      "changed": 16,
+      "pair_repairs": 5,
+      "pair_harms": 5
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 32,
+      "repairs": 9,
+      "harms": 8,
+      "changed": 17,
+      "pair_repairs": 5,
+      "pair_harms": 4
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "constant_positive",
+      "mappings": 32,
+      "repairs": 15,
+      "harms": 9,
+      "changed": 24,
+      "pair_repairs": 6,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "constant_negative",
+      "mappings": 32,
+      "repairs": 7,
+      "harms": 1,
+      "changed": 8,
+      "pair_repairs": 6,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "ph_batch8",
+      "mappings": 32,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "ph_singleton",
+      "mappings": 32,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "h_only_batch8",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 7,
+      "changed": 15,
+      "pair_repairs": 3,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "h_only_singleton",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 7,
+      "changed": 15,
+      "pair_repairs": 3,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "residual_batch8",
+      "mappings": 32,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "native_rule_base",
+      "mappings": 32,
+      "repairs": 10,
+      "harms": 10,
+      "changed": 20,
+      "pair_repairs": 4,
+      "pair_harms": 4
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "old_combined_head",
+      "mappings": 32,
+      "repairs": 5,
+      "harms": 8,
+      "changed": 13,
+      "pair_repairs": 3,
+      "pair_harms": 6
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "task_scope",
+      "mappings": 32,
+      "repairs": 12,
+      "harms": 10,
+      "changed": 22,
+      "pair_repairs": 4,
+      "pair_harms": 2
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "repeat_rendering",
+      "mappings": 32,
+      "repairs": 8,
+      "harms": 9,
+      "changed": 17,
+      "pair_repairs": 4,
+      "pair_harms": 5
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 32,
+      "repairs": 9,
+      "harms": 9,
+      "changed": 18,
+      "pair_repairs": 5,
+      "pair_harms": 5
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "constant_positive",
+      "mappings": 32,
+      "repairs": 15,
+      "harms": 10,
+      "changed": 25,
+      "pair_repairs": 5,
+      "pair_harms": 0
+    },
+    {
+      "split": "all",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "constant_negative",
+      "mappings": 32,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7,
+      "pair_repairs": 5,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "ph_singleton",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "h_only_batch8",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 10,
+      "changed": 22,
+      "pair_repairs": 6,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "h_only_singleton",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 10,
+      "changed": 22,
+      "pair_repairs": 6,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "residual_batch8",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "residual_singleton",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "native_rule_base",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 13,
+      "changed": 25,
+      "pair_repairs": 7,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "old_combined_head",
+      "mappings": 60,
+      "repairs": 10,
+      "harms": 14,
+      "changed": 24,
+      "pair_repairs": 6,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "task_scope",
+      "mappings": 60,
+      "repairs": 24,
+      "harms": 16,
+      "changed": 40,
+      "pair_repairs": 12,
+      "pair_harms": 8
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "repeat_rendering",
+      "mappings": 60,
+      "repairs": 9,
+      "harms": 14,
+      "changed": 23,
+      "pair_repairs": 5,
+      "pair_harms": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 60,
+      "repairs": 13,
+      "harms": 14,
+      "changed": 27,
+      "pair_repairs": 8,
+      "pair_harms": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "constant_positive",
+      "mappings": 60,
+      "repairs": 30,
+      "harms": 18,
+      "changed": 48,
+      "pair_repairs": 15,
+      "pair_harms": 9
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "constant_negative",
+      "mappings": 60,
+      "repairs": 10,
+      "harms": 2,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "ph_batch8",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "h_only_batch8",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 10,
+      "changed": 22,
+      "pair_repairs": 6,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "h_only_singleton",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 10,
+      "changed": 22,
+      "pair_repairs": 6,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "residual_batch8",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "residual_singleton",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "native_rule_base",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 13,
+      "changed": 25,
+      "pair_repairs": 7,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "old_combined_head",
+      "mappings": 60,
+      "repairs": 10,
+      "harms": 14,
+      "changed": 24,
+      "pair_repairs": 6,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "task_scope",
+      "mappings": 60,
+      "repairs": 24,
+      "harms": 16,
+      "changed": 40,
+      "pair_repairs": 12,
+      "pair_harms": 8
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "repeat_rendering",
+      "mappings": 60,
+      "repairs": 9,
+      "harms": 14,
+      "changed": 23,
+      "pair_repairs": 5,
+      "pair_harms": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 60,
+      "repairs": 13,
+      "harms": 14,
+      "changed": 27,
+      "pair_repairs": 8,
+      "pair_harms": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "constant_positive",
+      "mappings": 60,
+      "repairs": 30,
+      "harms": 18,
+      "changed": 48,
+      "pair_repairs": 15,
+      "pair_harms": 9
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "constant_negative",
+      "mappings": 60,
+      "repairs": 10,
+      "harms": 2,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "ph_batch8",
+      "mappings": 60,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "ph_singleton",
+      "mappings": 60,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "h_only_batch8",
+      "mappings": 60,
+      "repairs": 14,
+      "harms": 10,
+      "changed": 24,
+      "pair_repairs": 7,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "h_only_singleton",
+      "mappings": 60,
+      "repairs": 14,
+      "harms": 10,
+      "changed": 24,
+      "pair_repairs": 7,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "residual_singleton",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "native_rule_base",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 11,
+      "changed": 23,
+      "pair_repairs": 7,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "old_combined_head",
+      "mappings": 60,
+      "repairs": 10,
+      "harms": 12,
+      "changed": 22,
+      "pair_repairs": 6,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "task_scope",
+      "mappings": 60,
+      "repairs": 24,
+      "harms": 14,
+      "changed": 38,
+      "pair_repairs": 12,
+      "pair_harms": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "repeat_rendering",
+      "mappings": 60,
+      "repairs": 9,
+      "harms": 12,
+      "changed": 21,
+      "pair_repairs": 5,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 60,
+      "repairs": 13,
+      "harms": 12,
+      "changed": 25,
+      "pair_repairs": 8,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "constant_positive",
+      "mappings": 60,
+      "repairs": 30,
+      "harms": 16,
+      "changed": 46,
+      "pair_repairs": 15,
+      "pair_harms": 8
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "constant_negative",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 2,
+      "changed": 14,
+      "pair_repairs": 6,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "ph_batch8",
+      "mappings": 60,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "ph_singleton",
+      "mappings": 60,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "h_only_batch8",
+      "mappings": 60,
+      "repairs": 14,
+      "harms": 10,
+      "changed": 24,
+      "pair_repairs": 7,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "h_only_singleton",
+      "mappings": 60,
+      "repairs": 14,
+      "harms": 10,
+      "changed": 24,
+      "pair_repairs": 7,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "residual_batch8",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "native_rule_base",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 11,
+      "changed": 23,
+      "pair_repairs": 7,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "old_combined_head",
+      "mappings": 60,
+      "repairs": 10,
+      "harms": 12,
+      "changed": 22,
+      "pair_repairs": 6,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "task_scope",
+      "mappings": 60,
+      "repairs": 24,
+      "harms": 14,
+      "changed": 38,
+      "pair_repairs": 12,
+      "pair_harms": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "repeat_rendering",
+      "mappings": 60,
+      "repairs": 9,
+      "harms": 12,
+      "changed": 21,
+      "pair_repairs": 5,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 60,
+      "repairs": 13,
+      "harms": 12,
+      "changed": 25,
+      "pair_repairs": 8,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "constant_positive",
+      "mappings": 60,
+      "repairs": 30,
+      "harms": 16,
+      "changed": 46,
+      "pair_repairs": 15,
+      "pair_harms": 8
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "constant_negative",
+      "mappings": 60,
+      "repairs": 12,
+      "harms": 2,
+      "changed": 14,
+      "pair_repairs": 6,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "ph_singleton",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "h_only_batch8",
+      "mappings": 24,
+      "repairs": 5,
+      "harms": 4,
+      "changed": 9,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "h_only_singleton",
+      "mappings": 24,
+      "repairs": 5,
+      "harms": 4,
+      "changed": 9,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "residual_batch8",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "residual_singleton",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "native_rule_base",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 7,
+      "changed": 13,
+      "pair_repairs": 3,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "old_combined_head",
+      "mappings": 24,
+      "repairs": 4,
+      "harms": 7,
+      "changed": 11,
+      "pair_repairs": 3,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "task_scope",
+      "mappings": 24,
+      "repairs": 9,
+      "harms": 8,
+      "changed": 17,
+      "pair_repairs": 3,
+      "pair_harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "repeat_rendering",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 7,
+      "changed": 13,
+      "pair_repairs": 4,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 24,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 4,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "constant_positive",
+      "mappings": 24,
+      "repairs": 12,
+      "harms": 8,
+      "changed": 20,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "constant_negative",
+      "mappings": 24,
+      "repairs": 4,
+      "harms": 0,
+      "changed": 4,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "ph_batch8",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "h_only_batch8",
+      "mappings": 24,
+      "repairs": 5,
+      "harms": 4,
+      "changed": 9,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "h_only_singleton",
+      "mappings": 24,
+      "repairs": 5,
+      "harms": 4,
+      "changed": 9,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "residual_batch8",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 2,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "residual_singleton",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "native_rule_base",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 7,
+      "changed": 13,
+      "pair_repairs": 3,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "old_combined_head",
+      "mappings": 24,
+      "repairs": 4,
+      "harms": 7,
+      "changed": 11,
+      "pair_repairs": 3,
+      "pair_harms": 6
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "task_scope",
+      "mappings": 24,
+      "repairs": 9,
+      "harms": 8,
+      "changed": 17,
+      "pair_repairs": 3,
+      "pair_harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "repeat_rendering",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 7,
+      "changed": 13,
+      "pair_repairs": 4,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 24,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 4,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "constant_positive",
+      "mappings": 24,
+      "repairs": 12,
+      "harms": 8,
+      "changed": 20,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "constant_negative",
+      "mappings": 24,
+      "repairs": 4,
+      "harms": 0,
+      "changed": 4,
+      "pair_repairs": 4,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "ph_batch8",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 2,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "ph_singleton",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 0,
+      "changed": 2,
+      "pair_repairs": 2,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "h_only_batch8",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 4,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "h_only_singleton",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 4,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "residual_singleton",
+      "mappings": 24,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "native_rule_base",
+      "mappings": 24,
+      "repairs": 7,
+      "harms": 6,
+      "changed": 13,
+      "pair_repairs": 5,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "old_combined_head",
+      "mappings": 24,
+      "repairs": 4,
+      "harms": 5,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "task_scope",
+      "mappings": 24,
+      "repairs": 9,
+      "harms": 6,
+      "changed": 15,
+      "pair_repairs": 5,
+      "pair_harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "repeat_rendering",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 5,
+      "changed": 11,
+      "pair_repairs": 5,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 24,
+      "repairs": 7,
+      "harms": 5,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 3
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "constant_positive",
+      "mappings": 24,
+      "repairs": 12,
+      "harms": 6,
+      "changed": 18,
+      "pair_repairs": 6,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "constant_negative",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 0,
+      "changed": 6,
+      "pair_repairs": 6,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "ph_batch8",
+      "mappings": 24,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "ph_singleton",
+      "mappings": 24,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1,
+      "pair_repairs": 1,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "h_only_batch8",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 4,
+      "changed": 10,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "h_only_singleton",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 4,
+      "changed": 10,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "residual_batch8",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "native_rule_base",
+      "mappings": 24,
+      "repairs": 7,
+      "harms": 7,
+      "changed": 14,
+      "pair_repairs": 4,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "old_combined_head",
+      "mappings": 24,
+      "repairs": 4,
+      "harms": 6,
+      "changed": 10,
+      "pair_repairs": 3,
+      "pair_harms": 5
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "task_scope",
+      "mappings": 24,
+      "repairs": 9,
+      "harms": 7,
+      "changed": 16,
+      "pair_repairs": 4,
+      "pair_harms": 2
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "repeat_rendering",
+      "mappings": 24,
+      "repairs": 6,
+      "harms": 6,
+      "changed": 12,
+      "pair_repairs": 4,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 24,
+      "repairs": 7,
+      "harms": 6,
+      "changed": 13,
+      "pair_repairs": 5,
+      "pair_harms": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "constant_positive",
+      "mappings": 24,
+      "repairs": 12,
+      "harms": 7,
+      "changed": 19,
+      "pair_repairs": 5,
+      "pair_harms": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "constant_negative",
+      "mappings": 24,
+      "repairs": 5,
+      "harms": 0,
+      "changed": 5,
+      "pair_repairs": 5,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "ph_singleton",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "h_only_batch8",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4,
+      "pair_repairs": 1,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "h_only_singleton",
+      "mappings": 20,
+      "repairs": 4,
+      "harms": 2,
+      "changed": 6,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "residual_batch8",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "residual_singleton",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "native_rule_base",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "old_combined_head",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "task_scope",
+      "mappings": 20,
+      "repairs": 8,
+      "harms": 2,
+      "changed": 10,
+      "pair_repairs": 4,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "repeat_rendering",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "constant_positive",
+      "mappings": 20,
+      "repairs": 10,
+      "harms": 2,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_batch8",
+      "control": "constant_negative",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 2,
+      "changed": 8,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "ph_batch8",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "h_only_batch8",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4,
+      "pair_repairs": 1,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "h_only_singleton",
+      "mappings": 20,
+      "repairs": 4,
+      "harms": 2,
+      "changed": 6,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "residual_batch8",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "residual_singleton",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "native_rule_base",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "old_combined_head",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "task_scope",
+      "mappings": 20,
+      "repairs": 8,
+      "harms": 2,
+      "changed": 10,
+      "pair_repairs": 4,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "repeat_rendering",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "constant_positive",
+      "mappings": 20,
+      "repairs": 10,
+      "harms": 2,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "ph_singleton",
+      "control": "constant_negative",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 2,
+      "changed": 8,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "ph_batch8",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "ph_singleton",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "h_only_batch8",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4,
+      "pair_repairs": 1,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "h_only_singleton",
+      "mappings": 20,
+      "repairs": 4,
+      "harms": 2,
+      "changed": 6,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "residual_singleton",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "native_rule_base",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "old_combined_head",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "task_scope",
+      "mappings": 20,
+      "repairs": 8,
+      "harms": 2,
+      "changed": 10,
+      "pair_repairs": 4,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "repeat_rendering",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "constant_positive",
+      "mappings": 20,
+      "repairs": 10,
+      "harms": 2,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_batch8",
+      "control": "constant_negative",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 2,
+      "changed": 8,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "ph_batch8",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "ph_singleton",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "h_only_batch8",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4,
+      "pair_repairs": 1,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "h_only_singleton",
+      "mappings": 20,
+      "repairs": 4,
+      "harms": 2,
+      "changed": 6,
+      "pair_repairs": 2,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "residual_batch8",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "native_rule_base",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "old_combined_head",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "task_scope",
+      "mappings": 20,
+      "repairs": 8,
+      "harms": 2,
+      "changed": 10,
+      "pair_repairs": 4,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "repeat_rendering",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 3,
+      "changed": 9,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "constant_positive",
+      "mappings": 20,
+      "repairs": 10,
+      "harms": 2,
+      "changed": 12,
+      "pair_repairs": 5,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "residual_singleton",
+      "control": "constant_negative",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 2,
+      "changed": 8,
+      "pair_repairs": 3,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "ph_singleton",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "h_only_batch8",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "h_only_singleton",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "residual_batch8",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "residual_singleton",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "native_rule_base",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "old_combined_head",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 2,
+      "changed": 3,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "task_scope",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "repeat_rendering",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "constant_positive",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_batch8",
+      "control": "constant_negative",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "ph_batch8",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "h_only_batch8",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "h_only_singleton",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "residual_batch8",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "residual_singleton",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "native_rule_base",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "old_combined_head",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 2,
+      "changed": 3,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "task_scope",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "repeat_rendering",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "constant_positive",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "ph_singleton",
+      "control": "constant_negative",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "ph_batch8",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "ph_singleton",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "h_only_batch8",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "h_only_singleton",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "residual_singleton",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "native_rule_base",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "old_combined_head",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 2,
+      "changed": 3,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "task_scope",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "repeat_rendering",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "old_direct_vLLM",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "constant_positive",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_batch8",
+      "control": "constant_negative",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "ph_batch8",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "ph_singleton",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "h_only_batch8",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "h_only_singleton",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "residual_batch8",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "native_rule_base",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "old_combined_head",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 2,
+      "changed": 3,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "task_scope",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "repeat_rendering",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "old_direct_vLLM",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 3,
+      "changed": 5,
+      "pair_repairs": 0,
+      "pair_harms": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "constant_positive",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 3,
+      "changed": 6,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "residual_singleton",
+      "control": "constant_negative",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2,
+      "pair_repairs": 0,
+      "pair_harms": 0
+    }
+  ],
+  "interface_stats": {
+    "ph": {
+      "n": 112,
+      "changed": 0,
+      "max_abs_margin_difference": 0.49926592679910486
+    },
+    "h_only": {
+      "n": 112,
+      "changed": 2,
+      "max_abs_margin_difference": 0.21604398252438006
+    },
+    "residual": {
+      "n": 112,
+      "changed": 1,
+      "max_abs_margin_difference": 0.3844479029819916
+    }
+  },
+  "deployment_interface": "singleton, fixed before reading any new J scores",
+  "new_analysis_forward_passes": 0,
+  "generated_outputs": 0,
+  "D_access": false,
+  "limitation": "U remains primary PH probe; residual is separate follow-up. No head/C/threshold/interface chosen using J."
+}

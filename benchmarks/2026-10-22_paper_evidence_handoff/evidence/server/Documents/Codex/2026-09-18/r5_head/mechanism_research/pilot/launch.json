@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "started": "2026-09-18 13:52:32 +0800",
+  "processes": [
+    {
+      "method": "M4",
+      "gpu": 0,
+      "pid": 2655264,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/run.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/pilot",
+        "--method",
+        "M4",
+        "--gpu",
+        "0"
+      ],
+      "log": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/pilot/m4/worker.log",
+      "returncode": 0
+    },
+    {
+      "method": "M5",
+      "gpu": 1,
+      "pid": 2655265,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/run.py",
+        "--out",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/pilot",
+        "--method",
+        "M5",
+        "--gpu",
+        "1"
+      ],
+      "log": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/pilot/m5/worker.log",
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 14:07:03 +0800"
+}

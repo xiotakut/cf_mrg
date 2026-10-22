@@ -1,0 +1,1377 @@
+{
+  "method": "M5",
+  "status": "complete",
+  "selected": {
+    "semantic_CE": {
+      "arm": "semantic_CE",
+      "l2": 0.01,
+      "epoch": 60,
+      "train_nll": 0.867692232131958,
+      "dev_nll": 0.8351525664329529,
+      "train_js": 0.0164693184196949
+    },
+    "semantic_CE+JS": {
+      "arm": "semantic_CE+JS",
+      "l2": 0.01,
+      "epoch": 61,
+      "train_nll": 0.8650462627410889,
+      "dev_nll": 0.8234689831733704,
+      "train_js": 0.014681982807815075
+    },
+    "bias_CE": {
+      "arm": "bias_CE",
+      "l2": 0.01,
+      "epoch": 200,
+      "train_nll": 2.428663969039917,
+      "dev_nll": 4.862883567810059,
+      "train_js": 0.049442440271377563
+    },
+    "bias_CE+JS": {
+      "arm": "bias_CE+JS",
+      "l2": 0.01,
+      "epoch": 200,
+      "train_nll": 2.4286818504333496,
+      "dev_nll": 4.86293363571167,
+      "train_js": 0.049442511051893234
+    }
+  },
+  "results": [
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "mean_logit_zero",
+      "units": 30,
+      "mappings": 60,
+      "correct": 48,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 76.66666666666667,
+      "invariant_pct": 93.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 22
+        }
+      },
+      "decision_counts": {
+        "negative": 24,
+        "positive": 36
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "saved_mean_probability_base",
+      "units": 30,
+      "mappings": 60,
+      "correct": 48,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 76.66666666666667,
+      "invariant_pct": 93.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 22
+        }
+      },
+      "decision_counts": {
+        "negative": 24,
+        "positive": 36
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "train_mother_weighted_semantic_prior",
+      "units": 30,
+      "mappings": 60,
+      "correct": 32,
+      "invalid": 0,
+      "variant_pct": 53.333333333333336,
+      "reference_pct": 53.333333333333336,
+      "both_pct": 53.333333333333336,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 0
+        },
+        "negative": {
+          "n": 32,
+          "correct": 32
+        }
+      },
+      "decision_counts": {
+        "negative": 60
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "semantic_CE",
+      "units": 30,
+      "mappings": 60,
+      "correct": 53,
+      "invalid": 0,
+      "variant_pct": 90.0,
+      "reference_pct": 86.66666666666667,
+      "both_pct": 86.66666666666667,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 25
+        },
+        "negative": {
+          "n": 32,
+          "correct": 28
+        }
+      },
+      "decision_counts": {
+        "negative": 31,
+        "positive": 29
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "semantic_CE+JS",
+      "units": 30,
+      "mappings": 60,
+      "correct": 53,
+      "invalid": 0,
+      "variant_pct": 90.0,
+      "reference_pct": 86.66666666666667,
+      "both_pct": 86.66666666666667,
+      "invariant_pct": 96.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 25
+        },
+        "negative": {
+          "n": 32,
+          "correct": 28
+        }
+      },
+      "decision_counts": {
+        "negative": 31,
+        "positive": 29
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "bias_CE",
+      "units": 30,
+      "mappings": 60,
+      "correct": 48,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 76.66666666666667,
+      "invariant_pct": 93.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 22
+        }
+      },
+      "decision_counts": {
+        "negative": 24,
+        "positive": 36
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "arm": "bias_CE+JS",
+      "units": 30,
+      "mappings": 60,
+      "correct": 48,
+      "invalid": 0,
+      "variant_pct": 80.0,
+      "reference_pct": 80.0,
+      "both_pct": 76.66666666666667,
+      "invariant_pct": 93.33333333333333,
+      "gold_endpoints": {
+        "positive": {
+          "n": 28,
+          "correct": 26
+        },
+        "negative": {
+          "n": 32,
+          "correct": 22
+        }
+      },
+      "decision_counts": {
+        "negative": 24,
+        "positive": 36
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "mean_logit_zero",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 9
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "saved_mean_probability_base",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 9
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "train_mother_weighted_semantic_prior",
+      "units": 12,
+      "mappings": 24,
+      "correct": 12,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 0
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      },
+      "decision_counts": {
+        "negative": 24
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "semantic_CE",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 75.0,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 9
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      },
+      "decision_counts": {
+        "positive": 11,
+        "negative": 13
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "semantic_CE+JS",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 83.33333333333334,
+      "reference_pct": 75.0,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 9
+        },
+        "negative": {
+          "n": 12,
+          "correct": 10
+        }
+      },
+      "decision_counts": {
+        "positive": 11,
+        "negative": 13
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "bias_CE",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 9
+      }
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "arm": "bias_CE+JS",
+      "units": 12,
+      "mappings": 24,
+      "correct": 19,
+      "invalid": 0,
+      "variant_pct": 66.66666666666666,
+      "reference_pct": 91.66666666666666,
+      "both_pct": 58.333333333333336,
+      "invariant_pct": 41.66666666666667,
+      "gold_endpoints": {
+        "positive": {
+          "n": 12,
+          "correct": 11
+        },
+        "negative": {
+          "n": 12,
+          "correct": 8
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 9
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "mean_logit_zero",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 5
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "saved_mean_probability_base",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 5
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "train_mother_weighted_semantic_prior",
+      "units": 10,
+      "mappings": 20,
+      "correct": 12,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 60.0,
+      "both_pct": 60.0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 0
+        },
+        "negative": {
+          "n": 12,
+          "correct": 12
+        }
+      },
+      "decision_counts": {
+        "negative": 20
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "semantic_CE",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 50.0,
+      "invariant_pct": 70.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 7
+        }
+      },
+      "decision_counts": {
+        "positive": 11,
+        "negative": 9
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "semantic_CE+JS",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 50.0,
+      "invariant_pct": 70.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 6
+        },
+        "negative": {
+          "n": 12,
+          "correct": 7
+        }
+      },
+      "decision_counts": {
+        "positive": 11,
+        "negative": 9
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "bias_CE",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 5
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "arm": "bias_CE+JS",
+      "units": 10,
+      "mappings": 20,
+      "correct": 13,
+      "invalid": 0,
+      "variant_pct": 60.0,
+      "reference_pct": 70.0,
+      "both_pct": 60.0,
+      "invariant_pct": 90.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 8,
+          "correct": 8
+        },
+        "negative": {
+          "n": 12,
+          "correct": 5
+        }
+      },
+      "decision_counts": {
+        "positive": 15,
+        "negative": 5
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "mean_logit_zero",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      },
+      "decision_counts": {
+        "negative": 1,
+        "positive": 7
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "saved_mean_probability_base",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      },
+      "decision_counts": {
+        "negative": 1,
+        "positive": 7
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "train_mother_weighted_semantic_prior",
+      "units": 4,
+      "mappings": 8,
+      "correct": 4,
+      "invalid": 0,
+      "variant_pct": 100,
+      "reference_pct": 0,
+      "both_pct": 0,
+      "invariant_pct": 100,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 0
+        },
+        "negative": {
+          "n": 4,
+          "correct": 4
+        }
+      },
+      "decision_counts": {
+        "negative": 8
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "semantic_CE",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 50.0,
+      "reference_pct": 75.0,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 2
+        }
+      },
+      "decision_counts": {
+        "negative": 3,
+        "positive": 5
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "semantic_CE+JS",
+      "units": 4,
+      "mappings": 8,
+      "correct": 6,
+      "invalid": 0,
+      "variant_pct": 75.0,
+      "reference_pct": 75.0,
+      "both_pct": 50.0,
+      "invariant_pct": 50.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 3
+        },
+        "negative": {
+          "n": 4,
+          "correct": 3
+        }
+      },
+      "decision_counts": {
+        "negative": 4,
+        "positive": 4
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "bias_CE",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      },
+      "decision_counts": {
+        "negative": 1,
+        "positive": 7
+      }
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "arm": "bias_CE+JS",
+      "units": 4,
+      "mappings": 8,
+      "correct": 5,
+      "invalid": 0,
+      "variant_pct": 25.0,
+      "reference_pct": 100,
+      "both_pct": 25.0,
+      "invariant_pct": 75.0,
+      "gold_endpoints": {
+        "positive": {
+          "n": 4,
+          "correct": 4
+        },
+        "negative": {
+          "n": 4,
+          "correct": 1
+        }
+      },
+      "decision_counts": {
+        "negative": 1,
+        "positive": 7
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "mean_logit_zero",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "saved_mean_probability_base",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 60,
+      "repairs": 25,
+      "harms": 4,
+      "changed": 29
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "semantic_CE+JS",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "bias_CE",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "bias_CE+JS",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "mean_logit_zero",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "saved_mean_probability_base",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 60,
+      "repairs": 25,
+      "harms": 4,
+      "changed": 29
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "semantic_CE",
+      "mappings": 60,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE+JS",
+      "mappings": 60,
+      "repairs": 6,
+      "harms": 1,
+      "changed": 7
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "mean_logit_zero",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "saved_mean_probability_base",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 24,
+      "repairs": 9,
+      "harms": 2,
+      "changed": 11
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "semantic_CE+JS",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "bias_CE",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "bias_CE+JS",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "mean_logit_zero",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "saved_mean_probability_base",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 24,
+      "repairs": 9,
+      "harms": 2,
+      "changed": 11
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "semantic_CE",
+      "mappings": 24,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "train",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE+JS",
+      "mappings": 24,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "mean_logit_zero",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "saved_mean_probability_base",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 5,
+      "changed": 11
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "semantic_CE+JS",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "bias_CE",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE",
+      "control": "bias_CE+JS",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "mean_logit_zero",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "saved_mean_probability_base",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 20,
+      "repairs": 6,
+      "harms": 5,
+      "changed": 11
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "semantic_CE",
+      "mappings": 20,
+      "repairs": 0,
+      "harms": 0,
+      "changed": 0
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "R5",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE+JS",
+      "mappings": 20,
+      "repairs": 2,
+      "harms": 2,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "mean_logit_zero",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "saved_mean_probability_base",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 2,
+      "changed": 5
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "semantic_CE+JS",
+      "mappings": 8,
+      "repairs": 0,
+      "harms": 1,
+      "changed": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "bias_CE",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE",
+      "control": "bias_CE+JS",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 1,
+      "changed": 2
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "mean_logit_zero",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 1,
+      "changed": 3
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "saved_mean_probability_base",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 1,
+      "changed": 3
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "train_mother_weighted_semantic_prior",
+      "mappings": 8,
+      "repairs": 3,
+      "harms": 1,
+      "changed": 4
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "semantic_CE",
+      "mappings": 8,
+      "repairs": 1,
+      "harms": 0,
+      "changed": 1
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 1,
+      "changed": 3
+    },
+    {
+      "split": "dev",
+      "cohort": "strong",
+      "candidate": "semantic_CE+JS",
+      "control": "bias_CE+JS",
+      "mappings": 8,
+      "repairs": 2,
+      "harms": 1,
+      "changed": 3
+    }
+  ],
+  "calibration": [
+    {
+      "arm": "mean_logit_zero",
+      "split": "train",
+      "nll": 2.020949125289917,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "mean_logit_zero",
+      "split": "dev",
+      "nll": 4.126608371734619,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "saved_mean_probability_base",
+      "split": "train",
+      "nll": 1.4335190057754517,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "saved_mean_probability_base",
+      "split": "dev",
+      "nll": 3.06706166267395,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "train_mother_weighted_semantic_prior",
+      "split": "train",
+      "nll": 0.6920129060745239,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "train_mother_weighted_semantic_prior",
+      "split": "dev",
+      "nll": 0.6874743700027466,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "semantic_CE",
+      "split": "train",
+      "nll": 0.8676921129226685,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "semantic_CE",
+      "split": "dev",
+      "nll": 0.8351525068283081,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "semantic_CE+JS",
+      "split": "train",
+      "nll": 0.8650462627410889,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "semantic_CE+JS",
+      "split": "dev",
+      "nll": 0.8234691619873047,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "bias_CE",
+      "split": "train",
+      "nll": 2.007032871246338,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "bias_CE",
+      "split": "dev",
+      "nll": 4.089024066925049,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "bias_CE+JS",
+      "split": "train",
+      "nll": 2.007035970687866,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    },
+    {
+      "arm": "bias_CE+JS",
+      "split": "dev",
+      "nll": 4.089045524597168,
+      "note": "Display NLL computed from saved float32 probabilities with [1e-12,1-1e-7] clamp; selection NLL uses stable BCE logits."
+    }
+  ],
+  "prior_positive": 0.4761904776096344,
+  "fit_inputs": 84,
+  "dev_inputs": 28,
+  "fit_groups": 42,
+  "dev_groups": 14,
+  "r5_training_pairs": 30,
+  "elapsed_seconds": 3.8507943153381348,
+  "new_model_forwards": 0,
+  "new_generations": 0,
+  "plan_sha256": "7c62a95b7784d690e2973cd43c4405a39e11ba0051e59cf622fec40b07bbde42",
+  "script_sha256": "1a0471197bea745e5ef3cd4f9c7008af58d5fbedb5f5a3571cb4b7cfd104ea62",
+  "limitation": [
+    "Posthoc diagnostic triggered by existing results, not independent confirmation.",
+    "Fixed semantic labels are intrinsic to visible NLI task, but this probe is not a general arbitrary-option learned head.",
+    "No innovation or robust-generalization claim.",
+    "Decision-only CPU reuse; no new complete native explanation and no new GPU call."
+  ]
+}

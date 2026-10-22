@@ -1,0 +1,313 @@
+{
+  "status": "complete",
+  "new_calls": 200,
+  "results": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "form": "original",
+          "arm": "redo",
+          "n": 13,
+          "correct": 7,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 2,
+            "harms": 2
+          }
+        },
+        {
+          "form": "original",
+          "arm": "compiled_model",
+          "n": 13,
+          "correct": 6,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 5,
+            "harms": 6
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 3,
+            "harms": 4
+          }
+        },
+        {
+          "form": "original",
+          "arm": "executed",
+          "n": 13,
+          "correct": 6,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 5,
+            "harms": 6
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 3,
+            "harms": 4
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 0,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "unsupported_model_answer": 13
+          }
+        },
+        {
+          "form": "reversed",
+          "arm": "redo",
+          "n": 13,
+          "correct": 6,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "reversed",
+          "arm": "compiled_model",
+          "n": 13,
+          "correct": 9,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 3,
+            "harms": 0
+          }
+        },
+        {
+          "form": "reversed",
+          "arm": "executed",
+          "n": 13,
+          "correct": 9,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 3,
+            "harms": 0
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 0,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "unsupported_model_answer": 13
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 24,
+          "correct": 20,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 24,
+          "correct": 20,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 2
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "executed",
+          "n": 24,
+          "correct": 7,
+          "invalid": 12,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 13
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 13,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "executed": 12,
+            "invalid_program": 12
+          }
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "form": "original",
+          "arm": "redo",
+          "n": 13,
+          "correct": 6,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 3,
+            "harms": 4
+          }
+        },
+        {
+          "form": "original",
+          "arm": "compiled_model",
+          "n": 13,
+          "correct": 6,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 2
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 2,
+            "harms": 3
+          }
+        },
+        {
+          "form": "original",
+          "arm": "executed",
+          "n": 13,
+          "correct": 0,
+          "invalid": 13,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 6
+          },
+          "baseline_correct": 7,
+          "vs_baseline": {
+            "repairs": 0,
+            "harms": 7
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 6,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "invalid_program": 13
+          }
+        },
+        {
+          "form": "reversed",
+          "arm": "redo",
+          "n": 13,
+          "correct": 8,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "reversed",
+          "arm": "compiled_model",
+          "n": 13,
+          "correct": 7,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 1
+          }
+        },
+        {
+          "form": "reversed",
+          "arm": "executed",
+          "n": 13,
+          "correct": 0,
+          "invalid": 13,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 8
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 7,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "invalid_program": 13
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 24,
+          "correct": 22,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 1
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "executed",
+          "n": 24,
+          "correct": 0,
+          "invalid": 24,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 21
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 22,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "invalid_program": 24
+          }
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 100,
+      "input_tokens": 189930,
+      "output_tokens": 19867,
+      "length_stops": 0,
+      "worker_seconds": 175.5292775630951,
+      "initialization_seconds": 26.70738124847412
+    },
+    {
+      "method": "M5",
+      "calls": 100,
+      "input_tokens": 164170,
+      "output_tokens": 18987,
+      "length_stops": 0,
+      "worker_seconds": 231.52134776115417,
+      "initialization_seconds": 30.301812410354614
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "original_score_parity_and_manual_review_complete",
+  "baseline_parity": 2200,
+  "new_model_calls": 0,
+  "results": [
+    {
+      "method": "M4",
+      "n": 1100,
+      "correct": 33,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 818,
+        "ambiguous_diagnosis": 21,
+        "malformed_json": 3
+      },
+      "mapped_wrong": 225,
+      "surface_correct": 33,
+      "surface_repairs": 0,
+      "surface_harms": 0,
+      "sample_count": 60
+    },
+    {
+      "method": "M5",
+      "n": 1100,
+      "correct": 34,
+      "invalid_reasons": {
+        "unmapped_diagnosis": 804,
+        "ambiguous_diagnosis": 27
+      },
+      "mapped_wrong": 235,
+      "surface_correct": 34,
+      "surface_repairs": 0,
+      "surface_harms": 0,
+      "sample_count": 59
+    }
+  ],
+  "error_sampling": "One original error per method × disease × invalid_reason/mapped_wrong, seed20260918; descriptive sample, not prevalence estimate.",
+  "manual_review": "error_review.json"
+}

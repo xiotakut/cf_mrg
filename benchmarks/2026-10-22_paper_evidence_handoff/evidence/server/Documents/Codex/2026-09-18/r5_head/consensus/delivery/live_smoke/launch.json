@@ -1,0 +1,44 @@
+{
+  "started": "2026-09-18 08:49:04 +0800",
+  "workers": [
+    {
+      "method": "m4",
+      "gpu": 2,
+      "pid": 2520083,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/delivery/run_local.py",
+        "--config",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/config.json",
+        "--inputs",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/delivery/live_smoke/m4_inputs.jsonl",
+        "--output",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/delivery/live_smoke/m4_outputs.jsonl",
+        "--gpu",
+        "2"
+      ],
+      "returncode": 0
+    },
+    {
+      "method": "m5",
+      "gpu": 3,
+      "pid": 2520084,
+      "command": [
+        "/home/data3/txy/MedRGAG/.venv/bin/python",
+        "-u",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/delivery/run_local.py",
+        "--config",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m5/config.json",
+        "--inputs",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/delivery/live_smoke/m5_inputs.jsonl",
+        "--output",
+        "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/delivery/live_smoke/m5_outputs.jsonl",
+        "--gpu",
+        "3"
+      ],
+      "returncode": 0
+    }
+  ],
+  "ended": "2026-09-18 08:50:40 +0800"
+}

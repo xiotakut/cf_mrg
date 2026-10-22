@@ -1,0 +1,33 @@
+{
+  "status": "prepared",
+  "new_calls": 72,
+  "reused_calls": 24,
+  "checks": [
+    {
+      "method": "M4",
+      "stage": "guided",
+      "new_calls": 12,
+      "max_prompt_tokens": 217
+    },
+    {
+      "method": "M4",
+      "stage": "free",
+      "new_calls": 24,
+      "max_prompt_tokens": 217
+    },
+    {
+      "method": "M5",
+      "stage": "guided",
+      "new_calls": 12,
+      "max_prompt_tokens": 194
+    },
+    {
+      "method": "M5",
+      "stage": "free",
+      "new_calls": 24,
+      "max_prompt_tokens": 194
+    }
+  ],
+  "primary": "Existing strict value/quote resolver; invalid format is reported separately from semantic error.",
+  "scope": "12 already exposed synthetic scope probes per original backbone; no diagnosis scoring or generalization claim."
+}

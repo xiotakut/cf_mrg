@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "new_calls": 96,
+  "results": [
+    {
+      "method": "M4",
+      "results": [
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 24,
+          "correct": 20,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 1,
+            "harms": 2
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "executed",
+          "n": 24,
+          "correct": 1,
+          "invalid": 23,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 20
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 19,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "invalid_program": 23,
+            "executed": 1
+          }
+        }
+      ]
+    },
+    {
+      "method": "M5",
+      "results": [
+        {
+          "form": "diagnostic",
+          "arm": "redo",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 0
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "compiled_model",
+          "n": 24,
+          "correct": 21,
+          "invalid": 0,
+          "vs_redo": {
+            "repairs": 2,
+            "harms": 2
+          }
+        },
+        {
+          "form": "diagnostic",
+          "arm": "executed",
+          "n": 24,
+          "correct": 0,
+          "invalid": 24,
+          "vs_redo": {
+            "repairs": 0,
+            "harms": 21
+          },
+          "vs_compiled_model": {
+            "repairs": 0,
+            "harms": 21,
+            "repairs_from_invalid_model_answer": 0
+          },
+          "routes": {
+            "invalid_program": 24
+          }
+        }
+      ]
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "calls": 48,
+      "input_tokens": 51764,
+      "output_tokens": 8392,
+      "length_stops": 0,
+      "worker_seconds": 58.24829959869385,
+      "initialization_seconds": 16.180939435958862
+    },
+    {
+      "method": "M5",
+      "calls": 48,
+      "input_tokens": 37572,
+      "output_tokens": 9097,
+      "length_stops": 0,
+      "worker_seconds": 74.77512717247009,
+      "initialization_seconds": 16.06856656074524
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "registered_at": "2026-09-15T00:06:10.671128+00:00",
+  "status": "registered_during_inference_before_any_new_prediction_or_score_inspection",
+  "formula": "2 * full_logprob - frozen_log_prior, equivalent to treating masked background as uniform over codes",
+  "purpose": "Separate background-specific contrast from merely sharpening full scores relative to the fixed prior.",
+  "comparison": "Report endpoint/pair correctness against patient contrast as a secondary attribution control, without changing the primary endpoint or choosing a new coefficient.",
+  "new_model_calls": 0,
+  "input": "Existing full distributions and fixed content-free priors only."
+}

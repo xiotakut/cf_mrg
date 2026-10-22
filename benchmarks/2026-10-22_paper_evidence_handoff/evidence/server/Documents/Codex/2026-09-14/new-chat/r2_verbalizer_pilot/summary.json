@@ -1,0 +1,217 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "baseline",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 23,
+      "accuracy_pct": 29.11392405063291,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 17,
+      "accuracy_pct": 25.757575757575758,
+      "invalid": 3,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 3,
+      "accuracy_pct": 33.333333333333336,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "baseline",
+      "scope": "M14",
+      "n": 4,
+      "correct": 3,
+      "accuracy_pct": 75.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 0
+    },
+    {
+      "method": "full",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 8,
+      "accuracy_pct": 10.126582278481013,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 17
+    },
+    {
+      "method": "full",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 6,
+      "accuracy_pct": 9.090909090909092,
+      "invalid": 0,
+      "repairs": 2,
+      "harms": 13
+    },
+    {
+      "method": "full",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 1,
+      "accuracy_pct": 11.11111111111111,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "full",
+      "scope": "M14",
+      "n": 4,
+      "correct": 1,
+      "accuracy_pct": 25.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "cad_1",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 5,
+      "accuracy_pct": 6.329113924050633,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 22
+    },
+    {
+      "method": "cad_1",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 4,
+      "accuracy_pct": 6.0606060606060606,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 17
+    },
+    {
+      "method": "cad_1",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 0,
+      "accuracy_pct": 0.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 3
+    },
+    {
+      "method": "cad_1",
+      "scope": "M14",
+      "n": 4,
+      "correct": 1,
+      "accuracy_pct": 25.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    },
+    {
+      "method": "cad_05",
+      "scope": "R2_all",
+      "n": 79,
+      "correct": 8,
+      "accuracy_pct": 10.126582278481013,
+      "invalid": 0,
+      "repairs": 4,
+      "harms": 19
+    },
+    {
+      "method": "cad_05",
+      "scope": "R2_none",
+      "n": 66,
+      "correct": 5,
+      "accuracy_pct": 7.575757575757576,
+      "invalid": 0,
+      "repairs": 3,
+      "harms": 15
+    },
+    {
+      "method": "cad_05",
+      "scope": "R2_remaining",
+      "n": 9,
+      "correct": 2,
+      "accuracy_pct": 22.22222222222222,
+      "invalid": 0,
+      "repairs": 1,
+      "harms": 2
+    },
+    {
+      "method": "cad_05",
+      "scope": "M14",
+      "n": 4,
+      "correct": 1,
+      "accuracy_pct": 25.0,
+      "invalid": 0,
+      "repairs": 0,
+      "harms": 2
+    }
+  ],
+  "baseline_parity": 79,
+  "cost": {
+    "calls": 1264,
+    "input_tokens": 2427140,
+    "output_tokens": 1264
+  },
+  "runtime": [
+    {
+      "status": "complete",
+      "gpu": 0,
+      "pid": 2389321,
+      "started_at": 1789364160.8812625,
+      "total": 320,
+      "initialization_seconds": 53.16838335990906,
+      "completed": 320,
+      "elapsed_seconds": 62.06173229217529,
+      "completed_at": 1789364222.9431815
+    },
+    {
+      "status": "complete",
+      "gpu": 1,
+      "pid": 2389322,
+      "started_at": 1789364161.0944872,
+      "total": 320,
+      "initialization_seconds": 52.95450758934021,
+      "completed": 320,
+      "elapsed_seconds": 62.14301061630249,
+      "completed_at": 1789364223.23766
+    },
+    {
+      "status": "complete",
+      "gpu": 2,
+      "pid": 2389323,
+      "started_at": 1789364160.888404,
+      "total": 320,
+      "initialization_seconds": 53.53986215591431,
+      "completed": 320,
+      "elapsed_seconds": 63.9506413936615,
+      "completed_at": 1789364224.8392167
+    },
+    {
+      "status": "complete",
+      "gpu": 3,
+      "pid": 2389324,
+      "started_at": 1789364160.9493546,
+      "total": 304,
+      "initialization_seconds": 53.11220693588257,
+      "completed": 304,
+      "elapsed_seconds": 61.70506739616394,
+      "completed_at": 1789364222.6545546
+    }
+  ]
+}

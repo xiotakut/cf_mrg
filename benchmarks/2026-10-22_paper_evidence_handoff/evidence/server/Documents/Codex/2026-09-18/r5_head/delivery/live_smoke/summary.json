@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "scope": "Real model callbacks and complete native JSON on prespecified exposed inputs; operational check, not a quality estimate or exact historical sampling reproduction.",
+  "results": [
+    {
+      "method": "m4",
+      "inputs": 3,
+      "valid_native_json": 3,
+      "calls": 12,
+      "callbacks": 12,
+      "calls_by_input": [
+        6,
+        3,
+        3
+      ],
+      "routes": [
+        "full_nli_equal_paths_native_completion",
+        "full_native_key_maj5_absolute_majority_stop",
+        "full_native_key_maj5_absolute_majority_stop"
+      ],
+      "missing_code_calls": 0,
+      "input_tokens": 74774,
+      "output_tokens": 2496,
+      "full_generation_length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "inputs": 3,
+        "gpu": 0,
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "initialization_seconds": 15.087274551391602,
+        "elapsed_seconds": 53.03281855583191
+      }
+    },
+    {
+      "method": "m5",
+      "inputs": 3,
+      "valid_native_json": 3,
+      "calls": 12,
+      "callbacks": 12,
+      "calls_by_input": [
+        6,
+        3,
+        3
+      ],
+      "routes": [
+        "full_nli_equal_paths_native_completion",
+        "full_native_key_maj5_absolute_majority_stop",
+        "full_native_key_maj5_absolute_majority_stop"
+      ],
+      "missing_code_calls": 0,
+      "input_tokens": 76444,
+      "output_tokens": 2134,
+      "full_generation_length_stops": 0,
+      "runtime": {
+        "status": "complete",
+        "inputs": 3,
+        "gpu": 1,
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "initialization_seconds": 14.97201919555664,
+        "elapsed_seconds": 61.48481726646423
+      }
+    }
+  ],
+  "new_calls": 24
+}

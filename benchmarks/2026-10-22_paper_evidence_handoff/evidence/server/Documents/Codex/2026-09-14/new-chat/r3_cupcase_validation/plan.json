@@ -1,0 +1,50 @@
+{
+  "status": "prepared_reference_scope_confirmation_before_run",
+  "source_rows": [
+    338,
+    374,
+    424,
+    820,
+    1420,
+    2304
+  ],
+  "cases": 6,
+  "planned_calls": 384,
+  "checks": [
+    {
+      "model": "llama",
+      "head_calls": 144,
+      "sequence_calls": 48,
+      "max_tokens": 3437
+    },
+    {
+      "model": "qwen",
+      "head_calls": 144,
+      "sequence_calls": 48,
+      "max_tokens": 3495
+    }
+  ],
+  "protocol": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/frozen_qualification/evaluation_protocol.json",
+  "qualification": "/home/data3/txy/Documents/Codex/2026-09-14/new-chat/r3_generalization_sources/cupcase/validation_qualification",
+  "scope": "Frozen-method new source records after input/source qualification; one family record is one unit. Natural update, not paired CF accuracy. Small selected subset, no seven-method RAG transfer claim.",
+  "label_access": "Native target identities for these qualified rows read for reference verification/evaluation after selection; kept out of prompts.",
+  "execution_resource_override": {
+    "gpu": 2,
+    "gpu_memory_utilization": 0.95,
+    "previous": 0.9,
+    "reason": "Shared GPU has approximately27GiB free; raise allocator fraction to avoid the observed KV initialization shortage. Model, precision, context limit, tokens, prompts and sampling unchanged."
+  },
+  "qwen_sequence_recovery": {
+    "status": "prepared",
+    "batch_size": [
+      8,
+      1
+    ],
+    "max_num_batched_tokens": [
+      4096,
+      1024
+    ],
+    "failed_completed_calls": 0,
+    "reason": "Prompt-logprob rank tensor required1.95GiB with only1.56GiB free. Preserve all48 requests; no content or model changes."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "seed": 20260916,
+  "N": 384,
+  "selection": "Same fixed 384 inputs and per-GPU assignments as preceding typed-v2 trial; no outcome-based reselection.",
+  "excluded_count": 1735,
+  "overlap_repair": 0,
+  "overlap_optimization": 0,
+  "format_counts": {
+    "single": 188,
+    "diagnosis": 105,
+    "robustness_single": 65,
+    "relation": 20,
+    "multi": 6
+  },
+  "gpus": [
+    1,
+    2,
+    3
+  ],
+  "workers_per_gpu": 64,
+  "LLM_reuse": false,
+  "retrieval_cache": "New empty directory; only within-trial reuse",
+  "method_source": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/m7_validity_audit/control_pilot/candidate_recovery_only.py",
+  "method_version": "iterative-v4-tc-recovery-only-vllm",
+  "stage": "recovery-only 384-input fresh pilot",
+  "comparison_baseline": "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m7_repaired_fresh",
+  "sampling": "Identical messages/stage retain prior trial seed; version and cache path stay distinct in live receipts."
+}

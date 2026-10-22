@@ -1,0 +1,288 @@
+{
+  "status": "complete_posthoc_development_control",
+  "results": [
+    {
+      "method": "M0",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 318,
+      "invalid": 0,
+      "macro_recall": 0.4379795284628863,
+      "comparisons": {
+        "order0": {
+          "repairs": 33,
+          "harms": 14
+        },
+        "uncalibrated_majority": {
+          "repairs": 8,
+          "harms": 4
+        },
+        "calibrated_majority": {
+          "repairs": 25,
+          "harms": 21
+        }
+      }
+    },
+    {
+      "method": "M0",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 318,
+      "invalid": 1,
+      "macro_recall": 0.45757905331674703,
+      "comparisons": {
+        "order0": {
+          "repairs": 36,
+          "harms": 17
+        },
+        "calibrated_majority": {
+          "repairs": 9,
+          "harms": 5
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 326,
+      "invalid": 0,
+      "macro_recall": 0.404979061678682,
+      "comparisons": {
+        "order0": {
+          "repairs": 18,
+          "harms": 12
+        },
+        "uncalibrated_majority": {
+          "repairs": 4,
+          "harms": 3
+        },
+        "calibrated_majority": {
+          "repairs": 16,
+          "harms": 5
+        }
+      }
+    },
+    {
+      "method": "M2",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 317,
+      "invalid": 0,
+      "macro_recall": 0.416881678801427,
+      "comparisons": {
+        "order0": {
+          "repairs": 17,
+          "harms": 20
+        },
+        "calibrated_majority": {
+          "repairs": 6,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "method": "M3",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 200,
+      "invalid": 0,
+      "macro_recall": 0.4121696989254742,
+      "comparisons": {
+        "order0": {
+          "repairs": 33,
+          "harms": 48
+        },
+        "uncalibrated_majority": {
+          "repairs": 1,
+          "harms": 1
+        },
+        "calibrated_majority": {
+          "repairs": 14,
+          "harms": 18
+        }
+      }
+    },
+    {
+      "method": "M3",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 203,
+      "invalid": 0,
+      "macro_recall": 0.3244634036887564,
+      "comparisons": {
+        "order0": {
+          "repairs": 38,
+          "harms": 50
+        },
+        "calibrated_majority": {
+          "repairs": 0,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 358,
+      "invalid": 1,
+      "macro_recall": 0.4404763150428303,
+      "comparisons": {
+        "order0": {
+          "repairs": 47,
+          "harms": 28
+        },
+        "uncalibrated_majority": {
+          "repairs": 6,
+          "harms": 7
+        },
+        "calibrated_majority": {
+          "repairs": 16,
+          "harms": 17
+        }
+      }
+    },
+    {
+      "method": "M4",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 353,
+      "invalid": 8,
+      "macro_recall": 0.45297259334829687,
+      "comparisons": {
+        "order0": {
+          "repairs": 50,
+          "harms": 36
+        },
+        "calibrated_majority": {
+          "repairs": 4,
+          "harms": 10
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 403,
+      "invalid": 0,
+      "macro_recall": 0.44034152169478685,
+      "comparisons": {
+        "order0": {
+          "repairs": 46,
+          "harms": 25
+        },
+        "uncalibrated_majority": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "calibrated_majority": {
+          "repairs": 14,
+          "harms": 21
+        }
+      }
+    },
+    {
+      "method": "M5",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 409,
+      "invalid": 0,
+      "macro_recall": 0.47304524266915365,
+      "comparisons": {
+        "order0": {
+          "repairs": 62,
+          "harms": 35
+        },
+        "calibrated_majority": {
+          "repairs": 0,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 291,
+      "invalid": 0,
+      "macro_recall": 0.4132591329252636,
+      "comparisons": {
+        "order0": {
+          "repairs": 20,
+          "harms": 25
+        },
+        "uncalibrated_majority": {
+          "repairs": 6,
+          "harms": 3
+        },
+        "calibrated_majority": {
+          "repairs": 24,
+          "harms": 9
+        }
+      }
+    },
+    {
+      "method": "M6",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 268,
+      "invalid": 3,
+      "macro_recall": 0.4173145875479396,
+      "comparisons": {
+        "order0": {
+          "repairs": 13,
+          "harms": 41
+        },
+        "calibrated_majority": {
+          "repairs": 3,
+          "harms": 11
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "variant": "uncalibrated_mean",
+      "n": 680,
+      "correct": 325,
+      "invalid": 0,
+      "macro_recall": 0.36013657285786127,
+      "comparisons": {
+        "order0": {
+          "repairs": 31,
+          "harms": 18
+        },
+        "uncalibrated_majority": {
+          "repairs": 1,
+          "harms": 0
+        },
+        "calibrated_majority": {
+          "repairs": 11,
+          "harms": 4
+        }
+      }
+    },
+    {
+      "method": "M7",
+      "variant": "calibrated_mean",
+      "n": 680,
+      "correct": 318,
+      "invalid": 0,
+      "macro_recall": 0.3582815769451404,
+      "comparisons": {
+        "order0": {
+          "repairs": 27,
+          "harms": 21
+        },
+        "calibrated_majority": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    }
+  ],
+  "new_model_calls": 0,
+  "reused_patient_distributions": 28560,
+  "scope": "All680 exposed cases per method. Arithmetic means already computed from original six-order scores; this analysis follows the all-method results. Frozen primary unchanged."
+}

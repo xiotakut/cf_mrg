@@ -1,0 +1,496 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "M4",
+      "scope": "all201",
+      "n": 201,
+      "correct": {
+        "original": 100,
+        "old_target": 123,
+        "redo": 102,
+        "target_scope": 118
+      },
+      "target_vs_redo": {
+        "n": 201,
+        "review_clusters": 91,
+        "difference": 0.07960199004975124,
+        "cluster_bootstrap_95ci": [
+          0.010256410256410256,
+          0.14932386747802565
+        ],
+        "cluster_signflip_two_sided_p": 0.0430956904309569,
+        "repairs": 34,
+        "harms": 18
+      },
+      "target_vs_original": {
+        "n": 201,
+        "review_clusters": 91,
+        "difference": 0.08955223880597014,
+        "cluster_bootstrap_95ci": [
+          0.01680672268907563,
+          0.16582975854884177
+        ],
+        "cluster_signflip_two_sided_p": 0.025397460253974602,
+        "repairs": 34,
+        "harms": 16
+      },
+      "redo_vs_original": {
+        "n": 201,
+        "review_clusters": 91,
+        "difference": 0.009950248756218905,
+        "cluster_bootstrap_95ci": [
+          -0.06177805198423755,
+          0.08737996710700831
+        ],
+        "cluster_signflip_two_sided_p": 0.8959104089591041,
+        "repairs": 27,
+        "harms": 25
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "old_pilot64",
+      "n": 64,
+      "correct": {
+        "original": 33,
+        "old_target": 39,
+        "redo": 30,
+        "target_scope": 36
+      },
+      "target_vs_redo": {
+        "n": 64,
+        "review_clusters": 48,
+        "difference": 0.09375,
+        "cluster_bootstrap_95ci": [
+          -0.05084745762711865,
+          0.25396825396825395
+        ],
+        "cluster_signflip_two_sided_p": 0.33806619338066196,
+        "repairs": 13,
+        "harms": 7
+      },
+      "target_vs_original": {
+        "n": 64,
+        "review_clusters": 48,
+        "difference": 0.046875,
+        "cluster_bootstrap_95ci": [
+          -0.08333333333333333,
+          0.1791044776119403
+        ],
+        "cluster_signflip_two_sided_p": 0.646935306469353,
+        "repairs": 10,
+        "harms": 7
+      },
+      "redo_vs_original": {
+        "n": 64,
+        "review_clusters": 48,
+        "difference": -0.046875,
+        "cluster_bootstrap_95ci": [
+          -0.17647058823529413,
+          0.09090909090909091
+        ],
+        "cluster_signflip_two_sided_p": 0.6479352064793521,
+        "repairs": 7,
+        "harms": 10
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "old_extension137",
+      "n": 137,
+      "correct": {
+        "original": 67,
+        "old_target": 84,
+        "redo": 72,
+        "target_scope": 82
+      },
+      "target_vs_redo": {
+        "n": 137,
+        "review_clusters": 70,
+        "difference": 0.072992700729927,
+        "cluster_bootstrap_95ci": [
+          -0.007518796992481203,
+          0.15556010928961742
+        ],
+        "cluster_signflip_two_sided_p": 0.12938706129387062,
+        "repairs": 21,
+        "harms": 11
+      },
+      "target_vs_original": {
+        "n": 137,
+        "review_clusters": 70,
+        "difference": 0.10948905109489052,
+        "cluster_bootstrap_95ci": [
+          0.027206287920573637,
+          0.19548872180451127
+        ],
+        "cluster_signflip_two_sided_p": 0.0207979202079792,
+        "repairs": 24,
+        "harms": 9
+      },
+      "redo_vs_original": {
+        "n": 137,
+        "review_clusters": 70,
+        "difference": 0.0364963503649635,
+        "cluster_bootstrap_95ci": [
+          -0.05511811023622047,
+          0.12676319108681938
+        ],
+        "cluster_signflip_two_sided_p": 0.5284471552844715,
+        "repairs": 20,
+        "harms": 15
+      }
+    },
+    {
+      "method": "M4",
+      "scope": "selected_r5",
+      "n": 118,
+      "correct": {
+        "original": 61,
+        "old_target": 73,
+        "redo": 57,
+        "target_scope": 69
+      },
+      "target_vs_redo": {
+        "n": 118,
+        "review_clusters": 68,
+        "difference": 0.1016949152542373,
+        "cluster_bootstrap_95ci": [
+          0.009433962264150943,
+          0.18548387096774194
+        ],
+        "cluster_signflip_two_sided_p": 0.048795120487951205,
+        "repairs": 23,
+        "harms": 11
+      },
+      "target_vs_original": {
+        "n": 118,
+        "review_clusters": 68,
+        "difference": 0.06779661016949153,
+        "cluster_bootstrap_95ci": [
+          -0.030303030303030304,
+          0.16911764705882354
+        ],
+        "cluster_signflip_two_sided_p": 0.24267573242675733,
+        "repairs": 20,
+        "harms": 12
+      },
+      "redo_vs_original": {
+        "n": 118,
+        "review_clusters": 68,
+        "difference": -0.03389830508474576,
+        "cluster_bootstrap_95ci": [
+          -0.13475599459642013,
+          0.07377049180327869
+        ],
+        "cluster_signflip_two_sided_p": 0.6333366663333667,
+        "repairs": 15,
+        "harms": 19
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "all201",
+      "n": 201,
+      "correct": {
+        "original": 112,
+        "old_target": 132,
+        "redo": 120,
+        "target_scope": 122
+      },
+      "target_vs_redo": {
+        "n": 201,
+        "review_clusters": 91,
+        "difference": 0.009950248756218905,
+        "cluster_bootstrap_95ci": [
+          -0.051888323940210736,
+          0.07373669156205302
+        ],
+        "cluster_signflip_two_sided_p": 0.8867113288671132,
+        "repairs": 18,
+        "harms": 16
+      },
+      "target_vs_original": {
+        "n": 201,
+        "review_clusters": 91,
+        "difference": 0.04975124378109453,
+        "cluster_bootstrap_95ci": [
+          -0.018518518518518517,
+          0.1256544502617801
+        ],
+        "cluster_signflip_two_sided_p": 0.23477652234776522,
+        "repairs": 28,
+        "harms": 18
+      },
+      "redo_vs_original": {
+        "n": 201,
+        "review_clusters": 91,
+        "difference": 0.03980099502487562,
+        "cluster_bootstrap_95ci": [
+          -0.02487873134328358,
+          0.10697674418604651
+        ],
+        "cluster_signflip_two_sided_p": 0.30356964303569645,
+        "repairs": 27,
+        "harms": 19
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "old_pilot64",
+      "n": 64,
+      "correct": {
+        "original": 33,
+        "old_target": 40,
+        "redo": 33,
+        "target_scope": 36
+      },
+      "target_vs_redo": {
+        "n": 64,
+        "review_clusters": 48,
+        "difference": 0.046875,
+        "cluster_bootstrap_95ci": [
+          -0.08450704225352113,
+          0.18310446009389664
+        ],
+        "cluster_signflip_two_sided_p": 0.6571342865713429,
+        "repairs": 9,
+        "harms": 6
+      },
+      "target_vs_original": {
+        "n": 64,
+        "review_clusters": 48,
+        "difference": 0.046875,
+        "cluster_bootstrap_95ci": [
+          -0.08108108108108109,
+          0.18333333333333332
+        ],
+        "cluster_signflip_two_sided_p": 0.6531346865313469,
+        "repairs": 10,
+        "harms": 7
+      },
+      "redo_vs_original": {
+        "n": 64,
+        "review_clusters": 48,
+        "difference": 0.0,
+        "cluster_bootstrap_95ci": [
+          -0.10344827586206896,
+          0.1044776119402985
+        ],
+        "cluster_signflip_two_sided_p": 1.0,
+        "repairs": 6,
+        "harms": 6
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "old_extension137",
+      "n": 137,
+      "correct": {
+        "original": 79,
+        "old_target": 92,
+        "redo": 87,
+        "target_scope": 86
+      },
+      "target_vs_redo": {
+        "n": 137,
+        "review_clusters": 70,
+        "difference": -0.0072992700729927005,
+        "cluster_bootstrap_95ci": [
+          -0.06757010770168664,
+          0.05511811023622047
+        ],
+        "cluster_signflip_two_sided_p": 1.0,
+        "repairs": 9,
+        "harms": 10
+      },
+      "target_vs_original": {
+        "n": 137,
+        "review_clusters": 70,
+        "difference": 0.051094890510948905,
+        "cluster_bootstrap_95ci": [
+          -0.019357980728948468,
+          0.12698748991121867
+        ],
+        "cluster_signflip_two_sided_p": 0.2293770622937706,
+        "repairs": 18,
+        "harms": 11
+      },
+      "redo_vs_original": {
+        "n": 137,
+        "review_clusters": 70,
+        "difference": 0.058394160583941604,
+        "cluster_bootstrap_95ci": [
+          -0.02158664372849546,
+          0.13970588235294118
+        ],
+        "cluster_signflip_two_sided_p": 0.21897810218978103,
+        "repairs": 21,
+        "harms": 13
+      }
+    },
+    {
+      "method": "M5",
+      "scope": "selected_r5",
+      "n": 118,
+      "correct": {
+        "original": 63,
+        "old_target": 79,
+        "redo": 67,
+        "target_scope": 70
+      },
+      "target_vs_redo": {
+        "n": 118,
+        "review_clusters": 68,
+        "difference": 0.025423728813559324,
+        "cluster_bootstrap_95ci": [
+          -0.05517241379310345,
+          0.11290322580645161
+        ],
+        "cluster_signflip_two_sided_p": 0.6946305369463054,
+        "repairs": 11,
+        "harms": 8
+      },
+      "target_vs_original": {
+        "n": 118,
+        "review_clusters": 68,
+        "difference": 0.059322033898305086,
+        "cluster_bootstrap_95ci": [
+          -0.042735042735042736,
+          0.17073170731707318
+        ],
+        "cluster_signflip_two_sided_p": 0.3541645835416458,
+        "repairs": 20,
+        "harms": 13
+      },
+      "redo_vs_original": {
+        "n": 118,
+        "review_clusters": 68,
+        "difference": 0.03389830508474576,
+        "cluster_bootstrap_95ci": [
+          -0.058823529411764705,
+          0.12712249614791982
+        ],
+        "cluster_signflip_two_sided_p": 0.5987401259874012,
+        "repairs": 18,
+        "harms": 14
+      }
+    }
+  ],
+  "new_completed_calls": 804,
+  "input_tokens": 9556230,
+  "output_tokens": 184731,
+  "length_stops": 1,
+  "invalid": 1,
+  "recorded_worker_seconds": 5332.269636154175,
+  "failed_attempts": [
+    {
+      "stage": "initial_preload_gpu0_resource_guard",
+      "evidence": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/failures/initial_gpu0_below_margin",
+      "completed_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "model_initializations": 0,
+      "worker_elapsed_seconds": 0,
+      "coordinator_elapsed_seconds": null,
+      "explanation": "GPU0 free memory fell below the assigned 40 GiB margin before any model worker started; guard elapsed wall time was not logged."
+    },
+    {
+      "stage": "post_m4_stale_gpu3_guard",
+      "evidence": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/failures/post_m4_stale_gpu3_guard",
+      "completed_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "model_initializations": 0,
+      "worker_elapsed_seconds": 0,
+      "coordinator_elapsed_seconds": null,
+      "explanation": "Both models had completed all804 calls. The old serial coordinator checked GPU3 free36800MiB before adopting the already-complete M5 GPU1 supervisor, then exited. This was a stale scheduling check, not a model failure. Offline analysis recovered without new inference."
+    }
+  ],
+  "cost_scope": "Completed-request full prompt tokens; prefix-cache compute savings are not subtracted. Worker seconds include initialization and shared GPU contention, not exclusive GPU or whole-task wall time. Both scheduling guard failures had zero additional model work; their unlogged check durations remain unknown.",
+  "scope": "Exposed development attribution only. Review-cluster intervals do not establish independent generalization.",
+  "same_prompt_repeatability": "old_target is a descriptive comparison to the prior run; primary attribution uses only the two contemporaneously generated arms.",
+  "costs": [
+    {
+      "method": "M4",
+      "completed_calls": 402,
+      "input_tokens": 4633861,
+      "output_tokens": 97898,
+      "worker_elapsed_seconds": 3904.988681077957,
+      "initialization_seconds": 49.08485770225525,
+      "gpu": 3
+    },
+    {
+      "method": "M5",
+      "completed_calls": 402,
+      "input_tokens": 4922369,
+      "output_tokens": 86833,
+      "worker_elapsed_seconds": 1427.2809550762177,
+      "initialization_seconds": 53.375622510910034,
+      "gpu": 1
+    }
+  ],
+  "old_target_repeatability": [
+    {
+      "method": "M4",
+      "n": 201,
+      "exact_prior_prompt_matches": 201,
+      "old_correct": 123,
+      "new_correct": 118,
+      "repairs": 7,
+      "harms": 12,
+      "native_prediction_changes": 35,
+      "raw_response_changes": 128
+    },
+    {
+      "method": "M5",
+      "n": 201,
+      "exact_prior_prompt_matches": 201,
+      "old_correct": 132,
+      "new_correct": 122,
+      "repairs": 7,
+      "harms": 17,
+      "native_prediction_changes": 31,
+      "raw_response_changes": 147
+    }
+  ],
+  "old_target_repeatability_interpretation": "The new run reuses old.run_model: both LLM and each SamplingParams receive the same configured seed, and each request keeps temperature/top_p/top_k/max_tokens. Configs are copied directly; all target prompts and token lengths matched the prior inputs exactly. No missing seed or prompt drift was found. Paired batch order differs, but the specific cause of any prediction changes is unestablished; seed42 is not a guarantee of identical outputs. No extra repeatability runs or selection were performed.",
+  "offline_analysis": {
+    "status": "complete",
+    "exit_code": 0,
+    "command": "/home/data3/txy/MedRGAG/.venv/bin/python -u experiment.py analyze",
+    "log": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/analysis_recovery.log",
+    "new_model_calls": 0,
+    "finished_at": "2026-09-16 18:28:32 +0800"
+  },
+  "invalid_audit": {
+    "item_id": "s003566",
+    "method": "M4",
+    "invalid_arm": "redo",
+    "finish_reason": "length",
+    "completion_tokens": 2048,
+    "invalid_reason": "malformed_json",
+    "observation": "The explanation repeats study/document claims until the output limit, ending inside the explanation string before answer_choice appears. No final answer can be recovered from this output.",
+    "gold": "no difference",
+    "target_scope": {
+      "answer": "lower",
+      "correct": false,
+      "invalid": false,
+      "finish_reason": "stop",
+      "completion_tokens": 552
+    },
+    "original": {
+      "answer": "uncertainty",
+      "correct": false
+    },
+    "effect_on_primary_comparison": "Both new arms are wrong on this item. It contributes neither a repair nor a harm to target versus redo, so the one invalid/length-stop does not inflate the observed net+16. Native scores and all201 denominator remain unchanged.",
+    "evidence": {
+      "raw": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/m4/paired_raw.jsonl",
+      "scored": "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_validation/relations_control/m4/paired_scored.jsonl"
+    },
+    "new_model_calls": 0,
+    "rewritten_outputs": 0
+  },
+  "statistical_interpretation": "Paired descriptive results for this exposed cohort under one decoding seed. The primary all201 bootstrap/sign-flip statistics cluster by91 original_review IDs; those IDs need not identify independent underlying studies. Intervals/p-values are not adjusted for multiple comparisons. M4 shows an incremental signal; M5 does not establish an incremental gain. These results do not prove stable cross-backbone benefit."
+}

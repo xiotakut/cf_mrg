@@ -1,0 +1,34 @@
+{
+  "status": "prepared",
+  "seed": 20260916,
+  "scope": "788 exposed v5 relation tasks; 201 source groups",
+  "arms": [
+    "redo",
+    "evidence_scope",
+    "target_scope"
+  ],
+  "pilot": 64,
+  "pilot_source_groups": 64,
+  "checks": [
+    {
+      "method": "M4",
+      "baseline_parity": 788,
+      "max_prompt_tokens": 67734,
+      "baseline_correct": 402,
+      "original_truncated": 0,
+      "pilot_calls": 192
+    },
+    {
+      "method": "M5",
+      "baseline_parity": 788,
+      "max_prompt_tokens": 74707,
+      "baseline_correct": 443,
+      "original_truncated": 0,
+      "pilot_calls": 192
+    }
+  ],
+  "interpretation": "Pilot is gold-stratified; all v5 is development. Remaining items include variants from pilot/audit groups and are not independent validation.",
+  "hypotheses": "Retrieved/supplied evidence role confusion; target/outcome/group orientation confusion. Same complete original context, original answer and native decoding in all arms.",
+  "inputs": "No gold, paired reference, replacement metadata or source labels in generated requests.",
+  "errors": "All invalid/length-stop outputs count as errors under frozen native scoring; no silent fallback or label removal."
+}

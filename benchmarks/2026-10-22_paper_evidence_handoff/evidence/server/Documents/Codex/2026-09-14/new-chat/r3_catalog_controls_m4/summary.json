@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "variant": "name_only",
+      "n": 40,
+      "correct": 11,
+      "baseline_correct": 12,
+      "repairs": 3,
+      "harms": 4,
+      "fallbacks": 2
+    },
+    {
+      "variant": "direct_catalog",
+      "n": 40,
+      "correct": 15,
+      "baseline_correct": 12,
+      "repairs": 4,
+      "harms": 1,
+      "fallbacks": 0
+    }
+  ],
+  "costs": {
+    "calls": 80,
+    "input_tokens": 118122,
+    "output_tokens": 1130,
+    "length_stops": 0
+  },
+  "selection_vs_normalization": {
+    "repairs": 3,
+    "harms": 3
+  },
+  "runtime": {
+    "status": "complete",
+    "gpu": 1,
+    "pid": 2908516,
+    "started_at": 1789418074.5764613,
+    "total": 80,
+    "initialization_seconds": 73.8583607673645,
+    "completed": 80,
+    "elapsed_seconds": 113.06230521202087,
+    "last_batch_seconds": 3.889366626739502,
+    "completed_at": 1789418187.6389804
+  }
+}

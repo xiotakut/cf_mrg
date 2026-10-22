@@ -1,0 +1,170 @@
+{
+  "results": [
+    {
+      "method": "M4",
+      "arm": "old_scope",
+      "units": 8,
+      "mappings": 48,
+      "correct": 33,
+      "invalid": 0,
+      "variant_pct": 67.5,
+      "reference_pct": 75.0,
+      "both_pct": 65.0,
+      "invariant_pct": 77.5
+    },
+    {
+      "method": "M4",
+      "arm": "all_documents",
+      "units": 8,
+      "mappings": 48,
+      "correct": 36,
+      "invalid": 0,
+      "variant_pct": 72.5,
+      "reference_pct": 87.5,
+      "both_pct": 67.5,
+      "invariant_pct": 72.5
+    },
+    {
+      "method": "M5",
+      "arm": "old_scope",
+      "units": 8,
+      "mappings": 48,
+      "correct": 27,
+      "invalid": 11,
+      "variant_pct": 55.00000000000001,
+      "reference_pct": 62.5,
+      "both_pct": 52.5,
+      "invariant_pct": 62.5
+    },
+    {
+      "method": "M5",
+      "arm": "all_documents",
+      "units": 8,
+      "mappings": 48,
+      "correct": 29,
+      "invalid": 9,
+      "variant_pct": 60.0,
+      "reference_pct": 62.5,
+      "both_pct": 55.00000000000001,
+      "invariant_pct": 60.0
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "M4",
+      "control": "old_scope",
+      "treatment": "all_documents",
+      "role": "all",
+      "n": 48,
+      "repairs": 4,
+      "harms": 1,
+      "invalid_repairs": 0
+    },
+    {
+      "method": "M4",
+      "control": "old_scope",
+      "treatment": "all_documents",
+      "role": "reference",
+      "n": 8,
+      "repairs": 1,
+      "harms": 0,
+      "invalid_repairs": 0
+    },
+    {
+      "method": "M4",
+      "control": "old_scope",
+      "treatment": "all_documents",
+      "role": "variant",
+      "n": 40,
+      "repairs": 3,
+      "harms": 1,
+      "invalid_repairs": 0
+    },
+    {
+      "method": "M5",
+      "control": "old_scope",
+      "treatment": "all_documents",
+      "role": "all",
+      "n": 48,
+      "repairs": 3,
+      "harms": 1,
+      "invalid_repairs": 2
+    },
+    {
+      "method": "M5",
+      "control": "old_scope",
+      "treatment": "all_documents",
+      "role": "reference",
+      "n": 8,
+      "repairs": 0,
+      "harms": 0,
+      "invalid_repairs": 0
+    },
+    {
+      "method": "M5",
+      "control": "old_scope",
+      "treatment": "all_documents",
+      "role": "variant",
+      "n": 40,
+      "repairs": 3,
+      "harms": 1,
+      "invalid_repairs": 2
+    }
+  ],
+  "costs": [
+    {
+      "method": "M4",
+      "new_calls": 96,
+      "input_tokens": 561730,
+      "output_tokens": 35582,
+      "length_stops": 0,
+      "worker_seconds": 214.77341532707214,
+      "initialization_seconds": 15.613465070724487
+    },
+    {
+      "method": "M5",
+      "new_calls": 96,
+      "input_tokens": 538602,
+      "output_tokens": 38809,
+      "length_stops": 0,
+      "worker_seconds": 540.6950263977051,
+      "initialization_seconds": 16.705955743789673
+    }
+  ],
+  "arm_costs": [
+    {
+      "method": "M4",
+      "arm": "old_scope",
+      "new_calls": 48,
+      "input_tokens": 280481,
+      "output_tokens": 16536,
+      "length_stops": 0
+    },
+    {
+      "method": "M4",
+      "arm": "all_documents",
+      "new_calls": 48,
+      "input_tokens": 281249,
+      "output_tokens": 19046,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "arm": "old_scope",
+      "new_calls": 48,
+      "input_tokens": 268917,
+      "output_tokens": 19840,
+      "length_stops": 0
+    },
+    {
+      "method": "M5",
+      "arm": "all_documents",
+      "new_calls": 48,
+      "input_tokens": 269685,
+      "output_tokens": 18969,
+      "length_stops": 0
+    }
+  ],
+  "completed_new_calls": 192,
+  "scope": "Exposed M22 pilot, not independent validation."
+}

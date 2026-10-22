@@ -1,0 +1,181 @@
+{
+  "method": "M5",
+  "results": [
+    {
+      "variant": "calibrated",
+      "n": 40,
+      "correct": 24,
+      "macro_recall": 0.4744897959183673,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "uncued4": {
+          "repairs": 4,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 7,
+          "harms": 1
+        }
+      }
+    },
+    {
+      "variant": "uncued4",
+      "n": 40,
+      "correct": 20,
+      "macro_recall": 0.3647959183673469,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 4
+        },
+        "uncued4": {
+          "repairs": 0,
+          "harms": 0
+        },
+        "model": {
+          "repairs": 4,
+          "harms": 2
+        }
+      }
+    },
+    {
+      "variant": "statistical",
+      "n": 40,
+      "correct": 15,
+      "macro_recall": 0.37755102040816324,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 4,
+          "harms": 13
+        },
+        "uncued4": {
+          "repairs": 7,
+          "harms": 12
+        },
+        "model": {
+          "repairs": 6,
+          "harms": 9
+        }
+      }
+    },
+    {
+      "variant": "model",
+      "n": 40,
+      "correct": 18,
+      "macro_recall": 0.3494897959183674,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 1,
+          "harms": 7
+        },
+        "uncued4": {
+          "repairs": 2,
+          "harms": 4
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 0
+        }
+      }
+    },
+    {
+      "variant": "model_before_quote_fix",
+      "n": 40,
+      "correct": 17,
+      "macro_recall": 0.3137755102040817,
+      "comparisons": {
+        "calibrated": {
+          "repairs": 0,
+          "harms": 7
+        },
+        "uncued4": {
+          "repairs": 1,
+          "harms": 4
+        },
+        "model": {
+          "repairs": 0,
+          "harms": 1
+        }
+      }
+    }
+  ],
+  "cost": {
+    "new_calls": 1596,
+    "fact_calls": 1280,
+    "scope_probe_calls": 12,
+    "final_calls": 304,
+    "input_tokens": 2778616,
+    "output_tokens": 33453,
+    "invalid_cases": 0,
+    "length_stops": 0,
+    "quote_repair_calls": 144
+  },
+  "diagnostics": {
+    "values": {
+      "no": 584,
+      "unknown": 525,
+      "yes": 171
+    },
+    "rejected_quotes": 209,
+    "known_per_case": [
+      18,
+      24,
+      19,
+      11,
+      17,
+      25,
+      19,
+      15,
+      21,
+      18,
+      17,
+      13,
+      16,
+      21,
+      15,
+      19,
+      13,
+      11,
+      19,
+      25,
+      27,
+      15,
+      25,
+      15,
+      22,
+      23,
+      11,
+      19,
+      14,
+      21,
+      19,
+      22,
+      18,
+      16,
+      25,
+      23,
+      23,
+      16,
+      25,
+      20
+    ],
+    "all_unknown_cases": 0,
+    "scope_probes_correct": 3,
+    "scope_probes_n": 12
+  },
+  "runtime": {
+    "status": "complete",
+    "pid": 3699811,
+    "method": "M5",
+    "gpu": 3,
+    "finished": [
+      "facts",
+      "final"
+    ],
+    "stage": "final",
+    "elapsed_seconds": 472.8413586616516
+  }
+}
