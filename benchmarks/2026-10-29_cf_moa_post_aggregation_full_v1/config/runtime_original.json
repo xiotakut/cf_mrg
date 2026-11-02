@@ -1,0 +1,37 @@
+{
+  "version": "cf_moa_post_selective_full_v1",
+  "methods": {
+    "M4": {
+      "gpu": 0,
+      "context": 65536,
+      "gpu_memory_utilization": 0.75,
+      "physical_free_memory_guard_mib": 36864
+    },
+    "M5": {
+      "gpu": 3,
+      "context": 65536,
+      "gpu_memory_utilization": 0.45
+    }
+  },
+  "max_new_artifact_GiB": 100,
+  "min_free_disk_GiB": 100,
+  "planned_tasks": 83430,
+  "pilot_reused": 144,
+  "capacity_failures": 358,
+  "new_model_calls_planned": 82928,
+  "seed": 42,
+  "temperature": 0,
+  "max_tokens": {
+    "gen": 2048,
+    "select": 256,
+    "rule_prompt": 256
+  },
+  "max_num_seqs": 1,
+  "blocks": 4096,
+  "capacity_plan_sha256": "6ac583f8af58ed828b5330b9d62d590327694299998bb89eb0154ddc6d5b6e92",
+  "independent": false,
+  "new_expert_calls": 0,
+  "temporary_directory": "/home/data4/txy/cfpost-full-tmp",
+  "attempt": "2",
+  "recovery_note": "M4 global vLLM memory quota 0.75 on GPU0; fixed weights, 4096 KV blocks and logical requests unchanged. Existing M5 retains its 0.45 profile and process."
+}

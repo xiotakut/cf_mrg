@@ -1,0 +1,30 @@
+{
+  "scope": "Frozen five-role candidate pool; M4/Llama and M5/Qwen; no new expert inference",
+  "aggregation_modes": [
+    "gen",
+    "select",
+    "rule_prompt"
+  ],
+  "strict": "Shares RulePrompt model response, then applies legacy priority and copies complete native candidate",
+  "seed": 42,
+  "temperature": 0,
+  "context": 65536,
+  "kv_blocks": 4096,
+  "max_num_seqs": 1,
+  "max_tokens": {
+    "gen": 2048,
+    "select": 256,
+    "rule_prompt": 256
+  },
+  "parallel_gpu_memory_utilization": 0.95,
+  "note": "runtime_original.json records the initial/recovered serial profile. Parallel handover changed only the GPU allocation quota; full audit verified logical prompts and sampling.",
+  "capacity_failure_policy": "No truncation or model submission; retain failed tasks in denominators",
+  "A1_A2": "Shared complete rule response; A2 is canonical slot",
+  "unsupported_role": "Explicit C0 fallback with tool_applicable=false; not fresh role inference",
+  "clinical_A4_tool_activations": 0,
+  "new_physical_requests": 82928,
+  "pilot_reused_requests": 144,
+  "capacity_unavailable_tasks": 358,
+  "new_expert_calls": 0,
+  "independent": false
+}

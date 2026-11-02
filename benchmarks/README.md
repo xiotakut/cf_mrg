@@ -1,3 +1,5 @@
+**2026-11-02 · [CF-MoA后置四臂全量结果（10月29日完成）](2026-10-29_cf_moa_post_aggregation_full_v1/README.md)已归档：Llama/Qwen各13,905输入，Strict ALL为58.29%/59.36%，27,810份完整响应等价旧B；RulePrompt为57.64%/58.60%。完整分层、配对、费用和可离线核验评分齐全；冻结专家、已暴露v5，非独立确认。**
+
 **2026-09-28 · 完整v5透明收尾已完成：[完整结果与区间](2026-09-28_cf_moa_transparent_closeout/full_results.md) · [五张表](2026-09-28_cf_moa_transparent_closeout/five_tables.md) · [费用/范围/交付索引](2026-09-28_cf_moa_transparent_closeout/README.md)。零新增推理，六臂/11来源/5格式全保留；默认B保持，C3研究扩展。统计与费用已实际收尾，冻结后确认及独立F复本未执行/延后，未按输赢筛选。**
 
 **2026-09-26 · RCV完整v5回归已完成：[完整报告第16章](2026-09-26_cf_moa_rcv_full_v5/docs/research/cf_moa_experiment_report.md#rcv-full-v5-results-20260926) · [运行结果、源码/配置/逐题trace与成本索引](2026-09-26_cf_moa_rcv_full_v5/RUN_AND_DELIVERY.md)。M4/M5各13,905输入、六臂原生评分齐全；主C3相对B原生ALL为−1.8108/+0.9273个百分点，旧默认B保持。全量新增162,979物理调用；冻结后确认、全量区间及最终方法费用仍待完成，不能称整个研究计划完成。**

@@ -1,3 +1,5 @@
+**2026-11-02 · [CF-MoA后置四臂全量结果（10月29日完成）](benchmarks/2026-10-29_cf_moa_post_aggregation_full_v1/README.md)已归档：Llama/Qwen各13,905输入，Strict ALL为58.29%/59.36%，27,810份完整响应等价旧B；RulePrompt为57.64%/58.60%。完整分层、配对、费用和可离线核验评分齐全；冻结专家、已暴露v5，非独立确认。**
+
 **2026-10-23 · [论文写作与证据交接入口](benchmarks/2026-10-22_paper_evidence_handoff/README.md)：约16.9MB未压缩文本，覆盖14张表、529条运行登记及失败/限制说明。其他agent可从README按表阅读；完整大原文保留本地，未新增模型调用或评分。当前仓库为public；下方private描述保留其历史时点。**
 
 **2026-10-03 · 论文表达修订完成：[19页PDF](papers/2026-10-02_cf_moa/manuscript.pdf) · [LaTeX](papers/2026-10-02_cf_moa/latex/main.tex) · [Overleaf ZIP](papers/2026-10-02_cf_moa/cf_moa_latex.zip)。使用作者指定的Kiterlin anti-defensive-writing，精简全文重复辩解，突出贡献与结果；原图表、数据和29引用保持，独立审阅与重编译通过。下方20页为前轮版本。**

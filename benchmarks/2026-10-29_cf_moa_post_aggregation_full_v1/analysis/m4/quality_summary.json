@@ -1,0 +1,698 @@
+{
+  "status": "complete",
+  "method": "M4",
+  "reports": [
+    {
+      "method": "M4",
+      "arm": "original_C0",
+      "planned_inputs": 13905,
+      "planned_native_mappings": 15616,
+      "scored_native_mappings": 15616,
+      "pending_native_mappings": 0,
+      "awaiting_native_scores": 0,
+      "input_status_counts": {
+        "scored": 13905
+      },
+      "correct_inputs": 7441,
+      "incorrect_answer_inputs": 6464,
+      "unavailable_inputs": 0,
+      "native_categories": [
+        {
+          "category": "ALL",
+          "units": 6104,
+          "completed_units": 6104,
+          "mean_native_unit_score": 0.48198995194408173,
+          "completed_unit_mean_descriptive": 0.48198995194408173,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R1",
+          "units": 2866,
+          "completed_units": 2866,
+          "mean_native_unit_score": 0.2784368457780879,
+          "completed_unit_mean_descriptive": 0.2784368457780879,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R2",
+          "units": 79,
+          "completed_units": 79,
+          "mean_native_unit_score": 0.2911392405063291,
+          "completed_unit_mean_descriptive": 0.2911392405063291,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R3",
+          "units": 733,
+          "completed_units": 733,
+          "mean_native_unit_score": 0.3042291950886767,
+          "completed_unit_mean_descriptive": 0.3042291950886767,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R4",
+          "units": 13,
+          "completed_units": 13,
+          "mean_native_unit_score": 0.5384615384615384,
+          "completed_unit_mean_descriptive": 0.5384615384615384,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R5",
+          "units": 3600,
+          "completed_units": 3600,
+          "mean_native_unit_score": 0.6527962962962972,
+          "completed_unit_mean_descriptive": 0.6527962962962972,
+          "full_primary_score_available": true
+        }
+      ],
+      "pairs": [
+        {
+          "relation": "maintain",
+          "pairs": 6838,
+          "completed_pairs": 6838,
+          "both_correct": 4005,
+          "full_both_correct_rate": 0.5856975723895876
+        },
+        {
+          "relation": "respond",
+          "pairs": 1780,
+          "completed_pairs": 1780,
+          "both_correct": 13,
+          "full_both_correct_rate": 0.007303370786516854
+        }
+      ],
+      "auxiliary": {
+        "planned_mappings": 2700,
+        "scored_mappings": 2700,
+        "valid": 2554,
+        "exact": 40,
+        "full_exact_rate": 0.014814814814814815
+      },
+      "status": "complete",
+      "accuracy_full_denominator": 0.535131247752607
+    },
+    {
+      "method": "M4",
+      "arm": "strong_B",
+      "planned_inputs": 13905,
+      "planned_native_mappings": 15616,
+      "scored_native_mappings": 15616,
+      "pending_native_mappings": 0,
+      "awaiting_native_scores": 0,
+      "input_status_counts": {
+        "scored": 13905
+      },
+      "correct_inputs": 8924,
+      "incorrect_answer_inputs": 4930,
+      "unavailable_inputs": 51,
+      "native_categories": [
+        {
+          "category": "ALL",
+          "units": 6104,
+          "completed_units": 6104,
+          "mean_native_unit_score": 0.5829237658366088,
+          "completed_unit_mean_descriptive": 0.5829237658366088,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R1",
+          "units": 2866,
+          "completed_units": 2866,
+          "mean_native_unit_score": 0.4462665736217725,
+          "completed_unit_mean_descriptive": 0.4462665736217725,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R2",
+          "units": 79,
+          "completed_units": 79,
+          "mean_native_unit_score": 0.4810126582278481,
+          "completed_unit_mean_descriptive": 0.4810126582278481,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R3",
+          "units": 733,
+          "completed_units": 733,
+          "mean_native_unit_score": 0.5320600272851296,
+          "completed_unit_mean_descriptive": 0.5320600272851296,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R4",
+          "units": 13,
+          "completed_units": 13,
+          "mean_native_unit_score": 0.5384615384615384,
+          "completed_unit_mean_descriptive": 0.5384615384615384,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R5",
+          "units": 3600,
+          "completed_units": 3600,
+          "mean_native_unit_score": 0.6883796296296298,
+          "completed_unit_mean_descriptive": 0.6883796296296298,
+          "full_primary_score_available": true
+        }
+      ],
+      "pairs": [
+        {
+          "relation": "maintain",
+          "pairs": 6838,
+          "completed_pairs": 6838,
+          "both_correct": 4440,
+          "full_both_correct_rate": 0.64931266452179
+        },
+        {
+          "relation": "respond",
+          "pairs": 1780,
+          "completed_pairs": 1780,
+          "both_correct": 347,
+          "full_both_correct_rate": 0.1949438202247191
+        }
+      ],
+      "auxiliary": {
+        "planned_mappings": 2700,
+        "scored_mappings": 2700,
+        "valid": 2585,
+        "exact": 55,
+        "full_exact_rate": 0.020370370370370372
+      },
+      "status": "complete",
+      "accuracy_full_denominator": 0.6417835311039195
+    },
+    {
+      "method": "M4",
+      "arm": "gen",
+      "planned_inputs": 13905,
+      "planned_native_mappings": 15616,
+      "scored_native_mappings": 15616,
+      "pending_native_mappings": 0,
+      "awaiting_native_scores": 0,
+      "input_status_counts": {
+        "scored": 13905
+      },
+      "correct_inputs": 7541,
+      "incorrect_answer_inputs": 6166,
+      "unavailable_inputs": 198,
+      "native_categories": [
+        {
+          "category": "ALL",
+          "units": 6104,
+          "completed_units": 6104,
+          "mean_native_unit_score": 0.4947684578418535,
+          "completed_unit_mean_descriptive": 0.4947684578418535,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R1",
+          "units": 2866,
+          "completed_units": 2866,
+          "mean_native_unit_score": 0.2955338450802512,
+          "completed_unit_mean_descriptive": 0.2955338450802512,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R2",
+          "units": 79,
+          "completed_units": 79,
+          "mean_native_unit_score": 0.2911392405063291,
+          "completed_unit_mean_descriptive": 0.2911392405063291,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R3",
+          "units": 733,
+          "completed_units": 733,
+          "mean_native_unit_score": 0.3219645293315143,
+          "completed_unit_mean_descriptive": 0.3219645293315143,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R4",
+          "units": 13,
+          "completed_units": 13,
+          "mean_native_unit_score": 0.6153846153846154,
+          "completed_unit_mean_descriptive": 0.6153846153846154,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R5",
+          "units": 3600,
+          "completed_units": 3600,
+          "mean_native_unit_score": 0.6611296296296308,
+          "completed_unit_mean_descriptive": 0.6611296296296308,
+          "full_primary_score_available": true
+        }
+      ],
+      "pairs": [
+        {
+          "relation": "maintain",
+          "pairs": 6838,
+          "completed_pairs": 6838,
+          "both_correct": 4053,
+          "full_both_correct_rate": 0.5927171687627961
+        },
+        {
+          "relation": "respond",
+          "pairs": 1780,
+          "completed_pairs": 1780,
+          "both_correct": 17,
+          "full_both_correct_rate": 0.009550561797752809
+        }
+      ],
+      "auxiliary": {
+        "planned_mappings": 2700,
+        "scored_mappings": 2700,
+        "valid": 2369,
+        "exact": 34,
+        "full_exact_rate": 0.012592592592592593
+      },
+      "status": "complete",
+      "accuracy_full_denominator": 0.5423229054297015
+    },
+    {
+      "method": "M4",
+      "arm": "select",
+      "planned_inputs": 13905,
+      "planned_native_mappings": 15616,
+      "scored_native_mappings": 15616,
+      "pending_native_mappings": 0,
+      "awaiting_native_scores": 0,
+      "input_status_counts": {
+        "scored": 13905
+      },
+      "correct_inputs": 7954,
+      "incorrect_answer_inputs": 5563,
+      "unavailable_inputs": 388,
+      "native_categories": [
+        {
+          "category": "ALL",
+          "units": 6104,
+          "completed_units": 6104,
+          "mean_native_unit_score": 0.5204947575360429,
+          "completed_unit_mean_descriptive": 0.5204947575360429,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R1",
+          "units": 2866,
+          "completed_units": 2866,
+          "mean_native_unit_score": 0.33286810886252616,
+          "completed_unit_mean_descriptive": 0.33286810886252616,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R2",
+          "units": 79,
+          "completed_units": 79,
+          "mean_native_unit_score": 0.4430379746835443,
+          "completed_unit_mean_descriptive": 0.4430379746835443,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R3",
+          "units": 733,
+          "completed_units": 733,
+          "mean_native_unit_score": 0.34924965893587995,
+          "completed_unit_mean_descriptive": 0.34924965893587995,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R4",
+          "units": 13,
+          "completed_units": 13,
+          "mean_native_unit_score": 0.6923076923076923,
+          "completed_unit_mean_descriptive": 0.6923076923076923,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R5",
+          "units": 3600,
+          "completed_units": 3600,
+          "mean_native_unit_score": 0.6714166666666678,
+          "completed_unit_mean_descriptive": 0.6714166666666678,
+          "full_primary_score_available": true
+        }
+      ],
+      "pairs": [
+        {
+          "relation": "maintain",
+          "pairs": 6838,
+          "completed_pairs": 6838,
+          "both_correct": 4049,
+          "full_both_correct_rate": 0.5921322023983621
+        },
+        {
+          "relation": "respond",
+          "pairs": 1780,
+          "completed_pairs": 1780,
+          "both_correct": 73,
+          "full_both_correct_rate": 0.04101123595505618
+        }
+      ],
+      "auxiliary": {
+        "planned_mappings": 2700,
+        "scored_mappings": 2700,
+        "valid": 2348,
+        "exact": 52,
+        "full_exact_rate": 0.01925925925925926
+      },
+      "status": "complete",
+      "accuracy_full_denominator": 0.5720244516361022
+    },
+    {
+      "method": "M4",
+      "arm": "rule_prompt",
+      "planned_inputs": 13905,
+      "planned_native_mappings": 15616,
+      "scored_native_mappings": 15616,
+      "pending_native_mappings": 0,
+      "awaiting_native_scores": 0,
+      "input_status_counts": {
+        "scored": 13905
+      },
+      "correct_inputs": 8847,
+      "incorrect_answer_inputs": 5004,
+      "unavailable_inputs": 54,
+      "native_categories": [
+        {
+          "category": "ALL",
+          "units": 6104,
+          "completed_units": 6104,
+          "mean_native_unit_score": 0.5763816076889462,
+          "completed_unit_mean_descriptive": 0.5763816076889462,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R1",
+          "units": 2866,
+          "completed_units": 2866,
+          "mean_native_unit_score": 0.4351011863224006,
+          "completed_unit_mean_descriptive": 0.4351011863224006,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R2",
+          "units": 79,
+          "completed_units": 79,
+          "mean_native_unit_score": 0.4936708860759494,
+          "completed_unit_mean_descriptive": 0.4936708860759494,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R3",
+          "units": 733,
+          "completed_units": 733,
+          "mean_native_unit_score": 0.5184174624829468,
+          "completed_unit_mean_descriptive": 0.5184174624829468,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R4",
+          "units": 13,
+          "completed_units": 13,
+          "mean_native_unit_score": 0.5384615384615384,
+          "completed_unit_mean_descriptive": 0.5384615384615384,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R5",
+          "units": 3600,
+          "completed_units": 3600,
+          "mean_native_unit_score": 0.6845092592592594,
+          "completed_unit_mean_descriptive": 0.6845092592592594,
+          "full_primary_score_available": true
+        }
+      ],
+      "pairs": [
+        {
+          "relation": "maintain",
+          "pairs": 6838,
+          "completed_pairs": 6838,
+          "both_correct": 4361,
+          "full_both_correct_rate": 0.6377595788242176
+        },
+        {
+          "relation": "respond",
+          "pairs": 1780,
+          "completed_pairs": 1780,
+          "both_correct": 341,
+          "full_both_correct_rate": 0.19157303370786516
+        }
+      ],
+      "auxiliary": {
+        "planned_mappings": 2700,
+        "scored_mappings": 2700,
+        "valid": 2590,
+        "exact": 58,
+        "full_exact_rate": 0.02148148148148148
+      },
+      "status": "complete",
+      "accuracy_full_denominator": 0.6362459546925566
+    },
+    {
+      "method": "M4",
+      "arm": "strict",
+      "planned_inputs": 13905,
+      "planned_native_mappings": 15616,
+      "scored_native_mappings": 15616,
+      "pending_native_mappings": 0,
+      "awaiting_native_scores": 0,
+      "input_status_counts": {
+        "scored": 13905
+      },
+      "correct_inputs": 8924,
+      "incorrect_answer_inputs": 4930,
+      "unavailable_inputs": 51,
+      "native_categories": [
+        {
+          "category": "ALL",
+          "units": 6104,
+          "completed_units": 6104,
+          "mean_native_unit_score": 0.5829237658366088,
+          "completed_unit_mean_descriptive": 0.5829237658366088,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R1",
+          "units": 2866,
+          "completed_units": 2866,
+          "mean_native_unit_score": 0.4462665736217725,
+          "completed_unit_mean_descriptive": 0.4462665736217725,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R2",
+          "units": 79,
+          "completed_units": 79,
+          "mean_native_unit_score": 0.4810126582278481,
+          "completed_unit_mean_descriptive": 0.4810126582278481,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R3",
+          "units": 733,
+          "completed_units": 733,
+          "mean_native_unit_score": 0.5320600272851296,
+          "completed_unit_mean_descriptive": 0.5320600272851296,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R4",
+          "units": 13,
+          "completed_units": 13,
+          "mean_native_unit_score": 0.5384615384615384,
+          "completed_unit_mean_descriptive": 0.5384615384615384,
+          "full_primary_score_available": true
+        },
+        {
+          "category": "R5",
+          "units": 3600,
+          "completed_units": 3600,
+          "mean_native_unit_score": 0.6883796296296298,
+          "completed_unit_mean_descriptive": 0.6883796296296298,
+          "full_primary_score_available": true
+        }
+      ],
+      "pairs": [
+        {
+          "relation": "maintain",
+          "pairs": 6838,
+          "completed_pairs": 6838,
+          "both_correct": 4440,
+          "full_both_correct_rate": 0.64931266452179
+        },
+        {
+          "relation": "respond",
+          "pairs": 1780,
+          "completed_pairs": 1780,
+          "both_correct": 347,
+          "full_both_correct_rate": 0.1949438202247191
+        }
+      ],
+      "auxiliary": {
+        "planned_mappings": 2700,
+        "scored_mappings": 2700,
+        "valid": 2585,
+        "exact": 55,
+        "full_exact_rate": 0.020370370370370372
+      },
+      "status": "complete",
+      "accuracy_full_denominator": 0.6417835311039195
+    }
+  ],
+  "comparisons": [
+    {
+      "method": "M4",
+      "candidate": "original_C0",
+      "planned_inputs": 13905,
+      "jointly_scored_inputs": 13905,
+      "repairs": 707,
+      "harms": 2204,
+      "unavailable_to_correct": 14,
+      "correct_to_unavailable": 0,
+      "complete": true,
+      "completed_subset_only": false
+    },
+    {
+      "method": "M4",
+      "candidate": "gen",
+      "planned_inputs": 13905,
+      "jointly_scored_inputs": 13905,
+      "repairs": 483,
+      "harms": 1743,
+      "unavailable_to_correct": 17,
+      "correct_to_unavailable": 140,
+      "complete": true,
+      "completed_subset_only": false
+    },
+    {
+      "method": "M4",
+      "candidate": "select",
+      "planned_inputs": 13905,
+      "jointly_scored_inputs": 13905,
+      "repairs": 182,
+      "harms": 950,
+      "unavailable_to_correct": 4,
+      "correct_to_unavailable": 206,
+      "complete": true,
+      "completed_subset_only": false
+    },
+    {
+      "method": "M4",
+      "candidate": "rule_prompt",
+      "planned_inputs": 13905,
+      "jointly_scored_inputs": 13905,
+      "repairs": 110,
+      "harms": 183,
+      "unavailable_to_correct": 14,
+      "correct_to_unavailable": 18,
+      "complete": true,
+      "completed_subset_only": false
+    },
+    {
+      "method": "M4",
+      "candidate": "strict",
+      "planned_inputs": 13905,
+      "jointly_scored_inputs": 13905,
+      "repairs": 0,
+      "harms": 0,
+      "unavailable_to_correct": 0,
+      "correct_to_unavailable": 0,
+      "complete": true,
+      "completed_subset_only": false
+    }
+  ],
+  "damage": {
+    "gen": {
+      "harmed": 1883,
+      "repaired": 500
+    },
+    "select": {
+      "harmed": 1156,
+      "repaired": 186
+    },
+    "rule_prompt": {
+      "harmed": 201,
+      "repaired": 124
+    },
+    "strict": {
+      "harmed": 0,
+      "repaired": 0
+    }
+  },
+  "process": {
+    "strict_complete_native_equal": 13905,
+    "strict_route_equal": 13905,
+    "rule_prompt_id_compliant": 12325,
+    "rule_prompt_full_rule_compliant": 11397,
+    "strict_id_corrections": 1580,
+    "rule_prompt_native_differs_from_B": 1527
+  },
+  "aggregator_errors": {
+    "gen": 198,
+    "select": 357,
+    "rule_prompt": 48
+  },
+  "costs": {
+    "new:gen": {
+      "requests": 13826,
+      "input_tokens": 87658363,
+      "output_tokens": 4568544,
+      "elapsed_seconds": 84875.62755655078
+    },
+    "new:select": {
+      "requests": 13836,
+      "input_tokens": 88318905,
+      "output_tokens": 1443720,
+      "elapsed_seconds": 36227.719286553096
+    },
+    "new:rule_prompt": {
+      "requests": 13833,
+      "input_tokens": 90682583,
+      "output_tokens": 615784,
+      "elapsed_seconds": 23499.99584020395
+    },
+    "pilot:gen": {
+      "requests": 24,
+      "input_tokens": 197723,
+      "output_tokens": 8288,
+      "elapsed_seconds": 307.92132535064593
+    },
+    "pilot:select": {
+      "requests": 24,
+      "input_tokens": 197747,
+      "output_tokens": 2717,
+      "elapsed_seconds": 138.3188732713461
+    },
+    "pilot:rule_prompt": {
+      "requests": 24,
+      "input_tokens": 202187,
+      "output_tokens": 1124,
+      "elapsed_seconds": 90.70234824111685
+    },
+    "capacity_unavailable:gen": {
+      "requests": 55,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "elapsed_seconds": 0
+    },
+    "capacity_unavailable:select": {
+      "requests": 45,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "elapsed_seconds": 0
+    },
+    "capacity_unavailable:rule_prompt": {
+      "requests": 48,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "elapsed_seconds": 0
+    }
+  },
+  "independent": false,
+  "frozen_experts": true,
+  "denominator_policy": "13905 inputs; 15616 mappings; 6104 non-reference ALL units; every failure retained"
+}

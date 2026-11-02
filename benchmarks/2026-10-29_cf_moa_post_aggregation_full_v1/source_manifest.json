@@ -1,0 +1,202 @@
+{
+  "run_id": "cf_moa_post_aggregation_full_v1",
+  "entries": [
+    {
+      "published": "final_summary.json",
+      "source": "final_summary.json",
+      "source_sha256": "fc21d805ae15acbdb1a8fa8b8e9017172f1410ec21822bc6edf097f3d9959afe",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "verification/original_validation.json",
+      "source": "final_verification/validation.json",
+      "source_sha256": "a0f8989e1a85c7037c1538676c021861dc20d0d0b6bfbe733e7d9bf90f6e8e6e",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/original_full_audit.py",
+      "source": "final_verification/verify.py",
+      "source_sha256": "6088f51e44466147fafe6f0da8b2fad3589cfd43c110185d00f70bb58cd65c08",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "config/runtime_original.json",
+      "source": "runtime.json",
+      "source_sha256": "c91e9e07e7aeb8025b5787c495bea6d9714b27e6d8804277e10a37b7c559e87d",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/analyze_full.py",
+      "source": "analyze_full.py",
+      "source_sha256": "44876f1d829504b6f8f93e13a7b653329699a9f987536efbcc752f497e174c6e",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/run_full.py",
+      "source": "run_full.py",
+      "source_sha256": "7cf77e32b89906083ec7935a6bcf355db66cd83c934d719399669ea8b7fe24ae",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/contracts.py",
+      "source": "source_snapshot/009_contracts.py",
+      "source_sha256": "cb560029ec62b5eb06b35845ea45a95a1f964035da34b310700efeb37e638a5d",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/post_proposers.py",
+      "source": "source_snapshot/010_post_proposers.py",
+      "source_sha256": "f4016e96fbc4e967fcc70a0152d86f3fa5f79152a6e2e9ccd00c0c00531cab05",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/post_selective.py",
+      "source": "source_snapshot/011_post_selective.py",
+      "source_sha256": "1f4bf463d9762afbbd22d939024b666308d92a66b5b865735ca0f43f442c5696",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/strong_legacy.py",
+      "source": "source_snapshot/012_strong_legacy.py",
+      "source_sha256": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/minimal_operations.py",
+      "source": "source_snapshot/013_minimal_operations.py",
+      "source_sha256": "23c011aacb4b68cffd5fb2de8fef31a667a228cf85e90d011f92ee77e7fd872f",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "source/rule_guided_aggregator.txt",
+      "source": "source_snapshot/015_rule_guided_aggregator.txt",
+      "source_sha256": "c882584df39f4cb735bf8f5b00e2a4acab3ba187c5738c77e1aa5301af6598a8",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m4/quality_summary.json",
+      "source": "analysis/m4/quality_summary.json",
+      "source_sha256": "3dd32cf6ef8c269dc3d145b9374c0db50f85b2226fe32e6c21c7430502506222",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m4/native_units.jsonl.gz",
+      "source": "analysis/m4/native_units.jsonl.gz",
+      "source_sha256": "3df3b8d5b092ba8f0ef98cbf4220287f416387693ccb6a7f908933ae9a2fe6dc",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m4/per_input_status.jsonl.gz",
+      "source": "analysis/m4/per_input_status.jsonl.gz",
+      "source_sha256": "8e02de6f984e3c071364f8a9f209109ded43910250f67aea19245dd077b88463",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m4/pairs.jsonl.gz",
+      "source": "analysis/m4/pairs.jsonl.gz",
+      "source_sha256": "c225267e89fdcf9f825faafef5af5433980f808d002eb49c53e4972a18a0a751",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m4/process.jsonl.gz",
+      "source": "analysis/m4/process.jsonl.gz",
+      "source_sha256": "f65976ba5caa6bb482cfac6d94db65a100d2a65b9a63d910f3c94874da67a049",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m4/native_mapping_scores.jsonl.gz",
+      "source": "analysis/m4/native_scored.jsonl.gz",
+      "source_sha256": "67521106c6c20276d161f2b84ab9dd1c648d139537af834ad36d24d935c0d1c5",
+      "transform": "whitelist field projection; no rescoring",
+      "fields": [
+        "method",
+        "arm",
+        "request_id",
+        "record_id",
+        "analysis_status",
+        "correct",
+        "native_available",
+        "invalid",
+        "format_invalid",
+        "unmapped_diagnosis",
+        "ambiguous",
+        "raw_exact",
+        "uncertainty",
+        "option_f1",
+        "tp",
+        "fp",
+        "fn",
+        "predicted_set_size",
+        "gold_set_size"
+      ],
+      "rows": 93696
+    },
+    {
+      "published": "analysis/m5/quality_summary.json",
+      "source": "analysis/m5/quality_summary.json",
+      "source_sha256": "79669c8b362c76dd9f34a9353d82347675527bc79a8f0b83a450ba5385893a27",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m5/native_units.jsonl.gz",
+      "source": "analysis/m5/native_units.jsonl.gz",
+      "source_sha256": "ed9c409cca0bc973eccbddbee05cd6317694f7ca9d88c0d45d256a38953ee85e",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m5/per_input_status.jsonl.gz",
+      "source": "analysis/m5/per_input_status.jsonl.gz",
+      "source_sha256": "a65dd67fb1c2f95f14d14465b7e6ecf0d3e098c03dcf5df6846276f4b2970666",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m5/pairs.jsonl.gz",
+      "source": "analysis/m5/pairs.jsonl.gz",
+      "source_sha256": "6430e2203b360682c299573ec59b755889763a151fd2700dc525721d26701d41",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m5/process.jsonl.gz",
+      "source": "analysis/m5/process.jsonl.gz",
+      "source_sha256": "a6035ceb2a547575cc88cac2723ec1507fba65276878d9378d86afad2658647a",
+      "transform": "byte-identical copy"
+    },
+    {
+      "published": "analysis/m5/native_mapping_scores.jsonl.gz",
+      "source": "analysis/m5/native_scored.jsonl.gz",
+      "source_sha256": "dadc29d987fae89242483ffde7d2616618aaf1bbb78f05f61b10560b290f100c",
+      "transform": "whitelist field projection; no rescoring",
+      "fields": [
+        "method",
+        "arm",
+        "request_id",
+        "record_id",
+        "analysis_status",
+        "correct",
+        "native_available",
+        "invalid",
+        "format_invalid",
+        "unmapped_diagnosis",
+        "ambiguous",
+        "raw_exact",
+        "uncertainty",
+        "option_f1",
+        "tp",
+        "fp",
+        "fn",
+        "predicted_set_size",
+        "gold_set_size"
+      ],
+      "rows": 93696
+    }
+  ],
+  "generated_tables": "All values are copied or arithmetically derived from final_summary.json; no native rescoring.",
+  "withheld": [
+    "clinical input text",
+    "gold answers and semantic predictions",
+    "complete expert candidates",
+    "physical model prompts/responses",
+    "SQLite databases",
+    "conversation monitoring and credentials"
+  ]
+}

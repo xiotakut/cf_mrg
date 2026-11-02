@@ -1,0 +1,172 @@
+{
+  "methods": {
+    "M4": {
+      "artifact_hashes_verified": 41715,
+      "inputs": 13905,
+      "pre_handover_complete_rows_and_hashes_preserved": 31084,
+      "origin_counts": {
+        "new": 41495,
+        "pilot": 72,
+        "capacity_unavailable": 148
+      },
+      "process": {
+        "strict_complete_native_equal": 13905,
+        "strict_route_equal": 13905,
+        "rule_prompt_id_compliant": 12325,
+        "rule_prompt_full_rule_compliant": 11397,
+        "strict_id_corrections": 1580,
+        "rule_prompt_native_differs_from_B": 1527
+      },
+      "aggregator_errors": {
+        "gen": 198,
+        "rule_prompt": 48,
+        "select": 357
+      },
+      "native_mapping_rows_verified": {
+        "original_C0": 15616,
+        "strong_B": 15616,
+        "gen": 15616,
+        "select": 15616,
+        "rule_prompt": 15616,
+        "strict": 15616
+      },
+      "category_means_verified": 36,
+      "strict_unit_and_mapping_scores_equal_B": true,
+      "damage": {
+        "gen": {
+          "harmed": 1883,
+          "repaired": 500
+        },
+        "select": {
+          "harmed": 1156,
+          "repaired": 186
+        },
+        "rule_prompt": {
+          "harmed": 201,
+          "repaired": 124
+        },
+        "strict": {
+          "harmed": 0,
+          "repaired": 0
+        }
+      },
+      "new_requests_by_parallel_worker": {
+        "m4_gpu0_002": 10465
+      },
+      "ALL": {
+        "original_C0": 0.48198995194408173,
+        "strong_B": 0.5829237658366088,
+        "gen": 0.4947684578418535,
+        "select": 0.5204947575360429,
+        "rule_prompt": 0.5763816076889462,
+        "strict": 0.5829237658366088
+      }
+    },
+    "M5": {
+      "artifact_hashes_verified": 41715,
+      "inputs": 13905,
+      "pre_handover_complete_rows_and_hashes_preserved": 11408,
+      "origin_counts": {
+        "new": 41433,
+        "pilot": 72,
+        "capacity_unavailable": 210
+      },
+      "process": {
+        "strict_complete_native_equal": 13905,
+        "strict_route_equal": 13905,
+        "rule_prompt_id_compliant": 13413,
+        "rule_prompt_full_rule_compliant": 11787,
+        "strict_id_corrections": 492,
+        "rule_prompt_native_differs_from_B": 452
+      },
+      "aggregator_errors": {
+        "gen": 79,
+        "rule_prompt": 70,
+        "select": 106
+      },
+      "native_mapping_rows_verified": {
+        "original_C0": 15616,
+        "strong_B": 15616,
+        "gen": 15616,
+        "select": 15616,
+        "rule_prompt": 15616,
+        "strict": 15616
+      },
+      "category_means_verified": 36,
+      "strict_unit_and_mapping_scores_equal_B": true,
+      "damage": {
+        "gen": {
+          "harmed": 934,
+          "repaired": 402
+        },
+        "select": {
+          "harmed": 111,
+          "repaired": 13
+        },
+        "rule_prompt": {
+          "harmed": 68,
+          "repaired": 3
+        },
+        "strict": {
+          "harmed": 0,
+          "repaired": 0
+        }
+      },
+      "new_requests_by_parallel_worker": {
+        "m5_gpu1_001": 12337,
+        "m5_gpu3_003": 6705,
+        "m5_gpu2_004": 11019
+      },
+      "ALL": {
+        "original_C0": 0.4734873307121029,
+        "strong_B": 0.5936162079510684,
+        "gen": 0.5471603320227163,
+        "select": 0.5825196592398407,
+        "rule_prompt": 0.5860474006116189,
+        "strict": 0.5936162079510684
+      }
+    }
+  },
+  "frozen_source_checks": {
+    "runtime_sources.json": 30,
+    "elastic/sources.json": 8
+  },
+  "status": "passed",
+  "timestamp": "2026-10-29T17:27:05.828989+08:00",
+  "elapsed_seconds": 121.44431334501132,
+  "final_summary_sha256": "fc21d805ae15acbdb1a8fa8b8e9017172f1410ec21822bc6edf097f3d9959afe",
+  "new_physical_cost_recomputed": {
+    "requests": 82928,
+    "input_tokens": 526261475,
+    "output_tokens": 13032043,
+    "elapsed_seconds": 460083.36320131226
+  },
+  "first_request_at": "2026-10-27T18:11:14.798765+08:00",
+  "last_request_at": "2026-10-29T17:19:10.392859+08:00",
+  "workers": {
+    "m4_gpu0_002": {
+      "exit_code": 0,
+      "original_process_absent": true,
+      "gpu": 0
+    },
+    "m5_gpu1_001": {
+      "exit_code": 0,
+      "original_process_absent": true,
+      "gpu": 1
+    },
+    "m5_gpu3_003": {
+      "exit_code": 0,
+      "original_process_absent": true,
+      "gpu": 3
+    },
+    "m5_gpu2_004": {
+      "exit_code": 0,
+      "original_process_absent": true,
+      "gpu": 2
+    }
+  },
+  "wall_seconds_first_request_to_closeout": 169804.911087,
+  "data4_free_bytes": 2286418935808,
+  "new_model_calls_by_verification": 0,
+  "native_rescoring_calls": 0
+}

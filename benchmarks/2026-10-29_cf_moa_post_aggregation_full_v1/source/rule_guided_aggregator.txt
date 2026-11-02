@@ -1,0 +1,9 @@
+Select exactly one candidate using the following priority, evaluated on the current input and supplied capability facts:
+P1. If answer_format is exactly "diagnosis", choose A3.
+P2. Otherwise, if rule_eligible is true (the unchanged adopted rule executor's eligibility), choose A2, the canonical slot for the complete shared A1/A2 answer.
+P3. Otherwise, if complete_model_capability is true, choose A4.
+P4. Otherwise, if answer_format is "single", "robustness_single", or "relation", and original_context_is_string is false, choose A5.
+P5. Otherwise choose C0, the complete original response.
+An applicable candidate can still have an unavailable native response; preserve the priority rather than hiding its failure by choosing a fallback.
+Do not override this order using majority votes, self-reported confidence, response length, or duplicated C0 fallbacks. A1 and A2 share one rule execution, including UNKNOWN inheritance and the original assembler.
+Return only a JSON object with selected_candidate_id, rule_id, and a short selection_rationale. Do not generate or rewrite the final native answer.
