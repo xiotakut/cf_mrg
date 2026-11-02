@@ -1,3 +1,5 @@
+2026-11-02：[功能分类补充实验E2盲审包](2026-11-02_function_guided_supplements_v1/e2/README.md)：分类与错误编码材料、中文复审流程。
+
 **2026-11-02 · [CF-MoA后置四臂全量结果（10月29日完成）](2026-10-29_cf_moa_post_aggregation_full_v1/README.md)已归档：Llama/Qwen各13,905输入，Strict ALL为58.29%/59.36%，27,810份完整响应等价旧B；RulePrompt为57.64%/58.60%。完整分层、配对、费用和可离线核验评分齐全；冻结专家、已暴露v5，非独立确认。**
 
 **2026-09-28 · 完整v5透明收尾已完成：[完整结果与区间](2026-09-28_cf_moa_transparent_closeout/full_results.md) · [五张表](2026-09-28_cf_moa_transparent_closeout/five_tables.md) · [费用/范围/交付索引](2026-09-28_cf_moa_transparent_closeout/README.md)。零新增推理，六臂/11来源/5格式全保留；默认B保持，C3研究扩展。统计与费用已实际收尾，冻结后确认及独立F复本未执行/延后，未按输赢筛选。**
