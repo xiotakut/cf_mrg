@@ -12,3 +12,7 @@
 M5两个相反方向各25题；总分相同不表示相同行为。M4/M5程序不可用1/14，LLM不可用10/5；全部仍在123分母。7次生成长度/解析失败保留，未语义重试。操作忠实度是相对冻结状态的检查，不是独立医学正确率。
 
 输入685,648、输出109,383 tokens。[实际调用账本](call_ledger.jsonl)保留246个请求的来源hash、共享信息hash、接受提示hash和采样参数；原始提示正文不重复发布。原执行代码见上级`source_snapshots/`。
+
+## 已补交的执行案例
+
+[illustrative_execution_examples.jsonl](analysis/illustrative_execution_examples.jsonl)为原已保存的执行案例，逐字复制，包含冻结执行信息及两臂输出。未新生成回答，不据少数展示例代替123输入主分析。

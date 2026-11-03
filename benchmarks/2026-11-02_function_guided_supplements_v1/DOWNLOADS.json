@@ -1,8 +1,20 @@
 {
-  "archive": "completed_supplementary_experiments.zip",
-  "bytes": 2873767,
-  "sha256": "9bc6a00621829af6d9ad829a9ccad167977c2ee7bdcbe1feab5e9bded25af491",
-  "entries": 171,
-  "includes": "All new non-E2 payload files and MANIFEST.json",
-  "E2": "Unchanged separate packages under e2/"
+  "current": "completed_supplementary_experiments_v2.zip",
+  "archives": [
+    {
+      "file": "completed_supplementary_experiments_v2.zip",
+      "bytes": 7293121,
+      "sha256": "33629b4c8902ce6e7b4ab2083361b23848db9528c43984a3601a6dffe9f0075e",
+      "entries": 216,
+      "includes_E2": true
+    },
+    {
+      "file": "completed_supplementary_experiments.zip",
+      "bytes": 2873767,
+      "sha256": "9bc6a00621829af6d9ad829a9ccad167977c2ee7bdcbe1feab5e9bded25af491",
+      "entries": 171,
+      "includes_E2": false,
+      "identity": "Unchanged original v1"
+    }
+  ]
 }

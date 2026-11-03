@@ -9,3 +9,11 @@
 - [操作图](operation_controls.pdf)与[覆盖图](functional_coverage.pdf)同时区分执行、共享、回退与不适用。
 
 这些面板的分母、评价协议和证据层不同，不合并为一个总分，也不把历史组件成绩当成当前完整 CF-MoA 成绩。
+
+## 已补交的逐项复算输入
+
+[replay_inputs/](replay_inputs/)包括支持增删738行评分与操作状态、候选逐项分数、给定模型逐项分数、保持任务评分投影，以及27,810个原生输入的五角色覆盖元数据。来源hash与字段投影见[delivery_provenance.json](../delivery_provenance.json)。
+
+运行`python3 verify_delivery.py`可复算支持主表/功能表、候选正确率与宏平均召回、后果表/配对点估计、保持配对表及全部覆盖表。安装numpy后加`--with-intervals`复现8项profile bootstrap区间（2000次）。不同历史面板、版本、分母保持，不合成新临床总分。源码中的“共享”“回退”“不适用”不会被转换成独立新模型调用。
+
+R1的A3覆盖为1780/2866≈62.1%，表示该类非reference输入中角色适用的比例，不是正确率、独立代理数量或R1全部收益归属。

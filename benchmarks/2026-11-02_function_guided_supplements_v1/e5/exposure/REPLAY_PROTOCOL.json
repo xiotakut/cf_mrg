@@ -1,0 +1,19 @@
+{
+  "version": "bounded_saved_scan_fingerprints_v1",
+  "normalization": "SHA256(' '.join(text.casefold().split()).encode('utf-8'))",
+  "premise_regex": "premise:(.*?)\\s+hypothesis:",
+  "regex_flags": [
+    "IGNORECASE",
+    "DOTALL"
+  ],
+  "comparison": "candidate normalized question vs scanned question; candidate normalized premise vs scanned premise",
+  "exclusion": "other_working_input_exclusion; same128_prepared_not_executed is preparation-only, not an executed overlap",
+  "historical_scan_records": 111,
+  "source_hashes_all_match": true,
+  "limits": [
+    "Exact normalized text/premise equality only, not semantic paraphrase or article-level equivalence.",
+    "This replay covers the enumerated 111 files, not all historic inputs or model pretraining.",
+    "The preceding wider audit is included as a dated receipt, not silently re-certified by this fingerprint replay.",
+    "Prepared but unexecuted source material remains acknowledged exposure."
+  ]
+}

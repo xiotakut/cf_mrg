@@ -1,0 +1,211 @@
+{
+  "status": "candidate_confirmation_inventory_not_method_freeze_not_blind",
+  "scope": "Existing 128 frozen families plus 8 separately exposed author controls; eligibility metadata and native-text identity hashes only",
+  "frozen_manifest": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/frozen_manifest.json",
+    "sha256": "1b32da95ffd0672d951220495e616de29046a3db1d8c07a3cc32753281b306d9",
+    "frozen_at": "2026-09-18T14:00:50.228825+08:00"
+  },
+  "families": 128,
+  "r5_native_inputs": 512,
+  "strong_control_pairs": 8,
+  "strong_control_inputs": 16,
+  "all_native_inputs": 528,
+  "source_family_counts": {
+    "M10": 16,
+    "M14": 16,
+    "M17": 32,
+    "M22": 32,
+    "M23": 32
+  },
+  "overlaps": [
+    {
+      "scope": "formal_v5",
+      "known_groups": 4766,
+      "known_units": 6104,
+      "known_items": 13905,
+      "group_overlap": 0,
+      "unit_overlap": 0,
+      "endpoint_id_overlap": 0,
+      "normalized_current_question_overlap": 0
+    },
+    {
+      "scope": "CF_MoA_historical121",
+      "known_groups": 40,
+      "known_units": 74,
+      "known_items": 121,
+      "group_overlap": 0,
+      "unit_overlap": 0,
+      "endpoint_id_overlap": 0,
+      "normalized_current_question_overlap": 0
+    },
+    {
+      "scope": "CF_MoA_natural52",
+      "known_groups": 18,
+      "known_units": 18,
+      "known_items": 52,
+      "group_overlap": 0,
+      "unit_overlap": 0,
+      "endpoint_id_overlap": 0,
+      "normalized_current_question_overlap": 0
+    },
+    {
+      "scope": "old_F_pilot208",
+      "known_groups": 72,
+      "known_units": 72,
+      "known_items": 208,
+      "group_overlap": 0,
+      "unit_overlap": 0,
+      "endpoint_id_overlap": 0,
+      "normalized_current_question_overlap": 0
+    },
+    {
+      "scope": "old_F_extension400",
+      "known_groups": 136,
+      "known_units": 136,
+      "known_items": 400,
+      "group_overlap": 0,
+      "unit_overlap": 0,
+      "endpoint_id_overlap": 0,
+      "normalized_current_question_overlap": 0
+    },
+    {
+      "scope": "old_F_nli_validation48",
+      "known_groups": 24,
+      "known_units": 24,
+      "known_items": 48,
+      "group_overlap": 0,
+      "unit_overlap": 0,
+      "endpoint_id_overlap": 0,
+      "normalized_current_question_overlap": 0
+    }
+  ],
+  "author_training_identity_audit_reused": [
+    {
+      "normalization": "raw_exact",
+      "author_split": "train_balanced.csv",
+      "scope": "D",
+      "matching_premises": 0,
+      "matching_author_rows": 0,
+      "matching_pmids": 0,
+      "matching_pmids_author_rows": 0,
+      "scope_premises_unmapped_to_any_author_pmid": 40
+    },
+    {
+      "normalization": "case_whitespace",
+      "author_split": "train_balanced.csv",
+      "scope": "D",
+      "matching_premises": 0,
+      "matching_author_rows": 0,
+      "matching_pmids": 0,
+      "matching_pmids_author_rows": 0,
+      "scope_premises_unmapped_to_any_author_pmid": 40
+    },
+    {
+      "normalization": "case_whitespace_terminal_period",
+      "author_split": "train_balanced.csv",
+      "scope": "D",
+      "matching_premises": 0,
+      "matching_author_rows": 0,
+      "matching_pmids": 0,
+      "matching_pmids_author_rows": 0,
+      "scope_premises_unmapped_to_any_author_pmid": 0
+    }
+  ],
+  "prior_exposure_exclusions": {
+    "historical_input_files": 266,
+    "distinct_known_questions": 33351,
+    "distinct_known_current_premises": 423,
+    "source": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/inventory.json"
+  },
+  "exposure_events": [
+    {
+      "date": "2026-09-18",
+      "kind": "source_and_input_qualification",
+      "detail": "Input membership/native materials and retrieval constructed. NLI source qualification was read; full128 were not all semantically reviewed."
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "CF_MoA_summary_exposure",
+      "detail": "Eight author target-change control summaries were printed during an earlier metadata audit; source ledger construction#cf-moa-independent-summary-exposure."
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "current_inventory_machine_read",
+      "detail": "selected_candidates and native items machine-read for family/item IDs and normalized question hashes. New question text and labels were not printed, scored, or used to change method; new evaluation/gold files were not opened."
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "additional_summary_exposure",
+      "detail": "An entrypoint-navigation rg of data/freeze.py unexpectedly printed previously described qualification explanations at lines13-15 for control pairs3747/3750,4185/4189,4751/4752. Root was immediately informed. This concerns3 of the already exposed8 controls, not128 R5 family bodies. No method/prompt selection used them."
+    }
+  ],
+  "interpretation": "Potential post-method-freeze confirmation from previously collected/qualified sources with no prior generation reported in the existing ledger. Not all-blind input, not new clinical patients, and not proof that text was absent pretraining/retrieval. Prior BioNLI train audit found no exact/case-whitespace premise overlap; many D premises lack source-PMID mappings, so article-level independence is unresolved.",
+  "future_policy": "Only after full-v5 regression and method/control freeze: freeze a complete family list, keep related endpoints together, run original F independently at least one additional actual seed-table replica shared by B and RCV. Preserve separately exposed controls as such.",
+  "new_model_calls": 0,
+  "new_native_grader_calls": 0,
+  "new_D_gold_reads": false,
+  "new_D_model_quality_reads": false,
+  "sources": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/selected_candidates.jsonl",
+      "sha256": "9f0042a23bde6d4d241c54c193d8d5561084bacaab653cf2596cd321ecef62ef"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/items.jsonl",
+      "sha256": "922a31bda46669889604f908eca070ad74e797b0185a091071406dcee3adb677"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/evaluation.jsonl",
+      "sha256": "6eed9927ede848d2c737301645349f37e5e77915cabf36231b40f340b42ac504"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/items.jsonl",
+      "sha256": "f4224ea7f8c2a4922af8a4e7187a09d115093cd3c0fdf039cf806c1f8b683957"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/evaluations.jsonl",
+      "sha256": "b0d7e10ecbf7702ffd27eb7c843f76feb52457ff2d23097df83e7eb654746f78"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-21/cf_moa/cpu_preparation/development/offline/items.jsonl",
+      "sha256": "8c07986ffff1c3fea2ace6ee0a2ec07ede2344a6eba35928287b4194b0d6fe0d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/evaluations.jsonl",
+      "sha256": "c965a24795dd1db8859cc959bce6cd8f58565046540580a8d46b2c6559990943"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-23/cf_moa_minimal_revision_20260923/natural_scope/offline/items.jsonl",
+      "sha256": "26d90a0bd8b019bcb28e3825e96329b8150517e16fb84ae7b9d5893f3f478114"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/evaluation.jsonl",
+      "sha256": "ba6b13e4ddb98a4b516d493ad9428a9a22bc1875550b6c67bd5689222e7c4fcd"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/m4/inputs.jsonl",
+      "sha256": "2dfe4e13d29549b55a3c56a0b2f4b489ff36814c337460b3f78e20744ed5a4b0"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/evaluation.jsonl",
+      "sha256": "6429f010baf4a8069064cc3fcf3daa74a05f768defe02d8ab915e47eeab08f71"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/extension/m4/inputs.jsonl",
+      "sha256": "632421806fb5df63f23f5171e2dc95da62b173612a29700253cd66fc5628ad03"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/evaluation.jsonl",
+      "sha256": "4fab270b160067b71ccf45bb9ed2f338461adcfa4f240a1d360646743981284c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/consensus/nli_choice_validation/m4/inputs.jsonl",
+      "sha256": "5de84c3a58fabd1d825348deb2308772bb5ab0294c0600067ed1b61fa01a532c"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/bionli_supervision_inventory.json",
+      "sha256": "594c74cf8a5be12883181c698ee6ff659847558c430937c25e98d02e896be3b8"
+    }
+  ]
+}

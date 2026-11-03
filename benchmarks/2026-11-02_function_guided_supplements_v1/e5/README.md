@@ -22,3 +22,13 @@ RulePrompt−C0为+4.7917pp（95%区间[−10.4167,+20.4167]）、+4.375pp（[�
 原始length终止66中64是正常单token取分；真正生成额度停止仅M4 C0和Gen各1，[分解](analysis/stop_reason_breakdown.csv)。112端点不可用为M4 C0 1/Gen1、M5 C0 1，其余0；全部保留分母。
 
 复用保存上下文，0新检索。冻结方法/生成解析与运行层差别详见[runtime_equivalence_scope.json](runtime_equivalence_scope.json)，不是历史GPU逐位复现。模型均已释放。完整采样源hash及准备记录保留，不追加提示搜索。
+
+## 暴露扫描的补交与可重放范围
+
+[111项原扫描](exposure/exposure_scan.jsonl)、[候选指纹](exposure/candidate_fingerprints.jsonl.gz)、[被扫描输入指纹](exposure/scanned_fingerprints.jsonl.gz)、[匹配规则](exposure/REPLAY_PROTOCOL.json)及[此前审计收据](exposure/prior_exposure_review.json)现已交付。111个源文件均重新核对与冻结hash相同；指纹只读取原题文本或NLI premise，不读取答案表现来选择家族。
+
+`verify_delivery.py`可离线复现每文件的精确规范化文本/前提匹配：用于排除的工作输入范围内候选匹配0；此前仅准备未执行目录匹配128个候选。选定32家族不在排除集合内。**准备材料暴露仍然存在**，不能写成从未接触过这些材料。
+
+该复核仅覆盖枚举的111文件与指定相等性规则，不证明语义改写、文章级、预训练或全部历史暴露被排除。它没有把前序更广审计重新执行一遍。E5身份为“冻结后的32家族R5确认面板”，跨R1–R4及新应变场景仍未在本轮验证。
+
+另补交的3个展示QA属于[旧聚合分析](../aggregation/illustrative_saved_examples.jsonl)，不属于本E5新家族面板。
