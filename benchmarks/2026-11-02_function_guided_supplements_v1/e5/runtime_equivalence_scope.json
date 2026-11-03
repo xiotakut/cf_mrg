@@ -1,0 +1,136 @@
+{
+  "time": "2026-11-02T22:00:45.739432+08:00",
+  "status": "checked",
+  "records": [
+    {
+      "method": "M4",
+      "original_engine": {
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "dtype": "bfloat16",
+        "max_model_len": 131072,
+        "seed": 42,
+        "gpu_memory_utilization": 0.9,
+        "max_num_seqs": 128,
+        "max_num_batched_tokens": 16384,
+        "enable_prefix_caching": true,
+        "enable_chunked_prefill": true,
+        "guided_decoding_backend": "xgrammar"
+      },
+      "actual_engine": {
+        "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+        "seed": 42,
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.48,
+        "max_model_len": 131072,
+        "max_num_seqs": 4,
+        "max_num_batched_tokens": 4096,
+        "num_gpu_blocks_override": 8192,
+        "enable_prefix_caching": true,
+        "enable_chunked_prefill": true,
+        "enforce_eager": true,
+        "max_logprobs": 2048,
+        "guided_decoding_backend": "xgrammar"
+      },
+      "runtime_differences": {
+        "enforce_eager": {
+          "original": null,
+          "actual": true
+        },
+        "gpu_memory_utilization": {
+          "original": 0.9,
+          "actual": 0.48
+        },
+        "max_logprobs": {
+          "original": null,
+          "actual": 2048
+        },
+        "max_num_batched_tokens": {
+          "original": 16384,
+          "actual": 4096
+        },
+        "max_num_seqs": {
+          "original": 128,
+          "actual": 4
+        },
+        "num_gpu_blocks_override": {
+          "original": null,
+          "actual": 8192
+        }
+      },
+      "generation_policy": "Original C0 prompts/rendering, seed, temperature, top_p/top_k, length, per-request guidance, parser; actual runtime differs, no bitwise original-run reproduction claim"
+    },
+    {
+      "method": "M5",
+      "original_engine": {
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "dtype": "bfloat16",
+        "max_model_len": 131072,
+        "gpu_memory_utilization": 0.55,
+        "max_num_seqs": 16,
+        "enable_prefix_caching": true,
+        "seed": 42,
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        }
+      },
+      "actual_engine": {
+        "model": "/home/data3/txy/models/Qwen3-8B",
+        "seed": 42,
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.48,
+        "max_model_len": 131072,
+        "max_num_seqs": 4,
+        "max_num_batched_tokens": 4096,
+        "rope_scaling": {
+          "rope_type": "yarn",
+          "factor": 4.0,
+          "original_max_position_embeddings": 32768
+        },
+        "num_gpu_blocks_override": 8192,
+        "enable_prefix_caching": true,
+        "enable_chunked_prefill": true,
+        "enforce_eager": true,
+        "max_logprobs": 2048,
+        "guided_decoding_backend": "xgrammar"
+      },
+      "runtime_differences": {
+        "enable_chunked_prefill": {
+          "original": null,
+          "actual": true
+        },
+        "enforce_eager": {
+          "original": null,
+          "actual": true
+        },
+        "gpu_memory_utilization": {
+          "original": 0.55,
+          "actual": 0.48
+        },
+        "guided_decoding_backend": {
+          "original": null,
+          "actual": "xgrammar"
+        },
+        "max_logprobs": {
+          "original": null,
+          "actual": 2048
+        },
+        "max_num_batched_tokens": {
+          "original": null,
+          "actual": 4096
+        },
+        "max_num_seqs": {
+          "original": 16,
+          "actual": 4
+        },
+        "num_gpu_blocks_override": {
+          "original": null,
+          "actual": 8192
+        }
+      },
+      "generation_policy": "Original C0 prompts/rendering, seed, temperature, top_p/top_k, length, per-request guidance, parser; actual runtime differs, no bitwise original-run reproduction claim"
+    }
+  ],
+  "zero_new_model_requests": true
+}

@@ -1,0 +1,12 @@
+# E4b：统一指令与能力条件化指令
+
+80个不同保守家族：支持24、候选28、当前决策28。双模型×双臂共320终端请求。两臂同证据、同资源、同初答、同输出接口和一次调用额度；只改变根据合法当前输入/工具适用性生成的强调句。离线R标签仅作事后分析。
+
+| 配置 | 统一 | 条件化 | 条件化−统一 | 95%家族区间 |
+|---|---:|---:|---:|---|
+| M4 | 27/80 | 28/80 | +1.25pp | [−6.25,+8.75]pp |
+| M5 | 41/80 | 40/80 | −1.25pp | [−6.25,+3.75]pp |
+
+无跨骨干一致提升，也不宣称等效。合法null（M4统一1、M5条件化1）保留；解析/长度错误0。[总表](analysis/overall.csv)、[配对](analysis/paired.csv)、[操作分层](analysis/by_operation.csv)、[逐项](analysis/native_scored.jsonl)、[选择面板](offline/selection.jsonl)、[图](analysis/instruction_comparison.pdf)。
+
+首次65K预检在任何调用前失败；完整输入不截断，调整至128K上下文，运行配置见runtime.json。输入1,664,828、输出94,515 tokens；[320调用账本](call_ledger.jsonl)。这只检验指令条件化，不是完整功能MoA与generalist MoA的资源匹配比较。

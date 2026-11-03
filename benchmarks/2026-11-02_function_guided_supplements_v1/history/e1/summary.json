@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "time": "2026-11-02T19:15:19.205559+08:00",
+  "methods": [
+    "M0",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7"
+  ],
+  "native_mappings_per_method": 15616,
+  "nonreference_rows_per_method": 8798,
+  "units_per_method": 6104,
+  "analysis_families": 4484,
+  "source_hashes": {
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/scored.jsonl": "58a3692f33beb16d416cacb5c3320ffeddd0591d64fa6d36675379f4a43c711e",
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m3/scored.jsonl": "5d57ec87f52e5d593d8f5631669653a0b5beea7e66aa501d5eb34fe4487212ca",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/scores/scored.jsonl": "bc4382efcfac0583ec5c2437475e923acf966093c679a1461f17c39bf410bac0",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m6_medgenie_v5_full/scores/scored.jsonl": "1185d27a9125cb478d041ba4be219acc0cf2f3bf0a08d9000eb69442585ee810",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m6_m7/m7_typed_v5_full/scores/scored.jsonl": "f97c8b9a23f3327a2936b4df1bc82a01ba374f4314097a6fb5c5624b6d68e805",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/evaluations.jsonl": "a3fec3b144291bffa8949f4531d1f84131cf08fcdda8f0380075cb70bd9eff60",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/offline/items.jsonl": "1fa1a643e630a1a3544e3c55517d09061d8370be5cd8d200a624fa0df49d27b7"
+  },
+  "metrics": {
+    "base": {
+      "brier": 0.17773724410639863,
+      "log_loss": 0.5299085138131452,
+      "roc_auc": 0.7889466161760771
+    },
+    "functional": {
+      "brier": 0.17651554384421703,
+      "log_loss": 0.5213813954919875,
+      "roc_auc": 0.7904886712473451
+    }
+  },
+  "brier_improvement": 0.001221700262181602,
+  "brier_improvement_ci95": [
+    0.00038826022228572257,
+    0.002030689503008781
+  ],
+  "folds": 5,
+  "bootstrap_draws": 2000,
+  "seed": 20261102,
+  "regularization_C": 1,
+  "hyperparameter_search": false,
+  "new_model_inference": 0,
+  "new_native_scores": 0,
+  "independent_confirmation": false,
+  "elapsed_seconds": 12.941459557972848,
+  "limits": [
+    "Already exposed v5; OOF analysis does not undo historical method selection.",
+    "Associational predictive information, not causal functional difficulty.",
+    "Rare/completely confounded categories not separately identifiable.",
+    "Intervals condition on fitted OOF models; no nested model-selection bootstrap.",
+    "Alternative edit/flip representations not yet fitted."
+  ]
+}

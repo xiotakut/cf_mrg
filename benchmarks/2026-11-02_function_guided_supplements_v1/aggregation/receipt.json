@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "time": "2026-11-02T19:49:15.915679+08:00",
+  "source_hashes": {
+    "/home/data4/txy/codex_runs/2026-10-27/cf_moa_post_aggregation_full_v1/analysis/m4/native_scored.jsonl.gz": "67521106c6c20276d161f2b84ab9dd1c648d139537af834ad36d24d935c0d1c5",
+    "/home/data4/txy/codex_runs/2026-10-27/cf_moa_post_aggregation_full_v1/analysis/m4/pairs.jsonl.gz": "c225267e89fdcf9f825faafef5af5433980f808d002eb49c53e4972a18a0a751",
+    "/home/data4/txy/codex_runs/2026-10-27/cf_moa_post_aggregation_full_v1/analysis/m5/native_scored.jsonl.gz": "dadc29d987fae89242483ffde7d2616618aaf1bbb78f05f61b10560b290f100c",
+    "/home/data4/txy/codex_runs/2026-10-27/cf_moa_post_aggregation_full_v1/analysis/m5/pairs.jsonl.gz": "6430e2203b360682c299573ec59b755889763a151fd2700dc525721d26701d41"
+  },
+  "new_model_calls": 0,
+  "new_native_scores": 0,
+  "examples": 3,
+  "gain_denominator": "native nonreference mappings; category-unit-normalized weights supplied separately",
+  "limitations": [
+    "Paired behavior is a different axis from functional labels.",
+    "Example selection is retrospective and cannot substitute independent blind E2 error coding.",
+    "Role candidate summaries are provenance-tagged execution summaries, not raw independent medical reasoning."
+  ]
+}

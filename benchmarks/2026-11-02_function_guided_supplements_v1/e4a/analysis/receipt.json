@@ -1,0 +1,31 @@
+{
+  "time": "2026-11-02T19:59:47.314856+08:00",
+  "status": "complete",
+  "completed_methods": [
+    "M4",
+    "M5"
+  ],
+  "planned_requests": 246,
+  "actual_completed_requests": 246,
+  "new_upstream_calls": 0,
+  "scoring_source_lock": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+      "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047"
+    }
+  ],
+  "limits": [
+    "Same frozen support states; terminal execution/readout control only.",
+    "Requirement success is relative to shared saved states, not independent clinical truth.",
+    "No automatic retries; length/parse failures and unavailable outputs remain in denominator.",
+    "Intervals use scenario-family clustering and are conditional on this exposed panel."
+  ]
+}

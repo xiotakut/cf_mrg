@@ -1,3 +1,5 @@
+2026-11-03：已完成的功能分类补充实验已汇集发布：**E0、最终修正E1、E3、E4a、E4b、E5及聚合分析**，连同此前E2-lite。见[统一结果与复核入口](benchmarks/2026-11-02_function_guided_supplements_v1/README.md)。包含逐项分数、图表、源码快照、实际调用账本和无需GPU的离线核验；E4b无一致收益、E5仅R5小面板，边界与负结果完整保留。
+
 2026-11-03续：E2-lite模型辅助审计完成，120目标/600关系判断，28目标至少一类yes、92目标五类证据不足；不是标签准确率。见[审计报告](benchmarks/2026-11-02_function_guided_supplements_v1/e2/E2_LITE_AUDIT_REPORT.md)。原人工包与主结果保持，下面早期未执行状态为历史。
 
 2026-11-03：[E2已调整为非阻塞的E2-lite](benchmarks/2026-11-02_function_guided_supplements_v1/e2/README.md)：结构检查完成，模型功能审计可选且未执行；原双人协议仅作历史归档，0人工标签。

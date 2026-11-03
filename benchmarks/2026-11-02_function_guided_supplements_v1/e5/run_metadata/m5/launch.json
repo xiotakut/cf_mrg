@@ -1,0 +1,35 @@
+{
+  "time": "2026-11-02T22:19:05.147235+08:00",
+  "pid": 3013689,
+  "method": "M5",
+  "config": {
+    "model": "/home/data3/txy/models/Qwen3-8B",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.48,
+    "max_model_len": 131072,
+    "max_num_seqs": 4,
+    "max_num_batched_tokens": 4096,
+    "batch_size": 4,
+    "model_kwargs": {
+      "rope_scaling": {
+        "rope_type": "yarn",
+        "factor": 4.0,
+        "original_max_position_embeddings": 32768
+      },
+      "num_gpu_blocks_override": 8192
+    },
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    },
+    "guided_json": true,
+    "num_shards": 1
+  },
+  "input_sha256": "6bd62dd897a8b4d29e8ea6650c6097a710c0d1f1450bd8258b094fe9c1b53e4d",
+  "gpu": "3",
+  "script_sha256": "d5ef8d4d42efe8948ea1b8f28f1d913c26cd2befd70183c845d1765e2822b713"
+}

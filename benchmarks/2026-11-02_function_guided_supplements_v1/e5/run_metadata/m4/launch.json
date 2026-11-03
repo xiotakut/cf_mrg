@@ -1,0 +1,27 @@
+{
+  "time": "2026-11-02T21:56:11.182568+08:00",
+  "pid": 2998119,
+  "method": "M4",
+  "config": {
+    "model": "/home/data3/txy/models/LLM-Research-Meta-Llama-3.1-8B-Instruct",
+    "dtype": "bfloat16",
+    "seed": 42,
+    "temperature": 0.7,
+    "top_p": 1.0,
+    "top_k": -1,
+    "max_tokens": 2048,
+    "gpu_memory_utilization": 0.48,
+    "max_model_len": 131072,
+    "max_num_seqs": 4,
+    "max_num_batched_tokens": 4096,
+    "batch_size": 4,
+    "guided_json": true,
+    "num_shards": 1,
+    "model_kwargs": {
+      "num_gpu_blocks_override": 8192
+    }
+  },
+  "input_sha256": "30d71e8de1f8c8d4bd9276343fc94ea0b2135c08557a6d9cfe8f5f3073e62439",
+  "gpu": "3",
+  "script_sha256": "d5ef8d4d42efe8948ea1b8f28f1d913c26cd2befd70183c845d1765e2822b713"
+}

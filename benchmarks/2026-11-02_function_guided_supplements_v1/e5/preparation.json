@@ -1,0 +1,65 @@
+{
+  "status": "method_and_panel_frozen_before_outputs",
+  "time": "2026-11-02T21:40:36.199641+08:00",
+  "families": 32,
+  "inputs_per_method": 112,
+  "allocation": {
+    "M10": 8,
+    "M14": 8,
+    "M17": 8,
+    "M22": 4,
+    "M23": 4
+  },
+  "nli_inputs_per_method": 8,
+  "planned_calls_range": [
+    1392,
+    1808
+  ],
+  "new_retrieval_calls": 0,
+  "retrieval_identity": "Reuse complete 2026-09-18 saved native MedRAG contexts and retrieval documents.",
+  "sources": {
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/M5/config.json": "0f21767326b3e84c54d62d43be6e1378aa6b79c5e3044b3b28b5d04aa5ec307f",
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/analyze_v5.py": "a73b49a1a4db91b58d9ee737d49515a07e7287ca351da81d19912b1cd449ecd9",
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/run_m0_then_m5.sh": "e55b0667f3fef9978f5de3039680d1d6b5b2148cca962bf1509a9fa00dd83835",
+    "/home/data3/txy/Documents/Codex/2026-09-11/agent-md-medrgag-workspace-guide-md/results_v5_m0_m2_m4_m5/code/run_medrag.py": "5d871536dbafaa9614876e695e3e5ec89f4afa3bac10ab1478cd3dfc14f29f37",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/analyze_v5.py": "a73b49a1a4db91b58d9ee737d49515a07e7287ca351da81d19912b1cd449ecd9",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/m4_format_pilot.py": "6f75a3474b7ff8c9aadd234308ae1002bc5569743fc2a9b94b02b29e9f81a166",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/m4_output_schema.py": "2607ebcbff71bea17ef02628eaad4a1905753df2ed6b9ecc723a7305e8aca4c3",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/code/worker.py": "12978d28a58510f6be21a0df935b5794ff1258088e36be4beebc823172761f5c",
+    "/home/data3/txy/Documents/Codex/2026-09-13/agent-md-medrgag-workspace-guide-md/results_v5_m4_structured/config.json": "d141c7c4b2c840132eb0cc04d563955bd6c2df1b009daf7dc6f0910ae1690723",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/delivery/r5_head.py": "d9b0f4d2669d5e6e5b37f4af2d96d7f0e170b6295b4e4e4854d526030877b559",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/evaluation.jsonl": "78cabb926b89e273d8d4239dcc513f3e2d2b83fe42cb5919949fadf701337ecf",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/frozen_manifest.json": "1b32da95ffd0672d951220495e616de29046a3db1d8c07a3cc32753281b306d9",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/items.jsonl": "922a31bda46669889604f908eca070ad74e797b0185a091071406dcee3adb677",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/inputs.jsonl": "3a629bcb78a49be2f916d445eba91fa821da0d43477e0513255b8cdc87352b3f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m4/native_config.json": "4e5470144ff9b9c645bfd05d9210343e5a07a781095c8c0cec3b0c4f63687a5f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/inputs.jsonl": "70b4344be4eba59017b76acc8813c93d9275aa4328d23871d05955e6d388a41c",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/m5/native_config.json": "0f21767326b3e84c54d62d43be6e1378aa6b79c5e3044b3b28b5d04aa5ec307f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/retrieval.jsonl": "f73ad47db05841ed76e9e57bcfdb1750ad8896bdad129c51ab59ce5c6d5c5a1f",
+    "/home/data3/txy/Documents/Codex/2026-09-18/r5_head/mechanism_research/data/selected_candidates.jsonl": "9f0042a23bde6d4d241c54c193d8d5561084bacaab653cf2596cd321ecef62ef",
+    "/home/data3/txy/cf_moa/agents/a5_robust_readout.py": "13f6fdd2cccb499e23294d72572fb778d1a468010337ff0d3e367c0d077a2e35",
+    "/home/data3/txy/cf_moa/agents/post_proposers.py": "f4016e96fbc4e967fcc70a0152d86f3fa5f79152a6e2e9ccd00c0c00531cab05",
+    "/home/data3/txy/cf_moa/controller/post_selective.py": "1f4bf463d9762afbbd22d939024b666308d92a66b5b865735ca0f43f442c5696",
+    "/home/data3/txy/cf_moa/controller/strong_legacy.py": "3c42b7240e1a54f19abeaa5a873e23dbd8953cca05b9947385322856bb0da2af",
+    "/home/data3/txy/cf_moa/evaluation/c0_native.py": "1039fabb3b12d2d85e2b5b7d6419a04c8f555113da62758f0b37db1ccca42c42",
+    "/home/data3/txy/cf_moa/prompts/rule_guided_aggregator.txt": "c882584df39f4cb735bf8f5b00e2a4acab3ba187c5738c77e1aa5301af6598a8"
+  },
+  "inference_hashes": {
+    "M4": "30d71e8de1f8c8d4bd9276343fc94ea0b2135c08557a6d9cfe8f5f3073e62439",
+    "M5": "6bd62dd897a8b4d29e8ea6650c6097a710c0d1f1450bd8258b094fe9c1b53e4d"
+  },
+  "runtime_sha256": "058f01240fa1e13ecf8a1679636c5c0f6c153930080d748546826e54e28fde43",
+  "methodology": {
+    "C0": "Exact original messages, sampling and guidance/parser; smaller runtime batch and fixed KV allocation only.",
+    "B": "Adopted F with original seeds42–46, absolute-three early stop or six NLI callbacks; five-role capability records; other roles explicit C0 fallback.",
+    "Gen": "Existing post_selective gen, max2048.",
+    "RulePrompt": "Existing rule_prompt, max256; complete selected native response copied.",
+    "selection": "Seeded hash by family, fixed source quotas, no outcome filtering.",
+    "failure": "Keep invalid answers and capacity failures; do not retry semantic failures."
+  },
+  "limits": [
+    "R5 scope only; cannot confirm A1–A4 or cross-functional generalization.",
+    "Previously collected and qualified source families, not new clinical patients or all-blind material.",
+    "One frozen run per backbone; no prompt search or performance-driven sample replacement."
+  ]
+}

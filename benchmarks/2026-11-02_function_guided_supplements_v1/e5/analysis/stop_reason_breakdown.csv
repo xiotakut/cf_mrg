@@ -1,0 +1,11 @@
+method,phase,kind,requests,raw_length_stop,input_tokens,output_tokens,interpretation
+M4,C0,generate,112,1,398712,32559,Length stop is a generation budget stop
+M4,F,generate,373,0,1343254,89729,Length stop is a generation budget stop
+M4,F,score,32,32,146024,32,"One-token score endpoint; length stop expected, not generation truncation"
+M4,Gen,generate,112,1,668513,35111,Length stop is a generation budget stop
+M4,RulePrompt,generate,112,0,689345,5366,Length stop is a generation budget stop
+M5,C0,generate,112,0,375179,31553,Length stop is a generation budget stop
+M5,F,generate,370,0,1252878,84190,Length stop is a generation budget stop
+M5,F,score,32,32,137402,32,"One-token score endpoint; length stop expected, not generation truncation"
+M5,Gen,generate,112,0,663936,31666,Length stop is a generation budget stop
+M5,RulePrompt,generate,112,0,684768,6317,Length stop is a generation budget stop

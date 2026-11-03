@@ -1,0 +1,29 @@
+{
+  "status": "bounded_identity_update_complete",
+  "time": "2026-11-02T21:40:36.199496+08:00",
+  "candidate_families": 128,
+  "scanned_files": 111,
+  "excluded_family_count": 0,
+  "excluded_units": [],
+  "selected_families": 32,
+  "selected_overlap": 0,
+  "limits": [
+    "Scan covers enumerated working input manifests, not all human memory or pretraining.",
+    "Existing source collection/classification/qualification exposure retained.",
+    "Separately exposed eight target-change controls excluded.",
+    "BioNLI article-level independence remains unresolved; prior audit is reused."
+  ],
+  "prior_exposure_audit": {
+    "path": "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/scope/exposure_review.json",
+    "sha256": "1b1482a027e1d1005ce05a3507a6c36ccfb8888a8ade8bdc0250639537966765",
+    "scopes": [
+      "formal_v5",
+      "CF_MoA_historical121",
+      "CF_MoA_natural52",
+      "old_F_pilot208",
+      "old_F_extension400",
+      "old_F_nli_validation48"
+    ],
+    "reported_group_unit_endpoint_question_overlap_zero": true
+  }
+}

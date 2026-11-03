@@ -1,0 +1,34 @@
+{
+  "status": "frozen_before_outputs",
+  "time": "2026-11-02T21:30:20.994831+08:00",
+  "inputs": 80,
+  "planned_requests": 320,
+  "selection": "seeded hash order and source round-robin; no outcome filtering; one conservative family per input",
+  "operations": {
+    "support": 24,
+    "candidate": 28,
+    "current_decision": 28
+  },
+  "sources": {
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m4.jsonl": "1ca8b6507fd7a70c5aed82431229762d87178012a94da1e713879b1c7ae9ef73",
+    "/home/data3/txy/Documents/Codex/2026-09-24/cf_moa_rcv_completion_20260924/full_v5/inference/m5.jsonl": "24c22d3cc850091e27b184747428ebfaf56fc24d1bf94de5b9baa0231618985d",
+    "/home/data3/txy/Documents/Codex/2026-09-16/r1_head_experiments/candidate/catalog.json": "abb95204b732f0f96f776ee24f8671c0ad60e1de5a80ab11ce557e835821ed1b",
+    "/home/data4/txy/codex_runs/2026-11-02/function_guided_supplements_v1/e4a/inference/m4.jsonl": "f095d9eb9e034604e5e740311481e7ed008efe89acd54956036cdc8b290a4fa5",
+    "/home/data4/txy/codex_runs/2026-11-02/function_guided_supplements_v1/e4a/inference/m5.jsonl": "304b873f2e25fca8f86561f03be83ea8c34bfe8c7915b45f48bed32659b63df6"
+  },
+  "inference_hashes": {
+    "M4": "5bf6849a054c237c52ef564ee062d812dbc1bbfa3c9a0ff6e68a933f11cb8d23",
+    "M5": "26efb15a89f3af0fcfdf3d92c80c8ea7a497e429817a82d3896e1a76bf99f0ed"
+  },
+  "runtime_sha256": "058f01240fa1e13ecf8a1679636c5c0f6c153930080d748546826e54e28fde43",
+  "limits": [
+    "Exposed v5 diagnostic panel, not independent confirmation.",
+    "Only instruction emphasis differs; both arms see identical resources and capability flags.",
+    "Capability is inferred from legal task format and resource availability, not offline functional labels.",
+    "One terminal generation per arm, not a full CF-MoA replacement."
+  ],
+  "runtime_revision": {
+    "time": "2026-11-02T21:35:56.119608+08:00",
+    "reason": "Complete payloads reach70723/77520 tokens; raise runtime window to already supported native128K. No input truncation or model calls before change."
+  }
+}

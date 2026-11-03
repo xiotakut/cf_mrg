@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "time": "2026-11-02T22:46:26.878484+08:00",
+  "experiments": {
+    "e4b": {
+      "status": "passed",
+      "physical_calls": 320,
+      "original_sources": 5,
+      "models_closed": 2
+    },
+    "e5": {
+      "status": "passed",
+      "physical_calls": 1479,
+      "original_sources": 25,
+      "models_closed": 2
+    }
+  },
+  "new_physical_calls": 1799,
+  "new_retrieval": 0,
+  "human_labels": 0,
+  "source_immutability": true,
+  "actual_engine_acceptance_checked": true,
+  "no_unknown_submissions": true,
+  "no_prompt_truncation": true,
+  "selected_complete_native_response_preserved": true,
+  "identity_with_B": [
+    {
+      "method": "M4",
+      "inputs": 112,
+      "RulePrompt_complete_native_equal_B": 101,
+      "RulePrompt_answer_choice_equal_B": 112
+    },
+    {
+      "method": "M5",
+      "inputs": 112,
+      "RulePrompt_complete_native_equal_B": 108,
+      "RulePrompt_answer_choice_equal_B": 112
+    }
+  ]
+}

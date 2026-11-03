@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "time": "2026-11-02T22:43:15.187224+08:00",
+  "methods": [
+    "M4",
+    "M5"
+  ],
+  "physical_calls": 1479,
+  "scoring_source_lock": [
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/analyze_cf_baseline_screening.py",
+      "sha256": "f77ece47d81f0fe4bf0628cf8332f951bc413b2b06759c7d35b26b654805f57d"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/scripts/prepare_cf_baseline_screening.py",
+      "sha256": "eac5a7fa4129b1fd0a6a1d55dcf184d770391719bca0417546ea4eea6fc72018"
+    },
+    {
+      "path": "/home/data3/txy/Documents/Codex/2026-08-23/https-github-com-xiotakut-cf-mrg/cf_medrgag_validation_pack/results_cf_full_test/canonical_labels.json",
+      "sha256": "c9e84ee09a7537a3b2bfed2af5a38c2aa8a96063a1a540be0dd1132c7df05047"
+    }
+  ],
+  "primary": "32 unit means of non-reference judgments, then equal mean; 64 judgments and 112 endpoints reported separately",
+  "pair_protocol": "64 unchanged-gold semantic pairs; shared reference for five M22 evidence levels; no new change-response controls",
+  "interval": "4000 paired family bootstrap draws; 32 distinct families equal unit weight",
+  "limits": [
+    "Only R5; not confirmation of A1–A4 or all functional roles.",
+    "Previously collected/qualified but not previously executed selected family panel within bounded audit.",
+    "NLI exact-premise disjointness is not article-level independence.",
+    "Small source quotas; no broad clinical generalization or statistical equivalence claim.",
+    "One frozen run per backbone, invalid outputs remain in denominators.",
+    "F generated once and reused in both aggregation arms; actual shared cost counted once.",
+    "Document identification is auxiliary; correction semantics not scored."
+  ]
+}
