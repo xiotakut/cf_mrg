@@ -1,13 +1,17 @@
 {
-  "version": "e2_lite_20261103_v1",
+  "version": "e2_lite_audit_20261103_v1",
   "targets": 120,
   "structural_checks": "complete",
-  "semantic_model_audits": 0,
+  "semantic_model_audits": 120,
   "author_semantic_reviews": 0,
   "independent_human_annotations": 0,
   "legacy_human_experiment": "not_executed_removed_from_required_work",
   "coordinator_keys_included": false,
   "files": {
+    "E2_LITE_AUDIT_REPORT.md": {
+      "sha256": "a3fa52fb00785728432505927528dc65e03fce5d516d9c6e586205d07f3f7275",
+      "bytes": 5335
+    },
     "E2_LITE_PROMPT.txt": {
       "sha256": "fa3b7a9f0d9eabe52ea93f57949289308a54df42ef1bef068979326322ab7fef",
       "bytes": 771
@@ -25,12 +29,40 @@
       "bytes": 601
     },
     "README.md": {
-      "sha256": "81b7f399bed0d8aa057322843977845c0a0ed406740c20ac635fa30cea175340",
-      "bytes": 6741
+      "sha256": "dc63f060d231c4674b2dbb4c2e8f5ca85ecd8a63ee212d1d733105d95a0ec447",
+      "bytes": 7917
+    },
+    "e2_lite_audit_issue_queue.jsonl": {
+      "sha256": "f91f316740a1e3607fc93d2877fba0e3d78a404caa03de0cec6f38eddb4a1ef1",
+      "bytes": 94873
     },
     "e2_lite_audit_packet.zip": {
       "sha256": "05d1e3b547d93a5ce04e4d1ef0febd15b0288923284a80d7551941cb513fa8c7",
       "bytes": 611139
+    },
+    "e2_lite_audit_results.jsonl": {
+      "sha256": "919e1ab5efc22b54ac772971963bbc90e5579dcab467434eb991c7308fdc365a",
+      "bytes": 593956
+    },
+    "e2_lite_audit_results.zip": {
+      "sha256": "6a7cdd9378c239358fd297eb4bfabb30384a4513168c4f4a2939a90780bc8249",
+      "bytes": 694657
+    },
+    "e2_lite_audit_run_record.json": {
+      "sha256": "39b6d39d4a900e2ad0e1dd9c5bd67f685cba073d3acb797408bd9e362bf1564f",
+      "bytes": 11184
+    },
+    "e2_lite_audit_summary.json": {
+      "sha256": "e5e409bf4db196f88292a0aa792253a281cf2a8b8e839088e445efe612e05b80",
+      "bytes": 2849
+    },
+    "e2_lite_audit_validation.json": {
+      "sha256": "2846be88a6e27116fa460a84485d6ac9163ddf61907de04b1cb2fc2baffe7586",
+      "bytes": 609
+    },
+    "e2_lite_model_audit.csv": {
+      "sha256": "e830875fd7fec6eb49810fef60bdd2dd501cb5b43a7b502083289520dcc63031",
+      "bytes": 96939
     },
     "e2_lite_structural_issue_queue.jsonl": {
       "sha256": "98fab378efaf8f24e58f6dd5d559dad4a4a5e39a047ad3a1cd4c1e7cef15cc58",
@@ -48,5 +80,13 @@
       "sha256": "cca91a4ee273791e194adb8670b2495791d6204c03eeac28633f89fcfe387ac7",
       "bytes": 480527
     }
-  }
+  },
+  "conversation_batches": 12,
+  "relation_judgments": 600,
+  "targets_with_any_yes": 28,
+  "targets_with_all_insufficient": 92,
+  "independent_api_requests": 0,
+  "conversation_model_inference_used": true,
+  "expert_validation": false,
+  "old_labels_compared": false
 }

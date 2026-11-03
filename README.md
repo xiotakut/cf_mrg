@@ -1,3 +1,5 @@
+2026-11-03续：E2-lite模型辅助审计完成，120目标/600关系判断，28目标至少一类yes、92目标五类证据不足；不是标签准确率。见[审计报告](benchmarks/2026-11-02_function_guided_supplements_v1/e2/E2_LITE_AUDIT_REPORT.md)。原人工包与主结果保持，下面早期未执行状态为历史。
+
 2026-11-03：[E2已调整为非阻塞的E2-lite](benchmarks/2026-11-02_function_guided_supplements_v1/e2/README.md)：结构检查完成，模型功能审计可选且未执行；原双人协议仅作历史归档，0人工标签。
 
 2026-11-02：[E2：120目标盲审材料与复审说明](benchmarks/2026-11-02_function_guided_supplements_v1/e2/README.md)。两阶段分开发放，人工标注尚未完成。
