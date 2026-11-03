@@ -1,13 +1,44 @@
 {
-  "version": "e2_blinded_review_20261102",
-  "phase1_targets": 120,
-  "phase2_targets": 120,
-  "human_annotations": 0,
+  "version": "e2_lite_20261103_v1",
+  "targets": 120,
+  "structural_checks": "complete",
+  "semantic_model_audits": 0,
+  "author_semantic_reviews": 0,
+  "independent_human_annotations": 0,
+  "legacy_human_experiment": "not_executed_removed_from_required_work",
   "coordinator_keys_included": false,
   "files": {
-    "README.md": {
+    "E2_LITE_PROMPT.txt": {
+      "sha256": "fa3b7a9f0d9eabe52ea93f57949289308a54df42ef1bef068979326322ab7fef",
+      "bytes": 771
+    },
+    "E2_LITE_PROTOCOL.txt": {
+      "sha256": "a52f7cbc46151fb9f6f7ff2b5a7f00ae0e7b63bb6fd8ab071197b310a24a2397",
+      "bytes": 3776
+    },
+    "HISTORICAL_HUMAN_PROTOCOL_20261102.md": {
       "sha256": "54d95a4d5c07487605858811f6ab383cdda250a987441eb07031e1acffbb00f8",
       "bytes": 6712
+    },
+    "MANIFEST_20261102.json": {
+      "sha256": "f27682b5f7694a14230daebfde27d05d909bf64eb3b5a3bee28253c846247469",
+      "bytes": 601
+    },
+    "README.md": {
+      "sha256": "81b7f399bed0d8aa057322843977845c0a0ed406740c20ac635fa30cea175340",
+      "bytes": 6741
+    },
+    "e2_lite_audit_packet.zip": {
+      "sha256": "05d1e3b547d93a5ce04e4d1ef0febd15b0288923284a80d7551941cb513fa8c7",
+      "bytes": 611139
+    },
+    "e2_lite_structural_issue_queue.jsonl": {
+      "sha256": "98fab378efaf8f24e58f6dd5d559dad4a4a5e39a047ad3a1cd4c1e7cef15cc58",
+      "bytes": 16790
+    },
+    "e2_lite_structural_report.json": {
+      "sha256": "6109ed8fbaa96205460175034a5b172a9693ca07cdd174b32b54f56d97e1e3f8",
+      "bytes": 2478
     },
     "phase1_classification.zip": {
       "sha256": "14d1523efeeeaff02aacef1978f5784f21d9e1aaecea96def893c658df62ff66",

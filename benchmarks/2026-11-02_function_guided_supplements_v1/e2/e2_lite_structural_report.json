@@ -1,0 +1,57 @@
+{
+  "version": "e2_lite_20261103_v1",
+  "time": "2026-11-03T09:26:14.150020+08:00",
+  "status": "structural_checks_complete_semantic_audit_not_executed",
+  "targets": 120,
+  "unique_ids": 120,
+  "unique_selected_units": 120,
+  "complete_payload_duplicate_groups": [],
+  "current_native_matches": 120,
+  "reference_native_matches": 74,
+  "no_external_reference_field": 46,
+  "source_locator_present": 120,
+  "source_url_present": 120,
+  "local_source_path_exists": 120,
+  "source_string_segments": 1127,
+  "source_locator_semantics": "Presence/path existence and equality to frozen ingested native inputs checked; original source rows not newly redecoded.",
+  "reuse": [
+    {
+      "path": "/home/data4/txy/codex_runs/2026-11-02/function_guided_supplements_v1/e2/material_receipt.json",
+      "sha256": "371a962e47ccff79abaeccb86351848a77afd7e861c1d64ca70d18ac8a8f05b9",
+      "scope": "Prior archive hashes, target count and blank human state"
+    },
+    {
+      "path": "/home/data4/txy/codex_runs/2026-11-02/function_guided_supplements_v1/e2_publication/preparation.json",
+      "sha256": "b7698a800b3f2759506546f5090f6a133ff10d31d367ea6445e7fbbab4e2b65b",
+      "scope": "Prior ZIP whitelist, case IDs and blank A/B sheets"
+    },
+    {
+      "path": "/home/data4/txy/codex_runs/2026-11-02/function_guided_supplements_v1/validation.json",
+      "sha256": "4b56cb988b7e73d2f11fec7494c2b2941690c75edbd90a421215ba718a1ea800",
+      "scope": "Prior integrated structural/blank-sheet checks"
+    }
+  ],
+  "new_checks": [
+    "Frozen current/reference native input equality",
+    "Target/prepared-target equality",
+    "Source URL/locator presence and local-path existence",
+    "Exact complete-payload duplicates",
+    "Locatable source leaf fields for future quotations"
+  ],
+  "quotation_validation": "not_executed_no_semantic_audit_quotes_exist",
+  "clinical_validation": false,
+  "semantic_audit_completed": 0,
+  "independent_human_annotations": 0,
+  "experimental_model_requests": 0,
+  "issue_counts": {
+    "external_reference_not_in_packet": 46
+  },
+  "original_materials_unchanged": true,
+  "limits": [
+    "Structure and traceability are not label accuracy or clinical correctness.",
+    "No independent human reliability study; no kappa.",
+    "46 missing external references are context notes, not semantic audit verdicts.",
+    "Original target neutralization and project exposure retained; not fully blind.",
+    "Stratified panel is not a prevalence sample."
+  ]
+}
